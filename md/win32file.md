@@ -10,7 +10,7 @@ passing a transaction handle to the corresponding Unicode API function.
 
 This makes it simple to convert a set of file operations into a transaction by 
 
-simply adding Transaction=[PyHANDLE](README.md#PyHANDLE)to the passed arguments. 
+simply adding Transaction=[PyHANDLE](README.md#pyhandle)to the passed arguments. 
 
 If Transaction is None, 0, or not specified, the non-transacted API function will 
 
@@ -30,245 +30,245 @@ RemoveDirectory / RemoveDirectoryTransacted
 #### Methods
 
 
-  - [AreFileApisANSI](win32file.md#win32fileAreFileApisANSI)
+  - [AreFileApisANSI](win32file.md#win32filearefileapisansi)
 
     Determines whether a set of Win32 file functions is using the ANSI or OEM character set code page. This function is useful for 8-bit console input and output operations.&nbsp;
 
-  - [CancelIo](win32file.md#win32fileCancelIo)
+  - [CancelIo](win32file.md#win32filecancelio)
 
     Cancels pending IO requests for the object.&nbsp;
 
-  - [CopyFile](win32file.md#win32fileCopyFile)
+  - [CopyFile](win32file.md#win32filecopyfile)
 
     Copies a file&nbsp;
 
-  - [CopyFileW](win32file.md#win32fileCopyFileW)
+  - [CopyFileW](win32file.md#win32filecopyfilew)
 
     Copies a file (NT/2000 Unicode specific version)&nbsp;
 
-  - [CreateDirectory](win32file.md#win32fileCreateDirectory)
+  - [CreateDirectory](win32file.md#win32filecreatedirectory)
 
     Creates a directory&nbsp;
 
-  - [CreateDirectoryW](win32file.md#win32fileCreateDirectoryW)
+  - [CreateDirectoryW](win32file.md#win32filecreatedirectoryw)
 
     Creates a directory (NT/2000 Unicode specific version)&nbsp;
 
-  - [CreateDirectoryEx](win32file.md#win32fileCreateDirectoryEx)
+  - [CreateDirectoryEx](win32file.md#win32filecreatedirectoryex)
 
     Creates a directory&nbsp;
 
-  - [CreateFile](win32file.md#win32fileCreateFile)
+  - [CreateFile](win32file.md#win32filecreatefile)
 
     Creates or opens the a file or other object and returns a handle that can be used to access the object.&nbsp;
 
-  - [CreateIoCompletionPort](win32file.md#win32fileCreateIoCompletionPort)
+  - [CreateIoCompletionPort](win32file.md#win32filecreateiocompletionport)
 
     Can associate an instance of an opened file with a newly created or an existing input/output (I/O) completion port; or it can create an I/O completion port without associating it with a file.&nbsp;
 
-  - [CreateMailslot](win32file.md#win32fileCreateMailslot)
+  - [CreateMailslot](win32file.md#win32filecreatemailslot)
 
     Creates a mailslot on the local machine&nbsp;
 
-  - [GetMailslotInfo](win32file.md#win32fileGetMailslotInfo)
+  - [GetMailslotInfo](win32file.md#win32filegetmailslotinfo)
 
     Retrieves information about a mailslot&nbsp;
 
-  - [SetMailslotInfo](win32file.md#win32fileSetMailslotInfo)
+  - [SetMailslotInfo](win32file.md#win32filesetmailslotinfo)
 
     Sets a mailslot's timeout&nbsp;
 
-  - [DefineDosDevice](win32file.md#win32fileDefineDosDevice)
+  - [DefineDosDevice](win32file.md#win32filedefinedosdevice)
 
     Lets an application define, redefine, or delete MS-DOS device names.&nbsp;
 
-  - [DefineDosDeviceW](win32file.md#win32fileDefineDosDeviceW)
+  - [DefineDosDeviceW](win32file.md#win32filedefinedosdevicew)
 
     Lets an application define, redefine, or delete MS-DOS device names. (NT/2000 Unicode specific version)&nbsp;
 
-  - [DeleteFile](win32file.md#win32fileDeleteFile)
+  - [DeleteFile](win32file.md#win32filedeletefile)
 
     Deletes a file.&nbsp;
 
-  - [DeviceIoControl](win32file.md#win32fileDeviceIoControl)
+  - [DeviceIoControl](win32file.md#win32filedeviceiocontrol)
 
     Sends a control code to a device or file system driver&nbsp;
 
-  - [FindClose](win32file.md#win32fileFindClose)
+  - [FindClose](win32file.md#win32filefindclose)
 
     Closes a find handle.&nbsp;
 
-  - [FindCloseChangeNotification](win32file.md#win32fileFindCloseChangeNotification)
+  - [FindCloseChangeNotification](win32file.md#win32filefindclosechangenotification)
 
     Closes a handle.&nbsp;
 
-  - [FindFirstChangeNotification](win32file.md#win32fileFindFirstChangeNotification)
+  - [FindFirstChangeNotification](win32file.md#win32filefindfirstchangenotification)
 
     Creates a change notification handle and sets up initial change notification filter conditions. A wait on a notification handle succeeds when a change matching the filter conditions occurs in the specified directory or subtree.&nbsp;
 
-  - [FindNextChangeNotification](win32file.md#win32fileFindNextChangeNotification)
+  - [FindNextChangeNotification](win32file.md#win32filefindnextchangenotification)
 
     Requests that the operating system signal a change notification handle the next time it detects an appropriate change,&nbsp;
 
-  - [FlushFileBuffers](win32file.md#win32fileFlushFileBuffers)
+  - [FlushFileBuffers](win32file.md#win32fileflushfilebuffers)
 
     Clears the buffers for the specified file and causes all buffered data to be written to the file.&nbsp;
 
-  - [GetBinaryType](win32file.md#win32fileGetBinaryType)
+  - [GetBinaryType](win32file.md#win32filegetbinarytype)
 
     Determines whether a file is executable, and if so, what type of executable file it is. That last property determines which subsystem an executable file runs under.&nbsp;
 
-  - [GetDiskFreeSpace](win32file.md#win32fileGetDiskFreeSpace)
+  - [GetDiskFreeSpace](win32file.md#win32filegetdiskfreespace)
 
     Determines the free space on a device.&nbsp;
 
-  - [GetDiskFreeSpaceEx](win32file.md#win32fileGetDiskFreeSpaceEx)
+  - [GetDiskFreeSpaceEx](win32file.md#win32filegetdiskfreespaceex)
 
     Determines the free space on a device.&nbsp;
 
-  - [GetDriveType](win32file.md#win32fileGetDriveType)
+  - [GetDriveType](win32file.md#win32filegetdrivetype)
 
     Determines whether a disk drive is a removable, fixed, CD-ROM, RAM disk, or network drive.&nbsp;
 
-  - [GetDriveTypeW](win32file.md#win32fileGetDriveTypeW)
+  - [GetDriveTypeW](win32file.md#win32filegetdrivetypew)
 
     Determines whether a disk drive is a removable, fixed, CD-ROM, RAM disk, or network drive. (NT/2000 Unicode specific version).&nbsp;
 
-  - [GetFileAttributes](win32file.md#win32fileGetFileAttributes)
+  - [GetFileAttributes](win32file.md#win32filegetfileattributes)
 
     Determines a files attributes.&nbsp;
 
-  - [GetFileAttributesW](win32file.md#win32fileGetFileAttributesW)
+  - [GetFileAttributesW](win32file.md#win32filegetfileattributesw)
 
     Determines a files attributes (NT/2000 Unicode specific version).&nbsp;
 
-  - [GetFileTime](win32file.md#win32fileGetFileTime)
+  - [GetFileTime](win32file.md#win32filegetfiletime)
 
     Returns a file's creation, last access, and modification times.&nbsp;
 
-  - [SetFileTime](win32file.md#win32fileSetFileTime)
+  - [SetFileTime](win32file.md#win32filesetfiletime)
 
     Sets the date and time that a file was created, last accessed, or last modified.&nbsp;
 
-  - [GetFileInformationByHandle](win32file.md#win32fileGetFileInformationByHandle)
+  - [GetFileInformationByHandle](win32file.md#win32filegetfileinformationbyhandle)
 
     Retrieves file information for a specified file.&nbsp;
 
-  - [GetCompressedFileSize](win32file.md#win32fileGetCompressedFileSize)
+  - [GetCompressedFileSize](win32file.md#win32filegetcompressedfilesize)
 
     Determines the compressed size of a file.&nbsp;
 
-  - [GetFileSize](win32file.md#win32fileGetFileSize)
+  - [GetFileSize](win32file.md#win32filegetfilesize)
 
     Determines the size of a file.&nbsp;
 
-  - [AllocateReadBuffer](win32file.md#win32fileAllocateReadBuffer)
+  - [AllocateReadBuffer](win32file.md#win32fileallocatereadbuffer)
 
-    Allocates a buffer which can be used with an overlapped Read operation using[win32file::ReadFile](win32file.md#win32fileReadFile)&nbsp;
+    Allocates a buffer which can be used with an overlapped Read operation using[win32file::ReadFile](win32file.md#win32filereadfile)&nbsp;
 
-  - [ReadFile](win32file.md#win32fileReadFile)
+  - [ReadFile](win32file.md#win32filereadfile)
 
     Reads a string from a file&nbsp;
 
-  - [WriteFile](win32file.md#win32fileWriteFile)
+  - [WriteFile](win32file.md#win32filewritefile)
 
     Writes a string to a file&nbsp;
 
-  - [CloseHandle](win32file.md#win32fileCloseHandle)
+  - [CloseHandle](win32file.md#win32fileclosehandle)
 
     Closes an open handle.&nbsp;
 
-  - [LockFileEx](win32file.md#win32fileLockFileEx)
+  - [LockFileEx](win32file.md#win32filelockfileex)
 
     Locks a file. Wrapper for LockFileEx win32 API.&nbsp;
 
-  - [UnlockFileEx](win32file.md#win32fileUnlockFileEx)
+  - [UnlockFileEx](win32file.md#win32fileunlockfileex)
 
     Unlocks a file. Wrapper for UnlockFileEx win32 API.&nbsp;
 
-  - [GetQueuedCompletionStatus](win32file.md#win32fileGetQueuedCompletionStatus)
+  - [GetQueuedCompletionStatus](win32file.md#win32filegetqueuedcompletionstatus)
 
     Attempts to dequeue an I/O completion packet from a specified input/output completion port.&nbsp;
 
-  - [PostQueuedCompletionStatus](win32file.md#win32filePostQueuedCompletionStatus)
+  - [PostQueuedCompletionStatus](win32file.md#win32filepostqueuedcompletionstatus)
 
     lets you post an I/O completion packet to an I/O completion port. The I/O completion packet will satisfy an outstanding call to the GetQueuedCompletionStatus function.&nbsp;
 
-  - [GetFileType](win32file.md#win32fileGetFileType)
+  - [GetFileType](win32file.md#win32filegetfiletype)
 
     Determines the type of a file.&nbsp;
 
-  - [GetLogicalDrives](win32file.md#win32fileGetLogicalDrives)
+  - [GetLogicalDrives](win32file.md#win32filegetlogicaldrives)
 
     Returns a bitmaks of the logical drives installed.&nbsp;
 
-  - [GetOverlappedResult](win32file.md#win32fileGetOverlappedResult)
+  - [GetOverlappedResult](win32file.md#win32filegetoverlappedresult)
 
     Determines the result of the most recent call with an OVERLAPPED object.&nbsp;
 
-  - [LockFile](win32file.md#win32fileLockFile)
+  - [LockFile](win32file.md#win32filelockfile)
 
     Locks a specified file for exclusive access by the calling process.&nbsp;
 
-  - [MoveFile](win32file.md#win32fileMoveFile)
+  - [MoveFile](win32file.md#win32filemovefile)
 
     Renames an existing file or a directory (including all its children).&nbsp;
 
-  - [MoveFileW](win32file.md#win32fileMoveFileW)
+  - [MoveFileW](win32file.md#win32filemovefilew)
 
     Renames an existing file or a directory (including all its children). (NT/2000 Unicode specific version).&nbsp;
 
-  - [MoveFileEx](win32file.md#win32fileMoveFileEx)
+  - [MoveFileEx](win32file.md#win32filemovefileex)
 
     Renames an existing file or a directory (including all its children).&nbsp;
 
-  - [MoveFileExW](win32file.md#win32fileMoveFileExW)
+  - [MoveFileExW](win32file.md#win32filemovefileexw)
 
     Renames an existing file or a directory (including all its children). (NT/2000 Unicode specific version).&nbsp;
 
-  - [QueryDosDevice](win32file.md#win32fileQueryDosDevice)
+  - [QueryDosDevice](win32file.md#win32filequerydosdevice)
 
     Returns the mapping for a device name, or all device names&nbsp;
 
-  - [ReadDirectoryChangesW](win32file.md#win32fileReadDirectoryChangesW)
+  - [ReadDirectoryChangesW](win32file.md#win32filereaddirectorychangesw)
 
     retrieves information describing the changes occurring within a directory.&nbsp;
 
-  - [FILE_NOTIFY_INFORMATION](win32file.md#win32fileFILE_NOTIFY_INFORMATION)
+  - [FILE_NOTIFY_INFORMATION](win32file.md#win32filefile_notify_information)
 
     Decodes a PyFILE_NOTIFY_INFORMATION buffer.&nbsp;
 
-  - [SetCurrentDirectory](win32file.md#win32fileSetCurrentDirectory)
+  - [SetCurrentDirectory](win32file.md#win32filesetcurrentdirectory)
 
     Sets the current directory.&nbsp;
 
-  - [SetEndOfFile](win32file.md#win32fileSetEndOfFile)
+  - [SetEndOfFile](win32file.md#win32filesetendoffile)
 
     Moves the end-of-file (EOF) position for the specified file to the current position of the file pointer.&nbsp;
 
-  - [SetFileApisToANSI](win32file.md#win32fileSetFileApisToANSI)
+  - [SetFileApisToANSI](win32file.md#win32filesetfileapistoansi)
 
     Causes a set of Win32 file functions to use the ANSI character set code page. This function is useful for 8-bit console input and output operations.&nbsp;
 
-  - [SetFileApisToOEM](win32file.md#win32fileSetFileApisToOEM)
+  - [SetFileApisToOEM](win32file.md#win32filesetfileapistooem)
 
     Causes a set of Win32 file functions to use the OEM character set code page. This function is useful for 8-bit console input and output operations.&nbsp;
 
-  - [SetFileAttributes](win32file.md#win32fileSetFileAttributes)
+  - [SetFileAttributes](win32file.md#win32filesetfileattributes)
 
     Changes a file's attributes.&nbsp;
 
-  - [SetFilePointer](win32file.md#win32fileSetFilePointer)
+  - [SetFilePointer](win32file.md#win32filesetfilepointer)
 
     Moves the file pointer of an open file.&nbsp;
 
-  - [SetVolumeLabel](win32file.md#win32fileSetVolumeLabel)
+  - [SetVolumeLabel](win32file.md#win32filesetvolumelabel)
 
     Sets a volume label for a disk drive.&nbsp;
 
-  - [UnlockFile](win32file.md#win32fileUnlockFile)
+  - [UnlockFile](win32file.md#win32fileunlockfile)
 
-    Unlocks a region of a file locked by[win32file::LockFile](win32file.md#win32fileLockFile)or[win32file::LockFileEx](win32file.md#win32fileLockFileEx)&nbsp;
+    Unlocks a region of a file locked by[win32file::LockFile](win32file.md#win32filelockfile)or[win32file::LockFileEx](win32file.md#win32filelockfileex)&nbsp;
 
   - [_get_osfhandle](win32file.md#win32file_get_osfhandle)
 
@@ -286,253 +286,253 @@ RemoveDirectory / RemoveDirectoryTransacted
 
     Returns the maximum number of CRT io streams.&nbsp;
 
-  - [TransmitFile](win32file.md#win32fileTransmitFile)
+  - [TransmitFile](win32file.md#win32filetransmitfile)
 
     Transmits a file over a socket 
 
 TransmitFile(sock, filehandle, bytes_to_write, bytes_per_send, overlap, flags [, (prepend_buf, postpend_buf)])&nbsp;
 
-  - [ConnectEx](win32file.md#win32fileConnectEx)
+  - [ConnectEx](win32file.md#win32fileconnectex)
 
     Version of connect that uses Overlapped I/O 
 
 ConnectEx(sock, (addr, port), buf, overlap)&nbsp;
 
-  - [AcceptEx](win32file.md#win32fileAcceptEx)
+  - [AcceptEx](win32file.md#win32fileacceptex)
 
     Version of accept that uses Overlapped I/O&nbsp;
 
-  - [CalculateSocketEndPointSize](win32file.md#win32fileCalculateSocketEndPointSize)
+  - [CalculateSocketEndPointSize](win32file.md#win32filecalculatesocketendpointsize)
 
     Calculate how many bytes are needed for the connection endpoints data for a socket.&nbsp;
 
-  - [GetAcceptExSockaddrs](win32file.md#win32fileGetAcceptExSockaddrs)
+  - [GetAcceptExSockaddrs](win32file.md#win32filegetacceptexsockaddrs)
 
     Parses the connection endpoints from the buffer passed into AcceptEx&nbsp;
 
-  - [WSAEventSelect](win32file.md#win32fileWSAEventSelect)
+  - [WSAEventSelect](win32file.md#win32filewsaeventselect)
 
     Specifies an event object to be associated with the supplied set of FD_XXXX network events.&nbsp;
 
-  - [WSAEnumNetworkEvents](win32file.md#win32fileWSAEnumNetworkEvents)
+  - [WSAEnumNetworkEvents](win32file.md#win32filewsaenumnetworkevents)
 
     Return network events that caused the event associated with the socket to be signaled.&nbsp;
 
-  - [WSAAsyncSelect](win32file.md#win32fileWSAAsyncSelect)
+  - [WSAAsyncSelect](win32file.md#win32filewsaasyncselect)
 
     Request windows message notification for the supplied set of FD_XXXX network events.&nbsp;
 
-  - [WSASend](win32file.md#win32fileWSASend)
+  - [WSASend](win32file.md#win32filewsasend)
 
     Winsock send() equivalent function for Overlapped I/O.&nbsp;
 
-  - [WSARecv](win32file.md#win32fileWSARecv)
+  - [WSARecv](win32file.md#win32filewsarecv)
 
     Winsock recv() equivalent function for Overlapped I/O.&nbsp;
 
-  - [BuildCommDCB](win32file.md#win32fileBuildCommDCB)
+  - [BuildCommDCB](win32file.md#win32filebuildcommdcb)
 
     Fills the specified DCB structure with values specified in a device-control string. The device-control string uses the syntax of the mode command&nbsp;
 
-  - [ClearCommError](win32file.md#win32fileClearCommError)
+  - [ClearCommError](win32file.md#win32fileclearcommerror)
 
     retrieves information about a communications error and reports the current status of a communications device.&nbsp;
 
-  - [EscapeCommFunction](win32file.md#win32fileEscapeCommFunction)
+  - [EscapeCommFunction](win32file.md#win32fileescapecommfunction)
 
     directs a specified communications device to perform an extended function.&nbsp;
 
-  - [GetCommState](win32file.md#win32fileGetCommState)
+  - [GetCommState](win32file.md#win32filegetcommstate)
 
     Returns a device-control block (a DCB structure) with the current control settings for a specified communications device.&nbsp;
 
-  - [SetCommState](win32file.md#win32fileSetCommState)
+  - [SetCommState](win32file.md#win32filesetcommstate)
 
     Configures a communications device according to the specifications in a device-control block. 
 
 The function reinitializes all hardware and control settings, but it does not empty output or input queues.&nbsp;
 
-  - [ClearCommBreak](win32file.md#win32fileClearCommBreak)
+  - [ClearCommBreak](win32file.md#win32fileclearcommbreak)
 
     Restores character transmission for a specified communications device and places the transmission line in a nonbreak state&nbsp;
 
-  - [GetCommMask](win32file.md#win32fileGetCommMask)
+  - [GetCommMask](win32file.md#win32filegetcommmask)
 
     Retrieves the value of the event mask for a specified communications device.&nbsp;
 
-  - [SetCommMask](win32file.md#win32fileSetCommMask)
+  - [SetCommMask](win32file.md#win32filesetcommmask)
 
     Sets the value of the event mask for a specified communications device.&nbsp;
 
-  - [GetCommModemStatus](win32file.md#win32fileGetCommModemStatus)
+  - [GetCommModemStatus](win32file.md#win32filegetcommmodemstatus)
 
     Retrieves modem control-register values.&nbsp;
 
-  - [GetCommTimeouts](win32file.md#win32fileGetCommTimeouts)
+  - [GetCommTimeouts](win32file.md#win32filegetcommtimeouts)
 
     Retrieves the time-out parameters for all read and write operations on a specified communications device.&nbsp;
 
-  - [SetCommTimeouts](win32file.md#win32fileSetCommTimeouts)
+  - [SetCommTimeouts](win32file.md#win32filesetcommtimeouts)
 
     Sets the time-out parameters for all read and write operations on a specified communications device.&nbsp;
 
-  - [PurgeComm](win32file.md#win32filePurgeComm)
+  - [PurgeComm](win32file.md#win32filepurgecomm)
 
     Discards all characters from the output or input buffer of a specified communications resource. It can also terminate pending read or write operations on the resource.&nbsp;
 
-  - [SetCommBreak](win32file.md#win32fileSetCommBreak)
+  - [SetCommBreak](win32file.md#win32filesetcommbreak)
 
-    Suspends character transmission for a specified communications device and places the transmission line in a break state until the[win32file::ClearCommBreak](win32file.md#win32fileClearCommBreak)function is called.&nbsp;
+    Suspends character transmission for a specified communications device and places the transmission line in a break state until the[win32file::ClearCommBreak](win32file.md#win32fileclearcommbreak)function is called.&nbsp;
 
-  - [SetupComm](win32file.md#win32fileSetupComm)
+  - [SetupComm](win32file.md#win32filesetupcomm)
 
     Initializes the communications parameters for a specified communications device.&nbsp;
 
-  - [TransmitCommChar](win32file.md#win32fileTransmitCommChar)
+  - [TransmitCommChar](win32file.md#win32filetransmitcommchar)
 
     Transmits a specified character ahead of any pending data in the output buffer of the specified communications device.&nbsp;
 
-  - [WaitCommEvent](win32file.md#win32fileWaitCommEvent)
+  - [WaitCommEvent](win32file.md#win32filewaitcommevent)
 
     Waits for an event to occur for a specified communications device. The set of events that are monitored by this function is contained in the event mask associated with the device handle.&nbsp;
 
-  - [SetVolumeMountPoint](win32file.md#win32fileSetVolumeMountPoint)
+  - [SetVolumeMountPoint](win32file.md#win32filesetvolumemountpoint)
 
     Mounts the specified volume at the specified volume mount point.&nbsp;
 
-  - [DeleteVolumeMountPoint](win32file.md#win32fileDeleteVolumeMountPoint)
+  - [DeleteVolumeMountPoint](win32file.md#win32filedeletevolumemountpoint)
 
     Unmounts the volume from the specified volume mount point.&nbsp;
 
-  - [GetVolumeNameForVolumeMountPoint](win32file.md#win32fileGetVolumeNameForVolumeMountPoint)
+  - [GetVolumeNameForVolumeMountPoint](win32file.md#win32filegetvolumenameforvolumemountpoint)
 
     Returns unique volume name.&nbsp;
 
-  - [GetVolumePathName](win32file.md#win32fileGetVolumePathName)
+  - [GetVolumePathName](win32file.md#win32filegetvolumepathname)
 
     Returns volume mount point for a path&nbsp;
 
-  - [GetVolumePathNamesForVolumeName](win32file.md#win32fileGetVolumePathNamesForVolumeName)
+  - [GetVolumePathNamesForVolumeName](win32file.md#win32filegetvolumepathnamesforvolumename)
 
     Returns mounted paths for a volume&nbsp;
 
-  - [CreateHardLink](win32file.md#win32fileCreateHardLink)
+  - [CreateHardLink](win32file.md#win32filecreatehardlink)
 
     Establishes an NTFS hard link between an existing file and a new file.&nbsp;
 
-  - [CreateSymbolicLink](win32file.md#win32fileCreateSymbolicLink)
+  - [CreateSymbolicLink](win32file.md#win32filecreatesymboliclink)
 
     Creates a symbolic link (reparse point)&nbsp;
 
-  - [EncryptFile](win32file.md#win32fileEncryptFile)
+  - [EncryptFile](win32file.md#win32fileencryptfile)
 
     Encrypts specified file (requires Win2k or higher and NTFS)&nbsp;
 
-  - [DecryptFile](win32file.md#win32fileDecryptFile)
+  - [DecryptFile](win32file.md#win32filedecryptfile)
 
     Decrypts specified file (requires Win2k or higher and NTFS)&nbsp;
 
-  - [EncryptionDisable](win32file.md#win32fileEncryptionDisable)
+  - [EncryptionDisable](win32file.md#win32fileencryptiondisable)
 
     Enables/disables encryption for a directory (requires Win2k or higher and NTFS)&nbsp;
 
-  - [FileEncryptionStatus](win32file.md#win32fileFileEncryptionStatus)
+  - [FileEncryptionStatus](win32file.md#win32filefileencryptionstatus)
 
     retrieves the encryption status of the specified file.&nbsp;
 
-  - [QueryUsersOnEncryptedFile](win32file.md#win32fileQueryUsersOnEncryptedFile)
+  - [QueryUsersOnEncryptedFile](win32file.md#win32filequeryusersonencryptedfile)
 
     Returns list of users for an encrypted file as tuples of (SID, certificate hash blob, display info)&nbsp;
 
-  - [QueryRecoveryAgentsOnEncryptedFile](win32file.md#win32fileQueryRecoveryAgentsOnEncryptedFile)
+  - [QueryRecoveryAgentsOnEncryptedFile](win32file.md#win32filequeryrecoveryagentsonencryptedfile)
 
     Lists recovery agents for file as a tuple of tuples.&nbsp;
 
-  - [RemoveUsersFromEncryptedFile](win32file.md#win32fileRemoveUsersFromEncryptedFile)
+  - [RemoveUsersFromEncryptedFile](win32file.md#win32fileremoveusersfromencryptedfile)
 
     Removes specified certificates from file - if certificate is not found, it is ignored&nbsp;
 
-  - [AddUsersToEncryptedFile](win32file.md#win32fileAddUsersToEncryptedFile)
+  - [AddUsersToEncryptedFile](win32file.md#win32fileadduserstoencryptedfile)
 
     Allows user identified by SID and EFS certificate access to decrypt specified file&nbsp;
 
-  - [DuplicateEncryptionInfoFile](win32file.md#win32fileDuplicateEncryptionInfoFile)
+  - [DuplicateEncryptionInfoFile](win32file.md#win32fileduplicateencryptioninfofile)
 
     Duplicates EFS encryption from one file to another&nbsp;
 
-  - [BackupRead](win32file.md#win32fileBackupRead)
+  - [BackupRead](win32file.md#win32filebackupread)
 
     Reads streams of data from a file&nbsp;
 
-  - [BackupSeek](win32file.md#win32fileBackupSeek)
+  - [BackupSeek](win32file.md#win32filebackupseek)
 
     Seeks forward in a file stream&nbsp;
 
-  - [BackupWrite](win32file.md#win32fileBackupWrite)
+  - [BackupWrite](win32file.md#win32filebackupwrite)
 
     Restores file data&nbsp;
 
-  - [SetFileShortName](win32file.md#win32fileSetFileShortName)
+  - [SetFileShortName](win32file.md#win32filesetfileshortname)
 
     Set the 8.3 name of a file&nbsp;
 
-  - [CopyFileEx](win32file.md#win32fileCopyFileEx)
+  - [CopyFileEx](win32file.md#win32filecopyfileex)
 
     Restartable file copy with optional progress routine&nbsp;
 
-  - [MoveFileWithProgress](win32file.md#win32fileMoveFileWithProgress)
+  - [MoveFileWithProgress](win32file.md#win32filemovefilewithprogress)
 
     Moves a file, and reports progress to a callback function&nbsp;
 
-  - [ReplaceFile](win32file.md#win32fileReplaceFile)
+  - [ReplaceFile](win32file.md#win32filereplacefile)
 
     Replaces one file with another&nbsp;
 
-  - [OpenEncryptedFileRaw](win32file.md#win32fileOpenEncryptedFileRaw)
+  - [OpenEncryptedFileRaw](win32file.md#win32fileopenencryptedfileraw)
 
     Initiates a backup or restore operation on an encrypted file&nbsp;
 
-  - [ReadEncryptedFileRaw](win32file.md#win32fileReadEncryptedFileRaw)
+  - [ReadEncryptedFileRaw](win32file.md#win32filereadencryptedfileraw)
 
     Reads the encrypted bytes of a file for backup and restore purposes&nbsp;
 
-  - [WriteEncryptedFileRaw](win32file.md#win32fileWriteEncryptedFileRaw)
+  - [WriteEncryptedFileRaw](win32file.md#win32filewriteencryptedfileraw)
 
     Writes raw bytes to an encrypted file&nbsp;
 
-  - [CloseEncryptedFileRaw](win32file.md#win32fileCloseEncryptedFileRaw)
+  - [CloseEncryptedFileRaw](win32file.md#win32filecloseencryptedfileraw)
 
-    Frees a context created by[win32file::OpenEncryptedFileRaw](win32file.md#win32fileOpenEncryptedFileRaw)&nbsp;
+    Frees a context created by[win32file::OpenEncryptedFileRaw](win32file.md#win32fileopenencryptedfileraw)&nbsp;
 
-  - [CreateFileW](win32file.md#win32fileCreateFileW)
+  - [CreateFileW](win32file.md#win32filecreatefilew)
 
-    Unicode version of CreateFile - see[win32file::CreateFile](win32file.md#win32fileCreateFile)for more information.&nbsp;
+    Unicode version of CreateFile - see[win32file::CreateFile](win32file.md#win32filecreatefile)for more information.&nbsp;
 
-  - [DeleteFileW](win32file.md#win32fileDeleteFileW)
+  - [DeleteFileW](win32file.md#win32filedeletefilew)
 
     Deletes a file (Unicode version)&nbsp;
 
-  - [GetFileAttributesEx](win32file.md#win32fileGetFileAttributesEx)
+  - [GetFileAttributesEx](win32file.md#win32filegetfileattributesex)
 
     Retrieves attributes for a specified file or directory.&nbsp;
 
-  - [SetFileAttributesW](win32file.md#win32fileSetFileAttributesW)
+  - [SetFileAttributesW](win32file.md#win32filesetfileattributesw)
 
     Sets a file's attributes&nbsp;
 
-  - [CreateDirectoryExW](win32file.md#win32fileCreateDirectoryExW)
+  - [CreateDirectoryExW](win32file.md#win32filecreatedirectoryexw)
 
     Creates a directory (Unicode version)&nbsp;
 
-  - [RemoveDirectory](win32file.md#win32fileRemoveDirectory)
+  - [RemoveDirectory](win32file.md#win32fileremovedirectory)
 
     Removes an existing directory&nbsp;
 
-  - [FindFilesW](win32file.md#win32fileFindFilesW)
+  - [FindFilesW](win32file.md#win32filefindfilesw)
 
     Retrieves a list of matching filenames, using the Windows Unicode API.  An interface to the API FindFirstFileW/FindNextFileW/Find close functions.&nbsp;
 
-  - [FindFilesIterator](win32file.md#win32fileFindFilesIterator)
+  - [FindFilesIterator](win32file.md#win32filefindfilesiterator)
 
     Returns an interator based on 
 
@@ -540,55 +540,55 @@ FindFirstFile/FindNextFile. Similar to **win32file::FindFiles** , but
 
 avoids the creation of the list for huge directories.&nbsp;
 
-  - [FindStreams](win32file.md#win32fileFindStreams)
+  - [FindStreams](win32file.md#win32filefindstreams)
 
     List the data streams for a file&nbsp;
 
-  - [FindFileNames](win32file.md#win32fileFindFileNames)
+  - [FindFileNames](win32file.md#win32filefindfilenames)
 
     Enumerates hard links that point to specified file&nbsp;
 
-  - [GetFinalPathNameByHandle](win32file.md#win32fileGetFinalPathNameByHandle)
+  - [GetFinalPathNameByHandle](win32file.md#win32filegetfinalpathnamebyhandle)
 
     Returns the file name for an open file handle&nbsp;
 
-  - [SfcGetNextProtectedFile](win32file.md#win32fileSfcGetNextProtectedFile)
+  - [SfcGetNextProtectedFile](win32file.md#win32filesfcgetnextprotectedfile)
 
     Returns list of protected operating system files&nbsp;
 
-  - [SfcIsFileProtected](win32file.md#win32fileSfcIsFileProtected)
+  - [SfcIsFileProtected](win32file.md#win32filesfcisfileprotected)
 
     Checks if a file is protected&nbsp;
 
-  - [GetLongPathName](win32file.md#win32fileGetLongPathName)
+  - [GetLongPathName](win32file.md#win32filegetlongpathname)
 
     Retrieves the long path for a short path (8.3 filename)&nbsp;
 
-  - [GetFullPathName](win32file.md#win32fileGetFullPathName)
+  - [GetFullPathName](win32file.md#win32filegetfullpathname)
 
     Returns full path for path passed in&nbsp;
 
-  - [Wow64DisableWow64FsRedirection](win32file.md#win32fileWow64DisableWow64FsRedirection)
+  - [Wow64DisableWow64FsRedirection](win32file.md#win32filewow64disablewow64fsredirection)
 
     Disables file system redirection for 32-bit processes running on a 64-bit system&nbsp;
 
-  - [Wow64RevertWow64FsRedirection](win32file.md#win32fileWow64RevertWow64FsRedirection)
+  - [Wow64RevertWow64FsRedirection](win32file.md#win32filewow64revertwow64fsredirection)
 
     Reenables file system redirection for 32-bit processes running on a 64-bit system&nbsp;
 
-  - [GetFileInformationByHandleEx](win32file.md#win32fileGetFileInformationByHandleEx)
+  - [GetFileInformationByHandleEx](win32file.md#win32filegetfileinformationbyhandleex)
 
     Retrieves extended file information for an open file handle.&nbsp;
 
-  - [SetFileInformationByHandle](win32file.md#win32fileSetFileInformationByHandle)
+  - [SetFileInformationByHandle](win32file.md#win32filesetfileinformationbyhandle)
 
     Changes file characteristics by file handle&nbsp;
 
-  - [ReOpenFile](win32file.md#win32fileReOpenFile)
+  - [ReOpenFile](win32file.md#win32filereopenfile)
 
     Creates a new handle to an open file&nbsp;
 
-  - [OpenFileById](win32file.md#win32fileOpenFileById)
+  - [OpenFileById](win32file.md#win32fileopenfilebyid)
 
     Opens a file by File Id or Object Id&nbsp;
 
@@ -612,14 +612,14 @@ Version of accept that uses Overlapped I/O
 
     Buffer to read incoming data and connection point information into. This buffer MUST be big enough to recieve your connection endpoints... AF_INET sockets need to be at least 64 bytes. The correct minimum of the buffer is determined by the protocol family that the listening socket is using.
 
-  -  *ol* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *ol* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
 #### Comments
 In order to make sure the connection has been accepted, either use the hEvent in PyOVERLAPPED, GetOverlappedResult, or GetQueuedCompletionStatus.
 To use this with I/O completion ports, don't forget to attach sAccepting to your completion port.
-Pass a buffer of exactly the size returned by[win32file::CalculateSocketEndPointSize](win32file.md#win32fileCalculateSocketEndPointSize)to have AcceptEx return without reading any bytes from the remote connection.
+Pass a buffer of exactly the size returned by[win32file::CalculateSocketEndPointSize](win32file.md#win32filecalculatesocketendpointsize)to have AcceptEx return without reading any bytes from the remote connection.
 
 #### Example
 To have sAccepting inherit the properties of sListening, you need to do the following after a connection is successfully accepted
@@ -645,7 +645,7 @@ Allows user identified by SID and EFS certificate access to decrypt specified fi
 
     File that additional users will be allowed to decrypt
 
-  -  *pUsers* : (([PySID](README.md#PySID),string,int),...)
+  -  *pUsers* : (([PySID](README.md#pysid),string,int),...)
 
     Sequence representing 
 
@@ -657,8 +657,8 @@ this data), and encoding type (usually 1 for X509_ASN_ENCODING)
 
 ## [win32file](README.md#win32file).AllocateReadBuffer
 
-[PyOVERLAPPEDReadBuffer](README.md#PyOVERLAPPEDReadBuffer)= **AllocateReadBuffer( *bufSize* ** )
-Allocates a buffer which can be used with an overlapped Read operation using[win32file::ReadFile](win32file.md#win32fileReadFile)
+[PyOVERLAPPEDReadBuffer](README.md#pyoverlappedreadbuffer)= **AllocateReadBuffer( *bufSize* ** )
+Allocates a buffer which can be used with an overlapped Read operation using[win32file::ReadFile](win32file.md#win32filereadfile)
 
 #### Parameters
 
@@ -680,7 +680,7 @@ Reads streams of data from a file
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     File handle opened by CreateFile
 
@@ -719,7 +719,7 @@ Seeks forward in a file stream
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     File handle used by a BackupRead operation
 
@@ -746,7 +746,7 @@ Restores file data
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     File handle opened by CreateFile
 
@@ -775,7 +775,7 @@ Returns number of bytes written and context pointer for next operation
 
 ## [win32file](README.md#win32file).BuildCommDCB
 
-[PyDCB](README.md#PyDCB)= **BuildCommDCB( *def*  *, dcb* ** )
+[PyDCB](README.md#pydcb)= **BuildCommDCB( *def*  *, dcb* ** )
 Fills the specified DCB structure with values specified in a device-control string. The device-control string uses the syntax of the mode command
 
 #### Parameters
@@ -785,7 +785,7 @@ Fills the specified DCB structure with values specified in a device-control stri
 
     device-control string
 
-  -  *dcb* :[PyDCB](README.md#PyDCB)
+  -  *dcb* :[PyDCB](README.md#pydcb)
 
     The device-control block
 
@@ -871,7 +871,7 @@ Clears the RTS (request-to-send) signal.
 
 ## [win32file](README.md#win32file).COMSTAT
 
-[PyCOMSTAT](README.md#PyCOMSTAT)= **COMSTAT(** )
+[PyCOMSTAT](README.md#pycomstat)= **COMSTAT(** )
 Creates a new COMSTAT object
 
 ## COPY_FILE_ALLOW_DECRYPTED_DESTINATION
@@ -925,7 +925,7 @@ Calculate how many bytes are needed for the connection endpoints data for a sock
 #### Comments
 This function allows you to determine the minumum buffer size 
 
-which can be passed to[win32file::AcceptEx](win32file.md#win32fileAcceptEx)
+which can be passed to[win32file::AcceptEx](win32file.md#win32fileacceptex)
 
 ## [win32file](README.md#win32file).CancelIo
 
@@ -935,7 +935,7 @@ Cancels pending IO requests for the object.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle being cancelled.
 
@@ -947,33 +947,33 @@ Restores character transmission for a specified communications device and places
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
 ## [win32file](README.md#win32file).ClearCommError
 
-int,[PyCOMSTAT](README.md#PyCOMSTAT)= **ClearCommError( *[PyHANDLE](README.md#PyHANDLE)* ** )
+int,[PyCOMSTAT](README.md#pycomstat)= **ClearCommError( *[PyHANDLE](README.md#pyhandle)* ** )
 retrieves information about a communications error and reports the current status of a communications device.
 
 #### Parameters
 
 
-  -  *[PyHANDLE](README.md#PyHANDLE)* : handle
+  -  *[PyHANDLE](README.md#pyhandle)* : handle
 
     A handle to the device.
 
 ## [win32file](README.md#win32file).CloseEncryptedFileRaw
 
  **CloseEncryptedFileRaw( *Context* ** )
-Frees a context created by[win32file::OpenEncryptedFileRaw](win32file.md#win32fileOpenEncryptedFileRaw)
+Frees a context created by[win32file::OpenEncryptedFileRaw](win32file.md#win32fileopenencryptedfileraw)
 
 #### Parameters
 
 
   -  *Context* : PyCObject
 
-    Context object returned from[win32file::OpenEncryptedFileRaw](win32file.md#win32fileOpenEncryptedFileRaw)
+    Context object returned from[win32file::OpenEncryptedFileRaw](win32file.md#win32fileopenencryptedfileraw)
 
 #### Comments
 Only available on Windows 2000 or later
@@ -986,7 +986,7 @@ Closes an open handle.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)/int
+  -  *handle* :[PyHANDLE](README.md#pyhandle)/int
 
     A previously opened handle.
 
@@ -1008,7 +1008,7 @@ ConnectEx(sock, (addr, port), buf, overlap)
 
     Address to connect to (host, port)
 
-  -  *Overlapped* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *Overlapped* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
@@ -1034,11 +1034,11 @@ Copies a file
 #### Parameters
 
 
-  -  *from* :[PyUnicode](README.md#PyUnicode)
+  -  *from* :[PyUnicode](README.md#pyunicode)
 
     The name of the file to copy from
 
-  -  *to* :[PyUnicode](README.md#PyUnicode)
+  -  *to* :[PyUnicode](README.md#pyunicode)
 
     The name of the file to copy to
 
@@ -1054,15 +1054,15 @@ Restartable file copy with optional progress routine
 #### Parameters
 
 
-  -  *ExistingFileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *ExistingFileName* :[PyUNICODE](README.md#pyunicode)
 
     File to be copied
 
-  -  *NewFileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *NewFileName* :[PyUNICODE](README.md#pyunicode)
 
     Place to which it will be copied
 
-  -  *ProgressRoutine=None* :[CopyProgressRoutine](README.md#CopyProgressRoutine)
+  -  *ProgressRoutine=None* :[CopyProgressRoutine](README.md#copyprogressroutine)
 
     A python function that receives progress updates, can be None
 
@@ -1078,9 +1078,9 @@ Restartable file copy with optional progress routine
 
     Combination of COPY_FILE_* flags
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction)
+    Handle to a transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
 #### Comments
 Accepts keyword args.
@@ -1089,9 +1089,9 @@ On Vista and later, the Transaction arg can be passed to invoke CopyFileTransact
 #### Win32 API References
 
 
-  - Search for *CopyFileEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CopyFileEx),[google](README.md#http://www.google.com/search?q=CopyFileEx)or[google groups](README.md#http://groups.google.com/groups?q=CopyFileEx).
+  - Search for *CopyFileEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=copyfileex),[google](README.md#http://www.google.com/search?q=copyfileex)or[google groups](README.md#http://groups.google.com/groups?q=copyfileex).
 
-  - Search for *CopyFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CopyFileTransacted),[google](README.md#http://www.google.com/search?q=CopyFileTransacted)or[google groups](README.md#http://groups.google.com/groups?q=CopyFileTransacted).
+  - Search for *CopyFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=copyfiletransacted),[google](README.md#http://www.google.com/search?q=copyfiletransacted)or[google groups](README.md#http://groups.google.com/groups?q=copyfiletransacted).
 
 ## [win32file](README.md#win32file).CopyFileW
 
@@ -1101,11 +1101,11 @@ Copies a file (NT/2000 Unicode specific version)
 #### Parameters
 
 
-  -  *from* :[PyUnicode](README.md#PyUnicode)
+  -  *from* :[PyUnicode](README.md#pyunicode)
 
     The name of the file to copy from
 
-  -  *to* :[PyUnicode](README.md#PyUnicode)
+  -  *to* :[PyUnicode](README.md#pyunicode)
 
     The name of the file to copy to
 
@@ -1121,11 +1121,11 @@ Creates a directory
 #### Parameters
 
 
-  -  *name* :[PyUnicode](README.md#PyUnicode)
+  -  *name* :[PyUnicode](README.md#pyunicode)
 
     The name of the directory to create
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
@@ -1137,15 +1137,15 @@ Creates a directory
 #### Parameters
 
 
-  -  *templateName* :[PyUnicode](README.md#PyUnicode)
+  -  *templateName* :[PyUnicode](README.md#pyunicode)
 
     Specifies the path of the directory to use as a template when creating the new directory.
 
-  -  *newDirectory* :[PyUnicode](README.md#PyUnicode)
+  -  *newDirectory* :[PyUnicode](README.md#pyunicode)
 
     Specifies the name of the new directory
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
@@ -1157,21 +1157,21 @@ Creates a directory (Unicode version)
 #### Parameters
 
 
-  -  *TemplateDirectory* :[PyUnicode](README.md#PyUnicode)
+  -  *TemplateDirectory* :[PyUnicode](README.md#pyunicode)
 
     Directory to use as a template, can be None
 
-  -  *NewDirectory* :[PyUnicode](README.md#PyUnicode)
+  -  *NewDirectory* :[PyUnicode](README.md#pyunicode)
 
     Name of directory to be created
 
-  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Security for new directory (optional)
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction (optional).  See[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction).
+    Handle to a transaction (optional).  See[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction).
 
 #### Comments
 If a transaction handle is passed, CreateDirectoryTransacted will be called (requires Vista or later).
@@ -1180,9 +1180,9 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-  - Search for *CreateDirectoryEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CreateDirectoryEx),[google](README.md#http://www.google.com/search?q=CreateDirectoryEx)or[google groups](README.md#http://groups.google.com/groups?q=CreateDirectoryEx).
+  - Search for *CreateDirectoryEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createdirectoryex),[google](README.md#http://www.google.com/search?q=createdirectoryex)or[google groups](README.md#http://groups.google.com/groups?q=createdirectoryex).
 
-  - Search for *CreateDirectoryTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CreateDirectoryTransacted),[google](README.md#http://www.google.com/search?q=CreateDirectoryTransacted)or[google groups](README.md#http://groups.google.com/groups?q=CreateDirectoryTransacted).
+  - Search for *CreateDirectoryTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createdirectorytransacted),[google](README.md#http://www.google.com/search?q=createdirectorytransacted)or[google groups](README.md#http://groups.google.com/groups?q=createdirectorytransacted).
 
 ## [win32file](README.md#win32file).CreateDirectoryW
 
@@ -1192,23 +1192,23 @@ Creates a directory (NT/2000 Unicode specific version)
 #### Parameters
 
 
-  -  *name* :[PyUnicode](README.md#PyUnicode)
+  -  *name* :[PyUnicode](README.md#pyunicode)
 
     The name of the directory to create
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
 ## [win32file](README.md#win32file).CreateFile
 
-[PyHANDLE](README.md#PyHANDLE)= **CreateFile( *fileName*  *, desiredAccess*  *, shareMode*  *, attributes*  *, CreationDisposition*  *, flagsAndAttributes*  *, hTemplateFile* ** )
+[PyHANDLE](README.md#pyhandle)= **CreateFile( *fileName*  *, desiredAccess*  *, shareMode*  *, attributes*  *, CreationDisposition*  *, flagsAndAttributes*  *, hTemplateFile* ** )
 Creates or opens the a file or other object and returns a handle that can be used to access the object.
 
 #### Parameters
 
 
-  -  *fileName* :[PyUnicode](README.md#PyUnicode)
+  -  *fileName* :[PyUnicode](README.md#pyunicode)
 
     The name of the file
 
@@ -1226,7 +1226,7 @@ Specifies the type of access to the object. An application can obtain read acces
 To share the object, use a combination of one or more of the following values:
 
  **Value**  **Meaning** FILE_SHARE_DELETEWindows NT: Subsequent open operations on the object will succeed only if delete access is requested.FILE_SHARE_READSubsequent open operations on the object will succeed only if read access is requested.FILE_SHARE_WRITESubsequent open operations on the object will succeed only if write access is requested.
-  -  *attributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *attributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
@@ -1241,7 +1241,7 @@ See the Remarks section for a discussion of why you should use the OPEN_EXISTING
 
     file attributes
 
-  -  *hTemplateFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hTemplateFile* :[PyHANDLE](README.md#pyhandle)
 
     Specifies a handle with GENERIC_READ access to a template file. The template file supplies file attributes and extended attributes for the file being created.   Under Win95, this must be 0, else an exception will be raised.
 
@@ -1257,13 +1257,13 @@ directories (open only)
 
 ## [win32file](README.md#win32file).CreateFileW
 
-[PyHANDLE](README.md#PyHANDLE)= **CreateFileW( *FileName*  *, DesiredAccess*  *, ShareMode*  *, SecurityAttributes*  *, CreationDisposition*  *, FlagsAndAttributes*  *, TemplateFile*  *, Transaction*  *, MiniVersion*  *, ExtendedParameter* ** )
-Unicode version of CreateFile - see[win32file::CreateFile](win32file.md#win32fileCreateFile)for more information.
+[PyHANDLE](README.md#pyhandle)= **CreateFileW( *FileName*  *, DesiredAccess*  *, ShareMode*  *, SecurityAttributes*  *, CreationDisposition*  *, FlagsAndAttributes*  *, TemplateFile*  *, Transaction*  *, MiniVersion*  *, ExtendedParameter* ** )
+Unicode version of CreateFile - see[win32file::CreateFile](win32file.md#win32filecreatefile)for more information.
 
 #### Parameters
 
 
-  -  *FileName* :[PyUnicode](README.md#PyUnicode)
+  -  *FileName* :[PyUnicode](README.md#pyunicode)
 
     Name of file
 
@@ -1275,7 +1275,7 @@ Unicode version of CreateFile - see[win32file::CreateFile](win32file.md#win32fil
 
     Combination of FILE_SHARE_READ, FILE_SHARE_WRITE, FILE_SHARE_DELETE
 
-  -  *SecurityAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies security descriptor and handle inheritance, can be None
 
@@ -1287,13 +1287,13 @@ Unicode version of CreateFile - see[win32file::CreateFile](win32file.md#win32fil
 
     Combination of FILE_ATTRIBUTE_* and FILE_FLAG_* flags
 
-  -  *TemplateFile=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *TemplateFile=None* :[PyHANDLE](README.md#pyhandle)
 
     Handle to file to be used as template, can be None
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to the transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction)
+    Handle to the transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
   -  *MiniVersion=None* : int
 
@@ -1310,9 +1310,9 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-  - Search for *CreateFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CreateFile),[google](README.md#http://www.google.com/search?q=CreateFile)or[google groups](README.md#http://groups.google.com/groups?q=CreateFile).
+  - Search for *CreateFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createfile),[google](README.md#http://www.google.com/search?q=createfile)or[google groups](README.md#http://groups.google.com/groups?q=createfile).
 
-  - Search for *CreateFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CreateFileTransacted),[google](README.md#http://www.google.com/search?q=CreateFileTransacted)or[google groups](README.md#http://groups.google.com/groups?q=CreateFileTransacted).
+  - Search for *CreateFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createfiletransacted),[google](README.md#http://www.google.com/search?q=createfiletransacted)or[google groups](README.md#http://groups.google.com/groups?q=createfiletransacted).
 
 ## [win32file](README.md#win32file).CreateHardLink
 
@@ -1322,21 +1322,21 @@ Establishes an NTFS hard link between an existing file and a new file.
 #### Parameters
 
 
-  -  *FileName* :[PyUnicode](README.md#PyUnicode)
+  -  *FileName* :[PyUnicode](README.md#pyunicode)
 
     The name of the new directory entry to be created.
 
-  -  *ExistingFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *ExistingFileName* :[PyUnicode](README.md#pyunicode)
 
     The name of the existing file to which the new link will point.
 
-  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Optional SECURITY_ATTRIBUTES object. MSDN describes this parameter as reserved, so use only None
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction, as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction)
+    Handle to a transaction, as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
 #### Comments
 An NTFS hard link is similar to a POSIX hard link.
@@ -1357,17 +1357,17 @@ Usage
 
 ## [win32file](README.md#win32file).CreateIoCompletionPort
 
-[PyHANDLE](README.md#PyHANDLE)= **CreateIoCompletionPort( *handle*  *, existing*  *, completionKey*  *, numThreads* ** )
+[PyHANDLE](README.md#pyhandle)= **CreateIoCompletionPort( *handle*  *, existing*  *, completionKey*  *, numThreads* ** )
 Can associate an instance of an opened file with a newly created or an existing input/output (I/O) completion port; or it can create an I/O completion port without associating it with a file.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     file handle to associate with the I/O completion port
 
-  -  *existing* :[PyHANDLE](README.md#PyHANDLE)
+  -  *existing* :[PyHANDLE](README.md#pyhandle)
 
     handle to the I/O completion port
 
@@ -1386,7 +1386,7 @@ of this function will be that same handle.  See MSDN for more details.
 
 ## [win32file](README.md#win32file).CreateMailslot
 
-[PyHANDLE](README.md#PyHANDLE)= **CreateMailslot( *Name*  *, MaxMessageSize*  *, ReadTimeout*  *, SecurityAttributes* ** )
+[PyHANDLE](README.md#pyhandle)= **CreateMailslot( *Name*  *, MaxMessageSize*  *, ReadTimeout*  *, SecurityAttributes* ** )
 Creates a mailslot on the local machine
 
 #### Parameters
@@ -1404,14 +1404,14 @@ Creates a mailslot on the local machine
 
     Timeout in milliseconds.  Use -1 for no timeout.
 
-  -  *SecurityAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Determines if returned handle is inheritable, can be None
 
 #### Win32 API References
 
 
-  - Search for *CreateMailslot* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CreateMailslot),[google](README.md#http://www.google.com/search?q=CreateMailslot)or[google groups](README.md#http://groups.google.com/groups?q=CreateMailslot).
+  - Search for *CreateMailslot* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createmailslot),[google](README.md#http://www.google.com/search?q=createmailslot)or[google groups](README.md#http://groups.google.com/groups?q=createmailslot).
 
 ## [win32file](README.md#win32file).CreateSymbolicLink
 
@@ -1421,11 +1421,11 @@ Creates a symbolic link (reparse point)
 #### Parameters
 
 
-  -  *SymlinkFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *SymlinkFileName* :[PyUnicode](README.md#pyunicode)
 
     Path of the symbolic link to be created
 
-  -  *TargetFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *TargetFileName* :[PyUnicode](README.md#pyunicode)
 
     The name of file to which link will point
 
@@ -1433,9 +1433,9 @@ Creates a symbolic link (reparse point)
 
     SYMBOLIC_LINK_FLAG_DIRECTORY is only defined flag
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction, as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction)
+    Handle to a transaction, as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
 #### Comments
 This method only exists on Vista and later.
@@ -1445,7 +1445,7 @@ If the Transaction parameter is passed in, CreateSymbolicLinkTransacted will be 
 
 ## [win32file](README.md#win32file).DCB
 
-[PyDCB](README.md#PyDCB)= **DCB(** )
+[PyDCB](README.md#pydcb)= **DCB(** )
 Creates a new DCB object
 
 ## DRIVE_CDROM
@@ -1512,11 +1512,11 @@ Lets an application define, redefine, or delete MS-DOS device names.
 
     flags specifying aspects of device definition
 
-  -  *deviceName* :[PyUnicode](README.md#PyUnicode)
+  -  *deviceName* :[PyUnicode](README.md#pyunicode)
 
     MS-DOS device name string
 
-  -  *targetPath* :[PyUnicode](README.md#PyUnicode)
+  -  *targetPath* :[PyUnicode](README.md#pyunicode)
 
     MS-DOS or path string for 32-bit Windows.
 
@@ -1532,11 +1532,11 @@ Lets an application define, redefine, or delete MS-DOS device names. (NT/2000 Un
 
     flags specifying aspects of device definition
 
-  -  *deviceName* :[PyUnicode](README.md#PyUnicode)
+  -  *deviceName* :[PyUnicode](README.md#pyunicode)
 
     MS-DOS device name string
 
-  -  *targetPath* :[PyUnicode](README.md#PyUnicode)
+  -  *targetPath* :[PyUnicode](README.md#pyunicode)
 
     MS-DOS or path string for 32-bit Windows.
 
@@ -1548,7 +1548,7 @@ Deletes a file.
 #### Parameters
 
 
-  -  *fileName* :[PyUnicode](README.md#PyUnicode)
+  -  *fileName* :[PyUnicode](README.md#pyunicode)
 
     The filename to delete
 
@@ -1560,13 +1560,13 @@ Deletes a file (Unicode version)
 #### Parameters
 
 
-  -  *FileName* :[PyUnicode](README.md#PyUnicode)
+  -  *FileName* :[PyUnicode](README.md#pyunicode)
 
     Name of file to be deleted
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Transaction handle as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction)
+    Transaction handle as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
 #### Comments
 If a transaction handle is passed in, DeleteFileTransacted will be called (requires Windows Vista).
@@ -1575,9 +1575,9 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-  - Search for *DeleteFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DeleteFile),[google](README.md#http://www.google.com/search?q=DeleteFile)or[google groups](README.md#http://groups.google.com/groups?q=DeleteFile).
+  - Search for *DeleteFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=deletefile),[google](README.md#http://www.google.com/search?q=deletefile)or[google groups](README.md#http://groups.google.com/groups?q=deletefile).
 
-  - Search for *DeleteFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DeleteFileTransacted),[google](README.md#http://www.google.com/search?q=DeleteFileTransacted)or[google groups](README.md#http://groups.google.com/groups?q=DeleteFileTransacted).
+  - Search for *DeleteFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=deletefiletransacted),[google](README.md#http://www.google.com/search?q=deletefiletransacted)or[google groups](README.md#http://groups.google.com/groups?q=deletefiletransacted).
 
 ## [win32file](README.md#win32file).DeleteVolumeMountPoint
 
@@ -1587,7 +1587,7 @@ Unmounts the volume from the specified volume mount point.
 #### Parameters
 
 
-  -  *VolumeMountPoint* :[PyUnicode](README.md#PyUnicode)
+  -  *VolumeMountPoint* :[PyUnicode](README.md#pyunicode)
 
     The mount point to delete - must have a trailing backslash.
 
@@ -1608,7 +1608,7 @@ Sends a control code to a device or file system driver
 #### Parameters
 
 
-  -  *Device* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Device* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a file, device, or volume
 
@@ -1624,9 +1624,9 @@ Sends a control code to a device or file system driver
 
     Size of the buffer to allocate for output, or a writeable buffer 
 
-as returned by[win32file::AllocateReadBuffer](win32file.md#win32fileAllocateReadBuffer).
+as returned by[win32file::AllocateReadBuffer](win32file.md#win32fileallocatereadbuffer).
 
-  -  *Overlapped=None* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *Overlapped=None* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped object for async operations.  Device 
 
@@ -1655,11 +1655,11 @@ Duplicates EFS encryption from one file to another
 #### Parameters
 
 
-  -  *SrcFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *SrcFileName* :[PyUnicode](README.md#pyunicode)
 
     Encrypted file to read EFS metadata from
 
-  -  *DstFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *DstFileName* :[PyUnicode](README.md#pyunicode)
 
     File to be encrypted using EFS data from source file
 
@@ -1671,7 +1671,7 @@ Duplicates EFS encryption from one file to another
 
     File attributes
 
-  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies security for destination file
 
@@ -1682,7 +1682,7 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-  - Search for *DuplicateEncryptionInfoFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DuplicateEncryptionInfoFile),[google](README.md#http://www.google.com/search?q=DuplicateEncryptionInfoFile)or[google groups](README.md#http://groups.google.com/groups?q=DuplicateEncryptionInfoFile).
+  - Search for *DuplicateEncryptionInfoFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=duplicateencryptioninfofile),[google](README.md#http://www.google.com/search?q=duplicateencryptioninfofile)or[google groups](README.md#http://groups.google.com/groups?q=duplicateencryptioninfofile).
 
 ## EVENPARITY
  **const win32file.EVENPARITY;** 
@@ -1760,7 +1760,7 @@ directs a specified communications device to perform an extended function.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -1973,7 +1973,7 @@ Decodes a PyFILE_NOTIFY_INFORMATION buffer.
 will be smaller than the size of the buffer (and certainly never greater!)
 
 #### Comments
-See[win32file::ReadDirectoryChangesW](win32file.md#win32fileReadDirectoryChangesW)for more information.
+See[win32file::ReadDirectoryChangesW](win32file.md#win32filereaddirectorychangesw)for more information.
 
 ## FILE_READ_ONLY
  **const win32file.FILE_READ_ONLY;** 
@@ -2137,17 +2137,17 @@ Closes a handle.
 
 ## [win32file](README.md#win32file).FindFileNames
 
-[[PyUnicode](README.md#PyUnicode),...] = **FindFileNames( *FileName*  *, Transaction* ** )
+[[PyUnicode](README.md#pyunicode),...] = **FindFileNames( *FileName*  *, Transaction* ** )
 Enumerates hard links that point to specified file
 
 #### Parameters
 
 
-  -  *FileName* :[PyUnicode](README.md#PyUnicode)
+  -  *FileName* :[PyUnicode](README.md#pyunicode)
 
     Name of file for which to find links
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a transaction, can be None
 
@@ -2172,7 +2172,7 @@ avoids the creation of the list for huge directories.
 
     A string that specifies a valid directory or path and filename, which can contain wildcard characters (* and ?).
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a transaction, can be None. 
 
@@ -2185,7 +2185,7 @@ FindFirstFileTransacted will be called if a transaction handle is passed in.
 #### Return Value
 The result is a Python iterator, with each next() method 
 
-returning a[WIN32_FIND_DATA](WIN32.md#WIN32FIND_DATA)tuple.
+returning a[WIN32_FIND_DATA](WIN32.md#win32find_data)tuple.
 
 ## [win32file](README.md#win32file).FindFilesW
 
@@ -2199,9 +2199,9 @@ Retrieves a list of matching filenames, using the Windows Unicode API.  An inter
 
     A string that specifies a valid directory or path and filename, which can contain wildcard characters (* and ?).
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Transaction handle as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction).  Can be None. 
+    Transaction handle as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction).  Can be None. 
 
 If this parameter is not None, FindFirstFileTransacted will be called to perform a transacted search
 
@@ -2212,16 +2212,16 @@ FindFirstFileTransacted will be called if a transaction handle is passed in.
 #### Win32 API References
 
 
-  - Search for *FindFirstFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindFirstFile),[google](README.md#http://www.google.com/search?q=FindFirstFile)or[google groups](README.md#http://groups.google.com/groups?q=FindFirstFile).
+  - Search for *FindFirstFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirstfile),[google](README.md#http://www.google.com/search?q=findfirstfile)or[google groups](README.md#http://groups.google.com/groups?q=findfirstfile).
 
-  - Search for *FindFirstFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindFirstFileTransacted),[google](README.md#http://www.google.com/search?q=FindFirstFileTransacted)or[google groups](README.md#http://groups.google.com/groups?q=FindFirstFileTransacted).
+  - Search for *FindFirstFileTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirstfiletransacted),[google](README.md#http://www.google.com/search?q=findfirstfiletransacted)or[google groups](README.md#http://groups.google.com/groups?q=findfirstfiletransacted).
 
-  - Search for *FindNextFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindNextFile),[google](README.md#http://www.google.com/search?q=FindNextFile)or[google groups](README.md#http://groups.google.com/groups?q=FindNextFile).
+  - Search for *FindNextFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnextfile),[google](README.md#http://www.google.com/search?q=findnextfile)or[google groups](README.md#http://groups.google.com/groups?q=findnextfile).
 
-  - Search for *FindClose* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindClose),[google](README.md#http://www.google.com/search?q=FindClose)or[google groups](README.md#http://groups.google.com/groups?q=FindClose).
+  - Search for *FindClose* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findclose),[google](README.md#http://www.google.com/search?q=findclose)or[google groups](README.md#http://groups.google.com/groups?q=findclose).
 
 #### Return Value
-The return value is a list of[WIN32_FIND_DATA](WIN32.md#WIN32FIND_DATA)tuples.
+The return value is a list of[WIN32_FIND_DATA](WIN32.md#win32find_data)tuples.
 
 ## [win32file](README.md#win32file).FindFirstChangeNotification
 
@@ -2231,7 +2231,7 @@ Creates a change notification handle and sets up initial change notification fil
 #### Parameters
 
 
-  -  *pathName* :[PyUnicode](README.md#PyUnicode)
+  -  *pathName* :[PyUnicode](README.md#pyunicode)
 
     Name of directory to watch
 
@@ -2241,7 +2241,7 @@ Creates a change notification handle and sets up initial change notification fil
 
   -  *notifyFilter* : int
 
-    filter conditions to watch for.  See[win32api::FindFirstChangeNotification](win32api.md#win32apiFindFirstChangeNotification)for details.
+    filter conditions to watch for.  See[win32api::FindFirstChangeNotification](win32api.md#win32apifindfirstchangenotification)for details.
 
 ## [win32file](README.md#win32file).FindNextChangeNotification
 
@@ -2257,17 +2257,17 @@ Requests that the operating system signal a change notification handle the next 
 
 ## [win32file](README.md#win32file).FindStreams
 
-[(long,[PyUnicode](README.md#PyUnicode)),...] = **FindStreams( *FileName*  *, Transaction* ** )
+[(long,[PyUnicode](README.md#pyunicode)),...] = **FindStreams( *FileName*  *, Transaction* ** )
 List the data streams for a file
 
 #### Parameters
 
 
-  -  *FileName* :[PyUnicode](README.md#PyUnicode)
+  -  *FileName* :[PyUnicode](README.md#pyunicode)
 
     Name of file (or directory) to operate on
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a transaction, can be None
 
@@ -2287,7 +2287,7 @@ Clears the buffers for the specified file and causes all buffered data to be wri
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     open handle to file whose buffers are to be flushed
 
@@ -2315,7 +2315,7 @@ Parses the connection endpoints from the buffer passed into AcceptEx
 
     Socket that was passed into the sAccepting parameter of AcceptEx
 
-  -  *buffer* :[PyOVERLAPPEDReadBuffer](README.md#PyOVERLAPPEDReadBuffer)
+  -  *buffer* :[PyOVERLAPPEDReadBuffer](README.md#pyoverlappedreadbuffer)
 
     Buffer you passed into AcceptEx
 
@@ -2332,7 +2332,7 @@ Determines whether a file is executable, and if so, what type of executable file
 #### Parameters
 
 
-  -  *appName* :[PyUnicode](README.md#PyUnicode)
+  -  *appName* :[PyUnicode](README.md#pyunicode)
 
     Fully qualified path of file to test
 
@@ -2344,7 +2344,7 @@ Retrieves the value of the event mask for a specified communications device.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -2356,19 +2356,19 @@ Retrieves modem control-register values.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
 ## [win32file](README.md#win32file).GetCommState
 
-[PyDCB](README.md#PyDCB)= **GetCommState( *handle* ** )
+[PyDCB](README.md#pydcb)= **GetCommState( *handle* ** )
 Returns a device-control block (a DCB structure) with the current control settings for a specified communications device.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -2380,7 +2380,7 @@ Retrieves the time-out parameters for all read and write operations on a specifi
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -2397,7 +2397,7 @@ Determines the free space on a device.
 #### Parameters
 
 
-  -  *rootPathName* :[PyUnicode](README.md#PyUnicode)
+  -  *rootPathName* :[PyUnicode](README.md#pyunicode)
 
     address of root path
 
@@ -2412,7 +2412,7 @@ Determines the free space on a device.
 #### Parameters
 
 
-  -  *rootPathName* :[PyUnicode](README.md#PyUnicode)
+  -  *rootPathName* :[PyUnicode](README.md#pyunicode)
 
     address of root path
 
@@ -2474,16 +2474,16 @@ Determines a files attributes.
 #### Parameters
 
 
-  -  *fileName* :[PyUnicode](README.md#PyUnicode)
+  -  *fileName* :[PyUnicode](README.md#pyunicode)
 
     Name of the file to retrieve attributes for.
 
 #### Comments
-The win32file module exposes[win32file::GetFileAttributes](win32file.md#win32fileGetFileAttributes)and[win32file::GetFileAttributesW](win32file.md#win32fileGetFileAttributesW)separately - both functions will accept 
+The win32file module exposes[win32file::GetFileAttributes](win32file.md#win32filegetfileattributes)and[win32file::GetFileAttributesW](win32file.md#win32filegetfileattributesw)separately - both functions will accept 
 
 either strings or Unicode objects but will always call the named function. 
 
-This is different than[win32api::GetFileAttributes](win32api.md#win32apiGetFileAttributes), which only exposes 
+This is different than[win32api::GetFileAttributes](win32api.md#win32apigetfileattributes), which only exposes 
 
 one Python function and automatically calls the appropriate win32 function 
 
@@ -2497,7 +2497,7 @@ Retrieves attributes for a specified file or directory.
 #### Parameters
 
 
-  -  *FileName* :[PyUnicode](README.md#PyUnicode)
+  -  *FileName* :[PyUnicode](README.md#pyunicode)
 
     File or directory for which to retrieve information 
 
@@ -2515,9 +2515,9 @@ r"\\?\\" to the path.
 
 See the Win32 SDK documentation for more information.
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction (optional).  See[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction). 
+    Handle to a transaction (optional).  See[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction). 
 
 If this parameter is specified, GetFileAttributesTransacted will be called (requires Vista or later).
 
@@ -2539,9 +2539,9 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-  - Search for *GetFileAttributesEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetFileAttributesEx),[google](README.md#http://www.google.com/search?q=GetFileAttributesEx)or[google groups](README.md#http://groups.google.com/groups?q=GetFileAttributesEx).
+  - Search for *GetFileAttributesEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getfileattributesex),[google](README.md#http://www.google.com/search?q=getfileattributesex)or[google groups](README.md#http://groups.google.com/groups?q=getfileattributesex).
 
-  - Search for *GetFileAttributesTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetFileAttributesTransacted),[google](README.md#http://www.google.com/search?q=GetFileAttributesTransacted)or[google groups](README.md#http://groups.google.com/groups?q=GetFileAttributesTransacted).
+  - Search for *GetFileAttributesTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getfileattributestransacted),[google](README.md#http://www.google.com/search?q=getfileattributestransacted)or[google groups](README.md#http://groups.google.com/groups?q=getfileattributestransacted).
 
 #### Return Value
 The result is a tuple of:
@@ -2553,11 +2553,11 @@ The result is a tuple of:
 
     File Attributes.  A combination of the win32com.FILE_ATTRIBUTE_* flags.
 
-  - [1] *[PyTime](README.md#PyTime)* : creationTime
+  - [1] *[PyTime](README.md#pytime)* : creationTime
 
     Specifies when the file or directory was created.
 
-  - [2] *[PyTime](README.md#PyTime)* : lastAccessTime
+  - [2] *[PyTime](README.md#pytime)* : lastAccessTime
 
     For a file, specifies when the file was last read from 
 
@@ -2567,7 +2567,7 @@ both files and directories, the specified date will be correct, but the time of 
 
 always be set to midnight.
 
-  - [3] *[PyTime](README.md#PyTime)* : lastWriteTime
+  - [3] *[PyTime](README.md#pytime)* : lastWriteTime
 
     For a file, the structure specifies when the file was last 
 
@@ -2585,14 +2585,14 @@ Determines a files attributes (NT/2000 Unicode specific version).
 #### Parameters
 
 
-  -  *fileName* :[PyUnicode](README.md#PyUnicode)
+  -  *fileName* :[PyUnicode](README.md#pyunicode)
 
     Name of the file to retrieve attributes for.
 
 #### Comments
-Note that[win32api::GetFileAttributes](win32api.md#win32apiGetFileAttributes)will automatically call 
+Note that[win32api::GetFileAttributes](win32api.md#win32apigetfileattributes)will automatically call 
 
-GetFileAttributesW when passed a unicode filename param.  See[win32file::GetFileAttributes](win32file.md#win32fileGetFileAttributes)and[win32api::GetFileAttributes](win32api.md#win32apiGetFileAttributes)for more.
+GetFileAttributesW when passed a unicode filename param.  See[win32file::GetFileAttributes](win32file.md#win32filegetfileattributes)and[win32api::GetFileAttributes](win32api.md#win32apigetfileattributes)for more.
 
 ## GetFileExInfoStandard
  **const win32file.GetFileExInfoStandard;** 
@@ -2606,7 +2606,7 @@ Retrieves file information for a specified file.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)/int
+  -  *handle* :[PyHANDLE](README.md#pyhandle)/int
 
     Handle to the file for which to obtain information.
 This handle should not be a pipe handle. The GetFileInformationByHandle function does not work with pipe handles.
@@ -2630,15 +2630,15 @@ The result is a tuple of:
 
     
 
-  - [1] *[PyTime](README.md#PyTime)* : ftCreationTime
+  - [1] *[PyTime](README.md#pytime)* : ftCreationTime
 
     
 
-  - [2] *[PyTime](README.md#PyTime)* : ftLastAccessTime
+  - [2] *[PyTime](README.md#pytime)* : ftLastAccessTime
 
     
 
-  - [3] *[PyTime](README.md#PyTime)* : ftLastWriteTime
+  - [3] *[PyTime](README.md#pytime)* : ftLastWriteTime
 
     
 
@@ -2674,7 +2674,7 @@ Retrieves extended file information for an open file handle.
 #### Parameters
 
 
-  -  *File* :[PyHANDLE](README.md#PyHANDLE)
+  -  *File* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a file or directory.  Do not pass a pipe handle.
 
@@ -2697,25 +2697,25 @@ Determines the size of a file.
 
 ## [win32file](README.md#win32file).GetFileTime
 
-([PyTime](README.md#PyTime),[PyTime](README.md#PyTime),[PyTime](README.md#PyTime)) = **GetFileTime( *handle*  *, creationTime*  *, accessTime*  *, writeTime* ** )
+([PyTime](README.md#pytime),[PyTime](README.md#pytime),[PyTime](README.md#pytime)) = **GetFileTime( *handle*  *, creationTime*  *, accessTime*  *, writeTime* ** )
 Returns a file's creation, last access, and modification times.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     Handle to the file.
 
-  -  *creationTime* :[PyTime](README.md#PyTime)
+  -  *creationTime* :[PyTime](README.md#pytime)
 
     
 
-  -  *accessTime* :[PyTime](README.md#PyTime)
+  -  *accessTime* :[PyTime](README.md#pytime)
 
     
 
-  -  *writeTime* :[PyTime](README.md#PyTime)
+  -  *writeTime* :[PyTime](README.md#pytime)
 
     
 
@@ -2730,19 +2730,19 @@ Determines the type of a file.
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the file.
 
 ## [win32file](README.md#win32file).GetFinalPathNameByHandle
 
-[PyUnicode](README.md#PyUnicode)= **GetFinalPathNameByHandle( *File*  *, Flags* ** )
+[PyUnicode](README.md#pyunicode)= **GetFinalPathNameByHandle( *File*  *, Flags* ** )
 Returns the file name for an open file handle
 
 #### Parameters
 
 
-  -  *File* :[PyHANDLE](README.md#PyHANDLE)
+  -  *File* :[PyHANDLE](README.md#pyhandle)
 
     An open file handle
 
@@ -2757,7 +2757,7 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-  - Search for *GetFinalPathNameByHandle* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetFinalPathNameByHandle),[google](README.md#http://www.google.com/search?q=GetFinalPathNameByHandle)or[google groups](README.md#http://groups.google.com/groups?q=GetFinalPathNameByHandle).
+  - Search for *GetFinalPathNameByHandle* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getfinalpathnamebyhandle),[google](README.md#http://www.google.com/search?q=getfinalpathnamebyhandle)or[google groups](README.md#http://groups.google.com/groups?q=getfinalpathnamebyhandle).
 
 ## [win32file](README.md#win32file).GetFullPathName
 
@@ -2771,9 +2771,9 @@ Returns full path for path passed in
 
     Path on which to operate
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction)
+    Handle to a transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
 #### Comments
 This function takes either a plain string or a unicode string, and returns the same type 
@@ -2788,17 +2788,17 @@ Returns a bitmaks of the logical drives installed.
 
 ## [win32file](README.md#win32file).GetLongPathName
 
-[PyUnicode](README.md#PyUnicode)= **GetLongPathName( *ShortPath*  *, Transaction* ** )
+[PyUnicode](README.md#pyunicode)= **GetLongPathName( *ShortPath*  *, Transaction* ** )
 Retrieves the long path for a short path (8.3 filename)
 
 #### Parameters
 
 
-  -  *ShortPath* :[PyUnicode](README.md#PyUnicode)
+  -  *ShortPath* :[PyUnicode](README.md#pyunicode)
 
     8.3 path to be expanded
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a transaction.  If specified, GetLongPathNameTransacted will be called.
 
@@ -2813,14 +2813,14 @@ Retrieves information about a mailslot
 #### Parameters
 
 
-  -  *Mailslot* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Mailslot* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a mailslot
 
 #### Win32 API References
 
 
-  - Search for *GetMailslotInfo* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetMailslotInfo),[google](README.md#http://www.google.com/search?q=GetMailslotInfo)or[google groups](README.md#http://groups.google.com/groups?q=GetMailslotInfo).
+  - Search for *GetMailslotInfo* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getmailslotinfo),[google](README.md#http://www.google.com/search?q=getmailslotinfo)or[google groups](README.md#http://groups.google.com/groups?q=getmailslotinfo).
 
 #### Return Value
 Returns (maximum message size, next message size, message count, timeout)
@@ -2833,11 +2833,11 @@ Determines the result of the most recent call with an OVERLAPPED object.
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the pipe or file
 
-  -  *overlapped* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *overlapped* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     The overlapped object to check.
 
@@ -2850,13 +2850,13 @@ The result is the number of bytes transferred.  The overlapped object's attribut
 
 ## [win32file](README.md#win32file).GetQueuedCompletionStatus
 
-(int, int, int,[PyOVERLAPPED](README.md#PyOVERLAPPED)) = **GetQueuedCompletionStatus( *hPort*  *, timeOut* ** )
+(int, int, int,[PyOVERLAPPED](README.md#pyoverlapped)) = **GetQueuedCompletionStatus( *hPort*  *, timeOut* ** )
 Attempts to dequeue an I/O completion packet from a specified input/output completion port.
 
 #### Parameters
 
 
-  -  *hPort* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hPort* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the completion port.
 
@@ -2871,13 +2871,13 @@ If the function succeeds, rc will be set to 0, otherwise it will be set to the w
 
 ## [win32file](README.md#win32file).GetVolumeNameForVolumeMountPoint
 
-[PyUnicode](README.md#PyUnicode)= **GetVolumeNameForVolumeMountPoint( *VolumeMountPoint* ** )
+[PyUnicode](README.md#pyunicode)= **GetVolumeNameForVolumeMountPoint( *VolumeMountPoint* ** )
 Returns unique volume name.
 
 #### Parameters
 
 
-  -  *VolumeMountPoint* :[PyUnicode](README.md#PyUnicode)
+  -  *VolumeMountPoint* :[PyUnicode](README.md#pyunicode)
 
     Volume mount point or root drive - trailing backslash required
 
@@ -2887,13 +2887,13 @@ Accepts keyword args.
 
 ## [win32file](README.md#win32file).GetVolumePathName
 
-[PyUnicode](README.md#PyUnicode)= **GetVolumePathName( *FileName*  *, BufferLength* ** )
+[PyUnicode](README.md#pyunicode)= **GetVolumePathName( *FileName*  *, BufferLength* ** )
 Returns volume mount point for a path
 
 #### Parameters
 
 
-  -  *FileName* :[PyUnicode](README.md#PyUnicode)
+  -  *FileName* :[PyUnicode](README.md#pyunicode)
 
     File/dir for which to return volume mount point
 
@@ -2913,15 +2913,15 @@ Accepts keyword args.
 
 ## [win32file](README.md#win32file).GetVolumePathNamesForVolumeName
 
-[[PyUnicode](README.md#PyUnicode),...] = **GetVolumePathNamesForVolumeName( *VolumeName* ** )
+[[PyUnicode](README.md#pyunicode),...] = **GetVolumePathNamesForVolumeName( *VolumeName* ** )
 Returns mounted paths for a volume
 
 #### Parameters
 
 
-  -  *VolumeName* :[PyUnicode](README.md#PyUnicode)
+  -  *VolumeName* :[PyUnicode](README.md#pyunicode)
 
-    Name of a volume as returned by[win32file::GetVolumeNameForVolumeMountPoint](win32file.md#win32fileGetVolumeNameForVolumeMountPoint)
+    Name of a volume as returned by[win32file::GetVolumeNameForVolumeMountPoint](win32file.md#win32filegetvolumenameforvolumemountpoint)
 
 #### Comments
 Requires WinXP or later
@@ -2947,7 +2947,7 @@ Locks a specified file for exclusive access by the calling process.
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     handle of file to lock
 
@@ -2975,7 +2975,7 @@ Locks a file. Wrapper for LockFileEx win32 API.
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)/int
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)/int
 
     Handle to the file
 
@@ -2991,7 +2991,7 @@ Locks a file. Wrapper for LockFileEx win32 API.
 
     high-order part of number of bytes to lock
 
-  -  *ol=None* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *ol=None* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
@@ -3032,11 +3032,11 @@ Renames an existing file or a directory (including all its children).
 #### Parameters
 
 
-  -  *existingFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *existingFileName* :[PyUnicode](README.md#pyunicode)
 
     Name of the existing file
 
-  -  *newFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *newFileName* :[PyUnicode](README.md#pyunicode)
 
     New name for the file
 
@@ -3048,11 +3048,11 @@ Renames an existing file or a directory (including all its children).
 #### Parameters
 
 
-  -  *existingFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *existingFileName* :[PyUnicode](README.md#pyunicode)
 
     Name of the existing file
 
-  -  *newFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *newFileName* :[PyUnicode](README.md#pyunicode)
 
     New name for the file, can be None for delayed delete operation
 
@@ -3068,11 +3068,11 @@ Renames an existing file or a directory (including all its children). (NT/2000 U
 #### Parameters
 
 
-  -  *existingFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *existingFileName* :[PyUnicode](README.md#pyunicode)
 
     Name of the existing file
 
-  -  *newFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *newFileName* :[PyUnicode](README.md#pyunicode)
 
     New name for the file, can be None for delayed delete operation
 
@@ -3088,11 +3088,11 @@ Renames an existing file or a directory (including all its children). (NT/2000 U
 #### Parameters
 
 
-  -  *existingFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *existingFileName* :[PyUnicode](README.md#pyunicode)
 
     Name of the existing file
 
-  -  *newFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *newFileName* :[PyUnicode](README.md#pyunicode)
 
     New name for the file
 
@@ -3104,15 +3104,15 @@ Moves a file, and reports progress to a callback function
 #### Parameters
 
 
-  -  *ExistingFileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *ExistingFileName* :[PyUNICODE](README.md#pyunicode)
 
     File or directory to be moved
 
-  -  *NewFileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *NewFileName* :[PyUNICODE](README.md#pyunicode)
 
     Destination, can be None if flags contain MOVEFILE_DELAY_UNTIL_REBOOT
 
-  -  *ProgressRoutine=None* :[CopyProgressRoutine](README.md#CopyProgressRoutine)
+  -  *ProgressRoutine=None* :[CopyProgressRoutine](README.md#copyprogressroutine)
 
     A python function that receives progress updates, can be None
 
@@ -3124,9 +3124,9 @@ Moves a file, and reports progress to a callback function
 
     Combination of MOVEFILE_* flags
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction (optional).  See[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction).
+    Handle to a transaction (optional).  See[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction).
 
 #### Comments
 Only available on Windows 2000 or later
@@ -3173,7 +3173,7 @@ Initiates a backup or restore operation on an encrypted file
 #### Parameters
 
 
-  -  *FileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *FileName* :[PyUNICODE](README.md#pyunicode)
 
     Name of file on which to operate
 
@@ -3185,23 +3185,23 @@ Initiates a backup or restore operation on an encrypted file
 Only available on Windows 2000 or later
 
 #### Return Value
-Returns a PyCObject containing an operation context that can be passed to[win32file::ReadEncryptedFileRaw](win32file.md#win32fileReadEncryptedFileRaw)or[win32file::WriteEncryptedFileRaw](win32file.md#win32fileWriteEncryptedFileRaw).  Context must be 
+Returns a PyCObject containing an operation context that can be passed to[win32file::ReadEncryptedFileRaw](win32file.md#win32filereadencryptedfileraw)or[win32file::WriteEncryptedFileRaw](win32file.md#win32filewriteencryptedfileraw).  Context must be 
 
-destroyed using[win32file::CloseEncryptedFileRaw](win32file.md#win32fileCloseEncryptedFileRaw).
+destroyed using[win32file::CloseEncryptedFileRaw](win32file.md#win32filecloseencryptedfileraw).
 
 ## [win32file](README.md#win32file).OpenFileById
 
-[PyHANDLE](README.md#PyHANDLE)= **OpenFileById( *File*  *, FileId*  *, DesiredAccess*  *, ShareMode*  *, Flags*  *, SecurityAttributes* ** )
+[PyHANDLE](README.md#pyhandle)= **OpenFileById( *File*  *, FileId*  *, DesiredAccess*  *, ShareMode*  *, Flags*  *, SecurityAttributes* ** )
 Opens a file by File Id or Object Id
 
 #### Parameters
 
 
-  -  *File* :[PyHANDLE](README.md#PyHANDLE)
+  -  *File* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a file on the volume that contains the file to open
 
-  -  *FileId* : int/[PyIID](README.md#PyIID)
+  -  *FileId* : int/[PyIID](README.md#pyiid)
 
     File Id or Object Id of the file to open
 
@@ -3217,7 +3217,7 @@ Opens a file by File Id or Object Id
 
     Combination of FILE_FLAG_* flags
 
-  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Reserved, use only None
 
@@ -3265,7 +3265,7 @@ lets you post an I/O completion packet to an I/O completion port. The I/O comple
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to an I/O completion port
 
@@ -3277,7 +3277,7 @@ lets you post an I/O completion packet to an I/O completion port. The I/O comple
 
     value to return via GetQueuedCompletionStatus' second result
 
-  -  *overlapped=None* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *overlapped=None* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     value to return via GetQueuedCompletionStatus' third result
 
@@ -3298,7 +3298,7 @@ Discards all characters from the output or input buffer of a specified communica
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -3324,7 +3324,7 @@ Returns a string containing substrings separated by NULLs with 2 terminating NUL
 
 ## [win32file](README.md#win32file).QueryRecoveryAgentsOnEncryptedFile
 
-([PySID](README.md#PySID),string,unicode) = **QueryRecoveryAgentsOnEncryptedFile( *FileName* ** )
+([PySID](README.md#pysid),string,unicode) = **QueryRecoveryAgentsOnEncryptedFile( *FileName* ** )
 Lists recovery agents for file as a tuple of tuples.
 
 #### Parameters
@@ -3339,7 +3339,7 @@ The result is a tuple of tuples - ((SID, certificate hash blob, display info),..
 
 ## [win32file](README.md#win32file).QueryUsersOnEncryptedFile
 
-([PySID](README.md#PySID),string,unicode) = **QueryUsersOnEncryptedFile( *FileName* ** )
+([PySID](README.md#pysid),string,unicode) = **QueryUsersOnEncryptedFile( *FileName* ** )
 Returns list of users for an encrypted file as tuples of (SID, certificate hash blob, display info)
 
 #### Parameters
@@ -3375,13 +3375,13 @@ Specifies that the RTS line will be high if bytes are available for transmission
 
 ## [win32file](README.md#win32file).ReOpenFile
 
-[PyHANDLE](README.md#PyHANDLE)= **ReOpenFile( *OriginalFile*  *, DesiredAccess*  *, ShareMode*  *, Flags* ** )
+[PyHANDLE](README.md#pyhandle)= **ReOpenFile( *OriginalFile*  *, DesiredAccess*  *, ShareMode*  *, Flags* ** )
 Creates a new handle to an open file
 
 #### Parameters
 
 
-  -  *OriginalFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *OriginalFile* :[PyHANDLE](README.md#pyhandle)
 
     An open file handle
 
@@ -3409,7 +3409,7 @@ retrieves information describing the changes occurring within a directory.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     Handle to the directory to be monitored. This directory must be opened with the FILE_LIST_DIRECTORY access right.
 
@@ -3425,7 +3425,7 @@ retrieves information describing the changes occurring within a directory.
 
     Specifies filter criteria the function checks to determine if the wait operation has completed. This parameter can be one or more of the FILE_NOTIFY_CHANGE_* values.
 
-  -  *overlapped=None* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *overlapped=None* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped object.  The directory must also be opened with FILE_FLAG_OVERLAPPED.
 
@@ -3453,7 +3453,7 @@ If a buffer is passed, the result is None - you must use the overlapped
 
 object to determine when the information is available and how much is valid. 
 
-The buffer can then be passed to[win32file::FILE_NOTIFY_INFORMATION](win32file.md#win32fileFILE_NOTIFY_INFORMATION)
+The buffer can then be passed to[win32file::FILE_NOTIFY_INFORMATION](win32file.md#win32filefile_notify_information)
 
 ## [win32file](README.md#win32file).ReadEncryptedFileRaw
 
@@ -3463,7 +3463,7 @@ Reads the encrypted bytes of a file for backup and restore purposes
 #### Parameters
 
 
-  -  *ExportCallback* :[ExportCallBack](README.md#ExportCallBack)
+  -  *ExportCallback* :[ExportCallBack](README.md#exportcallback)
 
     Python function that receives chunks of data as it is read
 
@@ -3473,7 +3473,7 @@ Reads the encrypted bytes of a file for backup and restore purposes
 
   -  *Context* : PyCObject
 
-    Context object returned from[win32file::OpenEncryptedFileRaw](win32file.md#win32fileOpenEncryptedFileRaw)
+    Context object returned from[win32file::OpenEncryptedFileRaw](win32file.md#win32fileopenencryptedfileraw)
 
 #### Comments
 Only available on Windows 2000 or later
@@ -3486,11 +3486,11 @@ Reads a string from a file
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)/int
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)/int
 
     Handle to the file
 
-  -  *buffer/bufSize* :[PyOVERLAPPEDReadBuffer](README.md#PyOVERLAPPEDReadBuffer)/int
+  -  *buffer/bufSize* :[PyOVERLAPPEDReadBuffer](README.md#pyoverlappedreadbuffer)/int
 
     Size of the buffer to create for the result, 
 
@@ -3500,19 +3500,19 @@ the buffer itself.  If a buffer but no overlapped is passed, the result is a new
 
 built from the buffer, but with a length that reflects the data actually read.
 
-  -  *overlapped=None* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *overlapped=None* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
 #### Comments
-in a multi-threaded overlapped environment, it is likely to be necessary to pre-allocate the read buffer using the[win32file::AllocateReadBuffer](win32file.md#win32fileAllocateReadBuffer)method, otherwise the I/O operation may complete before you can assign to the resulting buffer.
+in a multi-threaded overlapped environment, it is likely to be necessary to pre-allocate the read buffer using the[win32file::AllocateReadBuffer](win32file.md#win32fileallocatereadbuffer)method, otherwise the I/O operation may complete before you can assign to the resulting buffer.
 
 #### Return Value
-The result is a tuple of (hr, string/[PyOVERLAPPEDReadBuffer](README.md#PyOVERLAPPEDReadBuffer)), where hr may be 
+The result is a tuple of (hr, string/[PyOVERLAPPEDReadBuffer](README.md#pyoverlappedreadbuffer)), where hr may be 
 
 0, ERROR_MORE_DATA or ERROR_IO_PENDING. 
 
-If the overlapped param is not None, then the result is a[PyOVERLAPPEDReadBuffer](README.md#PyOVERLAPPEDReadBuffer).  Once the overlapped IO operation 
+If the overlapped param is not None, then the result is a[PyOVERLAPPEDReadBuffer](README.md#pyoverlappedreadbuffer).  Once the overlapped IO operation 
 
 has completed, you can convert this to a string (str(object)) [py2k] or (bytes(object)) [py3k] to obtain the data. 
 
@@ -3530,13 +3530,13 @@ Removes an existing directory
 #### Parameters
 
 
-  -  *PathName* :[PyUnicode](README.md#PyUnicode)
+  -  *PathName* :[PyUnicode](README.md#pyunicode)
 
     Name of directory to be removed
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a transaction (optional). See[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction).
+    Handle to a transaction (optional). See[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction).
 
 #### Comments
 If a transaction handle is passed in, RemoveDirectoryTransacted will be called (requires Vista or later)
@@ -3545,9 +3545,9 @@ Accepts keyword arguments.  Implemented only as Unicode.
 #### Win32 API References
 
 
-  - Search for *RemoveDirectory* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RemoveDirectory),[google](README.md#http://www.google.com/search?q=RemoveDirectory)or[google groups](README.md#http://groups.google.com/groups?q=RemoveDirectory).
+  - Search for *RemoveDirectory* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=removedirectory),[google](README.md#http://www.google.com/search?q=removedirectory)or[google groups](README.md#http://groups.google.com/groups?q=removedirectory).
 
-  - Search for *RemoveDirectoryTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RemoveDirectoryTransacted),[google](README.md#http://www.google.com/search?q=RemoveDirectoryTransacted)or[google groups](README.md#http://groups.google.com/groups?q=RemoveDirectoryTransacted).
+  - Search for *RemoveDirectoryTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=removedirectorytransacted),[google](README.md#http://www.google.com/search?q=removedirectorytransacted)or[google groups](README.md#http://groups.google.com/groups?q=removedirectorytransacted).
 
 ## [win32file](README.md#win32file).RemoveUsersFromEncryptedFile
 
@@ -3561,7 +3561,7 @@ Removes specified certificates from file - if certificate is not found, it is ig
 
     File from which to remove users
 
-  -  *pHashes* : (([PySID](README.md#PySID),string,unicode),...)
+  -  *pHashes* : (([PySID](README.md#pysid),string,unicode),...)
 
     Sequence representing an ENCRYPTION_CERTIFICATE_HASH_LIST structure, as returned by QueryUsersOnEncryptedFile
 
@@ -3573,15 +3573,15 @@ Replaces one file with another
 #### Parameters
 
 
-  -  *ReplacedFileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *ReplacedFileName* :[PyUNICODE](README.md#pyunicode)
 
     File to be replaced
 
-  -  *ReplacementFileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *ReplacementFileName* :[PyUNICODE](README.md#pyunicode)
 
     File that will replace it
 
-  -  *BackupFileName=None* :[PyUNICODE](README.md#PyUNICODE)
+  -  *BackupFileName=None* :[PyUNICODE](README.md#pyunicode)
 
     Place at which to create a backup of the replaced file, can be None
 
@@ -3691,12 +3691,12 @@ Causes transmission to act as if an XON character has been received.
 ## [win32file](README.md#win32file).SetCommBreak
 
  **SetCommBreak( *handle* ** )
-Suspends character transmission for a specified communications device and places the transmission line in a break state until the[win32file::ClearCommBreak](win32file.md#win32fileClearCommBreak)function is called.
+Suspends character transmission for a specified communications device and places the transmission line in a break state until the[win32file::ClearCommBreak](win32file.md#win32fileclearcommbreak)function is called.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -3708,7 +3708,7 @@ Sets the value of the event mask for a specified communications device.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -3726,11 +3726,11 @@ The function reinitializes all hardware and control settings, but it does not em
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
-  -  *dcb* :[PyDCB](README.md#PyDCB)
+  -  *dcb* :[PyDCB](README.md#pydcb)
 
     The control settings.
 
@@ -3742,7 +3742,7 @@ Sets the time-out parameters for all read and write operations on a specified co
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -3758,7 +3758,7 @@ Sets the current directory.
 #### Parameters
 
 
-  -  *lpPathName* : str/[PyUnicode](README.md#PyUnicode)
+  -  *lpPathName* : str/[PyUnicode](README.md#pyunicode)
 
     Name of the path to set current.
 
@@ -3770,7 +3770,7 @@ Moves the end-of-file (EOF) position for the specified file to the current posit
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     handle of file whose EOF is to be set
 
@@ -3792,7 +3792,7 @@ Changes a file's attributes.
 #### Parameters
 
 
-  -  *filename* :[PyUnicode](README.md#PyUnicode)
+  -  *filename* :[PyUnicode](README.md#pyunicode)
 
     filename
 
@@ -3808,7 +3808,7 @@ Sets a file's attributes
 #### Parameters
 
 
-  -  *FileName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *FileName* :[PyUNICODE](README.md#pyunicode)
 
     File or directory whose attributes are to be changed
 
@@ -3816,9 +3816,9 @@ Sets a file's attributes
 
     Combination of FILE_ATTRIBUTE_* flags
 
-  -  *Transaction=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Transaction=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to the transaction.  See[win32transaction::CreateTransaction](win32transaction.md#win32transactionCreateTransaction).
+    Handle to the transaction.  See[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction).
 
 #### Comments
 If Transaction is not None, SetFileAttributesTransacted will be called (requires Vista or later)
@@ -3827,9 +3827,9 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-  - Search for *SetFileAttributes* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetFileAttributes),[google](README.md#http://www.google.com/search?q=SetFileAttributes)or[google groups](README.md#http://groups.google.com/groups?q=SetFileAttributes).
+  - Search for *SetFileAttributes* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setfileattributes),[google](README.md#http://www.google.com/search?q=setfileattributes)or[google groups](README.md#http://groups.google.com/groups?q=setfileattributes).
 
-  - Search for *SetFileAttributesTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetFileAttributesTransacted),[google](README.md#http://www.google.com/search?q=SetFileAttributesTransacted)or[google groups](README.md#http://groups.google.com/groups?q=SetFileAttributesTransacted).
+  - Search for *SetFileAttributesTransacted* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setfileattributestransacted),[google](README.md#http://www.google.com/search?q=setfileattributestransacted)or[google groups](README.md#http://groups.google.com/groups?q=setfileattributestransacted).
 
 ## [win32file](README.md#win32file).SetFileInformationByHandle
 
@@ -3839,7 +3839,7 @@ Changes file characteristics by file handle
 #### Parameters
 
 
-  -  *File* :[PyHANDLE](README.md#PyHANDLE)
+  -  *File* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a file or directory.  Do not pass a pipe handle.
 
@@ -3853,11 +3853,11 @@ Changes file characteristics by file handle
 
  **Class**  **Type of input** FileBasicInfoDict representing a FILE_BASIC_INFO struct, containing 
 
-{"CreationTime":[PyTime](README.md#PyTime), "LastAccessTime":[PyTime](README.md#PyTime),  "LastWriteTime":[PyTime](README.md#PyTime), 
+{"CreationTime":[PyTime](README.md#pytime), "LastAccessTime":[PyTime](README.md#pytime),  "LastWriteTime":[PyTime](README.md#pytime), 
 
-"ChangeTime":[PyTime](README.md#PyTime), "FileAttributes":int}FileRenameInfoDict representing a FILE_RENAME_INFO struct, containing 
+"ChangeTime":[PyTime](README.md#pytime), "FileAttributes":int}FileRenameInfoDict representing a FILE_RENAME_INFO struct, containing 
 
-{"ReplaceIfExists":boolean, "RootDirectory":[PyHANDLE](README.md#PyHANDLE), "FileName":str} 
+{"ReplaceIfExists":boolean, "RootDirectory":[PyHANDLE](README.md#pyhandle), "FileName":str} 
 
 MSDN says the RootDirectory is "A handle to the root directory in which the file to be renamed is located". 
 
@@ -3874,7 +3874,7 @@ Moves the file pointer of an open file.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The file to perform the operation on.
 
@@ -3895,11 +3895,11 @@ Set the 8.3 name of a file
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a file or directory
 
-  -  *ShortName* :[PyUNICODE](README.md#PyUNICODE)
+  -  *ShortName* :[PyUNICODE](README.md#pyunicode)
 
     The 8.3 name to be applied to the file
 
@@ -3915,19 +3915,19 @@ Sets the date and time that a file was created, last accessed, or last modified.
 #### Parameters
 
 
-  -  *File* :[PyHANDLE](README.md#PyHANDLE)
+  -  *File* :[PyHANDLE](README.md#pyhandle)
 
     Previously opened handle (opened with FILE_WRITE_ATTRIBUTES access).
 
-  -  *CreationTime=None* :[PyTime](README.md#PyTime)
+  -  *CreationTime=None* :[PyTime](README.md#pytime)
 
     File created time. None for no change.
 
-  -  *LastAccessTime=None* :[PyTime](README.md#PyTime)
+  -  *LastAccessTime=None* :[PyTime](README.md#pytime)
 
     File access time. None for no change.
 
-  -  *LastWriteTime=None* :[PyTime](README.md#PyTime)
+  -  *LastWriteTime=None* :[PyTime](README.md#pytime)
 
     File written time. None for no change.
 
@@ -3945,7 +3945,7 @@ Sets a mailslot's timeout
 #### Parameters
 
 
-  -  *Mailslot* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Mailslot* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a mailslot
 
@@ -3956,7 +3956,7 @@ Sets a mailslot's timeout
 #### Win32 API References
 
 
-  - Search for *SetMailslotInfo* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetMailslotInfo),[google](README.md#http://www.google.com/search?q=SetMailslotInfo)or[google groups](README.md#http://groups.google.com/groups?q=SetMailslotInfo).
+  - Search for *SetMailslotInfo* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setmailslotinfo),[google](README.md#http://www.google.com/search?q=setmailslotinfo)or[google groups](README.md#http://groups.google.com/groups?q=setmailslotinfo).
 
 ## [win32file](README.md#win32file).SetVolumeLabel
 
@@ -3966,27 +3966,27 @@ Sets a volume label for a disk drive.
 #### Parameters
 
 
-  -  *rootPathName* :[PyUnicode](README.md#PyUnicode)
+  -  *rootPathName* :[PyUnicode](README.md#pyunicode)
 
     address of name of root directory for volume
 
-  -  *volumeName* :[PyUnicode](README.md#PyUnicode)
+  -  *volumeName* :[PyUnicode](README.md#pyunicode)
 
     name for the volume
 
 ## [win32file](README.md#win32file).SetVolumeMountPoint
 
-[PyUnicode](README.md#PyUnicode)= **SetVolumeMountPoint( *VolumeMountPoint*  *, VolumeName* ** )
+[PyUnicode](README.md#pyunicode)= **SetVolumeMountPoint( *VolumeMountPoint*  *, VolumeName* ** )
 Mounts the specified volume at the specified volume mount point.
 
 #### Parameters
 
 
-  -  *VolumeMountPoint* :[PyUnicode](README.md#PyUnicode)
+  -  *VolumeMountPoint* :[PyUnicode](README.md#pyunicode)
 
     The mount point - must be an existing empty directory on an NTFS volume
 
-  -  *VolumeName* :[PyUnicode](README.md#PyUnicode)
+  -  *VolumeName* :[PyUnicode](README.md#pyunicode)
 
     The volume to&#09mount there
 
@@ -4009,7 +4009,7 @@ Initializes the communications parameters for a specified communications device.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -4023,13 +4023,13 @@ Initializes the communications parameters for a specified communications device.
 
 ## [win32file](README.md#win32file).SfcGetNextProtectedFile
 
-[[PyUnicode](README.md#PyUnicode),...] = **SfcGetNextProtectedFile(** )
+[[PyUnicode](README.md#pyunicode),...] = **SfcGetNextProtectedFile(** )
 Returns list of protected operating system files
 
 #### Win32 API References
 
 
-  - Search for *SfcGetNextProtectedFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SfcGetNextProtectedFile),[google](README.md#http://www.google.com/search?q=SfcGetNextProtectedFile)or[google groups](README.md#http://groups.google.com/groups?q=SfcGetNextProtectedFile).
+  - Search for *SfcGetNextProtectedFile* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=sfcgetnextprotectedfile),[google](README.md#http://www.google.com/search?q=sfcgetnextprotectedfile)or[google groups](README.md#http://groups.google.com/groups?q=sfcgetnextprotectedfile).
 
 ## [win32file](README.md#win32file).SfcIsFileProtected
 
@@ -4039,7 +4039,7 @@ Checks if a file is protected
 #### Parameters
 
 
-  -  *ProtFileName* :[PyUnicode](README.md#PyUnicode)
+  -  *ProtFileName* :[PyUnicode](README.md#pyunicode)
 
     Name of file to be checked
 
@@ -4083,7 +4083,7 @@ Transmits a specified character ahead of any pending data in the output buffer o
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
@@ -4109,7 +4109,7 @@ TransmitFile(sock, filehandle, bytes_to_write, bytes_per_send, overlap, flags [,
 
     Socket that will be used to send the file
 
-  -  *File* :[PyHANDLE](README.md#PyHANDLE)/int
+  -  *File* :[PyHANDLE](README.md#pyhandle)/int
 
     Handle to the file
 
@@ -4121,7 +4121,7 @@ TransmitFile(sock, filehandle, bytes_to_write, bytes_per_send, overlap, flags [,
 
     The size, in bytes, of each block of data sent in each send operation.
 
-  -  *Overlapped* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *Overlapped* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure, can be None.
 
@@ -4143,12 +4143,12 @@ Returns 0 on completion, or ERROR_IO_PENDING if an overlapped operation has been
 ## [win32file](README.md#win32file).UnlockFile
 
  **UnlockFile( *hFile*  *, offsetLow*  *, offsetHigh*  *, nNumberOfBytesToUnlockLow*  *, nNumberOfBytesToUnlockHigh* ** )
-Unlocks a region of a file locked by[win32file::LockFile](win32file.md#win32fileLockFile)or[win32file::LockFileEx](win32file.md#win32fileLockFileEx)
+Unlocks a region of a file locked by[win32file::LockFile](win32file.md#win32filelockfile)or[win32file::LockFileEx](win32file.md#win32filelockfileex)
 
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)
 
     handle of file to unlock
 
@@ -4176,7 +4176,7 @@ Unlocks a file. Wrapper for UnlockFileEx win32 API.
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)/int
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)/int
 
     Handle to the file
 
@@ -4192,7 +4192,7 @@ bytes to lock
 
 bytes to lock
 
-  -  *ol=None* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *ol=None* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
@@ -4296,7 +4296,7 @@ Return network events that caused the event associated with the socket to be sig
 
     Socket to check for netork events, previously registered for network event notification with WSAEventSelect.
 
-  -  *hEvent* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hEvent* :[PyHANDLE](README.md#pyhandle)
 
     Optional handle to the event associated with socket s in the last call to WSAEventSelect. If specified, the event will be reset.
 
@@ -4315,7 +4315,7 @@ Specifies an event object to be associated with the supplied set of FD_XXXX netw
 
     socket to attach to the event
 
-  -  *hEvent* :[PyHandle](README.md#PyHandle)
+  -  *hEvent* :[PyHandle](README.md#pyhandle)
 
     Event handle for the socket to become attached to.
 
@@ -4339,7 +4339,7 @@ Winsock recv() equivalent function for Overlapped I/O.
 
     Buffer to send data from.
 
-  -  *ol* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *ol* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
@@ -4363,7 +4363,7 @@ Winsock send() equivalent function for Overlapped I/O.
 
     Buffer to send data from.
 
-  -  *ol* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *ol* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
@@ -4387,11 +4387,11 @@ Waits for an event to occur for a specified communications device. The set of ev
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the communications device.
 
-  -  *overlapped* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *overlapped* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     This structure is required if hFile was opened with FILE_FLAG_OVERLAPPED.
 If hFile was opened with FILE_FLAG_OVERLAPPED, the lpOverlapped parameter must not be NULL. It must point to a valid OVERLAPPED structure. If hFile was opened with FILE_FLAG_OVERLAPPED and lpOverlapped is NULL, the function can incorrectly report that the operation is complete.
@@ -4423,7 +4423,7 @@ Disables file system redirection for 32-bit processes running on a 64-bit system
 Requires 64-bit XP or later
 
 #### Return Value
-Returns a state value to be passed to[win32file::Wow64RevertWow64FsRedirection](win32file.md#win32fileWow64RevertWow64FsRedirection)
+Returns a state value to be passed to[win32file::Wow64RevertWow64FsRedirection](win32file.md#win32filewow64revertwow64fsredirection)
 
 ## [win32file](README.md#win32file).Wow64RevertWow64FsRedirection
 
@@ -4448,7 +4448,7 @@ Writes raw bytes to an encrypted file
 #### Parameters
 
 
-  -  *ImportCallback* :[ImportCallBack](README.md#ImportCallBack)
+  -  *ImportCallback* :[ImportCallBack](README.md#importcallback)
 
     Python function that supplies data to be written
 
@@ -4458,7 +4458,7 @@ Writes raw bytes to an encrypted file
 
   -  *Context* : PyCObject
 
-    Context object returned from[win32file::OpenEncryptedFileRaw](win32file.md#win32fileOpenEncryptedFileRaw)
+    Context object returned from[win32file::OpenEncryptedFileRaw](win32file.md#win32fileopenencryptedfileraw)
 
 #### Comments
 Only available on Windows 2000 or later
@@ -4471,15 +4471,15 @@ Writes a string to a file
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](README.md#PyHANDLE)/int
+  -  *hFile* :[PyHANDLE](README.md#pyhandle)/int
 
     Handle to the file
 
-  -  *data* : string/[PyOVERLAPPEDReadBuffer](README.md#PyOVERLAPPEDReadBuffer)
+  -  *data* : string/[PyOVERLAPPEDReadBuffer](README.md#pyoverlappedreadbuffer)
 
     The data to write.
 
-  -  *ol=None* :[PyOVERLAPPED](README.md#PyOVERLAPPED)
+  -  *ol=None* :[PyOVERLAPPED](README.md#pyoverlapped)
 
     An overlapped structure
 
@@ -4523,7 +4523,7 @@ Associates a C run-time file handle with a existing operating-system file handle
 #### Parameters
 
 
-  -  *osfhandle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *osfhandle* :[PyHANDLE](README.md#pyhandle)
 
     An open file handle
 

@@ -6,7 +6,7 @@ An interface to the win32 Process and Thread API's
 #### Methods
 
 
-  - [STARTUPINFO](win32process.md#win32processSTARTUPINFO)
+  - [STARTUPINFO](win32process.md#win32processstartupinfo)
 
     Creates a new STARTUPINFO object.&nbsp;
 
@@ -14,181 +14,181 @@ An interface to the win32 Process and Thread API's
 
     Creates a new thread&nbsp;
 
-  - [CreateRemoteThread](win32process.md#win32processCreateRemoteThread)
+  - [CreateRemoteThread](win32process.md#win32processcreateremotethread)
 
     creates a thread that runs in 
 
 the virtual address space of another process.&nbsp;
 
-  - [CreateProcess](win32process.md#win32processCreateProcess)
+  - [CreateProcess](win32process.md#win32processcreateprocess)
 
     Creates a new process and its primary thread. The new process executes the specified executable file.&nbsp;
 
-  - [CreateProcessAsUser](win32process.md#win32processCreateProcessAsUser)
+  - [CreateProcessAsUser](win32process.md#win32processcreateprocessasuser)
 
     Creates a new process in the context of the specified user.&nbsp;
 
-  - [GetCurrentProcess](win32process.md#win32processGetCurrentProcess)
+  - [GetCurrentProcess](win32process.md#win32processgetcurrentprocess)
 
     Retrieves a pseudo handle for the current process.&nbsp;
 
-  - [GetProcessVersion](win32process.md#win32processGetProcessVersion)
+  - [GetProcessVersion](win32process.md#win32processgetprocessversion)
 
     Obtains the major and minor version numbers of the system on which a specified process expects to run.&nbsp;
 
-  - [GetCurrentProcessId](win32process.md#win32processGetCurrentProcessId)
+  - [GetCurrentProcessId](win32process.md#win32processgetcurrentprocessid)
 
     Retrieves the process identifier of the calling process.&nbsp;
 
-  - [GetStartupInfo](win32process.md#win32processGetStartupInfo)
+  - [GetStartupInfo](win32process.md#win32processgetstartupinfo)
 
     Retrieves the contents of the STARTUPINFO structure that was specified when the calling process was created.&nbsp;
 
-  - [GetPriorityClass](win32process.md#win32processGetPriorityClass)
+  - [GetPriorityClass](win32process.md#win32processgetpriorityclass)
 
     &nbsp;
 
-  - [GetExitCodeThread](win32process.md#win32processGetExitCodeThread)
+  - [GetExitCodeThread](win32process.md#win32processgetexitcodethread)
 
     &nbsp;
 
-  - [GetExitCodeProcess](win32process.md#win32processGetExitCodeProcess)
+  - [GetExitCodeProcess](win32process.md#win32processgetexitcodeprocess)
 
     &nbsp;
 
-  - [GetWindowThreadProcessId](win32process.md#win32processGetWindowThreadProcessId)
+  - [GetWindowThreadProcessId](win32process.md#win32processgetwindowthreadprocessid)
 
     Retrieves the identifier of the thread and process that created the specified window.&nbsp;
 
-  - [SetThreadPriority](win32process.md#win32processSetThreadPriority)
+  - [SetThreadPriority](win32process.md#win32processsetthreadpriority)
 
     &nbsp;
 
-  - [GetThreadPriority](win32process.md#win32processGetThreadPriority)
+  - [GetThreadPriority](win32process.md#win32processgetthreadpriority)
 
     &nbsp;
 
-  - [GetProcessPriorityBoost](win32process.md#win32processGetProcessPriorityBoost)
+  - [GetProcessPriorityBoost](win32process.md#win32processgetprocesspriorityboost)
 
     Determines if dynamic priority adjustment is enabled for a process&nbsp;
 
-  - [SetProcessPriorityBoost](win32process.md#win32processSetProcessPriorityBoost)
+  - [SetProcessPriorityBoost](win32process.md#win32processsetprocesspriorityboost)
 
     Enables or disables dynamic priority adjustment for a process&nbsp;
 
-  - [GetThreadPriorityBoost](win32process.md#win32processGetThreadPriorityBoost)
+  - [GetThreadPriorityBoost](win32process.md#win32processgetthreadpriorityboost)
 
     Determines if dynamic priority adjustment is enabled for a thread&nbsp;
 
-  - [SetThreadPriorityBoost](win32process.md#win32processSetThreadPriorityBoost)
+  - [SetThreadPriorityBoost](win32process.md#win32processsetthreadpriorityboost)
 
     Enables or disables dynamic priority adjustment for a thread&nbsp;
 
-  - [GetThreadIOPendingFlag](win32process.md#win32processGetThreadIOPendingFlag)
+  - [GetThreadIOPendingFlag](win32process.md#win32processgetthreadiopendingflag)
 
     Determines if thread has any outstanding IO requests&nbsp;
 
-  - [GetThreadTimes](win32process.md#win32processGetThreadTimes)
+  - [GetThreadTimes](win32process.md#win32processgetthreadtimes)
 
     Returns a thread's time statistics&nbsp;
 
-  - [GetProcessId](win32process.md#win32processGetProcessId)
+  - [GetProcessId](win32process.md#win32processgetprocessid)
 
     Returns the Pid for a process handle&nbsp;
 
-  - [SetPriorityClass](win32process.md#win32processSetPriorityClass)
+  - [SetPriorityClass](win32process.md#win32processsetpriorityclass)
 
     &nbsp;
 
-  - [AttachThreadInput](win32process.md#win32processAttachThreadInput)
+  - [AttachThreadInput](win32process.md#win32processattachthreadinput)
 
     Attaches or detaches the input of two threads&nbsp;
 
-  - [SetThreadIdealProcessor](win32process.md#win32processSetThreadIdealProcessor)
+  - [SetThreadIdealProcessor](win32process.md#win32processsetthreadidealprocessor)
 
     Used to specify a preferred processor for a thread. The system schedules threads on their preferred processors whenever possible.&nbsp;
 
-  - [GetProcessAffinityMask](win32process.md#win32processGetProcessAffinityMask)
+  - [GetProcessAffinityMask](win32process.md#win32processgetprocessaffinitymask)
 
     Gets a processor affinity mask for a specified process&nbsp;
 
-  - [SetProcessAffinityMask](win32process.md#win32processSetProcessAffinityMask)
+  - [SetProcessAffinityMask](win32process.md#win32processsetprocessaffinitymask)
 
     Sets a processor affinity mask for a specified process.&nbsp;
 
-  - [SetThreadAffinityMask](win32process.md#win32processSetThreadAffinityMask)
+  - [SetThreadAffinityMask](win32process.md#win32processsetthreadaffinitymask)
 
     Sets a processor affinity mask for a specified thread.&nbsp;
 
-  - [SuspendThread](win32process.md#win32processSuspendThread)
+  - [SuspendThread](win32process.md#win32processsuspendthread)
 
     Suspends the specified thread.&nbsp;
 
-  - [ResumeThread](win32process.md#win32processResumeThread)
+  - [ResumeThread](win32process.md#win32processresumethread)
 
     Resumes the specified thread. When the suspend count is decremented to zero, the execution of the thread is resumed.&nbsp;
 
-  - [TerminateProcess](win32process.md#win32processTerminateProcess)
+  - [TerminateProcess](win32process.md#win32processterminateprocess)
 
     Terminates the specified process and all of its threads.&nbsp;
 
-  - [ExitProcess](win32process.md#win32processExitProcess)
+  - [ExitProcess](win32process.md#win32processexitprocess)
 
     Ends a process and all its threads&nbsp;
 
-  - [EnumProcesses](win32process.md#win32processEnumProcesses)
+  - [EnumProcesses](win32process.md#win32processenumprocesses)
 
     Returns Pids for currently running processes&nbsp;
 
-  - [EnumProcessModules](win32process.md#win32processEnumProcessModules)
+  - [EnumProcessModules](win32process.md#win32processenumprocessmodules)
 
     Lists loaded modules for a process handle&nbsp;
 
-  - [EnumProcessModulesEx](win32process.md#win32processEnumProcessModulesEx)
+  - [EnumProcessModulesEx](win32process.md#win32processenumprocessmodulesex)
 
     Lists 32 or 64-bit modules load by a process&nbsp;
 
-  - [GetModuleFileNameEx](win32process.md#win32processGetModuleFileNameEx)
+  - [GetModuleFileNameEx](win32process.md#win32processgetmodulefilenameex)
 
     Return name of module loaded by another process (uses process handle, not pid)&nbsp;
 
-  - [GetProcessMemoryInfo](win32process.md#win32processGetProcessMemoryInfo)
+  - [GetProcessMemoryInfo](win32process.md#win32processgetprocessmemoryinfo)
 
     Returns process memory statistics as a dict representing a PROCESS_MEMORY_COUNTERS struct&nbsp;
 
-  - [GetProcessTimes](win32process.md#win32processGetProcessTimes)
+  - [GetProcessTimes](win32process.md#win32processgetprocesstimes)
 
     Retrieve time statics for a process by handle.  (KernelTime and UserTime in 100 nanosecond units)&nbsp;
 
-  - [GetProcessIoCounters](win32process.md#win32processGetProcessIoCounters)
+  - [GetProcessIoCounters](win32process.md#win32processgetprocessiocounters)
 
     Return I/O statistics for a process as a dictionary representing an IO_COUNTERS struct.&nbsp;
 
-  - [GetProcessWindowStation](win32process.md#win32processGetProcessWindowStation)
+  - [GetProcessWindowStation](win32process.md#win32processgetprocesswindowstation)
 
     Returns a handle to the window station for the calling process&nbsp;
 
-  - [GetProcessWorkingSetSize](win32process.md#win32processGetProcessWorkingSetSize)
+  - [GetProcessWorkingSetSize](win32process.md#win32processgetprocessworkingsetsize)
 
     Returns min and max working set sizes for a process by handle&nbsp;
 
-  - [SetProcessWorkingSetSize](win32process.md#win32processSetProcessWorkingSetSize)
+  - [SetProcessWorkingSetSize](win32process.md#win32processsetprocessworkingsetsize)
 
     Sets minimum and maximum working set sizes for a process&nbsp;
 
-  - [GetProcessShutdownParameters](win32process.md#win32processGetProcessShutdownParameters)
+  - [GetProcessShutdownParameters](win32process.md#win32processgetprocessshutdownparameters)
 
     Retrieves shutdown priority and flags for current process&nbsp;
 
-  - [SetProcessShutdownParameters](win32process.md#win32processSetProcessShutdownParameters)
+  - [SetProcessShutdownParameters](win32process.md#win32processsetprocessshutdownparameters)
 
     Sets shutdown priority and flags for current process&nbsp;
 
-  - [GetGuiResources](win32process.md#win32processGetGuiResources)
+  - [GetGuiResources](win32process.md#win32processgetguiresources)
 
     Returns the number of GDI or user object handles held by a process&nbsp;
 
-  - [IsWow64Process](win32process.md#win32processIsWow64Process)
+  - [IsWow64Process](win32process.md#win32processiswow64process)
 
     Determines whether the specified process is running under WOW64.&nbsp;
 
@@ -264,7 +264,7 @@ If set, the environment block pointed to by lpEnvironment uses Unicode character
 
 ## [win32process](README.md#win32process).CreateProcess
 
-[PyHANDLE](README.md#PyHANDLE),[PyHANDLE](README.md#PyHANDLE), int, int = **CreateProcess( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** )
+[PyHANDLE](README.md#pyhandle),[PyHANDLE](README.md#pyhandle), int, int = **CreateProcess( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** )
 Creates a new process and its primary thread. The new process executes the specified executable file.
 
 #### Parameters
@@ -278,11 +278,11 @@ Creates a new process and its primary thread. The new process executes the speci
 
     command line string, or None
 
-  -  *processAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *processAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     process security attributes, or None
 
-  -  *threadAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *threadAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     thread security attributes, or None
 
@@ -313,7 +313,7 @@ Windows 95/98: This flag is not valid if the new process is a 16-bit application
 
     current directory name, or None
 
-  -  *startupinfo* :[PySTARTUPINFO](README.md#PySTARTUPINFO)
+  -  *startupinfo* :[PySTARTUPINFO](README.md#pystartupinfo)
 
     a STARTUPINFO object that specifies how the main window for the new process should appear.
 
@@ -322,13 +322,13 @@ The result is a tuple of (hProcess, hThread, dwProcessId, dwThreadId)
 
 ## [win32process](README.md#win32process).CreateProcessAsUser
 
-[PyHANDLE](README.md#PyHANDLE),[PyHANDLE](README.md#PyHANDLE), int, int = **CreateProcessAsUser( *hToken*  *, appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** )
+[PyHANDLE](README.md#pyhandle),[PyHANDLE](README.md#pyhandle), int, int = **CreateProcessAsUser( *hToken*  *, appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** )
 Creates a new process in the context of the specified user.
 
 #### Parameters
 
 
-  -  *hToken* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hToken* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a token that represents a logged-on user
 
@@ -340,11 +340,11 @@ Creates a new process in the context of the specified user.
 
     command line string, or None
 
-  -  *processAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *processAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     process security attributes, or None
 
-  -  *threadAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *threadAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     thread security attributes, or None
 
@@ -364,7 +364,7 @@ Creates a new process in the context of the specified user.
 
     current directory name, or None
 
-  -  *startupinfo* :[PySTARTUPINFO](README.md#PySTARTUPINFO)
+  -  *startupinfo* :[PySTARTUPINFO](README.md#pystartupinfo)
 
     a STARTUPINFO object that specifies how the main window for the new process should appear.
 
@@ -373,7 +373,7 @@ The result is a tuple of (hProcess, hThread, dwProcessId, dwThreadId)
 
 ## [win32process](README.md#win32process).CreateRemoteThread
 
-[PyHANDLE](README.md#PyHANDLE), int = **CreateRemoteThread( *hprocess*  *, sa*  *, stackSize*  *, entryPoint*  *, Parameter*  *, flags* ** )
+[PyHANDLE](README.md#pyhandle), int = **CreateRemoteThread( *hprocess*  *, sa*  *, stackSize*  *, entryPoint*  *, Parameter*  *, flags* ** )
 creates a thread that runs in 
 
 the virtual address space of another process.
@@ -381,11 +381,11 @@ the virtual address space of another process.
 #### Parameters
 
 
-  -  *hprocess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hprocess* :[PyHANDLE](README.md#pyhandle)
 
     The handle to the remote process.
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
@@ -432,7 +432,7 @@ Lists loaded modules for a process handle
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -444,7 +444,7 @@ Lists 32 or 64-bit modules load by a process
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -479,7 +479,7 @@ a clean process shutdown. This includes calling the entry-point function of all
 
 attached dynamic-link libraries (DLLs) with a value indicating that the process 
 
-is detaching from the DLL. If a process terminates by calling[win32process::TerminateProcess](win32process.md#win32processTerminateProcess), the DLLs that the process is attached to are 
+is detaching from the DLL. If a process terminates by calling[win32process::TerminateProcess](win32process.md#win32processterminateprocess), the DLLs that the process is attached to are 
 
 not notified of the process termination.
 
@@ -501,7 +501,7 @@ int = **GetExitCodeProcess( *handle* ** )
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the process
 
@@ -513,7 +513,7 @@ int = **GetExitCodeThread( *handle* ** )
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread
 
@@ -525,9 +525,9 @@ Returns the number of GDI or user object handles held by a process
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Process* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a process as returned by[win32api::OpenProcess](win32api.md#win32apiOpenProcess)
+    Handle to a process as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess)
 
   -  *Flags* : int
 
@@ -538,17 +538,17 @@ Available on Win2k and up
 
 ## [win32process](README.md#win32process).GetModuleFileNameEx
 
-[PyUNICODE](README.md#PyUNICODE)= **GetModuleFileNameEx( *hProcess*  *, hModule* ** )
+[PyUNICODE](README.md#pyunicode)= **GetModuleFileNameEx( *hProcess*  *, hModule* ** )
 Return name of module loaded by another process (uses process handle, not pid)
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     Process handle as returned by OpenProcess
 
-  -  *hModule* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hModule* :[PyHANDLE](README.md#pyhandle)
 
     Module handle
 
@@ -560,7 +560,7 @@ int = **GetPriorityClass( *handle* ** )
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread
 
@@ -572,7 +572,7 @@ Gets a processor affinity mask for a specified process
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     handle to the process of interest
 
@@ -587,7 +587,7 @@ Returns the Pid for a process handle
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Process* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a process
 
@@ -599,7 +599,7 @@ Return I/O statistics for a process as a dictionary representing an IO_COUNTERS 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -611,7 +611,7 @@ Returns process memory statistics as a dict representing a PROCESS_MEMORY_COUNTE
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -623,7 +623,7 @@ Determines if dynamic priority adjustment is enabled for a process
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Process* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a process
 
@@ -643,7 +643,7 @@ Retrieve time statics for a process by handle.  (KernelTime and UserTime in 100 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -672,13 +672,13 @@ Returns min and max working set sizes for a process by handle
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
-    Process handle as returned by[win32api::OpenProcess](win32api.md#win32apiOpenProcess)
+    Process handle as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess)
 
 ## [win32process](README.md#win32process).GetStartupInfo
 
-[PySTARTUPINFO](README.md#PySTARTUPINFO)= **GetStartupInfo(** )
+[PySTARTUPINFO](README.md#pystartupinfo)= **GetStartupInfo(** )
 Retrieves the contents of the STARTUPINFO structure that was specified when the calling process was created.
 
 ## [win32process](README.md#win32process).GetThreadIOPendingFlag
@@ -689,7 +689,7 @@ Determines if thread has any outstanding IO requests
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Thread* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a thread
 
@@ -701,7 +701,7 @@ int = **GetThreadPriority( *handle* ** )
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread
 
@@ -713,7 +713,7 @@ Determines if dynamic priority adjustment is enabled for a thread
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Thread* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a thread
 
@@ -725,7 +725,7 @@ Returns a thread's time statistics
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Thread* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a thread
 
@@ -760,9 +760,9 @@ Determines whether the specified process is running under WOW64.
 #### Parameters
 
 
-  -  *Process=None* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Process=None* :[PyHANDLE](README.md#pyhandle)
 
-    Handle to a process as returned by[win32api::OpenProcess](win32api.md#win32apiOpenProcess),[win32api::GetCurrentProcess](win32api.md#win32apiGetCurrentProcess), etc, or 
+    Handle to a process as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess),[win32api::GetCurrentProcess](win32api.md#win32apigetcurrentprocess), etc, or 
 
 will use the current process handle if None (the default) is passed.
 
@@ -811,7 +811,7 @@ Resumes the specified thread. When the suspend count is decremented to zero, the
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread
 
@@ -862,7 +862,7 @@ If this value is not specified, the hStdInput, hStdOutput, and hStdError members
 
 ## [win32process](README.md#win32process).STARTUPINFO
 
-[PySTARTUPINFO](README.md#PySTARTUPINFO)= **STARTUPINFO(** )
+[PySTARTUPINFO](README.md#pystartupinfo)= **STARTUPINFO(** )
 Creates a new STARTUPINFO object.
 
 ## [win32process](README.md#win32process).SetPriorityClass
@@ -873,7 +873,7 @@ Creates a new STARTUPINFO object.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the process
 
@@ -889,7 +889,7 @@ Sets a processor affinity mask for a specified process.
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     handle to the process of interest
 
@@ -908,7 +908,7 @@ Enables or disables dynamic priority adjustment for a process
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Process* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a process
 
@@ -943,7 +943,7 @@ Sets minimum and maximum working set sizes for a process
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -966,7 +966,7 @@ Sets a processor affinity mask for a specified thread.
 #### Parameters
 
 
-  -  *hThread* :[PyHANDLE](README.md#PyHANDLE)
+  -  *hThread* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread of interest
 
@@ -982,7 +982,7 @@ Used to specify a preferred processor for a thread. The system schedules threads
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread of interest
 
@@ -998,7 +998,7 @@ Used to specify a preferred processor for a thread. The system schedules threads
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread
 
@@ -1014,7 +1014,7 @@ Enables or disables dynamic priority adjustment for a thread
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#PyHANDLE)
+  -  *Thread* :[PyHANDLE](README.md#pyhandle)
 
     Handle to a thread
 
@@ -1030,7 +1030,7 @@ Suspends the specified thread.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the thread
 
@@ -1089,7 +1089,7 @@ Terminates the specified process and all of its threads.
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#pyhandle)
 
     handle to the process
 
@@ -1099,13 +1099,13 @@ Terminates the specified process and all of its threads.
 
 ## [win32process](README.md#win32process).beginthreadex
 
-[PyHANDLE](README.md#PyHANDLE), int = **beginthreadex( *sa*  *, stackSize*  *, entryPoint*  *, args*  *, flags* ** )
+[PyHANDLE](README.md#pyhandle), int = **beginthreadex( *sa*  *, stackSize*  *, entryPoint*  *, args*  *, flags* ** )
 Creates a new thread
 
 #### Parameters
 
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
