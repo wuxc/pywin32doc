@@ -7,839 +7,839 @@ A module, encapsulating the Windows Win32 API.
 
 ### Methods
 
-[AbortSystemShutdown](#win32api.AbortSystemShutdown)
+[AbortSystemShutdown](#win32api_AbortSystemShutdown)
 
 Aborts a system shutdown&nbsp;
 
-[InitiateSystemShutdown](#win32api.InitiateSystemShutdown)
+[InitiateSystemShutdown](#win32api_InitiateSystemShutdown)
 
 Initiates a shutdown and optional restart of the specified computer.&nbsp;
 
-[Apply](#win32api.Apply)
+[Apply](#win32api_Apply)
 
 Calls a Python function, but traps Win32 exceptions.&nbsp;
 
-[Beep](#win32api.Beep)
+[Beep](#win32api_Beep)
 
 Generates a simple tone on the speaker.&nbsp;
 
-[BeginUpdateResource](#win32api.BeginUpdateResource)
+[BeginUpdateResource](#win32api_BeginUpdateResource)
 
 Begins an update cycle for a PE file.&nbsp;
 
-[ChangeDisplaySettings](#win32api.ChangeDisplaySettings)
+[ChangeDisplaySettings](#win32api_ChangeDisplaySettings)
 
 Changes video mode for default display&nbsp;
 
-[ChangeDisplaySettingsEx](#win32api.ChangeDisplaySettingsEx)
+[ChangeDisplaySettingsEx](#win32api_ChangeDisplaySettingsEx)
 
 Changes video mode for specified display&nbsp;
 
-[ClipCursor](#win32api.ClipCursor)
+[ClipCursor](#win32api_ClipCursor)
 
 Confines the cursor to a rectangular area on the screen.&nbsp;
 
-[CloseHandle](#win32api.CloseHandle)
+[CloseHandle](#win32api_CloseHandle)
 
 Closes an open handle.&nbsp;
 
-[CopyFile](#win32api.CopyFile)
+[CopyFile](#win32api_CopyFile)
 
 Copy a file.&nbsp;
 
-[DebugBreak](#win32api.DebugBreak)
+[DebugBreak](#win32api_DebugBreak)
 
 Breaks into the C debugger.&nbsp;
 
-[DeleteFile](#win32api.DeleteFile)
+[DeleteFile](#win32api_DeleteFile)
 
 Deletes the specified file.&nbsp;
 
-[DragQueryFile](#win32api.DragQueryFile)
+[DragQueryFile](#win32api_DragQueryFile)
 
 Retrieve the file names for dropped files.&nbsp;
 
-[DragFinish](#win32api.DragFinish)
+[DragFinish](#win32api_DragFinish)
 
 Free memory associated with dropped files.&nbsp;
 
-[DuplicateHandle](#win32api.DuplicateHandle)
+[DuplicateHandle](#win32api_DuplicateHandle)
 
 Duplicates a handle.&nbsp;
 
-[EndUpdateResource](#win32api.EndUpdateResource)
+[EndUpdateResource](#win32api_EndUpdateResource)
 
 Ends a resource update cycle of a PE file.&nbsp;
 
-[EnumDisplayDevices](#win32api.EnumDisplayDevices)
+[EnumDisplayDevices](#win32api_EnumDisplayDevices)
 
 Obtain information about the display devices in a system&nbsp;
 
-[EnumDisplayMonitors](#win32api.EnumDisplayMonitors)
+[EnumDisplayMonitors](#win32api_EnumDisplayMonitors)
 
 Lists monitors for a device context&nbsp;
 
-[EnumDisplaySettings](#win32api.EnumDisplaySettings)
+[EnumDisplaySettings](#win32api_EnumDisplaySettings)
 
 Lists available modes for specified device&nbsp;
 
-[EnumDisplaySettingsEx](#win32api.EnumDisplaySettingsEx)
+[EnumDisplaySettingsEx](#win32api_EnumDisplaySettingsEx)
 
 Lists available modes for a display device, with optional flags&nbsp;
 
-[EnumResourceLanguages](#win32api.EnumResourceLanguages)
+[EnumResourceLanguages](#win32api_EnumResourceLanguages)
 
 List languages for specified resource&nbsp;
 
-[EnumResourceNames](#win32api.EnumResourceNames)
+[EnumResourceNames](#win32api_EnumResourceNames)
 
 Enumerates all the resources of the specified type from the nominated file.&nbsp;
 
-[EnumResourceTypes](#win32api.EnumResourceTypes)
+[EnumResourceTypes](#win32api_EnumResourceTypes)
 
 Return list of all resource types contained in module&nbsp;
 
-[ExpandEnvironmentStrings](#win32api.ExpandEnvironmentStrings)
+[ExpandEnvironmentStrings](#win32api_ExpandEnvironmentStrings)
 
 Expands environment-variable strings and replaces them with their defined values.&nbsp;
 
-[ExitWindows](#win32api.ExitWindows)
+[ExitWindows](#win32api_ExitWindows)
 
 Logs off the current user&nbsp;
 
-[ExitWindowsEx](#win32api.ExitWindowsEx)
+[ExitWindowsEx](#win32api_ExitWindowsEx)
 
 either logs off the current user, shuts down the system, or shuts down and restarts the system.&nbsp;
 
-[FindFiles](#win32api.FindFiles)
+[FindFiles](#win32api_FindFiles)
 
 Find files matching a file spec.&nbsp;
 
-[FindFirstChangeNotification](#win32api.FindFirstChangeNotification)
+[FindFirstChangeNotification](#win32api_FindFirstChangeNotification)
 
 Creates a change notification handle and sets up initial change notification filter conditions.&nbsp;
 
-[FindNextChangeNotification](#win32api.FindNextChangeNotification)
+[FindNextChangeNotification](#win32api_FindNextChangeNotification)
 
 Requests that the operating system signal a change notification handle the next time it detects an appropriate change.&nbsp;
 
-[FindCloseChangeNotification](#win32api.FindCloseChangeNotification)
+[FindCloseChangeNotification](#win32api_FindCloseChangeNotification)
 
 Closes the change notification handle.&nbsp;
 
-[FindExecutable](#win32api.FindExecutable)
+[FindExecutable](#win32api_FindExecutable)
 
 Find an executable associated with a document.&nbsp;
 
-[FormatMessage](#win32api.FormatMessage)
+[FormatMessage](#win32api_FormatMessage)
 
 Return an error message string.&nbsp;
 
-[FormatMessageW](#win32api.FormatMessageW)
+[FormatMessageW](#win32api_FormatMessageW)
 
 Return an error message string (as a Unicode object).&nbsp;
 
-[FreeLibrary](#win32api.FreeLibrary)
+[FreeLibrary](#win32api_FreeLibrary)
 
 Decrements the reference count of the loaded dynamic-link library (DLL) module.&nbsp;
 
-[GenerateConsoleCtrlEvent](#win32api.GenerateConsoleCtrlEvent)
+[GenerateConsoleCtrlEvent](#win32api_GenerateConsoleCtrlEvent)
 
 Send a specified signal to a console process group that shares the console associated with the calling process.&nbsp;
 
-[GetAsyncKeyState](#win32api.GetAsyncKeyState)
+[GetAsyncKeyState](#win32api_GetAsyncKeyState)
 
 Retrieves the asynch state of a virtual key code.&nbsp;
 
-[GetCommandLine](#win32api.GetCommandLine)
+[GetCommandLine](#win32api_GetCommandLine)
 
 Return the application's command line.&nbsp;
 
-[GetComputerName](#win32api.GetComputerName)
+[GetComputerName](#win32api_GetComputerName)
 
 Returns the local computer name&nbsp;
 
-[GetComputerNameEx](#win32api.GetComputerNameEx)
+[GetComputerNameEx](#win32api_GetComputerNameEx)
 
 Retrieves a NetBIOS or DNS name associated with the local computer&nbsp;
 
-[GetComputerObjectName](#win32api.GetComputerObjectName)
+[GetComputerObjectName](#win32api_GetComputerObjectName)
 
 Retrieves the local computer's name in a specified format&nbsp;
 
-[GetMonitorInfo](#win32api.GetMonitorInfo)
+[GetMonitorInfo](#win32api_GetMonitorInfo)
 
 Retrieves information for a monitor by handle&nbsp;
 
-[GetUserName](#win32api.GetUserName)
+[GetUserName](#win32api_GetUserName)
 
 Returns the current user name.&nbsp;
 
-[GetUserNameEx](#win32api.GetUserNameEx)
+[GetUserNameEx](#win32api_GetUserNameEx)
 
 Returns the current user name in format specified by Name* constants&nbsp;
 
-[GetCursorPos](#win32api.GetCursorPos)
+[GetCursorPos](#win32api_GetCursorPos)
 
 Returns the position of the cursor, in screen co-ordinates.&nbsp;
 
-[GetCurrentThread](#win32api.GetCurrentThread)
+[GetCurrentThread](#win32api_GetCurrentThread)
 
 Returns a pseudohandle for the current thread.&nbsp;
 
-[GetCurrentThreadId](#win32api.GetCurrentThreadId)
+[GetCurrentThreadId](#win32api_GetCurrentThreadId)
 
 Returns the thread ID for the current thread.&nbsp;
 
-[GetCurrentProcessId](#win32api.GetCurrentProcessId)
+[GetCurrentProcessId](#win32api_GetCurrentProcessId)
 
 Returns the thread ID for the current thread.&nbsp;
 
-[GetCurrentProcess](#win32api.GetCurrentProcess)
+[GetCurrentProcess](#win32api_GetCurrentProcess)
 
 Returns a pseudohandle for the current process.&nbsp;
 
-[GetConsoleTitle](#win32api.GetConsoleTitle)
+[GetConsoleTitle](#win32api_GetConsoleTitle)
 
 Return the application's console title.&nbsp;
 
-[GetDateFormat](#win32api.GetDateFormat)
+[GetDateFormat](#win32api_GetDateFormat)
 
 Formats a date as a date string for a specified locale.&nbsp;
 
-[GetDiskFreeSpace](#win32api.GetDiskFreeSpace)
+[GetDiskFreeSpace](#win32api_GetDiskFreeSpace)
 
 Retrieves information about a disk.&nbsp;
 
-[GetDiskFreeSpaceEx](#win32api.GetDiskFreeSpaceEx)
+[GetDiskFreeSpaceEx](#win32api_GetDiskFreeSpaceEx)
 
 Retrieves information about a disk.&nbsp;
 
-[GetDllDirectory](#win32api.GetDllDirectory)
+[GetDllDirectory](#win32api_GetDllDirectory)
 
 Retrieves the DLL search path&nbsp;
 
-[GetDomainName](#win32api.GetDomainName)
+[GetDomainName](#win32api_GetDomainName)
 
 Returns the current domain name&nbsp;
 
-[GetEnvironmentVariable](#win32api.GetEnvironmentVariable)
+[GetEnvironmentVariable](#win32api_GetEnvironmentVariable)
 
 Retrieves the value of an environment variable.&nbsp;
 
-[GetEnvironmentVariableW](#win32api.GetEnvironmentVariableW)
+[GetEnvironmentVariableW](#win32api_GetEnvironmentVariableW)
 
 Retrieves the value of an environment variable.&nbsp;
 
-[GetFileAttributes](#win32api.GetFileAttributes)
+[GetFileAttributes](#win32api_GetFileAttributes)
 
 Retrieves the attributes for the named file.&nbsp;
 
-[GetFileVersionInfo](#win32api.GetFileVersionInfo)
+[GetFileVersionInfo](#win32api_GetFileVersionInfo)
 
 Retrieves string version info&nbsp;
 
-[GetFocus](#win32api.GetFocus)
+[GetFocus](#win32api_GetFocus)
 
 Retrieves the handle of the keyboard focus window associated with the thread that called the method.&nbsp;
 
-[GetFullPathName](#win32api.GetFullPathName)
+[GetFullPathName](#win32api_GetFullPathName)
 
 Returns the full path of a (possibly relative) path&nbsp;
 
-[GetHandleInformation](#win32api.GetHandleInformation)
+[GetHandleInformation](#win32api_GetHandleInformation)
 
 Retrieves a handle's flags.&nbsp;
 
-[GetKeyboardLayout](#win32api.GetKeyboardLayout)
+[GetKeyboardLayout](#win32api_GetKeyboardLayout)
 
 Retrieves the active input locale identifier&nbsp;
 
-[GetKeyboardLayoutList](#win32api.GetKeyboardLayoutList)
+[GetKeyboardLayoutList](#win32api_GetKeyboardLayoutList)
 
 Returns a sequence of all locale ids in the system&nbsp;
 
-[GetKeyboardLayoutName](#win32api.GetKeyboardLayoutName)
+[GetKeyboardLayoutName](#win32api_GetKeyboardLayoutName)
 
 Retrieves the name of the active input locale identifier (formerly called the keyboard layout).&nbsp;
 
-[GetKeyboardState](#win32api.GetKeyboardState)
+[GetKeyboardState](#win32api_GetKeyboardState)
 
 Retrieves the status of the 256 virtual keys on the keyboard.&nbsp;
 
-[GetKeyState](#win32api.GetKeyState)
+[GetKeyState](#win32api_GetKeyState)
 
 Retrives the last known key state for a key.&nbsp;
 
-[GetLastError](#win32api.GetLastError)
+[GetLastError](#win32api_GetLastError)
 
 Retrieves the last error code known by the system.&nbsp;
 
-[GetLastInputInfo](#win32api.GetLastInputInfo)
+[GetLastInputInfo](#win32api_GetLastInputInfo)
 
 Returns time of last input event in tick count&nbsp;
 
-[GetLocalTime](#win32api.GetLocalTime)
+[GetLocalTime](#win32api_GetLocalTime)
 
 Returns the current local time.&nbsp;
 
-[GetLongPathName](#win32api.GetLongPathName)
+[GetLongPathName](#win32api_GetLongPathName)
 
 Converts the specified path to its long form.&nbsp;
 
-[GetLongPathNameW](#win32api.GetLongPathNameW)
+[GetLongPathNameW](#win32api_GetLongPathNameW)
 
 Converts the specified path to its long form.&nbsp;
 
-[GetLogicalDrives](#win32api.GetLogicalDrives)
+[GetLogicalDrives](#win32api_GetLogicalDrives)
 
 Returns a bitmask representing the currently available disk drives.&nbsp;
 
-[GetLogicalDriveStrings](#win32api.GetLogicalDriveStrings)
+[GetLogicalDriveStrings](#win32api_GetLogicalDriveStrings)
 
 Returns a list of strings for all the drives.&nbsp;
 
-[GetModuleFileName](#win32api.GetModuleFileName)
+[GetModuleFileName](#win32api_GetModuleFileName)
 
 Retrieves the filename of the specified module.&nbsp;
 
-[GetModuleFileNameW](#win32api.GetModuleFileNameW)
+[GetModuleFileNameW](#win32api_GetModuleFileNameW)
 
 Retrieves the unicode filename of the specified module.&nbsp;
 
-[GetModuleHandle](#win32api.GetModuleHandle)
+[GetModuleHandle](#win32api_GetModuleHandle)
 
 Returns the handle of an already loaded DLL.&nbsp;
 
-[GetPwrCapabilities](#win32api.GetPwrCapabilities)
+[GetPwrCapabilities](#win32api_GetPwrCapabilities)
 
 Retrieves system's power capabilities&nbsp;
 
-[GetProfileSection](#win32api.GetProfileSection)
+[GetProfileSection](#win32api_GetProfileSection)
 
 Returns a list of entries in an INI file.&nbsp;
 
-[GetProcAddress](#win32api.GetProcAddress)
+[GetProcAddress](#win32api_GetProcAddress)
 
 Returns the address of the specified exported dynamic-link library (DLL) function.&nbsp;
 
-[GetProfileVal](#win32api.GetProfileVal)
+[GetProfileVal](#win32api_GetProfileVal)
 
 Returns a value from an INI file.&nbsp;
 
-[GetShortPathName](#win32api.GetShortPathName)
+[GetShortPathName](#win32api_GetShortPathName)
 
 Returns the 8.3 version of a pathname.&nbsp;
 
-[GetStdHandle](#win32api.GetStdHandle)
+[GetStdHandle](#win32api_GetStdHandle)
 
 Returns a handle for the standard input, standard output, or standard error device&nbsp;
 
-[GetSysColor](#win32api.GetSysColor)
+[GetSysColor](#win32api_GetSysColor)
 
 Returns the system colors.&nbsp;
 
-[GetSystemDefaultLangID](#win32api.GetSystemDefaultLangID)
+[GetSystemDefaultLangID](#win32api_GetSystemDefaultLangID)
 
 Retrieves the system default language identifier.&nbsp;
 
-[GetSystemDefaultLCID](#win32api.GetSystemDefaultLCID)
+[GetSystemDefaultLCID](#win32api_GetSystemDefaultLCID)
 
 Retrieves the system default locale identifier.&nbsp;
 
-[GetSystemDirectory](#win32api.GetSystemDirectory)
+[GetSystemDirectory](#win32api_GetSystemDirectory)
 
 Returns the Windows system directory.&nbsp;
 
-[GetSystemFileCacheSize](#win32api.GetSystemFileCacheSize)
+[GetSystemFileCacheSize](#win32api_GetSystemFileCacheSize)
 
 Returns the amount of memory reserved for file cache&nbsp;
 
-[SetSystemFileCacheSize](#win32api.SetSystemFileCacheSize)
+[SetSystemFileCacheSize](#win32api_SetSystemFileCacheSize)
 
 Sets the amount of memory reserved for file cache&nbsp;
 
-[GetSystemInfo](#win32api.GetSystemInfo)
+[GetSystemInfo](#win32api_GetSystemInfo)
 
 Retrieves information about the current system.&nbsp;
 
-[GetNativeSystemInfo](#win32api.GetNativeSystemInfo)
+[GetNativeSystemInfo](#win32api_GetNativeSystemInfo)
 
 Retrieves information about the current system for a Wow64 process.&nbsp;
 
-[GetSystemMetrics](#win32api.GetSystemMetrics)
+[GetSystemMetrics](#win32api_GetSystemMetrics)
 
 Returns the specified system metrics.&nbsp;
 
-[GetSystemTime](#win32api.GetSystemTime)
+[GetSystemTime](#win32api_GetSystemTime)
 
 Returns the current system time.&nbsp;
 
-[GetTempFileName](#win32api.GetTempFileName)
+[GetTempFileName](#win32api_GetTempFileName)
 
 Creates a temporary file.&nbsp;
 
-[GetTempPath](#win32api.GetTempPath)
+[GetTempPath](#win32api_GetTempPath)
 
 Returns the path designated as holding temporary files.&nbsp;
 
-[GetThreadLocale](#win32api.GetThreadLocale)
+[GetThreadLocale](#win32api_GetThreadLocale)
 
 Returns the current thread's locale.&nbsp;
 
-[GetTickCount](#win32api.GetTickCount)
+[GetTickCount](#win32api_GetTickCount)
 
 Returns the milliseconds since windows started.&nbsp;
 
-[GetTimeFormat](#win32api.GetTimeFormat)
+[GetTimeFormat](#win32api_GetTimeFormat)
 
 Formats a time as a time string for a specified locale.&nbsp;
 
-[GetTimeZoneInformation](#win32api.GetTimeZoneInformation)
+[GetTimeZoneInformation](#win32api_GetTimeZoneInformation)
 
 Returns the system time-zone information.&nbsp;
 
-[GetVersion](#win32api.GetVersion)
+[GetVersion](#win32api_GetVersion)
 
 Returns Windows version information.&nbsp;
 
-[GetVersionEx](#win32api.GetVersionEx)
+[GetVersionEx](#win32api_GetVersionEx)
 
 Returns Windows version information as a tuple.&nbsp;
 
-[GetVolumeInformation](#win32api.GetVolumeInformation)
+[GetVolumeInformation](#win32api_GetVolumeInformation)
 
 Returns information about a volume and file system attached to the system.&nbsp;
 
-[GetWindowsDirectory](#win32api.GetWindowsDirectory)
+[GetWindowsDirectory](#win32api_GetWindowsDirectory)
 
 Returns the windows directory.&nbsp;
 
-[GetWindowLong](#win32api.GetWindowLong)
+[GetWindowLong](#win32api_GetWindowLong)
 
 Retrieves a long value at the specified offset into the extra window memory of the given window.&nbsp;
 
-[GetUserDefaultLangID](#win32api.GetUserDefaultLangID)
+[GetUserDefaultLangID](#win32api_GetUserDefaultLangID)
 
 Retrieves the user default language identifier.&nbsp;
 
-[GetUserDefaultLCID](#win32api.GetUserDefaultLCID)
+[GetUserDefaultLCID](#win32api_GetUserDefaultLCID)
 
 Retrieves the user default locale identifier.&nbsp;
 
-[GlobalMemoryStatus](#win32api.GlobalMemoryStatus)
+[GlobalMemoryStatus](#win32api_GlobalMemoryStatus)
 
 Returns systemwide memory usage&nbsp;
 
-[GlobalMemoryStatusEx](#win32api.GlobalMemoryStatusEx)
+[GlobalMemoryStatusEx](#win32api_GlobalMemoryStatusEx)
 
 Returns physical and virtual memory usage&nbsp;
 
-[keybd_event](#win32api.keybd_event)
+[keybd_event](#win32api_keybd_event)
 
 Simulate a keyboard event&nbsp;
 
-[mouse_event](#win32api.mouse_event)
+[mouse_event](#win32api_mouse_event)
 
 Simulate a mouse event&nbsp;
 
-[LoadCursor](#win32api.LoadCursor)
+[LoadCursor](#win32api_LoadCursor)
 
 Loads a cursor.&nbsp;
 
-[LoadKeyboardLayout](#win32api.LoadKeyboardLayout)
+[LoadKeyboardLayout](#win32api_LoadKeyboardLayout)
 
 Loads a new locale id&nbsp;
 
-[LoadLibrary](#win32api.LoadLibrary)
+[LoadLibrary](#win32api_LoadLibrary)
 
 Loads the specified DLL, and returns the handle.&nbsp;
 
-[LoadLibraryEx](#win32api.LoadLibraryEx)
+[LoadLibraryEx](#win32api_LoadLibraryEx)
 
 Loads the specified DLL, and returns the handle.&nbsp;
 
-[LoadResource](#win32api.LoadResource)
+[LoadResource](#win32api_LoadResource)
 
 Finds and loads a resource from a PE file.&nbsp;
 
-[LoadString](#win32api.LoadString)
+[LoadString](#win32api_LoadString)
 
 Loads a string from a resource file.&nbsp;
 
-[MapVirtualKeyEx](#win32api.MapVirtualKeyEx)
+[MapVirtualKeyEx](#win32api_MapVirtualKeyEx)
 
 Translates (maps) a virtual-key code into a scan code or character value, or translates a scan code into a virtual-key code.&nbsp;
 
-[MessageBeep](#win32api.MessageBeep)
+[MessageBeep](#win32api_MessageBeep)
 
 Plays a predefined waveform sound.&nbsp;
 
-[MessageBox](#win32api.MessageBox)
+[MessageBox](#win32api_MessageBox)
 
 Display a message box.&nbsp;
 
-[MonitorFromPoint](#win32api.MonitorFromPoint)
+[MonitorFromPoint](#win32api_MonitorFromPoint)
 
 Finds monitor that contains a point&nbsp;
 
-[MonitorFromRect](#win32api.MonitorFromRect)
+[MonitorFromRect](#win32api_MonitorFromRect)
 
 Finds monitor that has largest intersection with a rectangle&nbsp;
 
-[MonitorFromWindow](#win32api.MonitorFromWindow)
+[MonitorFromWindow](#win32api_MonitorFromWindow)
 
 Finds monitor that contains a window&nbsp;
 
-[MoveFile](#win32api.MoveFile)
+[MoveFile](#win32api_MoveFile)
 
 Moves or renames a file.&nbsp;
 
-[MoveFileEx](#win32api.MoveFileEx)
+[MoveFileEx](#win32api_MoveFileEx)
 
 Moves or renames a file.&nbsp;
 
-[OpenProcess](#win32api.OpenProcess)
+[OpenProcess](#win32api_OpenProcess)
 
 Retrieves a handle to an existing process.&nbsp;
 
-[OutputDebugString](#win32api.OutputDebugString)
+[OutputDebugString](#win32api_OutputDebugString)
 
 Writes output to the Windows debugger.&nbsp;
 
-[PostMessage](#win32api.PostMessage)
+[PostMessage](#win32api_PostMessage)
 
 Post a message to a window.&nbsp;
 
-[PostQuitMessage](#win32api.PostQuitMessage)
+[PostQuitMessage](#win32api_PostQuitMessage)
 
 Posts a quit message.&nbsp;
 
-[PostThreadMessage](#win32api.PostThreadMessage)
+[PostThreadMessage](#win32api_PostThreadMessage)
 
 Post a message to a thread.&nbsp;
 
-[RegCloseKey](#win32api.RegCloseKey)
+[RegCloseKey](#win32api_RegCloseKey)
 
 Closes a registry key.&nbsp;
 
-[RegConnectRegistry](#win32api.RegConnectRegistry)
+[RegConnectRegistry](#win32api_RegConnectRegistry)
 
 Establishes a connection to a predefined registry handle on another computer.&nbsp;
 
-[RegCopyTree](#win32api.RegCopyTree)
+[RegCopyTree](#win32api_RegCopyTree)
 
 Copies an entire registry key to another location&nbsp;
 
-[RegCreateKey](#win32api.RegCreateKey)
+[RegCreateKey](#win32api_RegCreateKey)
 
 Creates the specified key, or opens the key if it already exists.&nbsp;
 
-[RegCreateKeyEx](#win32api.RegCreateKeyEx)
+[RegCreateKeyEx](#win32api_RegCreateKeyEx)
 
 Extended version of RegCreateKey&nbsp;
 
-[RegDeleteKey](#win32api.RegDeleteKey)
+[RegDeleteKey](#win32api_RegDeleteKey)
 
 Deletes the specified key.&nbsp;
 
-[RegDeleteKeyEx](#win32api.RegDeleteKeyEx)
+[RegDeleteKeyEx](#win32api_RegDeleteKeyEx)
 
 Deletes a registry key from 32 or 64 bit registry view&nbsp;
 
-[RegDeleteTree](#win32api.RegDeleteTree)
+[RegDeleteTree](#win32api_RegDeleteTree)
 
 Recursively deletes a key's subkeys and values&nbsp;
 
-[RegDeleteValue](#win32api.RegDeleteValue)
+[RegDeleteValue](#win32api_RegDeleteValue)
 
 Removes a named value from the specified registry key.&nbsp;
 
-[RegEnumKey](#win32api.RegEnumKey)
+[RegEnumKey](#win32api_RegEnumKey)
 
 Enumerates subkeys of the specified open registry key.&nbsp;
 
-[RegEnumKeyEx](#win32api.RegEnumKeyEx)
+[RegEnumKeyEx](#win32api_RegEnumKeyEx)
 
 Enumerates subkeys of the specified open registry key.&nbsp;
 
-[RegEnumKeyExW](#win32api.RegEnumKeyExW)
+[RegEnumKeyExW](#win32api_RegEnumKeyExW)
 
 Unicode version of RegEnumKeyEx&nbsp;
 
-[RegEnumValue](#win32api.RegEnumValue)
+[RegEnumValue](#win32api_RegEnumValue)
 
 Enumerates values of the specified open registry key.&nbsp;
 
-[RegFlushKey](#win32api.RegFlushKey)
+[RegFlushKey](#win32api_RegFlushKey)
 
 Writes all the attributes of the specified key to the registry.&nbsp;
 
-[RegGetKeySecurity](#win32api.RegGetKeySecurity)
+[RegGetKeySecurity](#win32api_RegGetKeySecurity)
 
 Retrieves the security on the specified registry key.&nbsp;
 
-[RegLoadKey](#win32api.RegLoadKey)
+[RegLoadKey](#win32api_RegLoadKey)
 
 Creates a subkey under HKEY_USER or HKEY_LOCAL_MACHINE and stores registration information from a specified file into that subkey.&nbsp;
 
-[RegOpenCurrentUser](#win32api.RegOpenCurrentUser)
+[RegOpenCurrentUser](#win32api_RegOpenCurrentUser)
 
 Opens HKEY_CURRENT_USER for impersonated user&nbsp;
 
-[RegOpenKey](#win32api.RegOpenKey)
+[RegOpenKey](#win32api_RegOpenKey)
 
-Alias for[win32api::RegOpenKeyEx](#win32api.RegOpenKeyEx)&nbsp;
+Alias for[win32api::RegOpenKeyEx](#win32api_RegOpenKeyEx)&nbsp;
 
-[RegOpenKeyEx](#win32api.RegOpenKeyEx)
+[RegOpenKeyEx](#win32api_RegOpenKeyEx)
 
 Opens the specified key.&nbsp;
 
-[RegOpenKeyTransacted](#win32api.RegOpenKeyTransacted)
+[RegOpenKeyTransacted](#win32api_RegOpenKeyTransacted)
 
 Opens a registry key as part of a transaction.&nbsp;
 
-[RegOverridePredefKey](#win32api.RegOverridePredefKey)
+[RegOverridePredefKey](#win32api_RegOverridePredefKey)
 
 Redirects one of the predefined keys to different key.&nbsp;
 
-[RegQueryValue](#win32api.RegQueryValue)
+[RegQueryValue](#win32api_RegQueryValue)
 
 Retrieves the value associated with the unnamed value for a specified key in the registry.&nbsp;
 
-[RegQueryValueEx](#win32api.RegQueryValueEx)
+[RegQueryValueEx](#win32api_RegQueryValueEx)
 
 Retrieves the type and data for a specified value name associated with an open registry key.&nbsp;
 
-[RegQueryInfoKey](#win32api.RegQueryInfoKey)
+[RegQueryInfoKey](#win32api_RegQueryInfoKey)
 
 Returns information about the specified key.&nbsp;
 
-[RegQueryInfoKeyW](#win32api.RegQueryInfoKeyW)
+[RegQueryInfoKeyW](#win32api_RegQueryInfoKeyW)
 
 Returns information about an open registry key&nbsp;
 
-[RegRestoreKey](#win32api.RegRestoreKey)
+[RegRestoreKey](#win32api_RegRestoreKey)
 
 Restores a key and subkeys from a saved registry file&nbsp;
 
-[RegSaveKey](#win32api.RegSaveKey)
+[RegSaveKey](#win32api_RegSaveKey)
 
 Saves the specified key, and all its subkeys to the specified file.&nbsp;
 
-[RegSaveKeyEx](#win32api.RegSaveKeyEx)
+[RegSaveKeyEx](#win32api_RegSaveKeyEx)
 
 Extended version of RegSaveKey&nbsp;
 
-[RegSetKeySecurity](#win32api.RegSetKeySecurity)
+[RegSetKeySecurity](#win32api_RegSetKeySecurity)
 
 Sets the security on the specified registry key.&nbsp;
 
-[RegSetValue](#win32api.RegSetValue)
+[RegSetValue](#win32api_RegSetValue)
 
 Associates a value with a specified key.  Currently, only strings are supported.&nbsp;
 
-[RegSetValueEx](#win32api.RegSetValueEx)
+[RegSetValueEx](#win32api_RegSetValueEx)
 
 Stores data in the value field of an open registry key.&nbsp;
 
-[RegUnLoadKey](#win32api.RegUnLoadKey)
+[RegUnLoadKey](#win32api_RegUnLoadKey)
 
 Unloads the specified registry key and its subkeys from the registry.  The keys must have been loaded previously by a call to RegLoadKey.&nbsp;
 
-[RegisterWindowMessage](#win32api.RegisterWindowMessage)
+[RegisterWindowMessage](#win32api_RegisterWindowMessage)
 
 Given a string, return a system wide unique message ID.&nbsp;
 
-[RegNotifyChangeKeyValue](#win32api.RegNotifyChangeKeyValue)
+[RegNotifyChangeKeyValue](#win32api_RegNotifyChangeKeyValue)
 
 Watch for registry changes&nbsp;
 
-[SearchPath](#win32api.SearchPath)
+[SearchPath](#win32api_SearchPath)
 
 Searches a path for a file.&nbsp;
 
-[SendMessage](#win32api.SendMessage)
+[SendMessage](#win32api_SendMessage)
 
 Send a message to a window.&nbsp;
 
-[SetConsoleCtrlHandler](#win32api.SetConsoleCtrlHandler)
+[SetConsoleCtrlHandler](#win32api_SetConsoleCtrlHandler)
 
 Adds or removes an application-defined HandlerRoutine function from the list of handler functions for the calling process.&nbsp;
 
-[SetConsoleTitle](#win32api.SetConsoleTitle)
+[SetConsoleTitle](#win32api_SetConsoleTitle)
 
 Sets the title for the current console.&nbsp;
 
-[SetCursorPos](#win32api.SetCursorPos)
+[SetCursorPos](#win32api_SetCursorPos)
 
 The SetCursorPos function moves the cursor to the specified screen coordinates.&nbsp;
 
-[SetDllDirectory](#win32api.SetDllDirectory)
+[SetDllDirectory](#win32api_SetDllDirectory)
 
 Modifies the application-specific DLL search path&nbsp;
 
-[SetErrorMode](#win32api.SetErrorMode)
+[SetErrorMode](#win32api_SetErrorMode)
 
 Controls whether the system will handle the specified types of serious errors, or whether the process will handle them.&nbsp;
 
-[SetFileAttributes](#win32api.SetFileAttributes)
+[SetFileAttributes](#win32api_SetFileAttributes)
 
 Sets the named file's attributes.&nbsp;
 
-[SetLastError](#win32api.SetLastError)
+[SetLastError](#win32api_SetLastError)
 
 Sets the last error code known for the current thread.&nbsp;
 
-[SetSysColors](#win32api.SetSysColors)
+[SetSysColors](#win32api_SetSysColors)
 
 Changes color of various window elements&nbsp;
 
-[SetLocalTime](#win32api.SetLocalTime)
+[SetLocalTime](#win32api_SetLocalTime)
 
 Changes the system's local time.&nbsp;
 
-[SetSystemTime](#win32api.SetSystemTime)
+[SetSystemTime](#win32api_SetSystemTime)
 
 Sets the system time.&nbsp;
 
-[SetClassLong](#win32api.SetClassLong)
+[SetClassLong](#win32api_SetClassLong)
 
 Replaces the specified 32-bit (long) value at the specified offset into the extra class memory for the window.&nbsp;
 
-[SetClassWord](#win32api.SetClassWord)
+[SetClassWord](#win32api_SetClassWord)
 
 Replaces the specified 32-bit (long) value at the specified offset into the extra class memory for the window.&nbsp;
 
-[SetWindowWord](#win32api.SetWindowWord)
+[SetWindowWord](#win32api_SetWindowWord)
 
 &nbsp;
 
-[SetCursor](#win32api.SetCursor)
+[SetCursor](#win32api_SetCursor)
 
 Set the cursor to the HCURSOR object.&nbsp;
 
-[SetEnvironmentVariable](#win32api.SetEnvironmentVariable)
+[SetEnvironmentVariable](#win32api_SetEnvironmentVariable)
 
 Creates, deletes, or changes the value of an environment variable.&nbsp;
 
-[SetEnvironmentVariable](#win32api.SetEnvironmentVariable)
+[SetEnvironmentVariable](#win32api_SetEnvironmentVariable)
 
 Creates, deletes, or changes the value of an environment variable.&nbsp;
 
-[SetEnvironmentVariableW](#win32api.SetEnvironmentVariableW)
+[SetEnvironmentVariableW](#win32api_SetEnvironmentVariableW)
 
 Creates, deletes, or changes the value of an environment variable.&nbsp;
 
-[SetHandleInformation](#win32api.SetHandleInformation)
+[SetHandleInformation](#win32api_SetHandleInformation)
 
 Sets a handles's flags&nbsp;
 
-[SetStdHandle](#win32api.SetStdHandle)
+[SetStdHandle](#win32api_SetStdHandle)
 
 Sets a handle for the standard input, standard output, or standard error device&nbsp;
 
-[SetSystemPowerState](#win32api.SetSystemPowerState)
+[SetSystemPowerState](#win32api_SetSystemPowerState)
 
 Powers machine down to a suspended state&nbsp;
 
-[SetThreadLocale](#win32api.SetThreadLocale)
+[SetThreadLocale](#win32api_SetThreadLocale)
 
 Sets the current thread's locale.&nbsp;
 
-[SetTimeZoneInformation](#win32api.SetTimeZoneInformation)
+[SetTimeZoneInformation](#win32api_SetTimeZoneInformation)
 
 Sets the system time-zone information.&nbsp;
 
-[SetWindowLong](#win32api.SetWindowLong)
+[SetWindowLong](#win32api_SetWindowLong)
 
 Places a long value at the specified offset into the extra window memory of the given window.&nbsp;
 
-[ShellExecute](#win32api.ShellExecute)
+[ShellExecute](#win32api_ShellExecute)
 
 Executes an application.&nbsp;
 
-[ShowCursor](#win32api.ShowCursor)
+[ShowCursor](#win32api_ShowCursor)
 
 The ShowCursor method displays or hides the cursor.&nbsp;
 
-[Sleep](#win32api.Sleep)
+[Sleep](#win32api_Sleep)
 
 Suspends current application execution&nbsp;
 
-[TerminateProcess](#win32api.TerminateProcess)
+[TerminateProcess](#win32api_TerminateProcess)
 
 Terminates a process.&nbsp;
 
-[ToAsciiEx](#win32api.ToAsciiEx)
+[ToAsciiEx](#win32api_ToAsciiEx)
 
 Translates the specified virtual-key code and keyboard state to the corresponding character or characters.&nbsp;
 
-[Unicode](#win32api.Unicode)
+[Unicode](#win32api_Unicode)
 
 Creates a new[PyUnicode](#PyUnicode)object&nbsp;
 
-[UpdateResource](#win32api.UpdateResource)
+[UpdateResource](#win32api_UpdateResource)
 
 Updates a resource in a PE file.&nbsp;
 
-[VkKeyScan](#win32api.VkKeyScan)
+[VkKeyScan](#win32api_VkKeyScan)
 
 Translates a character to the corresponding virtual-key code and shift state.&nbsp;
 
-[VkKeyScan](#win32api.VkKeyScan)
+[VkKeyScan](#win32api_VkKeyScan)
 
 Translates a character to the corresponding virtual-key code and shift state.&nbsp;
 
-[WinExec](#win32api.WinExec)
+[WinExec](#win32api_WinExec)
 
 Execute a program.&nbsp;
 
-[WinHelp](#win32api.WinHelp)
+[WinHelp](#win32api_WinHelp)
 
 Invokes the Windows Help engine.&nbsp;
 
-[WriteProfileSection](#win32api.WriteProfileSection)
+[WriteProfileSection](#win32api_WriteProfileSection)
 
 Writes a complete section to an INI file or registry.&nbsp;
 
-[WriteProfileVal](#win32api.WriteProfileVal)
+[WriteProfileVal](#win32api_WriteProfileVal)
 
 Write a value to a Windows INI file.&nbsp;
 
-[HIBYTE](#win32api.HIBYTE)
+[HIBYTE](#win32api_HIBYTE)
 
 An interface to the win32api HIBYTE macro.&nbsp;
 
-[LOBYTE](#win32api.LOBYTE)
+[LOBYTE](#win32api_LOBYTE)
 
 An interface to the win32api LOBYTE macro.&nbsp;
 
-[HIWORD](#win32api.HIWORD)
+[HIWORD](#win32api_HIWORD)
 
 An interface to the win32api HIWORD macro.&nbsp;
 
-[LOWORD](#win32api.LOWORD)
+[LOWORD](#win32api_LOWORD)
 
 An interface to the win32api LOWORD macro.&nbsp;
 
-[RGB](#win32api.RGB)
+[RGB](#win32api_RGB)
 
 An interface to the win32api RGB macro.&nbsp;
 
-[MAKELANGID](#win32api.MAKELANGID)
+[MAKELANGID](#win32api_MAKELANGID)
 
 Creates a language identifier from a primary language identifier and a sublanguage identifier.&nbsp;
 
-[MAKEWORD](#win32api.MAKEWORD)
+[MAKEWORD](#win32api_MAKEWORD)
 
 creates a WORD value by concatenating the specified values.&nbsp;
 
-[MAKELONG](#win32api.MAKELONG)
+[MAKELONG](#win32api_MAKELONG)
 
 creates a LONG value by concatenating the specified values.&nbsp;
 
-<span id="win32api.AbortSystemShutdown">win32api.AbortSystemShutdown</span>
+<span id="win32api_AbortSystemShutdown">win32api.AbortSystemShutdown</span>
 ===
 
 ## [win32api](#win32api).AbortSystemShutdown
@@ -856,7 +856,7 @@ Specifies the name of the computer where the shutdown is to be stopped.
 
 Search forAbortSystemShutdownat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=AbortSystemShutdown),[google](#http://www.google.com/search?q=AbortSystemShutdown)or[google groups](#http://groups.google.com/groups?q=AbortSystemShutdown).
 
-<span id="win32api.Apply">win32api.Apply</span>
+<span id="win32api_Apply">win32api.Apply</span>
 ===
 
 ## [win32api](#win32api).Apply
@@ -888,7 +888,7 @@ the function, the specified exceptionHandler is called, and its
 return value determines the action taken.
 
 
-<span id="win32api.Beep">win32api.Beep</span>
+<span id="win32api_Beep">win32api.Beep</span>
 ===
 
 ## [win32api](#win32api).Beep
@@ -913,7 +913,7 @@ operates asynchronously and produces sound until called again.
 
 Search forBeepat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Beep),[google](#http://www.google.com/search?q=Beep)or[google groups](#http://groups.google.com/groups?q=Beep).
 
-<span id="win32api.BeginUpdateResource">win32api.BeginUpdateResource</span>
+<span id="win32api_BeginUpdateResource">win32api.BeginUpdateResource</span>
 ===
 
 ## [win32api](#win32api).BeginUpdateResource
@@ -930,7 +930,7 @@ delete: int
 
 Flag to indicate that all existing resources should be deleted.
 
-<span id="win32api.ChangeDisplaySettings">win32api.ChangeDisplaySettings</span>
+<span id="win32api_ChangeDisplaySettings">win32api.ChangeDisplaySettings</span>
 ===
 
 ## [win32api](#win32api).ChangeDisplaySettings
@@ -949,7 +949,7 @@ One of the win32con.CDS_* constants, or 0
 
 ### Return ValueReturns DISP_CHANGE_SUCCESSFUL on success, or one of the DISP_CHANGE_* error constants on failure
 
-<span id="win32api.ChangeDisplaySettingsEx">win32api.ChangeDisplaySettingsEx</span>
+<span id="win32api_ChangeDisplaySettingsEx">win32api.ChangeDisplaySettingsEx</span>
 ===
 
 ## [win32api](#win32api).ChangeDisplaySettingsEx
@@ -960,11 +960,11 @@ Changes video mode for specified display
 
 DeviceName=None: str
 
-Name of device as returned by[win32api::EnumDisplayDevices](#win32api.EnumDisplayDevices), use None for default display device
+Name of device as returned by[win32api::EnumDisplayDevices](#win32api_EnumDisplayDevices), use None for default display device
 
 DevMode=None:[PyDEVMODE](#PyDEVMODE)
 
-A PyDEVMODE object as returned from[win32api::EnumDisplaySettings](#win32api.EnumDisplaySettings), or None to reset to default settings from registry
+A PyDEVMODE object as returned from[win32api::EnumDisplaySettings](#win32api_EnumDisplaySettings), or None to reset to default settings from registry
 
 Flags=0: int
 
@@ -974,7 +974,7 @@ One of the win32con.CDS_* constants, or 0
 
 ### Return ValueReturns DISP_CHANGE_SUCCESSFUL on success, or one of the DISP_CHANGE_* error constants on failure
 
-<span id="win32api.ClipCursor">win32api.ClipCursor</span>
+<span id="win32api_ClipCursor">win32api.ClipCursor</span>
 ===
 
 ## [win32api](#win32api).ClipCursor
@@ -991,7 +991,7 @@ contains the screen coordinates of the upper-left and lower-right corners of the
 
 Search forClipCursorat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ClipCursor),[google](#http://www.google.com/search?q=ClipCursor)or[google groups](#http://groups.google.com/groups?q=ClipCursor).
 
-<span id="win32api.CloseHandle">win32api.CloseHandle</span>
+<span id="win32api_CloseHandle">win32api.CloseHandle</span>
 ===
 
 ## [win32api](#win32api).CloseHandle
@@ -1004,7 +1004,7 @@ handle:[PyHANDLE](#PyHANDLE)/int
 
 A previously opened handle.
 
-<span id="win32api.CopyFile">win32api.CopyFile</span>
+<span id="win32api_CopyFile">win32api.CopyFile</span>
 ===
 
 ## [win32api](#win32api).CopyFile
@@ -1029,7 +1029,7 @@ Indicates if the operation should fail if the file exists.
 
 Search forCopyFileat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CopyFile),[google](#http://www.google.com/search?q=CopyFile)or[google groups](#http://groups.google.com/groups?q=CopyFile).
 
-<span id="win32api.DebugBreak">win32api.DebugBreak</span>
+<span id="win32api_DebugBreak">win32api.DebugBreak</span>
 ===
 
 ## [win32api](#win32api).DebugBreak
@@ -1040,7 +1040,7 @@ Breaks into the C debugger
 
 Search forDebugBreakat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DebugBreak),[google](#http://www.google.com/search?q=DebugBreak)or[google groups](#http://groups.google.com/groups?q=DebugBreak).
 
-<span id="win32api.DeleteFile">win32api.DeleteFile</span>
+<span id="win32api_DeleteFile">win32api.DeleteFile</span>
 ===
 
 ## [win32api](#win32api).DeleteFile
@@ -1057,7 +1057,7 @@ File to delete.
 
 Search forDeleteFileat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DeleteFile),[google](#http://www.google.com/search?q=DeleteFile)or[google groups](#http://groups.google.com/groups?q=DeleteFile).
 
-<span id="win32api.DragFinish">win32api.DragFinish</span>
+<span id="win32api_DragFinish">win32api.DragFinish</span>
 ===
 
 ## [win32api](#win32api).DragFinish
@@ -1074,7 +1074,7 @@ Handle identifying the structure containing the file names.
 
 Search forDragFinishat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DragFinish),[google](#http://www.google.com/search?q=DragFinish)or[google groups](#http://groups.google.com/groups?q=DragFinish).
 
-<span id="win32api.DragQueryFile">win32api.DragQueryFile</span>
+<span id="win32api_DragQueryFile">win32api.DragQueryFile</span>
 ===
 
 ## [win32api](#win32api).DragQueryFile
@@ -1102,7 +1102,7 @@ is an integer with the count of files dropped.  If fileNum is between 0 and Coun
 the return value is a string containing the filename.
 If an error occurs, and exception is raised.
 
-<span id="win32api.DuplicateHandle">win32api.DuplicateHandle</span>
+<span id="win32api_DuplicateHandle">win32api.DuplicateHandle</span>
 ===
 
 ## [win32api](#win32api).DuplicateHandle
@@ -1141,7 +1141,7 @@ reference to the returned PyHANDLE, or call .Detach() on it to prevent it
 
 from being closed prematurely.
 
-<span id="win32api.EndUpdateResource">win32api.EndUpdateResource</span>
+<span id="win32api_EndUpdateResource">win32api.EndUpdateResource</span>
 ===
 
 ## [win32api](#win32api).EndUpdateResource
@@ -1158,11 +1158,11 @@ discard: int
 
 Flag to discard all writes.
 
-<span id="win32api.EnumDisplayDevices">win32api.EnumDisplayDevices</span>
+<span id="win32api_EnumDisplayDevices">win32api.EnumDisplayDevices</span>
 ===
 
 ## [win32api](#win32api).EnumDisplayDevices
-[PyDISPLAY_DEVICE](#PyDISPLAY.DEVICE)= **EnumDisplayDevices(Device, DevNum, Flags** )
+[PyDISPLAY_DEVICE](#PyDISPLAY_DEVICE)= **EnumDisplayDevices(Device, DevNum, Flags** )
 Obtain information about the display devices in a system
 
 ### Parameters
@@ -1181,7 +1181,7 @@ Reserved, use 0 if passed in
 
 ### CommentsAccepts keyword arguments
 
-<span id="win32api.EnumDisplayMonitors">win32api.EnumDisplayMonitors</span>
+<span id="win32api_EnumDisplayMonitors">win32api.EnumDisplayMonitors</span>
 ===
 
 ## [win32api](#win32api).EnumDisplayMonitors
@@ -1204,7 +1204,7 @@ Clipping rectangle, can be None
 
 device context handle, and intersection rectangle: (hMonitor, hdcMonitor,[PyRECT](#PyRECT))
 
-<span id="win32api.EnumDisplaySettings">win32api.EnumDisplaySettings</span>
+<span id="win32api_EnumDisplaySettings">win32api.EnumDisplaySettings</span>
 ===
 
 ## [win32api](#win32api).EnumDisplaySettings
@@ -1215,7 +1215,7 @@ List available modes for specified display device
 
 DeviceName=None: string
 
-Name of device as returned by[win32api::EnumDisplayDevices](#win32api.EnumDisplayDevices), use None for default display device
+Name of device as returned by[win32api::EnumDisplayDevices](#win32api_EnumDisplayDevices), use None for default display device
 
 ModeNum=0: int
 
@@ -1223,7 +1223,7 @@ Index of setting to return, or one of ENUM_CURRENT_SETTINGS, ENUM_REGISTRY_SETTI
 
 ### CommentsAccepts keyword arguments
 
-<span id="win32api.EnumDisplaySettingsEx">win32api.EnumDisplaySettingsEx</span>
+<span id="win32api_EnumDisplaySettingsEx">win32api.EnumDisplaySettingsEx</span>
 ===
 
 ## [win32api](#win32api).EnumDisplaySettingsEx
@@ -1234,7 +1234,7 @@ Lists available modes for a display device, with optional flags
 
 DeviceName=None: string
 
-Name of device as returned by[win32api::EnumDisplayDevices](#win32api.EnumDisplayDevices). Can be None for default display
+Name of device as returned by[win32api::EnumDisplayDevices](#win32api_EnumDisplayDevices). Can be None for default display
 
 ModeNum: int
 
@@ -1246,7 +1246,7 @@ EDS_RAWMODE (2) is only defined flag
 
 ### CommentsAccepts keyword arguments
 
-<span id="win32api.EnumResourceLanguages">win32api.EnumResourceLanguages</span>
+<span id="win32api_EnumResourceLanguages">win32api.EnumResourceLanguages</span>
 ===
 
 ## [win32api](#win32api).EnumResourceLanguages
@@ -1267,7 +1267,7 @@ lpName:[PyResourceId](#PyResourceId)
 
 Resource name, can be string or integer
 
-<span id="win32api.EnumResourceNames">win32api.EnumResourceNames</span>
+<span id="win32api_EnumResourceNames">win32api.EnumResourceNames</span>
 ===
 
 ## [win32api](#win32api).EnumResourceNames
@@ -1288,7 +1288,7 @@ If passed as a string, form is '#' sign followed by decimal number. eg RT_ANICUR
 
 ### Return ValueThe result is a list of string or integers, one for each resource enumerated.
 
-<span id="win32api.EnumResourceTypes">win32api.EnumResourceTypes</span>
+<span id="win32api_EnumResourceTypes">win32api.EnumResourceTypes</span>
 ===
 
 ## [win32api](#win32api).EnumResourceTypes
@@ -1301,7 +1301,7 @@ hmodule:[PyHANDLE](#PyHANDLE)
 
 The handle to the module to enumerate.
 
-<span id="win32api.ExitWindows">win32api.ExitWindows</span>
+<span id="win32api_ExitWindows">win32api.ExitWindows</span>
 ===
 
 ## [win32api](#win32api).ExitWindows
@@ -1322,7 +1322,7 @@ reserved2=0: int
 
 Search forAbortSystemShutdownat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=AbortSystemShutdown),[google](#http://www.google.com/search?q=AbortSystemShutdown)or[google groups](#http://groups.google.com/groups?q=AbortSystemShutdown).
 
-<span id="win32api.ExitWindowsEx">win32api.ExitWindowsEx</span>
+<span id="win32api_ExitWindowsEx">win32api.ExitWindowsEx</span>
 ===
 
 ## [win32api](#win32api).ExitWindowsEx
@@ -1345,7 +1345,7 @@ reserved=0: int
 
 Search forAbortSystemShutdownat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=AbortSystemShutdown),[google](#http://www.google.com/search?q=AbortSystemShutdown)or[google groups](#http://groups.google.com/groups?q=AbortSystemShutdown).
 
-<span id="win32api.ExpandEnvironmentStrings">win32api.ExpandEnvironmentStrings</span>
+<span id="win32api_ExpandEnvironmentStrings">win32api.ExpandEnvironmentStrings</span>
 ===
 
 ## [win32api](#win32api).ExpandEnvironmentStrings
@@ -1362,7 +1362,7 @@ String to expand
 
 Search forExpandEnvironmentStringsat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ExpandEnvironmentStrings),[google](#http://www.google.com/search?q=ExpandEnvironmentStrings)or[google groups](#http://groups.google.com/groups?q=ExpandEnvironmentStrings).
 
-<span id="win32api.FindCloseChangeNotification">win32api.FindCloseChangeNotification</span>
+<span id="win32api_FindCloseChangeNotification">win32api.FindCloseChangeNotification</span>
 ===
 
 ## [win32api](#win32api).FindCloseChangeNotification
@@ -1373,9 +1373,9 @@ Closes the change notification handle.
 
 handle: int
 
-The handle returned from[win32api::FindFirstChangeNotification](#win32api.FindFirstChangeNotification)
+The handle returned from[win32api::FindFirstChangeNotification](#win32api_FindFirstChangeNotification)
 
-<span id="win32api.FindExecutable">win32api.FindExecutable</span>
+<span id="win32api_FindExecutable">win32api.FindExecutable</span>
 ===
 
 ## [win32api](#win32api).FindExecutable
@@ -1406,7 +1406,7 @@ with the specified filename. (This handle could also be the handle of
 a dynamic data exchange [DDE] server application.)
 The may contain the path to the DDE server started if no server responds to a request to initiate a DDE conversation.
 
-<span id="win32api.FindFiles">win32api.FindFiles</span>
+<span id="win32api_FindFiles">win32api.FindFiles</span>
 ===
 
 ## [win32api](#win32api).FindFiles
@@ -1427,9 +1427,9 @@ Search forFindNextFileat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 Search forFindCloseat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindClose),[google](#http://www.google.com/search?q=FindClose)or[google groups](#http://groups.google.com/groups?q=FindClose).
 
-### Return ValueReturns a sequence of[WIN32_FIND_DATA](#WIN32.FIND_DATA)tuples
+### Return ValueReturns a sequence of[WIN32_FIND_DATA](#WIN32_FIND_DATA)tuples
 
-<span id="win32api.FindFirstChangeNotification">win32api.FindFirstChangeNotification</span>
+<span id="win32api_FindFirstChangeNotification">win32api.FindFirstChangeNotification</span>
 ===
 
 ## [win32api](#win32api).FindFirstChangeNotification
@@ -1453,7 +1453,7 @@ Specifies the filter conditions that satisfy a change notification wait. This pa
  **Value**  **Meaning** FILE_NOTIFY_CHANGE_FILE_NAMEAny file name change in the watched directory or subtree causes a change notification wait operation to return. Changes include renaming, creating, or deleting a file name.FILE_NOTIFY_CHANGE_DIR_NAMEAny directory-name change in the watched directory or subtree causes a change notification wait operation to return. Changes include creating or deleting a directory.FILE_NOTIFY_CHANGE_ATTRIBUTESAny attribute change in the watched directory or subtree causes a change notification wait operation to return.FILE_NOTIFY_CHANGE_SIZEAny file-size change in the watched directory or subtree causes a change notification wait operation to return. The operating system detects a change in file size only when the file is written to the disk. For operating systems that use extensive caching, detection occurs only when the cache is sufficiently flushed.FILE_NOTIFY_CHANGE_LAST_WRITEAny change to the last write-time of files in the watched directory or subtree causes a change notification wait operation to return. The operating system detects a change to the last write-time only when the file is written to the disk. For operating systems that use extensive caching, detection occurs only when the cache is sufficiently flushed.FILE_NOTIFY_CHANGE_SECURITYAny security-descriptor change in the watched directory or subtree causes a change notification wait operation to return
 ### Return ValueAlthough the result is a handle, the handle can not be closed via CloseHandle() - therefore a PyHandle object is not used.
 
-<span id="win32api.FindNextChangeNotification">win32api.FindNextChangeNotification</span>
+<span id="win32api_FindNextChangeNotification">win32api.FindNextChangeNotification</span>
 ===
 
 ## [win32api](#win32api).FindNextChangeNotification
@@ -1464,9 +1464,9 @@ Requests that the operating system signal a change notification handle the next 
 
 handle:[PyHANDLE](#PyHANDLE)
 
-The handle returned from[win32api::FindFirstChangeNotification](#win32api.FindFirstChangeNotification)
+The handle returned from[win32api::FindFirstChangeNotification](#win32api_FindFirstChangeNotification)
 
-<span id="win32api.FormatMessage">win32api.FormatMessage</span>
+<span id="win32api_FormatMessage">win32api.FormatMessage</span>
 ===
 
 ## [win32api](#win32api).FormatMessage
@@ -1511,7 +1511,7 @@ Search forGetLastErrorat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 Search forFormatMessageat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FormatMessage),[google](#http://www.google.com/search?q=FormatMessage)or[google groups](#http://groups.google.com/groups?q=FormatMessage).
 
-<span id="win32api.FormatMessageW">win32api.FormatMessageW</span>
+<span id="win32api_FormatMessageW">win32api.FormatMessageW</span>
 ===
 
 ## [win32api](#win32api).FormatMessageW
@@ -1558,7 +1558,7 @@ Search forGetLastErrorat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 Search forFormatMessageat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FormatMessage),[google](#http://www.google.com/search?q=FormatMessage)or[google groups](#http://groups.google.com/groups?q=FormatMessage).
 
-<span id="win32api.FreeLibrary">win32api.FreeLibrary</span>
+<span id="win32api_FreeLibrary">win32api.FreeLibrary</span>
 ===
 
 ## [win32api](#win32api).FreeLibrary
@@ -1575,7 +1575,7 @@ Specifies the handle to the module.
 
 Search forFreeLibraryat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FreeLibrary),[google](#http://www.google.com/search?q=FreeLibrary)or[google groups](#http://groups.google.com/groups?q=FreeLibrary).
 
-<span id="win32api.GenerateConsoleCtrlEvent">win32api.GenerateConsoleCtrlEvent</span>
+<span id="win32api_GenerateConsoleCtrlEvent">win32api.GenerateConsoleCtrlEvent</span>
 ===
 
 ## [win32api](#win32api).GenerateConsoleCtrlEvent
@@ -1596,7 +1596,7 @@ Process group to get signal.
 
 Search forGenerateConsoleCtrlEventat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GenerateConsoleCtrlEvent),[google](#http://www.google.com/search?q=GenerateConsoleCtrlEvent)or[google groups](#http://groups.google.com/groups?q=GenerateConsoleCtrlEvent).
 
-<span id="win32api.GetAsyncKeyState">win32api.GetAsyncKeyState</span>
+<span id="win32api_GetAsyncKeyState">win32api.GetAsyncKeyState</span>
 ===
 
 ## [win32api](#win32api).GetAsyncKeyState
@@ -1647,7 +1647,7 @@ The return value is zero if a window in another thread or process currently has 
 
 keyboard focus.
 
-<span id="win32api.GetCommandLine">win32api.GetCommandLine</span>
+<span id="win32api_GetCommandLine">win32api.GetCommandLine</span>
 ===
 
 ## [win32api](#win32api).GetCommandLine
@@ -1658,7 +1658,7 @@ Retrieves the current application's command line.
 
 Search forGetCommandLineat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCommandLine),[google](#http://www.google.com/search?q=GetCommandLine)or[google groups](#http://groups.google.com/groups?q=GetCommandLine).
 
-<span id="win32api.GetComputerName">win32api.GetComputerName</span>
+<span id="win32api_GetComputerName">win32api.GetComputerName</span>
 ===
 
 ## [win32api](#win32api).GetComputerName
@@ -1669,7 +1669,7 @@ Returns the local computer name
 
 Search forGetComputerNameat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetComputerName),[google](#http://www.google.com/search?q=GetComputerName)or[google groups](#http://groups.google.com/groups?q=GetComputerName).
 
-<span id="win32api.GetComputerNameEx">win32api.GetComputerNameEx</span>
+<span id="win32api_GetComputerNameEx">win32api.GetComputerNameEx</span>
 ===
 
 ## [win32api](#win32api).GetComputerNameEx
@@ -1686,7 +1686,7 @@ Value from COMPUTER_NAME_FORMAT enum, win32con.ComputerName*
 
 Search forGetComputerNameExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetComputerNameEx),[google](#http://www.google.com/search?q=GetComputerNameEx)or[google groups](#http://groups.google.com/groups?q=GetComputerNameEx).
 
-<span id="win32api.GetComputerObjectName">win32api.GetComputerObjectName</span>
+<span id="win32api_GetComputerObjectName">win32api.GetComputerObjectName</span>
 ===
 
 ## [win32api](#win32api).GetComputerObjectName
@@ -1703,14 +1703,14 @@ EXTENDED_NAME_FORMAT value, win32con.Name*
 
 Search forGetComputerObjectNameat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetComputerObjectName),[google](#http://www.google.com/search?q=GetComputerObjectName)or[google groups](#http://groups.google.com/groups?q=GetComputerObjectName).
 
-<span id="win32api.GetConsoleTitle">win32api.GetConsoleTitle</span>
+<span id="win32api_GetConsoleTitle">win32api.GetConsoleTitle</span>
 ===
 
 ## [win32api](#win32api).GetConsoleTitle
 string = **GetConsoleTitle(** )
 Returns the title for the current console.
 
-<span id="win32api.GetCurrentProcess">win32api.GetCurrentProcess</span>
+<span id="win32api_GetCurrentProcess">win32api.GetCurrentProcess</span>
 ===
 
 ## [win32api](#win32api).GetCurrentProcess
@@ -1719,7 +1719,7 @@ Returns a pseudohandle for the current process.
 
 ### CommentsA pseudohandle is a special constant that is interpreted as the current thread handle. The calling thread can use this handle to specify itself whenever a thread handle is required. Pseudohandles are not inherited by child processes. 
 
-The method[win32api::DuplicateHandle](#win32api.DuplicateHandle)can be used to create a handle that other threads and processes can use. 
+The method[win32api::DuplicateHandle](#win32api_DuplicateHandle)can be used to create a handle that other threads and processes can use. 
 
 As this handle can not be closed, and integer is returned rather than 
 
@@ -1729,7 +1729,7 @@ a[PyHANDLE](#PyHANDLE)object, which would attempt to automatically close the han
 
 Search forGetCurrentProcessat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentProcess),[google](#http://www.google.com/search?q=GetCurrentProcess)or[google groups](#http://groups.google.com/groups?q=GetCurrentProcess).
 
-<span id="win32api.GetCurrentProcessId">win32api.GetCurrentProcessId</span>
+<span id="win32api_GetCurrentProcessId">win32api.GetCurrentProcessId</span>
 ===
 
 ## [win32api](#win32api).GetCurrentProcessId
@@ -1740,7 +1740,7 @@ Returns the thread ID for the current process.
 
 Search forGetCurrentProcessIdat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentProcessId),[google](#http://www.google.com/search?q=GetCurrentProcessId)or[google groups](#http://groups.google.com/groups?q=GetCurrentProcessId).
 
-<span id="win32api.GetCurrentThread">win32api.GetCurrentThread</span>
+<span id="win32api_GetCurrentThread">win32api.GetCurrentThread</span>
 ===
 
 ## [win32api](#win32api).GetCurrentThread
@@ -1749,7 +1749,7 @@ Returns a pseudohandle for the current thread.
 
 ### CommentsA pseudohandle is a special constant that is interpreted as the current thread handle. The calling thread can use this handle to specify itself whenever a thread handle is required. Pseudohandles are not inherited by child processes. 
 
-The method[win32api::DuplicateHandle](#win32api.DuplicateHandle)can be used to create a handle that other threads and processes can use. 
+The method[win32api::DuplicateHandle](#win32api_DuplicateHandle)can be used to create a handle that other threads and processes can use. 
 
 As this handle can not be closed, and integer is returned rather than 
 
@@ -1759,7 +1759,7 @@ a[PyHANDLE](#PyHANDLE)object, which would attempt to automatically close the han
 
 Search forGetCurrentThreadat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentThread),[google](#http://www.google.com/search?q=GetCurrentThread)or[google groups](#http://groups.google.com/groups?q=GetCurrentThread).
 
-<span id="win32api.GetCurrentThreadId">win32api.GetCurrentThreadId</span>
+<span id="win32api_GetCurrentThreadId">win32api.GetCurrentThreadId</span>
 ===
 
 ## [win32api](#win32api).GetCurrentThreadId
@@ -1770,7 +1770,7 @@ Returns the thread ID for the current thread.
 
 Search forGetCurrentThreadIdat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentThreadId),[google](#http://www.google.com/search?q=GetCurrentThreadId)or[google groups](#http://groups.google.com/groups?q=GetCurrentThreadId).
 
-<span id="win32api.GetCursorPos">win32api.GetCursorPos</span>
+<span id="win32api_GetCursorPos">win32api.GetCursorPos</span>
 ===
 
 ## [win32api](#win32api).GetCursorPos
@@ -1781,7 +1781,7 @@ Returns the position of the cursor, in screen co-ordinates.
 
 Search forGetCursorPosat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCursorPos),[google](#http://www.google.com/search?q=GetCursorPos)or[google groups](#http://groups.google.com/groups?q=GetCursorPos).
 
-<span id="win32api.GetDateFormat">win32api.GetDateFormat</span>
+<span id="win32api_GetDateFormat">win32api.GetDateFormat</span>
 ===
 
 ## [win32api](#win32api).GetDateFormat
@@ -1806,7 +1806,7 @@ format: string
 
 May be None
 
-<span id="win32api.GetDiskFreeSpace">win32api.GetDiskFreeSpace</span>
+<span id="win32api_GetDiskFreeSpace">win32api.GetDiskFreeSpace</span>
 ===
 
 ## [win32api](#win32api).GetDiskFreeSpace
@@ -1830,7 +1830,7 @@ the number of sectors per cluster, the number of bytes per sector,
 the total number of free clusters on the disk and the total number of clusters on the disk.
 If the function fails, an error is returned.
 
-<span id="win32api.GetDiskFreeSpaceEx">win32api.GetDiskFreeSpaceEx</span>
+<span id="win32api_GetDiskFreeSpaceEx">win32api.GetDiskFreeSpaceEx</span>
 ===
 
 ## [win32api](#win32api).GetDiskFreeSpaceEx
@@ -1858,7 +1858,7 @@ the total number of free bytes on disk
 the above values may be less, if user-quotas are in effect
 If the function fails, an error is returned.
 
-<span id="win32api.GetDllDirectory">win32api.GetDllDirectory</span>
+<span id="win32api_GetDllDirectory">win32api.GetDllDirectory</span>
 ===
 
 ## [win32api](#win32api).GetDllDirectory
@@ -1869,7 +1869,7 @@ Returns the DLL search path
 
 Search forGetDllDirectoryat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetDllDirectory),[google](#http://www.google.com/search?q=GetDllDirectory)or[google groups](#http://groups.google.com/groups?q=GetDllDirectory).
 
-<span id="win32api.GetDomainName">win32api.GetDomainName</span>
+<span id="win32api_GetDomainName">win32api.GetDomainName</span>
 ===
 
 ## [win32api](#win32api).GetDomainName
@@ -1878,7 +1878,7 @@ Returns the current domain name
 
 ### CommentsThis is a convenience wrapper of the Win32 function LookupAccountSid()
 
-<span id="win32api.GetEnvironmentVariable">win32api.GetEnvironmentVariable</span>
+<span id="win32api_GetEnvironmentVariable">win32api.GetEnvironmentVariable</span>
 ===
 
 ## [win32api](#win32api).GetEnvironmentVariable
@@ -1897,7 +1897,7 @@ Search forGetEnvironmentVariableat[msdn](#http://search.msdn.microsoft.com/searc
 
 ### Return ValueReturns None if environment variable is not found
 
-<span id="win32api.GetEnvironmentVariableW">win32api.GetEnvironmentVariableW</span>
+<span id="win32api_GetEnvironmentVariableW">win32api.GetEnvironmentVariableW</span>
 ===
 
 ## [win32api](#win32api).GetEnvironmentVariableW
@@ -1916,7 +1916,7 @@ Search forGetEnvironmentVariableWat[msdn](#http://search.msdn.microsoft.com/sear
 
 ### Return ValueReturns None if environment variable is not found
 
-<span id="win32api.GetFileAttributes">win32api.GetFileAttributes</span>
+<span id="win32api_GetFileAttributes">win32api.GetFileAttributes</span>
 ===
 
 ## [win32api](#win32api).GetFileAttributes
@@ -1940,7 +1940,7 @@ Search forGetFileAttributesWat[msdn](#http://search.msdn.microsoft.com/search/re
 ### Return ValueThe return value is a combination of the win32con.FILE_ATTRIBUTE_* constants.
 An exception is raised on failure.
 
-<span id="win32api.GetFileVersionInfo">win32api.GetFileVersionInfo</span>
+<span id="win32api_GetFileVersionInfo">win32api.GetFileVersionInfo</span>
 ===
 
 ## [win32api](#win32api).GetFileVersionInfo
@@ -1957,7 +1957,7 @@ SubBlock: string/unicode
 
 Information to return: \\ for VS_FIXEDFILEINFO, \\VarFileInfo\\Translation for languages/codepages available
 
-<span id="win32api.GetFocus">win32api.GetFocus</span>
+<span id="win32api_GetFocus">win32api.GetFocus</span>
 ===
 
 ## [win32api](#win32api).GetFocus
@@ -1970,7 +1970,7 @@ Search forGetFocusat[msdn](#http://search.msdn.microsoft.com/search/results.aspx
 
 ### Return ValueThe method raises an exception if no window with the focus exists.
 
-<span id="win32api.GetFullPathName">win32api.GetFullPathName</span>
+<span id="win32api_GetFullPathName">win32api.GetFullPathName</span>
 ===
 
 ## [win32api](#win32api).GetFullPathName
@@ -1983,9 +1983,9 @@ fileName: string
 
 The file name.
 
-### CommentsPlease use[win32file::GetFullPathName](#win32file.GetFullPathName)instead - it has better Unicode semantics.
+### CommentsPlease use[win32file::GetFullPathName](#win32file_GetFullPathName)instead - it has better Unicode semantics.
 
-<span id="win32api.GetHandleInformation">win32api.GetHandleInformation</span>
+<span id="win32api_GetHandleInformation">win32api.GetHandleInformation</span>
 ===
 
 ## [win32api](#win32api).GetHandleInformation
@@ -2002,7 +2002,7 @@ Handle to an object
 
 ### Return ValueReturns a combination of HANDLE_FLAG_INHERIT, HANDLE_FLAG_PROTECT_FROM_CLOSE
 
-<span id="win32api.GetKeyState">win32api.GetKeyState</span>
+<span id="win32api_GetKeyState">win32api.GetKeyState</span>
 ===
 
 ## [win32api](#win32api).GetKeyState
@@ -2019,7 +2019,7 @@ Specifies a virtual key. If the desired virtual key is a letter or digit (A thro
 
 reads key messages from its message queue. The status does not reflect the 
 
-interrupt-level state associated with the hardware. Use the[win32api::GetAsyncKeyState](#win32api.GetAsyncKeyState)method to retrieve that information.
+interrupt-level state associated with the hardware. Use the[win32api::GetAsyncKeyState](#win32api_GetAsyncKeyState)method to retrieve that information.
 
 ### Win32 API References
 
@@ -2039,7 +2039,7 @@ indicator light (if any) on the keyboard will be on when the key is
 
 toggled, and off when the key is untoggled.
 
-<span id="win32api.GetKeyboardLayout">win32api.GetKeyboardLayout</span>
+<span id="win32api_GetKeyboardLayout">win32api.GetKeyboardLayout</span>
 ===
 
 ## [win32api](#win32api).GetKeyboardLayout
@@ -2054,21 +2054,21 @@ threadId=0: int
 
 ### CommentsIf the idThread parameter is zero, the input locale identifier for the active thread is returned.
 
-<span id="win32api.GetKeyboardLayoutList">win32api.GetKeyboardLayoutList</span>
+<span id="win32api_GetKeyboardLayoutList">win32api.GetKeyboardLayoutList</span>
 ===
 
 ## [win32api](#win32api).GetKeyboardLayoutList
 (int,..) = **GetKeyboardLayoutList(** )
 Returns a sequence of all locale ids currently loaded
 
-<span id="win32api.GetKeyboardLayoutName">win32api.GetKeyboardLayoutName</span>
+<span id="win32api_GetKeyboardLayoutName">win32api.GetKeyboardLayoutName</span>
 ===
 
 ## [win32api](#win32api).GetKeyboardLayoutName
 int = **GetKeyboardLayoutName(** )
 Retrieves the name of the active input locale identifier (formerly called the keyboard layout).
 
-<span id="win32api.GetKeyboardState">win32api.GetKeyboardState</span>
+<span id="win32api_GetKeyboardState">win32api.GetKeyboardState</span>
 ===
 
 ## [win32api](#win32api).GetKeyboardState
@@ -2085,7 +2085,7 @@ Each character represents the bitmask for a key - see the Win32
 
 documentation for more details.
 
-<span id="win32api.GetLastError">win32api.GetLastError</span>
+<span id="win32api_GetLastError">win32api.GetLastError</span>
 ===
 
 ## [win32api](#win32api).GetLastError
@@ -2096,7 +2096,7 @@ Retrieves the calling thread's last error code value.
 
 Search forGetLastErrorat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLastError),[google](#http://www.google.com/search?q=GetLastError)or[google groups](#http://groups.google.com/groups?q=GetLastError).
 
-<span id="win32api.GetLastInputInfo">win32api.GetLastInputInfo</span>
+<span id="win32api_GetLastInputInfo">win32api.GetLastInputInfo</span>
 ===
 
 ## [win32api](#win32api).GetLastInputInfo
@@ -2107,14 +2107,14 @@ Returns time of last input event in tick count
 
 Search forGetLastInputInfoat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLastInputInfo),[google](#http://www.google.com/search?q=GetLastInputInfo)or[google groups](#http://groups.google.com/groups?q=GetLastInputInfo).
 
-<span id="win32api.GetLocalTime">win32api.GetLocalTime</span>
+<span id="win32api_GetLocalTime">win32api.GetLocalTime</span>
 ===
 
 ## [win32api](#win32api).GetLocalTime
 tuple = **GetLocalTime(** )
 Returns the current local time
 
-<span id="win32api.GetLogicalDriveStrings">win32api.GetLogicalDriveStrings</span>
+<span id="win32api_GetLogicalDriveStrings">win32api.GetLogicalDriveStrings</span>
 ===
 
 ## [win32api](#win32api).GetLogicalDriveStrings
@@ -2130,7 +2130,7 @@ Search forGetLogicalDriveStringsat[msdn](#http://search.msdn.microsoft.com/searc
 letter NULL terminated.
 Use "s.split('\\0')" to split into components.
 
-<span id="win32api.GetLogicalDrives">win32api.GetLogicalDrives</span>
+<span id="win32api_GetLogicalDrives">win32api.GetLogicalDrives</span>
 ===
 
 ## [win32api](#win32api).GetLogicalDrives
@@ -2141,7 +2141,7 @@ Returns a bitmask representing the currently available disk drives.
 
 Search forGetLogicalDrivesat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLogicalDrives),[google](#http://www.google.com/search?q=GetLogicalDrives)or[google groups](#http://groups.google.com/groups?q=GetLogicalDrives).
 
-<span id="win32api.GetLongPathName">win32api.GetLongPathName</span>
+<span id="win32api_GetLongPathName">win32api.GetLongPathName</span>
 ===
 
 ## [win32api](#win32api).GetLongPathName
@@ -2158,7 +2158,7 @@ The file name.
 
 of Windows does not support this function.
 
-<span id="win32api.GetLongPathNameW">win32api.GetLongPathNameW</span>
+<span id="win32api_GetLongPathNameW">win32api.GetLongPathNameW</span>
 ===
 
 ## [win32api](#win32api).GetLongPathNameW
@@ -2175,7 +2175,7 @@ The file name.
 
 of Windows does not support this function.
 
-<span id="win32api.GetModuleFileName">win32api.GetModuleFileName</span>
+<span id="win32api_GetModuleFileName">win32api.GetModuleFileName</span>
 ===
 
 ## [win32api](#win32api).GetModuleFileName
@@ -2192,7 +2192,7 @@ Specifies the handle to the module.
 
 Search forGetModuleFileNameat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetModuleFileName),[google](#http://www.google.com/search?q=GetModuleFileName)or[google groups](#http://groups.google.com/groups?q=GetModuleFileName).
 
-<span id="win32api.GetModuleFileNameW">win32api.GetModuleFileNameW</span>
+<span id="win32api_GetModuleFileNameW">win32api.GetModuleFileNameW</span>
 ===
 
 ## [win32api](#win32api).GetModuleFileNameW
@@ -2209,7 +2209,7 @@ Specifies the handle to the module.
 
 Search forGetModuleFileNameat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetModuleFileName),[google](#http://www.google.com/search?q=GetModuleFileName)or[google groups](#http://groups.google.com/groups?q=GetModuleFileName).
 
-<span id="win32api.GetModuleHandle">win32api.GetModuleHandle</span>
+<span id="win32api_GetModuleHandle">win32api.GetModuleHandle</span>
 ===
 
 ## [win32api](#win32api).GetModuleHandle
@@ -2226,7 +2226,7 @@ Specifies the file name of the module to load.
 
 Search forGetModuleHandleat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetModuleHandle),[google](#http://www.google.com/search?q=GetModuleHandle)or[google groups](#http://groups.google.com/groups?q=GetModuleHandle).
 
-<span id="win32api.GetMonitorInfo">win32api.GetMonitorInfo</span>
+<span id="win32api_GetMonitorInfo">win32api.GetMonitorInfo</span>
 ===
 
 ## [win32api](#win32api).GetMonitorInfo
@@ -2243,7 +2243,7 @@ Handle to a monitor
 
 ### Return ValueReturns a dictionary representing a MONITORINFOEX structure
 
-<span id="win32api.GetNativeSystemInfo">win32api.GetNativeSystemInfo</span>
+<span id="win32api_GetNativeSystemInfo">win32api.GetNativeSystemInfo</span>
 ===
 
 ## [win32api](#win32api).GetNativeSystemInfo
@@ -2267,7 +2267,7 @@ dwProcessorType
 dwAllocationGranularity
 (wProcessorLevel,wProcessorRevision)
 
-<span id="win32api.GetProcAddress">win32api.GetProcAddress</span>
+<span id="win32api_GetProcAddress">win32api.GetProcAddress</span>
 ===
 
 ## [win32api](#win32api).GetProcAddress
@@ -2288,7 +2288,7 @@ Specifies the name of the procedure, or its ordinal value
 
 Search forGetProcAddressat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetProcAddress),[google](#http://www.google.com/search?q=GetProcAddress)or[google groups](#http://groups.google.com/groups?q=GetProcAddress).
 
-<span id="win32api.GetProfileSection">win32api.GetProfileSection</span>
+<span id="win32api_GetProfileSection">win32api.GetProfileSection</span>
 ===
 
 ## [win32api](#win32api).GetProfileSection
@@ -2313,7 +2313,7 @@ Search forGetProfileSectionat[msdn](#http://search.msdn.microsoft.com/search/res
 
 ### Return ValueThe return value is a list of strings.
 
-<span id="win32api.GetProfileVal">win32api.GetProfileVal</span>
+<span id="win32api_GetProfileVal">win32api.GetProfileVal</span>
 ===
 
 ## [win32api](#win32api).GetProfileVal
@@ -2352,7 +2352,7 @@ Search forGetPrivateProfileIntat[msdn](#http://search.msdn.microsoft.com/search/
 
 ### Return ValueThe return value is the same type as the default parameter.
 
-<span id="win32api.GetPwrCapabilities">win32api.GetPwrCapabilities</span>
+<span id="win32api_GetPwrCapabilities">win32api.GetPwrCapabilities</span>
 ===
 
 ## [win32api](#win32api).GetPwrCapabilities
@@ -2367,7 +2367,7 @@ Search forGetPwrCapabilitiesat[msdn](#http://search.msdn.microsoft.com/search/re
 
 ### Return ValueReturns a dict representing a SYSTEM_POWER_CAPABILITIES struct
 
-<span id="win32api.GetShortPathName">win32api.GetShortPathName</span>
+<span id="win32api_GetShortPathName">win32api.GetShortPathName</span>
 ===
 
 ## [win32api](#win32api).GetShortPathName
@@ -2390,7 +2390,7 @@ not need to be absolute, the returned name may be longer than the input path.
 
 Search forGetShortPathNameat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetShortPathName),[google](#http://www.google.com/search?q=GetShortPathName)or[google groups](#http://groups.google.com/groups?q=GetShortPathName).
 
-<span id="win32api.GetStdHandle">win32api.GetStdHandle</span>
+<span id="win32api_GetStdHandle">win32api.GetStdHandle</span>
 ===
 
 ## [win32api](#win32api).GetStdHandle
@@ -2403,7 +2403,7 @@ handle: int
 
 input, output, or error device
 
-<span id="win32api.GetSysColor">win32api.GetSysColor</span>
+<span id="win32api_GetSysColor">win32api.GetSysColor</span>
 ===
 
 ## [win32api](#win32api).GetSysColor
@@ -2422,7 +2422,7 @@ Search forGetSysColorat[msdn](#http://search.msdn.microsoft.com/search/results.a
 
 ### Return ValueThe return value is a windows RGB color representation.
 
-<span id="win32api.GetSystemDefaultLCID">win32api.GetSystemDefaultLCID</span>
+<span id="win32api_GetSystemDefaultLCID">win32api.GetSystemDefaultLCID</span>
 ===
 
 ## [win32api](#win32api).GetSystemDefaultLCID
@@ -2433,7 +2433,7 @@ Retrieves the system default locale identifier.
 
 Search forGetSystemDefaultLCIDat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemDefaultLCID),[google](#http://www.google.com/search?q=GetSystemDefaultLCID)or[google groups](#http://groups.google.com/groups?q=GetSystemDefaultLCID).
 
-<span id="win32api.GetSystemDefaultLangID">win32api.GetSystemDefaultLangID</span>
+<span id="win32api_GetSystemDefaultLangID">win32api.GetSystemDefaultLangID</span>
 ===
 
 ## [win32api](#win32api).GetSystemDefaultLangID
@@ -2444,7 +2444,7 @@ Retrieves the system default language identifier.
 
 Search forGetSystemDefaultLangIDat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemDefaultLangID),[google](#http://www.google.com/search?q=GetSystemDefaultLangID)or[google groups](#http://groups.google.com/groups?q=GetSystemDefaultLangID).
 
-<span id="win32api.GetSystemDirectory">win32api.GetSystemDirectory</span>
+<span id="win32api_GetSystemDirectory">win32api.GetSystemDirectory</span>
 ===
 
 ## [win32api](#win32api).GetSystemDirectory
@@ -2455,7 +2455,7 @@ Returns the path of the Windows system directory.
 
 Search forGetSystemDirectoryat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemDirectory),[google](#http://www.google.com/search?q=GetSystemDirectory)or[google groups](#http://groups.google.com/groups?q=GetSystemDirectory).
 
-<span id="win32api.GetSystemFileCacheSize">win32api.GetSystemFileCacheSize</span>
+<span id="win32api_GetSystemFileCacheSize">win32api.GetSystemFileCacheSize</span>
 ===
 
 ## [win32api](#win32api).GetSystemFileCacheSize
@@ -2464,7 +2464,7 @@ Returns the amount of memory reserved for file cache
 
 ### Return ValueReturns a tuple containing the minimum and maximum cache sizes, and flags (combination of win32con.MM_WORKING_SET_* flags)
 
-<span id="win32api.GetSystemInfo">win32api.GetSystemInfo</span>
+<span id="win32api_GetSystemInfo">win32api.GetSystemInfo</span>
 ===
 
 ## [win32api](#win32api).GetSystemInfo
@@ -2488,7 +2488,7 @@ dwProcessorType
 dwAllocationGranularity
 (wProcessorLevel,wProcessorRevision)
 
-<span id="win32api.GetSystemMetrics">win32api.GetSystemMetrics</span>
+<span id="win32api_GetSystemMetrics">win32api.GetSystemMetrics</span>
 ===
 
 ## [win32api](#win32api).GetSystemMetrics
@@ -2505,14 +2505,14 @@ Which metric is being requested.  See the API documentation for a full list.
 
 Search forGetSystemMetricsat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemMetrics),[google](#http://www.google.com/search?q=GetSystemMetrics)or[google groups](#http://groups.google.com/groups?q=GetSystemMetrics).
 
-<span id="win32api.GetSystemTime">win32api.GetSystemTime</span>
+<span id="win32api_GetSystemTime">win32api.GetSystemTime</span>
 ===
 
 ## [win32api](#win32api).GetSystemTime
 tuple = **GetSystemTime(** )
 Returns the current system time
 
-<span id="win32api.GetTempFileName">win32api.GetTempFileName</span>
+<span id="win32api_GetTempFileName">win32api.GetTempFileName</span>
 ===
 
 ## [win32api](#win32api).GetTempFileName
@@ -2547,28 +2547,28 @@ Search forGetTempFileNameat[msdn](#http://search.msdn.microsoft.com/search/resul
 
 filename, and rc is the unique number used to generate the filename.
 
-<span id="win32api.GetTempPath">win32api.GetTempPath</span>
+<span id="win32api_GetTempPath">win32api.GetTempPath</span>
 ===
 
 ## [win32api](#win32api).GetTempPath
 string = **GetTempPath(** )
 Retrieves the path of the directory designated for temporary files.
 
-<span id="win32api.GetThreadLocale">win32api.GetThreadLocale</span>
+<span id="win32api_GetThreadLocale">win32api.GetThreadLocale</span>
 ===
 
 ## [win32api](#win32api).GetThreadLocale
 int = **GetThreadLocale(** )
 Returns the current thread's locale.
 
-<span id="win32api.GetTickCount">win32api.GetTickCount</span>
+<span id="win32api_GetTickCount">win32api.GetTickCount</span>
 ===
 
 ## [win32api](#win32api).GetTickCount
 int = **GetTickCount(** )
 Returns the number of milliseconds since windows started.
 
-<span id="win32api.GetTimeFormat">win32api.GetTimeFormat</span>
+<span id="win32api_GetTimeFormat">win32api.GetTimeFormat</span>
 ===
 
 ## [win32api](#win32api).GetTimeFormat
@@ -2593,7 +2593,7 @@ format: string
 
 May be None
 
-<span id="win32api.GetTimeZoneInformation">win32api.GetTimeZoneInformation</span>
+<span id="win32api_GetTimeZoneInformation">win32api.GetTimeZoneInformation</span>
 ===
 
 ## [win32api](#win32api).GetTimeZoneInformation
@@ -2649,7 +2649,7 @@ This value is added to the value of the Bias member to form the bias used during
 Specifies a bias value to be used during local time translations that occur during daylight saving time. This member is ignored if a value for the DaylightDate member is not supplied.
 This value is added to the value of the Bias member to form the bias used during daylight saving time. In most time zones, the value of this member is &#150 60.
 
-<span id="win32api.GetUserDefaultLCID">win32api.GetUserDefaultLCID</span>
+<span id="win32api_GetUserDefaultLCID">win32api.GetUserDefaultLCID</span>
 ===
 
 ## [win32api](#win32api).GetUserDefaultLCID
@@ -2660,7 +2660,7 @@ Retrieves the user default locale identifier.
 
 Search forGetUserDefaultLCIDat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserDefaultLCID),[google](#http://www.google.com/search?q=GetUserDefaultLCID)or[google groups](#http://groups.google.com/groups?q=GetUserDefaultLCID).
 
-<span id="win32api.GetUserDefaultLangID">win32api.GetUserDefaultLangID</span>
+<span id="win32api_GetUserDefaultLangID">win32api.GetUserDefaultLangID</span>
 ===
 
 ## [win32api](#win32api).GetUserDefaultLangID
@@ -2671,7 +2671,7 @@ Retrieves the user default language identifier.
 
 Search forGetUserDefaultLangIDat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserDefaultLangID),[google](#http://www.google.com/search?q=GetUserDefaultLangID)or[google groups](#http://groups.google.com/groups?q=GetUserDefaultLangID).
 
-<span id="win32api.GetUserName">win32api.GetUserName</span>
+<span id="win32api_GetUserName">win32api.GetUserName</span>
 ===
 
 ## [win32api](#win32api).GetUserName
@@ -2682,7 +2682,7 @@ Returns the current user name
 
 Search forGetUserNameat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserName),[google](#http://www.google.com/search?q=GetUserName)or[google groups](#http://groups.google.com/groups?q=GetUserName).
 
-<span id="win32api.GetUserNameEx">win32api.GetUserNameEx</span>
+<span id="win32api_GetUserNameEx">win32api.GetUserNameEx</span>
 ===
 
 ## [win32api](#win32api).GetUserNameEx
@@ -2699,7 +2699,7 @@ EXTENDED_NAME_FORMAT value, win32con.Name*
 
 Search forGetUserNameExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserNameEx),[google](#http://www.google.com/search?q=GetUserNameEx)or[google groups](#http://groups.google.com/groups?q=GetUserNameEx).
 
-<span id="win32api.GetVersion">win32api.GetVersion</span>
+<span id="win32api_GetVersion">win32api.GetVersion</span>
 ===
 
 ## [win32api](#win32api).GetVersion
@@ -2710,7 +2710,7 @@ Returns the current version of Windows, and information about the environment.
 
 word is 0 if the platform is Windows NT, or 1 if Win32s on Windows 3.1
 
-<span id="win32api.GetVersionEx">win32api.GetVersionEx</span>
+<span id="win32api_GetVersionEx">win32api.GetVersionEx</span>
 ===
 
 ## [win32api](#win32api).GetVersionEx
@@ -2803,7 +2803,7 @@ Additional information about the system. This member can be one of the VER_NT_* 
 
 
 
-<span id="win32api.GetVolumeInformation">win32api.GetVolumeInformation</span>
+<span id="win32api_GetVolumeInformation">win32api.GetVolumeInformation</span>
 ===
 
 ## [win32api](#win32api).GetVolumeInformation
@@ -2823,7 +2823,7 @@ long - Maximum Component Length of a file name.
 long - Sys Flags - other flags specific to the file system.  See the api for details.
 string - File System Name
 
-<span id="win32api.GetWindowLong">win32api.GetWindowLong</span>
+<span id="win32api_GetWindowLong">win32api.GetWindowLong</span>
 ===
 
 ## [win32api](#win32api).GetWindowLong
@@ -2842,14 +2842,14 @@ Specifies the zero-based byte offset of the value to change. Valid values are in
 
 ### CommentsThis function calls the GetWindowLongPtr Api function
 
-<span id="win32api.GetWindowsDirectory">win32api.GetWindowsDirectory</span>
+<span id="win32api_GetWindowsDirectory">win32api.GetWindowsDirectory</span>
 ===
 
 ## [win32api](#win32api).GetWindowsDirectory
 string = **GetWindowsDirectory(** )
 Returns the path of the Windows directory.
 
-<span id="win32api.GlobalMemoryStatus">win32api.GlobalMemoryStatus</span>
+<span id="win32api_GlobalMemoryStatus">win32api.GlobalMemoryStatus</span>
 ===
 
 ## [win32api](#win32api).GlobalMemoryStatus
@@ -2858,7 +2858,7 @@ Returns systemwide memory usage
 
 ### Return ValueReturns a dictionary representing a MEMORYSTATUS structure
 
-<span id="win32api.GlobalMemoryStatusEx">win32api.GlobalMemoryStatusEx</span>
+<span id="win32api_GlobalMemoryStatusEx">win32api.GlobalMemoryStatusEx</span>
 ===
 
 ## [win32api](#win32api).GlobalMemoryStatusEx
@@ -2869,7 +2869,7 @@ Returns physical and virtual memory usage
 
 ### Return ValueReturns a dictionary representing a MEMORYSTATUSEX structure
 
-<span id="win32api.HIBYTE">win32api.HIBYTE</span>
+<span id="win32api_HIBYTE">win32api.HIBYTE</span>
 ===
 
 ## [win32api](#win32api).HIBYTE
@@ -2884,7 +2884,7 @@ The value to retrieve the HIBYTE from.
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.HIWORD">win32api.HIWORD</span>
+<span id="win32api_HIWORD">win32api.HIWORD</span>
 ===
 
 ## [win32api](#win32api).HIWORD
@@ -2899,7 +2899,7 @@ The value to retrieve the HIWORD from.
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.InitiateSystemShutdown">win32api.InitiateSystemShutdown</span>
+<span id="win32api_InitiateSystemShutdown">win32api.InitiateSystemShutdown</span>
 ===
 
 ## [win32api](#win32api).InitiateSystemShutdown
@@ -2934,7 +2934,7 @@ Specifies whether the computer is to restart immediately after shutting down. If
 
 Search forInitiateSystemShutdownat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=InitiateSystemShutdown),[google](#http://www.google.com/search?q=InitiateSystemShutdown)or[google groups](#http://groups.google.com/groups?q=InitiateSystemShutdown).
 
-<span id="win32api.LOBYTE">win32api.LOBYTE</span>
+<span id="win32api_LOBYTE">win32api.LOBYTE</span>
 ===
 
 ## [win32api](#win32api).LOBYTE
@@ -2949,7 +2949,7 @@ The value to retrieve the LOBYTE from.
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.LOWORD">win32api.LOWORD</span>
+<span id="win32api_LOWORD">win32api.LOWORD</span>
 ===
 
 ## [win32api](#win32api).LOWORD
@@ -2964,7 +2964,7 @@ The value to retrieve the LOWORD from.
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.LoadCursor">win32api.LoadCursor</span>
+<span id="win32api_LoadCursor">win32api.LoadCursor</span>
 ===
 
 ## [win32api](#win32api).LoadCursor
@@ -2985,7 +2985,7 @@ The ID of the cursor.  Can be a resource id or for system cursors, one of win32c
 
 Search forLoadCursorat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LoadCursor),[google](#http://www.google.com/search?q=LoadCursor)or[google groups](#http://groups.google.com/groups?q=LoadCursor).
 
-<span id="win32api.LoadKeyboardLayout">win32api.LoadKeyboardLayout</span>
+<span id="win32api_LoadKeyboardLayout">win32api.LoadKeyboardLayout</span>
 ===
 
 ## [win32api](#win32api).LoadKeyboardLayout
@@ -3004,7 +3004,7 @@ Combination of win32con.KLF_* constants
 
 ### Return ValueReturns the numeric locale id that was loaded
 
-<span id="win32api.LoadLibrary">win32api.LoadLibrary</span>
+<span id="win32api_LoadLibrary">win32api.LoadLibrary</span>
 ===
 
 ## [win32api](#win32api).LoadLibrary
@@ -3021,7 +3021,7 @@ Specifies the file name of the module to load.
 
 Search forLoadLibraryat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LoadLibrary),[google](#http://www.google.com/search?q=LoadLibrary)or[google groups](#http://groups.google.com/groups?q=LoadLibrary).
 
-<span id="win32api.LoadLibraryEx">win32api.LoadLibraryEx</span>
+<span id="win32api_LoadLibraryEx">win32api.LoadLibraryEx</span>
 ===
 
 ## [win32api](#win32api).LoadLibraryEx
@@ -3046,7 +3046,7 @@ Specifies the action to take when loading the module.
 
 Search forLoadLibraryExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LoadLibraryEx),[google](#http://www.google.com/search?q=LoadLibraryEx)or[google groups](#http://groups.google.com/groups?q=LoadLibraryEx).
 
-<span id="win32api.LoadResource">win32api.LoadResource</span>
+<span id="win32api_LoadResource">win32api.LoadResource</span>
 ===
 
 ## [win32api](#win32api).LoadResource
@@ -3071,7 +3071,7 @@ language=NEUTRAL: int
 
 Language to use, defaults to LANG_NEUTRAL.
 
-<span id="win32api.LoadString">win32api.LoadString</span>
+<span id="win32api_LoadString">win32api.LoadString</span>
 ===
 
 ## [win32api](#win32api).LoadString
@@ -3092,7 +3092,7 @@ numChars=1024: int
 
 Number of characters to allocate for the return buffer.
 
-<span id="win32api.MAKELANGID">win32api.MAKELANGID</span>
+<span id="win32api_MAKELANGID">win32api.MAKELANGID</span>
 ===
 
 ## [win32api](#win32api).MAKELANGID
@@ -3111,7 +3111,7 @@ The sublanguage identifier
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.MAKELONG">win32api.MAKELONG</span>
+<span id="win32api_MAKELONG">win32api.MAKELONG</span>
 ===
 
 ## [win32api](#win32api).MAKELONG
@@ -3130,7 +3130,7 @@ Specifies the high-order byte of the new value.
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.MAKEWORD">win32api.MAKEWORD</span>
+<span id="win32api_MAKEWORD">win32api.MAKEWORD</span>
 ===
 
 ## [win32api](#win32api).MAKEWORD
@@ -3149,7 +3149,7 @@ Specifies the high-order byte of the new value.
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.MapVirtualKey">win32api.MapVirtualKey</span>
+<span id="win32api_MapVirtualKey">win32api.MapVirtualKey</span>
 ===
 
 ## [win32api](#win32api).MapVirtualKey
@@ -3176,7 +3176,7 @@ is specified MapVirtualKeyEx will be called.
 
 ### Commentsimplemented by calling the unicode versions of the API (MapVirtualKeyW/MapVirtualKeyExW)
 
-<span id="win32api.MessageBeep">win32api.MessageBeep</span>
+<span id="win32api_MessageBeep">win32api.MessageBeep</span>
 ===
 
 ## [win32api](#win32api).MessageBeep
@@ -3197,7 +3197,7 @@ MB_ICONEXCLAMATION, MB_ICONHAND, MB_ICONQUESTION or MB_OK.
 
 ### CommentsThe waveform sound for each sound type is identified by an entry in the [sounds] section of the registry.
 
-<span id="win32api.MessageBox">win32api.MessageBox</span>
+<span id="win32api_MessageBox">win32api.MessageBox</span>
 ===
 
 ## [win32api](#win32api).MessageBox
@@ -3228,11 +3228,11 @@ The language ID to use.
 
 ### CommentsNormally, a program in a GUI environment will use one of the MessageBox 
 
-methods supplied by the GUI (eg,[win32ui::MessageBox](#win32ui.MessageBox)or[PyCWnd::MessageBox](#PyCWnd.MessageBox))
+methods supplied by the GUI (eg,[win32ui::MessageBox](#win32ui_MessageBox)or[PyCWnd::MessageBox](#PyCWnd_MessageBox))
 
 ### Return ValueAn integer identifying the button pressed to dismiss the dialog.
 
-<span id="win32api.MonitorFromPoint">win32api.MonitorFromPoint</span>
+<span id="win32api_MonitorFromPoint">win32api.MonitorFromPoint</span>
 ===
 
 ## [win32api](#win32api).MonitorFromPoint
@@ -3253,7 +3253,7 @@ Flags that determine default behaviour, one of MONITOR_DEFAULTTONEAREST,MONITOR_
 
 ### Return ValueReturns None if no monitor was found
 
-<span id="win32api.MonitorFromRect">win32api.MonitorFromRect</span>
+<span id="win32api_MonitorFromRect">win32api.MonitorFromRect</span>
 ===
 
 ## [win32api](#win32api).MonitorFromRect
@@ -3274,7 +3274,7 @@ Flags that determine default behaviour, one of MONITOR_DEFAULTTONEAREST,MONITOR_
 
 ### Return ValueReturns None if no monitor was found
 
-<span id="win32api.MonitorFromWindow">win32api.MonitorFromWindow</span>
+<span id="win32api_MonitorFromWindow">win32api.MonitorFromWindow</span>
 ===
 
 ## [win32api](#win32api).MonitorFromWindow
@@ -3295,7 +3295,7 @@ Flags that determine default behaviour, one of MONITOR_DEFAULTTONEAREST,MONITOR_
 
 ### Return ValueReturns None if no monitor was found
 
-<span id="win32api.MoveFile">win32api.MoveFile</span>
+<span id="win32api_MoveFile">win32api.MoveFile</span>
 ===
 
 ## [win32api](#win32api).MoveFile
@@ -3318,7 +3318,7 @@ The name of the destination file.
 
 Search forMoveFile.at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=MoveFile.),[google](#http://www.google.com/search?q=MoveFile.)or[google groups](#http://groups.google.com/groups?q=MoveFile.).
 
-<span id="win32api.MoveFileEx">win32api.MoveFileEx</span>
+<span id="win32api_MoveFileEx">win32api.MoveFileEx</span>
 ===
 
 ## [win32api](#win32api).MoveFileEx
@@ -3348,7 +3348,7 @@ file will be deleted next reboot.
 
 Search forMoveFileExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=MoveFileEx),[google](#http://www.google.com/search?q=MoveFileEx)or[google groups](#http://groups.google.com/groups?q=MoveFileEx).
 
-<span id="win32api.OpenProcess">win32api.OpenProcess</span>
+<span id="win32api_OpenProcess">win32api.OpenProcess</span>
 ===
 
 ## [win32api](#win32api).OpenProcess
@@ -3369,7 +3369,7 @@ pid: int
 
 The process ID
 
-<span id="win32api.OutputDebugString">win32api.OutputDebugString</span>
+<span id="win32api_OutputDebugString">win32api.OutputDebugString</span>
 ===
 
 ## [win32api](#win32api).OutputDebugString
@@ -3382,7 +3382,7 @@ msg: string
 
 The string to write.
 
-<span id="win32api.PostMessage">win32api.PostMessage</span>
+<span id="win32api_PostMessage">win32api.PostMessage</span>
 ===
 
 ## [win32api](#win32api).PostMessage
@@ -3411,7 +3411,7 @@ The lParam for the message
 
 Search forPostMessageat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PostMessage),[google](#http://www.google.com/search?q=PostMessage)or[google groups](#http://groups.google.com/groups?q=PostMessage).
 
-<span id="win32api.PostQuitMessage">win32api.PostQuitMessage</span>
+<span id="win32api_PostQuitMessage">win32api.PostQuitMessage</span>
 ===
 
 ## [win32api](#win32api).PostQuitMessage
@@ -3428,7 +3428,7 @@ The exit code
 
 Search forPostQuitMessageat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PostQuitMessage),[google](#http://www.google.com/search?q=PostQuitMessage)or[google groups](#http://groups.google.com/groups?q=PostQuitMessage).
 
-<span id="win32api.PostThreadMessage">win32api.PostThreadMessage</span>
+<span id="win32api_PostThreadMessage">win32api.PostThreadMessage</span>
 ===
 
 ## [win32api](#win32api).PostThreadMessage
@@ -3457,7 +3457,7 @@ The lParam for the message
 
 Search forPostThreadMessageat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PostThreadMessage),[google](#http://www.google.com/search?q=PostThreadMessage)or[google groups](#http://groups.google.com/groups?q=PostThreadMessage).
 
-<span id="win32api.RGB">win32api.RGB</span>
+<span id="win32api_RGB">win32api.RGB</span>
 ===
 
 ## [win32api](#win32api).RGB
@@ -3480,7 +3480,7 @@ The blue value
 
 ### CommentsThis is simply a wrapper to a C++ macro.
 
-<span id="win32api.RegCloseKey">win32api.RegCloseKey</span>
+<span id="win32api_RegCloseKey">win32api.RegCloseKey</span>
 ===
 
 ## [win32api](#win32api).RegCloseKey
@@ -3497,7 +3497,7 @@ The key to be closed.
 
 Search forRegCloseKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegCloseKey),[google](#http://www.google.com/search?q=RegCloseKey)or[google groups](#http://groups.google.com/groups?q=RegCloseKey).
 
-<span id="win32api.RegConnectRegistry">win32api.RegConnectRegistry</span>
+<span id="win32api_RegConnectRegistry">win32api.RegConnectRegistry</span>
 ===
 
 ## [win32api](#win32api).RegConnectRegistry
@@ -3522,7 +3522,7 @@ Search forRegConnectRegistryat[msdn](#http://search.msdn.microsoft.com/search/re
 
 If the function fails, an exception is raised.
 
-<span id="win32api.RegCopyTree">win32api.RegCopyTree</span>
+<span id="win32api_RegCopyTree">win32api.RegCopyTree</span>
 ===
 
 ## [win32api](#win32api).RegCopyTree
@@ -3546,7 +3546,7 @@ The destination key
 ### CommentsAccepts keyword args.
 Requires Vista or later.
 
-<span id="win32api.RegCreateKey">win32api.RegCreateKey</span>
+<span id="win32api_RegCreateKey">win32api.RegCreateKey</span>
 ===
 
 ## [win32api](#win32api).RegCreateKey
@@ -3581,7 +3581,7 @@ Search forRegCreateKeyat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 If the function fails, an exception is raised.
 
-<span id="win32api.RegCreateKeyEx">win32api.RegCreateKeyEx</span>
+<span id="win32api_RegCreateKeyEx">win32api.RegCreateKeyEx</span>
 ===
 
 ## [win32api](#win32api).RegCreateKeyEx
@@ -3612,13 +3612,13 @@ Options=REG_OPTION_NON_VOLATILE: int
 
 One of the winnt.REG_OPTION_* values
 
-SecurityAttributes=None:[PySECURITY_ATTRIBUTES](#PySECURITY.ATTRIBUTES)
+SecurityAttributes=None:[PySECURITY_ATTRIBUTES](#PySECURITY_ATTRIBUTES)
 
 Specifies security for key and handle inheritance
 
 Transaction=None:[PyHANDLE](#PyHANDLE)
 
-Handle to a transaction as returned by[win32transaction::CreateTransaction](#win32transaction.CreateTransaction)
+Handle to a transaction as returned by[win32transaction::CreateTransaction](#win32transaction_CreateTransaction)
 
 ### CommentsImplemented only as Unicode (RegCreateKeyExW).  Accepts keyword arguments.
 If a transaction handle is passed in, RegCreateKeyTransacted will be called (requires Vista or later)
@@ -3631,7 +3631,7 @@ Search forRegCreateKeyTransactedat[msdn](#http://search.msdn.microsoft.com/searc
 
 ### Return ValueReturns registry handle and flag indicating if key was opened or created (REG_CREATED_NEW_KEY or REG_OPENED_EXISTING_KEY)
 
-<span id="win32api.RegDeleteKey">win32api.RegDeleteKey</span>
+<span id="win32api_RegDeleteKey">win32api.RegDeleteKey</span>
 ===
 
 ## [win32api](#win32api).RegDeleteKey
@@ -3664,7 +3664,7 @@ If the method fails, and exception is raised.
 
 Search forRegDeleteKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegDeleteKey),[google](#http://www.google.com/search?q=RegDeleteKey)or[google groups](#http://groups.google.com/groups?q=RegDeleteKey).
 
-<span id="win32api.RegDeleteKeyEx">win32api.RegDeleteKeyEx</span>
+<span id="win32api_RegDeleteKeyEx">win32api.RegDeleteKeyEx</span>
 ===
 
 ## [win32api](#win32api).RegDeleteKeyEx
@@ -3687,7 +3687,7 @@ Can be KEY_WOW64_32KEY or KEY_WOW64_64KEY to specify alternate registry view
 
 Transaction=None:[PyHANDLE](#PyHANDLE)
 
-Handle to a transaction as returned by[win32transaction::CreateTransaction](#win32transaction.CreateTransaction)
+Handle to a transaction as returned by[win32transaction::CreateTransaction](#win32transaction_CreateTransaction)
 
 ### CommentsAccepts keyword args.
 Requires 64-bit XP, Vista, or later.
@@ -3700,7 +3700,7 @@ Search forRegDeleteKeyExat[msdn](#http://search.msdn.microsoft.com/search/result
 
 Search forRegDeleteKeyTransactedat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegDeleteKeyTransacted),[google](#http://www.google.com/search?q=RegDeleteKeyTransacted)or[google groups](#http://groups.google.com/groups?q=RegDeleteKeyTransacted).
 
-<span id="win32api.RegDeleteTree">win32api.RegDeleteTree</span>
+<span id="win32api_RegDeleteTree">win32api.RegDeleteTree</span>
 ===
 
 ## [win32api](#win32api).RegDeleteTree
@@ -3720,7 +3720,7 @@ Name of subkey to be deleted, or None for all subkeys and values
 ### CommentsAccepts keyword args.
 Requires Vista or later.
 
-<span id="win32api.RegDeleteValue">win32api.RegDeleteValue</span>
+<span id="win32api_RegDeleteValue">win32api.RegDeleteValue</span>
 ===
 
 ## [win32api](#win32api).RegDeleteValue
@@ -3745,7 +3745,7 @@ The name of the value to remove.
 
 Search forRegDeleteValueat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegDeleteValue),[google](#http://www.google.com/search?q=RegDeleteValue)or[google groups](#http://groups.google.com/groups?q=RegDeleteValue).
 
-<span id="win32api.RegEnumKey">win32api.RegEnumKey</span>
+<span id="win32api_RegEnumKey">win32api.RegEnumKey</span>
 ===
 
 ## [win32api](#win32api).RegEnumKey
@@ -3770,7 +3770,7 @@ The index of the key to retrieve.
 
 Search forRegEnumKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegEnumKey),[google](#http://www.google.com/search?q=RegEnumKey)or[google groups](#http://groups.google.com/groups?q=RegEnumKey).
 
-<span id="win32api.RegEnumKeyEx">win32api.RegEnumKeyEx</span>
+<span id="win32api_RegEnumKeyEx">win32api.RegEnumKeyEx</span>
 ===
 
 ## [win32api](#win32api).RegEnumKeyEx
@@ -3789,7 +3789,7 @@ HKEY_USERS.
 
 ### Return ValueReturns subkeys as tuples of  (name, reserved, class, last write time). Reserved will always be 0.
 
-<span id="win32api.RegEnumKeyExW">win32api.RegEnumKeyExW</span>
+<span id="win32api_RegEnumKeyExW">win32api.RegEnumKeyExW</span>
 ===
 
 ## [win32api](#win32api).RegEnumKeyExW
@@ -3804,7 +3804,7 @@ Registry handle opened with KEY_ENUMERATE_SUB_KEYS, or one of win32con.HKEY_* co
 
 ### Return ValueReturns subkeys as tuples of  (name, reserved, class, last write time). Reserved will always be 0.
 
-<span id="win32api.RegEnumValue">win32api.RegEnumValue</span>
+<span id="win32api_RegEnumValue">win32api.RegEnumValue</span>
 ===
 
 ## [win32api](#win32api).RegEnumValue
@@ -3831,7 +3831,7 @@ The index of the key to retrieve.
 
 Search forPyRegEnumValueat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PyRegEnumValue),[google](#http://www.google.com/search?q=PyRegEnumValue)or[google groups](#http://groups.google.com/groups?q=PyRegEnumValue).
 
-<span id="win32api.RegFlushKey">win32api.RegFlushKey</span>
+<span id="win32api_RegFlushKey">win32api.RegFlushKey</span>
 ===
 
 ## [win32api](#win32api).RegFlushKey
@@ -3853,18 +3853,18 @@ HKEY_USERS
 Registry changes are flushed to disk by the registry using its lazy flusher. 
 
 Registry changes are also flushed to disk at system shutdown.
-Unlike[win32api::RegCloseKey](#win32api.RegCloseKey), the RegFlushKey method returns only when all the data has been written to the registry.
+Unlike[win32api::RegCloseKey](#win32api_RegCloseKey), the RegFlushKey method returns only when all the data has been written to the registry.
 An application should only call RegFlushKey if it requires absolute certainty that registry changes are on disk. If you don't know whether a RegFlushKey call is required, it probably isn't.
 
 ### Win32 API References
 
 Search forRegFlushKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegFlushKey),[google](#http://www.google.com/search?q=RegFlushKey)or[google groups](#http://groups.google.com/groups?q=RegFlushKey).
 
-<span id="win32api.RegGetKeySecurity">win32api.RegGetKeySecurity</span>
+<span id="win32api_RegGetKeySecurity">win32api.RegGetKeySecurity</span>
 ===
 
 ## [win32api](#win32api).RegGetKeySecurity
-[PySECURITY_DESCRIPTOR](#PySECURITY.DESCRIPTOR)= **RegGetKeySecurity(key, security_info** )
+[PySECURITY_DESCRIPTOR](#PySECURITY_DESCRIPTOR)= **RegGetKeySecurity(key, security_info** )
 Retrieves the security on the specified registry key.
 
 ### Parameters
@@ -3881,7 +3881,7 @@ Specifies the components of the security descriptor to retrieve. The value can b
 
 Search forRegGetKeySecurityat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegGetKeySecurity),[google](#http://www.google.com/search?q=RegGetKeySecurity)or[google groups](#http://groups.google.com/groups?q=RegGetKeySecurity).
 
-<span id="win32api.RegLoadKey">win32api.RegLoadKey</span>
+<span id="win32api_RegLoadKey">win32api.RegLoadKey</span>
 ===
 
 ## [win32api](#win32api).RegLoadKey
@@ -3912,18 +3912,18 @@ filename: string
 
 The name of the file to load registry data from. 
 
-This file must have been created with the[win32api::RegSaveKey](#win32api.RegSaveKey)function. 
+This file must have been created with the[win32api::RegSaveKey](#win32api_RegSaveKey)function. 
 
 Under the file allocation table (FAT) file system, the filename may not have an extension.
 
 ### CommentsA call to RegLoadKey fails if the calling process does not have the SE_RESTORE_PRIVILEGE privilege.
-If hkey is a handle returned by[win32api::RegConnectRegistry](#win32api.RegConnectRegistry), then the path specified in fileName is relative to the remote computer.
+If hkey is a handle returned by[win32api::RegConnectRegistry](#win32api_RegConnectRegistry), then the path specified in fileName is relative to the remote computer.
 
 ### Win32 API References
 
 Search forRegLoadKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegLoadKey),[google](#http://www.google.com/search?q=RegLoadKey)or[google groups](#http://groups.google.com/groups?q=RegLoadKey).
 
-<span id="win32api.RegNotifyChangeKeyValue">win32api.RegNotifyChangeKeyValue</span>
+<span id="win32api_RegNotifyChangeKeyValue">win32api.RegNotifyChangeKeyValue</span>
 ===
 
 ## [win32api](#win32api).RegNotifyChangeKeyValue
@@ -3952,7 +3952,7 @@ fAsynchronous: int
 
 Boolean, function returns immediately if True, waits for change if False
 
-<span id="win32api.RegOpenCurrentUser">win32api.RegOpenCurrentUser</span>
+<span id="win32api_RegOpenCurrentUser">win32api.RegOpenCurrentUser</span>
 ===
 
 ## [win32api](#win32api).RegOpenCurrentUser
@@ -3969,18 +3969,18 @@ Desired access, combination of win32con.KEY_*
 
 Search forRegOpenCurrentUserat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegOpenCurrentUser),[google](#http://www.google.com/search?q=RegOpenCurrentUser)or[google groups](#http://groups.google.com/groups?q=RegOpenCurrentUser).
 
-<span id="win32api.RegOpenKey">win32api.RegOpenKey</span>
+<span id="win32api_RegOpenKey">win32api.RegOpenKey</span>
 ===
 
 ## [win32api](#win32api).RegOpenKey
 [PyHKEY](#PyHKEY)= **RegOpenKey(** )
 Opens the specified key.
 
-### CommentsThis funcion is implemented using[win32api::RegOpenKeyEx](#win32api.RegOpenKeyEx), by taking advantage 
+### CommentsThis funcion is implemented using[win32api::RegOpenKeyEx](#win32api_RegOpenKeyEx), by taking advantage 
 
-of default parameters.  See[win32api::RegOpenKeyEx](#win32api.RegOpenKeyEx)for more details.
+of default parameters.  See[win32api::RegOpenKeyEx](#win32api_RegOpenKeyEx)for more details.
 
-<span id="win32api.RegOpenKeyEx">win32api.RegOpenKeyEx</span>
+<span id="win32api_RegOpenKeyEx">win32api.RegOpenKeyEx</span>
 ===
 
 ## [win32api](#win32api).RegOpenKeyEx
@@ -4034,7 +4034,7 @@ Search forRegOpenKeyExat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 If the function fails, an exception is raised.
 
-<span id="win32api.RegOpenKeyTransacted">win32api.RegOpenKeyTransacted</span>
+<span id="win32api_RegOpenKeyTransacted">win32api.RegOpenKeyTransacted</span>
 ===
 
 ## [win32api](#win32api).RegOpenKeyTransacted
@@ -4059,7 +4059,7 @@ standard access rights such as DELETE, WRITE_OWNER, etc.
 
 Transaction:[PyHANDLE](#PyHANDLE)
 
-Handle to a transaction as returned by[win32transaction::CreateTransaction](#win32transaction.CreateTransaction)
+Handle to a transaction as returned by[win32transaction::CreateTransaction](#win32transaction_CreateTransaction)
 
 Options=0: int
 
@@ -4074,7 +4074,7 @@ Search forRegOpenKeyTransactedat[msdn](#http://search.msdn.microsoft.com/search/
 
 ### Return ValueReturns a transacted registry handle.  Note that operations on subkeys are not automatically transacted.
 
-<span id="win32api.RegOverridePredefKey">win32api.RegOverridePredefKey</span>
+<span id="win32api_RegOverridePredefKey">win32api.RegOverridePredefKey</span>
 ===
 
 ## [win32api](#win32api).RegOverridePredefKey
@@ -4097,7 +4097,7 @@ Registry key to which it will be redirected.  Pass None to restore original key.
 
 Search forRegOverridePredefKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegOverridePredefKey),[google](#http://www.google.com/search?q=RegOverridePredefKey)or[google groups](#http://groups.google.com/groups?q=RegOverridePredefKey).
 
-<span id="win32api.RegQueryInfoKey">win32api.RegQueryInfoKey</span>
+<span id="win32api_RegQueryInfoKey">win32api.RegQueryInfoKey</span>
 ===
 
 ## [win32api](#win32api).RegQueryInfoKey
@@ -4126,7 +4126,7 @@ HKEY_USERS
 
 Search forRegQueryInfoKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryInfoKey),[google](#http://www.google.com/search?q=RegQueryInfoKey)or[google groups](#http://groups.google.com/groups?q=RegQueryInfoKey).
 
-<span id="win32api.RegQueryInfoKeyW">win32api.RegQueryInfoKeyW</span>
+<span id="win32api_RegQueryInfoKeyW">win32api.RegQueryInfoKeyW</span>
 ===
 
 ## [win32api](#win32api).RegQueryInfoKeyW
@@ -4143,7 +4143,7 @@ Handle to a registry key, or one of win32con.HKEY_* constants
 
 Search forRegQueryInfoKeyWat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryInfoKeyW),[google](#http://www.google.com/search?q=RegQueryInfoKeyW)or[google groups](#http://groups.google.com/groups?q=RegQueryInfoKeyW).
 
-<span id="win32api.RegQueryValue">win32api.RegQueryValue</span>
+<span id="win32api_RegQueryValue">win32api.RegQueryValue</span>
 ===
 
 ## [win32api](#win32api).RegQueryValue
@@ -4166,7 +4166,7 @@ subKey: string
 
 The name of the subkey with which the value is associated. 
 
-If this parameter is None or empty, the function retrieves the value set by the[win32api::RegSetValue](#win32api.RegSetValue)method for the key identified by key.
+If this parameter is None or empty, the function retrieves the value set by the[win32api::RegSetValue](#win32api_RegSetValue)method for the key identified by key.
 
 ### CommentsValues in the registry have name, type, and data components. This method 
 
@@ -4178,7 +4178,7 @@ But the underlying API call doesn't return the type, Lame Lame Lame, DONT USE TH
 
 Search forRegQueryValueat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryValue),[google](#http://www.google.com/search?q=RegQueryValue)or[google groups](#http://groups.google.com/groups?q=RegQueryValue).
 
-<span id="win32api.RegQueryValueEx">win32api.RegQueryValueEx</span>
+<span id="win32api_RegQueryValueEx">win32api.RegQueryValueEx</span>
 ===
 
 ## [win32api](#win32api).RegQueryValueEx
@@ -4207,7 +4207,7 @@ retrieves the data for the given value.
 
 Search forRegQueryValueExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryValueEx),[google](#http://www.google.com/search?q=RegQueryValueEx)or[google groups](#http://groups.google.com/groups?q=RegQueryValueEx).
 
-<span id="win32api.RegRestoreKey">win32api.RegRestoreKey</span>
+<span id="win32api_RegRestoreKey">win32api.RegRestoreKey</span>
 ===
 
 ## [win32api](#win32api).RegRestoreKey
@@ -4235,7 +4235,7 @@ Requires SeBackupPrivilege and SeRestorePrivilege
 
 Search forRegRestoreKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegRestoreKey),[google](#http://www.google.com/search?q=RegRestoreKey)or[google groups](#http://groups.google.com/groups?q=RegRestoreKey).
 
-<span id="win32api.RegSaveKey">win32api.RegSaveKey</span>
+<span id="win32api_RegSaveKey">win32api.RegSaveKey</span>
 ===
 
 ## [win32api](#win32api).RegSaveKey
@@ -4256,9 +4256,9 @@ filename: string
 
 The name of the file to save registry data to. 
 
-This file cannot already exist. If this filename includes an extension, it cannot be used on file allocation table (FAT) file systems by the[win32api::RegLoadKey](#win32api.RegLoadKey), **win32api::RegReplaceKey** , or[win32api::RegRestoreKey](#win32api.RegRestoreKey)methods.
+This file cannot already exist. If this filename includes an extension, it cannot be used on file allocation table (FAT) file systems by the[win32api::RegLoadKey](#win32api_RegLoadKey), **win32api::RegReplaceKey** , or[win32api::RegRestoreKey](#win32api_RegRestoreKey)methods.
 
-sa=None:[PySECURITY_ATTRIBUTES](#PySECURITY.ATTRIBUTES)
+sa=None:[PySECURITY_ATTRIBUTES](#PySECURITY_ATTRIBUTES)
 
 The security attributes of the created file.
 
@@ -4269,7 +4269,7 @@ The caller of this method must possess the SeBackupPrivilege security privilege.
 
 Search forRegSaveKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSaveKey),[google](#http://www.google.com/search?q=RegSaveKey)or[google groups](#http://groups.google.com/groups?q=RegSaveKey).
 
-<span id="win32api.RegSaveKeyEx">win32api.RegSaveKeyEx</span>
+<span id="win32api_RegSaveKeyEx">win32api.RegSaveKeyEx</span>
 ===
 
 ## [win32api](#win32api).RegSaveKeyEx
@@ -4286,7 +4286,7 @@ File:[PyUnicode](#PyUnicode)
 
 Name of file in which to save data.  File must not already exist.
 
-SecurityAttributes=None:[PySECURITY_ATTRIBUTES](#PySECURITY.ATTRIBUTES)
+SecurityAttributes=None:[PySECURITY_ATTRIBUTES](#PySECURITY_ATTRIBUTES)
 
 Specifies security for the file to be created
 
@@ -4301,7 +4301,7 @@ SE_BACKUP_NAME privilege must be enabled.
 
 Search forRegSaveKeyExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSaveKeyEx),[google](#http://www.google.com/search?q=RegSaveKeyEx)or[google groups](#http://groups.google.com/groups?q=RegSaveKeyEx).
 
-<span id="win32api.RegSetKeySecurity">win32api.RegSetKeySecurity</span>
+<span id="win32api_RegSetKeySecurity">win32api.RegSetKeySecurity</span>
 ===
 
 ## [win32api](#win32api).RegSetKeySecurity
@@ -4318,17 +4318,17 @@ security_info: int
 
 Specifies the components of the security descriptor to set. The value can be a combination of the *_SECURITY_INFORMATION constants.
 
-sd:[PySECURITY_DESCRIPTOR](#PySECURITY.DESCRIPTOR)
+sd:[PySECURITY_DESCRIPTOR](#PySECURITY_DESCRIPTOR)
 
 The new security descriptor for the key
 
-### CommentsIf key is one of the predefined keys, the predefined key should be closed with[win32api::RegCloseKey](#win32api.RegCloseKey). That ensures that the new security information is in effect the next time the predefined key is referenced.
+### CommentsIf key is one of the predefined keys, the predefined key should be closed with[win32api::RegCloseKey](#win32api_RegCloseKey). That ensures that the new security information is in effect the next time the predefined key is referenced.
 
 ### Win32 API References
 
 Search forPyRegSetKeySecurityat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PyRegSetKeySecurity),[google](#http://www.google.com/search?q=PyRegSetKeySecurity)or[google groups](#http://groups.google.com/groups?q=PyRegSetKeySecurity).
 
-<span id="win32api.RegSetValue">win32api.RegSetValue</span>
+<span id="win32api_RegSetValue">win32api.RegSetValue</span>
 ===
 
 ## [win32api](#win32api).RegSetValue
@@ -4367,7 +4367,7 @@ The key identified by the key parameter must have been opened with KEY_SET_VALUE
 
 Search forRegSetValueat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSetValue),[google](#http://www.google.com/search?q=RegSetValue)or[google groups](#http://groups.google.com/groups?q=RegSetValue).
 
-<span id="win32api.RegSetValueEx">win32api.RegSetValueEx</span>
+<span id="win32api_RegSetValueEx">win32api.RegSetValueEx</span>
 ===
 
 ## [win32api](#win32api).RegSetValueEx
@@ -4389,7 +4389,7 @@ valueName: string
 The name of the value to set. 
 
 If a value with this name is not already present in the key, the method adds it to the key.
-If this parameter is None or an empty string and the type parameter is the win32api.REG_SZ type, this function sets the same value the[win32api::RegSetValue](#win32api.RegSetValue)method would set.
+If this parameter is None or an empty string and the type parameter is the win32api.REG_SZ type, this function sets the same value the[win32api::RegSetValue](#win32api_RegSetValue)method would set.
 
 reserved: any
 
@@ -4413,7 +4413,7 @@ The value to be stored with the specified value name.
 ### CommentsThis method can also set additional value and type information for the specified key.
 The key identified by the key parameter must have been opened with KEY_SET_VALUE access. 
 
-To open the key, use the[win32api::RegCreateKeyEx](#win32api.RegCreateKeyEx)or[win32api::RegOpenKeyEx](#win32api.RegOpenKeyEx)methods.
+To open the key, use the[win32api::RegCreateKeyEx](#win32api_RegCreateKeyEx)or[win32api::RegOpenKeyEx](#win32api_RegOpenKeyEx)methods.
 Value lengths are limited by available memory. 
 
 Long values (more than 2048 bytes) should be stored as files with the filenames stored in the configuration registry. 
@@ -4425,14 +4425,14 @@ The key identified by the key parameter must have been opened with KEY_SET_VALUE
 
 Search forRegSetValueExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSetValueEx),[google](#http://www.google.com/search?q=RegSetValueEx)or[google groups](#http://groups.google.com/groups?q=RegSetValueEx).
 
-<span id="win32api.RegUnLoadKey">win32api.RegUnLoadKey</span>
+<span id="win32api_RegUnLoadKey">win32api.RegUnLoadKey</span>
 ===
 
 ## [win32api](#win32api).RegUnLoadKey
  **RegUnLoadKey(key, subKey** )
 The RegUnLoadKey function unloads the specified registry key and its subkeys from the registry. 
 
-The key should have been created by a previous call to[win32api::RegLoadKey](#win32api.RegLoadKey).
+The key should have been created by a previous call to[win32api::RegLoadKey](#win32api_RegLoadKey).
 
 ### Parameters
 
@@ -4451,13 +4451,13 @@ This key must be a subkey of the key identified by the key parameter.
 This value must not be None.
 
 ### CommentsA call to RegUnLoadKey fails if the calling process does not have the SE_RESTORE_PRIVILEGE privilege.
-If hkey is a handle returned by[win32api::RegConnectRegistry](#win32api.RegConnectRegistry), then the path specified in fileName is relative to the remote computer.
+If hkey is a handle returned by[win32api::RegConnectRegistry](#win32api_RegConnectRegistry), then the path specified in fileName is relative to the remote computer.
 
 ### Win32 API References
 
 Search forRegUnLoadKeyat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegUnLoadKey),[google](#http://www.google.com/search?q=RegUnLoadKey)or[google groups](#http://groups.google.com/groups?q=RegUnLoadKey).
 
-<span id="win32api.RegisterWindowMessage">win32api.RegisterWindowMessage</span>
+<span id="win32api_RegisterWindowMessage">win32api.RegisterWindowMessage</span>
 ===
 
 ## [win32api](#win32api).RegisterWindowMessage
@@ -4489,7 +4489,7 @@ this range.)
 
 Search forRegisterWindowMessageat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegisterWindowMessage),[google](#http://www.google.com/search?q=RegisterWindowMessage)or[google groups](#http://groups.google.com/groups?q=RegisterWindowMessage).
 
-<span id="win32api.SearchPath">win32api.SearchPath</span>
+<span id="win32api_SearchPath">win32api.SearchPath</span>
 ===
 
 ## [win32api](#win32api).SearchPath
@@ -4526,7 +4526,7 @@ path name located.  int is the offset in the string of the base name
 
 of the file.
 
-<span id="win32api.SendMessage">win32api.SendMessage</span>
+<span id="win32api_SendMessage">win32api.SendMessage</span>
 ===
 
 ## [win32api](#win32api).SendMessage
@@ -4555,7 +4555,7 @@ The lParam for the message
 
 Search forSendMessageat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SendMessage),[google](#http://www.google.com/search?q=SendMessage)or[google groups](#http://groups.google.com/groups?q=SendMessage).
 
-<span id="win32api.SetClassLong">win32api.SetClassLong</span>
+<span id="win32api_SetClassLong">win32api.SetClassLong</span>
 ===
 
 ## [win32api](#win32api).SetClassLong
@@ -4578,7 +4578,7 @@ Specifies the long value to place in the window's reserved memory.
 
 ### CommentsThis function calls the SetClassLongPtr Api function
 
-<span id="win32api.SetClassWord">win32api.SetClassWord</span>
+<span id="win32api_SetClassWord">win32api.SetClassWord</span>
 ===
 
 ## [win32api](#win32api).SetClassWord
@@ -4599,9 +4599,9 @@ val: int
 
 Specifies the long value to place in the window's reserved memory.
 
-### CommentsThis function is obsolete, use[win32api::SetClassLong](#win32api.SetClassLong)instead
+### CommentsThis function is obsolete, use[win32api::SetClassLong](#win32api_SetClassLong)instead
 
-<span id="win32api.SetConsoleCtrlHandler">win32api.SetConsoleCtrlHandler</span>
+<span id="win32api_SetConsoleCtrlHandler">win32api.SetConsoleCtrlHandler</span>
 ===
 
 ## [win32api](#win32api).SetConsoleCtrlHandler
@@ -4636,7 +4636,7 @@ This handler must acquire the Python lock before it can call any
 of the registered handlers.  This means the handler may not be called 
 
 until the current Python thread yields the lock.
-A console process can use the[win32api::GenerateConsoleCtrlEvent](#win32api.GenerateConsoleCtrlEvent)function to send a CTRL+C or CTRL+BREAK signal to a console process 
+A console process can use the[win32api::GenerateConsoleCtrlEvent](#win32api_GenerateConsoleCtrlEvent)function to send a CTRL+C or CTRL+BREAK signal to a console process 
 
 group.
 The system generates CTRL_CLOSE_EVENT, CTRL_LOGOFF_EVENT, and 
@@ -4651,7 +4651,7 @@ clean up before termination.
 
 Search forSetConsoleCtrlHandlerat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetConsoleCtrlHandler),[google](#http://www.google.com/search?q=SetConsoleCtrlHandler)or[google groups](#http://groups.google.com/groups?q=SetConsoleCtrlHandler).
 
-<span id="win32api.SetConsoleTitle">win32api.SetConsoleTitle</span>
+<span id="win32api_SetConsoleTitle">win32api.SetConsoleTitle</span>
 ===
 
 ## [win32api](#win32api).SetConsoleTitle
@@ -4668,7 +4668,7 @@ The new title
 
 Search forSetConsoleTitleat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetConsoleTitle),[google](#http://www.google.com/search?q=SetConsoleTitle)or[google groups](#http://groups.google.com/groups?q=SetConsoleTitle).
 
-<span id="win32api.SetCursor">win32api.SetCursor</span>
+<span id="win32api_SetCursor">win32api.SetCursor</span>
 ===
 
 ## [win32api](#win32api).SetCursor
@@ -4687,7 +4687,7 @@ Search forSetCursorat[msdn](#http://search.msdn.microsoft.com/search/results.asp
 
 ### Return ValueThe result is the previous cursor if there was one.
 
-<span id="win32api.SetCursorPos">win32api.SetCursorPos</span>
+<span id="win32api_SetCursorPos">win32api.SetCursorPos</span>
 ===
 
 ## [win32api](#win32api).SetCursorPos
@@ -4704,7 +4704,7 @@ The new position.
 
 Search forSetCursorPosat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetCursorPos),[google](#http://www.google.com/search?q=SetCursorPos)or[google groups](#http://groups.google.com/groups?q=SetCursorPos).
 
-<span id="win32api.SetDllDirectory">win32api.SetDllDirectory</span>
+<span id="win32api_SetDllDirectory">win32api.SetDllDirectory</span>
 ===
 
 ## [win32api](#win32api).SetDllDirectory
@@ -4721,7 +4721,7 @@ Directory to be added to search path, can be None to restore defaults
 
 Search forSetDllDirectoryat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetDllDirectory),[google](#http://www.google.com/search?q=SetDllDirectory)or[google groups](#http://groups.google.com/groups?q=SetDllDirectory).
 
-<span id="win32api.SetEnvironmentVariable">win32api.SetEnvironmentVariable</span>
+<span id="win32api_SetEnvironmentVariable">win32api.SetEnvironmentVariable</span>
 ===
 
 ## [win32api](#win32api).SetEnvironmentVariable
@@ -4742,7 +4742,7 @@ Value to be set, use None to remove variable
 
 Search forSetEnvironmentVariableat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetEnvironmentVariable),[google](#http://www.google.com/search?q=SetEnvironmentVariable)or[google groups](#http://groups.google.com/groups?q=SetEnvironmentVariable).
 
-<span id="win32api.SetEnvironmentVariableW">win32api.SetEnvironmentVariableW</span>
+<span id="win32api_SetEnvironmentVariableW">win32api.SetEnvironmentVariableW</span>
 ===
 
 ## [win32api](#win32api).SetEnvironmentVariableW
@@ -4763,7 +4763,7 @@ Value to be set, or None to remove variable
 
 Search forSetEnvironmentVariableat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetEnvironmentVariable),[google](#http://www.google.com/search?q=SetEnvironmentVariable)or[google groups](#http://groups.google.com/groups?q=SetEnvironmentVariable).
 
-<span id="win32api.SetErrorMode">win32api.SetErrorMode</span>
+<span id="win32api_SetErrorMode">win32api.SetErrorMode</span>
 ===
 
 ## [win32api](#win32api).SetErrorMode
@@ -4782,7 +4782,7 @@ Search forSetErrorModeat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 ### Return ValueThe result is an integer containing the old error flags.
 
-<span id="win32api.SetFileAttributes">win32api.SetFileAttributes</span>
+<span id="win32api_SetFileAttributes">win32api.SetFileAttributes</span>
 ===
 
 ## [win32api](#win32api).SetFileAttributes
@@ -4799,7 +4799,7 @@ attrs: int
 
 The attributes to set.  Must be a combination of the win32con.FILE_ATTRIBUTE_* constants.
 
-<span id="win32api.SetHandleInformation">win32api.SetHandleInformation</span>
+<span id="win32api_SetHandleInformation">win32api.SetHandleInformation</span>
 ===
 
 ## [win32api](#win32api).SetHandleInformation
@@ -4822,7 +4822,7 @@ Bitmask of flag values to be set. Valid Flags are HANDLE_FLAG_INHERIT, HANDLE_FL
 
 ### CommentsNot available on Win98/Me
 
-<span id="win32api.SetLastError">win32api.SetLastError</span>
+<span id="win32api_SetLastError">win32api.SetLastError</span>
 ===
 
 ## [win32api](#win32api).SetLastError
@@ -4833,7 +4833,7 @@ Sets the calling thread's last error code value.
 
 Search forSetLastErrorat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetLastError),[google](#http://www.google.com/search?q=SetLastError)or[google groups](#http://groups.google.com/groups?q=SetLastError).
 
-<span id="win32api.SetLocalTime">win32api.SetLocalTime</span>
+<span id="win32api_SetLocalTime">win32api.SetLocalTime</span>
 ===
 
 ## [win32api](#win32api).SetLocalTime
@@ -4846,7 +4846,7 @@ SystemTime:[PyTime](#PyTime)
 
 The local time to be set.  Can also be a time tuple.
 
-<span id="win32api.SetStdHandle">win32api.SetStdHandle</span>
+<span id="win32api_SetStdHandle">win32api.SetStdHandle</span>
 ===
 
 ## [win32api](#win32api).SetStdHandle
@@ -4863,7 +4863,7 @@ handle:[PyHANDLE](#PyHANDLE)/int
 
 A previously opened handle to be a standard handle
 
-<span id="win32api.SetSysColors">win32api.SetSysColors</span>
+<span id="win32api_SetSysColors">win32api.SetSysColors</span>
 ===
 
 ## [win32api](#win32api).SetSysColors
@@ -4878,9 +4878,9 @@ A tuple of ints, COLOR_* constants indicating which window element to change
 
 RgbValues: tuple
 
-An equal length tuple of ints representing RGB values (see[win32api::RGB](#win32api.RGB))
+An equal length tuple of ints representing RGB values (see[win32api::RGB](#win32api_RGB))
 
-<span id="win32api.SetSystemFileCacheSize">win32api.SetSystemFileCacheSize</span>
+<span id="win32api_SetSystemFileCacheSize">win32api.SetSystemFileCacheSize</span>
 ===
 
 ## [win32api](#win32api).SetSystemFileCacheSize
@@ -4905,7 +4905,7 @@ Combination of win32con.MM_WORKING_SET_* flags
 Pass -1 for both min and max to flush file cache.
 Accepts keyword args.
 
-<span id="win32api.SetSystemPowerState">win32api.SetSystemPowerState</span>
+<span id="win32api_SetSystemPowerState">win32api.SetSystemPowerState</span>
 ===
 
 ## [win32api](#win32api).SetSystemPowerState
@@ -4929,7 +4929,7 @@ SE_SHUTDOWN_NAME privilege must be enabled.
 
 Search forSetSystemPowerStateat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetSystemPowerState),[google](#http://www.google.com/search?q=SetSystemPowerState)or[google groups](#http://groups.google.com/groups?q=SetSystemPowerState).
 
-<span id="win32api.SetSystemTime">win32api.SetSystemTime</span>
+<span id="win32api_SetSystemTime">win32api.SetSystemTime</span>
 ===
 
 ## [win32api](#win32api).SetSystemTime
@@ -4970,7 +4970,7 @@ millseconds: int
 
 
 
-<span id="win32api.SetThreadLocale">win32api.SetThreadLocale</span>
+<span id="win32api_SetThreadLocale">win32api.SetThreadLocale</span>
 ===
 
 ## [win32api](#win32api).SetThreadLocale
@@ -4983,7 +4983,7 @@ lcid: int
 
 The new LCID
 
-<span id="win32api.SetTimeZoneInformation">win32api.SetTimeZoneInformation</span>
+<span id="win32api_SetTimeZoneInformation">win32api.SetTimeZoneInformation</span>
 ===
 
 ## [win32api](#win32api).SetTimeZoneInformation
@@ -5028,7 +5028,7 @@ A tuple with the timezone info
 
 
 
-<span id="win32api.SetWindowLong">win32api.SetWindowLong</span>
+<span id="win32api_SetWindowLong">win32api.SetWindowLong</span>
 ===
 
 ## [win32api](#win32api).SetWindowLong
@@ -5051,7 +5051,7 @@ Specifies the long value to place in the window's reserved memory.
 
 ### CommentsThis function calls the SetWindowLongPtr Api function
 
-<span id="win32api.SetWindowWord">win32api.SetWindowWord</span>
+<span id="win32api_SetWindowWord">win32api.SetWindowWord</span>
 ===
 
 ## [win32api](#win32api).SetWindowWord
@@ -5072,9 +5072,9 @@ val: int
 
 Specifies the long value to place in the window's reserved memory.
 
-### CommentsThis function is obsolete, use[win32api::SetWindowLong](#win32api.SetWindowLong)instead
+### CommentsThis function is obsolete, use[win32api::SetWindowLong](#win32api_SetWindowLong)instead
 
-<span id="win32api.ShellExecute">win32api.ShellExecute</span>
+<span id="win32api_ShellExecute">win32api.ShellExecute</span>
 ===
 
 ## [win32api](#win32api).ShellExecute
@@ -5115,7 +5115,7 @@ Search forShellExecuteat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 If there is an error, the method raises an exception.
 
-<span id="win32api.ShowCursor">win32api.ShowCursor</span>
+<span id="win32api_ShowCursor">win32api.ShowCursor</span>
 ===
 
 ## [win32api](#win32api).ShowCursor
@@ -5144,7 +5144,7 @@ Search forShowCursorat[msdn](#http://search.msdn.microsoft.com/search/results.as
 
 ### Return ValueThe return value specifies the new display counter
 
-<span id="win32api.Sleep">win32api.Sleep</span>
+<span id="win32api_Sleep">win32api.Sleep</span>
 ===
 
 ## [win32api](#win32api).Sleep
@@ -5169,7 +5169,7 @@ Search forSleepExat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?
 
 ### Return ValueThe return value is zero if the specified time interval expired.
 
-<span id="win32api.TerminateProcess">win32api.TerminateProcess</span>
+<span id="win32api_TerminateProcess">win32api.TerminateProcess</span>
 ===
 
 ## [win32api](#win32api).TerminateProcess
@@ -5186,9 +5186,9 @@ exitCode: int
 
 The exit code for the process.
 
-### CommentsSee also[win32api::OpenProcess](#win32api.OpenProcess)
+### CommentsSee also[win32api::OpenProcess](#win32api_OpenProcess)
 
-<span id="win32api.ToAsciiEx">win32api.ToAsciiEx</span>
+<span id="win32api_ToAsciiEx">win32api.ToAsciiEx</span>
 ===
 
 ## [win32api](#win32api).ToAsciiEx
@@ -5217,14 +5217,14 @@ hlayout=None: handle
 
 The keyboard layout to use
 
-<span id="win32api.Unicode">win32api.Unicode</span>
+<span id="win32api_Unicode">win32api.Unicode</span>
 ===
 
 ## [win32api](#win32api).Unicode
 [PyUnicode](#PyUnicode)= **Unicode(** )
 Creates a new Unicode object
 
-<span id="win32api.UpdateResource">win32api.UpdateResource</span>
+<span id="win32api_UpdateResource">win32api.UpdateResource</span>
 ===
 
 ## [win32api](#win32api).UpdateResource
@@ -5253,7 +5253,7 @@ language=NEUTRAL: int
 
 Language to use, defaults to LANG_NEUTRAL.
 
-<span id="win32api.VkKeyScan">win32api.VkKeyScan</span>
+<span id="win32api_VkKeyScan">win32api.VkKeyScan</span>
 ===
 
 ## [win32api](#win32api).VkKeyScan
@@ -5278,7 +5278,7 @@ Search forVkKeyScanAat[msdn](#http://search.msdn.microsoft.com/search/results.as
 
 Search forVkKeyScanWat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=VkKeyScanW),[google](#http://www.google.com/search?q=VkKeyScanW)or[google groups](#http://groups.google.com/groups?q=VkKeyScanW).
 
-<span id="win32api.VkKeyScanEx">win32api.VkKeyScanEx</span>
+<span id="win32api_VkKeyScanEx">win32api.VkKeyScanEx</span>
 ===
 
 ## [win32api](#win32api).VkKeyScanEx
@@ -5295,7 +5295,7 @@ VkKeyScanExA will be called, otherwise VkKeyScanExW will be called.
 
 hkl:[PyHANDLE](#PyHANDLE)
 
-Handle to a keyboard layout at returned by[win32api::LoadKeyboardLayout](#win32api.LoadKeyboardLayout)
+Handle to a keyboard layout at returned by[win32api::LoadKeyboardLayout](#win32api_LoadKeyboardLayout)
 
 ### Win32 API References
 
@@ -5303,7 +5303,7 @@ Search forVkKeyScanExAat[msdn](#http://search.msdn.microsoft.com/search/results.
 
 Search forVkKeyScanExWat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=VkKeyScanExW),[google](#http://www.google.com/search?q=VkKeyScanExW)or[google groups](#http://groups.google.com/groups?q=VkKeyScanExW).
 
-<span id="win32api.WinExec">win32api.WinExec</span>
+<span id="win32api_WinExec">win32api.WinExec</span>
 ===
 
 ## [win32api](#win32api).WinExec
@@ -5324,7 +5324,7 @@ The initial state of the applications window.
 
 Search forWinExecat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WinExec),[google](#http://www.google.com/search?q=WinExec)or[google groups](#http://groups.google.com/groups?q=WinExec).
 
-<span id="win32api.WinHelp">win32api.WinHelp</span>
+<span id="win32api_WinHelp">win32api.WinHelp</span>
 ===
 
 ## [win32api](#win32api).WinHelp
@@ -5355,7 +5355,7 @@ Search forWinHelpat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?
 
 ### Return ValueThe method raises an exception if an error occurs.
 
-<span id="win32api.WriteProfileSection">win32api.WriteProfileSection</span>
+<span id="win32api_WriteProfileSection">win32api.WriteProfileSection</span>
 ===
 
 ## [win32api](#win32api).WriteProfileSection
@@ -5386,7 +5386,7 @@ Search forWriteProfileSectionat[msdn](#http://search.msdn.microsoft.com/search/r
 
 Search forWritePrivateProfileSectionat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WritePrivateProfileSection),[google](#http://www.google.com/search?q=WritePrivateProfileSection)or[google groups](#http://groups.google.com/groups?q=WritePrivateProfileSection).
 
-<span id="win32api.WriteProfileVal">win32api.WriteProfileVal</span>
+<span id="win32api_WriteProfileVal">win32api.WriteProfileVal</span>
 ===
 
 ## [win32api](#win32api).WriteProfileVal
@@ -5419,7 +5419,7 @@ Search forWritePrivateProfileStringat[msdn](#http://search.msdn.microsoft.com/se
 
 Search forWriteProfileStringat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WriteProfileString),[google](#http://www.google.com/search?q=WriteProfileString)or[google groups](#http://groups.google.com/groups?q=WriteProfileString).
 
-<span id="win32api.keybd_event">win32api.keybd_event</span>
+<span id="win32api_keybd_event">win32api.keybd_event</span>
 ===
 
 ## [win32api](#win32api).keybd_event
@@ -5446,9 +5446,9 @@ Additional data associated with keystroke
 
 ### Win32 API References
 
-Search forkeybd_eventat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=keybd.event),[google](#http://www.google.com/search?q=keybd.event)or[google groups](#http://groups.google.com/groups?q=keybd.event).
+Search forkeybd_eventat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=keybd_event),[google](#http://www.google.com/search?q=keybd_event)or[google groups](#http://groups.google.com/groups?q=keybd_event).
 
-<span id="win32api.mouse_event">win32api.mouse_event</span>
+<span id="win32api_mouse_event">win32api.mouse_event</span>
 ===
 
 ## [win32api](#win32api).mouse_event
@@ -5479,4 +5479,4 @@ Additional data associated with mouse event
 
 ### Win32 API References
 
-Search formouse_eventat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=mouse.event),[google](#http://www.google.com/search?q=mouse.event)or[google groups](#http://groups.google.com/groups?q=mouse.event).
+Search formouse_eventat[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=mouse_event),[google](#http://www.google.com/search?q=mouse_event)or[google groups](#http://groups.google.com/groups?q=mouse_event).
