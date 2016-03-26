@@ -4,266 +4,266 @@
 
 A module, encapsulating the ActiveX Debugging interfaces
 
-## APPBREAKFLAG_DEBUGGER_BLOCK
- __const axdebug.APPBREAKFLAG_DEBUGGER_BLOCK;__ 
-Languages should break immediately with BREAKREASON_DEBUGGER_BLOCK
+## APPBREAKFLAG\_DEBUGGER\_BLOCK
+ **const axdebug\.APPBREAKFLAG\_DEBUGGER\_BLOCK;** 
+Languages should break immediately with BREAKREASON\_DEBUGGER\_BLOCK
 
-## APPBREAKFLAG_DEBUGGER_HALT
- __const axdebug.APPBREAKFLAG_DEBUGGER_HALT;__ 
-Languages should break immediately with BREAKREASON_DEBUGGER_HALT
+## APPBREAKFLAG\_DEBUGGER\_HALT
+ **const axdebug\.APPBREAKFLAG\_DEBUGGER\_HALT;** 
+Languages should break immediately with BREAKREASON\_DEBUGGER\_HALT
 
-## APPBREAKFLAG_STEP
- __const axdebug.APPBREAKFLAG_STEP;__ 
-ADD_CONSTANT(APPBREAKFLAG_APPBREAKFLAG_NESTED);
+## APPBREAKFLAG\_STEP
+ **const axdebug\.APPBREAKFLAG\_STEP;** 
+ADD\_CONSTANT\(APPBREAKFLAG\_APPBREAKFLAG\_NESTED\);
 
-## BREAKPOINT_DELETED
- __const axdebug.BREAKPOINT_DELETED;__ 
-
-
-## BREAKPOINT_DISABLED
- __const axdebug.BREAKPOINT_DISABLED;__ 
+## BREAKPOINT\_DELETED
+ **const axdebug\.BREAKPOINT\_DELETED;** 
 
 
-## BREAKPOINT_ENABLED
- __const axdebug.BREAKPOINT_ENABLED;__ 
+## BREAKPOINT\_DISABLED
+ **const axdebug\.BREAKPOINT\_DISABLED;** 
 
 
-## BREAKREASON_BREAKPOINT
- __const axdebug.BREAKREASON_BREAKPOINT;__ 
+## BREAKPOINT\_ENABLED
+ **const axdebug\.BREAKPOINT\_ENABLED;** 
+
+
+## BREAKREASON\_BREAKPOINT
+ **const axdebug\.BREAKREASON\_BREAKPOINT;** 
 Caused by an explicit breakpoint
 
-## BREAKREASON_DEBUGGER_BLOCK
- __const axdebug.BREAKREASON_DEBUGGER_BLOCK;__ 
+## BREAKREASON\_DEBUGGER\_BLOCK
+ **const axdebug\.BREAKREASON\_DEBUGGER\_BLOCK;** 
 Caused by another thread breaking
 
-## BREAKREASON_DEBUGGER_HALT
- __const axdebug.BREAKREASON_DEBUGGER_HALT;__ 
+## BREAKREASON\_DEBUGGER\_HALT
+ **const axdebug\.BREAKREASON\_DEBUGGER\_HALT;** 
 Caused by debugger IDE requested break
 
-## BREAKREASON_ERROR
- __const axdebug.BREAKREASON_ERROR;__ 
+## BREAKREASON\_ERROR
+ **const axdebug\.BREAKREASON\_ERROR;** 
 Caused by an execution error
 
-## BREAKREASON_HOST_INITIATED
- __const axdebug.BREAKREASON_HOST_INITIATED;__ 
+## BREAKREASON\_HOST\_INITIATED
+ **const axdebug\.BREAKREASON\_HOST\_INITIATED;** 
 Caused by host requested break
 
-## BREAKREASON_LANGUAGE_INITIATED
- __const axdebug.BREAKREASON_LANGUAGE_INITIATED;__ 
+## BREAKREASON\_LANGUAGE\_INITIATED
+ **const axdebug\.BREAKREASON\_LANGUAGE\_INITIATED;** 
 Caused by a scripted break
 
-## BREAKREASON_STEP
- __const axdebug.BREAKREASON_STEP;__ 
+## BREAKREASON\_STEP
+ **const axdebug\.BREAKREASON\_STEP;** 
 Caused by the stepping mode
 
-## BREAKRESUMEACTION_ABORT
- __const axdebug.BREAKRESUMEACTION_ABORT;__ 
+## BREAKRESUMEACTION\_ABORT
+ **const axdebug\.BREAKRESUMEACTION\_ABORT;** 
 Abort the application
 
-## BREAKRESUMEACTION_CONTINUE
- __const axdebug.BREAKRESUMEACTION_CONTINUE;__ 
+## BREAKRESUMEACTION\_CONTINUE
+ **const axdebug\.BREAKRESUMEACTION\_CONTINUE;** 
 Continue running
 
-## BREAKRESUMEACTION_STEP_INTO
- __const axdebug.BREAKRESUMEACTION_STEP_INTO;__ 
+## BREAKRESUMEACTION\_STEP\_INTO
+ **const axdebug\.BREAKRESUMEACTION\_STEP\_INTO;** 
 Step into a procedure
 
-## BREAKRESUMEACTION_STEP_OUT
- __const axdebug.BREAKRESUMEACTION_STEP_OUT;__ 
+## BREAKRESUMEACTION\_STEP\_OUT
+ **const axdebug\.BREAKRESUMEACTION\_STEP\_OUT;** 
 Step out of the current procedure
 
-## BREAKRESUMEACTION_STEP_OVER
- __const axdebug.BREAKRESUMEACTION_STEP_OVER;__ 
+## BREAKRESUMEACTION\_STEP\_OVER
+ **const axdebug\.BREAKRESUMEACTION\_STEP\_OVER;** 
 Step over a procedure
 
-## CLSID_DefaultDebugSessionProvider
- __const axdebug.CLSID_DefaultDebugSessionProvider;__ 
+## CLSID\_DefaultDebugSessionProvider
+ **const axdebug\.CLSID\_DefaultDebugSessionProvider;** 
 An IID object
 
-## CLSID_MachineDebugManager
- __const axdebug.CLSID_MachineDebugManager;__ 
+## CLSID\_MachineDebugManager
+ **const axdebug\.CLSID\_MachineDebugManager;** 
 An IID object
 
-## CLSID_ProcessDebugManager
- __const axdebug.CLSID_ProcessDebugManager;__ 
+## CLSID\_ProcessDebugManager
+ **const axdebug\.CLSID\_ProcessDebugManager;** 
 An IID object
 
-## DBGPROP_ATTRIB_ACCESS_FINAL
- __const axdebug.DBGPROP_ATTRIB_ACCESS_FINAL;__ 
+## DBGPROP\_ATTRIB\_ACCESS\_FINAL
+ **const axdebug\.DBGPROP\_ATTRIB\_ACCESS\_FINAL;** 
 
 
-## DBGPROP_ATTRIB_ACCESS_PRIVATE
- __const axdebug.DBGPROP_ATTRIB_ACCESS_PRIVATE;__ 
+## DBGPROP\_ATTRIB\_ACCESS\_PRIVATE
+ **const axdebug\.DBGPROP\_ATTRIB\_ACCESS\_PRIVATE;** 
 
 
-## DBGPROP_ATTRIB_ACCESS_PROTECTED
- __const axdebug.DBGPROP_ATTRIB_ACCESS_PROTECTED;__ 
+## DBGPROP\_ATTRIB\_ACCESS\_PROTECTED
+ **const axdebug\.DBGPROP\_ATTRIB\_ACCESS\_PROTECTED;** 
 
 
-## DBGPROP_ATTRIB_ACCESS_PUBLIC
- __const axdebug.DBGPROP_ATTRIB_ACCESS_PUBLIC;__ 
+## DBGPROP\_ATTRIB\_ACCESS\_PUBLIC
+ **const axdebug\.DBGPROP\_ATTRIB\_ACCESS\_PUBLIC;** 
 
 
-## DBGPROP_ATTRIB_HAS_EXTENDED_ATTRIBS
- __const axdebug.DBGPROP_ATTRIB_HAS_EXTENDED_ATTRIBS;__ 
+## DBGPROP\_ATTRIB\_HAS\_EXTENDED\_ATTRIBS
+ **const axdebug\.DBGPROP\_ATTRIB\_HAS\_EXTENDED\_ATTRIBS;** 
 
 
-## DBGPROP_ATTRIB_NO_ATTRIB
- __const axdebug.DBGPROP_ATTRIB_NO_ATTRIB;__ 
+## DBGPROP\_ATTRIB\_NO\_ATTRIB
+ **const axdebug\.DBGPROP\_ATTRIB\_NO\_ATTRIB;** 
 
 
-## DBGPROP_ATTRIB_STORAGE_FIELD
- __const axdebug.DBGPROP_ATTRIB_STORAGE_FIELD;__ 
+## DBGPROP\_ATTRIB\_STORAGE\_FIELD
+ **const axdebug\.DBGPROP\_ATTRIB\_STORAGE\_FIELD;** 
 
 
-## DBGPROP_ATTRIB_STORAGE_GLOBAL
- __const axdebug.DBGPROP_ATTRIB_STORAGE_GLOBAL;__ 
+## DBGPROP\_ATTRIB\_STORAGE\_GLOBAL
+ **const axdebug\.DBGPROP\_ATTRIB\_STORAGE\_GLOBAL;** 
 
 
-## DBGPROP_ATTRIB_STORAGE_STATIC
- __const axdebug.DBGPROP_ATTRIB_STORAGE_STATIC;__ 
+## DBGPROP\_ATTRIB\_STORAGE\_STATIC
+ **const axdebug\.DBGPROP\_ATTRIB\_STORAGE\_STATIC;** 
 
 
-## DBGPROP_ATTRIB_STORAGE_VIRTUAL
- __const axdebug.DBGPROP_ATTRIB_STORAGE_VIRTUAL;__ 
+## DBGPROP\_ATTRIB\_STORAGE\_VIRTUAL
+ **const axdebug\.DBGPROP\_ATTRIB\_STORAGE\_VIRTUAL;** 
 
 
-## DBGPROP_ATTRIB_TYPE_IS_CONSTANT
- __const axdebug.DBGPROP_ATTRIB_TYPE_IS_CONSTANT;__ 
+## DBGPROP\_ATTRIB\_TYPE\_IS\_CONSTANT
+ **const axdebug\.DBGPROP\_ATTRIB\_TYPE\_IS\_CONSTANT;** 
 
 
-## DBGPROP_ATTRIB_TYPE_IS_SYNCHRONIZED
- __const axdebug.DBGPROP_ATTRIB_TYPE_IS_SYNCHRONIZED;__ 
+## DBGPROP\_ATTRIB\_TYPE\_IS\_SYNCHRONIZED
+ **const axdebug\.DBGPROP\_ATTRIB\_TYPE\_IS\_SYNCHRONIZED;** 
 
 
-## DBGPROP_ATTRIB_TYPE_IS_VOLATILE
- __const axdebug.DBGPROP_ATTRIB_TYPE_IS_VOLATILE;__ 
+## DBGPROP\_ATTRIB\_TYPE\_IS\_VOLATILE
+ **const axdebug\.DBGPROP\_ATTRIB\_TYPE\_IS\_VOLATILE;** 
 
 
-## DBGPROP_ATTRIB_VALUE_IS_EXPANDABLE
- __const axdebug.DBGPROP_ATTRIB_VALUE_IS_EXPANDABLE;__ 
+## DBGPROP\_ATTRIB\_VALUE\_IS\_EXPANDABLE
+ **const axdebug\.DBGPROP\_ATTRIB\_VALUE\_IS\_EXPANDABLE;** 
 
 
-## DBGPROP_ATTRIB_VALUE_IS_INVALID
- __const axdebug.DBGPROP_ATTRIB_VALUE_IS_INVALID;__ 
+## DBGPROP\_ATTRIB\_VALUE\_IS\_INVALID
+ **const axdebug\.DBGPROP\_ATTRIB\_VALUE\_IS\_INVALID;** 
 
 
-## DBGPROP_ATTRIB_VALUE_READONLY
- __const axdebug.DBGPROP_ATTRIB_VALUE_READONLY;__ 
+## DBGPROP\_ATTRIB\_VALUE\_READONLY
+ **const axdebug\.DBGPROP\_ATTRIB\_VALUE\_READONLY;** 
 
 
-## DBGPROP_INFO_ATTRIBUTES
- __const axdebug.DBGPROP_INFO_ATTRIBUTES;__ 
+## DBGPROP\_INFO\_ATTRIBUTES
+ **const axdebug\.DBGPROP\_INFO\_ATTRIBUTES;** 
 
 
-## DBGPROP_INFO_AUTOEXPAND
- __const axdebug.DBGPROP_INFO_AUTOEXPAND;__ 
+## DBGPROP\_INFO\_AUTOEXPAND
+ **const axdebug\.DBGPROP\_INFO\_AUTOEXPAND;** 
 
 
-## DBGPROP_INFO_DEBUGPROP
- __const axdebug.DBGPROP_INFO_DEBUGPROP;__ 
+## DBGPROP\_INFO\_DEBUGPROP
+ **const axdebug\.DBGPROP\_INFO\_DEBUGPROP;** 
 
 
-## DBGPROP_INFO_FULLNAME
- __const axdebug.DBGPROP_INFO_FULLNAME;__ 
+## DBGPROP\_INFO\_FULLNAME
+ **const axdebug\.DBGPROP\_INFO\_FULLNAME;** 
 
 
-## DBGPROP_INFO_NAME
- __const axdebug.DBGPROP_INFO_NAME;__ 
+## DBGPROP\_INFO\_NAME
+ **const axdebug\.DBGPROP\_INFO\_NAME;** 
 
 
-## DBGPROP_INFO_TYPE
- __const axdebug.DBGPROP_INFO_TYPE;__ 
+## DBGPROP\_INFO\_TYPE
+ **const axdebug\.DBGPROP\_INFO\_TYPE;** 
 
 
-## DBGPROP_INFO_VALUE
- __const axdebug.DBGPROP_INFO_VALUE;__ 
+## DBGPROP\_INFO\_VALUE
+ **const axdebug\.DBGPROP\_INFO\_VALUE;** 
 
 
-## DEBUG_TEXT_ALLOWBREAKPOINTS
- __const axdebug.DEBUG_TEXT_ALLOWBREAKPOINTS;__ 
-Allow breakpoints during the evaluation of the text. If this flag is not set then breakpoints will be ignored during the evaluation of the text.
+## DEBUG\_TEXT\_ALLOWBREAKPOINTS
+ **const axdebug\.DEBUG\_TEXT\_ALLOWBREAKPOINTS;** 
+Allow breakpoints during the evaluation of the text\. If this flag is not set then breakpoints will be ignored during the evaluation of the text\.
 
-## DEBUG_TEXT_ISEXPRESSION
- __const axdebug.DEBUG_TEXT_ISEXPRESSION;__ 
-Indicates that the text is an expression as opposed to a statement. This flag may affect the way in which the text is parsed by some languages.
+## DEBUG\_TEXT\_ISEXPRESSION
+ **const axdebug\.DEBUG\_TEXT\_ISEXPRESSION;** 
+Indicates that the text is an expression as opposed to a statement\. This flag may affect the way in which the text is parsed by some languages\.
 
-## DOCUMENTNAMETYPE_APPNODE
- __const axdebug.DOCUMENTNAMETYPE_APPNODE;__ 
+## DOCUMENTNAMETYPE\_APPNODE
+ **const axdebug\.DOCUMENTNAMETYPE\_APPNODE;** 
 Gets the name as it appears in the app tree
 
-## DOCUMENTNAMETYPE_FILE_TAIL
- __const axdebug.DOCUMENTNAMETYPE_FILE_TAIL;__ 
-Gets the filename without a path (for save as...)
+## DOCUMENTNAMETYPE\_FILE\_TAIL
+ **const axdebug\.DOCUMENTNAMETYPE\_FILE\_TAIL;** 
+Gets the filename without a path \(for save as\.\.\.\)
 
-## DOCUMENTNAMETYPE_TITLE
- __const axdebug.DOCUMENTNAMETYPE_TITLE;__ 
+## DOCUMENTNAMETYPE\_TITLE
+ **const axdebug\.DOCUMENTNAMETYPE\_TITLE;** 
 Gets the name as it appears on the doc viewer title bar
 
-## DOCUMENTNAMETYPE_URL
- __const axdebug.DOCUMENTNAMETYPE_URL;__ 
+## DOCUMENTNAMETYPE\_URL
+ **const axdebug\.DOCUMENTNAMETYPE\_URL;** 
 Gets the URL of the document, if any
 
-## ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller
- __const axdebug.ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller;__ 
+## ERRORRESUMEACTION\_AbortCallAndReturnErrorToCaller
+ **const axdebug\.ERRORRESUMEACTION\_AbortCallAndReturnErrorToCaller;** 
 
 
-## ERRORRESUMEACTION_ReexecuteErrorStatement
- __const axdebug.ERRORRESUMEACTION_ReexecuteErrorStatement;__ 
+## ERRORRESUMEACTION\_ReexecuteErrorStatement
+ **const axdebug\.ERRORRESUMEACTION\_ReexecuteErrorStatement;** 
 
 
-## ERRORRESUMEACTION_SkipErrorStatement
- __const axdebug.ERRORRESUMEACTION_SkipErrorStatement;__ 
+## ERRORRESUMEACTION\_SkipErrorStatement
+ **const axdebug\.ERRORRESUMEACTION\_SkipErrorStatement;** 
 
 
-## EX_DBGPROP_INFO_DEBUGEXTPROP
- __const axdebug.EX_DBGPROP_INFO_DEBUGEXTPROP;__ 
+## EX\_DBGPROP\_INFO\_DEBUGEXTPROP
+ **const axdebug\.EX\_DBGPROP\_INFO\_DEBUGEXTPROP;** 
 
 
-## EX_DBGPROP_INFO_ID
- __const axdebug.EX_DBGPROP_INFO_ID;__ 
+## EX\_DBGPROP\_INFO\_ID
+ **const axdebug\.EX\_DBGPROP\_INFO\_ID;** 
 
 
-## EX_DBGPROP_INFO_LOCKBYTES
- __const axdebug.EX_DBGPROP_INFO_LOCKBYTES;__ 
+## EX\_DBGPROP\_INFO\_LOCKBYTES
+ **const axdebug\.EX\_DBGPROP\_INFO\_LOCKBYTES;** 
 
 
-## EX_DBGPROP_INFO_NTYPE
- __const axdebug.EX_DBGPROP_INFO_NTYPE;__ 
+## EX\_DBGPROP\_INFO\_NTYPE
+ **const axdebug\.EX\_DBGPROP\_INFO\_NTYPE;** 
 
 
-## EX_DBGPROP_INFO_NVALUE
- __const axdebug.EX_DBGPROP_INFO_NVALUE;__ 
+## EX\_DBGPROP\_INFO\_NVALUE
+ **const axdebug\.EX\_DBGPROP\_INFO\_NVALUE;** 
 
 
-## SOURCETEXT_ATTR_COMMENT
- __const axdebug.SOURCETEXT_ATTR_COMMENT;__ 
+## SOURCETEXT\_ATTR\_COMMENT
+ **const axdebug\.SOURCETEXT\_ATTR\_COMMENT;** 
 
 
-## SOURCETEXT_ATTR_FUNCTION_START
- __const axdebug.SOURCETEXT_ATTR_FUNCTION_START;__ 
+## SOURCETEXT\_ATTR\_FUNCTION\_START
+ **const axdebug\.SOURCETEXT\_ATTR\_FUNCTION\_START;** 
 
 
-## SOURCETEXT_ATTR_KEYWORD
- __const axdebug.SOURCETEXT_ATTR_KEYWORD;__ 
+## SOURCETEXT\_ATTR\_KEYWORD
+ **const axdebug\.SOURCETEXT\_ATTR\_KEYWORD;** 
 
 
-## SOURCETEXT_ATTR_NONSOURCE
- __const axdebug.SOURCETEXT_ATTR_NONSOURCE;__ 
+## SOURCETEXT\_ATTR\_NONSOURCE
+ **const axdebug\.SOURCETEXT\_ATTR\_NONSOURCE;** 
 
 
-## SOURCETEXT_ATTR_NUMBER
- __const axdebug.SOURCETEXT_ATTR_NUMBER;__ 
+## SOURCETEXT\_ATTR\_NUMBER
+ **const axdebug\.SOURCETEXT\_ATTR\_NUMBER;** 
 
 
-## SOURCETEXT_ATTR_OPERATOR
- __const axdebug.SOURCETEXT_ATTR_OPERATOR;__ 
+## SOURCETEXT\_ATTR\_OPERATOR
+ **const axdebug\.SOURCETEXT\_ATTR\_OPERATOR;** 
 
 
-## SOURCETEXT_ATTR_STRING
- __const axdebug.SOURCETEXT_ATTR_STRING;__ 
+## SOURCETEXT\_ATTR\_STRING
+ **const axdebug\.SOURCETEXT\_ATTR\_STRING;** 
 
 
-## TEXT_DOC_ATTR_READONLY
- __const axdebug.TEXT_DOC_ATTR_READONLY;__ 
-Indicates that the document is read-only.
+## TEXT\_DOC\_ATTR\_READONLY
+ **const axdebug\.TEXT\_DOC\_ATTR\_READONLY;** 
+Indicates that the document is read-only\.

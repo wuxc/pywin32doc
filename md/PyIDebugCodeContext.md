@@ -15,15 +15,15 @@ Description of the interface
 
     Description of SetBreakPoint&nbsp;
 
-## [PyIDebugCodeContext](#pyidebugcodecontext).GetDocumentContext
+## [PyIDebugCodeContext](#pyidebugcodecontext)\.GetDocumentContext
 
- __GetDocumentContext(__ )
-Description of GetDocumentContext.
+ **GetDocumentContext\(** \)
+Description of GetDocumentContext\.
 
-## [PyIDebugCodeContext](#pyidebugcodecontext).SetBreakPoint
+## [PyIDebugCodeContext](#pyidebugcodecontext)\.SetBreakPoint
 
- __SetBreakPoint( *bps* __ )
-Description of SetBreakPoint.
+ **SetBreakPoint\( *bps* ** \)
+Description of SetBreakPoint\.
 
 #### Parameters
 

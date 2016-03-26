@@ -6,7 +6,7 @@ Provides status information about the MAPI
 
 subsystem, the integrated address book and the MAPI 
 
-spooler.
+spooler\.
 Derived from[PyIMAPIProp](#pyimapiprop)
 
 #### Methods
@@ -32,9 +32,9 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     &nbsp;
 
-## [PyIMAPIStatus](#pyimapistatus).ChangePassword
+## [PyIMAPIStatus](#pyimapistatus)\.ChangePassword
 
- __ChangePassword( *oldPassword*  *, newPassword*  *, ulFlags* __ )
+ **ChangePassword\( *oldPassword*  *, newPassword*  *, ulFlags* ** \)
 
 
 #### Parameters
@@ -52,9 +52,9 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus).FlushQueues
+## [PyIMAPIStatus](#pyimapistatus)\.FlushQueues
 
- __FlushQueues( *ulUIParam*  *, transport*  *, ulFlags* __ )
+ **FlushQueues\( *ulUIParam*  *, transport*  *, ulFlags* ** \)
 
 
 #### Parameters
@@ -72,9 +72,9 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus).FlushQueues
+## [PyIMAPIStatus](#pyimapistatus)\.FlushQueues
 
- __FlushQueues( *uiparam*  *, entryID*  *, flags* __ )
+ **FlushQueues\( *uiparam*  *, entryID*  *, flags* ** \)
 
 
 #### Parameters
@@ -92,9 +92,9 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus).SettingsDialog
+## [PyIMAPIStatus](#pyimapistatus)\.SettingsDialog
 
- __SettingsDialog( *ulUIParam*  *, ulFlags* __ )
+ **SettingsDialog\( *ulUIParam*  *, ulFlags* ** \)
 
 
 #### Parameters
@@ -108,9 +108,9 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus).ValidateState
+## [PyIMAPIStatus](#pyimapistatus)\.ValidateState
 
- __ValidateState( *ulUIParam*  *, ulFlags* __ )
+ **ValidateState\( *ulUIParam*  *, ulFlags* ** \)
 
 
 #### Parameters

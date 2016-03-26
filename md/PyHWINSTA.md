@@ -23,20 +23,20 @@ Wrapper for a handle to a window station - returned by CreateWindowStation, Open
 
     Releases reference to handle without closing it&nbsp;
 
-## [PyHWINSTA](#pyhwinsta).CloseWindowStation
+## [PyHWINSTA](#pyhwinsta)\.CloseWindowStation
 
- __CloseWindowStation(__ )
+ **CloseWindowStation\(** \)
 Closes the window station handle
 
 #### Comments
 This function cannot close the handle to current process's window station
 
-## [PyHWINSTA](#pyhwinsta).EnumDesktops
+## [PyHWINSTA](#pyhwinsta)\.EnumDesktops
 
-(PyUNICODE,...) = __EnumDesktops(__ )
+\(PyUNICODE,\.\.\.\) \= **EnumDesktops\(** \)
 Lists names of desktops in the window station
 
-## [PyHWINSTA](#pyhwinsta).SetProcessWindowStation
+## [PyHWINSTA](#pyhwinsta)\.SetProcessWindowStation
 
- __SetProcessWindowStation(__ )
+ **SetProcessWindowStation\(** \)
 Associates the calling process with the window station

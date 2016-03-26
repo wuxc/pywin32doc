@@ -9,43 +9,43 @@ A Python interface to IEnumShellItems
 
   - [Next](PyIEnumShellItems.md#pyienumshellitemsnext)
 
-    Retrieves a specified number of items in the enumeration sequence.&nbsp;
+    Retrieves a specified number of items in the enumeration sequence\.&nbsp;
 
   - [Skip](PyIEnumShellItems.md#pyienumshellitemsskip)
 
-    Skips over the next specified elementes.&nbsp;
+    Skips over the next specified elementes\.&nbsp;
 
   - [Reset](PyIEnumShellItems.md#pyienumshellitemsreset)
 
-    Resets the enumeration sequence to the beginning.&nbsp;
+    Resets the enumeration sequence to the beginning\.&nbsp;
 
   - [Clone](PyIEnumShellItems.md#pyienumshellitemsclone)
 
-    Creates another enumerator that contains the same enumeration state as the current one.&nbsp;
+    Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumShellItems](#pyienumshellitems).Clone
+## [PyIEnumShellItems](#pyienumshellitems)\.Clone
 
-[PyIEnumShellItems](#pyienumshellitems)= __Clone(__ )
+[PyIEnumShellItems](#pyienumshellitems)\= **Clone\(** \)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumShellItems](#pyienumshellitems).Next
+## [PyIEnumShellItems](#pyienumshellitems)\.Next
 
-([PyIShellItem](#pyishellitem),...) = __Next( *num* __ )
-Retrieves a specified number of items in the enumeration sequence.
+\([PyIShellItem](#pyishellitem),\.\.\.\) \= **Next\( *num* ** \)
+Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num=1* : int
+  -  *num\=1* : int
 
-    Number of items to retrieve.
+    Number of items to retrieve\.
 
-## [PyIEnumShellItems](#pyienumshellitems).Reset
+## [PyIEnumShellItems](#pyienumshellitems)\.Reset
 
- __Reset(__ )
-Resets the enumeration sequence to the beginning.
+ **Reset\(** \)
+Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumShellItems](#pyienumshellitems).Skip
+## [PyIEnumShellItems](#pyienumshellitems)\.Skip
 
- __Skip(__ )
-Skips over the next specified elementes.
+ **Skip\(** \)
+Skips over the next specified elementes\.

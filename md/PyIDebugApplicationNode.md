@@ -2,7 +2,7 @@
 
 ## PyIDebugApplicationNode Object
 
-Provides the functionality of IDebugDocumentProvider, plus a context within a project tree.  Derived from[PyIDebugDocumentProvider](#pyidebugdocumentprovider)
+Provides the functionality of IDebugDocumentProvider, plus a context within a project tree\.  Derived from[PyIDebugDocumentProvider](#pyidebugdocumentprovider)
 
 #### Methods
 
@@ -25,48 +25,48 @@ Provides the functionality of IDebugDocumentProvider, plus a context within a pr
 
   - [Attach](PyIDebugApplicationNode.md#pyidebugapplicationnodeattach)
 
-    Attach a node to its parent.&nbsp;
+    Attach a node to its parent\.&nbsp;
 
   - [Detach](PyIDebugApplicationNode.md#pyidebugapplicationnodedetach)
 
-    Detach a node from its parent.&nbsp;
+    Detach a node from its parent\.&nbsp;
 
-## [PyIDebugApplicationNode](#pyidebugapplicationnode).Attach
+## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.Attach
 
- __Attach( *pdanParent* __ )
-Attach a node to its parent.
+ **Attach\( *pdanParent* ** \)
+Attach a node to its parent\.
 
 #### Parameters
 
 
   -  *pdanParent* :[PyIDebugApplicationNode](#pyidebugapplicationnode)
 
-    The parent node.  None is not acceptable.
+    The parent node\.  None is not acceptable\.
 
-## [PyIDebugApplicationNode](#pyidebugapplicationnode).Close
+## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.Close
 
- __Close(__ )
-Description of Close.
+ **Close\(** \)
+Description of Close\.
 
-## [PyIDebugApplicationNode](#pyidebugapplicationnode).Detach
+## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.Detach
 
- __Detach(__ )
-Detach a node from its parent.
+ **Detach\(** \)
+Detach a node from its parent\.
 
-## [PyIDebugApplicationNode](#pyidebugapplicationnode).EnumChildren
+## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.EnumChildren
 
- __EnumChildren(__ )
-Description of EnumChildren.
+ **EnumChildren\(** \)
+Description of EnumChildren\.
 
-## [PyIDebugApplicationNode](#pyidebugapplicationnode).GetParent
+## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.GetParent
 
-[PyIDebugApplicationNode](#pyidebugapplicationnode)= __GetParent(__ )
-Returns the parent node.
+[PyIDebugApplicationNode](#pyidebugapplicationnode)\= **GetParent\(** \)
+Returns the parent node\.
 
-## [PyIDebugApplicationNode](#pyidebugapplicationnode).SetDocumentProvider
+## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.SetDocumentProvider
 
- __SetDocumentProvider( *pddp* __ )
-Description of SetDocumentProvider.
+ **SetDocumentProvider\( *pddp* ** \)
+Description of SetDocumentProvider\.
 
 #### Parameters
 

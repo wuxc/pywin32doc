@@ -9,19 +9,19 @@ A module which provides an interface to the win32 CE Remote API
 
   - [CeRapiInit](wincerapi.md#wincerapicerapiinit)
 
-    Initializes the remote API.&nbsp;
+    Initializes the remote API\.&nbsp;
 
   - [CeRapiUninit](wincerapi.md#wincerapicerapiuninit)
 
-    UnInitializes the remote API.&nbsp;
+    UnInitializes the remote API\.&nbsp;
 
   - [CreateProcess](wincerapi.md#wincerapicreateprocess)
 
-    Creates a new process and its primary thread. The new process executes the specified executable file.&nbsp;
+    Creates a new process and its primary thread\. The new process executes the specified executable file\.&nbsp;
 
   - [CeRapiInitEx](wincerapi.md#wincerapicerapiinitex)
 
-    Initializes the remote API asynchronously.&nbsp;
+    Initializes the remote API asynchronously\.&nbsp;
 
   - [CeCopyFile](wincerapi.md#wincerapicecopyfile)
 
@@ -29,19 +29,19 @@ A module which provides an interface to the win32 CE Remote API
 
   - [CeCheckPassword](wincerapi.md#wincerapicecheckpassword)
 
-    This function compares a specified string to the system password.&nbsp;
+    This function compares a specified string to the system password\.&nbsp;
 
   - [CeCreateFile](wincerapi.md#wincerapicecreatefile)
 
-    Creates or opens the a file or other object and returns a handle that can be used to access the object.&nbsp;
+    Creates or opens the a file or other object and returns a handle that can be used to access the object\.&nbsp;
 
   - [CeDeleteFile](wincerapi.md#wincerapicedeletefile)
 
-    Deletes a file.&nbsp;
+    Deletes a file\.&nbsp;
 
   - [CeMoveFile](wincerapi.md#wincerapicemovefile)
 
-    Renames an existing file or a directory (including all its children).&nbsp;
+    Renames an existing file or a directory \(including all its children\)\.&nbsp;
 
   - [CeCreateDirectory](wincerapi.md#wincerapicecreatedirectory)
 
@@ -53,172 +53,172 @@ A module which provides an interface to the win32 CE Remote API
 
   - [CeGetTempPath](wincerapi.md#wincerapicegettemppath)
 
-    Obtains the temp path on the device.&nbsp;
+    Obtains the temp path on the device\.&nbsp;
 
   - [CeGetSystemInfo](wincerapi.md#wincerapicegetsysteminfo)
 
-    Retrieves information about the CE device.&nbsp;
+    Retrieves information about the CE device\.&nbsp;
 
   - [CeGetDesktopDeviceCaps](wincerapi.md#wincerapicegetdesktopdevicecaps)
 
-    Retrieves information about the CE desktop.&nbsp;
+    Retrieves information about the CE desktop\.&nbsp;
 
   - [CeGetSystemMetrics](wincerapi.md#wincerapicegetsystemmetrics)
 
-    Retrieves information about the CE system.&nbsp;
+    Retrieves information about the CE system\.&nbsp;
 
   - [CeGetSpecialFolderPath](wincerapi.md#wincerapicegetspecialfolderpath)
 
-    Retrieves the location of special folders on the CE device.&nbsp;
+    Retrieves the location of special folders on the CE device\.&nbsp;
 
   - [CeGetStoreInformation](wincerapi.md#wincerapicegetstoreinformation)
 
-    Retrieves information about store on the CE system.&nbsp;
+    Retrieves information about store on the CE system\.&nbsp;
 
   - [CeGetSystemPowerStatusEx](wincerapi.md#wincerapicegetsystempowerstatusex)
 
-    Retrieves the power status of the CE device.&nbsp;
+    Retrieves the power status of the CE device\.&nbsp;
 
   - [CeSHCreateShortcut](wincerapi.md#wincerapiceshcreateshortcut)
 
-    Creates a shortcut on the remote device.&nbsp;
+    Creates a shortcut on the remote device\.&nbsp;
 
   - [CeSHGetShortcutTarget](wincerapi.md#wincerapiceshgetshortcuttarget)
 
-    Retrieves the target of a shortcut.&nbsp;
+    Retrieves the target of a shortcut\.&nbsp;
 
   - [CeGetVersionEx](wincerapi.md#wincerapicegetversionex)
 
-    Returns the current version of Windows, and information about the environment for the CE device.&nbsp;
+    Returns the current version of Windows, and information about the environment for the CE device\.&nbsp;
 
   - [CeGlobalMemoryStatus](wincerapi.md#wincerapiceglobalmemorystatus)
 
-    Returns information about current memory availability.&nbsp;
+    Returns information about current memory availability\.&nbsp;
 
   - [FindFiles](wincerapi.md#wincerapifindfiles)
 
-    Retrieves a list of matching filenames on the CE device.  An interface to the API CeFindFirstFile/CeFindNextFile functions.&nbsp;
+    Retrieves a list of matching filenames on the CE device\.  An interface to the API CeFindFirstFile/CeFindNextFile functions\.&nbsp;
 
   - [CeGetFileAttributes](wincerapi.md#wincerapicegetfileattributes)
 
-    Determines a files attributes.&nbsp;
+    Determines a files attributes\.&nbsp;
 
   - [CeSetFileAttributes](wincerapi.md#wincerapicesetfileattributes)
 
-    Changes a file's attributes.&nbsp;
+    Changes a file's attributes\.&nbsp;
 
   - [CeGetFileSize](wincerapi.md#wincerapicegetfilesize)
 
-    Determines the size of a file.&nbsp;
+    Determines the size of a file\.&nbsp;
 
   - [CeReadFile](wincerapi.md#wincerapicereadfile)
 
-    Reads a file from the CE device.&nbsp;
+    Reads a file from the CE device\.&nbsp;
 
   - [WriteFile](wincerapi.md#wincerapiwritefile)
 
     Writes a string to a file&nbsp;
 
-## [wincerapi](#wincerapi).CEHANDLE
+## [wincerapi](#wincerapi)\.CEHANDLE
 
-[PyCEHANDLE](#pycehandle)= __CEHANDLE(__ )
+[PyCEHANDLE](#pycehandle)\= **CEHANDLE\(** \)
 Creates a new CEHANDLE object
 
-## CSIDL_BITBUCKET
- __const wincerapi.CSIDL_BITBUCKET;__ 
-Recycle bin-file system directory containing file objects in the user's recycle bin. The location of this directory is not in the registry; it is marked with the hidden and system attributes to prevent the user from moving or deleting it.
+## CSIDL\_BITBUCKET
+ **const wincerapi\.CSIDL\_BITBUCKET;** 
+Recycle bin-file system directory containing file objects in the user's recycle bin\. The location of this directory is not in the registry; it is marked with the hidden and system attributes to prevent the user from moving or deleting it\.
 
-## CSIDL_COMMON_DESKTOPDIRECTORY
- __const wincerapi.CSIDL_COMMON_DESKTOPDIRECTORY;__ 
-File system directory that contains files and folders that appear on the desktop for all users.
+## CSIDL\_COMMON\_DESKTOPDIRECTORY
+ **const wincerapi\.CSIDL\_COMMON\_DESKTOPDIRECTORY;** 
+File system directory that contains files and folders that appear on the desktop for all users\.
 
-## CSIDL_COMMON_PROGRAMS
- __const wincerapi.CSIDL_COMMON_PROGRAMS;__ 
-File system directory that contains the directories for the common program groups that appear on the Start menu for all users.
+## CSIDL\_COMMON\_PROGRAMS
+ **const wincerapi\.CSIDL\_COMMON\_PROGRAMS;** 
+File system directory that contains the directories for the common program groups that appear on the Start menu for all users\.
 
-## CSIDL_COMMON_STARTMENU
- __const wincerapi.CSIDL_COMMON_STARTMENU;__ 
-File system directory that contains the programs and folders that appear on the Start menu for all users.
+## CSIDL\_COMMON\_STARTMENU
+ **const wincerapi\.CSIDL\_COMMON\_STARTMENU;** 
+File system directory that contains the programs and folders that appear on the Start menu for all users\.
 
-## CSIDL_COMMON_STARTUP
- __const wincerapi.CSIDL_COMMON_STARTUP;__ 
-File system directory that contains the programs that appear in the Startup folder for all users. The system starts these programs whenever any user logs on to a Windows desktop platform.
+## CSIDL\_COMMON\_STARTUP
+ **const wincerapi\.CSIDL\_COMMON\_STARTUP;** 
+File system directory that contains the programs that appear in the Startup folder for all users\. The system starts these programs whenever any user logs on to a Windows desktop platform\.
 
-## CSIDL_CONTROLS
- __const wincerapi.CSIDL_CONTROLS;__ 
-Control Panel-virtual folder containing icons for the control panel applications.
+## CSIDL\_CONTROLS
+ **const wincerapi\.CSIDL\_CONTROLS;** 
+Control Panel-virtual folder containing icons for the control panel applications\.
 
-## CSIDL_DESKTOP
- __const wincerapi.CSIDL_DESKTOP;__ 
-Windows desktop-virtual folder at the root of the name space.
+## CSIDL\_DESKTOP
+ **const wincerapi\.CSIDL\_DESKTOP;** 
+Windows desktop-virtual folder at the root of the name space\.
 
-## CSIDL_DESKTOPDIRECTORY
- __const wincerapi.CSIDL_DESKTOPDIRECTORY;__ 
-File system directory used to physically store file objects on the desktop - not to be confused with the desktop folder itself.
+## CSIDL\_DESKTOPDIRECTORY
+ **const wincerapi\.CSIDL\_DESKTOPDIRECTORY;** 
+File system directory used to physically store file objects on the desktop - not to be confused with the desktop folder itself\.
 
-## CSIDL_DRIVES
- __const wincerapi.CSIDL_DRIVES;__ 
-My Computer-virtual folder containing everything on the local computer: storage devices, printers, and Control Panel. The folder can also contain mapped network drives.
+## CSIDL\_DRIVES
+ **const wincerapi\.CSIDL\_DRIVES;** 
+My Computer-virtual folder containing everything on the local computer: storage devices, printers, and Control Panel\. The folder can also contain mapped network drives\.
 
-## CSIDL_FONTS
- __const wincerapi.CSIDL_FONTS;__ 
-Virtual folder containing fonts.
+## CSIDL\_FONTS
+ **const wincerapi\.CSIDL\_FONTS;** 
+Virtual folder containing fonts\.
 
-## CSIDL_NETHOOD
- __const wincerapi.CSIDL_NETHOOD;__ 
-File system directory containing objects that appear in the network neighborhood.
+## CSIDL\_NETHOOD
+ **const wincerapi\.CSIDL\_NETHOOD;** 
+File system directory containing objects that appear in the network neighborhood\.
 
-## CSIDL_NETWORK
- __const wincerapi.CSIDL_NETWORK;__ 
-Network Neighborhood-virtual folder representing the top level of the network hierarchy.
+## CSIDL\_NETWORK
+ **const wincerapi\.CSIDL\_NETWORK;** 
+Network Neighborhood-virtual folder representing the top level of the network hierarchy\.
 
-## CSIDL_PERSONAL
- __const wincerapi.CSIDL_PERSONAL;__ 
-File system directory that serves as a common repository for documents.
+## CSIDL\_PERSONAL
+ **const wincerapi\.CSIDL\_PERSONAL;** 
+File system directory that serves as a common repository for documents\.
 
-## CSIDL_PRINTERS
- __const wincerapi.CSIDL_PRINTERS;__ 
-Printers folder-virtual folder containing installed printers.
+## CSIDL\_PRINTERS
+ **const wincerapi\.CSIDL\_PRINTERS;** 
+Printers folder-virtual folder containing installed printers\.
 
-## CSIDL_PROGRAMS
- __const wincerapi.CSIDL_PROGRAMS;__ 
-File system directory that contains the user's program groups which are also file system directories.
+## CSIDL\_PROGRAMS
+ **const wincerapi\.CSIDL\_PROGRAMS;** 
+File system directory that contains the user's program groups which are also file system directories\.
 
-## CSIDL_RECENT
- __const wincerapi.CSIDL_RECENT;__ 
-File system directory containing the user's most recently used documents.
+## CSIDL\_RECENT
+ **const wincerapi\.CSIDL\_RECENT;** 
+File system directory containing the user's most recently used documents\.
 
-## CSIDL_SENDTO
- __const wincerapi.CSIDL_SENDTO;__ 
-File system directory containing Send To menu items.
+## CSIDL\_SENDTO
+ **const wincerapi\.CSIDL\_SENDTO;** 
+File system directory containing Send To menu items\.
 
-## CSIDL_STARTMENU
- __const wincerapi.CSIDL_STARTMENU;__ 
-File system directory containing Start menu items.
+## CSIDL\_STARTMENU
+ **const wincerapi\.CSIDL\_STARTMENU;** 
+File system directory containing Start menu items\.
 
-## CSIDL_STARTUP
- __const wincerapi.CSIDL_STARTUP;__ 
-File system directory that corresponds to the user's Startup program group.
+## CSIDL\_STARTUP
+ **const wincerapi\.CSIDL\_STARTUP;** 
+File system directory that corresponds to the user's Startup program group\.
 
-## CSIDL_TEMPLATES
- __const wincerapi.CSIDL_TEMPLATES;__ 
-File system directory that serves as a common repository for document templates.
+## CSIDL\_TEMPLATES
+ **const wincerapi\.CSIDL\_TEMPLATES;** 
+File system directory that serves as a common repository for document templates\.
 
-## [wincerapi](#wincerapi).CeCheckPassword
+## [wincerapi](#wincerapi)\.CeCheckPassword
 
- __CeCheckPassword( *password* __ )
-This function compares a specified string to the system password.
+ **CeCheckPassword\( *password* ** \)
+This function compares a specified string to the system password\.
 
 #### Parameters
 
 
   -  *password* :[PyUnicode](#pyunicode)
 
-    The password to compare.
+    The password to compare\.
 
-## [wincerapi](#wincerapi).CeCopyFile
+## [wincerapi](#wincerapi)\.CeCopyFile
 
- __CeCopyFile( *from*  *, to*  *, bFailIfExists* __ )
+ **CeCopyFile\( *from*  *, to*  *, bFailIfExists* ** \)
 Copies a file
 
 #### Parameters
@@ -234,11 +234,11 @@ Copies a file
 
   -  *bFailIfExists* : int
 
-    Indicates if the operation should fail if the file exists.
+    Indicates if the operation should fail if the file exists\.
 
-## [wincerapi](#wincerapi).CeCreateDirectory
+## [wincerapi](#wincerapi)\.CeCreateDirectory
 
- __CeCreateDirectory( *name*  *, sa* __ )
+ **CeCreateDirectory\( *name*  *, sa* ** \)
 Creates a directory
 
 #### Parameters
@@ -248,14 +248,14 @@ Creates a directory
 
     The name of the directory to create
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *sa* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
-## [wincerapi](#wincerapi).CeCreateFile
+## [wincerapi](#wincerapi)\.CeCreateFile
 
-[PyCEHANDLE](#pycehandle)= __CeCreateFile( *fileName*  *, desiredAccess*  *, shareMode*  *, attributes*  *, creationDisposition*  *, flagsAndAttributes*  *, hTemplateFile* __ )
-Creates or opens the a file or other object and returns a handle that can be used to access the object.
+[PyCEHANDLE](#pycehandle)\= **CeCreateFile\( *fileName*  *, desiredAccess*  *, shareMode*  *, attributes*  *, creationDisposition*  *, flagsAndAttributes*  *, hTemplateFile* ** \)
+Creates or opens the a file or other object and returns a handle that can be used to access the object\.
 
 #### Parameters
 
@@ -266,36 +266,36 @@ Creates or opens the a file or other object and returns a handle that can be use
 
   -  *desiredAccess* : int
 
-    access (read-write) mode 
+    access \(read-write\) mode 
 
-Specifies the type of access to the object. An application can obtain read access, write access, read-write access, or device query access. This parameter can be any combination of the following values.
+Specifies the type of access to the object\. An application can obtain read access, write access, read-write access, or device query access\. This parameter can be any combination of the following values\.
 
- __Value__  __Meaning__ 0Specifies device query access to the object. An application can query device attributes without accessing the device.GENERIC_READSpecifies read access to the object. Data can be read from the file and the file pointer can be moved. Combine with GENERIC_WRITE for read-write access.GENERIC_WRITESpecifies write access to the object. Data can be written to the file and the file pointer can be moved. Combine with GENERIC_READ for read-write access.
+ **Value**  **Meaning** 0Specifies device query access to the object\. An application can query device attributes without accessing the device\.GENERIC\_READSpecifies read access to the object\. Data can be read from the file and the file pointer can be moved\. Combine with GENERIC\_WRITE for read-write access\.GENERIC\_WRITESpecifies write access to the object\. Data can be written to the file and the file pointer can be moved\. Combine with GENERIC\_READ for read-write access\.
   -  *shareMode* : int
 
-    Set of bit flags that specifies how the object can be shared. If dwShareMode is 0, the object cannot be shared. Subsequent open operations on the object will fail, until the handle is closed. 
+    Set of bit flags that specifies how the object can be shared\. If dwShareMode is 0, the object cannot be shared\. Subsequent open operations on the object will fail, until the handle is closed\. 
 
 To share the object, use a combination of one or more of the following values:
 
- __Value__  __Meaning__ FILE_SHARE_DELETEWindows NT: Subsequent open operations on the object will succeed only if delete access is requested.FILE_SHARE_READSubsequent open operations on the object will succeed only if read access is requested.FILE_SHARE_WRITESubsequent open operations on the object will succeed only if write access is requested.
-  -  *attributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+ **Value**  **Meaning** FILE\_SHARE\_DELETEWindows NT: Subsequent open operations on the object will succeed only if delete access is requested\.FILE\_SHARE\_READSubsequent open operations on the object will succeed only if read access is requested\.FILE\_SHARE\_WRITESubsequent open operations on the object will succeed only if write access is requested\.
+  -  *attributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
   -  *creationDisposition* : int
 
-    Specifies which action to take on files that exist, and which action to take when files do not exist. For more information about this parameter, see the Remarks section. This parameter must be one of the following values:
+    Specifies which action to take on files that exist, and which action to take when files do not exist\. For more information about this parameter, see the Remarks section\. This parameter must be one of the following values:
 
- __Value__  __Meaning__ CREATE_NEWCreates a new file. The function fails if the specified file already exists.CREATE_ALWAYSCreates a new file. If the file exists, the function overwrites the file and clears the existing attributes.OPEN_EXISTINGOpens the file. The function fails if the file does not exist. 
+ **Value**  **Meaning** CREATE\_NEWCreates a new file\. The function fails if the specified file already exists\.CREATE\_ALWAYSCreates a new file\. If the file exists, the function overwrites the file and clears the existing attributes\.OPEN\_EXISTINGOpens the file\. The function fails if the file does not exist\. 
 
-See the Remarks section for a discussion of why you should use the OPEN_EXISTING flag if you are using the CreateFile function for devices, including the console.OPEN_ALWAYSOpens the file, if it exists. If the file does not exist, the function creates the file as if dwCreationDisposition were CREATE_NEW.TRUNCATE_EXISTINGOpens the file. Once opened, the file is truncated so that its size is zero bytes. The calling process must open the file with at least GENERIC_WRITE access. The function fails if the file does not exist.
+See the Remarks section for a discussion of why you should use the OPEN\_EXISTING flag if you are using the CreateFile function for devices, including the console\.OPEN\_ALWAYSOpens the file, if it exists\. If the file does not exist, the function creates the file as if dwCreationDisposition were CREATE\_NEW\.TRUNCATE\_EXISTINGOpens the file\. Once opened, the file is truncated so that its size is zero bytes\. The calling process must open the file with at least GENERIC\_WRITE access\. The function fails if the file does not exist\.
   -  *flagsAndAttributes* : int
 
     file attributes
 
   -  *hTemplateFile* :[PyHANDLE](#pyhandle)
 
-    Specifies a handle with GENERIC_READ access to a template file. The template file supplies file attributes and extended attributes for the file being created.   Under Win95, this must be 0, else an exception will be raised.
+    Specifies a handle with GENERIC\_READ access to a template file\. The template file supplies file attributes and extended attributes for the file being created\.   Under Win95, this must be 0, else an exception will be raised\.
 
 #### Comments
 The following objects can be opened:
@@ -303,14 +303,14 @@ files
 pipes
 mailslots
 communications resources
-disk devices (Windows NT only)
+disk devices \(Windows NT only\)
 consoles
-directories (open only)
+directories \(open only\)
 
-## [wincerapi](#wincerapi).CeDeleteFile
+## [wincerapi](#wincerapi)\.CeDeleteFile
 
- __CeDeleteFile( *fileName* __ )
-Deletes a file.
+ **CeDeleteFile\( *fileName* ** \)
+Deletes a file\.
 
 #### Parameters
 
@@ -319,55 +319,55 @@ Deletes a file.
 
     The filename to delete
 
-## [wincerapi](#wincerapi).CeGetDesktopDeviceCaps
+## [wincerapi](#wincerapi)\.CeGetDesktopDeviceCaps
 
-int = __CeGetDesktopDeviceCaps(__ )
-Retrieves information about the CE desktop.
+int \= **CeGetDesktopDeviceCaps\(** \)
+Retrieves information about the CE desktop\.
 
-## [wincerapi](#wincerapi).CeGetFileAttributes
+## [wincerapi](#wincerapi)\.CeGetFileAttributes
 
-int = __CeGetFileAttributes( *fileName* __ )
-Determines a files attributes.
+int \= **CeGetFileAttributes\( *fileName* ** \)
+Determines a files attributes\.
 
 #### Parameters
 
 
   -  *fileName* :[PyUnicode](#pyunicode)
 
-    Name of the file to retrieve attributes for.
+    Name of the file to retrieve attributes for\.
 
-## [wincerapi](#wincerapi).CeGetFileSize
+## [wincerapi](#wincerapi)\.CeGetFileSize
 
- __PyLARGE_INTEGER__ = __CeGetFileSize(__ )
-Determines the size of a file.
+ **PyLARGE\_INTEGER** \= **CeGetFileSize\(** \)
+Determines the size of a file\.
 
-## [wincerapi](#wincerapi).CeGetSpecialFolderPath
+## [wincerapi](#wincerapi)\.CeGetSpecialFolderPath
 
-[PyUnicode](#pyunicode)= __CeGetSpecialFolderPath(__ )
-Retrieves the location of special folders on the CE device.
+[PyUnicode](#pyunicode)\= **CeGetSpecialFolderPath\(** \)
+Retrieves the location of special folders on the CE device\.
 
-## [wincerapi](#wincerapi).CeGetStoreInformation
+## [wincerapi](#wincerapi)\.CeGetStoreInformation
 
-int, int = __CeGetStoreInformation(__ )
-Retrieves information about store on the CE system.
+int, int \= **CeGetStoreInformation\(** \)
+Retrieves information about store on the CE system\.
 
 #### Return Value
-The result is a tuple of (storeSize, freeSize)
+The result is a tuple of \(storeSize, freeSize\)
 
-## [wincerapi](#wincerapi).CeGetSystemInfo
+## [wincerapi](#wincerapi)\.CeGetSystemInfo
 
-tuple = __CeGetSystemInfo(__ )
-Retrieves information about the CE device.
+tuple \= **CeGetSystemInfo\(** \)
+Retrieves information about the CE device\.
 
 #### Win32 API References
 
 
-  - Search for *GetSystemInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsysteminfo),[google](#http://www.google.com/search?q=getsysteminfo)or[google groups](#http://groups.google.com/groups?q=getsysteminfo).
+  - Search for *GetSystemInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsysteminfo),[google](#http://www.google.com/search?q=getsysteminfo)or[google groups](#http://groups.google.com/groups?q=getsysteminfo)\.
 
 #### Return Value
 The return value is a tuple of 9 values, which corresponds 
 
-to the Win32 SYSTEM_INFO structure.  The element names are:
+to the Win32 SYSTEM\_INFO structure\.  The element names are:
 dwOemId
 dwPageSize
 lpMinimumApplicationAddress
@@ -378,48 +378,48 @@ dwActiveProcessorMask
 dwNumberOfProcessors
 dwProcessorType
 dwAllocationGranularity
-(wProcessorLevel,wProcessorRevision)
+\(wProcessorLevel,wProcessorRevision\)
 
-## [wincerapi](#wincerapi).CeGetSystemMetrics
+## [wincerapi](#wincerapi)\.CeGetSystemMetrics
 
-int = __CeGetSystemMetrics(__ )
-Retrieves information about the CE system.
+int \= **CeGetSystemMetrics\(** \)
+Retrieves information about the CE system\.
 
-## [wincerapi](#wincerapi).CeGetSystemPowerStatusEx
+## [wincerapi](#wincerapi)\.CeGetSystemPowerStatusEx
 
-tuple = __CeGetSystemPowerStatusEx(__ )
-Retrieves the power status of the CE device.
-
-#### Return Value
-The result is a tuple of (ACLineStatus, BatteryFlag, BatteryLifePercent, BatteryLifeTime, BatteryFullLifeTime, BackupBatteryFlag, BackupBatteryLifePercent, BackupBatteryLifeTime, BackupBatteryLifeTime);
-
-## [wincerapi](#wincerapi).CeGetTempPath
-
-[PyUnicode](#pyunicode)= __CeGetTempPath(__ )
-Obtains the temp path on the device.
-
-## [wincerapi](#wincerapi).CeGetVersionEx
-
-(int,int,int,int,string) = __CeGetVersionEx(__ )
-Returns the current version of Windows, and information about the environment for the CE device.
+tuple \= **CeGetSystemPowerStatusEx\(** \)
+Retrieves the power status of the CE device\.
 
 #### Return Value
-The return value is a tuple with the following information.
+The result is a tuple of \(ACLineStatus, BatteryFlag, BatteryLifePercent, BatteryLifeTime, BatteryFullLifeTime, BackupBatteryFlag, BackupBatteryLifePercent, BackupBatteryLifeTime, BackupBatteryLifeTime\);
 
+## [wincerapi](#wincerapi)\.CeGetTempPath
 
-## [wincerapi](#wincerapi).CeGlobalMemoryStatus
+[PyUnicode](#pyunicode)\= **CeGetTempPath\(** \)
+Obtains the temp path on the device\.
 
-tuple = __CeGlobalMemoryStatus(__ )
-Returns information about current memory availability.
+## [wincerapi](#wincerapi)\.CeGetVersionEx
+
+\(int,int,int,int,string\) \= **CeGetVersionEx\(** \)
+Returns the current version of Windows, and information about the environment for the CE device\.
 
 #### Return Value
-The return value is a tuple with the following information.
+The return value is a tuple with the following information\.
 
 
-## [wincerapi](#wincerapi).CeMoveFile
+## [wincerapi](#wincerapi)\.CeGlobalMemoryStatus
 
- __CeMoveFile( *existingFileName*  *, newFileName* __ )
-Renames an existing file or a directory (including all its children).
+tuple \= **CeGlobalMemoryStatus\(** \)
+Returns information about current memory availability\.
+
+#### Return Value
+The return value is a tuple with the following information\.
+
+
+## [wincerapi](#wincerapi)\.CeMoveFile
+
+ **CeMoveFile\( *existingFileName*  *, newFileName* ** \)
+Renames an existing file or a directory \(including all its children\)\.
 
 #### Parameters
 
@@ -432,25 +432,25 @@ Renames an existing file or a directory (including all its children).
 
     New name for the file
 
-## [wincerapi](#wincerapi).CeRapiInit
+## [wincerapi](#wincerapi)\.CeRapiInit
 
- __CeRapiInit(__ )
-Initializes the remote API.
+ **CeRapiInit\(** \)
+Initializes the remote API\.
 
-## [wincerapi](#wincerapi).CeRapiInitEx
+## [wincerapi](#wincerapi)\.CeRapiInitEx
 
-int = __CeRapiInitEx(__ )
-Initializes the remote API asynchronously.
+int \= **CeRapiInitEx\(** \)
+Initializes the remote API asynchronously\.
 
-## [wincerapi](#wincerapi).CeRapiUninit
+## [wincerapi](#wincerapi)\.CeRapiUninit
 
- __CeRapiUninit(__ )
-UnInitializes the remote API.
+ **CeRapiUninit\(** \)
+UnInitializes the remote API\.
 
-## [wincerapi](#wincerapi).CeReadFile
+## [wincerapi](#wincerapi)\.CeReadFile
 
-string = __CeReadFile( *hFile*  *, bufSize* __ )
-Reads a file from the CE device.
+string \= **CeReadFile\( *hFile*  *, bufSize* ** \)
+Reads a file from the CE device\.
 
 #### Parameters
 
@@ -461,11 +461,11 @@ Reads a file from the CE device.
 
   -  *bufSize* : int
 
-    Size of the buffer to create for the read.
+    Size of the buffer to create for the read\.
 
-## [wincerapi](#wincerapi).CeRemoveDirectory
+## [wincerapi](#wincerapi)\.CeRemoveDirectory
 
- __CeRemoveDirectory( *lpPathName* __ )
+ **CeRemoveDirectory\( *lpPathName* ** \)
 Removes an existing directory
 
 #### Parameters
@@ -473,22 +473,22 @@ Removes an existing directory
 
   -  *lpPathName* :[PyUnicode](#pyunicode)
 
-    Name of the path to remove.
+    Name of the path to remove\.
 
-## [wincerapi](#wincerapi).CeSHCreateShortcut
+## [wincerapi](#wincerapi)\.CeSHCreateShortcut
 
- __CeSHCreateShortcut(__ )
-Creates a shortcut on the remote device.
+ **CeSHCreateShortcut\(** \)
+Creates a shortcut on the remote device\.
 
-## [wincerapi](#wincerapi).CeSHGetShortcutTarget
+## [wincerapi](#wincerapi)\.CeSHGetShortcutTarget
 
-tuple = __CeSHGetShortcutTarget(__ )
-Retrieves the target of a shortcut.
+tuple \= **CeSHGetShortcutTarget\(** \)
+Retrieves the target of a shortcut\.
 
-## [wincerapi](#wincerapi).CeSetFileAttributes
+## [wincerapi](#wincerapi)\.CeSetFileAttributes
 
- __CeSetFileAttributes( *filename*  *, newAttributes* __ )
-Changes a file's attributes.
+ **CeSetFileAttributes\( *filename*  *, newAttributes* ** \)
+Changes a file's attributes\.
 
 #### Parameters
 
@@ -501,10 +501,10 @@ Changes a file's attributes.
 
     attributes to set
 
-## [wincerapi](#wincerapi).CreateProcess
+## [wincerapi](#wincerapi)\.CreateProcess
 
-[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int = __CreateProcess( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* __ )
-Creates a new process and its primary thread. The new process executes the specified executable file.
+[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int \= **CreateProcess\( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** \)
+Creates a new process and its primary thread\. The new process executes the specified executable file\.
 
 #### Parameters
 
@@ -517,11 +517,11 @@ Creates a new process and its primary thread. The new process executes the speci
 
     command line string, or None
 
-  -  *processAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *processAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     process security attributes, or None
 
-  -  *threadAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *threadAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     thread security attributes, or None
 
@@ -535,7 +535,7 @@ Creates a new process and its primary thread. The new process executes the speci
 
   -  *newEnvironment* : None
 
-    A dictionary of stringor Unicode pairs to define the environment for the process, or None to inherit the current environment.
+    A dictionary of stringor Unicode pairs to define the environment for the process, or None to inherit the current environment\.
 
   -  *currentDirectory* : string
 
@@ -543,81 +543,81 @@ Creates a new process and its primary thread. The new process executes the speci
 
   -  *startupinfo* :[PySTARTUPINFO](#pystartupinfo)
 
-    a STARTUPINFO object that specifies how the main window for the new process should appear.
+    a STARTUPINFO object that specifies how the main window for the new process should appear\.
 
 #### Comments
-The result is a tuple of (hProcess, hThread, dwProcessId, dwThreadId)
+The result is a tuple of \(hProcess, hThread, dwProcessId, dwThreadId\)
 
-## [wincerapi](#wincerapi).FindFiles
+## [wincerapi](#wincerapi)\.FindFiles
 
-list = __FindFiles( *fileSpec* __ )
-Retrieves a list of matching filenames on the CE device.  An interface to the API CeFindFirstFile/CeFindNextFile functions.
+list \= **FindFiles\( *fileSpec* ** \)
+Retrieves a list of matching filenames on the CE device\.  An interface to the API CeFindFirstFile/CeFindNextFile functions\.
 
 #### Parameters
 
 
   -  *fileSpec* :[PyUnicode](#pyunicode)
 
-    A string that specifies a valid directory or path and filename, which can contain wildcard characters (* and ?).
+    A string that specifies a valid directory or path and filename, which can contain wildcard characters \(\* and ?\)\.
 
 #### Win32 API References
 
 
-  - Search for *CeFindFirstFile* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=cefindfirstfile),[google](#http://www.google.com/search?q=cefindfirstfile)or[google groups](#http://groups.google.com/groups?q=cefindfirstfile).
+  - Search for *CeFindFirstFile* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=cefindfirstfile),[google](#http://www.google.com/search?q=cefindfirstfile)or[google groups](#http://groups.google.com/groups?q=cefindfirstfile)\.
 
-  - Search for *FindNextFile* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnextfile),[google](#http://www.google.com/search?q=findnextfile)or[google groups](#http://groups.google.com/groups?q=findnextfile).
+  - Search for *FindNextFile* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnextfile),[google](#http://www.google.com/search?q=findnextfile)or[google groups](#http://groups.google.com/groups?q=findnextfile)\.
 
-  - Search for *CloseHandle* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=closehandle),[google](#http://www.google.com/search?q=closehandle)or[google groups](#http://groups.google.com/groups?q=closehandle).
+  - Search for *CloseHandle* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=closehandle),[google](#http://www.google.com/search?q=closehandle)or[google groups](#http://groups.google.com/groups?q=closehandle)\.
 
 #### Return Value
-The return value is a list of tuples, in the same format as the WIN32_FIND_DATA structure:
+The return value is a list of tuples, in the same format as the WIN32\_FIND\_DATA structure:
 
 #### Items
 
 
-  - [0] *int* : attributes
+  - \[0\] *int* : attributes
 
-    File Attributes.  A combination of the win32com.FILE_ATTRIBUTE_* flags.
+    File Attributes\.  A combination of the win32com\.FILE\_ATTRIBUTE\_\* flags\.
 
-  - [1] *[PyTime](#pytime)* : createTime
+  - \[1\] *[PyTime](#pytime)* : createTime
 
-    File creation time.
+    File creation time\.
 
-  - [2] *[PyTime](#pytime)* : accessTime
+  - \[2\] *[PyTime](#pytime)* : accessTime
 
-    File access time.
+    File access time\.
 
-  - [3] *[PyTime](#pytime)* : writeTime
+  - \[3\] *[PyTime](#pytime)* : writeTime
 
     Time of last file write
 
-  - [4] *int* : nFileSizeHigh
+  - \[4\] *int* : nFileSizeHigh
 
-    high order word of file size.
+    high order word of file size\.
 
-  - [5] *int* : nFileSizeLow
+  - \[5\] *int* : nFileSizeLow
 
-    low order word of file size.
+    low order word of file size\.
 
-  - [6] *int* : OID
+  - \[6\] *int* : OID
 
     The object identifier for the file
 
-  - [7] *int* : zero
+  - \[7\] *int* : zero
 
     Filler
 
-  - [8] *string* : fileName
+  - \[8\] *string* : fileName
 
-    The name of the file.
+    The name of the file\.
 
-  - [9] *None* : altName
+  - \[9\] *None* : altName
 
     Always None
 
-## [wincerapi](#wincerapi).WriteFile
+## [wincerapi](#wincerapi)\.WriteFile
 
-int, int = __WriteFile( *hFile*  *, data* __ )
+int, int \= **WriteFile\( *hFile*  *, data* ** \)
 Writes a string to a file
 
 #### Parameters
@@ -629,9 +629,9 @@ Writes a string to a file
 
   -  *data* : string
 
-    The data to write.
+    The data to write\.
 
 #### Return Value
-The result is a tuple of (errCode, nBytesWritten). 
+The result is a tuple of \(errCode, nBytesWritten\)\. 
 
-errCode will always be zero (until overlapped IO is supported!)
+errCode will always be zero \(until overlapped IO is supported\!\)

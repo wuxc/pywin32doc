@@ -29,7 +29,7 @@ Interface that represents an Explorer folder
 
   - [CreateViewObject](PyIShellFolder.md#pyishellfoldercreateviewobject)
 
-    Creates a view object for a shell folder.&nbsp;
+    Creates a view object for a shell folder\.&nbsp;
 
   - [GetAttributesOf](PyIShellFolder.md#pyishellfoldergetattributesof)
 
@@ -47,13 +47,13 @@ Interface that represents an Explorer folder
 
     Sets the display name of an item and changes its PIDL&nbsp;
 
-  - [__iter__](PyIShellFolder.md#pyishellfolder__iter__)
+  - [\_\_iter\_\_](PyIShellFolder.md#pyishellfolder__iter__)
 
-    Enumerates all objects in this folder.&nbsp;
+    Enumerates all objects in this folder\.&nbsp;
 
-## [PyIShellFolder](#pyishellfolder).BindToObject
+## [PyIShellFolder](#pyishellfolder)\.BindToObject
 
-[PyIShellFolder](#pyishellfolder)= __BindToObject( *pidl*  *, pbc*  *, riid* __ )
+[PyIShellFolder](#pyishellfolder)\= **BindToObject\( *pidl*  *, pbc*  *, riid* ** \)
 Returns an IShellFolder interface for a subfolder
 
 #### Parameters
@@ -69,11 +69,11 @@ Returns an IShellFolder interface for a subfolder
 
   -  *riid* :[PyIID](#pyiid)
 
-    IID of the desired interface, usually IID_IShellFolder
+    IID of the desired interface, usually IID\_IShellFolder
 
-## [PyIShellFolder](#pyishellfolder).BindToStorage
+## [PyIShellFolder](#pyishellfolder)\.BindToStorage
 
-interface = __BindToStorage( *pidl*  *, pbc*  *, riid* __ )
+interface \= **BindToStorage\( *pidl*  *, pbc*  *, riid* ** \)
 Returns an interface to a storage object in a shell folder
 
 #### Parameters
@@ -89,14 +89,14 @@ Returns an interface to a storage object in a shell folder
 
   -  *riid* :[PyIID](#pyiid)
 
-    IID of the desired interface, one of IID_IStream, IID_IStorage, IID_IPropertySetStorage
+    IID of the desired interface, one of IID\_IStream, IID\_IStorage, IID\_IPropertySetStorage
 
 #### Return Value
 Returns[PyIStream](#pyistream),[PyIStorage](#pyistorage)or[PyIPropertySetStorage](#pyipropertysetstorage)depending on the riid passed in
 
-## [PyIShellFolder](#pyishellfolder).CompareIDs
+## [PyIShellFolder](#pyishellfolder)\.CompareIDs
 
-int = __CompareIDs( *lparam*  *, pidl1*  *, pidl2* __ )
+int \= **CompareIDs\( *lparam*  *, pidl1*  *, pidl2* ** \)
 Determines the sorting order of 2 items in shell folder
 
 #### Parameters
@@ -104,10 +104,10 @@ Determines the sorting order of 2 items in shell folder
 
   -  *lparam* : int
 
-    Lower 16 bits specify folder-dependent sorting rules, 0 means to sort by display name. 
+    Lower 16 bits specify folder-dependent sorting rules, 0 means to sort by display name\. 
 
-System folder view uses these as a column number.
-Upper sixteen bits is used for flags SHCIDS_ALLFIELDS or SHCIDS_CANONICALONLY
+System folder view uses these as a column number\.
+Upper sixteen bits is used for flags SHCIDS\_ALLFIELDS or SHCIDS\_CANONICALONLY
 
   -  *pidl1* :[PyIDL](#pyidl)
 
@@ -120,10 +120,10 @@ Upper sixteen bits is used for flags SHCIDS_ALLFIELDS or SHCIDS_CANONICALONLY
 #### Return Value
 Returns 0 if items compare equal, -1 if the pidl1 comes first, or 1 if pidl2 comes first
 
-## [PyIShellFolder](#pyishellfolder).CreateViewObject
+## [PyIShellFolder](#pyishellfolder)\.CreateViewObject
 
-[PyIShellView](#pyishellview)= __CreateViewObject( *hwndOwner*  *, riid* __ )
-Creates a view object for a shell folder.
+[PyIShellView](#pyishellview)\= **CreateViewObject\( *hwndOwner*  *, riid* ** \)
+Creates a view object for a shell folder\.
 
 #### Parameters
 
@@ -134,46 +134,46 @@ Creates a view object for a shell folder.
 
   -  *riid* :[PyIID](#pyiid)
 
-    IID of the desired interface, usually IID_IShellView
+    IID of the desired interface, usually IID\_IShellView
 
-## [PyIShellFolder](#pyishellfolder).EnumObjects
+## [PyIShellFolder](#pyishellfolder)\.EnumObjects
 
-[PyIEnumIDList](#pyienumidlist)= __EnumObjects( *hwndOwner*  *, grfFlags* __ )
+[PyIEnumIDList](#pyienumidlist)\= **EnumObjects\( *hwndOwner*  *, grfFlags* ** \)
 Creates an enumerator to list the contents of the shell folder
 
 #### Parameters
 
 
-  -  *hwndOwner=None* :[PyHANDLE](#pyhandle)
+  -  *hwndOwner\=None* :[PyHANDLE](#pyhandle)
 
     Window to use if any user interaction is required
 
-  -  *grfFlags=SHCONTF_FOLDERS|SHCONTF_NONFOLDERS|SHCONTF_INCLUDEHIDDEN* : int
+  -  *grfFlags\=SHCONTF\_FOLDERS|SHCONTF\_NONFOLDERS|SHCONTF\_INCLUDEHIDDEN* : int
 
-    Combination of shellcon.SHCONTF_* constants
+    Combination of shellcon\.SHCONTF\_\* constants
 
-## [PyIShellFolder](#pyishellfolder).GetAttributesOf
+## [PyIShellFolder](#pyishellfolder)\.GetAttributesOf
 
-int = __GetAttributesOf( *pidl*  *, rgfInOut* __ )
+int \= **GetAttributesOf\( *pidl*  *, rgfInOut* ** \)
 Queries attributes of items within the shell folder
 
 #### Parameters
 
 
-  -  *pidl* : ([PyIDL](#pyidl),...)
+  -  *pidl* : \([PyIDL](#pyidl),\.\.\.\)
 
     A sequence of single-level pidls identifying items directly contained by the folder
 
   -  *rgfInOut* : int
 
-    Combination of shellcon.SFGAO_* constants
+    Combination of shellcon\.SFGAO\_\* constants
 
 #### Return Value
 The requested attributes are only returned if they are common to all of the specified items
 
-## [PyIShellFolder](#pyishellfolder).GetDisplayNameOf
+## [PyIShellFolder](#pyishellfolder)\.GetDisplayNameOf
 
-str = __GetDisplayNameOf( *pidl*  *, uFlags* __ )
+str \= **GetDisplayNameOf\( *pidl*  *, uFlags* ** \)
 Returns the display name of an item within this shell folder
 
 #### Parameters
@@ -185,11 +185,11 @@ Returns the display name of an item within this shell folder
 
   -  *uFlags* : int
 
-    Combination of shellcon.SHGDN_* flags
+    Combination of shellcon\.SHGDN\_\* flags
 
-## [PyIShellFolder](#pyishellfolder).GetUIObjectOf
+## [PyIShellFolder](#pyishellfolder)\.GetUIObjectOf
 
-int,[PyIUnknown](#pyiunknown)= __GetUIObjectOf( *hwndOwner*  *, pidl*  *, riid*  *, Reserved*  *, iidout* __ )
+int,[PyIUnknown](#pyiunknown)\= **GetUIObjectOf\( *hwndOwner*  *, pidl*  *, riid*  *, Reserved*  *, iidout* ** \)
 Creates an interface to one or more items in a shell folder
 
 #### Parameters
@@ -199,34 +199,34 @@ Creates an interface to one or more items in a shell folder
 
     Specifies a window in which to display any required dialogs or errors, can be 0
 
-  -  *pidl* : ([PyIDL](#pyidl),...)
+  -  *pidl* : \([PyIDL](#pyidl),\.\.\.\)
 
     A sequence of single-level pidls identifying items in the folder
 
   -  *riid* :[PyIID](#pyiid)
 
-    The interface to create, one of IID_IContextMenu, IID_IContextMenu2, IID_IDataObject, IID_IDropTarget, IID_IExtractIcon, IID_IQueryInfo
+    The interface to create, one of IID\_IContextMenu, IID\_IContextMenu2, IID\_IDataObject, IID\_IDropTarget, IID\_IExtractIcon, IID\_IQueryInfo
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Reserved, use 0 if passed in
 
-  -  *iidout=riid* :[PyIID](#pyiid)
+  -  *iidout\=riid* :[PyIID](#pyiid)
 
-    The interface to return.  Can be used in the case where there is not a 
+    The interface to return\.  Can be used in the case where there is not a 
 
-python wrapper for the desired interface.  You must make certain that the interface identified by riid 
+python wrapper for the desired interface\.  You must make certain that the interface identified by riid 
 
-actually supports the iidout interface, or Bad Things Will Happen. 
+actually supports the iidout interface, or Bad Things Will Happen\. 
 
-It should always be safe to return[PyIUnknown](#pyiunknown), which is the base for all interfaces.
+It should always be safe to return[PyIUnknown](#pyiunknown), which is the base for all interfaces\.
 
 #### Return Value
 Returns the Reserved parameter and the requested interface
 
-## [PyIShellFolder](#pyishellfolder).ParseDisplayName
+## [PyIShellFolder](#pyishellfolder)\.ParseDisplayName
 
-tuple = __ParseDisplayName( *hwndOwner*  *, pbc*  *, DisplayName*  *, Attributes* __ )
+tuple \= **ParseDisplayName\( *hwndOwner*  *, pbc*  *, DisplayName*  *, Attributes* ** \)
 Returns the PIDL of an item in a shell folder
 
 #### Parameters
@@ -242,15 +242,15 @@ Returns the PIDL of an item in a shell folder
 
   -  *DisplayName* : str
 
-    Display name to parse, format is dependent on the shell folder. 
+    Display name to parse, format is dependent on the shell folder\. 
 
-Desktop folder will accept a file path, as well as guids of the form ::{guid} 
+Desktop folder will accept a file path, as well as guids of the form ::\{guid\} 
 
-Example: '::%s\\::%s' %(shell.CLSID_MyComputer,shell.CLSID_ControlPanel)
+Example: '::%s\\\\::%s' %\(shell\.CLSID\_MyComputer,shell\.CLSID\_ControlPanel\)
 
-  -  *Attributes=0* : int
+  -  *Attributes\=0* : int
 
-    Combination of shellcon.SFGAO_* constants specifying which attributes should be returned
+    Combination of shellcon\.SFGAO\_\* constants specifying which attributes should be returned
 
 #### Return Value
 The result is a tuple of cchEaten, pidl, attr
@@ -258,21 +258,21 @@ The result is a tuple of cchEaten, pidl, attr
 #### Items
 
 
-  - [0] *int* : cchEaten
+  - \[0\] *int* : cchEaten
 
     the number of characters of the input name that were parsed
 
-  - [1] *[PyIDL](#pyidl)* : pidl
+  - \[1\] *[PyIDL](#pyidl)* : pidl
 
     specifies the relative path from the parsing folder to the object
 
-  - [2] *int* : Attributes
+  - \[2\] *int* : Attributes
 
     returns any requested attributes
 
-## [PyIShellFolder](#pyishellfolder).SetNameOf
+## [PyIShellFolder](#pyishellfolder)\.SetNameOf
 
-[PyIDL](#pyidl)= __SetNameOf( *hwndOwner*  *, pidl*  *, Name*  *, Flags* __ )
+[PyIDL](#pyidl)\= **SetNameOf\( *hwndOwner*  *, pidl*  *, Name*  *, Flags* ** \)
 Sets the display name of an item and changes its PIDL
 
 #### Parameters
@@ -292,7 +292,7 @@ Sets the display name of an item and changes its PIDL
 
   -  *Flags* : int
 
-    Combination of shellcon.SHGDM_* values
+    Combination of shellcon\.SHGDM\_\* values
 
 #### Return Value
 Returns the new PIDL for item

@@ -1,8 +1,8 @@
 # isapi.install
 
-## Module isapi.install
+## Module isapi\.install
 
-Installation utilities for Python ISAPI filters and extensions.
+Installation utilities for Python ISAPI filters and extensions\.
 
 #### Methods
 
@@ -15,9 +15,9 @@ Installation utilities for Python ISAPI filters and extensions.
 
     Remove the extension&nbsp;
 
-  - [get_unique_items](isapi.install.md#isapi.installget_unique_items)
+  - [get\_unique\_items](isapi.install.md#isapi.installget_unique_items)
 
-    Return items in sequence that can't be found in reference.&nbsp;
+    Return items in sequence that can't be found in reference\.&nbsp;
 
   - [InstallModule](isapi.install.md#isapi.installinstallmodule)
 
@@ -25,15 +25,15 @@ Installation utilities for Python ISAPI filters and extensions.
 
   - [AssignScriptMaps](isapi.install.md#isapi.installassignscriptmaps)
 
-    Updates IIS with the supplied script map information.&nbsp;
+    Updates IIS with the supplied script map information\.&nbsp;
 
   - [LocateWebServerPath](isapi.install.md#isapi.installlocatewebserverpath)
 
     Find an IIS web server whose name or comment matches the provided&nbsp;
 
-  - [split_path](isapi.install.md#isapi.installsplit_path)
+  - [split\_path](isapi.install.md#isapi.installsplit_path)
 
-    Get the parent path and basename.&nbsp;
+    Get the parent path and basename\.&nbsp;
 
   - [MergeStandardOptions](isapi.install.md#isapi.installmergestandardoptions)
 
@@ -41,7 +41,7 @@ Installation utilities for Python ISAPI filters and extensions.
 
   - [FindWebServer](isapi.install.md#isapi.installfindwebserver)
 
-    Legacy function to allow options to define a .server property&nbsp;
+    Legacy function to allow options to define a \.server property&nbsp;
 
   - [AddExtensionFiles](isapi.install.md#isapi.installaddextensionfiles)
 
@@ -49,18 +49,18 @@ Installation utilities for Python ISAPI filters and extensions.
 
   - [HandleCommandLine](isapi.install.md#isapi.installhandlecommandline)
 
-    Perform installation or removal of an ISAPI filter or extension.&nbsp;
+    Perform installation or removal of an ISAPI filter or extension\.&nbsp;
 
   - [GetWebServer](isapi.install.md#isapi.installgetwebserver)
 
-    Load the web server instance (COM object) for a given instance&nbsp;
+    Load the web server instance \(COM object\) for a given instance&nbsp;
 
-## [isapi.install](#isapi.install).AddExtensionFiles
+## [isapi\.install](#isapi.install)\.AddExtensionFiles
 
- __AddExtensionFiles( *params*  *, options* __ )
+ **AddExtensionFiles\( *params*  *, options* ** \)
 Register the modules used by the filters/extensions as a trusted 
 
-'extension module' - required by the default IIS6 security settings.
+'extension module' - required by the default IIS6 security settings\.
 
 #### Parameters
 
@@ -73,39 +73,39 @@ Register the modules used by the filters/extensions as a trusted
 
     options
 
-## [isapi.install](#isapi.install).AssignScriptMaps
+## [isapi\.install](#isapi.install)\.AssignScriptMaps
 
- __AssignScriptMaps( *script_maps*  *, target*  *, update* __ )
-Updates IIS with the supplied script map information.
+ **AssignScriptMaps\( *script\_maps*  *, target*  *, update* ** \)
+Updates IIS with the supplied script map information\.
 
 #### Parameters
 
 
-  -  *script_maps* :
+  -  *script\_maps* :
 
-    script_maps
+    script\_maps
 
   -  *target* :
 
     target
 
-  -  *update='replace'* :
+  -  *update\='replace'* :
 
     update
 
 #### Comments
-script_maps is a list of ScriptMapParameter objects
+script\_maps is a list of ScriptMapParameter objects
 target is an IIS Virtual Directory to assign the script maps to
-update is a string indicating how to update the maps, one of  ('start', 
+update is a string indicating how to update the maps, one of  \('start', 
 
-'end', or 'replace')
+'end', or 'replace'\)
 
-## [isapi.install](#isapi.install).FindWebServer
+## [isapi\.install](#isapi.install)\.FindWebServer
 
- __FindWebServer( *options*  *, server_desc* __ )
-Legacy function to allow options to define a .server property 
+ **FindWebServer\( *options*  *, server\_desc* ** \)
+Legacy function to allow options to define a \.server property 
 
-to override the other parameter.  Use GetWebServer instead.
+to override the other parameter\.  Use GetWebServer instead\.
 
 #### Parameters
 
@@ -114,32 +114,32 @@ to override the other parameter.  Use GetWebServer instead.
 
     options
 
-  -  *server_desc* :
+  -  *server\_desc* :
 
-    server_desc
+    server\_desc
 
-## [isapi.install](#isapi.install).GetWebServer
+## [isapi\.install](#isapi.install)\.GetWebServer
 
- __GetWebServer( *description* __ )
-Load the web server instance (COM object) for a given instance 
+ **GetWebServer\( *description* ** \)
+Load the web server instance \(COM object\) for a given instance 
 
-or description. 
+or description\. 
 
-If None is specified, the default website is retrieved (indicated 
+If None is specified, the default website is retrieved \(indicated 
 
-by the identifier 1.
+by the identifier 1\.
 
 #### Parameters
 
 
-  -  *description=None* :
+  -  *description\=None* :
 
     description
 
-## [isapi.install](#isapi.install).HandleCommandLine
+## [isapi\.install](#isapi.install)\.HandleCommandLine
 
- __HandleCommandLine( *params*  *, argv*  *, conf_module_name*  *, default_arg*  *, opt_parser*  *, custom_arg_handlers* __ )
-Perform installation or removal of an ISAPI filter or extension.
+ **HandleCommandLine\( *params*  *, argv*  *, conf\_module\_name*  *, default\_arg*  *, opt\_parser*  *, custom\_arg\_handlers* ** \)
+Perform installation or removal of an ISAPI filter or extension\.
 
 #### Parameters
 
@@ -148,49 +148,49 @@ Perform installation or removal of an ISAPI filter or extension.
 
     params
 
-  -  *argv=None* :
+  -  *argv\=None* :
 
     argv
 
-  -  *conf_module_name=None* :
+  -  *conf\_module\_name\=None* :
 
-    conf_module_name
+    conf\_module\_name
 
-  -  *default_arg='install'* :
+  -  *default\_arg\='install'* :
 
-    default_arg
+    default\_arg
 
-  -  *opt_parser=None* :
+  -  *opt\_parser\=None* :
 
-    opt_parser
+    opt\_parser
 
-  -  *custom_arg_handlers={}* :
+  -  *custom\_arg\_handlers\=\{\}* :
 
-    custom_arg_handlers
+    custom\_arg\_handlers
 
 #### Comments
 This module handles standard command-line options and configuration 
 
 information, and installs, removes or updates the configuration of an 
 
-ISAPI filter or extension.
+ISAPI filter or extension\.
 You must pass your configuration information in params - all other 
 
 arguments are optional, and allow you to configure the installation 
 
-process.
+process\.
 
-## [isapi.install](#isapi.install).InstallModule
+## [isapi\.install](#isapi.install)\.InstallModule
 
- __InstallModule( *conf_module_name*  *, params*  *, options*  *, log* __ )
+ **InstallModule\( *conf\_module\_name*  *, params*  *, options*  *, log* ** \)
 Install the extension
 
 #### Parameters
 
 
-  -  *conf_module_name* :
+  -  *conf\_module\_name* :
 
-    conf_module_name
+    conf\_module\_name
 
   -  *params* :
 
@@ -200,16 +200,16 @@ Install the extension
 
     options
 
-  -  *log=function lambda at 0x0000000002825588* :
+  -  *log\=function lambda at 0x0000000002825588* :
 
     log
 
-## [isapi.install](#isapi.install).LocateWebServerPath
+## [isapi\.install](#isapi.install)\.LocateWebServerPath
 
- __LocateWebServerPath( *description* __ )
+ **LocateWebServerPath\( *description* ** \)
 Find an IIS web server whose name or comment matches the provided 
 
-description (case-insensitive).
+description \(case-insensitive\)\.
 
 #### Parameters
 
@@ -220,15 +220,15 @@ description (case-insensitive).
 
 #### Comments
 or
-&gt&gt&gt LocateWebServerPath('1') #doctest: +SKIP
-&gt&gt&gt LocateWebServerPath('Default Web Site') # doctest: +SKIP
+&gt&gt&gt LocateWebServerPath\('1'\) \#doctest: \+SKIP
+&gt&gt&gt LocateWebServerPath\('Default Web Site'\) \# doctest: \+SKIP
 
-## [isapi.install](#isapi.install).MergeStandardOptions
+## [isapi\.install](#isapi.install)\.MergeStandardOptions
 
- __MergeStandardOptions( *options*  *, params* __ )
+ **MergeStandardOptions\( *options*  *, params* ** \)
 Take an options object generated by the command line and merge 
 
-the values into the IISParameters object.
+the values into the IISParameters object\.
 
 #### Parameters
 
@@ -241,33 +241,33 @@ the values into the IISParameters object.
 
     params
 
-## [isapi.install](#isapi.install).RemoveScriptMaps
+## [isapi\.install](#isapi.install)\.RemoveScriptMaps
 
- __RemoveScriptMaps( *vd_params*  *, options* __ )
+ **RemoveScriptMaps\( *vd\_params*  *, options* ** \)
 Remove script maps from the already installed virtual directory
 
 #### Parameters
 
 
-  -  *vd_params* :
+  -  *vd\_params* :
 
-    vd_params
+    vd\_params
 
   -  *options* :
 
     options
 
-## [isapi.install](#isapi.install).UninstallModule
+## [isapi\.install](#isapi.install)\.UninstallModule
 
- __UninstallModule( *conf_module_name*  *, params*  *, options*  *, log* __ )
+ **UninstallModule\( *conf\_module\_name*  *, params*  *, options*  *, log* ** \)
 Remove the extension
 
 #### Parameters
 
 
-  -  *conf_module_name* :
+  -  *conf\_module\_name* :
 
-    conf_module_name
+    conf\_module\_name
 
   -  *params* :
 
@@ -277,14 +277,14 @@ Remove the extension
 
     options
 
-  -  *log=function lambda at 0x0000000002825668* :
+  -  *log\=function lambda at 0x0000000002825668* :
 
     log
 
-## [isapi.install](#isapi.install).get_unique_items
+## [isapi\.install](#isapi.install)\.get\_unique\_items
 
- __get_unique_items( *sequence*  *, reference* __ )
-Return items in sequence that can't be found in reference.
+ **get\_unique\_items\( *sequence*  *, reference* ** \)
+Return items in sequence that can't be found in reference\.
 
 #### Parameters
 
@@ -297,10 +297,10 @@ Return items in sequence that can't be found in reference.
 
     reference
 
-## [isapi.install](#isapi.install).split_path
+## [isapi\.install](#isapi.install)\.split\_path
 
- __split_path( *path* __ )
-Get the parent path and basename.
+ **split\_path\( *path* ** \)
+Get the parent path and basename\.
 
 #### Parameters
 
@@ -308,21 +308,21 @@ Get the parent path and basename.
   -  *path* :
 
     path
-&gt&gt&gt split_path('/')
+&gt&gt&gt split\_path\('/'\)
 
-['', '']
-&gt&gt&gt split_path('')
+\['', ''\]
+&gt&gt&gt split\_path\(''\)
 
-['', '']
-&gt&gt&gt split_path('foo')
+\['', ''\]
+&gt&gt&gt split\_path\('foo'\)
 
-['', 'foo']
-&gt&gt&gt split_path('/foo')
+\['', 'foo'\]
+&gt&gt&gt split\_path\('/foo'\)
 
-['', 'foo']
-&gt&gt&gt split_path('/foo/bar')
+\['', 'foo'\]
+&gt&gt&gt split\_path\('/foo/bar'\)
 
-['/foo', 'bar']
-&gt&gt&gt split_path('foo/bar')
+\['/foo', 'bar'\]
+&gt&gt&gt split\_path\('foo/bar'\)
 
-['/foo', 'bar']
+\['/foo', 'bar'\]

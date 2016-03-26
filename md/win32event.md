@@ -9,7 +9,7 @@ A module which provides an interface to the win32 event/wait API
 
   - [CancelWaitableTimer](win32event.md#win32eventcancelwaitabletimer)
 
-    Cancels a waiting timer.&nbsp;
+    Cancels a waiting timer\.&nbsp;
 
   - [CreateEvent](win32event.md#win32eventcreateevent)
 
@@ -37,15 +37,15 @@ A module which provides an interface to the win32 event/wait API
 
   - [OpenEvent](win32event.md#win32eventopenevent)
 
-    Returns a handle of an existing named event object.&nbsp;
+    Returns a handle of an existing named event object\.&nbsp;
 
   - [OpenMutex](win32event.md#win32eventopenmutex)
 
-    Returns a handle of an existing named mutex object.&nbsp;
+    Returns a handle of an existing named mutex object\.&nbsp;
 
   - [OpenSemaphore](win32event.md#win32eventopensemaphore)
 
-    Returns a handle of an existing named semaphore object.&nbsp;
+    Returns a handle of an existing named semaphore object\.&nbsp;
 
   - [OpenWaitableTimer](win32event.md#win32eventopenwaitabletimer)
 
@@ -53,15 +53,15 @@ A module which provides an interface to the win32 event/wait API
 
   - [PulseEvent](win32event.md#win32eventpulseevent)
 
-    Provides a single operation that sets (to signaled) the state of the specified event object and then resets it (to nonsignaled) after releasing the appropriate number of waiting threads.&nbsp;
+    Provides a single operation that sets \(to signaled\) the state of the specified event object and then resets it \(to nonsignaled\) after releasing the appropriate number of waiting threads\.&nbsp;
 
   - [ReleaseMutex](win32event.md#win32eventreleasemutex)
 
-    Releases a mutex.&nbsp;
+    Releases a mutex\.&nbsp;
 
   - [ReleaseSemaphore](win32event.md#win32eventreleasesemaphore)
 
-    Releases a semaphore.&nbsp;
+    Releases a semaphore\.&nbsp;
 
   - [ResetEvent](win32event.md#win32eventresetevent)
 
@@ -73,7 +73,7 @@ A module which provides an interface to the win32 event/wait API
 
   - [SetWaitableTimer](win32event.md#win32eventsetwaitabletimer)
 
-    Sets a waitable timer.&nbsp;
+    Sets a waitable timer\.&nbsp;
 
   - [WaitForMultipleObjects](win32event.md#win32eventwaitformultipleobjects)
 
@@ -95,20 +95,20 @@ A module which provides an interface to the win32 event/wait API
 
     Waits until the given process is waiting for user input with no input pending, or until the time-out interval has elapsed&nbsp;
 
-## [win32event](#win32event).CancelWaitableTimer
+## [win32event](#win32event)\.CancelWaitableTimer
 
- __CancelWaitableTimer(__ )
-Cancels a waiting timer.
+ **CancelWaitableTimer\(** \)
+Cancels a waiting timer\.
 
-## [win32event](#win32event).CreateEvent
+## [win32event](#win32event)\.CreateEvent
 
-[PyHANDLE](#pyhandle)= __CreateEvent( *EventAttributes*  *, bManualReset*  *, bInitialState*  *, Name* __ )
+[PyHANDLE](#pyhandle)\= **CreateEvent\( *EventAttributes*  *, bManualReset*  *, bInitialState*  *, Name* ** \)
 Creates a waitable event
 
 #### Parameters
 
 
-  -  *EventAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *EventAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
@@ -127,15 +127,15 @@ Creates a waitable event
 #### Return Value
 The result is a handle to the created object
 
-## [win32event](#win32event).CreateMutex
+## [win32event](#win32event)\.CreateMutex
 
-[PyHANDLE](#pyhandle)= __CreateMutex( *MutexAttributes*  *, InitialOwner*  *, Name* __ )
+[PyHANDLE](#pyhandle)\= **CreateMutex\( *MutexAttributes*  *, InitialOwner*  *, Name* ** \)
 Creates a mutex
 
 #### Parameters
 
 
-  -  *MutexAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *MutexAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies inheritance and security descriptor for object, or None for defaults
 
@@ -150,15 +150,15 @@ Creates a mutex
 #### Return Value
 The result is a handle to the created object
 
-## [win32event](#win32event).CreateSemaphore
+## [win32event](#win32event)\.CreateSemaphore
 
-[PyHANDLE](#pyhandle)= __CreateSemaphore( *SemaphoreAttributes*  *, InitialCount*  *, MaximumCount*  *, SemaphoreName* __ )
+[PyHANDLE](#pyhandle)\= **CreateSemaphore\( *SemaphoreAttributes*  *, InitialCount*  *, MaximumCount*  *, SemaphoreName* ** \)
 Creates a semaphore, or opens an existing one
 
 #### Parameters
 
 
-  -  *SemaphoreAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *SemaphoreAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies inheritance and security descriptor for object, or None for defaults
 
@@ -177,20 +177,20 @@ Creates a semaphore, or opens an existing one
 #### Win32 API References
 
 
-  - Search for *CreateSemaphore* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createsemaphore),[google](#http://www.google.com/search?q=createsemaphore)or[google groups](#http://groups.google.com/groups?q=createsemaphore).
+  - Search for *CreateSemaphore* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createsemaphore),[google](#http://www.google.com/search?q=createsemaphore)or[google groups](#http://groups.google.com/groups?q=createsemaphore)\.
 
 #### Return Value
 The result is a handle to the object
 
-## [win32event](#win32event).CreateWaitableTimer
+## [win32event](#win32event)\.CreateWaitableTimer
 
-[PyHANDLE](#pyhandle)= __CreateWaitableTimer( *TimerAttributes*  *, ManualReset*  *, TimerName* __ )
+[PyHANDLE](#pyhandle)\= **CreateWaitableTimer\( *TimerAttributes*  *, ManualReset*  *, TimerName* ** \)
 Creates a waitable timer, or opens an existing one
 
 #### Parameters
 
 
-  -  *TimerAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *TimerAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies inheritance and security descriptor for object, or None for defaults
 
@@ -205,42 +205,42 @@ Creates a waitable timer, or opens an existing one
 #### Win32 API References
 
 
-  - Search for *CreateWaitableTimer* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createwaitabletimer),[google](#http://www.google.com/search?q=createwaitabletimer)or[google groups](#http://groups.google.com/groups?q=createwaitabletimer).
+  - Search for *CreateWaitableTimer* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createwaitabletimer),[google](#http://www.google.com/search?q=createwaitabletimer)or[google groups](#http://groups.google.com/groups?q=createwaitabletimer)\.
 
 #### Return Value
 The result is a handle to the object
 
-## EVENT_ALL_ACCESS
- __const win32event.EVENT_ALL_ACCESS;__ 
-Specifies all possible access flags for the event object.
+## EVENT\_ALL\_ACCESS
+ **const win32event\.EVENT\_ALL\_ACCESS;** 
+Specifies all possible access flags for the event object\.
 
-## EVENT_MODIFY_STATE
- __const win32event.EVENT_MODIFY_STATE;__ 
-Enables use of the event handle in the SetEvent and ResetEvent&#160functions to modify the event&#146s state.
+## EVENT\_MODIFY\_STATE
+ **const win32event\.EVENT\_MODIFY\_STATE;** 
+Enables use of the event handle in the SetEvent and ResetEvent&\#160functions to modify the event&\#146s state\.
 
 ## INFINITE
- __const win32event.INFINITE;__ 
+ **const win32event\.INFINITE;** 
 
 
-## MAXIMUM_WAIT_OBJECTS
- __const win32event.MAXIMUM_WAIT_OBJECTS;__ 
+## MAXIMUM\_WAIT\_OBJECTS
+ **const win32event\.MAXIMUM\_WAIT\_OBJECTS;** 
 
 
-## [win32event](#win32event).MsgWaitForMultipleObjects
+## [win32event](#win32event)\.MsgWaitForMultipleObjects
 
-int = __MsgWaitForMultipleObjects( *handleList*  *, bWaitAll*  *, milliseconds*  *, wakeMask* __ )
+int \= **MsgWaitForMultipleObjects\( *handleList*  *, bWaitAll*  *, milliseconds*  *, wakeMask* ** \)
 Returns when a message arrives of an event is signalled
 
 #### Parameters
 
 
-  -  *handleList* : [[PyHANDLE](#pyhandle), ...]
+  -  *handleList* : \[[PyHANDLE](#pyhandle), \.\.\.\]
 
-    A sequence of handles to wait on.
+    A sequence of handles to wait on\.
 
   -  *bWaitAll* : bool
 
-    If true, waits for all handles in the list.
+    If true, waits for all handles in the list\.
 
   -  *milliseconds* : int
 
@@ -248,26 +248,26 @@ Returns when a message arrives of an event is signalled
 
   -  *wakeMask* : int
 
-    type of input events to wait for.  One of the win32event.QS_ constants.
+    type of input events to wait for\.  One of the win32event\.QS\_ constants\.
 
 #### Comments
 Note that if bWaitAll is TRUE, the function will return when there is input in the queue, 
 
-and all events are signalled.  This is rarely what you want! 
+and all events are signalled\.  This is rarely what you want\! 
 
-If input is waiting, the result is win32event.WAIT_OBJECT_0+len(handles))
+If input is waiting, the result is win32event\.WAIT\_OBJECT\_0\+len\(handles\)\)
 
-## [win32event](#win32event).MsgWaitForMultipleObjectsEx
+## [win32event](#win32event)\.MsgWaitForMultipleObjectsEx
 
-int = __MsgWaitForMultipleObjectsEx( *handleList*  *, milliseconds*  *, wakeMask*  *, waitFlags* __ )
+int \= **MsgWaitForMultipleObjectsEx\( *handleList*  *, milliseconds*  *, wakeMask*  *, waitFlags* ** \)
 Returns when a message arrives of an event is signalled
 
 #### Parameters
 
 
-  -  *handleList* : [[PyHANDLE](#pyhandle), ...]
+  -  *handleList* : \[[PyHANDLE](#pyhandle), \.\.\.\]
 
-    A sequence of handles to wait on.
+    A sequence of handles to wait on\.
 
   -  *milliseconds* : int
 
@@ -282,21 +282,21 @@ Returns when a message arrives of an event is signalled
     wait flags
 
 #### Comments
-This method will no longer raise a COM E_NOTIMPL exception 
+This method will no longer raise a COM E\_NOTIMPL exception 
 
-as it is no longer dynamically loaded.
+as it is no longer dynamically loaded\.
 
-## [win32event](#win32event).OpenEvent
+## [win32event](#win32event)\.OpenEvent
 
-[PyHANDLE](#pyhandle)= __OpenEvent( *desiredAccess*  *, bInheritHandle*  *, name* __ )
-Returns a handle of an existing named event object.
+[PyHANDLE](#pyhandle)\= **OpenEvent\( *desiredAccess*  *, bInheritHandle*  *, name* ** \)
+Returns a handle of an existing named event object\.
 
 #### Parameters
 
 
   -  *desiredAccess* : int
 
-    access flag - one of __win32event::EVENT_ALL_ACCESS__ , __win32event::EVENT_MODIFY_STATE__ , or (NT only) __win32event::SYNCHRONIZE__ 
+    access flag - one of **win32event::EVENT\_ALL\_ACCESS** , **win32event::EVENT\_MODIFY\_STATE** , or \(NT only\) **win32event::SYNCHRONIZE** 
 
   -  *bInheritHandle* : bool
 
@@ -304,32 +304,12 @@ Returns a handle of an existing named event object.
 
   -  *name* :[PyUnicode](#pyunicode)
 
-    name of event to open.
+    name of event to open\.
 
-## [win32event](#win32event).OpenMutex
+## [win32event](#win32event)\.OpenMutex
 
-[PyHANDLE](#pyhandle)= __OpenMutex( *desiredAccess*  *, bInheritHandle*  *, name* __ )
-Returns a handle of an existing named mutex object.
-
-#### Parameters
-
-
-  -  *desiredAccess* : int
-
-    access flag
-
-  -  *bInheritHandle* : bool
-
-    inherit flag
-
-  -  *name* :[PyUnicode](#pyunicode)
-
-    name of mutex to open.
-
-## [win32event](#win32event).OpenSemaphore
-
-[PyHANDLE](#pyhandle)= __OpenSemaphore( *desiredAccess*  *, bInheritHandle*  *, name* __ )
-Returns a handle of an existing named semaphore object.
+[PyHANDLE](#pyhandle)\= **OpenMutex\( *desiredAccess*  *, bInheritHandle*  *, name* ** \)
+Returns a handle of an existing named mutex object\.
 
 #### Parameters
 
@@ -344,11 +324,31 @@ Returns a handle of an existing named semaphore object.
 
   -  *name* :[PyUnicode](#pyunicode)
 
-    name of semaphore to open.
+    name of mutex to open\.
 
-## [win32event](#win32event).OpenWaitableTimer
+## [win32event](#win32event)\.OpenSemaphore
 
-[PyHANDLE](#pyhandle)= __OpenWaitableTimer( *desiredAccess*  *, bInheritHandle*  *, timerName* __ )
+[PyHANDLE](#pyhandle)\= **OpenSemaphore\( *desiredAccess*  *, bInheritHandle*  *, name* ** \)
+Returns a handle of an existing named semaphore object\.
+
+#### Parameters
+
+
+  -  *desiredAccess* : int
+
+    access flag
+
+  -  *bInheritHandle* : bool
+
+    inherit flag
+
+  -  *name* :[PyUnicode](#pyunicode)
+
+    name of semaphore to open\.
+
+## [win32event](#win32event)\.OpenWaitableTimer
+
+[PyHANDLE](#pyhandle)\= **OpenWaitableTimer\( *desiredAccess*  *, bInheritHandle*  *, timerName* ** \)
 Opens an existing named waitable timer object
 
 #### Parameters
@@ -366,10 +366,10 @@ Opens an existing named waitable timer object
 
     pointer to timer object name
 
-## [win32event](#win32event).PulseEvent
+## [win32event](#win32event)\.PulseEvent
 
- __PulseEvent( *hEvent* __ )
-Provides a single operation that sets (to signaled) the state of the specified event object and then resets it (to nonsignaled) after releasing the appropriate number of waiting threads.
+ **PulseEvent\( *hEvent* ** \)
+Provides a single operation that sets \(to signaled\) the state of the specified event object and then resets it \(to nonsignaled\) after releasing the appropriate number of waiting threads\.
 
 #### Parameters
 
@@ -378,58 +378,58 @@ Provides a single operation that sets (to signaled) the state of the specified e
 
     handle of event object
 
-## QS_ALLEVENTS
- __const win32event.QS_ALLEVENTS;__ 
-An input, WM_TIMER, WM_PAINT, WM_HOTKEY, or posted message is in the queue.
+## QS\_ALLEVENTS
+ **const win32event\.QS\_ALLEVENTS;** 
+An input, WM\_TIMER, WM\_PAINT, WM\_HOTKEY, or posted message is in the queue\.
 
-## QS_ALLINPUT
- __const win32event.QS_ALLINPUT;__ 
-Any message is in the queue.
+## QS\_ALLINPUT
+ **const win32event\.QS\_ALLINPUT;** 
+Any message is in the queue\.
 
-## QS_HOTKEY
- __const win32event.QS_HOTKEY;__ 
-A WM_HOTKEY message is in the queue.
+## QS\_HOTKEY
+ **const win32event\.QS\_HOTKEY;** 
+A WM\_HOTKEY message is in the queue\.
 
-## QS_INPUT
- __const win32event.QS_INPUT;__ 
-An input message is in the queue.
+## QS\_INPUT
+ **const win32event\.QS\_INPUT;** 
+An input message is in the queue\.
 
-## QS_KEY
- __const win32event.QS_KEY;__ 
-A WM_KEYUP, WM_KEYDOWN, WM_SYSKEYUP, or WM_SYSKEYDOWN message is in the queue.
+## QS\_KEY
+ **const win32event\.QS\_KEY;** 
+A WM\_KEYUP, WM\_KEYDOWN, WM\_SYSKEYUP, or WM\_SYSKEYDOWN message is in the queue\.
 
-## QS_MOUSE
- __const win32event.QS_MOUSE;__ 
-A WM_MOUSEMOVE message or mouse-button message (WM_LBUTTONUP, WM_RBUTTONDOWN, and so on).
+## QS\_MOUSE
+ **const win32event\.QS\_MOUSE;** 
+A WM\_MOUSEMOVE message or mouse-button message \(WM\_LBUTTONUP, WM\_RBUTTONDOWN, and so on\)\.
 
-## QS_MOUSEBUTTON
- __const win32event.QS_MOUSEBUTTON;__ 
-A mouse-button message (WM_LBUTTONUP, WM_RBUTTONDOWN, and so on).
+## QS\_MOUSEBUTTON
+ **const win32event\.QS\_MOUSEBUTTON;** 
+A mouse-button message \(WM\_LBUTTONUP, WM\_RBUTTONDOWN, and so on\)\.
 
-## QS_MOUSEMOVE
- __const win32event.QS_MOUSEMOVE;__ 
-A WM_MOUSEMOVE message is in the queue.
+## QS\_MOUSEMOVE
+ **const win32event\.QS\_MOUSEMOVE;** 
+A WM\_MOUSEMOVE message is in the queue\.
 
-## QS_PAINT
- __const win32event.QS_PAINT;__ 
-A WM_PAINT message is in the queue.
+## QS\_PAINT
+ **const win32event\.QS\_PAINT;** 
+A WM\_PAINT message is in the queue\.
 
-## QS_POSTMESSAGE
- __const win32event.QS_POSTMESSAGE;__ 
-A posted message (other than those just listed) is in the queue.
+## QS\_POSTMESSAGE
+ **const win32event\.QS\_POSTMESSAGE;** 
+A posted message \(other than those just listed\) is in the queue\.
 
-## QS_SENDMESSAGE
- __const win32event.QS_SENDMESSAGE;__ 
-A message sent by another thread or application is in the queue.
+## QS\_SENDMESSAGE
+ **const win32event\.QS\_SENDMESSAGE;** 
+A message sent by another thread or application is in the queue\.
 
-## QS_TIMER
- __const win32event.QS_TIMER;__ 
-A WM_TIMER message is in the queue.
+## QS\_TIMER
+ **const win32event\.QS\_TIMER;** 
+A WM\_TIMER message is in the queue\.
 
-## [win32event](#win32event).ReleaseMutex
+## [win32event](#win32event)\.ReleaseMutex
 
- __ReleaseMutex( *hEvent* __ )
-Releases a mutex.
+ **ReleaseMutex\( *hEvent* ** \)
+Releases a mutex\.
 
 #### Parameters
 
@@ -438,10 +438,10 @@ Releases a mutex.
 
     handle of mutex object
 
-## [win32event](#win32event).ReleaseSemaphore
+## [win32event](#win32event)\.ReleaseSemaphore
 
-int = __ReleaseSemaphore( *hEvent*  *, lReleaseCount* __ )
-Releases a semaphore.
+int \= **ReleaseSemaphore\( *hEvent*  *, lReleaseCount* ** \)
+Releases a semaphore\.
 
 #### Parameters
 
@@ -455,11 +455,11 @@ Releases a semaphore.
     amount to add to current count
 
 #### Return Value
-The result is the previous count of the semaphore.
+The result is the previous count of the semaphore\.
 
-## [win32event](#win32event).ResetEvent
+## [win32event](#win32event)\.ResetEvent
 
- __ResetEvent( *hEvent* __ )
+ **ResetEvent\( *hEvent* ** \)
 Resets an event
 
 #### Parameters
@@ -470,12 +470,12 @@ Resets an event
     handle of event object
 
 ## SYNCHRONIZE
- __const win32event.SYNCHRONIZE;__ 
-Windows NT only:&#160Enables use of the event handle in any of the wait functions&#160to wait for the event&#146s state to be signaled.
+ **const win32event\.SYNCHRONIZE;** 
+Windows NT only:&\#160Enables use of the event handle in any of the wait functions&\#160to wait for the event&\#146s state to be signaled\.
 
-## [win32event](#win32event).SetEvent
+## [win32event](#win32event)\.SetEvent
 
- __SetEvent( *hEvent* __ )
+ **SetEvent\( *hEvent* ** \)
 Sets an event
 
 #### Parameters
@@ -485,10 +485,10 @@ Sets an event
 
     handle of event object
 
-## [win32event](#win32event).SetWaitableTimer
+## [win32event](#win32event)\.SetWaitableTimer
 
- __SetWaitableTimer( *handle*  *, dueTime*  *, period*  *, func*  *, param*  *, resume_state* __ )
-Sets a waitable timer.
+ **SetWaitableTimer\( *handle*  *, dueTime*  *, period*  *, func*  *, param*  *, resume\_state* ** \)
+Sets a waitable timer\.
 
 #### Parameters
 
@@ -513,37 +513,37 @@ Sets a waitable timer.
 
     completion routine parameter - must be None
 
-  -  *resume_state* : bool
+  -  *resume\_state* : bool
 
     resume state
 
-## WAIT_ABANDONED
- __const win32event.WAIT_ABANDONED;__ 
+## WAIT\_ABANDONED
+ **const win32event\.WAIT\_ABANDONED;** 
 
 
-## WAIT_ABANDONED_0
- __const win32event.WAIT_ABANDONED_0;__ 
+## WAIT\_ABANDONED\_0
+ **const win32event\.WAIT\_ABANDONED\_0;** 
 
 
-## WAIT_FAILED
- __const win32event.WAIT_FAILED;__ 
+## WAIT\_FAILED
+ **const win32event\.WAIT\_FAILED;** 
 
 
-## WAIT_IO_COMPLETION
- __const win32event.WAIT_IO_COMPLETION;__ 
+## WAIT\_IO\_COMPLETION
+ **const win32event\.WAIT\_IO\_COMPLETION;** 
 
 
-## WAIT_OBJECT_0
- __const win32event.WAIT_OBJECT_0;__ 
+## WAIT\_OBJECT\_0
+ **const win32event\.WAIT\_OBJECT\_0;** 
 
 
-## WAIT_TIMEOUT
- __const win32event.WAIT_TIMEOUT;__ 
+## WAIT\_TIMEOUT
+ **const win32event\.WAIT\_TIMEOUT;** 
 
 
-## [win32event](#win32event).WaitForInputIdle
+## [win32event](#win32event)\.WaitForInputIdle
 
-int = __WaitForInputIdle( *hProcess*  *, milliseconds* __ )
+int \= **WaitForInputIdle\( *hProcess*  *, milliseconds* ** \)
 Waits until the given process is waiting for user input with no input pending, or until the time-out interval has elapsed
 
 #### Parameters
@@ -558,20 +558,20 @@ Waits until the given process is waiting for user input with no input pending, o
     time-out interval in milliseconds
 
 #### Return Value
-The return value indicates wether the process is ready or wether it timed out. This value can be one of the following.
+The return value indicates wether the process is ready or wether it timed out\. This value can be one of the following\.
 
 
-## [win32event](#win32event).WaitForMultipleObjects
+## [win32event](#win32event)\.WaitForMultipleObjects
 
-int = __WaitForMultipleObjects( *handleList*  *, bWaitAll*  *, milliseconds* __ )
+int \= **WaitForMultipleObjects\( *handleList*  *, bWaitAll*  *, milliseconds* ** \)
 Returns when an event is signalled
 
 #### Parameters
 
 
-  -  *handleList* : [[PyHANDLE](#pyhandle), ...]
+  -  *handleList* : \[[PyHANDLE](#pyhandle), \.\.\.\]
 
-    A sequence of handles to wait on.
+    A sequence of handles to wait on\.
 
   -  *bWaitAll* : bool
 
@@ -581,17 +581,17 @@ Returns when an event is signalled
 
     time-out interval in milliseconds
 
-## [win32event](#win32event).WaitForMultipleObjectsEx
+## [win32event](#win32event)\.WaitForMultipleObjectsEx
 
-int = __WaitForMultipleObjectsEx( *handleList*  *, bWaitAll*  *, milliseconds*  *, bAlertable* __ )
+int \= **WaitForMultipleObjectsEx\( *handleList*  *, bWaitAll*  *, milliseconds*  *, bAlertable* ** \)
 Returns when an event is signalled
 
 #### Parameters
 
 
-  -  *handleList* : [[PyHANDLE](#pyhandle), ...]
+  -  *handleList* : \[[PyHANDLE](#pyhandle), \.\.\.\]
 
-    A sequence of handles to wait on.
+    A sequence of handles to wait on\.
 
   -  *bWaitAll* : bool
 
@@ -603,11 +603,11 @@ Returns when an event is signalled
 
   -  *bAlertable* : bool
 
-    alertable wait flag.
+    alertable wait flag\.
 
-## [win32event](#win32event).WaitForSingleObject
+## [win32event](#win32event)\.WaitForSingleObject
 
-int = __WaitForSingleObject( *hHandle*  *, milliseconds* __ )
+int \= **WaitForSingleObject\( *hHandle*  *, milliseconds* ** \)
 Returns when an event is signalled
 
 #### Parameters
@@ -622,12 +622,12 @@ Returns when an event is signalled
     time-out interval in milliseconds
 
 #### Return Value
-If the function succeeds, the return value indicates the event that caused the function to return. This value can be one of the following.
+If the function succeeds, the return value indicates the event that caused the function to return\. This value can be one of the following\.
 
 
-## [win32event](#win32event).WaitForSingleObjectEx
+## [win32event](#win32event)\.WaitForSingleObjectEx
 
-int = __WaitForSingleObjectEx( *hHandle*  *, milliseconds*  *, bAlertable* __ )
+int \= **WaitForSingleObjectEx\( *hHandle*  *, milliseconds*  *, bAlertable* ** \)
 Returns when an event is signalled
 
 #### Parameters
@@ -643,7 +643,7 @@ Returns when an event is signalled
 
   -  *bAlertable* : bool
 
-    alertable wait flag.
+    alertable wait flag\.
 
 #### Return Value
-See[win32event::WaitForSingleObject](win32event.md#win32eventwaitforsingleobject)for return values.
+See[win32event::WaitForSingleObject](win32event.md#win32eventwaitforsingleobject)for return values\.

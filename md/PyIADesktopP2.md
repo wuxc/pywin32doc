@@ -11,7 +11,7 @@ An interface to the ActiveDesktop
 
     Updates webpage subscriptions on the desktop&nbsp;
 
-## [PyIADesktopP2](#pyiadesktopp2).UpdateAllDesktopSubscriptions
+## [PyIADesktopP2](#pyiadesktopp2)\.UpdateAllDesktopSubscriptions
 
- __UpdateAllDesktopSubscriptions(__ )
+ **UpdateAllDesktopSubscriptions\(** \)
 Updates webpage subscriptions on the desktop

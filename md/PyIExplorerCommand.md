@@ -39,25 +39,25 @@ Description of the interface
 
     Description of EnumSubCommands&nbsp;
 
-## [PyIExplorerCommand](#pyiexplorercommand).EnumSubCommands
+## [PyIExplorerCommand](#pyiexplorercommand)\.EnumSubCommands
 
-[PyIEnumExplorerCommand](#pyienumexplorercommand)= __EnumSubCommands(__ )
-Description of EnumSubCommands.
+[PyIEnumExplorerCommand](#pyienumexplorercommand)\= **EnumSubCommands\(** \)
+Description of EnumSubCommands\.
 
-## [PyIExplorerCommand](#pyiexplorercommand).GetCanonicalName
+## [PyIExplorerCommand](#pyiexplorercommand)\.GetCanonicalName
 
-[PyIID](#pyiid)= __GetCanonicalName(__ )
-Description of GetCanonicalName.
+[PyIID](#pyiid)\= **GetCanonicalName\(** \)
+Description of GetCanonicalName\.
 
-## [PyIExplorerCommand](#pyiexplorercommand).GetFlags
+## [PyIExplorerCommand](#pyiexplorercommand)\.GetFlags
 
-int = __GetFlags(__ )
-Description of GetFlags.
+int \= **GetFlags\(** \)
+Description of GetFlags\.
 
-## [PyIExplorerCommand](#pyiexplorercommand).GetIcon
+## [PyIExplorerCommand](#pyiexplorercommand)\.GetIcon
 
-unicode = __GetIcon( *psiItemArray* __ )
-Description of GetIcon.
+unicode \= **GetIcon\( *psiItemArray* ** \)
+Description of GetIcon\.
 
 #### Parameters
 
@@ -66,10 +66,10 @@ Description of GetIcon.
 
     Description for psiItemArray
 
-## [PyIExplorerCommand](#pyiexplorercommand).GetState
+## [PyIExplorerCommand](#pyiexplorercommand)\.GetState
 
-int = __GetState( *psiItemArray*  *, fOkToBeSlow* __ )
-Description of GetState.
+int \= **GetState\( *psiItemArray*  *, fOkToBeSlow* ** \)
+Description of GetState\.
 
 #### Parameters
 
@@ -82,22 +82,10 @@ Description of GetState.
 
     Description for fOkToBeSlow
 
-## [PyIExplorerCommand](#pyiexplorercommand).GetTitle
+## [PyIExplorerCommand](#pyiexplorercommand)\.GetTitle
 
-unicode = __GetTitle( *psiItemArray* __ )
-Description of GetTitle.
-
-#### Parameters
-
-
-  -  *psiItemArray* :[PyIShellItemArray](#pyishellitemarray)
-
-    Description for psiItemArray
-
-## [PyIExplorerCommand](#pyiexplorercommand).GetToolTip
-
-unicode = __GetToolTip( *psiItemArray* __ )
-Description of GetToolTip.
+unicode \= **GetTitle\( *psiItemArray* ** \)
+Description of GetTitle\.
 
 #### Parameters
 
@@ -106,10 +94,22 @@ Description of GetToolTip.
 
     Description for psiItemArray
 
-## [PyIExplorerCommand](#pyiexplorercommand).Invoke
+## [PyIExplorerCommand](#pyiexplorercommand)\.GetToolTip
 
- __Invoke( *psiItemArray*  *, pbc* __ )
-Description of Invoke.
+unicode \= **GetToolTip\( *psiItemArray* ** \)
+Description of GetToolTip\.
+
+#### Parameters
+
+
+  -  *psiItemArray* :[PyIShellItemArray](#pyishellitemarray)
+
+    Description for psiItemArray
+
+## [PyIExplorerCommand](#pyiexplorercommand)\.Invoke
+
+ **Invoke\( *psiItemArray*  *, pbc* ** \)
+Description of Invoke\.
 
 #### Parameters
 

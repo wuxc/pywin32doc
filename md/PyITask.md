@@ -45,7 +45,7 @@ Python object that encapsulates the ITask interface, inherits all the methods of
 
   - [GetTaskFlags](PyITask.md#pyitaskgettaskflags)
 
-    Retrieve task flags (None currently defined)&nbsp;
+    Retrieve task flags \(None currently defined\)&nbsp;
 
   - [SetMaxRunTime](PyITask.md#pyitasksetmaxruntime)
 
@@ -56,51 +56,51 @@ Python object that encapsulates the ITask interface, inherits all the methods of
     Returns maximun run time for task&nbsp;
 
 
-## [PyITask](#pyitask).GetApplicationName
+## [PyITask](#pyitask)\.GetApplicationName
 
-[PyUNICODE](#pyunicode)= __GetApplicationName(__ )
+[PyUNICODE](#pyunicode)\= **GetApplicationName\(** \)
 Retrieve name of program that task will run
 
-## [PyITask](#pyitask).GetMaxRunTime
+## [PyITask](#pyitask)\.GetMaxRunTime
 
-int = __GetMaxRunTime(__ )
+int \= **GetMaxRunTime\(** \)
 Returns maximun run time for task
 
-## [PyITask](#pyitask).GetParameters
+## [PyITask](#pyitask)\.GetParameters
 
-[PyUNICODE](#pyunicode)= __GetParameters(__ )
+[PyUNICODE](#pyunicode)\= **GetParameters\(** \)
 Returns command line parameters for task
 
-## [PyITask](#pyitask).GetPriority
+## [PyITask](#pyitask)\.GetPriority
 
-int = __GetPriority(__ )
+int \= **GetPriority\(** \)
 Gets priority that will be assigned to process when task starts
 
-## [PyITask](#pyitask).GetTaskFlags
+## [PyITask](#pyitask)\.GetTaskFlags
 
-int = __GetTaskFlags(__ )
-Retrieve task flags (None currently defined)
+int \= **GetTaskFlags\(** \)
+Retrieve task flags \(None currently defined\)
 
-## [PyITask](#pyitask).GetWorkingDirectory
+## [PyITask](#pyitask)\.GetWorkingDirectory
 
-[PyUNICODE](#pyunicode)= __GetWorkingDirectory(__ )
+[PyUNICODE](#pyunicode)\= **GetWorkingDirectory\(** \)
 Return working directory that the task will start out in
 
-## [PyITask](#pyitask).SetApplicationName
+## [PyITask](#pyitask)\.SetApplicationName
 
- __SetApplicationName( *ApplicationName* __ )
+ **SetApplicationName\( *ApplicationName* ** \)
 Specify which program the task will run
 
 #### Parameters
 
 
-  -  *ApplicationName* : __unicode__ 
+  -  *ApplicationName* : **unicode** 
 
     Program to execute
 
-## [PyITask](#pyitask).SetMaxRunTime
+## [PyITask](#pyitask)\.SetMaxRunTime
 
- __SetMaxRunTime( *MaxRunTimeMS* __ )
+ **SetMaxRunTime\( *MaxRunTimeMS* ** \)
 Sets maximun run time for task, use -1 to disable
 
 #### Parameters
@@ -108,23 +108,23 @@ Sets maximun run time for task, use -1 to disable
 
   -  *MaxRunTimeMS* : int
 
-    Specified in milliseconds (use -1 to disable, not 0)
+    Specified in milliseconds \(use -1 to disable, not 0\)
 
-## [PyITask](#pyitask).SetParameters
+## [PyITask](#pyitask)\.SetParameters
 
- __SetParameters( *Parameters* __ )
+ **SetParameters\( *Parameters* ** \)
 Sets command line parameters
 
 #### Parameters
 
 
-  -  *Parameters* : __unicode__ 
+  -  *Parameters* : **unicode** 
 
     String containing command line parameters
 
-## [PyITask](#pyitask).SetPriority
+## [PyITask](#pyitask)\.SetPriority
 
- __SetPriority( *Priority* __ )
+ **SetPriority\( *Priority* ** \)
 Sets priority for task
 
 #### Parameters
@@ -132,12 +132,12 @@ Sets priority for task
 
   -  *Priority* : int
 
-    One of REALTIME_PRIORITY_CLASS, HIGH_PRIORITY_CLASS, NORMAL_PRIORITY_CLASS, IDLE_PRIORITY_CLASS
+    One of REALTIME\_PRIORITY\_CLASS, HIGH\_PRIORITY\_CLASS, NORMAL\_PRIORITY\_CLASS, IDLE\_PRIORITY\_CLASS
 
-## [PyITask](#pyitask).SetTaskFlags
+## [PyITask](#pyitask)\.SetTaskFlags
 
- __SetTaskFlags( *dwFlags* __ )
-Sets flag for task.
+ **SetTaskFlags\( *dwFlags* ** \)
+Sets flag for task\.
 
 #### Parameters
 
@@ -146,14 +146,14 @@ Sets flag for task.
 
     None currently defined
 
-## [PyITask](#pyitask).SetWorkingDirectory
+## [PyITask](#pyitask)\.SetWorkingDirectory
 
- __SetWorkingDirectory( *WorkingDirectory* __ )
+ **SetWorkingDirectory\( *WorkingDirectory* ** \)
 Sets initial working directory for task
 
 #### Parameters
 
 
-  -  *WorkingDirectory* : __unicode__ 
+  -  *WorkingDirectory* : **unicode** 
 
     Initial working directory

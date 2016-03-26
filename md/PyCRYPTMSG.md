@@ -13,10 +13,10 @@ Wrapper for a cryptographic message handle
 
 #### Properties
 
-  -  __int HCRYPTMSG__ 
+  -  **int HCRYPTMSG** 
     Raw message handle
 
-## [PyCRYPTMSG](#pycryptmsg).CryptMsgClose
+## [PyCRYPTMSG](#pycryptmsg)\.CryptMsgClose
 
- __CryptMsgClose(__ )
+ **CryptMsgClose\(** \)
 Closes the message handle

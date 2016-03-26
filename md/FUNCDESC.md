@@ -2,79 +2,79 @@
 
 ## FUNCDESC Object
 
-A FUNCDESC object represents a COM TYPEATTR structure.
+A FUNCDESC object represents a COM TYPEATTR structure\.
 
 #### Properties
 
-  -  __integer memid__ 
+  -  **integer memid** 
     
 
-  -  __(int, ...) scodeArray__ 
+  -  **\(int, \.\.\.\) scodeArray** 
     
 
-  -  __([ELEMDESC](#elemdesc), ...) args__ 
+  -  **\([ELEMDESC](#elemdesc), \.\.\.\) args** 
     
 
-  -  __int funckind__ 
+  -  **int funckind** 
     
 
-  -  __int invkind__ 
+  -  **int invkind** 
     
 
-  -  __int callconv__ 
+  -  **int callconv** 
     
 
-  -  __int cParamsOpt__ 
+  -  **int cParamsOpt** 
     
 
-  -  __int oVft__ 
+  -  **int oVft** 
     
 
-  -  __[ELEMDESC](#elemdesc)rettype__ 
+  -  **[ELEMDESC](#elemdesc)rettype** 
     
 
-  -  __int wFuncFlags__ 
+  -  **int wFuncFlags** 
     
 
 #### Items
 
 
-  - [0] *int* : memid
+  - \[0\] *int* : memid
 
     
 
-  - [1] *(int, ...)* : scodeArray
+  - \[1\] *\(int, \.\.\.\)* : scodeArray
 
     
 
-  - [2] *([ELEMDESC](#elemdesc), ...)* : args
+  - \[2\] *\([ELEMDESC](#elemdesc), \.\.\.\)* : args
 
     
 
-  - [3] *int* : funckind
+  - \[3\] *int* : funckind
 
     
 
-  - [4] *int* : invkind
+  - \[4\] *int* : invkind
 
     
 
-  - [5] *int* : callconv
+  - \[5\] *int* : callconv
 
     
 
-  - [6] *int* : cParamsOpt
+  - \[6\] *int* : cParamsOpt
 
     
 
-  - [7] *int* : oVft
+  - \[7\] *int* : oVft
 
     
 
-  - [8] *[ELEMDESC](#elemdesc)* : rettype
+  - \[8\] *[ELEMDESC](#elemdesc)* : rettype
 
     
 
-  - [9] *int* : wFuncFlags
+  - \[9\] *int* : wFuncFlags
 
     

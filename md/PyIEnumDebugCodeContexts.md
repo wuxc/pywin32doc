@@ -9,43 +9,43 @@ A Python interface to IEnumDebugCodeContexts
 
   - [Next](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontextsnext)
 
-    Retrieves a specified number of items in the enumeration sequence.&nbsp;
+    Retrieves a specified number of items in the enumeration sequence\.&nbsp;
 
   - [Skip](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontextsskip)
 
-    Skips over the next specified elementes.&nbsp;
+    Skips over the next specified elementes\.&nbsp;
 
   - [Reset](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontextsreset)
 
-    Resets the enumeration sequence to the beginning.&nbsp;
+    Resets the enumeration sequence to the beginning\.&nbsp;
 
   - [Clone](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontextsclone)
 
-    Creates another enumerator that contains the same enumeration state as the current one.&nbsp;
+    Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts).Clone
+## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Clone
 
-[PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)= __Clone(__ )
+[PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\= **Clone\(** \)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts).Next
+## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Next
 
-object = __Next( *num* __ )
-Retrieves a specified number of items in the enumeration sequence.
+object \= **Next\( *num* ** \)
+Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num=1* : int
+  -  *num\=1* : int
 
-    Number of items to retrieve.
+    Number of items to retrieve\.
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts).Reset
+## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Reset
 
- __Reset(__ )
-Resets the enumeration sequence to the beginning.
+ **Reset\(** \)
+Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts).Skip
+## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Skip
 
- __Skip(__ )
-Skips over the next specified elementes.
+ **Skip\(** \)
+Skips over the next specified elementes\.

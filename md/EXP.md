@@ -1,55 +1,55 @@
 # EXP
 
-## EXP_DARWIN_LINK Object
+## EXP\_DARWIN\_LINK Object
 
-Dictionary containing information for a EXP_DARWIN_LINK struct
+Dictionary containing information for a EXP\_DARWIN\_LINK struct
 
 #### Properties
 
-  -  __int Signature__ 
-    The type of data block, one of shellcon.*_SIG values
+  -  **int Signature** 
+    The type of data block, one of shellcon\.\*\_SIG values
 
-  -  __str DarwinID__ 
+  -  **str DarwinID** 
     The Windows Installer id for the link
 
-  -  __[PyUNICODE](#pyunicode)wDarwinID__ 
+  -  **[PyUNICODE](#pyunicode)wDarwinID** 
     The installer id as Unicode
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure, ignored on input
 
-## EXP_SPECIAL_FOLDER Object
+## EXP\_SPECIAL\_FOLDER Object
 
-Dictionary containing information for a EXP_SPECIAL_FOLDER struct
+Dictionary containing information for a EXP\_SPECIAL\_FOLDER struct
 
 #### Properties
 
-  -  __int Signature__ 
-    The type of data block, one of shellcon.*_SIG values
+  -  **int Signature** 
+    The type of data block, one of shellcon\.\*\_SIG values
 
-  -  __int idSpecialFolder__ 
-    The special folder id of the target (shellcon.CSIDL_*)
+  -  **int idSpecialFolder** 
+    The special folder id of the target \(shellcon\.CSIDL\_\*\)
 
-  -  __int Offset__ 
+  -  **int Offset** 
     Offset into the link's PIDL
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure, ignored on input
 
-## EXP_SZ_LINK Object
+## EXP\_SZ\_LINK Object
 
-Dictionary containing information for an EXP_SZ_LINK or EXP_SZ_ICON struct
+Dictionary containing information for an EXP\_SZ\_LINK or EXP\_SZ\_ICON struct
 
 #### Properties
 
-  -  __int Signature__ 
-    The type of data block, one of shellcon.*_SIG values
+  -  **int Signature** 
+    The type of data block, one of shellcon\.\*\_SIG values
 
-  -  __str Target__ 
+  -  **str Target** 
     The link's target or icon location
 
-  -  __[PyUNICODE](#pyunicode)wTarget__ 
+  -  **[PyUNICODE](#pyunicode)wTarget** 
     The target in Unicode form
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure, ignored on input

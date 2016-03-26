@@ -19,17 +19,17 @@ Description of the interface
 
     Description of InProgressAbort&nbsp;
 
-## [PyIDebugSyncOperation](#pyidebugsyncoperation).Execute
+## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.Execute
 
- __Execute(__ )
-Description of Execute.
+ **Execute\(** \)
+Description of Execute\.
 
-## [PyIDebugSyncOperation](#pyidebugsyncoperation).GetTargetThread
+## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.GetTargetThread
 
- __GetTargetThread(__ )
-Description of GetTargetThread.
+ **GetTargetThread\(** \)
+Description of GetTargetThread\.
 
-## [PyIDebugSyncOperation](#pyidebugsyncoperation).InProgressAbort
+## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.InProgressAbort
 
- __InProgressAbort(__ )
-Description of InProgressAbort.
+ **InProgressAbort\(** \)
+Description of InProgressAbort\.

@@ -31,15 +31,15 @@ Description of the interface
 
     Description of SetDefaultIcon&nbsp;
 
-## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit).SetDefaultIcon
+## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetDefaultIcon
 
- __SetDefaultIcon( *pszFile*  *, iIcon* __ )
-Description of SetDefaultIcon.
+ **SetDefaultIcon\( *pszFile*  *, iIcon* ** \)
+Description of SetDefaultIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : __unicode__ 
+  -  *pszFile* : **unicode** 
 
     Description for pszFile
 
@@ -47,10 +47,10 @@ Description of SetDefaultIcon.
 
     Description for iIcon
 
-## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit).SetFlags
+## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetFlags
 
- __SetFlags( *uFlags* __ )
-Description of SetFlags.
+ **SetFlags\( *uFlags* ** \)
+Description of SetFlags\.
 
 #### Parameters
 
@@ -59,10 +59,10 @@ Description of SetFlags.
 
     Description for uFlags
 
-## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit).SetKey
+## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetKey
 
- __SetKey( *hkey* __ )
-Description of SetKey.
+ **SetKey\( *hkey* ** \)
+Description of SetKey\.
 
 #### Parameters
 
@@ -71,15 +71,15 @@ Description of SetKey.
 
     Description for hkey
 
-## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit).SetNormalIcon
+## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetNormalIcon
 
- __SetNormalIcon( *pszFile*  *, iIcon* __ )
-Description of SetNormalIcon.
+ **SetNormalIcon\( *pszFile*  *, iIcon* ** \)
+Description of SetNormalIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : __unicode__ 
+  -  *pszFile* : **unicode** 
 
     Description for pszFile
 
@@ -87,15 +87,15 @@ Description of SetNormalIcon.
 
     Description for iIcon
 
-## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit).SetOpenIcon
+## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetOpenIcon
 
- __SetOpenIcon( *pszFile*  *, iIcon* __ )
-Description of SetOpenIcon.
+ **SetOpenIcon\( *pszFile*  *, iIcon* ** \)
+Description of SetOpenIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : __unicode__ 
+  -  *pszFile* : **unicode** 
 
     Description for pszFile
 
@@ -103,15 +103,15 @@ Description of SetOpenIcon.
 
     Description for iIcon
 
-## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit).SetShortcutIcon
+## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetShortcutIcon
 
- __SetShortcutIcon( *pszFile*  *, iIcon* __ )
-Description of SetShortcutIcon.
+ **SetShortcutIcon\( *pszFile*  *, iIcon* ** \)
+Description of SetShortcutIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : __unicode__ 
+  -  *pszFile* : **unicode** 
 
     Description for pszFile
 

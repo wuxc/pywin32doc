@@ -1,21 +1,21 @@
 # PySMALL
 
-## PySMALL_RECT Object
+## PySMALL\_RECT Object
 
-Wrapper for a SMALL_RECT struct 
+Wrapper for a SMALL\_RECT struct 
 
-Create using PySMALL_RECTType(Left, Top, Right, Bottom). All params optional, defaulting to 0
+Create using PySMALL\_RECTType\(Left, Top, Right, Bottom\)\. All params optional, defaulting to 0
 
 #### Properties
 
-  -  __int Left__ 
+  -  **int Left** 
     Left side of rectangle
 
-  -  __int Top__ 
+  -  **int Top** 
     Top edge of rectangle
 
-  -  __int Right__ 
+  -  **int Right** 
     Right edge of rectangle
 
-  -  __int Bottom__ 
+  -  **int Bottom** 
     Bottome edge of rectangle

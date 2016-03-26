@@ -29,7 +29,7 @@ Wraps the IPropertySystem interface
 
   - [RegisterPropertySchema](PyIPropertySystem.md#pyipropertysystemregisterpropertyschema)
 
-    Registers a set of properties defined in a .propdesc file&nbsp;
+    Registers a set of properties defined in a \.propdesc file&nbsp;
 
   - [UnregisterPropertySchema](PyIPropertySystem.md#pyipropertysystemunregisterpropertyschema)
 
@@ -39,25 +39,25 @@ Wraps the IPropertySystem interface
 
     Not currently implemented by the OS&nbsp;
 
-## [PyIPropertySystem](#pyipropertysystem).EnumeratePropertyDescriptions
+## [PyIPropertySystem](#pyipropertysystem)\.EnumeratePropertyDescriptions
 
-[PyIPropertyDescriptionList](#pyipropertydescriptionlist)= __EnumeratePropertyDescriptions( *Filter*  *, riid* __ )
+[PyIPropertyDescriptionList](#pyipropertydescriptionlist)\= **EnumeratePropertyDescriptions\( *Filter*  *, riid* ** \)
 Returns an interface used to list defined properties
 
 #### Parameters
 
 
-  -  *Filter=PDEF_ALL* : int
+  -  *Filter\=PDEF\_ALL* : int
 
-    Value from PROPDESC_ENUMFILTER (pscon.PDEF_*) that limits what types of properties are listed
+    Value from PROPDESC\_ENUMFILTER \(pscon\.PDEF\_\*\) that limits what types of properties are listed
 
-  -  *riid=IID_IPropertyDescriptionList* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyDescriptionList* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIPropertySystem](#pyipropertysystem).FormatForDisplay
+## [PyIPropertySystem](#pyipropertysystem)\.FormatForDisplay
 
-str = __FormatForDisplay( *Key*  *, Value*  *, Flags* __ )
+str \= **FormatForDisplay\( *Key*  *, Value*  *, Flags* ** \)
 Formats a property into a string
 
 #### Parameters
@@ -71,13 +71,13 @@ Formats a property into a string
 
     The value to format
 
-  -  *Flags=PDFF_DEFAULT* : int
+  -  *Flags\=PDFF\_DEFAULT* : int
 
-    Combination of PROPDESC_FORMAT_FLAGS (pscon.PDFF_*) indicating formatting options
+    Combination of PROPDESC\_FORMAT\_FLAGS \(pscon\.PDFF\_\*\) indicating formatting options
 
-## [PyIPropertySystem](#pyipropertysystem).GetPropertyDescription
+## [PyIPropertySystem](#pyipropertysystem)\.GetPropertyDescription
 
-[PyIPropertyDescription](#pyipropertydescription)= __GetPropertyDescription( *Key*  *, riid* __ )
+[PyIPropertyDescription](#pyipropertydescription)\= **GetPropertyDescription\( *Key*  *, riid* ** \)
 Returns an interface used to describe a property
 
 #### Parameters
@@ -87,13 +87,13 @@ Returns an interface used to describe a property
 
     Fmtid and propertyid that uniquely identifies a property
 
-  -  *riid=IID_IPropertyDescription* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyDescription* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIPropertySystem](#pyipropertysystem).GetPropertyDescriptionByName
+## [PyIPropertySystem](#pyipropertysystem)\.GetPropertyDescriptionByName
 
-[PyIPropertyDescription](#pyipropertydescription)= __GetPropertyDescriptionByName( *CanonicalName*  *, riid* __ )
+[PyIPropertyDescription](#pyipropertydescription)\= **GetPropertyDescriptionByName\( *CanonicalName*  *, riid* ** \)
 Returns an interface used to describe a property
 
 #### Parameters
@@ -103,13 +103,13 @@ Returns an interface used to describe a property
 
     Registered name of the property
 
-  -  *riid=IID_IPropertyDescription* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyDescription* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIPropertySystem](#pyipropertysystem).GetPropertyDescriptionListFromString
+## [PyIPropertySystem](#pyipropertysystem)\.GetPropertyDescriptionListFromString
 
-[PyIPropertyDescriptionList](#pyipropertydescriptionlist)= __GetPropertyDescriptionListFromString( *PropList*  *, riid* __ )
+[PyIPropertyDescriptionList](#pyipropertydescriptionlist)\= **GetPropertyDescriptionListFromString\( *PropList*  *, riid* ** \)
 Retrieves property descriptions from a string of property names
 
 #### Parameters
@@ -119,33 +119,33 @@ Retrieves property descriptions from a string of property names
 
     String containing a list of properties and flags
 
-  -  *riid=IPropertyDescriptionList* :[PyIID](#pyiid)
+  -  *riid\=IPropertyDescriptionList* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIPropertySystem](#pyipropertysystem).RefreshPropertySchema
+## [PyIPropertySystem](#pyipropertysystem)\.RefreshPropertySchema
 
- __RefreshPropertySchema(__ )
+ **RefreshPropertySchema\(** \)
 Not currently implemented by the OS
 
 #### Comments
 Not currently implemented, according to MSDN
 
-## [PyIPropertySystem](#pyipropertysystem).RegisterPropertySchema
+## [PyIPropertySystem](#pyipropertysystem)\.RegisterPropertySchema
 
- __RegisterPropertySchema( *Path* __ )
-Registers a set of properties defined in a .propdesc file
+ **RegisterPropertySchema\( *Path* ** \)
+Registers a set of properties defined in a \.propdesc file
 
 #### Parameters
 
 
   -  *Path* : str
 
-    Path to a property schema XML file (.propdesc)
+    Path to a property schema XML file \(\.propdesc\)
 
-## [PyIPropertySystem](#pyipropertysystem).UnregisterPropertySchema
+## [PyIPropertySystem](#pyipropertysystem)\.UnregisterPropertySchema
 
- __UnregisterPropertySchema( *Path* __ )
+ **UnregisterPropertySchema\( *Path* ** \)
 Removes a set of registered properties
 
 #### Parameters
@@ -153,4 +153,4 @@ Removes a set of registered properties
 
   -  *Path* : str
 
-    Path to a property schema XML file (.propdesc)
+    Path to a property schema XML file \(\.propdesc\)

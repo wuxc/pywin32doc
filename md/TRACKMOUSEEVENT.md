@@ -2,4 +2,4 @@
 
 ## TRACKMOUSEEVENT Object
 
-A tuple of (dwFlags, hwndTrack, dwHoverTime)
+A tuple of \(dwFlags, hwndTrack, dwHoverTime\)

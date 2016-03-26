@@ -17,54 +17,54 @@ A Python interface to IRunningObjectTable
 
   - [IsRunning](PyIRunningObjectTable.md#pyirunningobjecttableisrunning)
 
-    Checks whether an object is running.&nbsp;
+    Checks whether an object is running\.&nbsp;
 
   - [GetObject](PyIRunningObjectTable.md#pyirunningobjecttablegetobject)
 
-    Checks whether an object is running.&nbsp;
+    Checks whether an object is running\.&nbsp;
 
   - [EnumRunning](PyIRunningObjectTable.md#pyirunningobjecttableenumrunning)
 
-    Creates an enumerator that can list the monikers of all the objects currently registered in the Running Object Table (ROT).&nbsp;
+    Creates an enumerator that can list the monikers of all the objects currently registered in the Running Object Table \(ROT\)\.&nbsp;
 
 
-## [PyIRunningObjectTable](#pyirunningobjecttable).EnumRunning
+## [PyIRunningObjectTable](#pyirunningobjecttable)\.EnumRunning
 
-[PyIEnumMoniker](#pyienummoniker)= __EnumRunning(__ )
-Creates an enumerator that can list the monikers of all the objects currently registered in the Running Object Table (ROT).
+[PyIEnumMoniker](#pyienummoniker)\= **EnumRunning\(** \)
+Creates an enumerator that can list the monikers of all the objects currently registered in the Running Object Table \(ROT\)\.
 
-## [PyIRunningObjectTable](#pyirunningobjecttable).GetObject
+## [PyIRunningObjectTable](#pyirunningobjecttable)\.GetObject
 
-[PyIUnknown](#pyiunknown)= __GetObject( *objectName* __ )
-Checks whether an object is running.
-
-#### Parameters
-
-
-  -  *objectName* :[PyIMoniker](#pyimoniker)
-
-    The[PyIMoniker](#pyimoniker)interface on the moniker to search for in the Running Object Table.
-
-## [PyIRunningObjectTable](#pyirunningobjecttable).IsRunning
-
-int = __IsRunning( *objectName* __ )
-Checks whether an object is running.
+[PyIUnknown](#pyiunknown)\= **GetObject\( *objectName* ** \)
+Checks whether an object is running\.
 
 #### Parameters
 
 
   -  *objectName* :[PyIMoniker](#pyimoniker)
 
-    The[PyIMoniker](#pyimoniker)interface on the moniker to search for in the Running Object Table.
+    The[PyIMoniker](#pyimoniker)interface on the moniker to search for in the Running Object Table\.
 
-## [PyIRunningObjectTable](#pyirunningobjecttable).Register
+## [PyIRunningObjectTable](#pyirunningobjecttable)\.IsRunning
 
-int = __Register(__ )
-Registers an object and its identifying moniker in the Running Object Table (ROT).
+int \= **IsRunning\( *objectName* ** \)
+Checks whether an object is running\.
 
-## [PyIRunningObjectTable](#pyirunningobjecttable).Revoke
+#### Parameters
 
-int = __Revoke(__ )
+
+  -  *objectName* :[PyIMoniker](#pyimoniker)
+
+    The[PyIMoniker](#pyimoniker)interface on the moniker to search for in the Running Object Table\.
+
+## [PyIRunningObjectTable](#pyirunningobjecttable)\.Register
+
+int \= **Register\(** \)
+Registers an object and its identifying moniker in the Running Object Table \(ROT\)\.
+
+## [PyIRunningObjectTable](#pyirunningobjecttable)\.Revoke
+
+int \= **Revoke\(** \)
 Removes from the Running Object Table 
 
-(ROT) an entry that was previously registered by a call to[PyIRunningObjectTable::Register](PyIRunningObjectTable.md#pyirunningobjecttableregister).
+\(ROT\) an entry that was previously registered by a call to[PyIRunningObjectTable::Register](PyIRunningObjectTable.md#pyirunningobjecttableregister)\.

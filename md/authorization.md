@@ -1,8 +1,8 @@
 # authorization
 
-## [authorization](#authorization).EditSecurity
+## [authorization](#authorization)\.EditSecurity
 
- __EditSecurity( *hwndOwner*  *, psi* __ )
+ **EditSecurity\( *hwndOwner*  *, psi* ** \)
 Creates a security editor dialog
 
 #### Parameters

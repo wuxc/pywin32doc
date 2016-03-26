@@ -9,44 +9,44 @@ An enumerator interface to list strings
 
   - [Next](PyIEnumString.md#pyienumstringnext)
 
-    Retrieves a specified number of items in the enumeration sequence.&nbsp;
+    Retrieves a specified number of items in the enumeration sequence\.&nbsp;
 
   - [Skip](PyIEnumString.md#pyienumstringskip)
 
-    Skips over the next specified elementes.&nbsp;
+    Skips over the next specified elementes\.&nbsp;
 
   - [Reset](PyIEnumString.md#pyienumstringreset)
 
-    Resets the enumeration sequence to the beginning.&nbsp;
+    Resets the enumeration sequence to the beginning\.&nbsp;
 
   - [Clone](PyIEnumString.md#pyienumstringclone)
 
-    Creates another enumerator that contains the same enumeration state as the current one.&nbsp;
+    Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
 
-## [PyIEnumString](#pyienumstring).Clone
+## [PyIEnumString](#pyienumstring)\.Clone
 
-[PyIEnumString](#pyienumstring)= __Clone(__ )
+[PyIEnumString](#pyienumstring)\= **Clone\(** \)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumString](#pyienumstring).Next
+## [PyIEnumString](#pyienumstring)\.Next
 
-([PyUnicode](#pyunicode),...) = __Next( *num* __ )
-Retrieves a specified number of items in the enumeration sequence.
+\([PyUnicode](#pyunicode),\.\.\.\) \= **Next\( *num* ** \)
+Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num=1* : int
+  -  *num\=1* : int
 
-    Number of items to retrieve.
+    Number of items to retrieve\.
 
-## [PyIEnumString](#pyienumstring).Reset
+## [PyIEnumString](#pyienumstring)\.Reset
 
- __Reset(__ )
-Resets the enumeration sequence to the beginning.
+ **Reset\(** \)
+Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumString](#pyienumstring).Skip
+## [PyIEnumString](#pyienumstring)\.Skip
 
- __Skip(__ )
-Skips over the next specified elementes.
+ **Skip\(** \)
+Skips over the next specified elementes\.

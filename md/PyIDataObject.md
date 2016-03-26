@@ -7,7 +7,7 @@ Used to transfer data in various formats throughout the shell
 #### Comments
 Can be enumerated to return a series of[PyFORMATETC](#pyformatetc)describing the formats 
 
-that the object can render.
+that the object can render\.
 
 #### Methods
 
@@ -30,11 +30,11 @@ that the object can render.
 
   - [SetData](PyIDataObject.md#pyidataobjectsetdata)
 
-    Sets the data that the object will return.&nbsp;
+    Sets the data that the object will return\.&nbsp;
 
   - [EnumFormatEtc](PyIDataObject.md#pyidataobjectenumformatetc)
 
-    Returns an enumerator to list the data formats that the object supports.&nbsp;
+    Returns an enumerator to list the data formats that the object supports\.&nbsp;
 
   - [DAdvise](PyIDataObject.md#pyidataobjectdadvise)
 
@@ -42,15 +42,15 @@ that the object can render.
 
   - [DUnadvise](PyIDataObject.md#pyidataobjectdunadvise)
 
-    Disconnects a notification sink.&nbsp;
+    Disconnects a notification sink\.&nbsp;
 
   - [EnumDAdvise](PyIDataObject.md#pyidataobjectenumdadvise)
 
-    Creates an enumerator to list connected notification sinks.&nbsp;
+    Creates an enumerator to list connected notification sinks\.&nbsp;
 
-## [PyIDataObject](#pyidataobject).DAdvise
+## [PyIDataObject](#pyidataobject)\.DAdvise
 
-int = __DAdvise( *pformatetc*  *, advf*  *, pAdvSink* __ )
+int \= **DAdvise\( *pformatetc*  *, advf*  *, pAdvSink* ** \)
 Connects the object to an interface that will receive notifications when its data changes
 
 #### Parameters
@@ -58,51 +58,51 @@ Connects the object to an interface that will receive notifications when its dat
 
   -  *pformatetc* :[PyFORMATETC](#pyformatetc)
 
-    Defines the type of data for which the sink will receive notifications.
+    Defines the type of data for which the sink will receive notifications\.
 
   -  *advf* : int
 
-    Combination of values from ADVF enum. (which currently do not appear in any of the constants modules!)
+    Combination of values from ADVF enum\. \(which currently do not appear in any of the constants modules\!\)
 
-  -  *pAdvSink* : __PyIAdviseSink__ 
+  -  *pAdvSink* : **PyIAdviseSink** 
 
-    Currently this interface is not wrapped.
+    Currently this interface is not wrapped\.
 
 #### Return Value
 Returns a unique number that is used to identify the connection
 
-## [PyIDataObject](#pyidataobject).DUnadvise
+## [PyIDataObject](#pyidataobject)\.DUnadvise
 
- __DUnadvise( *dwConnection* __ )
-Disconnects a notification sink.
+ **DUnadvise\( *dwConnection* ** \)
+Disconnects a notification sink\.
 
 #### Parameters
 
 
   -  *dwConnection* : int
 
-    Identifier of the connection as returned by DAdvise.
+    Identifier of the connection as returned by DAdvise\.
 
-## [PyIDataObject](#pyidataobject).EnumDAdvise
+## [PyIDataObject](#pyidataobject)\.EnumDAdvise
 
- __PyIEnumSTATDATA__ = __EnumDAdvise(__ )
-Creates an enumerator to list connected notification sinks.
+ **PyIEnumSTATDATA** \= **EnumDAdvise\(** \)
+Creates an enumerator to list connected notification sinks\.
 
-## [PyIDataObject](#pyidataobject).EnumFormatEtc
+## [PyIDataObject](#pyidataobject)\.EnumFormatEtc
 
-[PyIEnumFORMATETC](#pyienumformatetc)= __EnumFormatEtc( *dwDirection* __ )
-Returns an enumerator to list the data formats that the object supports.
+[PyIEnumFORMATETC](#pyienumformatetc)\= **EnumFormatEtc\( *dwDirection* ** \)
+Returns an enumerator to list the data formats that the object supports\.
 
 #### Parameters
 
 
-  -  *dwDirection=DATADIR_GET* : int
+  -  *dwDirection\=DATADIR\_GET* : int
 
-    Indicates whether to return formats that can be queried or set (pythoncom.DATADIR_GET or DATADIR_SET)
+    Indicates whether to return formats that can be queried or set \(pythoncom\.DATADIR\_GET or DATADIR\_SET\)
 
-## [PyIDataObject](#pyidataobject).GetCanonicalFormatEtc
+## [PyIDataObject](#pyidataobject)\.GetCanonicalFormatEtc
 
-[PyFORMATETC](#pyformatetc)= __GetCanonicalFormatEtc( *pformatectIn* __ )
+[PyFORMATETC](#pyformatetc)\= **GetCanonicalFormatEtc\( *pformatectIn* ** \)
 Transforms a FORMATECT data description into a general format that the object supports
 
 #### Parameters
@@ -112,9 +112,9 @@ Transforms a FORMATECT data description into a general format that the object su
 
     Tuple representing a FORMATETC struct describing how the data should be returned
 
-## [PyIDataObject](#pyidataobject).GetData
+## [PyIDataObject](#pyidataobject)\.GetData
 
-[PySTGMEDIUM](#pystgmedium)= __GetData( *pformatetcIn* __ )
+[PySTGMEDIUM](#pystgmedium)\= **GetData\( *pformatetcIn* ** \)
 Retrieves data from the object in specified format
 
 #### Parameters
@@ -124,9 +124,9 @@ Retrieves data from the object in specified format
 
     Tuple representing a FORMATETC struct describing how the data should be returned
 
-## [PyIDataObject](#pyidataobject).GetDataHere
+## [PyIDataObject](#pyidataobject)\.GetDataHere
 
-[PySTGMEDIUM](#pystgmedium)= __GetDataHere( *pformatetcIn* __ )
+[PySTGMEDIUM](#pystgmedium)\= **GetDataHere\( *pformatetcIn* ** \)
 Retunrs a copy of the object's data in specified format
 
 #### Parameters
@@ -136,10 +136,10 @@ Retunrs a copy of the object's data in specified format
 
     Tuple representing a FORMATETC struct describing how the data should be returned
 
-## [PyIDataObject](#pyidataobject).QueryGetData
+## [PyIDataObject](#pyidataobject)\.QueryGetData
 
- __QueryGetData( *pformatetc* __ )
-Checks if the objects supports returning data in a particular format.
+ **QueryGetData\( *pformatetc* ** \)
+Checks if the objects supports returning data in a particular format\.
 
 #### Parameters
 
@@ -149,12 +149,12 @@ Checks if the objects supports returning data in a particular format.
     Tuple representing a FORMATETC struct describing how the data should be returned
 
 #### Return Value
-Returns None if the object supports the specified format, otherwise an error is raised.
+Returns None if the object supports the specified format, otherwise an error is raised\.
 
-## [PyIDataObject](#pyidataobject).SetData
+## [PyIDataObject](#pyidataobject)\.SetData
 
- __SetData( *pformatetc*  *, pmedium*  *, fRelease* __ )
-Sets the data that the object will return.
+ **SetData\( *pformatetc*  *, pmedium*  *, fRelease* ** \)
+Sets the data that the object will return\.
 
 #### Parameters
 
@@ -169,4 +169,4 @@ Sets the data that the object will return.
 
   -  *fRelease* : boolean
 
-    If True, transfers ownership of the data to the object.  If False, caller is responsible for releasing the STGMEDIUM.
+    If True, transfers ownership of the data to the object\.  If False, caller is responsible for releasing the STGMEDIUM\.

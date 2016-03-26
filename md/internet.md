@@ -19,9 +19,9 @@ A module, encapsulating the ActiveX Internet interfaces
 
     &nbsp;
 
-## [internet](#internet).CoInternetCreateSecurityManager
+## [internet](#internet)\.CoInternetCreateSecurityManager
 
-[PyIInternetSecurityManager](#pyiinternetsecuritymanager)= __CoInternetCreateSecurityManager( *reserved* __ )
+[PyIInternetSecurityManager](#pyiinternetsecuritymanager)\= **CoInternetCreateSecurityManager\( *reserved* ** \)
 
 
 #### Parameters
@@ -31,9 +31,9 @@ A module, encapsulating the ActiveX Internet interfaces
 
     
 
-## [internet](#internet).CoInternetIsFeatureEnabled
+## [internet](#internet)\.CoInternetIsFeatureEnabled
 
-bool = __CoInternetIsFeatureEnabled( *flags* __ )
+bool \= **CoInternetIsFeatureEnabled\( *flags* ** \)
 
 
 #### Parameters
@@ -44,13 +44,13 @@ bool = __CoInternetIsFeatureEnabled( *flags* __ )
     
 
 #### Return Value
-Returns true for S_OK, False for other non-error hresults, or 
+Returns true for S\_OK, False for other non-error hresults, or 
 
-raises a com_error.
+raises a com\_error\.
 
-## [internet](#internet).CoInternetSetFeatureEnabled
+## [internet](#internet)\.CoInternetSetFeatureEnabled
 
-int = __CoInternetSetFeatureEnabled( *flags*  *, enable* __ )
+int \= **CoInternetSetFeatureEnabled\( *flags*  *, enable* ** \)
 
 
 #### Parameters
@@ -64,145 +64,145 @@ int = __CoInternetSetFeatureEnabled( *flags*  *, enable* __ )
 
     
 
-## FEATURE_ADDON_MANAGEMENT
- __const internet.FEATURE_ADDON_MANAGEMENT;__ 
+## FEATURE\_ADDON\_MANAGEMENT
+ **const internet\.FEATURE\_ADDON\_MANAGEMENT;** 
 
 
-## FEATURE_BEHAVIORS
- __const internet.FEATURE_BEHAVIORS;__ 
+## FEATURE\_BEHAVIORS
+ **const internet\.FEATURE\_BEHAVIORS;** 
 
 
-## FEATURE_DISABLE_MK_PROTOCOL
- __const internet.FEATURE_DISABLE_MK_PROTOCOL;__ 
+## FEATURE\_DISABLE\_MK\_PROTOCOL
+ **const internet\.FEATURE\_DISABLE\_MK\_PROTOCOL;** 
 
 
-## FEATURE_ENTRY_COUNT
- __const internet.FEATURE_ENTRY_COUNT;__ 
+## FEATURE\_ENTRY\_COUNT
+ **const internet\.FEATURE\_ENTRY\_COUNT;** 
 
 
-## FEATURE_GET_URL_DOM_FILEPATH_UNENCODED
- __const internet.FEATURE_GET_URL_DOM_FILEPATH_UNENCODED;__ 
+## FEATURE\_GET\_URL\_DOM\_FILEPATH\_UNENCODED
+ **const internet\.FEATURE\_GET\_URL\_DOM\_FILEPATH\_UNENCODED;** 
 
 
-## FEATURE_HTTP_USERNAME_PASSWORD_DISABLE
- __const internet.FEATURE_HTTP_USERNAME_PASSWORD_DISABLE;__ 
+## FEATURE\_HTTP\_USERNAME\_PASSWORD\_DISABLE
+ **const internet\.FEATURE\_HTTP\_USERNAME\_PASSWORD\_DISABLE;** 
 
 
-## FEATURE_LOCALMACHINE_LOCKDOWN
- __const internet.FEATURE_LOCALMACHINE_LOCKDOWN;__ 
+## FEATURE\_LOCALMACHINE\_LOCKDOWN
+ **const internet\.FEATURE\_LOCALMACHINE\_LOCKDOWN;** 
 
 
-## FEATURE_MIME_HANDLING
- __const internet.FEATURE_MIME_HANDLING;__ 
+## FEATURE\_MIME\_HANDLING
+ **const internet\.FEATURE\_MIME\_HANDLING;** 
 
 
-## FEATURE_MIME_SNIFFING
- __const internet.FEATURE_MIME_SNIFFING;__ 
+## FEATURE\_MIME\_SNIFFING
+ **const internet\.FEATURE\_MIME\_SNIFFING;** 
 
 
-## FEATURE_OBJECT_CACHING
- __const internet.FEATURE_OBJECT_CACHING;__ 
+## FEATURE\_OBJECT\_CACHING
+ **const internet\.FEATURE\_OBJECT\_CACHING;** 
 
 
-## FEATURE_PROTOCOL_LOCKDOWN
- __const internet.FEATURE_PROTOCOL_LOCKDOWN;__ 
+## FEATURE\_PROTOCOL\_LOCKDOWN
+ **const internet\.FEATURE\_PROTOCOL\_LOCKDOWN;** 
 
 
-## FEATURE_RESTRICT_ACTIVEXINSTALL
- __const internet.FEATURE_RESTRICT_ACTIVEXINSTALL;__ 
+## FEATURE\_RESTRICT\_ACTIVEXINSTALL
+ **const internet\.FEATURE\_RESTRICT\_ACTIVEXINSTALL;** 
 
 
-## FEATURE_RESTRICT_FILEDOWNLOAD
- __const internet.FEATURE_RESTRICT_FILEDOWNLOAD;__ 
+## FEATURE\_RESTRICT\_FILEDOWNLOAD
+ **const internet\.FEATURE\_RESTRICT\_FILEDOWNLOAD;** 
 
 
-## FEATURE_SAFE_BINDTOOBJECT
- __const internet.FEATURE_SAFE_BINDTOOBJECT;__ 
+## FEATURE\_SAFE\_BINDTOOBJECT
+ **const internet\.FEATURE\_SAFE\_BINDTOOBJECT;** 
 
 
-## FEATURE_SECURITYBAND
- __const internet.FEATURE_SECURITYBAND;__ 
+## FEATURE\_SECURITYBAND
+ **const internet\.FEATURE\_SECURITYBAND;** 
 
 
-## FEATURE_UNC_SAVEDFILECHECK
- __const internet.FEATURE_UNC_SAVEDFILECHECK;__ 
+## FEATURE\_UNC\_SAVEDFILECHECK
+ **const internet\.FEATURE\_UNC\_SAVEDFILECHECK;** 
 
 
-## FEATURE_VALIDATE_NAVIGATE_URL
- __const internet.FEATURE_VALIDATE_NAVIGATE_URL;__ 
+## FEATURE\_VALIDATE\_NAVIGATE\_URL
+ **const internet\.FEATURE\_VALIDATE\_NAVIGATE\_URL;** 
 
 
-## FEATURE_WEBOC_POPUPMANAGEMENT
- __const internet.FEATURE_WEBOC_POPUPMANAGEMENT;__ 
+## FEATURE\_WEBOC\_POPUPMANAGEMENT
+ **const internet\.FEATURE\_WEBOC\_POPUPMANAGEMENT;** 
 
 
-## FEATURE_WINDOW_RESTRICTIONS
- __const internet.FEATURE_WINDOW_RESTRICTIONS;__ 
+## FEATURE\_WINDOW\_RESTRICTIONS
+ **const internet\.FEATURE\_WINDOW\_RESTRICTIONS;** 
 
 
-## FEATURE_ZONE_ELEVATION
- __const internet.FEATURE_ZONE_ELEVATION;__ 
+## FEATURE\_ZONE\_ELEVATION
+ **const internet\.FEATURE\_ZONE\_ELEVATION;** 
 
 
-## GET_FEATURE_FROM_PROCESS
- __const internet.GET_FEATURE_FROM_PROCESS;__ 
+## GET\_FEATURE\_FROM\_PROCESS
+ **const internet\.GET\_FEATURE\_FROM\_PROCESS;** 
 
 
-## GET_FEATURE_FROM_REGISTRY
- __const internet.GET_FEATURE_FROM_REGISTRY;__ 
+## GET\_FEATURE\_FROM\_REGISTRY
+ **const internet\.GET\_FEATURE\_FROM\_REGISTRY;** 
 
 
-## GET_FEATURE_FROM_THREAD
- __const internet.GET_FEATURE_FROM_THREAD;__ 
+## GET\_FEATURE\_FROM\_THREAD
+ **const internet\.GET\_FEATURE\_FROM\_THREAD;** 
 
 
-## GET_FEATURE_FROM_THREAD_INTERNET
- __const internet.GET_FEATURE_FROM_THREAD_INTERNET;__ 
+## GET\_FEATURE\_FROM\_THREAD\_INTERNET
+ **const internet\.GET\_FEATURE\_FROM\_THREAD\_INTERNET;** 
 
 
-## GET_FEATURE_FROM_THREAD_INTRANET
- __const internet.GET_FEATURE_FROM_THREAD_INTRANET;__ 
+## GET\_FEATURE\_FROM\_THREAD\_INTRANET
+ **const internet\.GET\_FEATURE\_FROM\_THREAD\_INTRANET;** 
 
 
-## GET_FEATURE_FROM_THREAD_LOCALMACHINE
- __const internet.GET_FEATURE_FROM_THREAD_LOCALMACHINE;__ 
+## GET\_FEATURE\_FROM\_THREAD\_LOCALMACHINE
+ **const internet\.GET\_FEATURE\_FROM\_THREAD\_LOCALMACHINE;** 
 
 
-## GET_FEATURE_FROM_THREAD_RESTRICTED
- __const internet.GET_FEATURE_FROM_THREAD_RESTRICTED;__ 
+## GET\_FEATURE\_FROM\_THREAD\_RESTRICTED
+ **const internet\.GET\_FEATURE\_FROM\_THREAD\_RESTRICTED;** 
 
 
-## GET_FEATURE_FROM_THREAD_TRUSTED
- __const internet.GET_FEATURE_FROM_THREAD_TRUSTED;__ 
+## GET\_FEATURE\_FROM\_THREAD\_TRUSTED
+ **const internet\.GET\_FEATURE\_FROM\_THREAD\_TRUSTED;** 
 
 
-## SET_FEATURE_IN_REGISTRY
- __const internet.SET_FEATURE_IN_REGISTRY;__ 
+## SET\_FEATURE\_IN\_REGISTRY
+ **const internet\.SET\_FEATURE\_IN\_REGISTRY;** 
 
 
-## SET_FEATURE_ON_PROCESS
- __const internet.SET_FEATURE_ON_PROCESS;__ 
+## SET\_FEATURE\_ON\_PROCESS
+ **const internet\.SET\_FEATURE\_ON\_PROCESS;** 
 
 
-## SET_FEATURE_ON_THREAD
- __const internet.SET_FEATURE_ON_THREAD;__ 
+## SET\_FEATURE\_ON\_THREAD
+ **const internet\.SET\_FEATURE\_ON\_THREAD;** 
 
 
-## SET_FEATURE_ON_THREAD_INTERNET
- __const internet.SET_FEATURE_ON_THREAD_INTERNET;__ 
+## SET\_FEATURE\_ON\_THREAD\_INTERNET
+ **const internet\.SET\_FEATURE\_ON\_THREAD\_INTERNET;** 
 
 
-## SET_FEATURE_ON_THREAD_INTRANET
- __const internet.SET_FEATURE_ON_THREAD_INTRANET;__ 
+## SET\_FEATURE\_ON\_THREAD\_INTRANET
+ **const internet\.SET\_FEATURE\_ON\_THREAD\_INTRANET;** 
 
 
-## SET_FEATURE_ON_THREAD_LOCALMACHINE
- __const internet.SET_FEATURE_ON_THREAD_LOCALMACHINE;__ 
+## SET\_FEATURE\_ON\_THREAD\_LOCALMACHINE
+ **const internet\.SET\_FEATURE\_ON\_THREAD\_LOCALMACHINE;** 
 
 
-## SET_FEATURE_ON_THREAD_RESTRICTED
- __const internet.SET_FEATURE_ON_THREAD_RESTRICTED;__ 
+## SET\_FEATURE\_ON\_THREAD\_RESTRICTED
+ **const internet\.SET\_FEATURE\_ON\_THREAD\_RESTRICTED;** 
 
 
-## SET_FEATURE_ON_THREAD_TRUSTED
- __const internet.SET_FEATURE_ON_THREAD_TRUSTED;__ 
+## SET\_FEATURE\_ON\_THREAD\_TRUSTED
+ **const internet\.SET\_FEATURE\_ON\_THREAD\_TRUSTED;** 

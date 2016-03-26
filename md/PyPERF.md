@@ -1,17 +1,17 @@
 # PyPERF
 
-## PyPERF_COUNTER_DEFINITION Object
+## PyPERF\_COUNTER\_DEFINITION Object
 
-An object encapsulating a Windows NT Performance Monitor counter definition (PERF_COUNTER_DEFINITION).
+An object encapsulating a Windows NT Performance Monitor counter definition \(PERF\_COUNTER\_DEFINITION\)\.
 
 #### Comments
 Note that all the counter "set" functions will silently do nothing 
 
-if the counter does not appear in a block.  This is so the application can avoid 
+if the counter does not appear in a block\.  This is so the application can avoid 
 
-excessive tests for lack of performance monitor functionality. 
+excessive tests for lack of performance monitor functionality\. 
 
-However, the method[PyPERF_COUNTER_DEFINITION::Get](PyPERF.md#pyperfcounter_definition_get)will raise a ValueError exception in this case.
+However, the method[PyPERF\_COUNTER\_DEFINITION::Get](PyPERF.md#pyperfcounter_definition_get)will raise a ValueError exception in this case\.
 
 #### Methods
 
@@ -34,64 +34,64 @@ However, the method[PyPERF_COUNTER_DEFINITION::Get](PyPERF.md#pyperfcounter_defi
 
 #### Properties
 
-  -  __integer DefaultScale__ 
-    The default scale of the counter.
+  -  **integer DefaultScale** 
+    The default scale of the counter\.
 
-  -  __integer DetailLevel__ 
-    The detail level of the counter.
+  -  **integer DetailLevel** 
+    The detail level of the counter\.
 
-  -  __integer CounterType__ 
-    The counter type.
+  -  **integer CounterType** 
+    The counter type\.
 
-  -  __integer CounterNameTitleIndex__ 
+  -  **integer CounterNameTitleIndex** 
     
 
-  -  __integer CounterHelpTitleIndex__ 
+  -  **integer CounterHelpTitleIndex** 
     Sentinel
 
-## [PyPERF_COUNTER_DEFINITION](PyPERF.md#pyperfcounter_definition).Decrement
+## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Decrement
 
- __Decrement(__ )
+ **Decrement\(** \)
 Decrements the value of the performance counter
 
-## [PyPERF_COUNTER_DEFINITION](PyPERF.md#pyperfcounter_definition).Get
+## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Get
 
- __Get(__ )
+ **Get\(** \)
 Gets the current value of the counter
 
-## [PyPERF_COUNTER_DEFINITION](PyPERF.md#pyperfcounter_definition).Increment
+## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Increment
 
- __Increment(__ )
+ **Increment\(** \)
 Increments the value of the performance counter
 
-## [PyPERF_COUNTER_DEFINITION](PyPERF.md#pyperfcounter_definition).Set
+## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Set
 
- __Set(__ )
+ **Set\(** \)
 Sets the counter to a specific value
 
-## PyPERF_OBJECT_TYPE Object
+## PyPERF\_OBJECT\_TYPE Object
 
-A Python object, representing a PERF_OBJECT_TYPE structure
+A Python object, representing a PERF\_OBJECT\_TYPE structure
 
 #### Methods
 
 
   - [Close](PyPERF.md#pyperfobject_type_close)
 
-    Closes all counters.&nbsp;
+    Closes all counters\.&nbsp;
 
 #### Properties
 
-  -  __integer ObjectNameTitleIndex__ 
+  -  **integer ObjectNameTitleIndex** 
     
 
-  -  __integer ObjectHelpTitleIndex__ 
+  -  **integer ObjectHelpTitleIndex** 
     
 
-  -  __integer DefaultCounterIndex__ 
+  -  **integer DefaultCounterIndex** 
     
 
-## [PyPERF_OBJECT_TYPE](PyPERF.md#pyperfobject_type).Close
+## [PyPERF\_OBJECT\_TYPE](PyPERF.md#pyperfobject_type)\.Close
 
- __Close(__ )
-Closes the object.
+ **Close\(** \)
+Closes the object\.

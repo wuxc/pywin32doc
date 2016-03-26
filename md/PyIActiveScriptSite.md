@@ -39,41 +39,41 @@ An object providing the IActiveScriptSite interface
 
     &nbsp;
 
-## [PyIActiveScriptSite](#pyiactivescriptsite).GetDocVersionString
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetDocVersionString
 
-int = __GetDocVersionString(__ )
-
-
-## [PyIActiveScriptSite](#pyiactivescriptsite).GetItemInfo
-
-int = __GetItemInfo(__ )
+int \= **GetDocVersionString\(** \)
 
 
-## [PyIActiveScriptSite](#pyiactivescriptsite).GetLCID
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetItemInfo
 
-int = __GetLCID(__ )
-
-
-## [PyIActiveScriptSite](#pyiactivescriptsite).OnEnterScript
-
-int = __OnEnterScript(__ )
+int \= **GetItemInfo\(** \)
 
 
-## [PyIActiveScriptSite](#pyiactivescriptsite).OnLeaveScript
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetLCID
 
-int = __OnLeaveScript(__ )
-
-
-## [PyIActiveScriptSite](#pyiactivescriptsite).OnScriptError
-
-int = __OnScriptError(__ )
+int \= **GetLCID\(** \)
 
 
-## [PyIActiveScriptSite](#pyiactivescriptsite).OnScriptTerminate
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnEnterScript
 
-int = __OnScriptTerminate(__ )
+int \= **OnEnterScript\(** \)
 
 
-## [PyIActiveScriptSite](#pyiactivescriptsite).OnStateChange
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnLeaveScript
 
-int = __OnStateChange(__ )
+int \= **OnLeaveScript\(** \)
+
+
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnScriptError
+
+int \= **OnScriptError\(** \)
+
+
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnScriptTerminate
+
+int \= **OnScriptTerminate\(** \)
+
+
+## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnStateChange
+
+int \= **OnStateChange\(** \)

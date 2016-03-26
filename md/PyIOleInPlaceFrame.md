@@ -31,10 +31,10 @@ Description of the interface
 
     Description of TranslateAccelerator&nbsp;
 
-## [PyIOleInPlaceFrame](#pyioleinplaceframe).EnableModeless
+## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.EnableModeless
 
- __EnableModeless( *fEnable* __ )
-Description of EnableModeless.
+ **EnableModeless\( *fEnable* ** \)
+Description of EnableModeless\.
 
 #### Parameters
 
@@ -43,10 +43,10 @@ Description of EnableModeless.
 
     Description for fEnable
 
-## [PyIOleInPlaceFrame](#pyioleinplaceframe).InsertMenus
+## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.InsertMenus
 
- __InsertMenus( *hmenuShared*  *, menuWidths* __ )
-Description of InsertMenus.
+ **InsertMenus\( *hmenuShared*  *, menuWidths* ** \)
+Description of InsertMenus\.
 
 #### Parameters
 
@@ -59,10 +59,10 @@ Description of InsertMenus.
 
     
 
-## [PyIOleInPlaceFrame](#pyioleinplaceframe).RemoveMenus
+## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.RemoveMenus
 
- __RemoveMenus( *hmenuShared* __ )
-Description of RemoveMenus.
+ **RemoveMenus\( *hmenuShared* ** \)
+Description of RemoveMenus\.
 
 #### Parameters
 
@@ -71,10 +71,10 @@ Description of RemoveMenus.
 
     Description for hmenuShared
 
-## [PyIOleInPlaceFrame](#pyioleinplaceframe).SetMenu
+## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.SetMenu
 
- __SetMenu( *hmenuShared*  *, holemenu*  *, hwndActiveObject* __ )
-Description of SetMenu.
+ **SetMenu\( *hmenuShared*  *, holemenu*  *, hwndActiveObject* ** \)
+Description of SetMenu\.
 
 #### Parameters
 
@@ -91,22 +91,22 @@ Description of SetMenu.
 
     Description for hwndActiveObject
 
-## [PyIOleInPlaceFrame](#pyioleinplaceframe).SetStatusText
+## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.SetStatusText
 
- __SetStatusText( *pszStatusText* __ )
-Description of SetStatusText.
+ **SetStatusText\( *pszStatusText* ** \)
+Description of SetStatusText\.
 
 #### Parameters
 
 
-  -  *pszStatusText* : __unicode__ 
+  -  *pszStatusText* : **unicode** 
 
     Description for pszStatusText
 
-## [PyIOleInPlaceFrame](#pyioleinplaceframe).TranslateAccelerator
+## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.TranslateAccelerator
 
- __TranslateAccelerator( *lpmsg*  *, wID* __ )
-Description of TranslateAccelerator.
+ **TranslateAccelerator\( *lpmsg*  *, wID* ** \)
+Description of TranslateAccelerator\.
 
 #### Parameters
 

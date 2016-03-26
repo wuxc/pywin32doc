@@ -11,10 +11,10 @@ Description of the interface
 
     Description of StartDebugSession&nbsp;
 
-## [PyIDebugSessionProvider](#pyidebugsessionprovider).StartDebugSession
+## [PyIDebugSessionProvider](#pyidebugsessionprovider)\.StartDebugSession
 
- __StartDebugSession( *pda* __ )
-Description of StartDebugSession.
+ **StartDebugSession\( *pda* ** \)
+Description of StartDebugSession\.
 
 #### Parameters
 

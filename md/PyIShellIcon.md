@@ -11,10 +11,10 @@ Description of the interface
 
     Description of GetIconOf&nbsp;
 
-## [PyIShellIcon](#pyishellicon).GetIconOf
+## [PyIShellIcon](#pyishellicon)\.GetIconOf
 
- __GetIconOf( *pidl* __ )
-Description of GetIconOf.
+ **GetIconOf\( *pidl* ** \)
+Description of GetIconOf\.
 
 #### Parameters
 

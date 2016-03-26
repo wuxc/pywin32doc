@@ -31,10 +31,10 @@ Description of the interface
 
     Description of Resume&nbsp;
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot).Abort
+## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Abort
 
- __Abort( *hrReason*  *, dwOptions* __ )
-Description of Abort.
+ **Abort\( *hrReason*  *, dwOptions* ** \)
+Description of Abort\.
 
 #### Parameters
 
@@ -47,25 +47,25 @@ Description of Abort.
 
     Description for dwOptions
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot).Continue
+## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Continue
 
- __Continue(__ )
-Description of Continue.
+ **Continue\(** \)
+Description of Continue\.
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot).Resume
+## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Resume
 
- __Resume(__ )
-Description of Resume.
+ **Resume\(** \)
+Description of Resume\.
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot).Start
+## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Start
 
- __Start( *szUrl*  *, pOIProtSink*  *, pOIBindInfo*  *, grfPI*  *, dwReserved* __ )
-Description of Start.
+ **Start\( *szUrl*  *, pOIProtSink*  *, pOIBindInfo*  *, grfPI*  *, dwReserved* ** \)
+Description of Start\.
 
 #### Parameters
 
 
-  -  *szUrl* : __unicode__ 
+  -  *szUrl* : **unicode** 
 
     Description for szUrl
 
@@ -85,15 +85,15 @@ Description of Start.
 
     Description for dwReserved
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot).Suspend
+## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Suspend
 
- __Suspend(__ )
-Description of Suspend.
+ **Suspend\(** \)
+Description of Suspend\.
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot).Terminate
+## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Terminate
 
- __Terminate( *dwOptions* __ )
-Description of Terminate.
+ **Terminate\( *dwOptions* ** \)
+Description of Terminate\.
 
 #### Parameters
 

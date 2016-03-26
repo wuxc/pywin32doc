@@ -9,10 +9,10 @@ A Python interface to IProvideClassInfo
 
   - [GetClassInfo](PyIProvideClassInfo.md#pyiprovideclassinfogetclassinfo)
 
-    Gets information about the CO_CLASS.&nbsp;
+    Gets information about the CO\_CLASS\.&nbsp;
 
 
-## [PyIProvideClassInfo](#pyiprovideclassinfo).GetClassInfo
+## [PyIProvideClassInfo](#pyiprovideclassinfo)\.GetClassInfo
 
-[PyITypeInfo](#pyitypeinfo)= __GetClassInfo(__ )
-Gets information about the CO_CLASS.
+[PyITypeInfo](#pyitypeinfo)\= **GetClassInfo\(** \)
+Gets information about the CO\_CLASS\.

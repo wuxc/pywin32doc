@@ -2,53 +2,53 @@
 
 ## PyCRgn Object
 
-An object encapsulating an MFC PyCRgn class.
+An object encapsulating an MFC PyCRgn class\.
 
-## [PyCRgn](#pycrgn).CombineRgn
+## [PyCRgn](#pycrgn)\.CombineRgn
 
-int = __CombineRgn(__ )
-Creates a new GDI region by combining two existing regions. The regions are combined as specified by nCombineMode 
+int \= **CombineRgn\(** \)
+Creates a new GDI region by combining two existing regions\. The regions are combined as specified by nCombineMode 
 
-Return Values: success or failure flag (BOOL)
+Return Values: success or failure flag \(BOOL\)
 
-## [PyCRgn](#pycrgn).CopyRgn
+## [PyCRgn](#pycrgn)\.CopyRgn
 
-int = __CopyRgn(__ )
+int \= **CopyRgn\(** \)
 Copies the region defined by pRgnSrc into the CRgn object 
 
-Return Values: success or failure flag (BOOL)
+Return Values: success or failure flag \(BOOL\)
 
-## [PyCRgn](#pycrgn).CreateEllipticRgn
+## [PyCRgn](#pycrgn)\.CreateEllipticRgn
 
-int = __CreateEllipticRgn(__ )
+int \= **CreateEllipticRgn\(** \)
 Initializes a region to an ellipse 
 
-Return Values: success or failure flag (BOOL)
+Return Values: success or failure flag \(BOOL\)
 
-## [PyCRgn](#pycrgn).CreateRectRgn
+## [PyCRgn](#pycrgn)\.CreateRectRgn
 
-int = __CreateRectRgn(__ )
+int \= **CreateRectRgn\(** \)
 Initializes a region to a rectangle 
 
-Return Values: success or failure flag (BOOL)
+Return Values: success or failure flag \(BOOL\)
 
-## [PyCRgn](#pycrgn).DeleteObject
+## [PyCRgn](#pycrgn)\.DeleteObject
 
-int = __DeleteObject(__ )
+int \= **DeleteObject\(** \)
 Deletes the attached Windows GDI Rgn object from memory by freeing all system storage associated with the Windows GDI object 
 
 Return Values: None
 
-## [PyCRgn](#pycrgn).GetRgnBox
+## [PyCRgn](#pycrgn)\.GetRgnBox
 
-int = __GetRgnBox(__ )
+int \= **GetRgnBox\(** \)
 Retrieves the coordinates of the bounding rectangle of the CRgn object 
 
-Return Values: the bounding rectangle as a tuple (l,t,r,b)
+Return Values: the bounding rectangle as a tuple \(l,t,r,b\)
 
-## [PyCRgn](#pycrgn).GetSafeHandle
+## [PyCRgn](#pycrgn)\.GetSafeHandle
 
-int = __GetSafeHandle(__ )
+int \= **GetSafeHandle\(** \)
 A HANDLE to the attached Windows GDI object; otherwise NULL if no object is attached 
 
 Return Values: the handle of the CRgn object

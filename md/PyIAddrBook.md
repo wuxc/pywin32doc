@@ -2,7 +2,7 @@
 
 ## PyIAddrBook Object
 
-An COM interface to MAPI's IAddrBook interface.
+An COM interface to MAPI's IAddrBook interface\.
 Derived from[PyIMAPIProp](#pyimapiprop)
 
 #### Methods
@@ -10,19 +10,19 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
   - [ResolveName](PyIAddrBook.md#pyiaddrbookresolvename)
 
-    Performs name resolution, assigning entry identifiers to recipients in a recipient list.&nbsp;
+    Performs name resolution, assigning entry identifiers to recipients in a recipient list\.&nbsp;
 
   - [OpenEntry](PyIAddrBook.md#pyiaddrbookopenentry)
 
-    Opens a folder or message and returns an interface object for further access.&nbsp;
+    Opens a folder or message and returns an interface object for further access\.&nbsp;
 
   - [CompareEntryIDs](PyIAddrBook.md#pyiaddrbookcompareentryids)
 
     Compares two entry identifiers belonging to a particular address book provider to determine if they refer to the same address book object&nbsp;
 
-## [PyIAddrBook](#pyiaddrbook).CompareEntryIDs
+## [PyIAddrBook](#pyiaddrbook)\.CompareEntryIDs
 
-int = __CompareEntryIDs( *entryId*  *, entryId*  *, flags* __ )
+int \= **CompareEntryIDs\( *entryId*  *, entryId*  *, flags* ** \)
 Compares two entry identifiers belonging to a particular address book provider to determine if they refer to the same address book object
 
 #### Parameters
@@ -36,17 +36,17 @@ Compares two entry identifiers belonging to a particular address book provider t
 
     The second entry ID to be compared
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
-    Reserved - must be zero.
+    Reserved - must be zero\.
 
 #### Return Value
-The result is set to TRUE if the two entry identifiers refer to the same object, and FALSE otherwise.
+The result is set to TRUE if the two entry identifiers refer to the same object, and FALSE otherwise\.
 
-## [PyIAddrBook](#pyiaddrbook).OpenEntry
+## [PyIAddrBook](#pyiaddrbook)\.OpenEntry
 
- __PyIInterface__ = __OpenEntry( *entryId*  *, iid*  *, flags* __ )
-Opens a folder or message and returns an interface object for further access.
+ **PyIInterface** \= **OpenEntry\( *entryId*  *, iid*  *, flags* ** \)
+Opens a folder or message and returns an interface object for further access\.
 
 #### Parameters
 
@@ -61,28 +61,28 @@ Opens a folder or message and returns an interface object for further access.
 
   -  *flags* : int
 
-    Bitmask of flags that controls how the object is opened.
+    Bitmask of flags that controls how the object is opened\.
 
-## [PyIAddrBook](#pyiaddrbook).ResolveName
+## [PyIAddrBook](#pyiaddrbook)\.ResolveName
 
- __ResolveName( *uiParm*  *, flags*  *, entryTitle*  *, ADRLIST* __ )
-Performs name resolution, assigning entry identifiers to recipients in a recipient list.
+ **ResolveName\( *uiParm*  *, flags*  *, entryTitle*  *, ADRLIST* ** \)
+Performs name resolution, assigning entry identifiers to recipients in a recipient list\.
 
 #### Parameters
 
 
   -  *uiParm* : int
 
-    hwnd of a dialogs parent.
+    hwnd of a dialogs parent\.
 
   -  *flags* : int
 
-    Bitmask of flags that controls whether a dialog box can be displayed.
+    Bitmask of flags that controls whether a dialog box can be displayed\.
 
   -  *entryTitle* : string
 
     
 
-  -  *ADRLIST* : __PyADRLIST__ 
+  -  *ADRLIST* : **PyADRLIST** 
 
-    Partial addresses to resolve.
+    Partial addresses to resolve\.

@@ -7,17 +7,17 @@ Dict representing a LOGBRUSH struct as used with[win32gui::CreateBrushIndirect](
 #### Win32 API References
 
 
-  - Search for *LOGBRUSH* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=logbrush),[google](#http://www.google.com/search?q=logbrush)or[google groups](#http://groups.google.com/groups?q=logbrush).
+  - Search for *LOGBRUSH* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=logbrush),[google](#http://www.google.com/search?q=logbrush)or[google groups](#http://groups.google.com/groups?q=logbrush)\.
 
 #### Properties
 
-  -  __int Style__ 
-    Brush style, one of win32con.BS_* values
+  -  **int Style** 
+    Brush style, one of win32con\.BS\_\* values
 
-  -  __int Color__ 
-    RGB color value.  Can also be DIB_PAL_COLORS or DIB_RGB_COLORS if Style is BS_DIBPATTERN or BS_DIBPATTERNPT=
+  -  **int Color** 
+    RGB color value\.  Can also be DIB\_PAL\_COLORS or DIB\_RGB\_COLORS if Style is BS\_DIBPATTERN or BS\_DIBPATTERNPT\=
 
-  -  __int/[PyHANDLE](#pyhandle)Hatch__ 
-    For BS_HATCH style, one of win32con.HS_*. Not used For BS_SOLID or BS_HOLLOW. 
+  -  **int/[PyHANDLE](#pyhandle)Hatch** 
+    For BS\_HATCH style, one of win32con\.HS\_\*\. Not used For BS\_SOLID or BS\_HOLLOW\. 
 
 For a pattern brush, this should be a handle to a bitmap

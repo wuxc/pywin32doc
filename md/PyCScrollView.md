@@ -2,14 +2,14 @@
 
 ## PyCScrollView Object
 
-A class which implements a generic CScrollView.  Derived from a[PyCView](#pycview)object.
+A class which implements a generic CScrollView\.  Derived from a[PyCView](#pycview)object\.
 
 #### Methods
 
 
   - [GetDeviceScrollPosition](PyCScrollView.md#pycscrollviewgetdevicescrollposition)
 
-    Return the position of the scroll bars (device units).&nbsp;
+    Return the position of the scroll bars \(device units\)\.&nbsp;
 
   - [GetDC](PyCScrollView.md#pycscrollviewgetdc)
 
@@ -17,11 +17,11 @@ A class which implements a generic CScrollView.  Derived from a[PyCView](#pycvie
 
   - [GetScrollPosition](PyCScrollView.md#pycscrollviewgetscrollposition)
 
-    Return the position of the scroll bars (logical units).&nbsp;
+    Return the position of the scroll bars \(logical units\)\.&nbsp;
 
   - [GetTotalSize](PyCScrollView.md#pycscrollviewgettotalsize)
 
-    Return the total size of the views.&nbsp;
+    Return the total size of the views\.&nbsp;
 
   - [OnCommand](PyCScrollView.md#pycscrollviewoncommand)
 
@@ -29,48 +29,48 @@ A class which implements a generic CScrollView.  Derived from a[PyCView](#pycvie
 
   - [ResizeParentToFit](PyCScrollView.md#pycscrollviewresizeparenttofit)
 
-    Call ResizeParentToFit to let the size of your view dictate the size of its frame window.&nbsp;
+    Call ResizeParentToFit to let the size of your view dictate the size of its frame window\.&nbsp;
 
   - [SetScaleToFitSize](PyCScrollView.md#pycscrollviewsetscaletofitsize)
 
-    Scales the viewport size to the current window size automatically.&nbsp;
+    Scales the viewport size to the current window size automatically\.&nbsp;
 
   - [ScrollToPosition](PyCScrollView.md#pycscrollviewscrolltoposition)
 
-    Scroll to a specified point.&nbsp;
+    Scroll to a specified point\.&nbsp;
 
   - [SetScrollSizes](PyCScrollView.md#pycscrollviewsetscrollsizes)
 
-    Set the scrolling sizes.&nbsp;
+    Set the scrolling sizes\.&nbsp;
 
   - [UpdateBars](PyCScrollView.md#pycscrollviewupdatebars)
 
-    Update the scroll bar state.&nbsp;
+    Update the scroll bar state\.&nbsp;
 
 
-## [PyCScrollView](#pycscrollview).GetDC
+## [PyCScrollView](#pycscrollview)\.GetDC
 
-[PyCDC](#pycdc)= __GetDC(__ )
-Gets the view's current DC.
+[PyCDC](#pycdc)\= **GetDC\(** \)
+Gets the view's current DC\.
 
-## [PyCScrollView](#pycscrollview).GetDeviceScrollPosition
+## [PyCScrollView](#pycscrollview)\.GetDeviceScrollPosition
 
-(x,y) = __GetDeviceScrollPosition(__ )
-Returns the positon of the scroll bars in device units.
+\(x,y\) \= **GetDeviceScrollPosition\(** \)
+Returns the positon of the scroll bars in device units\.
 
-## [PyCScrollView](#pycscrollview).GetScrollPosition
+## [PyCScrollView](#pycscrollview)\.GetScrollPosition
 
-(x,y) = __GetScrollPosition(__ )
-Returns the current position of the scroll bars (in logical units).
+\(x,y\) \= **GetScrollPosition\(** \)
+Returns the current position of the scroll bars \(in logical units\)\.
 
-## [PyCScrollView](#pycscrollview).GetTotalSize
+## [PyCScrollView](#pycscrollview)\.GetTotalSize
 
-(x,y) = __GetTotalSize(__ )
-Returns the total size of the view in logical units.
+\(x,y\) \= **GetTotalSize\(** \)
+Returns the total size of the view in logical units\.
 
-## [PyCScrollView](#pycscrollview).OnCommand
+## [PyCScrollView](#pycscrollview)\.OnCommand
 
- __OnCommand( *wparam*  *, lparam* __ )
+ **OnCommand\( *wparam*  *, lparam* ** \)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
@@ -87,69 +87,69 @@ Calls the standard Python framework OnCommand handler
 #### See Also
 
 
-  - [PyCWnd.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
+  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
 
-## [PyCScrollView.OnPrepareDC](#pycscrollview)Virtual
+## [PyCScrollView\.OnPrepareDC](#pycscrollview)Virtual
 
- __OnPrepareDC( *dc* __ )
-Called to prepare the device context for a view.
+ **OnPrepareDC\( *dc* ** \)
+Called to prepare the device context for a view\.
 
 #### Parameters
 
 
   -  *dc* :[PyCDC](#pycdc)
 
-    The DC object.
+    The DC object\.
 
 #### See Also
 
 
   - [PyCView::OnPrepareDC](PyCView.md#pycviewonpreparedc)
 
-## [PyCScrollView](#pycscrollview).ResizeParentToFit
+## [PyCScrollView](#pycscrollview)\.ResizeParentToFit
 
-tuple = __ResizeParentToFit( *bShrinkOnly* __ )
-Lets the size of a view dictate the size of its frame window.
+tuple \= **ResizeParentToFit\( *bShrinkOnly* ** \)
+Lets the size of a view dictate the size of its frame window\.
 
 #### Parameters
 
 
-  -  *bShrinkOnly=1* : int
+  -  *bShrinkOnly\=1* : int
 
-    The kind of resizing to perform. The default value, TRUE, shrinks the frame window if appropriate.
+    The kind of resizing to perform\. The default value, TRUE, shrinks the frame window if appropriate\.
 
 #### Comments
-This is recommended only for views in MDI child frame windows.
-Use ResizeParentToFit in the OnInitialUpdate handler function of your View class.
-You must ensure the parent's[PyCFrameWnd::RecalcLayout](PyCFrameWnd.md#pycframewndrecalclayout)is called before using this method.
+This is recommended only for views in MDI child frame windows\.
+Use ResizeParentToFit in the OnInitialUpdate handler function of your View class\.
+You must ensure the parent's[PyCFrameWnd::RecalcLayout](PyCFrameWnd.md#pycframewndrecalclayout)is called before using this method\.
 
-## [PyCScrollView](#pycscrollview).ScrollToPosition
+## [PyCScrollView](#pycscrollview)\.ScrollToPosition
 
- __ScrollToPosition( *position* __ )
-Scrolls to a given point in the view.
-
-#### Parameters
-
-
-  -  *position* : (x,y)
-
-    The position to scroll to.
-
-## [PyCScrollView](#pycscrollview).SetScaleToFitSize
-
- __SetScaleToFitSize( *size* __ )
-Scales the viewport size to the current window size automatically.
+ **ScrollToPosition\( *position* ** \)
+Scrolls to a given point in the view\.
 
 #### Parameters
 
 
-  -  *size* : (x,y)
+  -  *position* : \(x,y\)
 
-    The horizontal and vertical sizes to which the view is to be scaled. The scroll view's size is measured in logical units.
+    The position to scroll to\.
 
-## [PyCScrollView](#pycscrollview).SetScrollSizes
+## [PyCScrollView](#pycscrollview)\.SetScaleToFitSize
 
- __SetScrollSizes( *mapMode*  *, sizeTotal*  *, sizePage*  *, sizePage* __ )
+ **SetScaleToFitSize\( *size* ** \)
+Scales the viewport size to the current window size automatically\.
+
+#### Parameters
+
+
+  -  *size* : \(x,y\)
+
+    The horizontal and vertical sizes to which the view is to be scaled\. The scroll view's size is measured in logical units\.
+
+## [PyCScrollView](#pycscrollview)\.SetScrollSizes
+
+ **SetScrollSizes\( *mapMode*  *, sizeTotal*  *, sizePage*  *, sizePage* ** \)
 Sets the sizes of the scroll bars
 
 #### Parameters
@@ -157,21 +157,21 @@ Sets the sizes of the scroll bars
 
   -  *mapMode* : int
 
-    The mapping mode for this view.
+    The mapping mode for this view\.
 
-  -  *sizeTotal* : (x,y)
+  -  *sizeTotal* : \(x,y\)
 
-    The total size of the view.  Sizes are in logical units.  Both x and y must be greater than zero.
+    The total size of the view\.  Sizes are in logical units\.  Both x and y must be greater than zero\.
 
-  -  *sizePage=win32ui.rectDefault* : (x,y)
+  -  *sizePage\=win32ui\.rectDefault* : \(x,y\)
 
-    The number of untils to scroll in response to a page-down command.
+    The number of untils to scroll in response to a page-down command\.
 
-  -  *sizePage=win32ui.rectDefault* : (x,y)
+  -  *sizePage\=win32ui\.rectDefault* : \(x,y\)
 
-    The number of untils to scroll in response to a line-down command.
+    The number of untils to scroll in response to a line-down command\.
 
-## [PyCScrollView](#pycscrollview).UpdateBars
+## [PyCScrollView](#pycscrollview)\.UpdateBars
 
- __UpdateBars(__ )
+ **UpdateBars\(** \)
 Update the scroll bars state

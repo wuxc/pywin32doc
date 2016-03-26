@@ -27,35 +27,35 @@ Description of the interface
 
     Description of SetStateString&nbsp;
 
-## [PyIDebugApplicationThread](#pyidebugapplicationthread).QueryIsCurrentThread
+## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.QueryIsCurrentThread
 
- __QueryIsCurrentThread(__ )
-Description of QueryIsCurrentThread.
+ **QueryIsCurrentThread\(** \)
+Description of QueryIsCurrentThread\.
 
-## [PyIDebugApplicationThread](#pyidebugapplicationthread).QueryIsDebuggerThread
+## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.QueryIsDebuggerThread
 
- __QueryIsDebuggerThread(__ )
-Description of QueryIsDebuggerThread.
+ **QueryIsDebuggerThread\(** \)
+Description of QueryIsDebuggerThread\.
 
-## [PyIDebugApplicationThread](#pyidebugapplicationthread).SetDescription
+## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.SetDescription
 
- __SetDescription(__ )
-Description of SetDescription.
+ **SetDescription\(** \)
+Description of SetDescription\.
 
-## [PyIDebugApplicationThread](#pyidebugapplicationthread).SetStateString
+## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.SetStateString
 
- __SetStateString(__ )
-Description of SetStateString.
+ **SetStateString\(** \)
+Description of SetStateString\.
 
-## [PyIDebugApplicationThread](#pyidebugapplicationthread).SynchronousCallIntoThread
+## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.SynchronousCallIntoThread
 
- __SynchronousCallIntoThread( *pstcb*  *, dwParam1*  *, dwParam2*  *, dwParam3* __ )
-Description of SynchronousCallIntoThread.
+ **SynchronousCallIntoThread\( *pstcb*  *, dwParam1*  *, dwParam2*  *, dwParam3* ** \)
+Description of SynchronousCallIntoThread\.
 
 #### Parameters
 
 
-  -  *pstcb* : __PyIDebugThreadCall__ 
+  -  *pstcb* : **PyIDebugThreadCall** 
 
     Description for pstcb
 

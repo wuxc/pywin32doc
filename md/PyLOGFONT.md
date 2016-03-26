@@ -5,50 +5,50 @@
 A Python object, representing an PyLOGFONT structure
 
 #### Comments
-Typically you create a PyLOGFONT object, and set its properties. 
+Typically you create a PyLOGFONT object, and set its properties\. 
 
 The object can then be passed to any function which takes an LOGFONT object
 
 #### Properties
 
-  -  __integer lfHeight__ 
+  -  **integer lfHeight** 
     
 
-  -  __integer lfWidth__ 
+  -  **integer lfWidth** 
     
 
-  -  __integer lfEscapement__ 
+  -  **integer lfEscapement** 
     
 
-  -  __integer lfOrientation__ 
+  -  **integer lfOrientation** 
     
 
-  -  __integer lfWeight__ 
+  -  **integer lfWeight** 
     
 
-  -  __integer lfItalic__ 
+  -  **integer lfItalic** 
     
 
-  -  __integer lfUnderline__ 
+  -  **integer lfUnderline** 
     
 
-  -  __integer lfStrikeOut__ 
+  -  **integer lfStrikeOut** 
     
 
-  -  __integer lfCharSet__ 
+  -  **integer lfCharSet** 
     
 
-  -  __integer lfOutPrecision__ 
+  -  **integer lfOutPrecision** 
     
 
-  -  __integer lfClipPrecision__ 
+  -  **integer lfClipPrecision** 
     
 
-  -  __integer lfQuality__ 
+  -  **integer lfQuality** 
     
 
-  -  __integer lfPitchAndFamily__ 
+  -  **integer lfPitchAndFamily** 
     
 
-  -  __string lfFaceName__ 
+  -  **string lfFaceName** 
     Name of the typeface, at most 31 characters

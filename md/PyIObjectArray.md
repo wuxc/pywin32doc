@@ -15,9 +15,9 @@ Holds a collection of interface objects
 
     Retrieves an item  by zero-based index&nbsp;
 
-## [PyIObjectArray](#pyiobjectarray).GetAt
+## [PyIObjectArray](#pyiobjectarray)\.GetAt
 
-[PyIUnknown](#pyiunknown)= __GetAt( *Index*  *, riid* __ )
+[PyIUnknown](#pyiunknown)\= **GetAt\( *Index*  *, riid* ** \)
 Retrieves an item  by zero-based index
 
 #### Parameters
@@ -27,11 +27,11 @@ Retrieves an item  by zero-based index
 
     Index of item to retrieve
 
-  -  *riid=IID_IUnknown* :[PyIID](#pyiid)
+  -  *riid\=IID\_IUnknown* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIObjectArray](#pyiobjectarray).GetCount
+## [PyIObjectArray](#pyiobjectarray)\.GetCount
 
-int = __GetCount(__ )
+int \= **GetCount\(** \)
 Returns number of objects in collection

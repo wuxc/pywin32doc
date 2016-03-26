@@ -12,9 +12,9 @@ Interface used to specify a change to a property
     Applies the change to a variant value&nbsp;
 
 
-## [PyIPropertyChange](#pyipropertychange).ApplyToPropVariant
+## [PyIPropertyChange](#pyipropertychange)\.ApplyToPropVariant
 
-[PyPROPVARIANT](#pypropvariant)= __ApplyToPropVariant( *OrigVal* __ )
+[PyPROPVARIANT](#pypropvariant)\= **ApplyToPropVariant\( *OrigVal* ** \)
 Applies the change to a variant value
 
 #### Parameters

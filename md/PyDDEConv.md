@@ -2,7 +2,7 @@
 
 ## PyDDEConv Object
 
-A DDE topic.
+A DDE topic\.
 
 #### Methods
 
@@ -13,25 +13,25 @@ A DDE topic.
 
   - [Connected](PyDDEConv.md#pyddeconvconnected)
 
-    Determines if a connection has been made.&nbsp;
+    Determines if a connection has been made\.&nbsp;
 
   - [Exec](PyDDEConv.md#pyddeconvexec)
 
-    Executes a command.&nbsp;
+    Executes a command\.&nbsp;
 
   - [Request](PyDDEConv.md#pyddeconvrequest)
 
-    Sends a request.&nbsp;
+    Sends a request\.&nbsp;
 
   - [Poke](PyDDEConv.md#pyddeconvpoke)
 
-    Sends a poke. 
+    Sends a poke\. 
 
 sentinel&nbsp;
 
-## [PyDDEConv](#pyddeconv).ConnectTo
+## [PyDDEConv](#pyddeconv)\.ConnectTo
 
- __ConnectTo( *service*  *, topic* __ )
+ **ConnectTo\( *service*  *, topic* ** \)
 Connects to a server
 
 #### Parameters
@@ -45,15 +45,15 @@ Connects to a server
 
     The topic to connect to
 
-## [PyDDEConv](#pyddeconv).Connected
+## [PyDDEConv](#pyddeconv)\.Connected
 
- __Connected(__ )
-Determines if the conversation is connected.
+ **Connected\(** \)
+Determines if the conversation is connected\.
 
-## [PyDDEConv](#pyddeconv).Exec
+## [PyDDEConv](#pyddeconv)\.Exec
 
- __Exec( *Cmd* __ )
-Executes a command.
+ **Exec\( *Cmd* ** \)
+Executes a command\.
 
 #### Parameters
 
@@ -62,12 +62,12 @@ Executes a command.
 
     The Python statement to execute
 
-## [PyDDEConv](#pyddeconv).Poke
+## [PyDDEConv](#pyddeconv)\.Poke
 
- __Poke(__ )
-Sends a poke.
+ **Poke\(** \)
+Sends a poke\.
 
-## [PyDDEConv](#pyddeconv).Request
+## [PyDDEConv](#pyddeconv)\.Request
 
- __Request(__ )
-Sends a request.
+ **Request\(** \)
+Sends a request\.

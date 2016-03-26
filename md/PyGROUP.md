@@ -1,89 +1,89 @@
 # PyGROUP
 
-## PyGROUP_INFO_* Object
+## PyGROUP\_INFO\_\* Object
 
-The following GROUP_INFO levels are supported.
+The following GROUP\_INFO levels are supported\.
 
 
-## PyGROUP_INFO_0 Object
+## PyGROUP\_INFO\_0 Object
 
-A dictionary holding the information in a Win32 GROUP_INFO_0 structure.
+A dictionary holding the information in a Win32 GROUP\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     Name of the group
 
-## PyGROUP_INFO_1 Object
+## PyGROUP\_INFO\_1 Object
 
-A dictionary holding the information in a Win32 GROUP_INFO_1 structure.
+A dictionary holding the information in a Win32 GROUP\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     Name of the group
 
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    The group's comment.
+  -  **string/[PyUnicode](#pyunicode)comment** 
+    The group's comment\.
 
-## PyGROUP_INFO_1002 Object
+## PyGROUP\_INFO\_1002 Object
 
-A dictionary holding the information in a Win32 GROUP_INFO_1002 structure.
+A dictionary holding the information in a Win32 GROUP\_INFO\_1002 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)comment__ 
+  -  **string/[PyUnicode](#pyunicode)comment** 
     
 
-## PyGROUP_INFO_1005 Object
+## PyGROUP\_INFO\_1005 Object
 
-A dictionary holding the information in a Win32 GROUP_INFO_1005 structure.
+A dictionary holding the information in a Win32 GROUP\_INFO\_1005 structure\.
 
 #### Properties
 
-  -  __int attributes__ 
+  -  **int attributes** 
     
 
-## PyGROUP_INFO_2 Object
+## PyGROUP\_INFO\_2 Object
 
-A dictionary holding the information in a Win32 GROUP_INFO_2 structure.
+A dictionary holding the information in a Win32 GROUP\_INFO\_2 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     Name of the group
 
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    The group's comment.
+  -  **string/[PyUnicode](#pyunicode)comment** 
+    The group's comment\.
 
-  -  __int group_id__ 
+  -  **int group\_id** 
     
 
-  -  __int attributes__ 
+  -  **int attributes** 
     
 
-## PyGROUP_USERS_INFO_* Object
+## PyGROUP\_USERS\_INFO\_\* Object
 
-The following GROUP_USERS_INFO levels are supported.
+The following GROUP\_USERS\_INFO levels are supported\.
 
 
-## PyGROUP_USERS_INFO_0 Object
+## PyGROUP\_USERS\_INFO\_0 Object
 
-A dictionary holding the information in a Win32 GROUP_USERS_INFO_0 structure.
+A dictionary holding the information in a Win32 GROUP\_USERS\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     Name of the group or user
 
-## PyGROUP_USERS_INFO_1 Object
+## PyGROUP\_USERS\_INFO\_1 Object
 
-A dictionary holding the information in a Win32 GROUP_USERS_INFO_1 structure.
+A dictionary holding the information in a Win32 GROUP\_USERS\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     Name of the group or user
 
-  -  __int attributes__ 
+  -  **int attributes** 
     

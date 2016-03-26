@@ -1,114 +1,114 @@
 # PyUSE
 
-## PyUSE_INFO_* Object
+## PyUSE\_INFO\_\* Object
 
-The following USE_INFO levels are supported.
+The following USE\_INFO levels are supported\.
 
 
-## PyUSE_INFO_0 Object
+## PyUSE\_INFO\_0 Object
 
-A dictionary holding the infomation in a Win32 USE_INFO_0 structure.
-
-#### Properties
-
-  -  __string/[PyUnicode](#pyunicode)local__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)remote__ 
-    
-
-## PyUSE_INFO_1 Object
-
-A dictionary holding the infomation in a Win32 USE_INFO_1 structure.
+A dictionary holding the infomation in a Win32 USE\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)local__ 
+  -  **string/[PyUnicode](#pyunicode)local** 
     
 
-  -  __string/[PyUnicode](#pyunicode)remote__ 
+  -  **string/[PyUnicode](#pyunicode)remote** 
     
 
-  -  __strng/[PyUnicode](#pyunicode)password__ 
-    
+## PyUSE\_INFO\_1 Object
 
-  -  __int status__ 
-    
-
-  -  __int asg_type__ 
-    
-
-  -  __int refcount__ 
-    
-
-  -  __int usecount__ 
-    
-
-## PyUSE_INFO_2 Object
-
-A dictionary holding the infomation in a Win32 USE_INFO_2 structure.
+A dictionary holding the infomation in a Win32 USE\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)local__ 
+  -  **string/[PyUnicode](#pyunicode)local** 
     
 
-  -  __string/[PyUnicode](#pyunicode)remote__ 
+  -  **string/[PyUnicode](#pyunicode)remote** 
     
 
-  -  __strng/[PyUnicode](#pyunicode)password__ 
+  -  **strng/[PyUnicode](#pyunicode)password** 
     
 
-  -  __int status__ 
+  -  **int status** 
     
 
-  -  __int asg_type__ 
+  -  **int asg\_type** 
     
 
-  -  __int refcount__ 
+  -  **int refcount** 
     
 
-  -  __int usecount__ 
+  -  **int usecount** 
     
 
-  -  __string/[PyUnicode](#pyunicode)username__ 
-    
+## PyUSE\_INFO\_2 Object
 
-  -  __string/[PyUnicode](#pyunicode)domainname__ 
-    
-
-## PyUSE_INFO_3 Object
-
-A dictionary holding the infomation in a Win32 USE_INFO_3 structure.
+A dictionary holding the infomation in a Win32 USE\_INFO\_2 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)local__ 
+  -  **string/[PyUnicode](#pyunicode)local** 
     
 
-  -  __string/[PyUnicode](#pyunicode)remote__ 
+  -  **string/[PyUnicode](#pyunicode)remote** 
     
 
-  -  __strng/[PyUnicode](#pyunicode)password__ 
+  -  **strng/[PyUnicode](#pyunicode)password** 
     
 
-  -  __int status__ 
+  -  **int status** 
     
 
-  -  __int asg_type__ 
+  -  **int asg\_type** 
     
 
-  -  __int refcount__ 
+  -  **int refcount** 
     
 
-  -  __int usecount__ 
+  -  **int usecount** 
     
 
-  -  __string/[PyUnicode](#pyunicode)username__ 
+  -  **string/[PyUnicode](#pyunicode)username** 
     
 
-  -  __string/[PyUnicode](#pyunicode)domainname__ 
+  -  **string/[PyUnicode](#pyunicode)domainname** 
     
 
-  -  __int flags__ 
+## PyUSE\_INFO\_3 Object
+
+A dictionary holding the infomation in a Win32 USE\_INFO\_3 structure\.
+
+#### Properties
+
+  -  **string/[PyUnicode](#pyunicode)local** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)remote** 
+    
+
+  -  **strng/[PyUnicode](#pyunicode)password** 
+    
+
+  -  **int status** 
+    
+
+  -  **int asg\_type** 
+    
+
+  -  **int refcount** 
+    
+
+  -  **int usecount** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)username** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)domainname** 
+    
+
+  -  **int flags** 
     

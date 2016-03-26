@@ -9,9 +9,9 @@ Description of the interface
 
   - [Initialize](PyIDirectSoundNotify.md#pyidirectsoundnotifyinitialize)
 
-    Description of SetNotificationPositions.&nbsp;
+    Description of SetNotificationPositions\.&nbsp;
 
-## [PyIDirectSoundNotify](#pyidirectsoundnotify).SetNotificationPositions
+## [PyIDirectSoundNotify](#pyidirectsoundnotify)\.SetNotificationPositions
 
- __SetNotificationPositions(__ )
-Description of GetCaps.
+ **SetNotificationPositions\(** \)
+Description of GetCaps\.

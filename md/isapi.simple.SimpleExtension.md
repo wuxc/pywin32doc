@@ -1,6 +1,6 @@
 # isapi.simple.SimpleExtension
 
-## isapi.simple.SimpleExtension Object
+## isapi\.simple\.SimpleExtension Object
 
 Base class for a simple ISAPI extension
 
@@ -9,29 +9,29 @@ Base class for a simple ISAPI extension
 
   - [TerminateExtension](isapi.simple.SimpleExtension.md#isapi.simple.simpleextensionterminateextension)
 
-    Called by the ISAPI framework as the extension terminates.&nbsp;
+    Called by the ISAPI framework as the extension terminates\.&nbsp;
 
   - [HttpExtensionProc](isapi.simple.SimpleExtension.md#isapi.simple.simpleextensionhttpextensionproc)
 
-    Called by the ISAPI framework for each extension request.&nbsp;
+    Called by the ISAPI framework for each extension request\.&nbsp;
 
   - [GetExtensionVersion](isapi.simple.SimpleExtension.md#isapi.simple.simpleextensiongetextensionversion)
 
     Called by the ISAPI framework to get the extension version&nbsp;
 
-## [isapi.simple.SimpleExtension](#isapi.simple.simpleextension).GetExtensionVersion
+## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.GetExtensionVersion
 
- __GetExtensionVersion(__ )
+ **GetExtensionVersion\(** \)
 Called by the ISAPI framework to get the extension version
 
 #### Comments
 The default implementation uses the classes docstring to 
 
-set the extension description.
+set the extension description\.
 
-## [isapi.simple.SimpleExtension](#isapi.simple.simpleextension).GetExtensionVersion
+## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.GetExtensionVersion
 
- __GetExtensionVersion( *self*  *, vi* __ )
+ **GetExtensionVersion\( *self*  *, vi* ** \)
 Called by the ISAPI framework to get the extension version
 
 #### Parameters
@@ -48,20 +48,20 @@ Called by the ISAPI framework to get the extension version
 #### Comments
 The default implementation uses the classes docstring to 
 
-set the extension description.
+set the extension description\.
 
-## [isapi.simple.SimpleExtension](#isapi.simple.simpleextension).HttpExtensionProc
+## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.HttpExtensionProc
 
- __HttpExtensionProc(__ )
-Called by the ISAPI framework for each extension request.
+ **HttpExtensionProc\(** \)
+Called by the ISAPI framework for each extension request\.
 
 #### Comments
-sub-classes must provide an implementation for this method.
+sub-classes must provide an implementation for this method\.
 
-## [isapi.simple.SimpleExtension](#isapi.simple.simpleextension).HttpExtensionProc
+## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.HttpExtensionProc
 
- __HttpExtensionProc( *self*  *, control_block* __ )
-Called by the ISAPI framework for each extension request.
+ **HttpExtensionProc\( *self*  *, control\_block* ** \)
+Called by the ISAPI framework for each extension request\.
 
 #### Parameters
 
@@ -70,22 +70,22 @@ Called by the ISAPI framework for each extension request.
 
     self
 
-  -  *control_block* :
+  -  *control\_block* :
 
-    control_block
+    control\_block
 
 #### Comments
-sub-classes must provide an implementation for this method.
+sub-classes must provide an implementation for this method\.
 
-## [isapi.simple.SimpleExtension](#isapi.simple.simpleextension).TerminateExtension
+## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.TerminateExtension
 
- __TerminateExtension(__ )
-Called by the ISAPI framework as the extension terminates.
+ **TerminateExtension\(** \)
+Called by the ISAPI framework as the extension terminates\.
 
-## [isapi.simple.SimpleExtension](#isapi.simple.simpleextension).TerminateExtension
+## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.TerminateExtension
 
- __TerminateExtension( *self*  *, status* __ )
-Called by the ISAPI framework as the extension terminates.
+ **TerminateExtension\( *self*  *, status* ** \)
+Called by the ISAPI framework as the extension terminates\.
 
 #### Parameters
 

@@ -1,52 +1,52 @@
 # PyADS
 
-## PyADS_ATTR_INFO Object
+## PyADS\_ATTR\_INFO Object
 
-Represents a ADS_ATTR_INFO structure.
-
-#### Properties
-
-  -  __unicode AttrName__ 
-    The name
-
-  -  __integer ControlCode__ 
-    
-
-  -  __integer ADsType__ 
-    
-
-  -  __[[PyADSVALUE](#pyadsvalue), ...] Values__ 
-    
-
-## PyADS_OBJECT_INFO Object
-
-Represents a ADS_OBJECT_INFO structure.
+Represents a ADS\_ATTR\_INFO structure\.
 
 #### Properties
 
-  -  __unicode RDN__ 
+  -  **unicode AttrName** 
     The name
 
-  -  __unicode ObjectDN__ 
+  -  **integer ControlCode** 
     
 
-  -  __unicode ParentDN__ 
+  -  **integer ADsType** 
     
 
-  -  __unicode ClassName__ 
+  -  **\[[PyADSVALUE](#pyadsvalue), \.\.\.\] Values** 
     
 
-## PyADS_SEARCHPREF_INFO Object
+## PyADS\_OBJECT\_INFO Object
+
+Represents a ADS\_OBJECT\_INFO structure\.
+
+#### Properties
+
+  -  **unicode RDN** 
+    The name
+
+  -  **unicode ObjectDN** 
+    
+
+  -  **unicode ParentDN** 
+    
+
+  -  **unicode ClassName** 
+    
+
+## PyADS\_SEARCHPREF\_INFO Object
 
 A tuple of:
 
 #### Items
 
 
-  - [0] *int* : attr_id
+  - \[0\] *int* : attr\_id
 
     
 
-  - [1] *[PyADSVALUE](#pyadsvalue)* : value
+  - \[1\] *[PyADSVALUE](#pyadsvalue)* : value
 
     

@@ -19,15 +19,15 @@ Description of the interface
 
     Description of Refresh&nbsp;
 
-## [PyIInputObject](#pyiinputobject).HasFocusIO
+## [PyIInputObject](#pyiinputobject)\.HasFocusIO
 
- __HasFocusIO(__ )
-Description of Refresh.
+ **HasFocusIO\(** \)
+Description of Refresh\.
 
-## [PyIInputObject](#pyiinputobject).TranslateAccelerator
+## [PyIInputObject](#pyiinputobject)\.TranslateAccelerator
 
- __TranslateAccelerator( *pmsg* __ )
-Description of TranslateAccelerator.
+ **TranslateAccelerator\( *pmsg* ** \)
+Description of TranslateAccelerator\.
 
 #### Parameters
 
@@ -36,10 +36,10 @@ Description of TranslateAccelerator.
 
     Description for pmsg
 
-## [PyIInputObject](#pyiinputobject).UIActivate
+## [PyIInputObject](#pyiinputobject)\.UIActivate
 
- __UIActivate( *uState* __ )
-Description of UIActivate.
+ **UIActivate\( *uState* ** \)
+Description of UIActivate\.
 
 #### Parameters
 

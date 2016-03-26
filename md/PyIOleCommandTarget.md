@@ -15,12 +15,12 @@ Description of the interface
 
     Description of Exec&nbsp;
 
-## [PyIOleCommandTarget](#pyiolecommandtarget).Exec
+## [PyIOleCommandTarget](#pyiolecommandtarget)\.Exec
 
- __Exec(__ )
-Description of Exec.
+ **Exec\(** \)
+Description of Exec\.
 
-## [PyIOleCommandTarget](#pyiolecommandtarget).QueryStatus
+## [PyIOleCommandTarget](#pyiolecommandtarget)\.QueryStatus
 
- __QueryStatus(__ )
-Description of QueryStatus.
+ **QueryStatus\(** \)
+Description of QueryStatus\.

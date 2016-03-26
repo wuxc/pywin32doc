@@ -2,406 +2,406 @@
 
 ## Module win32ras
 
-A module encapsulating the Windows Remote Access Service (RAS) API.
+A module encapsulating the Windows Remote Access Service \(RAS\) API\.
 
 #### Methods
 
 
   - [CreatePhonebookEntry](win32ras.md#win32rascreatephonebookentry)
 
-    Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry.&nbsp;
+    Creates a new phonebook entry\.  The function displays a dialog box into which the user can enter information about the entry\.&nbsp;
 
   - [Dial](win32ras.md#win32rasdial)
 
-    Establishes a RAS connection to a RAS server.&nbsp;
+    Establishes a RAS connection to a RAS server\.&nbsp;
 
   - [EditPhonebookEntry](win32ras.md#win32raseditphonebookentry)
 
-    Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry&nbsp;
+    Creates a new phonebook entry\.  The function displays a dialog box into which the user can enter information about the entry&nbsp;
 
   - [EnumConnections](win32ras.md#win32rasenumconnections)
 
-    Returns a list of tuples, one for each active connection.&nbsp;
+    Returns a list of tuples, one for each active connection\.&nbsp;
 
   - [EnumEntries](win32ras.md#win32rasenumentries)
 
-    Returns a list of tuples, one for each phonebook entry.&nbsp;
+    Returns a list of tuples, one for each phonebook entry\.&nbsp;
 
   - [GetConnectStatus](win32ras.md#win32rasgetconnectstatus)
 
-    Returns a tuple with connection information.&nbsp;
+    Returns a tuple with connection information\.&nbsp;
 
   - [GetEntryDialParams](win32ras.md#win32rasgetentrydialparams)
 
-    Returns a tuple with the most recently set dial parameters for the specified entry.&nbsp;
+    Returns a tuple with the most recently set dial parameters for the specified entry\.&nbsp;
 
   - [GetErrorString](win32ras.md#win32rasgeterrorstring)
 
-    Returns an error string for a RAS error code.&nbsp;
+    Returns an error string for a RAS error code\.&nbsp;
 
   - [HangUp](win32ras.md#win32rashangup)
 
-    Terminates a remote access session.&nbsp;
+    Terminates a remote access session\.&nbsp;
 
   - [IsHandleValid](win32ras.md#win32rasishandlevalid)
 
-    Indicates if the given RAS handle is valid.&nbsp;
+    Indicates if the given RAS handle is valid\.&nbsp;
 
   - [SetEntryDialParams](win32ras.md#win32rassetentrydialparams)
 
-    Sets the dial parameters for the specified entry.&nbsp;
+    Sets the dial parameters for the specified entry\.&nbsp;
 
   - [RASDIALEXTENSIONS](win32ras.md#win32rasrasdialextensions)
 
     Creates a new[RASDIALEXTENSIONS](#rasdialextensions)object&nbsp;
 
-## [win32ras](#win32ras).CreatePhonebookEntry
+## [win32ras](#win32ras)\.CreatePhonebookEntry
 
- __CreatePhonebookEntry( *hWnd*  *, fileName* __ )
-Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry
+ **CreatePhonebookEntry\( *hWnd*  *, fileName* ** \)
+Creates a new phonebook entry\.  The function displays a dialog box into which the user can enter information about the entry
 
 #### Parameters
 
 
   -  *hWnd* : int
 
-    Handle to the parent window of the dialog box.
+    Handle to the parent window of the dialog box\.
 
-  -  *fileName=None* : string
+  -  *fileName\=None* : string
 
-    Specifies the filename of the phonebook entry.  Currently this is ignored.
+    Specifies the filename of the phonebook entry\.  Currently this is ignored\.
 
 #### Win32 API References
 
 
-  - Search for *RasCreatePhonebookEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rascreatephonebookentry),[google](#http://www.google.com/search?q=rascreatephonebookentry)or[google groups](#http://groups.google.com/groups?q=rascreatephonebookentry).
+  - Search for *RasCreatePhonebookEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rascreatephonebookentry),[google](#http://www.google.com/search?q=rascreatephonebookentry)or[google groups](#http://groups.google.com/groups?q=rascreatephonebookentry)\.
 
-## [win32ras](#win32ras).Dial
+## [win32ras](#win32ras)\.Dial
 
-int, int = __Dial( *dialExtensions*  *, fileName*  *, RasDialParams*  *, callback* __ )
-Establishes a RAS connection to a RAS server.
+int, int \= **Dial\( *dialExtensions*  *, fileName*  *, RasDialParams*  *, callback* ** \)
+Establishes a RAS connection to a RAS server\.
 
 #### Parameters
 
 
-  -  *dialExtensions* : __PyRASDIALEXTENSIONS__ 
+  -  *dialExtensions* : **PyRASDIALEXTENSIONS** 
 
     An object providing the RASDIALEXTENSIONS information, or None
 
   -  *fileName* : string
 
-    Specifies the filename of the phonebook entry, or None.  Ignored on Win95.
+    Specifies the filename of the phonebook entry, or None\.  Ignored on Win95\.
 
   -  *RasDialParams* :[RASDIALPARAMS](#rasdialparams)
 
-    A tuple describing a RASDIALPARAMS structure.
+    A tuple describing a RASDIALPARAMS structure\.
 
   -  *callback* : method or hwnd
 
-    The method to be called when RAS events occur, or None.  If not None, the function must have the signature of[win32ras::RasDialFunc1](win32ras.md#win32rasrasdialfunc1)
+    The method to be called when RAS events occur, or None\.  If not None, the function must have the signature of[win32ras::RasDialFunc1](win32ras.md#win32rasrasdialfunc1)
 
 #### Comments
 Note - this handle must be closed using[win32ras::HangUp](win32ras.md#win32rashangup), or 
 
-else the RAS port will remain open, even after the program has terminated. 
+else the RAS port will remain open, even after the program has terminated\. 
 
-Your operating system may need rebooting to clean up otherwise!
+Your operating system may need rebooting to clean up otherwise\!
 
 #### Win32 API References
 
 
-  - Search for *RasDial* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasdial),[google](#http://www.google.com/search?q=rasdial)or[google groups](#http://groups.google.com/groups?q=rasdial).
+  - Search for *RasDial* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasdial),[google](#http://www.google.com/search?q=rasdial)or[google groups](#http://groups.google.com/groups?q=rasdial)\.
 
 #### Return Value
-The return value is (handle, retCode).
-It is possible for a valid handle to be returned even on failure.
-If the returned handle is = 0, then it can be assumed invalid.
+The return value is \(handle, retCode\)\.
+It is possible for a valid handle to be returned even on failure\.
+If the returned handle is \= 0, then it can be assumed invalid\.
 
-## [win32ras](#win32ras).EditPhonebookEntry
+## [win32ras](#win32ras)\.EditPhonebookEntry
 
- __EditPhonebookEntry( *hWnd*  *, fileName*  *, entryName* __ )
-Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry
+ **EditPhonebookEntry\( *hWnd*  *, fileName*  *, entryName* ** \)
+Creates a new phonebook entry\.  The function displays a dialog box into which the user can enter information about the entry
 
 #### Parameters
 
 
   -  *hWnd* : int
 
-    Handle to the parent window of the dialog box.
+    Handle to the parent window of the dialog box\.
 
   -  *fileName* : string
 
-    Specifies the filename of the phonebook entry, or None.  Currently this is ignored.
+    Specifies the filename of the phonebook entry, or None\.  Currently this is ignored\.
 
-  -  *entryName=None* : string
+  -  *entryName\=None* : string
 
     Specifies the name of the phonebook entry to edit
 
 #### Win32 API References
 
 
-  - Search for *RasEditPhonebookEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=raseditphonebookentry),[google](#http://www.google.com/search?q=raseditphonebookentry)or[google groups](#http://groups.google.com/groups?q=raseditphonebookentry).
+  - Search for *RasEditPhonebookEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=raseditphonebookentry),[google](#http://www.google.com/search?q=raseditphonebookentry)or[google groups](#http://groups.google.com/groups?q=raseditphonebookentry)\.
 
-## [win32ras](#win32ras).EnumConnections
+## [win32ras](#win32ras)\.EnumConnections
 
-list = __EnumConnections(__ )
-Returns a list of tuples, one for each active connection.
+list \= **EnumConnections\(** \)
+Returns a list of tuples, one for each active connection\.
 
 #### Win32 API References
 
 
-  - Search for *RasEnumConnections* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasenumconnections),[google](#http://www.google.com/search?q=rasenumconnections)or[google groups](#http://groups.google.com/groups?q=rasenumconnections).
+  - Search for *RasEnumConnections* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasenumconnections),[google](#http://www.google.com/search?q=rasenumconnections)or[google groups](#http://groups.google.com/groups?q=rasenumconnections)\.
 
 #### Return Value
-Each tuple is of format (handle, entryName, deviceType, deviceName)
+Each tuple is of format \(handle, entryName, deviceType, deviceName\)
 
-## [win32ras](#win32ras).EnumEntries
+## [win32ras](#win32ras)\.EnumEntries
 
- __EnumEntries( *reserved*  *, fileName* __ )
-Returns a list of tuples, one for each phonebook entry.
+ **EnumEntries\( *reserved*  *, fileName* ** \)
+Returns a list of tuples, one for each phonebook entry\.
 
 #### Parameters
 
 
-  -  *reserved=None* : string
+  -  *reserved\=None* : string
 
     Reserved - must be None
 
-  -  *fileName=None* : string
+  -  *fileName\=None* : string
 
-    The name of the phonebook file, or None.
+    The name of the phonebook file, or None\.
 
-## [win32ras](#win32ras).GetConnectStatus
+## [win32ras](#win32ras)\.GetConnectStatus
 
-(int, int, string, string) = __GetConnectStatus( *hrasconn* __ )
-Returns a tuple with connection information.
+\(int, int, string, string\) \= **GetConnectStatus\( *hrasconn* ** \)
+Returns a tuple with connection information\.
 
 #### Parameters
 
 
   -  *hrasconn* : int
 
-    Handle to the RAS session.
+    Handle to the RAS session\.
 
 #### Win32 API References
 
 
-  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus).
+  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus)\.
 
-  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus).
+  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus)\.
 
-## [win32ras](#win32ras).GetEntryDialParams
+## [win32ras](#win32ras)\.GetEntryDialParams
 
-(s,s,s,s,s,s),i = __GetEntryDialParams( *fileName*  *, entryName* __ )
-Returns a tuple with the most recently set dial parameters for the specified entry.
+\(s,s,s,s,s,s\),i \= **GetEntryDialParams\( *fileName*  *, entryName* ** \)
+Returns a tuple with the most recently set dial parameters for the specified entry\.
 
 #### Parameters
 
 
   -  *fileName* : string
 
-    The filename of the phonebook, or None.
+    The filename of the phonebook, or None\.
 
   -  *entryName* : string
 
-    The name of the entry to retrieve the params for.
+    The name of the entry to retrieve the params for\.
 
 #### Win32 API References
 
 
-  - Search for *RasGetEntryDialParams* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetentrydialparams),[google](#http://www.google.com/search?q=rasgetentrydialparams)or[google groups](#http://groups.google.com/groups?q=rasgetentrydialparams).
+  - Search for *RasGetEntryDialParams* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetentrydialparams),[google](#http://www.google.com/search?q=rasgetentrydialparams)or[google groups](#http://groups.google.com/groups?q=rasgetentrydialparams)\.
 
-  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus).
+  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus)\.
 
 #### Return Value
 The return value is a tuple describing the params retrieved, plus a BOOL integer 
 
-indicating if the password was also retrieved.
+indicating if the password was also retrieved\.
 
-## [win32ras](#win32ras).GetErrorString
+## [win32ras](#win32ras)\.GetErrorString
 
-string = __GetErrorString( *error* __ )
-Returns an error string for a RAS error code.
+string \= **GetErrorString\( *error* ** \)
+Returns an error string for a RAS error code\.
 
 #### Parameters
 
 
   -  *error* : int
 
-    The error value being queried.
+    The error value being queried\.
 
 #### Win32 API References
 
 
-  - Search for *RasGetErrorString* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgeterrorstring),[google](#http://www.google.com/search?q=rasgeterrorstring)or[google groups](#http://groups.google.com/groups?q=rasgeterrorstring).
+  - Search for *RasGetErrorString* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgeterrorstring),[google](#http://www.google.com/search?q=rasgeterrorstring)or[google groups](#http://groups.google.com/groups?q=rasgeterrorstring)\.
 
-## [win32ras](#win32ras).HangUp
+## [win32ras](#win32ras)\.HangUp
 
- __HangUp( *hras* __ )
-Terminates a remote access session.
+ **HangUp\( *hras* ** \)
+Terminates a remote access session\.
 
 #### Parameters
 
 
   -  *hras* : int
 
-    The handle to the RAS connection to be terminated.
+    The handle to the RAS connection to be terminated\.
 
 #### Win32 API References
 
 
-  - Search for *RasHangUp* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rashangup),[google](#http://www.google.com/search?q=rashangup)or[google groups](#http://groups.google.com/groups?q=rashangup).
+  - Search for *RasHangUp* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rashangup),[google](#http://www.google.com/search?q=rashangup)or[google groups](#http://groups.google.com/groups?q=rashangup)\.
 
-## [win32ras](#win32ras).IsHandleValid
+## [win32ras](#win32ras)\.IsHandleValid
 
- __IsHandleValid( *hras* __ )
-Indicates if the given RAS handle is valid.
+ **IsHandleValid\( *hras* ** \)
+Indicates if the given RAS handle is valid\.
 
 #### Parameters
 
 
   -  *hras* : int
 
-    The handle to the RAS connection being checked.
+    The handle to the RAS connection being checked\.
 
-## RASCS_AllDevicesConnected
- __const win32ras.RASCS_AllDevicesConnected;__ 
-Constant for RAS state.
+## RASCS\_AllDevicesConnected
+ **const win32ras\.RASCS\_AllDevicesConnected;** 
+Constant for RAS state\.
 
-## RASCS_AuthAck
- __const win32ras.RASCS_AuthAck;__ 
-Constant for RAS state.
+## RASCS\_AuthAck
+ **const win32ras\.RASCS\_AuthAck;** 
+Constant for RAS state\.
 
-## RASCS_AuthCallback
- __const win32ras.RASCS_AuthCallback;__ 
-Constant for RAS state.
+## RASCS\_AuthCallback
+ **const win32ras\.RASCS\_AuthCallback;** 
+Constant for RAS state\.
 
-## RASCS_AuthChangePassword
- __const win32ras.RASCS_AuthChangePassword;__ 
-Constant for RAS state.
+## RASCS\_AuthChangePassword
+ **const win32ras\.RASCS\_AuthChangePassword;** 
+Constant for RAS state\.
 
-## RASCS_AuthLinkSpeed
- __const win32ras.RASCS_AuthLinkSpeed;__ 
-Constant for RAS state.
+## RASCS\_AuthLinkSpeed
+ **const win32ras\.RASCS\_AuthLinkSpeed;** 
+Constant for RAS state\.
 
-## RASCS_AuthNotify
- __const win32ras.RASCS_AuthNotify;__ 
-Constant for RAS state.
+## RASCS\_AuthNotify
+ **const win32ras\.RASCS\_AuthNotify;** 
+Constant for RAS state\.
 
-## RASCS_AuthProject
- __const win32ras.RASCS_AuthProject;__ 
-Constant for RAS state.
+## RASCS\_AuthProject
+ **const win32ras\.RASCS\_AuthProject;** 
+Constant for RAS state\.
 
-## RASCS_AuthRetry
- __const win32ras.RASCS_AuthRetry;__ 
-Constant for RAS state.
+## RASCS\_AuthRetry
+ **const win32ras\.RASCS\_AuthRetry;** 
+Constant for RAS state\.
 
-## RASCS_Authenticate
- __const win32ras.RASCS_Authenticate;__ 
-Constant for RAS state.
+## RASCS\_Authenticate
+ **const win32ras\.RASCS\_Authenticate;** 
+Constant for RAS state\.
 
-## RASCS_Authenticated
- __const win32ras.RASCS_Authenticated;__ 
-Constant for RAS state.
+## RASCS\_Authenticated
+ **const win32ras\.RASCS\_Authenticated;** 
+Constant for RAS state\.
 
-## RASCS_CallbackComplete
- __const win32ras.RASCS_CallbackComplete;__ 
-Constant for RAS state.
+## RASCS\_CallbackComplete
+ **const win32ras\.RASCS\_CallbackComplete;** 
+Constant for RAS state\.
 
-## RASCS_CallbackSetByCaller
- __const win32ras.RASCS_CallbackSetByCaller;__ 
-Constant for RAS state.
+## RASCS\_CallbackSetByCaller
+ **const win32ras\.RASCS\_CallbackSetByCaller;** 
+Constant for RAS state\.
 
-## RASCS_ConnectDevice
- __const win32ras.RASCS_ConnectDevice;__ 
-Constant for RAS state.
+## RASCS\_ConnectDevice
+ **const win32ras\.RASCS\_ConnectDevice;** 
+Constant for RAS state\.
 
-## RASCS_Connected
- __const win32ras.RASCS_Connected;__ 
-Constant for RAS state.
+## RASCS\_Connected
+ **const win32ras\.RASCS\_Connected;** 
+Constant for RAS state\.
 
-## RASCS_DeviceConnected
- __const win32ras.RASCS_DeviceConnected;__ 
-Constant for RAS state.
+## RASCS\_DeviceConnected
+ **const win32ras\.RASCS\_DeviceConnected;** 
+Constant for RAS state\.
 
-## RASCS_Disconnected
- __const win32ras.RASCS_Disconnected;__ 
-Constant for RAS state.
+## RASCS\_Disconnected
+ **const win32ras\.RASCS\_Disconnected;** 
+Constant for RAS state\.
 
-## RASCS_Interactive
- __const win32ras.RASCS_Interactive;__ 
-Constant for RAS state.
+## RASCS\_Interactive
+ **const win32ras\.RASCS\_Interactive;** 
+Constant for RAS state\.
 
-## RASCS_LogonNetwork
- __const win32ras.RASCS_LogonNetwork;__ 
-Constant for RAS state.
+## RASCS\_LogonNetwork
+ **const win32ras\.RASCS\_LogonNetwork;** 
+Constant for RAS state\.
 
-## RASCS_OpenPort
- __const win32ras.RASCS_OpenPort;__ 
-Constant for RAS state.
+## RASCS\_OpenPort
+ **const win32ras\.RASCS\_OpenPort;** 
+Constant for RAS state\.
 
-## RASCS_PasswordExpired
- __const win32ras.RASCS_PasswordExpired;__ 
-Constant for RAS state.
+## RASCS\_PasswordExpired
+ **const win32ras\.RASCS\_PasswordExpired;** 
+Constant for RAS state\.
 
-## RASCS_PortOpened
- __const win32ras.RASCS_PortOpened;__ 
-Constant for RAS state.
+## RASCS\_PortOpened
+ **const win32ras\.RASCS\_PortOpened;** 
+Constant for RAS state\.
 
-## RASCS_PrepareForCallback
- __const win32ras.RASCS_PrepareForCallback;__ 
-Constant for RAS state.
+## RASCS\_PrepareForCallback
+ **const win32ras\.RASCS\_PrepareForCallback;** 
+Constant for RAS state\.
 
-## RASCS_Projected
- __const win32ras.RASCS_Projected;__ 
-Constant for RAS state.
+## RASCS\_Projected
+ **const win32ras\.RASCS\_Projected;** 
+Constant for RAS state\.
 
-## RASCS_ReAuthenticate
- __const win32ras.RASCS_ReAuthenticate;__ 
-Constant for RAS state.
+## RASCS\_ReAuthenticate
+ **const win32ras\.RASCS\_ReAuthenticate;** 
+Constant for RAS state\.
 
-## RASCS_RetryAuthentication
- __const win32ras.RASCS_RetryAuthentication;__ 
-Constant for RAS state.
+## RASCS\_RetryAuthentication
+ **const win32ras\.RASCS\_RetryAuthentication;** 
+Constant for RAS state\.
 
-## RASCS_StartAuthentication
- __const win32ras.RASCS_StartAuthentication;__ 
-Constant for RAS state.
+## RASCS\_StartAuthentication
+ **const win32ras\.RASCS\_StartAuthentication;** 
+Constant for RAS state\.
 
-## RASCS_WaitForCallback
- __const win32ras.RASCS_WaitForCallback;__ 
-Constant for RAS state.
+## RASCS\_WaitForCallback
+ **const win32ras\.RASCS\_WaitForCallback;** 
+Constant for RAS state\.
 
-## RASCS_WaitForModemReset
- __const win32ras.RASCS_WaitForModemReset;__ 
-Constant for RAS state.
+## RASCS\_WaitForModemReset
+ **const win32ras\.RASCS\_WaitForModemReset;** 
+Constant for RAS state\.
 
 ## win32ras::RasDialFunc1 method
- __RasDialFunc1(__  __)__ 
-A placeholder for a RAS callback.
-Defined in: O:/SRC/PYWIN32/WIN32/SRC/WIN32RASMODULE.CPP
+ **RasDialFunc1\(**  **\)** 
+A placeholder for a RAS callback\.
+Defined in: O:/SRC/PYWIN32/WIN32/SRC/WIN32RASMODULE\.CPP
 
 #### Comments
-Certain RAS function require a callback function to be passed. 
+Certain RAS function require a callback function to be passed\. 
 
 This description describes the signature of the function you pass 
 
-to these functions.
+to these functions\.
 
 #### Parameters
 
 
   -  *hrascon* : int
 
-    The handle to the RAS session.
+    The handle to the RAS session\.
 
   -  *msg* : int
 
-    A message code identifying the reason for the callback.
+    A message code identifying the reason for the callback\.
 
   -  *rascs* : int
 
-    Connection state about to be entered.
+    Connection state about to be entered\.
 
   -  *error* : int
 
@@ -411,29 +411,29 @@ to these functions.
 
     
 
-## [win32ras](#win32ras).SetEntryDialParams
+## [win32ras](#win32ras)\.SetEntryDialParams
 
- __SetEntryDialParams( *fileName*  *, RasDialParams*  *, bSavePassword* __ )
-Sets the dial parameters for the specified entry.
+ **SetEntryDialParams\( *fileName*  *, RasDialParams*  *, bSavePassword* ** \)
+Sets the dial parameters for the specified entry\.
 
 #### Parameters
 
 
   -  *fileName* : string
 
-    The filename of the phonebook, or None.
+    The filename of the phonebook, or None\.
 
-  -  *RasDialParams* : (tuple)
+  -  *RasDialParams* : \(tuple\)
 
-    A tuple describing a RASDIALPARAMS structure.
+    A tuple describing a RASDIALPARAMS structure\.
 
   -  *bSavePassword* : int
 
-    Indicates whether to remove password from entry's parameters.
+    Indicates whether to remove password from entry's parameters\.
 
 #### Win32 API References
 
 
-  - Search for *RasSetEntryDialParams* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rassetentrydialparams),[google](#http://www.google.com/search?q=rassetentrydialparams)or[google groups](#http://groups.google.com/groups?q=rassetentrydialparams).
+  - Search for *RasSetEntryDialParams* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rassetentrydialparams),[google](#http://www.google.com/search?q=rassetentrydialparams)or[google groups](#http://groups.google.com/groups?q=rassetentrydialparams)\.
 
-  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus).
+  - Search for *RasGetConnectStatus* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rasgetconnectstatus),[google](#http://www.google.com/search?q=rasgetconnectstatus)or[google groups](#http://groups.google.com/groups?q=rasgetconnectstatus)\.

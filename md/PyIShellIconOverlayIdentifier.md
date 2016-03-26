@@ -19,27 +19,27 @@ Interface that supplies icon overlay information to the shell
 
     Retrieves the relative priority of the overlay&nbsp;
 
-## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier).GetOverlayInfo
+## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier)\.GetOverlayInfo
 
-([PyUnicode](#pyunicode), int, int) = __GetOverlayInfo(__ )
+\([PyUnicode](#pyunicode), int, int\) \= **GetOverlayInfo\(** \)
 Retrieves the path to the overlay icon
 
 #### Return Value
 Returns the path to the icon file, the index of icon within the file, and Flags containing 
 
-combination of shellcon.ISIOI_ICON* flags
+combination of shellcon\.ISIOI\_ICON\* flags
 
-## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier).GetPriority
+## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier)\.GetPriority
 
-int = __GetPriority(__ )
+int \= **GetPriority\(** \)
 Retrieves the relative priority of the overlay
 
 #### Return Value
-Implementation of this function should return a number in the range 0-100 (0 is highest priority)
+Implementation of this function should return a number in the range 0-100 \(0 is highest priority\)
 
-## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier).IsMemberOf
+## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier)\.IsMemberOf
 
-int = __IsMemberOf( *path*  *, attrib* __ )
+int \= **IsMemberOf\( *path*  *, attrib* ** \)
 Determines if a shell object should have an icon overlay
 
 #### Parameters
@@ -51,12 +51,12 @@ Determines if a shell object should have an icon overlay
 
   -  *attrib* : int
 
-    Shell attributes, combination of shellcon.SFGAO_* flags
+    Shell attributes, combination of shellcon\.SFGAO\_\* flags
 
 #### Return Value
-The gateway implementation of this function should return winerror.S_OK to 
+The gateway implementation of this function should return winerror\.S\_OK to 
 
-display the overlay, S_FALSE if not, or throw a COM exception with E_FAIL on error.
+display the overlay, S\_FALSE if not, or throw a COM exception with E\_FAIL on error\.
 The client implementation of this function returns the same values - ie, 
 
-Python's True and False should not be used, as S_OK==0==False.
+Python's True and False should not be used, as S\_OK\=\=0\=\=False\.

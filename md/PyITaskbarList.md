@@ -27,9 +27,9 @@ Description of the interface
 
     Sets the window as the active tab, without displaying it as pressed on the taskbar&nbsp;
 
-## [PyITaskbarList](#pyitaskbarlist).ActivateTab
+## [PyITaskbarList](#pyitaskbarlist)\.ActivateTab
 
- __ActivateTab( *hwnd* __ )
+ **ActivateTab\( *hwnd* ** \)
 Marks a window as the active tab on the taskbar
 
 #### Parameters
@@ -37,11 +37,11 @@ Marks a window as the active tab on the taskbar
 
   -  *hwnd* :[PyHANDLE](#pyhandle)
 
-    Handle to window, should have WS_CAPTION style
+    Handle to window, should have WS\_CAPTION style
 
-## [PyITaskbarList](#pyitaskbarlist).AddTab
+## [PyITaskbarList](#pyitaskbarlist)\.AddTab
 
- __AddTab( *hwnd* __ )
+ **AddTab\( *hwnd* ** \)
 Places a window on the taskbar
 
 #### Parameters
@@ -49,11 +49,11 @@ Places a window on the taskbar
 
   -  *hwnd* :[PyHANDLE](#pyhandle)
 
-    Handle to window, should have WS_CAPTION style
+    Handle to window, should have WS\_CAPTION style
 
-## [PyITaskbarList](#pyitaskbarlist).DeleteTab
+## [PyITaskbarList](#pyitaskbarlist)\.DeleteTab
 
- __DeleteTab( *hwnd* __ )
+ **DeleteTab\( *hwnd* ** \)
 Removes a window from the taskbar
 
 #### Parameters
@@ -61,16 +61,16 @@ Removes a window from the taskbar
 
   -  *hwnd* :[PyHANDLE](#pyhandle)
 
-    Handle to window, should have WS_CAPTION style
+    Handle to window, should have WS\_CAPTION style
 
-## [PyITaskbarList](#pyitaskbarlist).HrInit
+## [PyITaskbarList](#pyitaskbarlist)\.HrInit
 
- __HrInit(__ )
+ **HrInit\(** \)
 Intializes the interface before use
 
-## [PyITaskbarList](#pyitaskbarlist).SetActiveAlt
+## [PyITaskbarList](#pyitaskbarlist)\.SetActiveAlt
 
- __SetActiveAlt( *hwnd* __ )
+ **SetActiveAlt\( *hwnd* ** \)
 Sets the window as the active tab, without displaying it as pressed on the taskbar
 
 #### Parameters
@@ -78,4 +78,4 @@ Sets the window as the active tab, without displaying it as pressed on the taskb
 
   -  *hwnd* :[PyHANDLE](#pyhandle)
 
-    Handle to window, should have WS_CAPTION style
+    Handle to window, should have WS\_CAPTION style

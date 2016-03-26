@@ -11,7 +11,7 @@ Derived from[PyIDebugStackFrameSniffer](#pyidebugstackframesniffer)
 
     Description of EnumStackFramesEx&nbsp;
 
-## [PyIDebugStackFrameSnifferEx](#pyidebugstackframesnifferex).EnumStackFramesEx
+## [PyIDebugStackFrameSnifferEx](#pyidebugstackframesnifferex)\.EnumStackFramesEx
 
- __EnumStackFramesEx(__ )
-Description of EnumStackFrames.
+ **EnumStackFramesEx\(** \)
+Description of EnumStackFrames\.

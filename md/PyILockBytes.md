@@ -9,67 +9,67 @@ Description of the interface
 
   - [ReadAt](PyILockBytes.md#pyilockbytesreadat)
 
-    Reads a specified number of bytes starting at a specified offset from the beginning of the byte array object.&nbsp;
+    Reads a specified number of bytes starting at a specified offset from the beginning of the byte array object\.&nbsp;
 
   - [WriteAt](PyILockBytes.md#pyilockbyteswriteat)
 
-    Writes the specified number of bytes starting at a specified offset from the beginning of the byte array.&nbsp;
+    Writes the specified number of bytes starting at a specified offset from the beginning of the byte array\.&nbsp;
 
   - [Flush](PyILockBytes.md#pyilockbytesflush)
 
-    Ensures that any internal buffers maintained by the byte array object are written out to the backing storage.&nbsp;
+    Ensures that any internal buffers maintained by the byte array object are written out to the backing storage\.&nbsp;
 
   - [SetSize](PyILockBytes.md#pyilockbytessetsize)
 
-    Changes the size of the byte array.&nbsp;
+    Changes the size of the byte array\.&nbsp;
 
   - [LockRegion](PyILockBytes.md#pyilockbyteslockregion)
 
-    Restricts access to a specified range of bytes in the byte array.&nbsp;
+    Restricts access to a specified range of bytes in the byte array\.&nbsp;
 
   - [UnlockRegion](PyILockBytes.md#pyilockbytesunlockregion)
 
-    Removes the access restriction on a range of bytes previously restricted with[PyILockBytes::LockRegion](PyILockBytes.md#pyilockbyteslockregion).&nbsp;
+    Removes the access restriction on a range of bytes previously restricted with[PyILockBytes::LockRegion](PyILockBytes.md#pyilockbyteslockregion)\.&nbsp;
 
   - [Stat](PyILockBytes.md#pyilockbytesstat)
 
-    Retrieves a[STATSTG](#statstg)structure for this byte array object.&nbsp;
+    Retrieves a[STATSTG](#statstg)structure for this byte array object\.&nbsp;
 
 
-## [PyILockBytes](#pyilockbytes).Flush
+## [PyILockBytes](#pyilockbytes)\.Flush
 
- __Flush(__ )
-Ensures that any internal buffers maintained by the byte array object are written out to the backing storage.
+ **Flush\(** \)
+Ensures that any internal buffers maintained by the byte array object are written out to the backing storage\.
 
-## [PyILockBytes](#pyilockbytes).LockRegion
+## [PyILockBytes](#pyilockbytes)\.LockRegion
 
- __LockRegion( *libOffset*  *, cb*  *, dwLockType* __ )
-Restricts access to a specified range of bytes in the byte array.
+ **LockRegion\( *libOffset*  *, cb*  *, dwLockType* ** \)
+Restricts access to a specified range of bytes in the byte array\.
 
 #### Parameters
 
 
-  -  *libOffset* :[ULARGE_INTEGER](ULARGE.md#ulargeinteger)
+  -  *libOffset* :[ULARGE\_INTEGER](ULARGE.md#ulargeinteger)
 
-    The beginning of the region to lock.
+    The beginning of the region to lock\.
 
-  -  *cb* :[ULARGE_INTEGER](ULARGE.md#ulargeinteger)
+  -  *cb* :[ULARGE\_INTEGER](ULARGE.md#ulargeinteger)
 
-    The number of bytes to lock.
+    The number of bytes to lock\.
 
   -  *dwLockType* : int
 
-    Specifies the restrictions being requested on accessing the range.
+    Specifies the restrictions being requested on accessing the range\.
 
-## [PyILockBytes](#pyilockbytes).ReadAt
+## [PyILockBytes](#pyilockbytes)\.ReadAt
 
-string = __ReadAt( *ulOffset*  *, cb* __ )
-Reads a specified number of bytes starting at a specified offset from the beginning of the byte array object.
+string \= **ReadAt\( *ulOffset*  *, cb* ** \)
+Reads a specified number of bytes starting at a specified offset from the beginning of the byte array object\.
 
 #### Parameters
 
 
-  -  *ulOffset* :[ULARGE_INTEGER](ULARGE.md#ulargeinteger)
+  -  *ulOffset* :[ULARGE\_INTEGER](ULARGE.md#ulargeinteger)
 
     Offset to start reading
 
@@ -78,67 +78,67 @@ Reads a specified number of bytes starting at a specified offset from the beginn
     Number of bytes to read
 
 #### Comments
-The result is a binary buffer returned in a string.
+The result is a binary buffer returned in a string\.
 
-## [PyILockBytes](#pyilockbytes).SetSize
+## [PyILockBytes](#pyilockbytes)\.SetSize
 
- __SetSize( *cb* __ )
-Changes the size of the byte array.
+ **SetSize\( *cb* ** \)
+Changes the size of the byte array\.
 
 #### Parameters
 
 
-  -  *cb* :[ULARGE_INTEGER](ULARGE.md#ulargeinteger)
+  -  *cb* :[ULARGE\_INTEGER](ULARGE.md#ulargeinteger)
 
-    The new size.
+    The new size\.
 
-## [PyILockBytes](#pyilockbytes).Stat
+## [PyILockBytes](#pyilockbytes)\.Stat
 
-[STATSTG](#statstg)= __Stat( *grfStatFlag* __ )
-Retrieves a[STATSTG](#statstg)structure for this byte array object.
+[STATSTG](#statstg)\= **Stat\( *grfStatFlag* ** \)
+Retrieves a[STATSTG](#statstg)structure for this byte array object\.
 
 #### Parameters
 
 
   -  *grfStatFlag* : int
 
-    Specifies that this method does not return some of the fields in the STATSTG structure, thus saving a memory allocation operation. Values are taken from the STATFLAG enumerationg
+    Specifies that this method does not return some of the fields in the STATSTG structure, thus saving a memory allocation operation\. Values are taken from the STATFLAG enumerationg
 
-## [PyILockBytes](#pyilockbytes).UnlockRegion
+## [PyILockBytes](#pyilockbytes)\.UnlockRegion
 
- __UnlockRegion( *libOffset*  *, cb*  *, dwLockType* __ )
-Removes the access restriction on a range of bytes previously restricted with[PyILockBytes::LockRegion](PyILockBytes.md#pyilockbyteslockregion).
+ **UnlockRegion\( *libOffset*  *, cb*  *, dwLockType* ** \)
+Removes the access restriction on a range of bytes previously restricted with[PyILockBytes::LockRegion](PyILockBytes.md#pyilockbyteslockregion)\.
 
 #### Parameters
 
 
-  -  *libOffset* :[ULARGE_INTEGER](ULARGE.md#ulargeinteger)
+  -  *libOffset* :[ULARGE\_INTEGER](ULARGE.md#ulargeinteger)
 
-    The beginning of the region to unlock.
+    The beginning of the region to unlock\.
 
-  -  *cb* :[ULARGE_INTEGER](ULARGE.md#ulargeinteger)
+  -  *cb* :[ULARGE\_INTEGER](ULARGE.md#ulargeinteger)
 
-    The number of bytes to lock.
+    The number of bytes to lock\.
 
   -  *dwLockType* : int
 
-    Specifies the restrictions being requested on accessing the range.
+    Specifies the restrictions being requested on accessing the range\.
 
-## [PyILockBytes](#pyilockbytes).WriteAt
+## [PyILockBytes](#pyilockbytes)\.WriteAt
 
-int = __WriteAt( *ulOffset*  *, data* __ )
-Writes the specified number of bytes starting at a specified offset from the beginning of the byte array.
+int \= **WriteAt\( *ulOffset*  *, data* ** \)
+Writes the specified number of bytes starting at a specified offset from the beginning of the byte array\.
 
 #### Parameters
 
 
-  -  *ulOffset* :[ULARGE_INTEGER](ULARGE.md#ulargeinteger)
+  -  *ulOffset* :[ULARGE\_INTEGER](ULARGE.md#ulargeinteger)
 
-    Offset to write at.
+    Offset to write at\.
 
   -  *data* : string
 
     Data to write
 
 #### Return Value
-The result is the number of bytes actually written.
+The result is the number of bytes actually written\.

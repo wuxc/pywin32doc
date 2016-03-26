@@ -10,15 +10,15 @@ Derived from[PyIUnknown](#pyiunknown)
 
   - [GetProps](PyIMAPIProp.md#pyimapipropgetprops)
 
-    Returns a list of property values.&nbsp;
+    Returns a list of property values\.&nbsp;
 
   - [DeleteProps](PyIMAPIProp.md#pyimapipropdeleteprops)
 
-    Deletes a set of properties.&nbsp;
+    Deletes a set of properties\.&nbsp;
 
   - [SetProps](PyIMAPIProp.md#pyimapipropsetprops)
 
-    Sets a set of properties.&nbsp;
+    Sets a set of properties\.&nbsp;
 
   - [CopyTo](PyIMAPIProp.md#pyimapipropcopyto)
 
@@ -30,7 +30,7 @@ Derived from[PyIUnknown](#pyiunknown)
 
   - [OpenProperty](PyIMAPIProp.md#pyimapipropopenproperty)
 
-    Returns an interface object to be used to access a property.&nbsp;
+    Returns an interface object to be used to access a property\.&nbsp;
 
   - [GetIDsFromNames](PyIMAPIProp.md#pyimapipropgetidsfromnames)
 
@@ -42,7 +42,7 @@ Derived from[PyIUnknown](#pyiunknown)
 
   - [GetLastError](PyIMAPIProp.md#pyimapipropgetlasterror)
 
-    Returns the last error code for the object.&nbsp;
+    Returns the last error code for the object\.&nbsp;
 
   - [SaveChanges](PyIMAPIProp.md#pyimapipropsavechanges)
 
@@ -52,9 +52,9 @@ Derived from[PyIUnknown](#pyiunknown)
 
     Gets a list of properties&nbsp;
 
-## [PyIMAPIProp](#pyimapiprop).CopyProps
+## [PyIMAPIProp](#pyimapiprop)\.CopyProps
 
-int, [problems, ] = __CopyProps( *propTags*  *, uiFlags*  *, progress*  *, resultIID*  *, dest*  *, flags* __ )
+int, \[problems, \] \= **CopyProps\( *propTags*  *, uiFlags*  *, progress*  *, resultIID*  *, dest*  *, flags* ** \)
 Copies a set of properties to another object
 
 #### Parameters
@@ -84,17 +84,17 @@ Copies a set of properties to another object
 
     flags
 
-## [PyIMAPIProp](#pyimapiprop).CopyTo
+## [PyIMAPIProp](#pyimapiprop)\.CopyTo
 
-int, [problems, ] = __CopyTo( *IIDExcludeList*  *, propTags*  *, uiFlags*  *, progress*  *, resultIID*  *, dest*  *, flags* __ )
+int, \[problems, \] \= **CopyTo\( *IIDExcludeList*  *, propTags*  *, uiFlags*  *, progress*  *, resultIID*  *, dest*  *, flags* ** \)
 Copies an object to another
 
 #### Parameters
 
 
-  -  *IIDExcludeList* : [[PyIID](#pyiid), ]
+  -  *IIDExcludeList* : \[[PyIID](#pyiid), \]
 
-    A sequence of IIDs to exclude.
+    A sequence of IIDs to exclude\.
 
   -  *propTags* :[PySPropTagArray](#pysproptagarray)
 
@@ -120,10 +120,10 @@ Copies an object to another
 
     flags
 
-## [PyIMAPIProp](#pyimapiprop).DeleteProps
+## [PyIMAPIProp](#pyimapiprop)\.DeleteProps
 
-int, [problems, ] = __DeleteProps( *propList* __ )
-Deletes a set of properties.
+int, \[problems, \] \= **DeleteProps\( *propList* ** \)
+Deletes a set of properties\.
 
 #### Parameters
 
@@ -132,9 +132,9 @@ Deletes a set of properties.
 
     The list of properties
 
-## [PyIMAPIProp](#pyimapiprop).GetIDsFromNames
+## [PyIMAPIProp](#pyimapiprop)\.GetIDsFromNames
 
-[PySPropTagArray](#pysproptagarray)= __GetIDsFromNames( *nameIds*  *, flags* __ )
+[PySPropTagArray](#pysproptagarray)\= **GetIDsFromNames\( *nameIds*  *, flags* ** \)
 Determines property IDs
 
 #### Parameters
@@ -144,29 +144,29 @@ Determines property IDs
 
     Sequence of name ids
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
     
 
-## [PyIMAPIProp](#pyimapiprop).GetLastError
+## [PyIMAPIProp](#pyimapiprop)\.GetLastError
 
- __MAPIERROR__ = __GetLastError( *hr*  *, flags* __ )
-Returns the last error code for the object.
+ **MAPIERROR** \= **GetLastError\( *hr*  *, flags* ** \)
+Returns the last error code for the object\.
 
 #### Parameters
 
 
   -  *hr* : int
 
-    Contains the error code generated in the previous method call.
+    Contains the error code generated in the previous method call\.
 
   -  *flags* : int
 
-    Indicates for format for the output.
+    Indicates for format for the output\.
 
-## [PyIMAPIProp](#pyimapiprop).GetNamesFromIDs
+## [PyIMAPIProp](#pyimapiprop)\.GetNamesFromIDs
 
-HRESULT,[PySPropTagArray](#pysproptagarray),[PyMAPINAMEIDArray](#pymapinameidarray)= __GetNamesFromIDs( *propTags*  *, propSetGuid*  *, flags* __ )
+HRESULT,[PySPropTagArray](#pysproptagarray),[PyMAPINAMEIDArray](#pymapinameidarray)\= **GetNamesFromIDs\( *propTags*  *, propSetGuid*  *, flags* ** \)
 Determines property names
 
 #### Parameters
@@ -176,17 +176,17 @@ Determines property names
 
     Sequence of property tags, or None
 
-  -  *propSetGuid=None* :[PyIID](#pyiid)
+  -  *propSetGuid\=None* :[PyIID](#pyiid)
 
     a globally unique identifier, identifying a property set, or None
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
     
 
-## [PyIMAPIProp](#pyimapiprop).GetPropList
+## [PyIMAPIProp](#pyimapiprop)\.GetPropList
 
-[PySPropTagArray](#pysproptagarray)= __GetPropList( *flags* __ )
+[PySPropTagArray](#pysproptagarray)\= **GetPropList\( *flags* ** \)
 Gets a list of properties
 
 #### Parameters
@@ -196,10 +196,10 @@ Gets a list of properties
 
     flags
 
-## [PyIMAPIProp](#pyimapiprop).GetProps
+## [PyIMAPIProp](#pyimapiprop)\.GetProps
 
-int, [items, ] = __GetProps( *propList*  *, flags* __ )
-Returns a list of property values.
+int, \[items, \] \= **GetProps\( *propList*  *, flags* ** \)
+Returns a list of property values\.
 
 #### Parameters
 
@@ -208,14 +208,14 @@ Returns a list of property values.
 
     The list of properties
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
     
 
-## [PyIMAPIProp](#pyimapiprop).OpenProperty
+## [PyIMAPIProp](#pyimapiprop)\.OpenProperty
 
-[PyIUnknown](#pyiunknown)= __OpenProperty( *propTag*  *, iid*  *, interfaceOptions*  *, flags* __ )
-Returns an interface object to be used to access a property.
+[PyIUnknown](#pyiunknown)\= **OpenProperty\( *propTag*  *, iid*  *, interfaceOptions*  *, flags* ** \)
+Returns an interface object to be used to access a property\.
 
 #### Parameters
 
@@ -226,19 +226,19 @@ Returns an interface object to be used to access a property.
 
   -  *iid* :[PyIID](#pyiid)
 
-    The IID of the resulting interface.
+    The IID of the resulting interface\.
 
   -  *interfaceOptions* : int
 
-    Data that relates to the interface identified by the lpiid parameter.
+    Data that relates to the interface identified by the lpiid parameter\.
 
   -  *flags* : int
 
     flags
 
-## [PyIMAPIProp](#pyimapiprop).SaveChanges
+## [PyIMAPIProp](#pyimapiprop)\.SaveChanges
 
- __SaveChanges( *flags* __ )
+ **SaveChanges\( *flags* ** \)
 Saves pending changes to the object
 
 #### Parameters
@@ -248,14 +248,14 @@ Saves pending changes to the object
 
     flags
 
-## [PyIMAPIProp](#pyimapiprop).SetProps
+## [PyIMAPIProp](#pyimapiprop)\.SetProps
 
-int, [problems, ] = __SetProps( *propList* __ )
-Sets a set of properties.
+int, \[problems, \] \= **SetProps\( *propList* ** \)
+Sets a set of properties\.
 
 #### Parameters
 
 
-  -  *propList* : [[PySPropValue](#pyspropvalue), ]
+  -  *propList* : \[[PySPropValue](#pyspropvalue), \]
 
     The list of properties

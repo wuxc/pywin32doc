@@ -47,10 +47,10 @@ Description of the interface
 
     Description of OnBreakFlagChange&nbsp;
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnBreakFlagChange
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnBreakFlagChange
 
- __OnBreakFlagChange( *abf*  *, prdatSteppingThread* __ )
-Description of OnBreakFlagChange.
+ **OnBreakFlagChange\( *abf*  *, prdatSteppingThread* ** \)
+Description of OnBreakFlagChange\.
 
 #### Parameters
 
@@ -63,15 +63,15 @@ Description of OnBreakFlagChange.
 
     Description for prdatSteppingThread
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnClose
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnClose
 
- __OnClose(__ )
-Description of OnClose.
+ **OnClose\(** \)
+Description of OnClose\.
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnConnectDebugger
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnConnectDebugger
 
- __OnConnectDebugger( *pad* __ )
-Description of OnConnectDebugger.
+ **OnConnectDebugger\( *pad* ** \)
+Description of OnConnectDebugger\.
 
 #### Parameters
 
@@ -80,10 +80,10 @@ Description of OnConnectDebugger.
 
     Description for pad
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnCreateThread
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnCreateThread
 
- __OnCreateThread( *prdat* __ )
-Description of OnCreateThread.
+ **OnCreateThread\( *prdat* ** \)
+Description of OnCreateThread\.
 
 #### Parameters
 
@@ -92,39 +92,22 @@ Description of OnCreateThread.
 
     Description for prdat
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnDebugOutput
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnDebugOutput
 
- __OnDebugOutput( *pstr* __ )
-Description of OnDebugOutput.
+ **OnDebugOutput\( *pstr* ** \)
+Description of OnDebugOutput\.
 
 #### Parameters
 
 
-  -  *pstr* : __unicode__ 
+  -  *pstr* : **unicode** 
 
     Description for pstr
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnDestroyThread
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnDestroyThread
 
- __OnDestroyThread( *prdat* __ )
-Description of OnDestroyThread.
-
-#### Parameters
-
-
-  -  *prdat* :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
-
-    Description for prdat
-
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnDisconnectDebugger
-
- __OnDisconnectDebugger(__ )
-Description of OnDisconnectDebugger.
-
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnEnterBreakPoint
-
- __OnEnterBreakPoint( *prdat* __ )
-Description of OnEnterBreakPoint.
+ **OnDestroyThread\( *prdat* ** \)
+Description of OnDestroyThread\.
 
 #### Parameters
 
@@ -133,10 +116,15 @@ Description of OnEnterBreakPoint.
 
     Description for prdat
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnLeaveBreakPoint
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnDisconnectDebugger
 
- __OnLeaveBreakPoint( *prdat* __ )
-Description of OnLeaveBreakPoint.
+ **OnDisconnectDebugger\(** \)
+Description of OnDisconnectDebugger\.
+
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnEnterBreakPoint
+
+ **OnEnterBreakPoint\( *prdat* ** \)
+Description of OnEnterBreakPoint\.
 
 #### Parameters
 
@@ -145,14 +133,26 @@ Description of OnLeaveBreakPoint.
 
     Description for prdat
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents).OnSetName
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnLeaveBreakPoint
 
- __OnSetName( *pstrName* __ )
-Description of OnSetName.
+ **OnLeaveBreakPoint\( *prdat* ** \)
+Description of OnLeaveBreakPoint\.
 
 #### Parameters
 
 
-  -  *pstrName* : __unicode__ 
+  -  *prdat* :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+
+    Description for prdat
+
+## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnSetName
+
+ **OnSetName\( *pstrName* ** \)
+Description of OnSetName\.
+
+#### Parameters
+
+
+  -  *pstrName* : **unicode** 
 
     Description for pstrName

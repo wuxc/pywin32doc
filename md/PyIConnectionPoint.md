@@ -2,36 +2,36 @@
 
 ## PyIConnectionPoint Object
 
-A Python wrapper of a COM IConnectionPoint interface.
+A Python wrapper of a COM IConnectionPoint interface\.
 
 #### Methods
 
 
   - [GetConnectionInterface](PyIConnectionPoint.md#pyiconnectionpointgetconnectioninterface)
 
-    Retrieves the IID of the interface represented by the connection point.&nbsp;
+    Retrieves the IID of the interface represented by the connection point\.&nbsp;
 
   - [GetConnectionPointContainer](PyIConnectionPoint.md#pyiconnectionpointgetconnectionpointcontainer)
 
-    Gets the connection point container for the object.&nbsp;
+    Gets the connection point container for the object\.&nbsp;
 
   - [Advise](PyIConnectionPoint.md#pyiconnectionpointadvise)
 
-    Establishes a connection between the connection point object and the client's sink.&nbsp;
+    Establishes a connection between the connection point object and the client's sink\.&nbsp;
 
   - [Unadvise](PyIConnectionPoint.md#pyiconnectionpointunadvise)
 
-    Terminates an advisory connection previously established through[PyIConnectionPoint::Advise](PyIConnectionPoint.md#pyiconnectionpointadvise).&nbsp;
+    Terminates an advisory connection previously established through[PyIConnectionPoint::Advise](PyIConnectionPoint.md#pyiconnectionpointadvise)\.&nbsp;
 
   - [EnumConnections](PyIConnectionPoint.md#pyiconnectionpointenumconnections)
 
     Creates an enumerator to iterate through the connections for the connection point&nbsp;
 
 
-## [PyIConnectionPoint](#pyiconnectionpoint).Advise
+## [PyIConnectionPoint](#pyiconnectionpoint)\.Advise
 
-int = __Advise( *unk* __ )
-Establishes a connection between the connection point object and the client's sink.
+int \= **Advise\( *unk* ** \)
+Establishes a connection between the connection point object and the client's sink\.
 
 #### Parameters
 
@@ -43,25 +43,25 @@ Establishes a connection between the connection point object and the client's si
 #### Return Value
 The result is the connection point identifier used by[PyIConnectionPoint::Unadvise](PyIConnectionPoint.md#pyiconnectionpointunadvise)
 
-## [PyIConnectionPoint](#pyiconnectionpoint).EnumConnections
+## [PyIConnectionPoint](#pyiconnectionpoint)\.EnumConnections
 
-[PyIEnumConnections](#pyienumconnections)= __EnumConnections(__ )
+[PyIEnumConnections](#pyienumconnections)\= **EnumConnections\(** \)
 Creates an enumerator to iterate through the connections for the connection point
 
-## [PyIConnectionPoint](#pyiconnectionpoint).GetConnectionInterface
+## [PyIConnectionPoint](#pyiconnectionpoint)\.GetConnectionInterface
 
-[PyIID](#pyiid)= __GetConnectionInterface(__ )
-Retrieves the IID of the interface represented by the connection point.
+[PyIID](#pyiid)\= **GetConnectionInterface\(** \)
+Retrieves the IID of the interface represented by the connection point\.
 
-## [PyIConnectionPoint](#pyiconnectionpoint).GetConnectionPointContainer
+## [PyIConnectionPoint](#pyiconnectionpoint)\.GetConnectionPointContainer
 
-[PyIConnectionPointContainer](#pyiconnectionpointcontainer)= __GetConnectionPointContainer(__ )
-Gets the connection point container for the object.
+[PyIConnectionPointContainer](#pyiconnectionpointcontainer)\= **GetConnectionPointContainer\(** \)
+Gets the connection point container for the object\.
 
-## [PyIConnectionPoint](#pyiconnectionpoint).Unadvise
+## [PyIConnectionPoint](#pyiconnectionpoint)\.Unadvise
 
- __Unadvise( *cookie* __ )
-Terminates an advisory connection previously established through IConnectionPoint::Advise. The dwCookie parameter identifies the connection to terminate.
+ **Unadvise\( *cookie* ** \)
+Terminates an advisory connection previously established through IConnectionPoint::Advise\. The dwCookie parameter identifies the connection to terminate\.
 
 #### Parameters
 

@@ -2,146 +2,146 @@
 
 ## PyCButton Object
 
-A windows button.  Encapsulates an MFC __CButton__ class.  Derived from[PyCControl](#pyccontrol).
+A windows button\.  Encapsulates an MFC **CButton** class\.  Derived from[PyCControl](#pyccontrol)\.
 
 #### Methods
 
 
   - [CreateWindow](PyCButton.md#pycbuttoncreatewindow)
 
-    Creates the window for a new button object.&nbsp;
+    Creates the window for a new button object\.&nbsp;
 
   - [GetBitmap](PyCButton.md#pycbuttongetbitmap)
 
-    Retrieves the bitmap associated with the button.&nbsp;
+    Retrieves the bitmap associated with the button\.&nbsp;
 
   - [SetBitmap](PyCButton.md#pycbuttonsetbitmap)
 
-    Sets the bitmap of a button.&nbsp;
+    Sets the bitmap of a button\.&nbsp;
 
   - [GetCheck](PyCButton.md#pycbuttongetcheck)
 
-    Retrieves the check state of a radio button or check box.&nbsp;
+    Retrieves the check state of a radio button or check box\.&nbsp;
 
   - [SetCheck](PyCButton.md#pycbuttonsetcheck)
 
-    Sets the check state of a radio button or check box.&nbsp;
+    Sets the check state of a radio button or check box\.&nbsp;
 
   - [GetState](PyCButton.md#pycbuttongetstate)
 
-    Retrieves the state of a radio button or check box.&nbsp;
+    Retrieves the state of a radio button or check box\.&nbsp;
 
   - [SetState](PyCButton.md#pycbuttonsetstate)
 
-    Sets the state of a radio button or check box.&nbsp;
+    Sets the state of a radio button or check box\.&nbsp;
 
   - [GetButtonStyle](PyCButton.md#pycbuttongetbuttonstyle)
 
-    Retrieves the style of a radio button or check box.&nbsp;
+    Retrieves the style of a radio button or check box\.&nbsp;
 
   - [SetButtonStyle](PyCButton.md#pycbuttonsetbuttonstyle)
 
-    Sets the state of a radio button or check box.&nbsp;
+    Sets the state of a radio button or check box\.&nbsp;
 
-## [PyCButton](#pycbutton).CreateWindow
+## [PyCButton](#pycbutton)\.CreateWindow
 
- __CreateWindow( *caption*  *, style*  *, rect*  *, parent*  *, id* __ )
-Creates the window for a new button object.
+ **CreateWindow\( *caption*  *, style*  *, rect*  *, parent*  *, id* ** \)
+Creates the window for a new button object\.
 
 #### Parameters
 
 
   -  *caption* : string
 
-    The caption (text) for the button.
+    The caption \(text\) for the button\.
 
   -  *style* : int
 
-    The style for the button.  Use any of the win32con.BS_* constants.
+    The style for the button\.  Use any of the win32con\.BS\_\* constants\.
 
-  -  *rect* : (left, top, right, bottom)
+  -  *rect* : \(left, top, right, bottom\)
 
-    The size and position of the button.
+    The size and position of the button\.
 
   -  *parent* :[PyCWnd](#pycwnd)
 
-    The parent window of the button.  Usually a[PyCDialog](#pycdialog).
+    The parent window of the button\.  Usually a[PyCDialog](#pycdialog)\.
 
   -  *id* : int
 
-    The buttons control ID.
+    The buttons control ID\.
 
-## [PyCButton](#pycbutton).GetBitmap
+## [PyCButton](#pycbutton)\.GetBitmap
 
-int = __GetBitmap(__ )
+int \= **GetBitmap\(** \)
 Get the button's bitmap
 
-## [PyCButton](#pycbutton).GetButtonStyle
+## [PyCButton](#pycbutton)\.GetButtonStyle
 
-int = __GetButtonStyle(__ )
-Gets the style of the button.
+int \= **GetButtonStyle\(** \)
+Gets the style of the button\.
 
-## [PyCButton](#pycbutton).GetCheck
+## [PyCButton](#pycbutton)\.GetCheck
 
-int = __GetCheck(__ )
-Retrieves the check state of a radio button or check box.
+int \= **GetCheck\(** \)
+Retrieves the check state of a radio button or check box\.
 
-## [PyCButton](#pycbutton).GetState
+## [PyCButton](#pycbutton)\.GetState
 
-int = __GetState(__ )
-Returns the state of the button.
+int \= **GetState\(** \)
+Returns the state of the button\.
 
-## [PyCButton](#pycbutton).SetBitmap
+## [PyCButton](#pycbutton)\.SetBitmap
 
-int = __SetBitmap( *hBitmap* __ )
+int \= **SetBitmap\( *hBitmap* ** \)
 Set the button's bitmap
 
 #### Parameters
 
 
-  -  *hBitmap=1* : int
+  -  *hBitmap\=1* : int
 
     Handle of the new bitmap
 
-## [PyCButton](#pycbutton).SetButtonStyle
+## [PyCButton](#pycbutton)\.SetButtonStyle
 
-int = __SetButtonStyle( *style*  *, bRedraw* __ )
-Sets the style of the button.
+int \= **SetButtonStyle\( *style*  *, bRedraw* ** \)
+Sets the style of the button\.
 
 #### Parameters
 
 
   -  *style* : int
 
-    The new style for the button.
+    The new style for the button\.
 
-  -  *bRedraw=1* : int
+  -  *bRedraw\=1* : int
 
     Should the button be redrawn?
 
-## [PyCButton](#pycbutton).SetCheck
+## [PyCButton](#pycbutton)\.SetCheck
 
- __SetCheck( *idCheck* __ )
-Sets or resets the state of a radio button or check box.
+ **SetCheck\( *idCheck* ** \)
+Sets or resets the state of a radio button or check box\.
 
 #### Parameters
 
 
   -  *idCheck* : int
 
-    The ID of the button.
+    The ID of the button\.
 
-## [PyCButton](#pycbutton).SetState
+## [PyCButton](#pycbutton)\.SetState
 
-int = __SetState( *bHighlight* __ )
-Sets the state of the button.
+int \= **SetState\( *bHighlight* ** \)
+Sets the state of the button\.
 
 #### Parameters
 
 
   -  *bHighlight* : int
 
-    The new state for the button.
+    The new state for the button\.
 
 #### Comments
-Highlighting affects the exterior of a button control. It has no effect on the check state of a radio button or check box.
+Highlighting affects the exterior of a button control\. It has no effect on the check state of a radio button or check box\.

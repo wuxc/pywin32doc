@@ -11,10 +11,10 @@ Description of the interface
 
     Description of CopyCallback&nbsp;
 
-## [PyICopyHookA](#pyicopyhooka).CopyCallback
+## [PyICopyHookA](#pyicopyhooka)\.CopyCallback
 
- __CopyCallback( *hwnd*  *, wFunc*  *, wFlags*  *, srcFile*  *, srcAttribs*  *, destFile*  *, destAttribs* __ )
-Description of CopyCallback.
+ **CopyCallback\( *hwnd*  *, wFunc*  *, wFlags*  *, srcFile*  *, srcAttribs*  *, destFile*  *, destAttribs* ** \)
+Description of CopyCallback\.
 
 #### Parameters
 
@@ -31,7 +31,7 @@ Description of CopyCallback.
 
     Description for wFlags
 
-  -  *srcFile* : string/ __unicode__ 
+  -  *srcFile* : string/ **unicode** 
 
     Description for srcFile
 
@@ -39,7 +39,7 @@ Description of CopyCallback.
 
     Description for srcAttribs
 
-  -  *destFile* : string/ __unicode__ 
+  -  *destFile* : string/ **unicode** 
 
     Description for destFile
 

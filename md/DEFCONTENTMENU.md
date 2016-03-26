@@ -2,7 +2,7 @@
 
 ## DEFCONTENTMENU Object
 
-A tuple representing a DEFCONTEXTMENU structure.
+A tuple representing a DEFCONTEXTMENU structure\.
 
 #### Parameters
 
@@ -11,23 +11,23 @@ A tuple representing a DEFCONTEXTMENU structure.
 
     
 
-  -  *callback* : __PyIContextMenuCB__ 
+  -  *callback* : **PyIContextMenuCB** 
 
     May be None 
 
-bNoneOK */))
+bNoneOK \*/\)\)
 
-  -  *pidlFolder* : __PIDL__ 
+  -  *pidlFolder* : **PIDL** 
 
     May be None
 
   -  *sf* :[PyIShellFolder](#pyishellfolder)
 
-    The Shell data source object that is the parent of the child items specified in children. If parent is specified, this parameter can be NULL. 
+    The Shell data source object that is the parent of the child items specified in children\. If parent is specified, this parameter can be NULL\. 
 
-bNoneOK */))
+bNoneOK \*/\)\)
 
-  -  *children* : [ __PIDL__ , ...]
+  -  *children* : \[ **PIDL** , \.\.\.\]
 
     
 
@@ -35,4 +35,4 @@ bNoneOK */))
 
     May be None 
 
-bNoneOK */))
+bNoneOK \*/\)\)

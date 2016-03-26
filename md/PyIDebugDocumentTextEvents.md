@@ -31,15 +31,15 @@ Description of the interface
 
     Description of onUpdateDocumentAttributes&nbsp;
 
-## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents).onDestroy
+## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onDestroy
 
- __onDestroy(__ )
-Description of onDestroy.
+ **onDestroy\(** \)
+Description of onDestroy\.
 
-## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents).onInsertText
+## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onInsertText
 
- __onInsertText( *cCharacterPosition*  *, cNumToInsert* __ )
-Description of onInsertText.
+ **onInsertText\( *cCharacterPosition*  *, cNumToInsert* ** \)
+Description of onInsertText\.
 
 #### Parameters
 
@@ -52,10 +52,10 @@ Description of onInsertText.
 
     Description for cNumToInsert
 
-## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents).onRemoveText
+## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onRemoveText
 
- __onRemoveText( *cCharacterPosition*  *, cNumToRemove* __ )
-Description of onRemoveText.
+ **onRemoveText\( *cCharacterPosition*  *, cNumToRemove* ** \)
+Description of onRemoveText\.
 
 #### Parameters
 
@@ -68,10 +68,10 @@ Description of onRemoveText.
 
     Description for cNumToRemove
 
-## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents).onReplaceText
+## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onReplaceText
 
- __onReplaceText( *cCharacterPosition*  *, cNumToReplace* __ )
-Description of onReplaceText.
+ **onReplaceText\( *cCharacterPosition*  *, cNumToReplace* ** \)
+Description of onReplaceText\.
 
 #### Parameters
 
@@ -84,10 +84,10 @@ Description of onReplaceText.
 
     Description for cNumToReplace
 
-## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents).onUpdateDocumentAttributes
+## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onUpdateDocumentAttributes
 
- __onUpdateDocumentAttributes( *textdocattr* __ )
-Description of onUpdateDocumentAttributes.
+ **onUpdateDocumentAttributes\( *textdocattr* ** \)
+Description of onUpdateDocumentAttributes\.
 
 #### Parameters
 
@@ -96,10 +96,10 @@ Description of onUpdateDocumentAttributes.
 
     Description for textdocattr
 
-## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents).onUpdateTextAttributes
+## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onUpdateTextAttributes
 
- __onUpdateTextAttributes( *cCharacterPosition*  *, cNumToUpdate* __ )
-Description of onUpdateTextAttributes.
+ **onUpdateTextAttributes\( *cCharacterPosition*  *, cNumToUpdate* ** \)
+Description of onUpdateTextAttributes\.
 
 #### Parameters
 

@@ -7,96 +7,96 @@ A dictionary containing information for a CREDENTIAL struct
 #### Win32 API References
 
 
-  - Search for *CREDENTIAL struct* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=credential struct),[google](#http://www.google.com/search?q=credential struct)or[google groups](#http://groups.google.com/groups?q=credential struct).
+  - Search for *CREDENTIAL struct* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=credential struct),[google](#http://www.google.com/search?q=credential struct)or[google groups](#http://groups.google.com/groups?q=credential struct)\.
 
 #### Properties
 
-  -  __int Flags__ 
-    Combination of CRED_FLAGS_PROMPT_NOW, CRED_FLAGS_USERNAME_TARGET
+  -  **int Flags** 
+    Combination of CRED\_FLAGS\_PROMPT\_NOW, CRED\_FLAGS\_USERNAME\_TARGET
 
-  -  __int Type__ 
-    Type of credential, one of CRED_TYPE_* values
+  -  **int Type** 
+    Type of credential, one of CRED\_TYPE\_\* values
 
-  -  __[PyUnicode](#pyunicode)TargetName__ 
-    Target of credential, can end with * for wildcard matching
+  -  **[PyUnicode](#pyunicode)TargetName** 
+    Target of credential, can end with \* for wildcard matching
 
-  -  __[PyUnicode](#pyunicode)Comment__ 
+  -  **[PyUnicode](#pyunicode)Comment** 
     Descriptive text
 
-  -  __[PyTime](#pytime)LastWritten__ 
+  -  **[PyTime](#pytime)LastWritten** 
     Modification time, ignored on input
 
-  -  __[PyUnicode](#pyunicode)CredentialBlob__ 
-    Contains password for username credential, or PIN for certificate credential.  This member is write-only.
+  -  **[PyUnicode](#pyunicode)CredentialBlob** 
+    Contains password for username credential, or PIN for certificate credential\.  This member is write-only\.
 
-  -  __int Persist__ 
-    Specifies scope of persistence, one of CRED_PERSIST_* values
+  -  **int Persist** 
+    Specifies scope of persistence, one of CRED\_PERSIST\_\* values
 
-  -  __tuple Attributes__ 
-    Tuple of[PyCREDENTIAL_ATTRIBUTE](PyCREDENTIAL.md#pycredentialattribute)dicts containing application-specific data, can be None
+  -  **tuple Attributes** 
+    Tuple of[PyCREDENTIAL\_ATTRIBUTE](PyCREDENTIAL.md#pycredentialattribute)dicts containing application-specific data, can be None
 
-  -  __[PyUnicode](#pyunicode)TargetAlias__ 
-    Alias for TargetName, only valid with CRED_TYPE_GENERIC
+  -  **[PyUnicode](#pyunicode)TargetAlias** 
+    Alias for TargetName, only valid with CRED\_TYPE\_GENERIC
 
-  -  __[PyUnicode](#pyunicode)UserName__ 
-    User to be authenticated by target. Can be of the form username@domain or domain\\username. 
+  -  **[PyUnicode](#pyunicode)UserName** 
+    User to be authenticated by target\. Can be of the form username@domain or domain\\\\username\. 
 
-For CRED_TYPE_DOMAIN_CERTIFICATE, use[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)to marshal the SHA1 hash of user's certficate
+For CRED\_TYPE\_DOMAIN\_CERTIFICATE, use[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)to marshal the SHA1 hash of user's certficate
 
-## PyCREDENTIAL_ATTRIBUTE Object
+## PyCREDENTIAL\_ATTRIBUTE Object
 
-A dictionary containing information for a CREDENTIAL_ATTRIBUTE struct
+A dictionary containing information for a CREDENTIAL\_ATTRIBUTE struct
 
 #### Win32 API References
 
 
-  - Search for *CREDENTIAL_ATTRIBUTE* at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CREDENTIAL.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=credentialattribute),[google](http://www.google.com/search?q=CREDENTIAL.md#http://www.google.com/search?q=credentialattribute)or[google groups](http://groups.google.com/groups?q=CREDENTIAL.md#http://groups.google.com/groups?q=credentialattribute).
+  - Search for *CREDENTIAL\_ATTRIBUTE* at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CREDENTIAL.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=credentialattribute),[google](http://www.google.com/search?q=CREDENTIAL.md#http://www.google.com/search?q=credentialattribute)or[google groups](http://groups.google.com/groups?q=CREDENTIAL.md#http://groups.google.com/groups?q=credentialattribute)\.
 
 #### Properties
 
-  -  __[PyUnicode](#pyunicode)Keyword__ 
-    Attribute name, at most CRED_MAX_STRING_LENGTH chars
+  -  **[PyUnicode](#pyunicode)Keyword** 
+    Attribute name, at most CRED\_MAX\_STRING\_LENGTH chars
 
-  -  __int Flags__ 
+  -  **int Flags** 
     Reserved, use only 0
 
-  -  __str Value__ 
-    Attribute value, at most CRED_MAX_VALUE_SIZE bytes.  Unicode objects are treated as raw bytes.
+  -  **str Value** 
+    Attribute value, at most CRED\_MAX\_VALUE\_SIZE bytes\.  Unicode objects are treated as raw bytes\.
 
-## PyCREDENTIAL_TARGET_INFORMATION Object
+## PyCREDENTIAL\_TARGET\_INFORMATION Object
 
-A dictionary representing a CREDENTIAL_TARGET_INFORMATION struct
+A dictionary representing a CREDENTIAL\_TARGET\_INFORMATION struct
 
 #### Win32 API References
 
 
-  - Search for *CREDENTIAL_TARGET_INFORMATION* at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CREDENTIAL.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=credentialtarget_information),[google](http://www.google.com/search?q=CREDENTIAL.md#http://www.google.com/search?q=credentialtarget_information)or[google groups](http://groups.google.com/groups?q=CREDENTIAL.md#http://groups.google.com/groups?q=credentialtarget_information).
+  - Search for *CREDENTIAL\_TARGET\_INFORMATION* at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CREDENTIAL.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=credentialtarget_information),[google](http://www.google.com/search?q=CREDENTIAL.md#http://www.google.com/search?q=credentialtarget_information)or[google groups](http://groups.google.com/groups?q=CREDENTIAL.md#http://groups.google.com/groups?q=credentialtarget_information)\.
 
 #### Properties
 
-  -  __[PyUnicode](#pyunicode)TargetName__ 
+  -  **[PyUnicode](#pyunicode)TargetName** 
     Target of credentials
 
-  -  __[PyUnicode](#pyunicode)NetbiosServerName__ 
+  -  **[PyUnicode](#pyunicode)NetbiosServerName** 
     
 
-  -  __[PyUnicode](#pyunicode)DnsServerName__ 
+  -  **[PyUnicode](#pyunicode)DnsServerName** 
     
 
-  -  __[PyUnicode](#pyunicode)NetbiosDomainName__ 
+  -  **[PyUnicode](#pyunicode)NetbiosDomainName** 
     
 
-  -  __[PyUnicode](#pyunicode)DnsDomainName__ 
+  -  **[PyUnicode](#pyunicode)DnsDomainName** 
     
 
-  -  __[PyUnicode](#pyunicode)DnsTreeName__ 
+  -  **[PyUnicode](#pyunicode)DnsTreeName** 
     
 
-  -  __[PyUnicode](#pyunicode)PackageName__ 
+  -  **[PyUnicode](#pyunicode)PackageName** 
     Name of security package which mapped TargetName
 
-  -  __int Flags__ 
-    CRED_TI_* flags
+  -  **int Flags** 
+    CRED\_TI\_\* flags
 
-  -  __(int,...) CredTypes__ 
-    Tuple of CRED_TYPE_* values indicating which types of credentials are acceptable to target
+  -  **\(int,\.\.\.\) CredTypes** 
+    Tuple of CRED\_TYPE\_\* values indicating which types of credentials are acceptable to target

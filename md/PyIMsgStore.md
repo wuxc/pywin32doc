@@ -10,15 +10,15 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
   - [OpenEntry](PyIMsgStore.md#pyimsgstoreopenentry)
 
-    Opens a folder or message and returns an interface object for further access.&nbsp;
+    Opens a folder or message and returns an interface object for further access\.&nbsp;
 
   - [GetReceiveFolder](PyIMsgStore.md#pyimsgstoregetreceivefolder)
 
-    Obtains the folder that was established as the destination for incoming messages of a specified message class or the default receive folder for the message store.&nbsp;
+    Obtains the folder that was established as the destination for incoming messages of a specified message class or the default receive folder for the message store\.&nbsp;
 
   - [GetReceiveFolderTable](PyIMsgStore.md#pyimsgstoregetreceivefoldertable)
 
-    provides access to the receive folder table, a table that includes information about all of the receive folders for the message store.&nbsp;
+    provides access to the receive folder table, a table that includes information about all of the receive folders for the message store\.&nbsp;
 
   - [CompareEntryIDs](PyIMsgStore.md#pyimsgstorecompareentryids)
 
@@ -30,27 +30,27 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
   - [AbortSubmit](PyIMsgStore.md#pyimsgstoreabortsubmit)
 
-    Attempts to remove a message from the outgoing queue.&nbsp;
+    Attempts to remove a message from the outgoing queue\.&nbsp;
 
-## [PyIMsgStore](#pyimsgstore).AbortSubmit
+## [PyIMsgStore](#pyimsgstore)\.AbortSubmit
 
-int = __AbortSubmit( *entryId*  *, flags* __ )
-Attempts to remove a message from the outgoing queue.
+int \= **AbortSubmit\( *entryId*  *, flags* ** \)
+Attempts to remove a message from the outgoing queue\.
 
 #### Parameters
 
 
   -  *entryId* : string
 
-    The entry ID of the item to be aborted.
+    The entry ID of the item to be aborted\.
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
-    Reserved - must be zero.
+    Reserved - must be zero\.
 
-## [PyIMsgStore](#pyimsgstore).CompareEntryIDs
+## [PyIMsgStore](#pyimsgstore)\.CompareEntryIDs
 
-int = __CompareEntryIDs( *entryId*  *, entryId*  *, flags* __ )
+int \= **CompareEntryIDs\( *entryId*  *, entryId*  *, flags* ** \)
 Compares two entry identifiers belonging to a particular address book provider to determine if they refer to the same address book object
 
 #### Parameters
@@ -64,16 +64,16 @@ Compares two entry identifiers belonging to a particular address book provider t
 
     The second entry ID to be compared
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
-    Reserved - must be zero.
+    Reserved - must be zero\.
 
 #### Return Value
-The result is set to TRUE if the two entry identifiers refer to the same object, and FALSE otherwise.
+The result is set to TRUE if the two entry identifiers refer to the same object, and FALSE otherwise\.
 
-## [PyIMsgStore](#pyimsgstore).GetLastError
+## [PyIMsgStore](#pyimsgstore)\.GetLastError
 
- __PyMAPIError__ = __GetLastError( *hr*  *, flags* __ )
+ **PyMAPIError** \= **GetLastError\( *hr*  *, flags* ** \)
 Returns the last error associated with this object
 
 #### Parameters
@@ -87,26 +87,26 @@ Returns the last error associated with this object
 
     
 
-## [PyIMsgStore](#pyimsgstore).GetReceiveFolder
+## [PyIMsgStore](#pyimsgstore)\.GetReceiveFolder
 
-[PyIID](#pyiid), string = __GetReceiveFolder( **  *, flags* __ )
-Obtains the folder that was established as the destination for incoming messages of a specified message class or the default receive folder for the message store.
+[PyIID](#pyiid), string \= **GetReceiveFolder\( **  *, flags* ** \)
+Obtains the folder that was established as the destination for incoming messages of a specified message class or the default receive folder for the message store\.
 
 #### Parameters
 
 
   -  ** : string
 
-    Message class that is associated with a receive folder. If thid parameter is set to None or an empty string, GetReceiveFolder returns the default receive folder for the message store.
+    Message class that is associated with a receive folder\. If thid parameter is set to None or an empty string, GetReceiveFolder returns the default receive folder for the message store\.
 
   -  *flags* : int
 
     
 
-## [PyIMsgStore](#pyimsgstore).GetReceiveFolderTable
+## [PyIMsgStore](#pyimsgstore)\.GetReceiveFolderTable
 
-[PyIMAPITable](#pyimapitable)= __GetReceiveFolderTable( *flags* __ )
-provides access to the receive folder table, a table that includes information about all of the receive folders for the message store.
+[PyIMAPITable](#pyimapitable)\= **GetReceiveFolderTable\( *flags* ** \)
+provides access to the receive folder table, a table that includes information about all of the receive folders for the message store\.
 
 #### Parameters
 
@@ -115,10 +115,10 @@ provides access to the receive folder table, a table that includes information a
 
     Bitmask of flags that controls table access
 
-## [PyIMsgStore](#pyimsgstore).OpenEntry
+## [PyIMsgStore](#pyimsgstore)\.OpenEntry
 
- __PyIInterface__ = __OpenEntry( *entryId*  *, iid*  *, flags* __ )
-Opens a folder or message and returns an interface object for further access.
+ **PyIInterface** \= **OpenEntry\( *entryId*  *, iid*  *, flags* ** \)
+Opens a folder or message and returns an interface object for further access\.
 
 #### Parameters
 
@@ -133,4 +133,4 @@ Opens a folder or message and returns an interface object for further access.
 
   -  *flags* : int
 
-    Bitmask of flags that controls how the object is opened.
+    Bitmask of flags that controls how the object is opened\.

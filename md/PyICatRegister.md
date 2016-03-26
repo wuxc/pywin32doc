@@ -2,68 +2,52 @@
 
 ## PyICatRegister Object
 
-An interface to a COM ICatRegister interface.
+An interface to a COM ICatRegister interface\.
 
 #### Methods
 
 
   - [RegisterCategories](PyICatRegister.md#pyicatregisterregistercategories)
 
-    Registers one or more component categories. Each component category consists of a CATID and a list of locale-dependent description strings.&nbsp;
+    Registers one or more component categories\. Each component category consists of a CATID and a list of locale-dependent description strings\.&nbsp;
 
   - [UnRegisterCategories](PyICatRegister.md#pyicatregisterunregistercategories)
 
-    Unregister one or more previously registered categories.&nbsp;
+    Unregister one or more previously registered categories\.&nbsp;
 
   - [RegisterClassImplCategories](PyICatRegister.md#pyicatregisterregisterclassimplcategories)
 
-    Registers the class as implementing one or more component categories.&nbsp;
+    Registers the class as implementing one or more component categories\.&nbsp;
 
   - [UnRegisterClassImplCategories](PyICatRegister.md#pyicatregisterunregisterclassimplcategories)
 
-    Unregisters the class as implementing one or more component categories.&nbsp;
+    Unregisters the class as implementing one or more component categories\.&nbsp;
 
   - [RegisterClassReqCategories](PyICatRegister.md#pyicatregisterregisterclassreqcategories)
 
-    Registers the class as requiring one or more component categories.&nbsp;
+    Registers the class as requiring one or more component categories\.&nbsp;
 
   - [UnRegisterClassReqCategories](PyICatRegister.md#pyicatregisterunregisterclassreqcategories)
 
-    Unregisters the class as requiring one or more component categories.&nbsp;
+    Unregisters the class as requiring one or more component categories\.&nbsp;
 
 
-## [PyICatRegister](#pyicatregister).RegisterCategories
+## [PyICatRegister](#pyicatregister)\.RegisterCategories
 
- __RegisterCategories( *[ (catId, lcid, description), ...]* __ )
-Registers one or more component categories. Each component category consists of a CATID and a list of locale-dependent description strings.
-
-#### Parameters
-
-
-  -  *[ (catId, lcid, description), ...]* : [ ([PyIID](#pyiid), int, string), ...]
-
-    A sequence of category descriptions.
-
-## [PyICatRegister](#pyicatregister).RegisterClassImplCategories
-
- __RegisterClassImplCategories( *clsid*  *, [catId, ...]* __ )
-Registers the class as implementing one or more component categories.
+ **RegisterCategories\( *\[ \(catId, lcid, description\), \.\.\.\]* ** \)
+Registers one or more component categories\. Each component category consists of a CATID and a list of locale-dependent description strings\.
 
 #### Parameters
 
 
-  -  *clsid* :[PyIID](#pyiid)
+  -  *\[ \(catId, lcid, description\), \.\.\.\]* : \[ \([PyIID](#pyiid), int, string\), \.\.\.\]
 
-    Class ID of the relevent class
+    A sequence of category descriptions\.
 
-  -  *[catId, ...]* : [[PyIID](#pyiid), ...]
+## [PyICatRegister](#pyicatregister)\.RegisterClassImplCategories
 
-    A sequence of category IDs to be associated with the class.
-
-## [PyICatRegister](#pyicatregister).RegisterClassReqCategories
-
- __RegisterClassReqCategories( *clsid*  *, [catId, ...]* __ )
-Registers the class as requiring one or more component categories.
+ **RegisterClassImplCategories\( *clsid*  *, \[catId, \.\.\.\]* ** \)
+Registers the class as implementing one or more component categories\.
 
 #### Parameters
 
@@ -72,30 +56,14 @@ Registers the class as requiring one or more component categories.
 
     Class ID of the relevent class
 
-  -  *[catId, ...]* : [[PyIID](#pyiid), ...]
+  -  *\[catId, \.\.\.\]* : \[[PyIID](#pyiid), \.\.\.\]
 
-    A sequence of category IDs to be associated with the class.
+    A sequence of category IDs to be associated with the class\.
 
-## [PyICatRegister](#pyicatregister).UnRegisterClassImplCategories
+## [PyICatRegister](#pyicatregister)\.RegisterClassReqCategories
 
- __UnRegisterClassImplCategories( *clsid*  *, [catId, ...]* __ )
-Unregisters the class as implementing one or more component categories.
-
-#### Parameters
-
-
-  -  *clsid* :[PyIID](#pyiid)
-
-    Class ID of the relevent class
-
-  -  *[catId, ...]* : [[PyIID](#pyiid), ...]
-
-    A sequence of category IDs to be unregistered from the class.
-
-## [PyICatRegister](#pyicatregister).UnRegisterClassReqCategories
-
- __UnRegisterClassReqCategories( *clsid*  *, [catId, ...]* __ )
-Unregisters the class as requiring one or more component categories.
+ **RegisterClassReqCategories\( *clsid*  *, \[catId, \.\.\.\]* ** \)
+Registers the class as requiring one or more component categories\.
 
 #### Parameters
 
@@ -104,18 +72,50 @@ Unregisters the class as requiring one or more component categories.
 
     Class ID of the relevent class
 
-  -  *[catId, ...]* : [[PyIID](#pyiid), ...]
+  -  *\[catId, \.\.\.\]* : \[[PyIID](#pyiid), \.\.\.\]
 
-    A sequence of category IDs to be unregistered for the class.
+    A sequence of category IDs to be associated with the class\.
 
-## [PyICatRegister](#pyicatregister).UnregisterCategories
+## [PyICatRegister](#pyicatregister)\.UnRegisterClassImplCategories
 
- __UnregisterCategories( *[catId, ...]* __ )
-Unregister one or more previously registered categories.
+ **UnRegisterClassImplCategories\( *clsid*  *, \[catId, \.\.\.\]* ** \)
+Unregisters the class as implementing one or more component categories\.
 
 #### Parameters
 
 
-  -  *[catId, ...]* : [[PyIID](#pyiid), ...]
+  -  *clsid* :[PyIID](#pyiid)
 
-    The list of category IDs to be unregistered.
+    Class ID of the relevent class
+
+  -  *\[catId, \.\.\.\]* : \[[PyIID](#pyiid), \.\.\.\]
+
+    A sequence of category IDs to be unregistered from the class\.
+
+## [PyICatRegister](#pyicatregister)\.UnRegisterClassReqCategories
+
+ **UnRegisterClassReqCategories\( *clsid*  *, \[catId, \.\.\.\]* ** \)
+Unregisters the class as requiring one or more component categories\.
+
+#### Parameters
+
+
+  -  *clsid* :[PyIID](#pyiid)
+
+    Class ID of the relevent class
+
+  -  *\[catId, \.\.\.\]* : \[[PyIID](#pyiid), \.\.\.\]
+
+    A sequence of category IDs to be unregistered for the class\.
+
+## [PyICatRegister](#pyicatregister)\.UnregisterCategories
+
+ **UnregisterCategories\( *\[catId, \.\.\.\]* ** \)
+Unregister one or more previously registered categories\.
+
+#### Parameters
+
+
+  -  *\[catId, \.\.\.\]* : \[[PyIID](#pyiid), \.\.\.\]
+
+    The list of category IDs to be unregistered\.

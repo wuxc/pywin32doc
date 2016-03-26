@@ -67,10 +67,10 @@ Description of the interface
 
     Description of FilterDataObject&nbsp;
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).EnableModeless
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.EnableModeless
 
- __EnableModeless( *fEnable* __ )
-Description of EnableModeless.
+ **EnableModeless\( *fEnable* ** \)
+Description of EnableModeless\.
 
 #### Parameters
 
@@ -79,10 +79,10 @@ Description of EnableModeless.
 
     Description for fEnable
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).FilterDataObject
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.FilterDataObject
 
- __FilterDataObject( *pDO* __ )
-Description of FilterDataObject.
+ **FilterDataObject\( *pDO* ** \)
+Description of FilterDataObject\.
 
 #### Parameters
 
@@ -91,10 +91,10 @@ Description of FilterDataObject.
 
     Description for pDO
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).GetDropTarget
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetDropTarget
 
- __GetDropTarget( *pDropTarget* __ )
-Description of GetDropTarget.
+ **GetDropTarget\( *pDropTarget* ** \)
+Description of GetDropTarget\.
 
 #### Parameters
 
@@ -103,20 +103,20 @@ Description of GetDropTarget.
 
     Description for pDropTarget
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).GetExternal
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetExternal
 
- __GetExternal(__ )
-Description of GetExternal.
+ **GetExternal\(** \)
+Description of GetExternal\.
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).GetHostInfo
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetHostInfo
 
- __GetHostInfo(__ )
-Description of GetHostInfo.
+ **GetHostInfo\(** \)
+Description of GetHostInfo\.
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).GetOptionKeyPath
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetOptionKeyPath
 
- __GetOptionKeyPath( *dw* __ )
-Description of GetOptionKeyPath.
+ **GetOptionKeyPath\( *dw* ** \)
+Description of GetOptionKeyPath\.
 
 #### Parameters
 
@@ -125,27 +125,15 @@ Description of GetOptionKeyPath.
 
     Description for dw
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).HideUI
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.HideUI
 
- __HideUI(__ )
-Description of HideUI.
+ **HideUI\(** \)
+Description of HideUI\.
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).OnDocWindowActivate
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.OnDocWindowActivate
 
- __OnDocWindowActivate( *fActivate* __ )
-Description of OnDocWindowActivate.
-
-#### Parameters
-
-
-  -  *fActivate* : int
-
-    Description for fActivate
-
-## [PyIDocHostUIHandler](#pyidochostuihandler).OnFrameWindowActivate
-
- __OnFrameWindowActivate( *fActivate* __ )
-Description of OnFrameWindowActivate.
+ **OnDocWindowActivate\( *fActivate* ** \)
+Description of OnDocWindowActivate\.
 
 #### Parameters
 
@@ -154,15 +142,27 @@ Description of OnFrameWindowActivate.
 
     Description for fActivate
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).ResizeBorder
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.OnFrameWindowActivate
 
- __ResizeBorder( *prcBorder*  *, pUIWindow*  *, fRameWindow* __ )
-Description of ResizeBorder.
+ **OnFrameWindowActivate\( *fActivate* ** \)
+Description of OnFrameWindowActivate\.
 
 #### Parameters
 
 
-  -  *prcBorder* : (int, int, int, int)
+  -  *fActivate* : int
+
+    Description for fActivate
+
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.ResizeBorder
+
+ **ResizeBorder\( *prcBorder*  *, pUIWindow*  *, fRameWindow* ** \)
+Description of ResizeBorder\.
+
+#### Parameters
+
+
+  -  *prcBorder* : \(int, int, int, int\)
 
     Description for prcBorder
 
@@ -174,10 +174,10 @@ Description of ResizeBorder.
 
     Description for fRameWindow
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).ShowContextMenu
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.ShowContextMenu
 
- __ShowContextMenu( *dwID*  *, pt*  *, pcmdtReserved*  *, pdispReserved* __ )
-Description of ShowContextMenu.
+ **ShowContextMenu\( *dwID*  *, pt*  *, pcmdtReserved*  *, pdispReserved* ** \)
+Description of ShowContextMenu\.
 
 #### Parameters
 
@@ -186,7 +186,7 @@ Description of ShowContextMenu.
 
     Description for dwID
 
-  -  *pt* : (int, int)
+  -  *pt* : \(int, int\)
 
     Description for ppt
 
@@ -198,10 +198,10 @@ Description of ShowContextMenu.
 
     Description for pdispReserved
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).ShowUI
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.ShowUI
 
- __ShowUI( *dwID*  *, pActiveObject*  *, pCommandTarget*  *, pFrame*  *, pDoc* __ )
-Description of ShowUI.
+ **ShowUI\( *dwID*  *, pActiveObject*  *, pCommandTarget*  *, pFrame*  *, pDoc* ** \)
+Description of ShowUI\.
 
 #### Parameters
 
@@ -226,15 +226,15 @@ Description of ShowUI.
 
     Description for pDoc
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).TranslateAccelerator
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.TranslateAccelerator
 
- __TranslateAccelerator( *lpMsg*  *, pguidCmdGroup*  *, nCmdID* __ )
-Description of TranslateAccelerator.
+ **TranslateAccelerator\( *lpMsg*  *, pguidCmdGroup*  *, nCmdID* ** \)
+Description of TranslateAccelerator\.
 
 #### Parameters
 
 
-  -  *lpMsg* : __PyLPMSG__ 
+  -  *lpMsg* : **PyLPMSG** 
 
     Description for lpMsg
 
@@ -246,10 +246,10 @@ Description of TranslateAccelerator.
 
     Description for nCmdID
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).TranslateUrl
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.TranslateUrl
 
- __TranslateUrl( *dwTranslate*  *, pchURLIn* __ )
-Description of TranslateUrl.
+ **TranslateUrl\( *dwTranslate*  *, pchURLIn* ** \)
+Description of TranslateUrl\.
 
 #### Parameters
 
@@ -258,11 +258,11 @@ Description of TranslateUrl.
 
     Description for dwTranslate
 
-  -  *pchURLIn* : __unicode__ 
+  -  *pchURLIn* : **unicode** 
 
     Description for pchURLIn
 
-## [PyIDocHostUIHandler](#pyidochostuihandler).UpdateUI
+## [PyIDocHostUIHandler](#pyidochostuihandler)\.UpdateUI
 
- __UpdateUI(__ )
-Description of UpdateUI.
+ **UpdateUI\(** \)
+Description of UpdateUI\.

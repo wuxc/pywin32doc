@@ -59,9 +59,9 @@ Implemented by shell folders that can act as the source of shell item operations
 
     Informs the copy engine that the operation on a destination folder is finished&nbsp;
 
-## [PyITransferSource](#pyitransfersource).Advise
+## [PyITransferSource](#pyitransfersource)\.Advise
 
-int = __Advise( *Sink* __ )
+int \= **Advise\( *Sink* ** \)
 Connects an advise sink to receive notifications
 
 #### Parameters
@@ -71,9 +71,9 @@ Connects an advise sink to receive notifications
 
     Event sink to respond to notifications
 
-## [PyITransferSource](#pyitransfersource).ApplyPropertiesToItem
+## [PyITransferSource](#pyitransfersource)\.ApplyPropertiesToItem
 
-[PyIShellItem](#pyishellitem)= __ApplyPropertiesToItem( *Source* __ )
+[PyIShellItem](#pyishellitem)\= **ApplyPropertiesToItem\( *Source* ** \)
 Changes an item's properties as specified by[PyITransferSource::SetProperties](PyITransferSource.md#pyitransfersourcesetproperties)
 
 #### Parameters
@@ -83,9 +83,9 @@ Changes an item's properties as specified by[PyITransferSource::SetProperties](P
 
     Item whose properties are to be changed
 
-## [PyITransferSource](#pyitransfersource).EnterFolder
+## [PyITransferSource](#pyitransfersource)\.EnterFolder
 
-int = __EnterFolder( *ChildFolderDest* __ )
+int \= **EnterFolder\( *ChildFolderDest* ** \)
 Informs the copy engine that a folder will be the target of a file operation
 
 #### Parameters
@@ -95,9 +95,9 @@ Informs the copy engine that a folder will be the target of a file operation
 
     The destination folder for the operation
 
-## [PyITransferSource](#pyitransfersource).GetDefaultDestinationName
+## [PyITransferSource](#pyitransfersource)\.GetDefaultDestinationName
 
-str = __GetDefaultDestinationName( *Source*  *, ParentDest* __ )
+str \= **GetDefaultDestinationName\( *Source*  *, ParentDest* ** \)
 Determines the name of an item as it would appear in a given folder
 
 #### Parameters
@@ -111,9 +111,9 @@ Determines the name of an item as it would appear in a given folder
 
     The destination folder
 
-## [PyITransferSource](#pyitransfersource).LeaveFolder
+## [PyITransferSource](#pyitransfersource)\.LeaveFolder
 
-int = __LeaveFolder( *ChildFolderDest* __ )
+int \= **LeaveFolder\( *ChildFolderDest* ** \)
 Informs the copy engine that the operation on a destination folder is finished
 
 #### Parameters
@@ -123,9 +123,9 @@ Informs the copy engine that the operation on a destination folder is finished
 
     Destination folder
 
-## [PyITransferSource](#pyitransfersource).LinkItem
+## [PyITransferSource](#pyitransfersource)\.LinkItem
 
-(int,[PyIShellItem](#pyishellitem)= __LinkItem( *Source*  *, ParentDest*  *, NewName*  *, flags* __ )
+\(int,[PyIShellItem](#pyishellitem)\= **LinkItem\( *Source*  *, ParentDest*  *, NewName*  *, flags* ** \)
 Not implemented, according to MSDN
 
 #### Parameters
@@ -145,11 +145,11 @@ Not implemented, according to MSDN
 
   -  *flags* : int
 
-    Combination of shellcon.TSF_* flags
+    Combination of shellcon\.TSF\_\* flags
 
-## [PyITransferSource](#pyitransfersource).MoveItem
+## [PyITransferSource](#pyitransfersource)\.MoveItem
 
-(int,[PyIShellItem](#pyishellitem)= __MoveItem( *Item*  *, ParentDst*  *, NameDst*  *, flags* __ )
+\(int,[PyIShellItem](#pyishellitem)\= **MoveItem\( *Item*  *, ParentDst*  *, NameDst*  *, flags* ** \)
 Moves a shell item into another folder
 
 #### Parameters
@@ -163,24 +163,24 @@ Moves a shell item into another folder
 
     The folder into which it will be moved
 
-  -  *NameDst* : __unicode__ 
+  -  *NameDst* : **unicode** 
 
     New name for item after move, None to keep same name
 
   -  *flags* : int
 
-    Combination of shellcon.TSF_* flags
+    Combination of shellcon\.TSF\_\* flags
 
 #### Return Value
 Returns the HRESULT from the operation and the new shell item, which may be None 
 
-when the code in one of the informational COPYENGINE_S_* values.  See MSDN for descriptions 
+when the code in one of the informational COPYENGINE\_S\_\* values\.  See MSDN for descriptions 
 
-of expected actions for specific error codes.
+of expected actions for specific error codes\.
 
-## [PyITransferSource](#pyitransfersource).OpenItem
+## [PyITransferSource](#pyitransfersource)\.OpenItem
 
-(int,[PyIShellItemResources](#pyishellitemresources)) = __OpenItem( *Item*  *, flags*  *, riid* __ )
+\(int,[PyIShellItemResources](#pyishellitemresources)\) \= **OpenItem\( *Item*  *, flags*  *, riid* ** \)
 Initiates the copying of an item
 
 #### Parameters
@@ -188,19 +188,19 @@ Initiates the copying of an item
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
-    The item to be copied.
+    The item to be copied\.
 
   -  *flags* : int
 
-    Combination of shellcon.TSF_* flags
+    Combination of shellcon\.TSF\_\* flags
 
-  -  *riid=IID_IShellItemResources* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItemResources* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyITransferSource](#pyitransfersource).RecycleItem
+## [PyITransferSource](#pyitransfersource)\.RecycleItem
 
-(int,[PyIShellItem](#pyishellitem)= __RecycleItem( *Source*  *, ParentDest*  *, flags* __ )
+\(int,[PyIShellItem](#pyishellitem)\= **RecycleItem\( *Source*  *, ParentDest*  *, flags* ** \)
 Moves an item to the recycle bin
 
 #### Parameters
@@ -216,11 +216,11 @@ Moves an item to the recycle bin
 
   -  *flags* : int
 
-    Combination of shellcon.TSF_* flags
+    Combination of shellcon\.TSF\_\* flags
 
-## [PyITransferSource](#pyitransfersource).RemoveItem
+## [PyITransferSource](#pyitransfersource)\.RemoveItem
 
-int = __RemoveItem( *Source*  *, flags* __ )
+int \= **RemoveItem\( *Source*  *, flags* ** \)
 Deletes an item without recycling
 
 #### Parameters
@@ -232,14 +232,14 @@ Deletes an item without recycling
 
   -  *flags* : int
 
-    Combination of shellcon.TSF_* flags
+    Combination of shellcon\.TSF\_\* flags
 
 #### Return Value
 Returns the HRESULT of the operation
 
-## [PyITransferSource](#pyitransfersource).RenameItem
+## [PyITransferSource](#pyitransfersource)\.RenameItem
 
-(int,[PyIShellItem](#pyishellitem)) = __RenameItem( *Source*  *, NewName*  *, flags* __ )
+\(int,[PyIShellItem](#pyishellitem)\) \= **RenameItem\( *Source*  *, NewName*  *, flags* ** \)
 Renames a shell item
 
 #### Parameters
@@ -255,11 +255,11 @@ Renames a shell item
 
   -  *flags* : int
 
-    Combination of shellcon.TSF_* flags
+    Combination of shellcon\.TSF\_\* flags
 
-## [PyITransferSource](#pyitransfersource).SetProperties
+## [PyITransferSource](#pyitransfersource)\.SetProperties
 
- __SetProperties( *proparray* __ )
+ **SetProperties\( *proparray* ** \)
 Specifies changes to be applied to items' properties
 
 #### Parameters
@@ -269,9 +269,9 @@ Specifies changes to be applied to items' properties
 
     Property changes to be applied by[PyITransferSource::ApplyPropertiesToItem](PyITransferSource.md#pyitransfersourceapplypropertiestoitem)
 
-## [PyITransferSource](#pyitransfersource).Unadvise
+## [PyITransferSource](#pyitransfersource)\.Unadvise
 
- __Unadvise( *Cookie* __ )
+ **Unadvise\( *Cookie* ** \)
 Disconnects an event sink
 
 #### Parameters

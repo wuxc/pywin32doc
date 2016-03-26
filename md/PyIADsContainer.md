@@ -2,7 +2,7 @@
 
 ## PyIADsContainer Object
 
-A COM interface to ADSI's IADsContainer interface.
+A COM interface to ADSI's IADsContainer interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
 #### Methods
@@ -12,29 +12,29 @@ Derived from[PyIUnknown](#pyiunknown)
 
     &nbsp;
 
-  - [get_Count](PyIADsContainer.md#pyiadscontainerget_count)
+  - [get\_Count](PyIADsContainer.md#pyiadscontainerget_count)
 
     &nbsp;
 
-  - [get_Filter](PyIADsContainer.md#pyiadscontainerget_filter)
+  - [get\_Filter](PyIADsContainer.md#pyiadscontainerget_filter)
 
     &nbsp;
 
-  - [put_Filter](PyIADsContainer.md#pyiadscontainerput_filter)
+  - [put\_Filter](PyIADsContainer.md#pyiadscontainerput_filter)
 
     &nbsp;
 
-  - [get_Hints](PyIADsContainer.md#pyiadscontainerget_hints)
+  - [get\_Hints](PyIADsContainer.md#pyiadscontainerget_hints)
 
     &nbsp;
 
-  - [put_Hints](PyIADsContainer.md#pyiadscontainerput_hints)
+  - [put\_Hints](PyIADsContainer.md#pyiadscontainerput_hints)
 
     &nbsp;
 
-## [PyIADsContainer](#pyiadscontainer).GetObject
+## [PyIADsContainer](#pyiadscontainer)\.GetObject
 
-[PyIDispatch](#pyidispatch)= __GetObject( *class*  *, relativeName* __ )
+[PyIDispatch](#pyidispatch)\= **GetObject\( *class*  *, relativeName* ** \)
 
 
 #### Parameters
@@ -42,30 +42,30 @@ Derived from[PyIUnknown](#pyiunknown)
 
   -  *class* : string
 
-    Specifies the name of the object class as known in the underlying directory and identical to the one retrieved through the get_Class property method. If the class name is None, the provider returns the first item found in the container.
+    Specifies the name of the object class as known in the underlying directory and identical to the one retrieved through the get\_Class property method\. If the class name is None, the provider returns the first item found in the container\.
 
   -  *relativeName* : string
 
-    Specifies the name of the object as known in the underlying directory and identical to the one retrieved through the get_Name property method.
+    Specifies the name of the object as known in the underlying directory and identical to the one retrieved through the get\_Name property method\.
 
-## [PyIADsContainer](#pyiadscontainer).get_Count
+## [PyIADsContainer](#pyiadscontainer)\.get\_Count
 
-int = __get_Count(__ )
-
-
-## [PyIADsContainer](#pyiadscontainer).get_Filter
-
-object = __get_Filter(__ )
+int \= **get\_Count\(** \)
 
 
-## [PyIADsContainer](#pyiadscontainer).get_Hints
+## [PyIADsContainer](#pyiadscontainer)\.get\_Filter
 
-object = __get_Hints(__ )
+object \= **get\_Filter\(** \)
 
 
-## [PyIADsContainer](#pyiadscontainer).put_Filter
+## [PyIADsContainer](#pyiadscontainer)\.get\_Hints
 
- __put_Filter( *val* __ )
+object \= **get\_Hints\(** \)
+
+
+## [PyIADsContainer](#pyiadscontainer)\.put\_Filter
+
+ **put\_Filter\( *val* ** \)
 
 
 #### Parameters
@@ -75,9 +75,9 @@ object = __get_Hints(__ )
 
     
 
-## [PyIADsContainer](#pyiadscontainer).put_Hints
+## [PyIADsContainer](#pyiadscontainer)\.put\_Hints
 
- __put_Hints( *val* __ )
+ **put\_Hints\( *val* ** \)
 
 
 #### Parameters

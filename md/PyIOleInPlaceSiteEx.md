@@ -19,10 +19,10 @@ Description of the interface
 
     Description of RequestUIActivate&nbsp;
 
-## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex).OnInPlaceActivateEx
+## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex)\.OnInPlaceActivateEx
 
- __OnInPlaceActivateEx( *dwFlags* __ )
-Description of OnInPlaceActivateEx.
+ **OnInPlaceActivateEx\( *dwFlags* ** \)
+Description of OnInPlaceActivateEx\.
 
 #### Parameters
 
@@ -31,10 +31,10 @@ Description of OnInPlaceActivateEx.
 
     Description for dwFlags
 
-## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex).OnInPlaceDeactivateEx
+## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex)\.OnInPlaceDeactivateEx
 
- __OnInPlaceDeactivateEx( *fNoRedraw* __ )
-Description of OnInPlaceDeactivateEx.
+ **OnInPlaceDeactivateEx\( *fNoRedraw* ** \)
+Description of OnInPlaceDeactivateEx\.
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Description of OnInPlaceDeactivateEx.
 
     Description for fNoRedraw
 
-## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex).RequestUIActivate
+## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex)\.RequestUIActivate
 
- __RequestUIActivate(__ )
-Description of RequestUIActivate.
+ **RequestUIActivate\(** \)
+Description of RequestUIActivate\.

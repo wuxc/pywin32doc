@@ -19,9 +19,9 @@ Implemented by shell extensions that act as targets for item copy or move operat
 
     Requests that a new item be created&nbsp;
 
-## [PyITransferDestination](#pyitransferdestination).Advise
+## [PyITransferDestination](#pyitransferdestination)\.Advise
 
-int = __Advise( *Sink* __ )
+int \= **Advise\( *Sink* ** \)
 Connects an advise sink
 
 #### Parameters
@@ -34,9 +34,9 @@ Connects an advise sink
 #### Return Value
 Returns an id for the connection, to be passed to[PyITransferDestination::Unadvise](PyITransferDestination.md#pyitransferdestinationunadvise)
 
-## [PyITransferDestination](#pyitransferdestination).CreateItem
+## [PyITransferDestination](#pyitransferdestination)\.CreateItem
 
-(int, interface, interface) = __CreateItem( *Name*  *, Attributes*  *, Size*  *, Flags*  *, riidItem*  *, riidResources* __ )
+\(int, interface, interface\) \= **CreateItem\( *Name*  *, Attributes*  *, Size*  *, Flags*  *, riidItem*  *, riidResources* ** \)
 Requests that a new item be created
 
 #### Parameters
@@ -56,24 +56,24 @@ Requests that a new item be created
 
   -  *Flags* : int
 
-    Combination of shellcon.TSF_* flags
+    Combination of shellcon\.TSF\_\* flags
 
-  -  *riidItem=IID_IShellItem* :[PyIID](#pyiid)
+  -  *riidItem\=IID\_IShellItem* :[PyIID](#pyiid)
 
     Item interface to return
 
-  -  *riidResources=IID_IShellItemResources* :[PyIID](#pyiid)
+  -  *riidResources\=IID\_IShellItemResources* :[PyIID](#pyiid)
 
     Resource interface to return
 
 #### Return Value
-Returns the HRESULT and requested interfaces.  Interfaces may be None if 
+Returns the HRESULT and requested interfaces\.  Interfaces may be None if 
 
-function returns one of the informational codes (shellcon.COPYENGINE_S_*)
+function returns one of the informational codes \(shellcon\.COPYENGINE\_S\_\*\)
 
-## [PyITransferDestination](#pyitransferdestination).Unadvise
+## [PyITransferDestination](#pyitransferdestination)\.Unadvise
 
- __Unadvise( *Cookie* __ )
+ **Unadvise\( *Cookie* ** \)
 Disconnects an advise sink
 
 #### Parameters

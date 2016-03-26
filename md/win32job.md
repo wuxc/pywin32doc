@@ -4,47 +4,47 @@
 
 An interface to the win32 Process and Thread API's, 
 
-available in Windows 2000 and later.
+available in Windows 2000 and later\.
 
 #### Methods
 
 
   - [AssignProcessToJobObject](win32job.md#win32jobassignprocesstojobobject)
 
-    Associates a process with an existing job object.&nbsp;
+    Associates a process with an existing job object\.&nbsp;
 
   - [CreateJobObject](win32job.md#win32jobcreatejobobject)
 
-    Creates or opens a job object.&nbsp;
+    Creates or opens a job object\.&nbsp;
 
   - [OpenJobObject](win32job.md#win32jobopenjobobject)
 
-    Opens an existing job object.&nbsp;
+    Opens an existing job object\.&nbsp;
 
   - [TerminateJobObject](win32job.md#win32jobterminatejobobject)
 
-    Terminates all processes currently associated with the job.&nbsp;
+    Terminates all processes currently associated with the job\.&nbsp;
 
   - [UserHandleGrantAccess](win32job.md#win32jobuserhandlegrantaccess)
 
-    Grants or denies access to a handle to a User object to a job that has a user-interface restriction.&nbsp;
+    Grants or denies access to a handle to a User object to a job that has a user-interface restriction\.&nbsp;
 
   - [IsProcessInJob](win32job.md#win32jobisprocessinjob)
 
-    Determines if the process is running in the specified job.&nbsp;
+    Determines if the process is running in the specified job\.&nbsp;
 
   - [QueryInformationJobObject](win32job.md#win32jobqueryinformationjobobject)
 
-    Retrieves limit and job state information from the job object.&nbsp;
+    Retrieves limit and job state information from the job object\.&nbsp;
 
   - [SetInformationJobObject](win32job.md#win32jobsetinformationjobobject)
 
     Sets quotas and limits for a job&nbsp;
 
-## [win32job](#win32job).AssignProcessToJobObject
+## [win32job](#win32job)\.AssignProcessToJobObject
 
- __AssignProcessToJobObject( *hJob*  *, hProcess* __ )
-Associates a process with an existing job object.
+ **AssignProcessToJobObject\( *hJob*  *, hProcess* ** \)
+Associates a process with an existing job object\.
 
 #### Parameters
 
@@ -57,15 +57,15 @@ Associates a process with an existing job object.
 
     
 
-## [win32job](#win32job).CreateJobObject
+## [win32job](#win32job)\.CreateJobObject
 
- __CreateJobObject( *jobAttributes*  *, name* __ )
-Creates or opens a job object.
+ **CreateJobObject\( *jobAttributes*  *, name* ** \)
+Creates or opens a job object\.
 
 #### Parameters
 
 
-  -  *jobAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *jobAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     
 
@@ -73,10 +73,10 @@ Creates or opens a job object.
 
     
 
-## [win32job](#win32job).IsProcessInJob
+## [win32job](#win32job)\.IsProcessInJob
 
-boolean = __IsProcessInJob( *hProcess*  *, hJob* __ )
-Determines if the process is running in the specified job.
+boolean \= **IsProcessInJob\( *hProcess*  *, hJob* ** \)
+Determines if the process is running in the specified job\.
 
 #### Parameters
 
@@ -92,258 +92,258 @@ Determines if the process is running in the specified job.
 #### Comments
 Function is only available on WinXP and later
 
-## JOB_OBJECT_ALL_ACCESS
- __const win32job.JOB_OBJECT_ALL_ACCESS;__ 
+## JOB\_OBJECT\_ALL\_ACCESS
+ **const win32job\.JOB\_OBJECT\_ALL\_ACCESS;** 
 
 
-## JOB_OBJECT_ASSIGN_PROCESS
- __const win32job.JOB_OBJECT_ASSIGN_PROCESS;__ 
+## JOB\_OBJECT\_ASSIGN\_PROCESS
+ **const win32job\.JOB\_OBJECT\_ASSIGN\_PROCESS;** 
 
 
-## JOB_OBJECT_BASIC_LIMIT_VALID_FLAGS
- __const win32job.JOB_OBJECT_BASIC_LIMIT_VALID_FLAGS;__ 
+## JOB\_OBJECT\_BASIC\_LIMIT\_VALID\_FLAGS
+ **const win32job\.JOB\_OBJECT\_BASIC\_LIMIT\_VALID\_FLAGS;** 
 
 
-## JOB_OBJECT_EXTENDED_LIMIT_VALID_FLAGS
- __const win32job.JOB_OBJECT_EXTENDED_LIMIT_VALID_FLAGS;__ 
+## JOB\_OBJECT\_EXTENDED\_LIMIT\_VALID\_FLAGS
+ **const win32job\.JOB\_OBJECT\_EXTENDED\_LIMIT\_VALID\_FLAGS;** 
 
 
-## JOB_OBJECT_LIMIT_ACTIVE_PROCESS
- __const win32job.JOB_OBJECT_LIMIT_ACTIVE_PROCESS;__ 
+## JOB\_OBJECT\_LIMIT\_ACTIVE\_PROCESS
+ **const win32job\.JOB\_OBJECT\_LIMIT\_ACTIVE\_PROCESS;** 
 
 
-## JOB_OBJECT_LIMIT_AFFINITY
- __const win32job.JOB_OBJECT_LIMIT_AFFINITY;__ 
+## JOB\_OBJECT\_LIMIT\_AFFINITY
+ **const win32job\.JOB\_OBJECT\_LIMIT\_AFFINITY;** 
 
 
-## JOB_OBJECT_LIMIT_BREAKAWAY_OK
- __const win32job.JOB_OBJECT_LIMIT_BREAKAWAY_OK;__ 
+## JOB\_OBJECT\_LIMIT\_BREAKAWAY\_OK
+ **const win32job\.JOB\_OBJECT\_LIMIT\_BREAKAWAY\_OK;** 
 
 
-## JOB_OBJECT_LIMIT_DIE_ON_UNHANDLED_EXCEPTION
- __const win32job.JOB_OBJECT_LIMIT_DIE_ON_UNHANDLED_EXCEPTION;__ 
+## JOB\_OBJECT\_LIMIT\_DIE\_ON\_UNHANDLED\_EXCEPTION
+ **const win32job\.JOB\_OBJECT\_LIMIT\_DIE\_ON\_UNHANDLED\_EXCEPTION;** 
 
 
-## JOB_OBJECT_LIMIT_JOB_MEMORY
- __const win32job.JOB_OBJECT_LIMIT_JOB_MEMORY;__ 
+## JOB\_OBJECT\_LIMIT\_JOB\_MEMORY
+ **const win32job\.JOB\_OBJECT\_LIMIT\_JOB\_MEMORY;** 
 
 
-## JOB_OBJECT_LIMIT_JOB_TIME
- __const win32job.JOB_OBJECT_LIMIT_JOB_TIME;__ 
+## JOB\_OBJECT\_LIMIT\_JOB\_TIME
+ **const win32job\.JOB\_OBJECT\_LIMIT\_JOB\_TIME;** 
 
 
-## JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE
- __const win32job.JOB_OBJECT_LIMIT_KILL_ON_JOB_CLOSE;__ 
+## JOB\_OBJECT\_LIMIT\_KILL\_ON\_JOB\_CLOSE
+ **const win32job\.JOB\_OBJECT\_LIMIT\_KILL\_ON\_JOB\_CLOSE;** 
 
 
-## JOB_OBJECT_LIMIT_PRESERVE_JOB_TIME
- __const win32job.JOB_OBJECT_LIMIT_PRESERVE_JOB_TIME;__ 
+## JOB\_OBJECT\_LIMIT\_PRESERVE\_JOB\_TIME
+ **const win32job\.JOB\_OBJECT\_LIMIT\_PRESERVE\_JOB\_TIME;** 
 
 
-## JOB_OBJECT_LIMIT_PRIORITY_CLASS
- __const win32job.JOB_OBJECT_LIMIT_PRIORITY_CLASS;__ 
+## JOB\_OBJECT\_LIMIT\_PRIORITY\_CLASS
+ **const win32job\.JOB\_OBJECT\_LIMIT\_PRIORITY\_CLASS;** 
 
 
-## JOB_OBJECT_LIMIT_PROCESS_MEMORY
- __const win32job.JOB_OBJECT_LIMIT_PROCESS_MEMORY;__ 
+## JOB\_OBJECT\_LIMIT\_PROCESS\_MEMORY
+ **const win32job\.JOB\_OBJECT\_LIMIT\_PROCESS\_MEMORY;** 
 
 
-## JOB_OBJECT_LIMIT_PROCESS_TIME
- __const win32job.JOB_OBJECT_LIMIT_PROCESS_TIME;__ 
+## JOB\_OBJECT\_LIMIT\_PROCESS\_TIME
+ **const win32job\.JOB\_OBJECT\_LIMIT\_PROCESS\_TIME;** 
 
 
-## JOB_OBJECT_LIMIT_SCHEDULING_CLASS
- __const win32job.JOB_OBJECT_LIMIT_SCHEDULING_CLASS;__ 
+## JOB\_OBJECT\_LIMIT\_SCHEDULING\_CLASS
+ **const win32job\.JOB\_OBJECT\_LIMIT\_SCHEDULING\_CLASS;** 
 
 
-## JOB_OBJECT_LIMIT_SILENT_BREAKAWAY_OK
- __const win32job.JOB_OBJECT_LIMIT_SILENT_BREAKAWAY_OK;__ 
+## JOB\_OBJECT\_LIMIT\_SILENT\_BREAKAWAY\_OK
+ **const win32job\.JOB\_OBJECT\_LIMIT\_SILENT\_BREAKAWAY\_OK;** 
 
 
-## JOB_OBJECT_LIMIT_VALID_FLAGS
- __const win32job.JOB_OBJECT_LIMIT_VALID_FLAGS;__ 
+## JOB\_OBJECT\_LIMIT\_VALID\_FLAGS
+ **const win32job\.JOB\_OBJECT\_LIMIT\_VALID\_FLAGS;** 
 
 
-## JOB_OBJECT_LIMIT_WORKINGSET
- __const win32job.JOB_OBJECT_LIMIT_WORKINGSET;__ 
+## JOB\_OBJECT\_LIMIT\_WORKINGSET
+ **const win32job\.JOB\_OBJECT\_LIMIT\_WORKINGSET;** 
 
 
-## JOB_OBJECT_MSG_ABNORMAL_EXIT_PROCESS
- __const win32job.JOB_OBJECT_MSG_ABNORMAL_EXIT_PROCESS;__ 
+## JOB\_OBJECT\_MSG\_ABNORMAL\_EXIT\_PROCESS
+ **const win32job\.JOB\_OBJECT\_MSG\_ABNORMAL\_EXIT\_PROCESS;** 
 
 
-## JOB_OBJECT_MSG_ACTIVE_PROCESS_LIMIT
- __const win32job.JOB_OBJECT_MSG_ACTIVE_PROCESS_LIMIT;__ 
+## JOB\_OBJECT\_MSG\_ACTIVE\_PROCESS\_LIMIT
+ **const win32job\.JOB\_OBJECT\_MSG\_ACTIVE\_PROCESS\_LIMIT;** 
 
 
-## JOB_OBJECT_MSG_ACTIVE_PROCESS_ZERO
- __const win32job.JOB_OBJECT_MSG_ACTIVE_PROCESS_ZERO;__ 
+## JOB\_OBJECT\_MSG\_ACTIVE\_PROCESS\_ZERO
+ **const win32job\.JOB\_OBJECT\_MSG\_ACTIVE\_PROCESS\_ZERO;** 
 
 
-## JOB_OBJECT_MSG_END_OF_JOB_TIME
- __const win32job.JOB_OBJECT_MSG_END_OF_JOB_TIME;__ 
+## JOB\_OBJECT\_MSG\_END\_OF\_JOB\_TIME
+ **const win32job\.JOB\_OBJECT\_MSG\_END\_OF\_JOB\_TIME;** 
 
 
-## JOB_OBJECT_MSG_END_OF_PROCESS_TIME
- __const win32job.JOB_OBJECT_MSG_END_OF_PROCESS_TIME;__ 
+## JOB\_OBJECT\_MSG\_END\_OF\_PROCESS\_TIME
+ **const win32job\.JOB\_OBJECT\_MSG\_END\_OF\_PROCESS\_TIME;** 
 
 
-## JOB_OBJECT_MSG_EXIT_PROCESS
- __const win32job.JOB_OBJECT_MSG_EXIT_PROCESS;__ 
+## JOB\_OBJECT\_MSG\_EXIT\_PROCESS
+ **const win32job\.JOB\_OBJECT\_MSG\_EXIT\_PROCESS;** 
 
 
-## JOB_OBJECT_MSG_JOB_MEMORY_LIMIT
- __const win32job.JOB_OBJECT_MSG_JOB_MEMORY_LIMIT;__ 
+## JOB\_OBJECT\_MSG\_JOB\_MEMORY\_LIMIT
+ **const win32job\.JOB\_OBJECT\_MSG\_JOB\_MEMORY\_LIMIT;** 
 
 
-## JOB_OBJECT_MSG_NEW_PROCESS
- __const win32job.JOB_OBJECT_MSG_NEW_PROCESS;__ 
+## JOB\_OBJECT\_MSG\_NEW\_PROCESS
+ **const win32job\.JOB\_OBJECT\_MSG\_NEW\_PROCESS;** 
 
 
-## JOB_OBJECT_MSG_PROCESS_MEMORY_LIMIT
- __const win32job.JOB_OBJECT_MSG_PROCESS_MEMORY_LIMIT;__ 
+## JOB\_OBJECT\_MSG\_PROCESS\_MEMORY\_LIMIT
+ **const win32job\.JOB\_OBJECT\_MSG\_PROCESS\_MEMORY\_LIMIT;** 
 
 
-## JOB_OBJECT_POST_AT_END_OF_JOB
- __const win32job.JOB_OBJECT_POST_AT_END_OF_JOB;__ 
+## JOB\_OBJECT\_POST\_AT\_END\_OF\_JOB
+ **const win32job\.JOB\_OBJECT\_POST\_AT\_END\_OF\_JOB;** 
 
 
-## JOB_OBJECT_QUERY
- __const win32job.JOB_OBJECT_QUERY;__ 
+## JOB\_OBJECT\_QUERY
+ **const win32job\.JOB\_OBJECT\_QUERY;** 
 
 
-## JOB_OBJECT_RESERVED_LIMIT_VALID_FLAGS
- __const win32job.JOB_OBJECT_RESERVED_LIMIT_VALID_FLAGS;__ 
+## JOB\_OBJECT\_RESERVED\_LIMIT\_VALID\_FLAGS
+ **const win32job\.JOB\_OBJECT\_RESERVED\_LIMIT\_VALID\_FLAGS;** 
 
 
-## JOB_OBJECT_SECURITY_FILTER_TOKENS
- __const win32job.JOB_OBJECT_SECURITY_FILTER_TOKENS;__ 
+## JOB\_OBJECT\_SECURITY\_FILTER\_TOKENS
+ **const win32job\.JOB\_OBJECT\_SECURITY\_FILTER\_TOKENS;** 
 
 
-## JOB_OBJECT_SECURITY_NO_ADMIN
- __const win32job.JOB_OBJECT_SECURITY_NO_ADMIN;__ 
+## JOB\_OBJECT\_SECURITY\_NO\_ADMIN
+ **const win32job\.JOB\_OBJECT\_SECURITY\_NO\_ADMIN;** 
 
 
-## JOB_OBJECT_SECURITY_ONLY_TOKEN
- __const win32job.JOB_OBJECT_SECURITY_ONLY_TOKEN;__ 
+## JOB\_OBJECT\_SECURITY\_ONLY\_TOKEN
+ **const win32job\.JOB\_OBJECT\_SECURITY\_ONLY\_TOKEN;** 
 
 
-## JOB_OBJECT_SECURITY_RESTRICTED_TOKEN
- __const win32job.JOB_OBJECT_SECURITY_RESTRICTED_TOKEN;__ 
+## JOB\_OBJECT\_SECURITY\_RESTRICTED\_TOKEN
+ **const win32job\.JOB\_OBJECT\_SECURITY\_RESTRICTED\_TOKEN;** 
 
 
-## JOB_OBJECT_SECURITY_VALID_FLAGS
- __const win32job.JOB_OBJECT_SECURITY_VALID_FLAGS;__ 
+## JOB\_OBJECT\_SECURITY\_VALID\_FLAGS
+ **const win32job\.JOB\_OBJECT\_SECURITY\_VALID\_FLAGS;** 
 
 
-## JOB_OBJECT_SET_ATTRIBUTES
- __const win32job.JOB_OBJECT_SET_ATTRIBUTES;__ 
+## JOB\_OBJECT\_SET\_ATTRIBUTES
+ **const win32job\.JOB\_OBJECT\_SET\_ATTRIBUTES;** 
 
 
-## JOB_OBJECT_SET_SECURITY_ATTRIBUTES
- __const win32job.JOB_OBJECT_SET_SECURITY_ATTRIBUTES;__ 
+## JOB\_OBJECT\_SET\_SECURITY\_ATTRIBUTES
+ **const win32job\.JOB\_OBJECT\_SET\_SECURITY\_ATTRIBUTES;** 
 
 
-## JOB_OBJECT_TERMINATE
- __const win32job.JOB_OBJECT_TERMINATE;__ 
+## JOB\_OBJECT\_TERMINATE
+ **const win32job\.JOB\_OBJECT\_TERMINATE;** 
 
 
-## JOB_OBJECT_TERMINATE_AT_END_OF_JOB
- __const win32job.JOB_OBJECT_TERMINATE_AT_END_OF_JOB;__ 
+## JOB\_OBJECT\_TERMINATE\_AT\_END\_OF\_JOB
+ **const win32job\.JOB\_OBJECT\_TERMINATE\_AT\_END\_OF\_JOB;** 
 
 
-## JOB_OBJECT_UILIMIT_ALL
- __const win32job.JOB_OBJECT_UILIMIT_ALL;__ 
+## JOB\_OBJECT\_UILIMIT\_ALL
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_ALL;** 
 
 
-## JOB_OBJECT_UILIMIT_DESKTOP
- __const win32job.JOB_OBJECT_UILIMIT_DESKTOP;__ 
+## JOB\_OBJECT\_UILIMIT\_DESKTOP
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_DESKTOP;** 
 
 
-## JOB_OBJECT_UILIMIT_DISPLAYSETTINGS
- __const win32job.JOB_OBJECT_UILIMIT_DISPLAYSETTINGS;__ 
+## JOB\_OBJECT\_UILIMIT\_DISPLAYSETTINGS
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_DISPLAYSETTINGS;** 
 
 
-## JOB_OBJECT_UILIMIT_EXITWINDOWS
- __const win32job.JOB_OBJECT_UILIMIT_EXITWINDOWS;__ 
+## JOB\_OBJECT\_UILIMIT\_EXITWINDOWS
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_EXITWINDOWS;** 
 
 
-## JOB_OBJECT_UILIMIT_GLOBALATOMS
- __const win32job.JOB_OBJECT_UILIMIT_GLOBALATOMS;__ 
+## JOB\_OBJECT\_UILIMIT\_GLOBALATOMS
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_GLOBALATOMS;** 
 
 
-## JOB_OBJECT_UILIMIT_HANDLES
- __const win32job.JOB_OBJECT_UILIMIT_HANDLES;__ 
+## JOB\_OBJECT\_UILIMIT\_HANDLES
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_HANDLES;** 
 
 
-## JOB_OBJECT_UILIMIT_NONE
- __const win32job.JOB_OBJECT_UILIMIT_NONE;__ 
+## JOB\_OBJECT\_UILIMIT\_NONE
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_NONE;** 
 
 
-## JOB_OBJECT_UILIMIT_READCLIPBOARD
- __const win32job.JOB_OBJECT_UILIMIT_READCLIPBOARD;__ 
+## JOB\_OBJECT\_UILIMIT\_READCLIPBOARD
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_READCLIPBOARD;** 
 
 
-## JOB_OBJECT_UILIMIT_SYSTEMPARAMETERS
- __const win32job.JOB_OBJECT_UILIMIT_SYSTEMPARAMETERS;__ 
+## JOB\_OBJECT\_UILIMIT\_SYSTEMPARAMETERS
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_SYSTEMPARAMETERS;** 
 
 
-## JOB_OBJECT_UILIMIT_WRITECLIPBOARD
- __const win32job.JOB_OBJECT_UILIMIT_WRITECLIPBOARD;__ 
+## JOB\_OBJECT\_UILIMIT\_WRITECLIPBOARD
+ **const win32job\.JOB\_OBJECT\_UILIMIT\_WRITECLIPBOARD;** 
 
 
-## JOB_OBJECT_UI_VALID_FLAGS
- __const win32job.JOB_OBJECT_UI_VALID_FLAGS;__ 
+## JOB\_OBJECT\_UI\_VALID\_FLAGS
+ **const win32job\.JOB\_OBJECT\_UI\_VALID\_FLAGS;** 
 
 
 ## JobObjectAssociateCompletionPortInformation
- __const win32job.JobObjectAssociateCompletionPortInformation;__ 
+ **const win32job\.JobObjectAssociateCompletionPortInformation;** 
 
 
 ## JobObjectBasicAccountingInformation
- __const win32job.JobObjectBasicAccountingInformation;__ 
+ **const win32job\.JobObjectBasicAccountingInformation;** 
 
 
 ## JobObjectBasicAndIoAccountingInformation
- __const win32job.JobObjectBasicAndIoAccountingInformation;__ 
+ **const win32job\.JobObjectBasicAndIoAccountingInformation;** 
 
 
 ## JobObjectBasicLimitInformation
- __const win32job.JobObjectBasicLimitInformation;__ 
+ **const win32job\.JobObjectBasicLimitInformation;** 
 
 
 ## JobObjectBasicProcessIdList
- __const win32job.JobObjectBasicProcessIdList;__ 
+ **const win32job\.JobObjectBasicProcessIdList;** 
 
 
 ## JobObjectBasicUIRestrictions
- __const win32job.JobObjectBasicUIRestrictions;__ 
+ **const win32job\.JobObjectBasicUIRestrictions;** 
 
 
 ## JobObjectEndOfJobTimeInformation
- __const win32job.JobObjectEndOfJobTimeInformation;__ 
+ **const win32job\.JobObjectEndOfJobTimeInformation;** 
 
 
 ## JobObjectExtendedLimitInformation
- __const win32job.JobObjectExtendedLimitInformation;__ 
+ **const win32job\.JobObjectExtendedLimitInformation;** 
 
 
 ## JobObjectJobSetInformation
- __const win32job.JobObjectJobSetInformation;__ 
+ **const win32job\.JobObjectJobSetInformation;** 
 
 
 ## JobObjectSecurityLimitInformation
- __const win32job.JobObjectSecurityLimitInformation;__ 
+ **const win32job\.JobObjectSecurityLimitInformation;** 
 
 
 ## MaxJobObjectInfoClass
- __const win32job.MaxJobObjectInfoClass;__ 
+ **const win32job\.MaxJobObjectInfoClass;** 
 
 
-## [win32job](#win32job).OpenJobObject
+## [win32job](#win32job)\.OpenJobObject
 
- __OpenJobObject( *desiredAccess*  *, inheritHandles*  *, name* __ )
-Opens an existing job object.
+ **OpenJobObject\( *desiredAccess*  *, inheritHandles*  *, name* ** \)
+Opens an existing job object\.
 
 #### Parameters
 
@@ -360,10 +360,10 @@ Opens an existing job object.
 
     
 
-## [win32job](#win32job).QueryInformationJobObject
+## [win32job](#win32job)\.QueryInformationJobObject
 
-dict = __QueryInformationJobObject( *Job*  *, JobObjectInfoClass* __ )
-Retrieves limit and job state information from the job object.
+dict \= **QueryInformationJobObject\( *Job*  *, JobObjectInfoClass* ** \)
+Retrieves limit and job state information from the job object\.
 
 #### Parameters
 
@@ -374,15 +374,15 @@ Retrieves limit and job state information from the job object.
 
   -  *JobObjectInfoClass* : int
 
-    The type of data required, one of JobObject* values
+    The type of data required, one of JobObject\* values
 
- __JobObjectInfoClass__  __Type of information returned__ JobObjectBasicAccountingInformationReturns a dict representing a JOBOBJECT_BASIC_ACCOUNTING_INFORMATION structJobObjectBasicAndIoAccountingInformationReturns a dict representing a JOBOBJECT_BASIC_AND_IO_ACCOUNTING_INFORMATION structJobObjectBasicLimitInformationReturns a dict representing a JOBOBJECT_BASIC_LIMIT_INFORMATION structJobObjectExtendedLimitInformationReturns a dict representing a JOBOBJECT_EXTENDED_LIMIT_INFORMATION structJobObjectEndOfJobTimeInformationReturns a dict representing a JOBOBJECT_END_OF_JOB_TIME_INFORMATION structJobObjectBasicUIRestrictionsReturns a dict representing a JOBOBJECT_BASIC_UI_RESTRICTIONS structJobObjectBasicProcessIdListReturns a sequence of pids of processes assigned to the jobJobObjectJobSetInformationReturns a dict representing a JOBOBJECT_JOBSET_INFORMATION struct (not documented on MSDN)JobObjectSecurityLimitInformationJOBOBJECT_SECURITY_LIMIT_INFORMATION Not implementedJobObjectAssociateCompletionPortInformationJOBOBJECT_ASSOCIATE_COMPLETION_PORT Not implemented
+ **JobObjectInfoClass**  **Type of information returned** JobObjectBasicAccountingInformationReturns a dict representing a JOBOBJECT\_BASIC\_ACCOUNTING\_INFORMATION structJobObjectBasicAndIoAccountingInformationReturns a dict representing a JOBOBJECT\_BASIC\_AND\_IO\_ACCOUNTING\_INFORMATION structJobObjectBasicLimitInformationReturns a dict representing a JOBOBJECT\_BASIC\_LIMIT\_INFORMATION structJobObjectExtendedLimitInformationReturns a dict representing a JOBOBJECT\_EXTENDED\_LIMIT\_INFORMATION structJobObjectEndOfJobTimeInformationReturns a dict representing a JOBOBJECT\_END\_OF\_JOB\_TIME\_INFORMATION structJobObjectBasicUIRestrictionsReturns a dict representing a JOBOBJECT\_BASIC\_UI\_RESTRICTIONS structJobObjectBasicProcessIdListReturns a sequence of pids of processes assigned to the jobJobObjectJobSetInformationReturns a dict representing a JOBOBJECT\_JOBSET\_INFORMATION struct \(not documented on MSDN\)JobObjectSecurityLimitInformationJOBOBJECT\_SECURITY\_LIMIT\_INFORMATION Not implementedJobObjectAssociateCompletionPortInformationJOBOBJECT\_ASSOCIATE\_COMPLETION\_PORT Not implemented
 #### Return Value
 The type of the returned information is dependent on the class requested
 
-## [win32job](#win32job).SetInformationJobObject
+## [win32job](#win32job)\.SetInformationJobObject
 
- __SetInformationJobObject( *Job*  *, JobObjectInfoClass*  *, JobObjectInfo* __ )
+ **SetInformationJobObject\( *Job*  *, JobObjectInfoClass*  *, JobObjectInfo* ** \)
 Sets quotas and limits for a job
 
 #### Parameters
@@ -394,17 +394,17 @@ Sets quotas and limits for a job
 
   -  *JobObjectInfoClass* : int
 
-    The type of data required, one of JobObject* values
+    The type of data required, one of JobObject\* values
 
   -  *JobObjectInfo* : dict
 
     Dictionary containing info to be set, as returned by[win32job::QueryInformationJobObject](win32job.md#win32jobqueryinformationjobobject)
 
 
-## [win32job](#win32job).TerminateJobObject
+## [win32job](#win32job)\.TerminateJobObject
 
- __TerminateJobObject( *hJob*  *, exitCode* __ )
-Terminates all processes currently associated with the job.
+ **TerminateJobObject\( *hJob*  *, exitCode* ** \)
+Terminates all processes currently associated with the job\.
 
 #### Parameters
 
@@ -417,10 +417,10 @@ Terminates all processes currently associated with the job.
 
     
 
-## [win32job](#win32job).UserHandleGrantAccess
+## [win32job](#win32job)\.UserHandleGrantAccess
 
- __UserHandleGrantAccess( *hUserHandle*  *, hJob*  *, grant* __ )
-Grants or denies access to a handle to a User object to a job that has a user-interface restriction.
+ **UserHandleGrantAccess\( *hUserHandle*  *, hJob*  *, grant* ** \)
+Grants or denies access to a handle to a User object to a job that has a user-interface restriction\.
 
 #### Parameters
 

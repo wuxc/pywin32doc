@@ -9,21 +9,21 @@ A Python interface to IServiceProvider
 
   - [QueryService](PyIServiceProvider.md#pyiserviceproviderqueryservice)
 
-    Creates or accesses the specified service and returns an interface object to the specified interface for the service.&nbsp;
+    Creates or accesses the specified service and returns an interface object to the specified interface for the service\.&nbsp;
 
 
-## [PyIServiceProvider](#pyiserviceprovider).QueryService
+## [PyIServiceProvider](#pyiserviceprovider)\.QueryService
 
-[PyIUnknown](#pyiunknown)= __QueryService( *clsid*  *, iid* __ )
-Creates or accesses the specified service and returns an interface object to the specified interface for the service.
+[PyIUnknown](#pyiunknown)\= **QueryService\( *clsid*  *, iid* ** \)
+Creates or accesses the specified service and returns an interface object to the specified interface for the service\.
 
 #### Parameters
 
 
   -  *clsid* :[PyIID](#pyiid)
 
-    Unique identifier for the requested service.
+    Unique identifier for the requested service\.
 
   -  *iid* :[PyIID](#pyiid)
 
-    Unique identifier for the requested interface on the service.
+    Unique identifier for the requested interface on the service\.

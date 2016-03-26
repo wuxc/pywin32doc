@@ -13,7 +13,7 @@
 
   -  *propTag* : ULONG
 
-    The property ID.
+    The property ID\.
 
   -  *propertyValue* :[PySPropValue](#pyspropvalue)
 

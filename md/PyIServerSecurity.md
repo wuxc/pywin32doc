@@ -26,29 +26,29 @@ Can be created using[pythoncom::CoGetCallContext](pythoncom.md#pythoncomcogetcal
 
     Determines if server is currently impersonating a client&nbsp;
 
-## [PyIServerSecurity](#pyiserversecurity).ImpersonateClient
+## [PyIServerSecurity](#pyiserversecurity)\.ImpersonateClient
 
- __ImpersonateClient(__ )
+ **ImpersonateClient\(** \)
 Initiates impersonation of client
 
-## [PyIServerSecurity](#pyiserversecurity).IsImpersonating
+## [PyIServerSecurity](#pyiserversecurity)\.IsImpersonating
 
-bool = __IsImpersonating(__ )
+bool \= **IsImpersonating\(** \)
 Determines if server is currently impersonating a client
 
-## [PyIServerSecurity](#pyiserversecurity).QueryBlanket
+## [PyIServerSecurity](#pyiserversecurity)\.QueryBlanket
 
-dict = __QueryBlanket( *Capabilities* __ )
+dict \= **QueryBlanket\( *Capabilities* ** \)
 Retrieves security settings specified by the client
 
 #### Parameters
 
 
-  -  *Capabilities=0* : int
+  -  *Capabilities\=0* : int
 
-    Can be EOAC_MAKE_FULLSIC for SChannel provider
+    Can be EOAC\_MAKE\_FULLSIC for SChannel provider
 
-## [PyIServerSecurity](#pyiserversecurity).RevertToSelf
+## [PyIServerSecurity](#pyiserversecurity)\.RevertToSelf
 
- __RevertToSelf(__ )
+ **RevertToSelf\(** \)
 Ends impersonation of client

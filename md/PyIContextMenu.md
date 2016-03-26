@@ -19,9 +19,9 @@ Description of the interface
 
     Retrieves verb or help text for a context menu option&nbsp;
 
-## [PyIContextMenu](#pyicontextmenu).GetCommandString
+## [PyIContextMenu](#pyicontextmenu)\.GetCommandString
 
-str = __GetCommandString( *idCmd*  *, uType*  *, cchMax* __ )
+str \= **GetCommandString\( *idCmd*  *, uType*  *, cchMax* ** \)
 Retrieves verb or help text for a context menu option
 
 #### Parameters
@@ -33,15 +33,15 @@ Retrieves verb or help text for a context menu option
 
   -  *uType* : int
 
-    One of the shellcon.GCS_* constants
+    One of the shellcon\.GCS\_\* constants
 
-  -  *cchMax=2048* : int
+  -  *cchMax\=2048* : int
 
     Size of buffer to create for returned string
 
-## [PyIContextMenu](#pyicontextmenu).InvokeCommand
+## [PyIContextMenu](#pyicontextmenu)\.InvokeCommand
 
- __InvokeCommand( *pici* __ )
+ **InvokeCommand\( *pici* ** \)
 Executes a context menu option
 
 #### Parameters
@@ -51,9 +51,9 @@ Executes a context menu option
 
     Tuple of parameters representing a CMINVOKECOMMANDINFO struct
 
-## [PyIContextMenu](#pyicontextmenu).QueryContextMenu
+## [PyIContextMenu](#pyicontextmenu)\.QueryContextMenu
 
-int = __QueryContextMenu( *hmenu*  *, indexMenu*  *, idCmdFirst*  *, idCmdLast*  *, uFlags* __ )
+int \= **QueryContextMenu\( *hmenu*  *, indexMenu*  *, idCmdFirst*  *, idCmdLast*  *, uFlags* ** \)
 Adds options to a context menu
 
 #### Parameters
@@ -77,4 +77,4 @@ Adds options to a context menu
 
   -  *uFlags* : int
 
-    Combination of shellcon.CMF_* flags, can be 0
+    Combination of shellcon\.CMF\_\* flags, can be 0

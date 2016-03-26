@@ -9,10 +9,10 @@ A Python interface to IPersistStreamInit
 
   - [InitNew](PyIPersistStreamInit.md#pyipersiststreaminitinitnew)
 
-    Initializes the object to a default state.&nbsp;
+    Initializes the object to a default state\.&nbsp;
 
 
-## [PyIPersistStreamInit](#pyipersiststreaminit).InitNew
+## [PyIPersistStreamInit](#pyipersiststreaminit)\.InitNew
 
- __InitNew(__ )
-Initializes the object to a default state.
+ **InitNew\(** \)
+Initializes the object to a default state\.

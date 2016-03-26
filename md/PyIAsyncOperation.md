@@ -27,10 +27,10 @@ Description of the interface
 
     Description of EndOperation&nbsp;
 
-## [PyIAsyncOperation](#pyiasyncoperation).EndOperation
+## [PyIAsyncOperation](#pyiasyncoperation)\.EndOperation
 
- __EndOperation( *hResult*  *, pbcReserved*  *, dwEffects* __ )
-Description of EndOperation.
+ **EndOperation\( *hResult*  *, pbcReserved*  *, dwEffects* ** \)
+Description of EndOperation\.
 
 #### Parameters
 
@@ -47,20 +47,20 @@ Description of EndOperation.
 
     Description for dwEffects
 
-## [PyIAsyncOperation](#pyiasyncoperation).GetAsyncMode
+## [PyIAsyncOperation](#pyiasyncoperation)\.GetAsyncMode
 
-bool = __GetAsyncMode(__ )
-Description of GetAsyncMode.
+bool \= **GetAsyncMode\(** \)
+Description of GetAsyncMode\.
 
-## [PyIAsyncOperation](#pyiasyncoperation).InOperation
+## [PyIAsyncOperation](#pyiasyncoperation)\.InOperation
 
- __InOperation(__ )
-Description of InOperation.
+ **InOperation\(** \)
+Description of InOperation\.
 
-## [PyIAsyncOperation](#pyiasyncoperation).SetAsyncMode
+## [PyIAsyncOperation](#pyiasyncoperation)\.SetAsyncMode
 
- __SetAsyncMode( *fDoOpAsync* __ )
-Description of SetAsyncMode.
+ **SetAsyncMode\( *fDoOpAsync* ** \)
+Description of SetAsyncMode\.
 
 #### Parameters
 
@@ -69,10 +69,10 @@ Description of SetAsyncMode.
 
     Description for fDoOpAsync
 
-## [PyIAsyncOperation](#pyiasyncoperation).StartOperation
+## [PyIAsyncOperation](#pyiasyncoperation)\.StartOperation
 
- __StartOperation( *pbcReserved* __ )
-Description of StartOperation.
+ **StartOperation\( *pbcReserved* ** \)
+Description of StartOperation\.
 
 #### Parameters
 

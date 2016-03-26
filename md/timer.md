@@ -7,17 +7,17 @@ Extension that wraps Win32 Timer functions
 #### Methods
 
 
-  - [set_timer](timer.md#timerset_timer)
+  - [set\_timer](timer.md#timerset_timer)
 
     Creates a timer that executes a callback function&nbsp;
 
-  - [kill_timer](timer.md#timerkill_timer)
+  - [kill\_timer](timer.md#timerkill_timer)
 
     Stops a timer&nbsp;
 
-## [timer](#timer).kill_timer
+## [timer](#timer)\.kill\_timer
 
-boolean = __kill_timer( *IDEvent* __ )
+boolean \= **kill\_timer\( *IDEvent* ** \)
 Creates a timer that executes a callback function
 
 #### Parameters
@@ -25,14 +25,14 @@ Creates a timer that executes a callback function
 
   -  *IDEvent* : int
 
-    Timer id as returned by[timer::set_timer](timer.md#timerset_timer)
+    Timer id as returned by[timer::set\_timer](timer.md#timerset_timer)
 
 #### Comments
-Uses the KillTimer API function.
+Uses the KillTimer API function\.
 
-## [timer](#timer).set_timer
+## [timer](#timer)\.set\_timer
 
-int = __set_timer( *Elapse*  *, TimerFunc* __ )
+int \= **set\_timer\( *Elapse*  *, TimerFunc* ** \)
 Creates a timer that executes a callback function
 
 #### Parameters
@@ -44,10 +44,10 @@ Creates a timer that executes a callback function
 
   -  *TimerFunc* : function
 
-    Callback function.  Will be called with with 2 int args: (timer_id, time)
+    Callback function\.  Will be called with with 2 int args: \(timer\_id, time\)
 
 #### Comments
-Uses the SetTimer function.
+Uses the SetTimer function\.
 
 #### Return Value
-Returns the id of the timer, which can be passed to kill_timer to stop it.
+Returns the id of the timer, which can be passed to kill\_timer to stop it\.

@@ -23,10 +23,10 @@ Description of the interface
 
     Description of FreezeEvents&nbsp;
 
-## [PyIOleControl](#pyiolecontrol).FreezeEvents
+## [PyIOleControl](#pyiolecontrol)\.FreezeEvents
 
- __FreezeEvents( *bFreeze* __ )
-Description of FreezeEvents.
+ **FreezeEvents\( *bFreeze* ** \)
+Description of FreezeEvents\.
 
 #### Parameters
 
@@ -35,15 +35,15 @@ Description of FreezeEvents.
 
     Description for bFreeze
 
-## [PyIOleControl](#pyiolecontrol).GetControlInfo
+## [PyIOleControl](#pyiolecontrol)\.GetControlInfo
 
- __GetControlInfo(__ )
-Description of GetControlInfo.
+ **GetControlInfo\(** \)
+Description of GetControlInfo\.
 
-## [PyIOleControl](#pyiolecontrol).OnAmbientPropertyChange
+## [PyIOleControl](#pyiolecontrol)\.OnAmbientPropertyChange
 
- __OnAmbientPropertyChange( *dispID* __ )
-Description of OnAmbientPropertyChange.
+ **OnAmbientPropertyChange\( *dispID* ** \)
+Description of OnAmbientPropertyChange\.
 
 #### Parameters
 
@@ -52,14 +52,14 @@ Description of OnAmbientPropertyChange.
 
     Description for dispID
 
-## [PyIOleControl](#pyiolecontrol).OnMnemonic
+## [PyIOleControl](#pyiolecontrol)\.OnMnemonic
 
- __OnMnemonic( *msg* __ )
-Description of OnMnemonic.
+ **OnMnemonic\( *msg* ** \)
+Description of OnMnemonic\.
 
 #### Parameters
 
 
-  -  *msg* : iiiii(ii)
+  -  *msg* : iiiii\(ii\)
 
-    A tuple representing a MSG structure.
+    A tuple representing a MSG structure\.

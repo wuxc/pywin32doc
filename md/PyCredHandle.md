@@ -5,16 +5,16 @@
 Handle to a set of logon credentials, used with sspi authentication functions
 
 #### Comments
-This object is usually created using[win32security::AcquireCredentialsHandle](win32security.md#win32securityacquirecredentialshandle). 
+This object is usually created using[win32security::AcquireCredentialsHandle](win32security.md#win32securityacquirecredentialshandle)\. 
 
-An uninitialized handle can also be created using win32security.PyCredHandleType()
+An uninitialized handle can also be created using win32security\.PyCredHandleType\(\)
 
 #### Methods
 
 
   - [Detach](PyCredHandle.md#pycredhandledetach)
 
-    Disassociates object from handle and returns integer value of handle (prevents automatic freeing of credentials when object is deallocated),&nbsp;
+    Disassociates object from handle and returns integer value of handle \(prevents automatic freeing of credentials when object is deallocated\),&nbsp;
 
   - [FreeCredentialsHandle](PyCredHandle.md#pycredhandlefreecredentialshandle)
 
@@ -24,19 +24,19 @@ An uninitialized handle can also be created using win32security.PyCredHandleType
 
     Returns information about the credentials&nbsp;
 
-## [PyCredHandle](#pycredhandle).Detach
+## [PyCredHandle](#pycredhandle)\.Detach
 
-long = __Detach(__ )
+long \= **Detach\(** \)
 Disassociates object from handle and returns integer value of handle,
 
-## [PyCredHandle](#pycredhandle).FreeCredentialsHandle
+## [PyCredHandle](#pycredhandle)\.FreeCredentialsHandle
 
- __FreeCredentialsHandle(__ )
+ **FreeCredentialsHandle\(** \)
 Releases the credentials handle and makes object unusable
 
-## [PyCredHandle](#pycredhandle).QueryCredentialsAttributes
+## [PyCredHandle](#pycredhandle)\.QueryCredentialsAttributes
 
- __QueryCredentialsAttributes( *Attribute* __ )
+ **QueryCredentialsAttributes\( *Attribute* ** \)
 Returns information about the credentials
 
 #### Parameters
@@ -44,17 +44,17 @@ Returns information about the credentials
 
   -  *Attribute* : int
 
-    SECPKG_* constant specifying which type of information to return
+    SECPKG\_\* constant specifying which type of information to return
 
 #### Comments
-Only SECPKG_CRED_ATTR_NAMES currently supported
+Only SECPKG\_CRED\_ATTR\_NAMES currently supported
 
- __Attribute__  __Return type__ SECPKG_CRED_ATTR_NAMES[PyUnicode](#pyunicode)- returns username that credentials representSECPKG_ATTR_SUPPORTED_ALGSNot supported yet 
+ **Attribute**  **Return type** SECPKG\_CRED\_ATTR\_NAMES[PyUnicode](#pyunicode)- returns username that credentials representSECPKG\_ATTR\_SUPPORTED\_ALGSNot supported yet 
 
-SecPkgCred_SupportedAlgs:SECPKG_ATTR_CIPHER_STRENGTHSNot supported yet 
+SecPkgCred\_SupportedAlgs:SECPKG\_ATTR\_CIPHER\_STRENGTHSNot supported yet 
 
-SecPkgCred_CipherStrengths:SECPKG_ATTR_SUPPORTED_PROTOCOLSNot supported yet 
+SecPkgCred\_CipherStrengths:SECPKG\_ATTR\_SUPPORTED\_PROTOCOLSNot supported yet 
 
-SecPkgCred_SupportedProtocols:
+SecPkgCred\_SupportedProtocols:
 #### Return Value
 Type of returned values is dependent on Attribute

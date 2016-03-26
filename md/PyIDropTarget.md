@@ -23,9 +23,9 @@ Interface that acts as a target of OLE drag and drop operations
 
     Called when the object is dropped onto the window&nbsp;
 
-## [PyIDropTarget](#pyidroptarget).DragEnter
+## [PyIDropTarget](#pyidroptarget)\.DragEnter
 
-int = __DragEnter( *pDataObj*  *, grfKeyState*  *, pt*  *, pdwEffect* __ )
+int \= **DragEnter\( *pDataObj*  *, grfKeyState*  *, pt*  *, pdwEffect* ** \)
 Called when an object is initially dragged into a window
 
 #### Parameters
@@ -37,27 +37,27 @@ Called when an object is initially dragged into a window
 
   -  *grfKeyState* : int
 
-    Combination of win32con.MK_* flags containing keyboard modifier state
+    Combination of win32con\.MK\_\* flags containing keyboard modifier state
 
-  -  *pt* : (int, int)
+  -  *pt* : \(int, int\)
 
-    (x,y) Screen coordinates of cursor
+    \(x,y\) Screen coordinates of cursor
 
   -  *pdwEffect* : int
 
-    shellcon.DROPEFFECT_* value
+    shellcon\.DROPEFFECT\_\* value
 
 #### Return Value
-Your implementation of this function should return a shellcon.DROPEFFECT_* value indicating if the object can be accepted
+Your implementation of this function should return a shellcon\.DROPEFFECT\_\* value indicating if the object can be accepted
 
-## [PyIDropTarget](#pyidroptarget).DragLeave
+## [PyIDropTarget](#pyidroptarget)\.DragLeave
 
- __DragLeave(__ )
+ **DragLeave\(** \)
 Called as the object is dragged back out of the window
 
-## [PyIDropTarget](#pyidroptarget).DragOver
+## [PyIDropTarget](#pyidroptarget)\.DragOver
 
-int = __DragOver( *grfKeyState*  *, pt*  *, pdwEffect* __ )
+int \= **DragOver\( *grfKeyState*  *, pt*  *, pdwEffect* ** \)
 Called as the dragged object moves over the window
 
 #### Parameters
@@ -65,24 +65,24 @@ Called as the dragged object moves over the window
 
   -  *grfKeyState* : int
 
-    Combination of win32con.MK_* flags containing keyboard modifier state
+    Combination of win32con\.MK\_\* flags containing keyboard modifier state
 
-  -  *pt* : (int, int)
+  -  *pt* : \(int, int\)
 
-    (x,y) Screen coordinates of cursor
+    \(x,y\) Screen coordinates of cursor
 
   -  *pdwEffect* : int
 
-    shellcon.DROPEFFECT_* value
+    shellcon\.DROPEFFECT\_\* value
 
 #### Return Value
-Your implementation of this function should return a shellcon.DROPEFFECT_* value indicating if the 
+Your implementation of this function should return a shellcon\.DROPEFFECT\_\* value indicating if the 
 
 object can be accepted at the current position
 
-## [PyIDropTarget](#pyidroptarget).Drop
+## [PyIDropTarget](#pyidroptarget)\.Drop
 
-int = __Drop( *pDataObj*  *, grfKeyState*  *, pt*  *, dwEffect* __ )
+int \= **Drop\( *pDataObj*  *, grfKeyState*  *, pt*  *, dwEffect* ** \)
 Called when the object is dropped onto the window
 
 #### Parameters
@@ -94,15 +94,15 @@ Called when the object is dropped onto the window
 
   -  *grfKeyState* : int
 
-    Combination of win32con.MK_* flags containing keyboard modifier state
+    Combination of win32con\.MK\_\* flags containing keyboard modifier state
 
-  -  *pt* : (int, int)
+  -  *pt* : \(int, int\)
 
-    (x,y) Screen coordinates of cursor
+    \(x,y\) Screen coordinates of cursor
 
   -  *dwEffect* : int
 
-    shellcon.DROPEFFECT_* value
+    shellcon\.DROPEFFECT\_\* value
 
 #### Return Value
-Your implementation of this function should return one of the shellcon.DROPEFFECT_* values
+Your implementation of this function should return one of the shellcon\.DROPEFFECT\_\* values

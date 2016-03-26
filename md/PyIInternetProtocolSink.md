@@ -23,10 +23,10 @@ Description of the interface
 
     Description of ReportResult&nbsp;
 
-## [PyIInternetProtocolSink](#pyiinternetprotocolsink).ReportData
+## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.ReportData
 
- __ReportData( *grfBSCF*  *, ulProgress*  *, ulProgressMax* __ )
-Description of ReportData.
+ **ReportData\( *grfBSCF*  *, ulProgress*  *, ulProgressMax* ** \)
+Description of ReportData\.
 
 #### Parameters
 
@@ -43,10 +43,10 @@ Description of ReportData.
 
     Description for ulProgressMax
 
-## [PyIInternetProtocolSink](#pyiinternetprotocolsink).ReportProgress
+## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.ReportProgress
 
- __ReportProgress( *ulStatusCode*  *, szStatusText* __ )
-Description of ReportProgress.
+ **ReportProgress\( *ulStatusCode*  *, szStatusText* ** \)
+Description of ReportProgress\.
 
 #### Parameters
 
@@ -55,14 +55,14 @@ Description of ReportProgress.
 
     Description for ulStatusCode
 
-  -  *szStatusText* : __unicode__ 
+  -  *szStatusText* : **unicode** 
 
     Description for szStatusText
 
-## [PyIInternetProtocolSink](#pyiinternetprotocolsink).ReportResult
+## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.ReportResult
 
- __ReportResult( *hrResult*  *, dwError*  *, szResult* __ )
-Description of ReportResult.
+ **ReportResult\( *hrResult*  *, dwError*  *, szResult* ** \)
+Description of ReportResult\.
 
 #### Parameters
 
@@ -75,11 +75,11 @@ Description of ReportResult.
 
     Description for dwError
 
-  -  *szResult* : __unicode__ 
+  -  *szResult* : **unicode** 
 
     Description for szResult
 
-## [PyIInternetProtocolSink](#pyiinternetprotocolsink).Switch
+## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.Switch
 
- __Switch(__ )
-Description of Switch.
+ **Switch\(** \)
+Description of Switch\.

@@ -2,4 +2,4 @@
 
 ## PyAssocCObject Object
 
-An internal class.
+An internal class\.

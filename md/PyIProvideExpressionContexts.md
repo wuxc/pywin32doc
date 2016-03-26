@@ -11,7 +11,7 @@ Description of the interface
 
     Description of EnumExpressionContexts&nbsp;
 
-## [PyIProvideExpressionContexts](#pyiprovideexpressioncontexts).EnumExpressionContexts
+## [PyIProvideExpressionContexts](#pyiprovideexpressioncontexts)\.EnumExpressionContexts
 
- __EnumExpressionContexts(__ )
-Description of EnumStackFrames.
+ **EnumExpressionContexts\(** \)
+Description of EnumStackFrames\.

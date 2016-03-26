@@ -2,17 +2,17 @@
 
 ## Module win32evtlog
 
-A module, encapsulating the Windows Win32 event log API.
-The Evt* functions are only available on Vista and later.  Attempting to call 
+A module, encapsulating the Windows Win32 event log API\.
+The Evt\* functions are only available on Vista and later\.  Attempting to call 
 
-them on XP will result in the process exiting, rather than a python exception.
+them on XP will result in the process exiting, rather than a python exception\.
 
 #### Methods
 
 
   - [ReadEventLog](win32evtlog.md#win32evtlogreadeventlog)
 
-    Reads some event log records.&nbsp;
+    Reads some event log records\.&nbsp;
 
   - [ClearEventLog](win32evtlog.md#win32evtlogcleareventlog)
 
@@ -32,19 +32,19 @@ them on XP will result in the process exiting, rather than a python exception.
 
   - [NotifyChangeEventLog](win32evtlog.md#win32evtlognotifychangeeventlog)
 
-    Lets an application receive notification when an event is written to the event log file specified by the hEventLog parameter. When the event is written to the event log file, the function causes the event object specified by the hEvent parameter to become signaled.&nbsp;
+    Lets an application receive notification when an event is written to the event log file specified by the hEventLog parameter\. When the event is written to the event log file, the function causes the event object specified by the hEvent parameter to become signaled\.&nbsp;
 
   - [GetNumberOfEventLogRecords](win32evtlog.md#win32evtloggetnumberofeventlogrecords)
 
-    Returns the number of event log records.&nbsp;
+    Returns the number of event log records\.&nbsp;
 
   - [GetOldestEventLogRecord](win32evtlog.md#win32evtloggetoldesteventlogrecord)
 
-    Returns the number of event log records.&nbsp;
+    Returns the number of event log records\.&nbsp;
 
   - [OpenEventLog](win32evtlog.md#win32evtlogopeneventlog)
 
-    Opens an event log.&nbsp;
+    Opens an event log\.&nbsp;
 
   - [RegisterEventSource](win32evtlog.md#win32evtlogregistereventsource)
 
@@ -52,7 +52,7 @@ them on XP will result in the process exiting, rather than a python exception.
 
   - [OpenBackupEventLog](win32evtlog.md#win32evtlogopenbackupeventlog)
 
-    Opens a previously saved event log.&nbsp;
+    Opens a previously saved event log\.&nbsp;
 
   - [ReportEvent](win32evtlog.md#win32evtlogreportevent)
 
@@ -84,7 +84,7 @@ them on XP will result in the process exiting, rather than a python exception.
 
   - [EvtGetExtendedStatus](win32evtlog.md#win32evtlogevtgetextendedstatus)
 
-    Returns additional error info from last Evt* call&nbsp;
+    Returns additional error info from last Evt\* call&nbsp;
 
   - [EvtQuery](win32evtlog.md#win32evtlogevtquery)
 
@@ -170,9 +170,9 @@ them on XP will result in the process exiting, rather than a python exception.
 
     Retrieves an item from an object array&nbsp;
 
-## [win32evtlog](#win32evtlog).BackupEventLog
+## [win32evtlog](#win32evtlog)\.BackupEventLog
 
- __BackupEventLog( *handle*  *, eventLogName* __ )
+ **BackupEventLog\( *handle*  *, eventLogName* ** \)
 Backs up the event log
 
 #### Parameters
@@ -180,15 +180,15 @@ Backs up the event log
 
   -  *handle* : int
 
-    Handle to the event log to backup.
+    Handle to the event log to backup\.
 
   -  *eventLogName* :[PyUnicode](#pyunicode)
 
     The name of the event log to save to
 
-## [win32evtlog](#win32evtlog).ClearEventLog
+## [win32evtlog](#win32evtlog)\.ClearEventLog
 
- __ClearEventLog( *handle*  *, eventLogName* __ )
+ **ClearEventLog\( *handle*  *, eventLogName* ** \)
 Clears the event log
 
 #### Parameters
@@ -196,15 +196,15 @@ Clears the event log
 
   -  *handle* : int
 
-    Handle to the event log to clear.
+    Handle to the event log to clear\.
 
   -  *eventLogName* :[PyUnicode](#pyunicode)
 
     The name of the event log to save to, or None
 
-## [win32evtlog](#win32evtlog).CloseEventLog
+## [win32evtlog](#win32evtlog)\.CloseEventLog
 
- __CloseEventLog( *handle* __ )
+ **CloseEventLog\( *handle* ** \)
 Closes the eventlog
 
 #### Parameters
@@ -214,9 +214,9 @@ Closes the eventlog
 
     Handle to the event log to close
 
-## [win32evtlog](#win32evtlog).DeregisterEventSource
+## [win32evtlog](#win32evtlog)\.DeregisterEventSource
 
- __DeregisterEventSource( *handle* __ )
+ **DeregisterEventSource\( *handle* ** \)
 Deregisters an Event Source
 
 #### Parameters
@@ -226,105 +226,105 @@ Deregisters an Event Source
 
     Identifies the event log whose handle was returned by[win32evtlog::RegisterEventSource](win32evtlog.md#win32evtlogregistereventsource)
 
-## EVENTLOG_AUDIT_FAILURE
- __const win32evtlog.EVENTLOG_AUDIT_FAILURE;__ 
+## EVENTLOG\_AUDIT\_FAILURE
+ **const win32evtlog\.EVENTLOG\_AUDIT\_FAILURE;** 
 
 
-## EVENTLOG_AUDIT_SUCCESS
- __const win32evtlog.EVENTLOG_AUDIT_SUCCESS;__ 
+## EVENTLOG\_AUDIT\_SUCCESS
+ **const win32evtlog\.EVENTLOG\_AUDIT\_SUCCESS;** 
 
 
-## EVENTLOG_BACKWARDS_READ
- __const win32evtlog.EVENTLOG_BACKWARDS_READ;__ 
+## EVENTLOG\_BACKWARDS\_READ
+ **const win32evtlog\.EVENTLOG\_BACKWARDS\_READ;** 
 
 
-## EVENTLOG_END_ALL_PAIRED_EVENTS
- __const win32evtlog.EVENTLOG_END_ALL_PAIRED_EVENTS;__ 
+## EVENTLOG\_END\_ALL\_PAIRED\_EVENTS
+ **const win32evtlog\.EVENTLOG\_END\_ALL\_PAIRED\_EVENTS;** 
 
 
-## EVENTLOG_END_PAIRED_EVENT
- __const win32evtlog.EVENTLOG_END_PAIRED_EVENT;__ 
+## EVENTLOG\_END\_PAIRED\_EVENT
+ **const win32evtlog\.EVENTLOG\_END\_PAIRED\_EVENT;** 
 
 
-## EVENTLOG_ERROR_TYPE
- __const win32evtlog.EVENTLOG_ERROR_TYPE;__ 
+## EVENTLOG\_ERROR\_TYPE
+ **const win32evtlog\.EVENTLOG\_ERROR\_TYPE;** 
 
 
-## EVENTLOG_FORWARDS_READ
- __const win32evtlog.EVENTLOG_FORWARDS_READ;__ 
+## EVENTLOG\_FORWARDS\_READ
+ **const win32evtlog\.EVENTLOG\_FORWARDS\_READ;** 
 
 
-## EVENTLOG_INFORMATION_TYPE
- __const win32evtlog.EVENTLOG_INFORMATION_TYPE;__ 
+## EVENTLOG\_INFORMATION\_TYPE
+ **const win32evtlog\.EVENTLOG\_INFORMATION\_TYPE;** 
 
 
-## EVENTLOG_PAIRED_EVENT_ACTIVE
- __const win32evtlog.EVENTLOG_PAIRED_EVENT_ACTIVE;__ 
+## EVENTLOG\_PAIRED\_EVENT\_ACTIVE
+ **const win32evtlog\.EVENTLOG\_PAIRED\_EVENT\_ACTIVE;** 
 
 
-## EVENTLOG_PAIRED_EVENT_INACTIVE
- __const win32evtlog.EVENTLOG_PAIRED_EVENT_INACTIVE;__ 
+## EVENTLOG\_PAIRED\_EVENT\_INACTIVE
+ **const win32evtlog\.EVENTLOG\_PAIRED\_EVENT\_INACTIVE;** 
 
 
-## EVENTLOG_SEEK_READ
- __const win32evtlog.EVENTLOG_SEEK_READ;__ 
+## EVENTLOG\_SEEK\_READ
+ **const win32evtlog\.EVENTLOG\_SEEK\_READ;** 
 
 
-## EVENTLOG_SEQUENTIAL_READ
- __const win32evtlog.EVENTLOG_SEQUENTIAL_READ;__ 
+## EVENTLOG\_SEQUENTIAL\_READ
+ **const win32evtlog\.EVENTLOG\_SEQUENTIAL\_READ;** 
 
 
-## EVENTLOG_START_PAIRED_EVENT
- __const win32evtlog.EVENTLOG_START_PAIRED_EVENT;__ 
+## EVENTLOG\_START\_PAIRED\_EVENT
+ **const win32evtlog\.EVENTLOG\_START\_PAIRED\_EVENT;** 
 
 
-## EVENTLOG_SUCCESS
- __const win32evtlog.EVENTLOG_SUCCESS;__ 
+## EVENTLOG\_SUCCESS
+ **const win32evtlog\.EVENTLOG\_SUCCESS;** 
 
 
-## EVENTLOG_WARNING_TYPE
- __const win32evtlog.EVENTLOG_WARNING_TYPE;__ 
+## EVENTLOG\_WARNING\_TYPE
+ **const win32evtlog\.EVENTLOG\_WARNING\_TYPE;** 
 
 
 ## EventMetadataEventChannel
- __const win32evtlog.EventMetadataEventChannel;__ 
+ **const win32evtlog\.EventMetadataEventChannel;** 
 
 
 ## EventMetadataEventID
- __const win32evtlog.EventMetadataEventID;__ 
+ **const win32evtlog\.EventMetadataEventID;** 
 
 
 ## EventMetadataEventKeyword
- __const win32evtlog.EventMetadataEventKeyword;__ 
+ **const win32evtlog\.EventMetadataEventKeyword;** 
 
 
 ## EventMetadataEventLevel
- __const win32evtlog.EventMetadataEventLevel;__ 
+ **const win32evtlog\.EventMetadataEventLevel;** 
 
 
 ## EventMetadataEventMessageID
- __const win32evtlog.EventMetadataEventMessageID;__ 
+ **const win32evtlog\.EventMetadataEventMessageID;** 
 
 
 ## EventMetadataEventOpcode
- __const win32evtlog.EventMetadataEventOpcode;__ 
+ **const win32evtlog\.EventMetadataEventOpcode;** 
 
 
 ## EventMetadataEventTask
- __const win32evtlog.EventMetadataEventTask;__ 
+ **const win32evtlog\.EventMetadataEventTask;** 
 
 
 ## EventMetadataEventTemplate
- __const win32evtlog.EventMetadataEventTemplate;__ 
+ **const win32evtlog\.EventMetadataEventTemplate;** 
 
 
 ## EventMetadataEventVersion
- __const win32evtlog.EventMetadataEventVersion;__ 
+ **const win32evtlog\.EventMetadataEventVersion;** 
 
 
-## [win32evtlog](#win32evtlog).EvtArchiveExportedLog
+## [win32evtlog](#win32evtlog)\.EvtArchiveExportedLog
 
- __EvtArchiveExportedLog( *LogFilePath*  *, Locale*  *, Session*  *, Flags* __ )
+ **EvtArchiveExportedLog\( *LogFilePath*  *, Locale*  *, Session*  *, Flags* ** \)
 Localizes an exported event log file
 
 #### Parameters
@@ -338,11 +338,11 @@ Localizes an exported event log file
 
     Locale id
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
-    Handle to a remote session (see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)), or None for local machine.
+    Handle to a remote session \(see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)\), or None for local machine\.
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved
 
@@ -350,96 +350,96 @@ Localizes an exported event log file
 Accepts keyword args
 
 ## EvtChannelConfigAccess
- __const win32evtlog.EvtChannelConfigAccess;__ 
+ **const win32evtlog\.EvtChannelConfigAccess;** 
 
 
 ## EvtChannelConfigClassicEventlog
- __const win32evtlog.EvtChannelConfigClassicEventlog;__ 
+ **const win32evtlog\.EvtChannelConfigClassicEventlog;** 
 
 
 ## EvtChannelConfigEnabled
- __const win32evtlog.EvtChannelConfigEnabled;__ 
+ **const win32evtlog\.EvtChannelConfigEnabled;** 
 
 
 ## EvtChannelConfigIsolation
- __const win32evtlog.EvtChannelConfigIsolation;__ 
+ **const win32evtlog\.EvtChannelConfigIsolation;** 
 
 
 ## EvtChannelConfigOwningPublisher
- __const win32evtlog.EvtChannelConfigOwningPublisher;__ 
+ **const win32evtlog\.EvtChannelConfigOwningPublisher;** 
 
 
 ## EvtChannelConfigPropertyIdEND
- __const win32evtlog.EvtChannelConfigPropertyIdEND;__ 
+ **const win32evtlog\.EvtChannelConfigPropertyIdEND;** 
 
 
 ## EvtChannelConfigType
- __const win32evtlog.EvtChannelConfigType;__ 
+ **const win32evtlog\.EvtChannelConfigType;** 
 
 
 ## EvtChannelLoggingConfigAutoBackup
- __const win32evtlog.EvtChannelLoggingConfigAutoBackup;__ 
+ **const win32evtlog\.EvtChannelLoggingConfigAutoBackup;** 
 
 
 ## EvtChannelLoggingConfigLogFilePath
- __const win32evtlog.EvtChannelLoggingConfigLogFilePath;__ 
+ **const win32evtlog\.EvtChannelLoggingConfigLogFilePath;** 
 
 
 ## EvtChannelLoggingConfigMaxSize
- __const win32evtlog.EvtChannelLoggingConfigMaxSize;__ 
+ **const win32evtlog\.EvtChannelLoggingConfigMaxSize;** 
 
 
 ## EvtChannelLoggingConfigRetention
- __const win32evtlog.EvtChannelLoggingConfigRetention;__ 
+ **const win32evtlog\.EvtChannelLoggingConfigRetention;** 
 
 
 ## EvtChannelPublisherList
- __const win32evtlog.EvtChannelPublisherList;__ 
+ **const win32evtlog\.EvtChannelPublisherList;** 
 
 
 ## EvtChannelPublishingConfigBufferSize
- __const win32evtlog.EvtChannelPublishingConfigBufferSize;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigBufferSize;** 
 
 
 ## EvtChannelPublishingConfigClockType
- __const win32evtlog.EvtChannelPublishingConfigClockType;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigClockType;** 
 
 
 ## EvtChannelPublishingConfigControlGuid
- __const win32evtlog.EvtChannelPublishingConfigControlGuid;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigControlGuid;** 
 
 
 ## EvtChannelPublishingConfigFileMax
- __const win32evtlog.EvtChannelPublishingConfigFileMax;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigFileMax;** 
 
 
 ## EvtChannelPublishingConfigKeywords
- __const win32evtlog.EvtChannelPublishingConfigKeywords;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigKeywords;** 
 
 
 ## EvtChannelPublishingConfigLatency
- __const win32evtlog.EvtChannelPublishingConfigLatency;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigLatency;** 
 
 
 ## EvtChannelPublishingConfigLevel
- __const win32evtlog.EvtChannelPublishingConfigLevel;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigLevel;** 
 
 
 ## EvtChannelPublishingConfigMaxBuffers
- __const win32evtlog.EvtChannelPublishingConfigMaxBuffers;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigMaxBuffers;** 
 
 
 ## EvtChannelPublishingConfigMinBuffers
- __const win32evtlog.EvtChannelPublishingConfigMinBuffers;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigMinBuffers;** 
 
 
 ## EvtChannelPublishingConfigSidType
- __const win32evtlog.EvtChannelPublishingConfigSidType;__ 
+ **const win32evtlog\.EvtChannelPublishingConfigSidType;** 
 
 
-## [win32evtlog](#win32evtlog).EvtClearLog
+## [win32evtlog](#win32evtlog)\.EvtClearLog
 
- __EvtClearLog( *ChannelPath*  *, TargetFilePath*  *, Session*  *, Flags* __ )
+ **EvtClearLog\( *ChannelPath*  *, TargetFilePath*  *, Session*  *, Flags* ** \)
 Clears an event log and optionally exports events to an archive
 
 #### Parameters
@@ -449,30 +449,30 @@ Clears an event log and optionally exports events to an archive
 
     Name of event log to be cleared
 
-  -  *TargetFilePath=None* : str
+  -  *TargetFilePath\=None* : str
 
     Name of file in which cleared events will be archived, or None
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
-    Handle to a remote session (see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)), or None for local machine.
+    Handle to a remote session \(see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)\), or None for local machine\.
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
 #### Comments
 Accepts keyword args
 
-## [win32evtlog](#win32evtlog).EvtCreateBookmark
+## [win32evtlog](#win32evtlog)\.EvtCreateBookmark
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtCreateBookmark( *BookmarkXML* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtCreateBookmark\( *BookmarkXML* ** \)
 Creates a bookmark
 
 #### Parameters
 
 
-  -  *BookmarkXML=None* : str
+  -  *BookmarkXML\=None* : str
 
     XML representation of a bookmark as returned by[win32evtlog::EvtRender](win32evtlog.md#win32evtlogevtrender), or None for a new bookmark
 
@@ -480,24 +480,24 @@ Creates a bookmark
 Accepts keyword args
 
 ## EvtEventMetadataPropertyIdEND
- __const win32evtlog.EvtEventMetadataPropertyIdEND;__ 
+ **const win32evtlog\.EvtEventMetadataPropertyIdEND;** 
 
 
 ## EvtEventPath
- __const win32evtlog.EvtEventPath;__ 
+ **const win32evtlog\.EvtEventPath;** 
 
 
 ## EvtEventPropertyIdEND
- __const win32evtlog.EvtEventPropertyIdEND;__ 
+ **const win32evtlog\.EvtEventPropertyIdEND;** 
 
 
 ## EvtEventQueryIDs
- __const win32evtlog.EvtEventQueryIDs;__ 
+ **const win32evtlog\.EvtEventQueryIDs;** 
 
 
-## [win32evtlog](#win32evtlog).EvtExportLog
+## [win32evtlog](#win32evtlog)\.EvtExportLog
 
- __EvtExportLog( *Path*  *, TargetFilePath*  *, Flags*  *, Query*  *, Session* __ )
+ **EvtExportLog\( *Path*  *, TargetFilePath*  *, Flags*  *, Query*  *, Session* ** \)
 Exports events from a channel or log file
 
 #### Parameters
@@ -513,92 +513,92 @@ Exports events from a channel or log file
 
   -  *Flags* : int
 
-    Combination of EvtExportLog* flags specifying the type of path
+    Combination of EvtExportLog\* flags specifying the type of path
 
-  -  *Query=None* : str
+  -  *Query\=None* : str
 
     Selects specific events to export
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
-    Handle to a remote session (see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)), or None for local machine.
+    Handle to a remote session \(see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)\), or None for local machine\.
 
 #### Comments
 Accepts keyword args
 
 ## EvtExportLogChannelPath
- __const win32evtlog.EvtExportLogChannelPath;__ 
+ **const win32evtlog\.EvtExportLogChannelPath;** 
 
 
 ## EvtExportLogFilePath
- __const win32evtlog.EvtExportLogFilePath;__ 
+ **const win32evtlog\.EvtExportLogFilePath;** 
 
 
 ## EvtExportLogTolerateQueryErrors
- __const win32evtlog.EvtExportLogTolerateQueryErrors;__ 
+ **const win32evtlog\.EvtExportLogTolerateQueryErrors;** 
 
 
-## [win32evtlog](#win32evtlog).EvtGetChannelConfigProperty
+## [win32evtlog](#win32evtlog)\.EvtGetChannelConfigProperty
 
-(object, int) = __EvtGetChannelConfigProperty( *ChannelConfig*  *, PropertyId*  *, Flags* __ )
+\(object, int\) \= **EvtGetChannelConfigProperty\( *ChannelConfig*  *, PropertyId*  *, Flags* ** \)
 Retreives channel configuration information
 
 #### Parameters
 
 
-  -  *ChannelConfig* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *ChannelConfig* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Config handle as returned by[win32evtlog::EvtOpenChannelConfig](win32evtlog.md#win32evtlogevtopenchannelconfig)
 
   -  *PropertyId* : int
 
-    Property to retreive, one of EvtChannel* constants
+    Property to retreive, one of EvtChannel\* constants
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
 #### Comments
 Accepts keyword args
-Returns the value and type of value (EvtVarType*)
+Returns the value and type of value \(EvtVarType\*\)
 
-## [win32evtlog](#win32evtlog).EvtGetEventInfo
+## [win32evtlog](#win32evtlog)\.EvtGetEventInfo
 
-(object, int) = __EvtGetEventInfo( *Event*  *, PropertyId* __ )
+\(object, int\) \= **EvtGetEventInfo\( *Event*  *, PropertyId* ** \)
 Retrieves information about the source of an event
 
 #### Parameters
 
 
-  -  *Event* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Event* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to an event
 
   -  *PropertyId* : int
 
-    Property to retreive, EvtEvent*
+    Property to retreive, EvtEvent\*
 
 #### Comments
 Accepts keyword args
-Returns the value and type of value (EvtVarType*)
+Returns the value and type of value \(EvtVarType\*\)
 
-## [win32evtlog](#win32evtlog).EvtGetEventMetadataProperty
+## [win32evtlog](#win32evtlog)\.EvtGetEventMetadataProperty
 
-(object, int) = __EvtGetEventMetadataProperty( *EventMetadata*  *, PropertyId*  *, Flags* __ )
+\(object, int\) \= **EvtGetEventMetadataProperty\( *EventMetadata*  *, PropertyId*  *, Flags* ** \)
 Retrieves a property from an event publisher
 
 #### Parameters
 
 
-  -  *EventMetadata* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *EventMetadata* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Event metadata handle as returned by[win32evtlog::EvtNextEventMetadata](win32evtlog.md#win32evtlogevtnexteventmetadata)
 
   -  *PropertyId* : int
 
-    Property to retreive, EventMetadata*
+    Property to retreive, EventMetadata\*
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
@@ -606,42 +606,42 @@ Retrieves a property from an event publisher
 Accepts keyword args
 
 #### Return Value
-Returns the value and type of value (EvtVarType*).
+Returns the value and type of value \(EvtVarType\*\)\.
 
-## [win32evtlog](#win32evtlog).EvtGetExtendedStatus
+## [win32evtlog](#win32evtlog)\.EvtGetExtendedStatus
 
-str = __EvtGetExtendedStatus(__ )
-Returns additional error info from last Evt* call
+str \= **EvtGetExtendedStatus\(** \)
+Returns additional error info from last Evt\* call
 
-## [win32evtlog](#win32evtlog).EvtGetLogInfo
+## [win32evtlog](#win32evtlog)\.EvtGetLogInfo
 
-(object, int) = __EvtGetLogInfo( *Log*  *, PropertyId* __ )
+\(object, int\) \= **EvtGetLogInfo\( *Log*  *, PropertyId* ** \)
 Retrieves log file or channel information
 
 #### Parameters
 
 
-  -  *Log* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Log* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Event log handle as returned by[win32evtlog::EvtOpenLog](win32evtlog.md#win32evtlogevtopenlog)
 
   -  *PropertyId* : int
 
-    Property to retreive, EvtLog*
+    Property to retreive, EvtLog\*
 
 #### Comments
 Accepts keyword args
-Returns the value and type of value (EvtVarType*)
+Returns the value and type of value \(EvtVarType\*\)
 
-## [win32evtlog](#win32evtlog).EvtGetObjectArrayProperty
+## [win32evtlog](#win32evtlog)\.EvtGetObjectArrayProperty
 
-(object, int) = __EvtGetObjectArrayProperty( *ObjectArray*  *, PropertyId*  *, ArrayIndex*  *, Flags* __ )
+\(object, int\) \= **EvtGetObjectArrayProperty\( *ObjectArray*  *, PropertyId*  *, ArrayIndex*  *, Flags* ** \)
 Retrieves an item from an object array
 
 #### Parameters
 
 
-  -  *ObjectArray* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *ObjectArray* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to an array of objects as returned by[win32evtlog::EvtGetPublisherMetadataProperty](win32evtlog.md#win32evtlogevtgetpublishermetadataproperty)for some ProperyId's
 
@@ -653,7 +653,7 @@ Retrieves an item from an object array
 
     Zero-based index of item to retrieve
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
@@ -661,40 +661,40 @@ Retrieves an item from an object array
 Accepts keyword args
 
 #### Return Value
-Returns the value and type of value (EvtVarType*)
+Returns the value and type of value \(EvtVarType\*\)
 
-## [win32evtlog](#win32evtlog).EvtGetObjectArraySize
+## [win32evtlog](#win32evtlog)\.EvtGetObjectArraySize
 
-int = __EvtGetObjectArraySize( *ObjectArray* __ )
+int \= **EvtGetObjectArraySize\( *ObjectArray* ** \)
 Returns the size of an array of event objects
 
 #### Parameters
 
 
-  -  *ObjectArray* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *ObjectArray* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to an array of objects as returned by[win32evtlog::EvtGetPublisherMetadataProperty](win32evtlog.md#win32evtlogevtgetpublishermetadataproperty)for some ProperyId's
 
 #### Comments
 Accepts keyword args
 
-## [win32evtlog](#win32evtlog).EvtGetPublisherMetadataProperty
+## [win32evtlog](#win32evtlog)\.EvtGetPublisherMetadataProperty
 
-(object, int) = __EvtGetPublisherMetadataProperty( *PublisherMetadata*  *, PropertyId*  *, Flags* __ )
+\(object, int\) \= **EvtGetPublisherMetadataProperty\( *PublisherMetadata*  *, PropertyId*  *, Flags* ** \)
 Retrieves a property from an event publisher
 
 #### Parameters
 
 
-  -  *PublisherMetadata* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *PublisherMetadata* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Publisher handle as returned by[win32evtlog::EvtOpenPublisherMetadata](win32evtlog.md#win32evtlogevtopenpublishermetadata)
 
   -  *PropertyId* : int
 
-    Property to retreive, EvtPublisherMetadata*
+    Property to retreive, EvtPublisherMetadata\*
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
@@ -702,51 +702,51 @@ Retrieves a property from an event publisher
 Accepts keyword args
 
 #### Return Value
-Returns the value and type of value (EvtVarType*) 
+Returns the value and type of value \(EvtVarType\*\) 
 
-Some properties return a handle (type EvtVarTypeEvtHandle) which can be iterated using[win32evtlog::EvtGetObjectArraySize](win32evtlog.md#win32evtlogevtgetobjectarraysize)and[win32evtlog::EvtGetObjectArrayProperty](win32evtlog.md#win32evtlogevtgetobjectarrayproperty).
+Some properties return a handle \(type EvtVarTypeEvtHandle\) which can be iterated using[win32evtlog::EvtGetObjectArraySize](win32evtlog.md#win32evtlogevtgetobjectarraysize)and[win32evtlog::EvtGetObjectArrayProperty](win32evtlog.md#win32evtlogevtgetobjectarrayproperty)\.
 
 ## EvtLogAttributes
- __const win32evtlog.EvtLogAttributes;__ 
+ **const win32evtlog\.EvtLogAttributes;** 
 
 
 ## EvtLogCreationTime
- __const win32evtlog.EvtLogCreationTime;__ 
+ **const win32evtlog\.EvtLogCreationTime;** 
 
 
 ## EvtLogFileSize
- __const win32evtlog.EvtLogFileSize;__ 
+ **const win32evtlog\.EvtLogFileSize;** 
 
 
 ## EvtLogFull
- __const win32evtlog.EvtLogFull;__ 
+ **const win32evtlog\.EvtLogFull;** 
 
 
 ## EvtLogLastAccessTime
- __const win32evtlog.EvtLogLastAccessTime;__ 
+ **const win32evtlog\.EvtLogLastAccessTime;** 
 
 
 ## EvtLogLastWriteTime
- __const win32evtlog.EvtLogLastWriteTime;__ 
+ **const win32evtlog\.EvtLogLastWriteTime;** 
 
 
 ## EvtLogNumberOfLogRecords
- __const win32evtlog.EvtLogNumberOfLogRecords;__ 
+ **const win32evtlog\.EvtLogNumberOfLogRecords;** 
 
 
 ## EvtLogOldestRecordNumber
- __const win32evtlog.EvtLogOldestRecordNumber;__ 
+ **const win32evtlog\.EvtLogOldestRecordNumber;** 
 
 
-## [win32evtlog](#win32evtlog).EvtNext
+## [win32evtlog](#win32evtlog)\.EvtNext
 
-([PyEVT_HANDLE](PyEVT.md#pyevthandle),...) = __EvtNext( *ResultSet*  *, Count*  *, Timeout*  *, Flags* __ )
+\([PyEVT\_HANDLE](PyEVT.md#pyevthandle),\.\.\.\) \= **EvtNext\( *ResultSet*  *, Count*  *, Timeout*  *, Flags* ** \)
 Returns events from a query
 
 #### Parameters
 
 
-  -  *ResultSet* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *ResultSet* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to event query or subscription
 
@@ -754,11 +754,11 @@ Returns events from a query
 
     Number of events to return
 
-  -  *Timeout=-1* : int
+  -  *Timeout\=-1* : int
 
     Time to wait in milliseconds, use -1 for infinite
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
@@ -766,19 +766,19 @@ Returns events from a query
 Accepts keyword args
 
 #### Return Value
-Returns a tuple of handles to events.  If no items are available, returns 
+Returns a tuple of handles to events\.  If no items are available, returns 
 
-an empty tuple instead of raising an exception.
+an empty tuple instead of raising an exception\.
 
-## [win32evtlog](#win32evtlog).EvtNextChannelPath
+## [win32evtlog](#win32evtlog)\.EvtNextChannelPath
 
-str = __EvtNextChannelPath( *ChannelEnum* __ )
+str \= **EvtNextChannelPath\( *ChannelEnum* ** \)
 Retrieves a channel path from an enumeration
 
 #### Parameters
 
 
-  -  *ChannelEnum* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *ChannelEnum* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to an enumeration as returned by[win32evtlog::EvtOpenChannelEnum](win32evtlog.md#win32evtlogevtopenchannelenum)
 
@@ -788,34 +788,34 @@ Accepts keyword args
 #### Return Value
 Returns None at end of enumeration
 
-## [win32evtlog](#win32evtlog).EvtNextEventMetadata
+## [win32evtlog](#win32evtlog)\.EvtNextEventMetadata
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtNextEventMetadata( *EventMetadataEnum*  *, Flags* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtNextEventMetadata\( *EventMetadataEnum*  *, Flags* ** \)
 Retrieves the next item from an event metadata enumeration
 
 #### Parameters
 
 
-  -  *EventMetadataEnum* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *EventMetadataEnum* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Enumeration handle as returned by[win32evtlog::EvtOpenEventMetadataEnum](win32evtlog.md#win32evtlogevtopeneventmetadataenum)
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
 #### Comments
 Accepts keyword args
 
-## [win32evtlog](#win32evtlog).EvtNextPublisherId
+## [win32evtlog](#win32evtlog)\.EvtNextPublisherId
 
-str = __EvtNextPublisherId( *PublisherEnum* __ )
+str \= **EvtNextPublisherId\( *PublisherEnum* ** \)
 Returns the next publisher from an enumeration
 
 #### Parameters
 
 
-  -  *PublisherEnum* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *PublisherEnum* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to an enumeration as returned by[win32evtlog::EvtOpenPublisherEnum](win32evtlog.md#win32evtlogevtopenpublisherenum)
 
@@ -825,9 +825,9 @@ Accepts keyword args
 #### Return Value
 Returns None at end of enumeration
 
-## [win32evtlog](#win32evtlog).EvtOpenChannelConfig
+## [win32evtlog](#win32evtlog)\.EvtOpenChannelConfig
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtOpenChannelConfig( *ChannelPath*  *, Session*  *, Flags* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtOpenChannelConfig\( *ChannelPath*  *, Session*  *, Flags* ** \)
 Opens channel configuration
 
 #### Parameters
@@ -837,30 +837,30 @@ Opens channel configuration
 
     Channel to be opened
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Session handle as returned by[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession), or None for local machine
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
 #### Comments
 Accepts keyword args
 
-## [win32evtlog](#win32evtlog).EvtOpenChannelEnum
+## [win32evtlog](#win32evtlog)\.EvtOpenChannelEnum
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtOpenChannelEnum( *Session*  *, Flags* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtOpenChannelEnum\( *Session*  *, Flags* ** \)
 Begins an enumeration of event channels
 
 #### Parameters
 
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
-    Handle to a remote session (see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)), or None for local machine.
+    Handle to a remote session \(see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)\), or None for local machine\.
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
@@ -868,22 +868,22 @@ Begins an enumeration of event channels
 Accepts keyword args
 
 ## EvtOpenChannelPath
- __const win32evtlog.EvtOpenChannelPath;__ 
+ **const win32evtlog\.EvtOpenChannelPath;** 
 
 
-## [win32evtlog](#win32evtlog).EvtOpenEventMetadataEnum
+## [win32evtlog](#win32evtlog)\.EvtOpenEventMetadataEnum
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtOpenEventMetadataEnum( *PublisherMetadata*  *, Flags* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtOpenEventMetadataEnum\( *PublisherMetadata*  *, Flags* ** \)
 Enumerates the events that a publisher provides
 
 #### Parameters
 
 
-  -  *PublisherMetadata* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *PublisherMetadata* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Publisher handle as returned by[win32evtlog::EvtOpenPublisherMetadata](win32evtlog.md#win32evtlogevtopenpublishermetadata)
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
@@ -891,12 +891,12 @@ Enumerates the events that a publisher provides
 Accepts keyword args
 
 ## EvtOpenFilePath
- __const win32evtlog.EvtOpenFilePath;__ 
+ **const win32evtlog\.EvtOpenFilePath;** 
 
 
-## [win32evtlog](#win32evtlog).EvtOpenLog
+## [win32evtlog](#win32evtlog)\.EvtOpenLog
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtOpenLog( *Path*  *, Flags*  *, Session* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtOpenLog\( *Path*  *, Flags*  *, Session* ** \)
 Opens an event log or exported log archive
 
 #### Parameters
@@ -908,37 +908,37 @@ Opens an event log or exported log archive
 
   -  *Flags* : int
 
-    EvtOpenChannelPath (1) or EvtOpenFilePath (2)
+    EvtOpenChannelPath \(1\) or EvtOpenFilePath \(2\)
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
-    Handle to a remote session (see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)), or None for local machine.
+    Handle to a remote session \(see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)\), or None for local machine\.
 
 #### Comments
 Accepts keyword args
 
-## [win32evtlog](#win32evtlog).EvtOpenPublisherEnum
+## [win32evtlog](#win32evtlog)\.EvtOpenPublisherEnum
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtOpenPublisherEnum( *Session*  *, Flags* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtOpenPublisherEnum\( *Session*  *, Flags* ** \)
 Begins an enumeration of event publishers
 
 #### Parameters
 
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
-    Handle to a remote session (see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)), or None for local machine.
+    Handle to a remote session \(see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)\), or None for local machine\.
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
 #### Comments
 Accepts keyword args
 
-## [win32evtlog](#win32evtlog).EvtOpenPublisherMetadata
+## [win32evtlog](#win32evtlog)\.EvtOpenPublisherMetadata
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtOpenPublisherMetadata( *PublisherIdentity*  *, Session*  *, LogFilePath*  *, Locale*  *, Flags* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtOpenPublisherMetadata\( *PublisherIdentity*  *, Session*  *, LogFilePath*  *, Locale*  *, Flags* ** \)
 Opens a publisher to retrieve properties using[win32evtlog::EvtGetPublisherMetadataProperty](win32evtlog.md#win32evtlogevtgetpublishermetadataproperty)
 
 #### Parameters
@@ -948,46 +948,46 @@ Opens a publisher to retrieve properties using[win32evtlog::EvtGetPublisherMetad
 
     Publisher id as returned by[win32evtlog::EvtNextPublisherId](win32evtlog.md#win32evtlogevtnextpublisherid)
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to remote session, or None for local machine
 
-  -  *LogFilePath=None* : str
+  -  *LogFilePath\=None* : str
 
     Log file from which to retrieve publisher, or None for locally registered publisher
 
-  -  *Locale=0* : int
+  -  *Locale\=0* : int
 
     Locale to use for retrieved properties, use 0 for current locale
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
 #### Comments
 Accepts keyword args
 
-## [win32evtlog](#win32evtlog).EvtOpenSession
+## [win32evtlog](#win32evtlog)\.EvtOpenSession
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtOpenSession( *Login*  *, LoginClass*  *, Timeout*  *, Flags* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtOpenSession\( *Login*  *, LoginClass*  *, Timeout*  *, Flags* ** \)
 Creates a session used to access the Event Log on another machine
 
 #### Parameters
 
 
-  -  *Login* :[PyEVT_RPC_LOGIN](PyEVT.md#pyevtrpc_login)
+  -  *Login* :[PyEVT\_RPC\_LOGIN](PyEVT.md#pyevtrpc_login)
 
     Credentials to be used to access remote machine
 
-  -  *LoginClass=EvtRpcLogin* : int
+  -  *LoginClass\=EvtRpcLogin* : int
 
     Type of login to perform, EvtRpcLogin is only defined value
 
-  -  *Timeout=0* : int
+  -  *Timeout\=0* : int
 
     Reserved, use only 0
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use only 0
 
@@ -995,128 +995,128 @@ Creates a session used to access the Event Log on another machine
 Accepts keyword args
 
 ## EvtPublisherMetadataChannelReferenceFlags
- __const win32evtlog.EvtPublisherMetadataChannelReferenceFlags;__ 
+ **const win32evtlog\.EvtPublisherMetadataChannelReferenceFlags;** 
 
 
 ## EvtPublisherMetadataChannelReferenceID
- __const win32evtlog.EvtPublisherMetadataChannelReferenceID;__ 
+ **const win32evtlog\.EvtPublisherMetadataChannelReferenceID;** 
 
 
 ## EvtPublisherMetadataChannelReferenceIndex
- __const win32evtlog.EvtPublisherMetadataChannelReferenceIndex;__ 
+ **const win32evtlog\.EvtPublisherMetadataChannelReferenceIndex;** 
 
 
 ## EvtPublisherMetadataChannelReferenceMessageID
- __const win32evtlog.EvtPublisherMetadataChannelReferenceMessageID;__ 
+ **const win32evtlog\.EvtPublisherMetadataChannelReferenceMessageID;** 
 
 
 ## EvtPublisherMetadataChannelReferencePath
- __const win32evtlog.EvtPublisherMetadataChannelReferencePath;__ 
+ **const win32evtlog\.EvtPublisherMetadataChannelReferencePath;** 
 
 
 ## EvtPublisherMetadataChannelReferences
- __const win32evtlog.EvtPublisherMetadataChannelReferences;__ 
+ **const win32evtlog\.EvtPublisherMetadataChannelReferences;** 
 
 
 ## EvtPublisherMetadataHelpLink
- __const win32evtlog.EvtPublisherMetadataHelpLink;__ 
+ **const win32evtlog\.EvtPublisherMetadataHelpLink;** 
 
 
 ## EvtPublisherMetadataKeywordMessageID
- __const win32evtlog.EvtPublisherMetadataKeywordMessageID;__ 
+ **const win32evtlog\.EvtPublisherMetadataKeywordMessageID;** 
 
 
 ## EvtPublisherMetadataKeywordName
- __const win32evtlog.EvtPublisherMetadataKeywordName;__ 
+ **const win32evtlog\.EvtPublisherMetadataKeywordName;** 
 
 
 ## EvtPublisherMetadataKeywordValue
- __const win32evtlog.EvtPublisherMetadataKeywordValue;__ 
+ **const win32evtlog\.EvtPublisherMetadataKeywordValue;** 
 
 
 ## EvtPublisherMetadataKeywords
- __const win32evtlog.EvtPublisherMetadataKeywords;__ 
+ **const win32evtlog\.EvtPublisherMetadataKeywords;** 
 
 
 ## EvtPublisherMetadataLevelMessageID
- __const win32evtlog.EvtPublisherMetadataLevelMessageID;__ 
+ **const win32evtlog\.EvtPublisherMetadataLevelMessageID;** 
 
 
 ## EvtPublisherMetadataLevelName
- __const win32evtlog.EvtPublisherMetadataLevelName;__ 
+ **const win32evtlog\.EvtPublisherMetadataLevelName;** 
 
 
 ## EvtPublisherMetadataLevelValue
- __const win32evtlog.EvtPublisherMetadataLevelValue;__ 
+ **const win32evtlog\.EvtPublisherMetadataLevelValue;** 
 
 
 ## EvtPublisherMetadataLevels
- __const win32evtlog.EvtPublisherMetadataLevels;__ 
+ **const win32evtlog\.EvtPublisherMetadataLevels;** 
 
 
 ## EvtPublisherMetadataMessageFilePath
- __const win32evtlog.EvtPublisherMetadataMessageFilePath;__ 
+ **const win32evtlog\.EvtPublisherMetadataMessageFilePath;** 
 
 
 ## EvtPublisherMetadataOpcodeMessageID
- __const win32evtlog.EvtPublisherMetadataOpcodeMessageID;__ 
+ **const win32evtlog\.EvtPublisherMetadataOpcodeMessageID;** 
 
 
 ## EvtPublisherMetadataOpcodeName
- __const win32evtlog.EvtPublisherMetadataOpcodeName;__ 
+ **const win32evtlog\.EvtPublisherMetadataOpcodeName;** 
 
 
 ## EvtPublisherMetadataOpcodeValue
- __const win32evtlog.EvtPublisherMetadataOpcodeValue;__ 
+ **const win32evtlog\.EvtPublisherMetadataOpcodeValue;** 
 
 
 ## EvtPublisherMetadataOpcodes
- __const win32evtlog.EvtPublisherMetadataOpcodes;__ 
+ **const win32evtlog\.EvtPublisherMetadataOpcodes;** 
 
 
 ## EvtPublisherMetadataParameterFilePath
- __const win32evtlog.EvtPublisherMetadataParameterFilePath;__ 
+ **const win32evtlog\.EvtPublisherMetadataParameterFilePath;** 
 
 
 ## EvtPublisherMetadataPropertyIdEND
- __const win32evtlog.EvtPublisherMetadataPropertyIdEND;__ 
+ **const win32evtlog\.EvtPublisherMetadataPropertyIdEND;** 
 
 
 ## EvtPublisherMetadataPublisherGuid
- __const win32evtlog.EvtPublisherMetadataPublisherGuid;__ 
+ **const win32evtlog\.EvtPublisherMetadataPublisherGuid;** 
 
 
 ## EvtPublisherMetadataPublisherMessageID
- __const win32evtlog.EvtPublisherMetadataPublisherMessageID;__ 
+ **const win32evtlog\.EvtPublisherMetadataPublisherMessageID;** 
 
 
 ## EvtPublisherMetadataResourceFilePath
- __const win32evtlog.EvtPublisherMetadataResourceFilePath;__ 
+ **const win32evtlog\.EvtPublisherMetadataResourceFilePath;** 
 
 
 ## EvtPublisherMetadataTaskEventGuid
- __const win32evtlog.EvtPublisherMetadataTaskEventGuid;__ 
+ **const win32evtlog\.EvtPublisherMetadataTaskEventGuid;** 
 
 
 ## EvtPublisherMetadataTaskMessageID
- __const win32evtlog.EvtPublisherMetadataTaskMessageID;__ 
+ **const win32evtlog\.EvtPublisherMetadataTaskMessageID;** 
 
 
 ## EvtPublisherMetadataTaskName
- __const win32evtlog.EvtPublisherMetadataTaskName;__ 
+ **const win32evtlog\.EvtPublisherMetadataTaskName;** 
 
 
 ## EvtPublisherMetadataTaskValue
- __const win32evtlog.EvtPublisherMetadataTaskValue;__ 
+ **const win32evtlog\.EvtPublisherMetadataTaskValue;** 
 
 
 ## EvtPublisherMetadataTasks
- __const win32evtlog.EvtPublisherMetadataTasks;__ 
+ **const win32evtlog\.EvtPublisherMetadataTasks;** 
 
 
-## [win32evtlog](#win32evtlog).EvtQuery
+## [win32evtlog](#win32evtlog)\.EvtQuery
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtQuery( *Path*  *, Flags*  *, Query*  *, Session* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtQuery\( *Path*  *, Flags*  *, Query*  *, Session* ** \)
 Opens a query over a log channel or exported log file
 
 #### Parameters
@@ -1128,48 +1128,48 @@ Opens a query over a log channel or exported log file
 
   -  *Flags* : int
 
-    Combination of EVT_QUERY_FLAGS (EvtQuery*)
+    Combination of EVT\_QUERY\_FLAGS \(EvtQuery\*\)
 
-  -  *Query=None* : str
+  -  *Query\=None* : str
 
-    Selects events to return, None or '*' for all events
+    Selects events to return, None or '\*' for all events
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
-    Handle to a remote session (see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)), or None for local machine.
+    Handle to a remote session \(see[win32evtlog::EvtOpenSession](win32evtlog.md#win32evtlogevtopensession)\), or None for local machine\.
 
 #### Comments
 Accepts keyword args
 
 ## EvtQueryChannelPath
- __const win32evtlog.EvtQueryChannelPath;__ 
+ **const win32evtlog\.EvtQueryChannelPath;** 
 
 
 ## EvtQueryFilePath
- __const win32evtlog.EvtQueryFilePath;__ 
+ **const win32evtlog\.EvtQueryFilePath;** 
 
 
 ## EvtQueryForwardDirection
- __const win32evtlog.EvtQueryForwardDirection;__ 
+ **const win32evtlog\.EvtQueryForwardDirection;** 
 
 
 ## EvtQueryReverseDirection
- __const win32evtlog.EvtQueryReverseDirection;__ 
+ **const win32evtlog\.EvtQueryReverseDirection;** 
 
 
 ## EvtQueryTolerateQueryErrors
- __const win32evtlog.EvtQueryTolerateQueryErrors;__ 
+ **const win32evtlog\.EvtQueryTolerateQueryErrors;** 
 
 
-## [win32evtlog](#win32evtlog).EvtRender
+## [win32evtlog](#win32evtlog)\.EvtRender
 
-str = __EvtRender( *Event*  *, Flags* __ )
+str \= **EvtRender\( *Event*  *, Flags* ** \)
 Formats an event into XML text
 
 #### Parameters
 
 
-  -  *Event* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Event* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to an event or bookmark
 
@@ -1179,65 +1179,65 @@ Formats an event into XML text
 
 #### Comments
 Accepts keyword args
-Rendering event values (Flags=EvtRenderEventValues) is not currently supported
+Rendering event values \(Flags\=EvtRenderEventValues\) is not currently supported
 
 ## EvtRenderBookmark
- __const win32evtlog.EvtRenderBookmark;__ 
+ **const win32evtlog\.EvtRenderBookmark;** 
 
 
 ## EvtRenderEventValues
- __const win32evtlog.EvtRenderEventValues;__ 
+ **const win32evtlog\.EvtRenderEventValues;** 
 
 
 ## EvtRenderEventXml
- __const win32evtlog.EvtRenderEventXml;__ 
+ **const win32evtlog\.EvtRenderEventXml;** 
 
 
 ## EvtRpcLogin
- __const win32evtlog.EvtRpcLogin;__ 
+ **const win32evtlog\.EvtRpcLogin;** 
 
 
 ## EvtRpcLoginAuthDefault
- __const win32evtlog.EvtRpcLoginAuthDefault;__ 
+ **const win32evtlog\.EvtRpcLoginAuthDefault;** 
 
 
 ## EvtRpcLoginAuthKerberos
- __const win32evtlog.EvtRpcLoginAuthKerberos;__ 
+ **const win32evtlog\.EvtRpcLoginAuthKerberos;** 
 
 
 ## EvtRpcLoginAuthNTLM
- __const win32evtlog.EvtRpcLoginAuthNTLM;__ 
+ **const win32evtlog\.EvtRpcLoginAuthNTLM;** 
 
 
 ## EvtRpcLoginAuthNegotiate
- __const win32evtlog.EvtRpcLoginAuthNegotiate;__ 
+ **const win32evtlog\.EvtRpcLoginAuthNegotiate;** 
 
 
-## [win32evtlog](#win32evtlog).EvtSeek
+## [win32evtlog](#win32evtlog)\.EvtSeek
 
- __EvtSeek( *ResultSet*  *, Position*  *, Flags*  *, Bookmark*  *, Timeout* __ )
+ **EvtSeek\( *ResultSet*  *, Position*  *, Flags*  *, Bookmark*  *, Timeout* ** \)
 Changes the current position in a result set
 
 #### Parameters
 
 
-  -  *ResultSet* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *ResultSet* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to event query or subscription
 
   -  *Position* : int
 
-    Offset (base from which to seek is specified by Flags)
+    Offset \(base from which to seek is specified by Flags\)
 
   -  *Flags* : int
 
-    EvtSeekRelative* flag indicating seek origin
+    EvtSeekRelative\* flag indicating seek origin
 
-  -  *Bookmark=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Bookmark\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Used as seek origin only if Flags contains EvtSeekRelativeToBookmark
 
-  -  *Timeout=0* : int
+  -  *Timeout\=0* : int
 
     Reserved, use only 0
 
@@ -1245,32 +1245,32 @@ Changes the current position in a result set
 Accepts keyword args
 
 ## EvtSeekOriginMask
- __const win32evtlog.EvtSeekOriginMask;__ 
+ **const win32evtlog\.EvtSeekOriginMask;** 
 
 
 ## EvtSeekRelativeToBookmark
- __const win32evtlog.EvtSeekRelativeToBookmark;__ 
+ **const win32evtlog\.EvtSeekRelativeToBookmark;** 
 
 
 ## EvtSeekRelativeToCurrent
- __const win32evtlog.EvtSeekRelativeToCurrent;__ 
+ **const win32evtlog\.EvtSeekRelativeToCurrent;** 
 
 
 ## EvtSeekRelativeToFirst
- __const win32evtlog.EvtSeekRelativeToFirst;__ 
+ **const win32evtlog\.EvtSeekRelativeToFirst;** 
 
 
 ## EvtSeekRelativeToLast
- __const win32evtlog.EvtSeekRelativeToLast;__ 
+ **const win32evtlog\.EvtSeekRelativeToLast;** 
 
 
 ## EvtSeekStrict
- __const win32evtlog.EvtSeekStrict;__ 
+ **const win32evtlog\.EvtSeekStrict;** 
 
 
-## [win32evtlog](#win32evtlog).EvtSubscribe
+## [win32evtlog](#win32evtlog)\.EvtSubscribe
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtSubscribe( *ChannelPath*  *, Flags*  *, SignalEvent*  *, Callback*  *, Context*  *, Query*  *, Session*  *, Bookmark* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtSubscribe\( *ChannelPath*  *, Flags*  *, SignalEvent*  *, Callback*  *, Context*  *, Query*  *, Session*  *, Bookmark* ** \)
 Requests notification for events
 
 #### Parameters
@@ -1282,97 +1282,97 @@ Requests notification for events
 
   -  *Flags* : int
 
-    Combination of EvtSubscribe* flags determining how subscription is initiated
+    Combination of EvtSubscribe\* flags determining how subscription is initiated
 
-  -  *SignalEvent=None* : __Py_HANDLE__ 
+  -  *SignalEvent\=None* : **Py\_HANDLE** 
 
-    An event handle to be set when events are available (see[win32event::CreateEvent](win32event.md#win32eventcreateevent))
+    An event handle to be set when events are available \(see[win32event::CreateEvent](win32event.md#win32eventcreateevent)\)
 
-  -  *Callback=None* : function
+  -  *Callback\=None* : function
 
     Python function to be called with each event
 
-  -  *Context=None* : object
+  -  *Context\=None* : object
 
     Arbitrary object to be passed to the callback function
 
-  -  *Query=None* : str
+  -  *Query\=None* : str
 
-    XML query used to select specific events, use None or '*' for all events
+    XML query used to select specific events, use None or '\*' for all events
 
-  -  *Session=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Session\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to a session on another machine, or None for local
 
-  -  *Bookmark=None* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Bookmark\=None* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     If Flags contains EvtSubscribeStartAfterBookmark, used as starting point
 
 #### Comments
 Accepts keyword args
-The method used to receive events is determined by the parameters passed in. 
+The method used to receive events is determined by the parameters passed in\. 
 
-To create a push subscription, define a callback function that will be called with each event. 
+To create a push subscription, define a callback function that will be called with each event\. 
 
 The function will receive 3 args: 
 
-First is an integer specifying why the function was called (EvtSubscribeActionError or EvtSubscribeActionDeliver) 
+First is an integer specifying why the function was called \(EvtSubscribeActionError or EvtSubscribeActionDeliver\) 
 
-Second is the context object passed to EvtSubscribe. 
+Second is the context object passed to EvtSubscribe\. 
 
-Third is the handle to an event log record (if not called due to an error) 
+Third is the handle to an event log record \(if not called due to an error\) 
 
-If an event handle is passed in, a pull subscription is created.  The event handle will be 
+If an event handle is passed in, a pull subscription is created\.  The event handle will be 
 
 signalled when events are available, and the subscription handle can be 
 
-passed to[win32evtlog::EvtNext](win32evtlog.md#win32evtlogevtnext)to obtain the events.
+passed to[win32evtlog::EvtNext](win32evtlog.md#win32evtlogevtnext)to obtain the events\.
 
 ## EvtSubscribeActionDeliver
- __const win32evtlog.EvtSubscribeActionDeliver;__ 
+ **const win32evtlog\.EvtSubscribeActionDeliver;** 
 
 
 ## EvtSubscribeActionError
- __const win32evtlog.EvtSubscribeActionError;__ 
+ **const win32evtlog\.EvtSubscribeActionError;** 
 
 
 ## EvtSubscribeOriginMask
- __const win32evtlog.EvtSubscribeOriginMask;__ 
+ **const win32evtlog\.EvtSubscribeOriginMask;** 
 
 
 ## EvtSubscribeStartAfterBookmark
- __const win32evtlog.EvtSubscribeStartAfterBookmark;__ 
+ **const win32evtlog\.EvtSubscribeStartAfterBookmark;** 
 
 
 ## EvtSubscribeStartAtOldestRecord
- __const win32evtlog.EvtSubscribeStartAtOldestRecord;__ 
+ **const win32evtlog\.EvtSubscribeStartAtOldestRecord;** 
 
 
 ## EvtSubscribeStrict
- __const win32evtlog.EvtSubscribeStrict;__ 
+ **const win32evtlog\.EvtSubscribeStrict;** 
 
 
 ## EvtSubscribeToFutureEvents
- __const win32evtlog.EvtSubscribeToFutureEvents;__ 
+ **const win32evtlog\.EvtSubscribeToFutureEvents;** 
 
 
 ## EvtSubscribeTolerateQueryErrors
- __const win32evtlog.EvtSubscribeTolerateQueryErrors;__ 
+ **const win32evtlog\.EvtSubscribeTolerateQueryErrors;** 
 
 
-## [win32evtlog](#win32evtlog).EvtUpdateBookmark
+## [win32evtlog](#win32evtlog)\.EvtUpdateBookmark
 
-[PyEVT_HANDLE](PyEVT.md#pyevthandle)= __EvtUpdateBookmark( *Bookmark*  *, Event* __ )
+[PyEVT\_HANDLE](PyEVT.md#pyevthandle)\= **EvtUpdateBookmark\( *Bookmark*  *, Event* ** \)
 Repositions a bookmark to an event
 
 #### Parameters
 
 
-  -  *Bookmark* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Bookmark* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to a bookmark
 
-  -  *Event* :[PyEVT_HANDLE](PyEVT.md#pyevthandle)
+  -  *Event* :[PyEVT\_HANDLE](PyEVT.md#pyevthandle)
 
     Handle to an event
 
@@ -1380,141 +1380,141 @@ Repositions a bookmark to an event
 Accepts keyword args
 
 ## EvtVarTypeAnsiString
- __const win32evtlog.EvtVarTypeAnsiString;__ 
+ **const win32evtlog\.EvtVarTypeAnsiString;** 
 
 
 ## EvtVarTypeBinary
- __const win32evtlog.EvtVarTypeBinary;__ 
+ **const win32evtlog\.EvtVarTypeBinary;** 
 
 
 ## EvtVarTypeBoolean
- __const win32evtlog.EvtVarTypeBoolean;__ 
+ **const win32evtlog\.EvtVarTypeBoolean;** 
 
 
 ## EvtVarTypeByte
- __const win32evtlog.EvtVarTypeByte;__ 
+ **const win32evtlog\.EvtVarTypeByte;** 
 
 
 ## EvtVarTypeDouble
- __const win32evtlog.EvtVarTypeDouble;__ 
+ **const win32evtlog\.EvtVarTypeDouble;** 
 
 
 ## EvtVarTypeEvtHandle
- __const win32evtlog.EvtVarTypeEvtHandle;__ 
+ **const win32evtlog\.EvtVarTypeEvtHandle;** 
 
 
 ## EvtVarTypeEvtXml
- __const win32evtlog.EvtVarTypeEvtXml;__ 
+ **const win32evtlog\.EvtVarTypeEvtXml;** 
 
 
 ## EvtVarTypeFileTime
- __const win32evtlog.EvtVarTypeFileTime;__ 
+ **const win32evtlog\.EvtVarTypeFileTime;** 
 
 
 ## EvtVarTypeGuid
- __const win32evtlog.EvtVarTypeGuid;__ 
+ **const win32evtlog\.EvtVarTypeGuid;** 
 
 
 ## EvtVarTypeHexInt32
- __const win32evtlog.EvtVarTypeHexInt32;__ 
+ **const win32evtlog\.EvtVarTypeHexInt32;** 
 
 
 ## EvtVarTypeHexInt64
- __const win32evtlog.EvtVarTypeHexInt64;__ 
+ **const win32evtlog\.EvtVarTypeHexInt64;** 
 
 
 ## EvtVarTypeInt16
- __const win32evtlog.EvtVarTypeInt16;__ 
+ **const win32evtlog\.EvtVarTypeInt16;** 
 
 
 ## EvtVarTypeInt32
- __const win32evtlog.EvtVarTypeInt32;__ 
+ **const win32evtlog\.EvtVarTypeInt32;** 
 
 
 ## EvtVarTypeInt64
- __const win32evtlog.EvtVarTypeInt64;__ 
+ **const win32evtlog\.EvtVarTypeInt64;** 
 
 
 ## EvtVarTypeNull
- __const win32evtlog.EvtVarTypeNull;__ 
+ **const win32evtlog\.EvtVarTypeNull;** 
 
 
 ## EvtVarTypeSByte
- __const win32evtlog.EvtVarTypeSByte;__ 
+ **const win32evtlog\.EvtVarTypeSByte;** 
 
 
 ## EvtVarTypeSid
- __const win32evtlog.EvtVarTypeSid;__ 
+ **const win32evtlog\.EvtVarTypeSid;** 
 
 
 ## EvtVarTypeSingle
- __const win32evtlog.EvtVarTypeSingle;__ 
+ **const win32evtlog\.EvtVarTypeSingle;** 
 
 
 ## EvtVarTypeSizeT
- __const win32evtlog.EvtVarTypeSizeT;__ 
+ **const win32evtlog\.EvtVarTypeSizeT;** 
 
 
 ## EvtVarTypeString
- __const win32evtlog.EvtVarTypeString;__ 
+ **const win32evtlog\.EvtVarTypeString;** 
 
 
 ## EvtVarTypeSysTime
- __const win32evtlog.EvtVarTypeSysTime;__ 
+ **const win32evtlog\.EvtVarTypeSysTime;** 
 
 
 ## EvtVarTypeUInt16
- __const win32evtlog.EvtVarTypeUInt16;__ 
+ **const win32evtlog\.EvtVarTypeUInt16;** 
 
 
 ## EvtVarTypeUInt32
- __const win32evtlog.EvtVarTypeUInt32;__ 
+ **const win32evtlog\.EvtVarTypeUInt32;** 
 
 
 ## EvtVarTypeUInt64
- __const win32evtlog.EvtVarTypeUInt64;__ 
+ **const win32evtlog\.EvtVarTypeUInt64;** 
 
 
-## [win32evtlog](#win32evtlog).GetNumberOfEventLogRecords
+## [win32evtlog](#win32evtlog)\.GetNumberOfEventLogRecords
 
-int = __GetNumberOfEventLogRecords( *handle* __ )
-Returns the number of event log records.
+int \= **GetNumberOfEventLogRecords\( *handle* ** \)
+Returns the number of event log records\.
 
 #### Parameters
 
 
   -  *handle* : int
 
-    Handle to the event log to query.
+    Handle to the event log to query\.
 
-## [win32evtlog](#win32evtlog).GetOldestEventLogRecord
+## [win32evtlog](#win32evtlog)\.GetOldestEventLogRecord
 
-int = __GetOldestEventLogRecord(__ )
-Returns the number of event log records.
+int \= **GetOldestEventLogRecord\(** \)
+Returns the number of event log records\.
 
 #### Return Value
-The result is the absolute record number of the oldest record in the given event log.
+The result is the absolute record number of the oldest record in the given event log\.
 
-## [win32evtlog](#win32evtlog).NotifyChangeEventLog
+## [win32evtlog](#win32evtlog)\.NotifyChangeEventLog
 
- __NotifyChangeEventLog( *handle*  *, handle* __ )
-Lets an application receive notification when an event is written to the event log file specified by the hEventLog parameter. When the event is written to the event log file, the function causes the event object specified by the hEvent parameter to become signaled.
+ **NotifyChangeEventLog\( *handle*  *, handle* ** \)
+Lets an application receive notification when an event is written to the event log file specified by the hEventLog parameter\. When the event is written to the event log file, the function causes the event object specified by the hEvent parameter to become signaled\.
 
 #### Parameters
 
 
   -  *handle* : int
 
-    Handle to an event log file, obtained by calling[win32evtlog::OpenEventLog](win32evtlog.md#win32evtlogopeneventlog)function. When an event is written to this log file, the event specified by hEvent becomes signaled.
+    Handle to an event log file, obtained by calling[win32evtlog::OpenEventLog](win32evtlog.md#win32evtlogopeneventlog)function\. When an event is written to this log file, the event specified by hEvent becomes signaled\.
 
   -  *handle* : int
 
-    A handle to a Win32 event. This is the event that becomes signaled when an event is written to the event log file specified by the hEventLog parameter.
+    A handle to a Win32 event\. This is the event that becomes signaled when an event is written to the event log file specified by the hEventLog parameter\.
 
-## [win32evtlog](#win32evtlog).OpenBackupEventLog
+## [win32evtlog](#win32evtlog)\.OpenBackupEventLog
 
-[PyEVTLOG_HANDLE](PyEVTLOG.md#pyevtloghandle)= __OpenBackupEventLog( *serverName*  *, fileName* __ )
-Opens a previously saved event log.
+[PyEVTLOG\_HANDLE](PyEVTLOG.md#pyevtloghandle)\= **OpenBackupEventLog\( *serverName*  *, fileName* ** \)
+Opens a previously saved event log\.
 
 #### Parameters
 
@@ -1527,10 +1527,10 @@ Opens a previously saved event log.
 
     The filename to open
 
-## [win32evtlog](#win32evtlog).OpenEventLog
+## [win32evtlog](#win32evtlog)\.OpenEventLog
 
-[PyEVTLOG_HANDLE](PyEVTLOG.md#pyevtloghandle)= __OpenEventLog( *serverName*  *, sourceName* __ )
-Opens an event log.
+[PyEVTLOG\_HANDLE](PyEVTLOG.md#pyevtloghandle)\= **OpenEventLog\( *serverName*  *, sourceName* ** \)
+Opens an event log\.
 
 #### Parameters
 
@@ -1541,19 +1541,19 @@ Opens an event log.
 
   -  *sourceName* :[PyUnicode](#pyunicode)
 
-    specifies the name of the source that the returned handle will reference. The source name must be a subkey of a logfile entry under the EventLog key in the registry.
+    specifies the name of the source that the returned handle will reference\. The source name must be a subkey of a logfile entry under the EventLog key in the registry\.
 
-## [win32evtlog](#win32evtlog).ReadEventLog
+## [win32evtlog](#win32evtlog)\.ReadEventLog
 
-[object,...] = __ReadEventLog( *Handle*  *, Flags*  *, Offset*  *, Size* __ )
-Reads some event log records.
+\[object,\.\.\.\] \= **ReadEventLog\( *Handle*  *, Flags*  *, Offset*  *, Size* ** \)
+Reads some event log records\.
 
 #### Parameters
 
 
-  -  *Handle* : __Py_HANDLE__ 
+  -  *Handle* : **Py\_HANDLE** 
 
-    Handle to a an opened event log (see[win32evtlog::OpenEventLog](win32evtlog.md#win32evtlogopeneventlog))
+    Handle to a an opened event log \(see[win32evtlog::OpenEventLog](win32evtlog.md#win32evtlogopeneventlog)\)
 
   -  *Flags* : int
 
@@ -1561,18 +1561,18 @@ Reads some event log records.
 
   -  *Offset* : int
 
-    Record offset to read (in SEEK mode).
+    Record offset to read \(in SEEK mode\)\.
 
-  -  *Size=4096* : int
+  -  *Size\=4096* : int
 
-    Output buffer size.
+    Output buffer size\.
 
 #### Return Value
-If there are no event log records available, then an empty list is returned.
+If there are no event log records available, then an empty list is returned\.
 
-## [win32evtlog](#win32evtlog).RegisterEventSource
+## [win32evtlog](#win32evtlog)\.RegisterEventSource
 
-int = __RegisterEventSource( *serverName*  *, sourceName* __ )
+int \= **RegisterEventSource\( *serverName*  *, sourceName* ** \)
 Registers an Event Source
 
 #### Parameters
@@ -1586,9 +1586,9 @@ Registers an Event Source
 
     The source name
 
-## [win32evtlog](#win32evtlog).ReportEvent
+## [win32evtlog](#win32evtlog)\.ReportEvent
 
- __ReportEvent( *EventLog*  *, Type*  *, Category*  *, EventID*  *, UserSid*  *, Strings*  *, RawData* __ )
+ **ReportEvent\( *EventLog*  *, Type*  *, Category*  *, EventID*  *, UserSid*  *, Strings*  *, RawData* ** \)
 Reports an event
 
 #### Parameters
@@ -1600,7 +1600,7 @@ Reports an event
 
   -  *Type* : int
 
-    win32con.EVENTLOG_* value
+    win32con\.EVENTLOG\_\* value
 
   -  *Category* : int
 

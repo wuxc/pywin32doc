@@ -11,7 +11,7 @@ Description of the interface
 
     Description of onComplete&nbsp;
 
-## [PyIDebugExpressionCallBack](#pyidebugexpressioncallback).onComplete
+## [PyIDebugExpressionCallBack](#pyidebugexpressioncallback)\.onComplete
 
- __onComplete(__ )
-Description of onComplete.
+ **onComplete\(** \)
+Description of onComplete\.

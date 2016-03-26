@@ -2,9 +2,9 @@
 
 ## PyIPropertySetStorage Object
 
-Container for a collection of property sets. 
+Container for a collection of property sets\. 
 
-Can be iterated over to enumerate property sets.
+Can be iterated over to enumerate property sets\.
 
 #### Methods
 
@@ -25,9 +25,9 @@ Can be iterated over to enumerate property sets.
 
     Creates an iterator to enumerate contained property sets&nbsp;
 
-## [PyIPropertySetStorage](#pyipropertysetstorage).Create
+## [PyIPropertySetStorage](#pyipropertysetstorage)\.Create
 
-[PyIPropertyStorage](#pyipropertystorage)= __Create( *fmtid*  *, clsid*  *, Flags*  *, Mode* __ )
+[PyIPropertyStorage](#pyipropertystorage)\= **Create\( *fmtid*  *, clsid*  *, Flags*  *, Mode* ** \)
 Creates a new property set in the storage object
 
 #### Parameters
@@ -35,7 +35,7 @@ Creates a new property set in the storage object
 
   -  *fmtid* :[PyIID](#pyiid)
 
-    GUID identifying a property set, pythoncom.FMTID_*
+    GUID identifying a property set, pythoncom\.FMTID\_\*
 
   -  *clsid* :[PyIID](#pyiid)
 
@@ -43,15 +43,15 @@ Creates a new property set in the storage object
 
   -  *Flags* : int
 
-    Specifies behaviour of property set, storagecon.PROPSETFLAG_*
+    Specifies behaviour of property set, storagecon\.PROPSETFLAG\_\*
 
   -  *Mode* : int
 
-    Access mode, combination of storagecon.STGM_* flags
+    Access mode, combination of storagecon\.STGM\_\* flags
 
-## [PyIPropertySetStorage](#pyipropertysetstorage).Delete
+## [PyIPropertySetStorage](#pyipropertysetstorage)\.Delete
 
- __Delete( *fmtid* __ )
+ **Delete\( *fmtid* ** \)
 Removes a property set from this storage object
 
 #### Parameters
@@ -59,16 +59,16 @@ Removes a property set from this storage object
 
   -  *fmtid* :[PyIID](#pyiid)
 
-    GUID of a property set, pythoncom.FMTID_*
+    GUID of a property set, pythoncom\.FMTID\_\*
 
-## [PyIPropertySetStorage](#pyipropertysetstorage).Enum
+## [PyIPropertySetStorage](#pyipropertysetstorage)\.Enum
 
-[PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg)= __Enum(__ )
+[PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg)\= **Enum\(** \)
 Creates an iterator to enumerate contained property sets
 
-## [PyIPropertySetStorage](#pyipropertysetstorage).Open
+## [PyIPropertySetStorage](#pyipropertysetstorage)\.Open
 
-[PyIPropertyStorage](#pyipropertystorage)= __Open( *fmtid*  *, Mode* __ )
+[PyIPropertyStorage](#pyipropertystorage)\= **Open\( *fmtid*  *, Mode* ** \)
 Opens an existing property set
 
 #### Parameters
@@ -76,8 +76,8 @@ Opens an existing property set
 
   -  *fmtid* :[PyIID](#pyiid)
 
-    GUID of a property set, pythoncom.FMTID_*
+    GUID of a property set, pythoncom\.FMTID\_\*
 
-  -  *Mode=STGM_READ | STGM_SHARE_EXCLUSIVE* : int
+  -  *Mode\=STGM\_READ | STGM\_SHARE\_EXCLUSIVE* : int
 
-    Access mode, combination of storagecon.STGM_* flags
+    Access mode, combination of storagecon\.STGM\_\* flags

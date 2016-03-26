@@ -4,10 +4,10 @@
 
 Implement-only gateway for IFileOperationProgressSink, 
 
-used to receive events from a[PyIFileOperation](#pyifileoperation)object.
+used to receive events from a[PyIFileOperation](#pyifileoperation)object\.
 To abort the operation, an implementation of any method can raise a 
 
-com_error with an appropriate HRESULT.
+com\_error with an appropriate HRESULT\.
 
 #### Methods
 
@@ -76,9 +76,9 @@ com_error with an appropriate HRESULT.
 
     Not implemented, according to MSDN&nbsp;
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).FinishOperations
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.FinishOperations
 
- __FinishOperations( *Result* __ )
+ **FinishOperations\( *Result* ** \)
 Called after all actions have been performed
 
 #### Parameters
@@ -88,14 +88,14 @@ Called after all actions have been performed
 
     HRESULT of last operation performed
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PauseTimer
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PauseTimer
 
- __PauseTimer(__ )
+ **PauseTimer\(** \)
 Not implemented, according to MSDN
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PostCopyItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostCopyItem
 
- __PostCopyItem( *Flags*  *, Item*  *, DestinationFolder*  *, NewName*  *, hrCopy*  *, NewlyCreated* __ )
+ **PostCopyItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName*  *, hrCopy*  *, NewlyCreated* ** \)
 Called after each copy operation
 
 #### Parameters
@@ -103,7 +103,7 @@ Called after each copy operation
 
   -  *Flags* : int
 
-    Flags specifying copy behaviour, combination of shellcon.TSF_* flags
+    Flags specifying copy behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
@@ -125,9 +125,9 @@ Called after each copy operation
 
     Shell interface of the copy
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PostDeleteItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostDeleteItem
 
- __PostDeleteItem( *Flags*  *, Item*  *, hrDelete*  *, NewlyCreated* __ )
+ **PostDeleteItem\( *Flags*  *, Item*  *, hrDelete*  *, NewlyCreated* ** \)
 Called after each delete operation
 
 #### Parameters
@@ -135,7 +135,7 @@ Called after each delete operation
 
   -  *Flags* : int
 
-    Flags specifying delete behaviour, combination of shellcon.TSF_* flags
+    Flags specifying delete behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
@@ -149,9 +149,9 @@ Called after each delete operation
 
     Item in the recycle bin, or None if deleted without recycling
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PostMoveItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostMoveItem
 
- __PostMoveItem( *Flags*  *, Item*  *, DestinationFolder*  *, NewName*  *, hrMove*  *, NewlyCreated* __ )
+ **PostMoveItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName*  *, hrMove*  *, NewlyCreated* ** \)
 Called after each move operation
 
 #### Parameters
@@ -159,7 +159,7 @@ Called after each move operation
 
   -  *Flags* : int
 
-    Flags specifying move behaviour, combination of shellcon.TSF_* flags
+    Flags specifying move behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
@@ -181,9 +181,9 @@ Called after each move operation
 
     Shell interface of the item in its new location
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PostNewItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostNewItem
 
- __PostNewItem( *Flags*  *, DestinationFolder*  *, NewName*  *, TemplateName*  *, FileAttributes*  *, hrNew*  *, NewItem* __ )
+ **PostNewItem\( *Flags*  *, DestinationFolder*  *, NewName*  *, TemplateName*  *, FileAttributes*  *, hrNew*  *, NewItem* ** \)
 Called after each new file is created
 
 #### Parameters
@@ -191,7 +191,7 @@ Called after each new file is created
 
   -  *Flags* : int
 
-    Flags specifying creation behaviour, combination of shellcon.TSF_* flags
+    Flags specifying creation behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
 
@@ -217,9 +217,9 @@ Called after each new file is created
 
     Shell interface of created item
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PostRenameItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostRenameItem
 
- __PostRenameItem( *Flags*  *, Item*  *, NewName*  *, hrRename*  *, NewlyCreated* __ )
+ **PostRenameItem\( *Flags*  *, Item*  *, NewName*  *, hrRename*  *, NewlyCreated* ** \)
 Called after each file rename
 
 #### Parameters
@@ -227,7 +227,7 @@ Called after each file rename
 
   -  *Flags* : int
 
-    Flags specifying rename behaviour, combination of shellcon.TSF_* flags
+    Flags specifying rename behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
@@ -245,9 +245,9 @@ Called after each file rename
 
     Shell interface of the item after rename
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PreCopyItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreCopyItem
 
- __PreCopyItem( *Flags*  *, Item*  *, DestinationFolder*  *, NewName* __ )
+ **PreCopyItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName* ** \)
 Called before each copy operation
 
 #### Parameters
@@ -255,7 +255,7 @@ Called before each copy operation
 
   -  *Flags* : int
 
-    Flags specifying copy behaviour, combination of shellcon.TSF_* flags
+    Flags specifying copy behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
@@ -269,9 +269,9 @@ Called before each copy operation
 
     Name to be given to the copy, will be None if keeping original name
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PreDeleteItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreDeleteItem
 
- __PreDeleteItem( *Flags*  *, Item* __ )
+ **PreDeleteItem\( *Flags*  *, Item* ** \)
 Called before each delete operation
 
 #### Parameters
@@ -279,15 +279,15 @@ Called before each delete operation
 
   -  *Flags* : int
 
-    Flags specifying delete behaviour, combination of shellcon.TSF_* flags
+    Flags specifying delete behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
     Item to be deleted
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PreMoveItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreMoveItem
 
- __PreMoveItem( *Flags*  *, Item*  *, DestinationFolder*  *, NewName* __ )
+ **PreMoveItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName* ** \)
 Called before each move operation
 
 #### Parameters
@@ -295,7 +295,7 @@ Called before each move operation
 
   -  *Flags* : int
 
-    Flags specifying move behaviour, combination of shellcon.TSF_* flags
+    Flags specifying move behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
@@ -309,9 +309,9 @@ Called before each move operation
 
     Name of moved item, may be None if not to be changed
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PreNewItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreNewItem
 
- __PreNewItem( *Flags*  *, DestinationFolder*  *, NewName* __ )
+ **PreNewItem\( *Flags*  *, DestinationFolder*  *, NewName* ** \)
 Called before each new file is created
 
 #### Parameters
@@ -319,7 +319,7 @@ Called before each new file is created
 
   -  *Flags* : int
 
-    Flags specifying creation behaviour, combination of shellcon.TSF_* flags
+    Flags specifying creation behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
 
@@ -329,9 +329,9 @@ Called before each new file is created
 
     Name of item to be created
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).PreRenameItem
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreRenameItem
 
- __PreRenameItem( *Flags*  *, Item*  *, NewName* __ )
+ **PreRenameItem\( *Flags*  *, Item*  *, NewName* ** \)
 Called before each file rename
 
 #### Parameters
@@ -339,7 +339,7 @@ Called before each file rename
 
   -  *Flags* : int
 
-    Flags specifying copy behaviour, combination of shellcon.TSF_* flags
+    Flags specifying copy behaviour, combination of shellcon\.TSF\_\* flags
 
   -  *Item* :[PyIShellItem](#pyishellitem)
 
@@ -349,24 +349,24 @@ Called before each file rename
 
     New display name of the item
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).ResetTimer
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.ResetTimer
 
- __ResetTimer(__ )
+ **ResetTimer\(** \)
 Not implemented, according to MSDN
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).ResumeTimer
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.ResumeTimer
 
- __ResumeTimer(__ )
+ **ResumeTimer\(** \)
 Not implemented, according to MSDN
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).StartOperations
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.StartOperations
 
- __StartOperations(__ )
+ **StartOperations\(** \)
 Called as operation begins, before any modifications are done
 
-## [PyGFileOperationProgressSink](#pygfileoperationprogresssink).UpdateProgress
+## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.UpdateProgress
 
- __UpdateProgress( *WorkTotal*  *, WorkSoFar* __ )
+ **UpdateProgress\( *WorkTotal*  *, WorkSoFar* ** \)
 Gives an estimate of total work completed
 
 #### Parameters

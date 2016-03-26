@@ -19,10 +19,10 @@ Description of the interface
 
     Description of EnumApplications&nbsp;
 
-## [PyIMachineDebugManager](#pyimachinedebugmanager).AddApplication
+## [PyIMachineDebugManager](#pyimachinedebugmanager)\.AddApplication
 
- __AddApplication( *pda* __ )
-Description of AddApplication.
+ **AddApplication\( *pda* ** \)
+Description of AddApplication\.
 
 #### Parameters
 
@@ -31,15 +31,15 @@ Description of AddApplication.
 
     Description for pda
 
-## [PyIMachineDebugManager](#pyimachinedebugmanager).EnumApplications
+## [PyIMachineDebugManager](#pyimachinedebugmanager)\.EnumApplications
 
- __EnumApplications(__ )
-Description of EnumApplications.
+ **EnumApplications\(** \)
+Description of EnumApplications\.
 
-## [PyIMachineDebugManager](#pyimachinedebugmanager).RemoveApplication
+## [PyIMachineDebugManager](#pyimachinedebugmanager)\.RemoveApplication
 
- __RemoveApplication( *dwAppCookie* __ )
-Description of RemoveApplication.
+ **RemoveApplication\( *dwAppCookie* ** \)
+Description of RemoveApplication\.
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 ## PyCOleDocument Object
 
-An OLE document class.  Encapsulates an MFC __COleDocument__ class
+An OLE document class\.  Encapsulates an MFC **COleDocument** class
 
 #### Methods
 
@@ -13,55 +13,55 @@ An OLE document class.  Encapsulates an MFC __COleDocument__ class
 
   - [GetStartPosition](PyCOleDocument.md#pycoledocumentgetstartposition)
 
-    Obtains the position of the first item in the document.&nbsp;
+    Obtains the position of the first item in the document\.&nbsp;
 
   - [GetNextItem](PyCOleDocument.md#pycoledocumentgetnextitem)
 
-    Call this function repeatedly to access each of the items in your document.&nbsp;
+    Call this function repeatedly to access each of the items in your document\.&nbsp;
 
   - [GetInPlaceActiveItem](PyCOleDocument.md#pycoledocumentgetinplaceactiveitem)
 
-    Obtains the OLE item that is currently activated in place in the frame window containing the view identified by obWnd. 
+    Obtains the OLE item that is currently activated in place in the frame window containing the view identified by obWnd\. 
 
 sentinel&nbsp;
 
-## [PyCOleDocument](#pycoledocument).EnableCompoundFile
+## [PyCOleDocument](#pycoledocument)\.EnableCompoundFile
 
- __EnableCompoundFile( *bEnable* __ )
-Call this function if you want to store the document using the compound-file format.
+ **EnableCompoundFile\( *bEnable* ** \)
+Call this function if you want to store the document using the compound-file format\.
 
 #### Parameters
 
 
-  -  *bEnable=1* : int
+  -  *bEnable\=1* : int
 
-    Specifies whether compound file support is enabled or disabled.
+    Specifies whether compound file support is enabled or disabled\.
 
-## [PyCOleDocument](#pycoledocument).GetInPlaceActiveItem
+## [PyCOleDocument](#pycoledocument)\.GetInPlaceActiveItem
 
-[PyCOleClientItem](#pycoleclientitem)= __GetInPlaceActiveItem( *wnd* __ )
-Obtains the OLE item that is currently activated in place in the frame window containing the view identified by obWnd.
+[PyCOleClientItem](#pycoleclientitem)\= **GetInPlaceActiveItem\( *wnd* ** \)
+Obtains the OLE item that is currently activated in place in the frame window containing the view identified by obWnd\.
 
 #### Parameters
 
 
   -  *wnd* :[PyCWnd](#pycwnd)
 
-    The window.
+    The window\.
 
-## [PyCOleDocument](#pycoledocument).GetNextItem
+## [PyCOleDocument](#pycoledocument)\.GetNextItem
 
-(POSITION,[PyCOleClientItem](#pycoleclientitem)) = __GetNextItem( *pos* __ )
-Call this function repeatedly to access each of the items in your document.
+\(POSITION,[PyCOleClientItem](#pycoleclientitem)\) \= **GetNextItem\( *pos* ** \)
+Call this function repeatedly to access each of the items in your document\.
 
 #### Parameters
 
 
   -  *pos* : POSITION
 
-    The position to iterate from.
+    The position to iterate from\.
 
-## [PyCOleDocument](#pycoledocument).GetStartPosition
+## [PyCOleDocument](#pycoledocument)\.GetStartPosition
 
-POSITION = __GetStartPosition(__ )
-Obtains the position of the first item in the document.
+POSITION \= **GetStartPosition\(** \)
+Obtains the position of the first item in the document\.

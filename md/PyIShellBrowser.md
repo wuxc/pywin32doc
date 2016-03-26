@@ -2,7 +2,7 @@
 
 ## PyIShellBrowser Object
 
-Exposed by Windows Explorer and the Open File common dialog box to provide services for namespace extensions.
+Exposed by Windows Explorer and the Open File common dialog box to provide services for namespace extensions\.
 
 #### Methods
 
@@ -59,9 +59,9 @@ Exposed by Windows Explorer and the Open File common dialog box to provide servi
 
     Adds toolbar buttons to the browser's toolbar&nbsp;
 
-## [PyIShellBrowser](#pyishellbrowser).BrowseObject
+## [PyIShellBrowser](#pyishellbrowser)\.BrowseObject
 
- __BrowseObject( *pidl*  *, wFlags* __ )
+ **BrowseObject\( *pidl*  *, wFlags* ** \)
 Navigates to a different location
 
 #### Parameters
@@ -73,11 +73,11 @@ Navigates to a different location
 
   -  *wFlags* : int
 
-    Combination of shellcon.SBSP_* flags
+    Combination of shellcon\.SBSP\_\* flags
 
-## [PyIShellBrowser](#pyishellbrowser).EnableModelessSB
+## [PyIShellBrowser](#pyishellbrowser)\.EnableModelessSB
 
- __EnableModelessSB( *fEnable* __ )
+ **EnableModelessSB\( *fEnable* ** \)
 Enables or disables modeless dialogs
 
 #### Parameters
@@ -87,9 +87,9 @@ Enables or disables modeless dialogs
 
     Use True to enable or False to disable modeless dialog boxes
 
-## [PyIShellBrowser](#pyishellbrowser).GetControlWindow
+## [PyIShellBrowser](#pyishellbrowser)\.GetControlWindow
 
- __GetControlWindow( *id* __ )
+ **GetControlWindow\( *id* ** \)
 Returns a handle to one of the browser's control elements
 
 #### Parameters
@@ -97,11 +97,11 @@ Returns a handle to one of the browser's control elements
 
   -  *id* : int
 
-    One of shellcon.FCW_* values
+    One of shellcon\.FCW\_\* values
 
-## [PyIShellBrowser](#pyishellbrowser).GetViewStateStream
+## [PyIShellBrowser](#pyishellbrowser)\.GetViewStateStream
 
-[PyIStream](#pyistream)= __GetViewStateStream( *grfMode* __ )
+[PyIStream](#pyistream)\= **GetViewStateStream\( *grfMode* ** \)
 Returns a stream that can be used to access view state information
 
 #### Parameters
@@ -109,11 +109,11 @@ Returns a stream that can be used to access view state information
 
   -  *grfMode* : int
 
-    Read/write mode, one of STGM_READ,STGM_WRITE,STGM_READWRITE
+    Read/write mode, one of STGM\_READ,STGM\_WRITE,STGM\_READWRITE
 
-## [PyIShellBrowser](#pyishellbrowser).InsertMenusSB
+## [PyIShellBrowser](#pyishellbrowser)\.InsertMenusSB
 
-[PyOLEMENUGROUPWIDTHS](#pyolemenugroupwidths)= __InsertMenusSB( *hmenuShared*  *, lpMenuWidths* __ )
+[PyOLEMENUGROUPWIDTHS](#pyolemenugroupwidths)\= **InsertMenusSB\( *hmenuShared*  *, lpMenuWidths* ** \)
 Updates a composite menu with container's options
 
 #### Parameters
@@ -125,11 +125,11 @@ Updates a composite menu with container's options
 
   -  *lpMenuWidths* :[PyOLEMENUGROUPWIDTHS](#pyolemenugroupwidths)
 
-    Tuple of 6 ints.  Items 0,2,and 4 are updated when the tuple is returned.
+    Tuple of 6 ints\.  Items 0,2,and 4 are updated when the tuple is returned\.
 
-## [PyIShellBrowser](#pyishellbrowser).OnViewWindowActive
+## [PyIShellBrowser](#pyishellbrowser)\.OnViewWindowActive
 
- __OnViewWindowActive( *pshv* __ )
+ **OnViewWindowActive\( *pshv* ** \)
 Callback triggered when a view window is activated
 
 #### Parameters
@@ -139,14 +139,14 @@ Callback triggered when a view window is activated
 
     The activated view object
 
-## [PyIShellBrowser](#pyishellbrowser).QueryActiveShellView
+## [PyIShellBrowser](#pyishellbrowser)\.QueryActiveShellView
 
-[PyIShellView](#pyishellview)= __QueryActiveShellView(__ )
+[PyIShellView](#pyishellview)\= **QueryActiveShellView\(** \)
 Returns the currently displayed view
 
-## [PyIShellBrowser](#pyishellbrowser).RemoveMenusSB
+## [PyIShellBrowser](#pyishellbrowser)\.RemoveMenusSB
 
- __RemoveMenusSB( *hmenuShared* __ )
+ **RemoveMenusSB\( *hmenuShared* ** \)
 Asks container to remove any items it added to a composite menu
 
 #### Parameters
@@ -156,9 +156,9 @@ Asks container to remove any items it added to a composite menu
 
     Handle to the composite menu
 
-## [PyIShellBrowser](#pyishellbrowser).SendControlMsg
+## [PyIShellBrowser](#pyishellbrowser)\.SendControlMsg
 
-int = __SendControlMsg( *id*  *, uMsg*  *, wParam*  *, lParam* __ )
+int \= **SendControlMsg\( *id*  *, uMsg*  *, wParam*  *, lParam* ** \)
 Sends a control msg to browser's toolbar or status bar
 
 #### Parameters
@@ -166,7 +166,7 @@ Sends a control msg to browser's toolbar or status bar
 
   -  *id* : int
 
-    shellcon.FCW_TOOLBAR or FCW_STATUS
+    shellcon\.FCW\_TOOLBAR or FCW\_STATUS
 
   -  *uMsg* : int
 
@@ -180,9 +180,9 @@ Sends a control msg to browser's toolbar or status bar
 
     Value is dependent on the message
 
-## [PyIShellBrowser](#pyishellbrowser).SetMenuSB
+## [PyIShellBrowser](#pyishellbrowser)\.SetMenuSB
 
- __SetMenuSB( *hmenuShared*  *, holemenuRes*  *, hwndActiveObject* __ )
+ **SetMenuSB\( *hmenuShared*  *, holemenuRes*  *, hwndActiveObject* ** \)
 Attaches a shared menu to a shell view window
 
 #### Parameters
@@ -194,15 +194,15 @@ Attaches a shared menu to a shell view window
 
   -  *holemenuRes* :[PyHANDLE](#pyhandle)
 
-    Reserved, use only None (or 0)
+    Reserved, use only None \(or 0\)
 
   -  *hwndActiveObject* :[PyHANDLE](#pyhandle)
 
     Handle to the shell window
 
-## [PyIShellBrowser](#pyishellbrowser).SetStatusTextSB
+## [PyIShellBrowser](#pyishellbrowser)\.SetStatusTextSB
 
- __SetStatusTextSB( *pszStatusText* __ )
+ **SetStatusTextSB\( *pszStatusText* ** \)
 Sets the status text in view's status bar
 
 #### Parameters
@@ -212,25 +212,25 @@ Sets the status text in view's status bar
 
     New status to be displayed
 
-## [PyIShellBrowser](#pyishellbrowser).SetToolbarItems
+## [PyIShellBrowser](#pyishellbrowser)\.SetToolbarItems
 
- __SetToolbarItems( *lpButtons*  *, uFlags* __ )
+ **SetToolbarItems\( *lpButtons*  *, uFlags* ** \)
 Adds toolbar buttons to the browser's toolbar
 
 #### Parameters
 
 
-  -  *lpButtons* : __PyLPTBBUTTONSB__ 
+  -  *lpButtons* : **PyLPTBBUTTONSB** 
 
     Sequence of tuples describing the buttons to be added
 
   -  *uFlags* : int
 
-    Indicates button positions, combination of shellcon.FCT_*
+    Indicates button positions, combination of shellcon\.FCT\_\*
 
-## [PyIShellBrowser](#pyishellbrowser).TranslateAcceleratorSB
+## [PyIShellBrowser](#pyishellbrowser)\.TranslateAcceleratorSB
 
- __TranslateAcceleratorSB( *pmsg*  *, wID* __ )
+ **TranslateAcceleratorSB\( *pmsg*  *, wID* ** \)
 Translates keystrokes used as menu item activators
 
 #### Parameters

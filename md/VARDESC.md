@@ -2,44 +2,44 @@
 
 ## VARDESC Object
 
-A VARDESC object represents a COM VARDESC structure.
+A VARDESC object represents a COM VARDESC structure\.
 
 #### Properties
 
-  -  __int memid__ 
+  -  **int memid** 
     The dispid of the member
 
-  -  __int/object value__ 
-    A value for the variant.  If PERINSTANCE then an offset into the instance, otherwise a variant converted to a Python object.
+  -  **int/object value** 
+    A value for the variant\.  If PERINSTANCE then an offset into the instance, otherwise a variant converted to a Python object\.
 
-  -  __[ELEMDESC](#elemdesc)elemdescVar__ 
-    Object describing the member.
+  -  **[ELEMDESC](#elemdesc)elemdescVar** 
+    Object describing the member\.
 
-  -  __int varFlags__ 
+  -  **int varFlags** 
     Variable flags
 
-  -  __int varkind__ 
-    Kind flags.
+  -  **int varkind** 
+    Kind flags\.
 
 #### Items
 
 
-  - [0] *int* : memid
+  - \[0\] *int* : memid
 
     The id of the member
 
-  - [1] *int/object* : value
+  - \[1\] *int/object* : value
 
-    A value for the variant.  If PERINSTANCE then an offset into the instance, otherwise a variant converted to a Python object.
+    A value for the variant\.  If PERINSTANCE then an offset into the instance, otherwise a variant converted to a Python object\.
 
-  - [2] *[ELEMDESC](#elemdesc)* : elemdescVar
+  - \[2\] *[ELEMDESC](#elemdesc)* : elemdescVar
 
-    Object describing the member.
+    Object describing the member\.
 
-  - [3] *int* : varFlags
+  - \[3\] *int* : varFlags
 
     Variable flags
 
-  - [4] *int* : varKind
+  - \[4\] *int* : varKind
 
-    Kind flags.
+    Kind flags\.

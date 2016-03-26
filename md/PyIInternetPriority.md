@@ -15,15 +15,15 @@ Description of the interface
 
     Description of GetPriority&nbsp;
 
-## [PyIInternetPriority](#pyiinternetpriority).GetPriority
+## [PyIInternetPriority](#pyiinternetpriority)\.GetPriority
 
- __GetPriority(__ )
-Description of GetPriority.
+ **GetPriority\(** \)
+Description of GetPriority\.
 
-## [PyIInternetPriority](#pyiinternetpriority).SetPriority
+## [PyIInternetPriority](#pyiinternetpriority)\.SetPriority
 
- __SetPriority( *nPriority* __ )
-Description of SetPriority.
+ **SetPriority\( *nPriority* ** \)
+Description of SetPriority\.
 
 #### Parameters
 

@@ -1,21 +1,21 @@
 # PyBIND
 
-## PyBIND_OPTS Object
+## PyBIND\_OPTS Object
 
-Dictionary representation of a BIND_OPTS struct 
+Dictionary representation of a BIND\_OPTS struct 
 
-May eventually be extended to include BIND_OPTS2 members
+May eventually be extended to include BIND\_OPTS2 members
 
 #### Properties
 
-  -  __int Flags__ 
-    Value from BIND_FLAGS enum: BIND_MAYBOTHERUSER, BIND_JUSTTESTEXISTENCE or 0
+  -  **int Flags** 
+    Value from BIND\_FLAGS enum: BIND\_MAYBOTHERUSER, BIND\_JUSTTESTEXISTENCE or 0
 
-  -  __int Mode__ 
-    Combination of storagecon.STGM_* values
+  -  **int Mode** 
+    Combination of storagecon\.STGM\_\* values
 
-  -  __int TickCountDeadline__ 
+  -  **int TickCountDeadline** 
     Operation timeout in milliseconds
 
-  -  __int cbStruct__ 
+  -  **int cbStruct** 
     Size of struct, ignored on input

@@ -9,58 +9,58 @@ A Python interface to IPersistStream
 
   - [IsDirty](PyIPersistStream.md#pyipersiststreamisdirty)
 
-    Checks the object for changes since it was last saved.&nbsp;
+    Checks the object for changes since it was last saved\.&nbsp;
 
   - [Load](PyIPersistStream.md#pyipersiststreamload)
 
-    Initializes an object from the stream where it was previously saved.&nbsp;
+    Initializes an object from the stream where it was previously saved\.&nbsp;
 
   - [Save](PyIPersistStream.md#pyipersiststreamsave)
 
-    Saves an object to the specified stream.&nbsp;
+    Saves an object to the specified stream\.&nbsp;
 
   - [GetSizeMax](PyIPersistStream.md#pyipersiststreamgetsizemax)
 
-    Returns the size in bytes of the stream needed to save the object.&nbsp;
+    Returns the size in bytes of the stream needed to save the object\.&nbsp;
 
 
-## [PyIPersistStream](#pyipersiststream).GetSizeMax
+## [PyIPersistStream](#pyipersiststream)\.GetSizeMax
 
-ULARGE_INTEGER = __GetSizeMax(__ )
-Returns the size in bytes of the stream needed to save the object.
+ULARGE\_INTEGER \= **GetSizeMax\(** \)
+Returns the size in bytes of the stream needed to save the object\.
 
-## [PyIPersistStream](#pyipersiststream).IsDirty
+## [PyIPersistStream](#pyipersiststream)\.IsDirty
 
-int = __IsDirty(__ )
-Checks the object for changes since it was last saved.
+int \= **IsDirty\(** \)
+Checks the object for changes since it was last saved\.
 
-## [PyIPersistStream](#pyipersiststream).Load
+## [PyIPersistStream](#pyipersiststream)\.Load
 
- __Load( *stream* __ )
-Initializes an object from the stream where it was previously saved.
+ **Load\( *stream* ** \)
+Initializes an object from the stream where it was previously saved\.
 
 #### Parameters
 
 
   -  *stream* :[PyIStream](#pyistream)
 
-    Stream object to load from.
+    Stream object to load from\.
 
 #### Comments
-This method loads an object from its associated stream. The seek pointer is set as it was in the most recent[PyIPersistStream::Save](PyIPersistStream.md#pyipersiststreamsave)method. This method can seek and read from the stream, but cannot write to it.
-On exit, the seek pointer must be in the same position it was in on entry, immediately past the end of the data.
+This method loads an object from its associated stream\. The seek pointer is set as it was in the most recent[PyIPersistStream::Save](PyIPersistStream.md#pyipersiststreamsave)method\. This method can seek and read from the stream, but cannot write to it\.
+On exit, the seek pointer must be in the same position it was in on entry, immediately past the end of the data\.
 
-## [PyIPersistStream](#pyipersiststream).Save
+## [PyIPersistStream](#pyipersiststream)\.Save
 
- __Save( *stream*  *, bClearDirty* __ )
-Saves an object to the specified stream.
+ **Save\( *stream*  *, bClearDirty* ** \)
+Saves an object to the specified stream\.
 
 #### Parameters
 
 
   -  *stream* :[PyIStream](#pyistream)
 
-    The stream to save to.
+    The stream to save to\.
 
   -  *bClearDirty* : int
 

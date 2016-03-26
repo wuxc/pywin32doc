@@ -6,9 +6,9 @@ Unicode version of[PyDEVMODE](#pydevmode)object
 
 PyDEVMODEW is only needed when win32api, win32gui, or win32print 
 
-are built with UNICODE defined.  Currently, you must explicitely ask 
+are built with UNICODE defined\.  Currently, you must explicitely ask 
 
-for the unicode version.
+for the unicode version\.
 
 #### Methods
 
@@ -19,125 +19,125 @@ for the unicode version.
 
 #### Properties
 
-  -  __int SpecVersion__ 
-    Should always be set to DM_SPECVERSION
+  -  **int SpecVersion** 
+    Should always be set to DM\_SPECVERSION
 
-  -  __int DriverVersion__ 
+  -  **int DriverVersion** 
     Version nbr assigned to printer driver by vendor
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure
 
-  -  __int DriverExtra__ 
+  -  **int DriverExtra** 
     Number of extra bytes allocated for driver data, can only be set when new object is created
 
-  -  __int Fields__ 
-    Bitmask of win32con.DM_* constants indicating which members are set
+  -  **int Fields** 
+    Bitmask of win32con\.DM\_\* constants indicating which members are set
 
-  -  __int Orientation__ 
-    Only applies to printers, DMORIENT_PORTRAIT or DMORIENT_LANDSCAPE
+  -  **int Orientation** 
+    Only applies to printers, DMORIENT\_PORTRAIT or DMORIENT\_LANDSCAPE
 
-  -  __int PaperSize__ 
-    Use 0 if PaperWidth and PaperLength are set, otherwise win32con.DMPAPER_* constant
+  -  **int PaperSize** 
+    Use 0 if PaperWidth and PaperLength are set, otherwise win32con\.DMPAPER\_\* constant
 
-  -  __int PaperLength__ 
+  -  **int PaperLength** 
     Specified in 1/10 millimeters
 
-  -  __int PaperWidth__ 
+  -  **int PaperWidth** 
     Specified in 1/10 millimeters
 
-  -  __int Position_x__ 
+  -  **int Position\_x** 
     Position of display relative to desktop
 
-  -  __int Position_y__ 
+  -  **int Position\_y** 
     Position of display relative to desktop
 
-  -  __int DisplayOrientation__ 
-    Display rotation: DMDO_DEFAULT,DMDO_90, DMDO_180, DMDO_270
+  -  **int DisplayOrientation** 
+    Display rotation: DMDO\_DEFAULT,DMDO\_90, DMDO\_180, DMDO\_270
 
-  -  __int DisplayFixedOutput__ 
-    DMDFO_DEFAULT, DMDFO_CENTER, DMDFO_STRETCH
+  -  **int DisplayFixedOutput** 
+    DMDFO\_DEFAULT, DMDFO\_CENTER, DMDFO\_STRETCH
 
-  -  __int Scale__ 
+  -  **int Scale** 
     Specified as percentage, eg 50 means half size of original
 
-  -  __int Copies__ 
+  -  **int Copies** 
     Nbr of copies to print
 
-  -  __int DefaultSource__ 
-    DMBIN_* constant, or can be a printer-specific value
+  -  **int DefaultSource** 
+    DMBIN\_\* constant, or can be a printer-specific value
 
-  -  __int PrintQuality__ 
-    DMRES_* constant, interpreted as DPI if positive
+  -  **int PrintQuality** 
+    DMRES\_\* constant, interpreted as DPI if positive
 
-  -  __int Color__ 
-    DMCOLOR_COLOR or DMCOLOR_MONOCHROME
+  -  **int Color** 
+    DMCOLOR\_COLOR or DMCOLOR\_MONOCHROME
 
-  -  __int Duplex__ 
-    For printers that do two-sided printing: DMDUP_SIMPLEX, DMDUP_HORIZONTAL, DMDUP_VERTICAL
+  -  **int Duplex** 
+    For printers that do two-sided printing: DMDUP\_SIMPLEX, DMDUP\_HORIZONTAL, DMDUP\_VERTICAL
 
-  -  __int YResolution__ 
+  -  **int YResolution** 
     Vertical printer resolution in DPI - if this is set, PrintQuality indicates horizontal DPI
 
-  -  __int TTOption__ 
-    TrueType options: DMTT_BITMAP, DMTT_DOWNLOAD, DMTT_DOWNLOAD_OUTLINE, DMTT_SUBDEV
+  -  **int TTOption** 
+    TrueType options: DMTT\_BITMAP, DMTT\_DOWNLOAD, DMTT\_DOWNLOAD\_OUTLINE, DMTT\_SUBDEV
 
-  -  __int Collate__ 
-    DMCOLLATE_TRUE or DMCOLLATE_FALSE
+  -  **int Collate** 
+    DMCOLLATE\_TRUE or DMCOLLATE\_FALSE
 
-  -  __int LogPixels__ 
-    Pixels per inch (only for display devices
+  -  **int LogPixels** 
+    Pixels per inch \(only for display devices
 
-  -  __int BitsPerPel__ 
+  -  **int BitsPerPel** 
     Color resolution in bits per pixel
 
-  -  __int PelsWidth__ 
+  -  **int PelsWidth** 
     Pixel width of display
 
-  -  __int PelsHeight__ 
+  -  **int PelsHeight** 
     Pixel height of display
 
-  -  __int DisplayFlags__ 
-    Combination of DM_GRAYSCALE and DM_INTERLACED
+  -  **int DisplayFlags** 
+    Combination of DM\_GRAYSCALE and DM\_INTERLACED
 
-  -  __int DisplayFrequency__ 
+  -  **int DisplayFrequency** 
     Refresh rate
 
-  -  __int DisplayOrientation__ 
-    Display rotation: DMDO_DEFAULT,DMDO_90, DMDO_180, DMDO_270
+  -  **int DisplayOrientation** 
+    Display rotation: DMDO\_DEFAULT,DMDO\_90, DMDO\_180, DMDO\_270
 
-  -  __int ICMMethod__ 
-    Indicates where ICM is performed, one of win32con.DMICMMETHOD_* values
+  -  **int ICMMethod** 
+    Indicates where ICM is performed, one of win32con\.DMICMMETHOD\_\* values
 
-  -  __int ICMIntent__ 
-    Intent of ICM, one of win32con.DMICM_* values
+  -  **int ICMIntent** 
+    Intent of ICM, one of win32con\.DMICM\_\* values
 
-  -  __int MediaType__ 
-    win32con.DMMEDIA_*, can also be a printer-specific value greater then DMMEDIA_USER
+  -  **int MediaType** 
+    win32con\.DMMEDIA\_\*, can also be a printer-specific value greater then DMMEDIA\_USER
 
-  -  __int DitherType__ 
-    Dithering option, win32con.DMDITHER_*
+  -  **int DitherType** 
+    Dithering option, win32con\.DMDITHER\_\*
 
-  -  __int Reserved1__ 
+  -  **int Reserved1** 
     Reserved, use only 0
 
-  -  __int Reserved2__ 
+  -  **int Reserved2** 
     Reserved, use only 0
 
-  -  __int Nup__ 
-    Controls printing of multiple logical pages per physical page, DMNUP_SYSTEM or DMNUP_ONEUP
+  -  **int Nup** 
+    Controls printing of multiple logical pages per physical page, DMNUP\_SYSTEM or DMNUP\_ONEUP
 
-  -  __int PanningWidth__ 
+  -  **int PanningWidth** 
     Not used, leave as 0
 
-  -  __int PanningHeight__ 
+  -  **int PanningHeight** 
     Not used, leave as 0
 
-  -  __[PyUnicode](#pyunicode)DeviceName__ 
+  -  **[PyUnicode](#pyunicode)DeviceName** 
     String of at most 32 chars
 
-  -  __str FormName__ 
+  -  **str FormName** 
     Name of form as returned by[win32print::EnumForms](win32print.md#win32printenumforms), at most 32 chars
 
-  -  __str DriverData__ 
+  -  **str DriverData** 
     Driver data appended to end of structure

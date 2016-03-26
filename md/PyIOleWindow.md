@@ -15,10 +15,10 @@ Description of the interface
 
     Description of ContextSensitiveHelp&nbsp;
 
-## [PyIOleWindow](#pyiolewindow).ContextSensitiveHelp
+## [PyIOleWindow](#pyiolewindow)\.ContextSensitiveHelp
 
- __ContextSensitiveHelp( *fEnterMode* __ )
-Description of ContextSensitiveHelp.
+ **ContextSensitiveHelp\( *fEnterMode* ** \)
+Description of ContextSensitiveHelp\.
 
 #### Parameters
 
@@ -27,7 +27,7 @@ Description of ContextSensitiveHelp.
 
     Description for fEnterMode
 
-## [PyIOleWindow](#pyiolewindow).GetWindow
+## [PyIOleWindow](#pyiolewindow)\.GetWindow
 
- __GetWindow(__ )
-Description of GetWindow.
+ **GetWindow\(** \)
+Description of GetWindow\.

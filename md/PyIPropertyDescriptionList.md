@@ -15,9 +15,9 @@ Container for a number of property descriptions
 
     Retrieves a description from the list&nbsp;
 
-## [PyIPropertyDescriptionList](#pyipropertydescriptionlist).GetAt
+## [PyIPropertyDescriptionList](#pyipropertydescriptionlist)\.GetAt
 
-[PyIPropertyDescription](#pyipropertydescription)= __GetAt( *Elem*  *, riid* __ )
+[PyIPropertyDescription](#pyipropertydescription)\= **GetAt\( *Elem*  *, riid* ** \)
 Retrieves a description from the list
 
 #### Parameters
@@ -27,11 +27,11 @@ Retrieves a description from the list
 
     Index of the element to return
 
-  -  *riid=IID_IPropertyDescription* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyDescription* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIPropertyDescriptionList](#pyipropertydescriptionlist).GetCount
+## [PyIPropertyDescriptionList](#pyipropertydescriptionlist)\.GetCount
 
-int = __GetCount(__ )
+int \= **GetCount\(** \)
 Gets the number of properties in the list

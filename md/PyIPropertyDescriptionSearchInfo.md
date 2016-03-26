@@ -25,28 +25,28 @@ Inhererits all methods of[PyIPropertyDescription](#pyipropertydescription)
 
     Returns the maximum size specified in search options&nbsp;
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo).GetColumnIndexType
+## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetColumnIndexType
 
-int = __GetColumnIndexType(__ )
+int \= **GetColumnIndexType\(** \)
 Returns flags indicating type of property
 
 #### Return Value
-Returns a value from the PROPDESC_COLUMNINDEX_TYPE enum
+Returns a value from the PROPDESC\_COLUMNINDEX\_TYPE enum
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo).GetMaxSize
+## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetMaxSize
 
-int = __GetMaxSize(__ )
+int \= **GetMaxSize\(** \)
 Returns the maximum size specified in search options
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo).GetProjectionString
+## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetProjectionString
 
-str = __GetProjectionString(__ )
+str \= **GetProjectionString\(** \)
 Returns the canonical name of the property
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo).GetSearchInfoFlags
+## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetSearchInfoFlags
 
-int = __GetSearchInfoFlags(__ )
+int \= **GetSearchInfoFlags\(** \)
 Returns flags controlling how property is indexed
 
 #### Return Value
-Returns a combination of PROPDESC_SEARCHINFO_FLAGS values
+Returns a combination of PROPDESC\_SEARCHINFO\_FLAGS values

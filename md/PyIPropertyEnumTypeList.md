@@ -19,9 +19,9 @@ Contains a collection of[PyIPropertyEnumType](#pyipropertyenumtype)objects that 
 
     Attempts to match the specified value to one of the allowable values for the property&nbsp;
 
-## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist).FindMatchingIndex
+## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\.FindMatchingIndex
 
-int = __FindMatchingIndex( *Cmp* __ )
+int \= **FindMatchingIndex\( *Cmp* ** \)
 Attempts to match the specified value to one of the allowable values for the property
 
 #### Parameters
@@ -31,9 +31,9 @@ Attempts to match the specified value to one of the allowable values for the pro
 
     A value to match against the defined values of the property
 
-## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist).GetAt
+## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\.GetAt
 
-[PyIPropertyEnumType](#pyipropertyenumtype)= __GetAt( *itype*  *, riid* __ )
+[PyIPropertyEnumType](#pyipropertyenumtype)\= **GetAt\( *itype*  *, riid* ** \)
 Retrieves an item by index
 
 #### Parameters
@@ -43,11 +43,11 @@ Retrieves an item by index
 
     Zero based index of type to return
 
-  -  *riid=IID_IPropertyEnumType* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyEnumType* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist).GetCount
+## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\.GetCount
 
-int = __GetCount(__ )
+int \= **GetCount\(** \)
 Returns the number of objects in the list

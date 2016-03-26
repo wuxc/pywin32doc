@@ -9,43 +9,43 @@ A Python interface to IEnumExplorerCommand
 
   - [Next](PyIEnumExplorerCommand.md#pyienumexplorercommandnext)
 
-    Retrieves a specified number of items in the enumeration sequence.&nbsp;
+    Retrieves a specified number of items in the enumeration sequence\.&nbsp;
 
   - [Skip](PyIEnumExplorerCommand.md#pyienumexplorercommandskip)
 
-    Skips over the next specified elementes.&nbsp;
+    Skips over the next specified elementes\.&nbsp;
 
   - [Reset](PyIEnumExplorerCommand.md#pyienumexplorercommandreset)
 
-    Resets the enumeration sequence to the beginning.&nbsp;
+    Resets the enumeration sequence to the beginning\.&nbsp;
 
   - [Clone](PyIEnumExplorerCommand.md#pyienumexplorercommandclone)
 
-    Creates another enumerator that contains the same enumeration state as the current one.&nbsp;
+    Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand).Clone
+## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Clone
 
-[PyIEnumExplorerCommand](#pyienumexplorercommand)= __Clone(__ )
+[PyIEnumExplorerCommand](#pyienumexplorercommand)\= **Clone\(** \)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand).Next
+## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Next
 
-object = __Next( *num* __ )
-Retrieves a specified number of items in the enumeration sequence.
+object \= **Next\( *num* ** \)
+Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num=1* : int
+  -  *num\=1* : int
 
-    Number of items to retrieve.
+    Number of items to retrieve\.
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand).Reset
+## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Reset
 
- __Reset(__ )
-Resets the enumeration sequence to the beginning.
+ **Reset\(** \)
+Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand).Skip
+## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Skip
 
- __Skip(__ )
-Skips over the next specified elementes.
+ **Skip\(** \)
+Skips over the next specified elementes\.

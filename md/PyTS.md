@@ -1,5 +1,5 @@
 # PyTS
 
-## PyTS_HANDLE Object
+## PyTS\_HANDLE Object
 
 Handle to a Terminal Server

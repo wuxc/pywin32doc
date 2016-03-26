@@ -2,7 +2,7 @@
 
 ## PySTGMEDIUM Object
 
-A STGMEDIUM object represents a COM STGMEDIUM structure.
+A STGMEDIUM object represents a COM STGMEDIUM structure\.
 
 #### Methods
 
@@ -13,26 +13,26 @@ A STGMEDIUM object represents a COM STGMEDIUM structure.
 
 #### Properties
 
-  -  __int tymed__ 
+  -  **int tymed** 
     An integer indicating the type of data in the stgmedium
 
-  -  __object data__ 
-    The data in the stgmedium. 
+  -  **object data** 
+    The data in the stgmedium\. 
 
-The result depends on the value of the 'tymed' property of the __PySTGMEDIUM__ object.
+The result depends on the value of the 'tymed' property of the **PySTGMEDIUM** object\.
 
- __tymed__  __Result Type__ TYMED_GDIAn integer GDI handleTYMED_MFPICTAn integer METAFILE handleTYMED_ENHMFAn integer ENHMETAFILE handleTYMED_HGLOBALA string with the bytes of the global memory object.TYMED_FILEA string/unicode filenameTYMED_ISTREAMA[PyIStream](#pyistream)objectTYMED_ISTORAGEA[PyIStorage](#pyistorage)object
-  -  __int data_handle__ 
-    The raw 'integer' representation of the data. 
+ **tymed**  **Result Type** TYMED\_GDIAn integer GDI handleTYMED\_MFPICTAn integer METAFILE handleTYMED\_ENHMFAn integer ENHMETAFILE handleTYMED\_HGLOBALA string with the bytes of the global memory object\.TYMED\_FILEA string/unicode filenameTYMED\_ISTREAMA[PyIStream](#pyistream)objectTYMED\_ISTORAGEA[PyIStorage](#pyistorage)object
+  -  **int data\_handle** 
+    The raw 'integer' representation of the data\. 
 
-For TYMED_HGLOBAL, this is the handle rather than the string data. 
+For TYMED\_HGLOBAL, this is the handle rather than the string data\. 
 
-For the string and interface types, this is an integer holding the pointer.
+For the string and interface types, this is an integer holding the pointer\.
 
-## [PySTGMEDIUM](#pystgmedium).set
+## [PySTGMEDIUM](#pystgmedium)\.set
 
- __set( *tymed*  *, data* __ )
-Sets the type and data of the object.
+ **set\( *tymed*  *, data* ** \)
+Sets the type and data of the object\.
 
 #### Parameters
 

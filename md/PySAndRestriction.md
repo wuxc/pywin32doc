@@ -7,6 +7,6 @@
 #### Parameters
 
 
-  -  *restriction* : [[PySRestriction](#pysrestriction), ...]
+  -  *restriction* : \[[PySRestriction](#pysrestriction), \.\.\.\]
 
-    A sequence of[PySRestriction](#pysrestriction)objects.
+    A sequence of[PySRestriction](#pysrestriction)objects\.

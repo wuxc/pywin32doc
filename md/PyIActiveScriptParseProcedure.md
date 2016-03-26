@@ -11,27 +11,27 @@ Description of the interface
 
     Description of ParseProcedureText&nbsp;
 
-## [PyIActiveScriptParseProcedure](#pyiactivescriptparseprocedure).ParseProcedureText
+## [PyIActiveScriptParseProcedure](#pyiactivescriptparseprocedure)\.ParseProcedureText
 
- __ParseProcedureText( *pstrCode*  *, pstrFormalParams*  *, pstrProcedureName*  *, pstrItemName*  *, punkContext*  *, pstrDelimiter*  *, dwSourceContextCookie*  *, ulStartingLineNumber*  *, dwFlags* __ )
-Description of ParseProcedureText.
+ **ParseProcedureText\( *pstrCode*  *, pstrFormalParams*  *, pstrProcedureName*  *, pstrItemName*  *, punkContext*  *, pstrDelimiter*  *, dwSourceContextCookie*  *, ulStartingLineNumber*  *, dwFlags* ** \)
+Description of ParseProcedureText\.
 
 #### Parameters
 
 
-  -  *pstrCode* : __unicode__ 
+  -  *pstrCode* : **unicode** 
 
     Description for pstrCode
 
-  -  *pstrFormalParams* : __unicode__ 
+  -  *pstrFormalParams* : **unicode** 
 
     Description for pstrFormalParams
 
-  -  *pstrProcedureName* : __unicode__ 
+  -  *pstrProcedureName* : **unicode** 
 
     Description for pstrProcedureName
 
-  -  *pstrItemName* : __unicode__ 
+  -  *pstrItemName* : **unicode** 
 
     Description for pstrItemName
 
@@ -39,7 +39,7 @@ Description of ParseProcedureText.
 
     Description for punkContext
 
-  -  *pstrDelimiter* : __unicode__ 
+  -  *pstrDelimiter* : **unicode** 
 
     Description for pstrDelimiter
 

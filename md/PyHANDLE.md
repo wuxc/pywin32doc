@@ -2,19 +2,19 @@
 
 ## PyHANDLE Object
 
-A Python object, representing a win32 HANDLE.
+A Python object, representing a win32 HANDLE\.
 
 #### Comments
 This object wraps a win32 HANDLE object, automatically closing it when the object 
 
-is destroyed.  To guarantee cleanup, you can call either[PyHANDLE::Close](PyHANDLE.md#pyhandleclose), or[win32api::CloseHandle](win32api.md#win32apiclosehandle).
+is destroyed\.  To guarantee cleanup, you can call either[PyHANDLE::Close](PyHANDLE.md#pyhandleclose), or[win32api::CloseHandle](win32api.md#win32apiclosehandle)\.
 Most functions which accept a handle object also accept an integer - however, 
 
-use of the handle object is encouraged.
+use of the handle object is encouraged\.
 
 #### Properties
 
-  -  __long handle__ 
+  -  **long handle** 
     Integer value of the handle
 
 #### Methods
@@ -30,100 +30,100 @@ use of the handle object is encouraged.
 
   - [Detach](PyHANDLE.md#pyhandledetach)
 
-    Detaches the Win32 handle from the handle object.&nbsp;
+    Detaches the Win32 handle from the handle object\.&nbsp;
 
-  - [__nonzero__](PyHANDLE.md#pyhandle__nonzero__)
+  - [\_\_nonzero\_\_](PyHANDLE.md#pyhandle__nonzero__)
 
-    Used for detecting true/false. 
+    Used for detecting true/false\. 
 
-is nb_bool in Python 3.0&nbsp;
+is nb\_bool in Python 3\.0&nbsp;
 
-  - [__int__](PyHANDLE.md#pyhandle__int__)
+  - [\_\_int\_\_](PyHANDLE.md#pyhandle__int__)
 
-    Used when an integer representation of the handle object is required.&nbsp;
+    Used when an integer representation of the handle object is required\.&nbsp;
 
-  - [__print__](PyHANDLE.md#pyhandle__print__)
+  - [\_\_print\_\_](PyHANDLE.md#pyhandle__print__)
 
-    Used when the object is printed. 
+    Used when the object is printed\. 
 
-tp_print&nbsp;
+tp\_print&nbsp;
 
-  - [__hash__](PyHANDLE.md#pyhandle__hash__)
+  - [\_\_hash\_\_](PyHANDLE.md#pyhandle__hash__)
 
     Used when the hash value of an object is required 
 
-tp_hash&nbsp;
+tp\_hash&nbsp;
 
-  - [__str__](PyHANDLE.md#pyhandle__str__)
+  - [\_\_str\_\_](PyHANDLE.md#pyhandle__str__)
 
     Used when a string representation is required 
 
-tp_str&nbsp;
+tp\_str&nbsp;
 
-## [PyHANDLE](#pyhandle).Close
+## [PyHANDLE](#pyhandle)\.Close
 
- __Close(__ )
-Closes the underlying Win32 handle.
+ **Close\(** \)
+Closes the underlying Win32 handle\.
 
 #### Comments
-If the handle is already closed, no error is raised.
+If the handle is already closed, no error is raised\.
 
-## [PyHANDLE](#pyhandle).Detach
+## [PyHANDLE](#pyhandle)\.Detach
 
-int = __Detach(__ )
-Detaches the Win32 handle from the handle object.
+int \= **Detach\(** \)
+Detaches the Win32 handle from the handle object\.
 
 #### Comments
 After calling this function, the handle is effectively invalidated, 
 
-but the handle is not closed.  You would call this function when you 
+but the handle is not closed\.  You would call this function when you 
 
 need the underlying win32 handle to exist beyond the lifetime of the 
 
-handle object.
+handle object\.
 
 #### Return Value
-The result is the value of the handle before it is detached.  If the 
+The result is the value of the handle before it is detached\.  If the 
 
-handle is already detached, this will return zero.
+handle is already detached, this will return zero\.
 
-## [PyHANDLE](#pyhandle).__hash__
+## [PyHANDLE](#pyhandle)\.\_\_hash\_\_
 
-int = ____hash__(__ )
+int \= **\_\_hash\_\_\(** \)
 Used when the hash value of a HANDLE object is required
 
-## [PyHANDLE](#pyhandle).__int__
+## [PyHANDLE](#pyhandle)\.\_\_int\_\_
 
- ____int__(__ )
-Used when the handle as an integer is required.
-
-#### Comments
-To get the underling win32 handle from a PyHANDLE object, use int(handleObject)
-
-## [PyHANDLE](#pyhandle).__long__
-
- ____long__(__ )
-Used when the handle as an integer is required.
+ **\_\_int\_\_\(** \)
+Used when the handle as an integer is required\.
 
 #### Comments
-To get the underling win32 handle from a PyHANDLE object, use long(handleObject)
+To get the underling win32 handle from a PyHANDLE object, use int\(handleObject\)
 
-## [PyHANDLE](#pyhandle).__nonzero__
+## [PyHANDLE](#pyhandle)\.\_\_long\_\_
 
- ____nonzero__(__ )
-Used for detecting true/false.
+ **\_\_long\_\_\(** \)
+Used when the handle as an integer is required\.
+
+#### Comments
+To get the underling win32 handle from a PyHANDLE object, use long\(handleObject\)
+
+## [PyHANDLE](#pyhandle)\.\_\_nonzero\_\_
+
+ **\_\_nonzero\_\_\(** \)
+Used for detecting true/false\.
 
 #### Return Value
-The result is 1 if the attached handle is non zero, else 0. 
+The result is 1 if the attached handle is non zero, else 0\. 
 
-static*/ int PyHANDLE::nonzeroFunc(PyObject *ob)
+static\*/ int PyHANDLE::nonzeroFunc\(PyObject \*ob\)
 
-## [PyHANDLE](#pyhandle).__print__
+## [PyHANDLE](#pyhandle)\.\_\_print\_\_
 
- ____print__(__ )
-Used when the HANDLE object is printed.
+ **\_\_print\_\_\(** \)
+Used when the HANDLE object is printed\.
 
-## [PyHANDLE](#pyhandle).__str__
+## [PyHANDLE](#pyhandle)\.\_\_str\_\_
 
- ____str__(__ )
-Used when a string representation of the handle object is required.
+ **\_\_str\_\_\(** \)
+Used when a string representation of the handle object is required\.

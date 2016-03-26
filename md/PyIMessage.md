@@ -14,7 +14,7 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
   - [GetAttachmentTable](PyIMessage.md#pyimessagegetattachmenttable)
 
-    Returns the message's attachment table.&nbsp;
+    Returns the message's attachment table\.&nbsp;
 
   - [OpenAttach](PyIMessage.md#pyimessageopenattach)
 
@@ -30,19 +30,19 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
   - [ModifyRecipients](PyIMessage.md#pyimessagemodifyrecipients)
 
-    adds, deletes, or modifies message recipients.&nbsp;
+    adds, deletes, or modifies message recipients\.&nbsp;
 
   - [GetRecipientTable](PyIMessage.md#pyimessagegetrecipienttable)
 
-    Returns the message's recipient table.&nbsp;
+    Returns the message's recipient table\.&nbsp;
 
   - [SubmitMessage](PyIMessage.md#pyimessagesubmitmessage)
 
-    Saves all of the message's properties and marks the message as ready to be sent.&nbsp;
+    Saves all of the message's properties and marks the message as ready to be sent\.&nbsp;
 
-## [PyIMessage](#pyimessage).CreateAttach
+## [PyIMessage](#pyimessage)\.CreateAttach
 
-int, __PyIAttach__ = __CreateAttach( *interface*  *, flags* __ )
+int, **PyIAttach** \= **CreateAttach\( *interface*  *, flags* ** \)
 Creates an attachment
 
 #### Parameters
@@ -54,14 +54,14 @@ Creates an attachment
 
   -  *flags* : int
 
-    Bitmask of flags that controls how the attachment is created.
+    Bitmask of flags that controls how the attachment is created\.
 
 #### Return Value
-The result is a tuple of (attachmentNum, attachmentObject)
+The result is a tuple of \(attachmentNum, attachmentObject\)
 
-## [PyIMessage](#pyimessage).DeleteAttach
+## [PyIMessage](#pyimessage)\.DeleteAttach
 
- __DeleteAttach( *attachmentNum*  *, ulUIParam*  *, interface*  *, flags* __ )
+ **DeleteAttach\( *attachmentNum*  *, ulUIParam*  *, interface*  *, flags* ** \)
 Deletes an attachment
 
 #### Parameters
@@ -75,57 +75,57 @@ Deletes an attachment
 
     
 
-  -  *interface* : __PyIMAPIProgress__ 
+  -  *interface* : **PyIMAPIProgress** 
 
     The interface to use, or None
 
   -  *flags* : int
 
-    Bitmask of flags that controls the display of a user interface.
+    Bitmask of flags that controls the display of a user interface\.
 
-## [PyIMessage](#pyimessage).GetAttachmentTable
+## [PyIMessage](#pyimessage)\.GetAttachmentTable
 
-[PyIMAPITable](#pyimapitable)= __GetAttachmentTable( *flags* __ )
-Returns the message's attachment table.
-
-#### Parameters
-
-
-  -  *flags* : int
-
-    Bitmask of flags that relate to the creation of the table.
-
-## [PyIMessage](#pyimessage).GetRecipientTable
-
-[PyIMAPITable](#pyimapitable)= __GetRecipientTable( *flags* __ )
-Returns the message's recipient table.
+[PyIMAPITable](#pyimapitable)\= **GetAttachmentTable\( *flags* ** \)
+Returns the message's attachment table\.
 
 #### Parameters
 
 
   -  *flags* : int
 
-    Bitmask of flags that relate to the creation of the table.
+    Bitmask of flags that relate to the creation of the table\.
 
-## [PyIMessage](#pyimessage).ModifyRecipients
+## [PyIMessage](#pyimessage)\.GetRecipientTable
 
- __ModifyRecipients( *flags*  *, mods* __ )
-adds, deletes, or modifies message recipients.
+[PyIMAPITable](#pyimapitable)\= **GetRecipientTable\( *flags* ** \)
+Returns the message's recipient table\.
 
 #### Parameters
 
 
   -  *flags* : int
 
-    Bitmask of flags that controls the recipient changes. If zero is passed for the ulFlags parameter, ModifyRecipients replaces all existing recipients with the recipient list in the mods parameter.
+    Bitmask of flags that relate to the creation of the table\.
+
+## [PyIMessage](#pyimessage)\.ModifyRecipients
+
+ **ModifyRecipients\( *flags*  *, mods* ** \)
+adds, deletes, or modifies message recipients\.
+
+#### Parameters
+
+
+  -  *flags* : int
+
+    Bitmask of flags that controls the recipient changes\. If zero is passed for the ulFlags parameter, ModifyRecipients replaces all existing recipients with the recipient list in the mods parameter\.
 
   -  *mods* : object
 
-    The list of recipients.
+    The list of recipients\.
 
-## [PyIMessage](#pyimessage).OpenAttach
+## [PyIMessage](#pyimessage)\.OpenAttach
 
- __PyIAttach__ = __OpenAttach( *attachmentNum*  *, interface*  *, flags* __ )
+ **PyIAttach** \= **OpenAttach\( *attachmentNum*  *, interface*  *, flags* ** \)
 Opens an attachment
 
 #### Parameters
@@ -141,11 +141,11 @@ Opens an attachment
 
   -  *flags* : int
 
-    Bitmask of flags that controls how the attachment is opened.
+    Bitmask of flags that controls how the attachment is opened\.
 
-## [PyIMessage](#pyimessage).SetReadFlag
+## [PyIMessage](#pyimessage)\.SetReadFlag
 
- __SetReadFlag( *flag* __ )
+ **SetReadFlag\( *flag* ** \)
 Sets the read flags for a message
 
 #### Parameters
@@ -153,16 +153,16 @@ Sets the read flags for a message
 
   -  *flag* : int
 
-    Bitmask of flags that controls the setting of a message's read flag - that is, the message's MSGFLAG_READ flag in its PR_MESSAGE_FLAGS property and the processing of read reports.
+    Bitmask of flags that controls the setting of a message's read flag - that is, the message's MSGFLAG\_READ flag in its PR\_MESSAGE\_FLAGS property and the processing of read reports\.
 
-## [PyIMessage](#pyimessage).SubmitMessage
+## [PyIMessage](#pyimessage)\.SubmitMessage
 
- __SubmitMessage( *flags* __ )
-Saves all of the message's properties and marks the message as ready to be sent.
+ **SubmitMessage\( *flags* ** \)
+Saves all of the message's properties and marks the message as ready to be sent\.
 
 #### Parameters
 
 
   -  *flags* : int
 
-    Flags which specify how the message is submitted.
+    Flags which specify how the message is submitted\.

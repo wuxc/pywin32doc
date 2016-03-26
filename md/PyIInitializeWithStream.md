@@ -11,9 +11,9 @@ Interface that initializes a handler capable of reading properties from a stream
 
     Initializes a property handler with a stream&nbsp;
 
-## [PyIInitializeWithStream](#pyiinitializewithstream).Initialize
+## [PyIInitializeWithStream](#pyiinitializewithstream)\.Initialize
 
- __Initialize( *Stream*  *, Mode* __ )
+ **Initialize\( *Stream*  *, Mode* ** \)
 Initializes a property handler with a stream
 
 #### Parameters
@@ -25,4 +25,4 @@ Initializes a property handler with a stream
 
   -  *Mode* : int
 
-    Indicates if stream is writable, STGM_READ or STGM_READWRITE
+    Indicates if stream is writable, STGM\_READ or STGM\_READWRITE

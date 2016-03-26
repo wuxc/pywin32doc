@@ -19,17 +19,17 @@ Description of the interface
 
     Description of GetSourceLineText&nbsp;
 
-## [PyIActiveScriptError](#pyiactivescripterror).GetExceptionInfo
+## [PyIActiveScriptError](#pyiactivescripterror)\.GetExceptionInfo
 
- __GetExceptionInfo(__ )
-Description of GetExceptionInfo.
+ **GetExceptionInfo\(** \)
+Description of GetExceptionInfo\.
 
-## [PyIActiveScriptError](#pyiactivescripterror).GetSourceLineText
+## [PyIActiveScriptError](#pyiactivescripterror)\.GetSourceLineText
 
- __GetSourceLineText(__ )
-Description of GetSourceLineText.
+ **GetSourceLineText\(** \)
+Description of GetSourceLineText\.
 
-## [PyIActiveScriptError](#pyiactivescripterror).GetSourcePosition
+## [PyIActiveScriptError](#pyiactivescripterror)\.GetSourcePosition
 
- __GetSourcePosition(__ )
-Description of GetSourcePosition.
+ **GetSourcePosition\(** \)
+Description of GetSourcePosition\.

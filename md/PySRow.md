@@ -2,4 +2,4 @@
 
 ## PySRow Object
 
-Identical to a __PySValue__ object
+Identical to a **PySValue** object

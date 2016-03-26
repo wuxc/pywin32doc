@@ -9,11 +9,11 @@ A Python object, representing a SID structure
 
   - [Initialize](PySID.md#pysidinitialize)
 
-    Initialize the SID.&nbsp;
+    Initialize the SID\.&nbsp;
 
   - [IsValid](PySID.md#pysidisvalid)
 
-    Determines if the SID is valid.&nbsp;
+    Determines if the SID is valid\.&nbsp;
 
   - [SetSubAuthority](PySID.md#pysidsetsubauthority)
 
@@ -21,7 +21,7 @@ A Python object, representing a SID structure
 
   - [GetLength](PySID.md#pysidgetlength)
 
-    Return length of sid (GetLengthSid)&nbsp;
+    Return length of sid \(GetLengthSid\)&nbsp;
 
   - [GetSubAuthorityCount](PySID.md#pysidgetsubauthoritycount)
 
@@ -33,64 +33,64 @@ A Python object, representing a SID structure
 
   - [GetSidIdentifierAuthority](PySID.md#pysidgetsididentifierauthority)
 
-    Return identifier for the authority who issued the SID (one of the SID_IDENTIFIER_AUTHORITY constants)&nbsp;
+    Return identifier for the authority who issued the SID \(one of the SID\_IDENTIFIER\_AUTHORITY constants\)&nbsp;
 
 #### Comments
-Note the PySID object supports the buffer interface.  Thus buffer(sid) can be used to obtain the raw bytes. 
+Note the PySID object supports the buffer interface\.  Thus buffer\(sid\) can be used to obtain the raw bytes\. 
 
-tp_as_buffer
+tp\_as\_buffer
 
-## PySID_AND_ATTRIBUTES Object
+## PySID\_AND\_ATTRIBUTES Object
 
-A sequence containing ([PySID](#pysid),Attributes) Representing a SID_AND_ATTRIBUTES structure
+A sequence containing \([PySID](#pysid),Attributes\) Representing a SID\_AND\_ATTRIBUTES structure
 
 #### Comments
 Attributes is an integer containing flags that depend on intended usage
 
-## [PySID](#pysid).GetLength
+## [PySID](#pysid)\.GetLength
 
-int = __GetLength(__ )
-return length of SID (GetLengthSid).
+int \= **GetLength\(** \)
+return length of SID \(GetLengthSid\)\.
 
-## [PySID](#pysid).GetSidIdentifierAuthority
+## [PySID](#pysid)\.GetSidIdentifierAuthority
 
-(int,int,int,int,int,int) = __GetSidIdentifierAuthority(__ )
-Returns a tuple of 6 SID_IDENTIFIER_AUTHORITY constants
+\(int,int,int,int,int,int\) \= **GetSidIdentifierAuthority\(** \)
+Returns a tuple of 6 SID\_IDENTIFIER\_AUTHORITY constants
 
-## [PySID](#pysid).GetSubAuthority
+## [PySID](#pysid)\.GetSubAuthority
 
-int = __GetSubAuthority(__ )
+int \= **GetSubAuthority\(** \)
 Returns specified subauthority from SID
 
-## [PySID](#pysid).GetSubAuthorityCount
+## [PySID](#pysid)\.GetSubAuthorityCount
 
-int = __GetSubAuthorityCount(__ )
+int \= **GetSubAuthorityCount\(** \)
 return nbr of subauthorities from SID
 
-## [PySID](#pysid).Initialize
+## [PySID](#pysid)\.Initialize
 
- __Initialize( *idAuthority*  *, numSubauthorities* __ )
-Initialize the SID.
+ **Initialize\( *idAuthority*  *, numSubauthorities* ** \)
+Initialize the SID\.
 
 #### Parameters
 
 
-  -  *idAuthority* : __SID_IDENTIFIER_AUTHORITY__ 
+  -  *idAuthority* : **SID\_IDENTIFIER\_AUTHORITY** 
 
-    The identifier authority.
+    The identifier authority\.
 
   -  *numSubauthorities* : int
 
-    The number of sub authorities to allocate.
+    The number of sub authorities to allocate\.
 
-## [PySID](#pysid).IsValid
+## [PySID](#pysid)\.IsValid
 
- __IsValid(__ )
-Determines if the SID is valid.
+ **IsValid\(** \)
+Determines if the SID is valid\.
 
-## [PySID](#pysid).SetSubAuthority
+## [PySID](#pysid)\.SetSubAuthority
 
- __SetSubAuthority( *index*  *, val* __ )
+ **SetSubAuthority\( *index*  *, val* ** \)
 Sets a SID SubAuthority
 
 #### Parameters

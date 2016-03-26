@@ -9,47 +9,47 @@ Iterates through a number of arbitrary interfaces
 
   - [Next](PyIEnumObjects.md#pyienumobjectsnext)
 
-    Retrieves a specified number of items in the enumeration sequence.&nbsp;
+    Retrieves a specified number of items in the enumeration sequence\.&nbsp;
 
   - [Skip](PyIEnumObjects.md#pyienumobjectsskip)
 
-    Skips over the next specified elementes.&nbsp;
+    Skips over the next specified elementes\.&nbsp;
 
   - [Reset](PyIEnumObjects.md#pyienumobjectsreset)
 
-    Resets the enumeration sequence to the beginning.&nbsp;
+    Resets the enumeration sequence to the beginning\.&nbsp;
 
   - [Clone](PyIEnumObjects.md#pyienumobjectsclone)
 
-    Creates another enumerator that contains the same enumeration state as the current one.&nbsp;
+    Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumObjects](#pyienumobjects).Clone
+## [PyIEnumObjects](#pyienumobjects)\.Clone
 
-[PyIEnumObjects](#pyienumobjects)= __Clone(__ )
+[PyIEnumObjects](#pyienumobjects)\= **Clone\(** \)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumObjects](#pyienumobjects).Next
+## [PyIEnumObjects](#pyienumobjects)\.Next
 
-([PyIUnknown](#pyiunknown),...) = __Next( *num*  *, riid* __ )
-Retrieves a specified number of items in the enumeration sequence.
+\([PyIUnknown](#pyiunknown),\.\.\.\) \= **Next\( *num*  *, riid* ** \)
+Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num=1* : int
+  -  *num\=1* : int
 
-    Number of items to retrieve.
+    Number of items to retrieve\.
 
-  -  *riid=IID_IUnknown* :[PyIID](#pyiid)
+  -  *riid\=IID\_IUnknown* :[PyIID](#pyiid)
 
     The interfaces to return
 
-## [PyIEnumObjects](#pyienumobjects).Reset
+## [PyIEnumObjects](#pyienumobjects)\.Reset
 
- __Reset(__ )
-Resets the enumeration sequence to the beginning.
+ **Reset\(** \)
+Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumObjects](#pyienumobjects).Skip
+## [PyIEnumObjects](#pyienumobjects)\.Skip
 
- __Skip(__ )
-Skips over the next specified elementes.
+ **Skip\(** \)
+Skips over the next specified elementes\.

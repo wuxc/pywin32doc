@@ -11,9 +11,9 @@ Initializes a property handler that requires a file path instead of a stream
 
     Passes a file path to a property handler on startup&nbsp;
 
-## [PyIInitializeWithFile](#pyiinitializewithfile).Initialize
+## [PyIInitializeWithFile](#pyiinitializewithfile)\.Initialize
 
- __Initialize( *FilePath*  *, Mode* __ )
+ **Initialize\( *FilePath*  *, Mode* ** \)
 Passes a file path to a property handler on startup
 
 #### Parameters
@@ -25,4 +25,4 @@ Passes a file path to a property handler on startup
 
   -  *Mode* : int
 
-    Indicates if properties can be written, STGM_READ or STGM_READWRITE
+    Indicates if properties can be written, STGM\_READ or STGM\_READWRITE

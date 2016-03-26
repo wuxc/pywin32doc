@@ -29,78 +29,78 @@ A class which encapsulates an MFC CDockContext object
 
 #### Properties
 
-  -  __x,y ptLast__ 
+  -  **x,y ptLast** 
     
 
-  -  __left, top, right, bottom rectLast__ 
+  -  **left, top, right, bottom rectLast** 
     
 
-  -  __cx, cy sizeLast__ 
+  -  **cx, cy sizeLast** 
     
 
-  -  __int bDitherLast__ 
+  -  **int bDitherLast** 
     
 
-  -  __left, top, right, bottom rectDragHorz__ 
+  -  **left, top, right, bottom rectDragHorz** 
     
 
-  -  __left, top, right, bottom rectDragVert__ 
+  -  **left, top, right, bottom rectDragVert** 
     
 
-  -  __left, top, right, bottom rectFrameDragHorz__ 
+  -  **left, top, right, bottom rectFrameDragHorz** 
     
 
-  -  __left, top, right, bottom rectFrameDragVert__ 
+  -  **left, top, right, bottom rectFrameDragVert** 
     
 
-  -  __int dwDockStyle__ 
+  -  **int dwDockStyle** 
     allowable dock styles for bar
 
-  -  __int dwOverDockStyle__ 
+  -  **int dwOverDockStyle** 
     style of dock that rect is over
 
-  -  __int dwStyle__ 
+  -  **int dwStyle** 
     style of control bar
 
-  -  __int bFlip__ 
+  -  **int bFlip** 
     if shift key is down
 
-  -  __int bForceFrame__ 
+  -  **int bForceFrame** 
     if ctrl key is down 
 
-CDC* m_pDC;                 // where to draw during drag
+CDC\* m\_pDC;                 // where to draw during drag
 
-  -  __int bDragging__ 
+  -  **int bDragging** 
     
 
-  -  __int nHitTest__ 
+  -  **int nHitTest** 
     
 
-  -  __int uMRUDockID__ 
+  -  **int uMRUDockID** 
     
 
-  -  __left, top, right, bottom rectMRUDockPos__ 
+  -  **left, top, right, bottom rectMRUDockPos** 
     
 
-  -  __int dwMRUFloatStyle__ 
+  -  **int dwMRUFloatStyle** 
     
 
-  -  __x,y ptMRUFloatPos__ 
+  -  **x,y ptMRUFloatPos** 
     Sentinel
 
-## [PyCDockContext](#pycdockcontext).EndDrag
+## [PyCDockContext](#pycdockcontext)\.EndDrag
 
-int = __EndDrag(__ )
-
-
-## [PyCDockContext](#pycdockcontext).EndResize
-
-int = __EndResize(__ )
+int \= **EndDrag\(** \)
 
 
-## [PyCDockContext](#pycdockcontext).StartDrag
+## [PyCDockContext](#pycdockcontext)\.EndResize
 
-int = __StartDrag( *pt* __ )
+int \= **EndResize\(** \)
+
+
+## [PyCDockContext](#pycdockcontext)\.StartDrag
+
+int \= **StartDrag\( *pt* ** \)
 
 
 #### Parameters
@@ -110,9 +110,9 @@ int = __StartDrag( *pt* __ )
 
     
 
-## [PyCDockContext](#pycdockcontext).StartResize
+## [PyCDockContext](#pycdockcontext)\.StartResize
 
-int = __StartResize( *hittest*  *, pt* __ )
+int \= **StartResize\( *hittest*  *, pt* ** \)
 
 
 #### Parameters
@@ -126,6 +126,6 @@ int = __StartResize( *hittest*  *, pt* __ )
 
     
 
-## [PyCDockContext](#pycdockcontext).ToggleDocking
+## [PyCDockContext](#pycdockcontext)\.ToggleDocking
 
-int = __ToggleDocking(__ )
+int \= **ToggleDocking\(** \)

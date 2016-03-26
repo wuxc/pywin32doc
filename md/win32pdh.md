@@ -17,7 +17,7 @@ A module, encapsulating the Windows Performance Data Helpers API
 
   - [RemoveCounter](win32pdh.md#win32pdhremovecounter)
 
-    Removes an open counter.&nbsp;
+    Removes an open counter\.&nbsp;
 
   - [EnumObjectItems](win32pdh.md#win32pdhenumobjectitems)
 
@@ -33,7 +33,7 @@ A module, encapsulating the Windows Performance Data Helpers API
 
   - [CloseQuery](win32pdh.md#win32pdhclosequery)
 
-    Closes an open query.&nbsp;
+    Closes an open query\.&nbsp;
 
   - [MakeCounterPath](win32pdh.md#win32pdhmakecounterpath)
 
@@ -41,7 +41,7 @@ A module, encapsulating the Windows Performance Data Helpers API
 
   - [GetCounterInfo](win32pdh.md#win32pdhgetcounterinfo)
 
-    Retrieves information about a counter, such as data size, counter type, path, and user-supplied data values.&nbsp;
+    Retrieves information about a counter, such as data size, counter type, path, and user-supplied data values\.&nbsp;
 
   - [GetFormattedCounterValue](win32pdh.md#win32pdhgetformattedcountervalue)
 
@@ -49,19 +49,19 @@ A module, encapsulating the Windows Performance Data Helpers API
 
   - [CollectQueryData](win32pdh.md#win32pdhcollectquerydata)
 
-    Collects the current raw data value for all counters in the specified query and updates the status code of each counter.&nbsp;
+    Collects the current raw data value for all counters in the specified query and updates the status code of each counter\.&nbsp;
 
   - [ValidatePath](win32pdh.md#win32pdhvalidatepath)
 
-    Validates that the specified counter is present on the machine specified in the counter path.&nbsp;
+    Validates that the specified counter is present on the machine specified in the counter path\.&nbsp;
 
   - [ExpandCounterPath](win32pdh.md#win32pdhexpandcounterpath)
 
-    Examines the specified machine (or local machine if none is specified) for counters and instances of counters that match the wild card strings in the counter path.&nbsp;
+    Examines the specified machine \(or local machine if none is specified\) for counters and instances of counters that match the wild card strings in the counter path\.&nbsp;
 
   - [ParseCounterPath](win32pdh.md#win32pdhparsecounterpath)
 
-    Parses the elements of the counter path.&nbsp;
+    Parses the elements of the counter path\.&nbsp;
 
   - [ParseInstanceName](win32pdh.md#win32pdhparseinstancename)
 
@@ -69,27 +69,27 @@ A module, encapsulating the Windows Performance Data Helpers API
 
   - [SetCounterScaleFactor](win32pdh.md#win32pdhsetcounterscalefactor)
 
-    Sets the scale factor that is applied to the calculated value of the specified counter when you request the formatted counter value.&nbsp;
+    Sets the scale factor that is applied to the calculated value of the specified counter when you request the formatted counter value\.&nbsp;
 
   - [BrowseCounters](win32pdh.md#win32pdhbrowsecounters)
 
-    Displays the counter browsing dialog box so that the user can select the counters to be returned to the caller.&nbsp;
+    Displays the counter browsing dialog box so that the user can select the counters to be returned to the caller\.&nbsp;
 
   - [ConnectMachine](win32pdh.md#win32pdhconnectmachine)
 
-    connects to the specified machine, and creates and initializes a machine entry in the PDH DLL.&nbsp;
+    connects to the specified machine, and creates and initializes a machine entry in the PDH DLL\.&nbsp;
 
   - [LookupPerfIndexByName](win32pdh.md#win32pdhlookupperfindexbyname)
 
-    Returns the counter index corresponding to the specified counter name.&nbsp;
+    Returns the counter index corresponding to the specified counter name\.&nbsp;
 
   - [LookupPerfNameByIndex](win32pdh.md#win32pdhlookupperfnamebyindex)
 
-    Returns the performance object name corresponding to the specified index.&nbsp;
+    Returns the performance object name corresponding to the specified index\.&nbsp;
 
-## [win32pdh](#win32pdh).AddCounter
+## [win32pdh](#win32pdh)\.AddCounter
 
-int = __AddCounter( *hQuery*  *, path*  *, userData* __ )
+int \= **AddCounter\( *hQuery*  *, path*  *, userData* ** \)
 Adds a new counter
 
 #### Parameters
@@ -97,22 +97,22 @@ Adds a new counter
 
   -  *hQuery* : int
 
-    Handle to an open query.
+    Handle to an open query\.
 
   -  *path* : string
 
     Full path to the performance data
 
-  -  *userData=0* : int
+  -  *userData\=0* : int
 
-    User data associated with the counter.
+    User data associated with the counter\.
 
 #### Comments
 See also[win32pdh::RemoveCounter](win32pdh.md#win32pdhremovecounter)
 
-## [win32pdh](#win32pdh).AddEnglishCounter
+## [win32pdh](#win32pdh)\.AddEnglishCounter
 
-int = __AddEnglishCounter( *hQuery*  *, path*  *, userData* __ )
+int \= **AddEnglishCounter\( *hQuery*  *, path*  *, userData* ** \)
 Adds a counter to a query by its English name
 
 #### Parameters
@@ -120,15 +120,15 @@ Adds a counter to a query by its English name
 
   -  *hQuery* : int
 
-    Handle to an open query.
+    Handle to an open query\.
 
   -  *path* : string
 
-    Full counter path with standard English names.
+    Full counter path with standard English names\.
 
-  -  *userData=0* : int
+  -  *userData\=0* : int
 
-    User data associated with the counter.
+    User data associated with the counter\.
 
 #### Comments
 Available on Vista and later
@@ -137,61 +137,61 @@ See also[win32pdh::RemoveCounter](win32pdh.md#win32pdhremovecounter)
 #### Return Value
 Returns a handle to the counter
 
-## [win32pdh](#win32pdh).BrowseCounters
+## [win32pdh](#win32pdh)\.BrowseCounters
 
-string = __BrowseCounters( *Flags*  *, hWndOwner*  *, CallBack*  *, DefaultDetailLevel*  *, DialogBoxCaption*  *, InitialPath*  *, DataSource*  *, ReturnMultiple*  *, CallBackArg* __ )
-Displays the counter browsing dialog box so that the user can select the counters to be returned to the caller.
+string \= **BrowseCounters\( *Flags*  *, hWndOwner*  *, CallBack*  *, DefaultDetailLevel*  *, DialogBoxCaption*  *, InitialPath*  *, DataSource*  *, ReturnMultiple*  *, CallBackArg* ** \)
+Displays the counter browsing dialog box so that the user can select the counters to be returned to the caller\.
 
 #### Parameters
 
 
-  -  *Flags* : (boolean, ...)
+  -  *Flags* : \(boolean, \.\.\.\)
 
-    Sequence of boolean flags, or None. All default to False. 
+    Sequence of boolean flags, or None\. All default to False\. 
 
-(bIncludeInstanceIndex, bSingleCounterPerAdd, bSingleCounterPerDialog, bLocalCountersOnly, bWildCardInstances, 
+\(bIncludeInstanceIndex, bSingleCounterPerAdd, bSingleCounterPerDialog, bLocalCountersOnly, bWildCardInstances, 
 
-bHideDetailBox, bInitializePath, bDisableMachineSelection, bIncludeCostlyObjects, bShowObjectBrowser)
+bHideDetailBox, bInitializePath, bDisableMachineSelection, bIncludeCostlyObjects, bShowObjectBrowser\)
 
   -  *hWndOwner* :[PyHANDLE](#pyhandle)
 
-    Parent for the dialog.
+    Parent for the dialog\.
 
   -  *CallBack* : object
 
-    A callable object to function as the callback.
+    A callable object to function as the callback\.
 
   -  *DefaultDetailLevel* : int
 
-    The default detail level to show on startup in the Detail Level combo box. If the Detail Level combo box is not shown, this is the detail level to use in filtering the displayed performance counters and objects.
+    The default detail level to show on startup in the Detail Level combo box\. If the Detail Level combo box is not shown, this is the detail level to use in filtering the displayed performance counters and objects\.
 
-  -  *DialogBoxCaption=None* : string
+  -  *DialogBoxCaption\=None* : string
 
-    The dialog caption, or None for default.
+    The dialog caption, or None for default\.
 
-  -  *InitialPath=None* : str
+  -  *InitialPath\=None* : str
 
     Counter to be selected initially, or None for default
 
-  -  *DataSource=None* : str
+  -  *DataSource\=None* : str
 
     Name of a performance log file, or None for live counters
 
-  -  *ReturnMultiple=False* : boolean
+  -  *ReturnMultiple\=False* : boolean
 
-    Return all selected counter paths as a sequence of strings. 
+    Return all selected counter paths as a sequence of strings\. 
 
-Previously, this function only returned a single path even when multiple counters were selected.
+Previously, this function only returned a single path even when multiple counters were selected\.
 
-  -  *CallBackArg=None* : object
+  -  *CallBackArg\=None* : object
 
-    Extra argument to be passed to callback function.  For backward compatibility, 
+    Extra argument to be passed to callback function\.  For backward compatibility, 
 
-the callback will only receive a single argument if this is not given.
+the callback will only receive a single argument if this is not given\.
 
-## [win32pdh](#win32pdh).CloseQuery
+## [win32pdh](#win32pdh)\.CloseQuery
 
- __CloseQuery( *handle* __ )
+ **CloseQuery\( *handle* ** \)
 Closes a query
 
 #### Parameters
@@ -199,38 +199,38 @@ Closes a query
 
   -  *handle* : int
 
-    Handle to an open query.
+    Handle to an open query\.
 
 #### Comments
 See also[win32pdh::OpenQuery](win32pdh.md#win32pdhopenquery)
 
-## [win32pdh](#win32pdh).CollectQueryData
+## [win32pdh](#win32pdh)\.CollectQueryData
 
- __CollectQueryData( *hQuery* __ )
-Collects the current raw data value for all counters in the specified query and updates the status code of each counter.
+ **CollectQueryData\( *hQuery* ** \)
+Collects the current raw data value for all counters in the specified query and updates the status code of each counter\.
 
 #### Parameters
 
 
   -  *hQuery* : int
 
-    Handle to an open query.
+    Handle to an open query\.
 
-## [win32pdh](#win32pdh).ConnectMachine
+## [win32pdh](#win32pdh)\.ConnectMachine
 
-string = __ConnectMachine( *machineName* __ )
-connects to the specified machine, and creates and initializes a machine entry in the PDH DLL.
+string \= **ConnectMachine\( *machineName* ** \)
+connects to the specified machine, and creates and initializes a machine entry in the PDH DLL\.
 
 #### Parameters
 
 
   -  *machineName* : string
 
-    The machine name.
+    The machine name\.
 
-## [win32pdh](#win32pdh).EnumObjectItems
+## [win32pdh](#win32pdh)\.EnumObjectItems
 
-tuple = __EnumObjectItems( *DataSource*  *, machine*  *, object*  *, detailLevel*  *, flags* __ )
+tuple \= **EnumObjectItems\( *DataSource*  *, machine*  *, object*  *, detailLevel*  *, flags* ** \)
 Enumerates an object's items
 
 #### Parameters
@@ -250,15 +250,15 @@ Enumerates an object's items
 
   -  *detailLevel* : int
 
-    The level of data required, win32pdh.PERF_DETAIL_*
+    The level of data required, win32pdh\.PERF\_DETAIL\_\*
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
     Flags - must be zero
 
-## [win32pdh](#win32pdh).EnumObjects
+## [win32pdh](#win32pdh)\.EnumObjects
 
-list = __EnumObjects( *DataSource*  *, machine*  *, detailLevel*  *, refresh* __ )
+list \= **EnumObjects\( *DataSource*  *, machine*  *, detailLevel*  *, refresh* ** \)
 Enumerates objects
 
 #### Parameters
@@ -274,36 +274,36 @@ Enumerates objects
 
   -  *detailLevel* : int
 
-    The level of data required.
+    The level of data required\.
 
-  -  *refresh=1* : int
+  -  *refresh\=1* : int
 
-    Should the list be refreshed.
+    Should the list be refreshed\.
 
-## [win32pdh](#win32pdh).ExpandCounterPath
+## [win32pdh](#win32pdh)\.ExpandCounterPath
 
-[string,] = __ExpandCounterPath( *wildCardPath* __ )
-Examines the specified machine (or local machine if none is specified) for counters and instances of counters that match the wild card strings in the counter path.
+\[string,\] \= **ExpandCounterPath\( *wildCardPath* ** \)
+Examines the specified machine \(or local machine if none is specified\) for counters and instances of counters that match the wild card strings in the counter path\.
 
 #### Parameters
 
 
   -  *wildCardPath* : string
 
-    The counter path to expand.
+    The counter path to expand\.
 
 #### Comments
 The counter path format is assumed to be:
-\\machine\\object(parent/instance#index)\\countername
+\\\\machine\\\\object\(parent/instance\#index\)\\\\countername
 and the parent, instance, index, and countername elements 
 
-may contain either a valid name or a wild card character.
-The API function leaks memory on Windows XP.
+may contain either a valid name or a wild card character\.
+The API function leaks memory on Windows XP\.
 
-## [win32pdh](#win32pdh).GetCounterInfo
+## [win32pdh](#win32pdh)\.GetCounterInfo
 
- __GetCounterInfo( *handle*  *, bRetrieveExplainText* __ )
-Retrieves information about a counter, such as data size, counter type, path, and user-supplied data values.
+ **GetCounterInfo\( *handle*  *, bRetrieveExplainText* ** \)
+Retrieves information about a counter, such as data size, counter type, path, and user-supplied data values\.
 
 #### Parameters
 
@@ -316,9 +316,9 @@ Retrieves information about a counter, such as data size, counter type, path, an
 
     Should explain text be retrieved?
 
-## [win32pdh](#win32pdh).GetFormattedCounterValue
+## [win32pdh](#win32pdh)\.GetFormattedCounterValue
 
-(int,object) = __GetFormattedCounterValue( *handle*  *, format* __ )
+\(int,object\) \= **GetFormattedCounterValue\( *handle*  *, format* ** \)
 Retrieves a formatted counter value
 
 #### Parameters
@@ -330,94 +330,94 @@ Retrieves a formatted counter value
 
   -  *format* : int
 
-    Format of result.  Can be PDH_FMT_DOUBLE, PDH_FMT_LARGE, PDH_FMT_LONG and or'd with PDH_FMT_NOSCALE, PDH_FMT_1000
+    Format of result\.  Can be PDH\_FMT\_DOUBLE, PDH\_FMT\_LARGE, PDH\_FMT\_LONG and or'd with PDH\_FMT\_NOSCALE, PDH\_FMT\_1000
 
-## [win32pdh](#win32pdh).LookupPerfIndexByName
+## [win32pdh](#win32pdh)\.LookupPerfIndexByName
 
-int = __LookupPerfIndexByName( *machineName*  *, instanceName* __ )
-Returns the counter index corresponding to the specified counter name.
+int \= **LookupPerfIndexByName\( *machineName*  *, instanceName* ** \)
+Returns the counter index corresponding to the specified counter name\.
 
 #### Parameters
 
 
   -  *machineName* : string
 
-    The name of the machine where the specified counter is located. The machine name can be specified by the DNS name or the IP address.
+    The name of the machine where the specified counter is located\. The machine name can be specified by the DNS name or the IP address\.
 
   -  *instanceName* : string
 
-    The full name of the counter.
+    The full name of the counter\.
 
-## [win32pdh](#win32pdh).LookupPerfNameByIndex
+## [win32pdh](#win32pdh)\.LookupPerfNameByIndex
 
-string = __LookupPerfNameByIndex( *machineName*  *, index* __ )
-Returns the performance object name corresponding to the specified index.
+string \= **LookupPerfNameByIndex\( *machineName*  *, index* ** \)
+Returns the performance object name corresponding to the specified index\.
 
 #### Parameters
 
 
   -  *machineName* : string
 
-    The name of the machine where the specified counter is located. The machine name can be specified by the DNS name or the IP address.
+    The name of the machine where the specified counter is located\. The machine name can be specified by the DNS name or the IP address\.
 
   -  *index* : int
 
-    The index of the performance object.
+    The index of the performance object\.
 
-## [win32pdh](#win32pdh).MakeCounterPath
+## [win32pdh](#win32pdh)\.MakeCounterPath
 
- __MakeCounterPath( *elements*  *, flags* __ )
+ **MakeCounterPath\( *elements*  *, flags* ** \)
 Makes a fully resolved counter path
 
 #### Parameters
 
 
-  -  *elements* : (machineName, objectName, instanceName, parentInstance, instanceIndex, counterName)
+  -  *elements* : \(machineName, objectName, instanceName, parentInstance, instanceIndex, counterName\)
 
-    The elements to use to create the path.
+    The elements to use to create the path\.
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
-    PDH_PATH_WBEM_RESULT, PDH_PATH_WBEM_INPUT, or 0
+    PDH\_PATH\_WBEM\_RESULT, PDH\_PATH\_WBEM\_INPUT, or 0
 
-## [win32pdh](#win32pdh).OpenQuery
+## [win32pdh](#win32pdh)\.OpenQuery
 
-int = __OpenQuery( *DataSource*  *, userData* __ )
+int \= **OpenQuery\( *DataSource*  *, userData* ** \)
 Opens a new query
 
 #### Parameters
 
 
-  -  *DataSource=None* : str
+  -  *DataSource\=None* : str
 
     Name of a performaance log file, or None for live data
 
-  -  *userData=0* : int
+  -  *userData\=0* : int
 
-    User data associated with the query.
+    User data associated with the query\.
 
 #### Comments
 See also[win32pdh::CloseQuery](win32pdh.md#win32pdhclosequery)
 
-## [win32pdh](#win32pdh).ParseCounterPath
+## [win32pdh](#win32pdh)\.ParseCounterPath
 
-(machineName, objectName, instanceName, parentInstance, instanceIndex, counterName) = __ParseCounterPath( *path*  *, flags* __ )
-Parses the elements of the counter path.
+\(machineName, objectName, instanceName, parentInstance, instanceIndex, counterName\) \= **ParseCounterPath\( *path*  *, flags* ** \)
+Parses the elements of the counter path\.
 
 #### Parameters
 
 
   -  *path* : string
 
-    The counter path to parse.
+    The counter path to parse\.
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
-    Reserved - must be zero.
+    Reserved - must be zero\.
 
-## [win32pdh](#win32pdh).ParseInstanceName
+## [win32pdh](#win32pdh)\.ParseInstanceName
 
-(name, parent, instance) = __ParseInstanceName( *instanceName* __ )
+\(name, parent, instance\) \= **ParseInstanceName\( *instanceName* ** \)
 Parses the elements of the instance name
 
 #### Parameters
@@ -425,11 +425,11 @@ Parses the elements of the instance name
 
   -  *instanceName* : string
 
-    The instance name to parse.
+    The instance name to parse\.
 
-## [win32pdh](#win32pdh).RemoveCounter
+## [win32pdh](#win32pdh)\.RemoveCounter
 
- __RemoveCounter( *handle* __ )
+ **RemoveCounter\( *handle* ** \)
 Removes a previously opened counter
 
 #### Parameters
@@ -437,40 +437,40 @@ Removes a previously opened counter
 
   -  *handle* : int
 
-    Handle to an open counter.
+    Handle to an open counter\.
 
 #### Comments
 See also[win32pdh::AddCounter](win32pdh.md#win32pdhaddcounter)
 
-## [win32pdh](#win32pdh).SetCounterScaleFactor
+## [win32pdh](#win32pdh)\.SetCounterScaleFactor
 
- __SetCounterScaleFactor( *hCounter*  *, factor* __ )
-Sets the scale factor that is applied to the calculated value of the specified counter when you request the formatted counter value.
+ **SetCounterScaleFactor\( *hCounter*  *, factor* ** \)
+Sets the scale factor that is applied to the calculated value of the specified counter when you request the formatted counter value\.
 
 #### Parameters
 
 
   -  *hCounter* : int
 
-    Handle to the counter.
+    Handle to the counter\.
 
   -  *factor* : int
 
-    power of ten used to multiply value.
+    power of ten used to multiply value\.
 
-## [win32pdh](#win32pdh).ValidatePath
+## [win32pdh](#win32pdh)\.ValidatePath
 
-int = __ValidatePath( *path* __ )
-Validates that the specified counter is present on the machine specified in the counter path.
+int \= **ValidatePath\( *path* ** \)
+Validates that the specified counter is present on the machine specified in the counter path\.
 
 #### Parameters
 
 
   -  *path* : string
 
-    The counter path to validate.
+    The counter path to validate\.
 
 #### Comments
-This method returns an integer result code.  No exception is 
+This method returns an integer result code\.  No exception is 
 
-ever thrown.  Zero result indicates success.
+ever thrown\.  Zero result indicates success\.

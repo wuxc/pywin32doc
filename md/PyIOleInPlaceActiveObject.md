@@ -27,10 +27,10 @@ Description of the interface
 
     Description of EnableModeless&nbsp;
 
-## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject).EnableModeless
+## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.EnableModeless
 
- __EnableModeless( *fEnable* __ )
-Description of EnableModeless.
+ **EnableModeless\( *fEnable* ** \)
+Description of EnableModeless\.
 
 #### Parameters
 
@@ -39,22 +39,10 @@ Description of EnableModeless.
 
     Description for fEnable
 
-## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject).OnDocWindowActivate
+## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.OnDocWindowActivate
 
- __OnDocWindowActivate( *fActivate* __ )
-Description of OnDocWindowActivate.
-
-#### Parameters
-
-
-  -  *fActivate* : int
-
-    Description for fActivate
-
-## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject).OnFrameWindowActivate
-
- __OnFrameWindowActivate( *fActivate* __ )
-Description of OnFrameWindowActivate.
+ **OnDocWindowActivate\( *fActivate* ** \)
+Description of OnDocWindowActivate\.
 
 #### Parameters
 
@@ -63,15 +51,27 @@ Description of OnFrameWindowActivate.
 
     Description for fActivate
 
-## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject).ResizeBorder
+## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.OnFrameWindowActivate
 
- __ResizeBorder( *rcBorder*  *, pUIWindow*  *, fFrameWindow* __ )
-Description of ResizeBorder.
+ **OnFrameWindowActivate\( *fActivate* ** \)
+Description of OnFrameWindowActivate\.
 
 #### Parameters
 
 
-  -  *rcBorder* : (int, int, int, int)
+  -  *fActivate* : int
+
+    Description for fActivate
+
+## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.ResizeBorder
+
+ **ResizeBorder\( *rcBorder*  *, pUIWindow*  *, fFrameWindow* ** \)
+Description of ResizeBorder\.
+
+#### Parameters
+
+
+  -  *rcBorder* : \(int, int, int, int\)
 
     Description for prcBorder
 
@@ -83,10 +83,10 @@ Description of ResizeBorder.
 
     Description for fFrameWindow
 
-## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject).TranslateAccelerator
+## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.TranslateAccelerator
 
- __TranslateAccelerator( *lpmsg* __ )
-Description of TranslateAccelerator.
+ **TranslateAccelerator\( *lpmsg* ** \)
+Description of TranslateAccelerator\.
 
 #### Parameters
 

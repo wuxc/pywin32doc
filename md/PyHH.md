@@ -1,379 +1,379 @@
 # PyHH
 
-## PyHH_AKLINK Object
+## PyHH\_AKLINK Object
 
-A Python object, representing an HH_AKLINK structure
+A Python object, representing an HH\_AKLINK structure
 
 #### Comments
-Typically you create a PyHH_AKLINK (via[win32help::HH_AKLINK](win32help.md#win32helphh_aklink)) 
+Typically you create a PyHH\_AKLINK \(via[win32help::HH\_AKLINK](win32help.md#win32helphh_aklink)\) 
 
-object, and set its properties. 
+object, and set its properties\. 
 
-The object can then be passed to any function which takes an HH_AKLINK 
+The object can then be passed to any function which takes an HH\_AKLINK 
 
-object.
+object\.
 
 Use this structure to specify one or more ALink names or KLink keywords 
 
-that you want to search for.
+that you want to search for\.
 
-If the lookup yields no matching topics, HtmlHelp() checks the values of 
+If the lookup yields no matching topics, HtmlHelp\(\) checks the values of 
 
-the following HH_AKLINK members to determine what alternative action to 
+the following HH\_AKLINK members to determine what alternative action to 
 
 take:
 
-indexOnFail. If indexOnFail is TRUE, the Index tab is selected in the 
+indexOnFail\. If indexOnFail is TRUE, the Index tab is selected in the 
 
 help window specified in window, and the keyword specified in 
 
-keyword is selected in the entry field.
+keyword is selected in the entry field\.
 
-url. If indexOnFail is FALSE, the topic file specified in url 
+url\. If indexOnFail is FALSE, the topic file specified in url 
 
-appears in the help window specified in window.
-msgText and msgTitle. If indexOnFail is FALSE and url is NULL, 
+appears in the help window specified in window\.
+msgText and msgTitle\. If indexOnFail is FALSE and url is NULL, 
 
 a message box appears using the text and caption specified in 
 
-msgText and msgTitle.
+msgText and msgTitle\.
 
 Used by
- __HH_ALINK_LOOKUP__ 
- __HH_KEYWORD_LOOKUP__ 
+ **HH\_ALINK\_LOOKUP** 
+ **HH\_KEYWORD\_LOOKUP** 
 
 
 #### Properties
 
-  -  __int indexOnFail__ 
+  -  **int indexOnFail** 
     Specifies whether to display the keyword in the 
 
-Index tab of the HTML Help Viewer if the lookup fails. The value of 
+Index tab of the HTML Help Viewer if the lookup fails\. The value of 
 
-window specifies the Help Viewer.
+window specifies the Help Viewer\.
 
-  -  __string keywords__ 
+  -  **string keywords** 
     Specifies one or more ALink names or KLink 
 
-keywords to look up. Multiple entries are delimited by a semicolon.
+keywords to look up\. Multiple entries are delimited by a semicolon\.
 
-  -  __string url__ 
+  -  **string url** 
     Specifies the topic file to navigate to if the lookup 
 
-fails. url refers to a valid topic within the specified compiled help 
+fails\. url refers to a valid topic within the specified compiled help 
 
-(.chm) file and does not support Internet protocols that point to an 
+\(\.chm\) file and does not support Internet protocols that point to an 
 
-HTML file.
+HTML file\.
 
-  -  __string msgText__ 
+  -  **string msgText** 
     Specifies the text to display in a message box if 
 
-the lookup fails and indexOnFail is FALSE and url is NULL.
+the lookup fails and indexOnFail is FALSE and url is NULL\.
 
-  -  __string msgTitle__ 
+  -  **string msgTitle** 
     Specifies the caption of the message box in which 
 
-the msgText parameter appears.
+the msgText parameter appears\.
 
-  -  __string window__ 
+  -  **string window** 
     Specifies the name of the window type in which to 
 
 display one of the following:
 
-The selected topic, if the lookup yields one or more matching topics. 
+The selected topic, if the lookup yields one or more matching topics\. 
 
 The topic specified in url, if the lookup fails and a topic is specified 
 
-in url.
+in url\.
 
-The Index tab, if the lookup fails and indexOnFail is specified as TRUE.
+The Index tab, if the lookup fails and indexOnFail is specified as TRUE\.
 
-## PyHH_FTS_QUERY Object
+## PyHH\_FTS\_QUERY Object
 
-A Python object, representing an HH_FTS_QUERY 
+A Python object, representing an HH\_FTS\_QUERY 
 
 structure
 
 #### Comments
-Typically you create a PyHH_FTS_QUERY 
+Typically you create a PyHH\_FTS\_QUERY 
 
-(via[win32help::HH_FTS_QUERY](win32help.md#win32helphh_fts_query)) object, and set its properties. 
+\(via[win32help::HH\_FTS\_QUERY](win32help.md#win32helphh_fts_query)\) object, and set its properties\. 
 
-The object can then be passed to any function which takes an HH_FTS_QUERY 
+The object can then be passed to any function which takes an HH\_FTS\_QUERY 
 
-object.
+object\.
 
-Use this structure for full-text search.
+Use this structure for full-text search\.
 
 #### Properties
 
-  -  __int uniCodeStrings__ 
-    TRUE if all strings are Unicode.
+  -  **int uniCodeStrings** 
+    TRUE if all strings are Unicode\.
 
-  -  __long proximity__ 
-    Word proximity.
+  -  **long proximity** 
+    Word proximity\.
 
-  -  __int stemmedSearch__ 
-    TRUE for StemmedSearch only.
+  -  **int stemmedSearch** 
+    TRUE for StemmedSearch only\.
 
-  -  __int titleOnly__ 
-    TRUE for Title search only.
+  -  **int titleOnly** 
+    TRUE for Title search only\.
 
-  -  __int execute__ 
-    TRUE to initiate the search.
+  -  **int execute** 
+    TRUE to initiate the search\.
 
-  -  __string searchQuery__ 
-    String containing the search query.
+  -  **string searchQuery** 
+    String containing the search query\.
 
-## PyHH_POPUP Object
+## PyHH\_POPUP Object
 
-A Python object, representing an HH_POPUP structure
+A Python object, representing an HH\_POPUP structure
 
 #### Comments
-Typically you create a PyHH_POPUP (via[win32help::HH_POPUP](win32help.md#win32helphh_popup)) 
+Typically you create a PyHH\_POPUP \(via[win32help::HH\_POPUP](win32help.md#win32helphh_popup)\) 
 
-object, and set its properties. 
+object, and set its properties\. 
 
-The object can then be passed to any function which takes an HH_POPUP 
+The object can then be passed to any function which takes an HH\_POPUP 
 
-object.
+object\.
 
 Use this structure to specify or modify the attributes of a pop-up 
 
-window.
+window\.
 
 Used by
- __HH_DISPLAY_TEXT_POPUP__ 
+ **HH\_DISPLAY\_TEXT\_POPUP** 
 
 
 #### Properties
 
-  -  __long hinst__ 
+  -  **long hinst** 
     Instance handle of the program or DLL to retrieve the 
 
-string resource from. Ignored if idString is zero.
+string resource from\. Ignored if idString is zero\.
 
-  -  __unsigned int idString__ 
+  -  **unsigned int idString** 
     Specifies zero, or a resource ID in the 
 
-program or DLL specified in hinst.
+program or DLL specified in hinst\.
 
-  -  __int clrForeground__ 
+  -  **int clrForeground** 
     Specifies the RGB value to use for the 
 
-foreground color of the pop-up window. To use the system color for the 
+foreground color of the pop-up window\. To use the system color for the 
 
-window text, specify -1.
+window text, specify -1\.
 
-  -  __int clrBackground__ 
+  -  **int clrBackground** 
     Specifies the RGB value to use for the 
 
-background color of the pop-up window. To use the system color for the 
+background color of the pop-up window\. To use the system color for the 
 
-window background, specify -1.
+window background, specify -1\.
 
-  -  __string text__ 
-    Specifies the text to display if idString is zero.
+  -  **string text** 
+    Specifies the text to display if idString is zero\.
 
-  -  __string font__ 
+  -  **string font** 
     Specifies the font attributes to use for the text in 
 
-the pop-up window.
+the pop-up window\.
 Use the following format to specify font family, point size, character 
 
 set, and font format:
-facename[, point size[, charset[ BOLD ITALIC UNDERLINE]]]
-To omit an attribute, enter a comma. For example, to specify bold, 10-pt, 
+facename\[, point size\[, charset\[ BOLD ITALIC UNDERLINE\]\]\]
+To omit an attribute, enter a comma\. For example, to specify bold, 10-pt, 
 
 MS Sans Serif font, font would be:
 MS Sans Serif, 10, , BOLD
 
-  -  __tuple pt__ 
-    (x,y). Specifies (in pixels) where the top center of the 
+  -  **tuple pt** 
+    \(x,y\)\. Specifies \(in pixels\) where the top center of the 
 
-pop-up window should be located.
+pop-up window should be located\.
 
-  -  __tuple margins__ 
-    (left,top,right,bottom). Specifies (in pixels) the 
+  -  **tuple margins** 
+    \(left,top,right,bottom\)\. Specifies \(in pixels\) the 
 
 margins to use on the left, top, right, and bottom sides of the pop-up 
 
-window. The default for all rectangle members is -1.
+window\. The default for all rectangle members is -1\.
 
-## PyHH_WINTYPE Object
+## PyHH\_WINTYPE Object
 
-A Python object, representing an HH_WINTYPE structure
+A Python object, representing an HH\_WINTYPE structure
 
 #### Comments
-Typically you create a PyHH_WINTYPE (via[win32help::HH_WINTYPE](win32help.md#win32helphh_wintype)) 
+Typically you create a PyHH\_WINTYPE \(via[win32help::HH\_WINTYPE](win32help.md#win32helphh_wintype)\) 
 
-object, and set its properties. 
+object, and set its properties\. 
 
-The object can then be passed to any function which takes an HH_WINTYPE 
+The object can then be passed to any function which takes an HH\_WINTYPE 
 
-object.
+object\.
 
-Use this structure to specify or modify the attributes of a window type. 
+Use this structure to specify or modify the attributes of a window type\. 
 
-Window types can be defined by an author in a project (.hhp) file, or they 
+Window types can be defined by an author in a project \(\.hhp\) file, or they 
 
-can be defined programmatically using the HTML Help API.
-When a HH_WINTYPE structure is passed to HtmlHelp() using the __HH_SET_WIN_TYPE__ command, the HTML Help API makes a private copy of the 
+can be defined programmatically using the HTML Help API\.
+When a HH\_WINTYPE structure is passed to HtmlHelp\(\) using the **HH\_SET\_WIN\_TYPE** command, the HTML Help API makes a private copy of the 
 
-contents of the structure. The help developer is therefore responsible for 
+contents of the structure\. The help developer is therefore responsible for 
 
-freeing memory used by the HH_WINTYPE structure or character arrays 
+freeing memory used by the HH\_WINTYPE structure or character arrays 
 
-within it. The help developer can free memory after calling __HH_SET_WIN_TYPE__ .
+within it\. The help developer can free memory after calling **HH\_SET\_WIN\_TYPE** \.
 
 Used by
- __HH_SET_WIN_TYPE__ 
- __HH_GET_WIN_TYPE__ 
+ **HH\_SET\_WIN\_TYPE** 
+ **HH\_GET\_WIN\_TYPE** 
 
 
 #### Properties
 
-  -  __int uniCodeStrings__ 
+  -  **int uniCodeStrings** 
     Specifies whether the strings used in this 
 
-structure are UNICODE.
+structure are UNICODE\.
 
-  -  __int validMembers__ 
-    Specifies which members in the structure are valid.
+  -  **int validMembers** 
+    Specifies which members in the structure are valid\.
 
-  -  __int winProperties__ 
+  -  **int winProperties** 
     Specifies the properties of the window, such as 
 
 whether it is the standard HTML Help Viewer or whether it includes a 
 
-Search tab.
+Search tab\.
 
-  -  __int styles__ 
-    Specifies the styles used to create the window. These 
+  -  **int styles** 
+    Specifies the styles used to create the window\. These 
 
 styles can be ignored, combined with extended styles, or used exclusively 
 
-depending on the value of the validMembers and winProperties parameters.
+depending on the value of the validMembers and winProperties parameters\.
 
-  -  __int exStyles__ 
+  -  **int exStyles** 
     Specifies the extended styles used to create the 
 
-window. These styles can be ignored, combined with default styles, or used 
+window\. These styles can be ignored, combined with default styles, or used 
 
 exclusively depending on the value of the validMembers and winProperties 
 
-parameters.
+parameters\.
 
-  -  __int showState__ 
-    Specifies the initial display state of the window. 
+  -  **int showState** 
+    Specifies the initial display state of the window\. 
 
-Valid values are the same as those for the Win32 API ShowWindow function.
+Valid values are the same as those for the Win32 API ShowWindow function\.
 
-  -  __int hwndHelp__ 
+  -  **int hwndHelp** 
     Specifies the handle of the window if the window has 
 
-been created.
+been created\.
 
-  -  __int hwndCaller__ 
+  -  **int hwndCaller** 
     Specifies the window that will receive HTML Help 
 
-notification messages. Notification messages are sent via Windows 
+notification messages\. Notification messages are sent via Windows 
 
-WM_NOTIFY messages.
+WM\_NOTIFY messages\.
 
-  -  __int hwndToolBar__ 
-    Specifies the handle of the toolbar.
+  -  **int hwndToolBar** 
+    Specifies the handle of the toolbar\.
 
-  -  __int hwndNavigation__ 
-    Specifies the handle of the Navigation pane.
+  -  **int hwndNavigation** 
+    Specifies the handle of the Navigation pane\.
 
-  -  __int hwndHTML__ 
+  -  **int hwndHTML** 
     Specifies the handle of the Topic pane, which hosts 
 
-Shdocvw.dll.
+Shdocvw\.dll\.
 
-  -  __int navWidth__ 
+  -  **int navWidth** 
     Specifies the width of the Navigation pane when the 
 
-Help Viewer is expanded.
+Help Viewer is expanded\.
 
-  -  __int toolBarFlags__ 
-    Specifies which buttons to include on the toolbar.
+  -  **int toolBarFlags** 
+    Specifies which buttons to include on the toolbar\.
 
-  -  __int notExpanded__ 
+  -  **int notExpanded** 
     Specifies that the Help Viewer open with the 
 
-Navigation pane closed.
+Navigation pane closed\.
 
-  -  __int curNavType__ 
+  -  **int curNavType** 
     Specifies the default tab to display on the 
 
-Navigation pane.
+Navigation pane\.
 
-  -  __int idNotify__ 
+  -  **int idNotify** 
     Specifies a non-zero ID for enabling HTML Help 
 
-notification messages. This ID is passed as the wParam value of Windows 
+notification messages\. This ID is passed as the wParam value of Windows 
 
-WM_NOTIFY messages.
+WM\_NOTIFY messages\.
 
-  -  __string typeName__ 
+  -  **string typeName** 
     A null-terminated string that specifies the name 
 
-of the window type.
+of the window type\.
 
-  -  __string caption__ 
+  -  **string caption** 
     A null-terminated string that specifies the caption 
 
-to display in the title bar of the window.
+to display in the title bar of the window\.
 
-  -  __tuple windowPos__ 
-    (left,top,right,bottom). Specifies the coordinates 
+  -  **tuple windowPos** 
+    \(left,top,right,bottom\)\. Specifies the coordinates 
 
-of the window in pixels.
+of the window in pixels\.
 
-  -  __tuple HTMLPos__ 
-    (left,top,right,bottom). Specifies the coordinates 
+  -  **tuple HTMLPos** 
+    \(left,top,right,bottom\)\. Specifies the coordinates 
 
-of the Topic pane.
+of the Topic pane\.
 
-  -  __string toc__ 
-    Specifies the contents (.hhc) file to display in the 
+  -  **string toc** 
+    Specifies the contents \(\.hhc\) file to display in the 
 
-Navigation pane.
+Navigation pane\.
 
-  -  __string index__ 
-    Specifies the index (.hhk) file to display in the 
+  -  **string index** 
+    Specifies the index \(\.hhk\) file to display in the 
 
-Navigation pane.
+Navigation pane\.
 
-  -  __string file__ 
+  -  **string file** 
     Specifies the default HTML file to display in the 
 
-Topic pane.
+Topic pane\.
 
-  -  __string home__ 
+  -  **string home** 
     Specifies the file or URL to display in the Topic pane 
 
-when the Home button is clicked.
+when the Home button is clicked\.
 
-  -  __string jump1__ 
+  -  **string jump1** 
     Specifies the text to display underneath the Jump1 
 
-button.
+button\.
 
-  -  __string jump2__ 
+  -  **string jump2** 
     Specifies the text to display underneath the Jump2 
 
-button.
+button\.
 
-  -  __string urlJump1__ 
+  -  **string urlJump1** 
     Specifies the URL to jump to when the Jump1 button 
 
-is clicked.
+is clicked\.
 
-  -  __string urlJump2__ 
+  -  **string urlJump2** 
     Specifies the URL to jump to when the Jump2 button 
 
-is clicked.
+is clicked\.

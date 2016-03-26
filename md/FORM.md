@@ -1,19 +1,19 @@
 # FORM
 
-## FORM_INFO_1 Object
+## FORM\_INFO\_1 Object
 
-A dictionary containing FORM_INFO_1W data
+A dictionary containing FORM\_INFO\_1W data
 
 #### Properties
 
-  -  __int Flags__ 
-    FORM_USER, FORM_BUILTIN, or FORM_PRINTER
+  -  **int Flags** 
+    FORM\_USER, FORM\_BUILTIN, or FORM\_PRINTER
 
-  -  __[PyUnicode](#pyunicode)Name__ 
+  -  **[PyUnicode](#pyunicode)Name** 
     Name of form
 
-  -  __dict Size__ 
-    A dictionary representing a SIZEL structure {'cx':int,'cy':int}
+  -  **dict Size** 
+    A dictionary representing a SIZEL structure \{'cx':int,'cy':int\}
 
-  -  __dict ImageableArea__ 
-    A dictionary representing a RECTL structure {'left':int, 'top':int, 'right':int, 'bottom':int}
+  -  **dict ImageableArea** 
+    A dictionary representing a RECTL structure \{'left':int, 'top':int, 'right':int, 'bottom':int\}

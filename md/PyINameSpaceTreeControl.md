@@ -83,10 +83,10 @@ Description of the interface
 
     Description of CollapseAll&nbsp;
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).AppendRoot
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.AppendRoot
 
- __AppendRoot( *psiRoot*  *, grfEnumFlags*  *, grfRootStyle*  *, pif* __ )
-Description of AppendRoot.
+ **AppendRoot\( *psiRoot*  *, grfEnumFlags*  *, grfRootStyle*  *, pif* ** \)
+Description of AppendRoot\.
 
 #### Parameters
 
@@ -103,31 +103,19 @@ Description of AppendRoot.
 
     Description for grfRootStyle
 
-  -  *pif* : __PyIShellItemFilter__ 
+  -  *pif* : **PyIShellItemFilter** 
 
     Description for pif
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).CollapseAll
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.CollapseAll
 
- __CollapseAll(__ )
-Description of CollapseAll.
+ **CollapseAll\(** \)
+Description of CollapseAll\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).EnsureItemVisible
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.EnsureItemVisible
 
- __EnsureItemVisible( *psi* __ )
-Description of EnsureItemVisible.
-
-#### Parameters
-
-
-  -  *psi* :[PyIShellItem](#pyishellitem)
-
-    Description for psi
-
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).GetItemCustomState
-
- __GetItemCustomState( *psi* __ )
-Description of GetItemCustomState.
+ **EnsureItemVisible\( *psi* ** \)
+Description of EnsureItemVisible\.
 
 #### Parameters
 
@@ -136,15 +124,27 @@ Description of GetItemCustomState.
 
     Description for psi
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).GetItemRect
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetItemCustomState
 
- __GetItemRect(__ )
-Description of GetItemRect.
+ **GetItemCustomState\( *psi* ** \)
+Description of GetItemCustomState\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).GetItemState
+#### Parameters
 
- __GetItemState( *psi*  *, nstcisMask* __ )
-Description of GetItemState.
+
+  -  *psi* :[PyIShellItem](#pyishellitem)
+
+    Description for psi
+
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetItemRect
+
+ **GetItemRect\(** \)
+Description of GetItemRect\.
+
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetItemState
+
+ **GetItemState\( *psi*  *, nstcisMask* ** \)
+Description of GetItemState\.
 
 #### Parameters
 
@@ -157,10 +157,10 @@ Description of GetItemState.
 
     Description for nstcisMask
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).GetNextItem
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetNextItem
 
- __GetNextItem( *psi*  *, nstcgi* __ )
-Description of GetNextItem.
+ **GetNextItem\( *psi*  *, nstcgi* ** \)
+Description of GetNextItem\.
 
 #### Parameters
 
@@ -173,32 +173,32 @@ Description of GetNextItem.
 
     Description for nstcgi
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).GetRootItems
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetRootItems
 
- __GetRootItems(__ )
-Description of GetRootItems.
+ **GetRootItems\(** \)
+Description of GetRootItems\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).GetSelectedItems
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetSelectedItems
 
- __GetSelectedItems(__ )
-Description of GetSelectedItems.
+ **GetSelectedItems\(** \)
+Description of GetSelectedItems\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).HitTest
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.HitTest
 
- __HitTest( *pt* __ )
-Description of HitTest.
+ **HitTest\( *pt* ** \)
+Description of HitTest\.
 
 #### Parameters
 
 
-  -  *pt* : (int, int)
+  -  *pt* : \(int, int\)
 
     Description for ppt
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).Initialize
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.Initialize
 
- __Initialize( *hwndParent*  *, prc*  *, nsctsFlags* __ )
-Description of Initialize.
+ **Initialize\( *hwndParent*  *, prc*  *, nsctsFlags* ** \)
+Description of Initialize\.
 
 #### Parameters
 
@@ -207,7 +207,7 @@ Description of Initialize.
 
     Description for hwndParent
 
-  -  *prc* : (int, int, int, int)
+  -  *prc* : \(int, int, int, int\)
 
     Description for prc
 
@@ -215,10 +215,10 @@ Description of Initialize.
 
     Description for nsctsFlags
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).InsertRoot
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.InsertRoot
 
- __InsertRoot( *iIndex*  *, psiRoot*  *, grfEnumFlags*  *, grfRootStyle*  *, pif* __ )
-Description of InsertRoot.
+ **InsertRoot\( *iIndex*  *, psiRoot*  *, grfEnumFlags*  *, grfRootStyle*  *, pif* ** \)
+Description of InsertRoot\.
 
 #### Parameters
 
@@ -239,19 +239,19 @@ Description of InsertRoot.
 
     Description for grfRootStyle
 
-  -  *pif* : __PyIShellItemFilter__ 
+  -  *pif* : **PyIShellItemFilter** 
 
     Description for pif
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).RemoveAllRoots
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.RemoveAllRoots
 
- __RemoveAllRoots(__ )
-Description of RemoveAllRoots.
+ **RemoveAllRoots\(** \)
+Description of RemoveAllRoots\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).RemoveRoot
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.RemoveRoot
 
- __RemoveRoot( *psiRoot* __ )
-Description of RemoveRoot.
+ **RemoveRoot\( *psiRoot* ** \)
+Description of RemoveRoot\.
 
 #### Parameters
 
@@ -260,10 +260,10 @@ Description of RemoveRoot.
 
     Description for psiRoot
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).SetItemCustomState
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.SetItemCustomState
 
- __SetItemCustomState( *psi*  *, iStateNumber* __ )
-Description of SetItemCustomState.
+ **SetItemCustomState\( *psi*  *, iStateNumber* ** \)
+Description of SetItemCustomState\.
 
 #### Parameters
 
@@ -276,10 +276,10 @@ Description of SetItemCustomState.
 
     Description for iStateNumber
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).SetItemState
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.SetItemState
 
- __SetItemState( *psi*  *, nstcisMask*  *, nstcisFlags* __ )
-Description of SetItemState.
+ **SetItemState\( *psi*  *, nstcisMask*  *, nstcisFlags* ** \)
+Description of SetItemState\.
 
 #### Parameters
 
@@ -296,22 +296,22 @@ Description of SetItemState.
 
     Description for nstcisFlags
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).SetTheme
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.SetTheme
 
- __SetTheme( *pszTheme* __ )
-Description of SetTheme.
+ **SetTheme\( *pszTheme* ** \)
+Description of SetTheme\.
 
 #### Parameters
 
 
-  -  *pszTheme* : __unicode__ 
+  -  *pszTheme* : **unicode** 
 
     Description for pszTheme
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).TreeAdvise
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.TreeAdvise
 
- __TreeAdvise( *punk* __ )
-Description of TreeAdvise.
+ **TreeAdvise\( *punk* ** \)
+Description of TreeAdvise\.
 
 #### Parameters
 
@@ -320,10 +320,10 @@ Description of TreeAdvise.
 
     Description for punk
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol).TreeUnadvise
+## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.TreeUnadvise
 
- __TreeUnadvise( *dwCookie* __ )
-Description of TreeUnadvise.
+ **TreeUnadvise\( *dwCookie* ** \)
+Description of TreeUnadvise\.
 
 #### Parameters
 

@@ -2,7 +2,7 @@
 
 ## PyIDispatchEx Object
 
-A OLE automation client object that uses the IDispatchEx scripting interface..
+A OLE automation client object that uses the IDispatchEx scripting interface\.\.
 
 #### Methods
 
@@ -13,7 +13,7 @@ A OLE automation client object that uses the IDispatchEx scripting interface..
 
   - [InvokeEx](PyIDispatchEx.md#pyidispatchexinvokeex)
 
-    Provides access to properties and methods exposed by a __PyIDispatchEx__ object.&nbsp;
+    Provides access to properties and methods exposed by a **PyIDispatchEx** object\.&nbsp;
 
   - [DeleteMemberByName](PyIDispatchEx.md#pyidispatchexdeletememberbyname)
 
@@ -33,12 +33,12 @@ A OLE automation client object that uses the IDispatchEx scripting interface..
 
   - [GetNextDispID](PyIDispatchEx.md#pyidispatchexgetnextdispid)
 
-    Enumerates member ids.&nbsp;
+    Enumerates member ids\.&nbsp;
 
 
-## [PyIDispatchEx](#pyidispatchex).DeleteMemberByDispID
+## [PyIDispatchEx](#pyidispatchex)\.DeleteMemberByDispID
 
- __DeleteMemberByDispID( *dispid* __ )
+ **DeleteMemberByDispID\( *dispid* ** \)
 
 
 #### Parameters
@@ -48,9 +48,9 @@ A OLE automation client object that uses the IDispatchEx scripting interface..
 
     
 
-## [PyIDispatchEx](#pyidispatchex).DeleteMemberByName
+## [PyIDispatchEx](#pyidispatchex)\.DeleteMemberByName
 
- __DeleteMemberByName( *name*  *, fdex* __ )
+ **DeleteMemberByName\( *name*  *, fdex* ** \)
 
 
 #### Parameters
@@ -64,9 +64,9 @@ A OLE automation client object that uses the IDispatchEx scripting interface..
 
     Determines the options
 
-## [PyIDispatchEx](#pyidispatchex).GetDispID
+## [PyIDispatchEx](#pyidispatchex)\.GetDispID
 
-int = __GetDispID( *name*  *, fdex* __ )
+int \= **GetDispID\( *name*  *, fdex* ** \)
 Returns the member id for a name
 
 #### Parameters
@@ -78,11 +78,11 @@ Returns the member id for a name
 
   -  *fdex* : int
 
-    Determines the options for obtaining the member identifier. This can be a combination of the fdex* constants:
+    Determines the options for obtaining the member identifier\. This can be a combination of the fdex\* constants:
 
-## [PyIDispatchEx](#pyidispatchex).GetMemberName
+## [PyIDispatchEx](#pyidispatchex)\.GetMemberName
 
-str = __GetMemberName( *dispid* __ )
+str \= **GetMemberName\( *dispid* ** \)
 Returns the name associated with a member id
 
 #### Parameters
@@ -92,10 +92,10 @@ Returns the name associated with a member id
 
     The member id
 
-## [PyIDispatchEx](#pyidispatchex).GetMemberProperties
+## [PyIDispatchEx](#pyidispatchex)\.GetMemberProperties
 
-int = __GetMemberProperties( *dispid*  *, fdex* __ )
-Returns mask of fdex* flags describing a member
+int \= **GetMemberProperties\( *dispid*  *, fdex* ** \)
+Returns mask of fdex\* flags describing a member
 
 #### Parameters
 
@@ -106,12 +106,12 @@ Returns mask of fdex* flags describing a member
 
   -  *fdex* : int
 
-    fdex* flags specifying which properties to return
+    fdex\* flags specifying which properties to return
 
-## [PyIDispatchEx](#pyidispatchex).GetNextDispID
+## [PyIDispatchEx](#pyidispatchex)\.GetNextDispID
 
-int = __GetNextDispID( *fdex*  *, dispid* __ )
-Enumerates member ids.
+int \= **GetNextDispID\( *fdex*  *, dispid* ** \)
+Enumerates member ids\.
 
 #### Parameters
 
@@ -122,12 +122,12 @@ Enumerates member ids.
 
   -  *dispid* : int
 
-    Current member, or DISPID_STARTENUM to begin enumeration. GetNextDispID will retrieve the item in the enumeration after this one.
+    Current member, or DISPID\_STARTENUM to begin enumeration\. GetNextDispID will retrieve the item in the enumeration after this one\.
 
-## [PyIDispatchEx](#pyidispatchex).InvokeEx
+## [PyIDispatchEx](#pyidispatchex)\.InvokeEx
 
-object = __InvokeEx( *dispid*  *, lcid*  *, flags*  *, args*  *, types*  *, returnDesc*  *, serviceProvider* __ )
-Provides access to properties and methods exposed by a[PyIDispatchEx](#pyidispatchex)object.
+object \= **InvokeEx\( *dispid*  *, lcid*  *, flags*  *, args*  *, types*  *, returnDesc*  *, serviceProvider* ** \)
+Provides access to properties and methods exposed by a[PyIDispatchEx](#pyidispatchex)object\.
 
 #### Parameters
 
@@ -144,18 +144,18 @@ Provides access to properties and methods exposed by a[PyIDispatchEx](#pyidispat
 
     
 
-  -  *args* : [object, ...]
+  -  *args* : \[object, \.\.\.\]
 
-    The arguments.
+    The arguments\.
 
-  -  *types=None* : [object, ...]
+  -  *types\=None* : \[object, \.\.\.\]
 
-    A tuple of type description object, or None if type descriptions are not available.
+    A tuple of type description object, or None if type descriptions are not available\.
 
-  -  *returnDesc=1* : object|int
+  -  *returnDesc\=1* : object|int
 
-    If types==None, should be a BOOL indicating if the result is needed.  If types is a tuple, then should a be type description.
+    If types\=\=None, should be a BOOL indicating if the result is needed\.  If types is a tuple, then should a be type description\.
 
-  -  *serviceProvider=None* :[PyIServiceProvider](#pyiserviceprovider)
+  -  *serviceProvider\=None* :[PyIServiceProvider](#pyiserviceprovider)
 
-    A service provider object supplied by the caller which allows the object to obtain services from the caller. Can be None.
+    A service provider object supplied by the caller which allows the object to obtain services from the caller\. Can be None\.

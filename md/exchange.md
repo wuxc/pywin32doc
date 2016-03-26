@@ -9,23 +9,23 @@ A COM interface to Exchange's API
 
   - [HrGetExchangeStatus](exchange.md#exchangehrgetexchangestatus)
 
-    Obtains the current state of the server on a computer.&nbsp;
+    Obtains the current state of the server on a computer\.&nbsp;
 
   - [HrGetMailboxDN](exchange.md#exchangehrgetmailboxdn)
 
-    Retrieves the distinguished name (DN) for a mailbox&nbsp;
+    Retrieves the distinguished name \(DN\) for a mailbox&nbsp;
 
   - [HrGetServerDN](exchange.md#exchangehrgetserverdn)
 
-    Retrieves the distinguished name (DN) for a server&nbsp;
+    Retrieves the distinguished name \(DN\) for a server&nbsp;
 
   - [HrMAPIFindDefaultMsgStore](exchange.md#exchangehrmapifinddefaultmsgstore)
 
-    Retrieves the entry identifier of the default information store.&nbsp;
+    Retrieves the entry identifier of the default information store\.&nbsp;
 
   - [HrMAPIFindIPMSubtree](exchange.md#exchangehrmapifindipmsubtree)
 
-    Retrieves the entry ID of the IPM (interpersonal message) subtree folder&nbsp;
+    Retrieves the entry ID of the IPM \(interpersonal message\) subtree folder&nbsp;
 
   - [HrMAPIFindInbox](exchange.md#exchangehrmapifindinbox)
 
@@ -33,19 +33,19 @@ A COM interface to Exchange's API
 
   - [HrMAPIFindSubfolderEx](exchange.md#exchangehrmapifindsubfolderex)
 
-    Retrieves a subfolder in an information store using the hierarchical path name of the folder.&nbsp;
+    Retrieves a subfolder in an information store using the hierarchical path name of the folder\.&nbsp;
 
   - [HrMAPIFindFolder](exchange.md#exchangehrmapifindfolder)
 
-    Retrieves the entry ID for a folder in an information store using the hierarchical path name of the folder.&nbsp;
+    Retrieves the entry ID for a folder in an information store using the hierarchical path name of the folder\.&nbsp;
 
   - [HrMAPIFindFolderEx](exchange.md#exchangehrmapifindfolderex)
 
-    Retrieves the entry ID of a folder in an information store using the hierarchical path name of the folder.&nbsp;
+    Retrieves the entry ID of a folder in an information store using the hierarchical path name of the folder\.&nbsp;
 
   - [HrMAPIFindStore](exchange.md#exchangehrmapifindstore)
 
-    Retrieves a pointer to the entry identifier of an information store from the display name of the store.&nbsp;
+    Retrieves a pointer to the entry identifier of an information store from the display name of the store\.&nbsp;
 
   - [HrCreateProfileName](exchange.md#exchangehrcreateprofilename)
 
@@ -57,55 +57,55 @@ A COM interface to Exchange's API
 
   - [HrFindExchangeGlobalAddressList](exchange.md#exchangehrfindexchangeglobaladdresslist)
 
-    Retrieves the entry identifier of the global address list (GAL) container in the address book.&nbsp;
+    Retrieves the entry identifier of the global address list \(GAL\) container in the address book\.&nbsp;
 
   - [HrMailboxLogon](exchange.md#exchangehrmailboxlogon)
 
-    Logs on a server and mailbox.&nbsp;
+    Logs on a server and mailbox\.&nbsp;
 
   - [HrMailboxLogoff](exchange.md#exchangehrmailboxlogoff)
 
-    Logs off a server and mailbox.&nbsp;
+    Logs off a server and mailbox\.&nbsp;
 
   - [HrMAPIOpenFolderEx](exchange.md#exchangehrmapiopenfolderex)
 
-    Opens a folder in the information store from the hierarchical path name of the folder.&nbsp;
+    Opens a folder in the information store from the hierarchical path name of the folder\.&nbsp;
 
   - [HrMAPISetPropBoolean](exchange.md#exchangehrmapisetpropboolean)
 
-    Sets a boolean property.&nbsp;
+    Sets a boolean property\.&nbsp;
 
   - [HrMAPISetPropLong](exchange.md#exchangehrmapisetproplong)
 
-    Sets a long property.&nbsp;
+    Sets a long property\.&nbsp;
 
   - [HrOpenExchangePublicStore](exchange.md#exchangehropenexchangepublicstore)
 
-    Retrieves an interface to the public information store provider.&nbsp;
+    Retrieves an interface to the public information store provider\.&nbsp;
 
   - [HrOpenExchangePrivateStore](exchange.md#exchangehropenexchangeprivatestore)
 
-    Locates the primary user information store provider.&nbsp;
+    Locates the primary user information store provider\.&nbsp;
 
   - [HrOpenExchangePublicFolders](exchange.md#exchangehropenexchangepublicfolders)
 
-    Opens the root of the public folder hierarchy in the public information store.&nbsp;
+    Opens the root of the public folder hierarchy in the public information store\.&nbsp;
 
   - [HrOpenSessionObject](exchange.md#exchangehropensessionobject)
 
-    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for the current session object.&nbsp;
+    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for the current session object\.&nbsp;
 
   - [HrOpenSiteContainer](exchange.md#exchangehropensitecontainer)
 
-    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site object.&nbsp;
+    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site object\.&nbsp;
 
   - [HrOpenSiteContainerAddressing](exchange.md#exchangehropensitecontaineraddressing)
 
-    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site-addressing object.&nbsp;
+    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site-addressing object\.&nbsp;
 
-## [exchange](#exchange).HrCreateDirEntryIdEx
+## [exchange](#exchange)\.HrCreateDirEntryIdEx
 
-string = __HrCreateDirEntryIdEx( *addrBook*  *, distinguishedName* __ )
+string \= **HrCreateDirEntryIdEx\( *addrBook*  *, distinguishedName* ** \)
 Creates a directory identifier for a MAPI object, given the address of the object in the directory
 
 #### Parameters
@@ -117,11 +117,11 @@ Creates a directory identifier for a MAPI object, given the address of the objec
 
   -  *distinguishedName* : string
 
-    The dn of the object to obtain the entry ID for.
+    The dn of the object to obtain the entry ID for\.
 
-## [exchange](#exchange).HrCreateProfileName
+## [exchange](#exchange)\.HrCreateProfileName
 
-string = __HrCreateProfileName( *profPrefix* __ )
+string \= **HrCreateProfileName\( *profPrefix* ** \)
 Creates a profile with the specified name
 
 #### Parameters
@@ -129,12 +129,12 @@ Creates a profile with the specified name
 
   -  *profPrefix* : string/[PyUnicode](#pyunicode)
 
-    A prefix for the new profile.
+    A prefix for the new profile\.
 
-## [exchange](#exchange).HrFindExchangeGlobalAddressList
+## [exchange](#exchange)\.HrFindExchangeGlobalAddressList
 
-string = __HrFindExchangeGlobalAddressList( *addrBook* __ )
-Retrieves the entry identifier of the global address list (GAL) container in the address book.
+string \= **HrFindExchangeGlobalAddressList\( *addrBook* ** \)
+Retrieves the entry identifier of the global address list \(GAL\) container in the address book\.
 
 #### Parameters
 
@@ -143,49 +143,49 @@ Retrieves the entry identifier of the global address list (GAL) container in the
 
     The interface containing the address book
 
-## [exchange](#exchange).HrGetExchangeStatus
+## [exchange](#exchange)\.HrGetExchangeStatus
 
-int, int = __HrGetExchangeStatus( *server* __ )
-Obtains the current state of the server on a computer.
+int, int \= **HrGetExchangeStatus\( *server* ** \)
+Obtains the current state of the server on a computer\.
 
 #### Parameters
 
 
   -  *server* : string/[PyUnicode](#pyunicode)
 
-    The name of the server to query.
+    The name of the server to query\.
 
 #### Return Value
 The result is a tuple of serviceState, serverState
 
-## [exchange](#exchange).HrGetMailboxDN
+## [exchange](#exchange)\.HrGetMailboxDN
 
-string = __HrGetMailboxDN( *session* __ )
-Retrieves the distinguished name (DN) for a mailbox
-
-#### Parameters
-
-
-  -  *session* : __IMAPISession__ 
-
-    The root folder.
-
-## [exchange](#exchange).HrGetServerDN
-
-string = __HrGetServerDN( *session* __ )
-Retrieves the distinguished name (DN) for a server
+string \= **HrGetMailboxDN\( *session* ** \)
+Retrieves the distinguished name \(DN\) for a mailbox
 
 #### Parameters
 
 
-  -  *session* : __IMAPISession__ 
+  -  *session* : **IMAPISession** 
 
-    The root folder.
+    The root folder\.
 
-## [exchange](#exchange).HrMAPIFindDefaultMsgStore
+## [exchange](#exchange)\.HrGetServerDN
 
-string = __HrMAPIFindDefaultMsgStore( *session* __ )
-Retrieves the entry identifier of the default information store.
+string \= **HrGetServerDN\( *session* ** \)
+Retrieves the distinguished name \(DN\) for a server
+
+#### Parameters
+
+
+  -  *session* : **IMAPISession** 
+
+    The root folder\.
+
+## [exchange](#exchange)\.HrMAPIFindDefaultMsgStore
+
+string \= **HrMAPIFindDefaultMsgStore\( *session* ** \)
+Retrieves the entry identifier of the default information store\.
 
 #### Parameters
 
@@ -194,10 +194,10 @@ Retrieves the entry identifier of the default information store.
 
     
 
-## [exchange](#exchange).HrMAPIFindFolder
+## [exchange](#exchange)\.HrMAPIFindFolder
 
-string = __HrMAPIFindFolder( *folder*  *, name* __ )
-Retrieves the entry ID for a folder in an information store using the hierarchical path name of the folder.
+string \= **HrMAPIFindFolder\( *folder*  *, name* ** \)
+Retrieves the entry ID for a folder in an information store using the hierarchical path name of the folder\.
 
 #### Parameters
 
@@ -210,10 +210,10 @@ Retrieves the entry ID for a folder in an information store using the hierarchic
 
     Name of the folder
 
-## [exchange](#exchange).HrMAPIFindFolderEx
+## [exchange](#exchange)\.HrMAPIFindFolderEx
 
-string = __HrMAPIFindFolderEx( *msgStore*  *, sepString*  *, path* __ )
-Retrieves the entry ID of a folder in an information store using the hierarchical path name of the folder.
+string \= **HrMAPIFindFolderEx\( *msgStore*  *, sepString*  *, path* ** \)
+Retrieves the entry ID of a folder in an information store using the hierarchical path name of the folder\.
 
 #### Parameters
 
@@ -224,16 +224,16 @@ Retrieves the entry ID of a folder in an information store using the hierarchica
 
   -  *sepString* : string
 
-    The character seperating the folder names - eg '\\'
+    The character seperating the folder names - eg '\\\\'
 
   -  *path* : string
 
     Path to the folder
 
-## [exchange](#exchange).HrMAPIFindIPMSubtree
+## [exchange](#exchange)\.HrMAPIFindIPMSubtree
 
-string = __HrMAPIFindIPMSubtree( *msgStore* __ )
-Retrieves the entry ID of the IPM (interpersonal message) subtree folder
+string \= **HrMAPIFindIPMSubtree\( *msgStore* ** \)
+Retrieves the entry ID of the IPM \(interpersonal message\) subtree folder
 
 #### Parameters
 
@@ -242,9 +242,9 @@ Retrieves the entry ID of the IPM (interpersonal message) subtree folder
 
     
 
-## [exchange](#exchange).HrMAPIFindInbox
+## [exchange](#exchange)\.HrMAPIFindInbox
 
-string = __HrMAPIFindInbox( *msgStore* __ )
+string \= **HrMAPIFindInbox\( *msgStore* ** \)
 Retrieves the Entry ID of the IPM inbox folder
 
 #### Parameters
@@ -254,10 +254,10 @@ Retrieves the Entry ID of the IPM inbox folder
 
     
 
-## [exchange](#exchange).HrMAPIFindStore
+## [exchange](#exchange)\.HrMAPIFindStore
 
-[PyIMsgStore](#pyimsgstore)= __HrMAPIFindStore( *session*  *, name* __ )
-Retrieves a pointer to the entry identifier of an information store from the display name of the store.
+[PyIMsgStore](#pyimsgstore)\= **HrMAPIFindStore\( *session*  *, name* ** \)
+Retrieves a pointer to the entry identifier of an information store from the display name of the store\.
 
 #### Parameters
 
@@ -270,30 +270,30 @@ Retrieves a pointer to the entry identifier of an information store from the dis
 
     
 
-## [exchange](#exchange).HrMAPIFindSubfolderEx
+## [exchange](#exchange)\.HrMAPIFindSubfolderEx
 
-[PyIMsgStore](#pyimsgstore)= __HrMAPIFindSubfolderEx( *rootFolder*  *, sep*  *, name* __ )
-Retrieves a subfolder in an information store using the hierarchical path name of the folder.
+[PyIMsgStore](#pyimsgstore)\= **HrMAPIFindSubfolderEx\( *rootFolder*  *, sep*  *, name* ** \)
+Retrieves a subfolder in an information store using the hierarchical path name of the folder\.
 
 #### Parameters
 
 
   -  *rootFolder* :[PyIMAPIFolder](#pyimapifolder)
 
-    The root folder.
+    The root folder\.
 
   -  *sep* : string/[PyUnicode](#pyunicode)
 
-    The folder seperator character.
+    The folder seperator character\.
 
   -  *name* : string/[PyUnicode](#pyunicode)
 
     The folder name
 
-## [exchange](#exchange).HrMAPIOpenFolderEx
+## [exchange](#exchange)\.HrMAPIOpenFolderEx
 
-[PyIMAPIFolder](#pyimapifolder)= __HrMAPIOpenFolderEx( *msgStore*  *, sep*  *, name* __ )
-Opens a folder in the information store from the hierarchical path name of the folder.
+[PyIMAPIFolder](#pyimapifolder)\= **HrMAPIOpenFolderEx\( *msgStore*  *, sep*  *, name* ** \)
+Opens a folder in the information store from the hierarchical path name of the folder\.
 
 #### Parameters
 
@@ -304,32 +304,16 @@ Opens a folder in the information store from the hierarchical path name of the f
 
   -  *sep* : string/[PyUnicode](#pyunicode)
 
-    The folder seperator character.
+    The folder seperator character\.
 
   -  *name* : string/[PyUnicode](#pyunicode)
 
     The folder name
 
-## [exchange](#exchange).HrMAPISetPropBoolean
+## [exchange](#exchange)\.HrMAPISetPropBoolean
 
- __HrMAPISetPropBoolean( *obj*  *, tag* __ )
-Sets a boolean property.
-
-#### Parameters
-
-
-  -  *obj* :[PyIMAPIProp](#pyimapiprop)
-
-    The object to set
-
-  -  *tag* : int
-
-    The property tag
-
-## [exchange](#exchange).HrMAPISetPropLong
-
- __HrMAPISetPropLong( *obj*  *, tag* __ )
-Sets a long property.
+ **HrMAPISetPropBoolean\( *obj*  *, tag* ** \)
+Sets a boolean property\.
 
 #### Parameters
 
@@ -342,22 +326,38 @@ Sets a long property.
 
     The property tag
 
-## [exchange](#exchange).HrMailboxLogoff
+## [exchange](#exchange)\.HrMAPISetPropLong
 
- __HrMailboxLogoff( *inbox* __ )
-Logs off a server and mailbox.
+ **HrMAPISetPropLong\( *obj*  *, tag* ** \)
+Sets a long property\.
+
+#### Parameters
+
+
+  -  *obj* :[PyIMAPIProp](#pyimapiprop)
+
+    The object to set
+
+  -  *tag* : int
+
+    The property tag
+
+## [exchange](#exchange)\.HrMailboxLogoff
+
+ **HrMailboxLogoff\( *inbox* ** \)
+Logs off a server and mailbox\.
 
 #### Parameters
 
 
   -  *inbox* :[PyIMsgStore](#pyimsgstore)
 
-    The open inbox.
+    The open inbox\.
 
-## [exchange](#exchange).HrMailboxLogon
+## [exchange](#exchange)\.HrMailboxLogon
 
-[PyIMsgStore](#pyimsgstore)= __HrMailboxLogon( *session*  *, msgStore*  *, msgStoreDN*  *, mailboxDN* __ )
-Logs on a server and mailbox.
+[PyIMsgStore](#pyimsgstore)\= **HrMailboxLogon\( *session*  *, msgStore*  *, msgStoreDN*  *, mailboxDN* ** \)
+Logs on a server and mailbox\.
 
 #### Parameters
 
@@ -378,10 +378,10 @@ Logs on a server and mailbox.
 
     
 
-## [exchange](#exchange).HrOpenExchangePrivateStore
+## [exchange](#exchange)\.HrOpenExchangePrivateStore
 
-[PyIMsgStore](#pyimsgstore)= __HrOpenExchangePrivateStore( *session* __ )
-Locates the primary user information store provider.
+[PyIMsgStore](#pyimsgstore)\= **HrOpenExchangePrivateStore\( *session* ** \)
+Locates the primary user information store provider\.
 
 #### Parameters
 
@@ -390,10 +390,10 @@ Locates the primary user information store provider.
 
     The MAPI session object
 
-## [exchange](#exchange).HrOpenExchangePublicFolders
+## [exchange](#exchange)\.HrOpenExchangePublicFolders
 
-[PyIMAPIFolder](#pyimapifolder)= __HrOpenExchangePublicFolders( *store* __ )
-Opens the root of the public folder hierarchy in the public information store.
+[PyIMAPIFolder](#pyimapifolder)\= **HrOpenExchangePublicFolders\( *store* ** \)
+Opens the root of the public folder hierarchy in the public information store\.
 
 #### Parameters
 
@@ -402,22 +402,10 @@ Opens the root of the public folder hierarchy in the public information store.
 
     
 
-## [exchange](#exchange).HrOpenExchangePublicStore
+## [exchange](#exchange)\.HrOpenExchangePublicStore
 
-[PyIMsgStore](#pyimsgstore)= __HrOpenExchangePublicStore( *session* __ )
-Retrieves an interface to the public information store provider.
-
-#### Parameters
-
-
-  -  *session* :[PyIMAPISession](#pyimapisession)
-
-    The MAPI session object
-
-## [exchange](#exchange).HrOpenSessionObject
-
-[PyIMAPIProp](#pyimapiprop)= __HrOpenSessionObject( *session* __ )
-Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for the current session object.
+[PyIMsgStore](#pyimsgstore)\= **HrOpenExchangePublicStore\( *session* ** \)
+Retrieves an interface to the public information store provider\.
 
 #### Parameters
 
@@ -426,22 +414,10 @@ Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for the current session object
 
     The MAPI session object
 
-## [exchange](#exchange).HrOpenSiteContainer
+## [exchange](#exchange)\.HrOpenSessionObject
 
-[PyIMAPIProp](#pyimapiprop)= __HrOpenSiteContainer( *session* __ )
-Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site object.
-
-#### Parameters
-
-
-  -  *session* :[PyIMAPISession](#pyimapisession)
-
-    The MAPI session object
-
-## [exchange](#exchange).HrOpenSiteContainerAddressing
-
-[PyIMAPIProp](#pyimapiprop)= __HrOpenSiteContainerAddressing( *session* __ )
-Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site-addressing object.
+[PyIMAPIProp](#pyimapiprop)\= **HrOpenSessionObject\( *session* ** \)
+Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for the current session object\.
 
 #### Parameters
 
@@ -450,21 +426,45 @@ Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site-addressing object.
 
     The MAPI session object
 
-## OPENSTORE_HOME_LOGON
- __const exchange.OPENSTORE_HOME_LOGON;__ 
+## [exchange](#exchange)\.HrOpenSiteContainer
+
+[PyIMAPIProp](#pyimapiprop)\= **HrOpenSiteContainer\( *session* ** \)
+Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site object\.
+
+#### Parameters
 
 
-## OPENSTORE_OVERRIDE_HOME_MDB
- __const exchange.OPENSTORE_OVERRIDE_HOME_MDB;__ 
+  -  *session* :[PyIMAPISession](#pyimapisession)
+
+    The MAPI session object
+
+## [exchange](#exchange)\.HrOpenSiteContainerAddressing
+
+[PyIMAPIProp](#pyimapiprop)\= **HrOpenSiteContainerAddressing\( *session* ** \)
+Retrieves a MAPI[PyIMAPIProp](#pyimapiprop)object for a site-addressing object\.
+
+#### Parameters
 
 
-## OPENSTORE_PUBLIC
- __const exchange.OPENSTORE_PUBLIC;__ 
+  -  *session* :[PyIMAPISession](#pyimapisession)
+
+    The MAPI session object
+
+## OPENSTORE\_HOME\_LOGON
+ **const exchange\.OPENSTORE\_HOME\_LOGON;** 
 
 
-## OPENSTORE_TAKE_OWNERSHIP
- __const exchange.OPENSTORE_TAKE_OWNERSHIP;__ 
+## OPENSTORE\_OVERRIDE\_HOME\_MDB
+ **const exchange\.OPENSTORE\_OVERRIDE\_HOME\_MDB;** 
 
 
-## OPENSTORE_USE_ADMIN_PRIVILEGE
- __const exchange.OPENSTORE_USE_ADMIN_PRIVILEGE;__ 
+## OPENSTORE\_PUBLIC
+ **const exchange\.OPENSTORE\_PUBLIC;** 
+
+
+## OPENSTORE\_TAKE\_OWNERSHIP
+ **const exchange\.OPENSTORE\_TAKE\_OWNERSHIP;** 
+
+
+## OPENSTORE\_USE\_ADMIN\_PRIVILEGE
+ **const exchange\.OPENSTORE\_USE\_ADMIN\_PRIVILEGE;** 

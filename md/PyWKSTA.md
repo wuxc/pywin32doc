@@ -1,395 +1,395 @@
 # PyWKSTA
 
-## PyWKSTA_INFO_* Object
+## PyWKSTA\_INFO\_\* Object
 
-The following WKSTA_INFO levels are supported.
+The following WKSTA\_INFO levels are supported\.
 
 
-## PyWKSTA_INFO_100 Object
+## PyWKSTA\_INFO\_100 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_INFO_100 structure.
-
-#### Properties
-
-  -  __int platform_id__ 
-    Indicates platform level to use to retrieve platform specific information
-
-  -  __string/[PyUnicode](#pyunicode)computername__ 
-    Name of the local computer
-
-  -  __string/[PyUnicode](#pyunicode)langroup__ 
-    Name of the domain to which computer belongs
-
-  -  __int ver_major__ 
-    Major version number of operating system running on the computer
-
-  -  __int ver_minor__ 
-    Minor version number of operating system running on the computer
-
-## PyWKSTA_INFO_101 Object
-
-A dictionary holding the infomation in a Win32 WKSTA_INFO_101 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_INFO\_100 structure\.
 
 #### Properties
 
-  -  __int platform_id__ 
+  -  **int platform\_id** 
     Indicates platform level to use to retrieve platform specific information
 
-  -  __string/[PyUnicode](#pyunicode)computername__ 
+  -  **string/[PyUnicode](#pyunicode)computername** 
     Name of the local computer
 
-  -  __string/[PyUnicode](#pyunicode)langroup__ 
+  -  **string/[PyUnicode](#pyunicode)langroup** 
     Name of the domain to which computer belongs
 
-  -  __int ver_major__ 
+  -  **int ver\_major** 
     Major version number of operating system running on the computer
 
-  -  __int ver_minor__ 
+  -  **int ver\_minor** 
     Minor version number of operating system running on the computer
 
-  -  __string/[PyUnicode](#pyunicode)lanroot__ 
+## PyWKSTA\_INFO\_101 Object
+
+A dictionary holding the infomation in a Win32 WKSTA\_INFO\_101 structure\.
+
+#### Properties
+
+  -  **int platform\_id** 
+    Indicates platform level to use to retrieve platform specific information
+
+  -  **string/[PyUnicode](#pyunicode)computername** 
+    Name of the local computer
+
+  -  **string/[PyUnicode](#pyunicode)langroup** 
+    Name of the domain to which computer belongs
+
+  -  **int ver\_major** 
+    Major version number of operating system running on the computer
+
+  -  **int ver\_minor** 
+    Minor version number of operating system running on the computer
+
+  -  **string/[PyUnicode](#pyunicode)lanroot** 
     Path to the LANMAN directory
 
-## PyWKSTA_INFO_102 Object
+## PyWKSTA\_INFO\_102 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_INFO_102 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_INFO\_102 structure\.
 
 #### Properties
 
-  -  __int platform_id__ 
+  -  **int platform\_id** 
     Indicate platform level to use to retrieve platform specific information
 
-  -  __string/[PyUnicode](#pyunicode)computername__ 
+  -  **string/[PyUnicode](#pyunicode)computername** 
     Name of the local computer
 
-  -  __string/[PyUnicode](#pyunicode)langroup__ 
+  -  **string/[PyUnicode](#pyunicode)langroup** 
     Name of the domain to which computer belongs
 
-  -  __int ver_major__ 
+  -  **int ver\_major** 
     Major version number of operating system running on the computer
 
-  -  __int ver_minor__ 
+  -  **int ver\_minor** 
     Minor version number of operating system running on the computer
 
-  -  __string/[PyUnicode](#pyunicode)lanroot__ 
+  -  **string/[PyUnicode](#pyunicode)lanroot** 
     Path to the LANMAN directory
 
-  -  __int logged_on_users__ 
+  -  **int logged\_on\_users** 
     Number of users who are logged on to the local computer
 
-## PyWKSTA_INFO_302 Object
+## PyWKSTA\_INFO\_302 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_INFO_302 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_INFO\_302 structure\.
 
 #### Properties
 
-  -  __int char_wait__ 
+  -  **int char\_wait** 
     number of seconds the computer will wait for a remote resource to become available
 
-  -  __int collection_time__ 
-    number of milliseconds the computer will collect data before sending the data to a character device resource. The workstation waits the specified time or collects the number of characters specified by wki302_maximum_collection_count, whichever comes first.
+  -  **int collection\_time** 
+    number of milliseconds the computer will collect data before sending the data to a character device resource\. The workstation waits the specified time or collects the number of characters specified by wki302\_maximum\_collection\_count, whichever comes first\.
 
-  -  __int maximum_collection_count__ 
-    Specifies the number of bytes of information the computer will collect before sending the data to a character device resource. The workstation collects the specified number of bytes or waits the time specified by wki302_collection_time, whichever comes first.
+  -  **int maximum\_collection\_count** 
+    Specifies the number of bytes of information the computer will collect before sending the data to a character device resource\. The workstation collects the specified number of bytes or waits the time specified by wki302\_collection\_time, whichever comes first\.
 
-  -  __int keep_conn__ 
+  -  **int keep\_conn** 
     Specifies the 
 
 number of seconds the server will 
 
 maintain an inactive connection 
 
-to a resource.
+to a resource\.
 
-  -  __int keep_search__ 
+  -  **int keep\_search** 
     Defines 
 
 the number of seconds an 
 
-inactive search will continue.
+inactive search will continue\.
 
-  -  __int max_cmds__ 
-    Specifies the number of simultaneous network device driver commands that can be sent to the network.
+  -  **int max\_cmds** 
+    Specifies the number of simultaneous network device driver commands that can be sent to the network\.
 
-  -  __int num_work_buf__ 
-    Specifies the number of internal buffers the computer has.
+  -  **int num\_work\_buf** 
+    Specifies the number of internal buffers the computer has\.
 
-  -  __int siz_work_buf__ 
-    Specifies the size, in bytes, of each internal buffer.
+  -  **int siz\_work\_buf** 
+    Specifies the size, in bytes, of each internal buffer\.
 
-  -  __int max_wrk_cache__ 
-    Specifies the maximum size, in bytes, of an internal cache buffer.
+  -  **int max\_wrk\_cache** 
+    Specifies the maximum size, in bytes, of an internal cache buffer\.
 
-  -  __int max_wrk_cache__ 
-    Indicates the number of seconds the server waits before disconnecting an inactive session.
+  -  **int max\_wrk\_cache** 
+    Indicates the number of seconds the server waits before disconnecting an inactive session\.
 
-  -  __int siz_error__ 
-    Specifies the size, in bytes, of an internal error buffer.
+  -  **int siz\_error** 
+    Specifies the size, in bytes, of an internal error buffer\.
 
-  -  __int num_alerts__ 
-    Specifies the maximum number of clients that can receive alert messages. (This member is not supported under MS-DOS.) The Alerter service registers at least three clients when it begins to run.
+  -  **int num\_alerts** 
+    Specifies the maximum number of clients that can receive alert messages\. \(This member is not supported under MS-DOS\.\) The Alerter service registers at least three clients when it begins to run\.
 
-  -  __int num_services__ 
-    Specifies the number of services that can be installed on the computer at any time.
+  -  **int num\_services** 
+    Specifies the number of services that can be installed on the computer at any time\.
 
-  -  __int errlog_sz__ 
-    Specifies the maximum size, in kilobytes, of the client's error log file.
+  -  **int errlog\_sz** 
+    Specifies the maximum size, in kilobytes, of the client's error log file\.
 
-  -  __int print_buf_time__ 
-    Specifies the number of seconds the server waits before closing inactive compatibility-mode print jobs.
+  -  **int print\_buf\_time** 
+    Specifies the number of seconds the server waits before closing inactive compatibility-mode print jobs\.
 
-  -  __int num_char_buf__ 
-    Specifies the number of character pipe buffers and device buffers the client can have.
+  -  **int num\_char\_buf** 
+    Specifies the number of character pipe buffers and device buffers the client can have\.
 
-  -  __int siz_char_buf__ 
-    Specifies the maximum size, in bytes, of a character pipe buffer and device buffer.
+  -  **int siz\_char\_buf** 
+    Specifies the maximum size, in bytes, of a character pipe buffer and device buffer\.
 
-  -  __string/[PyUnicode](#pyunicode)wrk_heuristics__ 
-    Pointer to a Unicode string of flags used to control a client's operation.
+  -  **string/[PyUnicode](#pyunicode)wrk\_heuristics** 
+    Pointer to a Unicode string of flags used to control a client's operation\.
 
-  -  __int mailslots__ 
-    Specifies the maximum number of mailslots allowed.
+  -  **int mailslots** 
+    Specifies the maximum number of mailslots allowed\.
 
-  -  __int num_dgram_buf__ 
-    Specifies the number of buffers to allocate for receiving datagrams.
+  -  **int num\_dgram\_buf** 
+    Specifies the number of buffers to allocate for receiving datagrams\.
 
-## PyWKSTA_INFO_402 Object
+## PyWKSTA\_INFO\_402 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_INFO_402 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_INFO\_402 structure\.
 
 #### Properties
 
-  -  __int char_wait__ 
+  -  **int char\_wait** 
     number of seconds the computer will wait for a remote resource to become available
 
-  -  __int collection_time__ 
-    number of milliseconds the computer will collect data before sending the data to a character device resource. The workstation waits the specified time or collects the number of characters specified by wki402_maximum_collection_count, whichever comes first.
+  -  **int collection\_time** 
+    number of milliseconds the computer will collect data before sending the data to a character device resource\. The workstation waits the specified time or collects the number of characters specified by wki402\_maximum\_collection\_count, whichever comes first\.
 
-  -  __string/[PyUnicode](#pyunicode)maximum_collection_count__ 
+  -  **string/[PyUnicode](#pyunicode)maximum\_collection\_count** 
     Name of the domain to which computer belongs
 
-  -  __int keep_conn__ 
+  -  **int keep\_conn** 
     Major version number of operating system running on the computer
 
-  -  __int keep_search__ 
+  -  **int keep\_search** 
     Minor version number of operating system running on the computer
 
-  -  __int max_cmds__ 
-    ..
+  -  **int max\_cmds** 
+    \.\.
 
-  -  __int num_work_buf__ 
+  -  **int num\_work\_buf** 
     Number of users who are logged on to the local computer
 
-  -  __int siz_work_buf__ 
+  -  **int siz\_work\_buf** 
     Number of users who are logged on to the local computer
 
-  -  __int max_wrk_cache__ 
-    ..
+  -  **int max\_wrk\_cache** 
+    \.\.
 
-  -  __int sess_timeout__ 
-    ..
+  -  **int sess\_timeout** 
+    \.\.
 
-  -  __int siz_error__ 
-    ..
+  -  **int siz\_error** 
+    \.\.
 
-  -  __int num_alerts__ 
-    ..
+  -  **int num\_alerts** 
+    \.\.
 
-  -  __int num_services__ 
-    ..
+  -  **int num\_services** 
+    \.\.
 
-  -  __int errlog_sz__ 
-    ..
+  -  **int errlog\_sz** 
+    \.\.
 
-  -  __int print_buf_time__ 
-    ..
+  -  **int print\_buf\_time** 
+    \.\.
 
-  -  __int num_char_buf__ 
-    ..
+  -  **int num\_char\_buf** 
+    \.\.
 
-  -  __int siz_char_buf__ 
-    Specifies the maximum size, in bytes, of a character pipe buffer and device buffer.
+  -  **int siz\_char\_buf** 
+    Specifies the maximum size, in bytes, of a character pipe buffer and device buffer\.
 
-  -  __string/[PyUnicode](#pyunicode)siz_char_buf__ 
-    ..
+  -  **string/[PyUnicode](#pyunicode)siz\_char\_buf** 
+    \.\.
 
-  -  __int mailslots__ 
-    ..
+  -  **int mailslots** 
+    \.\.
 
-  -  __int num_dgram_buf__ 
-    ..
+  -  **int num\_dgram\_buf** 
+    \.\.
 
-  -  __int max_threads__ 
+  -  **int max\_threads** 
     Number of threads the computer can dedicate to the network
 
-## PyWKSTA_INFO_502 Object
+## PyWKSTA\_INFO\_502 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_INFO_502 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_INFO\_502 structure\.
 
 #### Properties
 
-  -  __int char_wait__ 
+  -  **int char\_wait** 
     number of seconds the computer will wait for a remote resource to become available
 
-  -  __int collection_time__ 
-    number of milliseconds the computer will collect data before sending the data to a character device resource. The workstation waits the specified time or collects the number of characters specified by wki502_maximum_collection_count, whichever comes first.
+  -  **int collection\_time** 
+    number of milliseconds the computer will collect data before sending the data to a character device resource\. The workstation waits the specified time or collects the number of characters specified by wki502\_maximum\_collection\_count, whichever comes first\.
 
-  -  __int maximum_collection_count__ 
-    Specifies the number of bytes of information the computer will collect before sending the data to a character device resource. The workstation collects the specified number of bytes or waits the time specified by wki302_collection_time, whichever comes first.
+  -  **int maximum\_collection\_count** 
+    Specifies the number of bytes of information the computer will collect before sending the data to a character device resource\. The workstation collects the specified number of bytes or waits the time specified by wki302\_collection\_time, whichever comes first\.
 
-  -  __int keep_conn__ 
+  -  **int keep\_conn** 
     Specifies the 
 
 number of seconds the server will 
 
 maintain an inactive connection 
 
-to a resource.
+to a resource\.
 
-  -  __int max_cmds__ 
-    Specifies the number of simultaneous network device driver commands that can be sent to the network.
+  -  **int max\_cmds** 
+    Specifies the number of simultaneous network device driver commands that can be sent to the network\.
 
-  -  __int max_wrk_cache__ 
-    Indicates the number of seconds the server waits before disconnecting an inactive session.
+  -  **int max\_wrk\_cache** 
+    Indicates the number of seconds the server waits before disconnecting an inactive session\.
 
-  -  __int siz_char_buf__ 
-    Specifies the maximum size, in bytes, of a character pipe buffer and device buffer.
+  -  **int siz\_char\_buf** 
+    Specifies the maximum size, in bytes, of a character pipe buffer and device buffer\.
 
-  -  __int lock_quota__ 
+  -  **int lock\_quota** 
     TODO
 
-  -  __int lock_increment__ 
+  -  **int lock\_increment** 
     TODO
 
-  -  __int lock_maximum__ 
+  -  **int lock\_maximum** 
     TODO
 
-  -  __int pipe_increment__ 
+  -  **int pipe\_increment** 
     TODO
 
-  -  __int pipe_maximum__ 
+  -  **int pipe\_maximum** 
     TODO
 
-  -  __int cache_file_timeout__ 
+  -  **int cache\_file\_timeout** 
     TODO
 
-  -  __int dormant_file_limit__ 
+  -  **int dormant\_file\_limit** 
     TODO
 
-  -  __int read_ahead_throughput__ 
+  -  **int read\_ahead\_throughput** 
     TODO
 
-  -  __int num_mailslot_buffers__ 
+  -  **int num\_mailslot\_buffers** 
     TODO
 
-  -  __int num_srv_announce_buffers__ 
+  -  **int num\_srv\_announce\_buffers** 
     TODO
 
-  -  __int max_illegal_datagram_events__ 
+  -  **int max\_illegal\_datagram\_events** 
     TODO
 
-  -  __int illegal_datagram_event_reset_frequency__ 
+  -  **int illegal\_datagram\_event\_reset\_frequency** 
     TODO
 
-  -  __bool log_election_packets__ 
+  -  **bool log\_election\_packets** 
     TODO
 
-  -  __bool use_opportunistic_locking__ 
+  -  **bool use\_opportunistic\_locking** 
     TODO
 
-  -  __bool use_unlock_behind__ 
+  -  **bool use\_unlock\_behind** 
     TODO
 
-  -  __bool use_close_behind__ 
+  -  **bool use\_close\_behind** 
     TODO
 
-  -  __bool buf_named_pipes__ 
+  -  **bool buf\_named\_pipes** 
     TODO
 
-  -  __bool use_lock_read_unlock__ 
+  -  **bool use\_lock\_read\_unlock** 
     TODO
 
-  -  __bool utilize_nt_caching__ 
+  -  **bool utilize\_nt\_caching** 
     TODO
 
-  -  __bool use_raw_read__ 
+  -  **bool use\_raw\_read** 
     TODO
 
-  -  __bool use_raw_write__ 
+  -  **bool use\_raw\_write** 
     TODO
 
-  -  __bool use_write_raw_data__ 
+  -  **bool use\_write\_raw\_data** 
     TODO
 
-  -  __bool use_encryption__ 
+  -  **bool use\_encryption** 
     TODO
 
-  -  __bool buf_files_deny_write__ 
+  -  **bool buf\_files\_deny\_write** 
     TODO
 
-  -  __bool buf_read_only_files__ 
+  -  **bool buf\_read\_only\_files** 
     TODO
 
-  -  __bool force_core_create_mode__ 
+  -  **bool force\_core\_create\_mode** 
     TODO
 
-  -  __bool use_512_byte_max_transfer__ 
+  -  **bool use\_512\_byte\_max\_transfer** 
     TODO
 
-## PyWKSTA_TRANSPORT_INFO_* Object
+## PyWKSTA\_TRANSPORT\_INFO\_\* Object
 
-The following WKSTA_TRANSPORT_INFO levels are supported.
+The following WKSTA\_TRANSPORT\_INFO levels are supported\.
 
 
-## PyWKSTA_TRANSPORT_INFO_0 Object
+## PyWKSTA\_TRANSPORT\_INFO\_0 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_TRANSPORT_INFO_0 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_TRANSPORT\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __int quality_of_service__ 
-    Supplies a value that specifies the search order of the transport protocol with respect to other transport protocols. The highest value is searched first.
+  -  **int quality\_of\_service** 
+    Supplies a value that specifies the search order of the transport protocol with respect to other transport protocols\. The highest value is searched first\.
 
-  -  __int number_of_vcs__ 
-    Specifies the number of clients communicating with the server using this transport protocol.
+  -  **int number\_of\_vcs** 
+    Specifies the number of clients communicating with the server using this transport protocol\.
 
-  -  __string/[PyUnicode](#pyunicode)transport_name__ 
-    Specifies the device name of the transport protocol.
+  -  **string/[PyUnicode](#pyunicode)transport\_name** 
+    Specifies the device name of the transport protocol\.
 
-  -  __string/[PyUnicode](#pyunicode)transport_address__ 
-    Specifies the address of the server on this transport protocol.
+  -  **string/[PyUnicode](#pyunicode)transport\_address** 
+    Specifies the address of the server on this transport protocol\.
 
-  -  __bool wan_ish__ 
-    This member is ignored by the NetWkstaTransportAdd function. For the NetWkstaTransportEnum function, this member indicates that this transport protocol is a WAN transport protocol. This member is set TRUE for NetBIOS/TCIP; it is set FALSE for NetBEUI and NetBIOS/IPX.
+  -  **bool wan\_ish** 
+    This member is ignored by the NetWkstaTransportAdd function\. For the NetWkstaTransportEnum function, this member indicates that this transport protocol is a WAN transport protocol\. This member is set TRUE for NetBIOS/TCIP; it is set FALSE for NetBEUI and NetBIOS/IPX\.
 
-## PyWKSTA_USER_INFO_* Object
+## PyWKSTA\_USER\_INFO\_\* Object
 
-The following WKSTA_USER_INFO levels are supported.
+The following WKSTA\_USER\_INFO levels are supported\.
 
 
-## PyWKSTA_USER_INFO_0 Object
+## PyWKSTA\_USER\_INFO\_0 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_USER_INFO_0 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_USER\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)username__ 
+  -  **string/[PyUnicode](#pyunicode)username** 
     Name of user currently logged on to the workstation
 
-## PyWKSTA_USER_INFO_1 Object
+## PyWKSTA\_USER\_INFO\_1 Object
 
-A dictionary holding the infomation in a Win32 WKSTA_USER_INFO_1 structure.
+A dictionary holding the infomation in a Win32 WKSTA\_USER\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)username__ 
+  -  **string/[PyUnicode](#pyunicode)username** 
     Name of user currently logged on to the workstation
 
-  -  __string/[PyUnicode](#pyunicode)logon_domain__ 
-    Returns the domain name of the user account of the user currently logged on to the workstation.
+  -  **string/[PyUnicode](#pyunicode)logon\_domain** 
+    Returns the domain name of the user account of the user currently logged on to the workstation\.
 
-  -  __string/[PyUnicode](#pyunicode)oth_domains__ 
-    Returns the list of other operating system domains browsed by the workstation. The domain names are separated by blanks.
+  -  **string/[PyUnicode](#pyunicode)oth\_domains** 
+    Returns the list of other operating system domains browsed by the workstation\. The domain names are separated by blanks\.
 
-  -  __string/[PyUnicode](#pyunicode)logon_server__ 
-    Returns the name of the computer that authenticated the server.
+  -  **string/[PyUnicode](#pyunicode)logon\_server** 
+    Returns the name of the computer that authenticated the server\.

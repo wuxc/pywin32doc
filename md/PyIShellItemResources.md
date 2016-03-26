@@ -47,15 +47,15 @@ Description of the interface
 
     Description of MarkForDelete&nbsp;
 
-## [PyIShellItemResources](#pyishellitemresources).CreateResource
+## [PyIShellItemResources](#pyishellitemresources)\.CreateResource
 
-interface = __CreateResource( *sir*  *, riid* __ )
-Description of CreateResource.
+interface \= **CreateResource\( *sir*  *, riid* ** \)
+Description of CreateResource\.
 
 #### Parameters
 
 
-  -  *sir* :[PySHELL_ITEM_RESOURCE](PySHELL.md#pyshellitem_resource)
+  -  *sir* :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Resource identifier
 
@@ -63,52 +63,52 @@ Description of CreateResource.
 
     The interface to return
 
-## [PyIShellItemResources](#pyishellitemresources).EnumResources
+## [PyIShellItemResources](#pyishellitemresources)\.EnumResources
 
-[PyIEnumResources](#pyienumresources)= __EnumResources(__ )
-Description of EnumResources.
+[PyIEnumResources](#pyienumresources)\= **EnumResources\(** \)
+Description of EnumResources\.
 
-## [PyIShellItemResources](#pyishellitemresources).GetAttributes
+## [PyIShellItemResources](#pyishellitemresources)\.GetAttributes
 
- __GetAttributes(__ )
-Description of GetAttributes.
+ **GetAttributes\(** \)
+Description of GetAttributes\.
 
-## [PyIShellItemResources](#pyishellitemresources).GetResourceDescription
+## [PyIShellItemResources](#pyishellitemresources)\.GetResourceDescription
 
- __GetResourceDescription( *pcsir* __ )
-Description of GetResourceDescription.
+ **GetResourceDescription\( *pcsir* ** \)
+Description of GetResourceDescription\.
 
 #### Parameters
 
 
-  -  *pcsir* :[PySHELL_ITEM_RESOURCE](PySHELL.md#pyshellitem_resource)
+  -  *pcsir* :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Description for pcsir
 
-## [PyIShellItemResources](#pyishellitemresources).GetSize
+## [PyIShellItemResources](#pyishellitemresources)\.GetSize
 
-int = __GetSize(__ )
-Description of GetSize.
+int \= **GetSize\(** \)
+Description of GetSize\.
 
-## [PyIShellItemResources](#pyishellitemresources).GetTimes
+## [PyIShellItemResources](#pyishellitemresources)\.GetTimes
 
- __GetTimes(__ )
-Description of GetTimes.
+ **GetTimes\(** \)
+Description of GetTimes\.
 
-## [PyIShellItemResources](#pyishellitemresources).MarkForDelete
+## [PyIShellItemResources](#pyishellitemresources)\.MarkForDelete
 
- __MarkForDelete(__ )
-Description of MarkForDelete.
+ **MarkForDelete\(** \)
+Description of MarkForDelete\.
 
-## [PyIShellItemResources](#pyishellitemresources).OpenResource
+## [PyIShellItemResources](#pyishellitemresources)\.OpenResource
 
-[PyIUnknown](#pyiunknown)= __OpenResource( *pcsir*  *, riid* __ )
-Description of OpenResource.
+[PyIUnknown](#pyiunknown)\= **OpenResource\( *pcsir*  *, riid* ** \)
+Description of OpenResource\.
 
 #### Parameters
 
 
-  -  *pcsir* :[PySHELL_ITEM_RESOURCE](PySHELL.md#pyshellitem_resource)
+  -  *pcsir* :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Description for pcsir
 
@@ -116,10 +116,10 @@ Description of OpenResource.
 
     The interface to return
 
-## [PyIShellItemResources](#pyishellitemresources).SetTimes
+## [PyIShellItemResources](#pyishellitemresources)\.SetTimes
 
- __SetTimes( *pftCreation*  *, pftWrite*  *, pftAccess* __ )
-Description of SetTimes.
+ **SetTimes\( *pftCreation*  *, pftWrite*  *, pftAccess* ** \)
+Description of SetTimes\.
 
 #### Parameters
 
@@ -136,14 +136,14 @@ Description of SetTimes.
 
     Description for pftAccess
 
-## [PyIShellItemResources](#pyishellitemresources).SupportsResource
+## [PyIShellItemResources](#pyishellitemresources)\.SupportsResource
 
-boolean = __SupportsResource( *pcsir* __ )
-Description of SupportsResource.
+boolean \= **SupportsResource\( *pcsir* ** \)
+Description of SupportsResource\.
 
 #### Parameters
 
 
-  -  *pcsir* :[PySHELL_ITEM_RESOURCE](PySHELL.md#pyshellitem_resource)
+  -  *pcsir* :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Description for pcsir

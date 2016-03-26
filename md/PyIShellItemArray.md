@@ -38,9 +38,9 @@ Can be used as an iterator to enumerate the contained items
 
     Returns an enumeration interface to list contained items&nbsp;
 
-## [PyIShellItemArray](#pyishellitemarray).BindToHandler
+## [PyIShellItemArray](#pyishellitemarray)\.BindToHandler
 
-interface = __BindToHandler( *pbc*  *, rbhid*  *, riid* __ )
+interface \= **BindToHandler\( *pbc*  *, rbhid*  *, riid* ** \)
 Creates an instance of a handler for the items in the container
 
 #### Parameters
@@ -52,20 +52,20 @@ Creates an instance of a handler for the items in the container
 
   -  *rbhid* :[PyIID](#pyiid)
 
-    Bind handler GUID (shell.BHID_*)
+    Bind handler GUID \(shell\.BHID\_\*\)
 
   -  *riid* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIShellItemArray](#pyishellitemarray).EnumItems
+## [PyIShellItemArray](#pyishellitemarray)\.EnumItems
 
-[PyIEnumShellItems](#pyienumshellitems)= __EnumItems(__ )
+[PyIEnumShellItems](#pyienumshellitems)\= **EnumItems\(** \)
 Returns an enumeration interface to list contained items
 
-## [PyIShellItemArray](#pyishellitemarray).GetAttributes
+## [PyIShellItemArray](#pyishellitemarray)\.GetAttributes
 
-int = __GetAttributes( *AttribFlags*  *, Mask* __ )
+int \= **GetAttributes\( *AttribFlags*  *, Mask* ** \)
 Retrieves shell attributes of contained items
 
 #### Parameters
@@ -73,20 +73,20 @@ Retrieves shell attributes of contained items
 
   -  *AttribFlags* : int
 
-    SIATTRIBFLAGS value (shellcon.SIATTRIBFLAGS_*) specifying how to combine attributes of multiple items
+    SIATTRIBFLAGS value \(shellcon\.SIATTRIBFLAGS\_\*\) specifying how to combine attributes of multiple items
 
   -  *Mask* : int
 
-    Combination of SFGAOF flags (shellcon.SFGAO_*) specifying which attributes to return
+    Combination of SFGAOF flags \(shellcon\.SFGAO\_\*\) specifying which attributes to return
 
-## [PyIShellItemArray](#pyishellitemarray).GetCount
+## [PyIShellItemArray](#pyishellitemarray)\.GetCount
 
-int = __GetCount(__ )
+int \= **GetCount\(** \)
 Returns the number of items in the container
 
-## [PyIShellItemArray](#pyishellitemarray).GetItemAt
+## [PyIShellItemArray](#pyishellitemarray)\.GetItemAt
 
-[PyIShellItem](#pyishellitem)= __GetItemAt( *dwIndex* __ )
+[PyIShellItem](#pyishellitem)\= **GetItemAt\( *dwIndex* ** \)
 Retrieves an item by index
 
 #### Parameters
@@ -96,9 +96,9 @@ Retrieves an item by index
 
     Zero-based index of item to retrieve
 
-## [PyIShellItemArray](#pyishellitemarray).GetPropertyDescriptionList
+## [PyIShellItemArray](#pyishellitemarray)\.GetPropertyDescriptionList
 
-[PyIPropertyDescriptionList](#pyipropertydescriptionlist)= __GetPropertyDescriptionList( *Type*  *, riid* __ )
+[PyIPropertyDescriptionList](#pyipropertydescriptionlist)\= **GetPropertyDescriptionList\( *Type*  *, riid* ** \)
 Retrieves descriptions for a defined group of properties
 
 #### Parameters
@@ -106,24 +106,24 @@ Retrieves descriptions for a defined group of properties
 
   -  *Type* :[PyPROPERTYKEY](#pypropertykey)
 
-    Property list identifier (pscon.PKEY_PropList_*)
+    Property list identifier \(pscon\.PKEY\_PropList\_\*\)
 
-  -  *riid=IID_IPropertyDescriptionList* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyDescriptionList* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIShellItemArray](#pyishellitemarray).GetPropertyStore
+## [PyIShellItemArray](#pyishellitemarray)\.GetPropertyStore
 
-[PyIPropertyStore](#pyipropertystore)= __GetPropertyStore( *flags*  *, riid* __ )
+[PyIPropertyStore](#pyipropertystore)\= **GetPropertyStore\( *flags*  *, riid* ** \)
 Retrieves a store containing consolidated properties of items in container
 
 #### Parameters
 
 
-  -  *flags=GPS_DEFAULT* : int
+  -  *flags\=GPS\_DEFAULT* : int
 
-    Flags indicating how the properties are retrieved (shellcon.GPS_*)
+    Flags indicating how the properties are retrieved \(shellcon\.GPS\_\*\)
 
-  -  *riid=IID__IPropertyStore* :[PyIID](#pyiid)
+  -  *riid\=IID\_\_IPropertyStore* :[PyIID](#pyiid)
 
-    The interface to return, IID_IPropertyStore or related interface
+    The interface to return, IID\_IPropertyStore or related interface

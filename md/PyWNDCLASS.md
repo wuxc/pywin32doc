@@ -5,39 +5,39 @@
 A Python object, representing an WNDCLASS structure
 
 #### Comments
-Typically you create a PyWNDCLASS object, and set its properties. 
+Typically you create a PyWNDCLASS object, and set its properties\. 
 
 The object can then be passed to any function which takes an WNDCLASS object
 
 #### Properties
 
-  -  __integer style__ 
+  -  **integer style** 
     
 
-  -  __integer cbWndExtra__ 
+  -  **integer cbWndExtra** 
     
 
-  -  __integer hInstance__ 
+  -  **integer hInstance** 
     
 
-  -  __integer hIcon__ 
+  -  **integer hIcon** 
     
 
-  -  __integer hCursor__ 
+  -  **integer hCursor** 
     
 
-  -  __integer hbrBackground__ 
-    These 3 handled manually in PyWNDCLASS::getattro/setattro.  The pymeth below is used as an 
+  -  **integer hbrBackground** 
+    These 3 handled manually in PyWNDCLASS::getattro/setattro\.  The pymeth below is used as an 
 
 end tag, so these props will be lost if below it
 
-  -  __string/[PyUnicode](#pyunicode)lpszMenuName__ 
+  -  **string/[PyUnicode](#pyunicode)lpszMenuName** 
     
 
-  -  __string/[PyUnicode](#pyunicode)lpszClassName__ 
+  -  **string/[PyUnicode](#pyunicode)lpszClassName** 
     
 
-  -  __function lpfnWndProc__ 
+  -  **function lpfnWndProc** 
     
 
 #### Methods
@@ -45,9 +45,9 @@ end tag, so these props will be lost if below it
 
   - [SetDialogProc](PyWNDCLASS.md#pywndclasssetdialogproc)
 
-    Sets the WNDCLASS to be for a dialog box.&nbsp;
+    Sets the WNDCLASS to be for a dialog box\.&nbsp;
 
-## [PyWNDCLASS](#pywndclass).SetDialogProc
+## [PyWNDCLASS](#pywndclass)\.SetDialogProc
 
- __SetDialogProc(__ )
+ **SetDialogProc\(** \)
 Sets the WNDCLASS to be for a dialog box

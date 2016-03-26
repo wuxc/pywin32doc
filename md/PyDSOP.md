@@ -1,68 +1,68 @@
 # PyDSOP
 
-## PyDSOP_FILTER_FLAGS Object
+## PyDSOP\_FILTER\_FLAGS Object
 
-An object representing an ActiveDirectory DSOP_FILTER_FLAGS structure
-These objects can only be accessed via a[PyDSOP_SCOPE_INIT_INFO](PyDSOP.md#pydsopscope_init_info)object.
+An object representing an ActiveDirectory DSOP\_FILTER\_FLAGS structure
+These objects can only be accessed via a[PyDSOP\_SCOPE\_INIT\_INFO](PyDSOP.md#pydsopscope_init_info)object\.
 
 #### Properties
 
-  -  __[PyDSOP_UPLEVEL_FILTER_FLAGS](PyDSOP.md#pydsopuplevel_filter_flags)uplevel__ 
+  -  **[PyDSOP\_UPLEVEL\_FILTER\_FLAGS](PyDSOP.md#pydsopuplevel_filter_flags)uplevel** 
     
 
-  -  __int downlevel__ 
+  -  **int downlevel** 
     
 
-## PyDSOP_SCOPE_INIT_INFO Object
+## PyDSOP\_SCOPE\_INIT\_INFO Object
 
 An object representing an ActiveDirectory 
 
-DSOP_SCOPE_INIT_INFO structure.
-These objects can only be accessed by indexing a[PyDSOP_SCOPE_INIT_INFOs](PyDSOP.md#pydsopscope_init_infos)object.
+DSOP\_SCOPE\_INIT\_INFO structure\.
+These objects can only be accessed by indexing a[PyDSOP\_SCOPE\_INIT\_INFOs](PyDSOP.md#pydsopscope_init_infos)object\.
 
 #### Properties
 
-  -  __int type__ 
+  -  **int type** 
     
 
-  -  __int scope__ 
+  -  **int scope** 
     
 
-  -  __int hr__ 
+  -  **int hr** 
     
 
-  -  __[PyUnicode](#pyunicode)dcName__ 
+  -  **[PyUnicode](#pyunicode)dcName** 
     
 
-  -  __[PyDSOP_FILTER_FLAGS](PyDSOP.md#pydsopfilter_flags)filterFlags__ 
+  -  **[PyDSOP\_FILTER\_FLAGS](PyDSOP.md#pydsopfilter_flags)filterFlags** 
     
 
-## PyDSOP_SCOPE_INIT_INFOs Object
+## PyDSOP\_SCOPE\_INIT\_INFOs Object
 
-An object representing an array of[PyDSOP_SCOPE_INIT_INFO](PyDSOP.md#pydsopscope_init_info)objects
+An object representing an array of[PyDSOP\_SCOPE\_INIT\_INFO](PyDSOP.md#pydsopscope_init_info)objects
 
 #### Comments
-You must pass the number of items in the array to the constructor. 
+You must pass the number of items in the array to the constructor\. 
 
-Once set, this can not be changed.  You can index the index (eg, ob[2]).  The 
+Once set, this can not be changed\.  You can index the index \(eg, ob\[2\]\)\.  The 
 
-object has no other (interesting) methods or attributes.
-These objects are created via[adsi::DSOP_SCOPE_INIT_INFOs](adsi.md#adsidsop_scope_init_infos)(size)
+object has no other \(interesting\) methods or attributes\.
+These objects are created via[adsi::DSOP\_SCOPE\_INIT\_INFOs](adsi.md#adsidsop_scope_init_infos)\(size\)
 
-## PyDSOP_UPLEVEL_FILTER_FLAGS Object
+## PyDSOP\_UPLEVEL\_FILTER\_FLAGS Object
 
 An object representing an ActiveDirectory 
 
-DSOP_UPLEVEL_FILTER_FLAGS structure.
-These objects can only be accessed via a[PyDSOP_FILTER_FLAGS](PyDSOP.md#pydsopfilter_flags)object.
+DSOP\_UPLEVEL\_FILTER\_FLAGS structure\.
+These objects can only be accessed via a[PyDSOP\_FILTER\_FLAGS](PyDSOP.md#pydsopfilter_flags)object\.
 
 #### Properties
 
-  -  __int bothModes__ 
+  -  **int bothModes** 
     
 
-  -  __int mixedModeOnly__ 
+  -  **int mixedModeOnly** 
     
 
-  -  __int nativeModeOnly__ 
+  -  **int nativeModeOnly** 
     

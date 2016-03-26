@@ -15,15 +15,15 @@ Description of the interface
 
     Description of GetIconLocation&nbsp;
 
-## [PyIExtractIcon](#pyiextracticon).Extract
+## [PyIExtractIcon](#pyiextracticon)\.Extract
 
- __Extract( *pszFile*  *, nIconIndex*  *, nIconSize* __ )
-Description of Extract.
+ **Extract\( *pszFile*  *, nIconIndex*  *, nIconSize* ** \)
+Description of Extract\.
 
 #### Parameters
 
 
-  -  *pszFile* : __unicode__ 
+  -  *pszFile* : **unicode** 
 
     Description for pszFile
 
@@ -36,16 +36,16 @@ Description of Extract.
     Description for nIconIndex
 
 #### Return Value
-The result is (hicon_large, hicon_small), or 
+The result is \(hicon\_large, hicon\_small\), or 
 
-(None,None) if the underlying function returns S_FALSE, indicating 
+\(None,None\) if the underlying function returns S\_FALSE, indicating 
 
-the calling application should extract it.
+the calling application should extract it\.
 
-## [PyIExtractIcon](#pyiextracticon).GetIconLocation
+## [PyIExtractIcon](#pyiextracticon)\.GetIconLocation
 
- __GetIconLocation( *uFlags*  *, cchMax* __ )
-Description of GetIconLocation.
+ **GetIconLocation\( *uFlags*  *, cchMax* ** \)
+Description of GetIconLocation\.
 
 #### Parameters
 
@@ -54,6 +54,6 @@ Description of GetIconLocation.
 
     Description for uFlags
 
-  -  *cchMax=MAX_PATH+MAX_FNAME* : int
+  -  *cchMax\=MAX\_PATH\+MAX\_FNAME* : int
 
     Buffer size to allocate for file name

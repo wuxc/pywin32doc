@@ -6,20 +6,20 @@ A dictionary containing data to fill a COMPSTATEINFO struct
 
 #### Properties
 
-  -  __int Left__ 
+  -  **int Left** 
     Specified as screen coordinates
 
-  -  __int Top__ 
+  -  **int Top** 
     Specified as screen coordinates
 
-  -  __int Width__ 
+  -  **int Width** 
     Measured in pixels
 
-  -  __int Height__ 
+  -  **int Height** 
     Measured in pixels
 
-  -  __int dwItemState__ 
-    One of IS_NORMAL, IS_FULLSCREEN  IS_SPLIT
+  -  **int dwItemState** 
+    One of IS\_NORMAL, IS\_FULLSCREEN  IS\_SPLIT
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure, ignored on input

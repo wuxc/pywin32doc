@@ -11,7 +11,7 @@ Description of the interface
 
     Description of GetCurFolder&nbsp;
 
-## [PyIPersistFolder2](#pyipersistfolder2).GetCurFolder
+## [PyIPersistFolder2](#pyipersistfolder2)\.GetCurFolder
 
- __GetCurFolder(__ )
-Description of GetCurFolder.
+ **GetCurFolder\(** \)
+Description of GetCurFolder\.

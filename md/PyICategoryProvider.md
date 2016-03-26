@@ -31,22 +31,22 @@ Description of the interface
 
     Description of CreateCategory&nbsp;
 
-## [PyICategoryProvider](#pyicategoryprovider).CanCategorizeOnSCID
+## [PyICategoryProvider](#pyicategoryprovider)\.CanCategorizeOnSCID
 
- __CanCategorizeOnSCID( *pscid* __ )
-Description of CanCategorizeOnSCID.
+ **CanCategorizeOnSCID\( *pscid* ** \)
+Description of CanCategorizeOnSCID\.
 
 #### Parameters
 
 
-  -  *pscid* : __SHCOLUMNID__ 
+  -  *pscid* : **SHCOLUMNID** 
 
     Description for pscid
 
-## [PyICategoryProvider](#pyicategoryprovider).CreateCategory
+## [PyICategoryProvider](#pyicategoryprovider)\.CreateCategory
 
- __CreateCategory( *guid*  *, riid* __ )
-Description of CreateCategory.
+ **CreateCategory\( *guid*  *, riid* ** \)
+Description of CreateCategory\.
 
 #### Parameters
 
@@ -59,27 +59,27 @@ Description of CreateCategory.
 
     Description for riid
 
-## [PyICategoryProvider](#pyicategoryprovider).EnumCategories
+## [PyICategoryProvider](#pyicategoryprovider)\.EnumCategories
 
- __EnumCategories(__ )
-Description of EnumCategories.
+ **EnumCategories\(** \)
+Description of EnumCategories\.
 
-## [PyICategoryProvider](#pyicategoryprovider).GetCategoryForSCID
+## [PyICategoryProvider](#pyicategoryprovider)\.GetCategoryForSCID
 
- __GetCategoryForSCID( *pscid* __ )
-Description of GetCategoryForSCID.
+ **GetCategoryForSCID\( *pscid* ** \)
+Description of GetCategoryForSCID\.
 
 #### Parameters
 
 
-  -  *pscid* : __SHCOLUMNID__ 
+  -  *pscid* : **SHCOLUMNID** 
 
     Description for pscid
 
-## [PyICategoryProvider](#pyicategoryprovider).GetCategoryName
+## [PyICategoryProvider](#pyicategoryprovider)\.GetCategoryName
 
- __GetCategoryName( *guid* __ )
-Description of GetCategoryName.
+ **GetCategoryName\( *guid* ** \)
+Description of GetCategoryName\.
 
 #### Parameters
 
@@ -91,7 +91,7 @@ Description of GetCategoryName.
 #### Comments
 The buffer is always 1024 chars long
 
-## [PyICategoryProvider](#pyicategoryprovider).GetDefaultCategory
+## [PyICategoryProvider](#pyicategoryprovider)\.GetDefaultCategory
 
- __GetDefaultCategory(__ )
-Description of GetDefaultCategory.
+ **GetDefaultCategory\(** \)
+Description of GetDefaultCategory\.

@@ -27,14 +27,14 @@ Contains a collection of properties
 
     Commits property changes&nbsp;
 
-## [PyIPropertyStore](#pyipropertystore).Commit
+## [PyIPropertyStore](#pyipropertystore)\.Commit
 
- __Commit(__ )
+ **Commit\(** \)
 Commits property changes
 
-## [PyIPropertyStore](#pyipropertystore).GetAt
+## [PyIPropertyStore](#pyipropertystore)\.GetAt
 
-[PyPROPERTYKEY](#pypropertykey)= __GetAt( *iProp* __ )
+[PyPROPERTYKEY](#pypropertykey)\= **GetAt\( *iProp* ** \)
 Returns the property key for the specified property
 
 #### Parameters
@@ -44,14 +44,14 @@ Returns the property key for the specified property
 
     Zero-based index of property
 
-## [PyIPropertyStore](#pyipropertystore).GetCount
+## [PyIPropertyStore](#pyipropertystore)\.GetCount
 
-int = __GetCount(__ )
+int \= **GetCount\(** \)
 Returns the number of properties in the store
 
-## [PyIPropertyStore](#pyipropertystore).GetValue
+## [PyIPropertyStore](#pyipropertystore)\.GetValue
 
-[PyPROPVARIANT](#pypropvariant)= __GetValue( *Key* __ )
+[PyPROPVARIANT](#pypropvariant)\= **GetValue\( *Key* ** \)
 Retrieves the value of a property
 
 #### Parameters
@@ -61,9 +61,9 @@ Retrieves the value of a property
 
     Property key as returned by[PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)
 
-## [PyIPropertyStore](#pyipropertystore).SetValue
+## [PyIPropertyStore](#pyipropertystore)\.SetValue
 
- __SetValue( *Key*  *, Value* __ )
+ **SetValue\( *Key*  *, Value* ** \)
 Sets the value of a property
 
 #### Parameters
@@ -71,10 +71,10 @@ Sets the value of a property
 
   -  *Key* :[PyPROPERTYKEY](#pypropertykey)
 
-    Property key (see[PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat))
+    Property key \(see[PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)\)
 
   -  *Value* :[PyPROPVARIANT](#pypropvariant)
 
     Variant value which can be converted to the appropriate variant type for the property 
 
-Pass a VT_EMPTY variant to indicate that the property should be removed.
+Pass a VT\_EMPTY variant to indicate that the property should be removed\.

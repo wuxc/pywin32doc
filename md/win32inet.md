@@ -2,14 +2,14 @@
 
 ## Module win32inet
 
-An interface to the Windows internet (wininet) API
+An interface to the Windows internet \(wininet\) API
 
 #### Methods
 
 
   - [InternetSetCookie](win32inet.md#win32inetinternetsetcookie)
 
-    Creates a cookie associated with the specified URL.&nbsp;
+    Creates a cookie associated with the specified URL\.&nbsp;
 
   - [InternetGetCookie](win32inet.md#win32inetinternetgetcookie)
 
@@ -17,7 +17,7 @@ An interface to the Windows internet (wininet) API
 
   - [InternetAttemptConnect](win32inet.md#win32inetinternetattemptconnect)
 
-    Attempts to make a connection to the Internet.&nbsp;
+    Attempts to make a connection to the Internet\.&nbsp;
 
   - [InternetCheckConnection](win32inet.md#win32inetinternetcheckconnection)
 
@@ -25,7 +25,7 @@ An interface to the Windows internet (wininet) API
 
   - [InternetGoOnline](win32inet.md#win32inetinternetgoonline)
 
-    Prompts the user for permission to initiate connection to a URL.&nbsp;
+    Prompts the user for permission to initiate connection to a URL\.&nbsp;
 
   - [InternetCloseHandle](win32inet.md#win32inetinternetclosehandle)
 
@@ -33,43 +33,43 @@ An interface to the Windows internet (wininet) API
 
   - [InternetConnect](win32inet.md#win32inetinternetconnect)
 
-    Opens an FTP, Gopher, or HTTP session for a given site.&nbsp;
+    Opens an FTP, Gopher, or HTTP session for a given site\.&nbsp;
 
   - [InternetOpen](win32inet.md#win32inetinternetopen)
 
-    Initializes an application's use of the Microsoft&#174 Win32&#174 Internet functions.&nbsp;
+    Initializes an application's use of the Microsoft&\#174 Win32&\#174 Internet functions\.&nbsp;
 
   - [InternetOpenUrl](win32inet.md#win32inetinternetopenurl)
 
     Opens a resource specified by a 
 
-complete FTP, Gopher, or HTTP URL.&nbsp;
+complete FTP, Gopher, or HTTP URL\.&nbsp;
 
   - [InternetCanonicalizeUrl](win32inet.md#win32inetinternetcanonicalizeurl)
 
     Canonicalizes a URL, which includes 
 
-converting unsafe characters and spaces into escape sequences.&nbsp;
+converting unsafe characters and spaces into escape sequences\.&nbsp;
 
   - [InternetGetLastResponseInfo](win32inet.md#win32inetinternetgetlastresponseinfo)
 
-    Retrieves the last Win32&#174 Internet function error description or server response on the thread calling this function.&nbsp;
+    Retrieves the last Win32&\#174 Internet function error description or server response on the thread calling this function\.&nbsp;
 
   - [InternetReadFile](win32inet.md#win32inetinternetreadfile)
 
-    Reads data from a handle opened by the[win32inet::InternetOpenUrl](win32inet.md#win32inetinternetopenurl),[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile), __win32inet::GopherOpenFile__ , or __win32inet::HttpOpenRequest__ function.&nbsp;
+    Reads data from a handle opened by the[win32inet::InternetOpenUrl](win32inet.md#win32inetinternetopenurl),[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile), **win32inet::GopherOpenFile** , or **win32inet::HttpOpenRequest** function\.&nbsp;
 
   - [InternetWriteFile](win32inet.md#win32inetinternetwritefile)
 
-    Writes data to a handle opened by[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile).&nbsp;
+    Writes data to a handle opened by[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile)\.&nbsp;
 
   - [FtpOpenFile](win32inet.md#win32inetftpopenfile)
 
-    Initiates access to a remote file on an FTP server for reading or writing.&nbsp;
+    Initiates access to a remote file on an FTP server for reading or writing\.&nbsp;
 
   - [FtpCommand](win32inet.md#win32inetftpcommand)
 
-    Allows an application to send commands directly to an FTP server.&nbsp;
+    Allows an application to send commands directly to an FTP server\.&nbsp;
 
   - [InternetQueryOption](win32inet.md#win32inetinternetqueryoption)
 
@@ -143,9 +143,9 @@ converting unsafe characters and spaces into escape sequences.&nbsp;
 
     Deletes the cache entry for a URL&nbsp;
 
-## [win32inet](#win32inet).CommitUrlCacheEntry
+## [win32inet](#win32inet)\.CommitUrlCacheEntry
 
-str = __CommitUrlCacheEntry( *UrlName*  *, LocalFileName*  *, ExpireTime*  *, LastModifiedTime*  *, CacheEntryType*  *, HeaderInfo*  *, OriginalUrl* __ )
+str \= **CommitUrlCacheEntry\( *UrlName*  *, LocalFileName*  *, ExpireTime*  *, LastModifiedTime*  *, CacheEntryType*  *, HeaderInfo*  *, OriginalUrl* ** \)
 Commits a cache entry
 
 #### Parameters
@@ -157,27 +157,27 @@ Commits a cache entry
 
   -  *LocalFileName* : str
 
-    Filename returned from[win32inet::CreateUrlCacheEntry](win32inet.md#win32inetcreateurlcacheentry). 
+    Filename returned from[win32inet::CreateUrlCacheEntry](win32inet.md#win32inetcreateurlcacheentry)\. 
 
-Can be None when creating a history entry.
+Can be None when creating a history entry\.
 
-  -  *ExpireTime=None* :[PyTime](#pytime)
+  -  *ExpireTime\=None* :[PyTime](#pytime)
 
     Time at which entry expires
 
-  -  *LastModifiedTime=None* :[PyTime](#pytime)
+  -  *LastModifiedTime\=None* :[PyTime](#pytime)
 
     Modification time of URL
 
-  -  *CacheEntryType=NORMAL_CACHE_ENTRY* : int
+  -  *CacheEntryType\=NORMAL\_CACHE\_ENTRY* : int
 
-    Combination of *_CACHE_ENTRY flags
+    Combination of \*\_CACHE\_ENTRY flags
 
-  -  *HeaderInfo=None* : str
+  -  *HeaderInfo\=None* : str
 
     Header data used to request Url
 
-  -  *OriginalUrl=None* : str
+  -  *OriginalUrl\=None* : str
 
     If redirected, original site requested
 
@@ -187,11 +187,11 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *CommitUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=commiturlcacheentry),[google](#http://www.google.com/search?q=commiturlcacheentry)or[google groups](#http://groups.google.com/groups?q=commiturlcacheentry).
+  - Search for *CommitUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=commiturlcacheentry),[google](#http://www.google.com/search?q=commiturlcacheentry)or[google groups](#http://groups.google.com/groups?q=commiturlcacheentry)\.
 
-## [win32inet](#win32inet).CreateUrlCacheEntry
+## [win32inet](#win32inet)\.CreateUrlCacheEntry
 
-str = __CreateUrlCacheEntry( *UrlName*  *, ExpectedFileSize*  *, FileExtension* __ )
+str \= **CreateUrlCacheEntry\( *UrlName*  *, ExpectedFileSize*  *, FileExtension* ** \)
 Creates a cache entry for a URL
 
 #### Parameters
@@ -215,22 +215,22 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *CreateUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createurlcacheentry),[google](#http://www.google.com/search?q=createurlcacheentry)or[google groups](#http://groups.google.com/groups?q=createurlcacheentry).
+  - Search for *CreateUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createurlcacheentry),[google](#http://www.google.com/search?q=createurlcacheentry)or[google groups](#http://groups.google.com/groups?q=createurlcacheentry)\.
 
 #### Return Value
 Returns the filename to which content should be written
 
-## [win32inet](#win32inet).CreateUrlCacheGroup
+## [win32inet](#win32inet)\.CreateUrlCacheGroup
 
-long = __CreateUrlCacheGroup( *Flags* __ )
+long \= **CreateUrlCacheGroup\( *Flags* ** \)
 Creates a new cache group
 
 #### Parameters
 
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    Combination of CACHEGROUP_FLAG_* flags
+    Combination of CACHEGROUP\_FLAG\_\* flags
 
 #### Comments
 Accepts keyword args
@@ -238,11 +238,11 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *CreateUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createurlcachegroup),[google](#http://www.google.com/search?q=createurlcachegroup)or[google groups](#http://groups.google.com/groups?q=createurlcachegroup).
+  - Search for *CreateUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createurlcachegroup),[google](#http://www.google.com/search?q=createurlcachegroup)or[google groups](#http://groups.google.com/groups?q=createurlcachegroup)\.
 
-## [win32inet](#win32inet).DeleteUrlCacheEntry
+## [win32inet](#win32inet)\.DeleteUrlCacheEntry
 
- __DeleteUrlCacheEntry( *UrlName* __ )
+ **DeleteUrlCacheEntry\( *UrlName* ** \)
 Deletes the cache entry for a URL
 
 #### Parameters
@@ -252,9 +252,9 @@ Deletes the cache entry for a URL
 
     Cached url to be deleted
 
-## [win32inet](#win32inet).DeleteUrlCacheGroup
+## [win32inet](#win32inet)\.DeleteUrlCacheGroup
 
- __DeleteUrlCacheGroup( *GroupId*  *, Attributes* __ )
+ **DeleteUrlCacheGroup\( *GroupId*  *, Attributes* ** \)
 Deletes a cache group
 
 #### Parameters
@@ -264,9 +264,9 @@ Deletes a cache group
 
     Group id
 
-  -  *Attributes=CACHEGROUP_FLAG_FLUSHURL_ONDELETE* : int
+  -  *Attributes\=CACHEGROUP\_FLAG\_FLUSHURL\_ONDELETE* : int
 
-    Combination of CACHEGROUP_FLAG_* flags
+    Combination of CACHEGROUP\_FLAG\_\* flags
 
 #### Comments
 Accepts keyword args
@@ -274,11 +274,11 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *DeleteUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=deleteurlcachegroup),[google](#http://www.google.com/search?q=deleteurlcachegroup)or[google groups](#http://groups.google.com/groups?q=deleteurlcachegroup).
+  - Search for *DeleteUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=deleteurlcachegroup),[google](#http://www.google.com/search?q=deleteurlcachegroup)or[google groups](#http://groups.google.com/groups?q=deleteurlcachegroup)\.
 
-## [win32inet](#win32inet).FindCloseUrlCache
+## [win32inet](#win32inet)\.FindCloseUrlCache
 
- __FindCloseUrlCache( *EnumHandle* __ )
+ **FindCloseUrlCache\( *EnumHandle* ** \)
 Closes a cache enumeration handle
 
 #### Parameters
@@ -294,17 +294,17 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *FindCloseUrlCache* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findcloseurlcache),[google](#http://www.google.com/search?q=findcloseurlcache)or[google groups](#http://groups.google.com/groups?q=findcloseurlcache).
+  - Search for *FindCloseUrlCache* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findcloseurlcache),[google](#http://www.google.com/search?q=findcloseurlcache)or[google groups](#http://groups.google.com/groups?q=findcloseurlcache)\.
 
-## [win32inet](#win32inet).FindFirstUrlCacheEntry
+## [win32inet](#win32inet)\.FindFirstUrlCacheEntry
 
-([PyUrlCacheHANDLE](#pyurlcachehandle), dict) = __FindFirstUrlCacheEntry( *SearchPattern* __ )
+\([PyUrlCacheHANDLE](#pyurlcachehandle), dict\) \= **FindFirstUrlCacheEntry\( *SearchPattern* ** \)
 Initiates an enumeration of the browser cache
 
 #### Parameters
 
 
-  -  *SearchPattern=None* : str
+  -  *SearchPattern\=None* : str
 
     Type of entry to find, can be 'visited:', 'cookie:', or None
 
@@ -314,36 +314,36 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *FindFirstUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirsturlcacheentry),[google](#http://www.google.com/search?q=findfirsturlcacheentry)or[google groups](#http://groups.google.com/groups?q=findfirsturlcacheentry).
+  - Search for *FindFirstUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirsturlcacheentry),[google](#http://www.google.com/search?q=findfirsturlcacheentry)or[google groups](#http://groups.google.com/groups?q=findfirsturlcacheentry)\.
 
 #### Return Value
 Returns a handle that can be passed to[win32inet::FindNextUrlCacheEntry](win32inet.md#win32inetfindnexturlcacheentry), and a dict 
 
-containing information for the first entry found.  Throws error code ERROR_NO_MORE_ITEMS 
+containing information for the first entry found\.  Throws error code ERROR\_NO\_MORE\_ITEMS 
 
-if no items are found.
+if no items are found\.
 
-## [win32inet](#win32inet).FindFirstUrlCacheEntryEx
+## [win32inet](#win32inet)\.FindFirstUrlCacheEntryEx
 
-([PyUrlCacheHANDLE](#pyurlcachehandle), dict) = __FindFirstUrlCacheEntryEx( *SearchPattern*  *, Flags*  *, Filter*  *, GroupId* __ )
+\([PyUrlCacheHANDLE](#pyurlcachehandle), dict\) \= **FindFirstUrlCacheEntryEx\( *SearchPattern*  *, Flags*  *, Filter*  *, GroupId* ** \)
 Initiates an enumeration of the browser cache
 
 #### Parameters
 
 
-  -  *SearchPattern=None* : str
+  -  *SearchPattern\=None* : str
 
     Type of entry to find, can be 'visited:', 'cookie:', or None
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     None currently defined
 
-  -  *Filter=0* : int
+  -  *Filter\=0* : int
 
-    Types of entries to return, combination of *_CACHE_ENTRY values
+    Types of entries to return, combination of \*\_CACHE\_ENTRY values
 
-  -  *GroupId=0* : int
+  -  *GroupId\=0* : int
 
     Cache group to enumerate, use 0 for all
 
@@ -353,26 +353,26 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *FindFirstUrlCacheEntryEx* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirsturlcacheentryex),[google](#http://www.google.com/search?q=findfirsturlcacheentryex)or[google groups](#http://groups.google.com/groups?q=findfirsturlcacheentryex).
+  - Search for *FindFirstUrlCacheEntryEx* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirsturlcacheentryex),[google](#http://www.google.com/search?q=findfirsturlcacheentryex)or[google groups](#http://groups.google.com/groups?q=findfirsturlcacheentryex)\.
 
 #### Return Value
 Returns a handle that can be passed to[win32inet::FindNextUrlCacheEntry](win32inet.md#win32inetfindnexturlcacheentry), and a dict 
 
-containing information for the first entry found.  Throws error code ERROR_NO_MORE_ITEMS 
+containing information for the first entry found\.  Throws error code ERROR\_NO\_MORE\_ITEMS 
 
-if no items are found.
+if no items are found\.
 
-## [win32inet](#win32inet).FindFirstUrlCacheGroup
+## [win32inet](#win32inet)\.FindFirstUrlCacheGroup
 
-([PyUrlCacheHANDLE](#pyurlcachehandle), int) = __FindFirstUrlCacheGroup( *Filter* __ )
+\([PyUrlCacheHANDLE](#pyurlcachehandle), int\) \= **FindFirstUrlCacheGroup\( *Filter* ** \)
 Initiates enumeration of Url cache groups
 
 #### Parameters
 
 
-  -  *Filter=CACHEGROUP_SEARCH_ALL* : int
+  -  *Filter\=CACHEGROUP\_SEARCH\_ALL* : int
 
-    CACHEGROUP_SEARCH_*
+    CACHEGROUP\_SEARCH\_\*
 
 #### Comments
 Accepts keyword args
@@ -380,16 +380,16 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *FindFirstUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirsturlcachegroup),[google](#http://www.google.com/search?q=findfirsturlcachegroup)or[google groups](#http://groups.google.com/groups?q=findfirsturlcachegroup).
+  - Search for *FindFirstUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirsturlcachegroup),[google](#http://www.google.com/search?q=findfirsturlcachegroup)or[google groups](#http://groups.google.com/groups?q=findfirsturlcachegroup)\.
 
 #### Return Value
 Returns a handle that can be passed to[win32inet::FindNextUrlCacheGroup](win32inet.md#win32inetfindnexturlcachegroup), and the id 
 
-of the first group found.
+of the first group found\.
 
-## [win32inet](#win32inet).FindNextUrlCacheEntry
+## [win32inet](#win32inet)\.FindNextUrlCacheEntry
 
-dict = __FindNextUrlCacheEntry( *EnumHandle* __ )
+dict \= **FindNextUrlCacheEntry\( *EnumHandle* ** \)
 Continues enumeration of cached files
 
 #### Parameters
@@ -405,14 +405,14 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *FindNextUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnexturlcacheentry),[google](#http://www.google.com/search?q=findnexturlcacheentry)or[google groups](#http://groups.google.com/groups?q=findnexturlcacheentry).
+  - Search for *FindNextUrlCacheEntry* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnexturlcacheentry),[google](#http://www.google.com/search?q=findnexturlcacheentry)or[google groups](#http://groups.google.com/groups?q=findnexturlcacheentry)\.
 
 #### Return Value
-Returns a dict representing a INTERNET_CACHE_ENTRY_INFO strunct
+Returns a dict representing a INTERNET\_CACHE\_ENTRY\_INFO strunct
 
-## [win32inet](#win32inet).FindNextUrlCacheEntryEx
+## [win32inet](#win32inet)\.FindNextUrlCacheEntryEx
 
-dict = __FindNextUrlCacheEntryEx( *EnumHandle* __ )
+dict \= **FindNextUrlCacheEntryEx\( *EnumHandle* ** \)
 Continues enumeration of cached files
 
 #### Parameters
@@ -428,14 +428,14 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *FindNextUrlCacheEntryEx* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnexturlcacheentryex),[google](#http://www.google.com/search?q=findnexturlcacheentryex)or[google groups](#http://groups.google.com/groups?q=findnexturlcacheentryex).
+  - Search for *FindNextUrlCacheEntryEx* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnexturlcacheentryex),[google](#http://www.google.com/search?q=findnexturlcacheentryex)or[google groups](#http://groups.google.com/groups?q=findnexturlcacheentryex)\.
 
 #### Return Value
-Returns a dict representing a INTERNET_CACHE_ENTRY_INFO strunct
+Returns a dict representing a INTERNET\_CACHE\_ENTRY\_INFO strunct
 
-## [win32inet](#win32inet).FindNextUrlCacheGroup
+## [win32inet](#win32inet)\.FindNextUrlCacheGroup
 
-int = __FindNextUrlCacheGroup( *Find* __ )
+int \= **FindNextUrlCacheGroup\( *Find* ** \)
 Continues enumeration of cache groups
 
 #### Parameters
@@ -451,88 +451,88 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *FindNextUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnexturlcachegroup),[google](#http://www.google.com/search?q=findnexturlcachegroup)or[google groups](#http://groups.google.com/groups?q=findnexturlcachegroup).
+  - Search for *FindNextUrlCacheGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnexturlcachegroup),[google](#http://www.google.com/search?q=findnexturlcachegroup)or[google groups](#http://groups.google.com/groups?q=findnexturlcachegroup)\.
 
-## [win32inet](#win32inet).FtpCommand
+## [win32inet](#win32inet)\.FtpCommand
 
-[PyHINTERNET](#pyhinternet)= __FtpCommand( *Connect*  *, ExpectResponse*  *, Flags*  *, Command*  *, Context* __ )
-Allows an application to send commands directly to an FTP server.
+[PyHINTERNET](#pyhinternet)\= **FtpCommand\( *Connect*  *, ExpectResponse*  *, Flags*  *, Command*  *, Context* ** \)
+Allows an application to send commands directly to an FTP server\.
 
 #### Parameters
 
 
   -  *Connect* :[PyHINTERNET](#pyhinternet)
 
-    Valid HINTERNET&#09handle to an FTP session.
+    Valid HINTERNET&\#09handle to an FTP session\.
 
   -  *ExpectResponse* : bool
 
-    Boolean value&#09that indicates whether or not 
+    Boolean value&\#09that indicates whether or not 
 
-the application expects a response&#09from the FTP server. 
+the application expects a response&\#09from the FTP server\. 
 
-This must be set to True if a response&#09is expected, or&#09False otherwise.
+This must be set to True if a response&\#09is expected, or&\#09False otherwise\.
 
   -  *Flags* : int
 
     Unsigned long integer value that contains the flags that 
 
-control this function. This can be set to&#09either FTP_TRANSFER_TYPE_ASCII or 
+control this function\. This can be set to&\#09either FTP\_TRANSFER\_TYPE\_ASCII or 
 
-FTP_TRANSFER_TYPE_BINARY
+FTP\_TRANSFER\_TYPE\_BINARY
 
   -  *Command* : string
 
-    The command to send to the FTP server.
+    The command to send to the FTP server\.
 
-  -  *Context=None* : object
+  -  *Context\=None* : object
 
-    Arbitrary object&#09to be passed to&#09callback
+    Arbitrary object&\#09to be passed to&\#09callback
 
 #### Comments
-This function may cause a crash on 32-bit XP and Vista due to an internal error in win32inet.dll.
+This function may cause a crash on 32-bit XP and Vista due to an internal error in win32inet\.dll\.
 Accepts keyword args
 
-## [win32inet](#win32inet).FtpOpenFile
+## [win32inet](#win32inet)\.FtpOpenFile
 
-[PyHINTERNET](#pyhinternet)= __FtpOpenFile( *hConnect*  *, FileName*  *, Access*  *, Flags*  *, Context* __ )
-Initiates access to a remote file on an FTP server for reading or writing.
+[PyHINTERNET](#pyhinternet)\= **FtpOpenFile\( *hConnect*  *, FileName*  *, Access*  *, Flags*  *, Context* ** \)
+Initiates access to a remote file on an FTP server for reading or writing\.
 
 #### Parameters
 
 
   -  *hConnect* :[PyHINTERNET](#pyhinternet)
 
-    Valid HINTERNET handle to an FTP session.
+    Valid HINTERNET handle to an FTP session\.
 
   -  *FileName* : string
 
-    The name of the file to access on the remote system.
+    The name of the file to access on the remote system\.
 
   -  *Access* : int
 
-    Integer value that determines how the file will be accessed. This can be GENERIC_READ or GENERIC_WRITE, but not both.
+    Integer value that determines how the file will be accessed\. This can be GENERIC\_READ or GENERIC\_WRITE, but not both\.
 
   -  *Flags* : int
 
     Integer value that contains the conditions under which the 
 
-transfers occur. The application should select one transfer type and 
+transfers occur\. The application should select one transfer type and 
 
 any of the flags that indicate how the caching of the file will be 
 
-controlled.  The transfer type can be one of the FTP_TRANSFER_TYPE* values
+controlled\.  The transfer type can be one of the FTP\_TRANSFER\_TYPE\* values
 
-  -  *Context=None* : object
+  -  *Context\=None* : object
 
     Arbitrary object that will be passed to handle's callback function
 
 #### Comments
 Accepts keyword args
 
-## [win32inet](#win32inet).GetUrlCacheEntryInfo
+## [win32inet](#win32inet)\.GetUrlCacheEntryInfo
 
-dict = __GetUrlCacheEntryInfo( *UrlName* __ )
+dict \= **GetUrlCacheEntryInfo\( *UrlName* ** \)
 Retrieves cache info for a URL
 
 #### Parameters
@@ -548,14 +548,14 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *GetUrlCacheEntryInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=geturlcacheentryinfo),[google](#http://www.google.com/search?q=geturlcacheentryinfo)or[google groups](#http://groups.google.com/groups?q=geturlcacheentryinfo).
+  - Search for *GetUrlCacheEntryInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=geturlcacheentryinfo),[google](#http://www.google.com/search?q=geturlcacheentryinfo)or[google groups](#http://groups.google.com/groups?q=geturlcacheentryinfo)\.
 
 #### Return Value
-Returns a dict representing a INTERNET_CACHE_ENTRY_INFO strunct
+Returns a dict representing a INTERNET\_CACHE\_ENTRY\_INFO strunct
 
-## [win32inet](#win32inet).GetUrlCacheGroupAttribute
+## [win32inet](#win32inet)\.GetUrlCacheGroupAttribute
 
-dict = __GetUrlCacheGroupAttribute( *GroupId*  *, Attributes* __ )
+dict \= **GetUrlCacheGroupAttribute\( *GroupId*  *, Attributes* ** \)
 Retrieves attributes for a cache group
 
 #### Parameters
@@ -565,9 +565,9 @@ Retrieves attributes for a cache group
 
     Group id
 
-  -  *Attributes=CACHEGROUP_ATTRIBUTE_GET_ALL* : int
+  -  *Attributes\=CACHEGROUP\_ATTRIBUTE\_GET\_ALL* : int
 
-    Attributes to retrieve, CACHEGROUP_ATTRIBUTE_*
+    Attributes to retrieve, CACHEGROUP\_ATTRIBUTE\_\*
 
 #### Comments
 Accepts keyword args
@@ -575,46 +575,46 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *GetUrlCacheGroupAttribute* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=geturlcachegroupattribute),[google](#http://www.google.com/search?q=geturlcachegroupattribute)or[google groups](#http://groups.google.com/groups?q=geturlcachegroupattribute).
+  - Search for *GetUrlCacheGroupAttribute* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=geturlcachegroupattribute),[google](#http://www.google.com/search?q=geturlcachegroupattribute)or[google groups](#http://groups.google.com/groups?q=geturlcachegroupattribute)\.
 
 #### Return Value
-Returns a dict representing a INTERNET_CACHE_GROUP_INFO struct
+Returns a dict representing a INTERNET\_CACHE\_GROUP\_INFO struct
 
-## [win32inet](#win32inet).InternetAttemptConnect
+## [win32inet](#win32inet)\.InternetAttemptConnect
 
- __InternetAttemptConnect( *Reserved* __ )
-Attempts to make a connection to the Internet.
+ **InternetAttemptConnect\( *Reserved* ** \)
+Attempts to make a connection to the Internet\.
 
 #### Parameters
 
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
-    Use only 0.
+    Use only 0\.
 
-## [win32inet](#win32inet).InternetCanonicalizeUrl
+## [win32inet](#win32inet)\.InternetCanonicalizeUrl
 
-string = __InternetCanonicalizeUrl( *url*  *, flags* __ )
+string \= **InternetCanonicalizeUrl\( *url*  *, flags* ** \)
 Canonicalizes a URL, which includes 
 
-converting unsafe characters and spaces into escape sequences.
+converting unsafe characters and spaces into escape sequences\.
 
 #### Parameters
 
 
   -  *url* : string
 
-    The URL to canonicalize.
+    The URL to canonicalize\.
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
     integer value that contains the flags that control 
 
-canonicalization. This can be one of the following values:
+canonicalization\. This can be one of the following values:
 
-## [win32inet](#win32inet).InternetCheckConnection
+## [win32inet](#win32inet)\.InternetCheckConnection
 
- __InternetCheckConnection( *Url*  *, Flags*  *, Reserved* __ )
+ **InternetCheckConnection\( *Url*  *, Flags*  *, Reserved* ** \)
 Allows an application to check if a connection to the Internet can be established
 
 #### Parameters
@@ -624,17 +624,17 @@ Allows an application to check if a connection to the Internet can be establishe
 
     Url to attempt to connect to, can be None
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    FLAG_ICC_FORCE_CONNECTION is only defined flag
+    FLAG\_ICC\_FORCE\_CONNECTION is only defined flag
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
-    Use only 0.
+    Use only 0\.
 
-## [win32inet](#win32inet).InternetCloseHandle
+## [win32inet](#win32inet)\.InternetCloseHandle
 
- __InternetCloseHandle( *handle* __ )
+ **InternetCloseHandle\( *handle* ** \)
 
 
 #### Parameters
@@ -647,90 +647,90 @@ Allows an application to check if a connection to the Internet can be establishe
 #### Comments
 It should not be necessary to call this function - all handles are[PyHINTERNET](#pyhinternet)objects, so can have their Close method called, and will 
 
-otherwise be automatically closed.
+otherwise be automatically closed\.
 
-## [win32inet](#win32inet).InternetConnect
+## [win32inet](#win32inet)\.InternetConnect
 
- __InternetConnect( *Internet*  *, ServerName*  *, ServerPort*  *, Username*  *, Password*  *, Service*  *, Flags*  *, Context* __ )
-Opens an FTP, Gopher, or HTTP session for a given site.
+ **InternetConnect\( *Internet*  *, ServerName*  *, ServerPort*  *, Username*  *, Password*  *, Service*  *, Flags*  *, Context* ** \)
+Opens an FTP, Gopher, or HTTP session for a given site\.
 
 #### Parameters
 
 
   -  *Internet* :[PyHINTERNET](#pyhinternet)
 
-    Valid HINTERNET handle returned by a previous call to[win32inet::InternetOpen](win32inet.md#win32inetinternetopen).
+    Valid HINTERNET handle returned by a previous call to[win32inet::InternetOpen](win32inet.md#win32inetinternetopen)\.
 
   -  *ServerName* : string
 
     A string that contains the host name of an Internet 
 
-server. Alternately, the string can contain the IP number of the site, 
+server\. Alternately, the string can contain the IP number of the site, 
 
-in ASCII dotted-decimal format (for example, 11.0.1.45).
+in ASCII dotted-decimal format \(for example, 11\.0\.1\.45\)\.
 
   -  *ServerPort* : int
 
-    Number of the TCP/IP port on the server to connect to. 
+    Number of the TCP/IP port on the server to connect to\. 
 
-These flags set only the port that will be used. The service is set by 
+These flags set only the port that will be used\. The service is set by 
 
-the value of dwService. This can be one of the INTERNET_DEFAULT_*_PORT 
+the value of dwService\. This can be one of the INTERNET\_DEFAULT\_\*\_PORT 
 
-constants or INTERNET_INVALID_PORT_NUMBER, which uses the default 
+constants or INTERNET\_INVALID\_PORT\_NUMBER, which uses the default 
 
-port for the service specified by dwService.
+port for the service specified by dwService\.
 
   -  *Username* : string
 
     A string that contains the name of the user 
 
-to log on. If this parameter is&#09None, the function uses&#09an appropriate 
+to log on\. If this parameter is&\#09None, the function uses&\#09an appropriate 
 
-default, except&#09for&#09HTTP; a&#09NULL parameter in HTTP causes the server 
+default, except&\#09for&\#09HTTP; a&\#09NULL parameter in HTTP causes the server 
 
-to return an error.&#09For&#09the&#09FTP&#09protocol, the default is "anonymous".
+to return an error\.&\#09For&\#09the&\#09FTP&\#09protocol, the default is "anonymous"\.
 
   -  *Password* : string
 
-    Address&#09of a null-terminated string&#09that 
+    Address&\#09of a null-terminated string&\#09that 
 
-contains the password to use to&#09log&#09on.&#09If both&#09Password 
+contains the password to use to&\#09log&\#09on\.&\#09If both&\#09Password 
 
-and&#09Username are None, the function&#09uses the default 
+and&\#09Username are None, the function&\#09uses the default 
 
-"anonymous"&#09password. In the case of FTP, the default password 
+"anonymous"&\#09password\. In the case of FTP, the default password 
 
-is the user's e-mail name. If lpszPassword is None,&#09but&#09lpszUsername 
+is the user's e-mail name\. If lpszPassword is None,&\#09but&\#09lpszUsername 
 
-is not None, the function uses a blank password.
+is not None, the function uses a blank password\.
 
   -  *Service* : int
 
-    Iinteger value that contains the type&#09of service to 
+    Iinteger value that contains the type&\#09of service to 
 
-access.&#09This can be&#09one&#09of INTERNET_SERVICE_FTP, INTERNET_SERVICE_GOPHER, 
+access\.&\#09This can be&\#09one&\#09of INTERNET\_SERVICE\_FTP, INTERNET\_SERVICE\_GOPHER, 
 
-or INTERNET_SERVICE_HTTP.
+or INTERNET\_SERVICE\_HTTP\.
 
   -  *Flags* : int
 
     Integer value that contains the flags specific to 
 
-the&#09service&#09used. When the value of&#09dwService is INTERNET_SERVICE_FTP, 
+the&\#09service&\#09used\. When the value of&\#09dwService is INTERNET\_SERVICE\_FTP, 
 
-INTERNET_FLAG_PASSIVE causes the application to&#09use&#09passive&#09FTP&#09semantics.
+INTERNET\_FLAG\_PASSIVE causes the application to&\#09use&\#09passive&\#09FTP&\#09semantics\.
 
-  -  *Context=None* : object
+  -  *Context\=None* : object
 
     Arbitrary object to be passed to callback function
 
 #### Comments
 Accepts keyword args
 
-## [win32inet](#win32inet).InternetGetCookie
+## [win32inet](#win32inet)\.InternetGetCookie
 
-string = __InternetGetCookie( *Url*  *, CookieName* __ )
+string \= **InternetGetCookie\( *Url*  *, CookieName* ** \)
 Retrieves the cookie for the specified URL
 
 #### Parameters
@@ -742,17 +742,17 @@ Retrieves the cookie for the specified URL
 
   -  *CookieName* : string
 
-    Name of cookie (documented on MSDN as not implemented)
+    Name of cookie \(documented on MSDN as not implemented\)
 
-## [win32inet](#win32inet).InternetGetLastResponseInfo
+## [win32inet](#win32inet)\.InternetGetLastResponseInfo
 
-int, string = __InternetGetLastResponseInfo(__ )
-Retrieves the last Win32&#174 Internet function error description or server response on the thread calling this function.
+int, string \= **InternetGetLastResponseInfo\(** \)
+Retrieves the last Win32&\#174 Internet function error description or server response on the thread calling this function\.
 
-## [win32inet](#win32inet).InternetGoOnline
+## [win32inet](#win32inet)\.InternetGoOnline
 
- __InternetGoOnline( *Url*  *, Parent*  *, Flags* __ )
-Prompts the user for permission to initiate connection to a URL.
+ **InternetGoOnline\( *Url*  *, Parent*  *, Flags* ** \)
+Prompts the user for permission to initiate connection to a URL\.
 
 #### Parameters
 
@@ -761,18 +761,18 @@ Prompts the user for permission to initiate connection to a URL.
 
     Web site to connect to
 
-  -  *Parent=None* : int
+  -  *Parent\=None* : int
 
     Handle to parent window
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    INTERNET_GOONLINE_REFRESH is only available flag
+    INTERNET\_GOONLINE\_REFRESH is only available flag
 
-## [win32inet](#win32inet).InternetOpen
+## [win32inet](#win32inet)\.InternetOpen
 
- __InternetOpen( *agent*  *, proxyName*  *, proxyBypass*  *, flags* __ )
-Initializes an application's use of the Microsoft&#174 Win32&#174 Internet functions.
+ **InternetOpen\( *agent*  *, proxyName*  *, proxyBypass*  *, flags* ** \)
+Initializes an application's use of the Microsoft&\#174 Win32&\#174 Internet functions\.
 
 #### Parameters
 
@@ -781,9 +781,9 @@ Initializes an application's use of the Microsoft&#174 Win32&#174 Internet funct
 
     A string that contains the name of the application 
 
-or entity calling the Internet functions. This name is used as the user 
+or entity calling the Internet functions\. This name is used as the user 
 
-agent in the HTTP protocol.
+agent in the HTTP protocol\.
 
   -  *proxyName* : string
 
@@ -795,14 +795,14 @@ agent in the HTTP protocol.
 
   -  *flags* : int
 
-    Combination of INTERNET_FLAG_ASYNC,INTERNET_FLAG_FROM_CACHE, or INTERNET_FLAG_OFFLINE
+    Combination of INTERNET\_FLAG\_ASYNC,INTERNET\_FLAG\_FROM\_CACHE, or INTERNET\_FLAG\_OFFLINE
 
-## [win32inet](#win32inet).InternetOpenUrl
+## [win32inet](#win32inet)\.InternetOpenUrl
 
-[PyHINTERNET](#pyhinternet)= __InternetOpenUrl( *Internet*  *, Url*  *, Headers*  *, Flags*  *, Context* __ )
+[PyHINTERNET](#pyhinternet)\= **InternetOpenUrl\( *Internet*  *, Url*  *, Headers*  *, Flags*  *, Context* ** \)
 Opens a resource specified by a 
 
-complete FTP, Gopher, or HTTP URL.
+complete FTP, Gopher, or HTTP URL\.
 
 #### Parameters
 
@@ -813,31 +813,31 @@ complete FTP, Gopher, or HTTP URL.
 
   -  *Url* : string
 
-    A string that contains the URL to begin reading.  Only URLs beginning with ftp:, gopher:, http:, or https: are supported.
+    A string that contains the URL to begin reading\.  Only URLs beginning with ftp:, gopher:, http:, or https: are supported\.
 
-  -  *Headers=None* : string
+  -  *Headers\=None* : string
 
-    a string&#09variable that contains the headers to be sent to the HTTP server.
+    a string&\#09variable that contains the headers to be sent to the HTTP server\.
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    INTERNET_FLAG_*
+    INTERNET\_FLAG\_\*
 
-  -  *Context=None* : object
+  -  *Context\=None* : object
 
     An arbitrary object to be passed to the status callback function
 
 #### Comments
-Accepts keyword args.
+Accepts keyword args\.
 
 #### Return Value
-Returns None in async mode (Internet handle created with INTERNET_FLAG_ASYNC). 
+Returns None in async mode \(Internet handle created with INTERNET\_FLAG\_ASYNC\)\. 
 
-When handle is created, it will be passed to callback function of parent handle.
+When handle is created, it will be passed to callback function of parent handle\.
 
-## [win32inet](#win32inet).InternetQueryOption
+## [win32inet](#win32inet)\.InternetQueryOption
 
-object = __InternetQueryOption( *hInternet*  *, Option* __ )
+object \= **InternetQueryOption\( *hInternet*  *, Option* ** \)
 Retrieves an option for an internet handle
 
 #### Parameters
@@ -849,21 +849,21 @@ Retrieves an option for an internet handle
 
   -  *Option* : int
 
-    INTERNET_OPTION_* value
+    INTERNET\_OPTION\_\* value
 
- __Option__  __Returned type__ INTERNET_OPTION_CALLBACKPython callback functionINTERNET_OPTION_CONTEXT_VALUEContext objectINTERNET_OPTION_SEND_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_CONTROL_SEND_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_RECEIVE_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_CONTROL_RECEIVE_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_CODEPAGEInt - Codepage of host part of URLINTERNET_OPTION_CODEPAGE_PATHInt - Codepage for URLINTERNET_OPTION_CODEPAGE_EXTRAInt - Codepage for path part of URLINTERNET_OPTION_CONNECT_RETRIESInt - Number of time to try to reconnect to hostINTERNET_OPTION_CONNECT_TIMEOUTInt - Connection timeout in millisecondsINTERNET_OPTION_CONNECTED_STATEInt - Connection state, INTERNET_STATE_*INTERNET_OPTION_HANDLE_TYPEInt, INTERNET_HANDLE_TYPE_*INTERNET_OPTION_ERROR_MASKInt, combination of INTERNET_ERROR_MASK_*INTERNET_OPTION_EXTENDED_ERRORInt, ERROR_INTERNET_*INTERNET_OPTION_FROM_CACHE_TIMEOUTInt - Timeout in ms before cached copy is usedINTERNET_OPTION_IDNInt, INTERNET_FLAG_IDN_*INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVERIntINTERNET_OPTION_MAX_CONNS_PER_SERVERIntINTERNET_OPTION_READ_BUFFER_SIZEIntINTERNET_OPTION_WRITE_BUFFER_SIZEIntINTERNET_OPTION_REQUEST_FLAGSInt, combination of INTERNET_REQFLAG_*INTERNET_OPTION_REQUEST_PRIORITYIntINTERNET_OPTION_SECURITY_FLAGSInt, SECURITY_FLAG_*INTERNET_OPTION_SECURITY_KEY_BITNESSIntINTERNET_OPTION_BYPASS_EDITED_ENTRYBooleanINTERNET_OPTION_HTTP_DECODINGBooleanINTERNET_OPTION_IGNORE_OFFLINEBooleanINTERNET_OPTION_DATAFILE_NAMEString - Name of internet cache fileINTERNET_OPTION_USERNAMEString - Username passed to InternetConnectINTERNET_OPTION_PASSWORDString - Password passed to InternetConnectINTERNET_OPTION_PROXY_PASSWORDStringINTERNET_OPTION_PROXY_USERNAMEStringINTERNET_OPTION_SECONDARY_CACHE_KEYStringINTERNET_OPTION_SECURITY_CERTIFICATEStringINTERNET_OPTION_URLStringINTERNET_OPTION_USER_AGENTStringINTERNET_OPTION_CACHE_TIMESTAMPSdict - Expiration and last modified timesINTERNET_OPTION_HTTP_VERSIONdict - HTTP_VERSION_INFOINTERNET_OPTION_VERSIONdict - INTERNET_VERSION_INFOINTERNET_OPTION_PARENT_HANDLE[PyHINTERNET](#pyhinternet)INTERNET_OPTION_PROXYdict - INTERNET_PROXY_INFOINTERNET_OPTION_DIAGNOSTIC_SOCKET_INFONot yet supported (INTERNET_DIAGNOSTIC_SOCKET_INFO)INTERNET_OPTION_PER_CONNECTION_OPTIONNot yet supported (INTERNET_PER_CONN_OPTION_LIST)INTERNET_OPTION_SECURITY_CERTIFICATE_STRUCTNot yet supported (INTERNET_CERTIFICATE_INFO)INTERNET_OPTION_ALTER_IDENTITYNot supportedINTERNET_OPTION_ASYNCNot supportedINTERNET_OPTION_ASYNC_IDNot supportedINTERNET_OPTION_ASYNC_PRIORITYNot supportedINTERNET_OPTION_CACHE_STREAM_HANDLENot supportedINTERNET_OPTION_CALLBACK_FILTERNot supportedINTERNET_OPTION_CLIENT_CERT_CONTEXTNot supportedINTERNET_OPTION_DATA_RECEIVE_TIMEOUTNot supportedINTERNET_OPTION_DATA_SEND_TIMEOUTNot supportedINTERNET_OPTION_CONNECT_BACKOFFNot supportedINTERNET_OPTION_CONNECT_TIMENot supportedINTERNET_OPTION_DISABLE_AUTODIALNot supportedINTERNET_OPTION_DISCONNECTED_TIMEOUTNot supportedINTERNET_OPTION_IDENTITYNot supportedINTERNET_OPTION_IDLE_STATENot supportedINTERNET_OPTION_KEEP_CONNECTIONNot supportedINTERNET_OPTION_LISTEN_TIMEOUTNot supportedINTERNET_OPTION_OFFLINE_MODENot supportedINTERNET_OPTION_OFFLINE_SEMANTICSNot supportedINTERNET_OPTION_POLICYNot supportedINTERNET_OPTION_RECEIVE_THROUGHPUTNot supportedINTERNET_OPTION_REMOVE_IDENTITYNot supportedINTERNET_OPTION_SEND_THROUGHPUTNot supportedINTERNET_OPTION_DATAFILE_EXTOnly valid for InternetSetOptionINTERNET_OPTION_DIGEST_AUTH_UNLOADOnly valid for InternetSetOptionINTERNET_OPTION_END_BROWSER_SESSIONOnly valid for InternetSetOptionINTERNET_OPTION_REFRESHOnly valid for InternetSetOptionINTERNET_OPTION_RESET_URLCACHE_SESSIONOnly valid for InternetSetOptionINTERNET_OPTION_SETTINGS_CHANGEDOnly valid for InternetSetOption
+ **Option**  **Returned type** INTERNET\_OPTION\_CALLBACKPython callback functionINTERNET\_OPTION\_CONTEXT\_VALUEContext objectINTERNET\_OPTION\_SEND\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_CONTROL\_SEND\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_RECEIVE\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_CONTROL\_RECEIVE\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_CODEPAGEInt - Codepage of host part of URLINTERNET\_OPTION\_CODEPAGE\_PATHInt - Codepage for URLINTERNET\_OPTION\_CODEPAGE\_EXTRAInt - Codepage for path part of URLINTERNET\_OPTION\_CONNECT\_RETRIESInt - Number of time to try to reconnect to hostINTERNET\_OPTION\_CONNECT\_TIMEOUTInt - Connection timeout in millisecondsINTERNET\_OPTION\_CONNECTED\_STATEInt - Connection state, INTERNET\_STATE\_\*INTERNET\_OPTION\_HANDLE\_TYPEInt, INTERNET\_HANDLE\_TYPE\_\*INTERNET\_OPTION\_ERROR\_MASKInt, combination of INTERNET\_ERROR\_MASK\_\*INTERNET\_OPTION\_EXTENDED\_ERRORInt, ERROR\_INTERNET\_\*INTERNET\_OPTION\_FROM\_CACHE\_TIMEOUTInt - Timeout in ms before cached copy is usedINTERNET\_OPTION\_IDNInt, INTERNET\_FLAG\_IDN\_\*INTERNET\_OPTION\_MAX\_CONNS\_PER\_1\_0\_SERVERIntINTERNET\_OPTION\_MAX\_CONNS\_PER\_SERVERIntINTERNET\_OPTION\_READ\_BUFFER\_SIZEIntINTERNET\_OPTION\_WRITE\_BUFFER\_SIZEIntINTERNET\_OPTION\_REQUEST\_FLAGSInt, combination of INTERNET\_REQFLAG\_\*INTERNET\_OPTION\_REQUEST\_PRIORITYIntINTERNET\_OPTION\_SECURITY\_FLAGSInt, SECURITY\_FLAG\_\*INTERNET\_OPTION\_SECURITY\_KEY\_BITNESSIntINTERNET\_OPTION\_BYPASS\_EDITED\_ENTRYBooleanINTERNET\_OPTION\_HTTP\_DECODINGBooleanINTERNET\_OPTION\_IGNORE\_OFFLINEBooleanINTERNET\_OPTION\_DATAFILE\_NAMEString - Name of internet cache fileINTERNET\_OPTION\_USERNAMEString - Username passed to InternetConnectINTERNET\_OPTION\_PASSWORDString - Password passed to InternetConnectINTERNET\_OPTION\_PROXY\_PASSWORDStringINTERNET\_OPTION\_PROXY\_USERNAMEStringINTERNET\_OPTION\_SECONDARY\_CACHE\_KEYStringINTERNET\_OPTION\_SECURITY\_CERTIFICATEStringINTERNET\_OPTION\_URLStringINTERNET\_OPTION\_USER\_AGENTStringINTERNET\_OPTION\_CACHE\_TIMESTAMPSdict - Expiration and last modified timesINTERNET\_OPTION\_HTTP\_VERSIONdict - HTTP\_VERSION\_INFOINTERNET\_OPTION\_VERSIONdict - INTERNET\_VERSION\_INFOINTERNET\_OPTION\_PARENT\_HANDLE[PyHINTERNET](#pyhinternet)INTERNET\_OPTION\_PROXYdict - INTERNET\_PROXY\_INFOINTERNET\_OPTION\_DIAGNOSTIC\_SOCKET\_INFONot yet supported \(INTERNET\_DIAGNOSTIC\_SOCKET\_INFO\)INTERNET\_OPTION\_PER\_CONNECTION\_OPTIONNot yet supported \(INTERNET\_PER\_CONN\_OPTION\_LIST\)INTERNET\_OPTION\_SECURITY\_CERTIFICATE\_STRUCTNot yet supported \(INTERNET\_CERTIFICATE\_INFO\)INTERNET\_OPTION\_ALTER\_IDENTITYNot supportedINTERNET\_OPTION\_ASYNCNot supportedINTERNET\_OPTION\_ASYNC\_IDNot supportedINTERNET\_OPTION\_ASYNC\_PRIORITYNot supportedINTERNET\_OPTION\_CACHE\_STREAM\_HANDLENot supportedINTERNET\_OPTION\_CALLBACK\_FILTERNot supportedINTERNET\_OPTION\_CLIENT\_CERT\_CONTEXTNot supportedINTERNET\_OPTION\_DATA\_RECEIVE\_TIMEOUTNot supportedINTERNET\_OPTION\_DATA\_SEND\_TIMEOUTNot supportedINTERNET\_OPTION\_CONNECT\_BACKOFFNot supportedINTERNET\_OPTION\_CONNECT\_TIMENot supportedINTERNET\_OPTION\_DISABLE\_AUTODIALNot supportedINTERNET\_OPTION\_DISCONNECTED\_TIMEOUTNot supportedINTERNET\_OPTION\_IDENTITYNot supportedINTERNET\_OPTION\_IDLE\_STATENot supportedINTERNET\_OPTION\_KEEP\_CONNECTIONNot supportedINTERNET\_OPTION\_LISTEN\_TIMEOUTNot supportedINTERNET\_OPTION\_OFFLINE\_MODENot supportedINTERNET\_OPTION\_OFFLINE\_SEMANTICSNot supportedINTERNET\_OPTION\_POLICYNot supportedINTERNET\_OPTION\_RECEIVE\_THROUGHPUTNot supportedINTERNET\_OPTION\_REMOVE\_IDENTITYNot supportedINTERNET\_OPTION\_SEND\_THROUGHPUTNot supportedINTERNET\_OPTION\_DATAFILE\_EXTOnly valid for InternetSetOptionINTERNET\_OPTION\_DIGEST\_AUTH\_UNLOADOnly valid for InternetSetOptionINTERNET\_OPTION\_END\_BROWSER\_SESSIONOnly valid for InternetSetOptionINTERNET\_OPTION\_REFRESHOnly valid for InternetSetOptionINTERNET\_OPTION\_RESET\_URLCACHE\_SESSIONOnly valid for InternetSetOptionINTERNET\_OPTION\_SETTINGS\_CHANGEDOnly valid for InternetSetOption
 #### Win32 API References
 
 
-  - Search for *InternetQueryOption* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=internetqueryoption),[google](#http://www.google.com/search?q=internetqueryoption)or[google groups](#http://groups.google.com/groups?q=internetqueryoption).
+  - Search for *InternetQueryOption* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=internetqueryoption),[google](#http://www.google.com/search?q=internetqueryoption)or[google groups](#http://groups.google.com/groups?q=internetqueryoption)\.
 
 #### Return Value
 The type of object returned is dependent on the option requested
 
-## [win32inet](#win32inet).InternetReadFile
+## [win32inet](#win32inet)\.InternetReadFile
 
-string = __InternetReadFile( *hInternet*  *, size* __ )
-Reads data from a handle opened by the[win32inet::InternetOpenUrl](win32inet.md#win32inetinternetopenurl),[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile), __win32inet::GopherOpenFile__ , or __win32inet::HttpOpenRequest__ function.
+string \= **InternetReadFile\( *hInternet*  *, size* ** \)
+Reads data from a handle opened by the[win32inet::InternetOpenUrl](win32inet.md#win32inetinternetopenurl),[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile), **win32inet::GopherOpenFile** , or **win32inet::HttpOpenRequest** function\.
 
 #### Parameters
 
@@ -874,15 +874,15 @@ Reads data from a handle opened by the[win32inet::InternetOpenUrl](win32inet.md#
 
   -  *size* : int
 
-    Number of bytes to read.
+    Number of bytes to read\.
 
 #### Return Value
-The result will be a string of zero bytes when the end is reached.
+The result will be a string of zero bytes when the end is reached\.
 
-## [win32inet](#win32inet).InternetSetCookie
+## [win32inet](#win32inet)\.InternetSetCookie
 
- __InternetSetCookie( *url*  *, lpszCookieName*  *, data* __ )
-Creates a cookie associated with the specified URL.
+ **InternetSetCookie\( *url*  *, lpszCookieName*  *, data* ** \)
+Creates a cookie associated with the specified URL\.
 
 #### Parameters
 
@@ -899,9 +899,9 @@ Creates a cookie associated with the specified URL.
 
     
 
-## [win32inet](#win32inet).InternetSetOption
+## [win32inet](#win32inet)\.InternetSetOption
 
- __InternetSetOption( *hInternet*  *, Option*  *, Buffer* __ )
+ **InternetSetOption\( *hInternet*  *, Option*  *, Buffer* ** \)
 Sets an option for an internet handle
 
 #### Parameters
@@ -913,37 +913,37 @@ Sets an option for an internet handle
 
   -  *Option* : int
 
-    The option to set, INTERNET_OPTION_*
+    The option to set, INTERNET\_OPTION\_\*
 
   -  *Buffer* : object
 
     Type is dependent on Option
 
- __Option__  __Type of input object__ INTERNET_OPTION_CALLBACKPython function called on status changeINTERNET_OPTION_CONTEXT_VALUEAny Python object to be passed to callback functionINTERNET_OPTION_SEND_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_CONTROL_SEND_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_RECEIVE_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_CONTROL_RECEIVE_TIMEOUTInt - timeout in millsecondsINTERNET_OPTION_CODEPAGEInt - Codepage of host part of URLINTERNET_OPTION_CODEPAGE_PATHCodepage for URLINTERNET_OPTION_CODEPAGE_EXTRAInt - Codepage for path part of URLINTERNET_OPTION_CONNECT_RETRIESInt - Number of time to try to reconnect to hostINTERNET_OPTION_CONNECT_TIMEOUTInt - Connection timeout in millisecondsINTERNET_OPTION_CONNECTED_STATEInt - Connection state, INTERNET_STATE_*INTERNET_OPTION_ERROR_MASKInt, combination of INTERNET_ERROR_MASK_*INTERNET_OPTION_FROM_CACHE_TIMEOUTInt - Timeout in ms before cached copy is usedINTERNET_OPTION_IDNInt, INTERNET_FLAG_IDN_*INTERNET_OPTION_MAX_CONNS_PER_1_0_SERVERIntINTERNET_OPTION_MAX_CONNS_PER_SERVERIntINTERNET_OPTION_READ_BUFFER_SIZEIntINTERNET_OPTION_WRITE_BUFFER_SIZEIntINTERNET_OPTION_REQUEST_PRIORITYIntINTERNET_OPTION_DIGEST_AUTH_UNLOADNoneINTERNET_OPTION_END_BROWSER_SESSIONNoneINTERNET_OPTION_REFRESHNoneINTERNET_OPTION_RESET_URLCACHE_SESSIONNoneINTERNET_OPTION_SETTINGS_CHANGEDNoneINTERNET_OPTION_BYPASS_EDITED_ENTRYBooleanINTERNET_OPTION_HTTP_DECODINGBooleanINTERNET_OPTION_IGNORE_OFFLINEBooleanINTERNET_OPTION_USERNAMEString - Username passed to InternetConnectINTERNET_OPTION_PASSWORDString - Password passed to InternetConnectINTERNET_OPTION_PROXY_PASSWORDStringINTERNET_OPTION_PROXY_USERNAMEStringINTERNET_OPTION_SECONDARY_CACHE_KEYStringINTERNET_OPTION_USER_AGENTStringINTERNET_OPTION_DATAFILE_EXTString - Extension to use for download cache fileINTERNET_OPTION_PROXYDict representing INTERNET_PROXY_INFO structINTERNET_OPTION_HTTP_VERSIONNot yet supported - HTTP_VERSION_INFOINTERNET_OPTION_PER_CONNECTION_OPTIONNot yet supported (INTERNET_PER_CONN_OPTION_LIST)INTERNET_OPTION_ALTER_IDENTITYNot supportedINTERNET_OPTION_ASYNCNot supportedINTERNET_OPTION_ASYNC_IDNot supportedINTERNET_OPTION_ASYNC_PRIORITYNot supportedINTERNET_OPTION_CACHE_STREAM_HANDLENot supportedINTERNET_OPTION_CALLBACK_FILTERNot supportedINTERNET_OPTION_CLIENT_CERT_CONTEXTNot supportedINTERNET_OPTION_DATA_RECEIVE_TIMEOUTNot supportedINTERNET_OPTION_DATA_SEND_TIMEOUTNot supportedINTERNET_OPTION_CONNECT_BACKOFFNot supportedINTERNET_OPTION_CONNECT_TIMENot supportedINTERNET_OPTION_DISABLE_AUTODIALNot supportedINTERNET_OPTION_DISCONNECTED_TIMEOUTNot supportedINTERNET_OPTION_IDENTITYNot supportedINTERNET_OPTION_IDLE_STATENot supportedINTERNET_OPTION_KEEP_CONNECTIONNot supportedINTERNET_OPTION_LISTEN_TIMEOUTNot supportedINTERNET_OPTION_OFFLINE_MODENot supportedINTERNET_OPTION_OFFLINE_SEMANTICSNot supportedINTERNET_OPTION_POLICYNot supportedINTERNET_OPTION_RECEIVE_THROUGHPUTNot supportedINTERNET_OPTION_REMOVE_IDENTITYNot supportedINTERNET_OPTION_SEND_THROUGHPUTNot supportedINTERNET_OPTION_CACHE_TIMESTAMPSOnly valid for InternetQueryOptionINTERNET_OPTION_HANDLE_TYPEOnly valid for InternetQueryOptionINTERNET_OPTION_DATAFILE_NAMEOnly valid for InternetQueryOptionINTERNET_OPTION_PARENT_HANDLEOnly valid for InternetQueryOptionINTERNET_OPTION_SECURITY_CERTIFICATEOnly valid for InternetQueryOptionINTERNET_OPTION_SECURITY_CERTIFICATE_STRUCTOnly valid for InternetQueryOptionINTERNET_OPTION_SECURITY_FLAGSOnly valid for InternetQueryOptionINTERNET_OPTION_SECURITY_KEY_BITNESSOnly valid for InternetQueryOptionINTERNET_OPTION_DIAGNOSTIC_SOCKET_INFOOnly valid for InternetQueryOptionINTERNET_OPTION_VERSIONOnly valid for InternetQueryOptionINTERNET_OPTION_EXTENDED_ERROROnly valid for InternetQueryOptionINTERNET_OPTION_REQUEST_FLAGSOnly valid for InternetQueryOptionINTERNET_OPTION_URLOnly valid for InternetQueryOption
+ **Option**  **Type of input object** INTERNET\_OPTION\_CALLBACKPython function called on status changeINTERNET\_OPTION\_CONTEXT\_VALUEAny Python object to be passed to callback functionINTERNET\_OPTION\_SEND\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_CONTROL\_SEND\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_RECEIVE\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_CONTROL\_RECEIVE\_TIMEOUTInt - timeout in millsecondsINTERNET\_OPTION\_CODEPAGEInt - Codepage of host part of URLINTERNET\_OPTION\_CODEPAGE\_PATHCodepage for URLINTERNET\_OPTION\_CODEPAGE\_EXTRAInt - Codepage for path part of URLINTERNET\_OPTION\_CONNECT\_RETRIESInt - Number of time to try to reconnect to hostINTERNET\_OPTION\_CONNECT\_TIMEOUTInt - Connection timeout in millisecondsINTERNET\_OPTION\_CONNECTED\_STATEInt - Connection state, INTERNET\_STATE\_\*INTERNET\_OPTION\_ERROR\_MASKInt, combination of INTERNET\_ERROR\_MASK\_\*INTERNET\_OPTION\_FROM\_CACHE\_TIMEOUTInt - Timeout in ms before cached copy is usedINTERNET\_OPTION\_IDNInt, INTERNET\_FLAG\_IDN\_\*INTERNET\_OPTION\_MAX\_CONNS\_PER\_1\_0\_SERVERIntINTERNET\_OPTION\_MAX\_CONNS\_PER\_SERVERIntINTERNET\_OPTION\_READ\_BUFFER\_SIZEIntINTERNET\_OPTION\_WRITE\_BUFFER\_SIZEIntINTERNET\_OPTION\_REQUEST\_PRIORITYIntINTERNET\_OPTION\_DIGEST\_AUTH\_UNLOADNoneINTERNET\_OPTION\_END\_BROWSER\_SESSIONNoneINTERNET\_OPTION\_REFRESHNoneINTERNET\_OPTION\_RESET\_URLCACHE\_SESSIONNoneINTERNET\_OPTION\_SETTINGS\_CHANGEDNoneINTERNET\_OPTION\_BYPASS\_EDITED\_ENTRYBooleanINTERNET\_OPTION\_HTTP\_DECODINGBooleanINTERNET\_OPTION\_IGNORE\_OFFLINEBooleanINTERNET\_OPTION\_USERNAMEString - Username passed to InternetConnectINTERNET\_OPTION\_PASSWORDString - Password passed to InternetConnectINTERNET\_OPTION\_PROXY\_PASSWORDStringINTERNET\_OPTION\_PROXY\_USERNAMEStringINTERNET\_OPTION\_SECONDARY\_CACHE\_KEYStringINTERNET\_OPTION\_USER\_AGENTStringINTERNET\_OPTION\_DATAFILE\_EXTString - Extension to use for download cache fileINTERNET\_OPTION\_PROXYDict representing INTERNET\_PROXY\_INFO structINTERNET\_OPTION\_HTTP\_VERSIONNot yet supported - HTTP\_VERSION\_INFOINTERNET\_OPTION\_PER\_CONNECTION\_OPTIONNot yet supported \(INTERNET\_PER\_CONN\_OPTION\_LIST\)INTERNET\_OPTION\_ALTER\_IDENTITYNot supportedINTERNET\_OPTION\_ASYNCNot supportedINTERNET\_OPTION\_ASYNC\_IDNot supportedINTERNET\_OPTION\_ASYNC\_PRIORITYNot supportedINTERNET\_OPTION\_CACHE\_STREAM\_HANDLENot supportedINTERNET\_OPTION\_CALLBACK\_FILTERNot supportedINTERNET\_OPTION\_CLIENT\_CERT\_CONTEXTNot supportedINTERNET\_OPTION\_DATA\_RECEIVE\_TIMEOUTNot supportedINTERNET\_OPTION\_DATA\_SEND\_TIMEOUTNot supportedINTERNET\_OPTION\_CONNECT\_BACKOFFNot supportedINTERNET\_OPTION\_CONNECT\_TIMENot supportedINTERNET\_OPTION\_DISABLE\_AUTODIALNot supportedINTERNET\_OPTION\_DISCONNECTED\_TIMEOUTNot supportedINTERNET\_OPTION\_IDENTITYNot supportedINTERNET\_OPTION\_IDLE\_STATENot supportedINTERNET\_OPTION\_KEEP\_CONNECTIONNot supportedINTERNET\_OPTION\_LISTEN\_TIMEOUTNot supportedINTERNET\_OPTION\_OFFLINE\_MODENot supportedINTERNET\_OPTION\_OFFLINE\_SEMANTICSNot supportedINTERNET\_OPTION\_POLICYNot supportedINTERNET\_OPTION\_RECEIVE\_THROUGHPUTNot supportedINTERNET\_OPTION\_REMOVE\_IDENTITYNot supportedINTERNET\_OPTION\_SEND\_THROUGHPUTNot supportedINTERNET\_OPTION\_CACHE\_TIMESTAMPSOnly valid for InternetQueryOptionINTERNET\_OPTION\_HANDLE\_TYPEOnly valid for InternetQueryOptionINTERNET\_OPTION\_DATAFILE\_NAMEOnly valid for InternetQueryOptionINTERNET\_OPTION\_PARENT\_HANDLEOnly valid for InternetQueryOptionINTERNET\_OPTION\_SECURITY\_CERTIFICATEOnly valid for InternetQueryOptionINTERNET\_OPTION\_SECURITY\_CERTIFICATE\_STRUCTOnly valid for InternetQueryOptionINTERNET\_OPTION\_SECURITY\_FLAGSOnly valid for InternetQueryOptionINTERNET\_OPTION\_SECURITY\_KEY\_BITNESSOnly valid for InternetQueryOptionINTERNET\_OPTION\_DIAGNOSTIC\_SOCKET\_INFOOnly valid for InternetQueryOptionINTERNET\_OPTION\_VERSIONOnly valid for InternetQueryOptionINTERNET\_OPTION\_EXTENDED\_ERROROnly valid for InternetQueryOptionINTERNET\_OPTION\_REQUEST\_FLAGSOnly valid for InternetQueryOptionINTERNET\_OPTION\_URLOnly valid for InternetQueryOption
 #### Win32 API References
 
 
-  - Search for *InternetSetOption* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=internetsetoption),[google](#http://www.google.com/search?q=internetsetoption)or[google groups](#http://groups.google.com/groups?q=internetsetoption).
+  - Search for *InternetSetOption* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=internetsetoption),[google](#http://www.google.com/search?q=internetsetoption)or[google groups](#http://groups.google.com/groups?q=internetsetoption)\.
 
-## [win32inet](#win32inet).InternetWriteFile
+## [win32inet](#win32inet)\.InternetWriteFile
 
-int = __InternetWriteFile( *File*  *, Buffer* __ )
-Writes data to a handle opened by[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile).
+int \= **InternetWriteFile\( *File*  *, Buffer* ** \)
+Writes data to a handle opened by[win32inet::FtpOpenFile](win32inet.md#win32inetftpopenfile)\.
 
 #### Parameters
 
 
   -  *File* :[PyHINTERNET](#pyhinternet)
 
-    Writeable internet&#09handle
+    Writeable internet&\#09handle
 
   -  *Buffer* : string
 
-    String or&#09buffer containing data to be written
+    String or&\#09buffer containing data to be written
 
-## [win32inet](#win32inet).SetUrlCacheEntryGroup
+## [win32inet](#win32inet)\.SetUrlCacheEntryGroup
 
- __SetUrlCacheEntryGroup( *UrlName*  *, Flags*  *, GroupId* __ )
+ **SetUrlCacheEntryGroup\( *UrlName*  *, Flags*  *, GroupId* ** \)
 Associates a cache entry with a group
 
 #### Parameters
@@ -955,7 +955,7 @@ Associates a cache entry with a group
 
   -  *Flags* : int
 
-    INTERNET_CACHE_GROUP_ADD or INTERNET_CACHE_GROUP_REMOVE
+    INTERNET\_CACHE\_GROUP\_ADD or INTERNET\_CACHE\_GROUP\_REMOVE
 
   -  *GroupId* : int
 
@@ -967,11 +967,11 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *SetUrlCacheEntryGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=seturlcacheentrygroup),[google](#http://www.google.com/search?q=seturlcacheentrygroup)or[google groups](#http://groups.google.com/groups?q=seturlcacheentrygroup).
+  - Search for *SetUrlCacheEntryGroup* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=seturlcacheentrygroup),[google](#http://www.google.com/search?q=seturlcacheentrygroup)or[google groups](#http://groups.google.com/groups?q=seturlcacheentrygroup)\.
 
-## [win32inet](#win32inet).SetUrlCacheGroupAttribute
+## [win32inet](#win32inet)\.SetUrlCacheGroupAttribute
 
- __SetUrlCacheGroupAttribute( *GroupId*  *, Attributes*  *, GroupInfo*  *, Flags* __ )
+ **SetUrlCacheGroupAttribute\( *GroupId*  *, Attributes*  *, GroupInfo*  *, Flags* ** \)
 Changes the attributes of a cache group
 
 #### Parameters
@@ -983,13 +983,13 @@ Changes the attributes of a cache group
 
   -  *Attributes* : int
 
-    Bitmask of CACHEGROUP_ATTRIBUTE_* flags indicating which attributes to set
+    Bitmask of CACHEGROUP\_ATTRIBUTE\_\* flags indicating which attributes to set
 
   -  *GroupInfo* : dict
 
-    INTERNET_CACHE_GROUP_INFO dict as returned by[win32inet::GetUrlCacheGroupAttribute](win32inet.md#win32inetgeturlcachegroupattribute)
+    INTERNET\_CACHE\_GROUP\_INFO dict as returned by[win32inet::GetUrlCacheGroupAttribute](win32inet.md#win32inetgeturlcachegroupattribute)
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use 0
 
@@ -999,45 +999,45 @@ Accepts keyword args
 #### Win32 API References
 
 
-  - Search for *SetUrlCacheGroupAttribute* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=seturlcachegroupattribute),[google](#http://www.google.com/search?q=seturlcachegroupattribute)or[google groups](#http://groups.google.com/groups?q=seturlcachegroupattribute).
+  - Search for *SetUrlCacheGroupAttribute* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=seturlcachegroupattribute),[google](#http://www.google.com/search?q=seturlcachegroupattribute)or[google groups](#http://groups.google.com/groups?q=seturlcachegroupattribute)\.
 
-## [win32inet](#win32inet).WinHttpGetDefaultProxyConfiguration
+## [win32inet](#win32inet)\.WinHttpGetDefaultProxyConfiguration
 
-[PyWINHTTP_PROXY_INFO](PyWINHTTP.md#pywinhttpproxy_info)= __WinHttpGetDefaultProxyConfiguration(__ )
-Retrieves the default WinHTTP proxy configuration from the registry.
+[PyWINHTTP\_PROXY\_INFO](PyWINHTTP.md#pywinhttpproxy_info)\= **WinHttpGetDefaultProxyConfiguration\(** \)
+Retrieves the default WinHTTP proxy configuration from the registry\.
 
-## [win32inet](#win32inet).WinHttpGetIEProxyConfigForCurrentUser
+## [win32inet](#win32inet)\.WinHttpGetIEProxyConfigForCurrentUser
 
-tuple = __WinHttpGetIEProxyConfigForCurrentUser(__ )
+tuple \= **WinHttpGetIEProxyConfigForCurrentUser\(** \)
 Obtains 
 
-the Internet Explorer proxy configuration for the current user.
+the Internet Explorer proxy configuration for the current user\.
 
 #### Win32 API References
 
 
-  - Search for *WinHttpGetIEProxyConfigForCurrentUser* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhttpgetieproxyconfigforcurrentuser),[google](#http://www.google.com/search?q=winhttpgetieproxyconfigforcurrentuser)or[google groups](#http://groups.google.com/groups?q=winhttpgetieproxyconfigforcurrentuser).
+  - Search for *WinHttpGetIEProxyConfigForCurrentUser* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhttpgetieproxyconfigforcurrentuser),[google](#http://www.google.com/search?q=winhttpgetieproxyconfigforcurrentuser)or[google groups](#http://groups.google.com/groups?q=winhttpgetieproxyconfigforcurrentuser)\.
 
-  - Search for *WINHTTP_CURRENT_USER_IE_PROXY_CONFIG* at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WINHTTP.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhttpcurrent_user_ie_proxy_config),[google](http://www.google.com/search?q=WINHTTP.md#http://www.google.com/search?q=winhttpcurrent_user_ie_proxy_config)or[google groups](http://groups.google.com/groups?q=WINHTTP.md#http://groups.google.com/groups?q=winhttpcurrent_user_ie_proxy_config).
+  - Search for *WINHTTP\_CURRENT\_USER\_IE\_PROXY\_CONFIG* at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WINHTTP.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhttpcurrent_user_ie_proxy_config),[google](http://www.google.com/search?q=WINHTTP.md#http://www.google.com/search?q=winhttpcurrent_user_ie_proxy_config)or[google groups](http://groups.google.com/groups?q=WINHTTP.md#http://groups.google.com/groups?q=winhttpcurrent_user_ie_proxy_config)\.
 
 #### Return Value
-The result is a windows WINHTTP_CURRENT_USER_IE_PROXY_CONFIG 
+The result is a windows WINHTTP\_CURRENT\_USER\_IE\_PROXY\_CONFIG 
 
-structure; a tuple of an int (bool) and 3 unicode strings 
+structure; a tuple of an int \(bool\) and 3 unicode strings 
 
-(fAutoDetect, lpszAutoConfigUrl, lpszProxy, lpszProxyBypass).
+\(fAutoDetect, lpszAutoConfigUrl, lpszProxy, lpszProxyBypass\)\.
 
-## [win32inet](#win32inet).WinHttpGetProxyForUrl
+## [win32inet](#win32inet)\.WinHttpGetProxyForUrl
 
-[PyWINHTTP_PROXY_INFO](PyWINHTTP.md#pywinhttpproxy_info)= __WinHttpGetProxyForUrl( *handle*  *, url*  *, options* __ )
+[PyWINHTTP\_PROXY\_INFO](PyWINHTTP.md#pywinhttpproxy_info)\= **WinHttpGetProxyForUrl\( *handle*  *, url*  *, options* ** \)
 Obtains 
 
-the Internet Explorer proxy configuration for the specified URL.
+the Internet Explorer proxy configuration for the specified URL\.
 
 #### Parameters
 
 
-  -  *handle* : __HANDLE__ /int
+  -  *handle* : **HANDLE** /int
 
     
 
@@ -1045,14 +1045,14 @@ the Internet Explorer proxy configuration for the specified URL.
 
     
 
-  -  *options* :[PyWINHTTP_AUTOPROXY_OPTIONS](PyWINHTTP.md#pywinhttpautoproxy_options)
+  -  *options* :[PyWINHTTP\_AUTOPROXY\_OPTIONS](PyWINHTTP.md#pywinhttpautoproxy_options)
 
     
 
-## [win32inet](#win32inet).WinHttpOpen
+## [win32inet](#win32inet)\.WinHttpOpen
 
-[PyHINTERNET](#pyhinternet)= __WinHttpOpen( *lpszUserAgent*  *, dwAccessType*  *, lpszProxyName*  *, lpszProxyBypass*  *, dwFlags* __ )
-Opens a winhttp session.
+[PyHINTERNET](#pyhinternet)\= **WinHttpOpen\( *lpszUserAgent*  *, dwAccessType*  *, lpszProxyName*  *, lpszProxyBypass*  *, dwFlags* ** \)
+Opens a winhttp session\.
 
 #### Parameters
 
@@ -1080,4 +1080,4 @@ Opens a winhttp session.
 #### Win32 API References
 
 
-  - Search for *WinHttpOpen* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhttpopen),[google](#http://www.google.com/search?q=winhttpopen)or[google groups](#http://groups.google.com/groups?q=winhttpopen).
+  - Search for *WinHttpOpen* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhttpopen),[google](#http://www.google.com/search?q=winhttpopen)or[google groups](#http://groups.google.com/groups?q=winhttpopen)\.

@@ -47,50 +47,50 @@ Description of the interface
 
     Description of OnPosRectChange&nbsp;
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).CanInPlaceActivate
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.CanInPlaceActivate
 
- __CanInPlaceActivate(__ )
-Description of CanInPlaceActivate.
+ **CanInPlaceActivate\(** \)
+Description of CanInPlaceActivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).DeactivateAndUndo
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.DeactivateAndUndo
 
- __DeactivateAndUndo(__ )
-Description of DeactivateAndUndo.
+ **DeactivateAndUndo\(** \)
+Description of DeactivateAndUndo\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).DiscardUndoState
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.DiscardUndoState
 
- __DiscardUndoState(__ )
-Description of DiscardUndoState.
+ **DiscardUndoState\(** \)
+Description of DiscardUndoState\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).GetWindowContext
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.GetWindowContext
 
- __GetWindowContext(__ )
-Description of GetWindowContext.
+ **GetWindowContext\(** \)
+Description of GetWindowContext\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).OnInPlaceActivate
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnInPlaceActivate
 
- __OnInPlaceActivate(__ )
-Description of OnInPlaceActivate.
+ **OnInPlaceActivate\(** \)
+Description of OnInPlaceActivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).OnInPlaceDeactivate
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnInPlaceDeactivate
 
- __OnInPlaceDeactivate(__ )
-Description of OnInPlaceDeactivate.
+ **OnInPlaceDeactivate\(** \)
+Description of OnInPlaceDeactivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).OnPosRectChange
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnPosRectChange
 
- __OnPosRectChange(__ )
-Description of OnPosRectChange.
+ **OnPosRectChange\(** \)
+Description of OnPosRectChange\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).OnUIActivate
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnUIActivate
 
- __OnUIActivate(__ )
-Description of OnUIActivate.
+ **OnUIActivate\(** \)
+Description of OnUIActivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).OnUIDeactivate
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnUIDeactivate
 
- __OnUIDeactivate( *fUndoable* __ )
-Description of OnUIDeactivate.
+ **OnUIDeactivate\( *fUndoable* ** \)
+Description of OnUIDeactivate\.
 
 #### Parameters
 
@@ -99,7 +99,7 @@ Description of OnUIDeactivate.
 
     Description for fUndoable
 
-## [PyIOleInPlaceSite](#pyioleinplacesite).Scroll
+## [PyIOleInPlaceSite](#pyioleinplacesite)\.Scroll
 
- __Scroll(__ )
-Description of Scroll.
+ **Scroll\(** \)
+Description of Scroll\.

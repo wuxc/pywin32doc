@@ -2,18 +2,18 @@
 
 ## PyCMDIChildWnd Object
 
-A windows frame window.  Encapsulates an MFC __CMDIChildWindow__ class
+A windows frame window\.  Encapsulates an MFC **CMDIChildWindow** class
 
 #### Methods
 
 
   - [ActivateFrame](PyCMDIChildWnd.md#pycmdichildwndactivateframe)
 
-    Calls the underlying MFC ActivateFrame method.&nbsp;
+    Calls the underlying MFC ActivateFrame method\.&nbsp;
 
   - [CreateWindow](PyCMDIChildWnd.md#pycmdichildwndcreatewindow)
 
-    Creates the actual window for the PyCWnd object.&nbsp;
+    Creates the actual window for the PyCWnd object\.&nbsp;
 
   - [GetMDIFrame](PyCMDIChildWnd.md#pycmdichildwndgetmdiframe)
 
@@ -21,15 +21,15 @@ A windows frame window.  Encapsulates an MFC __CMDIChildWindow__ class
 
   - [MDIActivate](PyCMDIChildWnd.md#pycmdichildwndmdiactivate)
 
-    Activates the MDI frame independent of the main frame.&nbsp;
+    Activates the MDI frame independent of the main frame\.&nbsp;
 
   - [PreCreateWindow](PyCMDIChildWnd.md#pycmdichildwndprecreatewindow)
 
-    Calls the underlying MFC PreCreateWindow method.&nbsp;
+    Calls the underlying MFC PreCreateWindow method\.&nbsp;
 
   - [PreTranslateMessage](PyCMDIChildWnd.md#pycmdichildwndpretranslatemessage)
 
-    Calls the underlying MFC PreTranslateMessage method.&nbsp;
+    Calls the underlying MFC PreTranslateMessage method\.&nbsp;
 
   - [OnCommand](PyCMDIChildWnd.md#pycmdichildwndoncommand)
 
@@ -40,27 +40,27 @@ A windows frame window.  Encapsulates an MFC __CMDIChildWindow__ class
     Calls the standard Python framework OnClose handler&nbsp;
 
 
-## [PyCMDIChildWnd](#pycmdichildwnd).ActivateFrame
+## [PyCMDIChildWnd](#pycmdichildwnd)\.ActivateFrame
 
- __ActivateFrame( *cmdShow* __ )
-Calls the underlying MFC ActivateFrame method.
+ **ActivateFrame\( *cmdShow* ** \)
+Calls the underlying MFC ActivateFrame method\.
 
 #### Parameters
 
 
-  -  *cmdShow=-1* : int
+  -  *cmdShow\=-1* : int
 
-    The status of the window.
+    The status of the window\.
 
 #### See Also
 
 
-  - [PyCMDIChildWnd.ActivateFrame](PyCMDIChildWnd.md#pycmdichildwndactivateframe_virtual)virtual method
+  - [PyCMDIChildWnd\.ActivateFrame](PyCMDIChildWnd.md#pycmdichildwndactivateframe_virtual)virtual method
 
-## [PyCMDIChildWnd.ActivateFrame](#pycmdichildwnd)Virtual
+## [PyCMDIChildWnd\.ActivateFrame](#pycmdichildwnd)Virtual
 
- __ActivateFrame( *cmdShow* __ )
-Called to activate the frame window.
+ **ActivateFrame\( *cmdShow* ** \)
+Called to activate the frame window\.
 
 #### Parameters
 
@@ -70,20 +70,20 @@ Called to activate the frame window.
     The parameter to be passed to[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)
 
 #### Comments
-If a handler for this function exists, then the base MFC implementation will not be called. 
+If a handler for this function exists, then the base MFC implementation will not be called\. 
 
-If you wish to use the default functionality, __PyCMDIFrameWnd::ActivateFrame__ can be called.
-If there is no handler, the base MFC implementation will be called.
+If you wish to use the default functionality, **PyCMDIFrameWnd::ActivateFrame** can be called\.
+If there is no handler, the base MFC implementation will be called\.
 
 #### See Also
 
 
   - [PyCMDIChildWnd::ActivateFrame](PyCMDIChildWnd.md#pycmdichildwndactivateframe)
 
-## [PyCMDIChildWnd](#pycmdichildwnd).CreateWindow
+## [PyCMDIChildWnd](#pycmdichildwnd)\.CreateWindow
 
-tuple = __CreateWindow( *wndClass*  *, title*  *, style*  *, rect*  *,[PyCWnd](#pycwnd)*  *, createContext* __ )
-Creates the actual window for the PyCWnd object.
+tuple \= **CreateWindow\( *wndClass*  *, title*  *, style*  *, rect*  *,[PyCWnd](#pycwnd)*  *, createContext* ** \)
+Creates the actual window for the PyCWnd object\.
 
 #### Parameters
 
@@ -96,77 +96,77 @@ Creates the actual window for the PyCWnd object.
 
     The window title
 
-  -  *style=WS_CHILD | WS_VISIBLE | WS_OVERLAPPEDWINDOW* : int
+  -  *style\=WS\_CHILD | WS\_VISIBLE | WS\_OVERLAPPEDWINDOW* : int
 
     The window style
 
-  -  *rect=None* : int, int, int, int
+  -  *rect\=None* : int, int, int, int
 
     The default rectangle
 
-  -  *[PyCWnd](#pycwnd)=None* : parent
+  -  *[PyCWnd](#pycwnd)\=None* : parent
 
     The parent window
 
-  -  *createContext=None* : tuple
+  -  *createContext\=None* : tuple
 
-    A tuple representing a CREATECONTEXT structure.
+    A tuple representing a CREATECONTEXT structure\.
 
 #### Comments
-You do not need to call this method if you use the MFC Document/View framework.
+You do not need to call this method if you use the MFC Document/View framework\.
 
-## [PyCMDIChildWnd](#pycmdichildwnd).GetMDIFrame
+## [PyCMDIChildWnd](#pycmdichildwnd)\.GetMDIFrame
 
- __GetMDIFrame(__ )
+ **GetMDIFrame\(** \)
 Returns the MDI parent frame
 
-## [PyCMDIChildWnd.GetMessageString](#pycmdichildwnd)Virtual
+## [PyCMDIChildWnd\.GetMessageString](#pycmdichildwnd)Virtual
 
- __GetMessageString( *id* __ )
-Gets the message string to use for a control specific ID.
+ **GetMessageString\( *id* ** \)
+Gets the message string to use for a control specific ID\.
 
 #### Parameters
 
 
   -  *id* : int
 
-    The command ID to retrieve the string for.
+    The command ID to retrieve the string for\.
 
 #### See Also
 
 
-  -  __PyCMDIChildWnd::GetMessageString__ 
+  -  **PyCMDIChildWnd::GetMessageString** 
 
-## [PyCMDIChildWnd](#pycmdichildwnd).MDIActivate
+## [PyCMDIChildWnd](#pycmdichildwnd)\.MDIActivate
 
- __MDIActivate( *cmdShow* __ )
-Activates the MDI frame independent of the main frame.
+ **MDIActivate\( *cmdShow* ** \)
+Activates the MDI frame independent of the main frame\.
 
 #### Parameters
 
 
-  -  *cmdShow=-1* : int
+  -  *cmdShow\=-1* : int
 
-    The status of the window.
+    The status of the window\.
 
 #### See Also
 
 
-  - [PyCWnd.OnMDIActivate](PyCWnd.md#pycwndonmdiactivate_virtual)virtual method
+  - [PyCWnd\.OnMDIActivate](PyCWnd.md#pycwndonmdiactivate_virtual)virtual method
 
-## [PyCMDIChildWnd](#pycmdichildwnd).OnClose
+## [PyCMDIChildWnd](#pycmdichildwnd)\.OnClose
 
- __OnClose(__ )
+ **OnClose\(** \)
 Calls the standard Python framework OnClose handler
 
 #### See Also
 
 
-  - [PyCWnd.OnClose](PyCWnd.md#pycwndonclose_virtual)virtual method
+  - [PyCWnd\.OnClose](PyCWnd.md#pycwndonclose_virtual)virtual method
 
-## [PyCMDIChildWnd](#pycmdichildwnd).OnCommand
+## [PyCMDIChildWnd](#pycmdichildwnd)\.OnCommand
 
- __OnCommand( *wparam*  *, lparam* __ )
+ **OnCommand\( *wparam*  *, lparam* ** \)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
@@ -183,50 +183,50 @@ Calls the standard Python framework OnCommand handler
 #### See Also
 
 
-  - [PyCWnd.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
+  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
 
-## [PyCMDIChildWnd.OnCreateClient](#pycmdichildwnd)Virtual
+## [PyCMDIChildWnd\.OnCreateClient](#pycmdichildwnd)Virtual
 
- __OnCreateClient( *CREATESTRUCT*  *, object* __ )
-Called by the framework during the execution of OnCreate.
+ **OnCreateClient\( *CREATESTRUCT*  *, object* ** \)
+Called by the framework during the execution of OnCreate\.
 
 #### Parameters
 
 
   -  *CREATESTRUCT* : tuple
 
-    A tuple describing a CREATESTRUCT structure.
+    A tuple describing a CREATESTRUCT structure\.
 
   -  *object* : object
 
     A Python object initially passed to LoadFrame
 
 #### Return Value
-The return value from this method is ignored, but an exception will prevent window creation.
+The return value from this method is ignored, but an exception will prevent window creation\.
 
-## [PyCMDIChildWnd](#pycmdichildwnd).PreCreateWindow
+## [PyCMDIChildWnd](#pycmdichildwnd)\.PreCreateWindow
 
-tuple = __PreCreateWindow( *createStruct* __ )
-Calls the underlying MFC PreCreateWindow method.
+tuple \= **PreCreateWindow\( *createStruct* ** \)
+Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
 
 
   -  *createStruct* : tuple
 
-    A tuple representing a CREATESTRUCT structure.
+    A tuple representing a CREATESTRUCT structure\.
 
 #### See Also
 
 
-  - [PyCWnd.PreCreateWindow](PyCWnd.md#pycwndprecreatewindow_virtual)virtual method
+  - [PyCWnd\.PreCreateWindow](PyCWnd.md#pycwndprecreatewindow_virtual)virtual method
 
-## [PyCMDIChildWnd](#pycmdichildwnd).PreTranslateMessage
+## [PyCMDIChildWnd](#pycmdichildwnd)\.PreTranslateMessage
 
- __PreTranslateMessage(__ )
+ **PreTranslateMessage\(** \)
 Calls the base PreTranslateMessage handler
 
 #### See Also
 
 
-  - [PyCWnd.PreTranslateMessage](PyCWnd.md#pycwndpretranslatemessage_virtual)virtual method
+  - [PyCWnd\.PreTranslateMessage](PyCWnd.md#pycwndpretranslatemessage_virtual)virtual method

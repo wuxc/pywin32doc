@@ -11,6 +11,6 @@ See also[PyIEmptyVolumeCache](#pyiemptyvolumecache)
 
     Deactivate&nbsp;
 
-## [PyIEmptyVolumeCache2](#pyiemptyvolumecache2).InitializeEx
+## [PyIEmptyVolumeCache2](#pyiemptyvolumecache2)\.InitializeEx
 
- __InitializeEx(__ )
+ **InitializeEx\(** \)

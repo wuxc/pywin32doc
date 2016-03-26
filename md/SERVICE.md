@@ -1,54 +1,54 @@
 # SERVICE
 
-## SERVICE_FAILURE_ACTIONS Object
+## SERVICE\_FAILURE\_ACTIONS Object
 
-A dictionary representing a SERVICE_FAILURE_ACTIONS structure
+A dictionary representing a SERVICE\_FAILURE\_ACTIONS structure
 
 #### Properties
 
-  -  __int ResetPeriod__ 
+  -  **int ResetPeriod** 
     Indicates how many seconds to wait to reset the failure count, can be INFINITE
 
-  -  __str/[PyUnicode](#pyunicode)RebootMsg__ 
+  -  **str/[PyUnicode](#pyunicode)RebootMsg** 
     Message displayed when reboot action is taken
 
-  -  __str/[PyUnicode](#pyunicode)Command__ 
-    Command line to execute for SC_ACTION_RUN_COMMAND
+  -  **str/[PyUnicode](#pyunicode)Command** 
+    Command line to execute for SC\_ACTION\_RUN\_COMMAND
 
-  -  __tuple Actions__ 
-    A tuple of[SC_ACTION](SC.md#scaction)tuples
+  -  **tuple Actions** 
+    A tuple of[SC\_ACTION](SC.md#scaction)tuples
 
-## SERVICE_STATUS Object
+## SERVICE\_STATUS Object
 
 A Win32 service status object is represented by a tuple:
 
 #### Items
 
 
-  - [0] *int* : serviceType
+  - \[0\] *int* : serviceType
 
-    The type of service.
+    The type of service\.
 
-  - [1] *int* : serviceState
+  - \[1\] *int* : serviceState
 
-    The current state of the service.
+    The current state of the service\.
 
-  - [2] *int* : controlsAccepted
+  - \[2\] *int* : controlsAccepted
 
-    The controls the service accepts.
+    The controls the service accepts\.
 
-  - [3] *int* : win32ExitCode
+  - \[3\] *int* : win32ExitCode
 
-    The win32 error code for the service.
+    The win32 error code for the service\.
 
-  - [4] *int* : serviceSpecificErrorCode
+  - \[4\] *int* : serviceSpecificErrorCode
 
-    The service specific error code.
+    The service specific error code\.
 
-  - [5] *int* : checkPoint
+  - \[5\] *int* : checkPoint
 
-    The checkpoint reported by the service.
+    The checkpoint reported by the service\.
 
-  - [6] *int* : waitHint
+  - \[6\] *int* : waitHint
 
-    The wait hint reported by the service.
+    The wait hint reported by the service\.

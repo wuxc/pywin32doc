@@ -1,13 +1,13 @@
 # SC
 
-## SC_ACTION Object
+## SC\_ACTION Object
 
-Tuple of 2 ints (Type,Delay) used to represent an SC_ACTION structure
+Tuple of 2 ints \(Type,Delay\) used to represent an SC\_ACTION structure
 
 #### Properties
 
-  -  __int Type__ 
-    One of SC_ACTION_NONE, SC_ACTION_REBOOT, SC_ACTION_RESTART, SC_ACTION_RUN_COMMAND
+  -  **int Type** 
+    One of SC\_ACTION\_NONE, SC\_ACTION\_REBOOT, SC\_ACTION\_RESTART, SC\_ACTION\_RUN\_COMMAND
 
-  -  __int Delay__ 
-    Time delay before specified action is taken (in milliseconds)
+  -  **int Delay** 
+    Time delay before specified action is taken \(in milliseconds\)

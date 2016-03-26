@@ -2,248 +2,248 @@
 
 ## PyCMenu Object
 
-A windows menu.  Encapsulates an MFC __CMenu__ class
+A windows menu\.  Encapsulates an MFC **CMenu** class
 
 #### Methods
 
 
   - [AppendMenu](PyCMenu.md#pycmenuappendmenu)
 
-    Appends a new item to the end of a menu. Python can specify the state of the menu item by setting values in nFlags.&nbsp;
+    Appends a new item to the end of a menu\. Python can specify the state of the menu item by setting values in nFlags\.&nbsp;
 
   - [DeleteMenu](PyCMenu.md#pycmenudeletemenu)
 
-    Deletes the specified menu item.&nbsp;
+    Deletes the specified menu item\.&nbsp;
 
   - [EnableMenuItem](PyCMenu.md#pycmenuenablemenuitem)
 
-    Enables, disables, or dims a menu item.&nbsp;
+    Enables, disables, or dims a menu item\.&nbsp;
 
   - [GetHandle](PyCMenu.md#pycmenugethandle)
 
-    Returns the menu object's underlying hMenu.&nbsp;
+    Returns the menu object's underlying hMenu\.&nbsp;
 
   - [GetMenuItemCount](PyCMenu.md#pycmenugetmenuitemcount)
 
-    Determines the number of items in a menu.&nbsp;
+    Determines the number of items in a menu\.&nbsp;
 
   - [GetMenuItemID](PyCMenu.md#pycmenugetmenuitemid)
 
-    Returns the item ID for the specified item in a pop-up menu.&nbsp;
+    Returns the item ID for the specified item in a pop-up menu\.&nbsp;
 
   - [GetMenuString](PyCMenu.md#pycmenugetmenustring)
 
-    Returns the string for a specified menu item.&nbsp;
+    Returns the string for a specified menu item\.&nbsp;
 
   - [GetSubMenu](PyCMenu.md#pycmenugetsubmenu)
 
-    Returns a submenu.&nbsp;
+    Returns a submenu\.&nbsp;
 
   - [InsertMenu](PyCMenu.md#pycmenuinsertmenu)
 
-    Inserts an item into a menu.&nbsp;
+    Inserts an item into a menu\.&nbsp;
 
   - [ModifyMenu](PyCMenu.md#pycmenumodifymenu)
 
-    Modify an item in a menu.&nbsp;
+    Modify an item in a menu\.&nbsp;
 
   - [TrackPopupMenu](PyCMenu.md#pycmenutrackpopupmenu)
 
-    Creates a popup menu anywhere on the screen.&nbsp;
+    Creates a popup menu anywhere on the screen\.&nbsp;
 
-## [PyCMenu](#pycmenu).AppendMenu
+## [PyCMenu](#pycmenu)\.AppendMenu
 
- __AppendMenu( *flags*  *, id*  *, value* __ )
-Appends a new item to the end of a menu. Python can specify the state of the menu item by setting values in nFlags.
+ **AppendMenu\( *flags*  *, id*  *, value* ** \)
+Appends a new item to the end of a menu\. Python can specify the state of the menu item by setting values in nFlags\.
 
 #### Parameters
 
 
   -  *flags* : int
 
-    Specifies information about the state of the new menu item when it is added to the menu.  May be a combination of the win32con.MF_* values.
+    Specifies information about the state of the new menu item when it is added to the menu\.  May be a combination of the win32con\.MF\_\* values\.
 
-  -  *id=0* : int
+  -  *id\=0* : int
 
-    Specifies either the command ID of the new menu item.
+    Specifies either the command ID of the new menu item\.
 
-  -  *value=None* : string/None
+  -  *value\=None* : string/None
 
-    Specifies the content of the new menu item.  If used, flags must contain win32con.MF_STRING.
+    Specifies the content of the new menu item\.  If used, flags must contain win32con\.MF\_STRING\.
 
-## [PyCMenu](#pycmenu).DeleteMenu
+## [PyCMenu](#pycmenu)\.DeleteMenu
 
-string = __DeleteMenu( *id*  *, flags* __ )
-Deletes the specified menu item.
-
-#### Parameters
-
-
-  -  *id* : int
-
-    The id of the item being deleted.
-
-  -  *flags* : int
-
-    Specifies how the id parameter is interpreted. It must be one of win32con.MF_BYCOMMAND or win32con.MF_BYPOSITION.
-
-## [PyCMenu](#pycmenu).EnableMenuItem
-
-int = __EnableMenuItem( *id*  *, flags* __ )
-Enables, disables, or dims a menu item.
+string \= **DeleteMenu\( *id*  *, flags* ** \)
+Deletes the specified menu item\.
 
 #### Parameters
 
 
   -  *id* : int
 
-    Specifies the command ID of the menu item. This parameter can specify pop-up menu items as well as standard menu items.
+    The id of the item being deleted\.
 
   -  *flags* : int
 
-    Specifies the action to take. It can be a combination of MF_DISABLED, MF_ENABLED, or MF_GRAYED, with MF_BYCOMMAND or MF_BYPOSITION
+    Specifies how the id parameter is interpreted\. It must be one of win32con\.MF\_BYCOMMAND or win32con\.MF\_BYPOSITION\.
+
+## [PyCMenu](#pycmenu)\.EnableMenuItem
+
+int \= **EnableMenuItem\( *id*  *, flags* ** \)
+Enables, disables, or dims a menu item\.
+
+#### Parameters
+
+
+  -  *id* : int
+
+    Specifies the command ID of the menu item\. This parameter can specify pop-up menu items as well as standard menu items\.
+
+  -  *flags* : int
+
+    Specifies the action to take\. It can be a combination of MF\_DISABLED, MF\_ENABLED, or MF\_GRAYED, with MF\_BYCOMMAND or MF\_BYPOSITION
 
 #### Comments
-The __PyCMenu::CreateMenu__ ,[PyCMenu::InsertMenu](PyCMenu.md#pycmenuinsertmenu),[PyCMenu::ModifyMenu](PyCMenu.md#pycmenumodifymenu), 
+The **PyCMenu::CreateMenu** ,[PyCMenu::InsertMenu](PyCMenu.md#pycmenuinsertmenu),[PyCMenu::ModifyMenu](PyCMenu.md#pycmenumodifymenu), 
 
-and __PyCMenu::LoadMenuIndirect__ member functions can also set the state 
+and **PyCMenu::LoadMenuIndirect** member functions can also set the state 
 
-(enabled, disabled, or dimmed) of a menu item.
+\(enabled, disabled, or dimmed\) of a menu item\.
 
-## [PyCMenu](#pycmenu).GetHandle
+## [PyCMenu](#pycmenu)\.GetHandle
 
-int = __GetHandle(__ )
-Returns the menu object's underlying hMenu.
+int \= **GetHandle\(** \)
+Returns the menu object's underlying hMenu\.
 
-## [PyCMenu](#pycmenu).GetMenuItemCount
+## [PyCMenu](#pycmenu)\.GetMenuItemCount
 
-int = __GetMenuItemCount(__ )
-Determines the number of items in a menu.
+int \= **GetMenuItemCount\(** \)
+Determines the number of items in a menu\.
 
 #### Return Value
-The number of items in the menu if the function is successful; otherwise -1.
+The number of items in the menu if the function is successful; otherwise -1\.
 
-## [PyCMenu](#pycmenu).GetMenuItemID
+## [PyCMenu](#pycmenu)\.GetMenuItemID
 
-int = __GetMenuItemID( *pos* __ )
-Returns the item ID for the specified item in a pop-up menu.
+int \= **GetMenuItemID\( *pos* ** \)
+Returns the item ID for the specified item in a pop-up menu\.
 
 #### Parameters
 
 
   -  *pos* : int
 
-    The position (zero-based) of the menu item whose ID is being retrieved.
+    The position \(zero-based\) of the menu item whose ID is being retrieved\.
 
 #### Comments
-If the specified item is a pop-up menu (as opposed to an item within the pop-up menu), 
+If the specified item is a pop-up menu \(as opposed to an item within the pop-up menu\), 
 
-the return value is -1. If nPos corresponds to a SEPARATOR menu item, 
+the return value is -1\. If nPos corresponds to a SEPARATOR menu item, 
 
-the return value is 0.
+the return value is 0\.
 
-## [PyCMenu](#pycmenu).GetMenuString
+## [PyCMenu](#pycmenu)\.GetMenuString
 
-string = __GetMenuString( *id*  *, flags* __ )
-Returns the string for a specified menu item.
+string \= **GetMenuString\( *id*  *, flags* ** \)
+Returns the string for a specified menu item\.
 
 #### Parameters
 
 
   -  *id* : int
 
-    The id of the item being requested.
+    The id of the item being requested\.
 
-  -  *flags=win32con.MF_BYCOMMAND* : int
+  -  *flags\=win32con\.MF\_BYCOMMAND* : int
 
-    Specifies how the id parameter is interpreted. It must be one of win32con.MF_BYCOMMAND or win32con.MF_BYPOSITION.
+    Specifies how the id parameter is interpreted\. It must be one of win32con\.MF\_BYCOMMAND or win32con\.MF\_BYPOSITION\.
 
-## [PyCMenu](#pycmenu).GetSubMenu
+## [PyCMenu](#pycmenu)\.GetSubMenu
 
-[PyCMenu](#pycmenu)= __GetSubMenu( *pos* __ )
-Returns a submenu.
-
-#### Parameters
-
-
-  -  *pos* : int
-
-    The position (zero-based) of the menu item being retrieved.
-
-## [PyCMenu](#pycmenu).InsertMenu
-
- __InsertMenu( *pos*  *, flags*  *, id*  *, value* __ )
-Inserts an item into a menu.
+[PyCMenu](#pycmenu)\= **GetSubMenu\( *pos* ** \)
+Returns a submenu\.
 
 #### Parameters
 
 
   -  *pos* : int
 
-    The position (zero-based) the item should be inserted.
+    The position \(zero-based\) of the menu item being retrieved\.
+
+## [PyCMenu](#pycmenu)\.InsertMenu
+
+ **InsertMenu\( *pos*  *, flags*  *, id*  *, value* ** \)
+Inserts an item into a menu\.
+
+#### Parameters
+
+
+  -  *pos* : int
+
+    The position \(zero-based\) the item should be inserted\.
 
   -  *flags* : int
 
-    Flags for the new item.
+    Flags for the new item\.
 
-  -  *id=0* : int/[PyCMenu](#pycmenu)
+  -  *id\=0* : int/[PyCMenu](#pycmenu)
 
     The ID for a new menu item, or handle to a submenu
 
-  -  *value=None* : string/None
+  -  *value\=None* : string/None
 
-    A string for the menu item.
+    A string for the menu item\.
 
-## [PyCMenu](#pycmenu).ModifyMenu
+## [PyCMenu](#pycmenu)\.ModifyMenu
 
- __ModifyMenu( *pos*  *, flags*  *, id*  *, value* __ )
-Modify an item in a menu.
+ **ModifyMenu\( *pos*  *, flags*  *, id*  *, value* ** \)
+Modify an item in a menu\.
 
 #### Parameters
 
 
   -  *pos* : int
 
-    The position (zero-based) the item to be changed.
+    The position \(zero-based\) the item to be changed\.
 
   -  *flags* : int
 
-    Flags for the item.
+    Flags for the item\.
 
-  -  *id=0* : int
+  -  *id\=0* : int
 
-    The ID for the item.
+    The ID for the item\.
 
-  -  *value=None* : string/None
+  -  *value\=None* : string/None
 
-    A string for the menu item.
+    A string for the menu item\.
 
-## [PyCMenu](#pycmenu).TrackPopupMenu
+## [PyCMenu](#pycmenu)\.TrackPopupMenu
 
- __TrackPopupMenu( *(x,y)*  *, flags*  *, owner* __ )
-Creates a popup menu anywhere on the screen.
+ **TrackPopupMenu\( *\(x,y\)*  *, flags*  *, owner* ** \)
+Creates a popup menu anywhere on the screen\.
 
 #### Parameters
 
 
-  -  *(x,y)* : (int, int)
+  -  *\(x,y\)* : \(int, int\)
 
-    The position for the menu..
+    The position for the menu\.\.
 
-  -  *flags=win32con.TPM_LEFTALIGN|win32con.TPM_LEFTBUTTON|win32con.TPM_RIGHTBUTTON* : int
+  -  *flags\=win32con\.TPM\_LEFTALIGN|win32con\.TPM\_LEFTBUTTON|win32con\.TPM\_RIGHTBUTTON* : int
 
-    Flags for the menu.
+    Flags for the menu\.
 
-  -  *owner=(main application frame)* :[PyCWnd](#pycwnd)
+  -  *owner\=\(main application frame\)* :[PyCWnd](#pycwnd)
 
-    The owner of the menu.
+    The owner of the menu\.
 
 #### Comments
 The TrackPopupMenu function displays a floating pop-up menu at the 
 
-specified location and tracks the selection of items on the pop-up menu. 
+specified location and tracks the selection of items on the pop-up menu\. 
 
-The floating pop-up menu can appear anywhere on the screen.
+The floating pop-up menu can appear anywhere on the screen\.
 
 #### Return Value
-If the underlying MFC function fails, but TPM_RETURNCMD is set in the flags parameter, then None is returned instead of the normal exception.
+If the underlying MFC function fails, but TPM\_RETURNCMD is set in the flags parameter, then None is returned instead of the normal exception\.

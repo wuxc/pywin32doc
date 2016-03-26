@@ -23,46 +23,46 @@ Description of the interface
 
     Description of OnNavigationFailed&nbsp;
 
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents).OnNavigationComplete
+## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationComplete
 
- __OnNavigationComplete( *pidlFolder* __ )
-Description of OnNavigationComplete.
-
-#### Parameters
-
-
-  -  *pidlFolder* : __PyPCIDLIST_ABSOLUTE__ 
-
-    Description for pidlFolder
-
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents).OnNavigationFailed
-
- __OnNavigationFailed( *pidlFolder* __ )
-Description of OnNavigationFailed.
+ **OnNavigationComplete\( *pidlFolder* ** \)
+Description of OnNavigationComplete\.
 
 #### Parameters
 
 
-  -  *pidlFolder* : __PyPCIDLIST_ABSOLUTE__ 
+  -  *pidlFolder* : **PyPCIDLIST\_ABSOLUTE** 
 
     Description for pidlFolder
 
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents).OnNavigationPending
+## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationFailed
 
- __OnNavigationPending( *pidlFolder* __ )
-Description of OnNavigationPending.
+ **OnNavigationFailed\( *pidlFolder* ** \)
+Description of OnNavigationFailed\.
 
 #### Parameters
 
 
-  -  *pidlFolder* : __PyPCIDLIST_ABSOLUTE__ 
+  -  *pidlFolder* : **PyPCIDLIST\_ABSOLUTE** 
 
     Description for pidlFolder
 
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents).OnViewCreated
+## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationPending
 
- __OnViewCreated( *psv* __ )
-Description of OnViewCreated.
+ **OnNavigationPending\( *pidlFolder* ** \)
+Description of OnNavigationPending\.
+
+#### Parameters
+
+
+  -  *pidlFolder* : **PyPCIDLIST\_ABSOLUTE** 
+
+    Description for pidlFolder
+
+## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnViewCreated
+
+ **OnViewCreated\( *psv* ** \)
+Description of OnViewCreated\.
 
 #### Parameters
 

@@ -2,14 +2,14 @@
 
 ## PyCSliderCtrl Object
 
-A windows Slider bar control.  Encapsulates an MFC __CSliderCtrl__ class.  Derived from[PyCControl](#pyccontrol).
+A windows Slider bar control\.  Encapsulates an MFC **CSliderCtrl** class\.  Derived from[PyCControl](#pyccontrol)\.
 
 #### Methods
 
 
   - [CreateWindow](PyCSliderCtrl.md#pycsliderctrlcreatewindow)
 
-    Creates the window for a new Slider bar object.&nbsp;
+    Creates the window for a new Slider bar object\.&nbsp;
 
   - [GetLineSize](PyCSliderCtrl.md#pycsliderctrlgetlinesize)
 
@@ -111,262 +111,262 @@ A windows Slider bar control.  Encapsulates an MFC __CSliderCtrl__ class.  Deriv
 
     Clear any tic marks from the control&nbsp;
 
-## [PyCSliderCtrl](#pycsliderctrl).ClearSel
+## [PyCSliderCtrl](#pycsliderctrl)\.ClearSel
 
-int = __ClearSel( *bRedraw* __ )
+int \= **ClearSel\( *bRedraw* ** \)
 Clear the selection
 
 #### Parameters
 
 
-  -  *bRedraw=1* : int
+  -  *bRedraw\=1* : int
 
     Redraw the control?
 
-## [PyCSliderCtrl](#pycsliderctrl).ClearTics
+## [PyCSliderCtrl](#pycsliderctrl)\.ClearTics
 
-int = __ClearTics( *bRedraw* __ )
+int \= **ClearTics\( *bRedraw* ** \)
 Clear the control's tic marks
 
 #### Parameters
 
 
-  -  *bRedraw=1* : int
+  -  *bRedraw\=1* : int
 
     Redraw the control?
 
-## [PyCSliderCtrl](#pycsliderctrl).CreateWindow
+## [PyCSliderCtrl](#pycsliderctrl)\.CreateWindow
 
- __CreateWindow( *style*  *, rect*  *, parent*  *, id* __ )
-Creates the actual control.
+ **CreateWindow\( *style*  *, rect*  *, parent*  *, id* ** \)
+Creates the actual control\.
 
 #### Parameters
 
 
   -  *style* : int
 
-    The style for the control.
+    The style for the control\.
 
-  -  *rect* : (left, top, right, bottom)
+  -  *rect* : \(left, top, right, bottom\)
 
-    The size and position of the control.
+    The size and position of the control\.
 
   -  *parent* :[PyCWnd](#pycwnd)
 
-    The parent window of the control.  Usually a[PyCDialog](#pycdialog).
+    The parent window of the control\.  Usually a[PyCDialog](#pycdialog)\.
 
   -  *id* : int
 
-    The control's ID.
+    The control's ID\.
 
-## [PyCSliderCtrl](#pycsliderctrl).GetChannelRect
+## [PyCSliderCtrl](#pycsliderctrl)\.GetChannelRect
 
-int = __GetChannelRect(__ )
+int \= **GetChannelRect\(** \)
 Get the control's channel rectangle
 
-## [PyCSliderCtrl](#pycsliderctrl).GetLineSize
+## [PyCSliderCtrl](#pycsliderctrl)\.GetLineSize
 
-int = __GetLineSize(__ )
+int \= **GetLineSize\(** \)
 Get the control's position
 
-## [PyCSliderCtrl](#pycsliderctrl).GetNumTics
+## [PyCSliderCtrl](#pycsliderctrl)\.GetNumTics
 
-int = __GetNumTics(__ )
+int \= **GetNumTics\(** \)
 Get number of tics in the slider
 
-## [PyCSliderCtrl](#pycsliderctrl).GetPageSize
+## [PyCSliderCtrl](#pycsliderctrl)\.GetPageSize
 
-int = __GetPageSize(__ )
+int \= **GetPageSize\(** \)
 Get the control's position
 
-## [PyCSliderCtrl](#pycsliderctrl).GetPos
+## [PyCSliderCtrl](#pycsliderctrl)\.GetPos
 
-int = __GetPos(__ )
+int \= **GetPos\(** \)
 Get the control's position
 
-## [PyCSliderCtrl](#pycsliderctrl).GetRange
+## [PyCSliderCtrl](#pycsliderctrl)\.GetRange
 
-int = __GetRange(__ )
+int \= **GetRange\(** \)
 Get the control's min and max
 
-## [PyCSliderCtrl](#pycsliderctrl).GetRangeMax
+## [PyCSliderCtrl](#pycsliderctrl)\.GetRangeMax
 
-int = __GetRangeMax(__ )
+int \= **GetRangeMax\(** \)
 Get the control's Maximum
 
-## [PyCSliderCtrl](#pycsliderctrl).GetRangeMin
+## [PyCSliderCtrl](#pycsliderctrl)\.GetRangeMin
 
-int = __GetRangeMin(__ )
+int \= **GetRangeMin\(** \)
 Get the control's Minimum
 
-## [PyCSliderCtrl](#pycsliderctrl).GetSelection
+## [PyCSliderCtrl](#pycsliderctrl)\.GetSelection
 
-int = __GetSelection(__ )
+int \= **GetSelection\(** \)
 Get the control's selection start and end positions
 
-## [PyCSliderCtrl](#pycsliderctrl).GetThumbRect
+## [PyCSliderCtrl](#pycsliderctrl)\.GetThumbRect
 
-int = __GetThumbRect(__ )
+int \= **GetThumbRect\(** \)
 Get the control's thumb rectangle
 
-## [PyCSliderCtrl](#pycsliderctrl).GetTic
+## [PyCSliderCtrl](#pycsliderctrl)\.GetTic
 
-int = __GetTic( *nTic* __ )
+int \= **GetTic\( *nTic* ** \)
 Get the position of the specified tic number
 
 #### Parameters
 
 
-  -  *nTic=1* : int
+  -  *nTic\=1* : int
 
     Zero based index of the tic mark
 
-## [PyCSliderCtrl](#pycsliderctrl).GetTicArray
+## [PyCSliderCtrl](#pycsliderctrl)\.GetTicArray
 
-int = __GetTicArray(__ )
+int \= **GetTicArray\(** \)
 Get a tuple of slider tic positions
 
-## [PyCSliderCtrl](#pycsliderctrl).GetTicPos
+## [PyCSliderCtrl](#pycsliderctrl)\.GetTicPos
 
-int = __GetTicPos( *nTic* __ )
+int \= **GetTicPos\( *nTic* ** \)
 Get the position of the specified tic number in client coordinates
 
 #### Parameters
 
 
-  -  *nTic=1* : int
+  -  *nTic\=1* : int
 
     Zero based index of the tic mark
 
-## [PyCSliderCtrl](#pycsliderctrl).SetLineSize
+## [PyCSliderCtrl](#pycsliderctrl)\.SetLineSize
 
-int = __SetLineSize( *nLineSize* __ )
-Set the control's line size.  Returns the previous line size.
+int \= **SetLineSize\( *nLineSize* ** \)
+Set the control's line size\.  Returns the previous line size\.
 
 #### Parameters
 
 
-  -  *nLineSize=1* : int
+  -  *nLineSize\=1* : int
 
     New line size of the Slider bar control
 
-## [PyCSliderCtrl](#pycsliderctrl).SetPageSize
+## [PyCSliderCtrl](#pycsliderctrl)\.SetPageSize
 
-int = __SetPageSize( *nPageSize* __ )
-Set the control's page size  Returns the previous page size.
+int \= **SetPageSize\( *nPageSize* ** \)
+Set the control's page size  Returns the previous page size\.
 
 #### Parameters
 
 
-  -  *nPageSize=1* : int
+  -  *nPageSize\=1* : int
 
-    New page size of the Slider bar control.
+    New page size of the Slider bar control\.
 
-## [PyCSliderCtrl](#pycsliderctrl).SetPos
+## [PyCSliderCtrl](#pycsliderctrl)\.SetPos
 
-int = __SetPos( *nPos* __ )
+int \= **SetPos\( *nPos* ** \)
 Set the control's position
 
 #### Parameters
 
 
-  -  *nPos=1* : int
+  -  *nPos\=1* : int
 
-    New position of the Slider bar control.
+    New position of the Slider bar control\.
 
-## [PyCSliderCtrl](#pycsliderctrl).SetRange
+## [PyCSliderCtrl](#pycsliderctrl)\.SetRange
 
-int = __SetRange( *nRangeMin*  *, nRangeMax*  *, bRedraw* __ )
+int \= **SetRange\( *nRangeMin*  *, nRangeMax*  *, bRedraw* ** \)
 Set the control's min and max
 
 #### Parameters
 
 
-  -  *nRangeMin=1* : int
+  -  *nRangeMin\=1* : int
 
-    New minimum of the Slider bar control.
+    New minimum of the Slider bar control\.
 
-  -  *nRangeMax=1* : int
+  -  *nRangeMax\=1* : int
 
-    New maximum of the Slider bar control.
+    New maximum of the Slider bar control\.
 
-  -  *bRedraw=1* : int
+  -  *bRedraw\=1* : int
 
     Should slider be redrawn?
 
-## [PyCSliderCtrl](#pycsliderctrl).SetRangeMax
+## [PyCSliderCtrl](#pycsliderctrl)\.SetRangeMax
 
-int = __SetRangeMax( *nRangeMax*  *, bRedraw* __ )
+int \= **SetRangeMax\( *nRangeMax*  *, bRedraw* ** \)
 Set the control's maximum
 
 #### Parameters
 
 
-  -  *nRangeMax=1* : int
+  -  *nRangeMax\=1* : int
 
-    New maximum of the Slider bar control.
+    New maximum of the Slider bar control\.
 
-  -  *bRedraw=1* : int
+  -  *bRedraw\=1* : int
 
     Should slider be redrawn?
 
-## [PyCSliderCtrl](#pycsliderctrl).SetRangeMin
+## [PyCSliderCtrl](#pycsliderctrl)\.SetRangeMin
 
-int = __SetRangeMin( *nRangeMin*  *, bRedraw* __ )
+int \= **SetRangeMin\( *nRangeMin*  *, bRedraw* ** \)
 Set the control's minimum
 
 #### Parameters
 
 
-  -  *nRangeMin=1* : int
+  -  *nRangeMin\=1* : int
 
-    New minimum of the Slider bar control.
+    New minimum of the Slider bar control\.
 
-  -  *bRedraw=1* : int
+  -  *bRedraw\=1* : int
 
     Should slider be redrawn?
 
-## [PyCSliderCtrl](#pycsliderctrl).SetSelection
+## [PyCSliderCtrl](#pycsliderctrl)\.SetSelection
 
-int = __SetSelection( *nRangeMin*  *, nRangeMax* __ )
+int \= **SetSelection\( *nRangeMin*  *, nRangeMax* ** \)
 Set the control's selection start and end positions
 
 #### Parameters
 
 
-  -  *nRangeMin=1* : int
+  -  *nRangeMin\=1* : int
 
-    New start of the Slider's selection.
+    New start of the Slider's selection\.
 
-  -  *nRangeMax=1* : int
+  -  *nRangeMax\=1* : int
 
-    New end of the Slider's selection.
+    New end of the Slider's selection\.
 
-## [PyCSliderCtrl](#pycsliderctrl).SetTic
+## [PyCSliderCtrl](#pycsliderctrl)\.SetTic
 
-int = __SetTic( *nTic* __ )
+int \= **SetTic\( *nTic* ** \)
 Set a tic at the specified position
 
 #### Parameters
 
 
-  -  *nTic=1* : int
+  -  *nTic\=1* : int
 
     Position of the desired tic mark
 
-## [PyCSliderCtrl](#pycsliderctrl).SetTicFreq
+## [PyCSliderCtrl](#pycsliderctrl)\.SetTicFreq
 
-int = __SetTicFreq( *nFreq* __ )
+int \= **SetTicFreq\( *nFreq* ** \)
 Set the tic frequency
 
 #### Parameters
 
 
-  -  *nFreq=1* : int
+  -  *nFreq\=1* : int
 
     Frequency of tic marks
 
-## [PyCSliderCtrl](#pycsliderctrl).VerifyPos
+## [PyCSliderCtrl](#pycsliderctrl)\.VerifyPos
 
-int = __VerifyPos(__ )
+int \= **VerifyPos\(** \)
 Verify the position is between configured min and max

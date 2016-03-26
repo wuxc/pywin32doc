@@ -4,9 +4,9 @@
 
 Interface representing a known folder that serves 
 
-as a replacement for the numeric CSIDL definitions and API functions. 
+as a replacement for the numeric CSIDL definitions and API functions\. 
 
-Requires Vista or later.
+Requires Vista or later\.
 
 #### Methods
 
@@ -17,7 +17,7 @@ Requires Vista or later.
 
   - [GetCategory](PyIKnownFolder.md#pyiknownfoldergetcategory)
 
-    Returns the category for a folder (shellcon.KF_CATEGORY_*)&nbsp;
+    Returns the category for a folder \(shellcon\.KF\_CATEGORY\_\*\)&nbsp;
 
   - [GetShellItem](PyIKnownFolder.md#pyiknownfoldergetshellitem)
 
@@ -47,83 +47,83 @@ Requires Vista or later.
 
     Retrieves detailed information about a known folder&nbsp;
 
-## [PyIKnownFolder](#pyiknownfolder).GetCategory
+## [PyIKnownFolder](#pyiknownfolder)\.GetCategory
 
-int = __GetCategory(__ )
-Returns the category for a folder (shellcon.KF_CATEGORY_*)
+int \= **GetCategory\(** \)
+Returns the category for a folder \(shellcon\.KF\_CATEGORY\_\*\)
 
-## [PyIKnownFolder](#pyiknownfolder).GetFolderDefinition
+## [PyIKnownFolder](#pyiknownfolder)\.GetFolderDefinition
 
-dict = __GetFolderDefinition(__ )
+dict \= **GetFolderDefinition\(** \)
 Retrieves detailed information about a known folder
 
 #### Return Value
-Returns a dict containing info from a KNOWNFOLDER_DEFINITION struct
+Returns a dict containing info from a KNOWNFOLDER\_DEFINITION struct
 
-## [PyIKnownFolder](#pyiknownfolder).GetFolderType
+## [PyIKnownFolder](#pyiknownfolder)\.GetFolderType
 
-[PyIID](#pyiid)= __GetFolderType(__ )
+[PyIID](#pyiid)\= **GetFolderType\(** \)
 Returns the type of the folder
 
 #### Return Value
-Returns a folder type guid (shell.FOLDERTYPEID_*)
+Returns a folder type guid \(shell\.FOLDERTYPEID\_\*\)
 
-## [PyIKnownFolder](#pyiknownfolder).GetIDList
+## [PyIKnownFolder](#pyiknownfolder)\.GetIDList
 
-[PyIDL](#pyidl)= __GetIDList( *Flags* __ )
-Returns the folder's location as an item id list.
+[PyIDL](#pyidl)\= **GetIDList\( *Flags* ** \)
+Returns the folder's location as an item id list\.
 
 #### Parameters
 
 
   -  *Flags* : int
 
-    Combination of shellcon.KF_FLAG_* values that affect how the operation is performed
+    Combination of shellcon\.KF\_FLAG\_\* values that affect how the operation is performed
 
-## [PyIKnownFolder](#pyiknownfolder).GetId
+## [PyIKnownFolder](#pyiknownfolder)\.GetId
 
-[PyIID](#pyiid)= __GetId(__ )
+[PyIID](#pyiid)\= **GetId\(** \)
 Returns the id of the folder
 
-## [PyIKnownFolder](#pyiknownfolder).GetPath
+## [PyIKnownFolder](#pyiknownfolder)\.GetPath
 
-str = __GetPath( *Flags* __ )
+str \= **GetPath\( *Flags* ** \)
 Returns the path to the folder
 
 #### Parameters
 
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    Combination of shellcon.KF_FLAG_* flags controlling how the path is returned
+    Combination of shellcon\.KF\_FLAG\_\* flags controlling how the path is returned
 
-## [PyIKnownFolder](#pyiknownfolder).GetRedirectionCapabilities
+## [PyIKnownFolder](#pyiknownfolder)\.GetRedirectionCapabilities
 
-int = __GetRedirectionCapabilities(__ )
+int \= **GetRedirectionCapabilities\(** \)
 Returns flags indicating how the folder can be redirected
 
 #### Return Value
-Combination of shellcon.KF_REDIRECTION_CAPABILITIES_* flags
+Combination of shellcon\.KF\_REDIRECTION\_CAPABILITIES\_\* flags
 
-## [PyIKnownFolder](#pyiknownfolder).GetShellItem
+## [PyIKnownFolder](#pyiknownfolder)\.GetShellItem
 
-[PyIShellItem](#pyishellitem)= __GetShellItem( *Flags*  *, riid* __ )
+[PyIShellItem](#pyishellitem)\= **GetShellItem\( *Flags*  *, riid* ** \)
 Returns a shell interface for the folder
 
 #### Parameters
 
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    Combination of shellcon.KF_FLAG_* values
+    Combination of shellcon\.KF\_FLAG\_\* values
 
-  -  *riid=IID_IShellItem* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItem* :[PyIID](#pyiid)
 
-    The interface to return (IShellItem or IShellItem2)
+    The interface to return \(IShellItem or IShellItem2\)
 
-## [PyIKnownFolder](#pyiknownfolder).SetPath
+## [PyIKnownFolder](#pyiknownfolder)\.SetPath
 
- __SetPath( *Flags*  *, Path* __ )
+ **SetPath\( *Flags*  *, Path* ** \)
 Changes the location of the folder
 
 #### Parameters
@@ -131,7 +131,7 @@ Changes the location of the folder
 
   -  *Flags* : int
 
-    KF_FLAG_DONT_UNEXPAND, or 0
+    KF\_FLAG\_DONT\_UNEXPAND, or 0
 
   -  *Path* : str
 

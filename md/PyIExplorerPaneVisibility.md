@@ -11,10 +11,10 @@ Description of the interface
 
     Description of Extract&nbsp;
 
-## [PyIExplorerPaneVisibility](#pyiexplorerpanevisibility).GetPaneState
+## [PyIExplorerPaneVisibility](#pyiexplorerpanevisibility)\.GetPaneState
 
-int = __GetPaneState( *ep* __ )
-Description of Extract.
+int \= **GetPaneState\( *ep* ** \)
+Description of Extract\.
 
 #### Parameters
 

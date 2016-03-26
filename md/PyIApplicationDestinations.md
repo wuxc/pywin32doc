@@ -22,14 +22,14 @@ Available on Windows 7 and later
 
     Removes all Recent and Frequent jump list entries&nbsp;
 
-## [PyIApplicationDestinations](#pyiapplicationdestinations).RemoveAllDestinations
+## [PyIApplicationDestinations](#pyiapplicationdestinations)\.RemoveAllDestinations
 
- __RemoveAllDestinations(__ )
+ **RemoveAllDestinations\(** \)
 Removes all Recent and Frequent jump list entries
 
-## [PyIApplicationDestinations](#pyiapplicationdestinations).RemoveDestination
+## [PyIApplicationDestinations](#pyiapplicationdestinations)\.RemoveDestination
 
- __RemoveDestination( *punk* __ )
+ **RemoveDestination\( *punk* ** \)
 Removes a single entry from the jump lists
 
 #### Parameters
@@ -42,9 +42,9 @@ Removes a single entry from the jump lists
 #### Comments
 Does not remove pinned items
 
-## [PyIApplicationDestinations](#pyiapplicationdestinations).SetAppID
+## [PyIApplicationDestinations](#pyiapplicationdestinations)\.SetAppID
 
- __SetAppID( *AppID* __ )
+ **SetAppID\( *AppID* ** \)
 Specifies the application whose jump list is to be accessed
 
 #### Parameters

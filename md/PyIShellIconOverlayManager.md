@@ -27,9 +27,9 @@ Description of the interface
 
     Description of OverlayIndexFromImageIndex&nbsp;
 
-## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager).GetFileOverlayInfo
+## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.GetFileOverlayInfo
 
-int = __GetFileOverlayInfo( *path*  *, attrib*  *, flags* __ )
+int \= **GetFileOverlayInfo\( *path*  *, attrib*  *, flags* ** \)
 Returns an index into the system image list for the icon image or overlay image
 
 #### Parameters
@@ -41,16 +41,16 @@ Returns an index into the system image list for the icon image or overlay image
 
   -  *attrib* : int
 
-    File attributes (win32com.FILE_ATTRIBUTE_*)
+    File attributes \(win32com\.FILE\_ATTRIBUTE\_\*\)
 
   -  *flags* : int
 
-    SIOM_OVERLAYINDEX (1) or SIOM_ICONINDEX (2)
+    SIOM\_OVERLAYINDEX \(1\) or SIOM\_ICONINDEX \(2\)
 
-## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager).GetReservedOverlayInfo
+## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.GetReservedOverlayInfo
 
- __GetReservedOverlayInfo( *path*  *, attrib*  *, flags*  *, ireservedID* __ )
-Description of GetReservedOverlayInfo.
+ **GetReservedOverlayInfo\( *path*  *, attrib*  *, flags*  *, ireservedID* ** \)
+Description of GetReservedOverlayInfo\.
 
 #### Parameters
 
@@ -71,15 +71,15 @@ Description of GetReservedOverlayInfo.
 
     Description for ireservedID
 
-## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager).LoadNonloadedOverlayIdentifiers
+## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.LoadNonloadedOverlayIdentifiers
 
- __LoadNonloadedOverlayIdentifiers(__ )
-Description of LoadNonloadedOverlayIdentifiers.
+ **LoadNonloadedOverlayIdentifiers\(** \)
+Description of LoadNonloadedOverlayIdentifiers\.
 
-## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager).OverlayIndexFromImageIndex
+## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.OverlayIndexFromImageIndex
 
- __OverlayIndexFromImageIndex( *iImage*  *, fAdd* __ )
-Description of OverlayIndexFromImageIndex.
+ **OverlayIndexFromImageIndex\( *iImage*  *, fAdd* ** \)
+Description of OverlayIndexFromImageIndex\.
 
 #### Parameters
 
@@ -92,10 +92,10 @@ Description of OverlayIndexFromImageIndex.
 
     Description for fAdd
 
-## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager).RefreshOverlayImages
+## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.RefreshOverlayImages
 
- __RefreshOverlayImages( *flags* __ )
-Description of RefreshOverlayImages.
+ **RefreshOverlayImages\( *flags* ** \)
+Description of RefreshOverlayImages\.
 
 #### Parameters
 

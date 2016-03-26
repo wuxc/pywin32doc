@@ -23,15 +23,15 @@ Description of the interface
 
     Allows a smart host to control the handling of runtime errors&nbsp;
 
-## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug).GetApplication
+## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.GetApplication
 
- __GetApplication(__ )
-Description of GetApplication.
+ **GetApplication\(** \)
+Description of GetApplication\.
 
-## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug).GetDocumentContextFromPosition
+## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.GetDocumentContextFromPosition
 
- __GetDocumentContextFromPosition( *dwSourceContext*  *, uCharacterOffset*  *, uNumChars* __ )
-Description of GetDocumentContextFromPosition.
+ **GetDocumentContextFromPosition\( *dwSourceContext*  *, uCharacterOffset*  *, uNumChars* ** \)
+Description of GetDocumentContextFromPosition\.
 
 #### Parameters
 
@@ -48,15 +48,15 @@ Description of GetDocumentContextFromPosition.
 
     Description for uNumChars
 
-## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug).GetRootApplicationNode
+## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.GetRootApplicationNode
 
- __GetRootApplicationNode(__ )
-Description of GetRootApplicationNode.
+ **GetRootApplicationNode\(** \)
+Description of GetRootApplicationNode\.
 
-## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug).OnScriptErrorDebug
+## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.OnScriptErrorDebug
 
-int, int = __OnScriptErrorDebug(__ )
+int, int \= **OnScriptErrorDebug\(** \)
 Allows a smart host to control the handling of runtime errors
 
 #### Return Value
-The result is a tuple of (bCallDebugger, bCallOnScriptErrorWhenContinuing)
+The result is a tuple of \(bCallDebugger, bCallOnScriptErrorWhenContinuing\)

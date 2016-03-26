@@ -19,17 +19,17 @@ Description of the interface
 
     Description of NotifyChanged&nbsp;
 
-## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor).GetFileName
+## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor)\.GetFileName
 
- __GetFileName(__ )
-Description of GetFileName.
+ **GetFileName\(** \)
+Description of GetFileName\.
 
-## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor).GetPathName
+## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor)\.GetPathName
 
- __GetPathName(__ )
-Description of GetPathName.
+ **GetPathName\(** \)
+Description of GetPathName\.
 
-## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor).NotifyChanged
+## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor)\.NotifyChanged
 
- __NotifyChanged(__ )
-Description of NotifyChanged.
+ **NotifyChanged\(** \)
+Description of NotifyChanged\.

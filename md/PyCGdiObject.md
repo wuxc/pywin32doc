@@ -2,4 +2,4 @@
 
 ## PyCGdiObject Object
 
-A class which encapsulates an MFC CGdiObject.
+A class which encapsulates an MFC CGdiObject\.

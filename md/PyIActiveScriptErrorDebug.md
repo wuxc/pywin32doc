@@ -15,12 +15,12 @@ Description of the interface
 
     Description of GetStackFrame&nbsp;
 
-## [PyIActiveScriptErrorDebug](#pyiactivescripterrordebug).GetDocumentContext
+## [PyIActiveScriptErrorDebug](#pyiactivescripterrordebug)\.GetDocumentContext
 
- __GetDocumentContext(__ )
-Description of GetDocumentContext.
+ **GetDocumentContext\(** \)
+Description of GetDocumentContext\.
 
-## [PyIActiveScriptErrorDebug](#pyiactivescripterrordebug).GetStackFrame
+## [PyIActiveScriptErrorDebug](#pyiactivescripterrordebug)\.GetStackFrame
 
- __GetStackFrame(__ )
-Description of GetStackFrame.
+ **GetStackFrame\(** \)
+Description of GetStackFrame\.

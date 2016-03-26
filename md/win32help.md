@@ -2,38 +2,38 @@
 
 ## Module win32help
 
-A module, encapsulating the Win32 help API's.
+A module, encapsulating the Win32 help API's\.
 
 #### Methods
 
 
   - [WinHelp](win32help.md#win32helpwinhelp)
 
-    Invokes the Windows Help system.&nbsp;
+    Invokes the Windows Help system\.&nbsp;
 
-  - [HH_AKLINK](win32help.md#win32helphh_aklink)
+  - [HH\_AKLINK](win32help.md#win32helphh_aklink)
 
-    Create and returns an HH_AKLINK structure&nbsp;
+    Create and returns an HH\_AKLINK structure&nbsp;
 
-  - [HH_FTS_QUERY](win32help.md#win32helphh_fts_query)
+  - [HH\_FTS\_QUERY](win32help.md#win32helphh_fts_query)
 
-    Create and returns an HH_FTS_QUERY structure&nbsp;
+    Create and returns an HH\_FTS\_QUERY structure&nbsp;
 
-  - [HH_POPUP](win32help.md#win32helphh_popup)
+  - [HH\_POPUP](win32help.md#win32helphh_popup)
 
-    Create and returns an HH_POPUP structure&nbsp;
+    Create and returns an HH\_POPUP structure&nbsp;
 
-  - [HH_WINTYPE](win32help.md#win32helphh_wintype)
+  - [HH\_WINTYPE](win32help.md#win32helphh_wintype)
 
-    Create and returns an HH_WINTYPE structure&nbsp;
+    Create and returns an HH\_WINTYPE structure&nbsp;
 
   - [NMHDR](win32help.md#win32helpnmhdr)
 
     Create and returns an NMHDR structure&nbsp;
 
-  - [HHN_NOTIFY](win32help.md#win32helphhn_notify)
+  - [HHN\_NOTIFY](win32help.md#win32helphhn_notify)
 
-    Create and returns an HHN_NOTIFY structure&nbsp;
+    Create and returns an HHN\_NOTIFY structure&nbsp;
 
   - [HHNTRACK](win32help.md#win32helphhntrack)
 
@@ -41,1148 +41,1148 @@ A module, encapsulating the Win32 help API's.
 
   - [HtmlHelp](win32help.md#win32helphtmlhelp)
 
-    Invokes the Windows HTML Help system.&nbsp;
+    Invokes the Windows HTML Help system\.&nbsp;
 
-## HHACT_BACK
- __const win32help.HHACT_BACK;__ 
-
-
-## HHACT_CONTRACT
- __const win32help.HHACT_CONTRACT;__ 
+## HHACT\_BACK
+ **const win32help\.HHACT\_BACK;** 
 
 
-## HHACT_CUSTOMIZE
- __const win32help.HHACT_CUSTOMIZE;__ 
+## HHACT\_CONTRACT
+ **const win32help\.HHACT\_CONTRACT;** 
 
 
-## HHACT_EXPAND
- __const win32help.HHACT_EXPAND;__ 
+## HHACT\_CUSTOMIZE
+ **const win32help\.HHACT\_CUSTOMIZE;** 
 
 
-## HHACT_FORWARD
- __const win32help.HHACT_FORWARD;__ 
+## HHACT\_EXPAND
+ **const win32help\.HHACT\_EXPAND;** 
 
 
-## HHACT_HIGHLIGHT
- __const win32help.HHACT_HIGHLIGHT;__ 
+## HHACT\_FORWARD
+ **const win32help\.HHACT\_FORWARD;** 
 
 
-## HHACT_HOME
- __const win32help.HHACT_HOME;__ 
+## HHACT\_HIGHLIGHT
+ **const win32help\.HHACT\_HIGHLIGHT;** 
 
 
-## HHACT_JUMP1
- __const win32help.HHACT_JUMP1;__ 
+## HHACT\_HOME
+ **const win32help\.HHACT\_HOME;** 
 
 
-## HHACT_JUMP2
- __const win32help.HHACT_JUMP2;__ 
+## HHACT\_JUMP1
+ **const win32help\.HHACT\_JUMP1;** 
 
 
-## HHACT_LAST_ENUM
- __const win32help.HHACT_LAST_ENUM;__ 
+## HHACT\_JUMP2
+ **const win32help\.HHACT\_JUMP2;** 
 
 
-## HHACT_NOTES
- __const win32help.HHACT_NOTES;__ 
+## HHACT\_LAST\_ENUM
+ **const win32help\.HHACT\_LAST\_ENUM;** 
 
 
-## HHACT_OPTIONS
- __const win32help.HHACT_OPTIONS;__ 
+## HHACT\_NOTES
+ **const win32help\.HHACT\_NOTES;** 
 
 
-## HHACT_PRINT
- __const win32help.HHACT_PRINT;__ 
+## HHACT\_OPTIONS
+ **const win32help\.HHACT\_OPTIONS;** 
 
 
-## HHACT_REFRESH
- __const win32help.HHACT_REFRESH;__ 
+## HHACT\_PRINT
+ **const win32help\.HHACT\_PRINT;** 
 
 
-## HHACT_STOP
- __const win32help.HHACT_STOP;__ 
+## HHACT\_REFRESH
+ **const win32help\.HHACT\_REFRESH;** 
 
 
-## HHACT_SYNC
- __const win32help.HHACT_SYNC;__ 
+## HHACT\_STOP
+ **const win32help\.HHACT\_STOP;** 
 
 
-## HHACT_TAB_CONTENTS
- __const win32help.HHACT_TAB_CONTENTS;__ 
+## HHACT\_SYNC
+ **const win32help\.HHACT\_SYNC;** 
 
 
-## HHACT_TAB_FAVORITES
- __const win32help.HHACT_TAB_FAVORITES;__ 
+## HHACT\_TAB\_CONTENTS
+ **const win32help\.HHACT\_TAB\_CONTENTS;** 
 
 
-## HHACT_TAB_HISTORY
- __const win32help.HHACT_TAB_HISTORY;__ 
+## HHACT\_TAB\_FAVORITES
+ **const win32help\.HHACT\_TAB\_FAVORITES;** 
 
 
-## HHACT_TAB_INDEX
- __const win32help.HHACT_TAB_INDEX;__ 
+## HHACT\_TAB\_HISTORY
+ **const win32help\.HHACT\_TAB\_HISTORY;** 
 
 
-## HHACT_TAB_SEARCH
- __const win32help.HHACT_TAB_SEARCH;__ 
+## HHACT\_TAB\_INDEX
+ **const win32help\.HHACT\_TAB\_INDEX;** 
 
 
-## HHACT_TOC_NEXT
- __const win32help.HHACT_TOC_NEXT;__ 
+## HHACT\_TAB\_SEARCH
+ **const win32help\.HHACT\_TAB\_SEARCH;** 
 
 
-## HHACT_TOC_PREV
- __const win32help.HHACT_TOC_PREV;__ 
+## HHACT\_TOC\_NEXT
+ **const win32help\.HHACT\_TOC\_NEXT;** 
 
 
-## HHACT_ZOOM
- __const win32help.HHACT_ZOOM;__ 
+## HHACT\_TOC\_PREV
+ **const win32help\.HHACT\_TOC\_PREV;** 
 
 
-## [win32help](#win32help).HHNTRACK
-
-[PyHHNTRACK](#pyhhntrack)= __HHNTRACK(__ )
-Creates a new HHNTRACK object.
-
-## HHN_FIRST
- __const win32help.HHN_FIRST;__ 
+## HHACT\_ZOOM
+ **const win32help\.HHACT\_ZOOM;** 
 
 
-## HHN_LAST
- __const win32help.HHN_LAST;__ 
+## [win32help](#win32help)\.HHNTRACK
+
+[PyHHNTRACK](#pyhhntrack)\= **HHNTRACK\(** \)
+Creates a new HHNTRACK object\.
+
+## HHN\_FIRST
+ **const win32help\.HHN\_FIRST;** 
 
 
-## HHN_NAVCOMPLETE
- __const win32help.HHN_NAVCOMPLETE;__ 
+## HHN\_LAST
+ **const win32help\.HHN\_LAST;** 
 
 
-## [win32help](#win32help).HHN_NOTIFY
-
-[PyHHN_NOTIFY](PyHHN.md#pyhhnnotify)= __HHN_NOTIFY(__ )
-Creates a new HHN_NOTIFY object.
-
-## HHN_TRACK
- __const win32help.HHN_TRACK;__ 
+## HHN\_NAVCOMPLETE
+ **const win32help\.HHN\_NAVCOMPLETE;** 
 
 
-## HHN_WINDOW_CREATE
- __const win32help.HHN_WINDOW_CREATE;__ 
+## [win32help](#win32help)\.HHN\_NOTIFY
+
+[PyHHN\_NOTIFY](PyHHN.md#pyhhnnotify)\= **HHN\_NOTIFY\(** \)
+Creates a new HHN\_NOTIFY object\.
+
+## HHN\_TRACK
+ **const win32help\.HHN\_TRACK;** 
 
 
-## HHWIN_BUTTON_BACK
- __const win32help.HHWIN_BUTTON_BACK;__ 
+## HHN\_WINDOW\_CREATE
+ **const win32help\.HHN\_WINDOW\_CREATE;** 
+
+
+## HHWIN\_BUTTON\_BACK
+ **const win32help\.HHWIN\_BUTTON\_BACK;** 
 Back button
 
-## HHWIN_BUTTON_BROWSE_BCK
- __const win32help.HHWIN_BUTTON_BROWSE_BCK;__ 
+## HHWIN\_BUTTON\_BROWSE\_BCK
+ **const win32help\.HHWIN\_BUTTON\_BROWSE\_BCK;** 
 not implemented
 
-## HHWIN_BUTTON_BROWSE_FWD
- __const win32help.HHWIN_BUTTON_BROWSE_FWD;__ 
+## HHWIN\_BUTTON\_BROWSE\_FWD
+ **const win32help\.HHWIN\_BUTTON\_BROWSE\_FWD;** 
 not implemented
 
-## HHWIN_BUTTON_CONTENTS
- __const win32help.HHWIN_BUTTON_CONTENTS;__ 
+## HHWIN\_BUTTON\_CONTENTS
+ **const win32help\.HHWIN\_BUTTON\_CONTENTS;** 
 not implemented
 
-## HHWIN_BUTTON_EXPAND
- __const win32help.HHWIN_BUTTON_EXPAND;__ 
+## HHWIN\_BUTTON\_EXPAND
+ **const win32help\.HHWIN\_BUTTON\_EXPAND;** 
 Expand/contract button
 
-## HHWIN_BUTTON_FAVORITES
- __const win32help.HHWIN_BUTTON_FAVORITES;__ 
+## HHWIN\_BUTTON\_FAVORITES
+ **const win32help\.HHWIN\_BUTTON\_FAVORITES;** 
 not implemented
 
-## HHWIN_BUTTON_FORWARD
- __const win32help.HHWIN_BUTTON_FORWARD;__ 
+## HHWIN\_BUTTON\_FORWARD
+ **const win32help\.HHWIN\_BUTTON\_FORWARD;** 
 Forward button
 
-## HHWIN_BUTTON_HISTORY
- __const win32help.HHWIN_BUTTON_HISTORY;__ 
+## HHWIN\_BUTTON\_HISTORY
+ **const win32help\.HHWIN\_BUTTON\_HISTORY;** 
 not implemented
 
-## HHWIN_BUTTON_HOME
- __const win32help.HHWIN_BUTTON_HOME;__ 
+## HHWIN\_BUTTON\_HOME
+ **const win32help\.HHWIN\_BUTTON\_HOME;** 
 Home button
 
-## HHWIN_BUTTON_INDEX
- __const win32help.HHWIN_BUTTON_INDEX;__ 
+## HHWIN\_BUTTON\_INDEX
+ **const win32help\.HHWIN\_BUTTON\_INDEX;** 
 not implemented
 
-## HHWIN_BUTTON_JUMP1
- __const win32help.HHWIN_BUTTON_JUMP1;__ 
+## HHWIN\_BUTTON\_JUMP1
+ **const win32help\.HHWIN\_BUTTON\_JUMP1;** 
 
 
-## HHWIN_BUTTON_JUMP2
- __const win32help.HHWIN_BUTTON_JUMP2;__ 
+## HHWIN\_BUTTON\_JUMP2
+ **const win32help\.HHWIN\_BUTTON\_JUMP2;** 
 
 
-## HHWIN_BUTTON_NOTES
- __const win32help.HHWIN_BUTTON_NOTES;__ 
+## HHWIN\_BUTTON\_NOTES
+ **const win32help\.HHWIN\_BUTTON\_NOTES;** 
 not implemented
 
-## HHWIN_BUTTON_OPTIONS
- __const win32help.HHWIN_BUTTON_OPTIONS;__ 
+## HHWIN\_BUTTON\_OPTIONS
+ **const win32help\.HHWIN\_BUTTON\_OPTIONS;** 
 Options button
 
-## HHWIN_BUTTON_PRINT
- __const win32help.HHWIN_BUTTON_PRINT;__ 
+## HHWIN\_BUTTON\_PRINT
+ **const win32help\.HHWIN\_BUTTON\_PRINT;** 
 Print button
 
-## HHWIN_BUTTON_REFRESH
- __const win32help.HHWIN_BUTTON_REFRESH;__ 
+## HHWIN\_BUTTON\_REFRESH
+ **const win32help\.HHWIN\_BUTTON\_REFRESH;** 
 Refresh button
 
-## HHWIN_BUTTON_SEARCH
- __const win32help.HHWIN_BUTTON_SEARCH;__ 
+## HHWIN\_BUTTON\_SEARCH
+ **const win32help\.HHWIN\_BUTTON\_SEARCH;** 
 not implemented
 
-## HHWIN_BUTTON_STOP
- __const win32help.HHWIN_BUTTON_STOP;__ 
+## HHWIN\_BUTTON\_STOP
+ **const win32help\.HHWIN\_BUTTON\_STOP;** 
 Stop button
 
-## HHWIN_BUTTON_SYNC
- __const win32help.HHWIN_BUTTON_SYNC;__ 
+## HHWIN\_BUTTON\_SYNC
+ **const win32help\.HHWIN\_BUTTON\_SYNC;** 
 Sync button
 
-## HHWIN_BUTTON_TOC_NEXT
- __const win32help.HHWIN_BUTTON_TOC_NEXT;__ 
+## HHWIN\_BUTTON\_TOC\_NEXT
+ **const win32help\.HHWIN\_BUTTON\_TOC\_NEXT;** 
 
 
-## HHWIN_BUTTON_TOC_PREV
- __const win32help.HHWIN_BUTTON_TOC_PREV;__ 
+## HHWIN\_BUTTON\_TOC\_PREV
+ **const win32help\.HHWIN\_BUTTON\_TOC\_PREV;** 
 
 
-## HHWIN_BUTTON_ZOOM
- __const win32help.HHWIN_BUTTON_ZOOM;__ 
+## HHWIN\_BUTTON\_ZOOM
+ **const win32help\.HHWIN\_BUTTON\_ZOOM;** 
 
 
-## HHWIN_DEF_BUTTONS
- __const win32help.HHWIN_DEF_BUTTONS;__ 
+## HHWIN\_DEF\_BUTTONS
+ **const win32help\.HHWIN\_DEF\_BUTTONS;** 
 
 
-## HHWIN_NAVTAB_BOTTOM
- __const win32help.HHWIN_NAVTAB_BOTTOM;__ 
+## HHWIN\_NAVTAB\_BOTTOM
+ **const win32help\.HHWIN\_NAVTAB\_BOTTOM;** 
 
 
-## HHWIN_NAVTAB_LEFT
- __const win32help.HHWIN_NAVTAB_LEFT;__ 
+## HHWIN\_NAVTAB\_LEFT
+ **const win32help\.HHWIN\_NAVTAB\_LEFT;** 
 
 
-## HHWIN_NAVTAB_TOP
- __const win32help.HHWIN_NAVTAB_TOP;__ 
+## HHWIN\_NAVTAB\_TOP
+ **const win32help\.HHWIN\_NAVTAB\_TOP;** 
 
 
-## HHWIN_PARAM_CUR_TAB
- __const win32help.HHWIN_PARAM_CUR_TAB;__ 
+## HHWIN\_PARAM\_CUR\_TAB
+ **const win32help\.HHWIN\_PARAM\_CUR\_TAB;** 
 valid curNavType
 
-## HHWIN_PARAM_EXPANSION
- __const win32help.HHWIN_PARAM_EXPANSION;__ 
+## HHWIN\_PARAM\_EXPANSION
+ **const win32help\.HHWIN\_PARAM\_EXPANSION;** 
 valid notExpanded
 
-## HHWIN_PARAM_EXSTYLES
- __const win32help.HHWIN_PARAM_EXSTYLES;__ 
+## HHWIN\_PARAM\_EXSTYLES
+ **const win32help\.HHWIN\_PARAM\_EXSTYLES;** 
 valid exStyles
 
-## HHWIN_PARAM_HISTORY_COUNT
- __const win32help.HHWIN_PARAM_HISTORY_COUNT;__ 
+## HHWIN\_PARAM\_HISTORY\_COUNT
+ **const win32help\.HHWIN\_PARAM\_HISTORY\_COUNT;** 
 valid cHistory
 
-## HHWIN_PARAM_INFOTYPES
- __const win32help.HHWIN_PARAM_INFOTYPES;__ 
+## HHWIN\_PARAM\_INFOTYPES
+ **const win32help\.HHWIN\_PARAM\_INFOTYPES;** 
 valid apInfoTypes
 
-## HHWIN_PARAM_NAV_WIDTH
- __const win32help.HHWIN_PARAM_NAV_WIDTH;__ 
+## HHWIN\_PARAM\_NAV\_WIDTH
+ **const win32help\.HHWIN\_PARAM\_NAV\_WIDTH;** 
 valid navWidth
 
-## HHWIN_PARAM_PROPERTIES
- __const win32help.HHWIN_PARAM_PROPERTIES;__ 
+## HHWIN\_PARAM\_PROPERTIES
+ **const win32help\.HHWIN\_PARAM\_PROPERTIES;** 
 valid winProperties
 
-## HHWIN_PARAM_RECT
- __const win32help.HHWIN_PARAM_RECT;__ 
+## HHWIN\_PARAM\_RECT
+ **const win32help\.HHWIN\_PARAM\_RECT;** 
 valid windowPos
 
-## HHWIN_PARAM_SHOWSTATE
- __const win32help.HHWIN_PARAM_SHOWSTATE;__ 
+## HHWIN\_PARAM\_SHOWSTATE
+ **const win32help\.HHWIN\_PARAM\_SHOWSTATE;** 
 valid showState
 
-## HHWIN_PARAM_STYLES
- __const win32help.HHWIN_PARAM_STYLES;__ 
+## HHWIN\_PARAM\_STYLES
+ **const win32help\.HHWIN\_PARAM\_STYLES;** 
 valid styles
 
-## HHWIN_PARAM_TABORDER
- __const win32help.HHWIN_PARAM_TABORDER;__ 
+## HHWIN\_PARAM\_TABORDER
+ **const win32help\.HHWIN\_PARAM\_TABORDER;** 
 valid taborder
 
-## HHWIN_PARAM_TABPOS
- __const win32help.HHWIN_PARAM_TABPOS;__ 
+## HHWIN\_PARAM\_TABPOS
+ **const win32help\.HHWIN\_PARAM\_TABPOS;** 
 valid tabpos
 
-## HHWIN_PARAM_TB_FLAGS
- __const win32help.HHWIN_PARAM_TB_FLAGS;__ 
+## HHWIN\_PARAM\_TB\_FLAGS
+ **const win32help\.HHWIN\_PARAM\_TB\_FLAGS;** 
 valid toolBarFlags
 
-## HHWIN_PROP_AUTO_SYNC
- __const win32help.HHWIN_PROP_AUTO_SYNC;__ 
+## HHWIN\_PROP\_AUTO\_SYNC
+ **const win32help\.HHWIN\_PROP\_AUTO\_SYNC;** 
 automatically ssync contents 
 
 and index
 
-## HHWIN_PROP_CHANGE_TITLE
- __const win32help.HHWIN_PROP_CHANGE_TITLE;__ 
+## HHWIN\_PROP\_CHANGE\_TITLE
+ **const win32help\.HHWIN\_PROP\_CHANGE\_TITLE;** 
 Put current HTML title in 
 
 title bar
 
-## HHWIN_PROP_MENU
- __const win32help.HHWIN_PROP_MENU;__ 
+## HHWIN\_PROP\_MENU
+ **const win32help\.HHWIN\_PROP\_MENU;** 
 Menu
 
-## HHWIN_PROP_NAV_ONLY_WIN
- __const win32help.HHWIN_PROP_NAV_ONLY_WIN;__ 
+## HHWIN\_PROP\_NAV\_ONLY\_WIN
+ **const win32help\.HHWIN\_PROP\_NAV\_ONLY\_WIN;** 
 Only display the navigation 
 
 window
 
-## HHWIN_PROP_NODEF_EXSTYLES
- __const win32help.HHWIN_PROP_NODEF_EXSTYLES;__ 
+## HHWIN\_PROP\_NODEF\_EXSTYLES
+ **const win32help\.HHWIN\_PROP\_NODEF\_EXSTYLES;** 
 no default extended 
 
-window styles (only HH_WINTYPE.exStyles)
+window styles \(only HH\_WINTYPE\.exStyles\)
 
-## HHWIN_PROP_NODEF_STYLES
- __const win32help.HHWIN_PROP_NODEF_STYLES;__ 
+## HHWIN\_PROP\_NODEF\_STYLES
+ **const win32help\.HHWIN\_PROP\_NODEF\_STYLES;** 
 no default window styles 
 
-(only HH_WINTYPE.styles)
+\(only HH\_WINTYPE\.styles\)
 
-## HHWIN_PROP_NOTB_TEXT
- __const win32help.HHWIN_PROP_NOTB_TEXT;__ 
+## HHWIN\_PROP\_NOTB\_TEXT
+ **const win32help\.HHWIN\_PROP\_NOTB\_TEXT;** 
 no text on toolbar buttons
 
-## HHWIN_PROP_NOTITLEBAR
- __const win32help.HHWIN_PROP_NOTITLEBAR;__ 
+## HHWIN\_PROP\_NOTITLEBAR
+ **const win32help\.HHWIN\_PROP\_NOTITLEBAR;** 
 no title bar
 
-## HHWIN_PROP_NO_TOOLBAR
- __const win32help.HHWIN_PROP_NO_TOOLBAR;__ 
+## HHWIN\_PROP\_NO\_TOOLBAR
+ **const win32help\.HHWIN\_PROP\_NO\_TOOLBAR;** 
 Don't display a toolbar
 
-## HHWIN_PROP_ONTOP
- __const win32help.HHWIN_PROP_ONTOP;__ 
+## HHWIN\_PROP\_ONTOP
+ **const win32help\.HHWIN\_PROP\_ONTOP;** 
 Top-most window
 
-## HHWIN_PROP_POST_QUIT
- __const win32help.HHWIN_PROP_POST_QUIT;__ 
-post WM_QUIT message when 
+## HHWIN\_PROP\_POST\_QUIT
+ **const win32help\.HHWIN\_PROP\_POST\_QUIT;** 
+post WM\_QUIT message when 
 
 window closes
 
-## HHWIN_PROP_TAB_ADVSEARCH
- __const win32help.HHWIN_PROP_TAB_ADVSEARCH;__ 
-Advanced FTS UI.
+## HHWIN\_PROP\_TAB\_ADVSEARCH
+ **const win32help\.HHWIN\_PROP\_TAB\_ADVSEARCH;** 
+Advanced FTS UI\.
 
-## HHWIN_PROP_TAB_AUTOHIDESHOW
- __const win32help.HHWIN_PROP_TAB_AUTOHIDESHOW;__ 
+## HHWIN\_PROP\_TAB\_AUTOHIDESHOW
+ **const win32help\.HHWIN\_PROP\_TAB\_AUTOHIDESHOW;** 
 Automatically hide/show 
 
 tri-pane window
 
-## HHWIN_PROP_TAB_CUSTOM1
- __const win32help.HHWIN_PROP_TAB_CUSTOM1;__ 
-Use custom tab #1
+## HHWIN\_PROP\_TAB\_CUSTOM1
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM1;** 
+Use custom tab \#1
 
-## HHWIN_PROP_TAB_CUSTOM2
- __const win32help.HHWIN_PROP_TAB_CUSTOM2;__ 
-Use custom tab #2
+## HHWIN\_PROP\_TAB\_CUSTOM2
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM2;** 
+Use custom tab \#2
 
-## HHWIN_PROP_TAB_CUSTOM3
- __const win32help.HHWIN_PROP_TAB_CUSTOM3;__ 
-Use custom tab #3
+## HHWIN\_PROP\_TAB\_CUSTOM3
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM3;** 
+Use custom tab \#3
 
-## HHWIN_PROP_TAB_CUSTOM4
- __const win32help.HHWIN_PROP_TAB_CUSTOM4;__ 
-Use custom tab #4
+## HHWIN\_PROP\_TAB\_CUSTOM4
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM4;** 
+Use custom tab \#4
 
-## HHWIN_PROP_TAB_CUSTOM5
- __const win32help.HHWIN_PROP_TAB_CUSTOM5;__ 
-Use custom tab #5
+## HHWIN\_PROP\_TAB\_CUSTOM5
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM5;** 
+Use custom tab \#5
 
-## HHWIN_PROP_TAB_CUSTOM6
- __const win32help.HHWIN_PROP_TAB_CUSTOM6;__ 
-Use custom tab #6
+## HHWIN\_PROP\_TAB\_CUSTOM6
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM6;** 
+Use custom tab \#6
 
-## HHWIN_PROP_TAB_CUSTOM7
- __const win32help.HHWIN_PROP_TAB_CUSTOM7;__ 
-Use custom tab #7
+## HHWIN\_PROP\_TAB\_CUSTOM7
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM7;** 
+Use custom tab \#7
 
-## HHWIN_PROP_TAB_CUSTOM8
- __const win32help.HHWIN_PROP_TAB_CUSTOM8;__ 
-Use custom tab #8
+## HHWIN\_PROP\_TAB\_CUSTOM8
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM8;** 
+Use custom tab \#8
 
-## HHWIN_PROP_TAB_CUSTOM9
- __const win32help.HHWIN_PROP_TAB_CUSTOM9;__ 
-Use custom tab #9
+## HHWIN\_PROP\_TAB\_CUSTOM9
+ **const win32help\.HHWIN\_PROP\_TAB\_CUSTOM9;** 
+Use custom tab \#9
 
-## HHWIN_PROP_TAB_FAVORITES
- __const win32help.HHWIN_PROP_TAB_FAVORITES;__ 
+## HHWIN\_PROP\_TAB\_FAVORITES
+ **const win32help\.HHWIN\_PROP\_TAB\_FAVORITES;** 
 include favorites tab in 
 
 navigation pane
 
-## HHWIN_PROP_TAB_HISTORY
- __const win32help.HHWIN_PROP_TAB_HISTORY;__ 
+## HHWIN\_PROP\_TAB\_HISTORY
+ **const win32help\.HHWIN\_PROP\_TAB\_HISTORY;** 
 include history tab in 
 
 navigation pane
 
-## HHWIN_PROP_TAB_SEARCH
- __const win32help.HHWIN_PROP_TAB_SEARCH;__ 
+## HHWIN\_PROP\_TAB\_SEARCH
+ **const win32help\.HHWIN\_PROP\_TAB\_SEARCH;** 
 include search tab in 
 
 navigation pane
 
-## HHWIN_PROP_TRACKING
- __const win32help.HHWIN_PROP_TRACKING;__ 
+## HHWIN\_PROP\_TRACKING
+ **const win32help\.HHWIN\_PROP\_TRACKING;** 
 send tracking notification 
 
 messages
 
-## HHWIN_PROP_TRI_PANE
- __const win32help.HHWIN_PROP_TRI_PANE;__ 
+## HHWIN\_PROP\_TRI\_PANE
+ **const win32help\.HHWIN\_PROP\_TRI\_PANE;** 
 use a tri-pane window
 
-## HHWIN_PROP_USER_POS
- __const win32help.HHWIN_PROP_USER_POS;__ 
+## HHWIN\_PROP\_USER\_POS
+ **const win32help\.HHWIN\_PROP\_USER\_POS;** 
 After initial creation, user 
 
 controls window size/position
 
-## HHWIN_TB_MARGIN
- __const win32help.HHWIN_TB_MARGIN;__ 
+## HHWIN\_TB\_MARGIN
+ **const win32help\.HHWIN\_TB\_MARGIN;** 
 the window type has a margin
 
-## [win32help](#win32help).HH_AKLINK
+## [win32help](#win32help)\.HH\_AKLINK
 
-[PyHH_AKLINK](PyHH.md#pyhhaklink)= __HH_AKLINK(__ )
-Creates a new HH_AKLINK object.
+[PyHH\_AKLINK](PyHH.md#pyhhaklink)\= **HH\_AKLINK\(** \)
+Creates a new HH\_AKLINK object\.
 
-## HH_ALINK_LOOKUP
- __const win32help.HH_ALINK_LOOKUP;__ 
-ALink version of HH_KEYWORD_LOOKUP
+## HH\_ALINK\_LOOKUP
+ **const win32help\.HH\_ALINK\_LOOKUP;** 
+ALink version of HH\_KEYWORD\_LOOKUP
 
-## HH_CLOSE_ALL
- __const win32help.HH_CLOSE_ALL;__ 
+## HH\_CLOSE\_ALL
+ **const win32help\.HH\_CLOSE\_ALL;** 
 close all windows opened directly or 
 
 indirectly by the caller
 
-## HH_DISPLAY_INDEX
- __const win32help.HH_DISPLAY_INDEX;__ 
+## HH\_DISPLAY\_INDEX
+ **const win32help\.HH\_DISPLAY\_INDEX;** 
 not currently implemented
 
-## HH_DISPLAY_SEARCH
- __const win32help.HH_DISPLAY_SEARCH;__ 
+## HH\_DISPLAY\_SEARCH
+ **const win32help\.HH\_DISPLAY\_SEARCH;** 
 not currently implemented
 
-## HH_DISPLAY_TEXT_POPUP
- __const win32help.HH_DISPLAY_TEXT_POPUP;__ 
+## HH\_DISPLAY\_TEXT\_POPUP
+ **const win32help\.HH\_DISPLAY\_TEXT\_POPUP;** 
 display string resource id 
 
 or text in a popup window
 
-## HH_DISPLAY_TOC
- __const win32help.HH_DISPLAY_TOC;__ 
+## HH\_DISPLAY\_TOC
+ **const win32help\.HH\_DISPLAY\_TOC;** 
 not currently implemented
 
-## HH_DISPLAY_TOPIC
- __const win32help.HH_DISPLAY_TOPIC;__ 
+## HH\_DISPLAY\_TOPIC
+ **const win32help\.HH\_DISPLAY\_TOPIC;** 
 
 
-## HH_ENUM_CATEGORY
- __const win32help.HH_ENUM_CATEGORY;__ 
+## HH\_ENUM\_CATEGORY
+ **const win32help\.HH\_ENUM\_CATEGORY;** 
 Get category name, call 
 
 repeatedly to enumerate, -1 at end
 
-## HH_ENUM_CATEGORY_IT
- __const win32help.HH_ENUM_CATEGORY_IT;__ 
+## HH\_ENUM\_CATEGORY\_IT
+ **const win32help\.HH\_ENUM\_CATEGORY\_IT;** 
 Get category info type members, 
 
 call repeatedly to enumerate, -1 at end
 
-## HH_ENUM_INFO_TYPE
- __const win32help.HH_ENUM_INFO_TYPE;__ 
+## HH\_ENUM\_INFO\_TYPE
+ **const win32help\.HH\_ENUM\_INFO\_TYPE;** 
 Get Info type name, call 
 
 repeatedly to enumerate, -1 at end
 
-## HH_FTS_DEFAULT_PROXIMITY
- __const win32help.HH_FTS_DEFAULT_PROXIMITY;__ 
+## HH\_FTS\_DEFAULT\_PROXIMITY
+ **const win32help\.HH\_FTS\_DEFAULT\_PROXIMITY;** 
 
 
-## [win32help](#win32help).HH_FTS_QUERY
+## [win32help](#win32help)\.HH\_FTS\_QUERY
 
-[PyHH_FTS_QUERY](PyHH.md#pyhhfts_query)= __HH_FTS_QUERY(__ )
-Creates a new HH_FTS_QUERY object.
+[PyHH\_FTS\_QUERY](PyHH.md#pyhhfts_query)\= **HH\_FTS\_QUERY\(** \)
+Creates a new HH\_FTS\_QUERY object\.
 
-## HH_GET_LAST_ERROR
- __const win32help.HH_GET_LAST_ERROR;__ 
+## HH\_GET\_LAST\_ERROR
+ **const win32help\.HH\_GET\_LAST\_ERROR;** 
 not currently implemented 
 
-See HHERROR.h
+See HHERROR\.h
 
-## HH_GET_WIN_HANDLE
- __const win32help.HH_GET_WIN_HANDLE;__ 
-
-
-## HH_GET_WIN_TYPE
- __const win32help.HH_GET_WIN_TYPE;__ 
+## HH\_GET\_WIN\_HANDLE
+ **const win32help\.HH\_GET\_WIN\_HANDLE;** 
 
 
-## HH_GPROPID_CONTENT_LANGUAGE
- __const win32help.HH_GPROPID_CONTENT_LANGUAGE;__ 
+## HH\_GET\_WIN\_TYPE
+ **const win32help\.HH\_GET\_WIN\_TYPE;** 
+
+
+## HH\_GPROPID\_CONTENT\_LANGUAGE
+ **const win32help\.HH\_GPROPID\_CONTENT\_LANGUAGE;** 
 long: LandId for desired 
 
-content.
+content\.
 
-## HH_GPROPID_CURRENT_SUBSET
- __const win32help.HH_GPROPID_CURRENT_SUBSET;__ 
-BSTR: Current subset.
+## HH\_GPROPID\_CURRENT\_SUBSET
+ **const win32help\.HH\_GPROPID\_CURRENT\_SUBSET;** 
+BSTR: Current subset\.
 
-## HH_GPROPID_SINGLETHREAD
- __const win32help.HH_GPROPID_SINGLETHREAD;__ 
-VARIANT_BOOL: True for single 
+## HH\_GPROPID\_SINGLETHREAD
+ **const win32help\.HH\_GPROPID\_SINGLETHREAD;** 
+VARIANT\_BOOL: True for single 
 
 thread
 
-## HH_GPROPID_TOOLBAR_MARGIN
- __const win32help.HH_GPROPID_TOOLBAR_MARGIN;__ 
+## HH\_GPROPID\_TOOLBAR\_MARGIN
+ **const win32help\.HH\_GPROPID\_TOOLBAR\_MARGIN;** 
 long: Provides a left/right 
 
-margin around the toolbar.
+margin around the toolbar\.
 
-## HH_GPROPID_UI_LANGUAGE
- __const win32help.HH_GPROPID_UI_LANGUAGE;__ 
-long: LangId of the UI.
+## HH\_GPROPID\_UI\_LANGUAGE
+ **const win32help\.HH\_GPROPID\_UI\_LANGUAGE;** 
+long: LangId of the UI\.
 
-## HH_HELP_CONTEXT
- __const win32help.HH_HELP_CONTEXT;__ 
+## HH\_HELP\_CONTEXT
+ **const win32help\.HH\_HELP\_CONTEXT;** 
 display mapped numeric value in 
 
 dwData
 
-## HH_HELP_FINDER
- __const win32help.HH_HELP_FINDER;__ 
+## HH\_HELP\_FINDER
+ **const win32help\.HH\_HELP\_FINDER;** 
 WinHelp equivalent
 
-## HH_INITIALIZE
- __const win32help.HH_INITIALIZE;__ 
-Initializes the help system.
+## HH\_INITIALIZE
+ **const win32help\.HH\_INITIALIZE;** 
+Initializes the help system\.
 
-## HH_KEYWORD_LOOKUP
- __const win32help.HH_KEYWORD_LOOKUP;__ 
-
-
-## HH_MAX_TABS_CUSTOM
- __const win32help.HH_MAX_TABS_CUSTOM;__ 
+## HH\_KEYWORD\_LOOKUP
+ **const win32help\.HH\_KEYWORD\_LOOKUP;** 
 
 
-## [win32help](#win32help).HH_POPUP
-
-[PyHH_POPUP](PyHH.md#pyhhpopup)= __HH_POPUP(__ )
-Creates a new HH_POPUP object.
-
-## HH_PRETRANSLATEMESSAGE
- __const win32help.HH_PRETRANSLATEMESSAGE;__ 
-Pumps messages. 
-
-(NULL, NULL, MSG*).
-
-## HH_RESERVED1
- __const win32help.HH_RESERVED1;__ 
+## HH\_MAX\_TABS\_CUSTOM
+ **const win32help\.HH\_MAX\_TABS\_CUSTOM;** 
 
 
-## HH_RESERVED2
- __const win32help.HH_RESERVED2;__ 
+## [win32help](#win32help)\.HH\_POPUP
+
+[PyHH\_POPUP](PyHH.md#pyhhpopup)\= **HH\_POPUP\(** \)
+Creates a new HH\_POPUP object\.
+
+## HH\_PRETRANSLATEMESSAGE
+ **const win32help\.HH\_PRETRANSLATEMESSAGE;** 
+Pumps messages\. 
+
+\(NULL, NULL, MSG\*\)\.
+
+## HH\_RESERVED1
+ **const win32help\.HH\_RESERVED1;** 
 
 
-## HH_RESERVED3
- __const win32help.HH_RESERVED3;__ 
+## HH\_RESERVED2
+ **const win32help\.HH\_RESERVED2;** 
 
 
-## HH_RESET_IT_FILTER
- __const win32help.HH_RESET_IT_FILTER;__ 
+## HH\_RESERVED3
+ **const win32help\.HH\_RESERVED3;** 
+
+
+## HH\_RESET\_IT\_FILTER
+ **const win32help\.HH\_RESET\_IT\_FILTER;** 
 Clear the info type filter of 
 
-all info types.
+all info types\.
 
-## HH_SET_EXCLUSIVE_FILTER
- __const win32help.HH_SET_EXCLUSIVE_FILTER;__ 
+## HH\_SET\_EXCLUSIVE\_FILTER
+ **const win32help\.HH\_SET\_EXCLUSIVE\_FILTER;** 
 set exclusive filtering 
 
 method for untyped topics to be excluded from display
 
-## HH_SET_GLOBAL_PROPERTY
- __const win32help.HH_SET_GLOBAL_PROPERTY;__ 
-Set a global property. 
+## HH\_SET\_GLOBAL\_PROPERTY
+ **const win32help\.HH\_SET\_GLOBAL\_PROPERTY;** 
+Set a global property\. 
 
-(NULL, NULL, HH_GPROP).
+\(NULL, NULL, HH\_GPROP\)\.
 
-## HH_SET_INCLUSIVE_FILTER
- __const win32help.HH_SET_INCLUSIVE_FILTER;__ 
+## HH\_SET\_INCLUSIVE\_FILTER
+ **const win32help\.HH\_SET\_INCLUSIVE\_FILTER;** 
 set inclusive filtering 
 
 method for untyped topics to be included in display
 
-## HH_SET_INFO_TYPE
- __const win32help.HH_SET_INFO_TYPE;__ 
-Add Info type to filter.
+## HH\_SET\_INFO\_TYPE
+ **const win32help\.HH\_SET\_INFO\_TYPE;** 
+Add Info type to filter\.
 
-## HH_SET_WIN_TYPE
- __const win32help.HH_SET_WIN_TYPE;__ 
-
-
-## HH_SYNC
- __const win32help.HH_SYNC;__ 
+## HH\_SET\_WIN\_TYPE
+ **const win32help\.HH\_SET\_WIN\_TYPE;** 
 
 
-## HH_TAB_AUTHOR
- __const win32help.HH_TAB_AUTHOR;__ 
+## HH\_SYNC
+ **const win32help\.HH\_SYNC;** 
 
 
-## HH_TAB_CONTENTS
- __const win32help.HH_TAB_CONTENTS;__ 
+## HH\_TAB\_AUTHOR
+ **const win32help\.HH\_TAB\_AUTHOR;** 
 
 
-## HH_TAB_CUSTOM_FIRST
- __const win32help.HH_TAB_CUSTOM_FIRST;__ 
+## HH\_TAB\_CONTENTS
+ **const win32help\.HH\_TAB\_CONTENTS;** 
 
 
-## HH_TAB_CUSTOM_LAST
- __const win32help.HH_TAB_CUSTOM_LAST;__ 
+## HH\_TAB\_CUSTOM\_FIRST
+ **const win32help\.HH\_TAB\_CUSTOM\_FIRST;** 
 
 
-## HH_TAB_FAVORITES
- __const win32help.HH_TAB_FAVORITES;__ 
+## HH\_TAB\_CUSTOM\_LAST
+ **const win32help\.HH\_TAB\_CUSTOM\_LAST;** 
 
 
-## HH_TAB_HISTORY
- __const win32help.HH_TAB_HISTORY;__ 
+## HH\_TAB\_FAVORITES
+ **const win32help\.HH\_TAB\_FAVORITES;** 
 
 
-## HH_TAB_INDEX
- __const win32help.HH_TAB_INDEX;__ 
+## HH\_TAB\_HISTORY
+ **const win32help\.HH\_TAB\_HISTORY;** 
 
 
-## HH_TAB_SEARCH
- __const win32help.HH_TAB_SEARCH;__ 
+## HH\_TAB\_INDEX
+ **const win32help\.HH\_TAB\_INDEX;** 
 
 
-## HH_TP_HELP_CONTEXTMENU
- __const win32help.HH_TP_HELP_CONTEXTMENU;__ 
+## HH\_TAB\_SEARCH
+ **const win32help\.HH\_TAB\_SEARCH;** 
+
+
+## HH\_TP\_HELP\_CONTEXTMENU
+ **const win32help\.HH\_TP\_HELP\_CONTEXTMENU;** 
 text popup help, same as 
 
-WinHelp HELP_CONTEXTMENU
+WinHelp HELP\_CONTEXTMENU
 
-## HH_TP_HELP_WM_HELP
- __const win32help.HH_TP_HELP_WM_HELP;__ 
+## HH\_TP\_HELP\_WM\_HELP
+ **const win32help\.HH\_TP\_HELP\_WM\_HELP;** 
 text popup help, same as 
 
-WinHelp HELP_WM_HELP
+WinHelp HELP\_WM\_HELP
 
-## HH_UNINITIALIZE
- __const win32help.HH_UNINITIALIZE;__ 
-Uninitializes the help system.
+## HH\_UNINITIALIZE
+ **const win32help\.HH\_UNINITIALIZE;** 
+Uninitializes the help system\.
 
-## [win32help](#win32help).HH_WINTYPE
+## [win32help](#win32help)\.HH\_WINTYPE
 
-[PyHH_WINTYPE](PyHH.md#pyhhwintype)= __HH_WINTYPE(__ )
-Creates a new HH_WINTYPE object.
+[PyHH\_WINTYPE](PyHH.md#pyhhwintype)\= **HH\_WINTYPE\(** \)
+Creates a new HH\_WINTYPE object\.
 
-## [win32help](#win32help).HtmlHelp
+## [win32help](#win32help)\.HtmlHelp
 
-int = __HtmlHelp( *hwnd*  *, file*  *, cmd*  *, data* __ )
-Invokes the Windows Html Help system.
+int \= **HtmlHelp\( *hwnd*  *, file*  *, cmd*  *, data* ** \)
+Invokes the Windows Html Help system\.
 
 #### Parameters
 
 
   -  *hwnd* : int
 
-    The handle of the window requesting help.
+    The handle of the window requesting help\.
 
   -  *file* : string/None
 
-    The name of the help file, or None.
+    The name of the help file, or None\.
 
   -  *cmd* : int
 
-    The type of help.  Valid values are:
+    The type of help\.  Valid values are:
 
- __HH_ALINK_LOOKUP__ : Looks up one or more Associative link (ALink) names 
+ **HH\_ALINK\_LOOKUP** : Looks up one or more Associative link \(ALink\) names 
 
-in a compiled help (.chm) file.
+in a compiled help \(\.chm\) file\.
 The ALink names to search for, and the action to be taken if no matches 
 
-are found, are specified in the[win32help::HH_AKLINK](win32help.md#win32helphh_aklink)structure.
+are found, are specified in the[win32help::HH\_AKLINK](win32help.md#win32helphh_aklink)structure\.
 
- __file__ : Specifies a compiled help (.chm) file, or a specific topic 
+ **file** : Specifies a compiled help \(\.chm\) file, or a specific topic 
 
-within a compiled help file.
- __data__ : Specifies NULL or a pointer to a topic within a compiled help 
+within a compiled help file\.
+ **data** : Specifies NULL or a pointer to a topic within a compiled help 
 
-file.
+file\.
 
- __HH_CLOSE_ALL__ : Closes all windows opened directly or indirectly by the 
+ **HH\_CLOSE\_ALL** : Closes all windows opened directly or indirectly by the 
 
-calling program.  The args are not checked for type, values are set as 
+calling program\.  The args are not checked for type, values are set as 
 
-they "Must" be.
+they "Must" be\.
 
- __hwnd__ : Must be None.
- __file__ : Must be None.
- __data__ : Must be zero.
+ **hwnd** : Must be None\.
+ **file** : Must be None\.
+ **data** : Must be zero\.
 
- __HH_DISPLAY_INDEX__ : Selects the Index tab in the Navigation pane of the 
+ **HH\_DISPLAY\_INDEX** : Selects the Index tab in the Navigation pane of the 
 
 HTML Help Viewer and searches for the keyword specified in the data 
 
-parameter.
+parameter\.
 
- __file__ : Specifies a compiled help (.chm) file, or a specific topic 
+ **file** : Specifies a compiled help \(\.chm\) file, or a specific topic 
 
-within a compiled help file.
- __data__ : Specifies the keyword to select in the index (.hhk) file.
+within a compiled help file\.
+ **data** : Specifies the keyword to select in the index \(\.hhk\) file\.
 
- __HH_DISPLAY_SEARCH__ : Selects the Search tab in the Navigation pane of 
+ **HH\_DISPLAY\_SEARCH** : Selects the Search tab in the Navigation pane of 
 
 the HTML Help Viewer and performs a search for the term specified in the 
 
-searchQuery parameter of the[win32help::HH_FTS_QUERY](win32help.md#win32helphh_fts_query)structure.
+searchQuery parameter of the[win32help::HH\_FTS\_QUERY](win32help.md#win32helphh_fts_query)structure\.
 
- __file__ : Specifies a compiled help (.chm) file, or a specific topic 
+ **file** : Specifies a compiled help \(\.chm\) file, or a specific topic 
 
-within a compiled help file.
- __data__ : Specifies a pointer to an[win32help::HH_FTS_QUERY](win32help.md#win32helphh_fts_query)structure.
+within a compiled help file\.
+ **data** : Specifies a pointer to an[win32help::HH\_FTS\_QUERY](win32help.md#win32helphh_fts_query)structure\.
 
- __HH_DISPLAY_TEXT_POPUP__ : Opens a pop-up window that displays the 
+ **HH\_DISPLAY\_TEXT\_POPUP** : Opens a pop-up window that displays the 
 
 contents of one of the following:
-An explicit text string.
-A text string based on a resource ID.
-A text string ID based on a text file contained in a compiled help (.chm) 
+An explicit text string\.
+A text string based on a resource ID\.
+A text string ID based on a text file contained in a compiled help \(\.chm\) 
 
-file.
+file\.
 
- __file__ : To use an explicit text string, use None.  To use a text 
+ **file** : To use an explicit text string, use None\.  To use a text 
 
-string from a resource, use None. To use text string from a text file 
+string from a resource, use None\. To use text string from a text file 
 
-contained in a compiled help file, specify the .chm file and the text 
+contained in a compiled help file, specify the \.chm file and the text 
 
-file within the .chm file.
- __data__ : Specifies a pointer to an[win32help::HH_POPUP](win32help.md#win32helphh_popup)structure.
+file within the \.chm file\.
+ **data** : Specifies a pointer to an[win32help::HH\_POPUP](win32help.md#win32helphh_popup)structure\.
 
- __HH_DISPLAY_TOC__ : Selects the Contents tab in the Navigation pane of 
+ **HH\_DISPLAY\_TOC** : Selects the Contents tab in the Navigation pane of 
 
-the HTML Help Viewer.
+the HTML Help Viewer\.
 
- __file__ : Specifies a compiled help (.chm) file, or a specific topic 
+ **file** : Specifies a compiled help \(\.chm\) file, or a specific topic 
 
-within a compiled help file.
- __data__ : Specifies None or a pointer to a topic within a compiled help 
+within a compiled help file\.
+ **data** : Specifies None or a pointer to a topic within a compiled help 
 
-file.
+file\.
 
- __HH_DISPLAY_TOPIC__ : Opens a help topic in a specified help window.
-If a window type is not specified, a default window type is used. If the 
+ **HH\_DISPLAY\_TOPIC** : Opens a help topic in a specified help window\.
+If a window type is not specified, a default window type is used\. If the 
 
 window type or default window type is open, the help topic replaces the 
 
-current topic in the window.
+current topic in the window\.
 
- __file__ : Specifies a compiled help (.chm) file, or a specific topic 
+ **file** : Specifies a compiled help \(\.chm\) file, or a specific topic 
 
-within a compiled help file. To specify a defined window type, insert a 
+within a compiled help file\. To specify a defined window type, insert a 
 
-greater-than (&gt) character followed by the name of the window type.
- __data__ : Specifies None or a pointer to a topic within a compiled help 
+greater-than \(&gt\) character followed by the name of the window type\.
+ **data** : Specifies None or a pointer to a topic within a compiled help 
 
-file.
+file\.
 
- __HH_GET_LAST_ERROR__ : Returns information about the last error that 
+ **HH\_GET\_LAST\_ERROR** : Returns information about the last error that 
 
-occurred in the HTML Help ActiveX control (Hhctrl.ocx).
+occurred in the HTML Help ActiveX control \(Hhctrl\.ocx\)\.
 
- __file__ : Must be None
- __data__ : A pointer to a HH_LAST_ERROR structure.
+ **file** : Must be None
+ **data** : A pointer to a HH\_LAST\_ERROR structure\.
 
- __Has not been implemented by Microsoft yet__ 
+ **Has not been implemented by Microsoft yet** 
 
- __HH_GET_WIN_HANDLE__ : Returns the handle (hwnd) of a specified window 
+ **HH\_GET\_WIN\_HANDLE** : Returns the handle \(hwnd\) of a specified window 
 
-type.
+type\.
 
- __file__ : Specifies the name of the compiled help (.chm) file in which 
+ **file** : Specifies the name of the compiled help \(\.chm\) file in which 
 
-the window type is defined.
- __data__ : Specifies the name of the window type whose handle you want to 
+the window type is defined\.
+ **data** : Specifies the name of the window type whose handle you want to 
 
-return.
+return\.
 
- __HH_GET_WIN_TYPE__ : Retrieves a pointer to the[win32help::HH_WINTYPE](win32help.md#win32helphh_wintype)structure associated with a specified window type.
+ **HH\_GET\_WIN\_TYPE** : Retrieves a pointer to the[win32help::HH\_WINTYPE](win32help.md#win32helphh_wintype)structure associated with a specified window type\.
 
- __file__ : Specifies the name of the window type whose information you 
+ **file** : Specifies the name of the window type whose information you 
 
-want to get and the name of the compiled help (.chm) file in which the 
+want to get and the name of the compiled help \(\.chm\) file in which the 
 
-window type is defined. The window name must begin with a greater-than (&gt) 
+window type is defined\. The window name must begin with a greater-than \(&gt\) 
 
 character and must be preceded by the name of the compiled help file it 
 
-is defined in.
- __data__ : Ignored.
+is defined in\.
+ **data** : Ignored\.
 
- __HH_HELP_CONTEXT__ : Displays a help topic based on a mapped topic ID. 
+ **HH\_HELP\_CONTEXT** : Displays a help topic based on a mapped topic ID\. 
 
-If a window type is not specified, a default window type is used. If the 
+If a window type is not specified, a default window type is used\. If the 
 
 window type or default window type is open, the help topic replaces the 
 
-current topic in the window.
+current topic in the window\.
 
- __file__ : Specifies the compiled help (.chm) file that contains the 
+ **file** : Specifies the compiled help \(\.chm\) file that contains the 
 
-mapping information. To specify a defined window type, insert a 
+mapping information\. To specify a defined window type, insert a 
 
-greater-than (&gt) character followed by the name of the window type.
- __data__ : Specifies the numeric ID of the topic to display. You must map 
+greater-than \(&gt\) character followed by the name of the window type\.
+ **data** : Specifies the numeric ID of the topic to display\. You must map 
 
-symbolic IDs of dialog boxes to numeric IDs in the [MAP] section of your 
+symbolic IDs of dialog boxes to numeric IDs in the \[MAP\] section of your 
 
-project (.hhp) file.
+project \(\.hhp\) file\.
 
- __HH_INITIALIZE__ : This command initializes the help system for use and 
+ **HH\_INITIALIZE** : This command initializes the help system for use and 
 
-must be the first HTML Help command called. It returns a cookie which must 
+must be the first HTML Help command called\. It returns a cookie which must 
 
-be used in the __HH_UNINITIALIZE__ call. HH_INITIALIZE configures HTML Help 
+be used in the **HH\_UNINITIALIZE** call\. HH\_INITIALIZE configures HTML Help 
 
 to run on the same thread as the calling application instead of a 
 
-secondary thread by setting the global property __HH_GPROPID_SINGLETHREAD__ to VARIANT_TRUE. Running HTML Help on the same thread as the calling 
+secondary thread by setting the global property **HH\_GPROPID\_SINGLETHREAD** to VARIANT\_TRUE\. Running HTML Help on the same thread as the calling 
 
 application requires the calling application to send messages to HTML Help 
 
-by calling the __HH_PRETRANSLATEMESSAGE__ command.
+by calling the **HH\_PRETRANSLATEMESSAGE** command\.
 
- __file__ : Must be None.
- __data__ : Ignored.
+ **file** : Must be None\.
+ **data** : Ignored\.
 
- __HH_KEYWORD_LOOKUP__ : Looks up one or more keywords in a compiled help 
+ **HH\_KEYWORD\_LOOKUP** : Looks up one or more keywords in a compiled help 
 
-(.chm) file. The keywords to search for and the action to be taken if 
+\(\.chm\) file\. The keywords to search for and the action to be taken if 
 
-no matches are found are specified in the[win32help::HH_AKLINK](win32help.md#win32helphh_aklink)structure.
+no matches are found are specified in the[win32help::HH\_AKLINK](win32help.md#win32helphh_aklink)structure\.
 
- __file__ : Specifies the compiled help (.chm) file that contains 
+ **file** : Specifies the compiled help \(\.chm\) file that contains 
 
-keywords.
- __data__ : Points to an[win32help::HH_AKLINK](win32help.md#win32helphh_aklink)structure.
+keywords\.
+ **data** : Points to an[win32help::HH\_AKLINK](win32help.md#win32helphh_aklink)structure\.
 
- __HH_PRETRANSLATEMESSAGE__ : This command is called in the message loop 
+ **HH\_PRETRANSLATEMESSAGE** : This command is called in the message loop 
 
 of your Windows application to ensure proper handling of Windows 
 
 messages, especially keyboard messages when running HTML Help single 
 
-thread. The HTML Help API is not thread safe and must be called from one 
+thread\. The HTML Help API is not thread safe and must be called from one 
 
-and only one thread in a process.
+and only one thread in a process\.
 
- __file__  __data__ : Points to a Win32 MSG structure.
+ **file**  **data** : Points to a Win32 MSG structure\.
 
- __Has not been implemented yet__ 
+ **Has not been implemented yet** 
 
- __HH_SET_WIN_TYPE__ : Creates a new help window or modifies an existing 
+ **HH\_SET\_WIN\_TYPE** : Creates a new help window or modifies an existing 
 
-help window at run time.
+help window at run time\.
 
- __file__ : Specifies the name of the window type that you want to 
+ **file** : Specifies the name of the window type that you want to 
 
-create or modify and the name of the compiled help (.chm) file in which 
+create or modify and the name of the compiled help \(\.chm\) file in which 
 
-the window type is defined. The window type name must begin with a 
+the window type is defined\. The window type name must begin with a 
 
-greater-than (&gt) character and must be preceded by the name of the 
+greater-than \(&gt\) character and must be preceded by the name of the 
 
-compiled help file in which it is defined.
- __data__ : Points to an[win32help::HH_WINTYPE](win32help.md#win32helphh_wintype)structure.
+compiled help file in which it is defined\.
+ **data** : Points to an[win32help::HH\_WINTYPE](win32help.md#win32helphh_wintype)structure\.
 
- __HH_SYNC__ : Locates and selects the contents entry for the help topic 
+ **HH\_SYNC** : Locates and selects the contents entry for the help topic 
 
-that is open in the Topic pane of the HTML Help Viewer.
+that is open in the Topic pane of the HTML Help Viewer\.
 
- __file__ : Specifies the name of the window type that you want to 
+ **file** : Specifies the name of the window type that you want to 
 
-sync and the name of the compiled help (.chm) file in which the window 
+sync and the name of the compiled help \(\.chm\) file in which the window 
 
-type is defined. The window type name must begin with a greater-than (&gt) 
+type is defined\. The window type name must begin with a greater-than \(&gt\) 
 
 character and must be preceded by the name of the compiled help file in 
 
-which it is defined.
- __data__ : Specifies a pointer to a topic within a compiled help file. 
+which it is defined\.
+ **data** : Specifies a pointer to a topic within a compiled help file\. 
 
-This value is the topic file to which the contents will synchronize.
+This value is the topic file to which the contents will synchronize\.
 
- __HH_TP_HELP_CONTEXTMENU__ : Opens a pop-up context menu. Generally used 
+ **HH\_TP\_HELP\_CONTEXTMENU** : Opens a pop-up context menu\. Generally used 
 
-in response to the Windows WM_CONTEXTMENU message. For example, this 
+in response to the Windows WM\_CONTEXTMENU message\. For example, this 
 
-message is sent when a user right-clicks a dialog box control.
+message is sent when a user right-clicks a dialog box control\.
 
- __hwnd__ : Specifies the window handle of the dialog box control for 
+ **hwnd** : Specifies the window handle of the dialog box control for 
 
-which you want pop-up help to appear. This is typically the control 
+which you want pop-up help to appear\. This is typically the control 
 
-that has focus.
- __file__ : Specifies the compiled help (.chm) file, and the text 
+that has focus\.
+ **file** : Specifies the compiled help \(\.chm\) file, and the text 
 
-file that contains the pop-up help topics. By default, the text file is 
+file that contains the pop-up help topics\. By default, the text file is 
 
-named Cshelp.txt. If Cshelp.txt is located in the root of the compiled 
+named Cshelp\.txt\. If Cshelp\.txt is located in the root of the compiled 
 
-help file, then you only need to specify the help file name. If not, 
+help file, then you only need to specify the help file name\. If not, 
 
-you must also specify the relative path.
- __data__ : Specifies an array of DWORDs containing pairs of dialog 
+you must also specify the relative path\.
+ **data** : Specifies an array of DWORDs containing pairs of dialog 
 
-box control IDs and help topic IDs. The array must be terminated by zero, 
-
-as in the following example:
-DWORD ids[3];
-ids[0] = ControlId;
-ids[1] = HelpId;
-ids[2] = 0;
-
- __HH_TP_HELP_WM_HELP__ : Opens a pop-up help topic. Generally used in 
-
-response to the Windows WM_HELP message. For example, this message is 
-
-sent when a user presses F1.
-
- __hwnd__ : Specifies the window handle of the dialog box control for 
-
-which you want pop-up help to appear. This is typically the control that 
-
-has focus.
- __file__ : Specifies the compiled help (.chm) file, and the text file 
-
-that contains the pop-up help topics. By default, the text file is named 
-
-Cshelp.txt. If Cshelp.txt is located in the root of the compiled help 
-
-file, then you only need to specify the help file name. If not, you must 
-
-also specify the relative path.
- __data__ : Specifies an array of DWORDs containing pairs of dialog 
-
-box control IDs and help topic IDs. The array must be terminated by 0, 
+box control IDs and help topic IDs\. The array must be terminated by zero, 
 
 as in the following example:
-DWORD ids[3];
-ids[0] = ControlId;
-ids[1] = HelpId;
-ids[2] = 0;
+DWORD ids\[3\];
+ids\[0\] \= ControlId;
+ids\[1\] \= HelpId;
+ids\[2\] \= 0;
 
- __HH_UNINITIALIZE__ : This command is called to properly shut down HTML 
+ **HH\_TP\_HELP\_WM\_HELP** : Opens a pop-up help topic\. Generally used in 
 
-Help. This function should be the last help command the application 
+response to the Windows WM\_HELP message\. For example, this message is 
 
-calls. HH_UNINITIALIZE should not be called during DLL process detach, 
+sent when a user presses F1\.
 
-but during the normal application shutdown process.  The type of the 
+ **hwnd** : Specifies the window handle of the dialog box control for 
 
-file arg is not checked, just set to the value it "Must" be.
+which you want pop-up help to appear\. This is typically the control that 
 
- __file__ : Must be None.
- __data__ : Specifies a cookie. This is the cookie returned by __HH_INITIALIZE__ .
+has focus\.
+ **file** : Specifies the compiled help \(\.chm\) file, and the text file 
+
+that contains the pop-up help topics\. By default, the text file is named 
+
+Cshelp\.txt\. If Cshelp\.txt is located in the root of the compiled help 
+
+file, then you only need to specify the help file name\. If not, you must 
+
+also specify the relative path\.
+ **data** : Specifies an array of DWORDs containing pairs of dialog 
+
+box control IDs and help topic IDs\. The array must be terminated by 0, 
+
+as in the following example:
+DWORD ids\[3\];
+ids\[0\] \= ControlId;
+ids\[1\] \= HelpId;
+ids\[2\] \= 0;
+
+ **HH\_UNINITIALIZE** : This command is called to properly shut down HTML 
+
+Help\. This function should be the last help command the application 
+
+calls\. HH\_UNINITIALIZE should not be called during DLL process detach, 
+
+but during the normal application shutdown process\.  The type of the 
+
+file arg is not checked, just set to the value it "Must" be\.
+
+ **file** : Must be None\.
+ **data** : Specifies a cookie\. This is the cookie returned by **HH\_INITIALIZE** \.
 
 
 
-  -  *data=0* : None/int/string/int tuple/[win32help::HH_AKLINK](win32help.md#win32helphh_aklink)/[win32help::HH_FTS_QUERY](win32help.md#win32helphh_fts_query)/[win32help::HH_POPUP](win32help.md#win32helphh_popup)/[win32help::HH_WINTYPE](win32help.md#win32helphh_wintype)
+  -  *data\=0* : None/int/string/int tuple/[win32help::HH\_AKLINK](win32help.md#win32helphh_aklink)/[win32help::HH\_FTS\_QUERY](win32help.md#win32helphh_fts_query)/[win32help::HH\_POPUP](win32help.md#win32helphh_popup)/[win32help::HH\_WINTYPE](win32help.md#win32helphh_wintype)
 
-    Additional data specific to the help call.
+    Additional data specific to the help call\.
 
 #### Win32 API References
 
 
-  - Search for *HtmlHelp* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=htmlhelp),[google](#http://www.google.com/search?q=htmlhelp)or[google groups](#http://groups.google.com/groups?q=htmlhelp).
+  - Search for *HtmlHelp* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=htmlhelp),[google](#http://www.google.com/search?q=htmlhelp)or[google groups](#http://groups.google.com/groups?q=htmlhelp)\.
 
 #### Return Value
 Depending on the specified cmd and the result:
 
- __HH_GET_WIN_TYPE__ :
-tuple: (hwnd as below, and the[win32help::HH_WINTYPE](win32help.md#win32helphh_wintype)object).
+ **HH\_GET\_WIN\_TYPE** :
+tuple: \(hwnd as below, and the[win32help::HH\_WINTYPE](win32help.md#win32helphh_wintype)object\)\.
 Deep copy the structure to which dwData points before modifying the 
 
-structure.
+structure\.
 
- __HH_INITIALIZE__ :
-tuple: (hwnd as below, and the cookie).
+ **HH\_INITIALIZE** :
+tuple: \(hwnd as below, and the cookie\)\.
 This call returns a cookie that you must pass as the value of 
 
-data when you call __HH_UNINITIALIZE__ .
+data when you call **HH\_UNINITIALIZE** \.
 
 
- __All other commands__ :
+ **All other commands** :
 
-HtmlHelp() returns one or both of the following:
-The handle (hwnd) of the help window.
-NULL. In some cases, NULL indicates failure; in other cases, NULL 
+HtmlHelp\(\) returns one or both of the following:
+The handle \(hwnd\) of the help window\.
+NULL\. In some cases, NULL indicates failure; in other cases, NULL 
 
-indicates that the help window has not yet been created.
+indicates that the help window has not yet been created\.
 
-## IDTB_BACK
- __const win32help.IDTB_BACK;__ 
-
-
-## IDTB_BROWSE_BACK
- __const win32help.IDTB_BROWSE_BACK;__ 
+## IDTB\_BACK
+ **const win32help\.IDTB\_BACK;** 
 
 
-## IDTB_BROWSE_FWD
- __const win32help.IDTB_BROWSE_FWD;__ 
+## IDTB\_BROWSE\_BACK
+ **const win32help\.IDTB\_BROWSE\_BACK;** 
 
 
-## IDTB_CONTENTS
- __const win32help.IDTB_CONTENTS;__ 
+## IDTB\_BROWSE\_FWD
+ **const win32help\.IDTB\_BROWSE\_FWD;** 
+
+
+## IDTB\_CONTENTS
+ **const win32help\.IDTB\_CONTENTS;** 
 not implemented
 
-## IDTB_CONTRACT
- __const win32help.IDTB_CONTRACT;__ 
+## IDTB\_CONTRACT
+ **const win32help\.IDTB\_CONTRACT;** 
 
 
-## IDTB_CUSTOMIZE
- __const win32help.IDTB_CUSTOMIZE;__ 
+## IDTB\_CUSTOMIZE
+ **const win32help\.IDTB\_CUSTOMIZE;** 
 
 
-## IDTB_EXPAND
- __const win32help.IDTB_EXPAND;__ 
+## IDTB\_EXPAND
+ **const win32help\.IDTB\_EXPAND;** 
 
 
-## IDTB_FAVORITES
- __const win32help.IDTB_FAVORITES;__ 
+## IDTB\_FAVORITES
+ **const win32help\.IDTB\_FAVORITES;** 
 not implemented
 
-## IDTB_FORWARD
- __const win32help.IDTB_FORWARD;__ 
+## IDTB\_FORWARD
+ **const win32help\.IDTB\_FORWARD;** 
 
 
-## IDTB_HISTORY
- __const win32help.IDTB_HISTORY;__ 
+## IDTB\_HISTORY
+ **const win32help\.IDTB\_HISTORY;** 
 not implemented
 
-## IDTB_HOME
- __const win32help.IDTB_HOME;__ 
+## IDTB\_HOME
+ **const win32help\.IDTB\_HOME;** 
 
 
-## IDTB_INDEX
- __const win32help.IDTB_INDEX;__ 
+## IDTB\_INDEX
+ **const win32help\.IDTB\_INDEX;** 
 not implemented
 
-## IDTB_JUMP1
- __const win32help.IDTB_JUMP1;__ 
+## IDTB\_JUMP1
+ **const win32help\.IDTB\_JUMP1;** 
 
 
-## IDTB_JUMP2
- __const win32help.IDTB_JUMP2;__ 
+## IDTB\_JUMP2
+ **const win32help\.IDTB\_JUMP2;** 
 
 
-## IDTB_NOTES
- __const win32help.IDTB_NOTES;__ 
+## IDTB\_NOTES
+ **const win32help\.IDTB\_NOTES;** 
 not implemented
 
-## IDTB_OPTIONS
- __const win32help.IDTB_OPTIONS;__ 
+## IDTB\_OPTIONS
+ **const win32help\.IDTB\_OPTIONS;** 
 
 
-## IDTB_PRINT
- __const win32help.IDTB_PRINT;__ 
+## IDTB\_PRINT
+ **const win32help\.IDTB\_PRINT;** 
 
 
-## IDTB_REFRESH
- __const win32help.IDTB_REFRESH;__ 
+## IDTB\_REFRESH
+ **const win32help\.IDTB\_REFRESH;** 
 
 
-## IDTB_SEARCH
- __const win32help.IDTB_SEARCH;__ 
+## IDTB\_SEARCH
+ **const win32help\.IDTB\_SEARCH;** 
 not implemented
 
-## IDTB_STOP
- __const win32help.IDTB_STOP;__ 
+## IDTB\_STOP
+ **const win32help\.IDTB\_STOP;** 
 
 
-## IDTB_SYNC
- __const win32help.IDTB_SYNC;__ 
+## IDTB\_SYNC
+ **const win32help\.IDTB\_SYNC;** 
 
 
-## IDTB_TOC_NEXT
- __const win32help.IDTB_TOC_NEXT;__ 
+## IDTB\_TOC\_NEXT
+ **const win32help\.IDTB\_TOC\_NEXT;** 
 
 
-## IDTB_TOC_PREV
- __const win32help.IDTB_TOC_PREV;__ 
+## IDTB\_TOC\_PREV
+ **const win32help\.IDTB\_TOC\_PREV;** 
 
 
-## IDTB_ZOOM
- __const win32help.IDTB_ZOOM;__ 
+## IDTB\_ZOOM
+ **const win32help\.IDTB\_ZOOM;** 
 
 
-## [win32help](#win32help).NMHDR
+## [win32help](#win32help)\.NMHDR
 
-[PyNMHDR](#pynmhdr)= __NMHDR(__ )
-Creates a new NMHDR object.
+[PyNMHDR](#pynmhdr)\= **NMHDR\(** \)
+Creates a new NMHDR object\.
 
-## [win32help](#win32help).WinHelp
+## [win32help](#win32help)\.WinHelp
 
- __WinHelp( *hwnd*  *, hlpFile*  *, cmd*  *, data* __ )
-Invokes the Windows Help system.
+ **WinHelp\( *hwnd*  *, hlpFile*  *, cmd*  *, data* ** \)
+Invokes the Windows Help system\.
 
 #### Parameters
 
 
   -  *hwnd* : int
 
-    The handle of the window requesting help.
+    The handle of the window requesting help\.
 
   -  *hlpFile* : string
 
-    The name of the help file.
+    The name of the help file\.
 
   -  *cmd* : int
 
-    The type of help.  See the api for full details.
+    The type of help\.  See the api for full details\.
 
-  -  *data=None* : None/int/string
+  -  *data\=None* : None/int/string
 
-    Additional data specific to the help call. Can be a buffer or pointer-sized int.
+    Additional data specific to the help call\. Can be a buffer or pointer-sized int\.
 
 #### Win32 API References
 
 
-  - Search for *WinHelp* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhelp),[google](#http://www.google.com/search?q=winhelp)or[google groups](#http://groups.google.com/groups?q=winhelp).
+  - Search for *WinHelp* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhelp),[google](#http://www.google.com/search?q=winhelp)or[google groups](#http://groups.google.com/groups?q=winhelp)\.
 
 #### Return Value
-The method raises an exception if an error occurs.
+The method raises an exception if an error occurs\.
 
 ## debug
- __const win32help.debug;__ 
-1 if we are current using a _DEBUG build of 
+ **const win32help\.debug;** 
+1 if we are current using a \_DEBUG build of 
 
-win32help, else 0.
+win32help, else 0\.

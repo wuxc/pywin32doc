@@ -4,10 +4,10 @@
 
 Interface used to build a collection of file system modifications to be 
 
-performed by the shell as a unit.  Serves as a replacement for[shell::SHFileOperation](shell.md#shellshfileoperation).
-No changes are actually made until PerformOperations is called.
-Progress can be monitored by implementing[PyGFileOperationProgressSink](#pygfileoperationprogresssink).
-Requires Vista or later.
+performed by the shell as a unit\.  Serves as a replacement for[shell::SHFileOperation](shell.md#shellshfileoperation)\.
+No changes are actually made until PerformOperations is called\.
+Progress can be monitored by implementing[PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.
+Requires Vista or later\.
 
 #### Methods
 
@@ -38,7 +38,7 @@ Requires Vista or later.
 
   - [SetOwnerWindow](PyIFileOperation.md#pyifileoperationsetownerwindow)
 
-    Sets the parent window for any UI displayed.&nbsp;
+    Sets the parent window for any UI displayed\.&nbsp;
 
   - [ApplyPropertiesToItem](PyIFileOperation.md#pyifileoperationapplypropertiestoitem)
 
@@ -92,9 +92,9 @@ Requires Vista or later.
 
     Determines if any operations were terminated&nbsp;
 
-## [PyIFileOperation](#pyifileoperation).Advise
+## [PyIFileOperation](#pyifileoperation)\.Advise
 
-int = __Advise( *Sink* __ )
+int \= **Advise\( *Sink* ** \)
 Connects an event sink to receive updates
 
 #### Parameters
@@ -107,9 +107,9 @@ Connects an event sink to receive updates
 #### Return Value
 Returns a cookie to be passed to[PyIFileOperation::Unadvise](PyIFileOperation.md#pyifileoperationunadvise)to disconnect
 
-## [PyIFileOperation](#pyifileoperation).ApplyPropertiesToItem
+## [PyIFileOperation](#pyifileoperation)\.ApplyPropertiesToItem
 
- __ApplyPropertiesToItem( *Item* __ )
+ **ApplyPropertiesToItem\( *Item* ** \)
 Specifies the item that will receive property changes
 
 #### Parameters
@@ -119,9 +119,9 @@ Specifies the item that will receive property changes
 
     The item to which property changes will be applied
 
-## [PyIFileOperation](#pyifileoperation).ApplyPropertiesToItems
+## [PyIFileOperation](#pyifileoperation)\.ApplyPropertiesToItems
 
- __ApplyPropertiesToItems( *Items* __ )
+ **ApplyPropertiesToItems\( *Items* ** \)
 Specifies multiple items that will receive property changes
 
 #### Parameters
@@ -131,9 +131,9 @@ Specifies multiple items that will receive property changes
 
     [PyIShellItemArray](#pyishellitemarray),[PyIDataObject](#pyidataobject), or[PyIEnumShellItems](#pyienumshellitems)containing the target items
 
-## [PyIFileOperation](#pyifileoperation).CopyItem
+## [PyIFileOperation](#pyifileoperation)\.CopyItem
 
- __CopyItem( *Item*  *, DestinationFolder*  *, CopyName*  *, Sink* __ )
+ **CopyItem\( *Item*  *, DestinationFolder*  *, CopyName*  *, Sink* ** \)
 Adds a copy operation to the configuration
 
 #### Parameters
@@ -147,17 +147,17 @@ Adds a copy operation to the configuration
 
     Folder into which it will be copied
 
-  -  *CopyName=None* : str
+  -  *CopyName\=None* : str
 
     New name for the copied file, use None to keep original name
 
-  -  *Sink=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
+  -  *Sink\=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
 
     Progress sink for just this operation
 
-## [PyIFileOperation](#pyifileoperation).CopyItems
+## [PyIFileOperation](#pyifileoperation)\.CopyItems
 
- __CopyItems( *Items*  *, DestinationFolder* __ )
+ **CopyItems\( *Items*  *, DestinationFolder* ** \)
 Adds multiple copy operations to the configuration
 
 #### Parameters
@@ -171,9 +171,9 @@ Adds multiple copy operations to the configuration
 
     Folder into which they will be copied
 
-## [PyIFileOperation](#pyifileoperation).DeleteItem
+## [PyIFileOperation](#pyifileoperation)\.DeleteItem
 
- __DeleteItem( *Item*  *, Sink* __ )
+ **DeleteItem\( *Item*  *, Sink* ** \)
 Adds a delete operation to the configuration
 
 #### Parameters
@@ -183,13 +183,13 @@ Adds a delete operation to the configuration
 
     Description for psiItem
 
-  -  *Sink=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
+  -  *Sink\=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
 
     Progress sink for just this operation
 
-## [PyIFileOperation](#pyifileoperation).DeleteItems
+## [PyIFileOperation](#pyifileoperation)\.DeleteItems
 
- __DeleteItems( *Items* __ )
+ **DeleteItems\( *Items* ** \)
 Adds multiple delete operations to the configuration
 
 #### Parameters
@@ -199,14 +199,14 @@ Adds multiple delete operations to the configuration
 
     [PyIShellItemArray](#pyishellitemarray),[PyIDataObject](#pyidataobject), or[PyIEnumShellItems](#pyienumshellitems)containing the items to be deleted
 
-## [PyIFileOperation](#pyifileoperation).GetAnyOperationsAborted
+## [PyIFileOperation](#pyifileoperation)\.GetAnyOperationsAborted
 
-boolean = __GetAnyOperationsAborted(__ )
+boolean \= **GetAnyOperationsAborted\(** \)
 Determines if any operations were terminated
 
-## [PyIFileOperation](#pyifileoperation).MoveItem
+## [PyIFileOperation](#pyifileoperation)\.MoveItem
 
- __MoveItem( *Item*  *, DestinationFolder*  *, pszNewName*  *, Sink* __ )
+ **MoveItem\( *Item*  *, DestinationFolder*  *, pszNewName*  *, Sink* ** \)
 Adds a move operation to the configuration
 
 #### Parameters
@@ -220,17 +220,17 @@ Adds a move operation to the configuration
 
     The folder into which it will be moved
 
-  -  *pszNewName=None* : str
+  -  *pszNewName\=None* : str
 
     Name to be given to moved item, use None to keep original name
 
-  -  *Sink=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
+  -  *Sink\=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
 
     Progress sink to receive notification for just this operation
 
-## [PyIFileOperation](#pyifileoperation).MoveItems
+## [PyIFileOperation](#pyifileoperation)\.MoveItems
 
- __MoveItems( *Items*  *, DestinationFolder* __ )
+ **MoveItems\( *Items*  *, DestinationFolder* ** \)
 Adds multiple move operations to the configuration
 
 #### Parameters
@@ -244,9 +244,9 @@ Adds multiple move operations to the configuration
 
     Folder into which all items will be moved
 
-## [PyIFileOperation](#pyifileoperation).NewItem
+## [PyIFileOperation](#pyifileoperation)\.NewItem
 
- __NewItem( *DestinationFolder*  *, FileAttributes*  *, Name*  *, TemplateName*  *, Sink* __ )
+ **NewItem\( *DestinationFolder*  *, FileAttributes*  *, Name*  *, TemplateName*  *, Sink* ** \)
 Creates a new file as part of the operation
 
 #### Parameters
@@ -258,28 +258,28 @@ Creates a new file as part of the operation
 
   -  *FileAttributes* : int
 
-    Combination of win32con.FILE_ATTRIBUTE_* flags
+    Combination of win32con\.FILE\_ATTRIBUTE\_\* flags
 
   -  *Name* : str
 
     Name of the new file
 
-  -  *TemplateName=None* : str
+  -  *TemplateName\=None* : str
 
     Template file used to initialize the new file
 
-  -  *Sink=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
+  -  *Sink\=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
 
     Progress sink for just this operation
 
-## [PyIFileOperation](#pyifileoperation).PerformOperations
+## [PyIFileOperation](#pyifileoperation)\.PerformOperations
 
- __PerformOperations(__ )
+ **PerformOperations\(** \)
 Effects all configured file system modifications
 
-## [PyIFileOperation](#pyifileoperation).RenameItem
+## [PyIFileOperation](#pyifileoperation)\.RenameItem
 
- __RenameItem( *Item*  *, NewName*  *, Sink* __ )
+ **RenameItem\( *Item*  *, NewName*  *, Sink* ** \)
 Adds a rename to the operation sequence
 
 #### Parameters
@@ -293,13 +293,13 @@ Adds a rename to the operation sequence
 
     The new name
 
-  -  *Sink=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
+  -  *Sink\=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
 
-    Progress sink for this operation only.
+    Progress sink for this operation only\.
 
-## [PyIFileOperation](#pyifileoperation).RenameItems
+## [PyIFileOperation](#pyifileoperation)\.RenameItems
 
- __RenameItems( *pUnkItems*  *, NewName* __ )
+ **RenameItems\( *pUnkItems*  *, NewName* ** \)
 Adds multiple renames to the operation sequence
 
 #### Parameters
@@ -311,11 +311,11 @@ Adds multiple renames to the operation sequence
 
   -  *NewName* : str
 
-    New name for all items.  Collisions handled automatically.
+    New name for all items\.  Collisions handled automatically\.
 
-## [PyIFileOperation](#pyifileoperation).SetOperationFlags
+## [PyIFileOperation](#pyifileoperation)\.SetOperationFlags
 
- __SetOperationFlags( *OperationFlags* __ )
+ **SetOperationFlags\( *OperationFlags* ** \)
 Sets option flags for the operation
 
 #### Parameters
@@ -323,12 +323,12 @@ Sets option flags for the operation
 
   -  *OperationFlags* : int
 
-    Combination of shellcon.FOF_* and FOFX_* flags
+    Combination of shellcon\.FOF\_\* and FOFX\_\* flags
 
-## [PyIFileOperation](#pyifileoperation).SetOwnerWindow
+## [PyIFileOperation](#pyifileoperation)\.SetOwnerWindow
 
- __SetOwnerWindow( *Owner* __ )
-Sets the parent window for any UI displayed.
+ **SetOwnerWindow\( *Owner* ** \)
+Sets the parent window for any UI displayed\.
 
 #### Parameters
 
@@ -337,25 +337,25 @@ Sets the parent window for any UI displayed.
 
     Handle to parent window
 
-## [PyIFileOperation](#pyifileoperation).SetProgressDialog
+## [PyIFileOperation](#pyifileoperation)\.SetProgressDialog
 
- __SetProgressDialog( *popd* __ )
+ **SetProgressDialog\( *popd* ** \)
 Provides an interface used to display a progress dialog
 
 #### Parameters
 
 
-  -  *popd* : __PyIOperationsProgressDialog__ 
+  -  *popd* : **PyIOperationsProgressDialog** 
 
     Progress dialog interface
 
 #### Comments
 IOperationsProgressDialog is not yet supported
 
-## [PyIFileOperation](#pyifileoperation).SetProgressMessage
+## [PyIFileOperation](#pyifileoperation)\.SetProgressMessage
 
- __SetProgressMessage( *Message* __ )
-Not implemented.
+ **SetProgressMessage\( *Message* ** \)
+Not implemented\.
 
 #### Parameters
 
@@ -364,31 +364,31 @@ Not implemented.
 
     Description for Message
 
-## [PyIFileOperation](#pyifileoperation).SetProperties
+## [PyIFileOperation](#pyifileoperation)\.SetProperties
 
- __SetProperties( *proparray* __ )
-Specifies a set of properties to be changed.
+ **SetProperties\( *proparray* ** \)
+Specifies a set of properties to be changed\.
 
 #### Parameters
 
 
   -  *proparray* :[PyIPropertyChangeArray](#pyipropertychangearray)
 
-    Sequence of property changes to be performed (see[propsys::PSCreatePropertyChangeArray](propsys.md#propsyspscreatepropertychangearray))
+    Sequence of property changes to be performed \(see[propsys::PSCreatePropertyChangeArray](propsys.md#propsyspscreatepropertychangearray)\)
 
 #### Comments
-Note that these properties will be set for *any* files created by the operation, not 
+Note that these properties will be set for \*any\* files created by the operation, not 
 
-just items passed to ApplyPropertiesToItem(s).  New items created as the result of a 
+just items passed to ApplyPropertiesToItem\(s\)\.  New items created as the result of a 
 
 rename, copy, or move must have a property handler, or the operation fails with the vague
-com_error: (-2147467259, 'Unspecified error', None, None) (E_FAIL, or 0x80004005 in hex) 
+com\_error: \(-2147467259, 'Unspecified error', None, None\) \(E\_FAIL, or 0x80004005 in hex\) 
 
-even though the given file operation was actually performed.
+even though the given file operation was actually performed\.
 
-## [PyIFileOperation](#pyifileoperation).Unadvise
+## [PyIFileOperation](#pyifileoperation)\.Unadvise
 
- __Unadvise( *Cookie* __ )
+ **Unadvise\( *Cookie* ** \)
 Disconnects a progress sink
 
 #### Parameters

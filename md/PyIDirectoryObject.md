@@ -2,7 +2,7 @@
 
 ## PyIDirectoryObject Object
 
-A COM interface to ADSI's IDirectoryObject interface.
+A COM interface to ADSI's IDirectoryObject interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
 #### Methods
@@ -10,15 +10,15 @@ Derived from[PyIUnknown](#pyiunknown)
 
   - [GetObjectInformation](PyIDirectoryObject.md#pyidirectoryobjectgetobjectinformation)
 
-    Retrieves an[PyADS_OBJECT_INFO](PyADS.md#pyadsobject_info)object that contains information about the identity and location of a directory service object.&nbsp;
+    Retrieves an[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info)object that contains information about the identity and location of a directory service object\.&nbsp;
 
   - [GetObjectAttributes](PyIDirectoryObject.md#pyidirectoryobjectgetobjectattributes)
 
-    Gets one or more specified attributes of the directory service object, as defined in the[PyADS_ATTR_INFO](PyADS.md#pyadsattr_info)structure.&nbsp;
+    Gets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.&nbsp;
 
   - [SetObjectAttributes](PyIDirectoryObject.md#pyidirectoryobjectsetobjectattributes)
 
-    Sets one or more specified attributes of the directory service object, as defined in the[PyADS_ATTR_INFO](PyADS.md#pyadsattr_info)structure.&nbsp;
+    Sets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.&nbsp;
 
   - [CreateDSObject](PyIDirectoryObject.md#pyidirectoryobjectcreatedsobject)
 
@@ -28,9 +28,9 @@ Derived from[PyIUnknown](#pyiunknown)
 
     Deletes a leaf object in a directory tree&nbsp;
 
-## [PyIDirectoryObject](#pyidirectoryobject).CreateDSObject
+## [PyIDirectoryObject](#pyidirectoryobject)\.CreateDSObject
 
-[PyIDispatch](#pyidispatch)= __CreateDSObject( *rdn*  *, attrs* __ )
+[PyIDispatch](#pyidispatch)\= **CreateDSObject\( *rdn*  *, attrs* ** \)
 
 
 #### Parameters
@@ -38,15 +38,15 @@ Derived from[PyIUnknown](#pyiunknown)
 
   -  *rdn* :[PyUnicode](#pyunicode)
 
-    The relative distinguished name (relative path) of the object to be created.
+    The relative distinguished name \(relative path\) of the object to be created\.
 
-  -  *attrs* : ([PyADS_ATTR_INFO](PyADS.md#pyadsattr_info), ...)
+  -  *attrs* : \([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\)
 
-    The attributes to set.
+    The attributes to set\.
 
-## [PyIDirectoryObject](#pyidirectoryobject).DeleteDSObject
+## [PyIDirectoryObject](#pyidirectoryobject)\.DeleteDSObject
 
- __DeleteDSObject( *rdn* __ )
+ **DeleteDSObject\( *rdn* ** \)
 Deletes a leaf object in a directory tree
 
 #### Parameters
@@ -54,33 +54,33 @@ Deletes a leaf object in a directory tree
 
   -  *rdn* : string
 
-    The relative distinguished name (relative path) of the object to be deleted.
+    The relative distinguished name \(relative path\) of the object to be deleted\.
 
-## [PyIDirectoryObject](#pyidirectoryobject).GetObjectAttributes
+## [PyIDirectoryObject](#pyidirectoryobject)\.GetObjectAttributes
 
-([PyADS_ATTR_INFO](PyADS.md#pyadsattr_info), ...) = __GetObjectAttributes( *names* __ )
-Gets one or more specified attributes of the directory service object, as defined in the[PyADS_ATTR_INFO](PyADS.md#pyadsattr_info)structure.
+\([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\) \= **GetObjectAttributes\( *names* ** \)
+Gets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.
 
 #### Parameters
 
 
-  -  *names* : ([PyUnicode](#pyunicode), ...)
+  -  *names* : \([PyUnicode](#pyunicode), \.\.\.\)
 
     
 
-## [PyIDirectoryObject](#pyidirectoryobject).GetObjectInformation
+## [PyIDirectoryObject](#pyidirectoryobject)\.GetObjectInformation
 
-[PyADS_OBJECT_INFO](PyADS.md#pyadsobject_info)= __GetObjectInformation(__ )
-Retrieves an[PyADS_OBJECT_INFO](PyADS.md#pyadsobject_info)object that contains information about the identity and location of a directory service object.
+[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info)\= **GetObjectInformation\(** \)
+Retrieves an[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info)object that contains information about the identity and location of a directory service object\.
 
-## [PyIDirectoryObject](#pyidirectoryobject).SetObjectAttributes
+## [PyIDirectoryObject](#pyidirectoryobject)\.SetObjectAttributes
 
-int = __SetObjectAttributes( *attrs* __ )
-Sets one or more specified attributes of the directory service object, as defined in the[PyADS_ATTR_INFO](PyADS.md#pyadsattr_info)structure.
+int \= **SetObjectAttributes\( *attrs* ** \)
+Sets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.
 
 #### Parameters
 
 
-  -  *attrs* : ([PyADS_ATTR_INFO](PyADS.md#pyadsattr_info), ...)
+  -  *attrs* : \([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\)
 
     The attributes to set

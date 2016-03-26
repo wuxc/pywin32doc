@@ -23,9 +23,9 @@ Contains a collection of properties indentified by name
 
     Retrieves a property name by zero-based index&nbsp;
 
-## [PyINamedPropertyStore](#pyinamedpropertystore).GetNameAt
+## [PyINamedPropertyStore](#pyinamedpropertystore)\.GetNameAt
 
-str = __GetNameAt( *Index* __ )
+str \= **GetNameAt\( *Index* ** \)
 Retrieves a property name by zero-based index
 
 #### Parameters
@@ -35,14 +35,14 @@ Retrieves a property name by zero-based index
 
     Index of the property name
 
-## [PyINamedPropertyStore](#pyinamedpropertystore).GetNameCount
+## [PyINamedPropertyStore](#pyinamedpropertystore)\.GetNameCount
 
-int = __GetNameCount(__ )
+int \= **GetNameCount\(** \)
 Retrieves the number of named properties in the store
 
-## [PyINamedPropertyStore](#pyinamedpropertystore).GetNamedValue
+## [PyINamedPropertyStore](#pyinamedpropertystore)\.GetNamedValue
 
-[PyPROPVARIANT](#pypropvariant)= __GetNamedValue( *Name* __ )
+[PyPROPVARIANT](#pypropvariant)\= **GetNamedValue\( *Name* ** \)
 Retrieves a property value by name
 
 #### Parameters
@@ -52,14 +52,14 @@ Retrieves a property value by name
 
     Name of the property
 
-## [PyINamedPropertyStore](#pyinamedpropertystore).SetNamedValue
+## [PyINamedPropertyStore](#pyinamedpropertystore)\.SetNamedValue
 
- __SetNamedValue( *propvar* __ )
+ **SetNamedValue\( *propvar* ** \)
 Sets the value of a property
 
 #### Parameters
 
 
-  -  *propvar* : __Py__RPC__in REFPROPVARIANT__ 
+  -  *propvar* : **Py\_\_RPC\_\_in REFPROPVARIANT** 
 
     Description for propvar

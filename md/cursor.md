@@ -2,7 +2,7 @@
 
 ## cursor Object
 
-An object representing an ODBC cursor.
+An object representing an ODBC cursor\.
 
 #### Methods
 
@@ -35,17 +35,17 @@ An object representing an ODBC cursor.
 
     &nbsp;
 
-## [cursor](#cursor).close
+## [cursor](#cursor)\.close
 
- __close(__ )
+ **close\(** \)
 Closes the cursor
 
 #### Comments
-This method does nothing!!  I presume it should!?!?!
+This method does nothing\!\!  I presume it should\!?\!?\!
 
-## [cursor](#cursor).execute
+## [cursor](#cursor)\.execute
 
-int = __execute( *sql*  *, [var, ...]* __ )
+int \= **execute\( *sql*  *, \[var, \.\.\.\]* ** \)
 Execute some SQL
 
 #### Parameters
@@ -55,30 +55,30 @@ Execute some SQL
 
     The SQL to execute
 
-  -  *[var, ...]=[]* : sequence
+  -  *\[var, \.\.\.\]\=\[\]* : sequence
 
-    Input variables.
+    Input variables\.
 
-## [cursor](#cursor).fetchall
+## [cursor](#cursor)\.fetchall
 
-[data, ...] = __fetchall(__ )
+\[data, \.\.\.\] \= **fetchall\(** \)
 Fetch all rows of data
 
-## [cursor](#cursor).fetchmany
+## [cursor](#cursor)\.fetchmany
 
-[data, ...] = __fetchmany(__ )
+\[data, \.\.\.\] \= **fetchmany\(** \)
 Fetch many rows of data
 
-## [cursor](#cursor).fetchone
+## [cursor](#cursor)\.fetchone
 
-data = __fetchone(__ )
+data \= **fetchone\(** \)
 Fetch one row of data
 
-## [cursor](#cursor).setinputsizes
+## [cursor](#cursor)\.setinputsizes
 
- __setinputsizes(__ )
+ **setinputsizes\(** \)
 
 
-## [cursor](#cursor).setoutputsize
+## [cursor](#cursor)\.setoutputsize
 
- __setoutputsize(__ )
+ **setoutputsize\(** \)

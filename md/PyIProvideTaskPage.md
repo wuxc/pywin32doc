@@ -9,19 +9,19 @@ Description of the interface
 
   - [GetPage](PyIProvideTaskPage.md#pyiprovidetaskpagegetpage)
 
-    Return a property sheet page handle for the spedified type (TASKPAGE_TASK,TASKPAGE_SCHEDULE,TASKPAGE_SETTINGS)&nbsp;
+    Return a property sheet page handle for the spedified type \(TASKPAGE\_TASK,TASKPAGE\_SCHEDULE,TASKPAGE\_SETTINGS\)&nbsp;
 
-## [PyIProvideTaskPage](#pyiprovidetaskpage).GetPage
+## [PyIProvideTaskPage](#pyiprovidetaskpage)\.GetPage
 
- __GetPage( *tpType*  *, PersistChanges* __ )
-Return a property sheet page handle for the spedified type (TASKPAGE_TASK,TASKPAGE_SCHEDULE,TASKPAGE_SETTINGS)
+ **GetPage\( *tpType*  *, PersistChanges* ** \)
+Return a property sheet page handle for the spedified type \(TASKPAGE\_TASK,TASKPAGE\_SCHEDULE,TASKPAGE\_SETTINGS\)
 
 #### Parameters
 
 
   -  *tpType* : int
 
-    Type of page to retreive (TASKPAGE_TASK,TASKPAGE_SCHEDULE,TASKPAGE_SETTINGS)
+    Type of page to retreive \(TASKPAGE\_TASK,TASKPAGE\_SCHEDULE,TASKPAGE\_SETTINGS\)
 
   -  *PersistChanges* : bool
 

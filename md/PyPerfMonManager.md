@@ -9,9 +9,9 @@ A Python object
 
   - [Close](PyPerfMonManager.md#pyperfmonmanagerclose)
 
-    Closes all counters.&nbsp;
+    Closes all counters\.&nbsp;
 
-## [PyPerfMonManager](#pyperfmonmanager).Close
+## [PyPerfMonManager](#pyperfmonmanager)\.Close
 
- __Close(__ )
-Closes the performance monitor manager.
+ **Close\(** \)
+Closes the performance monitor manager\.

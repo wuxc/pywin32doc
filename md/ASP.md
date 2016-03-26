@@ -5,81 +5,81 @@ How Python integrates w/ASP
 
 Active Server Pages has been a useful addition to Microsoft's Web 
 
-strategy. Because of the language neutral nature of COM, any language 
+strategy\. Because of the language neutral nature of COM, any language 
 
-that is capable of "Active X" (meaning COM) scripting can integrate 
+that is capable of "Active X" \(meaning COM\) scripting can integrate 
 
-with it. Python, with it's excellent COM support, is one of those 
+with it\. Python, with it's excellent COM support, is one of those 
 
-languages. When you install it, by default, it is not setup for the 
+languages\. When you install it, by default, it is not setup for the 
 
-ASP enviroment with IIS. If you look at the html documentation in: 
+ASP enviroment with IIS\. If you look at the html documentation in: 
 
-C:\\Program Files\\Python\\win32com\\HTML\\index.html at the bottom of the 
+C:\\\\Program Files\\\\Python\\\\win32com\\\\HTML\\\\index\.html at the bottom of the 
 
-page you'll see 'Active X Scripting Demos'. If you then click on that 
+page you'll see 'Active X Scripting Demos'\. If you then click on that 
 
-it will describe how to register the engire.  Essentially, there is a 
+it will describe how to register the engire\.  Essentially, there is a 
 
-program called pyscript.py in: 
+program called pyscript\.py in: 
 
-C:\\Program Files\\Python\\win32comext\\axscript\\client 
+C:\\\\Program Files\\\\Python\\\\win32comext\\\\axscript\\\\client 
 
-and if you run that it should register python for the ASP environment.
+and if you run that it should register python for the ASP environment\.
 
-Microsoft typically positions vbscript in the IIS role. Vbscript 
+Microsoft typically positions vbscript in the IIS role\. Vbscript 
 
-is adequate for many tasks, but is a very simplified language. Python 
+is adequate for many tasks, but is a very simplified language\. Python 
 
 is a very rich and powerful language offering things like true 
 
 exception handleing, OOP style programming, excellent win32 access, 
 
-easy persistence w/pickle, etc. And, being multi-platform, you can 
+easy persistence w/pickle, etc\. And, being multi-platform, you can 
 
-leverage the language in other web environments. You will also find 
+leverage the language in other web environments\. You will also find 
 
-many ASP code examples in Vbscript are easily converted into python. 
+many ASP code examples in Vbscript are easily converted into python\. 
 
 There is a slight difference with setting values with Application and 
 
-Session Objects. In cases where you'd see: Session('Key')= TheValue, 
+Session Objects\. In cases where you'd see: Session\('Key'\)\= TheValue, 
 
-you'd translate to Session.SetValue('Key', TheValue) for python. This 
+you'd translate to Session\.SetValue\('Key', TheValue\) for python\. This 
 
 is because vbscript makes it look like you are assigning something to 
 
-a function call which python does not support.
+a function call which python does not support\.
 
-Another thing ASP allows you to do is to mix code and HTML. Thus, 
+Another thing ASP allows you to do is to mix code and HTML\. Thus, 
 
-you need some way to tell the server that the following is code. Since 
+you need some way to tell the server that the following is code\. Since 
 
 python is not used by default, you need to set your page to use 
 
-it. You can do that by having the first line say: &lt%@ LANGUAGE 
+it\. You can do that by having the first line say: &lt%@ LANGUAGE 
 
-=Python%&gt.  Then after that point, anything between '&lt%' and '%&gt' 
+\=Python%&gt\.  Then after that point, anything between '&lt%' and '%&gt' 
 
-delimeters will run as python code. Everything else will be treated as 
+delimeters will run as python code\. Everything else will be treated as 
 
-HTML. It is important to note that a python loop ends in the python 
+HTML\. It is important to note that a python loop ends in the python 
 
-block -- they don't extend past intervening html to the next block. For 
+block -- they don't extend past intervening html to the next block\. For 
 
 me that normally isn't an issue, since I do not like mixing code and 
 
-html. Prefering a clean split of code and html, I generally 
+html\. Prefering a clean split of code and html, I generally 
 
-generate webpages using templates all in python w/HTMLgen. Take a look 
+generate webpages using templates all in python w/HTMLgen\. Take a look 
 
-at: http://www.python.org/topics/web/HTML.html for available resources 
+at: http://www\.python\.org/topics/web/HTML\.html for available resources 
 
-w/HTML.  An very basic page would look like:
+w/HTML\.  An very basic page would look like:
 
 #### Example
 Basic Python ASP page:
-&lt%@ LANGUAGE = Python%&gt
+&lt%@ LANGUAGE \= Python%&gt
 
 &ltHTML&gt
 
@@ -93,13 +93,13 @@ Basic Python ASP page:
 
 &lt%
 
-#do some python stuff here
+\#do some python stuff here
 
-#import libraries, etc.
+\#import libraries, etc\.
 
-for i in query_database():
+for i in query\_database\(\):
 
-&#09Response.Write('output of results converted to a string')
+&\#09Response\.Write\('output of results converted to a string'\)
 
 
 
@@ -108,7 +108,7 @@ for i in query_database():
 &lt/body&gt
 
 &lt/html&gtIf you use HTMLgen's template, then it could look like:
-&lt%@ LANGUAGE = Python%&gt
+&lt%@ LANGUAGE \= Python%&gt
 
 
 
@@ -116,13 +116,13 @@ for i in query_database():
 
 
 
-#notice no raw HTML at all.  We instead use a template html file
+\#notice no raw HTML at all\.  We instead use a template html file
 
-#generated however you want (perhaps frontpage) that substitutes
+\#generated however you want \(perhaps frontpage\) that substitutes
 
-#anything delimeted by {} for output from our python.  In this case
+\#anything delimeted by \{\} for output from our python\.  In this case
 
-#text {mid} in the template is substituted for results.
+\#text \{mid\} in the template is substituted for results\.
 
 
 
@@ -132,255 +132,255 @@ import HTMLcolors
 
 
 
-results='&lth1&gtQuerying database&lt/h1&gt'
+results\='&lth1&gtQuerying database&lt/h1&gt'
 
-for i in query_database():
+for i in query\_database\(\):
 
-&#09results=results+str(i)
+&\#09results\=results\+str\(i\)
 
 
 
-######################
+\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
-#Here we are using a template dictionary
+\#Here we are using a template dictionary
 
-#to substitute the text {mid} found in the template file
+\#to substitute the text \{mid\} found in the template file
 
-#for results
+\#for results
 
-T=HTMLgen.TemplateDocument(/path/template_file.html)
+T\=HTMLgen\.TemplateDocument\(/path/template\_file\.html\)
 
-T.substitutions['mid']=results  # here is where our results went!!
+T\.substitutions\['mid'\]\=results  \# here is where our results went\!\!
 
-webpage=str(T)
+webpage\=str\(T\)
 
-Response.Write(webpage)
+Response\.Write\(webpage\)
 
-%&gtFor one page this is overkill. However, for developing many pages, 
+%&gtFor one page this is overkill\. However, for developing many pages, 
 
 something like this allows you to ignore the grunt work of making 
 
-pages and helps to keep them consistent. HTMLgen also gives you other useful 
+pages and helps to keep them consistent\. HTMLgen also gives you other useful 
 
-tools worth looking into.
+tools worth looking into\.
 
 The ASP model has several 'collection' objects: Request, Response, 
 
-Session, Application, and ObjectContext. The Request collection has 
+Session, Application, and ObjectContext\. The Request collection has 
 
-things like data returned from web forms(GET or POST) and environment 
+things like data returned from web forms\(GET or POST\) and environment 
 
-variables. The Response object is the opposite of the Request object 
+variables\. The Response object is the opposite of the Request object 
 
 it deals with sending data back to the client, since you cannot do a 
 
-simple 'print'. Next, the Application collection allows programs to 
+simple 'print'\. Next, the Application collection allows programs to 
 
-globally store/share information for your site. The Session object 
+globally store/share information for your site\. The Session object 
 
-allows one to store per-user state. And, finally the Objectcontext 
+allows one to store per-user state\. And, finally the Objectcontext 
 
-object is for use with MTS. We'll focus on the basics, Request and 
+object is for use with MTS\. We'll focus on the basics, Request and 
 
-Response.
+Response\.
 
 Typically, you can treat these objects like simple versions of a python 
 
-dictionary or list. A good way to get an idea of what they have is to 
+dictionary or list\. A good way to get an idea of what they have is to 
 
-print out their entire contents. Here is a simple function that 
+print out their entire contents\. Here is a simple function that 
 
-converts your server (environment) variables into a python dictionary:
-def getenv ():
+converts your server \(environment\) variables into a python dictionary:
+def getenv \(\):
 
-&#09d_env={} #initialize dictionary
+&\#09d\_env\=\{\} \#initialize dictionary
 
-&#09for key in Request.ServerVariables:
+&\#09for key in Request\.ServerVariables:
 
-&#09&#09d_env[key]=str(Request.ServerVariables(key))
+&\#09&\#09d\_env\[key\]\=str\(Request\.ServerVariables\(key\)\)
 
-&#09return d_envRequest.ServerVariables responds to the python operator 'in' by 
+&\#09return d\_envRequest\.ServerVariables responds to the python operator 'in' by 
 
-returning a list. And, it can also take a key and return it's 
+returning a list\. And, it can also take a key and return it's 
 
-value. You notice the value is converted into a string, so it can be 
+value\. You notice the value is converted into a string, so it can be 
 
-treated like a python string.
+treated like a python string\.
 
 For a more complicated example, here is a python function that 
 
-converts the Request.Form or Request.Querystring objects into a python 
+converts the Request\.Form or Request\.Querystring objects into a python 
 
-dictionary. This would be a function you'd use to get back data from a 
+dictionary\. This would be a function you'd use to get back data from a 
 
-form. It returns either the entire Request Collection as a python 
+form\. It returns either the entire Request Collection as a python 
 
 dictionary, a subset if you provide a list of keys, or a single value, 
 
-if you provide a single key.
+if you provide a single key\.
 
 Get Request collection - 3 different ways to get Request data
-def getdata (keys=''):
+def getdata \(keys\=''\):
 
-&#09'''
+&\#09'''
 
-&#093 possible ways to call this function:
+&\#093 possible ways to call this function:
 
-&#09value=getdata('key')
+&\#09value\=getdata\('key'\)
 
-&#09dict=getdata(('key1','key2')) #get subset
+&\#09dict\=getdata\(\('key1','key2'\)\) \#get subset
 
-&#09dict=getdata() #return everything
+&\#09dict\=getdata\(\) \#return everything
 
-&#09It assumes you don't have the same key for
+&\#09It assumes you don't have the same key for
 
-&#09GET and POST methods
+&\#09GET and POST methods
 
-&#09'''
+&\#09'''
 
-&#09import types
+&\#09import types
 
-&#09key_type=type(keys)
+&\#09key\_type\=type\(keys\)
 
-&#09d_data={} #initialize dictionary
+&\#09d\_data\=\{\} \#initialize dictionary
 
-&#09if keys=='': #if they don't supply keys then return everything
+&\#09if keys\=\='': \#if they don't supply keys then return everything
 
-&#09&#09for key in Request.Form:
+&\#09&\#09for key in Request\.Form:
 
-&#09&#09&#09d_data[key]=Request.Form(key)
+&\#09&\#09&\#09d\_data\[key\]\=Request\.Form\(key\)
 
-&#09&#09for key in Request.QueryString:
+&\#09&\#09for key in Request\.QueryString:
 
-&#09&#09&#09d_data[key]=Request.QueryString(key)
+&\#09&\#09&\#09d\_data\[key\]\=Request\.QueryString\(key\)
 
-&#09&#09return d_data
+&\#09&\#09return d\_data
 
-&#09elif key_type == types.StringType: #if they provide a single string
+&\#09elif key\_type \=\= types\.StringType: \#if they provide a single string
 
-&#09&#09value=Request.Form(keys)
+&\#09&\#09value\=Request\.Form\(keys\)
 
-&#09&#09if (value != 'None') and (str(value) == 'None'):
+&\#09&\#09if \(value \!\= 'None'\) and \(str\(value\) \=\= 'None'\):
 
-&#09&#09&#09return Request.QueryString(keys)
+&\#09&\#09&\#09return Request\.QueryString\(keys\)
 
-&#09&#09else:
+&\#09&\#09else:
 
-&#09&#09&#09return value
+&\#09&\#09&\#09return value
 
-&#09#if they provide a list then return a dictionary with all the key/values
+&\#09\#if they provide a list then return a dictionary with all the key/values
 
-&#09elif key_type == types.TupleType or key_type == types.ListType:
+&\#09elif key\_type \=\= types\.TupleType or key\_type \=\= types\.ListType:
 
-&#09&#09for key in keys:
+&\#09&\#09for key in keys:
 
-&#09&#09&#09value=Request.Form(key)
+&\#09&\#09&\#09value\=Request\.Form\(key\)
 
-&#09&#09&#09#now check if the data was empty, if so look at QueryString
+&\#09&\#09&\#09\#now check if the data was empty, if so look at QueryString
 
-&#09&#09&#09if (value != 'None') and (str(value) == 'None'):
+&\#09&\#09&\#09if \(value \!\= 'None'\) and \(str\(value\) \=\= 'None'\):
 
-&#09&#09&#09&#09value=Request.QueryString(key)
+&\#09&\#09&\#09&\#09value\=Request\.QueryString\(key\)
 
-&#09&#09&#09data[key]=value
+&\#09&\#09&\#09data\[key\]\=value
 
-&#09&#09return d_dataTo print out this data you will need to use the Response object 
+&\#09&\#09return d\_dataTo print out this data you will need to use the Response object 
 
-which accepts python strings. A simple: Response.Write(str(d_data)) 
+which accepts python strings\. A simple: Response\.Write\(str\(d\_data\)\) 
 
-would suffice.  A better looking way would be to do something like:
-for pair in d_data.items():
+would suffice\.  A better looking way would be to do something like:
+for pair in d\_data\.items\(\):
 
-&#09Response.Write(pair[0]+':'+pair[1]+'&ltbr&gt')Notice the adding of &ltbr&gt to have a line break for each pair. If you 
+&\#09Response\.Write\(pair\[0\]\+':'\+pair\[1\]\+'&ltbr&gt'\)Notice the adding of &ltbr&gt to have a line break for each pair\. If you 
 
-want it more fancy you can convert it to table output.
+want it more fancy you can convert it to table output\.
 
 HTMLgen can help with it's Table object:
-Table=HTMLgen.Table('Key/Value pairs for Response object') #title
+Table\=HTMLgen\.Table\('Key/Value pairs for Response object'\) \#title
 
-Table.heading=('Key','Value')
+Table\.heading\=\('Key','Value'\)
 
-for pair in d_data.items() #get each key/val pair
+for pair in d\_data\.items\(\) \#get each key/val pair
 
-  Table.body.append(list(pair))  #takes a list of lists
+  Table\.body\.append\(list\(pair\)\)  \#takes a list of lists
 
-&#09&#09&#09&#09 #[ [key1,val1], [key2,val2]]
+&\#09&\#09&\#09&\#09 \#\[ \[key1,val1\], \[key2,val2\]\]
 
-&#09&#09&#09&#09 #one pair for every table row
+&\#09&\#09&\#09&\#09 \#one pair for every table row
 
-Response.Write(str(Table))HTMLgen deserves an entire article to itself. You can use it to 
+Response\.Write\(str\(Table\)\)HTMLgen deserves an entire article to itself\. You can use it to 
 
-write web forms and manage other HTML elements. As a final example, 
+write web forms and manage other HTML elements\. As a final example, 
 
 here is a simple ASP application that uses the functions written above 
 
-and a simple HTMLgen web form to spit data back. The typical idiom 
+and a simple HTMLgen web form to spit data back\. The typical idiom 
 
-w/HTMLgen is to create a web object like a form and append things to it. 
+w/HTMLgen is to create a web object like a form and append things to it\. 
 
-In the code below, I append a textbox, radio buttons, and a checkbox.
-&lt%@ LANGUAGE = Python%&gt
+In the code below, I append a textbox, radio buttons, and a checkbox\.
+&lt%@ LANGUAGE \= Python%&gt
 
 
 
 &lt%
 
-from HTMLgen import *
+from HTMLgen import \*
 
-from HTMLcolors import *
+from HTMLcolors import \*
 
-#import the file which has getenv and getdata from above
-
-
-
-d_env=getenv() #get environment variables
+\#import the file which has getenv and getdata from above
 
 
 
-#create a simple default document
-
-webpage = SimpleDocument(title = 'Bedrock Housing')
+d\_env\=getenv\(\) \#get environment variables
 
 
 
-#create form and append elements to it
+\#create a simple default document
 
-F=Form(d_env['URL'])
-
-F.append(Heading(1,'Rock Housing'))
-
-F.append('What Street:',BR())
-
-F.append( Input(type='text',name='street',size=30),BR())
+webpage \= SimpleDocument\(title \= 'Bedrock Housing'\)
 
 
 
-F.append('Select your house type:',BR())
+\#create form and append elements to it
 
-types=('limestone','granite','marble')
+F\=Form\(d\_env\['URL'\]\)
+
+F\.append\(Heading\(1,'Rock Housing'\)\)
+
+F\.append\('What Street:',BR\(\)\)
+
+F\.append\( Input\(type\='text',name\='street',size\=30\),BR\(\)\)
+
+
+
+F\.append\('Select your house type:',BR\(\)\)
+
+types\=\('limestone','granite','marble'\)
 
 for i in types:
 
-&#09F.append(Input(type='radio',name='house_type',rlabel=i,value=i),BR())
+&\#09F\.append\(Input\(type\='radio',name\='house\_type',rlabel\=i,value\=i\),BR\(\)\)
 
-F.append('Select special features:',BR())
+F\.append\('Select special features:',BR\(\)\)
 
 
 
-features=('stone roof','dishwasher','door bell')
+features\=\('stone roof','dishwasher','door bell'\)
 
 for i in features:
 
-&#09F.append(Input(type='checkbox',name='features',rlabel=i,value=i),BR())
+&\#09F\.append\(Input\(type\='checkbox',name\='features',rlabel\=i,value\=i\),BR\(\)\)
 
-#done with web form, now append it
+\#done with web form, now append it
 
-webpage.append(F)
+webpage\.append\(F\)
 
-#get the data the user entered and return it
+\#get the data the user entered and return it
 
-results=getdata() #get everything
+results\=getdata\(\) \#get everything
 
-webpage.append(str(results))
+webpage\.append\(str\(results\)\)
 
-Response.Write(str(webpage))Have a great time with programming with python!
+Response\.Write\(str\(webpage\)\)Have a great time with programming with python\!

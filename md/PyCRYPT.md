@@ -1,6 +1,6 @@
 # PyCRYPT
 
-## PyCRYPT_ALGORITHM_IDENTIFIER Object
+## PyCRYPT\_ALGORITHM\_IDENTIFIER Object
 
 Dictionary containing information that identifies an encryption 
 
@@ -8,133 +8,133 @@ algorithm and any extra parameters it requires
 
 #### Properties
 
-  -  __str ObjId__ 
-    An szOID_* string identifying the algorithm
+  -  **str ObjId** 
+    An szOID\_\* string identifying the algorithm
 
-  -  __str Parameters__ 
+  -  **str Parameters** 
     Blob of binary data containing encoded parameters
 
-## PyCRYPT_ATTRIBUTE Object
+## PyCRYPT\_ATTRIBUTE Object
 
-Dict representing a CRYPT_ATTRIBUTE struct
+Dict representing a CRYPT\_ATTRIBUTE struct
 
 #### Properties
 
-  -  __str ObjId__ 
-    An szOID_* string identifying the attribute
+  -  **str ObjId** 
+    An szOID\_\* string identifying the attribute
 
-  -  __(buffer,...) Value__ 
+  -  **\(buffer,\.\.\.\) Value** 
     A sequence of buffers containing the attribute values
 
-## PyCRYPT_BIT_BLOB Object
+## PyCRYPT\_BIT\_BLOB Object
 
 Dict containing raw data of a certain bit length
 
 #### Properties
 
-  -  __buffer Data__ 
+  -  **buffer Data** 
     Binary data
 
-  -  __int UnusedBits__ 
+  -  **int UnusedBits** 
     Nbr of bits of last byte that are unused
 
-## PyCRYPT_DECRYPT_MESSAGE_PARA Object
+## PyCRYPT\_DECRYPT\_MESSAGE\_PARA Object
 
 Dict containing message decryption parameters, 
 
-used with __cryptoapi::CryptDecodeMessage__ and __cryptoapi::CryptDecryptMessage__ 
+used with **cryptoapi::CryptDecodeMessage** and **cryptoapi::CryptDecryptMessage** 
 
 #### Properties
 
-  -  __( __PyCERT_STORE__ ,...) CertStores__ 
+  -  **\( **PyCERT\_STORE** ,\.\.\.\) CertStores** 
     Sequence of certificate stores to be searched for a certificate 
 
 with a private key that can be used to decrypt the message
 
-  -  __int MsgAndCertEncodingType__ 
-    Encoding types, optional. Defaults to X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING
+  -  **int MsgAndCertEncodingType** 
+    Encoding types, optional\. Defaults to X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
-  -  __int Flags__ 
-    Optional.  CRYPT_MESSAGE_SILENT_KEYSET_FLAG can be used to suppress any dialogs that might be triggered by 
+  -  **int Flags** 
+    Optional\.  CRYPT\_MESSAGE\_SILENT\_KEYSET\_FLAG can be used to suppress any dialogs that might be triggered by 
 
-accessing a key container, such as a request for a PIN.
+accessing a key container, such as a request for a PIN\.
 
-## PyCRYPT_ENCRYPT_MESSAGE_PARA Object
+## PyCRYPT\_ENCRYPT\_MESSAGE\_PARA Object
 
-Dictionary of encryption parameters used with __cryptoapi::CryptEncryptMessage__ 
+Dictionary of encryption parameters used with **cryptoapi::CryptEncryptMessage** 
 
 #### Properties
 
-  -  __[PyCRYPT_ALGORITHM_IDENTIFIER](PyCRYPT.md#pycryptalgorithm_identifier)ContentEncryptionAlgorithm__ 
+  -  **[PyCRYPT\_ALGORITHM\_IDENTIFIER](PyCRYPT.md#pycryptalgorithm_identifier)ContentEncryptionAlgorithm** 
     Identifies the algorithm to be used
 
-  -  __[PyCRYPTPROV](#pycryptprov)CryptProv__ 
-    Optional. Handle to provider that will perform encryption, can be None for default provider
+  -  **[PyCRYPTPROV](#pycryptprov)CryptProv** 
+    Optional\. Handle to provider that will perform encryption, can be None for default provider
 
-  -  __object EncryptionAuxInfo__ 
-    Optional. Extra info required by some CSP's.  Not supported yet, use only None
+  -  **object EncryptionAuxInfo** 
+    Optional\. Extra info required by some CSP's\.  Not supported yet, use only None
 
-  -  __int Flags__ 
-    Optional.  Combination of CRYPT_MESSAGE_*_FLAG constants
+  -  **int Flags** 
+    Optional\.  Combination of CRYPT\_MESSAGE\_\*\_FLAG constants
 
-  -  __int InnerContentType__ 
-    Optional.  Only used if message to be encrypted is already encoded
+  -  **int InnerContentType** 
+    Optional\.  Only used if message to be encrypted is already encoded
 
-  -  __int MsgEncodingType__ 
-    Optional.  Defaults to X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING
+  -  **int MsgEncodingType** 
+    Optional\.  Defaults to X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
-## PyCRYPT_SIGN_MESSAGE_PARA Object
+## PyCRYPT\_SIGN\_MESSAGE\_PARA Object
 
 Dict of parms defining how a message will be signed
 
 #### Properties
 
-  -  __[PyCERT_CONTEXT](PyCERT.md#pycertcontext)SigningCert__ 
+  -  **[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)SigningCert** 
     Certficate to be used to sign message
 
-  -  __[PyCRYPT_ALGORITHM_IDENTIFIER](PyCRYPT.md#pycryptalgorithm_identifier)HashAlgorithm__ 
+  -  **[PyCRYPT\_ALGORITHM\_IDENTIFIER](PyCRYPT.md#pycryptalgorithm_identifier)HashAlgorithm** 
     Algorithm to be used for signed hash
 
-  -  __None HashAuxInfo__ 
-    Optional.  Param is reserved, use only None.
+  -  **None HashAuxInfo** 
+    Optional\.  Param is reserved, use only None\.
 
-  -  __([PyCERT_CONTEXT](PyCERT.md#pycertcontext),...) MsgCert__ 
-    Optional sequence of certificate to be included in the message.
+  -  **\([PyCERT\_CONTEXT](PyCERT.md#pycertcontext),\.\.\.\) MsgCert** 
+    Optional sequence of certificate to be included in the message\.
 
-  -  __(CRL_CONTEXT,...) MsgCrl__ 
-    Optional. Sequence of certificate revocation lists. Not yet supported, use only None.
+  -  **\(CRL\_CONTEXT,\.\.\.\) MsgCrl** 
+    Optional\. Sequence of certificate revocation lists\. Not yet supported, use only None\.
 
-  -  __([PyCRYPT_ATTRIBUTE](PyCRYPT.md#pycryptattribute),...) AuthAttr__ 
+  -  **\([PyCRYPT\_ATTRIBUTE](PyCRYPT.md#pycryptattribute),\.\.\.\) AuthAttr** 
     Sequence of canonical attributes to be added to the message
 
-  -  __([PyCRYPT_ATTRIBUTE](PyCRYPT.md#pycryptattribute),...) UnauthAttr__ 
+  -  **\([PyCRYPT\_ATTRIBUTE](PyCRYPT.md#pycryptattribute),\.\.\.\) UnauthAttr** 
     Sequence of arbitrary attributes
 
-  -  __int Flags__ 
-    Optional CRYPT_MESSAGE_*_FLAG that indicates content type if output is to be further encoded.
+  -  **int Flags** 
+    Optional CRYPT\_MESSAGE\_\*\_FLAG that indicates content type if output is to be further encoded\.
 
-  -  __int InnerContentType__ 
-    Optional, one of the CMSG_* content types if message is already encoded, .
+  -  **int InnerContentType** 
+    Optional, one of the CMSG\_\* content types if message is already encoded, \.
 
-  -  __int MsgEncodingType__ 
-    Encoding types, optional. Defaults to X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING
+  -  **int MsgEncodingType** 
+    Encoding types, optional\. Defaults to X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
-## PyCRYPT_VERIFY_MESSAGE_PARA Object
+## PyCRYPT\_VERIFY\_MESSAGE\_PARA Object
 
-Dict of verification parameters to be used with __cryptoapi::CryptDecodeMessage__ or __cryptoapi::CryptVerifyMessageSignature__ .  All parameters are optional.  Can be either an empty dict or None 
+Dict of verification parameters to be used with **cryptoapi::CryptDecodeMessage** or **cryptoapi::CryptVerifyMessageSignature** \.  All parameters are optional\.  Can be either an empty dict or None 
 
-to use all defaults.
+to use all defaults\.
 
 #### Properties
 
-  -  __int MsgAndCertEncodingType__ 
-    Encoding types, defaults to X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING
+  -  **int MsgAndCertEncodingType** 
+    Encoding types, defaults to X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
-  -  __[PyCRYPTPROV](#pycryptprov)CryptProv__ 
-    CSP to be used to verify signature. Use None for default provider.
+  -  **[PyCRYPTPROV](#pycryptprov)CryptProv** 
+    CSP to be used to verify signature\. Use None for default provider\.
 
-  -  __function[PyGetSignerCertificate](#pygetsignercertificate)__ 
-    Callback function that locates signer's certificate.
+  -  **function[PyGetSignerCertificate](#pygetsignercertificate)** 
+    Callback function that locates signer's certificate\.
 
-  -  __object GetArg__ 
-    Argument to be passed to above function, can be any object.
+  -  **object GetArg** 
+    Argument to be passed to above function, can be any object\.

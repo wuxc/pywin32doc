@@ -9,7 +9,7 @@ A COM interface to MAPI
 
   - [HexFromBin](mapi.md#mapihexfrombin)
 
-    converts a binary number into a string representation of a hexadecimal number.&nbsp;
+    converts a binary number into a string representation of a hexadecimal number\.&nbsp;
 
   - [BinFromHex](mapi.md#mapibinfromhex)
 
@@ -17,11 +17,11 @@ A COM interface to MAPI
 
   - [MAPIUninitialize](mapi.md#mapimapiuninitialize)
 
-    Decrements the reference count, cleans up, and deletes per-instance global data for the MAPI DLL.&nbsp;
+    Decrements the reference count, cleans up, and deletes per-instance global data for the MAPI DLL\.&nbsp;
 
   - [MAPIInitialize](mapi.md#mapimapiinitialize)
 
-    Increments the MAPI subsystem reference count and initializes global data for the MAPI DLL.&nbsp;
+    Increments the MAPI subsystem reference count and initializes global data for the MAPI DLL\.&nbsp;
 
   - [MAPILogonEx](mapi.md#mapimapilogonex)
 
@@ -53,7 +53,7 @@ A COM interface to MAPI
 
   - [OpenIMsgOnIStg](mapi.md#mapiopenimsgonistg)
 
-    Builds a new IMessage object on top of an existing OLE IStorage object, to be used within a message session.&nbsp;
+    Builds a new IMessage object on top of an existing OLE IStorage object, to be used within a message session\.&nbsp;
 
   - [RTFStreamToHTML](mapi.md#mapirtfstreamtohtml)
 
@@ -61,67 +61,67 @@ A COM interface to MAPI
 
   - [OpenStreamOnFile](mapi.md#mapiopenstreamonfile)
 
-    Allocates and initializes an OLE IStream object to access the contents of a file.&nbsp;
+    Allocates and initializes an OLE IStream object to access the contents of a file\.&nbsp;
 
   - [HrGetOneProp](mapi.md#mapihrgetoneprop)
 
-    Retrieves the value of a single property from an IMAPIProp object.&nbsp;
+    Retrieves the value of a single property from an IMAPIProp object\.&nbsp;
 
   - [HrSetOneProp](mapi.md#mapihrsetoneprop)
 
-    Sets the value of a single property on a IMAPIProp object.&nbsp;
+    Sets the value of a single property on a IMAPIProp object\.&nbsp;
 
-## AB_NO_DIALOG
- __const mapi.AB_NO_DIALOG;__ 
+## AB\_NO\_DIALOG
+ **const mapi\.AB\_NO\_DIALOG;** 
 
 
-## ATTACH_BY_REFERENCE
- __const mapi.ATTACH_BY_REFERENCE;__ 
-The PR_ATTACH_PATHNAME or PR_ATTACH_LONG_PATHNAME property contains a fully qualified path identifying the attachment to recipients with access to a common file server.
+## ATTACH\_BY\_REFERENCE
+ **const mapi\.ATTACH\_BY\_REFERENCE;** 
+The PR\_ATTACH\_PATHNAME or PR\_ATTACH\_LONG\_PATHNAME property contains a fully qualified path identifying the attachment to recipients with access to a common file server\.
 
-## ATTACH_BY_REF_ONLY
- __const mapi.ATTACH_BY_REF_ONLY;__ 
-The PR_ATTACH_PATHNAME or PR_ATTACH_LONG_PATHNAME property contains a fully qualified path identifying the attachment.
+## ATTACH\_BY\_REF\_ONLY
+ **const mapi\.ATTACH\_BY\_REF\_ONLY;** 
+The PR\_ATTACH\_PATHNAME or PR\_ATTACH\_LONG\_PATHNAME property contains a fully qualified path identifying the attachment\.
 
-## ATTACH_BY_REF_RESOLVE
- __const mapi.ATTACH_BY_REF_RESOLVE;__ 
-The PR_ATTACH_PATHNAME or PR_ATTACH_LONG_PATHNAME property contains a fully qualified path identifying the attachment.
+## ATTACH\_BY\_REF\_RESOLVE
+ **const mapi\.ATTACH\_BY\_REF\_RESOLVE;** 
+The PR\_ATTACH\_PATHNAME or PR\_ATTACH\_LONG\_PATHNAME property contains a fully qualified path identifying the attachment\.
 
-## ATTACH_BY_VALUE
- __const mapi.ATTACH_BY_VALUE;__ 
-The PR_ATTACH_DATA_BIN property contains the attachment data.
+## ATTACH\_BY\_VALUE
+ **const mapi\.ATTACH\_BY\_VALUE;** 
+The PR\_ATTACH\_DATA\_BIN property contains the attachment data\.
 
-## ATTACH_EMBEDDED_MSG
- __const mapi.ATTACH_EMBEDDED_MSG;__ 
-The PR_ATTACH_DATA_OBJ property contains an embedded object that supports the IMessage interface.
+## ATTACH\_EMBEDDED\_MSG
+ **const mapi\.ATTACH\_EMBEDDED\_MSG;** 
+The PR\_ATTACH\_DATA\_OBJ property contains an embedded object that supports the IMessage interface\.
 
-## ATTACH_OLE
- __const mapi.ATTACH_OLE;__ 
+## ATTACH\_OLE
+ **const mapi\.ATTACH\_OLE;** 
 The attachment is an embedded OLE object
 
-## BMR_EQZ
- __const mapi.BMR_EQZ;__ 
-Perform a bitwise AND operation of the mask in the ulMask member with the property represented by the ulPropTag member and test for being equal to zero.
+## BMR\_EQZ
+ **const mapi\.BMR\_EQZ;** 
+Perform a bitwise AND operation of the mask in the ulMask member with the property represented by the ulPropTag member and test for being equal to zero\.
 
-## BMR_NEZ
- __const mapi.BMR_NEZ;__ 
-Perform a bitwise AND operation of the mask in the ulMask member with the property represented by the ulPropTag member and test for being not equal to zero.
+## BMR\_NEZ
+ **const mapi\.BMR\_NEZ;** 
+Perform a bitwise AND operation of the mask in the ulMask member with the property represented by the ulPropTag member and test for being not equal to zero\.
 
-## BOOKMARK_BEGINNING
- __const mapi.BOOKMARK_BEGINNING;__ 
-Starts the seek operation from the beginning of the table.
+## BOOKMARK\_BEGINNING
+ **const mapi\.BOOKMARK\_BEGINNING;** 
+Starts the seek operation from the beginning of the table\.
 
-## BOOKMARK_CURRENT
- __const mapi.BOOKMARK_CURRENT;__ 
-Starts the seek operation from the row in the table where the cursor is located.
+## BOOKMARK\_CURRENT
+ **const mapi\.BOOKMARK\_CURRENT;** 
+Starts the seek operation from the row in the table where the cursor is located\.
 
-## BOOKMARK_END
- __const mapi.BOOKMARK_END;__ 
-Starts the seek operation from the end of the table.
+## BOOKMARK\_END
+ **const mapi\.BOOKMARK\_END;** 
+Starts the seek operation from the end of the table\.
 
-## [mapi](#mapi).BinFromHex
+## [mapi](#mapi)\.BinFromHex
 
-[PyUnicode](#pyunicode)= __BinFromHex( *val* __ )
+[PyUnicode](#pyunicode)\= **BinFromHex\( *val* ** \)
 converts a hexadecimal number into a binary string
 
 #### Parameters
@@ -129,167 +129,167 @@ converts a hexadecimal number into a binary string
 
   -  *val* : string/[PyUnicode](#pyunicode)
 
-    The string to be converted.
+    The string to be converted\.
 
-## CCSF_8BITHEADERS
- __const mapi.CCSF_8BITHEADERS;__ 
+## CCSF\_8BITHEADERS
+ **const mapi\.CCSF\_8BITHEADERS;** 
 the converter should allow 8 bit headers
 
-## CCSF_EMBEDDED_MESSAGE
- __const mapi.CCSF_EMBEDDED_MESSAGE;__ 
+## CCSF\_EMBEDDED\_MESSAGE
+ **const mapi\.CCSF\_EMBEDDED\_MESSAGE;** 
 sent/unsent information is persisted in X-Unsent
 
-## CCSF_INCLUDE_BCC
- __const mapi.CCSF_INCLUDE_BCC;__ 
+## CCSF\_INCLUDE\_BCC
+ **const mapi\.CCSF\_INCLUDE\_BCC;** 
 the converter should include Bcc recipients
 
-## CCSF_NOHEADERS
- __const mapi.CCSF_NOHEADERS;__ 
+## CCSF\_NOHEADERS
+ **const mapi\.CCSF\_NOHEADERS;** 
 the converter should ignore the headers on the outside message
 
-## CCSF_NO_MSGID
- __const mapi.CCSF_NO_MSGID;__ 
+## CCSF\_NO\_MSGID
+ **const mapi\.CCSF\_NO\_MSGID;** 
 don't include Message-Id field in outgoing messages
 
-## CCSF_PLAIN_TEXT_ONLY
- __const mapi.CCSF_PLAIN_TEXT_ONLY;__ 
+## CCSF\_PLAIN\_TEXT\_ONLY
+ **const mapi\.CCSF\_PLAIN\_TEXT\_ONLY;** 
 the converter should just send plain text
 
-## CCSF_PRESERVE_SOURCE
- __const mapi.CCSF_PRESERVE_SOURCE;__ 
+## CCSF\_PRESERVE\_SOURCE
+ **const mapi\.CCSF\_PRESERVE\_SOURCE;** 
 don't modify the source message
 
-## CCSF_SMTP
- __const mapi.CCSF_SMTP;__ 
+## CCSF\_SMTP
+ **const mapi\.CCSF\_SMTP;** 
 the converter is being passed an SMTP message
 
-## CCSF_USE_RTF
- __const mapi.CCSF_USE_RTF;__ 
+## CCSF\_USE\_RTF
+ **const mapi\.CCSF\_USE\_RTF;** 
 the converter should do HTML-&gtRTF conversion
 
-## CCSF_USE_TNEF
- __const mapi.CCSF_USE_TNEF;__ 
+## CCSF\_USE\_TNEF
+ **const mapi\.CCSF\_USE\_TNEF;** 
 the converter should embed TNEF in the MIME message
 
-## CONVENIENT_DEPTH
- __const mapi.CONVENIENT_DEPTH;__ 
-Fills the hierarchy table with containers from multiple levels. If CONVENIENT_DEPTH is not set, the hierarchy table contains only the container's immediate child containers.
+## CONVENIENT\_DEPTH
+ **const mapi\.CONVENIENT\_DEPTH;** 
+Fills the hierarchy table with containers from multiple levels\. If CONVENIENT\_DEPTH is not set, the hierarchy table contains only the container's immediate child containers\.
 
-## [mapi](#mapi).CloseIMsgSession
+## [mapi](#mapi)\.CloseIMsgSession
 
- __CloseIMsgSession(__ )
-
-
-## DELETE_HARD_DELETE
- __const mapi.DELETE_HARD_DELETE;__ 
-Permanently removes all messages, including soft-deleted ones.
-
-## DEL_FOLDERS
- __const mapi.DEL_FOLDERS;__ 
-All subfolders of the subfolder pointed to by lpEntryID should be deleted.
-
-## DEL_MESSAGES
- __const mapi.DEL_MESSAGES;__ 
-All messages in the subfolder pointed to by lpEntryID should be deleted.
-
-## DIR_BACKWARD
- __const mapi.DIR_BACKWARD;__ 
-Searches backward from the row identified by the bookmark.
-
-## FLUSH_ASYNC_OK
- __const mapi.FLUSH_ASYNC_OK;__ 
+ **CloseIMsgSession\(** \)
 
 
-## FLUSH_DOWNLOAD
- __const mapi.FLUSH_DOWNLOAD;__ 
+## DELETE\_HARD\_DELETE
+ **const mapi\.DELETE\_HARD\_DELETE;** 
+Permanently removes all messages, including soft-deleted ones\.
+
+## DEL\_FOLDERS
+ **const mapi\.DEL\_FOLDERS;** 
+All subfolders of the subfolder pointed to by lpEntryID should be deleted\.
+
+## DEL\_MESSAGES
+ **const mapi\.DEL\_MESSAGES;** 
+All messages in the subfolder pointed to by lpEntryID should be deleted\.
+
+## DIR\_BACKWARD
+ **const mapi\.DIR\_BACKWARD;** 
+Searches backward from the row identified by the bookmark\.
+
+## FLUSH\_ASYNC\_OK
+ **const mapi\.FLUSH\_ASYNC\_OK;** 
 
 
-## FLUSH_FORCE
- __const mapi.FLUSH_FORCE;__ 
+## FLUSH\_DOWNLOAD
+ **const mapi\.FLUSH\_DOWNLOAD;** 
 
 
-## FLUSH_NO_UI
- __const mapi.FLUSH_NO_UI;__ 
+## FLUSH\_FORCE
+ **const mapi\.FLUSH\_FORCE;** 
 
 
-## FLUSH_UPLOAD
- __const mapi.FLUSH_UPLOAD;__ 
+## FLUSH\_NO\_UI
+ **const mapi\.FLUSH\_NO\_UI;** 
 
 
-## FL_FULLSTRING
- __const mapi.FL_FULLSTRING;__ 
-To match, the lpProp search string must be completely contained in the property identified by ulPropTag.
+## FLUSH\_UPLOAD
+ **const mapi\.FLUSH\_UPLOAD;** 
 
-## FL_IGNORECASE
- __const mapi.FL_IGNORECASE;__ 
-The comparison should be made without considering case.
 
-## FL_IGNORENONSPACE
- __const mapi.FL_IGNORENONSPACE;__ 
-The comparison should ignore Unicode-defined nonspacing characters such as diacritical marks.
+## FL\_FULLSTRING
+ **const mapi\.FL\_FULLSTRING;** 
+To match, the lpProp search string must be completely contained in the property identified by ulPropTag\.
 
-## FL_LOOSE
- __const mapi.FL_LOOSE;__ 
+## FL\_IGNORECASE
+ **const mapi\.FL\_IGNORECASE;** 
+The comparison should be made without considering case\.
+
+## FL\_IGNORENONSPACE
+ **const mapi\.FL\_IGNORENONSPACE;** 
+The comparison should ignore Unicode-defined nonspacing characters such as diacritical marks\.
+
+## FL\_LOOSE
+ **const mapi\.FL\_LOOSE;** 
 The comparison should result in a match whenever possible, ignoring case and nonspacing characters
 
-## FL_PREFIX
- __const mapi.FL_PREFIX;__ 
-To match, the lpProp search string must appear at the beginning of the property identified by ulPropTag. The two strings should be compared only up to the length of the search string indicated by lpProp.
+## FL\_PREFIX
+ **const mapi\.FL\_PREFIX;** 
+To match, the lpProp search string must appear at the beginning of the property identified by ulPropTag\. The two strings should be compared only up to the length of the search string indicated by lpProp\.
 
-## FL_SUBSTRING
- __const mapi.FL_SUBSTRING;__ 
-To match, the lpProp search string must be contained anywhere within the property identified by ulPropTag.
+## FL\_SUBSTRING
+ **const mapi\.FL\_SUBSTRING;** 
+To match, the lpProp search string must be contained anywhere within the property identified by ulPropTag\.
 
-## FOLDER_DIALOG
- __const mapi.FOLDER_DIALOG;__ 
-A progress indicator should be displayed while the operation proceeds.
+## FOLDER\_DIALOG
+ **const mapi\.FOLDER\_DIALOG;** 
+A progress indicator should be displayed while the operation proceeds\.
 
-## FOLDER_GENERIC
- __const mapi.FOLDER_GENERIC;__ 
-A generic folder should be created.
+## FOLDER\_GENERIC
+ **const mapi\.FOLDER\_GENERIC;** 
+A generic folder should be created\.
 
-## FOLDER_SEARCH
- __const mapi.FOLDER_SEARCH;__ 
-A search-results folder should be created.
+## FOLDER\_SEARCH
+ **const mapi\.FOLDER\_SEARCH;** 
+A search-results folder should be created\.
 
-## FORCE_SAVE
- __const mapi.FORCE_SAVE;__ 
-Changes should be written to the object, overriding any previous changes made to the object, and the object closed. Read/write access must have been set for the operation to succeed. The FORCE_SAVE flag is used after a previous call to SaveChanges returned MAPI_E_OBJECT_CHANGED.
+## FORCE\_SAVE
+ **const mapi\.FORCE\_SAVE;** 
+Changes should be written to the object, overriding any previous changes made to the object, and the object closed\. Read/write access must have been set for the operation to succeed\. The FORCE\_SAVE flag is used after a previous call to SaveChanges returned MAPI\_E\_OBJECT\_CHANGED\.
 
-## [mapi](#mapi).HexFromBin
+## [mapi](#mapi)\.HexFromBin
 
-[PyUnicode](#pyunicode)= __HexFromBin( *val* __ )
-converts a binary number into a string representation of a hexadecimal number.
+[PyUnicode](#pyunicode)\= **HexFromBin\( *val* ** \)
+converts a binary number into a string representation of a hexadecimal number\.
 
 #### Parameters
 
 
   -  *val* : string
 
-    Converts an EntryID into a hex string representation.
+    Converts an EntryID into a hex string representation\.
 
 #### Comments
-Note: This function may not be supported in future versions of MAPI.
+Note: This function may not be supported in future versions of MAPI\.
 
-## [mapi](#mapi).HrGetOneProp
+## [mapi](#mapi)\.HrGetOneProp
 
-item = __HrGetOneProp( *prop*  *, propTag* __ )
-Retrieves the value of a single property from an IMAPIProp object.
+item \= **HrGetOneProp\( *prop*  *, propTag* ** \)
+Retrieves the value of a single property from an IMAPIProp object\.
 
 #### Parameters
 
 
   -  *prop* :[PyIMAPIProp](#pyimapiprop)
 
-    Object to retrieve property value from.
+    Object to retrieve property value from\.
 
   -  *propTag* : ULONG
 
-    The property tag to open.
+    The property tag to open\.
 
-## [mapi](#mapi).HrQueryAllRows
+## [mapi](#mapi)\.HrQueryAllRows
 
- __SRowSet__ = __HrQueryAllRows( *table*  *, properties*  *, restrictions*  *, sortOrderSet*  *, rowsMax* __ )
+ **SRowSet** \= **HrQueryAllRows\( *table*  *, properties*  *, restrictions*  *, sortOrderSet*  *, rowsMax* ** \)
 
 
 #### Parameters
@@ -301,47 +301,47 @@ Retrieves the value of a single property from an IMAPIProp object.
 
   -  *properties* :[PySPropTagArray](#pysproptagarray)
 
-    A sequence of property tags indicating table columns. These tags are used to select the specific columns to be retrieved. If this parameter is None, HrQueryAllRows retrieves the entire column set of the current table view passed in the table parameter.
+    A sequence of property tags indicating table columns\. These tags are used to select the specific columns to be retrieved\. If this parameter is None, HrQueryAllRows retrieves the entire column set of the current table view passed in the table parameter\.
 
   -  *restrictions* :[PySRestriction](#pysrestriction)
 
-    Defines the retrieval restrictions. If this parameter is None, HrQueryAllRows makes no restrictions.
+    Defines the retrieval restrictions\. If this parameter is None, HrQueryAllRows makes no restrictions\.
 
   -  *sortOrderSet* :[PySSortOrderSet](#pyssortorderset)
 
-    Identifies the sort order of the columns to be retrieved. If this parameter is None, the default sort order for the table is used.
+    Identifies the sort order of the columns to be retrieved\. If this parameter is None, the default sort order for the table is used\.
 
   -  *rowsMax* : int
 
-    Maximum number of rows to be retrieved. If the value of the rowsMax parameter is zero, no limit on the number of rows retrieved is set.
+    Maximum number of rows to be retrieved\. If the value of the rowsMax parameter is zero, no limit on the number of rows retrieved is set\.
 
-## [mapi](#mapi).HrSetOneProp
+## [mapi](#mapi)\.HrSetOneProp
 
-item = __HrSetOneProp( *prop*  *, propValue* __ )
-Sets the value of a single property on a IMAPIProp object.
+item \= **HrSetOneProp\( *prop*  *, propValue* ** \)
+Sets the value of a single property on a IMAPIProp object\.
 
 #### Parameters
 
 
   -  *prop* :[PyIMAPIProp](#pyimapiprop)
 
-    Object to set property value on.
+    Object to set property value on\.
 
   -  *propValue* :[PySPropValue](#pyspropvalue)
 
-    Property value to set.
+    Property value to set\.
 
-## KEEP_OPEN_READONLY
- __const mapi.KEEP_OPEN_READONLY;__ 
-Changes should be committed and the object should be kept open for reading. No further changes will be made.
+## KEEP\_OPEN\_READONLY
+ **const mapi\.KEEP\_OPEN\_READONLY;** 
+Changes should be committed and the object should be kept open for reading\. No further changes will be made\.
 
-## KEEP_OPEN_READWRITE
- __const mapi.KEEP_OPEN_READWRITE;__ 
-Changes should be committed and the object should be kept open for read/write access. This flag is usually set when the object was initially opened for read/write access. Subsequent changes to the object are allowed.
+## KEEP\_OPEN\_READWRITE
+ **const mapi\.KEEP\_OPEN\_READWRITE;** 
+Changes should be committed and the object should be kept open for read/write access\. This flag is usually set when the object was initially opened for read/write access\. Subsequent changes to the object are allowed\.
 
-## [mapi](#mapi).MAPIAdminProfiles
+## [mapi](#mapi)\.MAPIAdminProfiles
 
- __PyIProfAdmin__ = __MAPIAdminProfiles( *fFlags* __ )
+ **PyIProfAdmin** \= **MAPIAdminProfiles\( *fFlags* ** \)
 
 
 #### Parameters
@@ -351,21 +351,21 @@ Changes should be committed and the object should be kept open for read/write ac
 
     
 
-## [mapi](#mapi).MAPIInitialize
+## [mapi](#mapi)\.MAPIInitialize
 
- __MAPIInitialize( *init* __ )
-Increments the MAPI subsystem reference count and initializes global data for the MAPI DLL.
+ **MAPIInitialize\( *init* ** \)
+Increments the MAPI subsystem reference count and initializes global data for the MAPI DLL\.
 
 #### Parameters
 
 
-  -  *init* :[MAPIINIT_0](MAPIINIT.md#mapiinit0)
+  -  *init* :[MAPIINIT\_0](MAPIINIT.md#mapiinit0)
 
-    MAPI Initialization flags.
+    MAPI Initialization flags\.
 
-## [mapi](#mapi).MAPILogonEx
+## [mapi](#mapi)\.MAPILogonEx
 
-[PyIMAPISession](#pyimapisession)= __MAPILogonEx( *hWnd*  *, profileName*  *, password*  *, uiFlags* __ )
+[PyIMAPISession](#pyimapisession)\= **MAPILogonEx\( *hWnd*  *, profileName*  *, password*  *, uiFlags* ** \)
 
 
 #### Parameters
@@ -373,481 +373,481 @@ Increments the MAPI subsystem reference count and initializes global data for th
 
   -  *hWnd* : int
 
-    Handle to the window to which the logon dialog box is modal. If no dialog box is displayed during the call, the hWnd parameter is ignored. This parameter can be zero.
+    Handle to the window to which the logon dialog box is modal\. If no dialog box is displayed during the call, the hWnd parameter is ignored\. This parameter can be zero\.
 
   -  *profileName* :[PyUnicode](#pyunicode)
 
-    A string containing the name of the profile to use when logging on. This string is limited to 64 characters.
+    A string containing the name of the profile to use when logging on\. This string is limited to 64 characters\.
 
   -  *password* :[PyUnicode](#pyunicode)
 
-    A string containing the password of the profile. This parameter can be None whether or not the profileName parameter is None. This string is limited to 64 characters.
+    A string containing the password of the profile\. This parameter can be None whether or not the profileName parameter is None\. This string is limited to 64 characters\.
 
   -  *uiFlags* : int
 
-    Bitmask of flags used to control how logon is performed.  See the MAPI documentation for details.
+    Bitmask of flags used to control how logon is performed\.  See the MAPI documentation for details\.
 
-## [mapi](#mapi).MAPIUninitialize
+## [mapi](#mapi)\.MAPIUninitialize
 
- __MAPIUninitialize(__ )
-Decrements the reference count, cleans up, and deletes per-instance global data for the MAPI DLL.
+ **MAPIUninitialize\(** \)
+Decrements the reference count, cleans up, and deletes per-instance global data for the MAPI DLL\.
 
-## MAPI_ALLOW_OTHERS
- __const mapi.MAPI_ALLOW_OTHERS;__ 
-The shared session should be returned, allowing subsequent clients to acquire the session without providing any user credentials.
+## MAPI\_ALLOW\_OTHERS
+ **const mapi\.MAPI\_ALLOW\_OTHERS;** 
+The shared session should be returned, allowing subsequent clients to acquire the session without providing any user credentials\.
 
-## MAPI_ASSOCIATED
- __const mapi.MAPI_ASSOCIATED;__ 
-The container's associated contents table should be returned rather than the standard contents table. This flag is used only with folders. The messages that are included in the associated contents table were created with the MAPI_ASSOCIATED flag set in the call to IMAPIFolder::CreateMessage. Clients typically use the associated contents table to retrieve forms and views.
+## MAPI\_ASSOCIATED
+ **const mapi\.MAPI\_ASSOCIATED;** 
+The container's associated contents table should be returned rather than the standard contents table\. This flag is used only with folders\. The messages that are included in the associated contents table were created with the MAPI\_ASSOCIATED flag set in the call to IMAPIFolder::CreateMessage\. Clients typically use the associated contents table to retrieve forms and views\.
 
-## MAPI_BCC
- __const mapi.MAPI_BCC;__ 
-The recipient is a blind carbon copy (BCC) recipient. Primary and carbon copy recipients are unaware of the existence of BCC recipients.
+## MAPI\_BCC
+ **const mapi\.MAPI\_BCC;** 
+The recipient is a blind carbon copy \(BCC\) recipient\. Primary and carbon copy recipients are unaware of the existence of BCC recipients\.
 
-## MAPI_BEST_ACCESS
- __const mapi.MAPI_BEST_ACCESS;__ 
+## MAPI\_BEST\_ACCESS
+ **const mapi\.MAPI\_BEST\_ACCESS;** 
 
 
-## MAPI_CC
- __const mapi.MAPI_CC;__ 
-The recipient is a carbon copy (CC) recipient, a recipient that receives a message in addition to the primary recipients.
+## MAPI\_CC
+ **const mapi\.MAPI\_CC;** 
+The recipient is a carbon copy \(CC\) recipient, a recipient that receives a message in addition to the primary recipients\.
 
-## MAPI_CREATE
- __const mapi.MAPI_CREATE;__ 
-The object will be created if necessary.
+## MAPI\_CREATE
+ **const mapi\.MAPI\_CREATE;** 
+The object will be created if necessary\.
 
-## MAPI_DEFAULT_SERVICES
- __const mapi.MAPI_DEFAULT_SERVICES;__ 
-MAPI should populate the new profile with the message services that are included in the [Default Services] section of the MAPISVC.INF file.
+## MAPI\_DEFAULT\_SERVICES
+ **const mapi\.MAPI\_DEFAULT\_SERVICES;** 
+MAPI should populate the new profile with the message services that are included in the \[Default Services\] section of the MAPISVC\.INF file\.
 
-## MAPI_DEFERRED_ERRORS
- __const mapi.MAPI_DEFERRED_ERRORS;__ 
-Allows a method to return successfully, possibly before the changes have been fully committed.
+## MAPI\_DEFERRED\_ERRORS
+ **const mapi\.MAPI\_DEFERRED\_ERRORS;** 
+Allows a method to return successfully, possibly before the changes have been fully committed\.
 
-## MAPI_DIALOG
- __const mapi.MAPI_DIALOG;__ 
+## MAPI\_DIALOG
+ **const mapi\.MAPI\_DIALOG;** 
 
 
-## MAPI_EXPLICIT_PROFILE
- __const mapi.MAPI_EXPLICIT_PROFILE;__ 
-The default profile should not be used, and the user should be required to supply a profile.
+## MAPI\_EXPLICIT\_PROFILE
+ **const mapi\.MAPI\_EXPLICIT\_PROFILE;** 
+The default profile should not be used, and the user should be required to supply a profile\.
 
-## MAPI_EXTENDED
- __const mapi.MAPI_EXTENDED;__ 
-Log on with extended capabilities. This flag should always be set. The older MAPILogon function is no longer available.
+## MAPI\_EXTENDED
+ **const mapi\.MAPI\_EXTENDED;** 
+Log on with extended capabilities\. This flag should always be set\. The older MAPILogon function is no longer available\.
 
-## MAPI_E_ACCOUNT_DISABLED
- __const mapi.MAPI_E_ACCOUNT_DISABLED;__ 
+## MAPI\_E\_ACCOUNT\_DISABLED
+ **const mapi\.MAPI\_E\_ACCOUNT\_DISABLED;** 
 
 
-## MAPI_E_AMBIGUOUS_RECIP
- __const mapi.MAPI_E_AMBIGUOUS_RECIP;__ 
+## MAPI\_E\_AMBIGUOUS\_RECIP
+ **const mapi\.MAPI\_E\_AMBIGUOUS\_RECIP;** 
 
 
-## MAPI_E_BAD_CHARWIDTH
- __const mapi.MAPI_E_BAD_CHARWIDTH;__ 
+## MAPI\_E\_BAD\_CHARWIDTH
+ **const mapi\.MAPI\_E\_BAD\_CHARWIDTH;** 
 
 
-## MAPI_E_BAD_COLUMN
- __const mapi.MAPI_E_BAD_COLUMN;__ 
+## MAPI\_E\_BAD\_COLUMN
+ **const mapi\.MAPI\_E\_BAD\_COLUMN;** 
 
 
-## MAPI_E_BAD_VALUE
- __const mapi.MAPI_E_BAD_VALUE;__ 
+## MAPI\_E\_BAD\_VALUE
+ **const mapi\.MAPI\_E\_BAD\_VALUE;** 
 
 
-## MAPI_E_BUSY
- __const mapi.MAPI_E_BUSY;__ 
+## MAPI\_E\_BUSY
+ **const mapi\.MAPI\_E\_BUSY;** 
 
 
-## MAPI_E_CALL_FAILED
- __const mapi.MAPI_E_CALL_FAILED;__ 
+## MAPI\_E\_CALL\_FAILED
+ **const mapi\.MAPI\_E\_CALL\_FAILED;** 
 
 
-## MAPI_E_CANCEL
- __const mapi.MAPI_E_CANCEL;__ 
+## MAPI\_E\_CANCEL
+ **const mapi\.MAPI\_E\_CANCEL;** 
 
 
-## MAPI_E_COLLISION
- __const mapi.MAPI_E_COLLISION;__ 
+## MAPI\_E\_COLLISION
+ **const mapi\.MAPI\_E\_COLLISION;** 
 
 
-## MAPI_E_COMPUTED
- __const mapi.MAPI_E_COMPUTED;__ 
+## MAPI\_E\_COMPUTED
+ **const mapi\.MAPI\_E\_COMPUTED;** 
 
 
-## MAPI_E_CORRUPT_DATA
- __const mapi.MAPI_E_CORRUPT_DATA;__ 
+## MAPI\_E\_CORRUPT\_DATA
+ **const mapi\.MAPI\_E\_CORRUPT\_DATA;** 
 
 
-## MAPI_E_CORRUPT_STORE
- __const mapi.MAPI_E_CORRUPT_STORE;__ 
+## MAPI\_E\_CORRUPT\_STORE
+ **const mapi\.MAPI\_E\_CORRUPT\_STORE;** 
 
 
-## MAPI_E_DECLINE_COPY
- __const mapi.MAPI_E_DECLINE_COPY;__ 
+## MAPI\_E\_DECLINE\_COPY
+ **const mapi\.MAPI\_E\_DECLINE\_COPY;** 
 
 
-## MAPI_E_DISK_ERROR
- __const mapi.MAPI_E_DISK_ERROR;__ 
+## MAPI\_E\_DISK\_ERROR
+ **const mapi\.MAPI\_E\_DISK\_ERROR;** 
 
 
-## MAPI_E_END_OF_SESSION
- __const mapi.MAPI_E_END_OF_SESSION;__ 
+## MAPI\_E\_END\_OF\_SESSION
+ **const mapi\.MAPI\_E\_END\_OF\_SESSION;** 
 
 
-## MAPI_E_EXTENDED_ERROR
- __const mapi.MAPI_E_EXTENDED_ERROR;__ 
+## MAPI\_E\_EXTENDED\_ERROR
+ **const mapi\.MAPI\_E\_EXTENDED\_ERROR;** 
 
 
-## MAPI_E_FAILONEPROVIDER
- __const mapi.MAPI_E_FAILONEPROVIDER;__ 
+## MAPI\_E\_FAILONEPROVIDER
+ **const mapi\.MAPI\_E\_FAILONEPROVIDER;** 
 
 
-## MAPI_E_FOLDER_CYCLE
- __const mapi.MAPI_E_FOLDER_CYCLE;__ 
+## MAPI\_E\_FOLDER\_CYCLE
+ **const mapi\.MAPI\_E\_FOLDER\_CYCLE;** 
 
 
-## MAPI_E_HAS_FOLDERS
- __const mapi.MAPI_E_HAS_FOLDERS;__ 
+## MAPI\_E\_HAS\_FOLDERS
+ **const mapi\.MAPI\_E\_HAS\_FOLDERS;** 
 
 
-## MAPI_E_HAS_MESSAGES
- __const mapi.MAPI_E_HAS_MESSAGES;__ 
+## MAPI\_E\_HAS\_MESSAGES
+ **const mapi\.MAPI\_E\_HAS\_MESSAGES;** 
 
 
-## MAPI_E_INTERFACE_NOT_SUPPORTED
- __const mapi.MAPI_E_INTERFACE_NOT_SUPPORTED;__ 
+## MAPI\_E\_INTERFACE\_NOT\_SUPPORTED
+ **const mapi\.MAPI\_E\_INTERFACE\_NOT\_SUPPORTED;** 
 
 
-## MAPI_E_INVALID_ACCESS_TIME
- __const mapi.MAPI_E_INVALID_ACCESS_TIME;__ 
+## MAPI\_E\_INVALID\_ACCESS\_TIME
+ **const mapi\.MAPI\_E\_INVALID\_ACCESS\_TIME;** 
 
 
-## MAPI_E_INVALID_BOOKMARK
- __const mapi.MAPI_E_INVALID_BOOKMARK;__ 
+## MAPI\_E\_INVALID\_BOOKMARK
+ **const mapi\.MAPI\_E\_INVALID\_BOOKMARK;** 
 
 
-## MAPI_E_INVALID_ENTRYID
- __const mapi.MAPI_E_INVALID_ENTRYID;__ 
+## MAPI\_E\_INVALID\_ENTRYID
+ **const mapi\.MAPI\_E\_INVALID\_ENTRYID;** 
 
 
-## MAPI_E_INVALID_OBJECT
- __const mapi.MAPI_E_INVALID_OBJECT;__ 
+## MAPI\_E\_INVALID\_OBJECT
+ **const mapi\.MAPI\_E\_INVALID\_OBJECT;** 
 
 
-## MAPI_E_INVALID_PARAMETER
- __const mapi.MAPI_E_INVALID_PARAMETER;__ 
+## MAPI\_E\_INVALID\_PARAMETER
+ **const mapi\.MAPI\_E\_INVALID\_PARAMETER;** 
 
 
-## MAPI_E_INVALID_TYPE
- __const mapi.MAPI_E_INVALID_TYPE;__ 
+## MAPI\_E\_INVALID\_TYPE
+ **const mapi\.MAPI\_E\_INVALID\_TYPE;** 
 
 
-## MAPI_E_INVALID_WORKSTATION_ACCOUNT
- __const mapi.MAPI_E_INVALID_WORKSTATION_ACCOUNT;__ 
+## MAPI\_E\_INVALID\_WORKSTATION\_ACCOUNT
+ **const mapi\.MAPI\_E\_INVALID\_WORKSTATION\_ACCOUNT;** 
 
 
-## MAPI_E_LOGON_FAILED
- __const mapi.MAPI_E_LOGON_FAILED;__ 
+## MAPI\_E\_LOGON\_FAILED
+ **const mapi\.MAPI\_E\_LOGON\_FAILED;** 
 
 
-## MAPI_E_MISSING_REQUIRED_COLUMN
- __const mapi.MAPI_E_MISSING_REQUIRED_COLUMN;__ 
+## MAPI\_E\_MISSING\_REQUIRED\_COLUMN
+ **const mapi\.MAPI\_E\_MISSING\_REQUIRED\_COLUMN;** 
 
 
-## MAPI_E_NETWORK_ERROR
- __const mapi.MAPI_E_NETWORK_ERROR;__ 
+## MAPI\_E\_NETWORK\_ERROR
+ **const mapi\.MAPI\_E\_NETWORK\_ERROR;** 
 
 
-## MAPI_E_NON_STANDARD
- __const mapi.MAPI_E_NON_STANDARD;__ 
+## MAPI\_E\_NON\_STANDARD
+ **const mapi\.MAPI\_E\_NON\_STANDARD;** 
 
 
-## MAPI_E_NOT_ENOUGH_DISK
- __const mapi.MAPI_E_NOT_ENOUGH_DISK;__ 
+## MAPI\_E\_NOT\_ENOUGH\_DISK
+ **const mapi\.MAPI\_E\_NOT\_ENOUGH\_DISK;** 
 
 
-## MAPI_E_NOT_ENOUGH_MEMORY
- __const mapi.MAPI_E_NOT_ENOUGH_MEMORY;__ 
+## MAPI\_E\_NOT\_ENOUGH\_MEMORY
+ **const mapi\.MAPI\_E\_NOT\_ENOUGH\_MEMORY;** 
 
 
-## MAPI_E_NOT_ENOUGH_RESOURCES
- __const mapi.MAPI_E_NOT_ENOUGH_RESOURCES;__ 
+## MAPI\_E\_NOT\_ENOUGH\_RESOURCES
+ **const mapi\.MAPI\_E\_NOT\_ENOUGH\_RESOURCES;** 
 
 
-## MAPI_E_NOT_FOUND
- __const mapi.MAPI_E_NOT_FOUND;__ 
+## MAPI\_E\_NOT\_FOUND
+ **const mapi\.MAPI\_E\_NOT\_FOUND;** 
 
 
-## MAPI_E_NOT_INITIALIZED
- __const mapi.MAPI_E_NOT_INITIALIZED;__ 
+## MAPI\_E\_NOT\_INITIALIZED
+ **const mapi\.MAPI\_E\_NOT\_INITIALIZED;** 
 
 
-## MAPI_E_NOT_IN_QUEUE
- __const mapi.MAPI_E_NOT_IN_QUEUE;__ 
+## MAPI\_E\_NOT\_IN\_QUEUE
+ **const mapi\.MAPI\_E\_NOT\_IN\_QUEUE;** 
 
 
-## MAPI_E_NOT_ME
- __const mapi.MAPI_E_NOT_ME;__ 
+## MAPI\_E\_NOT\_ME
+ **const mapi\.MAPI\_E\_NOT\_ME;** 
 
 
-## MAPI_E_NO_ACCESS
- __const mapi.MAPI_E_NO_ACCESS;__ 
+## MAPI\_E\_NO\_ACCESS
+ **const mapi\.MAPI\_E\_NO\_ACCESS;** 
 
 
-## MAPI_E_NO_RECIPIENTS
- __const mapi.MAPI_E_NO_RECIPIENTS;__ 
+## MAPI\_E\_NO\_RECIPIENTS
+ **const mapi\.MAPI\_E\_NO\_RECIPIENTS;** 
 
 
-## MAPI_E_NO_SUPPORT
- __const mapi.MAPI_E_NO_SUPPORT;__ 
+## MAPI\_E\_NO\_SUPPORT
+ **const mapi\.MAPI\_E\_NO\_SUPPORT;** 
 
 
-## MAPI_E_NO_SUPPRESS
- __const mapi.MAPI_E_NO_SUPPRESS;__ 
+## MAPI\_E\_NO\_SUPPRESS
+ **const mapi\.MAPI\_E\_NO\_SUPPRESS;** 
 
 
-## MAPI_E_OBJECT_CHANGED
- __const mapi.MAPI_E_OBJECT_CHANGED;__ 
+## MAPI\_E\_OBJECT\_CHANGED
+ **const mapi\.MAPI\_E\_OBJECT\_CHANGED;** 
 
 
-## MAPI_E_OBJECT_DELETED
- __const mapi.MAPI_E_OBJECT_DELETED;__ 
+## MAPI\_E\_OBJECT\_DELETED
+ **const mapi\.MAPI\_E\_OBJECT\_DELETED;** 
 
 
-## MAPI_E_PASSWORD_CHANGE_REQUIRED
- __const mapi.MAPI_E_PASSWORD_CHANGE_REQUIRED;__ 
+## MAPI\_E\_PASSWORD\_CHANGE\_REQUIRED
+ **const mapi\.MAPI\_E\_PASSWORD\_CHANGE\_REQUIRED;** 
 
 
-## MAPI_E_PASSWORD_EXPIRED
- __const mapi.MAPI_E_PASSWORD_EXPIRED;__ 
+## MAPI\_E\_PASSWORD\_EXPIRED
+ **const mapi\.MAPI\_E\_PASSWORD\_EXPIRED;** 
 
 
-## MAPI_E_SESSION_LIMIT
- __const mapi.MAPI_E_SESSION_LIMIT;__ 
+## MAPI\_E\_SESSION\_LIMIT
+ **const mapi\.MAPI\_E\_SESSION\_LIMIT;** 
 
 
-## MAPI_E_STRING_TOO_LONG
- __const mapi.MAPI_E_STRING_TOO_LONG;__ 
+## MAPI\_E\_STRING\_TOO\_LONG
+ **const mapi\.MAPI\_E\_STRING\_TOO\_LONG;** 
 
 
-## MAPI_E_SUBMITTED
- __const mapi.MAPI_E_SUBMITTED;__ 
+## MAPI\_E\_SUBMITTED
+ **const mapi\.MAPI\_E\_SUBMITTED;** 
 
 
-## MAPI_E_TABLE_EMPTY
- __const mapi.MAPI_E_TABLE_EMPTY;__ 
+## MAPI\_E\_TABLE\_EMPTY
+ **const mapi\.MAPI\_E\_TABLE\_EMPTY;** 
 
 
-## MAPI_E_TABLE_TOO_BIG
- __const mapi.MAPI_E_TABLE_TOO_BIG;__ 
+## MAPI\_E\_TABLE\_TOO\_BIG
+ **const mapi\.MAPI\_E\_TABLE\_TOO\_BIG;** 
 
 
-## MAPI_E_TIMEOUT
- __const mapi.MAPI_E_TIMEOUT;__ 
+## MAPI\_E\_TIMEOUT
+ **const mapi\.MAPI\_E\_TIMEOUT;** 
 
 
-## MAPI_E_TOO_BIG
- __const mapi.MAPI_E_TOO_BIG;__ 
+## MAPI\_E\_TOO\_BIG
+ **const mapi\.MAPI\_E\_TOO\_BIG;** 
 
 
-## MAPI_E_TOO_COMPLEX
- __const mapi.MAPI_E_TOO_COMPLEX;__ 
+## MAPI\_E\_TOO\_COMPLEX
+ **const mapi\.MAPI\_E\_TOO\_COMPLEX;** 
 
 
-## MAPI_E_TYPE_NO_SUPPORT
- __const mapi.MAPI_E_TYPE_NO_SUPPORT;__ 
+## MAPI\_E\_TYPE\_NO\_SUPPORT
+ **const mapi\.MAPI\_E\_TYPE\_NO\_SUPPORT;** 
 
 
-## MAPI_E_UNABLE_TO_ABORT
- __const mapi.MAPI_E_UNABLE_TO_ABORT;__ 
+## MAPI\_E\_UNABLE\_TO\_ABORT
+ **const mapi\.MAPI\_E\_UNABLE\_TO\_ABORT;** 
 
 
-## MAPI_E_UNABLE_TO_COMPLETE
- __const mapi.MAPI_E_UNABLE_TO_COMPLETE;__ 
+## MAPI\_E\_UNABLE\_TO\_COMPLETE
+ **const mapi\.MAPI\_E\_UNABLE\_TO\_COMPLETE;** 
 
 
-## MAPI_E_UNCONFIGURED
- __const mapi.MAPI_E_UNCONFIGURED;__ 
+## MAPI\_E\_UNCONFIGURED
+ **const mapi\.MAPI\_E\_UNCONFIGURED;** 
 
 
-## MAPI_E_UNEXPECTED_ID
- __const mapi.MAPI_E_UNEXPECTED_ID;__ 
+## MAPI\_E\_UNEXPECTED\_ID
+ **const mapi\.MAPI\_E\_UNEXPECTED\_ID;** 
 
 
-## MAPI_E_UNEXPECTED_TYPE
- __const mapi.MAPI_E_UNEXPECTED_TYPE;__ 
+## MAPI\_E\_UNEXPECTED\_TYPE
+ **const mapi\.MAPI\_E\_UNEXPECTED\_TYPE;** 
 
 
-## MAPI_E_UNKNOWN_CPID
- __const mapi.MAPI_E_UNKNOWN_CPID;__ 
+## MAPI\_E\_UNKNOWN\_CPID
+ **const mapi\.MAPI\_E\_UNKNOWN\_CPID;** 
 
 
-## MAPI_E_UNKNOWN_ENTRYID
- __const mapi.MAPI_E_UNKNOWN_ENTRYID;__ 
+## MAPI\_E\_UNKNOWN\_ENTRYID
+ **const mapi\.MAPI\_E\_UNKNOWN\_ENTRYID;** 
 
 
-## MAPI_E_UNKNOWN_FLAGS
- __const mapi.MAPI_E_UNKNOWN_FLAGS;__ 
+## MAPI\_E\_UNKNOWN\_FLAGS
+ **const mapi\.MAPI\_E\_UNKNOWN\_FLAGS;** 
 
 
-## MAPI_E_UNKNOWN_LCID
- __const mapi.MAPI_E_UNKNOWN_LCID;__ 
+## MAPI\_E\_UNKNOWN\_LCID
+ **const mapi\.MAPI\_E\_UNKNOWN\_LCID;** 
 
 
-## MAPI_E_USER_CANCEL
- __const mapi.MAPI_E_USER_CANCEL;__ 
+## MAPI\_E\_USER\_CANCEL
+ **const mapi\.MAPI\_E\_USER\_CANCEL;** 
 
 
-## MAPI_E_VERSION
- __const mapi.MAPI_E_VERSION;__ 
+## MAPI\_E\_VERSION
+ **const mapi\.MAPI\_E\_VERSION;** 
 
 
-## MAPI_E_WAIT
- __const mapi.MAPI_E_WAIT;__ 
+## MAPI\_E\_WAIT
+ **const mapi\.MAPI\_E\_WAIT;** 
 
 
-## MAPI_FORCE_DOWNLOAD
- __const mapi.MAPI_FORCE_DOWNLOAD;__ 
-An attempt should be made to download all of the user's messages before returning. If the MAPI_FORCE_DOWNLOAD flag is not set, messages can be downloaded in the background after the call to MAPILogonEx returns.
+## MAPI\_FORCE\_DOWNLOAD
+ **const mapi\.MAPI\_FORCE\_DOWNLOAD;** 
+An attempt should be made to download all of the user's messages before returning\. If the MAPI\_FORCE\_DOWNLOAD flag is not set, messages can be downloaded in the background after the call to MAPILogonEx returns\.
 
-## MAPI_INIT_VERSION
- __const mapi.MAPI_INIT_VERSION;__ 
+## MAPI\_INIT\_VERSION
+ **const mapi\.MAPI\_INIT\_VERSION;** 
 
 
-## MAPI_LOGON_UI
- __const mapi.MAPI_LOGON_UI;__ 
-A dialog box should be displayed to prompt the user for logon information if required. When the MAPI_LOGON_UI flag is not set, the calling client does not display a logon dialog box and returns an error value if the user is not logged on. MAPI_LOGON_UI and MAPI_PASSWORD_UI are mutually exclusive.
+## MAPI\_LOGON\_UI
+ **const mapi\.MAPI\_LOGON\_UI;** 
+A dialog box should be displayed to prompt the user for logon information if required\. When the MAPI\_LOGON\_UI flag is not set, the calling client does not display a logon dialog box and returns an error value if the user is not logged on\. MAPI\_LOGON\_UI and MAPI\_PASSWORD\_UI are mutually exclusive\.
 
-## MAPI_MODIFY
- __const mapi.MAPI_MODIFY;__ 
+## MAPI\_MODIFY
+ **const mapi\.MAPI\_MODIFY;** 
 
 
-## MAPI_MULTITHREAD_NOTIFICATIONS
- __const mapi.MAPI_MULTITHREAD_NOTIFICATIONS;__ 
-MAPI should generate notifications using a thread dedicated to notification handling rather than the first thread used to call[mapi::MAPIInitialize](mapi.md#mapimapiinitialize).
+## MAPI\_MULTITHREAD\_NOTIFICATIONS
+ **const mapi\.MAPI\_MULTITHREAD\_NOTIFICATIONS;** 
+MAPI should generate notifications using a thread dedicated to notification handling rather than the first thread used to call[mapi::MAPIInitialize](mapi.md#mapimapiinitialize)\.
 
-## MAPI_NEW_SESSION
- __const mapi.MAPI_NEW_SESSION;__ 
-An attempt should be made to create a new MAPI session rather than acquire the shared session. If the MAPI_NEW_SESSION flag is not set, MAPILogonEx uses an existing shared session even if the lpszprofileName parameter is not NULL.
+## MAPI\_NEW\_SESSION
+ **const mapi\.MAPI\_NEW\_SESSION;** 
+An attempt should be made to create a new MAPI session rather than acquire the shared session\. If the MAPI\_NEW\_SESSION flag is not set, MAPILogonEx uses an existing shared session even if the lpszprofileName parameter is not NULL\.
 
-## MAPI_NO_IDS
- __const mapi.MAPI_NO_IDS;__ 
-Requests that only names stored as Unicode strings be returned.
+## MAPI\_NO\_IDS
+ **const mapi\.MAPI\_NO\_IDS;** 
+Requests that only names stored as Unicode strings be returned\.
 
-## MAPI_NO_MAIL
- __const mapi.MAPI_NO_MAIL;__ 
-MAPI should not inform the MAPI spooler of the session's existence. The result is that no messages can be sent or received within the session except through a tightly coupled store and transport pair. A calling client sets this flag if it is acting as an agent, if configuration work must be done, or if the client is browsing the available message stores.
+## MAPI\_NO\_MAIL
+ **const mapi\.MAPI\_NO\_MAIL;** 
+MAPI should not inform the MAPI spooler of the session's existence\. The result is that no messages can be sent or received within the session except through a tightly coupled store and transport pair\. A calling client sets this flag if it is acting as an agent, if configuration work must be done, or if the client is browsing the available message stores\.
 
-## MAPI_NO_STRINGS
- __const mapi.MAPI_NO_STRINGS;__ 
-Requests that only names stored as numeric identifiers be returned.
+## MAPI\_NO\_STRINGS
+ **const mapi\.MAPI\_NO\_STRINGS;** 
+Requests that only names stored as numeric identifiers be returned\.
 
-## MAPI_NT_SERVICE
- __const mapi.MAPI_NT_SERVICE;__ 
-The caller is running as a Windows NT service. Callers that are not running as a Windows NT service should not set this flag; callers that are running as a service must set this flag.
+## MAPI\_NT\_SERVICE
+ **const mapi\.MAPI\_NT\_SERVICE;** 
+The caller is running as a Windows NT service\. Callers that are not running as a Windows NT service should not set this flag; callers that are running as a service must set this flag\.
 
-## MAPI_P1
- __const mapi.MAPI_P1;__ 
-The recipient did not successfully receive the message on the previous attempt. This is a resend of an earlier transmission.
+## MAPI\_P1
+ **const mapi\.MAPI\_P1;** 
+The recipient did not successfully receive the message on the previous attempt\. This is a resend of an earlier transmission\.
 
-## MAPI_PASSWORD_UI
- __const mapi.MAPI_PASSWORD_UI;__ 
-A dialog box should be displayed to prompt the user for the profile password. MAPI_PASSWORD_UI cannot be set if MAPI_LOGON_UI is set because the calling client can only present one of the two dialog boxes. This dialog box does not allow the profile name to be changed; the lpszProfileName parameter must be non-NULL.
+## MAPI\_PASSWORD\_UI
+ **const mapi\.MAPI\_PASSWORD\_UI;** 
+A dialog box should be displayed to prompt the user for the profile password\. MAPI\_PASSWORD\_UI cannot be set if MAPI\_LOGON\_UI is set because the calling client can only present one of the two dialog boxes\. This dialog box does not allow the profile name to be changed; the lpszProfileName parameter must be non-NULL\.
 
-## MAPI_SERVICE_UI_ALWAYS
- __const mapi.MAPI_SERVICE_UI_ALWAYS;__ 
-MAPILogonEx should display a configuration dialog box for each message service in the profile. The dialog boxes are displayed after the profile has been chosen but before any message service is logged on. The MAPI common dialog box for logon also contains a check box that requests the same operation.
+## MAPI\_SERVICE\_UI\_ALWAYS
+ **const mapi\.MAPI\_SERVICE\_UI\_ALWAYS;** 
+MAPILogonEx should display a configuration dialog box for each message service in the profile\. The dialog boxes are displayed after the profile has been chosen but before any message service is logged on\. The MAPI common dialog box for logon also contains a check box that requests the same operation\.
 
-## MAPI_SUBMITTED
- __const mapi.MAPI_SUBMITTED;__ 
-The recipient has already received the message and does not need to receive it again. This is a resend of an earlier transmission. This flag is set in conjunction with the MAPI_TO, MAPI_CC, and MAPI_BCC values.
+## MAPI\_SUBMITTED
+ **const mapi\.MAPI\_SUBMITTED;** 
+The recipient has already received the message and does not need to receive it again\. This is a resend of an earlier transmission\. This flag is set in conjunction with the MAPI\_TO, MAPI\_CC, and MAPI\_BCC values\.
 
-## MAPI_TIMEOUT_SHORT
- __const mapi.MAPI_TIMEOUT_SHORT;__ 
-The logon should fail if blocked for more than a few seconds.
+## MAPI\_TIMEOUT\_SHORT
+ **const mapi\.MAPI\_TIMEOUT\_SHORT;** 
+The logon should fail if blocked for more than a few seconds\.
 
-## MAPI_TO
- __const mapi.MAPI_TO;__ 
-The recipient is a primary (To) recipient. Clients are required to handle primary recipients; all other types are optional.
+## MAPI\_TO
+ **const mapi\.MAPI\_TO;** 
+The recipient is a primary \(To\) recipient\. Clients are required to handle primary recipients; all other types are optional\.
 
-## MAPI_UNICODE
- __const mapi.MAPI_UNICODE;__ 
-The passed-in strings are in Unicode format. If the MAPI_UNICODE flag is not set, the strings are in ANSI format.
+## MAPI\_UNICODE
+ **const mapi\.MAPI\_UNICODE;** 
+The passed-in strings are in Unicode format\. If the MAPI\_UNICODE flag is not set, the strings are in ANSI format\.
 
-## MAPI_USE_DEFAULT
- __const mapi.MAPI_USE_DEFAULT;__ 
-The messaging subsystem should substitute the profile name of the default profile for the lpszProfileName parameter. The MAPI_EXPLICIT_PROFILE flag is ignored unless lpszProfileName is NULL or empty.
+## MAPI\_USE\_DEFAULT
+ **const mapi\.MAPI\_USE\_DEFAULT;** 
+The messaging subsystem should substitute the profile name of the default profile for the lpszProfileName parameter\. The MAPI\_EXPLICIT\_PROFILE flag is ignored unless lpszProfileName is NULL or empty\.
 
-## MAPI_W_APPROX_COUNT
- __const mapi.MAPI_W_APPROX_COUNT;__ 
+## MAPI\_W\_APPROX\_COUNT
+ **const mapi\.MAPI\_W\_APPROX\_COUNT;** 
 
 
-## MAPI_W_CANCEL_MESSAGE
- __const mapi.MAPI_W_CANCEL_MESSAGE;__ 
+## MAPI\_W\_CANCEL\_MESSAGE
+ **const mapi\.MAPI\_W\_CANCEL\_MESSAGE;** 
 
 
-## MAPI_W_ERRORS_RETURNED
- __const mapi.MAPI_W_ERRORS_RETURNED;__ 
+## MAPI\_W\_ERRORS\_RETURNED
+ **const mapi\.MAPI\_W\_ERRORS\_RETURNED;** 
 
 
-## MAPI_W_NO_SERVICE
- __const mapi.MAPI_W_NO_SERVICE;__ 
+## MAPI\_W\_NO\_SERVICE
+ **const mapi\.MAPI\_W\_NO\_SERVICE;** 
 
 
-## MAPI_W_PARTIAL_COMPLETION
- __const mapi.MAPI_W_PARTIAL_COMPLETION;__ 
+## MAPI\_W\_PARTIAL\_COMPLETION
+ **const mapi\.MAPI\_W\_PARTIAL\_COMPLETION;** 
 
 
-## MAPI_W_POSITION_CHANGED
- __const mapi.MAPI_W_POSITION_CHANGED;__ 
+## MAPI\_W\_POSITION\_CHANGED
+ **const mapi\.MAPI\_W\_POSITION\_CHANGED;** 
 
 
-## MDB_NO_DIALOG
- __const mapi.MDB_NO_DIALOG;__ 
-Prevents the display of logon dialog boxes. If this flag is set, and OpenMsgStore does not have enough configuration information to open the message store without the user's help, it returns MAPI_E_LOGON_FAILED. If this flag is not set, the message store provider can prompt the user to correct a name or password, to insert a disk, or to perform other actions necessary to establish connection to the message store.
+## MDB\_NO\_DIALOG
+ **const mapi\.MDB\_NO\_DIALOG;** 
+Prevents the display of logon dialog boxes\. If this flag is set, and OpenMsgStore does not have enough configuration information to open the message store without the user's help, it returns MAPI\_E\_LOGON\_FAILED\. If this flag is not set, the message store provider can prompt the user to correct a name or password, to insert a disk, or to perform other actions necessary to establish connection to the message store\.
 
-## MDB_NO_MAIL
- __const mapi.MDB_NO_MAIL;__ 
-The message store should not be used for sending or receiving mail. When this flag is set, MAPI does not notify the MAPI spooler that this message store is being opened.
+## MDB\_NO\_MAIL
+ **const mapi\.MDB\_NO\_MAIL;** 
+The message store should not be used for sending or receiving mail\. When this flag is set, MAPI does not notify the MAPI spooler that this message store is being opened\.
 
-## MDB_TEMPORARY
- __const mapi.MDB_TEMPORARY;__ 
-Instructs MAPI that the message store is not permanent and should not be added to the message store table. This flag is used to log on the message store so that information can be retrieved programmatically from the profile section.
+## MDB\_TEMPORARY
+ **const mapi\.MDB\_TEMPORARY;** 
+Instructs MAPI that the message store is not permanent and should not be added to the message store table\. This flag is used to log on the message store so that information can be retrieved programmatically from the profile section\.
 
-## MDB_WRITE
- __const mapi.MDB_WRITE;__ 
-Requests read/write access to the message store.
+## MDB\_WRITE
+ **const mapi\.MDB\_WRITE;** 
+Requests read/write access to the message store\.
 
-## MESSAGE_DIALOG
- __const mapi.MESSAGE_DIALOG;__ 
-Displays a progress indicator as the operation proceeds.
+## MESSAGE\_DIALOG
+ **const mapi\.MESSAGE\_DIALOG;** 
+Displays a progress indicator as the operation proceeds\.
 
-## MODRECIP_ADD
- __const mapi.MODRECIP_ADD;__ 
-The recipients should be added to the recipient list.
+## MODRECIP\_ADD
+ **const mapi\.MODRECIP\_ADD;** 
+The recipients should be added to the recipient list\.
 
-## MODRECIP_MODIFY
- __const mapi.MODRECIP_MODIFY;__ 
-The recipients should replace existing recipients. All of the existing properties are replaced by those in the corresponding ADRENTRY structure.
+## MODRECIP\_MODIFY
+ **const mapi\.MODRECIP\_MODIFY;** 
+The recipients should replace existing recipients\. All of the existing properties are replaced by those in the corresponding ADRENTRY structure\.
 
-## MODRECIP_REMOVE
- __const mapi.MODRECIP_REMOVE;__ 
-Existing recipients should be removed from the recipient list using as an index the PR_ROWID property included in the property value array of each recipient entry in the mods parameter.
+## MODRECIP\_REMOVE
+ **const mapi\.MODRECIP\_REMOVE;** 
+Existing recipients should be removed from the recipient list using as an index the PR\_ROWID property included in the property value array of each recipient entry in the mods parameter\.
 
-## NO_ATTACHMENT
- __const mapi.NO_ATTACHMENT;__ 
-The attachment has just been created.
+## NO\_ATTACHMENT
+ **const mapi\.NO\_ATTACHMENT;** 
+The attachment has just been created\.
 
-## OPEN_IF_EXISTS
- __const mapi.OPEN_IF_EXISTS;__ 
-Does not fail if the specified folder already exists.
+## OPEN\_IF\_EXISTS
+ **const mapi\.OPEN\_IF\_EXISTS;** 
+Does not fail if the specified folder already exists\.
 
-## [mapi](#mapi).OpenIMsgOnIStg
+## [mapi](#mapi)\.OpenIMsgOnIStg
 
-[PyIMessage](#pyimessage)= __OpenIMsgOnIStg( *session*  *, support*  *, storage*  *, callback*  *, callbackData*  *, flags* __ )
-Builds a new IMessage object on top of an existing OLE IStorage object, to be used within a message session.
+[PyIMessage](#pyimessage)\= **OpenIMsgOnIStg\( *session*  *, support*  *, storage*  *, callback*  *, callbackData*  *, flags* ** \)
+Builds a new IMessage object on top of an existing OLE IStorage object, to be used within a message session\.
 
 #### Parameters
 
@@ -856,35 +856,35 @@ Builds a new IMessage object on top of an existing OLE IStorage object, to be us
 
     
 
-  -  *support* : __PyIMAPISupport__ 
+  -  *support* : **PyIMAPISupport** 
 
     May be None
 
   -  *storage* :[PyIStorage](#pyistorage)
 
-    A[PyIStorage](#pyistorage)object that is open and has read-only or read/write access. Because IMessage does not support write-only access, OpenIMsgOnIStg does not accept a storage object opened in write-only mode.
+    A[PyIStorage](#pyistorage)object that is open and has read-only or read/write access\. Because IMessage does not support write-only access, OpenIMsgOnIStg does not accept a storage object opened in write-only mode\.
 
-  -  *callback=None* : object
+  -  *callback\=None* : object
 
-    Only None is supported.
+    Only None is supported\.
 
-  -  *callbackData=0* : int
-
-    
-
-  -  *flags=0* : int
+  -  *callbackData\=0* : int
 
     
 
-## [mapi](#mapi).OpenIMsgSession
+  -  *flags\=0* : int
 
-object = __OpenIMsgSession(__ )
+    
+
+## [mapi](#mapi)\.OpenIMsgSession
+
+object \= **OpenIMsgSession\(** \)
 
 
-## [mapi](#mapi).OpenStreamOnFile
+## [mapi](#mapi)\.OpenStreamOnFile
 
-[PyIStream](#pyistream)= __OpenStreamOnFile( *filename*  *, flags*  *, prefix* __ )
-Allocates and initializes an OLE IStream object to access the contents of a file.
+[PyIStream](#pyistream)\= **OpenStreamOnFile\( *filename*  *, flags*  *, prefix* ** \)
+Allocates and initializes an OLE IStream object to access the contents of a file\.
 
 #### Parameters
 
@@ -893,89 +893,89 @@ Allocates and initializes an OLE IStream object to access the contents of a file
 
     
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
     
 
-  -  *prefix=None* : string
+  -  *prefix\=None* : string
 
     
 
-## RELOP_EQ
- __const mapi.RELOP_EQ;__ 
-The comparison is made based on equal values.
+## RELOP\_EQ
+ **const mapi\.RELOP\_EQ;** 
+The comparison is made based on equal values\.
 
-## RELOP_GE
- __const mapi.RELOP_GE;__ 
-The comparison is made based on a greater or equal first value.
+## RELOP\_GE
+ **const mapi\.RELOP\_GE;** 
+The comparison is made based on a greater or equal first value\.
 
-## RELOP_GT
- __const mapi.RELOP_GT;__ 
-The comparison is made based on a greater first value.
+## RELOP\_GT
+ **const mapi\.RELOP\_GT;** 
+The comparison is made based on a greater first value\.
 
-## RELOP_LE
- __const mapi.RELOP_LE;__ 
-The comparison is made based on a lesser or equal first value.
+## RELOP\_LE
+ **const mapi\.RELOP\_LE;** 
+The comparison is made based on a lesser or equal first value\.
 
-## RELOP_LT
- __const mapi.RELOP_LT;__ 
-The comparison is made based on a lesser first value.
+## RELOP\_LT
+ **const mapi\.RELOP\_LT;** 
+The comparison is made based on a lesser first value\.
 
-## RELOP_NE
- __const mapi.RELOP_NE;__ 
-The comparison is made based on unequal values.
+## RELOP\_NE
+ **const mapi\.RELOP\_NE;** 
+The comparison is made based on unequal values\.
 
-## RELOP_RE
- __const mapi.RELOP_RE;__ 
-The comparison is made based on LIKE (regular expression) values.
+## RELOP\_RE
+ **const mapi\.RELOP\_RE;** 
+The comparison is made based on LIKE \(regular expression\) values\.
 
-## RES_AND
- __const mapi.RES_AND;__ 
-SRestriction structure describes an AND restriction, which applies a bitwise AND operation to a restriction.
+## RES\_AND
+ **const mapi\.RES\_AND;** 
+SRestriction structure describes an AND restriction, which applies a bitwise AND operation to a restriction\.
 
-## RES_BITMASK
- __const mapi.RES_BITMASK;__ 
-SRestriction structure describes a bitmask restriction, which applies a bitmask to a property value.
+## RES\_BITMASK
+ **const mapi\.RES\_BITMASK;** 
+SRestriction structure describes a bitmask restriction, which applies a bitmask to a property value\.
 
-## RES_COMMENT
- __const mapi.RES_COMMENT;__ 
-SRestriction structure describes a comment restriction, which associates a comment with a restriction.
+## RES\_COMMENT
+ **const mapi\.RES\_COMMENT;** 
+SRestriction structure describes a comment restriction, which associates a comment with a restriction\.
 
-## RES_COMPAREPROPS
- __const mapi.RES_COMPAREPROPS;__ 
-SRestriction structure describes a compare properties restriction, which compares two property values.
+## RES\_COMPAREPROPS
+ **const mapi\.RES\_COMPAREPROPS;** 
+SRestriction structure describes a compare properties restriction, which compares two property values\.
 
-## RES_CONTENT
- __const mapi.RES_CONTENT;__ 
-SRestriction structure describes a content restriction, which searches a property value for specific content.
+## RES\_CONTENT
+ **const mapi\.RES\_CONTENT;** 
+SRestriction structure describes a content restriction, which searches a property value for specific content\.
 
-## RES_EXIST
- __const mapi.RES_EXIST;__ 
-SRestriction structure describes an exist restriction, which determines if a property is supported.
+## RES\_EXIST
+ **const mapi\.RES\_EXIST;** 
+SRestriction structure describes an exist restriction, which determines if a property is supported\.
 
-## RES_NOT
- __const mapi.RES_NOT;__ 
-SRestriction structure describes a NOT restriction, which applies a logical NOT operation to a restriction.
+## RES\_NOT
+ **const mapi\.RES\_NOT;** 
+SRestriction structure describes a NOT restriction, which applies a logical NOT operation to a restriction\.
 
-## RES_OR
- __const mapi.RES_OR;__ 
-SRestriction structure describes an OR restriction, which applies a logical OR operation to a restriction.
+## RES\_OR
+ **const mapi\.RES\_OR;** 
+SRestriction structure describes an OR restriction, which applies a logical OR operation to a restriction\.
 
-## RES_PROPERTY
- __const mapi.RES_PROPERTY;__ 
-SRestriction structure describes a property restriction, which determines if a property value matches a particular value.
+## RES\_PROPERTY
+ **const mapi\.RES\_PROPERTY;** 
+SRestriction structure describes a property restriction, which determines if a property value matches a particular value\.
 
-## RES_SIZE
- __const mapi.RES_SIZE;__ 
-SRestriction structure describes a size restriction, which determines if a property value is a particular size.
+## RES\_SIZE
+ **const mapi\.RES\_SIZE;** 
+SRestriction structure describes a size restriction, which determines if a property value is a particular size\.
 
-## RES_SUBRESTRICTION
- __const mapi.RES_SUBRESTRICTION;__ 
-SRestriction structure describes a subobject restriction, which applies a restriction to a message's attachments or recipients.
+## RES\_SUBRESTRICTION
+ **const mapi\.RES\_SUBRESTRICTION;** 
+SRestriction structure describes a subobject restriction, which applies a restriction to a message's attachments or recipients\.
 
-## [mapi](#mapi).RTFStreamToHTML
+## [mapi](#mapi)\.RTFStreamToHTML
 
- __RTFStreamToHTML( *The stream to read the uncompressed RTF from* __ )
+ **RTFStreamToHTML\( *The stream to read the uncompressed RTF from* ** \)
 
 
 #### Parameters
@@ -985,9 +985,9 @@ SRestriction structure describes a subobject restriction, which applies a restri
 
     
 
-## [mapi](#mapi).RTFSync
+## [mapi](#mapi)\.RTFSync
 
-int = __RTFSync( *message*  *, flags* __ )
+int \= **RTFSync\( *message*  *, flags* ** \)
 
 
 #### Parameters
@@ -995,80 +995,80 @@ int = __RTFSync( *message*  *, flags* __ )
 
   -  *message* :[PyIMessage](#pyimessage)
 
-    The message.
+    The message\.
 
   -  *flags* : int
 
     
 
-## RTF_SYNC_BODY_CHANGED
- __const mapi.RTF_SYNC_BODY_CHANGED;__ 
-The plain text version of the message has changed.
+## RTF\_SYNC\_BODY\_CHANGED
+ **const mapi\.RTF\_SYNC\_BODY\_CHANGED;** 
+The plain text version of the message has changed\.
 
-## RTF_SYNC_RTF_CHANGED
- __const mapi.RTF_SYNC_RTF_CHANGED;__ 
-The RTF version of the message has changed.
+## RTF\_SYNC\_RTF\_CHANGED
+ **const mapi\.RTF\_SYNC\_RTF\_CHANGED;** 
+The RTF version of the message has changed\.
 
-## SERVICE_UI_ALLOWED
- __const mapi.SERVICE_UI_ALLOWED;__ 
-The message service should display its configuration property sheet only if the service is not completely configured.
+## SERVICE\_UI\_ALLOWED
+ **const mapi\.SERVICE\_UI\_ALLOWED;** 
+The message service should display its configuration property sheet only if the service is not completely configured\.
 
-## SERVICE_UI_ALWAYS
- __const mapi.SERVICE_UI_ALWAYS;__ 
-The message service must always display its configuration property sheet. If SERVICE_UI_ALWAYS is not set, a configuration property sheet can still be displayed if SERVICE_UI_ALLOWED is set and valid configuration information is not available from the property value array in the lpProps parameter. Either SERVICE_UI_ALLOWED or SERVICE_UI_ALWAYS must be set for a property sheet to be displayed.
+## SERVICE\_UI\_ALWAYS
+ **const mapi\.SERVICE\_UI\_ALWAYS;** 
+The message service must always display its configuration property sheet\. If SERVICE\_UI\_ALWAYS is not set, a configuration property sheet can still be displayed if SERVICE\_UI\_ALLOWED is set and valid configuration information is not available from the property value array in the lpProps parameter\. Either SERVICE\_UI\_ALLOWED or SERVICE\_UI\_ALWAYS must be set for a property sheet to be displayed\.
 
-## SHOW_SOFT_DELETES
- __const mapi.SHOW_SOFT_DELETES;__ 
-Shows items that are currently marked as soft deleted.
+## SHOW\_SOFT\_DELETES
+ **const mapi\.SHOW\_SOFT\_DELETES;** 
+Shows items that are currently marked as soft deleted\.
 
-## SOF_UNIQUEFILENAME
- __const mapi.SOF_UNIQUEFILENAME;__ 
+## SOF\_UNIQUEFILENAME
+ **const mapi\.SOF\_UNIQUEFILENAME;** 
 A temporary file is to be created for the IStream object
 
-## STATUS_DEFAULT_STORE
- __const mapi.STATUS_DEFAULT_STORE;__ 
+## STATUS\_DEFAULT\_STORE
+ **const mapi\.STATUS\_DEFAULT\_STORE;** 
 
 
-## STATUS_FLUSH_QUEUES
- __const mapi.STATUS_FLUSH_QUEUES;__ 
+## STATUS\_FLUSH\_QUEUES
+ **const mapi\.STATUS\_FLUSH\_QUEUES;** 
 
 
-## STATUS_INBOUND_FLUSH
- __const mapi.STATUS_INBOUND_FLUSH;__ 
+## STATUS\_INBOUND\_FLUSH
+ **const mapi\.STATUS\_INBOUND\_FLUSH;** 
 
 
-## STATUS_OUTBOUND_FLUSH
- __const mapi.STATUS_OUTBOUND_FLUSH;__ 
+## STATUS\_OUTBOUND\_FLUSH
+ **const mapi\.STATUS\_OUTBOUND\_FLUSH;** 
 
 
-## TABLE_SORT_ASCEND
- __const mapi.TABLE_SORT_ASCEND;__ 
-The table should be sorted in ascending order.
+## TABLE\_SORT\_ASCEND
+ **const mapi\.TABLE\_SORT\_ASCEND;** 
+The table should be sorted in ascending order\.
 
-## TABLE_SORT_COMBINE
- __const mapi.TABLE_SORT_COMBINE;__ 
-The sort operation should create a category that combines the property identified as the sort key column in the ulPropTag member with the sort key column specified in the previous SSortOrder structure.
-TABLE_SORT_COMBINE can only be used when the SSortOrder structure is being used as an entry in an SSortOrderSet structure to specify multiple sort orders for a categorized sort. TABLE_SORT_COMBINE cannot be used in the first SSortOrder structure in an SSortOrderSet structure.
+## TABLE\_SORT\_COMBINE
+ **const mapi\.TABLE\_SORT\_COMBINE;** 
+The sort operation should create a category that combines the property identified as the sort key column in the ulPropTag member with the sort key column specified in the previous SSortOrder structure\.
+TABLE\_SORT\_COMBINE can only be used when the SSortOrder structure is being used as an entry in an SSortOrderSet structure to specify multiple sort orders for a categorized sort\. TABLE\_SORT\_COMBINE cannot be used in the first SSortOrder structure in an SSortOrderSet structure\.
 
-## TABLE_SORT_DESCEND
- __const mapi.TABLE_SORT_DESCEND;__ 
-The table should be sorted in descending order.
+## TABLE\_SORT\_DESCEND
+ **const mapi\.TABLE\_SORT\_DESCEND;** 
+The table should be sorted in descending order\.
 
-## TBL_ALL_COLUMNS
- __const mapi.TBL_ALL_COLUMNS;__ 
-The table should return all available columns.
+## TBL\_ALL\_COLUMNS
+ **const mapi\.TBL\_ALL\_COLUMNS;** 
+The table should return all available columns\.
 
-## TBL_ASYNC
- __const mapi.TBL_ASYNC;__ 
-Starts the operation asynchronously and returns before the operation completes.
+## TBL\_ASYNC
+ **const mapi\.TBL\_ASYNC;** 
+Starts the operation asynchronously and returns before the operation completes\.
 
-## TBL_BATCH
- __const mapi.TBL_BATCH;__ 
-Defers evaluation of the filter until the data in the table is required.
+## TBL\_BATCH
+ **const mapi\.TBL\_BATCH;** 
+Defers evaluation of the filter until the data in the table is required\.
 
-## [mapi](#mapi).WrapCompressedRTFStream
+## [mapi](#mapi)\.WrapCompressedRTFStream
 
-[PyIStream](#pyistream)= __WrapCompressedRTFStream( *stream*  *, flags* __ )
+[PyIStream](#pyistream)\= **WrapCompressedRTFStream\( *stream*  *, flags* ** \)
 
 
 #### Parameters

@@ -9,15 +9,15 @@ A COM interface to ADSI
 
   - [ADsOpenObject](adsi.md#adsiadsopenobject)
 
-    Binds to an ADSI object using explicit username and password credentials.&nbsp;
+    Binds to an ADSI object using explicit username and password credentials\.&nbsp;
 
   - [ADsGetObject](adsi.md#adsiadsgetobject)
 
-    Binds to an object given its path and a specified interface identifier (IID).&nbsp;
+    Binds to an object given its path and a specified interface identifier \(IID\)\.&nbsp;
 
   - [ADsBuildEnumerator](adsi.md#adsiadsbuildenumerator)
 
-    Builds an enumerator object for the specified ADSI container object.&nbsp;
+    Builds an enumerator object for the specified ADSI container object\.&nbsp;
 
   - [ADsEnumerateNext](adsi.md#adsiadsenumeratenext)
 
@@ -27,18 +27,18 @@ A COM interface to ADSI
 
     &nbsp;
 
-  - [StringAsDS_SELECTION_LIST](adsi.md#adsistringasds_selection_list)
+  - [StringAsDS\_SELECTION\_LIST](adsi.md#adsistringasds_selection_list)
 
-    Unpacks a string (generally fetched via[PyIDataObject::GetData](PyIDataObject.md#pyidataobjectgetdata)) into a __PyDS_SELECTION_LIST__ list.&nbsp;
+    Unpacks a string \(generally fetched via[PyIDataObject::GetData](PyIDataObject.md#pyidataobjectgetdata)\) into a **PyDS\_SELECTION\_LIST** list\.&nbsp;
 
-  - [DSOP_SCOPE_INIT_INFOs](adsi.md#adsidsop_scope_init_infos)
+  - [DSOP\_SCOPE\_INIT\_INFOs](adsi.md#adsidsop_scope_init_infos)
 
-    The type object for[PyDSOP_SCOPE_INIT_INFOs](PyDSOP.md#pydsopscope_init_infos)objects.&nbsp;
+    The type object for[PyDSOP\_SCOPE\_INIT\_INFOs](PyDSOP.md#pydsopscope_init_infos)objects\.&nbsp;
 
-## [adsi](#adsi).ADsBuildEnumerator
+## [adsi](#adsi)\.ADsBuildEnumerator
 
- __PyIEnumerator__ = __ADsBuildEnumerator( *container* __ )
-Builds an enumerator object for the specified ADSI container object.
+ **PyIEnumerator** \= **ADsBuildEnumerator\( *container* ** \)
+Builds an enumerator object for the specified ADSI container object\.
 
 #### Parameters
 
@@ -47,38 +47,38 @@ Builds an enumerator object for the specified ADSI container object.
 
     
 
-## [adsi](#adsi).ADsEnumerateNext
+## [adsi](#adsi)\.ADsEnumerateNext
 
- __PyIEnumerator__ = __ADsEnumerateNext( *enum*  *, num* __ )
+ **PyIEnumerator** \= **ADsEnumerateNext\( *enum*  *, num* ** \)
 
 
 #### Parameters
 
 
-  -  *enum* : __PyIEnumVARIANT__ 
+  -  *enum* : **PyIEnumVARIANT** 
 
-    The enumerator.
+    The enumerator\.
 
-  -  *num=1* : int
+  -  *num\=1* : int
 
-    Number of items to retrieve.
+    Number of items to retrieve\.
 
 #### Return Value
 The result is a tuple of Python objects converted from Variants, 
 
-one for each element returned.  Note that if zero elements are returned, it is not considered 
+one for each element returned\.  Note that if zero elements are returned, it is not considered 
 
-an error condition - an empty tuple is simply returned.
+an error condition - an empty tuple is simply returned\.
 
-## [adsi](#adsi).ADsGetLastError
+## [adsi](#adsi)\.ADsGetLastError
 
-(int, unicode, unicode) = __ADsGetLastError(__ )
+\(int, unicode, unicode\) \= **ADsGetLastError\(** \)
 
 
-## [adsi](#adsi).ADsGetObject
+## [adsi](#adsi)\.ADsGetObject
 
-com_object = __ADsGetObject( *path*  *, iid* __ )
-Binds to an object given its path and a specified interface identifier (IID).
+com\_object \= **ADsGetObject\( *path*  *, iid* ** \)
+Binds to an object given its path and a specified interface identifier \(IID\)\.
 
 #### Parameters
 
@@ -87,14 +87,14 @@ Binds to an object given its path and a specified interface identifier (IID).
 
     
 
-  -  *iid=IID_IDispatch* :[PyIID](#pyiid)
+  -  *iid\=IID\_IDispatch* :[PyIID](#pyiid)
 
     The requested interface
 
-## [adsi](#adsi).ADsOpenObject
+## [adsi](#adsi)\.ADsOpenObject
 
-com_object = __ADsOpenObject( *path*  *, username*  *, password*  *, reserved*  *, iid* __ )
-Binds to an ADSI object using explicit username and password credentials.
+com\_object \= **ADsOpenObject\( *path*  *, username*  *, password*  *, reserved*  *, iid* ** \)
+Binds to an ADSI object using explicit username and password credentials\.
 
 #### Parameters
 
@@ -111,30 +111,30 @@ Binds to an ADSI object using explicit username and password credentials.
 
     
 
-  -  *reserved=0* : int
+  -  *reserved\=0* : int
 
     
 
-  -  *iid=IID_IDispatch* :[PyIID](#pyiid)
+  -  *iid\=IID\_IDispatch* :[PyIID](#pyiid)
 
     The requested interface
 
-## [adsi](#adsi).DSOP_SCOPE_INIT_INFOs
+## [adsi](#adsi)\.DSOP\_SCOPE\_INIT\_INFOs
 
- __DSOP_SCOPE_INIT_INFOs__ = __DSOP_SCOPE_INIT_INFOs( *size* __ )
-The type object for[PyDSOP_SCOPE_INIT_INFOs](PyDSOP.md#pydsopscope_init_infos)objects.
+ **DSOP\_SCOPE\_INIT\_INFOs** \= **DSOP\_SCOPE\_INIT\_INFOs\( *size* ** \)
+The type object for[PyDSOP\_SCOPE\_INIT\_INFOs](PyDSOP.md#pydsopscope_init_infos)objects\.
 
 #### Parameters
 
 
   -  *size* : int
 
-    The number of[PyDSOP_SCOPE_INIT_INFO](PyDSOP.md#pydsopscope_init_info)objects to create in the array.
+    The number of[PyDSOP\_SCOPE\_INIT\_INFO](PyDSOP.md#pydsopscope_init_info)objects to create in the array\.
 
-## [adsi](#adsi).StringAsDS_SELECTION_LIST
+## [adsi](#adsi)\.StringAsDS\_SELECTION\_LIST
 
- __PyDS_SELECTION_LIST__ = __StringAsDS_SELECTION_LIST( *buf* __ )
-Unpacks a string (generally fetched via[PyIDataObject::GetData](PyIDataObject.md#pyidataobjectgetdata)) into a __PyDS_SELECTION_LIST__ list.
+ **PyDS\_SELECTION\_LIST** \= **StringAsDS\_SELECTION\_LIST\( *buf* ** \)
+Unpacks a string \(generally fetched via[PyIDataObject::GetData](PyIDataObject.md#pyidataobjectgetdata)\) into a **PyDS\_SELECTION\_LIST** list\.
 
 #### Parameters
 

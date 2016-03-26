@@ -2,14 +2,14 @@
 
 ## PyDDEServer Object
 
-A DDE server.
+A DDE server\.
 
 #### Methods
 
 
   - [AddTopic](PyDDEServer.md#pyddeserveraddtopic)
 
-    Adds a topic to the server.&nbsp;
+    Adds a topic to the server\.&nbsp;
 
   - [Create](PyDDEServer.md#pyddeservercreate)
 
@@ -17,21 +17,21 @@ A DDE server.
 
   - [Destroy](PyDDEServer.md#pyddeserverdestroy)
 
-    Destroys the underlying C++ object.&nbsp;
+    Destroys the underlying C\+\+ object\.&nbsp;
 
   - [GetLastError](PyDDEServer.md#pyddeservergetlasterror)
 
-    Returns the last DDE error.&nbsp;
+    Returns the last DDE error\.&nbsp;
 
   - [Shutdown](PyDDEServer.md#pyddeservershutdown)
 
-    Shutsdown the server. 
+    Shutsdown the server\. 
 
 sentinel&nbsp;
 
-## [PyDDEServer](#pyddeserver).AddTopic
+## [PyDDEServer](#pyddeserver)\.AddTopic
 
- __AddTopic( *topic* __ )
+ **AddTopic\( *topic* ** \)
 
 
 #### Parameters
@@ -39,11 +39,11 @@ sentinel&nbsp;
 
   -  *topic* :[PyDDETopic](#pyddetopic)
 
-    The topic to add.
+    The topic to add\.
 
-## [PyDDEServer](#pyddeserver).Create
+## [PyDDEServer](#pyddeserver)\.Create
 
- __Create( *name*  *, filterFlags* __ )
+ **Create\( *name*  *, filterFlags* ** \)
 Create a server
 
 #### Parameters
@@ -51,29 +51,29 @@ Create a server
 
   -  *name* : string
 
-    Name of the server to start.
+    Name of the server to start\.
 
-  -  *filterFlags=0* : int
+  -  *filterFlags\=0* : int
 
-    Filter flags.
-
-#### Comments
-Note there can only be one server per application.
-
-## [PyDDEServer](#pyddeserver).Destroy
-
- __Destroy(__ )
-
-
-## [PyDDEServer](#pyddeserver).GetLastError
-
-int = __GetLastError(__ )
-
-
-## [PyDDEServer](#pyddeserver).Shutdown
-
- __Shutdown(__ )
-
+    Filter flags\.
 
 #### Comments
-Note the underlying DDE object (ie, Server, Topics and Items) are not cleaned up by this call.
+Note there can only be one server per application\.
+
+## [PyDDEServer](#pyddeserver)\.Destroy
+
+ **Destroy\(** \)
+
+
+## [PyDDEServer](#pyddeserver)\.GetLastError
+
+int \= **GetLastError\(** \)
+
+
+## [PyDDEServer](#pyddeserver)\.Shutdown
+
+ **Shutdown\(** \)
+
+
+#### Comments
+Note the underlying DDE object \(ie, Server, Topics and Items\) are not cleaned up by this call\.

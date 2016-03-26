@@ -1,8 +1,8 @@
 # LARGE
 
-## LARGE_INTEGER Object
+## LARGE\_INTEGER Object
 
-A Python object used wherever a COM LARGE_INTEGER is used.
+A Python object used wherever a COM LARGE\_INTEGER is used\.
 
 #### Comments
-Please see __pywintypes::ULARGE_INTEGER__ for a description.
+Please see **pywintypes::ULARGE\_INTEGER** for a description\.

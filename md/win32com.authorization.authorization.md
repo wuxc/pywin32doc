@@ -1,6 +1,6 @@
 # win32com.authorization.authorization
 
-## Module win32com.authorization.authorization
+## Module win32com\.authorization\.authorization
 
 Module containing support for authorization COM interfaces
 

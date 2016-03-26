@@ -9,35 +9,35 @@ Description of the interface
 
   - [ResumeFromBreakPoint](PyIRemoteDebugApplication.md#pyiremotedebugapplicationresumefrombreakpoint)
 
-    Continue an application which is currently in a breakpoint.&nbsp;
+    Continue an application which is currently in a breakpoint\.&nbsp;
 
   - [CauseBreak](PyIRemoteDebugApplication.md#pyiremotedebugapplicationcausebreak)
 
-    Causes the application to break into the debugger at the earliest opportunity.&nbsp;
+    Causes the application to break into the debugger at the earliest opportunity\.&nbsp;
 
   - [ConnectDebugger](PyIRemoteDebugApplication.md#pyiremotedebugapplicationconnectdebugger)
 
-    Connects a debugger to the application.&nbsp;
+    Connects a debugger to the application\.&nbsp;
 
   - [DisconnectDebugger](PyIRemoteDebugApplication.md#pyiremotedebugapplicationdisconnectdebugger)
 
-    Disconnects the current debugger from the application.&nbsp;
+    Disconnects the current debugger from the application\.&nbsp;
 
   - [GetDebugger](PyIRemoteDebugApplication.md#pyiremotedebugapplicationgetdebugger)
 
-    Returns the current debugger connected to the application.&nbsp;
+    Returns the current debugger connected to the application\.&nbsp;
 
   - [CreateInstanceAtApplication](PyIRemoteDebugApplication.md#pyiremotedebugapplicationcreateinstanceatapplication)
 
-    Create objects in the application process address space.&nbsp;
+    Create objects in the application process address space\.&nbsp;
 
   - [QueryAlive](PyIRemoteDebugApplication.md#pyiremotedebugapplicationqueryalive)
 
-    Indicates if the application is alive.&nbsp;
+    Indicates if the application is alive\.&nbsp;
 
   - [EnumThreads](PyIRemoteDebugApplication.md#pyiremotedebugapplicationenumthreads)
 
-    Enumerates all threads known to be associated with the application.&nbsp;
+    Enumerates all threads known to be associated with the application\.&nbsp;
 
   - [GetName](PyIRemoteDebugApplication.md#pyiremotedebugapplicationgetname)
 
@@ -45,26 +45,26 @@ Description of the interface
 
   - [GetRootNode](PyIRemoteDebugApplication.md#pyiremotedebugapplicationgetrootnode)
 
-    Returns the application node under which all nodes associated with the application are added.&nbsp;
+    Returns the application node under which all nodes associated with the application are added\.&nbsp;
 
   - [EnumGlobalExpressionContexts](PyIRemoteDebugApplication.md#pyiremotedebugapplicationenumglobalexpressioncontexts)
 
-    Enumerates all global expression contexts.&nbsp;
+    Enumerates all global expression contexts\.&nbsp;
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).CauseBreak
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.CauseBreak
 
- __CauseBreak(__ )
-Causes the application to break into the debugger at the earliest opportunity.
+ **CauseBreak\(** \)
+Causes the application to break into the debugger at the earliest opportunity\.
 
 #### Comments
 Note that a long time may elapse before the application actually breaks, particularly if 
 
-the application is not currently executing script code.
+the application is not currently executing script code\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).ConnectDebugger
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.ConnectDebugger
 
- __ConnectDebugger( *pad* __ )
-Connects a debugger to the application.
+ **ConnectDebugger\( *pad* ** \)
+Connects a debugger to the application\.
 
 #### Parameters
 
@@ -76,12 +76,12 @@ Connects a debugger to the application.
 #### Comments
 Only one debugger may be connected at a 
 
-time; this method fails if there is already a debugger connected.
+time; this method fails if there is already a debugger connected\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).CreateInstanceAtApplication
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.CreateInstanceAtApplication
 
-[PyIUnknown](#pyiunknown)= __CreateInstanceAtApplication( *rclsid*  *, pUnkOuter*  *, dwClsContext*  *, riid* __ )
-Create objects in the application process address space.
+[PyIUnknown](#pyiunknown)\= **CreateInstanceAtApplication\( *rclsid*  *, pUnkOuter*  *, dwClsContext*  *, riid* ** \)
+Create objects in the application process address space\.
 
 #### Parameters
 
@@ -105,52 +105,52 @@ Create objects in the application process address space.
 #### Comments
 Provides a mechanism for the debugger IDE, running out-of-process to the 
 
-application, to create objects in the application process. 
+application, to create objects in the application process\. 
 
-This method simply delegates to CoCreateInstance.
+This method simply delegates to CoCreateInstance\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).DisconnectDebugger
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.DisconnectDebugger
 
- __DisconnectDebugger(__ )
-Disconnects the current debugger from the application.
+ **DisconnectDebugger\(** \)
+Disconnects the current debugger from the application\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).EnumGlobalExpressionContexts
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.EnumGlobalExpressionContexts
 
- __IEnumDebugExpressionContexts__ = __EnumGlobalExpressionContexts(__ )
+ **IEnumDebugExpressionContexts** \= **EnumGlobalExpressionContexts\(** \)
 Enumerates all global expression contexts
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).EnumThreads
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.EnumThreads
 
-[PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads)= __EnumThreads(__ )
-Enumerates all threads known to be associated with the application.
+[PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads)\= **EnumThreads\(** \)
+Enumerates all threads known to be associated with the application\.
 
 #### Comments
-New threads may be added at any time.
+New threads may be added at any time\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).GetDebugger
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.GetDebugger
 
-[PyIApplicationDebugger](#pyiapplicationdebugger)= __GetDebugger(__ )
-Returns the current debugger connected to the application.
+[PyIApplicationDebugger](#pyiapplicationdebugger)\= **GetDebugger\(** \)
+Returns the current debugger connected to the application\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).GetName
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.GetName
 
- __GetName(__ )
-Description of GetName.
+ **GetName\(** \)
+Description of GetName\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).GetRootNode
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.GetRootNode
 
-[PyIDebugApplicationNode](#pyidebugapplicationnode)= __GetRootNode(__ )
-Returns the application node under which all nodes associated with the application are added.
+[PyIDebugApplicationNode](#pyidebugapplicationnode)\= **GetRootNode\(** \)
+Returns the application node under which all nodes associated with the application are added\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).QueryAlive
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.QueryAlive
 
- __QueryAlive(__ )
-Returns True if alive, else False.
+ **QueryAlive\(** \)
+Returns True if alive, else False\.
 
-## [PyIRemoteDebugApplication](#pyiremotedebugapplication).ResumeFromBreakPoint
+## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.ResumeFromBreakPoint
 
- __ResumeFromBreakPoint( *prptFocus*  *, bra*  *, era* __ )
-Continue an application which is currently in a breakpoint.
+ **ResumeFromBreakPoint\( *prptFocus*  *, bra*  *, era* ** \)
+Continue an application which is currently in a breakpoint\.
 
 #### Parameters
 

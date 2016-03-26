@@ -18,9 +18,9 @@ Available on Windows 7 and later
 
     Retrieves a list of items in a jump list&nbsp;
 
-## [PyIApplicationDocumentLists](#pyiapplicationdocumentlists).GetList
+## [PyIApplicationDocumentLists](#pyiapplicationdocumentlists)\.GetList
 
-[PyIEnumObjects](#pyienumobjects)= __GetList( *ListType*  *, ItemsDesired*  *, riid* __ )
+[PyIEnumObjects](#pyienumobjects)\= **GetList\( *ListType*  *, ItemsDesired*  *, riid* ** \)
 Retrieves a list of items in a jump list
 
 #### Parameters
@@ -28,19 +28,19 @@ Retrieves a list of items in a jump list
 
   -  *ListType* : int
 
-    Type of document list to return, shellcon.ADLT_RECENT or ADLT_FREQUENT
+    Type of document list to return, shellcon\.ADLT\_RECENT or ADLT\_FREQUENT
 
-  -  *ItemsDesired=0* : int
+  -  *ItemsDesired\=0* : int
 
     Number of items to return, use 0 for all available
 
-  -  *riid=IID_IEnumObjects* :[PyIID](#pyiid)
+  -  *riid\=IID\_IEnumObjects* :[PyIID](#pyiid)
 
-    The interface to return, IID_IEnumObjects or IID_IObjectArray
+    The interface to return, IID\_IEnumObjects or IID\_IObjectArray
 
-## [PyIApplicationDocumentLists](#pyiapplicationdocumentlists).SetAppID
+## [PyIApplicationDocumentLists](#pyiapplicationdocumentlists)\.SetAppID
 
- __SetAppID( *AppID* __ )
+ **SetAppID\( *AppID* ** \)
 Specifies the application whose jump list is to be accessed
 
 #### Parameters

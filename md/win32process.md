@@ -9,7 +9,7 @@ An interface to the win32 Process and Thread API's
 
   - [STARTUPINFO](win32process.md#win32processstartupinfo)
 
-    Creates a new STARTUPINFO object.&nbsp;
+    Creates a new STARTUPINFO object\.&nbsp;
 
   - [beginthreadex](win32process.md#win32processbeginthreadex)
 
@@ -19,31 +19,31 @@ An interface to the win32 Process and Thread API's
 
     creates a thread that runs in 
 
-the virtual address space of another process.&nbsp;
+the virtual address space of another process\.&nbsp;
 
   - [CreateProcess](win32process.md#win32processcreateprocess)
 
-    Creates a new process and its primary thread. The new process executes the specified executable file.&nbsp;
+    Creates a new process and its primary thread\. The new process executes the specified executable file\.&nbsp;
 
   - [CreateProcessAsUser](win32process.md#win32processcreateprocessasuser)
 
-    Creates a new process in the context of the specified user.&nbsp;
+    Creates a new process in the context of the specified user\.&nbsp;
 
   - [GetCurrentProcess](win32process.md#win32processgetcurrentprocess)
 
-    Retrieves a pseudo handle for the current process.&nbsp;
+    Retrieves a pseudo handle for the current process\.&nbsp;
 
   - [GetProcessVersion](win32process.md#win32processgetprocessversion)
 
-    Obtains the major and minor version numbers of the system on which a specified process expects to run.&nbsp;
+    Obtains the major and minor version numbers of the system on which a specified process expects to run\.&nbsp;
 
   - [GetCurrentProcessId](win32process.md#win32processgetcurrentprocessid)
 
-    Retrieves the process identifier of the calling process.&nbsp;
+    Retrieves the process identifier of the calling process\.&nbsp;
 
   - [GetStartupInfo](win32process.md#win32processgetstartupinfo)
 
-    Retrieves the contents of the STARTUPINFO structure that was specified when the calling process was created.&nbsp;
+    Retrieves the contents of the STARTUPINFO structure that was specified when the calling process was created\.&nbsp;
 
   - [GetPriorityClass](win32process.md#win32processgetpriorityclass)
 
@@ -59,7 +59,7 @@ the virtual address space of another process.&nbsp;
 
   - [GetWindowThreadProcessId](win32process.md#win32processgetwindowthreadprocessid)
 
-    Retrieves the identifier of the thread and process that created the specified window.&nbsp;
+    Retrieves the identifier of the thread and process that created the specified window\.&nbsp;
 
   - [SetThreadPriority](win32process.md#win32processsetthreadpriority)
 
@@ -107,7 +107,7 @@ the virtual address space of another process.&nbsp;
 
   - [SetThreadIdealProcessor](win32process.md#win32processsetthreadidealprocessor)
 
-    Used to specify a preferred processor for a thread. The system schedules threads on their preferred processors whenever possible.&nbsp;
+    Used to specify a preferred processor for a thread\. The system schedules threads on their preferred processors whenever possible\.&nbsp;
 
   - [GetProcessAffinityMask](win32process.md#win32processgetprocessaffinitymask)
 
@@ -115,23 +115,23 @@ the virtual address space of another process.&nbsp;
 
   - [SetProcessAffinityMask](win32process.md#win32processsetprocessaffinitymask)
 
-    Sets a processor affinity mask for a specified process.&nbsp;
+    Sets a processor affinity mask for a specified process\.&nbsp;
 
   - [SetThreadAffinityMask](win32process.md#win32processsetthreadaffinitymask)
 
-    Sets a processor affinity mask for a specified thread.&nbsp;
+    Sets a processor affinity mask for a specified thread\.&nbsp;
 
   - [SuspendThread](win32process.md#win32processsuspendthread)
 
-    Suspends the specified thread.&nbsp;
+    Suspends the specified thread\.&nbsp;
 
   - [ResumeThread](win32process.md#win32processresumethread)
 
-    Resumes the specified thread. When the suspend count is decremented to zero, the execution of the thread is resumed.&nbsp;
+    Resumes the specified thread\. When the suspend count is decremented to zero, the execution of the thread is resumed\.&nbsp;
 
   - [TerminateProcess](win32process.md#win32processterminateprocess)
 
-    Terminates the specified process and all of its threads.&nbsp;
+    Terminates the specified process and all of its threads\.&nbsp;
 
   - [ExitProcess](win32process.md#win32processexitprocess)
 
@@ -151,19 +151,19 @@ the virtual address space of another process.&nbsp;
 
   - [GetModuleFileNameEx](win32process.md#win32processgetmodulefilenameex)
 
-    Return name of module loaded by another process (uses process handle, not pid)&nbsp;
+    Return name of module loaded by another process \(uses process handle, not pid\)&nbsp;
 
   - [GetProcessMemoryInfo](win32process.md#win32processgetprocessmemoryinfo)
 
-    Returns process memory statistics as a dict representing a PROCESS_MEMORY_COUNTERS struct&nbsp;
+    Returns process memory statistics as a dict representing a PROCESS\_MEMORY\_COUNTERS struct&nbsp;
 
   - [GetProcessTimes](win32process.md#win32processgetprocesstimes)
 
-    Retrieve time statics for a process by handle.  (KernelTime and UserTime in 100 nanosecond units)&nbsp;
+    Retrieve time statics for a process by handle\.  \(KernelTime and UserTime in 100 nanosecond units\)&nbsp;
 
   - [GetProcessIoCounters](win32process.md#win32processgetprocessiocounters)
 
-    Return I/O statistics for a process as a dictionary representing an IO_COUNTERS struct.&nbsp;
+    Return I/O statistics for a process as a dictionary representing an IO\_COUNTERS struct\.&nbsp;
 
   - [GetProcessWindowStation](win32process.md#win32processgetprocesswindowstation)
 
@@ -191,15 +191,15 @@ the virtual address space of another process.&nbsp;
 
   - [IsWow64Process](win32process.md#win32processiswow64process)
 
-    Determines whether the specified process is running under WOW64.&nbsp;
+    Determines whether the specified process is running under WOW64\.&nbsp;
 
-## ABOVE_NORMAL_PRIORITY_CLASS
- __const win32process.ABOVE_NORMAL_PRIORITY_CLASS;__ 
-Windows 2000: Indicates a process that has priority above NORMAL_PRIORITY_CLASS but below HIGH_PRIORITY_CLASS.
+## ABOVE\_NORMAL\_PRIORITY\_CLASS
+ **const win32process\.ABOVE\_NORMAL\_PRIORITY\_CLASS;** 
+Windows 2000: Indicates a process that has priority above NORMAL\_PRIORITY\_CLASS but below HIGH\_PRIORITY\_CLASS\.
 
-## [win32process](#win32process).AttachThreadInput
+## [win32process](#win32process)\.AttachThreadInput
 
- __AttachThreadInput( *idAttach*  *, idAttachTo*  *, Attach* __ )
+ **AttachThreadInput\( *idAttach*  *, idAttachTo*  *, Attach* ** \)
 Attaches or detaches the input of two threads
 
 #### Parameters
@@ -217,56 +217,56 @@ Attaches or detaches the input of two threads
 
     Indicates whether thread should be attached or detached
 
-## BELOW_NORMAL_PRIORITY_CLASS
- __const win32process.BELOW_NORMAL_PRIORITY_CLASS;__ 
-Windows 2000: Indicates a process that has priority above IDLE_PRIORITY_CLASS but below NORMAL_PRIORITY_CLASS.
+## BELOW\_NORMAL\_PRIORITY\_CLASS
+ **const win32process\.BELOW\_NORMAL\_PRIORITY\_CLASS;** 
+Windows 2000: Indicates a process that has priority above IDLE\_PRIORITY\_CLASS but below NORMAL\_PRIORITY\_CLASS\.
 
-## CREATE_BREAKAWAY_FROM_JOB
- __const win32process.CREATE_BREAKAWAY_FROM_JOB;__ 
-
-
-## CREATE_DEFAULT_ERROR_MODE
- __const win32process.CREATE_DEFAULT_ERROR_MODE;__ 
-The new process does not inherit the error mode of the calling process. Instead, CreateProcess gives the new process the current default error mode. An application sets the current default error mode by calling SetErrorMode. 
-
-This flag is particularly useful for multi-threaded shell applications that run with hard errors disabled.
-
-## CREATE_NEW_CONSOLE
- __const win32process.CREATE_NEW_CONSOLE;__ 
-The new process has a new console, instead of inheriting the parent's console. This flag cannot be used with the DETACHED_PROCESS flag.
-
-## CREATE_NEW_PROCESS_GROUP
- __const win32process.CREATE_NEW_PROCESS_GROUP;__ 
-The new process is the root process of a new process group. The process group includes all processes that are descendants of this root process. The process identifier of the new process group is the same as the process identifier, which is returned in the lpProcessInformation parameter. Process groups are used by the GenerateConsoleCtrlEvent function to enable sending a ctrl+c or ctrl+break signal to a group of console processes.
-
-## CREATE_NO_WINDOW
- __const win32process.CREATE_NO_WINDOW;__ 
+## CREATE\_BREAKAWAY\_FROM\_JOB
+ **const win32process\.CREATE\_BREAKAWAY\_FROM\_JOB;** 
 
 
-## CREATE_PRESERVE_CODE_AUTHZ_LEVEL
- __const win32process.CREATE_PRESERVE_CODE_AUTHZ_LEVEL;__ 
+## CREATE\_DEFAULT\_ERROR\_MODE
+ **const win32process\.CREATE\_DEFAULT\_ERROR\_MODE;** 
+The new process does not inherit the error mode of the calling process\. Instead, CreateProcess gives the new process the current default error mode\. An application sets the current default error mode by calling SetErrorMode\. 
+
+This flag is particularly useful for multi-threaded shell applications that run with hard errors disabled\.
+
+## CREATE\_NEW\_CONSOLE
+ **const win32process\.CREATE\_NEW\_CONSOLE;** 
+The new process has a new console, instead of inheriting the parent's console\. This flag cannot be used with the DETACHED\_PROCESS flag\.
+
+## CREATE\_NEW\_PROCESS\_GROUP
+ **const win32process\.CREATE\_NEW\_PROCESS\_GROUP;** 
+The new process is the root process of a new process group\. The process group includes all processes that are descendants of this root process\. The process identifier of the new process group is the same as the process identifier, which is returned in the lpProcessInformation parameter\. Process groups are used by the GenerateConsoleCtrlEvent function to enable sending a ctrl\+c or ctrl\+break signal to a group of console processes\.
+
+## CREATE\_NO\_WINDOW
+ **const win32process\.CREATE\_NO\_WINDOW;** 
 
 
-## CREATE_SEPARATE_WOW_VDM
- __const win32process.CREATE_SEPARATE_WOW_VDM;__ 
-Windows NT: This flag is valid only when starting a 16-bit Windows-based application. If set, the new process is run in a private Virtual DOS Machine (VDM). By default, all 16-bit Windows-based applications are run as threads in a single, shared VDM. The advantage of running separately is that a crash only kills the single VDM; any other programs running in distinct VDMs continue to function normally. Also, 16-bit Windows-based applications that are run in separate VDMs have separate input queues. That means that if one application hangs momentarily, applications in separate VDMs continue to receive input. The disadvantage of running separately is that it takes significantly more memory to do so. You should use this flag only if the user requests that 16-bit applications should run in them own VDM.
-
-## CREATE_SHARED_WOW_VDM
- __const win32process.CREATE_SHARED_WOW_VDM;__ 
-Windows NT: The flag is valid only when starting a 16-bit Windows-based application. If the DefaultSeparateVDM switch in the Windows section of WIN.INI is TRUE, this flag causes the CreateProcess function to override the switch and run the new process in the shared Virtual DOS Machine.
-
-## CREATE_SUSPENDED
- __const win32process.CREATE_SUSPENDED;__ 
+## CREATE\_PRESERVE\_CODE\_AUTHZ\_LEVEL
+ **const win32process\.CREATE\_PRESERVE\_CODE\_AUTHZ\_LEVEL;** 
 
 
-## CREATE_UNICODE_ENVIRONMENT
- __const win32process.CREATE_UNICODE_ENVIRONMENT;__ 
-If set, the environment block pointed to by lpEnvironment uses Unicode characters. If clear, the environment block uses ANSI characters.
+## CREATE\_SEPARATE\_WOW\_VDM
+ **const win32process\.CREATE\_SEPARATE\_WOW\_VDM;** 
+Windows NT: This flag is valid only when starting a 16-bit Windows-based application\. If set, the new process is run in a private Virtual DOS Machine \(VDM\)\. By default, all 16-bit Windows-based applications are run as threads in a single, shared VDM\. The advantage of running separately is that a crash only kills the single VDM; any other programs running in distinct VDMs continue to function normally\. Also, 16-bit Windows-based applications that are run in separate VDMs have separate input queues\. That means that if one application hangs momentarily, applications in separate VDMs continue to receive input\. The disadvantage of running separately is that it takes significantly more memory to do so\. You should use this flag only if the user requests that 16-bit applications should run in them own VDM\.
 
-## [win32process](#win32process).CreateProcess
+## CREATE\_SHARED\_WOW\_VDM
+ **const win32process\.CREATE\_SHARED\_WOW\_VDM;** 
+Windows NT: The flag is valid only when starting a 16-bit Windows-based application\. If the DefaultSeparateVDM switch in the Windows section of WIN\.INI is TRUE, this flag causes the CreateProcess function to override the switch and run the new process in the shared Virtual DOS Machine\.
 
-[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int = __CreateProcess( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* __ )
-Creates a new process and its primary thread. The new process executes the specified executable file.
+## CREATE\_SUSPENDED
+ **const win32process\.CREATE\_SUSPENDED;** 
+
+
+## CREATE\_UNICODE\_ENVIRONMENT
+ **const win32process\.CREATE\_UNICODE\_ENVIRONMENT;** 
+If set, the environment block pointed to by lpEnvironment uses Unicode characters\. If clear, the environment block uses ANSI characters\.
+
+## [win32process](#win32process)\.CreateProcess
+
+[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int \= **CreateProcess\( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** \)
+Creates a new process and its primary thread\. The new process executes the specified executable file\.
 
 #### Parameters
 
@@ -279,11 +279,11 @@ Creates a new process and its primary thread. The new process executes the speci
 
     command line string, or None
 
-  -  *processAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *processAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     process security attributes, or None
 
-  -  *threadAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *threadAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     thread security attributes, or None
 
@@ -293,22 +293,22 @@ Creates a new process and its primary thread. The new process executes the speci
 
   -  *dwCreationFlags* : int
 
-    creation flags.  May be a combination of the following values from the win32con module:
+    creation flags\.  May be a combination of the following values from the win32con module:
 
- __Value__  __Meaning__ CREATE_BREAKAWAY_FROM_JOBWindows 2000: The child processes of a process associated with a job are not associated with the job. 
+ **Value**  **Meaning** CREATE\_BREAKAWAY\_FROM\_JOBWindows 2000: The child processes of a process associated with a job are not associated with the job\. 
 
-If the calling process is not associated with a job, this flag has no effect. If the calling process is associated with a job, the job must set the JOB_OBJECT_LIMIT_BREAKAWAY_OK limit or CreateProcess will fail.CREATE_DEFAULT_ERROR_MODEThe new process does not inherit the error mode of the calling process. Instead, CreateProcess gives the new process the current default error mode. An application sets the current default error mode by calling SetErrorMode. 
+If the calling process is not associated with a job, this flag has no effect\. If the calling process is associated with a job, the job must set the JOB\_OBJECT\_LIMIT\_BREAKAWAY\_OK limit or CreateProcess will fail\.CREATE\_DEFAULT\_ERROR\_MODEThe new process does not inherit the error mode of the calling process\. Instead, CreateProcess gives the new process the current default error mode\. An application sets the current default error mode by calling SetErrorMode\. 
 
-This flag is particularly useful for multi-threaded shell applications that run with hard errors disabled. 
+This flag is particularly useful for multi-threaded shell applications that run with hard errors disabled\. 
 
-The default behavior for CreateProcess is for the new process to inherit the error mode of the caller. Setting this flag changes that default behavior.CREATE_FORCE_DOSWindows NT/2000: This flag is valid only when starting a 16-bit bound application. If set, the system will force the application to run as an MS-DOS-based application rather than as an OS/2-based application.CREATE_NEW_CONSOLEThe new process has a new console, instead of inheriting the parent's console. This flag cannot be used with the DETACHED_PROCESS flag.CREATE_NEW_PROCESS_GROUPThe new process is the root process of a new process group. The process group includes all processes that are descendants of this root process. The process identifier of the new process group is the same as the process identifier, which is returned in the lpProcessInformation parameter. Process groups are used by the GenerateConsoleCtrlEvent function to enable sending a CTRL+C or CTRL+BREAK signal to a group of console processes.CREATE_NO_WINDOWWindows NT/2000: This flag is valid only when starting a console application. If set, the console application is run without a console window.CREATE_SEPARATE_WOW_VDMWindows NT/2000: This flag is valid only when starting a 16-bit Windows-based application. If set, the new process runs in a private Virtual DOS Machine (VDM). By default, all 16-bit Windows-based applications run as threads in a single, shared VDM. The advantage of running separately is that a crash only terminates the single VDM; any other programs running in distinct VDMs continue to function normally. Also, 16-bit Windows-based applications that are run in separate VDMs have separate input queues. That means that if one application stops responding momentarily, applications in separate VDMs continue to receive input. The disadvantage of running separately is that it takes significantly more memory to do so. You should use this flag only if the user requests that 16-bit applications should run in them own VDM.CREATE_SHARED_WOW_VDMWindows NT/2000: The flag is valid only when starting a 16-bit Windows-based application. If the DefaultSeparateVDM switch in the Windows section of WIN.INI is TRUE, this flag causes the CreateProcess function to override the switch and run the new process in the shared Virtual DOS Machine.CREATE_SUSPENDEDThe primary thread of the new process is created in a suspended state, and does not run until the ResumeThread function is called.CREATE_UNICODE_ENVIRONMENTIndicates the format of the lpEnvironment parameter. If this flag is set, the environment block pointed to by lpEnvironment uses Unicode characters. Otherwise, the environment block uses ANSI characters.DEBUG_PROCESSIf this flag is set, the calling process is treated as a debugger, and the new process is debugged. The system notifies the debugger of all debug events that occur in the process being debugged. 
+The default behavior for CreateProcess is for the new process to inherit the error mode of the caller\. Setting this flag changes that default behavior\.CREATE\_FORCE\_DOSWindows NT/2000: This flag is valid only when starting a 16-bit bound application\. If set, the system will force the application to run as an MS-DOS-based application rather than as an OS/2-based application\.CREATE\_NEW\_CONSOLEThe new process has a new console, instead of inheriting the parent's console\. This flag cannot be used with the DETACHED\_PROCESS flag\.CREATE\_NEW\_PROCESS\_GROUPThe new process is the root process of a new process group\. The process group includes all processes that are descendants of this root process\. The process identifier of the new process group is the same as the process identifier, which is returned in the lpProcessInformation parameter\. Process groups are used by the GenerateConsoleCtrlEvent function to enable sending a CTRL\+C or CTRL\+BREAK signal to a group of console processes\.CREATE\_NO\_WINDOWWindows NT/2000: This flag is valid only when starting a console application\. If set, the console application is run without a console window\.CREATE\_SEPARATE\_WOW\_VDMWindows NT/2000: This flag is valid only when starting a 16-bit Windows-based application\. If set, the new process runs in a private Virtual DOS Machine \(VDM\)\. By default, all 16-bit Windows-based applications run as threads in a single, shared VDM\. The advantage of running separately is that a crash only terminates the single VDM; any other programs running in distinct VDMs continue to function normally\. Also, 16-bit Windows-based applications that are run in separate VDMs have separate input queues\. That means that if one application stops responding momentarily, applications in separate VDMs continue to receive input\. The disadvantage of running separately is that it takes significantly more memory to do so\. You should use this flag only if the user requests that 16-bit applications should run in them own VDM\.CREATE\_SHARED\_WOW\_VDMWindows NT/2000: The flag is valid only when starting a 16-bit Windows-based application\. If the DefaultSeparateVDM switch in the Windows section of WIN\.INI is TRUE, this flag causes the CreateProcess function to override the switch and run the new process in the shared Virtual DOS Machine\.CREATE\_SUSPENDEDThe primary thread of the new process is created in a suspended state, and does not run until the ResumeThread function is called\.CREATE\_UNICODE\_ENVIRONMENTIndicates the format of the lpEnvironment parameter\. If this flag is set, the environment block pointed to by lpEnvironment uses Unicode characters\. Otherwise, the environment block uses ANSI characters\.DEBUG\_PROCESSIf this flag is set, the calling process is treated as a debugger, and the new process is debugged\. The system notifies the debugger of all debug events that occur in the process being debugged\. 
 
-If you create a process with this flag set, only the calling thread (the thread that called CreateProcess) can call the WaitForDebugEvent function. 
+If you create a process with this flag set, only the calling thread \(the thread that called CreateProcess\) can call the WaitForDebugEvent function\. 
 
-Windows 95/98: This flag is not valid if the new process is a 16-bit application.DEBUG_ONLY_THIS_PROCESSIf this flag is not set and the calling process is being debugged, the new process becomes another process being debugged by the calling process's debugger. If the calling process is not a process being debugged, no debugging-related actions occur.DETACHED_PROCESSFor console processes, the new process does not have access to the console of the parent process. The new process can call the AllocConsole function at a later time to create a new console. This flag cannot be used with the CREATE_NEW_CONSOLE flag.ABOVE_NORMAL_PRIORITY_CLASSWindows 2000: Indicates a process that has priority higher than NORMAL_PRIORITY_CLASS but lower than HIGH_PRIORITY_CLASS.BELOW_NORMAL_PRIORITY_CLASSWindows 2000: Indicates a process that has priority higher than IDLE_PRIORITY_CLASS but lower than NORMAL_PRIORITY_CLASS.HIGH_PRIORITY_CLASSIndicates a process that performs time-critical tasks. The threads of a high-priority class process preempt the threads of normal-priority or idle-priority class processes. An example is the Task List, which must respond quickly when called by the user, regardless of the load on the system. Use extreme care when using the high-priority class, because a CPU-bound application with a high-priority class can use nearly all available cycles.IDLE_PRIORITY_CLASSIndicates a process whose threads run only when the system is idle and are preempted by the threads of any process running in a higher priority class. An example is a screen saver. The idle priority class is inherited by child processes.NORMAL_PRIORITY_CLASSIndicates a normal process with no special scheduling needs.REALTIME_PRIORITY_CLASSIndicates a process that has the highest possible priority. The threads of a real-time priority class process preempt the threads of all other processes, including operating system processes performing important tasks. For example, a real-time process that executes for more than a very brief interval can cause disk caches not to flush or cause the mouse to be unresponsive.
+Windows 95/98: This flag is not valid if the new process is a 16-bit application\.DEBUG\_ONLY\_THIS\_PROCESSIf this flag is not set and the calling process is being debugged, the new process becomes another process being debugged by the calling process's debugger\. If the calling process is not a process being debugged, no debugging-related actions occur\.DETACHED\_PROCESSFor console processes, the new process does not have access to the console of the parent process\. The new process can call the AllocConsole function at a later time to create a new console\. This flag cannot be used with the CREATE\_NEW\_CONSOLE flag\.ABOVE\_NORMAL\_PRIORITY\_CLASSWindows 2000: Indicates a process that has priority higher than NORMAL\_PRIORITY\_CLASS but lower than HIGH\_PRIORITY\_CLASS\.BELOW\_NORMAL\_PRIORITY\_CLASSWindows 2000: Indicates a process that has priority higher than IDLE\_PRIORITY\_CLASS but lower than NORMAL\_PRIORITY\_CLASS\.HIGH\_PRIORITY\_CLASSIndicates a process that performs time-critical tasks\. The threads of a high-priority class process preempt the threads of normal-priority or idle-priority class processes\. An example is the Task List, which must respond quickly when called by the user, regardless of the load on the system\. Use extreme care when using the high-priority class, because a CPU-bound application with a high-priority class can use nearly all available cycles\.IDLE\_PRIORITY\_CLASSIndicates a process whose threads run only when the system is idle and are preempted by the threads of any process running in a higher priority class\. An example is a screen saver\. The idle priority class is inherited by child processes\.NORMAL\_PRIORITY\_CLASSIndicates a normal process with no special scheduling needs\.REALTIME\_PRIORITY\_CLASSIndicates a process that has the highest possible priority\. The threads of a real-time priority class process preempt the threads of all other processes, including operating system processes performing important tasks\. For example, a real-time process that executes for more than a very brief interval can cause disk caches not to flush or cause the mouse to be unresponsive\.
   -  *newEnvironment* : dictionary/None
 
-    A dictionary of string or Unicode pairs to define the environment for the process, or None to inherit the current environment.
+    A dictionary of string or Unicode pairs to define the environment for the process, or None to inherit the current environment\.
 
   -  *currentDirectory* : string
 
@@ -316,15 +316,15 @@ Windows 95/98: This flag is not valid if the new process is a 16-bit application
 
   -  *startupinfo* :[PySTARTUPINFO](#pystartupinfo)
 
-    a STARTUPINFO object that specifies how the main window for the new process should appear.
+    a STARTUPINFO object that specifies how the main window for the new process should appear\.
 
 #### Comments
-The result is a tuple of (hProcess, hThread, dwProcessId, dwThreadId)
+The result is a tuple of \(hProcess, hThread, dwProcessId, dwThreadId\)
 
-## [win32process](#win32process).CreateProcessAsUser
+## [win32process](#win32process)\.CreateProcessAsUser
 
-[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int = __CreateProcessAsUser( *hToken*  *, appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* __ )
-Creates a new process in the context of the specified user.
+[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int \= **CreateProcessAsUser\( *hToken*  *, appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** \)
+Creates a new process in the context of the specified user\.
 
 #### Parameters
 
@@ -341,11 +341,11 @@ Creates a new process in the context of the specified user.
 
     command line string, or None
 
-  -  *processAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *processAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     process security attributes, or None
 
-  -  *threadAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *threadAttributes* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     thread security attributes, or None
 
@@ -359,7 +359,7 @@ Creates a new process in the context of the specified user.
 
   -  *newEnvironment* : None
 
-    A dictionary of stringor Unicode pairs to define the environment for the process, or None to inherit the current environment.
+    A dictionary of stringor Unicode pairs to define the environment for the process, or None to inherit the current environment\.
 
   -  *currentDirectory* : string
 
@@ -367,36 +367,36 @@ Creates a new process in the context of the specified user.
 
   -  *startupinfo* :[PySTARTUPINFO](#pystartupinfo)
 
-    a STARTUPINFO object that specifies how the main window for the new process should appear.
+    a STARTUPINFO object that specifies how the main window for the new process should appear\.
 
 #### Comments
-The result is a tuple of (hProcess, hThread, dwProcessId, dwThreadId)
+The result is a tuple of \(hProcess, hThread, dwProcessId, dwThreadId\)
 
-## [win32process](#win32process).CreateRemoteThread
+## [win32process](#win32process)\.CreateRemoteThread
 
-[PyHANDLE](#pyhandle), int = __CreateRemoteThread( *hprocess*  *, sa*  *, stackSize*  *, entryPoint*  *, Parameter*  *, flags* __ )
+[PyHANDLE](#pyhandle), int \= **CreateRemoteThread\( *hprocess*  *, sa*  *, stackSize*  *, entryPoint*  *, Parameter*  *, flags* ** \)
 creates a thread that runs in 
 
-the virtual address space of another process.
+the virtual address space of another process\.
 
 #### Parameters
 
 
   -  *hprocess* :[PyHANDLE](#pyhandle)
 
-    The handle to the remote process.
+    The handle to the remote process\.
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *sa* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
   -  *stackSize* : int
 
-    Stack size for the new thread, or zero for the default size.
+    Stack size for the new thread, or zero for the default size\.
 
   -  *entryPoint* : function
 
-    The thread function's address.
+    The thread function's address\.
 
   -  *Parameter* : int
 
@@ -407,27 +407,27 @@ the virtual address space of another process.
     
 
 #### Return Value
-The result is a tuple of the thread handle and thread ID.
+The result is a tuple of the thread handle and thread ID\.
 
-## DEBUG_ONLY_THIS_PROCESS
- __const win32process.DEBUG_ONLY_THIS_PROCESS;__ 
-If not set and the calling process is being debugged, the new process becomes another process being debugged by the calling process's debugger. If the calling process is not a process being debugged, no debugging-related actions occur.
+## DEBUG\_ONLY\_THIS\_PROCESS
+ **const win32process\.DEBUG\_ONLY\_THIS\_PROCESS;** 
+If not set and the calling process is being debugged, the new process becomes another process being debugged by the calling process's debugger\. If the calling process is not a process being debugged, no debugging-related actions occur\.
 
-## DEBUG_PROCESS
- __const win32process.DEBUG_PROCESS;__ 
-If this flag is set, the calling process is treated as a debugger, and the new process is a process being debugged. The system notifies the debugger of all debug events that occur in the process being debugged. 
+## DEBUG\_PROCESS
+ **const win32process\.DEBUG\_PROCESS;** 
+If this flag is set, the calling process is treated as a debugger, and the new process is a process being debugged\. The system notifies the debugger of all debug events that occur in the process being debugged\. 
 
-If you create a process with this flag set, only the calling thread (the thread that called CreateProcess) can call the WaitForDebugEvent function. 
+If you create a process with this flag set, only the calling thread \(the thread that called CreateProcess\) can call the WaitForDebugEvent function\. 
 
-Windows 95 and Windows 98: This flag is not valid if the new process is a 16-bit application.
+Windows 95 and Windows 98: This flag is not valid if the new process is a 16-bit application\.
 
-## DETACHED_PROCESS
- __const win32process.DETACHED_PROCESS;__ 
-For console processes, the new process does not have access to the console of the parent process. The new process can call the AllocConsole function at a later time to create a new console. This flag cannot be used with the CREATE_NEW_CONSOLE flag.
+## DETACHED\_PROCESS
+ **const win32process\.DETACHED\_PROCESS;** 
+For console processes, the new process does not have access to the console of the parent process\. The new process can call the AllocConsole function at a later time to create a new console\. This flag cannot be used with the CREATE\_NEW\_CONSOLE flag\.
 
-## [win32process](#win32process).EnumProcessModules
+## [win32process](#win32process)\.EnumProcessModules
 
-(long,....) = __EnumProcessModules( *hProcess* __ )
+\(long,\.\.\.\.\) \= **EnumProcessModules\( *hProcess* ** \)
 Lists loaded modules for a process handle
 
 #### Parameters
@@ -437,9 +437,9 @@ Lists loaded modules for a process handle
 
     Process handle as returned by OpenProcess
 
-## [win32process](#win32process).EnumProcessModulesEx
+## [win32process](#win32process)\.EnumProcessModulesEx
 
-(long,....) = __EnumProcessModulesEx( *hProcess*  *, FilterFlag* __ )
+\(long,\.\.\.\.\) \= **EnumProcessModulesEx\( *hProcess*  *, FilterFlag* ** \)
 Lists 32 or 64-bit modules load by a process
 
 #### Parameters
@@ -449,21 +449,21 @@ Lists 32 or 64-bit modules load by a process
 
     Process handle as returned by OpenProcess
 
-  -  *FilterFlag=LIST_MODULES_DEFAULT* : int
+  -  *FilterFlag\=LIST\_MODULES\_DEFAULT* : int
 
     Controls whether 32 or 64-bit modules are returned
 
 #### Comments
 Requires Vista or later
 
-## [win32process](#win32process).EnumProcesses
+## [win32process](#win32process)\.EnumProcesses
 
-(long,....) = __EnumProcesses(__ )
+\(long,\.\.\.\.\) \= **EnumProcesses\(** \)
 Returns Pids for currently running processes
 
-## [win32process](#win32process).ExitProcess
+## [win32process](#win32process)\.ExitProcess
 
- __ExitProcess( *exitCode* __ )
+ **ExitProcess\( *exitCode* ** \)
 Ends a process and all its threads
 
 #### Parameters
@@ -474,29 +474,29 @@ Ends a process and all its threads
     Specifies the exit code for the process, and for all threads that are terminated as a result of this call
 
 #### Comments
-ExitProcess is the preferred method of ending a process. This function provides 
+ExitProcess is the preferred method of ending a process\. This function provides 
 
-a clean process shutdown. This includes calling the entry-point function of all 
+a clean process shutdown\. This includes calling the entry-point function of all 
 
-attached dynamic-link libraries (DLLs) with a value indicating that the process 
+attached dynamic-link libraries \(DLLs\) with a value indicating that the process 
 
-is detaching from the DLL. If a process terminates by calling[win32process::TerminateProcess](win32process.md#win32processterminateprocess), the DLLs that the process is attached to are 
+is detaching from the DLL\. If a process terminates by calling[win32process::TerminateProcess](win32process.md#win32processterminateprocess), the DLLs that the process is attached to are 
 
-not notified of the process termination.
+not notified of the process termination\.
 
-## [win32process](#win32process).GetCurrentProcess
+## [win32process](#win32process)\.GetCurrentProcess
 
-int = __GetCurrentProcess(__ )
-Retrieves a pseudo handle for the current process.
+int \= **GetCurrentProcess\(** \)
+Retrieves a pseudo handle for the current process\.
 
-## [win32process](#win32process).GetCurrentProcessId
+## [win32process](#win32process)\.GetCurrentProcessId
 
-int = __GetCurrentProcessId(__ )
-Retrieves the process identifier of the calling process.
+int \= **GetCurrentProcessId\(** \)
+Retrieves the process identifier of the calling process\.
 
-## [win32process](#win32process).GetExitCodeProcess
+## [win32process](#win32process)\.GetExitCodeProcess
 
-int = __GetExitCodeProcess( *handle* __ )
+int \= **GetExitCodeProcess\( *handle* ** \)
 
 
 #### Parameters
@@ -506,9 +506,9 @@ int = __GetExitCodeProcess( *handle* __ )
 
     handle to the process
 
-## [win32process](#win32process).GetExitCodeThread
+## [win32process](#win32process)\.GetExitCodeThread
 
-int = __GetExitCodeThread( *handle* __ )
+int \= **GetExitCodeThread\( *handle* ** \)
 
 
 #### Parameters
@@ -518,9 +518,9 @@ int = __GetExitCodeThread( *handle* __ )
 
     handle to the thread
 
-## [win32process](#win32process).GetGuiResources
+## [win32process](#win32process)\.GetGuiResources
 
-int = __GetGuiResources( *Process*  *, Flags* __ )
+int \= **GetGuiResources\( *Process*  *, Flags* ** \)
 Returns the number of GDI or user object handles held by a process
 
 #### Parameters
@@ -532,15 +532,15 @@ Returns the number of GDI or user object handles held by a process
 
   -  *Flags* : int
 
-    GR_GDIOBJECTS or GR_USEROBJECTS (from win32con)
+    GR\_GDIOBJECTS or GR\_USEROBJECTS \(from win32con\)
 
 #### Comments
 Available on Win2k and up
 
-## [win32process](#win32process).GetModuleFileNameEx
+## [win32process](#win32process)\.GetModuleFileNameEx
 
-[PyUNICODE](#pyunicode)= __GetModuleFileNameEx( *hProcess*  *, hModule* __ )
-Return name of module loaded by another process (uses process handle, not pid)
+[PyUNICODE](#pyunicode)\= **GetModuleFileNameEx\( *hProcess*  *, hModule* ** \)
+Return name of module loaded by another process \(uses process handle, not pid\)
 
 #### Parameters
 
@@ -553,9 +553,9 @@ Return name of module loaded by another process (uses process handle, not pid)
 
     Module handle
 
-## [win32process](#win32process).GetPriorityClass
+## [win32process](#win32process)\.GetPriorityClass
 
-int = __GetPriorityClass( *handle* __ )
+int \= **GetPriorityClass\( *handle* ** \)
 
 
 #### Parameters
@@ -565,9 +565,9 @@ int = __GetPriorityClass( *handle* __ )
 
     handle to the thread
 
-## [win32process](#win32process).GetProcessAffinityMask
+## [win32process](#win32process)\.GetProcessAffinityMask
 
-int, int = __GetProcessAffinityMask( *hProcess* __ )
+int, int \= **GetProcessAffinityMask\( *hProcess* ** \)
 Gets a processor affinity mask for a specified process
 
 #### Parameters
@@ -578,11 +578,11 @@ Gets a processor affinity mask for a specified process
     handle to the process of interest
 
 #### Return Value
-The result is a tuple of (process affinity mask, system affinity mask)
+The result is a tuple of \(process affinity mask, system affinity mask\)
 
-## [win32process](#win32process).GetProcessId
+## [win32process](#win32process)\.GetProcessId
 
-int = __GetProcessId( *Process* __ )
+int \= **GetProcessId\( *Process* ** \)
 Returns the Pid for a process handle
 
 #### Parameters
@@ -592,22 +592,10 @@ Returns the Pid for a process handle
 
     Handle to a process
 
-## [win32process](#win32process).GetProcessIoCounters
+## [win32process](#win32process)\.GetProcessIoCounters
 
- __dict__ = __GetProcessIoCounters( *hProcess* __ )
-Return I/O statistics for a process as a dictionary representing an IO_COUNTERS struct.
-
-#### Parameters
-
-
-  -  *hProcess* :[PyHANDLE](#pyhandle)
-
-    Process handle as returned by OpenProcess
-
-## [win32process](#win32process).GetProcessMemoryInfo
-
- __dict__ = __GetProcessMemoryInfo( *hProcess* __ )
-Returns process memory statistics as a dict representing a PROCESS_MEMORY_COUNTERS struct
+ **dict** \= **GetProcessIoCounters\( *hProcess* ** \)
+Return I/O statistics for a process as a dictionary representing an IO\_COUNTERS struct\.
 
 #### Parameters
 
@@ -616,9 +604,21 @@ Returns process memory statistics as a dict representing a PROCESS_MEMORY_COUNTE
 
     Process handle as returned by OpenProcess
 
-## [win32process](#win32process).GetProcessPriorityBoost
+## [win32process](#win32process)\.GetProcessMemoryInfo
 
-bool = __GetProcessPriorityBoost( *Process* __ )
+ **dict** \= **GetProcessMemoryInfo\( *hProcess* ** \)
+Returns process memory statistics as a dict representing a PROCESS\_MEMORY\_COUNTERS struct
+
+#### Parameters
+
+
+  -  *hProcess* :[PyHANDLE](#pyhandle)
+
+    Process handle as returned by OpenProcess
+
+## [win32process](#win32process)\.GetProcessPriorityBoost
+
+bool \= **GetProcessPriorityBoost\( *Process* ** \)
 Determines if dynamic priority adjustment is enabled for a process
 
 #### Parameters
@@ -628,18 +628,18 @@ Determines if dynamic priority adjustment is enabled for a process
 
     Handle to a process
 
-## [win32process](#win32process).GetProcessShutdownParameters
+## [win32process](#win32process)\.GetProcessShutdownParameters
 
-int,int = __GetProcessShutdownParameters(__ )
+int,int \= **GetProcessShutdownParameters\(** \)
 Retrieves shutdown priority and flags for current process
 
 #### Comments
 Ranges are 000-0FF Reserved by windows, 100-1FF Last, 200-2FF Middle, 300-3FF First, 400-4FF Reserved by Windows
 
-## [win32process](#win32process).GetProcessTimes
+## [win32process](#win32process)\.GetProcessTimes
 
- __dict__ = __GetProcessTimes( *hProcess* __ )
-Retrieve time statics for a process by handle.  (KernelTime and UserTime in 100 nanosecond units)
+ **dict** \= **GetProcessTimes\( *hProcess* ** \)
+Retrieve time statics for a process by handle\.  \(KernelTime and UserTime in 100 nanosecond units\)
 
 #### Parameters
 
@@ -648,26 +648,26 @@ Retrieve time statics for a process by handle.  (KernelTime and UserTime in 100 
 
     Process handle as returned by OpenProcess
 
-## [win32process](#win32process).GetProcessVersion
+## [win32process](#win32process)\.GetProcessVersion
 
-int = __GetProcessVersion( *processId* __ )
-Obtains the major and minor version numbers of the system on which a specified process expects to run.
+int \= **GetProcessVersion\( *processId* ** \)
+Obtains the major and minor version numbers of the system on which a specified process expects to run\.
 
 #### Parameters
 
 
   -  *processId* : int
 
-    identifier specifying the process of interest.
+    identifier specifying the process of interest\.
 
-## [win32process](#win32process).GetProcessWindowStation
+## [win32process](#win32process)\.GetProcessWindowStation
 
- __GetProcessWindowStation(__ )
+ **GetProcessWindowStation\(** \)
 Returns a handle to the window station for the calling process
 
-## [win32process](#win32process).GetProcessWorkingSetSize
+## [win32process](#win32process)\.GetProcessWorkingSetSize
 
-int,int = __GetProcessWorkingSetSize( *hProcess* __ )
+int,int \= **GetProcessWorkingSetSize\( *hProcess* ** \)
 Returns min and max working set sizes for a process by handle
 
 #### Parameters
@@ -677,14 +677,14 @@ Returns min and max working set sizes for a process by handle
 
     Process handle as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess)
 
-## [win32process](#win32process).GetStartupInfo
+## [win32process](#win32process)\.GetStartupInfo
 
-[PySTARTUPINFO](#pystartupinfo)= __GetStartupInfo(__ )
-Retrieves the contents of the STARTUPINFO structure that was specified when the calling process was created.
+[PySTARTUPINFO](#pystartupinfo)\= **GetStartupInfo\(** \)
+Retrieves the contents of the STARTUPINFO structure that was specified when the calling process was created\.
 
-## [win32process](#win32process).GetThreadIOPendingFlag
+## [win32process](#win32process)\.GetThreadIOPendingFlag
 
-bool = __GetThreadIOPendingFlag( *Thread* __ )
+bool \= **GetThreadIOPendingFlag\( *Thread* ** \)
 Determines if thread has any outstanding IO requests
 
 #### Parameters
@@ -694,9 +694,9 @@ Determines if thread has any outstanding IO requests
 
     Handle to a thread
 
-## [win32process](#win32process).GetThreadPriority
+## [win32process](#win32process)\.GetThreadPriority
 
-int = __GetThreadPriority( *handle* __ )
+int \= **GetThreadPriority\( *handle* ** \)
 
 
 #### Parameters
@@ -706,9 +706,9 @@ int = __GetThreadPriority( *handle* __ )
 
     handle to the thread
 
-## [win32process](#win32process).GetThreadPriorityBoost
+## [win32process](#win32process)\.GetThreadPriorityBoost
 
-bool = __GetThreadPriorityBoost( *Thread* __ )
+bool \= **GetThreadPriorityBoost\( *Thread* ** \)
 Determines if dynamic priority adjustment is enabled for a thread
 
 #### Parameters
@@ -718,9 +718,9 @@ Determines if dynamic priority adjustment is enabled for a thread
 
     Handle to a thread
 
-## [win32process](#win32process).GetThreadTimes
+## [win32process](#win32process)\.GetThreadTimes
 
-dict = __GetThreadTimes( *Thread* __ )
+dict \= **GetThreadTimes\( *Thread* ** \)
 Returns a thread's time statistics
 
 #### Parameters
@@ -730,10 +730,10 @@ Returns a thread's time statistics
 
     Handle to a thread
 
-## [win32process](#win32process).GetWindowThreadProcessId
+## [win32process](#win32process)\.GetWindowThreadProcessId
 
-int, int = __GetWindowThreadProcessId( *hwnd* __ )
-Retrieves the identifier of the thread and process that created the specified window.
+int, int \= **GetWindowThreadProcessId\( *hwnd* ** \)
+Retrieves the identifier of the thread and process that created the specified window\.
 
 #### Parameters
 
@@ -743,71 +743,71 @@ Retrieves the identifier of the thread and process that created the specified wi
     handle to the window
 
 #### Return Value
-The result is a tuple of (threadId, processId)
+The result is a tuple of \(threadId, processId\)
 
-## HIGH_PRIORITY_CLASS
- __const win32process.HIGH_PRIORITY_CLASS;__ 
-Indicates a process that performs time-critical tasks that must be executed immediately for it to run correctly. The threads of a high-priority class process preempt the threads of normal-priority or idle-priority class processes. An example is the Task List, which must respond quickly when called by the user, regardless of the load on the system. Use extreme care when using the high-priority class, because a high-priority class CPU-bound application can use nearly all available cycles.
+## HIGH\_PRIORITY\_CLASS
+ **const win32process\.HIGH\_PRIORITY\_CLASS;** 
+Indicates a process that performs time-critical tasks that must be executed immediately for it to run correctly\. The threads of a high-priority class process preempt the threads of normal-priority or idle-priority class processes\. An example is the Task List, which must respond quickly when called by the user, regardless of the load on the system\. Use extreme care when using the high-priority class, because a high-priority class CPU-bound application can use nearly all available cycles\.
 
-## IDLE_PRIORITY_CLASS
- __const win32process.IDLE_PRIORITY_CLASS;__ 
-Indicates a process whose threads run only when the system is idle and are preempted by the threads of any process running in a higher priority class. An example is a screen saver. The idle priority class is inherited by child processes.
+## IDLE\_PRIORITY\_CLASS
+ **const win32process\.IDLE\_PRIORITY\_CLASS;** 
+Indicates a process whose threads run only when the system is idle and are preempted by the threads of any process running in a higher priority class\. An example is a screen saver\. The idle priority class is inherited by child processes\.
 
-## [win32process](#win32process).IsWow64Process
+## [win32process](#win32process)\.IsWow64Process
 
-bool = __IsWow64Process( *Process* __ )
-Determines whether the specified process is running under WOW64.
+bool \= **IsWow64Process\( *Process* ** \)
+Determines whether the specified process is running under WOW64\.
 
 #### Parameters
 
 
-  -  *Process=None* :[PyHANDLE](#pyhandle)
+  -  *Process\=None* :[PyHANDLE](#pyhandle)
 
     Handle to a process as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess),[win32api::GetCurrentProcess](win32api.md#win32apigetcurrentprocess), etc, or 
 
-will use the current process handle if None (the default) is passed.
+will use the current process handle if None \(the default\) is passed\.
 
 #### Return Value
 If this function is not provided by the operating system, the 
 
-return value is False (ie, a NotImplemented exception will never be thrown). 
+return value is False \(ie, a NotImplemented exception will never be thrown\)\. 
 
-However, if the function exists but fails, a win32process.error exception 
+However, if the function exists but fails, a win32process\.error exception 
 
-is thrown as normal.
+is thrown as normal\.
 
-## LIST_MODULES_32BIT
- __const win32process.LIST_MODULES_32BIT;__ 
-
-
-## LIST_MODULES_64BIT
- __const win32process.LIST_MODULES_64BIT;__ 
+## LIST\_MODULES\_32BIT
+ **const win32process\.LIST\_MODULES\_32BIT;** 
 
 
-## LIST_MODULES_ALL
- __const win32process.LIST_MODULES_ALL;__ 
+## LIST\_MODULES\_64BIT
+ **const win32process\.LIST\_MODULES\_64BIT;** 
 
 
-## LIST_MODULES_DEFAULT
- __const win32process.LIST_MODULES_DEFAULT;__ 
+## LIST\_MODULES\_ALL
+ **const win32process\.LIST\_MODULES\_ALL;** 
 
 
-## MAXIMUM_PROCESSORS
- __const win32process.MAXIMUM_PROCESSORS;__ 
+## LIST\_MODULES\_DEFAULT
+ **const win32process\.LIST\_MODULES\_DEFAULT;** 
 
 
-## NORMAL_PRIORITY_CLASS
- __const win32process.NORMAL_PRIORITY_CLASS;__ 
-Indicates a normal process with no special scheduling needs.
+## MAXIMUM\_PROCESSORS
+ **const win32process\.MAXIMUM\_PROCESSORS;** 
 
-## REALTIME_PRIORITY_CLASS
- __const win32process.REALTIME_PRIORITY_CLASS;__ 
-Indicates a process that has the highest possible priority. The threads of a real-time priority class process preempt the threads of all other processes, including operating system processes performing important tasks. For example, a real-time process that executes for more than a very brief interval can cause disk caches not to flush or cause the mouse to be unresponsive.
 
-## [win32process](#win32process).ResumeThread
+## NORMAL\_PRIORITY\_CLASS
+ **const win32process\.NORMAL\_PRIORITY\_CLASS;** 
+Indicates a normal process with no special scheduling needs\.
 
-int = __ResumeThread( *handle* __ )
-Resumes the specified thread. When the suspend count is decremented to zero, the execution of the thread is resumed.
+## REALTIME\_PRIORITY\_CLASS
+ **const win32process\.REALTIME\_PRIORITY\_CLASS;** 
+Indicates a process that has the highest possible priority\. The threads of a real-time priority class process preempt the threads of all other processes, including operating system processes performing important tasks\. For example, a real-time process that executes for more than a very brief interval can cause disk caches not to flush or cause the mouse to be unresponsive\.
+
+## [win32process](#win32process)\.ResumeThread
+
+int \= **ResumeThread\( *handle* ** \)
+Resumes the specified thread\. When the suspend count is decremented to zero, the execution of the thread is resumed\.
 
 #### Parameters
 
@@ -819,56 +819,56 @@ Resumes the specified thread. When the suspend count is decremented to zero, the
 #### Return Value
 The return value is the thread's previous suspend count
 
-## STARTF_FORCEOFFFEEDBACK
- __const win32process.STARTF_FORCEOFFFEEDBACK;__ 
-Indicates that the feedback cursor is forced off while the process is starting. The normal cursor is displayed.
+## STARTF\_FORCEOFFFEEDBACK
+ **const win32process\.STARTF\_FORCEOFFFEEDBACK;** 
+Indicates that the feedback cursor is forced off while the process is starting\. The normal cursor is displayed\.
 
-## STARTF_FORCEONFEEDBACK
- __const win32process.STARTF_FORCEONFEEDBACK;__ 
-Indicates that the cursor is in feedback mode for two seconds after CreateProcess is called. If during those two seconds the process makes the first GUI call, the system gives five more seconds to the process. If during those five seconds the process shows a window, the system gives five more seconds to the process to finish drawing the window. 
+## STARTF\_FORCEONFEEDBACK
+ **const win32process\.STARTF\_FORCEONFEEDBACK;** 
+Indicates that the cursor is in feedback mode for two seconds after CreateProcess is called\. If during those two seconds the process makes the first GUI call, the system gives five more seconds to the process\. If during those five seconds the process shows a window, the system gives five more seconds to the process to finish drawing the window\. 
 
-The system turns the feedback cursor off after the first call to GetMessage, regardless of whether the process is drawing.
+The system turns the feedback cursor off after the first call to GetMessage, regardless of whether the process is drawing\.
 
-## STARTF_RUNFULLSCREEN
- __const win32process.STARTF_RUNFULLSCREEN;__ 
-Indicates that the process should be run in full-screen mode, rather than in windowed mode. 
+## STARTF\_RUNFULLSCREEN
+ **const win32process\.STARTF\_RUNFULLSCREEN;** 
+Indicates that the process should be run in full-screen mode, rather than in windowed mode\. 
 
-This flag is only valid for console applications running on an x86 computer.
+This flag is only valid for console applications running on an x86 computer\.
 
-## STARTF_USECOUNTCHARS
- __const win32process.STARTF_USECOUNTCHARS;__ 
-If this value is not specified, the dwXCountChars and dwYCountChars members are ignored.
+## STARTF\_USECOUNTCHARS
+ **const win32process\.STARTF\_USECOUNTCHARS;** 
+If this value is not specified, the dwXCountChars and dwYCountChars members are ignored\.
 
-## STARTF_USEFILLATTRIBUTE
- __const win32process.STARTF_USEFILLATTRIBUTE;__ 
-If this value is not specified, the dwFillAttribute member is ignored.
+## STARTF\_USEFILLATTRIBUTE
+ **const win32process\.STARTF\_USEFILLATTRIBUTE;** 
+If this value is not specified, the dwFillAttribute member is ignored\.
 
-## STARTF_USEPOSITION
- __const win32process.STARTF_USEPOSITION;__ 
-If this value is not specified, the dwX and dwY members are ignored.
+## STARTF\_USEPOSITION
+ **const win32process\.STARTF\_USEPOSITION;** 
+If this value is not specified, the dwX and dwY members are ignored\.
 
-## STARTF_USESHOWWINDOW
- __const win32process.STARTF_USESHOWWINDOW;__ 
-If this value is not specified, the wShowWindow member is ignored.
+## STARTF\_USESHOWWINDOW
+ **const win32process\.STARTF\_USESHOWWINDOW;** 
+If this value is not specified, the wShowWindow member is ignored\.
 
-## STARTF_USESIZE
- __const win32process.STARTF_USESIZE;__ 
-If this value is not specified, the dwXSize and dwYSize members are ignored.
+## STARTF\_USESIZE
+ **const win32process\.STARTF\_USESIZE;** 
+If this value is not specified, the dwXSize and dwYSize members are ignored\.
 
-## STARTF_USESTDHANDLES
- __const win32process.STARTF_USESTDHANDLES;__ 
-Sets the standard input, standard output, and standard error handles for the process to the handles specified in the hStdInput, hStdOutput, and hStdError members of the STARTUPINFO structure. The CreateProcess function's fInheritHandles parameter must be set to TRUE for this to work properly. 
+## STARTF\_USESTDHANDLES
+ **const win32process\.STARTF\_USESTDHANDLES;** 
+Sets the standard input, standard output, and standard error handles for the process to the handles specified in the hStdInput, hStdOutput, and hStdError members of the STARTUPINFO structure\. The CreateProcess function's fInheritHandles parameter must be set to TRUE for this to work properly\. 
 
-If this value is not specified, the hStdInput, hStdOutput, and hStdError members of the STARTUPINFO structure are ignored.
+If this value is not specified, the hStdInput, hStdOutput, and hStdError members of the STARTUPINFO structure are ignored\.
 
-## [win32process](#win32process).STARTUPINFO
+## [win32process](#win32process)\.STARTUPINFO
 
-[PySTARTUPINFO](#pystartupinfo)= __STARTUPINFO(__ )
-Creates a new STARTUPINFO object.
+[PySTARTUPINFO](#pystartupinfo)\= **STARTUPINFO\(** \)
+Creates a new STARTUPINFO object\.
 
-## [win32process](#win32process).SetPriorityClass
+## [win32process](#win32process)\.SetPriorityClass
 
- __SetPriorityClass( *handle*  *, dwPriorityClass* __ )
+ **SetPriorityClass\( *handle*  *, dwPriorityClass* ** \)
 
 
 #### Parameters
@@ -882,10 +882,10 @@ Creates a new STARTUPINFO object.
 
     priority class value
 
-## [win32process](#win32process).SetProcessAffinityMask
+## [win32process](#win32process)\.SetProcessAffinityMask
 
- __SetProcessAffinityMask( *hProcess*  *, mask* __ )
-Sets a processor affinity mask for a specified process.
+ **SetProcessAffinityMask\( *hProcess*  *, mask* ** \)
+Sets a processor affinity mask for a specified process\.
 
 #### Parameters
 
@@ -899,11 +899,11 @@ Sets a processor affinity mask for a specified process.
     a processor affinity mask
 
 #### Comments
-This function does not exist on all platforms.
+This function does not exist on all platforms\.
 
-## [win32process](#win32process).SetProcessPriorityBoost
+## [win32process](#win32process)\.SetProcessPriorityBoost
 
- __SetProcessPriorityBoost( *Process*  *, DisablePriorityBoost* __ )
+ **SetProcessPriorityBoost\( *Process*  *, DisablePriorityBoost* ** \)
 Enables or disables dynamic priority adjustment for a process
 
 #### Parameters
@@ -917,9 +917,9 @@ Enables or disables dynamic priority adjustment for a process
 
     True to disable or False to enable
 
-## [win32process](#win32process).SetProcessShutdownParameters
+## [win32process](#win32process)\.SetProcessShutdownParameters
 
- __SetProcessShutdownParameters( *Level*  *, Flags* __ )
+ **SetProcessShutdownParameters\( *Level*  *, Flags* ** \)
 Sets shutdown priority and flags for current process
 
 #### Parameters
@@ -931,14 +931,14 @@ Sets shutdown priority and flags for current process
 
   -  *Flags* : int
 
-    Currently only SHUTDOWN_NORETRY valid
+    Currently only SHUTDOWN\_NORETRY valid
 
 #### Comments
 Ranges are 000-0FF Reserved by windows, 100-1FF Last, 200-2FF Middle, 300-3FF First, 400-4FF Reserved by windows
 
-## [win32process](#win32process).SetProcessWorkingSetSize
+## [win32process](#win32process)\.SetProcessWorkingSetSize
 
- __SetProcessWorkingSetSize( *hProcess*  *, MinimumWorkingSetSize*  *, MaximumWorkingSetSize* __ )
+ **SetProcessWorkingSetSize\( *hProcess*  *, MinimumWorkingSetSize*  *, MaximumWorkingSetSize* ** \)
 Sets minimum and maximum working set sizes for a process
 
 #### Parameters
@@ -959,10 +959,10 @@ Sets minimum and maximum working set sizes for a process
 #### Comments
 Set both min and max to -1 to have process swapped out completely
 
-## [win32process](#win32process).SetThreadAffinityMask
+## [win32process](#win32process)\.SetThreadAffinityMask
 
-int = __SetThreadAffinityMask( *hThread*  *, ThreadAffinityMask* __ )
-Sets a processor affinity mask for a specified thread.
+int \= **SetThreadAffinityMask\( *hThread*  *, ThreadAffinityMask* ** \)
+Sets a processor affinity mask for a specified thread\.
 
 #### Parameters
 
@@ -975,10 +975,10 @@ Sets a processor affinity mask for a specified thread.
 
     a processor affinity mask
 
-## [win32process](#win32process).SetThreadIdealProcessor
+## [win32process](#win32process)\.SetThreadIdealProcessor
 
-int = __SetThreadIdealProcessor( *handle*  *, dwIdealProcessor* __ )
-Used to specify a preferred processor for a thread. The system schedules threads on their preferred processors whenever possible.
+int \= **SetThreadIdealProcessor\( *handle*  *, dwIdealProcessor* ** \)
+Used to specify a preferred processor for a thread\. The system schedules threads on their preferred processors whenever possible\.
 
 #### Parameters
 
@@ -991,9 +991,9 @@ Used to specify a preferred processor for a thread. The system schedules threads
 
     ideal processor number
 
-## [win32process](#win32process).SetThreadPriority
+## [win32process](#win32process)\.SetThreadPriority
 
- __SetThreadPriority( *handle*  *, nPriority* __ )
+ **SetThreadPriority\( *handle*  *, nPriority* ** \)
 
 
 #### Parameters
@@ -1007,9 +1007,9 @@ Used to specify a preferred processor for a thread. The system schedules threads
 
     thread priority level
 
-## [win32process](#win32process).SetThreadPriorityBoost
+## [win32process](#win32process)\.SetThreadPriorityBoost
 
- __SetThreadPriorityBoost( *Thread*  *, DisablePriorityBoost* __ )
+ **SetThreadPriorityBoost\( *Thread*  *, DisablePriorityBoost* ** \)
 Enables or disables dynamic priority adjustment for a thread
 
 #### Parameters
@@ -1023,10 +1023,10 @@ Enables or disables dynamic priority adjustment for a thread
 
     True to disable or False to enable
 
-## [win32process](#win32process).SuspendThread
+## [win32process](#win32process)\.SuspendThread
 
-int = __SuspendThread( *handle* __ )
-Suspends the specified thread.
+int \= **SuspendThread\( *handle* ** \)
+Suspends the specified thread\.
 
 #### Parameters
 
@@ -1038,54 +1038,54 @@ Suspends the specified thread.
 #### Return Value
 The return value is the thread's previous suspend count
 
-## THREAD_MODE_BACKGROUND_BEGIN
- __const win32process.THREAD_MODE_BACKGROUND_BEGIN;__ 
+## THREAD\_MODE\_BACKGROUND\_BEGIN
+ **const win32process\.THREAD\_MODE\_BACKGROUND\_BEGIN;** 
 
 
-## THREAD_MODE_BACKGROUND_BEGIN
- __const win32process.THREAD_MODE_BACKGROUND_BEGIN;__ 
+## THREAD\_MODE\_BACKGROUND\_BEGIN
+ **const win32process\.THREAD\_MODE\_BACKGROUND\_BEGIN;** 
 
 
-## THREAD_MODE_BACKGROUND_END
- __const win32process.THREAD_MODE_BACKGROUND_END;__ 
+## THREAD\_MODE\_BACKGROUND\_END
+ **const win32process\.THREAD\_MODE\_BACKGROUND\_END;** 
 
 
-## THREAD_MODE_BACKGROUND_END
- __const win32process.THREAD_MODE_BACKGROUND_END;__ 
+## THREAD\_MODE\_BACKGROUND\_END
+ **const win32process\.THREAD\_MODE\_BACKGROUND\_END;** 
 
 
-## THREAD_PRIORITY_ABOVE_NORMAL
- __const win32process.THREAD_PRIORITY_ABOVE_NORMAL;__ 
-Indicates 1 point above normal priority for the priority class.
+## THREAD\_PRIORITY\_ABOVE\_NORMAL
+ **const win32process\.THREAD\_PRIORITY\_ABOVE\_NORMAL;** 
+Indicates 1 point above normal priority for the priority class\.
 
-## THREAD_PRIORITY_BELOW_NORMAL
- __const win32process.THREAD_PRIORITY_BELOW_NORMAL;__ 
-Indicates 1 point below normal priority for the priority class.
+## THREAD\_PRIORITY\_BELOW\_NORMAL
+ **const win32process\.THREAD\_PRIORITY\_BELOW\_NORMAL;** 
+Indicates 1 point below normal priority for the priority class\.
 
-## THREAD_PRIORITY_HIGHEST
- __const win32process.THREAD_PRIORITY_HIGHEST;__ 
-Indicates 2 points above normal priority for the priority class.
+## THREAD\_PRIORITY\_HIGHEST
+ **const win32process\.THREAD\_PRIORITY\_HIGHEST;** 
+Indicates 2 points above normal priority for the priority class\.
 
-## THREAD_PRIORITY_IDLE
- __const win32process.THREAD_PRIORITY_IDLE;__ 
-Indicates a base priority level of 1 for IDLE_PRIORITY_CLASS, NORMAL_PRIORITY_CLASS, or HIGH_PRIORITY_CLASS processes, and a base priority level of 16 for REALTIME_PRIORITY_CLASS processes.
+## THREAD\_PRIORITY\_IDLE
+ **const win32process\.THREAD\_PRIORITY\_IDLE;** 
+Indicates a base priority level of 1 for IDLE\_PRIORITY\_CLASS, NORMAL\_PRIORITY\_CLASS, or HIGH\_PRIORITY\_CLASS processes, and a base priority level of 16 for REALTIME\_PRIORITY\_CLASS processes\.
 
-## THREAD_PRIORITY_LOWEST
- __const win32process.THREAD_PRIORITY_LOWEST;__ 
-Indicates 2 points below normal priority for the priority class.
+## THREAD\_PRIORITY\_LOWEST
+ **const win32process\.THREAD\_PRIORITY\_LOWEST;** 
+Indicates 2 points below normal priority for the priority class\.
 
-## THREAD_PRIORITY_NORMAL
- __const win32process.THREAD_PRIORITY_NORMAL;__ 
-Indicates normal priority for the priority class.
+## THREAD\_PRIORITY\_NORMAL
+ **const win32process\.THREAD\_PRIORITY\_NORMAL;** 
+Indicates normal priority for the priority class\.
 
-## THREAD_PRIORITY_TIME_CRITICAL
- __const win32process.THREAD_PRIORITY_TIME_CRITICAL;__ 
-Indicates a base priority level of 15 for IDLE_PRIORITY_CLASS, NORMAL_PRIORITY_CLASS, or HIGH_PRIORITY_CLASS processes, and a base priority level of 31 for REALTIME_PRIORITY_CLASS processes.
+## THREAD\_PRIORITY\_TIME\_CRITICAL
+ **const win32process\.THREAD\_PRIORITY\_TIME\_CRITICAL;** 
+Indicates a base priority level of 15 for IDLE\_PRIORITY\_CLASS, NORMAL\_PRIORITY\_CLASS, or HIGH\_PRIORITY\_CLASS processes, and a base priority level of 31 for REALTIME\_PRIORITY\_CLASS processes\.
 
-## [win32process](#win32process).TerminateProcess
+## [win32process](#win32process)\.TerminateProcess
 
- __TerminateProcess( *handle*  *, exitCode* __ )
-Terminates the specified process and all of its threads.
+ **TerminateProcess\( *handle*  *, exitCode* ** \)
+Terminates the specified process and all of its threads\.
 
 #### Parameters
 
@@ -1096,35 +1096,35 @@ Terminates the specified process and all of its threads.
 
   -  *exitCode* : int
 
-    The exit code for the process.
+    The exit code for the process\.
 
-## [win32process](#win32process).beginthreadex
+## [win32process](#win32process)\.beginthreadex
 
-[PyHANDLE](#pyhandle), int = __beginthreadex( *sa*  *, stackSize*  *, entryPoint*  *, args*  *, flags* __ )
+[PyHANDLE](#pyhandle), int \= **beginthreadex\( *sa*  *, stackSize*  *, entryPoint*  *, args*  *, flags* ** \)
 Creates a new thread
 
 #### Parameters
 
 
-  -  *sa* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *sa* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes, or None
 
   -  *stackSize* : int
 
-    Stack size for the new thread, or zero for the default size.
+    Stack size for the new thread, or zero for the default size\.
 
   -  *entryPoint* : function
 
-    The thread function.
+    The thread function\.
 
   -  *args* : tuple
 
-    Args passed to the function.
+    Args passed to the function\.
 
   -  *flags* : int
 
-    Can be CREATE_SUSPENDED so thread doesn't run immediately
+    Can be CREATE\_SUSPENDED so thread doesn't run immediately
 
 #### Return Value
-The result is a tuple of the thread handle and thread ID.
+The result is a tuple of the thread handle and thread ID\.

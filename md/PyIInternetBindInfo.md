@@ -15,12 +15,12 @@ Description of the interface
 
     Description of GetBindString&nbsp;
 
-## [PyIInternetBindInfo](#pyiinternetbindinfo).GetBindInfo
+## [PyIInternetBindInfo](#pyiinternetbindinfo)\.GetBindInfo
 
- __GetBindInfo(__ )
-Description of GetBindInfo.
+ **GetBindInfo\(** \)
+Description of GetBindInfo\.
 
-## [PyIInternetBindInfo](#pyiinternetbindinfo).GetBindString
+## [PyIInternetBindInfo](#pyiinternetbindinfo)\.GetBindString
 
- __GetBindString(__ )
-Description of GetBindString.
+ **GetBindString\(** \)
+Description of GetBindString\.

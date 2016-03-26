@@ -25,17 +25,17 @@ An interface to the win32 security API's
 
   - [DsGetDcName](win32security.md#win32securitydsgetdcname)
 
-    Returns the name of a domain controller (DC) in a specified domain. 
+    Returns the name of a domain controller \(DC\) in a specified domain\. 
 
-You can supply DC selection criteria to this function to indicate preference for a DC with particular characteristics.&nbsp;
+You can supply DC selection criteria to this function to indicate preference for a DC with particular characteristics\.&nbsp;
 
   - [DsCrackNames](win32security.md#win32securitydscracknames)
 
-    Converts an array of directory service object names from one format to another.&nbsp;
+    Converts an array of directory service object names from one format to another\.&nbsp;
 
   - [DsListInfoForServer](win32security.md#win32securitydslistinfoforserver)
 
-    Lists miscellaneous information for a server.&nbsp;
+    Lists miscellaneous information for a server\.&nbsp;
 
   - [DsListServersInSite](win32security.md#win32securitydslistserversinsite)
 
@@ -59,27 +59,27 @@ You can supply DC selection criteria to this function to indicate preference for
 
   - [ACL](win32security.md#win32securityacl)
 
-    Creates a new[PyACL](#pyacl)object.&nbsp;
+    Creates a new[PyACL](#pyacl)object\.&nbsp;
 
   - [SID](win32security.md#win32securitysid)
 
-    Creates a new[PySID](#pysid)object.&nbsp;
+    Creates a new[PySID](#pysid)object\.&nbsp;
 
-  - [SECURITY_ATTRIBUTES](win32security.md#win32securitysecurity_attributes)
+  - [SECURITY\_ATTRIBUTES](win32security.md#win32securitysecurity_attributes)
 
-    Creates a new[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)object.&nbsp;
+    Creates a new[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)object\.&nbsp;
 
-  - [SECURITY_DESCRIPTOR](win32security.md#win32securitysecurity_descriptor)
+  - [SECURITY\_DESCRIPTOR](win32security.md#win32securitysecurity_descriptor)
 
-    Creates a new[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)object.&nbsp;
+    Creates a new[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)object\.&nbsp;
 
   - [ImpersonateNamedPipeClient](win32security.md#win32securityimpersonatenamedpipeclient)
 
-    Impersonates a named-pipe client application.&nbsp;
+    Impersonates a named-pipe client application\.&nbsp;
 
   - [ImpersonateLoggedOnUser](win32security.md#win32securityimpersonateloggedonuser)
 
-    Impersonates a logged on user.&nbsp;
+    Impersonates a logged on user\.&nbsp;
 
   - [ImpersonateAnonymousToken](win32security.md#win32securityimpersonateanonymoustoken)
 
@@ -91,11 +91,11 @@ You can supply DC selection criteria to this function to indicate preference for
 
   - [RevertToSelf](win32security.md#win32securityreverttoself)
 
-    Terminates the impersonation of a client application.&nbsp;
+    Terminates the impersonation of a client application\.&nbsp;
 
   - [LogonUser](win32security.md#win32securitylogonuser)
 
-    Attempts to log a user on to the local computer, that is, to the computer from which LogonUser was called. You cannot use LogonUser to log on to a remote computer.&nbsp;
+    Attempts to log a user on to the local computer, that is, to the computer from which LogonUser was called\. You cannot use LogonUser to log on to a remote computer\.&nbsp;
 
   - [LogonUserEx](win32security.md#win32securitylogonuserex)
 
@@ -103,15 +103,15 @@ You can supply DC selection criteria to this function to indicate preference for
 
   - [LookupAccountName](win32security.md#win32securitylookupaccountname)
 
-    Accepts the name of a system and an account as input. It retrieves a security identifier (SID) for the account and the name of the domain on which the account was found.&nbsp;
+    Accepts the name of a system and an account as input\. It retrieves a security identifier \(SID\) for the account and the name of the domain on which the account was found\.&nbsp;
 
   - [LookupAccountSid](win32security.md#win32securitylookupaccountsid)
 
-    Accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.&nbsp;
+    Accepts a security identifier \(SID\) as input\. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found\.&nbsp;
 
   - [GetBinarySid](win32security.md#win32securitygetbinarysid)
 
-    Accepts a SID string (eg: S-1-5-32-544) and returns the SID as a PySID object.&nbsp;
+    Accepts a SID string \(eg: S-1-5-32-544\) and returns the SID as a PySID object\.&nbsp;
 
   - [SetSecurityInfo](win32security.md#win32securitysetsecurityinfo)
 
@@ -131,7 +131,7 @@ You can supply DC selection criteria to this function to indicate preference for
 
   - [OpenProcessToken](win32security.md#win32securityopenprocesstoken)
 
-    Opens the access token associated with a process.&nbsp;
+    Opens the access token associated with a process\.&nbsp;
 
   - [LookupPrivilegeValue](win32security.md#win32securitylookupprivilegevalue)
 
@@ -147,49 +147,49 @@ You can supply DC selection criteria to this function to indicate preference for
 
   - [AdjustTokenPrivileges](win32security.md#win32securityadjusttokenprivileges)
 
-    Enables or disables privileges for an access token.&nbsp;
+    Enables or disables privileges for an access token\.&nbsp;
 
   - [AdjustTokenGroups](win32security.md#win32securityadjusttokengroups)
 
-    Sets the groups associated to an access token.&nbsp;
+    Sets the groups associated to an access token\.&nbsp;
 
   - [GetTokenInformation](win32security.md#win32securitygettokeninformation)
 
-    Retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.&nbsp;
+    Retrieves a specified type of information about an access token\. The calling process must have appropriate access rights to obtain the information\.&nbsp;
 
   - [OpenThreadToken](win32security.md#win32securityopenthreadtoken)
 
-    Opens the access token associated with a thread.&nbsp;
+    Opens the access token associated with a thread\.&nbsp;
 
   - [SetThreadToken](win32security.md#win32securitysetthreadtoken)
 
-    Assigns an impersonation token to a thread. The function 
+    Assigns an impersonation token to a thread\. The function 
 
-can also cause a thread to stop using an impersonation token.&nbsp;
+can also cause a thread to stop using an impersonation token\.&nbsp;
 
   - [GetFileSecurity](win32security.md#win32securitygetfilesecurity)
 
-    Obtains specified information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+    Obtains specified information about the security of a file or directory\. The information obtained is constrained by the caller's access rights and privileges\.&nbsp;
 
   - [SetFileSecurity](win32security.md#win32securitysetfilesecurity)
 
-    Sets information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+    Sets information about the security of a file or directory\. The information obtained is constrained by the caller's access rights and privileges\.&nbsp;
 
   - [GetUserObjectSecurity](win32security.md#win32securitygetuserobjectsecurity)
 
-    Obtains specified information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+    Obtains specified information about the security of a user object\. The information obtained is constrained by the caller's access rights and privileges\.&nbsp;
 
   - [SetUserObjectSecurity](win32security.md#win32securitysetuserobjectsecurity)
 
-    Sets information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+    Sets information about the security of a user object\. The information obtained is constrained by the caller's access rights and privileges\.&nbsp;
 
   - [GetKernelObjectSecurity](win32security.md#win32securitygetkernelobjectsecurity)
 
-    Obtains specified information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+    Obtains specified information about the security of a kernel object\. The information obtained is constrained by the caller's access rights and privileges\.&nbsp;
 
   - [SetKernelObjectSecurity](win32security.md#win32securitysetkernelobjectsecurity)
 
-    Sets information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+    Sets information about the security of a kernel object\. The information obtained is constrained by the caller's access rights and privileges\.&nbsp;
 
   - [SetTokenInformation](win32security.md#win32securitysettokeninformation)
 
@@ -237,19 +237,19 @@ can also cause a thread to stop using an impersonation token.&nbsp;
 
   - [ConvertSecurityDescriptorToStringSecurityDescriptor](win32security.md#win32securityconvertsecuritydescriptortostringsecuritydescriptor)
 
-    Return string representation of a SECURITY_DESCRIPTOR&nbsp;
+    Return string representation of a SECURITY\_DESCRIPTOR&nbsp;
 
   - [ConvertStringSecurityDescriptorToSecurityDescriptor](win32security.md#win32securityconvertstringsecuritydescriptortosecuritydescriptor)
 
-    Turns string representation of a SECURITY_DESCRIPTOR into the real thing&nbsp;
+    Turns string representation of a SECURITY\_DESCRIPTOR into the real thing&nbsp;
 
   - [LsaStorePrivateData](win32security.md#win32securitylsastoreprivatedata)
 
-    Stores encrypted unicode data under specified Lsa registry key. Returns None on success&nbsp;
+    Stores encrypted unicode data under specified Lsa registry key\. Returns None on success&nbsp;
 
   - [LsaRetrievePrivateData](win32security.md#win32securitylsaretrieveprivatedata)
 
-    Retreives encrypted unicode data from Lsa registry key.&nbsp;
+    Retreives encrypted unicode data from Lsa registry key\.&nbsp;
 
   - [LsaRegisterPolicyChangeNotification](win32security.md#win32securitylsaregisterpolicychangenotification)
 
@@ -281,7 +281,7 @@ can also cause a thread to stop using an impersonation token.&nbsp;
 
   - [DuplicateTokenEx](win32security.md#win32securityduplicatetokenex)
 
-    Extended version of DuplicateToken.&nbsp;
+    Extended version of DuplicateToken\.&nbsp;
 
   - [CheckTokenMembership](win32security.md#win32securitychecktokenmembership)
 
@@ -337,7 +337,7 @@ can also cause a thread to stop using an impersonation token.&nbsp;
 
   - [TranslateName](win32security.md#win32securitytranslatename)
 
-    Converts a directory service object name from one format to another.&nbsp;
+    Converts a directory service object name from one format to another\.&nbsp;
 
   - [CreateWellKnownSid](win32security.md#win32securitycreatewellknownsid)
 
@@ -347,45 +347,45 @@ can also cause a thread to stop using an impersonation token.&nbsp;
 
     Translates generic access rights into specific rights&nbsp;
 
-## ACCESS_ALLOWED_ACE_TYPE
- __const win32security.ACCESS_ALLOWED_ACE_TYPE;__ 
-Access-allowed ACE that uses the ACCESS_ALLOWED_ACE structure.
+## ACCESS\_ALLOWED\_ACE\_TYPE
+ **const win32security\.ACCESS\_ALLOWED\_ACE\_TYPE;** 
+Access-allowed ACE that uses the ACCESS\_ALLOWED\_ACE structure\.
 
-## ACCESS_ALLOWED_OBJECT_ACE_TYPE
- __const win32security.ACCESS_ALLOWED_OBJECT_ACE_TYPE;__ 
-Windows 2000/XP: Object-specific access-allowed ACE that uses the ACCESS_ALLOWED_OBJECT_ACE structure.
+## ACCESS\_ALLOWED\_OBJECT\_ACE\_TYPE
+ **const win32security\.ACCESS\_ALLOWED\_OBJECT\_ACE\_TYPE;** 
+Windows 2000/XP: Object-specific access-allowed ACE that uses the ACCESS\_ALLOWED\_OBJECT\_ACE structure\.
 
-## ACCESS_DENIED_ACE_TYPE
- __const win32security.ACCESS_DENIED_ACE_TYPE;__ 
-Access-denied ACE that uses the ACCESS_DENIED_ACE structure.
+## ACCESS\_DENIED\_ACE\_TYPE
+ **const win32security\.ACCESS\_DENIED\_ACE\_TYPE;** 
+Access-denied ACE that uses the ACCESS\_DENIED\_ACE structure\.
 
-## ACCESS_DENIED_OBJECT_ACE_TYPE
- __const win32security.ACCESS_DENIED_OBJECT_ACE_TYPE;__ 
-Windows 2000/XP: Object-specific access-denied ACE that uses the ACCESS_DENIED_OBJECT_ACE structure.
+## ACCESS\_DENIED\_OBJECT\_ACE\_TYPE
+ **const win32security\.ACCESS\_DENIED\_OBJECT\_ACE\_TYPE;** 
+Windows 2000/XP: Object-specific access-denied ACE that uses the ACCESS\_DENIED\_OBJECT\_ACE structure\.
 
-## [win32security](#win32security).ACL
+## [win32security](#win32security)\.ACL
 
-PyACL = __ACL( *bufSize* __ )
-Creates a new[PyACL](#pyacl)object.
+PyACL \= **ACL\( *bufSize* ** \)
+Creates a new[PyACL](#pyacl)object\.
 
 #### Parameters
 
 
-  -  *bufSize=64* : int
+  -  *bufSize\=64* : int
 
-    The size of the buffer for the ACL.
+    The size of the buffer for the ACL\.
 
-## ACL_REVISION
- __const win32security.ACL_REVISION;__ 
-
-
-## ACL_REVISION_DS
- __const win32security.ACL_REVISION_DS;__ 
+## ACL\_REVISION
+ **const win32security\.ACL\_REVISION;** 
 
 
-## [win32security](#win32security).AcceptSecurityContext
+## ACL\_REVISION\_DS
+ **const win32security\.ACL\_REVISION\_DS;** 
 
-(int, long, int) = __AcceptSecurityContext( *Credential*  *, Context*  *, pInput*  *, ContextReq*  *, TargetDataRep*  *, NewContext*  *, pOutput* __ )
+
+## [win32security](#win32security)\.AcceptSecurityContext
+
+\(int, long, int\) \= **AcceptSecurityContext\( *Credential*  *, Context*  *, pInput*  *, ContextReq*  *, TargetDataRep*  *, NewContext*  *, pOutput* ** \)
 Builds security context between server and client
 
 #### Parameters
@@ -393,7 +393,7 @@ Builds security context between server and client
 
   -  *Credential* :[PyCredHandle](#pycredhandle)
 
-    Handle to server's credentials (see AcquireCredentialsHandle)
+    Handle to server's credentials \(see AcquireCredentialsHandle\)
 
   -  *Context* :[PyCtxtHandle](#pyctxthandle)
 
@@ -405,11 +405,11 @@ Builds security context between server and client
 
   -  *ContextReq* : int
 
-    Combination of ASC_REQ_* flags
+    Combination of ASC\_REQ\_\* flags
 
   -  *TargetDataRep* : int
 
-    One of SECURITY_NATIVE_DREP,SECURITY_NETWORK_DREP
+    One of SECURITY\_NATIVE\_DREP,SECURITY\_NETWORK\_DREP
 
   -  *NewContext* :[PyCtxtHandle](#pyctxthandle)
 
@@ -420,11 +420,11 @@ Builds security context between server and client
     Buffer that receives output data, to be passed back as pInput on subsequent calls
 
 #### Return Value
-Returns a tuple of (return code, context attributes, context expiration time)
+Returns a tuple of \(return code, context attributes, context expiration time\)
 
-## [win32security](#win32security).AcquireCredentialsHandle
+## [win32security](#win32security)\.AcquireCredentialsHandle
 
-([PyCredHandle](#pycredhandle),[PyTime](#pytime)) = __AcquireCredentialsHandle( *Principal*  *, Package*  *, CredentialUse*  *, LogonID*  *, AuthData* __ )
+\([PyCredHandle](#pycredhandle),[PyTime](#pytime)\) \= **AcquireCredentialsHandle\( *Principal*  *, Package*  *, CredentialUse*  *, LogonID*  *, AuthData* ** \)
 Creates a handle to credentials for use with SSPI
 
 #### Parameters
@@ -440,7 +440,7 @@ Creates a handle to credentials for use with SSPI
 
   -  *CredentialUse* : int
 
-    Intended use of requested credentials, SECPKG_CRED_INBOUND, SECPKG_CRED_OUTBOUND, or SECPKG_CRED_BOTH
+    Intended use of requested credentials, SECPKG\_CRED\_INBOUND, SECPKG\_CRED\_OUTBOUND, or SECPKG\_CRED\_BOTH
 
   -  *LogonID* : long
 
@@ -448,15 +448,15 @@ Creates a handle to credentials for use with SSPI
 
   -  *AuthData* : tuple
 
-    Sequence of 3 strings: (User, Domain, Password) - use none for existing credentials
+    Sequence of 3 strings: \(User, Domain, Password\) - use none for existing credentials
 
 #### Return Value
 Returns credential handle and credential's expiration time
 
-## [win32security](#win32security).AdjustTokenGroups
+## [win32security](#win32security)\.AdjustTokenGroups
 
-[PyTOKEN_GROUPS](PyTOKEN.md#pytokengroups)= __AdjustTokenGroups( *TokenHandle*  *, ResetToDefault*  *, NewState* __ )
-Sets the groups associated to an access token.
+[PyTOKEN\_GROUPS](PyTOKEN.md#pytokengroups)\= **AdjustTokenGroups\( *TokenHandle*  *, ResetToDefault*  *, NewState* ** \)
+Sets the groups associated to an access token\.
 
 #### Parameters
 
@@ -469,20 +469,20 @@ Sets the groups associated to an access token.
 
     Sets groups to default enabled/disabled states,
 
-  -  *NewState* :[PyTOKEN_GROUPS](PyTOKEN.md#pytokengroups)
+  -  *NewState* :[PyTOKEN\_GROUPS](PyTOKEN.md#pytokengroups)
 
     Groups and attributes to be set for token
 
 #### Comments
-Accepts keyword args.
+Accepts keyword args\.
 
 #### Return Value
 Returns previous state of groups modified
 
-## [win32security](#win32security).AdjustTokenPrivileges
+## [win32security](#win32security)\.AdjustTokenPrivileges
 
-[PyTOKEN_PRIVILEGES](PyTOKEN.md#pytokenprivileges)= __AdjustTokenPrivileges( *TokenHandle*  *, bDisableAllPrivileges*  *, NewState* __ )
-Enables or disables privileges for an access token.
+[PyTOKEN\_PRIVILEGES](PyTOKEN.md#pytokenprivileges)\= **AdjustTokenPrivileges\( *TokenHandle*  *, bDisableAllPrivileges*  *, NewState* ** \)
+Enables or disables privileges for an access token\.
 
 #### Parameters
 
@@ -495,66 +495,66 @@ Enables or disables privileges for an access token.
 
     Flag for disabling all privileges
 
-  -  *NewState* :[PyTOKEN_PRIVILEGES](PyTOKEN.md#pytokenprivileges)
+  -  *NewState* :[PyTOKEN\_PRIVILEGES](PyTOKEN.md#pytokenprivileges)
 
     The new state, can be None if bDisableAllPrivileges is True
 
 #### Comments
-Accepts keyword args.
+Accepts keyword args\.
 
 #### Return Value
-Returns modified privileges for later restoral.  Privileges deleted from the token using 
+Returns modified privileges for later restoral\.  Privileges deleted from the token using 
 
-SE_PRIVILEGE_REMOVED are not returned.
+SE\_PRIVILEGE\_REMOVED are not returned\.
 
-## [win32security](#win32security).AllocateLocallyUniqueId
+## [win32security](#win32security)\.AllocateLocallyUniqueId
 
- __AllocateLocallyUniqueId(__ )
+ **AllocateLocallyUniqueId\(** \)
 Creates a new LUID
 
 ## AuditCategoryAccountLogon
- __const win32security.AuditCategoryAccountLogon;__ 
+ **const win32security\.AuditCategoryAccountLogon;** 
 
 
 ## AuditCategoryAccountManagement
- __const win32security.AuditCategoryAccountManagement;__ 
+ **const win32security\.AuditCategoryAccountManagement;** 
 
 
 ## AuditCategoryDetailedTracking
- __const win32security.AuditCategoryDetailedTracking;__ 
+ **const win32security\.AuditCategoryDetailedTracking;** 
 
 
 ## AuditCategoryDirectoryServiceAccess
- __const win32security.AuditCategoryDirectoryServiceAccess;__ 
+ **const win32security\.AuditCategoryDirectoryServiceAccess;** 
 
 
 ## AuditCategoryLogon
- __const win32security.AuditCategoryLogon;__ 
+ **const win32security\.AuditCategoryLogon;** 
 
 
 ## AuditCategoryObjectAccess
- __const win32security.AuditCategoryObjectAccess;__ 
+ **const win32security\.AuditCategoryObjectAccess;** 
 
 
 ## AuditCategoryPolicyChange
- __const win32security.AuditCategoryPolicyChange;__ 
+ **const win32security\.AuditCategoryPolicyChange;** 
 
 
 ## AuditCategoryPrivilegeUse
- __const win32security.AuditCategoryPrivilegeUse;__ 
+ **const win32security\.AuditCategoryPrivilegeUse;** 
 
 
 ## AuditCategorySystem
- __const win32security.AuditCategorySystem;__ 
+ **const win32security\.AuditCategorySystem;** 
 
 
-## CONTAINER_INHERIT_ACE
- __const win32security.CONTAINER_INHERIT_ACE;__ 
+## CONTAINER\_INHERIT\_ACE
+ **const win32security\.CONTAINER\_INHERIT\_ACE;** 
 
 
-## [win32security](#win32security).CheckTokenMembership
+## [win32security](#win32security)\.CheckTokenMembership
 
-bool = __CheckTokenMembership( *TokenHandle*  *, SidToCheck* __ )
+bool \= **CheckTokenMembership\( *TokenHandle*  *, SidToCheck* ** \)
 Checks if a SID is enabled in a token
 
 #### Parameters
@@ -568,29 +568,29 @@ Checks if a SID is enabled in a token
 
     Sid to be checked for presence in token
 
-## [win32security](#win32security).ConvertSecurityDescriptorToStringSecurityDescriptor
+## [win32security](#win32security)\.ConvertSecurityDescriptorToStringSecurityDescriptor
 
-string = __ConvertSecurityDescriptorToStringSecurityDescriptor( *SecurityDescriptor*  *, RequestedStringSDRevision*  *, SecurityInformation* __ )
-Return string representation of a SECURITY_DESCRIPTOR
+string \= **ConvertSecurityDescriptorToStringSecurityDescriptor\( *SecurityDescriptor*  *, RequestedStringSDRevision*  *, SecurityInformation* ** \)
+Return string representation of a SECURITY\_DESCRIPTOR
 
 #### Parameters
 
 
-  -  *SecurityDescriptor* :[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
+  -  *SecurityDescriptor* :[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
 
-    PySECURITY_DESCRIPTOR object
+    PySECURITY\_DESCRIPTOR object
 
   -  *RequestedStringSDRevision* : int
 
-    Only SDDL_REVISION_1 currently valid
+    Only SDDL\_REVISION\_1 currently valid
 
   -  *SecurityInformation* : int
 
-    Combination of bit flags from SECURITY_INFORMATION enum
+    Combination of bit flags from SECURITY\_INFORMATION enum
 
-## [win32security](#win32security).ConvertSidToStringSid
+## [win32security](#win32security)\.ConvertSidToStringSid
 
-string = __ConvertSidToStringSid( *Sid* __ )
+string \= **ConvertSidToStringSid\( *Sid* ** \)
 Return string representation of a SID
 
 #### Parameters
@@ -600,25 +600,25 @@ Return string representation of a SID
 
     PySID object
 
-## [win32security](#win32security).ConvertStringSecurityDescriptorToSecurityDescriptor
+## [win32security](#win32security)\.ConvertStringSecurityDescriptorToSecurityDescriptor
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __ConvertStringSecurityDescriptorToSecurityDescriptor( *StringSecurityDescriptor*  *, StringSDRevision* __ )
-Turns string representation of a SECURITY_DESCRIPTOR into the real thing
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\= **ConvertStringSecurityDescriptorToSecurityDescriptor\( *StringSecurityDescriptor*  *, StringSDRevision* ** \)
+Turns string representation of a SECURITY\_DESCRIPTOR into the real thing
 
 #### Parameters
 
 
   -  *StringSecurityDescriptor* : string
 
-    String representation of a SECURITY_DESCRIPTOR
+    String representation of a SECURITY\_DESCRIPTOR
 
   -  *StringSDRevision* : int
 
-    Only SDDL_REVISION_1 currently valid
+    Only SDDL\_REVISION\_1 currently valid
 
-## [win32security](#win32security).ConvertStringSidToSid
+## [win32security](#win32security)\.ConvertStringSidToSid
 
-[PySID](#pysid)= __ConvertStringSidToSid( *StringSid* __ )
+[PySID](#pysid)\= **ConvertStringSidToSid\( *StringSid* ** \)
 Creates a SID from a string representation
 
 #### Parameters
@@ -628,9 +628,9 @@ Creates a SID from a string representation
 
     String representation of a SID
 
-## [win32security](#win32security).CreateRestrictedToken
+## [win32security](#win32security)\.CreateRestrictedToken
 
-[PyHANDLE](#pyhandle)= __CreateRestrictedToken( *ExistingTokenHandle*  *, Flags*  *, SidsToDisable*  *, PrivilegesToDelete*  *, SidsToRestrict* __ )
+[PyHANDLE](#pyhandle)\= **CreateRestrictedToken\( *ExistingTokenHandle*  *, Flags*  *, SidsToDisable*  *, PrivilegesToDelete*  *, SidsToRestrict* ** \)
 Creates a restricted copy of an access token with reduced privs - requires win2K or higher
 
 #### Parameters
@@ -638,27 +638,27 @@ Creates a restricted copy of an access token with reduced privs - requires win2K
 
   -  *ExistingTokenHandle* :[PyHANDLE](#pyhandle)
 
-    Handle to an access token (see[win32security::LogonUser](win32security.md#win32securitylogonuser),[win32security::OpenProcessToken](win32security.md#win32securityopenprocesstoken)
+    Handle to an access token \(see[win32security::LogonUser](win32security.md#win32securitylogonuser),[win32security::OpenProcessToken](win32security.md#win32securityopenprocesstoken)
 
   -  *Flags* : int
 
-    Valid values are zero or a combination of DISABLE_MAX_PRIVILEGE and SANDBOX_INERT
+    Valid values are zero or a combination of DISABLE\_MAX\_PRIVILEGE and SANDBOX\_INERT
 
-  -  *SidsToDisable* : ([PySID_AND_ATTRIBUTES](PySID.md#pysidand_attributes),...)
+  -  *SidsToDisable* : \([PySID\_AND\_ATTRIBUTES](PySID.md#pysidand_attributes),\.\.\.\)
 
-    Ssequence of[PySID_AND_ATTRIBUTES](PySID.md#pysidand_attributes)tuples, or None
+    Ssequence of[PySID\_AND\_ATTRIBUTES](PySID.md#pysidand_attributes)tuples, or None
 
-  -  *PrivilegesToDelete* : ([PyLUID_AND_ATTRIBUTES](PyLUID.md#pyluidand_attributes),...)
+  -  *PrivilegesToDelete* : \([PyLUID\_AND\_ATTRIBUTES](PyLUID.md#pyluidand_attributes),\.\.\.\)
 
-    Privilege LUIDS to remove from token (attributes are ignored), or None
+    Privilege LUIDS to remove from token \(attributes are ignored\), or None
 
-  -  *SidsToRestrict* : ([PySID_AND_ATTRIBUTES](PySID.md#pysidand_attributes),...)
+  -  *SidsToRestrict* : \([PySID\_AND\_ATTRIBUTES](PySID.md#pysidand_attributes),\.\.\.\)
 
-    Sequence of[PySID_AND_ATTRIBUTES](PySID.md#pysidand_attributes)tuples (attributes must be 0).  Can be None.
+    Sequence of[PySID\_AND\_ATTRIBUTES](PySID.md#pysidand_attributes)tuples \(attributes must be 0\)\.  Can be None\.
 
-## [win32security](#win32security).CreateWellKnownSid
+## [win32security](#win32security)\.CreateWellKnownSid
 
-[PySID](#pysid)= __CreateWellKnownSid( *WellKnownSidType*  *, DomainSid* __ )
+[PySID](#pysid)\= **CreateWellKnownSid\( *WellKnownSidType*  *, DomainSid* ** \)
 Returns one of the predefined well known sids
 
 #### Parameters
@@ -666,71 +666,71 @@ Returns one of the predefined well known sids
 
   -  *WellKnownSidType* : int
 
-    One of the Win*Sid constants
+    One of the Win\*Sid constants
 
-  -  *DomainSid=None* :[PySID](#pysid)
+  -  *DomainSid\=None* :[PySID](#pysid)
 
     Domain for the new SID, or None for local machine
 
-## [win32security](#win32security).CryptEnumProviders
+## [win32security](#win32security)\.CryptEnumProviders
 
-[([PyUnicode](#pyunicode),int),...] = __CryptEnumProviders(__ )
+\[\([PyUnicode](#pyunicode),int\),\.\.\.\] \= **CryptEnumProviders\(** \)
 List cryptography providers
 
 #### Return Value
 Returns a sequence of tuples containing provider name and type
 
-## DACL_SECURITY_INFORMATION
- __const win32security.DACL_SECURITY_INFORMATION;__ 
-Indicates the discretionary ACL of the object is being referenced.
+## DACL\_SECURITY\_INFORMATION
+ **const win32security\.DACL\_SECURITY\_INFORMATION;** 
+Indicates the discretionary ACL of the object is being referenced\.
 
-## DENY_ACCESS
- __const win32security.DENY_ACCESS;__ 
-
-
-## DISABLE_MAX_PRIVILEGE
- __const win32security.DISABLE_MAX_PRIVILEGE;__ 
+## DENY\_ACCESS
+ **const win32security\.DENY\_ACCESS;** 
 
 
-## DS_SPN_ADD_SPN_OP
- __const win32security.DS_SPN_ADD_SPN_OP;__ 
+## DISABLE\_MAX\_PRIVILEGE
+ **const win32security\.DISABLE\_MAX\_PRIVILEGE;** 
 
 
-## DS_SPN_DELETE_SPN_OP
- __const win32security.DS_SPN_DELETE_SPN_OP;__ 
+## DS\_SPN\_ADD\_SPN\_OP
+ **const win32security\.DS\_SPN\_ADD\_SPN\_OP;** 
 
 
-## DS_SPN_DNS_HOST
- __const win32security.DS_SPN_DNS_HOST;__ 
+## DS\_SPN\_DELETE\_SPN\_OP
+ **const win32security\.DS\_SPN\_DELETE\_SPN\_OP;** 
 
 
-## DS_SPN_DN_HOST
- __const win32security.DS_SPN_DN_HOST;__ 
+## DS\_SPN\_DNS\_HOST
+ **const win32security\.DS\_SPN\_DNS\_HOST;** 
 
 
-## DS_SPN_DOMAIN
- __const win32security.DS_SPN_DOMAIN;__ 
+## DS\_SPN\_DN\_HOST
+ **const win32security\.DS\_SPN\_DN\_HOST;** 
 
 
-## DS_SPN_NB_DOMAIN
- __const win32security.DS_SPN_NB_DOMAIN;__ 
+## DS\_SPN\_DOMAIN
+ **const win32security\.DS\_SPN\_DOMAIN;** 
 
 
-## DS_SPN_NB_HOST
- __const win32security.DS_SPN_NB_HOST;__ 
+## DS\_SPN\_NB\_DOMAIN
+ **const win32security\.DS\_SPN\_NB\_DOMAIN;** 
 
 
-## DS_SPN_REPLACE_SPN_OP
- __const win32security.DS_SPN_REPLACE_SPN_OP;__ 
+## DS\_SPN\_NB\_HOST
+ **const win32security\.DS\_SPN\_NB\_HOST;** 
 
 
-## DS_SPN_SERVICE
- __const win32security.DS_SPN_SERVICE;__ 
+## DS\_SPN\_REPLACE\_SPN\_OP
+ **const win32security\.DS\_SPN\_REPLACE\_SPN\_OP;** 
 
 
-## [win32security](#win32security).DsBind
+## DS\_SPN\_SERVICE
+ **const win32security\.DS\_SPN\_SERVICE;** 
 
-[PyDS_HANDLE](PyDS.md#pydshandle)= __DsBind( *DomainController*  *, DnsDomainName* __ )
+
+## [win32security](#win32security)\.DsBind
+
+[PyDS\_HANDLE](PyDS.md#pydshandle)\= **DsBind\( *DomainController*  *, DnsDomainName* ** \)
 Creates a connection to a directory service
 
 #### Parameters
@@ -744,15 +744,15 @@ Creates a connection to a directory service
 
     Dotted name of domain to bind to, can be None
 
-## [win32security](#win32security).DsCrackNames
+## [win32security](#win32security)\.DsCrackNames
 
-[ (status, domain, name) ] = __DsCrackNames( *hds*  *, flags*  *, formatOffered*  *, formatDesired*  *, names* __ )
-Converts an array of directory service object names from one format to another.
+\[ \(status, domain, name\) \] \= **DsCrackNames\( *hds*  *, flags*  *, formatOffered*  *, formatDesired*  *, names* ** \)
+Converts an array of directory service object names from one format to another\.
 
 #### Parameters
 
 
-  -  *hds* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hds* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
@@ -768,46 +768,46 @@ Converts an array of directory service object names from one format to another.
 
     
 
-  -  *names* : [name, ...]
+  -  *names* : \[name, \.\.\.\]
 
     
 
-## [win32security](#win32security).DsGetDcName
+## [win32security](#win32security)\.DsGetDcName
 
-dict = __DsGetDcName( *computerName*  *, domainName*  *, domainGUID*  *, siteName*  *, flags* __ )
-Returns the name of a domain controller (DC) in a specified domain. 
+dict \= **DsGetDcName\( *computerName*  *, domainName*  *, domainGUID*  *, siteName*  *, flags* ** \)
+Returns the name of a domain controller \(DC\) in a specified domain\. 
 
-You can supply DC selection criteria to this function to indicate preference for a DC with particular characteristics.
+You can supply DC selection criteria to this function to indicate preference for a DC with particular characteristics\.
 
 #### Parameters
 
 
-  -  *computerName=None* :[PyUnicode](#pyunicode)
+  -  *computerName\=None* :[PyUnicode](#pyunicode)
 
     
 
-  -  *domainName=None* :[PyUnicode](#pyunicode)
+  -  *domainName\=None* :[PyUnicode](#pyunicode)
 
     
 
-  -  *domainGUID=None* :[PyIID](#pyiid)
+  -  *domainGUID\=None* :[PyIID](#pyiid)
 
     
 
-  -  *siteName=None* :[PyUnicode](#pyunicode)
+  -  *siteName\=None* :[PyUnicode](#pyunicode)
 
     
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
     
 
 #### Comments
-This function supports keyword arguments.
+This function supports keyword arguments\.
 
-## [win32security](#win32security).DsGetSpn
+## [win32security](#win32security)\.DsGetSpn
 
-([PyUnicode](#pyunicode),...) = __DsGetSpn( *ServiceType*  *, ServiceClass*  *, ServiceName*  *, InstancePort*  *, InstanceNames*  *, InstancePorts* __ )
+\([PyUnicode](#pyunicode),\.\.\.\) \= **DsGetSpn\( *ServiceType*  *, ServiceClass*  *, ServiceName*  *, InstancePort*  *, InstanceNames*  *, InstancePorts* ** \)
 Compose one or more service principal names to be registered using[win32security::DsWriteAccountSpn](win32security.md#win32securitydswriteaccountspn)
 
 #### Parameters
@@ -815,7 +815,7 @@ Compose one or more service principal names to be registered using[win32security
 
   -  *ServiceType* : int
 
-    Type of Spn to create, one of the DS_SPN_* constants
+    Type of Spn to create, one of the DS\_SPN\_\* constants
 
   -  *ServiceClass* :[PyUnicode](#pyunicode)
 
@@ -823,41 +823,41 @@ Compose one or more service principal names to be registered using[win32security
 
   -  *ServiceName* :[PyUnicode](#pyunicode)
 
-    Name of service, can be None (not required for DS_SPN_*_HOST Spn's)
+    Name of service, can be None \(not required for DS\_SPN\_\*\_HOST Spn's\)
 
-  -  *InstancePort=0* : int
+  -  *InstancePort\=0* : int
 
     Port nbr for service instance, use 0 for no port
 
-  -  *InstanceNames=None* : ([PyUnicode](#pyunicode),...)
+  -  *InstanceNames\=None* : \([PyUnicode](#pyunicode),\.\.\.\)
 
     A sequence of service instance names, can be None - not required for for host Spn's
 
-  -  *InstancePorts=None* : (int,...)
+  -  *InstancePorts\=None* : \(int,\.\.\.\)
 
-    A sequence of extra instance ports.  If specified, must be same length as InstanceNames.
+    A sequence of extra instance ports\.  If specified, must be same length as InstanceNames\.
 
-## [win32security](#win32security).DsListDomainsInSite
+## [win32security](#win32security)\.DsListDomainsInSite
 
-[[PyDS_NAME_RESULT_ITEM](PyDS.md#pydsname_result_item), ...] = __DsListDomainsInSite( *hds* __ )
+\[[PyDS\_NAME\_RESULT\_ITEM](PyDS.md#pydsname_result_item), \.\.\.\] \= **DsListDomainsInSite\( *hds* ** \)
 
 
 #### Parameters
 
 
-  -  *hds* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hds* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
-## [win32security](#win32security).DsListInfoForServer
+## [win32security](#win32security)\.DsListInfoForServer
 
-[[PyDS_NAME_RESULT_ITEM](PyDS.md#pydsname_result_item), ...] = __DsListInfoForServer( *hds*  *, server* __ )
-Lists miscellaneous information for a server.
+\[[PyDS\_NAME\_RESULT\_ITEM](PyDS.md#pydsname_result_item), \.\.\.\] \= **DsListInfoForServer\( *hds*  *, server* ** \)
+Lists miscellaneous information for a server\.
 
 #### Parameters
 
 
-  -  *hds* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hds* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
@@ -865,27 +865,27 @@ Lists miscellaneous information for a server.
 
     
 
-## [win32security](#win32security).DsListRoles
+## [win32security](#win32security)\.DsListRoles
 
-[[PyDS_NAME_RESULT_ITEM](PyDS.md#pydsname_result_item), ...] = __DsListRoles( *hds* __ )
+\[[PyDS\_NAME\_RESULT\_ITEM](PyDS.md#pydsname_result_item), \.\.\.\] \= **DsListRoles\( *hds* ** \)
 
 
 #### Parameters
 
 
-  -  *hds* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hds* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
-## [win32security](#win32security).DsListServersInSite
+## [win32security](#win32security)\.DsListServersInSite
 
-[[PyDS_NAME_RESULT_ITEM](PyDS.md#pydsname_result_item), ...] = __DsListServersInSite( *hds*  *, site* __ )
+\[[PyDS\_NAME\_RESULT\_ITEM](PyDS.md#pydsname_result_item), \.\.\.\] \= **DsListServersInSite\( *hds*  *, site* ** \)
 
 
 #### Parameters
 
 
-  -  *hds* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hds* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
@@ -893,15 +893,15 @@ Lists miscellaneous information for a server.
 
     
 
-## [win32security](#win32security).DsListServersInSite
+## [win32security](#win32security)\.DsListServersInSite
 
-[[PyDS_NAME_RESULT_ITEM](PyDS.md#pydsname_result_item), ...] = __DsListServersInSite( *hds*  *, domain*  *, site* __ )
+\[[PyDS\_NAME\_RESULT\_ITEM](PyDS.md#pydsname_result_item), \.\.\.\] \= **DsListServersInSite\( *hds*  *, domain*  *, site* ** \)
 
 
 #### Parameters
 
 
-  -  *hds* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hds* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
@@ -913,57 +913,57 @@ Lists miscellaneous information for a server.
 
     
 
-## [win32security](#win32security).DsListServersInSite
+## [win32security](#win32security)\.DsListServersInSite
 
-[[PyDS_NAME_RESULT_ITEM](PyDS.md#pydsname_result_item), ...] = __DsListServersInSite( *hds* __ )
+\[[PyDS\_NAME\_RESULT\_ITEM](PyDS.md#pydsname_result_item), \.\.\.\] \= **DsListServersInSite\( *hds* ** \)
 
 
 #### Parameters
 
 
-  -  *hds* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hds* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
-## [win32security](#win32security).DsUnBind
+## [win32security](#win32security)\.DsUnBind
 
- __DsUnBind( *hDS* __ )
+ **DsUnBind\( *hDS* ** \)
 Closes a directory services handle created by[win32security::DsBind](win32security.md#win32securitydsbind)
 
 #### Parameters
 
 
-  -  *hDS* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hDS* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     A handle to a directory service as returned by[win32security::DsBind](win32security.md#win32securitydsbind)
 
-## [win32security](#win32security).DsWriteAccountSpn
+## [win32security](#win32security)\.DsWriteAccountSpn
 
- __DsWriteAccountSpn( *hDS*  *, Operation*  *, Account*  *, Spns* __ )
+ **DsWriteAccountSpn\( *hDS*  *, Operation*  *, Account*  *, Spns* ** \)
 Associates a set of service principal names with an account
 
 #### Parameters
 
 
-  -  *hDS* :[PyDS_HANDLE](PyDS.md#pydshandle)
+  -  *hDS* :[PyDS\_HANDLE](PyDS.md#pydshandle)
 
     Directory service handle as returned from[win32security::DsBind](win32security.md#win32securitydsbind)
 
   -  *Operation* : int
 
-    Constant from DS_SPN_WRITE_OP enum
+    Constant from DS\_SPN\_WRITE\_OP enum
 
   -  *Account* :[PyUnicode](#pyunicode)
 
     Distinguished name of account whose Spn's will be modified
 
-  -  *Spns* : ([PyUnicode](#pyunicode),...)
+  -  *Spns* : \([PyUnicode](#pyunicode),\.\.\.\)
 
     A sequence of target Spn's as returned by[win32security::DsGetSpn](win32security.md#win32securitydsgetspn)
 
-## [win32security](#win32security).DuplicateToken
+## [win32security](#win32security)\.DuplicateToken
 
-[PyHANDLE](#pyhandle)= __DuplicateToken( *ExistingTokenHandle*  *, ImpersonationLevel* __ )
+[PyHANDLE](#pyhandle)\= **DuplicateToken\( *ExistingTokenHandle*  *, ImpersonationLevel* ** \)
 Creates a copy of an access token with specified impersonation level
 
 #### Parameters
@@ -971,76 +971,76 @@ Creates a copy of an access token with specified impersonation level
 
   -  *ExistingTokenHandle* :[PyHANDLE](#pyhandle)
 
-    Handle to an access token (see[win32security::LogonUser](win32security.md#win32securitylogonuser),[win32security::OpenProcessToken](win32security.md#win32securityopenprocesstoken))
+    Handle to an access token \(see[win32security::LogonUser](win32security.md#win32securitylogonuser),[win32security::OpenProcessToken](win32security.md#win32securityopenprocesstoken)\)
 
   -  *ImpersonationLevel* : int
 
-    A value from SECURITY_IMPERSONATION_LEVEL enum
+    A value from SECURITY\_IMPERSONATION\_LEVEL enum
 
-## [win32security](#win32security).DuplicateTokenEx
+## [win32security](#win32security)\.DuplicateTokenEx
 
-[PyHANDLE](#pyhandle)= __DuplicateTokenEx( *ExistingToken*  *, ImpersonationLevel*  *, DesiredAccess*  *, TokenType*  *, TokenAttributes* __ )
-Extended version of DuplicateToken.
+[PyHANDLE](#pyhandle)\= **DuplicateTokenEx\( *ExistingToken*  *, ImpersonationLevel*  *, DesiredAccess*  *, TokenType*  *, TokenAttributes* ** \)
+Extended version of DuplicateToken\.
 
 #### Parameters
 
 
   -  *ExistingToken* :[PyHANDLE](#pyhandle)
 
-    Logon token opened with TOKEN_DUPLICATE access
+    Logon token opened with TOKEN\_DUPLICATE access
 
   -  *ImpersonationLevel* : int
 
-    One of win32security.Security* values
+    One of win32security\.Security\* values
 
   -  *DesiredAccess* : int
 
-    Type of access required for the handle, combination of win32security.TOKEN_* flags
+    Type of access required for the handle, combination of win32security\.TOKEN\_\* flags
 
   -  *TokenType* : int
 
     Type of token to be created, TokenPrimary or TokenImpersonation
 
-  -  *TokenAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *TokenAttributes\=None* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
-    Specifies security and inheritance for the new handle.  None results in default DACL and no inheritance,
+    Specifies security and inheritance for the new handle\.  None results in default DACL and no inheritance,
 
 #### Comments
 Accepts keyword arguments
 
-## [win32security](#win32security).EnumerateSecurityPackages
+## [win32security](#win32security)\.EnumerateSecurityPackages
 
-(dict,...) = __EnumerateSecurityPackages(__ )
+\(dict,\.\.\.\) \= **EnumerateSecurityPackages\(** \)
 List available security packages as a sequence of dictionaries representing SecPkgInfo structures
 
-## FAILED_ACCESS_ACE_FLAG
- __const win32security.FAILED_ACCESS_ACE_FLAG;__ 
+## FAILED\_ACCESS\_ACE\_FLAG
+ **const win32security\.FAILED\_ACCESS\_ACE\_FLAG;** 
 
 
-## GRANT_ACCESS
- __const win32security.GRANT_ACCESS;__ 
+## GRANT\_ACCESS
+ **const win32security\.GRANT\_ACCESS;** 
 
 
-## GROUP_SECURITY_INFORMATION
- __const win32security.GROUP_SECURITY_INFORMATION;__ 
-Indicates the primary group identifier of the object is being referenced.
+## GROUP\_SECURITY\_INFORMATION
+ **const win32security\.GROUP\_SECURITY\_INFORMATION;** 
+Indicates the primary group identifier of the object is being referenced\.
 
-## [win32security](#win32security).GetBinarySid
+## [win32security](#win32security)\.GetBinarySid
 
-[PySID](#pysid)= __GetBinarySid( *SID* __ )
-Accepts a SID string (eg: S-1-5-32-544) and returns the SID as a PySID object.
+[PySID](#pysid)\= **GetBinarySid\( *SID* ** \)
+Accepts a SID string \(eg: S-1-5-32-544\) and returns the SID as a PySID object\.
 
 #### Parameters
 
 
   -  *SID* : string
 
-    Textual representation of a SID. Textual SID example: S-1-5-32-544
+    Textual representation of a SID\. Textual SID example: S-1-5-32-544
 
-## [win32security](#win32security).GetFileSecurity
+## [win32security](#win32security)\.GetFileSecurity
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __GetFileSecurity( *filename*  *, info* __ )
-Obtains specified information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\= **GetFileSecurity\( *filename*  *, info* ** \)
+Obtains specified information about the security of a file or directory\. The information obtained is constrained by the caller's access rights and privileges\.
 
 #### Parameters
 
@@ -1049,19 +1049,19 @@ Obtains specified information about the security of a file or directory. The inf
 
     The name of the file
 
-  -  *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
+  -  *info\=OWNER\_SECURITY\_INFORMATION | GROUP\_SECURITY\_INFORMATION | DACL\_SECURITY\_INFORMATION | SACL\_SECURITY\_INFORMATION* : int
 
-    Flags that specify the information requested.
+    Flags that specify the information requested\.
 
 #### Comments
-This function reportedly will not return the INHERITED_ACE flag on some Windows XP SP1 systems 
+This function reportedly will not return the INHERITED\_ACE flag on some Windows XP SP1 systems 
 
-Use GetNamedSecurityInfo if you encounter this problem.
+Use GetNamedSecurityInfo if you encounter this problem\.
 
-## [win32security](#win32security).GetKernelObjectSecurity
+## [win32security](#win32security)\.GetKernelObjectSecurity
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __GetKernelObjectSecurity( *handle*  *, info* __ )
-Obtains specified information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\= **GetKernelObjectSecurity\( *handle*  *, info* ** \)
+Obtains specified information about the security of a kernel object\. The information obtained is constrained by the caller's access rights and privileges\.
 
 #### Parameters
 
@@ -1070,13 +1070,13 @@ Obtains specified information about the security of a kernel object. The informa
 
     The handle to the object
 
-  -  *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
+  -  *info\=OWNER\_SECURITY\_INFORMATION | GROUP\_SECURITY\_INFORMATION | DACL\_SECURITY\_INFORMATION | SACL\_SECURITY\_INFORMATION* : int
 
-    Flags that specify the information requested.
+    Flags that specify the information requested\.
 
-## [win32security](#win32security).GetNamedSecurityInfo
+## [win32security](#win32security)\.GetNamedSecurityInfo
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __GetNamedSecurityInfo( *ObjectName*  *, ObjectType*  *, SecurityInfo* __ )
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\= **GetNamedSecurityInfo\( *ObjectName*  *, ObjectType*  *, SecurityInfo* ** \)
 Retrieve security info for an object by name
 
 #### Parameters
@@ -1088,20 +1088,20 @@ Retrieve security info for an object by name
 
   -  *ObjectType* : int
 
-    Value from SE_OBJECT_TYPE enum
+    Value from SE\_OBJECT\_TYPE enum
 
   -  *SecurityInfo* : int
 
-    Combination of SECURITY_INFORMATION constants
+    Combination of SECURITY\_INFORMATION constants
 
 #### Comments
 Separate owner, group, dacl, and sacl are not returned as they can be easily retrieved from 
 
-the returned PySECURITY_DESCRIPTOR
+the returned PySECURITY\_DESCRIPTOR
 
-## [win32security](#win32security).GetSecurityInfo
+## [win32security](#win32security)\.GetSecurityInfo
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __GetSecurityInfo( *handle*  *, ObjectType*  *, SecurityInfo* __ )
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\= **GetSecurityInfo\( *handle*  *, ObjectType*  *, SecurityInfo* ** \)
 Retrieve security info for an object by handle
 
 #### Parameters
@@ -1113,41 +1113,41 @@ Retrieve security info for an object by handle
 
   -  *ObjectType* : int
 
-    Value from SE_OBJECT_TYPE enum
+    Value from SE\_OBJECT\_TYPE enum
 
   -  *SecurityInfo* : int
 
-    Combination of SECURITY_INFORMATION constants
+    Combination of SECURITY\_INFORMATION constants
 
 #### Comments
 Separate owner, group, dacl, and sacl are not returned as they can be easily retrieved from 
 
-the returned PySECURITY_DESCRIPTOR
+the returned PySECURITY\_DESCRIPTOR
 
-## [win32security](#win32security).GetTokenInformation
+## [win32security](#win32security)\.GetTokenInformation
 
-object = __GetTokenInformation( *TokenHandle*  *, TokenInformationClass* __ )
-Retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
+object \= **GetTokenInformation\( *TokenHandle*  *, TokenInformationClass* ** \)
+Retrieves a specified type of information about an access token\. The calling process must have appropriate access rights to obtain the information\.
 
 #### Parameters
 
 
   -  *TokenHandle* :[PyHANDLE](#pyhandle)
 
-    Handle to an access token.
+    Handle to an access token\.
 
   -  *TokenInformationClass* : int
 
-    Specifies a value from the TOKEN_INFORMATION_CLASS enumerated type identifying the type of information the function retrieves.
+    Specifies a value from the TOKEN\_INFORMATION\_CLASS enumerated type identifying the type of information the function retrieves\.
 
 #### Return Value
 The following types are supported
 
 
-## [win32security](#win32security).GetUserObjectSecurity
+## [win32security](#win32security)\.GetUserObjectSecurity
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __GetUserObjectSecurity( *handle*  *, info* __ )
-Obtains specified information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\= **GetUserObjectSecurity\( *handle*  *, info* ** \)
+Obtains specified information about the security of a user object\. The information obtained is constrained by the caller's access rights and privileges\.
 
 #### Parameters
 
@@ -1156,21 +1156,21 @@ Obtains specified information about the security of a user object. The informati
 
     The handle to the object
 
-  -  *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
+  -  *info\=OWNER\_SECURITY\_INFORMATION | GROUP\_SECURITY\_INFORMATION | DACL\_SECURITY\_INFORMATION | SACL\_SECURITY\_INFORMATION* : int
 
-    Flags that specify the information requested.
+    Flags that specify the information requested\.
 
-## INHERITED_ACE
- __const win32security.INHERITED_ACE;__ 
-
-
-## INHERIT_ONLY_ACE
- __const win32security.INHERIT_ONLY_ACE;__ 
+## INHERITED\_ACE
+ **const win32security\.INHERITED\_ACE;** 
 
 
-## [win32security](#win32security).ImpersonateAnonymousToken
+## INHERIT\_ONLY\_ACE
+ **const win32security\.INHERIT\_ONLY\_ACE;** 
 
- __ImpersonateAnonymousToken( *ThreadHandle* __ )
+
+## [win32security](#win32security)\.ImpersonateAnonymousToken
+
+ **ImpersonateAnonymousToken\( *ThreadHandle* ** \)
 Cause a thread to act in the security context of an anonymous token
 
 #### Parameters
@@ -1180,10 +1180,10 @@ Cause a thread to act in the security context of an anonymous token
 
     Handle to thread that will
 
-## [win32security](#win32security).ImpersonateLoggedOnUser
+## [win32security](#win32security)\.ImpersonateLoggedOnUser
 
- __ImpersonateLoggedOnUser( *handle* __ )
-Impersonates a logged on user.
+ **ImpersonateLoggedOnUser\( *handle* ** \)
+Impersonates a logged on user\.
 
 #### Parameters
 
@@ -1192,21 +1192,21 @@ Impersonates a logged on user.
 
     Handle to a token that represents a logged-on user
 
-## [win32security](#win32security).ImpersonateNamedPipeClient
+## [win32security](#win32security)\.ImpersonateNamedPipeClient
 
- __ImpersonateNamedPipeClient( *handle* __ )
-Impersonates a named-pipe client application.
+ **ImpersonateNamedPipeClient\( *handle* ** \)
+Impersonates a named-pipe client application\.
 
 #### Parameters
 
 
   -  *handle* : int
 
-    handle of a named pipe.
+    handle of a named pipe\.
 
-## [win32security](#win32security).ImpersonateSelf
+## [win32security](#win32security)\.ImpersonateSelf
 
- __ImpersonateSelf( *ImpersonationLevel* __ )
+ **ImpersonateSelf\( *ImpersonationLevel* ** \)
 Assigns an impersonation token for current security context to current process
 
 #### Parameters
@@ -1214,11 +1214,11 @@ Assigns an impersonation token for current security context to current process
 
   -  *ImpersonationLevel* : int
 
-    A value from SECURITY_IMPERSONATION_LEVEL enum
+    A value from SECURITY\_IMPERSONATION\_LEVEL enum
 
-## [win32security](#win32security).InitializeSecurityContext
+## [win32security](#win32security)\.InitializeSecurityContext
 
-(int, int,[PyTime](#pytime)) = __InitializeSecurityContext( *Credential*  *, Context*  *, TargetName*  *, ContextReq*  *, TargetDataRep*  *, pInput*  *, NewContext*  *, pOutput* __ )
+\(int, int,[PyTime](#pytime)\) \= **InitializeSecurityContext\( *Credential*  *, Context*  *, TargetName*  *, ContextReq*  *, TargetDataRep*  *, pInput*  *, NewContext*  *, pOutput* ** \)
 Creates a security context based on credentials created by AcquireCredentialsHandle
 
 #### Parameters
@@ -1238,11 +1238,11 @@ Creates a security context based on credentials created by AcquireCredentialsHan
 
   -  *ContextReq* : int
 
-    Combination of ISC_REQ_* flags
+    Combination of ISC\_REQ\_\* flags
 
   -  *TargetDataRep* : int
 
-    One of SECURITY_NATIVE_DREP,SECURITY_NETWORK_DREP
+    One of SECURITY\_NATIVE\_DREP,SECURITY\_NETWORK\_DREP
 
   -  *pInput* :[PySecBufferDesc](#pysecbufferdesc)
 
@@ -1257,11 +1257,11 @@ Creates a security context based on credentials created by AcquireCredentialsHan
     Buffer that receives output data for subsequent calls
 
 #### Return Value
-Return value is a tuple of (return code, attribute flags, expiration time)
+Return value is a tuple of \(return code, attribute flags, expiration time\)
 
-## [win32security](#win32security).IsTokenRestricted
+## [win32security](#win32security)\.IsTokenRestricted
 
-bool = __IsTokenRestricted( *TokenHandle* __ )
+bool \= **IsTokenRestricted\( *TokenHandle* ** \)
 Checks if a token contains restricted sids
 
 #### Parameters
@@ -1271,67 +1271,67 @@ Checks if a token contains restricted sids
 
     Handle to an access token
 
-## LABEL_SECURITY_INFORMATION
- __const win32security.LABEL_SECURITY_INFORMATION;__ 
+## LABEL\_SECURITY\_INFORMATION
+ **const win32security\.LABEL\_SECURITY\_INFORMATION;** 
 
 
-## LOGON32_LOGON_BATCH
- __const win32security.LOGON32_LOGON_BATCH;__ 
-This logon type is intended for batch servers, where processes may be executing on behalf of a user without their direct intervention; or for higher performance servers that process many clear-text authentication attempts at a time, such as mail or web servers. LogonUser does not cache credentials for this logon type.
+## LOGON32\_LOGON\_BATCH
+ **const win32security\.LOGON32\_LOGON\_BATCH;** 
+This logon type is intended for batch servers, where processes may be executing on behalf of a user without their direct intervention; or for higher performance servers that process many clear-text authentication attempts at a time, such as mail or web servers\. LogonUser does not cache credentials for this logon type\.
 
-## LOGON32_LOGON_INTERACTIVE
- __const win32security.LOGON32_LOGON_INTERACTIVE;__ 
-This logon type is intended for users who will be interactively using the machine, such as a user being logged on by a terminal server, remote shell, or similar process. This logon type has the additional expense of caching logon information for disconnected operation, and is therefore inappropriate for some client/server applications, such as a mail server.
+## LOGON32\_LOGON\_INTERACTIVE
+ **const win32security\.LOGON32\_LOGON\_INTERACTIVE;** 
+This logon type is intended for users who will be interactively using the machine, such as a user being logged on by a terminal server, remote shell, or similar process\. This logon type has the additional expense of caching logon information for disconnected operation, and is therefore inappropriate for some client/server applications, such as a mail server\.
 
-## LOGON32_LOGON_NETWORK
- __const win32security.LOGON32_LOGON_NETWORK;__ 
-This logon type is intended for high performance servers to authenticate clear text passwords. LogonUser does not cache credentials for this logon type. This is the fastest logon path, but there are two limitations. First, the function returns an impersonation token, not a primary token. You cannot use this token directly in the CreateProcessAsUser function. However, you can call the DuplicateTokenEx function to convert the token to a primary token, and then use it in CreateProcessAsUser. Second, if you convert the token to a primary token and use it in CreateProcessAsUser to start a process, the new process will not be able to access other network resources, such as remote servers or printers, through the redirector.
+## LOGON32\_LOGON\_NETWORK
+ **const win32security\.LOGON32\_LOGON\_NETWORK;** 
+This logon type is intended for high performance servers to authenticate clear text passwords\. LogonUser does not cache credentials for this logon type\. This is the fastest logon path, but there are two limitations\. First, the function returns an impersonation token, not a primary token\. You cannot use this token directly in the CreateProcessAsUser function\. However, you can call the DuplicateTokenEx function to convert the token to a primary token, and then use it in CreateProcessAsUser\. Second, if you convert the token to a primary token and use it in CreateProcessAsUser to start a process, the new process will not be able to access other network resources, such as remote servers or printers, through the redirector\.
 
-## LOGON32_LOGON_NETWORK_CLEARTEXT
- __const win32security.LOGON32_LOGON_NETWORK_CLEARTEXT;__ 
-
-
-## LOGON32_LOGON_NEW_CREDENTIALS
- __const win32security.LOGON32_LOGON_NEW_CREDENTIALS;__ 
+## LOGON32\_LOGON\_NETWORK\_CLEARTEXT
+ **const win32security\.LOGON32\_LOGON\_NETWORK\_CLEARTEXT;** 
 
 
-## LOGON32_LOGON_SERVICE
- __const win32security.LOGON32_LOGON_SERVICE;__ 
-Indicates a service-type logon. The account provided must have the service privilege enabled.
-
-## LOGON32_LOGON_UNLOCK
- __const win32security.LOGON32_LOGON_UNLOCK;__ 
+## LOGON32\_LOGON\_NEW\_CREDENTIALS
+ **const win32security\.LOGON32\_LOGON\_NEW\_CREDENTIALS;** 
 
 
-## LOGON32_PROVIDER_DEFAULT
- __const win32security.LOGON32_PROVIDER_DEFAULT;__ 
-Use the standard logon provider for the system. This is the recommended value for the dwLogonProvider parameter. It provides maximum compatibility with current and future releases of Windows NT.
+## LOGON32\_LOGON\_SERVICE
+ **const win32security\.LOGON32\_LOGON\_SERVICE;** 
+Indicates a service-type logon\. The account provided must have the service privilege enabled\.
 
-## LOGON32_PROVIDER_WINNT35
- __const win32security.LOGON32_PROVIDER_WINNT35;__ 
-Use the Windows NT 3.5 logon provider.
+## LOGON32\_LOGON\_UNLOCK
+ **const win32security\.LOGON32\_LOGON\_UNLOCK;** 
 
-## LOGON32_PROVIDER_WINNT40
- __const win32security.LOGON32_PROVIDER_WINNT40;__ 
-Use the Windows NT 4.0 logon provider
 
-## LOGON32_PROVIDER_WINNT50
- __const win32security.LOGON32_PROVIDER_WINNT50;__ 
+## LOGON32\_PROVIDER\_DEFAULT
+ **const win32security\.LOGON32\_PROVIDER\_DEFAULT;** 
+Use the standard logon provider for the system\. This is the recommended value for the dwLogonProvider parameter\. It provides maximum compatibility with current and future releases of Windows NT\.
+
+## LOGON32\_PROVIDER\_WINNT35
+ **const win32security\.LOGON32\_PROVIDER\_WINNT35;** 
+Use the Windows NT 3\.5 logon provider\.
+
+## LOGON32\_PROVIDER\_WINNT40
+ **const win32security\.LOGON32\_PROVIDER\_WINNT40;** 
+Use the Windows NT 4\.0 logon provider
+
+## LOGON32\_PROVIDER\_WINNT50
+ **const win32security\.LOGON32\_PROVIDER\_WINNT50;** 
 Use the Negotiate protocol
 
-## [win32security](#win32security).LogonUser
+## [win32security](#win32security)\.LogonUser
 
-[PyHANDLE](#pyhandle)= __LogonUser( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* __ )
-Attempts to log a user on to the local computer, that is, to the computer from which LogonUser was called. You cannot use LogonUser to log on to a remote computer.
+[PyHANDLE](#pyhandle)\= **LogonUser\( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* ** \)
+Attempts to log a user on to the local computer, that is, to the computer from which LogonUser was called\. You cannot use LogonUser to log on to a remote computer\.
 
 #### Parameters
 
 
   -  *Username* :[PyUnicode](#pyunicode)
 
-    The name of the user account to log on to. 
+    The name of the user account to log on to\. 
 
-This may also be a marshalled credential (see[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)).
+This may also be a marshalled credential \(see[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)\)\.
 
   -  *Domain* :[PyUnicode](#pyunicode)
 
@@ -1339,23 +1339,23 @@ This may also be a marshalled credential (see[win32cred::CredMarshalCredential](
 
   -  *Password* :[PyUnicode](#pyunicode)
 
-    User's password.  Use a blank string if Username contains a marshalled credential.
+    User's password\.  Use a blank string if Username contains a marshalled credential\.
 
   -  *LogonType* : int
 
-    One of LOGON32_LOGON_* values
+    One of LOGON32\_LOGON\_\* values
 
   -  *LogonProvider* : int
 
-    One of LOGON32_PROVIDER_* values
+    One of LOGON32\_PROVIDER\_\* values
 
 #### Comments
 Accepts keyword args
-On Windows 2000 and earlier, the calling process must have SE_TCB_NAME privilege.
+On Windows 2000 and earlier, the calling process must have SE\_TCB\_NAME privilege\.
 
-## [win32security](#win32security).LogonUserEx
+## [win32security](#win32security)\.LogonUserEx
 
-([PyHANDLE](#pyhandle),[PySID](#pysid), str, dict) = __LogonUserEx( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* __ )
+\([PyHANDLE](#pyhandle),[PySID](#pysid), str, dict\) \= **LogonUserEx\( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* ** \)
 Log a user onto the local machine,
 
 #### Parameters
@@ -1363,39 +1363,39 @@ Log a user onto the local machine,
 
   -  *Username* :[PyUnicode](#pyunicode)
 
-    User account, may be specified as a UPN (user@domain.com). 
+    User account, may be specified as a UPN \(user@domain\.com\)\. 
 
-This may also be a marshalled credential (see[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)).
+This may also be a marshalled credential \(see[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)\)\.
 
   -  *Domain* :[PyUnicode](#pyunicode)
 
-    User's domain. Can be None if Username is a full UPN.
+    User's domain\. Can be None if Username is a full UPN\.
 
   -  *Password* :[PyUnicode](#pyunicode)
 
-    User's password.  Use a blank string if Username contains a marshalled credential.
+    User's password\.  Use a blank string if Username contains a marshalled credential\.
 
   -  *LogonType* : int
 
-    One of LOGON32_LOGON_* values
+    One of LOGON32\_LOGON\_\* values
 
   -  *LogonProvider* : int
 
-    One of LOGON32_PROVIDER_* values
+    One of LOGON32\_PROVIDER\_\* values
 
 #### Comments
 Requires Windows XP or later
 Accepts keyword args
 
 #### Return Value
-Returns access token, logon sid, profile buffer, and process quotas. 
+Returns access token, logon sid, profile buffer, and process quotas\. 
 
-Format of the profile buffer is not known, so returned object is subject to change.
+Format of the profile buffer is not known, so returned object is subject to change\.
 
-## [win32security](#win32security).LookupAccountName
+## [win32security](#win32security)\.LookupAccountName
 
-[PySID](#pysid), string, int = __LookupAccountName( *systemName*  *, accountName* __ )
-Accepts the name of a system and an account as input. It retrieves a security identifier (SID) for the account and the name of the domain on which the account was found.
+[PySID](#pysid), string, int \= **LookupAccountName\( *systemName*  *, accountName* ** \)
+Accepts the name of a system and an account as input\. It retrieves a security identifier \(SID\) for the account and the name of the domain on which the account was found\.
 
 #### Parameters
 
@@ -1409,12 +1409,12 @@ Accepts the name of a system and an account as input. It retrieves a security id
     The account name
 
 #### Return Value
-The result is a tuple of new SID object, the domain name where the account was found, and the type of account the SID is for.
+The result is a tuple of new SID object, the domain name where the account was found, and the type of account the SID is for\.
 
-## [win32security](#win32security).LookupAccountSid
+## [win32security](#win32security)\.LookupAccountSid
 
-string, string, int = __LookupAccountSid( *systemName*  *, sid* __ )
-Accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.
+string, string, int \= **LookupAccountSid\( *systemName*  *, sid* ** \)
+Accepts a security identifier \(SID\) as input\. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found\.
 
 #### Parameters
 
@@ -1428,11 +1428,11 @@ Accepts a security identifier (SID) as input. It retrieves the name of the accou
     The SID
 
 #### Return Value
-The result is a tuple of the name, the domain name where the account was found, and the type of account the SID is for.
+The result is a tuple of the name, the domain name where the account was found, and the type of account the SID is for\.
 
-## [win32security](#win32security).LookupPrivilegeDisplayName
+## [win32security](#win32security)\.LookupPrivilegeDisplayName
 
-[PyUnicode](#pyunicode)= __LookupPrivilegeDisplayName( *SystemName*  *, Name* __ )
+[PyUnicode](#pyunicode)\= **LookupPrivilegeDisplayName\( *SystemName*  *, Name* ** \)
 Returns long description for a privilege name
 
 #### Parameters
@@ -1444,11 +1444,11 @@ Returns long description for a privilege name
 
   -  *Name* : string/[PyUnicode](#pyunicode)
 
-    Name of privilege, Se...Privilege string constants (win32security.SE_*_NAME)
+    Name of privilege, Se\.\.\.Privilege string constants \(win32security\.SE\_\*\_NAME\)
 
-## [win32security](#win32security).LookupPrivilegeName
+## [win32security](#win32security)\.LookupPrivilegeName
 
-[PyUnicode](#pyunicode)= __LookupPrivilegeName( *SystemName*  *, luid* __ )
+[PyUnicode](#pyunicode)\= **LookupPrivilegeName\( *SystemName*  *, luid* ** \)
 return the text name for a privilege LUID
 
 #### Parameters
@@ -1458,13 +1458,13 @@ return the text name for a privilege LUID
 
     System name, local system assumed if not specified
 
-  -  *luid* : LARGE_INTEGER
+  -  *luid* : LARGE\_INTEGER
 
     64 bit value representing a privilege
 
-## [win32security](#win32security).LookupPrivilegeValue
+## [win32security](#win32security)\.LookupPrivilegeValue
 
-[LARGE_INTEGER](LARGE.md#largeinteger)= __LookupPrivilegeValue( *systemName*  *, privilegeName* __ )
+[LARGE\_INTEGER](LARGE.md#largeinteger)\= **LookupPrivilegeValue\( *systemName*  *, privilegeName* ** \)
 Retrieves the locally unique id for a privilege name
 
 #### Parameters
@@ -1476,17 +1476,17 @@ Retrieves the locally unique id for a privilege name
 
   -  *privilegeName* : string
 
-    String specifying the privilege (win32security.SE_*_NAME)
+    String specifying the privilege \(win32security\.SE\_\*\_NAME\)
 
-## [win32security](#win32security).LsaAddAccountRights
+## [win32security](#win32security)\.LsaAddAccountRights
 
- __LsaAddAccountRights( *PolicyHandle*  *, AccountSid*  *, UserRights* __ )
+ **LsaAddAccountRights\( *PolicyHandle*  *, AccountSid*  *, UserRights* ** \)
 Adds a list of privileges to an account
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
@@ -1494,23 +1494,23 @@ Adds a list of privileges to an account
 
     Account to which privs will be added
 
-  -  *UserRights* : (str/unicode,...)
+  -  *UserRights* : \(str/unicode,\.\.\.\)
 
-    Sequence of privilege names (SE_*_NAME unicode constants)
+    Sequence of privilege names \(SE\_\*\_NAME unicode constants\)
 
 #### Comments
-Account is created if it doesn't already exist.
-Accepts keyword args.
+Account is created if it doesn't already exist\.
+Accepts keyword args\.
 
-## [win32security](#win32security).LsaCallAuthenticationPackage
+## [win32security](#win32security)\.LsaCallAuthenticationPackage
 
- __LsaCallAuthenticationPackage( *LsaHandle*  *, AuthenticationPackage*  *, MessageType*  *, ProtocolSubmitBuffer* __ )
+ **LsaCallAuthenticationPackage\( *LsaHandle*  *, AuthenticationPackage*  *, MessageType*  *, ProtocolSubmitBuffer* ** \)
 Requests the services of an authentication package
 
 #### Parameters
 
 
-  -  *LsaHandle* :[PyLsaLogon_HANDLE](PyLsaLogon.md#pylsalogonhandle)
+  -  *LsaHandle* :[PyLsaLogon\_HANDLE](PyLsaLogon.md#pylsalogonhandle)
 
     Lsa handle as returned by[win32security::LsaRegisterLogonProcess](win32security.md#win32securitylsaregisterlogonprocess)or[win32security::LsaConnectUntrusted](win32security.md#win32securitylsaconnectuntrusted)
 
@@ -1520,7 +1520,7 @@ Requests the services of an authentication package
 
   -  *MessageType* : int
 
-    Type of request that is being made, Kerb*Message or MsV1_0* constant
+    Type of request that is being made, Kerb\*Message or MsV1\_0\* constant
 
   -  *ProtocolSubmitBuffer* : object
 
@@ -1531,16 +1531,16 @@ Message type is embedded in different types of submit buffers in the API call, b
 
 from python for simplicity of parsing input
 
- __MessageType__  __Input type__ KerbQueryTicketCacheMessagelong - a logon id, use 0 for current logon sessionKerbRetrieveTicketMessagelong - a logon id, use 0 for current logon sessionKerbPurgeTicketCacheMessage(long,[PyUnicode](#pyunicode),[PyUnicode](#pyunicode)) - tuple containing (LogonId, ServerName, RealmName)KerbRetrieveEncodedTicketMessage(LogonId, TargetName, TicketFlags, CacheOptions, EncryptionType, CredentialsHandle) 
+ **MessageType**  **Input type** KerbQueryTicketCacheMessagelong - a logon id, use 0 for current logon sessionKerbRetrieveTicketMessagelong - a logon id, use 0 for current logon sessionKerbPurgeTicketCacheMessage\(long,[PyUnicode](#pyunicode),[PyUnicode](#pyunicode)\) - tuple containing \(LogonId, ServerName, RealmName\)KerbRetrieveEncodedTicketMessage\(LogonId, TargetName, TicketFlags, CacheOptions, EncryptionType, CredentialsHandle\) 
 
-(int,[PyUnicode](#pyunicode), int, int, int,[PyCredHandle](#pycredhandle))
- __MessageType__  __Return type__ KerbQueryTicketCacheMessage(dict,...) - Returns all tickets for the specified logon session (form is KERB_TICKET_CACHE_INFO)KerbPurgeTicketCacheMessageNoneKerbRetrieveTicketMessageReturns the ticket granting ticket for the logon session as a KERB_EXTERNAL_TICKETKerbRetrieveEncodedTicketMessageReturns specified ticket as a KERB_EXTERNAL_TICKET
+\(int,[PyUnicode](#pyunicode), int, int, int,[PyCredHandle](#pycredhandle)\)
+ **MessageType**  **Return type** KerbQueryTicketCacheMessage\(dict,\.\.\.\) - Returns all tickets for the specified logon session \(form is KERB\_TICKET\_CACHE\_INFO\)KerbPurgeTicketCacheMessageNoneKerbRetrieveTicketMessageReturns the ticket granting ticket for the logon session as a KERB\_EXTERNAL\_TICKETKerbRetrieveEncodedTicketMessageReturns specified ticket as a KERB\_EXTERNAL\_TICKET
 #### Return Value
 Type of returned object is dependent on MessageType
 
-## [win32security](#win32security).LsaClose
+## [win32security](#win32security)\.LsaClose
 
- __LsaClose( *PolicyHandle* __ )
+ **LsaClose\( *PolicyHandle* ** \)
 Closes a policy handle created by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
 #### Parameters
@@ -1550,9 +1550,9 @@ Closes a policy handle created by[win32security::LsaOpenPolicy](win32security.md
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
-## [win32security](#win32security).LsaConnectUntrusted
+## [win32security](#win32security)\.LsaConnectUntrusted
 
-[PyLsaLogon_HANDLE](PyLsaLogon.md#pylsalogonhandle)= __LsaConnectUntrusted(__ )
+[PyLsaLogon\_HANDLE](PyLsaLogon.md#pylsalogonhandle)\= **LsaConnectUntrusted\(** \)
 Creates untrusted connection to LSA
 
 #### Comments
@@ -1560,27 +1560,27 @@ You don't need SeTcbPrivilege to execute this function as you do with
 
 LsaRegisterLogonProcess, but functionality of handle is limited
 
-## [win32security](#win32security).LsaDeregisterLogonProcess
+## [win32security](#win32security)\.LsaDeregisterLogonProcess
 
- __LsaDeregisterLogonProcess( *LsaHandle* __ )
+ **LsaDeregisterLogonProcess\( *LsaHandle* ** \)
 Closes connection to LSA server
 
 #### Parameters
 
 
-  -  *LsaHandle* :[PyLsaLogon_HANDLE](PyLsaLogon.md#pylsalogonhandle)
+  -  *LsaHandle* :[PyLsaLogon\_HANDLE](PyLsaLogon.md#pylsalogonhandle)
 
     An Lsa handle as returned by[win32security::LsaConnectUntrusted](win32security.md#win32securitylsaconnectuntrusted)or[win32security::LsaRegisterLogonProcess](win32security.md#win32securitylsaregisterlogonprocess)
 
-## [win32security](#win32security).LsaEnumerateAccountRights
+## [win32security](#win32security)\.LsaEnumerateAccountRights
 
-[[PyUnicode](#pyunicode), ...] = __LsaEnumerateAccountRights( *PolicyHandle*  *, AccountSid* __ )
+\[[PyUnicode](#pyunicode), \.\.\.\] \= **LsaEnumerateAccountRights\( *PolicyHandle*  *, AccountSid* ** \)
 Lists privileges held by SID
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
@@ -1588,51 +1588,51 @@ Lists privileges held by SID
 
     Security identifier of account for which to list privs
 
-## [win32security](#win32security).LsaEnumerateAccountsWithUserRight
+## [win32security](#win32security)\.LsaEnumerateAccountsWithUserRight
 
-([PySID](#pysid),...) = __LsaEnumerateAccountsWithUserRight( *PolicyHandle*  *, UserRight* __ )
+\([PySID](#pysid),\.\.\.\) \= **LsaEnumerateAccountsWithUserRight\( *PolicyHandle*  *, UserRight* ** \)
 Return SIDs that hold specified priv
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
   -  *UserRight* : str/unicode
 
-    Name of privilege (SE_*_NAME unicode constant)
+    Name of privilege \(SE\_\*\_NAME unicode constant\)
 
-## [win32security](#win32security).LsaEnumerateLogonSessions
+## [win32security](#win32security)\.LsaEnumerateLogonSessions
 
-(long,...) = __LsaEnumerateLogonSessions(__ )
+\(long,\.\.\.\) \= **LsaEnumerateLogonSessions\(** \)
 Lists all current logon ids
 
-## [win32security](#win32security).LsaGetLogonSessionData
+## [win32security](#win32security)\.LsaGetLogonSessionData
 
-(dict,...) = __LsaGetLogonSessionData( *LogonId* __ )
+\(dict,\.\.\.\) \= **LsaGetLogonSessionData\( *LogonId* ** \)
 Returns information about a logon session
 
 #### Parameters
 
 
-  -  *LogonId* : __PyLARGE_INTEGER__ 
+  -  *LogonId* : **PyLARGE\_INTEGER** 
 
     An LUID identifying a logon session
 
 #### Return Value
-Returns a dictionary representing a SECURITY_LOGON_SESSION_DATA structure
+Returns a dictionary representing a SECURITY\_LOGON\_SESSION\_DATA structure
 
-## [win32security](#win32security).LsaLookupAuthenticationPackage
+## [win32security](#win32security)\.LsaLookupAuthenticationPackage
 
-int = __LsaLookupAuthenticationPackage( *LsaHandle*  *, PackageName* __ )
+int \= **LsaLookupAuthenticationPackage\( *LsaHandle*  *, PackageName* ** \)
 Retrieves the unique id for an authentication package
 
 #### Parameters
 
 
-  -  *LsaHandle* :[PyLsaLogon_HANDLE](PyLsaLogon.md#pylsalogonhandle)
+  -  *LsaHandle* :[PyLsaLogon\_HANDLE](PyLsaLogon.md#pylsalogonhandle)
 
     An Lsa handle as returned by[win32security::LsaConnectUntrusted](win32security.md#win32securitylsaconnectuntrusted)or[win32security::LsaRegisterLogonProcess](win32security.md#win32securitylsaregisterlogonprocess)
 
@@ -1640,42 +1640,42 @@ Retrieves the unique id for an authentication package
 
     Name of security package to be identified
 
-## [win32security](#win32security).LsaOpenPolicy
+## [win32security](#win32security)\.LsaOpenPolicy
 
-[PyLSA_HANDLE](PyLSA.md#pylsahandle)= __LsaOpenPolicy( *system_name*  *, access_mask* __ )
+[PyLSA\_HANDLE](PyLSA.md#pylsahandle)\= **LsaOpenPolicy\( *system\_name*  *, access\_mask* ** \)
 Opens a policy handle for the specified system
 
 #### Parameters
 
 
-  -  *system_name* : string/[PyUnicode](#pyunicode)
+  -  *system\_name* : string/[PyUnicode](#pyunicode)
 
     System name, local system assumed if not specified
 
-  -  *access_mask* : int
+  -  *access\_mask* : int
 
     Bitmask of requested access types
 
-## [win32security](#win32security).LsaQueryInformationPolicy
+## [win32security](#win32security)\.LsaQueryInformationPolicy
 
- __LsaQueryInformationPolicy( *PolicyHandle*  *, InformationClass* __ )
+ **LsaQueryInformationPolicy\( *PolicyHandle*  *, InformationClass* ** \)
 Retrieves information from the policy handle
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
   -  *InformationClass* : int
 
-    POLICY_INFORMATION_CLASS value
+    POLICY\_INFORMATION\_CLASS value
 
 
-## [win32security](#win32security).LsaRegisterLogonProcess
+## [win32security](#win32security)\.LsaRegisterLogonProcess
 
-[PyLsaLogon_HANDLE](PyLsaLogon.md#pylsalogonhandle)= __LsaRegisterLogonProcess( *LogonProcessName* __ )
+[PyLsaLogon\_HANDLE](PyLsaLogon.md#pylsalogonhandle)\= **LsaRegisterLogonProcess\( *LogonProcessName* ** \)
 Creates a trusted connection to LSA
 
 #### Parameters
@@ -1686,11 +1686,11 @@ Creates a trusted connection to LSA
     Name to use for this logon process
 
 #### Comments
-Requires SeTcbPrivilege (and must be enabled)
+Requires SeTcbPrivilege \(and must be enabled\)
 
-## [win32security](#win32security).LsaRegisterPolicyChangeNotification
+## [win32security](#win32security)\.LsaRegisterPolicyChangeNotification
 
- __LsaRegisterPolicyChangeNotification( *InformationClass*  *, NotificationEventHandle* __ )
+ **LsaRegisterPolicyChangeNotification\( *InformationClass*  *, NotificationEventHandle* ** \)
 Register an event handle to receive policy change events
 
 #### Parameters
@@ -1698,21 +1698,21 @@ Register an event handle to receive policy change events
 
   -  *InformationClass* : int
 
-    One of POLICY_NOTIFICATION_INFORMATION_CLASS contants
+    One of POLICY\_NOTIFICATION\_INFORMATION\_CLASS contants
 
   -  *NotificationEventHandle* :[PyHANDLE](#pyhandle)
 
     Event handle to receives notification
 
-## [win32security](#win32security).LsaRemoveAccountRights
+## [win32security](#win32security)\.LsaRemoveAccountRights
 
- __LsaRemoveAccountRights( *PolicyHandle*  *, AccountSid*  *, AllRights*  *, UserRights* __ )
+ **LsaRemoveAccountRights\( *PolicyHandle*  *, AccountSid*  *, AllRights*  *, UserRights* ** \)
 Removes privs from an account
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
@@ -1724,23 +1724,23 @@ Removes privs from an account
 
     Boolean value indicating if all privs should be removed from account
 
-  -  *UserRights* : (str/unicode,...)
+  -  *UserRights* : \(str/unicode,\.\.\.\)
 
-    List of privilege names to be removed (SE_*_NAME unicode constants)
+    List of privilege names to be removed \(SE\_\*\_NAME unicode constants\)
 
 #### Comments
-If AllRights parm is true, account is *deleted*
-Accepts keyword args.
+If AllRights parm is true, account is \*deleted\*
+Accepts keyword args\.
 
-## [win32security](#win32security).LsaRetrievePrivateData
+## [win32security](#win32security)\.LsaRetrievePrivateData
 
-[PyUnicode](#pyunicode)= __LsaRetrievePrivateData( *PolicyHandle*  *, KeyName* __ )
-Retreives encrypted unicode data from Lsa registry key.
+[PyUnicode](#pyunicode)\= **LsaRetrievePrivateData\( *PolicyHandle*  *, KeyName* ** \)
+Retreives encrypted unicode data from Lsa registry key\.
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
@@ -1748,38 +1748,38 @@ Retreives encrypted unicode data from Lsa registry key.
 
     Registry key to read
 
-## [win32security](#win32security).LsaSetInformationPolicy
+## [win32security](#win32security)\.LsaSetInformationPolicy
 
- __LsaSetInformationPolicy( *PolicyHandle*  *, InformationClass*  *, Information* __ )
+ **LsaSetInformationPolicy\( *PolicyHandle*  *, InformationClass*  *, Information* ** \)
 Sets policy options
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
   -  *InformationClass* : int
 
-    POLICY_INFORMATION_CLASS value
+    POLICY\_INFORMATION\_CLASS value
 
   -  *Information* : object
 
     Type is dependent on InformationClass
 
- __InformationClass__  __Type of input expected__ PolicyAuditEventsInformation(boolean, (int, ...))
-First member imdicates whether auditing is enabled or not.
+ **InformationClass**  **Type of input expected** PolicyAuditEventsInformation\(boolean, \(int, \.\.\.\)\)
+First member imdicates whether auditing is enabled or not\.
 
-## [win32security](#win32security).LsaStorePrivateData
+## [win32security](#win32security)\.LsaStorePrivateData
 
- __LsaStorePrivateData( *PolicyHandle*  *, KeyName*  *, PrivateData* __ )
-Stores encrypted unicode data under specified Lsa registry key. Returns None on success
+ **LsaStorePrivateData\( *PolicyHandle*  *, KeyName*  *, PrivateData* ** \)
+Stores encrypted unicode data under specified Lsa registry key\. Returns None on success
 
 #### Parameters
 
 
-  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#pylsahandle)
+  -  *PolicyHandle* :[PyLSA\_HANDLE](PyLSA.md#pylsahandle)
 
     An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securitylsaopenpolicy)
 
@@ -1791,9 +1791,9 @@ Stores encrypted unicode data under specified Lsa registry key. Returns None on 
 
     Unicode string to be encrypted and stored
 
-## [win32security](#win32security).LsaUnregisterPolicyChangeNotification
+## [win32security](#win32security)\.LsaUnregisterPolicyChangeNotification
 
- __LsaUnregisterPolicyChangeNotification( *InformationClass*  *, NotificationEventHandle* __ )
+ **LsaUnregisterPolicyChangeNotification\( *InformationClass*  *, NotificationEventHandle* ** \)
 Stop receiving policy change notification
 
 #### Parameters
@@ -1801,15 +1801,15 @@ Stop receiving policy change notification
 
   -  *InformationClass* : int
 
-    POLICY_NOTIFICATION_INFORMATION_CLASS constant
+    POLICY\_NOTIFICATION\_INFORMATION\_CLASS constant
 
   -  *NotificationEventHandle* :[PyHANDLE](#pyhandle)
 
     Event handle previously registered to receive policy change events
 
-## [win32security](#win32security).MapGenericMask
+## [win32security](#win32security)\.MapGenericMask
 
-int = __MapGenericMask( *AccessMask*  *, GenericMapping* __ )
+int \= **MapGenericMask\( *AccessMask*  *, GenericMapping* ** \)
 Translates generic access rights into specific rights
 
 #### Parameters
@@ -1819,55 +1819,55 @@ Translates generic access rights into specific rights
 
     A bitmask of generic rights to be interpreted according to GenericMapping
 
-  -  *GenericMapping* : (int,int,int,int)
+  -  *GenericMapping* : \(int,int,int,int\)
 
-    A tuple of 4 bitmasks (GenericRead, GenericWrite, GenericExecute, GenericAll) 
+    A tuple of 4 bitmasks \(GenericRead, GenericWrite, GenericExecute, GenericAll\) 
 
-containing the standard and specific rights that correspond to the generic rights.
+containing the standard and specific rights that correspond to the generic rights\.
 
 #### Return Value
 The input AccessMask will be returned with any generic access rights translated into specific equivalents
 
-## NOT_USED_ACCESS
- __const win32security.NOT_USED_ACCESS;__ 
+## NOT\_USED\_ACCESS
+ **const win32security\.NOT\_USED\_ACCESS;** 
 
 
-## NO_INHERITANCE
- __const win32security.NO_INHERITANCE;__ 
+## NO\_INHERITANCE
+ **const win32security\.NO\_INHERITANCE;** 
 
 
-## NO_PROPAGATE_INHERIT_ACE
- __const win32security.NO_PROPAGATE_INHERIT_ACE;__ 
+## NO\_PROPAGATE\_INHERIT\_ACE
+ **const win32security\.NO\_PROPAGATE\_INHERIT\_ACE;** 
 
 
-## OBJECT_INHERIT_ACE
- __const win32security.OBJECT_INHERIT_ACE;__ 
+## OBJECT\_INHERIT\_ACE
+ **const win32security\.OBJECT\_INHERIT\_ACE;** 
 
 
-## OWNER_SECURITY_INFORMATION
- __const win32security.OWNER_SECURITY_INFORMATION;__ 
-Indicates the owner identifier of the object is being referenced.
+## OWNER\_SECURITY\_INFORMATION
+ **const win32security\.OWNER\_SECURITY\_INFORMATION;** 
+Indicates the owner identifier of the object is being referenced\.
 
-## [win32security](#win32security).OpenProcessToken
+## [win32security](#win32security)\.OpenProcessToken
 
-[PyHANDLE](#pyhandle)= __OpenProcessToken( *processHandle*  *, desiredAccess* __ )
-Opens the access token associated with a process.
+[PyHANDLE](#pyhandle)\= **OpenProcessToken\( *processHandle*  *, desiredAccess* ** \)
+Opens the access token associated with a process\.
 
 #### Parameters
 
 
   -  *processHandle* : int
 
-    The handle of the process to open.
+    The handle of the process to open\.
 
   -  *desiredAccess* : int
 
     Desired access to process
 
-## [win32security](#win32security).OpenThreadToken
+## [win32security](#win32security)\.OpenThreadToken
 
-[PyHandle](#pyhandle)= __OpenThreadToken( *handle*  *, desiredAccess*  *, openAsSelf* __ )
-Opens the access token associated with a thread.
+[PyHandle](#pyhandle)\= **OpenThreadToken\( *handle*  *, desiredAccess*  *, openAsSelf* ** \)
+Opens the access token associated with a thread\.
 
 #### Parameters
 
@@ -1884,201 +1884,201 @@ Opens the access token associated with a thread.
 
     Flag for process or thread security
 
-## POLICY_ALL_ACCESS
- __const win32security.POLICY_ALL_ACCESS;__ 
+## POLICY\_ALL\_ACCESS
+ **const win32security\.POLICY\_ALL\_ACCESS;** 
 
 
-## POLICY_AUDIT_EVENT_FAILURE
- __const win32security.POLICY_AUDIT_EVENT_FAILURE;__ 
-Generate audit records for failed attempts to cause an event of this type to occur.
+## POLICY\_AUDIT\_EVENT\_FAILURE
+ **const win32security\.POLICY\_AUDIT\_EVENT\_FAILURE;** 
+Generate audit records for failed attempts to cause an event of this type to occur\.
 
-## POLICY_AUDIT_EVENT_NONE
- __const win32security.POLICY_AUDIT_EVENT_NONE;__ 
-Do not generate audit records for events of this type.
+## POLICY\_AUDIT\_EVENT\_NONE
+ **const win32security\.POLICY\_AUDIT\_EVENT\_NONE;** 
+Do not generate audit records for events of this type\.
 
-## POLICY_AUDIT_EVENT_SUCCESS
- __const win32security.POLICY_AUDIT_EVENT_SUCCESS;__ 
-Generate audit records for successful events of this type.
+## POLICY\_AUDIT\_EVENT\_SUCCESS
+ **const win32security\.POLICY\_AUDIT\_EVENT\_SUCCESS;** 
+Generate audit records for successful events of this type\.
 
-## POLICY_AUDIT_EVENT_UNCHANGED
- __const win32security.POLICY_AUDIT_EVENT_UNCHANGED;__ 
-For set operations, specify this value to leave the current options unchanged. This is the default.
+## POLICY\_AUDIT\_EVENT\_UNCHANGED
+ **const win32security\.POLICY\_AUDIT\_EVENT\_UNCHANGED;** 
+For set operations, specify this value to leave the current options unchanged\. This is the default\.
 
-## POLICY_AUDIT_LOG_ADMIN
- __const win32security.POLICY_AUDIT_LOG_ADMIN;__ 
-
-
-## POLICY_CREATE_ACCOUNT
- __const win32security.POLICY_CREATE_ACCOUNT;__ 
+## POLICY\_AUDIT\_LOG\_ADMIN
+ **const win32security\.POLICY\_AUDIT\_LOG\_ADMIN;** 
 
 
-## POLICY_CREATE_PRIVILEGE
- __const win32security.POLICY_CREATE_PRIVILEGE;__ 
+## POLICY\_CREATE\_ACCOUNT
+ **const win32security\.POLICY\_CREATE\_ACCOUNT;** 
 
 
-## POLICY_CREATE_SECRET
- __const win32security.POLICY_CREATE_SECRET;__ 
+## POLICY\_CREATE\_PRIVILEGE
+ **const win32security\.POLICY\_CREATE\_PRIVILEGE;** 
 
 
-## POLICY_EXECUTE
- __const win32security.POLICY_EXECUTE;__ 
+## POLICY\_CREATE\_SECRET
+ **const win32security\.POLICY\_CREATE\_SECRET;** 
 
 
-## POLICY_GET_PRIVATE_INFORMATION
- __const win32security.POLICY_GET_PRIVATE_INFORMATION;__ 
+## POLICY\_EXECUTE
+ **const win32security\.POLICY\_EXECUTE;** 
 
 
-## POLICY_LOOKUP_NAMES
- __const win32security.POLICY_LOOKUP_NAMES;__ 
+## POLICY\_GET\_PRIVATE\_INFORMATION
+ **const win32security\.POLICY\_GET\_PRIVATE\_INFORMATION;** 
 
 
-## POLICY_NOTIFICATION
- __const win32security.POLICY_NOTIFICATION;__ 
+## POLICY\_LOOKUP\_NAMES
+ **const win32security\.POLICY\_LOOKUP\_NAMES;** 
 
 
-## POLICY_READ
- __const win32security.POLICY_READ;__ 
+## POLICY\_NOTIFICATION
+ **const win32security\.POLICY\_NOTIFICATION;** 
 
 
-## POLICY_SERVER_ADMIN
- __const win32security.POLICY_SERVER_ADMIN;__ 
+## POLICY\_READ
+ **const win32security\.POLICY\_READ;** 
 
 
-## POLICY_SET_AUDIT_REQUIREMENTS
- __const win32security.POLICY_SET_AUDIT_REQUIREMENTS;__ 
+## POLICY\_SERVER\_ADMIN
+ **const win32security\.POLICY\_SERVER\_ADMIN;** 
 
 
-## POLICY_SET_DEFAULT_QUOTA_LIMITS
- __const win32security.POLICY_SET_DEFAULT_QUOTA_LIMITS;__ 
+## POLICY\_SET\_AUDIT\_REQUIREMENTS
+ **const win32security\.POLICY\_SET\_AUDIT\_REQUIREMENTS;** 
 
 
-## POLICY_TRUST_ADMIN
- __const win32security.POLICY_TRUST_ADMIN;__ 
+## POLICY\_SET\_DEFAULT\_QUOTA\_LIMITS
+ **const win32security\.POLICY\_SET\_DEFAULT\_QUOTA\_LIMITS;** 
 
 
-## POLICY_VIEW_AUDIT_INFORMATION
- __const win32security.POLICY_VIEW_AUDIT_INFORMATION;__ 
+## POLICY\_TRUST\_ADMIN
+ **const win32security\.POLICY\_TRUST\_ADMIN;** 
 
 
-## POLICY_VIEW_LOCAL_INFORMATION
- __const win32security.POLICY_VIEW_LOCAL_INFORMATION;__ 
+## POLICY\_VIEW\_AUDIT\_INFORMATION
+ **const win32security\.POLICY\_VIEW\_AUDIT\_INFORMATION;** 
 
 
-## POLICY_WRITE
- __const win32security.POLICY_WRITE;__ 
+## POLICY\_VIEW\_LOCAL\_INFORMATION
+ **const win32security\.POLICY\_VIEW\_LOCAL\_INFORMATION;** 
 
 
-## PROTECTED_DACL_SECURITY_INFORMATION
- __const win32security.PROTECTED_DACL_SECURITY_INFORMATION;__ 
+## POLICY\_WRITE
+ **const win32security\.POLICY\_WRITE;** 
 
 
-## PROTECTED_SACL_SECURITY_INFORMATION
- __const win32security.PROTECTED_SACL_SECURITY_INFORMATION;__ 
+## PROTECTED\_DACL\_SECURITY\_INFORMATION
+ **const win32security\.PROTECTED\_DACL\_SECURITY\_INFORMATION;** 
+
+
+## PROTECTED\_SACL\_SECURITY\_INFORMATION
+ **const win32security\.PROTECTED\_SACL\_SECURITY\_INFORMATION;** 
 
 
 ## PolicyAccountDomainInformation
- __const win32security.PolicyAccountDomainInformation;__ 
+ **const win32security\.PolicyAccountDomainInformation;** 
 
 
 ## PolicyAuditEventsInformation
- __const win32security.PolicyAuditEventsInformation;__ 
+ **const win32security\.PolicyAuditEventsInformation;** 
 
 
 ## PolicyAuditFullQueryInformation
- __const win32security.PolicyAuditFullQueryInformation;__ 
+ **const win32security\.PolicyAuditFullQueryInformation;** 
 
 
 ## PolicyAuditFullSetInformation
- __const win32security.PolicyAuditFullSetInformation;__ 
+ **const win32security\.PolicyAuditFullSetInformation;** 
 
 
 ## PolicyAuditLogInformation
- __const win32security.PolicyAuditLogInformation;__ 
+ **const win32security\.PolicyAuditLogInformation;** 
 
 
 ## PolicyDefaultQuotaInformation
- __const win32security.PolicyDefaultQuotaInformation;__ 
+ **const win32security\.PolicyDefaultQuotaInformation;** 
 
 
 ## PolicyDnsDomainInformation
- __const win32security.PolicyDnsDomainInformation;__ 
+ **const win32security\.PolicyDnsDomainInformation;** 
 
 
 ## PolicyLsaServerRoleInformation
- __const win32security.PolicyLsaServerRoleInformation;__ 
+ **const win32security\.PolicyLsaServerRoleInformation;** 
 
 
 ## PolicyModificationInformation
- __const win32security.PolicyModificationInformation;__ 
+ **const win32security\.PolicyModificationInformation;** 
 
 
 ## PolicyNotifyAccountDomainInformation
- __const win32security.PolicyNotifyAccountDomainInformation;__ 
+ **const win32security\.PolicyNotifyAccountDomainInformation;** 
 
 
 ## PolicyNotifyAuditEventsInformation
- __const win32security.PolicyNotifyAuditEventsInformation;__ 
+ **const win32security\.PolicyNotifyAuditEventsInformation;** 
 
 
 ## PolicyNotifyDnsDomainInformation
- __const win32security.PolicyNotifyDnsDomainInformation;__ 
+ **const win32security\.PolicyNotifyDnsDomainInformation;** 
 
 
 ## PolicyNotifyDomainEfsInformation
- __const win32security.PolicyNotifyDomainEfsInformation;__ 
+ **const win32security\.PolicyNotifyDomainEfsInformation;** 
 
 
 ## PolicyNotifyDomainKerberosTicketInformation
- __const win32security.PolicyNotifyDomainKerberosTicketInformation;__ 
+ **const win32security\.PolicyNotifyDomainKerberosTicketInformation;** 
 
 
 ## PolicyNotifyMachineAccountPasswordInformation
- __const win32security.PolicyNotifyMachineAccountPasswordInformation;__ 
+ **const win32security\.PolicyNotifyMachineAccountPasswordInformation;** 
 
 
 ## PolicyNotifyServerRoleInformation
- __const win32security.PolicyNotifyServerRoleInformation;__ 
+ **const win32security\.PolicyNotifyServerRoleInformation;** 
 
 
 ## PolicyPdAccountInformation
- __const win32security.PolicyPdAccountInformation;__ 
+ **const win32security\.PolicyPdAccountInformation;** 
 
 
 ## PolicyPrimaryDomainInformation
- __const win32security.PolicyPrimaryDomainInformation;__ 
+ **const win32security\.PolicyPrimaryDomainInformation;** 
 
 
 ## PolicyReplicaSourceInformation
- __const win32security.PolicyReplicaSourceInformation;__ 
+ **const win32security\.PolicyReplicaSourceInformation;** 
 
 
 ## PolicyServerDisabled
- __const win32security.PolicyServerDisabled;__ 
+ **const win32security\.PolicyServerDisabled;** 
 
 
 ## PolicyServerDisabled
- __const win32security.PolicyServerDisabled;__ 
+ **const win32security\.PolicyServerDisabled;** 
 
 
 ## PolicyServerEnabled
- __const win32security.PolicyServerEnabled;__ 
+ **const win32security\.PolicyServerEnabled;** 
 
 
 ## PolicyServerEnabled
- __const win32security.PolicyServerEnabled;__ 
+ **const win32security\.PolicyServerEnabled;** 
 
 
 ## PolicyServerRoleBackup
- __const win32security.PolicyServerRoleBackup;__ 
+ **const win32security\.PolicyServerRoleBackup;** 
 
 
 ## PolicyServerRolePrimary
- __const win32security.PolicyServerRolePrimary;__ 
+ **const win32security\.PolicyServerRolePrimary;** 
 
 
-## [win32security](#win32security).QuerySecurityPackageInfo
+## [win32security](#win32security)\.QuerySecurityPackageInfo
 
-dict = __QuerySecurityPackageInfo( *PackageName* __ )
+dict \= **QuerySecurityPackageInfo\( *PackageName* ** \)
 Retrieves parameters for a security package
 
 #### Parameters
@@ -2091,346 +2091,346 @@ Retrieves parameters for a security package
 #### Return Value
 Returns a dictionary representing a SecPkgInfo struct
 
-## REVOKE_ACCESS
- __const win32security.REVOKE_ACCESS;__ 
+## REVOKE\_ACCESS
+ **const win32security\.REVOKE\_ACCESS;** 
 
 
-## [win32security](#win32security).RevertToSelf
+## [win32security](#win32security)\.RevertToSelf
 
- __RevertToSelf(__ )
-Terminates the impersonation of a client application.
+ **RevertToSelf\(** \)
+Terminates the impersonation of a client application\.
 
-## SACL_SECURITY_INFORMATION
- __const win32security.SACL_SECURITY_INFORMATION;__ 
-Indicates the system ACL of the object is being referenced.
+## SACL\_SECURITY\_INFORMATION
+ **const win32security\.SACL\_SECURITY\_INFORMATION;** 
+Indicates the system ACL of the object is being referenced\.
 
-## SANDBOX_INERT
- __const win32security.SANDBOX_INERT;__ 
-
-
-## SDDL_REVISION_1
- __const win32security.SDDL_REVISION_1;__ 
+## SANDBOX\_INERT
+ **const win32security\.SANDBOX\_INERT;** 
 
 
-## SECPKG_CRED_BOTH
- __const win32security.SECPKG_CRED_BOTH;__ 
+## SDDL\_REVISION\_1
+ **const win32security\.SDDL\_REVISION\_1;** 
 
 
-## SECPKG_CRED_INBOUND
- __const win32security.SECPKG_CRED_INBOUND;__ 
+## SECPKG\_CRED\_BOTH
+ **const win32security\.SECPKG\_CRED\_BOTH;** 
 
 
-## SECPKG_CRED_OUTBOUND
- __const win32security.SECPKG_CRED_OUTBOUND;__ 
+## SECPKG\_CRED\_INBOUND
+ **const win32security\.SECPKG\_CRED\_INBOUND;** 
 
 
-## SECPKG_FLAG_ACCEPT_WIN32_NAME
- __const win32security.SECPKG_FLAG_ACCEPT_WIN32_NAME;__ 
+## SECPKG\_CRED\_OUTBOUND
+ **const win32security\.SECPKG\_CRED\_OUTBOUND;** 
 
 
-## SECPKG_FLAG_CLIENT_ONLY
- __const win32security.SECPKG_FLAG_CLIENT_ONLY;__ 
+## SECPKG\_FLAG\_ACCEPT\_WIN32\_NAME
+ **const win32security\.SECPKG\_FLAG\_ACCEPT\_WIN32\_NAME;** 
 
 
-## SECPKG_FLAG_CONNECTION
- __const win32security.SECPKG_FLAG_CONNECTION;__ 
+## SECPKG\_FLAG\_CLIENT\_ONLY
+ **const win32security\.SECPKG\_FLAG\_CLIENT\_ONLY;** 
 
 
-## SECPKG_FLAG_DATAGRAM
- __const win32security.SECPKG_FLAG_DATAGRAM;__ 
+## SECPKG\_FLAG\_CONNECTION
+ **const win32security\.SECPKG\_FLAG\_CONNECTION;** 
 
 
-## SECPKG_FLAG_EXTENDED_ERROR
- __const win32security.SECPKG_FLAG_EXTENDED_ERROR;__ 
+## SECPKG\_FLAG\_DATAGRAM
+ **const win32security\.SECPKG\_FLAG\_DATAGRAM;** 
 
 
-## SECPKG_FLAG_IMPERSONATION
- __const win32security.SECPKG_FLAG_IMPERSONATION;__ 
+## SECPKG\_FLAG\_EXTENDED\_ERROR
+ **const win32security\.SECPKG\_FLAG\_EXTENDED\_ERROR;** 
 
 
-## SECPKG_FLAG_INTEGRITY
- __const win32security.SECPKG_FLAG_INTEGRITY;__ 
+## SECPKG\_FLAG\_IMPERSONATION
+ **const win32security\.SECPKG\_FLAG\_IMPERSONATION;** 
 
 
-## SECPKG_FLAG_MULTI_REQUIRED
- __const win32security.SECPKG_FLAG_MULTI_REQUIRED;__ 
+## SECPKG\_FLAG\_INTEGRITY
+ **const win32security\.SECPKG\_FLAG\_INTEGRITY;** 
 
 
-## SECPKG_FLAG_PRIVACY
- __const win32security.SECPKG_FLAG_PRIVACY;__ 
+## SECPKG\_FLAG\_MULTI\_REQUIRED
+ **const win32security\.SECPKG\_FLAG\_MULTI\_REQUIRED;** 
 
 
-## SECPKG_FLAG_STREAM
- __const win32security.SECPKG_FLAG_STREAM;__ 
+## SECPKG\_FLAG\_PRIVACY
+ **const win32security\.SECPKG\_FLAG\_PRIVACY;** 
 
 
-## SECPKG_FLAG_TOKEN_ONLY
- __const win32security.SECPKG_FLAG_TOKEN_ONLY;__ 
+## SECPKG\_FLAG\_STREAM
+ **const win32security\.SECPKG\_FLAG\_STREAM;** 
 
 
-## [win32security](#win32security).SECURITY_ATTRIBUTES
-
-PySECURITY_ATTRIBUTES = __SECURITY_ATTRIBUTES(__ )
-Creates a new[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)object.
-
-## SECURITY_CREATOR_SID_AUTHORITY
- __const win32security.SECURITY_CREATOR_SID_AUTHORITY;__ 
+## SECPKG\_FLAG\_TOKEN\_ONLY
+ **const win32security\.SECPKG\_FLAG\_TOKEN\_ONLY;** 
 
 
-## [win32security](#win32security).SECURITY_DESCRIPTOR
+## [win32security](#win32security)\.SECURITY\_ATTRIBUTES
 
-PySECURITY_DESCRIPTOR = __SECURITY_DESCRIPTOR(__ )
-Creates a new[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)object.
+PySECURITY\_ATTRIBUTES \= **SECURITY\_ATTRIBUTES\(** \)
+Creates a new[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)object\.
 
-## SECURITY_LOCAL_SID_AUTHORITY
- __const win32security.SECURITY_LOCAL_SID_AUTHORITY;__ 
-
-
-## SECURITY_NON_UNIQUE_AUTHORITY
- __const win32security.SECURITY_NON_UNIQUE_AUTHORITY;__ 
+## SECURITY\_CREATOR\_SID\_AUTHORITY
+ **const win32security\.SECURITY\_CREATOR\_SID\_AUTHORITY;** 
 
 
-## SECURITY_NT_AUTHORITY
- __const win32security.SECURITY_NT_AUTHORITY;__ 
+## [win32security](#win32security)\.SECURITY\_DESCRIPTOR
+
+PySECURITY\_DESCRIPTOR \= **SECURITY\_DESCRIPTOR\(** \)
+Creates a new[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)object\.
+
+## SECURITY\_LOCAL\_SID\_AUTHORITY
+ **const win32security\.SECURITY\_LOCAL\_SID\_AUTHORITY;** 
 
 
-## SECURITY_NULL_SID_AUTHORITY
- __const win32security.SECURITY_NULL_SID_AUTHORITY;__ 
+## SECURITY\_NON\_UNIQUE\_AUTHORITY
+ **const win32security\.SECURITY\_NON\_UNIQUE\_AUTHORITY;** 
 
 
-## SECURITY_RESOURCE_MANAGER_AUTHORITY
- __const win32security.SECURITY_RESOURCE_MANAGER_AUTHORITY;__ 
+## SECURITY\_NT\_AUTHORITY
+ **const win32security\.SECURITY\_NT\_AUTHORITY;** 
 
 
-## SECURITY_WORLD_SID_AUTHORITY
- __const win32security.SECURITY_WORLD_SID_AUTHORITY;__ 
+## SECURITY\_NULL\_SID\_AUTHORITY
+ **const win32security\.SECURITY\_NULL\_SID\_AUTHORITY;** 
 
 
-## SET_ACCESS
- __const win32security.SET_ACCESS;__ 
+## SECURITY\_RESOURCE\_MANAGER\_AUTHORITY
+ **const win32security\.SECURITY\_RESOURCE\_MANAGER\_AUTHORITY;** 
 
 
-## SET_AUDIT_FAILURE
- __const win32security.SET_AUDIT_FAILURE;__ 
+## SECURITY\_WORLD\_SID\_AUTHORITY
+ **const win32security\.SECURITY\_WORLD\_SID\_AUTHORITY;** 
 
 
-## SET_AUDIT_SUCCESS
- __const win32security.SET_AUDIT_SUCCESS;__ 
+## SET\_ACCESS
+ **const win32security\.SET\_ACCESS;** 
 
 
-## SE_DACL_AUTO_INHERITED
- __const win32security.SE_DACL_AUTO_INHERITED;__ 
+## SET\_AUDIT\_FAILURE
+ **const win32security\.SET\_AUDIT\_FAILURE;** 
+
+
+## SET\_AUDIT\_SUCCESS
+ **const win32security\.SET\_AUDIT\_SUCCESS;** 
+
+
+## SE\_DACL\_AUTO\_INHERITED
+ **const win32security\.SE\_DACL\_AUTO\_INHERITED;** 
 win2k and up
 
-## SE_DACL_DEFAULTED
- __const win32security.SE_DACL_DEFAULTED;__ 
+## SE\_DACL\_DEFAULTED
+ **const win32security\.SE\_DACL\_DEFAULTED;** 
 
 
-## SE_DACL_PRESENT
- __const win32security.SE_DACL_PRESENT;__ 
+## SE\_DACL\_PRESENT
+ **const win32security\.SE\_DACL\_PRESENT;** 
 
 
-## SE_DACL_PROTECTED
- __const win32security.SE_DACL_PROTECTED;__ 
+## SE\_DACL\_PROTECTED
+ **const win32security\.SE\_DACL\_PROTECTED;** 
 win2k and up
 
-## SE_DS_OBJECT
- __const win32security.SE_DS_OBJECT;__ 
+## SE\_DS\_OBJECT
+ **const win32security\.SE\_DS\_OBJECT;** 
 
 
-## SE_DS_OBJECT_ALL
- __const win32security.SE_DS_OBJECT_ALL;__ 
+## SE\_DS\_OBJECT\_ALL
+ **const win32security\.SE\_DS\_OBJECT\_ALL;** 
 
 
-## SE_FILE_OBJECT
- __const win32security.SE_FILE_OBJECT;__ 
+## SE\_FILE\_OBJECT
+ **const win32security\.SE\_FILE\_OBJECT;** 
 
 
-## SE_GROUP_DEFAULTED
- __const win32security.SE_GROUP_DEFAULTED;__ 
+## SE\_GROUP\_DEFAULTED
+ **const win32security\.SE\_GROUP\_DEFAULTED;** 
 
 
-## SE_GROUP_ENABLED
- __const win32security.SE_GROUP_ENABLED;__ 
+## SE\_GROUP\_ENABLED
+ **const win32security\.SE\_GROUP\_ENABLED;** 
 
 
-## SE_GROUP_ENABLED_BY_DEFAULT
- __const win32security.SE_GROUP_ENABLED_BY_DEFAULT;__ 
+## SE\_GROUP\_ENABLED\_BY\_DEFAULT
+ **const win32security\.SE\_GROUP\_ENABLED\_BY\_DEFAULT;** 
 
 
-## SE_GROUP_LOGON_ID
- __const win32security.SE_GROUP_LOGON_ID;__ 
+## SE\_GROUP\_LOGON\_ID
+ **const win32security\.SE\_GROUP\_LOGON\_ID;** 
 
 
-## SE_GROUP_MANDATORY
- __const win32security.SE_GROUP_MANDATORY;__ 
+## SE\_GROUP\_MANDATORY
+ **const win32security\.SE\_GROUP\_MANDATORY;** 
 
 
-## SE_GROUP_OWNER
- __const win32security.SE_GROUP_OWNER;__ 
+## SE\_GROUP\_OWNER
+ **const win32security\.SE\_GROUP\_OWNER;** 
 
 
-## SE_GROUP_RESOURCE
- __const win32security.SE_GROUP_RESOURCE;__ 
+## SE\_GROUP\_RESOURCE
+ **const win32security\.SE\_GROUP\_RESOURCE;** 
 
 
-## SE_GROUP_USE_FOR_DENY_ONLY
- __const win32security.SE_GROUP_USE_FOR_DENY_ONLY;__ 
+## SE\_GROUP\_USE\_FOR\_DENY\_ONLY
+ **const win32security\.SE\_GROUP\_USE\_FOR\_DENY\_ONLY;** 
 
 
-## SE_KERNEL_OBJECT
- __const win32security.SE_KERNEL_OBJECT;__ 
+## SE\_KERNEL\_OBJECT
+ **const win32security\.SE\_KERNEL\_OBJECT;** 
 
 
-## SE_LMSHARE
- __const win32security.SE_LMSHARE;__ 
+## SE\_LMSHARE
+ **const win32security\.SE\_LMSHARE;** 
 
 
-## SE_OWNER_DEFAULTED
- __const win32security.SE_OWNER_DEFAULTED;__ 
+## SE\_OWNER\_DEFAULTED
+ **const win32security\.SE\_OWNER\_DEFAULTED;** 
 
 
-## SE_PRINTER
- __const win32security.SE_PRINTER;__ 
+## SE\_PRINTER
+ **const win32security\.SE\_PRINTER;** 
 
 
-## SE_PRIVILEGE_ENABLED
- __const win32security.SE_PRIVILEGE_ENABLED;__ 
+## SE\_PRIVILEGE\_ENABLED
+ **const win32security\.SE\_PRIVILEGE\_ENABLED;** 
 
 
-## SE_PRIVILEGE_ENABLED_BY_DEFAULT
- __const win32security.SE_PRIVILEGE_ENABLED_BY_DEFAULT;__ 
+## SE\_PRIVILEGE\_ENABLED\_BY\_DEFAULT
+ **const win32security\.SE\_PRIVILEGE\_ENABLED\_BY\_DEFAULT;** 
 
 
-## SE_PRIVILEGE_REMOVED
- __const win32security.SE_PRIVILEGE_REMOVED;__ 
+## SE\_PRIVILEGE\_REMOVED
+ **const win32security\.SE\_PRIVILEGE\_REMOVED;** 
 
 
-## SE_PRIVILEGE_USED_FOR_ACCESS
- __const win32security.SE_PRIVILEGE_USED_FOR_ACCESS;__ 
+## SE\_PRIVILEGE\_USED\_FOR\_ACCESS
+ **const win32security\.SE\_PRIVILEGE\_USED\_FOR\_ACCESS;** 
 
 
-## SE_PROVIDER_DEFINED_OBJECT
- __const win32security.SE_PROVIDER_DEFINED_OBJECT;__ 
+## SE\_PROVIDER\_DEFINED\_OBJECT
+ **const win32security\.SE\_PROVIDER\_DEFINED\_OBJECT;** 
 
 
-## SE_REGISTRY_KEY
- __const win32security.SE_REGISTRY_KEY;__ 
+## SE\_REGISTRY\_KEY
+ **const win32security\.SE\_REGISTRY\_KEY;** 
 
 
-## SE_REGISTRY_WOW64_32KEY
- __const win32security.SE_REGISTRY_WOW64_32KEY;__ 
+## SE\_REGISTRY\_WOW64\_32KEY
+ **const win32security\.SE\_REGISTRY\_WOW64\_32KEY;** 
 
 
-## SE_SACL_AUTO_INHERITED
- __const win32security.SE_SACL_AUTO_INHERITED;__ 
+## SE\_SACL\_AUTO\_INHERITED
+ **const win32security\.SE\_SACL\_AUTO\_INHERITED;** 
 win2k and up
 
-## SE_SACL_DEFAULTED
- __const win32security.SE_SACL_DEFAULTED;__ 
+## SE\_SACL\_DEFAULTED
+ **const win32security\.SE\_SACL\_DEFAULTED;** 
 
 
-## SE_SACL_PRESENT
- __const win32security.SE_SACL_PRESENT;__ 
+## SE\_SACL\_PRESENT
+ **const win32security\.SE\_SACL\_PRESENT;** 
 
 
-## SE_SACL_PROTECTED
- __const win32security.SE_SACL_PROTECTED;__ 
+## SE\_SACL\_PROTECTED
+ **const win32security\.SE\_SACL\_PROTECTED;** 
 win2k and up
 
-## SE_SELF_RELATIVE
- __const win32security.SE_SELF_RELATIVE;__ 
+## SE\_SELF\_RELATIVE
+ **const win32security\.SE\_SELF\_RELATIVE;** 
 
 
-## SE_SERVICE
- __const win32security.SE_SERVICE;__ 
+## SE\_SERVICE
+ **const win32security\.SE\_SERVICE;** 
 
 
-## SE_UNKNOWN_OBJECT_TYPE
- __const win32security.SE_UNKNOWN_OBJECT_TYPE;__ 
+## SE\_UNKNOWN\_OBJECT\_TYPE
+ **const win32security\.SE\_UNKNOWN\_OBJECT\_TYPE;** 
 
 
-## SE_WINDOW_OBJECT
- __const win32security.SE_WINDOW_OBJECT;__ 
+## SE\_WINDOW\_OBJECT
+ **const win32security\.SE\_WINDOW\_OBJECT;** 
 
 
-## SE_WMIGUID_OBJECT
- __const win32security.SE_WMIGUID_OBJECT;__ 
+## SE\_WMIGUID\_OBJECT
+ **const win32security\.SE\_WMIGUID\_OBJECT;** 
 
 
-## [win32security](#win32security).SID
+## [win32security](#win32security)\.SID
 
-PySID = __SID(__ )
-Creates a new[PySID](#pysid)object.
+PySID \= **SID\(** \)
+Creates a new[PySID](#pysid)object\.
 
-## STYPE_DEVICE
- __const win32security.STYPE_DEVICE;__ 
-
-
-## STYPE_DISKTREE
- __const win32security.STYPE_DISKTREE;__ 
+## STYPE\_DEVICE
+ **const win32security\.STYPE\_DEVICE;** 
 
 
-## STYPE_IPC
- __const win32security.STYPE_IPC;__ 
+## STYPE\_DISKTREE
+ **const win32security\.STYPE\_DISKTREE;** 
 
 
-## STYPE_PRINTQ
- __const win32security.STYPE_PRINTQ;__ 
+## STYPE\_IPC
+ **const win32security\.STYPE\_IPC;** 
 
 
-## STYPE_SPECIAL
- __const win32security.STYPE_SPECIAL;__ 
+## STYPE\_PRINTQ
+ **const win32security\.STYPE\_PRINTQ;** 
 
 
-## STYPE_TEMPORARY
- __const win32security.STYPE_TEMPORARY;__ 
+## STYPE\_SPECIAL
+ **const win32security\.STYPE\_SPECIAL;** 
 
 
-## SUB_CONTAINERS_AND_OBJECTS_INHERIT
- __const win32security.SUB_CONTAINERS_AND_OBJECTS_INHERIT;__ 
+## STYPE\_TEMPORARY
+ **const win32security\.STYPE\_TEMPORARY;** 
 
 
-## SUB_CONTAINERS_ONLY_INHERIT
- __const win32security.SUB_CONTAINERS_ONLY_INHERIT;__ 
+## SUB\_CONTAINERS\_AND\_OBJECTS\_INHERIT
+ **const win32security\.SUB\_CONTAINERS\_AND\_OBJECTS\_INHERIT;** 
 
 
-## SUB_OBJECTS_ONLY_INHERIT
- __const win32security.SUB_OBJECTS_ONLY_INHERIT;__ 
+## SUB\_CONTAINERS\_ONLY\_INHERIT
+ **const win32security\.SUB\_CONTAINERS\_ONLY\_INHERIT;** 
 
 
-## SUCCESSFUL_ACCESS_ACE_FLAG
- __const win32security.SUCCESSFUL_ACCESS_ACE_FLAG;__ 
+## SUB\_OBJECTS\_ONLY\_INHERIT
+ **const win32security\.SUB\_OBJECTS\_ONLY\_INHERIT;** 
 
 
-## SYSTEM_AUDIT_ACE_TYPE
- __const win32security.SYSTEM_AUDIT_ACE_TYPE;__ 
-System-audit ACE that uses the SYSTEM_AUDIT_ACE structure.
+## SUCCESSFUL\_ACCESS\_ACE\_FLAG
+ **const win32security\.SUCCESSFUL\_ACCESS\_ACE\_FLAG;** 
 
-## SYSTEM_AUDIT_OBJECT_ACE_TYPE
- __const win32security.SYSTEM_AUDIT_OBJECT_ACE_TYPE;__ 
+
+## SYSTEM\_AUDIT\_ACE\_TYPE
+ **const win32security\.SYSTEM\_AUDIT\_ACE\_TYPE;** 
+System-audit ACE that uses the SYSTEM\_AUDIT\_ACE structure\.
+
+## SYSTEM\_AUDIT\_OBJECT\_ACE\_TYPE
+ **const win32security\.SYSTEM\_AUDIT\_OBJECT\_ACE\_TYPE;** 
 
 
 ## SecurityAnonymous
- __const win32security.SecurityAnonymous;__ 
+ **const win32security\.SecurityAnonymous;** 
 
 
 ## SecurityDelegation
- __const win32security.SecurityDelegation;__ 
+ **const win32security\.SecurityDelegation;** 
 
 
 ## SecurityIdentification
- __const win32security.SecurityIdentification;__ 
+ **const win32security\.SecurityIdentification;** 
 
 
 ## SecurityImpersonation
- __const win32security.SecurityImpersonation;__ 
+ **const win32security\.SecurityImpersonation;** 
 
 
-## [win32security](#win32security).SetFileSecurity
+## [win32security](#win32security)\.SetFileSecurity
 
- __SetFileSecurity( *filename*  *, info*  *, security* __ )
-Sets information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.
+ **SetFileSecurity\( *filename*  *, info*  *, security* ** \)
+Sets information about the security of a file or directory\. The information obtained is constrained by the caller's access rights and privileges\.
 
 #### Parameters
 
@@ -2441,35 +2441,35 @@ Sets information about the security of a file or directory. The information obta
 
   -  *info* : int
 
-    The type of information to set.
+    The type of information to set\.
 
-  -  *security* :[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
+  -  *security* :[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
 
     The security information
 
-## [win32security](#win32security).SetKernelObjectSecurity
+## [win32security](#win32security)\.SetKernelObjectSecurity
 
- __SetKernelObjectSecurity( *handle*  *, info*  *, security* __ )
-Sets information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.
+ **SetKernelObjectSecurity\( *handle*  *, info*  *, security* ** \)
+Sets information about the security of a kernel object\. The information obtained is constrained by the caller's access rights and privileges\.
 
 #### Parameters
 
 
   -  *handle* :[PyHANDLE](#pyhandle)
 
-    The handle to an object for which security information will be set.
+    The handle to an object for which security information will be set\.
 
   -  *info* : int
 
-    The type of information to set - combination of SECURITY_INFORMATION values
+    The type of information to set - combination of SECURITY\_INFORMATION values
 
-  -  *security* :[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
+  -  *security* :[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
 
     The security information
 
-## [win32security](#win32security).SetNamedSecurityInfo
+## [win32security](#win32security)\.SetNamedSecurityInfo
 
- __SetNamedSecurityInfo( *ObjectName*  *, ObjectType*  *, SecurityInfo*  *, Owner*  *, Group*  *, Dacl*  *, Sacl* __ )
+ **SetNamedSecurityInfo\( *ObjectName*  *, ObjectType*  *, SecurityInfo*  *, Owner*  *, Group*  *, Dacl*  *, Sacl* ** \)
 Sets security info for an object by name
 
 #### Parameters
@@ -2481,11 +2481,11 @@ Sets security info for an object by name
 
   -  *ObjectType* : int
 
-    Value from SE_OBJECT_TYPE enum
+    Value from SE\_OBJECT\_TYPE enum
 
   -  *SecurityInfo* : int
 
-    Combination of SECURITY_INFORMATION constants
+    Combination of SECURITY\_INFORMATION constants
 
   -  *Owner* :[PySID](#pysid)
 
@@ -2503,9 +2503,9 @@ Sets security info for an object by name
 
     System Audit ACL to set for object, can be None
 
-## [win32security](#win32security).SetSecurityInfo
+## [win32security](#win32security)\.SetSecurityInfo
 
- __SetSecurityInfo( *handle*  *, ObjectType*  *, SecurityInfo*  *, Owner*  *, Group*  *, Dacl*  *, Sacl* __ )
+ **SetSecurityInfo\( *handle*  *, ObjectType*  *, SecurityInfo*  *, Owner*  *, Group*  *, Dacl*  *, Sacl* ** \)
 Sets security info for an object by handle
 
 #### Parameters
@@ -2517,11 +2517,11 @@ Sets security info for an object by handle
 
   -  *ObjectType* : int
 
-    Value from SE_OBJECT_TYPE enum
+    Value from SE\_OBJECT\_TYPE enum
 
   -  *SecurityInfo* : int
 
-    Combination of SECURITY_INFORMATION constants
+    Combination of SECURITY\_INFORMATION constants
 
   -  *Owner* :[PySID](#pysid)
 
@@ -2539,27 +2539,27 @@ Sets security info for an object by handle
 
     System Audit ACL to set for object, can be None
 
-## [win32security](#win32security).SetThreadToken
+## [win32security](#win32security)\.SetThreadToken
 
- __SetThreadToken( *Thread*  *, Token* __ )
-Assigns an impersonation token to a thread. The function 
+ **SetThreadToken\( *Thread*  *, Token* ** \)
+Assigns an impersonation token to a thread\. The function 
 
-can also cause a thread to stop using an impersonation token.
+can also cause a thread to stop using an impersonation token\.
 
 #### Parameters
 
 
   -  *Thread* :[PyHANDLE](#pyhandle)
 
-    Handle to a thread.  Use None to indicate calling thread.
+    Handle to a thread\.  Use None to indicate calling thread\.
 
   -  *Token* :[PyHANDLE](#pyhandle)
 
-    Handle to an impersonation token.  Use None to end impersonation.
+    Handle to an impersonation token\.  Use None to end impersonation\.
 
-## [win32security](#win32security).SetTokenInformation
+## [win32security](#win32security)\.SetTokenInformation
 
- __SetTokenInformation( *TokenHandle*  *, TokenInformationClass*  *, TokenInformation* __ )
+ **SetTokenInformation\( *TokenHandle*  *, TokenInformationClass*  *, TokenInformation* ** \)
 Set a specified type of information in an access token
 
 #### Parameters
@@ -2571,185 +2571,185 @@ Set a specified type of information in an access token
 
   -  *TokenInformationClass* : int
 
-    Specifies a value from the TOKEN_INFORMATION_CLASS enumerated type identifying the type of information to be modfied
+    Specifies a value from the TOKEN\_INFORMATION\_CLASS enumerated type identifying the type of information to be modfied
 
   -  *TokenInformation* : object
 
     Type is dependent on TokenInformationClass
 
 
-## [win32security](#win32security).SetUserObjectSecurity
+## [win32security](#win32security)\.SetUserObjectSecurity
 
- __SetUserObjectSecurity( *handle*  *, info*  *, security* __ )
-Sets information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.
+ **SetUserObjectSecurity\( *handle*  *, info*  *, security* ** \)
+Sets information about the security of a user object\. The information obtained is constrained by the caller's access rights and privileges\.
 
 #### Parameters
 
 
   -  *handle* :[PyHANDLE](#pyhandle)
 
-    The handle to an object for which security information will be set.
+    The handle to an object for which security information will be set\.
 
   -  *info* : int
 
-    The type of information to set - combination of SECURITY_INFORMATION values
+    The type of information to set - combination of SECURITY\_INFORMATION values
 
-  -  *security* :[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
+  -  *security* :[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
 
     The security information
 
 ## SidTypeAlias
- __const win32security.SidTypeAlias;__ 
-Indicates an alias SID.
+ **const win32security\.SidTypeAlias;** 
+Indicates an alias SID\.
 
 ## SidTypeComputer
- __const win32security.SidTypeComputer;__ 
+ **const win32security\.SidTypeComputer;** 
 Indicates a computer SID
 
 ## SidTypeDeletedAccount
- __const win32security.SidTypeDeletedAccount;__ 
-Indicates an SID for a deleted account.
+ **const win32security\.SidTypeDeletedAccount;** 
+Indicates an SID for a deleted account\.
 
 ## SidTypeDomain
- __const win32security.SidTypeDomain;__ 
-Indicates a domain SID.
+ **const win32security\.SidTypeDomain;** 
+Indicates a domain SID\.
 
 ## SidTypeGroup
- __const win32security.SidTypeGroup;__ 
-Indicates a group SID.
+ **const win32security\.SidTypeGroup;** 
+Indicates a group SID\.
 
 ## SidTypeInvalid
- __const win32security.SidTypeInvalid;__ 
-Indicates an invalid SID.
+ **const win32security\.SidTypeInvalid;** 
+Indicates an invalid SID\.
 
 ## SidTypeUnknown
- __const win32security.SidTypeUnknown;__ 
-Indicates an unknown SID type.
+ **const win32security\.SidTypeUnknown;** 
+Indicates an unknown SID type\.
 
 ## SidTypeUser
- __const win32security.SidTypeUser;__ 
-Indicates a user SID.
+ **const win32security\.SidTypeUser;** 
+Indicates a user SID\.
 
 ## SidTypeWellKnownGroup
- __const win32security.SidTypeWellKnownGroup;__ 
-Indicates an SID for a well-known group.
+ **const win32security\.SidTypeWellKnownGroup;** 
+Indicates an SID for a well-known group\.
 
-## TOKEN_ADJUST_DEFAULT
- __const win32security.TOKEN_ADJUST_DEFAULT;__ 
-Required to change the default ACL, primary group, or owner of an access token.
+## TOKEN\_ADJUST\_DEFAULT
+ **const win32security\.TOKEN\_ADJUST\_DEFAULT;** 
+Required to change the default ACL, primary group, or owner of an access token\.
 
-## TOKEN_ADJUST_GROUPS
- __const win32security.TOKEN_ADJUST_GROUPS;__ 
-Required to change the groups specified in an access token.
+## TOKEN\_ADJUST\_GROUPS
+ **const win32security\.TOKEN\_ADJUST\_GROUPS;** 
+Required to change the groups specified in an access token\.
 
-## TOKEN_ADJUST_PRIVILEGES
- __const win32security.TOKEN_ADJUST_PRIVILEGES;__ 
-Required to change the privileges specified in an access token.
+## TOKEN\_ADJUST\_PRIVILEGES
+ **const win32security\.TOKEN\_ADJUST\_PRIVILEGES;** 
+Required to change the privileges specified in an access token\.
 
-## TOKEN_ALL_ACCESS
- __const win32security.TOKEN_ALL_ACCESS;__ 
-Combines the STANDARD_RIGHTS_REQUIRED standard access rights and all individual access rights for tokens.
+## TOKEN\_ALL\_ACCESS
+ **const win32security\.TOKEN\_ALL\_ACCESS;** 
+Combines the STANDARD\_RIGHTS\_REQUIRED standard access rights and all individual access rights for tokens\.
 
-## TOKEN_ASSIGN_PRIMARY
- __const win32security.TOKEN_ASSIGN_PRIMARY;__ 
-Required to attach a primary token to a process in addition to the SE_CREATE_TOKEN_NAME privilege.
+## TOKEN\_ASSIGN\_PRIMARY
+ **const win32security\.TOKEN\_ASSIGN\_PRIMARY;** 
+Required to attach a primary token to a process in addition to the SE\_CREATE\_TOKEN\_NAME privilege\.
 
-## TOKEN_DUPLICATE
- __const win32security.TOKEN_DUPLICATE;__ 
-Required to duplicate an access token.
+## TOKEN\_DUPLICATE
+ **const win32security\.TOKEN\_DUPLICATE;** 
+Required to duplicate an access token\.
 
-## TOKEN_EXECUTE
- __const win32security.TOKEN_EXECUTE;__ 
-Combines the STANDARD_RIGHTS_EXECUTE standard access rights and the TOKEN_IMPERSONATE access right.
+## TOKEN\_EXECUTE
+ **const win32security\.TOKEN\_EXECUTE;** 
+Combines the STANDARD\_RIGHTS\_EXECUTE standard access rights and the TOKEN\_IMPERSONATE access right\.
 
-## TOKEN_IMPERSONATE
- __const win32security.TOKEN_IMPERSONATE;__ 
-Required to attach an impersonation access token to a process.
+## TOKEN\_IMPERSONATE
+ **const win32security\.TOKEN\_IMPERSONATE;** 
+Required to attach an impersonation access token to a process\.
 
-## TOKEN_QUERY
- __const win32security.TOKEN_QUERY;__ 
-Required to query the contents of an access token.
+## TOKEN\_QUERY
+ **const win32security\.TOKEN\_QUERY;** 
+Required to query the contents of an access token\.
 
-## TOKEN_QUERY_SOURCE
- __const win32security.TOKEN_QUERY_SOURCE;__ 
-Required to query the source of an access token.
+## TOKEN\_QUERY\_SOURCE
+ **const win32security\.TOKEN\_QUERY\_SOURCE;** 
+Required to query the source of an access token\.
 
-## TOKEN_READ
- __const win32security.TOKEN_READ;__ 
-Combines the STANDARD_RIGHTS_READ standard access rights and the TOKEN_QUERY access right.
+## TOKEN\_READ
+ **const win32security\.TOKEN\_READ;** 
+Combines the STANDARD\_RIGHTS\_READ standard access rights and the TOKEN\_QUERY access right\.
 
-## TOKEN_WRITE
- __const win32security.TOKEN_WRITE;__ 
-Combines the STANDARD_RIGHTS_WRITE standard access rights and the TOKEN_ADJUST_PRIVILEGES, TOKEN_ADJUST_GROUPS, and TOKEN_ADJUST_DEFAULT access rights.
+## TOKEN\_WRITE
+ **const win32security\.TOKEN\_WRITE;** 
+Combines the STANDARD\_RIGHTS\_WRITE standard access rights and the TOKEN\_ADJUST\_PRIVILEGES, TOKEN\_ADJUST\_GROUPS, and TOKEN\_ADJUST\_DEFAULT access rights\.
 
-## TRUSTEE_BAD_FORM
- __const win32security.TRUSTEE_BAD_FORM;__ 
-
-
-## TRUSTEE_IS_ALIAS
- __const win32security.TRUSTEE_IS_ALIAS;__ 
+## TRUSTEE\_BAD\_FORM
+ **const win32security\.TRUSTEE\_BAD\_FORM;** 
 
 
-## TRUSTEE_IS_COMPUTER
- __const win32security.TRUSTEE_IS_COMPUTER;__ 
+## TRUSTEE\_IS\_ALIAS
+ **const win32security\.TRUSTEE\_IS\_ALIAS;** 
 
 
-## TRUSTEE_IS_DELETED
- __const win32security.TRUSTEE_IS_DELETED;__ 
+## TRUSTEE\_IS\_COMPUTER
+ **const win32security\.TRUSTEE\_IS\_COMPUTER;** 
 
 
-## TRUSTEE_IS_DOMAIN
- __const win32security.TRUSTEE_IS_DOMAIN;__ 
+## TRUSTEE\_IS\_DELETED
+ **const win32security\.TRUSTEE\_IS\_DELETED;** 
 
 
-## TRUSTEE_IS_GROUP
- __const win32security.TRUSTEE_IS_GROUP;__ 
+## TRUSTEE\_IS\_DOMAIN
+ **const win32security\.TRUSTEE\_IS\_DOMAIN;** 
 
 
-## TRUSTEE_IS_INVALID
- __const win32security.TRUSTEE_IS_INVALID;__ 
+## TRUSTEE\_IS\_GROUP
+ **const win32security\.TRUSTEE\_IS\_GROUP;** 
 
 
-## TRUSTEE_IS_NAME
- __const win32security.TRUSTEE_IS_NAME;__ 
+## TRUSTEE\_IS\_INVALID
+ **const win32security\.TRUSTEE\_IS\_INVALID;** 
 
 
-## TRUSTEE_IS_OBJECTS_AND_NAME
- __const win32security.TRUSTEE_IS_OBJECTS_AND_NAME;__ 
+## TRUSTEE\_IS\_NAME
+ **const win32security\.TRUSTEE\_IS\_NAME;** 
 
 
-## TRUSTEE_IS_OBJECTS_AND_SID
- __const win32security.TRUSTEE_IS_OBJECTS_AND_SID;__ 
+## TRUSTEE\_IS\_OBJECTS\_AND\_NAME
+ **const win32security\.TRUSTEE\_IS\_OBJECTS\_AND\_NAME;** 
 
 
-## TRUSTEE_IS_SID
- __const win32security.TRUSTEE_IS_SID;__ 
+## TRUSTEE\_IS\_OBJECTS\_AND\_SID
+ **const win32security\.TRUSTEE\_IS\_OBJECTS\_AND\_SID;** 
 
 
-## TRUSTEE_IS_UNKNOWN
- __const win32security.TRUSTEE_IS_UNKNOWN;__ 
+## TRUSTEE\_IS\_SID
+ **const win32security\.TRUSTEE\_IS\_SID;** 
 
 
-## TRUSTEE_IS_USER
- __const win32security.TRUSTEE_IS_USER;__ 
+## TRUSTEE\_IS\_UNKNOWN
+ **const win32security\.TRUSTEE\_IS\_UNKNOWN;** 
 
 
-## TRUSTEE_IS_WELL_KNOWN_GROUP
- __const win32security.TRUSTEE_IS_WELL_KNOWN_GROUP;__ 
+## TRUSTEE\_IS\_USER
+ **const win32security\.TRUSTEE\_IS\_USER;** 
+
+
+## TRUSTEE\_IS\_WELL\_KNOWN\_GROUP
+ **const win32security\.TRUSTEE\_IS\_WELL\_KNOWN\_GROUP;** 
 
 
 ## TokenImpersonation
- __const win32security.TokenImpersonation;__ 
+ **const win32security\.TokenImpersonation;** 
 
 
 ## TokenPrimary
- __const win32security.TokenPrimary;__ 
+ **const win32security\.TokenPrimary;** 
 
 
-## [win32security](#win32security).TranslateName
+## [win32security](#win32security)\.TranslateName
 
-[PyUnicode](#pyunicode)= __TranslateName( *accountName*  *, accountNameFormat*  *, accountNameFormat*  *, numChars* __ )
-Converts a directory service object name from one format to another.
+[PyUnicode](#pyunicode)\= **TranslateName\( *accountName*  *, accountNameFormat*  *, accountNameFormat*  *, numChars* ** \)
+Converts a directory service object name from one format to another\.
 
 #### Parameters
 
@@ -2760,67 +2760,67 @@ Converts a directory service object name from one format to another.
 
   -  *accountNameFormat* : int
 
-    A value from the EXTENDED_NAME_FORMAT enumeration type indicating the format of the accountName name.
+    A value from the EXTENDED\_NAME\_FORMAT enumeration type indicating the format of the accountName name\.
 
   -  *accountNameFormat* : int
 
-    A value from the EXTENDED_NAME_FORMAT enumeration type indicating the format of the desired name.
+    A value from the EXTENDED\_NAME\_FORMAT enumeration type indicating the format of the desired name\.
 
-  -  *numChars=1024* : int
+  -  *numChars\=1024* : int
 
-    Number of Unicode characters to allocate for the return buffer.
+    Number of Unicode characters to allocate for the return buffer\.
 
 ## TrustedControllersInformation
- __const win32security.TrustedControllersInformation;__ 
+ **const win32security\.TrustedControllersInformation;** 
 
 
 ## TrustedDomainAuthInformation
- __const win32security.TrustedDomainAuthInformation;__ 
+ **const win32security\.TrustedDomainAuthInformation;** 
 
 
 ## TrustedDomainAuthInformationInternal
- __const win32security.TrustedDomainAuthInformationInternal;__ 
+ **const win32security\.TrustedDomainAuthInformationInternal;** 
 
 
 ## TrustedDomainFullInformation
- __const win32security.TrustedDomainFullInformation;__ 
+ **const win32security\.TrustedDomainFullInformation;** 
 
 
 ## TrustedDomainFullInformation2Internal
- __const win32security.TrustedDomainFullInformation2Internal;__ 
+ **const win32security\.TrustedDomainFullInformation2Internal;** 
 
 
 ## TrustedDomainFullInformationInternal
- __const win32security.TrustedDomainFullInformationInternal;__ 
+ **const win32security\.TrustedDomainFullInformationInternal;** 
 
 
 ## TrustedDomainInformationBasic
- __const win32security.TrustedDomainInformationBasic;__ 
+ **const win32security\.TrustedDomainInformationBasic;** 
 
 
 ## TrustedDomainInformationEx
- __const win32security.TrustedDomainInformationEx;__ 
+ **const win32security\.TrustedDomainInformationEx;** 
 
 
 ## TrustedDomainInformationEx2Internal
- __const win32security.TrustedDomainInformationEx2Internal;__ 
+ **const win32security\.TrustedDomainInformationEx2Internal;** 
 
 
 ## TrustedDomainNameInformation
- __const win32security.TrustedDomainNameInformation;__ 
+ **const win32security\.TrustedDomainNameInformation;** 
 
 
 ## TrustedPasswordInformation
- __const win32security.TrustedPasswordInformation;__ 
+ **const win32security\.TrustedPasswordInformation;** 
 
 
 ## TrustedPosixOffsetInformation
- __const win32security.TrustedPosixOffsetInformation;__ 
+ **const win32security\.TrustedPosixOffsetInformation;** 
 
 
-## UNPROTECTED_DACL_SECURITY_INFORMATION
- __const win32security.UNPROTECTED_DACL_SECURITY_INFORMATION;__ 
+## UNPROTECTED\_DACL\_SECURITY\_INFORMATION
+ **const win32security\.UNPROTECTED\_DACL\_SECURITY\_INFORMATION;** 
 
 
-## UNPROTECTED_SACL_SECURITY_INFORMATION
- __const win32security.UNPROTECTED_SACL_SECURITY_INFORMATION;__ 
+## UNPROTECTED\_SACL\_SECURITY\_INFORMATION
+ **const win32security\.UNPROTECTED\_SACL\_SECURITY\_INFORMATION;** 

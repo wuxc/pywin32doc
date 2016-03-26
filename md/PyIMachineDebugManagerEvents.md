@@ -15,10 +15,10 @@ Description of the interface
 
     Description of onRemoveApplication&nbsp;
 
-## [PyIMachineDebugManagerEvents](#pyimachinedebugmanagerevents).onAddApplication
+## [PyIMachineDebugManagerEvents](#pyimachinedebugmanagerevents)\.onAddApplication
 
- __onAddApplication( *pda*  *, dwAppCookie* __ )
-Description of onAddApplication.
+ **onAddApplication\( *pda*  *, dwAppCookie* ** \)
+Description of onAddApplication\.
 
 #### Parameters
 
@@ -31,10 +31,10 @@ Description of onAddApplication.
 
     Description for dwAppCookie
 
-## [PyIMachineDebugManagerEvents](#pyimachinedebugmanagerevents).onRemoveApplication
+## [PyIMachineDebugManagerEvents](#pyimachinedebugmanagerevents)\.onRemoveApplication
 
- __onRemoveApplication( *pda*  *, dwAppCookie* __ )
-Description of onRemoveApplication.
+ **onRemoveApplication\( *pda*  *, dwAppCookie* ** \)
+Description of onRemoveApplication\.
 
 #### Parameters
 

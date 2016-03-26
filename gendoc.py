@@ -9,6 +9,11 @@ popular_modules = ('win32api', 'win32gui', 'win32ui', 'win32process',
 
 docs = {}
 
+def escape(s):
+    to_escape = '\`*_{}[]()#+=.!'
+    s = ['\\' + c if c in to_escape else c for c in s]
+    return ''.join(s)
+
 def split_fname(fname):
     if fname.endswith('.html'): fname = fname[:-5]
     if fname.endswith('_meth'): fname = fname[:-5]
@@ -46,7 +51,7 @@ def parse(fname, badhtml):
         if tag in ignores:
             pos = e
             continue
-        curline = curline + badhtml[pos:s].strip()
+        curline = curline + escape(badhtml[pos:s].strip())
 
         # print pos, s, e, tag
         if tag in boundaries:
@@ -80,9 +85,9 @@ def parse(fname, badhtml):
                 curline += '](%s)' % url
                 url = ''
             elif tag == 'b' :
-                curline += ' __'
+                curline += ' **'
             elif tag == '/b':
-                curline += '__ '
+                curline += '** '
             elif tag =='i':
                 curline += ' *'
             elif tag == '/i':

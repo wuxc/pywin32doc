@@ -27,30 +27,30 @@ Description of the interface
 
     Description of GetResultAsDebugProperties&nbsp;
 
-## [PyIDebugExpression](#pyidebugexpression).Abort
+## [PyIDebugExpression](#pyidebugexpression)\.Abort
 
- __Abort(__ )
-Description of Abort.
+ **Abort\(** \)
+Description of Abort\.
 
-## [PyIDebugExpression](#pyidebugexpression).GetResultAsDebugProperties
+## [PyIDebugExpression](#pyidebugexpression)\.GetResultAsDebugProperties
 
- __GetResultAsDebugProperties(__ )
-Description of GetResultAsDebugProperty.
+ **GetResultAsDebugProperties\(** \)
+Description of GetResultAsDebugProperty\.
 
-## [PyIDebugExpression](#pyidebugexpression).GetResultAsString
+## [PyIDebugExpression](#pyidebugexpression)\.GetResultAsString
 
- __GetResultAsString(__ )
-Description of GetResultAsString.
+ **GetResultAsString\(** \)
+Description of GetResultAsString\.
 
-## [PyIDebugExpression](#pyidebugexpression).QueryIsComplete
+## [PyIDebugExpression](#pyidebugexpression)\.QueryIsComplete
 
- __QueryIsComplete(__ )
-Description of QueryIsComplete.
+ **QueryIsComplete\(** \)
+Description of QueryIsComplete\.
 
-## [PyIDebugExpression](#pyidebugexpression).Start
+## [PyIDebugExpression](#pyidebugexpression)\.Start
 
- __Start( *pdecb* __ )
-Description of Start.
+ **Start\( *pdecb* ** \)
+Description of Start\.
 
 #### Parameters
 

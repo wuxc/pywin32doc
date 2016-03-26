@@ -1,8 +1,8 @@
 # PyLUID
 
-## PyLUID_AND_ATTRIBUTES Object
+## PyLUID\_AND\_ATTRIBUTES Object
 
-A sequence containing (LUID,Attributes) representing an LUID_AND_ATTRIBUTES structure
+A sequence containing \(LUID,Attributes\) representing an LUID\_AND\_ATTRIBUTES structure
 
 #### Comments
 LUID is a large integer, and attributes is an integer containing flags

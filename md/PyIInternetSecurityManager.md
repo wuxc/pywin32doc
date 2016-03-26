@@ -27,7 +27,7 @@ Description of the interface
 
     Description of ProcessUrlAction 
 
-{ "QueryCustomPolicy", PyIInternetSecurityManager::QueryCustomPolicy, 1 },&nbsp;
+\{ "QueryCustomPolicy", PyIInternetSecurityManager::QueryCustomPolicy, 1 \},&nbsp;
 
   - [SetZoneMapping](PyIInternetSecurityManager.md#pyiinternetsecuritymanagersetzonemapping)
 
@@ -37,15 +37,15 @@ Description of the interface
 
     Description of GetZoneMappings&nbsp;
 
-## [PyIInternetSecurityManager](#pyiinternetsecuritymanager).GetSecurityId
+## [PyIInternetSecurityManager](#pyiinternetsecuritymanager)\.GetSecurityId
 
- __GetSecurityId( *pwszUrl*  *, pcbSecurityId* __ )
-Description of GetSecurityId.
+ **GetSecurityId\( *pwszUrl*  *, pcbSecurityId* ** \)
+Description of GetSecurityId\.
 
 #### Parameters
 
 
-  -  *pwszUrl* : __unicode__ 
+  -  *pwszUrl* : **unicode** 
 
     Description for pwszUrl
 
@@ -53,15 +53,15 @@ Description of GetSecurityId.
 
     Description for pcbSecurityId
 
-## [PyIInternetSecurityManager](#pyiinternetsecuritymanager).GetSecuritySite
+## [PyIInternetSecurityManager](#pyiinternetsecuritymanager)\.GetSecuritySite
 
- __GetSecuritySite(__ )
-Description of GetSecuritySite.
+ **GetSecuritySite\(** \)
+Description of GetSecuritySite\.
 
-## [PyIInternetSecurityManager](#pyiinternetsecuritymanager).GetZoneMappings
+## [PyIInternetSecurityManager](#pyiinternetsecuritymanager)\.GetZoneMappings
 
- __GetZoneMappings( *dwZone*  *, dwFlags* __ )
-Description of GetZoneMappings.
+ **GetZoneMappings\( *dwZone*  *, dwFlags* ** \)
+Description of GetZoneMappings\.
 
 #### Parameters
 
@@ -74,15 +74,15 @@ Description of GetZoneMappings.
 
     Description for dwFlags
 
-## [PyIInternetSecurityManager](#pyiinternetsecuritymanager).MapUrlToZone
+## [PyIInternetSecurityManager](#pyiinternetsecuritymanager)\.MapUrlToZone
 
- __MapUrlToZone( *pwszUrl*  *, dwFlags* __ )
-Description of MapUrlToZone.
+ **MapUrlToZone\( *pwszUrl*  *, dwFlags* ** \)
+Description of MapUrlToZone\.
 
 #### Parameters
 
 
-  -  *pwszUrl* : __unicode__ 
+  -  *pwszUrl* : **unicode** 
 
     Description for pwszUrl
 
@@ -90,15 +90,15 @@ Description of MapUrlToZone.
 
     Description for dwFlags
 
-## [PyIInternetSecurityManager](#pyiinternetsecuritymanager).ProcessUrlAction
+## [PyIInternetSecurityManager](#pyiinternetsecuritymanager)\.ProcessUrlAction
 
- __ProcessUrlAction( *pwszUrl*  *, dwAction*  *, context*  *, dwFlags* __ )
-Description of ProcessUrlAction.
+ **ProcessUrlAction\( *pwszUrl*  *, dwAction*  *, context*  *, dwFlags* ** \)
+Description of ProcessUrlAction\.
 
 #### Parameters
 
 
-  -  *pwszUrl* : __unicode__ 
+  -  *pwszUrl* : **unicode** 
 
     Description for pwszUrl
 
@@ -114,22 +114,22 @@ Description of ProcessUrlAction.
 
     Description for dwFlags
 
-## [PyIInternetSecurityManager](#pyiinternetsecuritymanager).SetSecuritySite
+## [PyIInternetSecurityManager](#pyiinternetsecuritymanager)\.SetSecuritySite
 
- __SetSecuritySite( *pSite* __ )
-Description of SetSecuritySite.
+ **SetSecuritySite\( *pSite* ** \)
+Description of SetSecuritySite\.
 
 #### Parameters
 
 
-  -  *pSite* : __PyIInternetSecurityMgrSite__ 
+  -  *pSite* : **PyIInternetSecurityMgrSite** 
 
     Description for pSite
 
-## [PyIInternetSecurityManager](#pyiinternetsecuritymanager).SetZoneMapping
+## [PyIInternetSecurityManager](#pyiinternetsecuritymanager)\.SetZoneMapping
 
- __SetZoneMapping( *dwZone*  *, lpszPattern*  *, dwFlags* __ )
-Description of SetZoneMapping.
+ **SetZoneMapping\( *dwZone*  *, lpszPattern*  *, dwFlags* ** \)
+Description of SetZoneMapping\.
 
 #### Parameters
 
@@ -138,7 +138,7 @@ Description of SetZoneMapping.
 
     Description for dwZone
 
-  -  *lpszPattern* : __unicode__ 
+  -  *lpszPattern* : **unicode** 
 
     Description for lpszPattern
 

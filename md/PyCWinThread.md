@@ -2,61 +2,61 @@
 
 ## PyCWinThread Object
 
-An application class.  Encapsulates an MFC __CWinThread__ class
+An application class\.  Encapsulates an MFC **CWinThread** class
 
 #### Methods
 
 
   - [CreateThread](PyCWinThread.md#pycwinthreadcreatethread)
 
-    Creates the actual thread behind the thread object.&nbsp;
+    Creates the actual thread behind the thread object\.&nbsp;
 
   - [PumpIdle](PyCWinThread.md#pycwinthreadpumpidle)
 
-    Pumps idle messages.&nbsp;
+    Pumps idle messages\.&nbsp;
 
   - [PumpMessages](PyCWinThread.md#pycwinthreadpumpmessages)
 
-    Pumps all messages to the application until a WM_QUIT message is received.&nbsp;
+    Pumps all messages to the application until a WM\_QUIT message is received\.&nbsp;
 
   - [Run](PyCWinThread.md#pycwinthreadrun)
 
-    Starts the main application message pump.&nbsp;
+    Starts the main application message pump\.&nbsp;
 
   - [SetMainFrame](PyCWinThread.md#pycwinthreadsetmainframe)
 
-    Sets the C++ applications main frame&nbsp;
+    Sets the C\+\+ applications main frame&nbsp;
 
   - [SetThreadPriority](PyCWinThread.md#pycwinthreadsetthreadpriority)
 
     Sets the threads priority&nbsp;
 
-## [PyCWinThread](#pycwinthread).CreateThread
+## [PyCWinThread](#pycwinthread)\.CreateThread
 
- __CreateThread(__ )
-Creates the actual thread behind the thread object.
+ **CreateThread\(** \)
+Creates the actual thread behind the thread object\.
 
-## [PyCWinThread](#pycwinthread).PumpIdle
+## [PyCWinThread](#pycwinthread)\.PumpIdle
 
- __PumpIdle(__ )
-Pumps all idle messages.
+ **PumpIdle\(** \)
+Pumps all idle messages\.
 
-## [PyCWinThread](#pycwinthread).PumpMessages
+## [PyCWinThread](#pycwinthread)\.PumpMessages
 
- __PumpMessages(__ )
-Pumps all messages to the application until a WM_QUIT message is received.
+ **PumpMessages\(** \)
+Pumps all messages to the application until a WM\_QUIT message is received\.
 
 #### Comments
-This allows an application which is performing a long operation to dispatch paint messages during the operation.
+This allows an application which is performing a long operation to dispatch paint messages during the operation\.
 
-## [PyCWinThread](#pycwinthread).Run
+## [PyCWinThread](#pycwinthread)\.Run
 
-int = __Run(__ )
-Starts the message pump.  Advanced users only
+int \= **Run\(** \)
+Starts the message pump\.  Advanced users only
 
-## [PyCWinThread](#pycwinthread).SetMainFrame
+## [PyCWinThread](#pycwinthread)\.SetMainFrame
 
- __SetMainFrame( *mainFrame* __ )
+ **SetMainFrame\( *mainFrame* ** \)
 Sets the threads main frame
 
 #### Parameters
@@ -64,21 +64,21 @@ Sets the threads main frame
 
   -  *mainFrame* :[PyCWnd](#pycwnd)
 
-    The applications main frame.
+    The applications main frame\.
 
 #### Comments
-You can pass None to this function to reset the main frame. 
+You can pass None to this function to reset the main frame\. 
 
-Should I free this?  I dont think so!
+Should I free this?  I dont think so\!
 
-## [PyCWinThread](#pycwinthread).SetThreadPriority
+## [PyCWinThread](#pycwinthread)\.SetThreadPriority
 
- __SetThreadPriority( *priority* __ )
-Sets the threads priority.  Returns TRUE if successful.
+ **SetThreadPriority\( *priority* ** \)
+Sets the threads priority\.  Returns TRUE if successful\.
 
 #### Parameters
 
 
   -  *priority* :[PyCWnd](#pycwnd)
 
-    The threads priority.
+    The threads priority\.

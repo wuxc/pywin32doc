@@ -2,121 +2,121 @@
 
 ## TYPEATTR Object
 
-A TYPEATTR object represents a COM TYPEATTR structure.
+A TYPEATTR object represents a COM TYPEATTR structure\.
 
 #### Properties
 
-  -  __[PyIID](#pyiid)iid__ 
+  -  **[PyIID](#pyiid)iid** 
     The IID
 
-  -  __int lcid__ 
+  -  **int lcid** 
     The lcid
 
-  -  __int memidConstructor__ 
+  -  **int memidConstructor** 
     ID of constructor
 
-  -  __int memidDestructor__ 
+  -  **int memidDestructor** 
     ID of destructor
 
-  -  __int cbSizeInstance__ 
+  -  **int cbSizeInstance** 
     The size of an instance of this type
 
-  -  __int typekind__ 
-    The kind of type this information describes.  One of the win32con.TKIND_* constants.
+  -  **int typekind** 
+    The kind of type this information describes\.  One of the win32con\.TKIND\_\* constants\.
 
-  -  __int cFuncs__ 
-    Number of functions.
+  -  **int cFuncs** 
+    Number of functions\.
 
-  -  __int cVars__ 
-    Number of variables/data members.
+  -  **int cVars** 
+    Number of variables/data members\.
 
-  -  __int cImplTypes__ 
-    Number of implemented interfaces.
+  -  **int cImplTypes** 
+    Number of implemented interfaces\.
 
-  -  __int cbSizeVft__ 
+  -  **int cbSizeVft** 
     The size of this type's VTBL
 
-  -  __int cbAlignment__ 
-    Byte alignment for an instance of this type.
+  -  **int cbAlignment** 
+    Byte alignment for an instance of this type\.
 
-  -  __int wTypeFlags__ 
-    One of the pythoncom TYPEFLAG_
+  -  **int wTypeFlags** 
+    One of the pythoncom TYPEFLAG\_
 
-  -  __int wMajorVerNum__ 
-    Major version number.
+  -  **int wMajorVerNum** 
+    Major version number\.
 
-  -  __int wMinorVerNum__ 
-    Minor version number.
+  -  **int wMinorVerNum** 
+    Minor version number\.
 
-  -  __[TYPEDESC](#typedesc)tdescAlias__ 
-    If TypeKind == pythoncom.TKIND_ALIAS, specifies the type for which this type is an alias.
+  -  **[TYPEDESC](#typedesc)tdescAlias** 
+    If TypeKind \=\= pythoncom\.TKIND\_ALIAS, specifies the type for which this type is an alias\.
 
-  -  __[IDLDESC](#idldesc)idldeskType__ 
-    IDL attributes of the described type.
+  -  **[IDLDESC](#idldesc)idldeskType** 
+    IDL attributes of the described type\.
 
 #### Items
 
 
-  - [0] *[PyIID](#pyiid)* : IID
+  - \[0\] *[PyIID](#pyiid)* : IID
 
     The IID
 
-  - [1] *int* : lcid
+  - \[1\] *int* : lcid
 
     The lcid
 
-  - [2] *int* : memidConstructor
+  - \[2\] *int* : memidConstructor
 
     ID of constructor
 
-  - [3] *int* : memidDestructor
+  - \[3\] *int* : memidDestructor
 
     ID of destructor,
 
-  - [4] *int* : cbSizeInstance
+  - \[4\] *int* : cbSizeInstance
 
     The size of an instance of this type
 
-  - [5] *int* : typekind
+  - \[5\] *int* : typekind
 
-    The kind of type this information describes.  One of the win32con.TKIND_* constants.
+    The kind of type this information describes\.  One of the win32con\.TKIND\_\* constants\.
 
-  - [6] *int* : cFuncs
+  - \[6\] *int* : cFuncs
 
-    Number of functions.
+    Number of functions\.
 
-  - [7] *int* : cVars
+  - \[7\] *int* : cVars
 
-    Number of variables/data members.
+    Number of variables/data members\.
 
-  - [8] *int* : cImplTypes
+  - \[8\] *int* : cImplTypes
 
-    Number of implemented interfaces.
+    Number of implemented interfaces\.
 
-  - [9] *int* : cbSizeVft
+  - \[9\] *int* : cbSizeVft
 
     The size of this type's VTBL
 
-  - [10] *int* : cbAlignment
+  - \[10\] *int* : cbAlignment
 
-    Byte alignment for an instance of this type.
+    Byte alignment for an instance of this type\.
 
-  - [11] *int* : wTypeFlags
+  - \[11\] *int* : wTypeFlags
 
-    One of the pythoncom TYPEFLAG_* constants
+    One of the pythoncom TYPEFLAG\_\* constants
 
-  - [12] *int* : wMajorVerNum
+  - \[12\] *int* : wMajorVerNum
 
-    Major version number.
+    Major version number\.
 
-  - [13] *int* : wMinorVerNum
+  - \[13\] *int* : wMinorVerNum
 
-    Minor version number.
+    Minor version number\.
 
-  - [14] *[TYPEDESC](#typedesc)* : obDescAlias
+  - \[14\] *[TYPEDESC](#typedesc)* : obDescAlias
 
-    If TypeKind == pythoncom.TKIND_ALIAS, specifies the type for which this type is an alias.
+    If TypeKind \=\= pythoncom\.TKIND\_ALIAS, specifies the type for which this type is an alias\.
 
-  - [15] *[IDLDESC](#idldesc)* : obIDLDesc
+  - \[15\] *[IDLDESC](#idldesc)* : obIDLDesc
 
-    IDL attributes of the described type.
+    IDL attributes of the described type\.

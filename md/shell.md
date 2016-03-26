@@ -13,27 +13,27 @@ A module wrapping Windows Shell functions and interfaces
 
   - [AssocCreateForClasses](shell.md#shellassoccreateforclasses)
 
-    Retrieves an object that implements an IQueryAssociations interface."}&nbsp;
+    Retrieves an object that implements an IQueryAssociations interface\."\}&nbsp;
 
   - [DragQueryFile](shell.md#shelldragqueryfile)
 
-    Retrieves the file names of dropped files that have resulted from a successful drag-and-drop operation.&nbsp;
+    Retrieves the file names of dropped files that have resulted from a successful drag-and-drop operation\.&nbsp;
 
   - [DragQueryFileW](shell.md#shelldragqueryfilew)
 
-    Retrieves the file names of dropped files that have resulted from a successful drag-and-drop operation.&nbsp;
+    Retrieves the file names of dropped files that have resulted from a successful drag-and-drop operation\.&nbsp;
 
   - [DragQueryPoint](shell.md#shelldragquerypoint)
 
-    Retrieves the position of the mouse pointer at the time a file was dropped during a drag-and-drop operation.&nbsp;
+    Retrieves the position of the mouse pointer at the time a file was dropped during a drag-and-drop operation\.&nbsp;
 
   - [IsUserAnAdmin](shell.md#shellisuseranadmin)
 
-    Tests whether the current user is a member of the Administrator's group.&nbsp;
+    Tests whether the current user is a member of the Administrator's group\.&nbsp;
 
   - [SHCreateDataObject](shell.md#shellshcreatedataobject)
 
-    Creates a data object in a parent folder.&nbsp;
+    Creates a data object in a parent folder\.&nbsp;
 
   - [SHCreateDefaultContextMenu](shell.md#shellshcreatedefaultcontextmenu)
 
@@ -41,15 +41,15 @@ A module wrapping Windows Shell functions and interfaces
 
   - [SHCreateDefaultExtractIcon](shell.md#shellshcreatedefaultextracticon)
 
-    Creates a standard icon extractor, whose defaults can be further configured via the IDefaultExtractIconInit interface.&nbsp;
+    Creates a standard icon extractor, whose defaults can be further configured via the IDefaultExtractIconInit interface\.&nbsp;
 
   - [SHCreateShellFolderView](shell.md#shellshcreateshellfolderview)
 
-    Creates a new instance of the default Shell folder view object.&nbsp;
+    Creates a new instance of the default Shell folder view object\.&nbsp;
 
   - [SHCreateShellItemArray](shell.md#shellshcreateshellitemarray)
 
-    Creates a Shell item array object.&nbsp;
+    Creates a Shell item array object\.&nbsp;
 
   - [SHCreateShellItemArrayFromDataObject](shell.md#shellshcreateshellitemarrayfromdataobject)
 
@@ -65,23 +65,23 @@ A module wrapping Windows Shell functions and interfaces
 
   - [SHGetPathFromIDList](shell.md#shellshgetpathfromidlist)
 
-    Converts an[PyIDL](#pyidl)to a path.&nbsp;
+    Converts an[PyIDL](#pyidl)to a path\.&nbsp;
 
   - [SHGetPathFromIDListW](shell.md#shellshgetpathfromidlistw)
 
-    Converts an[PyIDL](#pyidl)to a unicode path.&nbsp;
+    Converts an[PyIDL](#pyidl)to a unicode path\.&nbsp;
 
   - [SHBrowseForFolder](shell.md#shellshbrowseforfolder)
 
-    Displays a dialog box that enables the user to select a shell folder.&nbsp;
+    Displays a dialog box that enables the user to select a shell folder\.&nbsp;
 
   - [SHGetFileInfo](shell.md#shellshgetfileinfo)
 
-    Retrieves information about an object in the file system, such as a file, a folder, a directory, or a drive root.&nbsp;
+    Retrieves information about an object in the file system, such as a file, a folder, a directory, or a drive root\.&nbsp;
 
   - [SHGetFolderPath](shell.md#shellshgetfolderpath)
 
-    Retrieves the path of a folder.&nbsp;
+    Retrieves the path of a folder\.&nbsp;
 
   - [SHSetFolderPath](shell.md#shellshsetfolderpath)
 
@@ -89,31 +89,31 @@ A module wrapping Windows Shell functions and interfaces
 
   - [SHGetFolderLocation](shell.md#shellshgetfolderlocation)
 
-    Retrieves the[PyIDL](#pyidl)of a folder.&nbsp;
+    Retrieves the[PyIDL](#pyidl)of a folder\.&nbsp;
 
   - [SHGetNameFromIDList](shell.md#shellshgetnamefromidlist)
 
-    Retrieves the display name of an item from an ID list.&nbsp;
+    Retrieves the display name of an item from an ID list\.&nbsp;
 
   - [SHGetSpecialFolderPath](shell.md#shellshgetspecialfolderpath)
 
-    Retrieves the path of a special folder.&nbsp;
+    Retrieves the path of a special folder\.&nbsp;
 
   - [SHGetSpecialFolderLocation](shell.md#shellshgetspecialfolderlocation)
 
-    Retrieves the[PyIDL](#pyidl)of a special folder.&nbsp;
+    Retrieves the[PyIDL](#pyidl)of a special folder\.&nbsp;
 
   - [SHAddToRecentDocs](shell.md#shellshaddtorecentdocs)
 
-    Adds a document to the shell's list of recently used documents or clears all documents from the list. The user gains access to the list through the Start menu of the Windows taskbar.&nbsp;
+    Adds a document to the shell's list of recently used documents or clears all documents from the list\. The user gains access to the list through the Start menu of the Windows taskbar\.&nbsp;
 
   - [SHChangeNotify](shell.md#shellshchangenotify)
 
-    Notifies the system of an event that an application has performed. An application should use this function if it performs an action that may affect the shell.&nbsp;
+    Notifies the system of an event that an application has performed\. An application should use this function if it performs an action that may affect the shell\.&nbsp;
 
   - [SHEmptyRecycleBin](shell.md#shellshemptyrecyclebin)
 
-    Empties the recycle bin on the specified drive.&nbsp;
+    Empties the recycle bin on the specified drive\.&nbsp;
 
   - [SHQueryRecycleBin](shell.md#shellshqueryrecyclebin)
 
@@ -121,19 +121,19 @@ A module wrapping Windows Shell functions and interfaces
 
   - [SHGetDesktopFolder](shell.md#shellshgetdesktopfolder)
 
-    Retrieves the[PyIShellFolder](#pyishellfolder)interface for the desktop folder, which is the root of the shell's namespace.&nbsp;
+    Retrieves the[PyIShellFolder](#pyishellfolder)interface for the desktop folder, which is the root of the shell's namespace\.&nbsp;
 
   - [SHUpdateImage](shell.md#shellshupdateimage)
 
-    Notifies the shell that an image in the system image list has changed.&nbsp;
+    Notifies the shell that an image in the system image list has changed\.&nbsp;
 
   - [SHChangeNotify](shell.md#shellshchangenotify)
 
-    Notifies the system of an event that an application has performed.&nbsp;
+    Notifies the system of an event that an application has performed\.&nbsp;
 
   - [SHChangeNotifyRegister](shell.md#shellshchangenotifyregister)
 
-    Registers a window that receives notifications from the file system or shell.&nbsp;
+    Registers a window that receives notifications from the file system or shell\.&nbsp;
 
   - [SHChangeNotifyDeregister](shell.md#shellshchangenotifyderegister)
 
@@ -141,51 +141,51 @@ A module wrapping Windows Shell functions and interfaces
 
   - [SHCreateItemFromIDList](shell.md#shellshcreateitemfromidlist)
 
-    Creates and initializes a Shell item object.&nbsp;
+    Creates and initializes a Shell item object\.&nbsp;
 
   - [SHCreateItemFromParsingName](shell.md#shellshcreateitemfromparsingname)
 
-    Creates and initializes a Shell item object from a parsing name.&nbsp;
+    Creates and initializes a Shell item object from a parsing name\.&nbsp;
 
   - [SHCreateItemFromRelativeName](shell.md#shellshcreateitemfromrelativename)
 
-    Creates and initializes a Shell item object from a relative parsing name.&nbsp;
+    Creates and initializes a Shell item object from a relative parsing name\.&nbsp;
 
   - [SHCreateItemInKnownFolder](shell.md#shellshcreateiteminknownfolder)
 
-    Creates a Shell item object for a single file that exists inside a known folder.&nbsp;
+    Creates a Shell item object for a single file that exists inside a known folder\.&nbsp;
 
   - [SHCreateItemWithParent](shell.md#shellshcreateitemwithparent)
 
-    Create a Shell item, given a parent folder and a child item ID.&nbsp;
+    Create a Shell item, given a parent folder and a child item ID\.&nbsp;
 
   - [SHGetIDListFromObject](shell.md#shellshgetidlistfromobject)
 
-    Retrieves the PIDL of an object.&nbsp;
+    Retrieves the PIDL of an object\.&nbsp;
 
   - [SHGetInstanceExplorer](shell.md#shellshgetinstanceexplorer)
 
-    Allows components that run in a Web browser (Iexplore.exe) or a nondefault Windows&#174 Explorer (Explorer.exe) process to hold a reference to the process. The components can use the reference to prevent the process from closing prematurely.&nbsp;
+    Allows components that run in a Web browser \(Iexplore\.exe\) or a nondefault Windows&\#174 Explorer \(Explorer\.exe\) process to hold a reference to the process\. The components can use the reference to prevent the process from closing prematurely\.&nbsp;
 
   - [SHFileOperation](shell.md#shellshfileoperation)
 
-    Copies, moves, renames, or deletes a file system object.&nbsp;
+    Copies, moves, renames, or deletes a file system object\.&nbsp;
 
   - [StringAsCIDA](shell.md#shellstringascida)
 
-    Given a CIDA as a raw string, return pidl_folder, [pidl_children, ...]&nbsp;
+    Given a CIDA as a raw string, return pidl\_folder, \[pidl\_children, \.\.\.\]&nbsp;
 
   - [CIDAAsString](shell.md#shellcidaasstring)
 
-    Given a (pidl, child_pidls) object, return a CIDA as a string&nbsp;
+    Given a \(pidl, child\_pidls\) object, return a CIDA as a string&nbsp;
 
   - [StringAsPIDL](shell.md#shellstringaspidl)
 
-    Given a PIDL as a raw string, return a PIDL object (ie, a list of strings)&nbsp;
+    Given a PIDL as a raw string, return a PIDL object \(ie, a list of strings\)&nbsp;
 
   - [AddressAsPIDL](shell.md#shelladdressaspidl)
 
-    Given the address of a PIDL, return a PIDL object (ie, a list of strings)&nbsp;
+    Given the address of a PIDL, return a PIDL object \(ie, a list of strings\)&nbsp;
 
   - [PIDLAsString](shell.md#shellpidlasstring)
 
@@ -193,7 +193,7 @@ A module wrapping Windows Shell functions and interfaces
 
   - [SHGetSettings](shell.md#shellshgetsettings)
 
-    Retrieves the current shell option settings.&nbsp;
+    Retrieves the current shell option settings\.&nbsp;
 
   - [FILEGROUPDESCRIPTORAsString](shell.md#shellfilegroupdescriptorasstring)
 
@@ -205,7 +205,7 @@ A module wrapping Windows Shell functions and interfaces
 
   - [ShellExecuteEx](shell.md#shellshellexecuteex)
 
-    Performs an action on a file.&nbsp;
+    Performs an action on a file\.&nbsp;
 
   - [SHGetViewStatePropertyBag](shell.md#shellshgetviewstatepropertybag)
 
@@ -239,10 +239,10 @@ A module wrapping Windows Shell functions and interfaces
 
     Translates a display name into a shell item identifier&nbsp;
 
-## [shell](#shell).AddressAsPIDL
+## [shell](#shell)\.AddressAsPIDL
 
-[PyIDL](#pyidl)= __AddressAsPIDL( *address* __ )
-Given the address of a PIDL in memory, return a PIDL object (ie, a list of strings)
+[PyIDL](#pyidl)\= **AddressAsPIDL\( *address* ** \)
+Given the address of a PIDL in memory, return a PIDL object \(ie, a list of strings\)
 
 #### Parameters
 
@@ -251,97 +251,97 @@ Given the address of a PIDL in memory, return a PIDL object (ie, a list of strin
 
     The address of the PIDL
 
-## [shell](#shell).AssocCreate
+## [shell](#shell)\.AssocCreate
 
-[PyIQueryAssociations](#pyiqueryassociations)= __AssocCreate(__ )
+[PyIQueryAssociations](#pyiqueryassociations)\= **AssocCreate\(** \)
 Creates a[PyIQueryAssociations](#pyiqueryassociations)object
 
-## [shell](#shell).AssocCreateForClasses
+## [shell](#shell)\.AssocCreateForClasses
 
-[PyIUnknown](#pyiunknown)= __AssocCreateForClasses(__ )
-Retrieves an object that implements an IQueryAssociations interface.
+[PyIUnknown](#pyiunknown)\= **AssocCreateForClasses\(** \)
+Retrieves an object that implements an IQueryAssociations interface\.
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).CIDAAsString
+## [shell](#shell)\.CIDAAsString
 
-string = __CIDAAsString( *pidl* __ )
-Given a (pidl, child_pidls) object, return a CIDA as a string
+string \= **CIDAAsString\( *pidl* ** \)
+Given a \(pidl, child\_pidls\) object, return a CIDA as a string
 
 #### Parameters
 
 
   -  *pidl* : string
 
-    The PIDL as a raw string.
+    The PIDL as a raw string\.
 
 #### Return Value
-The result is a string with the CIDA bytes.
+The result is a string with the CIDA bytes\.
 
-## [shell](#shell).DragQueryFile
+## [shell](#shell)\.DragQueryFile
 
-int/string = __DragQueryFile( *hglobal*  *, index* __ )
-Retrieves the names (or count) of dropped files
+int/string \= **DragQueryFile\( *hglobal*  *, index* ** \)
+Retrieves the names \(or count\) of dropped files
 
 #### Parameters
 
 
   -  *hglobal* :[PyHANDLE](#pyhandle)
 
-    The HGLOBAL object - generally obtained via the 'data_handle' property of a[PySTGMEDIUM](#pystgmedium)object.
+    The HGLOBAL object - generally obtained via the 'data\_handle' property of a[PySTGMEDIUM](#pystgmedium)object\.
 
   -  *index* : int
 
-    The index to retrieve.  If -1, the result if an integer representing the valid index values.
+    The index to retrieve\.  If -1, the result if an integer representing the valid index values\.
 
-## [shell](#shell).DragQueryFileW
+## [shell](#shell)\.DragQueryFileW
 
-int/[PyUnicode](#pyunicode)= __DragQueryFileW( *hglobal*  *, index* __ )
-Retrieves the names (or count) of dropped files
+int/[PyUnicode](#pyunicode)\= **DragQueryFileW\( *hglobal*  *, index* ** \)
+Retrieves the names \(or count\) of dropped files
 
 #### Parameters
 
 
   -  *hglobal* :[PyHANDLE](#pyhandle)
 
-    The HGLOBAL object - generally obtained via the 'data_handle' property of a[PySTGMEDIUM](#pystgmedium)object.
+    The HGLOBAL object - generally obtained via the 'data\_handle' property of a[PySTGMEDIUM](#pystgmedium)object\.
 
   -  *index* : int
 
-    The index to retrieve.  If -1, the result if an integer representing the valid index values.
+    The index to retrieve\.  If -1, the result if an integer representing the valid index values\.
 
-## [shell](#shell).DragQueryPoint
+## [shell](#shell)\.DragQueryPoint
 
-int, (int,int) = __DragQueryPoint( *hglobal* __ )
-Retrieves the position of the mouse pointer at the time a file was dropped during a drag-and-drop operation.
+int, \(int,int\) \= **DragQueryPoint\( *hglobal* ** \)
+Retrieves the position of the mouse pointer at the time a file was dropped during a drag-and-drop operation\.
 
 #### Parameters
 
 
   -  *hglobal* :[PyHANDLE](#pyhandle)
 
-    The HGLOBAL object - generally obtained the 'data_handle' property of a[PySTGMEDIUM](#pystgmedium)
+    The HGLOBAL object - generally obtained the 'data\_handle' property of a[PySTGMEDIUM](#pystgmedium)
 
 #### Comments
-The window for which coordinates are returned is the window that received the WM_DROPFILES message
+The window for which coordinates are returned is the window that received the WM\_DROPFILES message
 
 #### Return Value
-The first item of the return tuple is True if the drop occurred in the client area of the window, or False if the drop did not occur in the client area of the window.
+The first item of the return tuple is True if the drop occurred in the client area of the window, or False if the drop did not occur in the client area of the window\.
 
-## [shell](#shell).FILEGROUPDESCRIPTORAsString
+## [shell](#shell)\.FILEGROUPDESCRIPTORAsString
 
-string = __FILEGROUPDESCRIPTORAsString( *descriptors*  *, make_unicode* __ )
+string \= **FILEGROUPDESCRIPTORAsString\( *descriptors*  *, make\_unicode* ** \)
 Creates a FILEGROUPDESCRIPTOR from a sequence of mapping objects, each with FILEDESCRIPTOR attributes
 
 #### Parameters
 
 
-  -  *descriptors* : [FILEDESCRIPTOR, ...]
+  -  *descriptors* : \[FILEDESCRIPTOR, \.\.\.\]
 
-    A sequence of FILEDESCRIPTOR objects. 
+    A sequence of FILEDESCRIPTOR objects\. 
 
 Each filedescriptor object must be a mapping/dictionary, with the following 
 
@@ -351,38 +351,38 @@ ftCreationTime, ftLastAccessTime, ftLastWriteTime, nFileSize
 
 If these attributes do not exist, or are None, they will be ignored - hence 
 
-you only need specify attributes you care about.
+you only need specify attributes you care about\.
 In general, you can omit dwFlags - it will be set correctly based 
 
-on what other attributes exist.
+on what other attributes exist\.
 
-  -  *make_unicode=False on py2k, True on py3k* : bool
+  -  *make\_unicode\=False on py2k, True on py3k* : bool
 
     If true, a FILEDESCRIPTORW object is created
 
-## [shell](#shell).GetCurrentProcessExplicitAppUserModelID
+## [shell](#shell)\.GetCurrentProcessExplicitAppUserModelID
 
-str = __GetCurrentProcessExplicitAppUserModelID(__ )
+str \= **GetCurrentProcessExplicitAppUserModelID\(** \)
 Retrieves the current taskbar identifier
 
 #### Comments
-Will only retrieve an identifier if set by the application, not a system-assigned default.
+Will only retrieve an identifier if set by the application, not a system-assigned default\.
 Requires Windows 7 or later
 
-## [shell](#shell).IsUserAnAdmin
+## [shell](#shell)\.IsUserAnAdmin
 
-bool = __IsUserAnAdmin(__ )
-Tests whether the current user is a member of the Administrator's group.
+bool \= **IsUserAnAdmin\(** \)
+Tests whether the current user is a member of the Administrator's group\.
 
 #### Comments
 This method is only available with version 5 or later of the shell controls
 
 #### Return Value
-The result is true or false, or a com_error with E_NOTIMPL is raised.
+The result is true or false, or a com\_error with E\_NOTIMPL is raised\.
 
-## [shell](#shell).PIDLAsString
+## [shell](#shell)\.PIDLAsString
 
-string = __PIDLAsString( *pidl* __ )
+string \= **PIDLAsString\( *pidl* ** \)
 Given a PIDL object, return the raw PIDL bytes as a string
 
 #### Parameters
@@ -390,101 +390,101 @@ Given a PIDL object, return the raw PIDL bytes as a string
 
   -  *pidl* :[PyIDL](#pyidl)
 
-    The PIDL object (ie, a list of strings)
+    The PIDL object \(ie, a list of strings\)
 
-## [shell](#shell).SHAddToRecentDocs
+## [shell](#shell)\.SHAddToRecentDocs
 
- __SHAddToRecentDocs( *Flags*  *, data* __ )
-Adds a document to the shell's list of recently used documents or clears all documents from the list. The user gains access to the list through the Start menu of the Windows taskbar.
+ **SHAddToRecentDocs\( *Flags*  *, data* ** \)
+Adds a document to the shell's list of recently used documents or clears all documents from the list\. The user gains access to the list through the Start menu of the Windows taskbar\.
 
 #### Parameters
 
 
   -  *Flags* : int
 
-    Value from SHARD enum indicating how the item is identified.
+    Value from SHARD enum indicating how the item is identified\.
 
   -  *data* : object
 
-    Type of input is determined by the SHARD_* flag.  Use None to clear recent items list.
+    Type of input is determined by the SHARD\_\* flag\.  Use None to clear recent items list\.
 
- __Flags__  __Type of input__ SHARD_PATHAString containing a file pathSHARD_PATHWString containing a file pathSHARD_PIDL[PyIDL](#pyidl), or a buffer containing a PIDL (see[shell::PIDLAsString](shell.md#shellpidlasstring))SHARD_APPIDINFOTuple of ([PyIShellItem](#pyishellitem), str), where str is an AppIDSHARD_APPIDINFOIDLISTTuple of ([PyIDL](#pyidl), str), where str is an AppIDSHARD_LINK[PyIShellLink](#pyishelllink)SHARD_APPIDINFOLINKTuple of ([PyIShellLink](#pyishelllink), str) where str is an AppIDSHARD_SHELLITEM[PyIShellItem](#pyishellitem)
+ **Flags**  **Type of input** SHARD\_PATHAString containing a file pathSHARD\_PATHWString containing a file pathSHARD\_PIDL[PyIDL](#pyidl), or a buffer containing a PIDL \(see[shell::PIDLAsString](shell.md#shellpidlasstring)\)SHARD\_APPIDINFOTuple of \([PyIShellItem](#pyishellitem), str\), where str is an AppIDSHARD\_APPIDINFOIDLISTTuple of \([PyIDL](#pyidl), str\), where str is an AppIDSHARD\_LINK[PyIShellLink](#pyishelllink)SHARD\_APPIDINFOLINKTuple of \([PyIShellLink](#pyishelllink), str\) where str is an AppIDSHARD\_SHELLITEM[PyIShellItem](#pyishellitem)
 #### Comments
-On Windows 7, the entry is also added to the application's jump list.
-The underlying API function has no return value, and therefore no way to indicate failure.
+On Windows 7, the entry is also added to the application's jump list\.
+The underlying API function has no return value, and therefore no way to indicate failure\.
 
 #### Win32 API References
 
 
-  - Search for *SHAddToRecentDocs* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=shaddtorecentdocs),[google](#http://www.google.com/search?q=shaddtorecentdocs)or[google groups](#http://groups.google.com/groups?q=shaddtorecentdocs).
+  - Search for *SHAddToRecentDocs* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=shaddtorecentdocs),[google](#http://www.google.com/search?q=shaddtorecentdocs)or[google groups](#http://groups.google.com/groups?q=shaddtorecentdocs)\.
 
-## [shell](#shell).SHBrowseForFolder
+## [shell](#shell)\.SHBrowseForFolder
 
-([PyIDL](#pyidl), string displayName, iImage) = __SHBrowseForFolder( *hwndOwner*  *, pidlRoot*  *, title*  *, flags*  *, callback*  *, callback_data* __ )
-Displays a dialog box that enables the user to select a shell folder.
+\([PyIDL](#pyidl), string displayName, iImage\) \= **SHBrowseForFolder\( *hwndOwner*  *, pidlRoot*  *, title*  *, flags*  *, callback*  *, callback\_data* ** \)
+Displays a dialog box that enables the user to select a shell folder\.
 
 #### Parameters
 
 
-  -  *hwndOwner=None* :[PyHANDLE](#pyhandle)
+  -  *hwndOwner\=None* :[PyHANDLE](#pyhandle)
 
     Parent window for the dialog box, can be None
 
-  -  *pidlRoot=None* :[PyIDL](#pyidl)
+  -  *pidlRoot\=None* :[PyIDL](#pyidl)
 
-    PIDL identifying the place to start browsing. Desktop is used if not specified
+    PIDL identifying the place to start browsing\. Desktop is used if not specified
 
-  -  *title=None* : __Unicode__ /string
+  -  *title\=None* : **Unicode** /string
 
     Title to be displayed with the directory tree
 
-  -  *flags=0* : int
+  -  *flags\=0* : int
 
-    Combination of shellcon.BIF_* flags
+    Combination of shellcon\.BIF\_\* flags
 
-  -  *callback=None* : object
+  -  *callback\=None* : object
 
     A callable object to be used as the callback, or None
 
-  -  *callback_data=None* : object
+  -  *callback\_data\=None* : object
 
     An object passed to the callback function
 
 #### Comments
 If you provide a callback function, it should take 4 args: 
 
-hwnd, msg, lp, data.  Data will be whatever you passed as callback_data, 
+hwnd, msg, lp, data\.  Data will be whatever you passed as callback\_data, 
 
-and the rest are integers.  See the Microsoft documentation for 
+and the rest are integers\.  See the Microsoft documentation for 
 
-SHBrowseForFolder, or the browse_for_folder.py shell sample for more 
+SHBrowseForFolder, or the browse\_for\_folder\.py shell sample for more 
 
-information.
+information\.
 
 #### Return Value
-The result is ALWAYS a tuple of 3 items.  If the user cancels the 
+The result is ALWAYS a tuple of 3 items\.  If the user cancels the 
 
-dialog, all items are None.  If the dialog is closed normally, the result is 
+dialog, all items are None\.  If the dialog is closed normally, the result is 
 
-a tuple of (PIDL, DisplayName, iImageList)
+a tuple of \(PIDL, DisplayName, iImageList\)
 
-## [shell](#shell).SHChangeNotify
+## [shell](#shell)\.SHChangeNotify
 
- __SHChangeNotify( *EventId*  *, Flags*  *, Item1*  *, Item2* __ )
-Notifies the system of an event that an application has performed. An application should use this function if it performs an action that may affect the shell.
+ **SHChangeNotify\( *EventId*  *, Flags*  *, Item1*  *, Item2* ** \)
+Notifies the system of an event that an application has performed\. An application should use this function if it performs an action that may affect the shell\.
 
 #### Parameters
 
 
   -  *EventId* : int
 
-    Combination of shellcon.SHCNE_* constants
+    Combination of shellcon\.SHCNE\_\* constants
 
   -  *Flags* : int
 
-    Combination of shellcon.SHCNF_* constants that specify type of last 2 parameters 
+    Combination of shellcon\.SHCNF\_\* constants that specify type of last 2 parameters 
 
-Only one of the type flags may be specified, combined with one of the SHCNF_FLUSH* flags
+Only one of the type flags may be specified, combined with one of the SHCNF\_FLUSH\* flags
 
   -  *Item1* : object
 
@@ -494,9 +494,9 @@ Only one of the type flags may be specified, combined with one of the SHCNF_FLUS
 
     Type is dependent on the event to be signalled
 
-## [shell](#shell).SHChangeNotifyDeregister
+## [shell](#shell)\.SHChangeNotifyDeregister
 
- __SHChangeNotifyDeregister( *id* __ )
+ **SHChangeNotifyDeregister\( *id* ** \)
 Unregisters the client's window process from receiving notification events
 
 #### Parameters
@@ -504,35 +504,35 @@ Unregisters the client's window process from receiving notification events
 
   -  *id* : int
 
-    The registration identifier (ID) returned by[shell::SHChangeNotifyRegister](shell.md#shellshchangenotifyregister).
+    The registration identifier \(ID\) returned by[shell::SHChangeNotifyRegister](shell.md#shellshchangenotifyregister)\.
 
-## [shell](#shell).SHChangeNotifyRegister
+## [shell](#shell)\.SHChangeNotifyRegister
 
-int = __SHChangeNotifyRegister( *hwnd*  *, sources*  *, events*  *, msg* __ )
-Registers a window that receives notifications from the file system or shell.
+int \= **SHChangeNotifyRegister\( *hwnd*  *, sources*  *, events*  *, msg* ** \)
+Registers a window that receives notifications from the file system or shell\.
 
 #### Parameters
 
 
   -  *hwnd* :[PyHANDLE](#pyhandle)
 
-    Handle to the window that receives the change or notification messages.
+    Handle to the window that receives the change or notification messages\.
 
   -  *sources* : int
 
-    One or more values that indicate the type of events for which to receive notifications.
+    One or more values that indicate the type of events for which to receive notifications\.
 
   -  *events* : int
 
-    Change notification events for which to receive notification.
+    Change notification events for which to receive notification\.
 
   -  *msg* : int
 
-    Message to be posted to the window procedure.
+    Message to be posted to the window procedure\.
 
-## [shell](#shell).SHCreateDataObject
+## [shell](#shell)\.SHCreateDataObject
 
-[PyIUnknown](#pyiunknown)= __SHCreateDataObject( *parent*  *, children*  *, do_inner*  *, iid* __ )
+[PyIUnknown](#pyiunknown)\= **SHCreateDataObject\( *parent*  *, children*  *, do\_inner*  *, iid* ** \)
 
 
 #### Parameters
@@ -542,62 +542,62 @@ Registers a window that receives notifications from the file system or shell.
 
     
 
-  -  *children* : [PIDL, ...]
+  -  *children* : \[PIDL, \.\.\.\]
 
     
 
-  -  *do_inner* :[PyIDataObject](#pyidataobject)
+  -  *do\_inner* :[PyIDataObject](#pyidataobject)
 
     The inner data object, or None 
 
-bNoneOK */))
+bNoneOK \*/\)\)
 
-  -  *iid=IID_IDataObject* :[PyIID](#pyiid)
+  -  *iid\=IID\_IDataObject* :[PyIID](#pyiid)
 
     The IID to query for
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateDefaultContextMenu
+## [shell](#shell)\.SHCreateDefaultContextMenu
 
-[PyIUnknown](#pyiunknown)= __SHCreateDefaultContextMenu( *dcm*  *, iid* __ )
+[PyIUnknown](#pyiunknown)\= **SHCreateDefaultContextMenu\( *dcm*  *, iid* ** \)
 
 
 #### Parameters
 
 
-  -  *dcm* : __DEFAULTCONTEXTMENU__ 
+  -  *dcm* : **DEFAULTCONTEXTMENU** 
 
     
 
-  -  *iid=IID_IContextMenu* :[PyIID](#pyiid)
+  -  *iid\=IID\_IContextMenu* :[PyIID](#pyiid)
 
     The IID to query for
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateDefaultExtractIcon
+## [shell](#shell)\.SHCreateDefaultExtractIcon
 
-[PyIDefaultExtractIconInit](#pyidefaultextracticoninit)= __SHCreateDefaultExtractIcon(__ )
-Creates a standard icon extractor, whose defaults can be further configured via the IDefaultExtractIconInit interface.
+[PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\= **SHCreateDefaultExtractIcon\(** \)
+Creates a standard icon extractor, whose defaults can be further configured via the IDefaultExtractIconInit interface\.
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateItemFromIDList
+## [shell](#shell)\.SHCreateItemFromIDList
 
-[PyIShellItem](#pyishellitem)= __SHCreateItemFromIDList( *pidl*  *, riid* __ )
+[PyIShellItem](#pyishellitem)\= **SHCreateItemFromIDList\( *pidl*  *, riid* ** \)
 Creates and initializes a Shell item 
 
-object from a PIDL.  Can also create[PyIShellItem2](#pyishellitem2)objects.
+object from a PIDL\.  Can also create[PyIShellItem2](#pyishellitem2)objects\.
 
 #### Parameters
 
@@ -606,19 +606,19 @@ object from a PIDL.  Can also create[PyIShellItem2](#pyishellitem2)objects.
 
     An absolute item identifier list
 
-  -  *riid=IID_IShellItem* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItem* :[PyIID](#pyiid)
 
     The interface to create
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateItemFromParsingName
+## [shell](#shell)\.SHCreateItemFromParsingName
 
-[PyIShellItem](#pyishellitem)= __SHCreateItemFromParsingName( *name*  *, ctx*  *, riid* __ )
-Creates and initializes a Shell item object from a parsing name.
+[PyIShellItem](#pyishellitem)\= **SHCreateItemFromParsingName\( *name*  *, ctx*  *, riid* ** \)
+Creates and initializes a Shell item object from a parsing name\.
 
 #### Parameters
 
@@ -633,17 +633,17 @@ Creates and initializes a Shell item object from a parsing name.
 
   -  *riid* :[PyIID](#pyiid)
 
-    The interface to create, IID_IShellItem or IID_IShellItem2
+    The interface to create, IID\_IShellItem or IID\_IShellItem2
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateItemFromRelativeName
+## [shell](#shell)\.SHCreateItemFromRelativeName
 
-[PyIShellItem](#pyishellitem)= __SHCreateItemFromRelativeName( *Parent*  *, Name*  *, ctx*  *, riid* __ )
-Creates and initializes a Shell item object from a relative parsing name.
+[PyIShellItem](#pyishellitem)\= **SHCreateItemFromRelativeName\( *Parent*  *, Name*  *, ctx*  *, riid* ** \)
+Creates and initializes a Shell item object from a relative parsing name\.
 
 #### Parameters
 
@@ -662,75 +662,75 @@ Creates and initializes a Shell item object from a relative parsing name.
 
   -  *riid* :[PyIID](#pyiid)
 
-    The interface to return, IID_IShellItem or IID_IShellItem2
+    The interface to return, IID\_IShellItem or IID\_IShellItem2
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateItemInKnownFolder
+## [shell](#shell)\.SHCreateItemInKnownFolder
 
-[PyIShellItem](#pyishellitem)= __SHCreateItemInKnownFolder( *FolderId*  *, Flags*  *, Name*  *, riid* __ )
-Creates a Shell item object for a single file that exists inside a known folder.
+[PyIShellItem](#pyishellitem)\= **SHCreateItemInKnownFolder\( *FolderId*  *, Flags*  *, Name*  *, riid* ** \)
+Creates a Shell item object for a single file that exists inside a known folder\.
 
 #### Parameters
 
 
   -  *FolderId* :[PyIID](#pyiid)
 
-    The GUID of a known folder (shell.FOLDERID_*)
+    The GUID of a known folder \(shell\.FOLDERID\_\*\)
 
   -  *Flags* : int
 
-    Combination of shellcon.KF_FLAG_* flags controlling how folder is handled
+    Combination of shellcon\.KF\_FLAG\_\* flags controlling how folder is handled
 
   -  *Name* : str
 
-    Name of an item in the folder.  Pass None to bind to the known folder itself.
+    Name of an item in the folder\.  Pass None to bind to the known folder itself\.
 
-  -  *riid=IID_IShellItem* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItem* :[PyIID](#pyiid)
 
-    The interface to return, usually IID_IShellItem or IID_IShellItem2
+    The interface to return, usually IID\_IShellItem or IID\_IShellItem2
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateItemWithParent
+## [shell](#shell)\.SHCreateItemWithParent
 
-[PyIShellItem](#pyishellitem)= __SHCreateItemWithParent( *Parent*  *, sfParent*  *, child*  *, riid* __ )
-Create a Shell item, given a parent folder and a child item ID.
+[PyIShellItem](#pyishellitem)\= **SHCreateItemWithParent\( *Parent*  *, sfParent*  *, child*  *, riid* ** \)
+Create a Shell item, given a parent folder and a child item ID\.
 
 #### Parameters
 
 
   -  *Parent* :[PyIDL](#pyidl)
 
-    Absolute item id list of the parent folder.  Pass None if the below shell folder is used.
+    Absolute item id list of the parent folder\.  Pass None if the below shell folder is used\.
 
   -  *sfParent* :[PyIShellFolder](#pyishellfolder)
 
-    Parent folder object.  Can be None if parent id list is specified.
+    Parent folder object\.  Can be None if parent id list is specified\.
 
   -  *child* :[PyIDL](#pyidl)
 
     Relative item id list for an object in the parent folder
 
-  -  *riid=IID_IShellItem* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItem* :[PyIID](#pyiid)
 
-    The interface to return, usually IID_IShellItem or IID_IShellItem2
+    The interface to return, usually IID\_IShellItem or IID\_IShellItem2
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateShellFolderView
+## [shell](#shell)\.SHCreateShellFolderView
 
-[PyIShellView](#pyishellview)= __SHCreateShellFolderView( *sf*  *, viewOuter*  *, callbacks* __ )
-Creates a new instance of the default Shell folder view object.
+[PyIShellView](#pyishellview)\= **SHCreateShellFolderView\( *sf*  *, viewOuter*  *, callbacks* ** \)
+Creates a new instance of the default Shell folder view object\.
 
 #### Parameters
 
@@ -739,17 +739,17 @@ Creates a new instance of the default Shell folder view object.
 
     
 
-  -  *viewOuter=None* :[PyIShellView](#pyishellview)
+  -  *viewOuter\=None* :[PyIShellView](#pyishellview)
 
     
 
-  -  *callbacks=None* : __PyIShellFolderViewCB__ 
+  -  *callbacks\=None* : **PyIShellFolderViewCB** 
 
     
 
-## [shell](#shell).SHCreateShellItem
+## [shell](#shell)\.SHCreateShellItem
 
-[PyIShellItem](#pyishellitem)= __SHCreateShellItem( *pidlParent*  *, sfParent*  *, Child* __ )
+[PyIShellItem](#pyishellitem)\= **SHCreateShellItem\( *pidlParent*  *, sfParent*  *, Child* ** \)
 Creates an IShellItem interface from a PIDL
 
 #### Parameters
@@ -765,17 +765,17 @@ Creates an IShellItem interface from a PIDL
 
   -  *Child* :[PyIDL](#pyidl)
 
-    PIDL identifying desired item.  Must be an absolute PIDL if parent is not specified.
+    PIDL identifying desired item\.  Must be an absolute PIDL if parent is not specified\.
 
 #### Comments
 This function is only available on XP and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateShellItemArray
+## [shell](#shell)\.SHCreateShellItemArray
 
-[PyIShellItemArray](#pyishellitemarray)= __SHCreateShellItemArray( *parent*  *, sf*  *, children* __ )
-Creates a Shell item array object.
+[PyIShellItemArray](#pyishellitemarray)\= **SHCreateShellItemArray\( *parent*  *, sf*  *, children* ** \)
+Creates a Shell item array object\.
 
 #### Parameters
 
@@ -786,25 +786,25 @@ Creates a Shell item array object.
 
   -  *sf* :[PyIShellFolder](#pyishellfolder)
 
-    The Shell data source object that is the parent of the child items specified in children. If parent is specified, this parameter can be NULL. 
+    The Shell data source object that is the parent of the child items specified in children\. If parent is specified, this parameter can be NULL\. 
 
-bNoneOK */))
+bNoneOK \*/\)\)
 
-  -  *children* : [[PyIDL](#pyidl), ...]
+  -  *children* : \[[PyIDL](#pyidl), \.\.\.\]
 
     Sequence of relative IDLs for items in the parent folder
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateShellItemArrayFromDataObject
+## [shell](#shell)\.SHCreateShellItemArrayFromDataObject
 
-[PyIShellItemArray](#pyishellitemarray)= __SHCreateShellItemArrayFromDataObject( *do*  *, iid* __ )
+[PyIShellItemArray](#pyishellitemarray)\= **SHCreateShellItemArrayFromDataObject\( *do*  *, iid* ** \)
 Creates a shell item array from an IDataObject 
 
-interface that contains a list of items (eg CF_HDROP)
+interface that contains a list of items \(eg CF\_HDROP\)
 
 #### Parameters
 
@@ -813,35 +813,35 @@ interface that contains a list of items (eg CF_HDROP)
 
     A data object that can be rendered as a list of items
 
-  -  *iid=IID_IShellItemArray* :[PyIID](#pyiid)
+  -  *iid\=IID\_IShellItemArray* :[PyIID](#pyiid)
 
     The interface to create
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateShellItemArrayFromIDLists
+## [shell](#shell)\.SHCreateShellItemArrayFromIDLists
 
-[PyIShellItemArray](#pyishellitemarray)= __SHCreateShellItemArrayFromIDLists( *pidls* __ )
+[PyIShellItemArray](#pyishellitemarray)\= **SHCreateShellItemArrayFromIDLists\( *pidls* ** \)
 Creates a shell item array from a number of item identifiers
 
 #### Parameters
 
 
-  -  *pidls* : [[PyIDL](#pyidl), ...]
+  -  *pidls* : \[[PyIDL](#pyidl), \.\.\.\]
 
-    A sequence of absolute IDLs.
+    A sequence of absolute IDLs\.
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateShellItemArrayFromShellItem
+## [shell](#shell)\.SHCreateShellItemArrayFromShellItem
 
-[PyIShellItemArray](#pyishellitemarray)= __SHCreateShellItemArrayFromShellItem( *si*  *, riid* __ )
+[PyIShellItemArray](#pyishellitemarray)\= **SHCreateShellItemArrayFromShellItem\( *si*  *, riid* ** \)
 Creates an item array containing a single item
 
 #### Parameters
@@ -851,20 +851,20 @@ Creates an item array containing a single item
 
     A shell item 
 
-bNoneOK */))
+bNoneOK \*/\)\)
 
-  -  *riid=IID_IShellItemArray* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItemArray* :[PyIID](#pyiid)
 
     The interface to return
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHCreateStreamOnFileEx
+## [shell](#shell)\.SHCreateStreamOnFileEx
 
-[PyIStream](#pyistream)= __SHCreateStreamOnFileEx( *File*  *, Mode*  *, Attributes*  *, Create*  *, Template* __ )
+[PyIStream](#pyistream)\= **SHCreateStreamOnFileEx\( *File*  *, Mode*  *, Attributes*  *, Create*  *, Template* ** \)
 Creates an IStream interface that reads and writes to a file
 
 #### Parameters
@@ -876,30 +876,30 @@ Creates an IStream interface that reads and writes to a file
 
   -  *Mode* : int
 
-    Combination of storagecon.STGM_* flags specifying the access mode
+    Combination of storagecon\.STGM\_\* flags specifying the access mode
 
   -  *Attributes* : int
 
-    Combination of win32con.FILE_ATTRIBUTE_* flags
+    Combination of win32con\.FILE\_ATTRIBUTE\_\* flags
 
   -  *Create* : bool
 
-    Determines if function should fail when file exists (see MSDN docs for full explanation)
+    Determines if function should fail when file exists \(see MSDN docs for full explanation\)
 
-  -  *Template=None* : None
+  -  *Template\=None* : None
 
     Reserved, use only None
 
 #### Comments
-Accepts keyword args.
-This function is only available on WinXP and later. 
+Accepts keyword args\.
+This function is only available on WinXP and later\. 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHEmptyRecycleBin
+## [shell](#shell)\.SHEmptyRecycleBin
 
- __SHEmptyRecycleBin( *hwnd*  *, path*  *, flags* __ )
-Empties the recycle bin on the specified drive.
+ **SHEmptyRecycleBin\( *hwnd*  *, path*  *, flags* ** \)
+Empties the recycle bin on the specified drive\.
 
 #### Parameters
 
@@ -910,92 +910,92 @@ Empties the recycle bin on the specified drive.
 
   -  *path* : string
 
-    A NULL-terminated string that contains the path of the root drive on which the recycle bin is located. This parameter can contain the address of a string formatted with the drive, folder, and subfolder names (c:\\windows\\system . . .). It can also contain an empty string or NULL. If this value is an empty string or NULL, all recycle bins on all drives will be emptied.
+    A NULL-terminated string that contains the path of the root drive on which the recycle bin is located\. This parameter can contain the address of a string formatted with the drive, folder, and subfolder names \(c:\\\\windows\\\\system \. \. \.\)\. It can also contain an empty string or NULL\. If this value is an empty string or NULL, all recycle bins on all drives will be emptied\.
 
   -  *flags* : int
 
-    One of the SHERB_* values.
+    One of the SHERB\_\* values\.
 
 #### Comments
-This method is only available in shell version 4.71.  If the function is not available, a COM Exception with HRESULT=E_NOTIMPL will be raised.
+This method is only available in shell version 4\.71\.  If the function is not available, a COM Exception with HRESULT\=E\_NOTIMPL will be raised\.
 
-## [shell](#shell).SHFileOperation
+## [shell](#shell)\.SHFileOperation
 
-int, int = __SHFileOperation( *operation* __ )
-Copies, moves, renames, or deletes a file system object.
+int, int \= **SHFileOperation\( *operation* ** \)
+Copies, moves, renames, or deletes a file system object\.
 
 #### Parameters
 
 
   -  *operation* :[SHFILEOPSTRUCT](#shfileopstruct)
 
-    Defines the operation to perform.
+    Defines the operation to perform\.
 
 #### Return Value
 The result is a tuple containing int result of the function itself, and the result of the 
 
-fAnyOperationsAborted member after the operation.  If Flags contains FOF_WANTMAPPINGHANDLE, 
+fAnyOperationsAborted member after the operation\.  If Flags contains FOF\_WANTMAPPINGHANDLE, 
 
 returned tuple will have a 3rd member containing a sequence of 2-tuples with the old and new file names 
 
-of renamed files.  This will only have any content if FOF_RENAMEONCOLLISION was specified, and some 
+of renamed files\.  This will only have any content if FOF\_RENAMEONCOLLISION was specified, and some 
 
-filename conflicts actually occurred.
+filename conflicts actually occurred\.
 
-## [shell](#shell).SHGetDesktopFolder
+## [shell](#shell)\.SHGetDesktopFolder
 
-[PyIShellFolder](#pyishellfolder)= __SHGetDesktopFolder(__ )
-Retrieves the[PyIShellFolder](#pyishellfolder)interface for the desktop folder, which is the root of the shell's namespace.
+[PyIShellFolder](#pyishellfolder)\= **SHGetDesktopFolder\(** \)
+Retrieves the[PyIShellFolder](#pyishellfolder)interface for the desktop folder, which is the root of the shell's namespace\.
 
-## [shell](#shell).SHGetFileInfo
+## [shell](#shell)\.SHGetFileInfo
 
-int,[SHFILEINFO](#shfileinfo)= __SHGetFileInfo( *name*  *, dwFileAttributes*  *, uFlags*  *, infoAttrs* __ )
-Retrieves information about an object in the file system, such as a file, a folder, a directory, or a drive root.
+int,[SHFILEINFO](#shfileinfo)\= **SHGetFileInfo\( *name*  *, dwFileAttributes*  *, uFlags*  *, infoAttrs* ** \)
+Retrieves information about an object in the file system, such as a file, a folder, a directory, or a drive root\.
 
 #### Parameters
 
 
   -  *name* : string/[PyIDL](#pyidl)
 
-    The path and file name. Both absolute 
+    The path and file name\. Both absolute 
 
-and relative paths are valid.
-If the uFlags parameter includes the SHGFI_PIDL flag, this parameter 
+and relative paths are valid\.
+If the uFlags parameter includes the SHGFI\_PIDL flag, this parameter 
 
 must be a valid[PyIDL](#pyidl)object that uniquely identifies the file within 
 
-the shell's namespace. The PIDL must be a fully qualified PIDL. 
+the shell's namespace\. The PIDL must be a fully qualified PIDL\. 
 
-Relative PIDLs are not allowed.
-If the uFlags parameter includes the SHGFI_USEFILEATTRIBUTES flag, this parameter does not have to be a valid file name. 
+Relative PIDLs are not allowed\.
+If the uFlags parameter includes the SHGFI\_USEFILEATTRIBUTES flag, this parameter does not have to be a valid file name\. 
 
 The function will proceed as if the file exists with the specified name 
 
-and with the file attributes passed in the dwFileAttributes parameter. 
+and with the file attributes passed in the dwFileAttributes parameter\. 
 
 This allows you to obtain information about a file type by passing 
 
-just the extension for pszPath and passing FILE_ATTRIBUTE_NORMAL 
+just the extension for pszPath and passing FILE\_ATTRIBUTE\_NORMAL 
 
-in dwFileAttributes.
-This string can use either short (the 8.3 form) or long file names.
+in dwFileAttributes\.
+This string can use either short \(the 8\.3 form\) or long file names\.
 
   -  *dwFileAttributes* : int
 
-    Combination of one or more file attribute flags (FILE_ATTRIBUTE_ values). If uFlags does not include the SHGFI_USEFILEATTRIBUTES flag, this parameter is ignored.
+    Combination of one or more file attribute flags \(FILE\_ATTRIBUTE\_ values\)\. If uFlags does not include the SHGFI\_USEFILEATTRIBUTES flag, this parameter is ignored\.
 
   -  *uFlags* : int
 
-    Combination of shellcon.SHGFI_* flags that specify the file information to retrieve.  See MSDN for details
+    Combination of shellcon\.SHGFI\_\* flags that specify the file information to retrieve\.  See MSDN for details
 
-  -  *infoAttrs=0* : int
+  -  *infoAttrs\=0* : int
 
-    Flags copied to the SHFILEINFO.dwAttributes member - useful when flags contains SHGFI_ATTR_SPECIFIED
+    Flags copied to the SHFILEINFO\.dwAttributes member - useful when flags contains SHGFI\_ATTR\_SPECIFIED
 
-## [shell](#shell).SHGetFolderLocation
+## [shell](#shell)\.SHGetFolderLocation
 
-[PyIDL](#pyidl)= __SHGetFolderLocation( *hwndOwner*  *, nFolder*  *, hToken*  *, reserved* __ )
-Retrieves the PIDL of a folder.
+[PyIDL](#pyidl)\= **SHGetFolderLocation\( *hwndOwner*  *, nFolder*  *, hToken*  *, reserved* ** \)
+Retrieves the PIDL of a folder\.
 
 #### Parameters
 
@@ -1006,34 +1006,34 @@ Retrieves the PIDL of a folder.
 
   -  *nFolder* : int
 
-    One of the CSIDL_* constants specifying the path.
+    One of the CSIDL\_\* constants specifying the path\.
 
-  -  *hToken=None* :[PyHANDLE](#pyhandle)
+  -  *hToken\=None* :[PyHANDLE](#pyhandle)
 
     An access token that can be used to represent a particular user, or None
 
-  -  *reserved=0* : int
+  -  *reserved\=0* : int
 
     Must be 0
 
 #### Comments
 This method is only available with version 5 or later of the shell controls
 
-## [shell](#shell).SHGetFolderPath
+## [shell](#shell)\.SHGetFolderPath
 
-string/[PyUnicode](#pyunicode)= __SHGetFolderPath( *hwndOwner*  *, nFolder*  *, handle*  *, flags* __ )
-Retrieves the path of a folder.
+string/[PyUnicode](#pyunicode)\= **SHGetFolderPath\( *hwndOwner*  *, nFolder*  *, handle*  *, flags* ** \)
+Retrieves the path of a folder\.
 
 #### Parameters
 
 
   -  *hwndOwner* :[PyHANDLE](#pyhandle)
 
-    Parent window, can be None (or 0)
+    Parent window, can be None \(or 0\)
 
   -  *nFolder* : int
 
-    One of the CSIDL_* constants specifying the path.
+    One of the CSIDL\_\* constants specifying the path\.
 
   -  *handle* :[PyHANDLE](#pyhandle)
 
@@ -1041,15 +1041,15 @@ Retrieves the path of a folder.
 
   -  *flags* : int
 
-    Controls which path is returned.  May be SHGFP_TYPE_CURRENT or SHGFP_TYPE_DEFAULT
+    Controls which path is returned\.  May be SHGFP\_TYPE\_CURRENT or SHGFP\_TYPE\_DEFAULT
 
 #### Comments
-This method is only available with later versions of shell32.dll, or if you have shfolder.dll installed on earlier systems
+This method is only available with later versions of shell32\.dll, or if you have shfolder\.dll installed on earlier systems
 
-## [shell](#shell).SHGetIDListFromObject
+## [shell](#shell)\.SHGetIDListFromObject
 
-[PyIDL](#pyidl)= __SHGetIDListFromObject( *unk* __ )
-Retrieves the PIDL of an object.
+[PyIDL](#pyidl)\= **SHGetIDListFromObject\( *unk* ** \)
+Retrieves the PIDL of an object\.
 
 #### Parameters
 
@@ -1061,34 +1061,34 @@ Retrieves the PIDL of an object.
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHGetInstanceExplorer
+## [shell](#shell)\.SHGetInstanceExplorer
 
-[PyIUnknown](#pyiunknown)= __SHGetInstanceExplorer(__ )
-Allows components that run in a Web browser (Iexplore.exe) or a nondefault Windows Explorer (Explorer.exe) process to hold a reference to the process. The components can use the reference to prevent the process from closing prematurely.
+[PyIUnknown](#pyiunknown)\= **SHGetInstanceExplorer\(** \)
+Allows components that run in a Web browser \(Iexplore\.exe\) or a nondefault Windows Explorer \(Explorer\.exe\) process to hold a reference to the process\. The components can use the reference to prevent the process from closing prematurely\.
 
 #### Comments
 SHGetInstanceExplorer succeeds only if it is called from within 
 
-an Explorer.exe or Iexplorer.exe process. It is typically used by 
+an Explorer\.exe or Iexplorer\.exe process\. It is typically used by 
 
-components that run in the context of the Web browser (Iexplore.exe). 
+components that run in the context of the Web browser \(Iexplore\.exe\)\. 
 
-However, it is also useful when Explorer.exe has been configured to 
+However, it is also useful when Explorer\.exe has been configured to 
 
-run all folders in a second process. SHGetInstanceExplorer fails if 
+run all folders in a second process\. SHGetInstanceExplorer fails if 
 
-the component is running in the default Explorer.exe process. There 
+the component is running in the default Explorer\.exe process\. There 
 
 is no need to hold a reference to this process, as it is shut down 
 
-only when the user logs out.
+only when the user logs out\.
 
-## [shell](#shell).SHGetNameFromIDList
+## [shell](#shell)\.SHGetNameFromIDList
 
-str = __SHGetNameFromIDList( *pidl*  *, flags* __ )
-Retrieves the display name of an item from an ID list.
+str \= **SHGetNameFromIDList\( *pidl*  *, flags* ** \)
+Retrieves the display name of an item from an ID list\.
 
 #### Parameters
 
@@ -1099,29 +1099,17 @@ Retrieves the display name of an item from an ID list.
 
   -  *flags* : int
 
-    Type of name to return, shellcon.SIGDN_*
+    Type of name to return, shellcon\.SIGDN\_\*
 
 #### Comments
 This function is only available on Vista and later; a 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHGetPathFromIDList
+## [shell](#shell)\.SHGetPathFromIDList
 
-string = __SHGetPathFromIDList( *idl* __ )
-Converts an IDLIST to a path.
-
-#### Parameters
-
-
-  -  *idl* :[PyIDL](#pyidl)
-
-    The ITEMIDLIST
-
-## [shell](#shell).SHGetPathFromIDListW
-
-[PyUnicode](#pyunicode)= __SHGetPathFromIDListW( *idl* __ )
-Converts an IDLIST to a path.
+string \= **SHGetPathFromIDList\( *idl* ** \)
+Converts an IDLIST to a path\.
 
 #### Parameters
 
@@ -1130,80 +1118,92 @@ Converts an IDLIST to a path.
 
     The ITEMIDLIST
 
-## [shell](#shell).SHGetSettings
+## [shell](#shell)\.SHGetPathFromIDListW
 
-dict = __SHGetSettings( *mask* __ )
-Retrieves the current shell option settings.
+[PyUnicode](#pyunicode)\= **SHGetPathFromIDListW\( *idl* ** \)
+Converts an IDLIST to a path\.
 
 #### Parameters
 
 
-  -  *mask=-1* : int
+  -  *idl* :[PyIDL](#pyidl)
 
-    The values being requested - one of the shellcon.SSF_* constants
+    The ITEMIDLIST
+
+## [shell](#shell)\.SHGetSettings
+
+dict \= **SHGetSettings\( *mask* ** \)
+Retrieves the current shell option settings\.
+
+#### Parameters
+
+
+  -  *mask\=-1* : int
+
+    The values being requested - one of the shellcon\.SSF\_\* constants
 
 #### Comments
-This method is only available in shell version 4.71.  If the 
+This method is only available in shell version 4\.71\.  If the 
 
-function is not available, a COM Exception with HRESULT=E_NOTIMPL 
+function is not available, a COM Exception with HRESULT\=E\_NOTIMPL 
 
-will be raised.
+will be raised\.
 
 #### Return Value
 The result is a dictionary, the contents of which depend on 
 
-the mask param.  Key names are the same as the SHELLFLAGSTATE 
+the mask param\.  Key names are the same as the SHELLFLAGSTATE 
 
 structure members - 'fShowExtensions', 'fNoConfirmRecycle', etc
 
-## [shell](#shell).SHGetSpecialFolderLocation
+## [shell](#shell)\.SHGetSpecialFolderLocation
 
-[PyIDL](#pyidl)= __SHGetSpecialFolderLocation( *hwndOwner*  *, nFolder* __ )
-Retrieves the PIDL of a special folder.
-
-#### Parameters
-
-
-  -  *hwndOwner* :[PyHANDLE](#pyhandle)
-
-    Parent window, can be None (or 0)
-
-  -  *nFolder* : int
-
-    One of the CSIDL_* constants specifying the path.
-
-## [shell](#shell).SHGetSpecialFolderPath
-
-[PyUnicode](#pyunicode)= __SHGetSpecialFolderPath( *hwndOwner*  *, nFolder*  *, bCreate* __ )
-Retrieves the path of a special folder.
+[PyIDL](#pyidl)\= **SHGetSpecialFolderLocation\( *hwndOwner*  *, nFolder* ** \)
+Retrieves the PIDL of a special folder\.
 
 #### Parameters
 
 
   -  *hwndOwner* :[PyHANDLE](#pyhandle)
 
-    Parent window, can be None (or 0)
+    Parent window, can be None \(or 0\)
 
   -  *nFolder* : int
 
-    One of the CSIDL_* constants specifying the path.
+    One of the CSIDL\_\* constants specifying the path\.
 
-  -  *bCreate=0* : int
+## [shell](#shell)\.SHGetSpecialFolderPath
 
-    Should the path be created.
+[PyUnicode](#pyunicode)\= **SHGetSpecialFolderPath\( *hwndOwner*  *, nFolder*  *, bCreate* ** \)
+Retrieves the path of a special folder\.
+
+#### Parameters
+
+
+  -  *hwndOwner* :[PyHANDLE](#pyhandle)
+
+    Parent window, can be None \(or 0\)
+
+  -  *nFolder* : int
+
+    One of the CSIDL\_\* constants specifying the path\.
+
+  -  *bCreate\=0* : int
+
+    Should the path be created\.
 
 #### Comments
-This method is only available in shell version 4.71.  If the 
+This method is only available in shell version 4\.71\.  If the 
 
-function is not available, a COM Exception with HRESULT=E_NOTIMPL 
+function is not available, a COM Exception with HRESULT\=E\_NOTIMPL 
 
-will be raised.  If the function fails, a COM Exception with 
+will be raised\.  If the function fails, a COM Exception with 
 
-HRESULT=E_FAIL will be raised.
+HRESULT\=E\_FAIL will be raised\.
 
-## [shell](#shell).SHGetViewStatePropertyBag
+## [shell](#shell)\.SHGetViewStatePropertyBag
 
-[PyIPropertyBag](#pyipropertybag)= __SHGetViewStatePropertyBag( *pidl*  *, BagName*  *, Flags*  *, riid* __ )
+[PyIPropertyBag](#pyipropertybag)\= **SHGetViewStatePropertyBag\( *pidl*  *, BagName*  *, Flags*  *, riid* ** \)
 Retrieves an interface for the view state of a folder
 
 #### Parameters
@@ -1219,18 +1219,18 @@ Retrieves an interface for the view state of a folder
 
   -  *Flags* : int
 
-    Combination of SHGVSPB_* flags
+    Combination of SHGVSPB\_\* flags
 
   -  *riid* :[PyIID](#pyiid)
 
-    The interface to return, usually IID_IPropertyBag
+    The interface to return, usually IID\_IPropertyBag
 
 #### Comments
 This function will also return IPropertyBag2, but we don't have a python implementation of this interface yet
 
-## [shell](#shell).SHILCreateFromPath
+## [shell](#shell)\.SHILCreateFromPath
 
-([PyIDL](#pyidl), int) = __SHILCreateFromPath( *Path*  *, Flags* __ )
+\([PyIDL](#pyidl), int\) \= **SHILCreateFromPath\( *Path*  *, Flags* ** \)
 Retrieves the PIDL and attributes for a path
 
 #### Parameters
@@ -1242,14 +1242,14 @@ Retrieves the PIDL and attributes for a path
 
   -  *Flags* : int
 
-    A combination of SFGAO_* constants as used with GetAttributesOf
+    A combination of SFGAO\_\* constants as used with GetAttributesOf
 
 #### Return Value
 Returns the PIDL for the given path and any requested attributes
 
-## [shell](#shell).SHOpenFolderAndSelectItems
+## [shell](#shell)\.SHOpenFolderAndSelectItems
 
- __SHOpenFolderAndSelectItems( *Folder*  *, Items*  *, Flags* __ )
+ **SHOpenFolderAndSelectItems\( *Folder*  *, Items*  *, Flags* ** \)
 Displays a shell folder with items pre-selected
 
 #### Parameters
@@ -1259,22 +1259,22 @@ Displays a shell folder with items pre-selected
 
     An absolute item id list identifying a shell folder
 
-  -  *Items* : ([PyIDL](#pyidl),...)
+  -  *Items* : \([PyIDL](#pyidl),\.\.\.\)
 
     A sequence of relative item ids identifying items in the folder
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    Combination of OFASI_* flags (not used on XP)
+    Combination of OFASI\_\* flags \(not used on XP\)
 
 #### Comments
-This function is only available on XP and later. 
+This function is only available on XP and later\. 
 
-COM exception with E_NOTIMPL will be thrown if the function can't be located.
+COM exception with E\_NOTIMPL will be thrown if the function can't be located\.
 
-## [shell](#shell).SHParseDisplayName
+## [shell](#shell)\.SHParseDisplayName
 
-([PyIDL](#pyidl), int) = __SHParseDisplayName( *Name*  *, Attributes*  *, BindCtx* __ )
+\([PyIDL](#pyidl), int\) \= **SHParseDisplayName\( *Name*  *, Attributes*  *, BindCtx* ** \)
 Translates a display name into a shell item identifier
 
 #### Parameters
@@ -1286,9 +1286,9 @@ Translates a display name into a shell item identifier
 
   -  *Attributes* : int
 
-    Bitmask of shell attributes to retrieve, combination of shellcon.SFGAO_*
+    Bitmask of shell attributes to retrieve, combination of shellcon\.SFGAO\_\*
 
-  -  *BindCtx=None* :[PyIBindCtx](#pyibindctx)
+  -  *BindCtx\=None* :[PyIBindCtx](#pyibindctx)
 
     Bind context, can be None
 
@@ -1299,21 +1299,21 @@ Requires XP or later
 #### Return Value
 Returns the item id list and any requested attribute flags
 
-## [shell](#shell).SHQueryRecycleBin
+## [shell](#shell)\.SHQueryRecycleBin
 
-long,long = __SHQueryRecycleBin( *RootPath* __ )
+long,long \= **SHQueryRecycleBin\( *RootPath* ** \)
 Retrieves the total size and number of items in the Recycle Bin for a specified drive
 
 #### Parameters
 
 
-  -  *RootPath=None* :[PyUnicode](#pyunicode)
+  -  *RootPath\=None* :[PyUnicode](#pyunicode)
 
     A path containing the drive whose recycle bin will be queried, or None for all drives
 
-## [shell](#shell).SHSetFolderPath
+## [shell](#shell)\.SHSetFolderPath
 
- __SHSetFolderPath( *csidl*  *, Path*  *, hToken* __ )
+ **SHSetFolderPath\( *csidl*  *, Path*  *, hToken* ** \)
 Sets the location of one of the special folders
 
 #### Parameters
@@ -1321,23 +1321,23 @@ Sets the location of one of the special folders
 
   -  *csidl* : int
 
-    One of the shellcon.CSIDL_* values
+    One of the shellcon\.CSIDL\_\* values
 
   -  *Path* : str/unicode
 
     The full path to be set
 
-  -  *hToken=None* :[PyHANDLE](#pyhandle)
+  -  *hToken\=None* :[PyHANDLE](#pyhandle)
 
     Handle to an access token, can be None
 
 #### Comments
 This function is only available on Windows 2000 or later
 
-## [shell](#shell).SHUpdateImage
+## [shell](#shell)\.SHUpdateImage
 
- __SHUpdateImage( *HashItem*  *, Index*  *, Flags*  *, ImageIndex* __ )
-Notifies the shell that an image in the system image list has changed.
+ **SHUpdateImage\( *HashItem*  *, Index*  *, Flags*  *, ImageIndex* ** \)
+Notifies the shell that an image in the system image list has changed\.
 
 #### Parameters
 
@@ -1352,15 +1352,15 @@ Notifies the shell that an image in the system image list has changed.
 
   -  *Flags* : int
 
-    GIL_NOTFILENAME or GIL_SIMULATEDOC
+    GIL\_NOTFILENAME or GIL\_SIMULATEDOC
 
   -  *ImageIndex* : int
 
     Index of the icon in the system image list
 
-## [shell](#shell).SetCurrentProcessExplicitAppUserModelID
+## [shell](#shell)\.SetCurrentProcessExplicitAppUserModelID
 
- __SetCurrentProcessExplicitAppUserModelID( *AppID* __ )
+ **SetCurrentProcessExplicitAppUserModelID\( *AppID* ** \)
 Sets the taskbar identifier
 
 #### Parameters
@@ -1374,21 +1374,21 @@ Sets the taskbar identifier
 Should be used early in process startup before creating any windows
 Requires Windows 7 or later
 
-## [shell](#shell).ShellExecuteEx
+## [shell](#shell)\.ShellExecuteEx
 
-dict = __ShellExecuteEx( *fMask*  *, hwnd*  *, lpVerb*  *, lpFile*  *, lpParameters*  *, lpDirectory*  *, nShow*  *, lpIDList*  *, obClass*  *, hkeyClass*  *, dwHotKey*  *, hIcon*  *, hMonitor* __ )
-Performs an operation on a file.
+dict \= **ShellExecuteEx\( *fMask*  *, hwnd*  *, lpVerb*  *, lpFile*  *, lpParameters*  *, lpDirectory*  *, nShow*  *, lpIDList*  *, obClass*  *, hkeyClass*  *, dwHotKey*  *, hIcon*  *, hMonitor* ** \)
+Performs an operation on a file\.
 
 #### Parameters
 
 
-  -  *fMask=0* : int
+  -  *fMask\=0* : int
 
-    The default mask for the structure.  Other 
+    The default mask for the structure\.  Other 
 
-masks may be added based on what paramaters are supplied.
+masks may be added based on what paramaters are supplied\.
 
-  -  *hwnd=0* :[PyHANDLE](#pyhandle)
+  -  *hwnd\=0* :[PyHANDLE](#pyhandle)
 
     
 
@@ -1408,7 +1408,7 @@ masks may be added based on what paramaters are supplied.
 
     
 
-  -  *nShow=0* : int
+  -  *nShow\=0* : int
 
     
 
@@ -1439,11 +1439,11 @@ masks may be added based on what paramaters are supplied.
 #### Return Value
 The result is a dictionary based on documented result values 
 
-in the structure.  Currently this is "hInstApp" and "hProcess"
+in the structure\.  Currently this is "hInstApp" and "hProcess"
 
-## [shell](#shell).StringAsCIDA
+## [shell](#shell)\.StringAsCIDA
 
-[PyIDL](#pyidl), list = __StringAsCIDA( *pidl* __ )
+[PyIDL](#pyidl), list \= **StringAsCIDA\( *pidl* ** \)
 Given a CIDA as a raw string, return the folder PIDL and list of children
 
 #### Parameters
@@ -1451,14 +1451,14 @@ Given a CIDA as a raw string, return the folder PIDL and list of children
 
   -  *pidl* : string
 
-    The PIDL as a raw string.
+    The PIDL as a raw string\.
 
 #### Return Value
-The result is the PIDL of the folder, and a list of child PIDLs.
+The result is the PIDL of the folder, and a list of child PIDLs\.
 
-## [shell](#shell).StringAsFILEGROUPDESCRIPTOR
+## [shell](#shell)\.StringAsFILEGROUPDESCRIPTOR
 
-[dict, ...] = __StringAsFILEGROUPDESCRIPTOR( *buf*  *, make_unicode* __ )
+\[dict, \.\.\.\] \= **StringAsFILEGROUPDESCRIPTOR\( *buf*  *, make\_unicode* ** \)
 Decodes a FILEGROUPDESCRIPTOR packed in a string
 
 #### Parameters
@@ -1468,24 +1468,24 @@ Decodes a FILEGROUPDESCRIPTOR packed in a string
 
     A string packed as either FILEGROUPDESCRIPTORW or FILEGROUPDESCRIPTORW
 
-  -  *make_unicode=-1* : bool
+  -  *make\_unicode\=-1* : bool
 
     Should this be treated as a FILEDESCRIPTORW?  If -1 
 
-the size of the buffer will be used to make that determination.  Thus, if 
+the size of the buffer will be used to make that determination\.  Thus, if 
 
 the buffer is not the exact size of a correct FILEDESCRIPTORW or FILEDESCRIPTORA, 
 
-you will need to specify this parameter.
+you will need to specify this parameter\.
 
-## [shell](#shell).StringAsPIDL
+## [shell](#shell)\.StringAsPIDL
 
-[PyIDL](#pyidl)= __StringAsPIDL( *pidl* __ )
-Given a PIDL as a raw string, return a PIDL object (ie, a list of strings)
+[PyIDL](#pyidl)\= **StringAsPIDL\( *pidl* ** \)
+Given a PIDL as a raw string, return a PIDL object \(ie, a list of strings\)
 
 #### Parameters
 
 
   -  *pidl* : string
 
-    The PIDL as a raw string.
+    The PIDL as a raw string\.

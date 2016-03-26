@@ -2,19 +2,19 @@
 
 ## PySSortOrderSet Object
 
-An object describing a SortOrderSet.
+An object describing a SortOrderSet\.
 
 #### Parameters
 
 
-  -  *sortItems* : ([PySSortOrderItem](#pyssortorderitem), ...)
+  -  *sortItems* : \([PySSortOrderItem](#pyssortorderitem), \.\.\.\)
 
     The items to sort by
 
-  -  *cCategories=0* : int
+  -  *cCategories\=0* : int
 
     
 
-  -  *cExpanded=0* : int
+  -  *cExpanded\=0* : int
 
-    TRUE */)
+    TRUE \*/\)

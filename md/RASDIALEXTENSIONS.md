@@ -4,21 +4,21 @@
 
 An object that describes a Win32 RASDIALEXTENSIONS structure 
 
-TRUE*/)
+TRUE\*/\)
 
 #### Properties
 
-  -  __integer dwfOptions__ 
-    (fOptions may also be used)
+  -  **integer dwfOptions** 
+    \(fOptions may also be used\)
 
-  -  __integer hwndParent__ 
+  -  **integer hwndParent** 
     
 
-  -  __integer reserved__ 
+  -  **integer reserved** 
     
 
-  -  __integer reserved1__ 
+  -  **integer reserved1** 
     
 
-  -  __ __RASEAPINFO__ RasEapInfo__ 
+  -  ** **RASEAPINFO** RasEapInfo** 
     

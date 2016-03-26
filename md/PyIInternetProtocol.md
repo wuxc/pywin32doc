@@ -23,10 +23,10 @@ Description of the interface
 
     Description of UnlockRequest&nbsp;
 
-## [PyIInternetProtocol](#pyiinternetprotocol).LockRequest
+## [PyIInternetProtocol](#pyiinternetprotocol)\.LockRequest
 
- __LockRequest( *dwOptions* __ )
-Description of LockRequest.
+ **LockRequest\( *dwOptions* ** \)
+Description of LockRequest\.
 
 #### Parameters
 
@@ -35,10 +35,10 @@ Description of LockRequest.
 
     Description for dwOptions
 
-## [PyIInternetProtocol](#pyiinternetprotocol).Read
+## [PyIInternetProtocol](#pyiinternetprotocol)\.Read
 
- __Read( *cb* __ )
-Description of Read.
+ **Read\( *cb* ** \)
+Description of Read\.
 
 #### Parameters
 
@@ -47,15 +47,15 @@ Description of Read.
 
     Description for cb
 
-## [PyIInternetProtocol](#pyiinternetprotocol).Seek
+## [PyIInternetProtocol](#pyiinternetprotocol)\.Seek
 
- __Seek( *dlibMove*  *, dwOrigin* __ )
-Description of Seek.
+ **Seek\( *dlibMove*  *, dwOrigin* ** \)
+Description of Seek\.
 
 #### Parameters
 
 
-  -  *dlibMove* :[LARGE_INTEGER](LARGE.md#largeinteger)
+  -  *dlibMove* :[LARGE\_INTEGER](LARGE.md#largeinteger)
 
     Description for dlibMove
 
@@ -63,7 +63,7 @@ Description of Seek.
 
     Description for dwOrigin
 
-## [PyIInternetProtocol](#pyiinternetprotocol).UnlockRequest
+## [PyIInternetProtocol](#pyiinternetprotocol)\.UnlockRequest
 
- __UnlockRequest(__ )
-Description of UnlockRequest.
+ **UnlockRequest\(** \)
+Description of UnlockRequest\.

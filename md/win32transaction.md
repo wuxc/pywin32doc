@@ -4,11 +4,11 @@
 
 Module wrapping Kernal Transaction Manager functions, as used with 
 
-transacted NTFS and transacted registry functions.
+transacted NTFS and transacted registry functions\.
 
 #### Comments
-These functions are only available on Vista and later.
-All functions accept keyword arguments.
+These functions are only available on Vista and later\.
+All functions accept keyword arguments\.
 
 #### Methods
 
@@ -41,9 +41,9 @@ All functions accept keyword arguments.
 
     Creates a handle to an existing transaction&nbsp;
 
-## [win32transaction](#win32transaction).CommitTransaction
+## [win32transaction](#win32transaction)\.CommitTransaction
 
- __CommitTransaction( *TransactionHandle* __ )
+ **CommitTransaction\( *TransactionHandle* ** \)
 Commits a transaction
 
 #### Parameters
@@ -56,11 +56,11 @@ Commits a transaction
 #### Win32 API References
 
 
-  - Search for *CommitTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransaction),[google](#http://www.google.com/search?q=committransaction)or[google groups](#http://groups.google.com/groups?q=committransaction).
+  - Search for *CommitTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransaction),[google](#http://www.google.com/search?q=committransaction)or[google groups](#http://groups.google.com/groups?q=committransaction)\.
 
-## [win32transaction](#win32transaction).CommitTransactionAsync
+## [win32transaction](#win32transaction)\.CommitTransactionAsync
 
- __CommitTransactionAsync( *TransactionHandle* __ )
+ **CommitTransactionAsync\( *TransactionHandle* ** \)
 Commits a transaction asynchronously
 
 #### Parameters
@@ -73,52 +73,52 @@ Commits a transaction asynchronously
 #### Win32 API References
 
 
-  - Search for *CommitTransactionAsync* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransactionasync),[google](#http://www.google.com/search?q=committransactionasync)or[google groups](#http://groups.google.com/groups?q=committransactionasync).
+  - Search for *CommitTransactionAsync* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransactionasync),[google](#http://www.google.com/search?q=committransactionasync)or[google groups](#http://groups.google.com/groups?q=committransactionasync)\.
 
-## [win32transaction](#win32transaction).CreateTransaction
+## [win32transaction](#win32transaction)\.CreateTransaction
 
-[PyHANDLE](#pyhandle)= __CreateTransaction( *TransactionAttributes*  *, UOW*  *, CreateOptions*  *, IsolationLevel*  *, IsolationFlags*  *, Timeout*  *, Description* __ )
+[PyHANDLE](#pyhandle)\= **CreateTransaction\( *TransactionAttributes*  *, UOW*  *, CreateOptions*  *, IsolationLevel*  *, IsolationFlags*  *, Timeout*  *, Description* ** \)
 Creates a transaction
 
 #### Parameters
 
 
-  -  *TransactionAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  -  *TransactionAttributes\=None* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Security and inheritance for the transaction, can be None
 
-  -  *UOW=None* :[PyIID](#pyiid)
+  -  *UOW\=None* :[PyIID](#pyiid)
 
     Reserved, use only None
 
-  -  *CreateOptions=0* : int
+  -  *CreateOptions\=0* : int
 
-    TRANSACTION_DO_NOT_PROMOTE is only defined flag
+    TRANSACTION\_DO\_NOT\_PROMOTE is only defined flag
 
-  -  *IsolationLevel=0* : int
-
-    Reserved, use only 0
-
-  -  *IsolationFlags=0* : int
+  -  *IsolationLevel\=0* : int
 
     Reserved, use only 0
 
-  -  *Timeout=0* : int
+  -  *IsolationFlags\=0* : int
+
+    Reserved, use only 0
+
+  -  *Timeout\=0* : int
 
     Abort timeout in milliseconds
 
-  -  *Description=None* :[PyUnicode](#pyunicode)
+  -  *Description\=None* :[PyUnicode](#pyunicode)
 
     Text description of transaction, can be None
 
 #### Win32 API References
 
 
-  - Search for *CreateTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createtransaction),[google](#http://www.google.com/search?q=createtransaction)or[google groups](#http://groups.google.com/groups?q=createtransaction).
+  - Search for *CreateTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createtransaction),[google](#http://www.google.com/search?q=createtransaction)or[google groups](#http://groups.google.com/groups?q=createtransaction)\.
 
-## [win32transaction](#win32transaction).GetTransactionId
+## [win32transaction](#win32transaction)\.GetTransactionId
 
-[PyIID](#pyiid)= __GetTransactionId( *TransactionHandle* __ )
+[PyIID](#pyiid)\= **GetTransactionId\( *TransactionHandle* ** \)
 Returns the transaction's GUID
 
 #### Parameters
@@ -128,9 +128,9 @@ Returns the transaction's GUID
 
     Handle to a transaction
 
-## [win32transaction](#win32transaction).OpenTransaction
+## [win32transaction](#win32transaction)\.OpenTransaction
 
-[PyHANDLE](#pyhandle)= __OpenTransaction( *DesiredAccess*  *, TransactionId* __ )
+[PyHANDLE](#pyhandle)\= **OpenTransaction\( *DesiredAccess*  *, TransactionId* ** \)
 Creates a handle to an existing transaction
 
 #### Parameters
@@ -138,15 +138,15 @@ Creates a handle to an existing transaction
 
   -  *DesiredAccess* : int
 
-    Combination of TRANSACTION_* access rights
+    Combination of TRANSACTION\_\* access rights
 
   -  *TransactionId* :[PyIID](#pyiid)
 
     GUID identifying the transaction
 
-## [win32transaction](#win32transaction).RollbackTransaction
+## [win32transaction](#win32transaction)\.RollbackTransaction
 
- __RollbackTransaction( *TransactionHandle* __ )
+ **RollbackTransaction\( *TransactionHandle* ** \)
 Rolls back a transaction
 
 #### Parameters
@@ -159,11 +159,11 @@ Rolls back a transaction
 #### Win32 API References
 
 
-  - Search for *RollbackTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransaction),[google](#http://www.google.com/search?q=rollbacktransaction)or[google groups](#http://groups.google.com/groups?q=rollbacktransaction).
+  - Search for *RollbackTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransaction),[google](#http://www.google.com/search?q=rollbacktransaction)or[google groups](#http://groups.google.com/groups?q=rollbacktransaction)\.
 
-## [win32transaction](#win32transaction).RollbackTransactionAsync
+## [win32transaction](#win32transaction)\.RollbackTransactionAsync
 
- __RollbackTransactionAsync( *TransactionHandle* __ )
+ **RollbackTransactionAsync\( *TransactionHandle* ** \)
 Rolls back a transaction asynchronously
 
 #### Parameters
@@ -176,4 +176,4 @@ Rolls back a transaction asynchronously
 #### Win32 API References
 
 
-  - Search for *RollbackTransactionAsync* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransactionasync),[google](#http://www.google.com/search?q=rollbacktransactionasync)or[google groups](#http://groups.google.com/groups?q=rollbacktransactionasync).
+  - Search for *RollbackTransactionAsync* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransactionasync),[google](#http://www.google.com/search?q=rollbacktransactionasync)or[google groups](#http://groups.google.com/groups?q=rollbacktransactionasync)\.

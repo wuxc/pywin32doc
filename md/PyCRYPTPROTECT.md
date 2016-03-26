@@ -1,20 +1,20 @@
 # PyCRYPTPROTECT
 
-## PyCRYPTPROTECT_PROMPTSTRUCT Object
+## PyCRYPTPROTECT\_PROMPTSTRUCT Object
 
-A tuple representing a CRYPTPROTECT_PROMPTSTRUCT structure
+A tuple representing a CRYPTPROTECT\_PROMPTSTRUCT structure
 
 #### Items
 
 
-  - [0] *int* : flags
+  - \[0\] *int* : flags
 
-    Combination of CRYPTPROTECT_PROMPT_* flags
+    Combination of CRYPTPROTECT\_PROMPT\_\* flags
 
-  - [1] *int* : hwndApp
+  - \[1\] *int* : hwndApp
 
-    parent hwnd (default is 0)
+    parent hwnd \(default is 0\)
 
-  - [2] *[PyUnicode](#pyunicode)* : prompt
+  - \[2\] *[PyUnicode](#pyunicode)* : prompt
 
-    A prompt string (default is None)
+    A prompt string \(default is None\)

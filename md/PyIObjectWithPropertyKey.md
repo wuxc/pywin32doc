@@ -15,14 +15,14 @@ Interface implemented by objects that have an associated property id
 
     Returns the property id&nbsp;
 
-## [PyIObjectWithPropertyKey](#pyiobjectwithpropertykey).GetPropertyKey
+## [PyIObjectWithPropertyKey](#pyiobjectwithpropertykey)\.GetPropertyKey
 
-[PyPROPERTYKEY](#pypropertykey)= __GetPropertyKey(__ )
+[PyPROPERTYKEY](#pypropertykey)\= **GetPropertyKey\(** \)
 Returns the property id
 
-## [PyIObjectWithPropertyKey](#pyiobjectwithpropertykey).SetPropertyKey
+## [PyIObjectWithPropertyKey](#pyiobjectwithpropertykey)\.SetPropertyKey
 
- __SetPropertyKey( *key* __ )
+ **SetPropertyKey\( *key* ** \)
 Sets the property id
 
 #### Parameters

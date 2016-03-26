@@ -1,15 +1,15 @@
 # win32timezone.TimeZoneDefinition
 
-## win32timezone.TimeZoneDefinition Object
+## win32timezone\.TimeZoneDefinition Object
 
 A time zone definition class based on the win32 
 
-DYNAMIC_TIME_ZONE_INFORMATION structure.
+DYNAMIC\_TIME\_ZONE\_INFORMATION structure\.
 
 #### Comments
-Describes a bias against UTC (bias), and two dates at which a separate 
+Describes a bias against UTC \(bias\), and two dates at which a separate 
 
-additional bias applies (standard_bias and daylight_bias).
+additional bias applies \(standard\_bias and daylight\_bias\)\.
 
 #### Methods
 
@@ -18,22 +18,22 @@ additional bias applies (standard_bias and daylight_bias).
 
     Windows Platform SDK GetTimeZoneInformation&nbsp;
 
-## [win32timezone.TimeZoneDefinition](#win32timezone.timezonedefinition).current
+## [win32timezone\.TimeZoneDefinition](#win32timezone.timezonedefinition)\.current
 
- __current(__ )
+ **current\(** \)
 Windows Platform SDK GetTimeZoneInformation
 
 #### Comments
-This is a @classmethod.
+This is a @classmethod\.
 
-## [win32timezone.TimeZoneDefinition](#win32timezone.timezonedefinition).current
+## [win32timezone\.TimeZoneDefinition](#win32timezone.timezonedefinition)\.current
 
- __current( *class_* __ )
+ **current\( *class\_* ** \)
 Windows Platform SDK GetTimeZoneInformation
 
 #### Parameters
 
 
-  -  *class_* :
+  -  *class\_* :
 
-    class_
+    class\_

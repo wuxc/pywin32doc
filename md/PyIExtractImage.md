@@ -15,15 +15,15 @@ Description of the interface
 
     Description of Extract&nbsp;
 
-## [PyIExtractImage](#pyiextractimage).Extract
+## [PyIExtractImage](#pyiextractimage)\.Extract
 
- __Extract(__ )
-Description of Extract.
+ **Extract\(** \)
+Description of Extract\.
 
-## [PyIExtractImage](#pyiextractimage).GetLocation
+## [PyIExtractImage](#pyiextractimage)\.GetLocation
 
- __GetLocation( *dwPriority*  *, size*  *, dwRecClrDepth*  *, pdwFlags* __ )
-Description of GetLocation.
+ **GetLocation\( *dwPriority*  *, size*  *, dwRecClrDepth*  *, pdwFlags* ** \)
+Description of GetLocation\.
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Description of GetLocation.
 
     Description for dwPriority
 
-  -  *size* : (int, int)
+  -  *size* : \(int, int\)
 
     Description for prgSize
 

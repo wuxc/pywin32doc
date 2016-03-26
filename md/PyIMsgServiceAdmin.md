@@ -2,7 +2,7 @@
 
 ## PyIMsgServiceAdmin Object
 
-An COM interface to MAPI's IMsgServiceAdmin interface.
+An COM interface to MAPI's IMsgServiceAdmin interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
 #### Methods
@@ -10,19 +10,19 @@ Derived from[PyIUnknown](#pyiunknown)
 
   - [CreateMsgService](PyIMsgServiceAdmin.md#pyimsgserviceadmincreatemsgservice)
 
-    Creates a message service.&nbsp;
+    Creates a message service\.&nbsp;
 
   - [ConfigureMsgService](PyIMsgServiceAdmin.md#pyimsgserviceadminconfiguremsgservice)
 
-    Reconfigures a message service.&nbsp;
+    Reconfigures a message service\.&nbsp;
 
   - [GetMsgServiceTable](PyIMsgServiceAdmin.md#pyimsgserviceadmingetmsgservicetable)
 
-    Retrieves a table of services.&nbsp;
+    Retrieves a table of services\.&nbsp;
 
   - [GetProviderTable](PyIMsgServiceAdmin.md#pyimsgserviceadmingetprovidertable)
 
-    Retrieves a table of service providers.&nbsp;
+    Retrieves a table of service providers\.&nbsp;
 
   - [DeleteMsgService](PyIMsgServiceAdmin.md#pyimsgserviceadmindeletemsgservice)
 
@@ -40,14 +40,14 @@ Derived from[PyIUnknown](#pyiunknown)
 
     Returns an object providing access 
 
-to a provider administration object.&nbsp;
+to a provider administration object\.&nbsp;
 
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).AdminProviders
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.AdminProviders
 
- __PyIProfSect__ = __AdminProviders( *uuid*  *, flags* __ )
+ **PyIProfSect** \= **AdminProviders\( *uuid*  *, flags* ** \)
 Returns an object providing access 
 
-to a provider administration object.
+to a provider administration object\.
 
 #### Parameters
 
@@ -60,41 +60,41 @@ to a provider administration object.
 
     
 
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).ConfigureMsgService
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.ConfigureMsgService
 
- __ConfigureMsgService( *iid*  *, ulUIParam*  *, ulFlags*  *, [SPropValue, ...]* __ )
-Reconfigures a message service.
+ **ConfigureMsgService\( *iid*  *, ulUIParam*  *, ulFlags*  *, \[SPropValue, \.\.\.\]* ** \)
+Reconfigures a message service\.
 
 #### Parameters
 
 
   -  *iid* :[PyIID](#pyiid)
 
-    The unique identifier for the message service to configure.
+    The unique identifier for the message service to configure\.
 
   -  *ulUIParam* : int
 
-    Handle of the parent window for the configuration property sheet.
+    Handle of the parent window for the configuration property sheet\.
 
   -  *ulFlags* : int
 
-    Bitmask of flags that controls the display of the property sheet.
+    Bitmask of flags that controls the display of the property sheet\.
 
-  -  *[SPropValue, ...]* : [values, ...]
+  -  *\[SPropValue, \.\.\.\]* : \[values, \.\.\.\]
 
-    Property values describing the properties to display in the property sheet.  Should not be None if the service is to be configured without a message service.
+    Property values describing the properties to display in the property sheet\.  Should not be None if the service is to be configured without a message service\.
 
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).CreateMsgService
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.CreateMsgService
 
- __CreateMsgService( *serviceName*  *, displayName*  *, ulUIParam*  *, ulFlags* __ )
-Creates a message service.
+ **CreateMsgService\( *serviceName*  *, displayName*  *, ulUIParam*  *, ulFlags* ** \)
+Creates a message service\.
 
 #### Parameters
 
 
   -  *serviceName* : string
 
-    The name of the service.
+    The name of the service\.
 
   -  *displayName* : string
 
@@ -102,15 +102,15 @@ Creates a message service.
 
   -  *ulUIParam* : int
 
-    Handle of the parent window for the configuration property sheet.
+    Handle of the parent window for the configuration property sheet\.
 
   -  *ulFlags* : int
 
-    Bitmask of flags that controls the display of the property sheet.
+    Bitmask of flags that controls the display of the property sheet\.
 
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).DeleteMsgService
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.DeleteMsgService
 
- __DeleteMsgService( *uuid* __ )
+ **DeleteMsgService\( *uuid* ** \)
 Deletes the specified service
 
 #### Parameters
@@ -120,22 +120,10 @@ Deletes the specified service
 
     The ID of the service
 
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).GetMsgServiceTable
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.GetMsgServiceTable
 
-[PyIMAPITable](#pyimapitable)= __GetMsgServiceTable( *flags* __ )
-Retrieves a table of services.
-
-#### Parameters
-
-
-  -  *flags* : int
-
-    
-
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).GetProviderTable
-
-[PyIMAPITable](#pyimapitable)= __GetProviderTable( *flags* __ )
-Retrieves a table of service providers.
+[PyIMAPITable](#pyimapitable)\= **GetMsgServiceTable\( *flags* ** \)
+Retrieves a table of services\.
 
 #### Parameters
 
@@ -144,9 +132,21 @@ Retrieves a table of service providers.
 
     
 
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).OpenProfileSection
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.GetProviderTable
 
- __PyIProfSect__ = __OpenProfileSection( *uuid*  *, iid*  *, flags* __ )
+[PyIMAPITable](#pyimapitable)\= **GetProviderTable\( *flags* ** \)
+Retrieves a table of service providers\.
+
+#### Parameters
+
+
+  -  *flags* : int
+
+    
+
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.OpenProfileSection
+
+ **PyIProfSect** \= **OpenProfileSection\( *uuid*  *, iid*  *, flags* ** \)
 Opens a profile section
 
 #### Parameters
@@ -164,9 +164,9 @@ Opens a profile section
 
     
 
-## [PyIMsgServiceAdmin](#pyimsgserviceadmin).RenameMsgService
+## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.RenameMsgService
 
- __RenameMsgService( *uuid*  *, flags*  *, newName* __ )
+ **RenameMsgService\( *uuid*  *, flags*  *, newName* ** \)
 Renames the specified service
 
 #### Parameters
@@ -182,4 +182,4 @@ Renames the specified service
 
   -  *newName* : string
 
-    The new name for the service.
+    The new name for the service\.

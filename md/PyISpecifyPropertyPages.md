@@ -11,7 +11,7 @@ Description of the interface
 
     Description of GetPages&nbsp;
 
-## [PyISpecifyPropertyPages](#pyispecifypropertypages).GetPages
+## [PyISpecifyPropertyPages](#pyispecifypropertypages)\.GetPages
 
- __GetPages(__ )
-Description of GetPages.
+ **GetPages\(** \)
+Description of GetPages\.

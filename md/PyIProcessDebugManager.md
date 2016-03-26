@@ -25,12 +25,12 @@ Description of the interface
 
   - [CreateDebugDocumentHelper](PyIProcessDebugManager.md#pyiprocessdebugmanagercreatedebugdocumenthelper)
 
-    Description of CreateDebugDocumentHelper.&nbsp;
+    Description of CreateDebugDocumentHelper\.&nbsp;
 
-## [PyIProcessDebugManager](#pyiprocessdebugmanager).AddApplication
+## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.AddApplication
 
- __AddApplication( *pda* __ )
-Description of AddApplication.
+ **AddApplication\( *pda* ** \)
+Description of AddApplication\.
 
 #### Parameters
 
@@ -39,32 +39,32 @@ Description of AddApplication.
 
     Description for pda
 
-## [PyIProcessDebugManager](#pyiprocessdebugmanager).CreateApplication
+## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.CreateApplication
 
- __CreateApplication(__ )
-Description of CreateApplication.
+ **CreateApplication\(** \)
+Description of CreateApplication\.
 
-## [PyIProcessDebugManager](#pyiprocessdebugmanager).CreateDebugDocumentHelper
+## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.CreateDebugDocumentHelper
 
- __CreateDebugDocumentHelper( *unkOuter* __ )
-Description of CreateDebugDocumentHelper.
+ **CreateDebugDocumentHelper\( *unkOuter* ** \)
+Description of CreateDebugDocumentHelper\.
 
 #### Parameters
 
 
-  -  *unkOuter* : __PyIIUnknown__ 
+  -  *unkOuter* : **PyIIUnknown** 
 
-    The outer object for aggregation, or (usually!) None
+    The outer object for aggregation, or \(usually\!\) None
 
-## [PyIProcessDebugManager](#pyiprocessdebugmanager).GetDefaultApplication
+## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.GetDefaultApplication
 
- __GetDefaultApplication(__ )
-Description of GetDefaultApplication.
+ **GetDefaultApplication\(** \)
+Description of GetDefaultApplication\.
 
-## [PyIProcessDebugManager](#pyiprocessdebugmanager).RemoveApplication
+## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.RemoveApplication
 
- __RemoveApplication( *dwAppCookie* __ )
-Description of RemoveApplication.
+ **RemoveApplication\( *dwAppCookie* ** \)
+Description of RemoveApplication\.
 
 #### Parameters
 

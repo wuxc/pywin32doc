@@ -35,9 +35,9 @@ Interface that receives notifications from[PyITransferSource](#pyitransfersource
 
     Notifies user of failure to set an item's properties&nbsp;
 
-## [PyITransferAdviseSink](#pyitransferadvisesink).ConfirmEncryptionLoss
+## [PyITransferAdviseSink](#pyitransferadvisesink)\.ConfirmEncryptionLoss
 
-int = __ConfirmEncryptionLoss( *Source* __ )
+int \= **ConfirmEncryptionLoss\( *Source* ** \)
 Notifies user when an item can't be encrypted at destination
 
 #### Parameters
@@ -47,9 +47,9 @@ Notifies user when an item can't be encrypted at destination
 
     Item that failed to be encrypted
 
-## [PyITransferAdviseSink](#pyitransferadvisesink).ConfirmOverwrite
+## [PyITransferAdviseSink](#pyitransferadvisesink)\.ConfirmOverwrite
 
-int = __ConfirmOverwrite( *Source*  *, DestParent*  *, Name* __ )
+int \= **ConfirmOverwrite\( *Source*  *, DestParent*  *, Name* ** \)
 Asks user for permission to overwrite an existing item
 
 #### Parameters
@@ -67,9 +67,9 @@ Asks user for permission to overwrite an existing item
 
     New name for item, or None if item is to keep original name
 
-## [PyITransferAdviseSink](#pyitransferadvisesink).FileFailure
+## [PyITransferAdviseSink](#pyitransferadvisesink)\.FileFailure
 
-(int,str) = __FileFailure( *Item*  *, ItemName*  *, Error* __ )
+\(int,str\) \= **FileFailure\( *Item*  *, ItemName*  *, Error* ** \)
 Notifies user of failure, and queries how to proceed
 
 #### Parameters
@@ -90,9 +90,9 @@ Notifies user of failure, and queries how to proceed
 #### Return Value
 Returns the HRESULT and new file name if renaming resolved the failure
 
-## [PyITransferAdviseSink](#pyitransferadvisesink).PropertyFailure
+## [PyITransferAdviseSink](#pyitransferadvisesink)\.PropertyFailure
 
-int = __PropertyFailure( *Item*  *, key*  *, Error* __ )
+int \= **PropertyFailure\( *Item*  *, key*  *, Error* ** \)
 Notifies user of failure to set an item's properties
 
 #### Parameters
@@ -111,13 +111,13 @@ Notifies user of failure to set an item's properties
     HRESULT error code returned by the operation
 
 #### Return Value
-Returns COPYENGINE_S_* to indicate that the failure was handled, or 
+Returns COPYENGINE\_S\_\* to indicate that the failure was handled, or 
 
-COPYENGINE_E_USERCANCELLED to cancel pending operations
+COPYENGINE\_E\_USERCANCELLED to cancel pending operations
 
-## [PyITransferAdviseSink](#pyitransferadvisesink).SubStreamFailure
+## [PyITransferAdviseSink](#pyitransferadvisesink)\.SubStreamFailure
 
-int = __SubStreamFailure( *Item*  *, StreamName*  *, Error* __ )
+int \= **SubStreamFailure\( *Item*  *, StreamName*  *, Error* ** \)
 Notifies user of failure on a substream, and queries how to proceed
 
 #### Parameters
@@ -136,11 +136,11 @@ Notifies user of failure on a substream, and queries how to proceed
     HRESULT failure code from operation
 
 #### Return Value
-Returns COPYENGINE_S_* if operation is to continue, or COPYENGINE_E_* HRESULT if cancelled
+Returns COPYENGINE\_S\_\* if operation is to continue, or COPYENGINE\_E\_\* HRESULT if cancelled
 
-## [PyITransferAdviseSink](#pyitransferadvisesink).UpdateProgress
+## [PyITransferAdviseSink](#pyitransferadvisesink)\.UpdateProgress
 
- __UpdateProgress( *SizeCurrent*  *, SizeTotal*  *, FilesCurrent*  *, FilesTotal*  *, FoldersCurrent*  *, FoldersTotal* __ )
+ **UpdateProgress\( *SizeCurrent*  *, SizeTotal*  *, FilesCurrent*  *, FilesTotal*  *, FoldersCurrent*  *, FoldersTotal* ** \)
 Gives an estimate of amount of work completed
 
 #### Parameters
@@ -170,9 +170,9 @@ Gives an estimate of amount of work completed
 
     Total number of folder
 
-## [PyITransferAdviseSink](#pyitransferadvisesink).UpdateTransferState
+## [PyITransferAdviseSink](#pyitransferadvisesink)\.UpdateTransferState
 
- __UpdateTransferState( *State* __ )
+ **UpdateTransferState\( *State* ** \)
 Notifies client of current operation state
 
 #### Parameters
@@ -180,4 +180,4 @@ Notifies client of current operation state
 
   -  *State* : int
 
-    A TRANSFER_ADVISE_STATE value (shellcon.TS_*)
+    A TRANSFER\_ADVISE\_STATE value \(shellcon\.TS\_\*\)

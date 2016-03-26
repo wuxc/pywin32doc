@@ -2,7 +2,7 @@
 
 ## PyIPropertyStoreCache Object
 
-Property store that allows tracking of modification state.  Inherits all methods of[PyIPropertyStore](#pyipropertystore).
+Property store that allows tracking of modification state\.  Inherits all methods of[PyIPropertyStore](#pyipropertystore)\.
 
 #### Methods
 
@@ -23,9 +23,9 @@ Property store that allows tracking of modification state.  Inherits all methods
 
     Sets the value and state of a property&nbsp;
 
-## [PyIPropertyStoreCache](#pyipropertystorecache).GetState
+## [PyIPropertyStoreCache](#pyipropertystorecache)\.GetState
 
-int = __GetState( *key* __ )
+int \= **GetState\( *key* ** \)
 Retrieves the current state of a property
 
 #### Parameters
@@ -36,11 +36,11 @@ Retrieves the current state of a property
     Property identifier
 
 #### Return Value
-A value from the PSC_STATE enum (PSC_NORMAL, PSC_NOTINSOURCE. PSC_DIRTY)
+A value from the PSC\_STATE enum \(PSC\_NORMAL, PSC\_NOTINSOURCE\. PSC\_DIRTY\)
 
-## [PyIPropertyStoreCache](#pyipropertystorecache).GetValueAndState
+## [PyIPropertyStoreCache](#pyipropertystorecache)\.GetValueAndState
 
-([PyPROPVARIANT](#pypropvariant), int) = __GetValueAndState( *key* __ )
+\([PyPROPVARIANT](#pypropvariant), int\) \= **GetValueAndState\( *key* ** \)
 Retrieves the current value and state of a property
 
 #### Parameters
@@ -50,9 +50,9 @@ Retrieves the current value and state of a property
 
     Property identifier
 
-## [PyIPropertyStoreCache](#pyipropertystorecache).SetState
+## [PyIPropertyStoreCache](#pyipropertystorecache)\.SetState
 
- __SetState( *key*  *, state* __ )
+ **SetState\( *key*  *, state* ** \)
 Sets the state of a property
 
 #### Parameters
@@ -64,11 +64,11 @@ Sets the state of a property
 
   -  *state* : int
 
-    Value from the PSC_STATE enum (pscon.PSC_*)
+    Value from the PSC\_STATE enum \(pscon\.PSC\_\*\)
 
-## [PyIPropertyStoreCache](#pyipropertystorecache).SetValueAndState
+## [PyIPropertyStoreCache](#pyipropertystorecache)\.SetValueAndState
 
- __SetValueAndState( *key*  *, value*  *, state* __ )
+ **SetValueAndState\( *key*  *, value*  *, state* ** \)
 Sets the value and state of a property
 
 #### Parameters
@@ -84,4 +84,4 @@ Sets the value and state of a property
 
   -  *state* : int
 
-    The new state (pscon.PSC_*)
+    The new state \(pscon\.PSC\_\*\)

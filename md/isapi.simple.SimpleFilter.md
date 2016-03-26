@@ -1,6 +1,6 @@
 # isapi.simple.SimpleFilter
 
-## isapi.simple.SimpleFilter Object
+## isapi\.simple\.SimpleFilter Object
 
 Base class for a a simple ISAPI filter
 
@@ -9,7 +9,7 @@ Base class for a a simple ISAPI filter
 
   - [HttpFilterProc](isapi.simple.SimpleFilter.md#isapi.simple.simplefilterhttpfilterproc)
 
-    Called by the ISAPI framework for each filter request.&nbsp;
+    Called by the ISAPI framework for each filter request\.&nbsp;
 
   - [GetFilterVersion](isapi.simple.SimpleFilter.md#isapi.simple.simplefiltergetfilterversion)
 
@@ -17,11 +17,11 @@ Base class for a a simple ISAPI filter
 
   - [TerminateFilter](isapi.simple.SimpleFilter.md#isapi.simple.simplefilterterminatefilter)
 
-    Called by the ISAPI framework as the filter terminates.&nbsp;
+    Called by the ISAPI framework as the filter terminates\.&nbsp;
 
-## [isapi.simple.SimpleFilter](#isapi.simple.simplefilter).GetFilterVersion
+## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.GetFilterVersion
 
- __GetFilterVersion(__ )
+ **GetFilterVersion\(** \)
 Called by the ISAPI framework to get the extension version
 
 #### Comments
@@ -29,13 +29,13 @@ The default implementation uses the classes docstring to
 
 set the extension description, and uses the classes 
 
-filter_flags attribute to set the ISAPI filter flags - you 
+filter\_flags attribute to set the ISAPI filter flags - you 
 
-must specify filter_flags in your class.
+must specify filter\_flags in your class\.
 
-## [isapi.simple.SimpleFilter](#isapi.simple.simplefilter).GetFilterVersion
+## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.GetFilterVersion
 
- __GetFilterVersion( *self*  *, fv* __ )
+ **GetFilterVersion\( *self*  *, fv* ** \)
 Called by the ISAPI framework to get the extension version
 
 #### Parameters
@@ -54,22 +54,22 @@ The default implementation uses the classes docstring to
 
 set the extension description, and uses the classes 
 
-filter_flags attribute to set the ISAPI filter flags - you 
+filter\_flags attribute to set the ISAPI filter flags - you 
 
-must specify filter_flags in your class.
+must specify filter\_flags in your class\.
 
-## [isapi.simple.SimpleFilter](#isapi.simple.simplefilter).HttpFilterProc
+## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.HttpFilterProc
 
- __HttpFilterProc(__ )
-Called by the ISAPI framework for each filter request.
+ **HttpFilterProc\(** \)
+Called by the ISAPI framework for each filter request\.
 
 #### Comments
-sub-classes must provide an implementation for this method.
+sub-classes must provide an implementation for this method\.
 
-## [isapi.simple.SimpleFilter](#isapi.simple.simplefilter).HttpFilterProc
+## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.HttpFilterProc
 
- __HttpFilterProc( *self*  *, fc* __ )
-Called by the ISAPI framework for each filter request.
+ **HttpFilterProc\( *self*  *, fc* ** \)
+Called by the ISAPI framework for each filter request\.
 
 #### Parameters
 
@@ -83,17 +83,17 @@ Called by the ISAPI framework for each filter request.
     fc
 
 #### Comments
-sub-classes must provide an implementation for this method.
+sub-classes must provide an implementation for this method\.
 
-## [isapi.simple.SimpleFilter](#isapi.simple.simplefilter).TerminateFilter
+## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.TerminateFilter
 
- __TerminateFilter(__ )
-Called by the ISAPI framework as the filter terminates.
+ **TerminateFilter\(** \)
+Called by the ISAPI framework as the filter terminates\.
 
-## [isapi.simple.SimpleFilter](#isapi.simple.simplefilter).TerminateFilter
+## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.TerminateFilter
 
- __TerminateFilter( *self*  *, status* __ )
-Called by the ISAPI framework as the filter terminates.
+ **TerminateFilter\( *self*  *, status* ** \)
+Called by the ISAPI framework as the filter terminates\.
 
 #### Parameters
 

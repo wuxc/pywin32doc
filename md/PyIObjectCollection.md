@@ -24,9 +24,9 @@ Modifiable container for a number of IUnknown objects
     Empties the container&nbsp;
 
 
-## [PyIObjectCollection](#pyiobjectcollection).AddFromArray
+## [PyIObjectCollection](#pyiobjectcollection)\.AddFromArray
 
- __AddFromArray( *Source* __ )
+ **AddFromArray\( *Source* ** \)
 Adds a number of objects contained in an[PyIObjectArray](#pyiobjectarray)collection
 
 #### Parameters
@@ -36,9 +36,9 @@ Adds a number of objects contained in an[PyIObjectArray](#pyiobjectarray)collect
 
     Objects to be added to the collection
 
-## [PyIObjectCollection](#pyiobjectcollection).AddObject
+## [PyIObjectCollection](#pyiobjectcollection)\.AddObject
 
- __AddObject( *punk* __ )
+ **AddObject\( *punk* ** \)
 Adds a single object to the collection
 
 #### Parameters
@@ -48,14 +48,14 @@ Adds a single object to the collection
 
     Object to be added
 
-## [PyIObjectCollection](#pyiobjectcollection).Clear
+## [PyIObjectCollection](#pyiobjectcollection)\.Clear
 
- __Clear(__ )
-Empties the container.
+ **Clear\(** \)
+Empties the container\.
 
-## [PyIObjectCollection](#pyiobjectcollection).RemoveObjectAt
+## [PyIObjectCollection](#pyiobjectcollection)\.RemoveObjectAt
 
- __RemoveObjectAt( *Index* __ )
+ **RemoveObjectAt\( *Index* ** \)
 Removes a single object from the collection
 
 #### Parameters

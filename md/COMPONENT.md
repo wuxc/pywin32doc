@@ -6,41 +6,41 @@ A dictionary containing data to fill a COMPPOS struct
 
 #### Properties
 
-  -  __int ID__ 
+  -  **int ID** 
     Id of component, ignored when adding a new component
 
-  -  __int ComponentType__ 
-    One of shellcon.COMP_TYPE_* values
+  -  **int ComponentType** 
+    One of shellcon\.COMP\_TYPE\_\* values
 
-  -  __bool Checked__ 
+  -  **bool Checked** 
     True indicates item is currently displayed
 
-  -  __bool fDirty__ 
+  -  **bool fDirty** 
     Indicates if unsaved changes exist
 
-  -  __bool NoScroll__ 
+  -  **bool NoScroll** 
     True disables scrolling
 
-  -  __dict Pos__ 
+  -  **dict Pos** 
     [COMPPOS](#comppos)dictionary determining window size and placement
 
-  -  __[PyUNICODE](#pyunicode)FriendlyName__ 
-    String of at most MAX_PATH-1 characters, truncated if longer
+  -  **[PyUNICODE](#pyunicode)FriendlyName** 
+    String of at most MAX\_PATH-1 characters, truncated if longer
 
-  -  __[PyUNICODE](#pyunicode)Source__ 
-    String of at most INTERNET_MAX_URL_LENGTH-1 characters
+  -  **[PyUNICODE](#pyunicode)Source** 
+    String of at most INTERNET\_MAX\_URL\_LENGTH-1 characters
 
-  -  __[PyUNICODE](#pyunicode)SubscribedURL__ 
-    String of at most INTERNET_MAX_URL_LENGTH-1 characters
+  -  **[PyUNICODE](#pyunicode)SubscribedURL** 
+    String of at most INTERNET\_MAX\_URL\_LENGTH-1 characters
 
-  -  __int CurItemState__ 
-    One of shellcon.IS_* flags
+  -  **int CurItemState** 
+    One of shellcon\.IS\_\* flags
 
-  -  __dict Original__ 
+  -  **dict Original** 
     [COMPSTATEINFO](#compstateinfo)dictionary
 
-  -  __dict Restored__ 
+  -  **dict Restored** 
     [COMPSTATEINFO](#compstateinfo)dictionary
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure, ignored on input

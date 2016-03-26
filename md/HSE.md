@@ -1,10 +1,10 @@
 # HSE
 
-## HSE_VERSION_INFO Object
+## HSE\_VERSION\_INFO Object
 
 An object used by ISAPI GetExtensionVersion
 
 #### Properties
 
-  -  __string ExtensionDesc__ 
-    The description of the extension.
+  -  **string ExtensionDesc** 
+    The description of the extension\.

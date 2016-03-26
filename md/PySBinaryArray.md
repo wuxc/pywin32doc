@@ -2,4 +2,4 @@
 
 ## PySBinaryArray Object
 
-A sequence of strings containing binary data.
+A sequence of strings containing binary data\.

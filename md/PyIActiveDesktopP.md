@@ -11,9 +11,9 @@ An interface to the ActiveDesktop
 
     Changes Active Desktop to safe mode&nbsp;
 
-## [PyIActiveDesktopP](#pyiactivedesktopp).SetSafeMode
+## [PyIActiveDesktopP](#pyiactivedesktopp)\.SetSafeMode
 
- __SetSafeMode( *Flags* __ )
+ **SetSafeMode\( *Flags* ** \)
 Changes Active Desktop to safe mode
 
 #### Parameters
@@ -21,4 +21,4 @@ Changes Active Desktop to safe mode
 
   -  *Flags* : int
 
-    One of shellcon.SSM_* flags
+    One of shellcon\.SSM\_\* flags

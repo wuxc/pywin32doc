@@ -2,7 +2,7 @@
 
 ## PyIDirectorySearch Object
 
-A COM interface to ADSI's IDirectorySearch interface.
+A COM interface to ADSI's IDirectorySearch interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
 #### Methods
@@ -14,9 +14,9 @@ Derived from[PyIUnknown](#pyiunknown)
 
   - [ExecuteSearch](PyIDirectorySearch.md#pyidirectorysearchexecutesearch)
 
-    Executes a search and passes the results to the caller. 
+    Executes a search and passes the results to the caller\. 
 
-Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow)method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)method.&nbsp;
+Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow)method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)method\.&nbsp;
 
   - [GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)
 
@@ -32,7 +32,7 @@ Some providers, such as LDAP, will defer the actual execution until the caller i
 
   - [CloseSearchHandle](PyIDirectorySearch.md#pyidirectorysearchclosesearchhandle)
 
-    Closes a previously opened search handle.&nbsp;
+    Closes a previously opened search handle\.&nbsp;
 
   - [AdandonSearch](PyIDirectorySearch.md#pyidirectorysearchadandonsearch)
 
@@ -46,9 +46,9 @@ Some providers, such as LDAP, will defer the actual execution until the caller i
 
     &nbsp;
 
-## [PyIDirectorySearch](#pyidirectorysearch).AdandonSearch
+## [PyIDirectorySearch](#pyidirectorysearch)\.AdandonSearch
 
- __AdandonSearch( *handle* __ )
+ **AdandonSearch\( *handle* ** \)
 
 
 #### Parameters
@@ -58,10 +58,10 @@ Some providers, such as LDAP, will defer the actual execution until the caller i
 
     
 
-## [PyIDirectorySearch](#pyidirectorysearch).CloseSearchHandle
+## [PyIDirectorySearch](#pyidirectorysearch)\.CloseSearchHandle
 
- __CloseSearchHandle( *handle* __ )
-Closes a previously opened search handle.
+ **CloseSearchHandle\( *handle* ** \)
+Closes a previously opened search handle\.
 
 #### Parameters
 
@@ -70,12 +70,12 @@ Closes a previously opened search handle.
 
     
 
-## [PyIDirectorySearch](#pyidirectorysearch).ExecuteSearch
+## [PyIDirectorySearch](#pyidirectorysearch)\.ExecuteSearch
 
-int = __ExecuteSearch( *filter*  *, attrNames* __ )
-Executes a search and passes the results to the caller. 
+int \= **ExecuteSearch\( *filter*  *, attrNames* ** \)
+Executes a search and passes the results to the caller\. 
 
-Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow)method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)method.
+Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow)method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)method\.
 
 #### Parameters
 
@@ -84,16 +84,16 @@ Some providers, such as LDAP, will defer the actual execution until the caller i
 
     
 
-  -  *attrNames* : [[PyUnicode](#pyunicode), ...]
+  -  *attrNames* : \[[PyUnicode](#pyunicode), \.\.\.\]
 
     
 
 #### Return Value
-The result is an integer search handle.[PyIDirectorySearch::CloseSearchHandle](PyIDirectorySearch.md#pyidirectorysearchclosesearchhandle)should be called to close the handle.
+The result is an integer search handle\.[PyIDirectorySearch::CloseSearchHandle](PyIDirectorySearch.md#pyidirectorysearchclosesearchhandle)should be called to close the handle\.
 
-## [PyIDirectorySearch](#pyidirectorysearch).GetColumn
+## [PyIDirectorySearch](#pyidirectorysearch)\.GetColumn
 
-(name, type, values) = __GetColumn( *handle*  *, name* __ )
+\(name, type, values\) \= **GetColumn\( *handle*  *, name* ** \)
 
 
 #### Parameters
@@ -107,32 +107,9 @@ The result is an integer search handle.[PyIDirectorySearch::CloseSearchHandle](P
 
     The column name to fetch
 
-## [PyIDirectorySearch](#pyidirectorysearch).GetFirstRow
+## [PyIDirectorySearch](#pyidirectorysearch)\.GetFirstRow
 
-int = __GetFirstRow( *handle* __ )
-
-
-#### Parameters
-
-
-  -  *handle* : int
-
-    
-
-#### Return Value
-The result is the HRESULT from the call - no exceptions are thrown
-
-## [PyIDirectorySearch](#pyidirectorysearch).GetNextColumnName
-
- __GetNextColumnName(__ )
-
-
-#### Return Value
-Returns None when the underlying ADSI function return S_ADS_NOMORE_COLUMNS.
-
-## [PyIDirectorySearch](#pyidirectorysearch).GetNextRow
-
-int = __GetNextRow( *handle* __ )
+int \= **GetFirstRow\( *handle* ** \)
 
 
 #### Parameters
@@ -145,9 +122,17 @@ int = __GetNextRow( *handle* __ )
 #### Return Value
 The result is the HRESULT from the call - no exceptions are thrown
 
-## [PyIDirectorySearch](#pyidirectorysearch).GetPreviousRow
+## [PyIDirectorySearch](#pyidirectorysearch)\.GetNextColumnName
 
-int = __GetPreviousRow( *handle* __ )
+ **GetNextColumnName\(** \)
+
+
+#### Return Value
+Returns None when the underlying ADSI function return S\_ADS\_NOMORE\_COLUMNS\.
+
+## [PyIDirectorySearch](#pyidirectorysearch)\.GetNextRow
+
+int \= **GetNextRow\( *handle* ** \)
 
 
 #### Parameters
@@ -160,19 +145,34 @@ int = __GetPreviousRow( *handle* __ )
 #### Return Value
 The result is the HRESULT from the call - no exceptions are thrown
 
-## [PyIDirectorySearch](#pyidirectorysearch).SetSearchPreference
+## [PyIDirectorySearch](#pyidirectorysearch)\.GetPreviousRow
 
-int, [int, ...] = __SetSearchPreference( *prefs* __ )
+int \= **GetPreviousRow\( *handle* ** \)
 
 
 #### Parameters
 
 
-  -  *prefs* : ADS_SEARCHPREF_INFO
+  -  *handle* : int
+
+    
+
+#### Return Value
+The result is the HRESULT from the call - no exceptions are thrown
+
+## [PyIDirectorySearch](#pyidirectorysearch)\.SetSearchPreference
+
+int, \[int, \.\.\.\] \= **SetSearchPreference\( *prefs* ** \)
+
+
+#### Parameters
+
+
+  -  *prefs* : ADS\_SEARCHPREF\_INFO
 
     
 
 #### Return Value
 The result is the hresult of the call, and a list of integer status 
 
-codes for each of the preferences set.
+codes for each of the preferences set\.

@@ -2,7 +2,7 @@
 
 ## PyCRYPTPROV Object
 
-Handle to a cryptographic provider, created using __cryptoapi::CryptAcquireContext__ 
+Handle to a cryptographic provider, created using **cryptoapi::CryptAcquireContext** 
 
 #### Methods
 
@@ -43,9 +43,9 @@ Handle to a cryptographic provider, created using __cryptoapi::CryptAcquireConte
 
     Imports another user's public key&nbsp;
 
-## [PyCRYPTPROV](#pycryptprov).CryptCreateHash
+## [PyCRYPTPROV](#pycryptprov)\.CryptCreateHash
 
-[PyCRYPTHASH](#pycrypthash)= __CryptCreateHash( *Algid*  *, Key*  *, Flags* __ )
+[PyCRYPTHASH](#pycrypthash)\= **CryptCreateHash\( *Algid*  *, Key*  *, Flags* ** \)
 Creates a hash object for hashing large amounts of data
 
 #### Parameters
@@ -53,37 +53,37 @@ Creates a hash object for hashing large amounts of data
 
   -  *Algid* : int
 
-    An algorithm identifier, CALG_*.
+    An algorithm identifier, CALG\_\*\.
 
-  -  *Key=None* :[PyCRYPTKEY](#pycryptkey)
+  -  *Key\=None* :[PyCRYPTKEY](#pycryptkey)
 
-    Used only for keyed hashes (MAC or HMAC), use None otherwise
+    Used only for keyed hashes \(MAC or HMAC\), use None otherwise
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use 0 if passed in
 
-## [PyCRYPTPROV](#pycryptprov).CryptExportPublicKeyInfo
+## [PyCRYPTPROV](#pycryptprov)\.CryptExportPublicKeyInfo
 
-[PyCERT_PUBLIC_KEY_INFO](PyCERT.md#pycertpublic_key_info)= __CryptExportPublicKeyInfo( *KeySpec*  *, CertEncodingType* __ )
+[PyCERT\_PUBLIC\_KEY\_INFO](PyCERT.md#pycertpublic_key_info)\= **CryptExportPublicKeyInfo\( *KeySpec*  *, CertEncodingType* ** \)
 Exports a public key to send to other users 
 
-Returned dict can be serialized for sending to another python application using pickle.dump
+Returned dict can be serialized for sending to another python application using pickle\.dump
 
 #### Parameters
 
 
   -  *KeySpec* : int
 
-    AT_KEYEXCHANGE or AT_SIGNATURE
+    AT\_KEYEXCHANGE or AT\_SIGNATURE
 
-  -  *CertEncodingType=X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING* : int
+  -  *CertEncodingType\=X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING* : int
 
     Specifies encoding for exported key info
 
-## [PyCRYPTPROV](#pycryptprov).CryptGenKey
+## [PyCRYPTPROV](#pycryptprov)\.CryptGenKey
 
-[PyCRYPTKEY](#pycryptkey)= __CryptGenKey( *Algid*  *, Flags*  *, KeyLen* __ )
+[PyCRYPTKEY](#pycryptkey)\= **CryptGenKey\( *Algid*  *, Flags*  *, KeyLen* ** \)
 Generates a key pair or a session key
 
 #### Parameters
@@ -91,22 +91,22 @@ Generates a key pair or a session key
 
   -  *Algid* : int
 
-    Algorithm identifier, one of the CALG_* values, or AT_KEYEXCHANGE/AT_SIGNATURE
+    Algorithm identifier, one of the CALG\_\* values, or AT\_KEYEXCHANGE/AT\_SIGNATURE
 
   -  *Flags* : int
 
-    Combination of CRYPT_CREATE_SALT,CRYPT_EXPORTABLE,CRYPT_NO_SALT,CRYPT_PREGEN,CRYPT_USER_PROTECTED,CRYPT_ARCHIVABLE
+    Combination of CRYPT\_CREATE\_SALT,CRYPT\_EXPORTABLE,CRYPT\_NO\_SALT,CRYPT\_PREGEN,CRYPT\_USER\_PROTECTED,CRYPT\_ARCHIVABLE
 
-  -  *KeyLen=0* : int
+  -  *KeyLen\=0* : int
 
     Length of key to generate, can be 0 to use provider's default key length
 
 #### Comments
 Differs from Api call in that the length is passed in separately
 
-## [PyCRYPTPROV](#pycryptprov).CryptGenRandom
+## [PyCRYPTPROV](#pycryptprov)\.CryptGenRandom
 
-string = __CryptGenRandom( *Len*  *, SeedData* __ )
+string \= **CryptGenRandom\( *Len*  *, SeedData* ** \)
 Generates random data of specified length
 
 #### Parameters
@@ -116,13 +116,13 @@ Generates random data of specified length
 
     Number of bytes to generate
 
-  -  *SeedData=None* : string
+  -  *SeedData\=None* : string
 
     Random seed data
 
-## [PyCRYPTPROV](#pycryptprov).CryptGetProvParam
+## [PyCRYPTPROV](#pycryptprov)\.CryptGetProvParam
 
- __CryptGetProvParam( *Param*  *, Flags* __ )
+ **CryptGetProvParam\( *Param*  *, Flags* ** \)
 Retrieves specified attribute of provider
 
 #### Parameters
@@ -130,18 +130,18 @@ Retrieves specified attribute of provider
 
   -  *Param* : int
 
-    One of the PP_* values
+    One of the PP\_\* values
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    If param if PP_KEYSET_SEC_DESCR, can be a combination of OWNER_SECURITY_INFORMATION,GROUP_SECURITY_INFORMATION,DACL_SECURITY_INFORMATION,SACL_SECURITY_INFORMATION
+    If param if PP\_KEYSET\_SEC\_DESCR, can be a combination of OWNER\_SECURITY\_INFORMATION,GROUP\_SECURITY\_INFORMATION,DACL\_SECURITY\_INFORMATION,SACL\_SECURITY\_INFORMATION
 
 #### Return Value
 Type of returned object is dependent on the attribute requested
 
-## [PyCRYPTPROV](#pycryptprov).CryptGetUserKey
+## [PyCRYPTPROV](#pycryptprov)\.CryptGetUserKey
 
-[PyCRYPTKEY](#pycryptkey)= __CryptGetUserKey( *KeySpec* __ )
+[PyCRYPTKEY](#pycryptkey)\= **CryptGetUserKey\( *KeySpec* ** \)
 Returns a handle to one of user's key pairs
 
 #### Parameters
@@ -149,11 +149,11 @@ Returns a handle to one of user's key pairs
 
   -  *KeySpec* : int
 
-    AT_KEYEXCHANGE or AT_SIGNATURE (some providers may implement extra key specs)
+    AT\_KEYEXCHANGE or AT\_SIGNATURE \(some providers may implement extra key specs\)
 
-## [PyCRYPTPROV](#pycryptprov).CryptImportKey
+## [PyCRYPTPROV](#pycryptprov)\.CryptImportKey
 
-[PyCRYPTKEY](#pycryptkey)= __CryptImportKey( *Data*  *, PubKey*  *, Flags* __ )
+[PyCRYPTKEY](#pycryptkey)\= **CryptImportKey\( *Data*  *, PubKey*  *, Flags* ** \)
 Imports a key exported by[PyCRYPTKEY::CryptExportKey](PyCRYPTKEY.md#pycryptkeycryptexportkey)
 
 #### Parameters
@@ -163,17 +163,17 @@ Imports a key exported by[PyCRYPTKEY::CryptExportKey](PyCRYPTKEY.md#pycryptkeycr
 
     The key blob to be imported
 
-  -  *PubKey=None* :[PyCRYPTKEY](#pycryptkey)
+  -  *PubKey\=None* :[PyCRYPTKEY](#pycryptkey)
 
     Key to be used to decrypt the blob, not used for importing public keys
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
-    Combination of CRYPT_EXPORTABLE, CRYPT_OAEP, CRYPT_NO_SALT, CRYPT_USER_PROTECTED
+    Combination of CRYPT\_EXPORTABLE, CRYPT\_OAEP, CRYPT\_NO\_SALT, CRYPT\_USER\_PROTECTED
 
-## [PyCRYPTPROV](#pycryptprov).CryptImportPublicKeyInfo
+## [PyCRYPTPROV](#pycryptprov)\.CryptImportPublicKeyInfo
 
-[PyCRYPTKEY](#pycryptkey)= __CryptImportPublicKeyInfo( *Info*  *, CertEncodingType* __ )
+[PyCRYPTKEY](#pycryptkey)\= **CryptImportPublicKeyInfo\( *Info*  *, CertEncodingType* ** \)
 Imports another user's public key
 
 #### Parameters
@@ -181,20 +181,20 @@ Imports another user's public key
 
   -  *Info* : dict
 
-    [PyCERT_PUBLIC_KEY_INFO](PyCERT.md#pycertpublic_key_info)dictionary as returned by[PyCRYPTPROV::CryptExportPublicKeyInfo](PyCRYPTPROV.md#pycryptprovcryptexportpublickeyinfo)
+    [PyCERT\_PUBLIC\_KEY\_INFO](PyCERT.md#pycertpublic_key_info)dictionary as returned by[PyCRYPTPROV::CryptExportPublicKeyInfo](PyCRYPTPROV.md#pycryptprovcryptexportpublickeyinfo)
 
-  -  *CertEncodingType=X509_ASN_ENCODING combined with PKCS_7_ASN_ENCODING* : int
+  -  *CertEncodingType\=X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING* : int
 
     Specifies encoding for exported key info
 
-## [PyCRYPTPROV](#pycryptprov).CryptReleaseContext
+## [PyCRYPTPROV](#pycryptprov)\.CryptReleaseContext
 
- __CryptReleaseContext( *Flags* __ )
+ **CryptReleaseContext\( *Flags* ** \)
 Releases the CSP handle
 
 #### Parameters
 
 
-  -  *Flags=0* : int
+  -  *Flags\=0* : int
 
     Reserved, use 0 if passed in

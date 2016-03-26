@@ -9,116 +9,116 @@ A module, encapsulating the ActiveX Control interfaces
 
   - [OleCreate](axcontrol.md#axcontrololecreate)
 
-    Creates a new embedded object identified by a CLSID.&nbsp;
+    Creates a new embedded object identified by a CLSID\.&nbsp;
 
   - [OleLoadPicture](axcontrol.md#axcontrololeloadpicture)
 
-    Creates a new picture object and initializes it from the contents of a stream.&nbsp;
+    Creates a new picture object and initializes it from the contents of a stream\.&nbsp;
 
   - [OleLoadPicturePath](axcontrol.md#axcontrololeloadpicturepath)
 
-    Creates a new picture object and initializes it from the contents of a stream.&nbsp;
+    Creates a new picture object and initializes it from the contents of a stream\.&nbsp;
 
   - [OleSetContainedObject](axcontrol.md#axcontrololesetcontainedobject)
 
-    Notifies an object embedded in an OLE container to ensure correct reference.&nbsp;
+    Notifies an object embedded in an OLE container to ensure correct reference\.&nbsp;
 
   - [OleTranslateAccelerator](axcontrol.md#axcontrololetranslateaccelerator)
 
-    Called by the object application, allows an object's container to translate accelerators according to the container's accelerator table.&nbsp;
+    Called by the object application, allows an object's container to translate accelerators according to the container's accelerator table\.&nbsp;
 
-## EMBDHLP_CREATENOW
- __const axcontrol.EMBDHLP_CREATENOW;__ 
-
-
-## EMBDHLP_DELAYCREATE
- __const axcontrol.EMBDHLP_DELAYCREATE;__ 
+## EMBDHLP\_CREATENOW
+ **const axcontrol\.EMBDHLP\_CREATENOW;** 
 
 
-## EMBDHLP_INPROC_HANDLER
- __const axcontrol.EMBDHLP_INPROC_HANDLER;__ 
+## EMBDHLP\_DELAYCREATE
+ **const axcontrol\.EMBDHLP\_DELAYCREATE;** 
 
 
-## EMBDHLP_INPROC_SERVER
- __const axcontrol.EMBDHLP_INPROC_SERVER;__ 
+## EMBDHLP\_INPROC\_HANDLER
+ **const axcontrol\.EMBDHLP\_INPROC\_HANDLER;** 
 
 
-## OLECLOSE_NOSAVE
- __const axcontrol.OLECLOSE_NOSAVE;__ 
-The object should not be saved, even if it is dirty. This flag is typically used when an object is being deleted.
-
-## OLECLOSE_PROMPTSAVE
- __const axcontrol.OLECLOSE_PROMPTSAVE;__ 
-If the object is dirty, the[PyIOleObject::Close](PyIOleObject.md#pyioleobjectclose)implementation should display a dialog box to let the end user determine whether to save the object. However, if the object is in the running state but its user interface is invisible, the end user should not be prompted, and the close should be handled as if OLECLOSE_SAVEIFDIRTY had been specified.
-
-## OLECLOSE_SAVEIFDIRTY
- __const axcontrol.OLECLOSE_SAVEIFDIRTY;__ 
-The object should be saved if it is dirty.
-
-## OLECMDF_ENABLED
- __const axcontrol.OLECMDF_ENABLED;__ 
+## EMBDHLP\_INPROC\_SERVER
+ **const axcontrol\.EMBDHLP\_INPROC\_SERVER;** 
 
 
-## OLECMDF_LATCHED
- __const axcontrol.OLECMDF_LATCHED;__ 
+## OLECLOSE\_NOSAVE
+ **const axcontrol\.OLECLOSE\_NOSAVE;** 
+The object should not be saved, even if it is dirty\. This flag is typically used when an object is being deleted\.
+
+## OLECLOSE\_PROMPTSAVE
+ **const axcontrol\.OLECLOSE\_PROMPTSAVE;** 
+If the object is dirty, the[PyIOleObject::Close](PyIOleObject.md#pyioleobjectclose)implementation should display a dialog box to let the end user determine whether to save the object\. However, if the object is in the running state but its user interface is invisible, the end user should not be prompted, and the close should be handled as if OLECLOSE\_SAVEIFDIRTY had been specified\.
+
+## OLECLOSE\_SAVEIFDIRTY
+ **const axcontrol\.OLECLOSE\_SAVEIFDIRTY;** 
+The object should be saved if it is dirty\.
+
+## OLECMDF\_ENABLED
+ **const axcontrol\.OLECMDF\_ENABLED;** 
 
 
-## OLECMDF_NINCHED
- __const axcontrol.OLECMDF_NINCHED;__ 
+## OLECMDF\_LATCHED
+ **const axcontrol\.OLECMDF\_LATCHED;** 
 
 
-## OLECMDF_SUPPORTED
- __const axcontrol.OLECMDF_SUPPORTED;__ 
+## OLECMDF\_NINCHED
+ **const axcontrol\.OLECMDF\_NINCHED;** 
 
 
-## OLECMDTEXTF_NAME
- __const axcontrol.OLECMDTEXTF_NAME;__ 
+## OLECMDF\_SUPPORTED
+ **const axcontrol\.OLECMDF\_SUPPORTED;** 
 
 
-## OLECMDTEXTF_NONE
- __const axcontrol.OLECMDTEXTF_NONE;__ 
+## OLECMDTEXTF\_NAME
+ **const axcontrol\.OLECMDTEXTF\_NAME;** 
 
 
-## OLECMDTEXTF_STATUS
- __const axcontrol.OLECMDTEXTF_STATUS;__ 
+## OLECMDTEXTF\_NONE
+ **const axcontrol\.OLECMDTEXTF\_NONE;** 
 
 
-## OLECREATE_LEAVERUNNING
- __const axcontrol.OLECREATE_LEAVERUNNING;__ 
+## OLECMDTEXTF\_STATUS
+ **const axcontrol\.OLECMDTEXTF\_STATUS;** 
 
 
-## OLEIVERB_DISCARDUNDOSTATE
- __const axcontrol.OLEIVERB_DISCARDUNDOSTATE;__ 
+## OLECREATE\_LEAVERUNNING
+ **const axcontrol\.OLECREATE\_LEAVERUNNING;** 
 
 
-## OLEIVERB_HIDE
- __const axcontrol.OLEIVERB_HIDE;__ 
+## OLEIVERB\_DISCARDUNDOSTATE
+ **const axcontrol\.OLEIVERB\_DISCARDUNDOSTATE;** 
 
 
-## OLEIVERB_INPLACEACTIVATE
- __const axcontrol.OLEIVERB_INPLACEACTIVATE;__ 
+## OLEIVERB\_HIDE
+ **const axcontrol\.OLEIVERB\_HIDE;** 
 
 
-## OLEIVERB_OPEN
- __const axcontrol.OLEIVERB_OPEN;__ 
+## OLEIVERB\_INPLACEACTIVATE
+ **const axcontrol\.OLEIVERB\_INPLACEACTIVATE;** 
 
 
-## OLEIVERB_PRIMARY
- __const axcontrol.OLEIVERB_PRIMARY;__ 
+## OLEIVERB\_OPEN
+ **const axcontrol\.OLEIVERB\_OPEN;** 
 
 
-## OLEIVERB_SHOW
- __const axcontrol.OLEIVERB_SHOW;__ 
+## OLEIVERB\_PRIMARY
+ **const axcontrol\.OLEIVERB\_PRIMARY;** 
 
 
-## OLEIVERB_UIACTIVATE
- __const axcontrol.OLEIVERB_UIACTIVATE;__ 
+## OLEIVERB\_SHOW
+ **const axcontrol\.OLEIVERB\_SHOW;** 
 
 
-## [axcontrol](#axcontrol).OleCreate
+## OLEIVERB\_UIACTIVATE
+ **const axcontrol\.OLEIVERB\_UIACTIVATE;** 
 
-[PyIOleObject](#pyioleobject)= __OleCreate( *clsid*  *, clsid*  *, obCLSID*  *, obIID*  *, renderopt*  *, obFormatEtc*  *, obOleClientSite*  *, obStorage* __ )
-Creates a new embedded object identified by a CLSID.
+
+## [axcontrol](#axcontrol)\.OleCreate
+
+[PyIOleObject](#pyioleobject)\= **OleCreate\( *clsid*  *, clsid*  *, obCLSID*  *, obIID*  *, renderopt*  *, obFormatEtc*  *, obOleClientSite*  *, obStorage* ** \)
+Creates a new embedded object identified by a CLSID\.
 
 #### Parameters
 
@@ -133,39 +133,39 @@ Creates a new embedded object identified by a CLSID.
 
   -  *obCLSID* :[PyIID](#pyiid)
 
-    The[PyIID](#pyiid)CLSID for the OLE object to create.
+    The[PyIID](#pyiid)CLSID for the OLE object to create\.
 
   -  *obIID* :[PyIID](#pyiid)
 
-    The[PyIID](#pyiid)for the interface to return.
+    The[PyIID](#pyiid)for the interface to return\.
 
-  -  *renderopt* : __DWORD__ 
+  -  *renderopt* : **DWORD** 
 
-    The __DWORD__ renderopt for redering the Display.
+    The **DWORD** renderopt for redering the Display\.
 
-  -  *obFormatEtc* : __FORMATETC__ 
+  -  *obFormatEtc* : **FORMATETC** 
 
-    The __FORMATETC__ structure.
+    The **FORMATETC** structure\.
 
   -  *obOleClientSite* :[PyIOleClientSite](#pyioleclientsite)
 
-    The[PyIOleClientSite](#pyioleclientsite)interface to the container.
+    The[PyIOleClientSite](#pyioleclientsite)interface to the container\.
 
   -  *obStorage* :[PyIStorage](#pyistorage)
 
-    The[PyIStorage](#pyistorage)interface.
+    The[PyIStorage](#pyistorage)interface\.
 
-## [axcontrol](#axcontrol).OleLoadPicture
+## [axcontrol](#axcontrol)\.OleLoadPicture
 
-[PyIUnknown](#pyiunknown)= __OleLoadPicture( *stream*  *, size*  *, runMode*  *,*  *,* __ )
-Creates a new picture object and initializes it from the contents of a stream.
+[PyIUnknown](#pyiunknown)\= **OleLoadPicture\( *stream*  *, size*  *, runMode*  *,*  *,* ** \)
+Creates a new picture object and initializes it from the contents of a stream\.
 
 #### Parameters
 
 
   -  *stream* :[PyIStream](#pyistream)
 
-    The stream that contains picture's data.
+    The stream that contains picture's data\.
 
   -  *size* : int
 
@@ -173,31 +173,31 @@ Creates a new picture object and initializes it from the contents of a stream.
 
   -  *runMode* : int
 
-    The opposite of the initial value of the KeepOriginalFormat property. If TRUE, KeepOriginalFormat is set to FALSE and vice-versa.
+    The opposite of the initial value of the KeepOriginalFormat property\. If TRUE, KeepOriginalFormat is set to FALSE and vice-versa\.
 
-  -  *=iid* :[PyIID](#pyiid)
+  -  *\=iid* :[PyIID](#pyiid)
 
     The identifier of the interface describing the type of interface pointer to return
 
-  -  *=iidRet* :[PyIID](#pyiid)
+  -  *\=iidRet* :[PyIID](#pyiid)
 
-    The IID to use for the return object - use only if pythoncom does not support the native interface requested.
+    The IID to use for the return object - use only if pythoncom does not support the native interface requested\.
 
-## [axcontrol](#axcontrol).OleLoadPicturePath
+## [axcontrol](#axcontrol)\.OleLoadPicturePath
 
-[PyIUnknown](#pyiunknown)= __OleLoadPicturePath( *url_or_path*  *, unk*  *, reserved*  *, clr*  *,*  *,* __ )
-Creates a new picture object and initializes it from the contents of a stream.
+[PyIUnknown](#pyiunknown)\= **OleLoadPicturePath\( *url\_or\_path*  *, unk*  *, reserved*  *, clr*  *,*  *,* ** \)
+Creates a new picture object and initializes it from the contents of a stream\.
 
 #### Parameters
 
 
-  -  *url_or_path* : string/unicode
+  -  *url\_or\_path* : string/unicode
 
-    The path or url to the file you want to open.
+    The path or url to the file you want to open\.
 
-  -  *unk* : __PyIUknown__ 
+  -  *unk* : **PyIUknown** 
 
-    The IUnknown for COM aggregation.
+    The IUnknown for COM aggregation\.
 
   -  *reserved* : int
 
@@ -205,20 +205,20 @@ Creates a new picture object and initializes it from the contents of a stream.
 
   -  *clr* : int
 
-    The color you want to reserve to be transparent.
+    The color you want to reserve to be transparent\.
 
-  -  *=iid* :[PyIID](#pyiid)
+  -  *\=iid* :[PyIID](#pyiid)
 
     The identifier of the interface describing the type of interface pointer to return
 
-  -  *=iidRet* :[PyIID](#pyiid)
+  -  *\=iidRet* :[PyIID](#pyiid)
 
-    The IID to use for the return object - use only if pythoncom does not support the native interface requested.
+    The IID to use for the return object - use only if pythoncom does not support the native interface requested\.
 
-## [axcontrol](#axcontrol).OleSetContainedObject
+## [axcontrol](#axcontrol)\.OleSetContainedObject
 
- __OleSetContainedObject( *unk*  *, fContained* __ )
-Notifies an object embedded in an OLE container to ensure correct reference.
+ **OleSetContainedObject\( *unk*  *, fContained* ** \)
+Notifies an object embedded in an OLE container to ensure correct reference\.
 
 #### Parameters
 
@@ -231,19 +231,19 @@ Notifies an object embedded in an OLE container to ensure correct reference.
 
     
 
-## [axcontrol](#axcontrol).OleTranslateAccelerator
+## [axcontrol](#axcontrol)\.OleTranslateAccelerator
 
- __OleTranslateAccelerator( *frame*  *, frame_info*  *, msg* __ )
-Called by the object application, allows an object's container to translate accelerators according to the container's accelerator table.
+ **OleTranslateAccelerator\( *frame*  *, frame\_info*  *, msg* ** \)
+Called by the object application, allows an object's container to translate accelerators according to the container's accelerator table\.
 
 #### Parameters
 
 
   -  *frame* :[PyIOleInPlaceFrame](#pyioleinplaceframe)
 
-    frame to send keystrokes to.
+    frame to send keystrokes to\.
 
-  -  *frame_info* : __PyOLEINPLACEFRAMEINFO__ 
+  -  *frame\_info* : **PyOLEINPLACEFRAMEINFO** 
 
     
 

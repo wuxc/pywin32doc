@@ -11,10 +11,10 @@ Description of the interface
 
     Description of Initialize&nbsp;
 
-## [PyIPersistFolder](#pyipersistfolder).Initialize
+## [PyIPersistFolder](#pyipersistfolder)\.Initialize
 
- __Initialize( *pidl* __ )
-Description of Initialize.
+ **Initialize\( *pidl* ** \)
+Description of Initialize\.
 
 #### Parameters
 

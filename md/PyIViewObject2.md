@@ -11,10 +11,10 @@ Description of the interface
 
     Description of GetExtent&nbsp;
 
-## [PyIViewObject2](#pyiviewobject2).GetExtent
+## [PyIViewObject2](#pyiviewobject2)\.GetExtent
 
- __GetExtent( *dwDrawAspect*  *, lindex*  *, targetDevice* __ )
-Description of GetExtent.
+ **GetExtent\( *dwDrawAspect*  *, lindex*  *, targetDevice* ** \)
+Description of GetExtent\.
 
 #### Parameters
 
@@ -27,6 +27,6 @@ Description of GetExtent.
 
     Description for lindex
 
-  -  *targetDevice* : __PyDVTARGETDEVICE__ 
+  -  *targetDevice* : **PyDVTARGETDEVICE** 
 
     Description for lindex

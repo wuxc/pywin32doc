@@ -35,15 +35,15 @@ Description of the interface
 
     Description of ShowPropertyFrame&nbsp;
 
-## [PyIOleControlSite](#pyiolecontrolsite).GetExtendedControl
+## [PyIOleControlSite](#pyiolecontrolsite)\.GetExtendedControl
 
- __GetExtendedControl(__ )
-Description of GetExtendedControl.
+ **GetExtendedControl\(** \)
+Description of GetExtendedControl\.
 
-## [PyIOleControlSite](#pyiolecontrolsite).LockInPlaceActive
+## [PyIOleControlSite](#pyiolecontrolsite)\.LockInPlaceActive
 
- __LockInPlaceActive( *fLock* __ )
-Description of LockInPlaceActive.
+ **LockInPlaceActive\( *fLock* ** \)
+Description of LockInPlaceActive\.
 
 #### Parameters
 
@@ -52,15 +52,15 @@ Description of LockInPlaceActive.
 
     Description for fLock
 
-## [PyIOleControlSite](#pyiolecontrolsite).OnControlInfoChanged
+## [PyIOleControlSite](#pyiolecontrolsite)\.OnControlInfoChanged
 
- __OnControlInfoChanged(__ )
-Description of OnControlInfoChanged.
+ **OnControlInfoChanged\(** \)
+Description of OnControlInfoChanged\.
 
-## [PyIOleControlSite](#pyiolecontrolsite).OnFocus
+## [PyIOleControlSite](#pyiolecontrolsite)\.OnFocus
 
- __OnFocus( *fGotFocus* __ )
-Description of OnFocus.
+ **OnFocus\( *fGotFocus* ** \)
+Description of OnFocus\.
 
 #### Parameters
 
@@ -69,24 +69,24 @@ Description of OnFocus.
 
     Description for fGotFocus
 
-## [PyIOleControlSite](#pyiolecontrolsite).ShowPropertyFrame
+## [PyIOleControlSite](#pyiolecontrolsite)\.ShowPropertyFrame
 
- __ShowPropertyFrame(__ )
-Description of ShowPropertyFrame.
+ **ShowPropertyFrame\(** \)
+Description of ShowPropertyFrame\.
 
-## [PyIOleControlSite](#pyiolecontrolsite).TransformCoords
+## [PyIOleControlSite](#pyiolecontrolsite)\.TransformCoords
 
- __TransformCoords( *PtlHimetric*  *, pPtfContainer*  *, dwFlags* __ )
-Description of TransformCoords.
+ **TransformCoords\( *PtlHimetric*  *, pPtfContainer*  *, dwFlags* ** \)
+Description of TransformCoords\.
 
 #### Parameters
 
 
-  -  *PtlHimetric* : (int, int)
+  -  *PtlHimetric* : \(int, int\)
 
     Description for pPtlHimetric
 
-  -  *pPtfContainer* : (float, float))
+  -  *pPtfContainer* : \(float, float\)\)
 
     Description for pPtfContainer
 
@@ -97,12 +97,12 @@ Description of TransformCoords.
 #### Return Value
 The result is a tuple of the transformed input points - ie, 
 
-a tuple of ((int, int), (float, float))
+a tuple of \(\(int, int\), \(float, float\)\)
 
-## [PyIOleControlSite](#pyiolecontrolsite).TranslateAccelerator
+## [PyIOleControlSite](#pyiolecontrolsite)\.TranslateAccelerator
 
- __TranslateAccelerator( *pMsg*  *, grfModifiers* __ )
-Description of TranslateAccelerator.
+ **TranslateAccelerator\( *pMsg*  *, grfModifiers* ** \)
+Description of TranslateAccelerator\.
 
 #### Parameters
 

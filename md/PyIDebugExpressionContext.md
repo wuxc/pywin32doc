@@ -15,20 +15,20 @@ Description of the interface
 
     Description of GetLanguageInfo&nbsp;
 
-## [PyIDebugExpressionContext](#pyidebugexpressioncontext).GetLanguageInfo
+## [PyIDebugExpressionContext](#pyidebugexpressioncontext)\.GetLanguageInfo
 
- __GetLanguageInfo(__ )
-Description of GetLanguageInfo.
+ **GetLanguageInfo\(** \)
+Description of GetLanguageInfo\.
 
-## [PyIDebugExpressionContext](#pyidebugexpressioncontext).ParseLanguageText
+## [PyIDebugExpressionContext](#pyidebugexpressioncontext)\.ParseLanguageText
 
- __ParseLanguageText( *pstrCode*  *, nRadix*  *, pstrDelimiter*  *, dwFlags* __ )
-Description of ParseLanguageText.
+ **ParseLanguageText\( *pstrCode*  *, nRadix*  *, pstrDelimiter*  *, dwFlags* ** \)
+Description of ParseLanguageText\.
 
 #### Parameters
 
 
-  -  *pstrCode* : __unicode__ 
+  -  *pstrCode* : **unicode** 
 
     Description for pstrCode
 
@@ -36,7 +36,7 @@ Description of ParseLanguageText.
 
     Description for nRadix
 
-  -  *pstrDelimiter* : __unicode__ 
+  -  *pstrDelimiter* : **unicode** 
 
     Description for pstrDelimiter
 

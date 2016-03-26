@@ -1,88 +1,88 @@
 # NT
 
-## NT_CONSOLE_PROPS Object
+## NT\_CONSOLE\_PROPS Object
 
-Dictionary containing information for a NT_CONSOLE_PROPS struct
+Dictionary containing information for a NT\_CONSOLE\_PROPS struct
 
 #### Properties
 
-  -  __int Signature__ 
-    The type of data block, one of shellcon.*_SIG values
+  -  **int Signature** 
+    The type of data block, one of shellcon\.\*\_SIG values
 
-  -  __int FillAttribute__ 
+  -  **int FillAttribute** 
     Character attributes for fill operations
 
-  -  __int PopupFillAttribute__ 
+  -  **int PopupFillAttribute** 
     Fill attributes for popups
 
-  -  __(int,int) ScreenBufferSize__ 
+  -  **\(int,int\) ScreenBufferSize** 
     Size of console screen buffer, in character cells
 
-  -  __(int,int) WindowSize__ 
+  -  **\(int,int\) WindowSize** 
     Size of console window in character cells
 
-  -  __(int,int) WindowOrigin__ 
+  -  **\(int,int\) WindowOrigin** 
     Window position, in screen coordinates
 
-  -  __int nFont__ 
-    Number of font to be displayed.  See[win32console::GetNumberOfConsoleFonts](win32console.md#win32consolegetnumberofconsolefonts)
+  -  **int nFont** 
+    Number of font to be displayed\.  See[win32console::GetNumberOfConsoleFonts](win32console.md#win32consolegetnumberofconsolefonts)
 
-  -  __int InputBufferSize__ 
+  -  **int InputBufferSize** 
     Size of console's input buffer
 
-  -  __(int,int) FontSize__ 
+  -  **\(int,int\) FontSize** 
     Size of font
 
-  -  __int FontFamily__ 
+  -  **int FontFamily** 
     Font family
 
-  -  __int FontWeight__ 
+  -  **int FontWeight** 
     Controls thickness of displayed font
 
-  -  __str FaceName__ 
+  -  **str FaceName** 
     Name of font face, 31 characters at most
 
-  -  __int CursorSize__ 
+  -  **int CursorSize** 
     Relative size of cursor, expressed as percent of character size
 
-  -  __bool FullScreen__ 
+  -  **bool FullScreen** 
     Causes console to run in full screen mode
 
-  -  __bool QuickEdit__ 
+  -  **bool QuickEdit** 
     
 
-  -  __bool InsertMode__ 
+  -  **bool InsertMode** 
     
 
-  -  __bool AutoPosition__ 
+  -  **bool AutoPosition** 
     Lets system determine window placement
 
-  -  __int HistoryBufferSize__ 
+  -  **int HistoryBufferSize** 
     Size of command line history buffer
 
-  -  __int NumberOfHistoryBuffers__ 
+  -  **int NumberOfHistoryBuffers** 
     
 
-  -  __bool HistoryNoDup__ 
+  -  **bool HistoryNoDup** 
     
 
-  -  __tuple ColorTable__ 
+  -  **tuple ColorTable** 
     Tuple of 16 ints containing console's color attributes
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure, ignored on input
 
-## NT_FE_CONSOLE_PROPS Object
+## NT\_FE\_CONSOLE\_PROPS Object
 
-Dictionary containing information for a NT_FE_CONSOLE_PROPS struct
+Dictionary containing information for a NT\_FE\_CONSOLE\_PROPS struct
 
 #### Properties
 
-  -  __int Signature__ 
-    The type of data block, one of shellcon.*_SIG values
+  -  **int Signature** 
+    The type of data block, one of shellcon\.\*\_SIG values
 
-  -  __int CodePage__ 
+  -  **int CodePage** 
     The codepage to be used for console text
 
-  -  __int Size__ 
+  -  **int Size** 
     Size of structure, ignored on input

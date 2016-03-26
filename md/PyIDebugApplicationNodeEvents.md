@@ -23,10 +23,10 @@ Description of the interface
 
     Description of onAttach&nbsp;
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents).onAddChild
+## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onAddChild
 
- __onAddChild( *prddpChild* __ )
-Description of onAddChild.
+ **onAddChild\( *prddpChild* ** \)
+Description of onAddChild\.
 
 #### Parameters
 
@@ -35,10 +35,10 @@ Description of onAddChild.
 
     Description for prddpChild
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents).onAttach
+## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onAttach
 
- __onAttach( *prddpParent* __ )
-Description of onAttach.
+ **onAttach\( *prddpParent* ** \)
+Description of onAttach\.
 
 #### Parameters
 
@@ -47,15 +47,15 @@ Description of onAttach.
 
     Description for prddpParent
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents).onDetach
+## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onDetach
 
- __onDetach(__ )
-Description of onDetach.
+ **onDetach\(** \)
+Description of onDetach\.
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents).onRemoveChild
+## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onRemoveChild
 
- __onRemoveChild( *prddpChild* __ )
-Description of onRemoveChild.
+ **onRemoveChild\( *prddpChild* ** \)
+Description of onRemoveChild\.
 
 #### Parameters
 

@@ -68,7 +68,7 @@ Requires Windows 7 or later
 
   - [Commit](PyIShellLibrary.md#pyishelllibrarycommit)
 
-    Saves changes (only if loaded from an existing library)&nbsp;
+    Saves changes \(only if loaded from an existing library\)&nbsp;
 
   - [Save](PyIShellLibrary.md#pyishelllibrarysave)
 
@@ -78,9 +78,9 @@ Requires Windows 7 or later
 
     Saves the library in a known folder&nbsp;
 
-## [PyIShellLibrary](#pyishelllibrary).AddFolder
+## [PyIShellLibrary](#pyishelllibrary)\.AddFolder
 
- __AddFolder( *Location* __ )
+ **AddFolder\( *Location* ** \)
 Includes a folder
 
 #### Parameters
@@ -90,67 +90,67 @@ Includes a folder
 
     Shell item interface representing the folder
 
-## [PyIShellLibrary](#pyishelllibrary).Commit
+## [PyIShellLibrary](#pyishelllibrary)\.Commit
 
- __Commit(__ )
-Saves changes (only if loaded from an existing library)
+ **Commit\(** \)
+Saves changes \(only if loaded from an existing library\)
 
-## [PyIShellLibrary](#pyishelllibrary).GetDefaultSaveFolder
+## [PyIShellLibrary](#pyishelllibrary)\.GetDefaultSaveFolder
 
-[PyIShellItem](#pyishellitem)= __GetDefaultSaveFolder( *Type*  *, riid* __ )
+[PyIShellItem](#pyishellitem)\= **GetDefaultSaveFolder\( *Type*  *, riid* ** \)
 Returns the default folder in which new items are saved
 
 #### Parameters
 
 
-  -  *Type=DSFT_DETECT* : int
+  -  *Type\=DSFT\_DETECT* : int
 
-    Specifies whether to return public or private save location, shellcon.DSFT_*
+    Specifies whether to return public or private save location, shellcon\.DSFT\_\*
 
-  -  *riid=IID_IShellItem* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItem* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIShellLibrary](#pyishelllibrary).GetFolderType
+## [PyIShellLibrary](#pyishelllibrary)\.GetFolderType
 
-[PyIID](#pyiid)= __GetFolderType(__ )
-Returns the library type, shell.FOLDERTYPEID_*
+[PyIID](#pyiid)\= **GetFolderType\(** \)
+Returns the library type, shell\.FOLDERTYPEID\_\*
 
-## [PyIShellLibrary](#pyishelllibrary).GetFolders
+## [PyIShellLibrary](#pyishelllibrary)\.GetFolders
 
-[PyIShellItemArray](#pyishellitemarray)= __GetFolders( *Filter*  *, riid* __ )
+[PyIShellItemArray](#pyishellitemarray)\= **GetFolders\( *Filter*  *, riid* ** \)
 Retrieves a collection of folders in the library
 
 #### Parameters
 
 
-  -  *Filter=LFF_ALLITEMS* : int
+  -  *Filter\=LFF\_ALLITEMS* : int
 
-    Specifies what types of folder to return (shellcon.LFF_*)
+    Specifies what types of folder to return \(shellcon\.LFF\_\*\)
 
-  -  *riid=IID_IShellItemArray* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItemArray* :[PyIID](#pyiid)
 
-    The interface to return, IObjectCollection and IObjectArray also accepted.
+    The interface to return, IObjectCollection and IObjectArray also accepted\.
 
-## [PyIShellLibrary](#pyishelllibrary).GetIcon
+## [PyIShellLibrary](#pyishelllibrary)\.GetIcon
 
-str = __GetIcon(__ )
+str \= **GetIcon\(** \)
 Returns the location of the library's icon
 
 #### Return Value
 Uses "module,resource" format
 
-## [PyIShellLibrary](#pyishelllibrary).GetOptions
+## [PyIShellLibrary](#pyishelllibrary)\.GetOptions
 
-int = __GetOptions(__ )
+int \= **GetOptions\(** \)
 Retrieves library option flags
 
 #### Return Value
-Returns a combination of shellcon.LOF_* flags
+Returns a combination of shellcon\.LOF\_\* flags
 
-## [PyIShellLibrary](#pyishelllibrary).LoadLibraryFromItem
+## [PyIShellLibrary](#pyishelllibrary)\.LoadLibraryFromItem
 
- __LoadLibraryFromItem( *Library*  *, Mode* __ )
+ **LoadLibraryFromItem\( *Library*  *, Mode* ** \)
 Loads an existing library file
 
 #### Parameters
@@ -162,11 +162,11 @@ Loads an existing library file
 
   -  *Mode* : int
 
-    Access mode, combination of storagecon.STGM_* flags
+    Access mode, combination of storagecon\.STGM\_\* flags
 
-## [PyIShellLibrary](#pyishelllibrary).LoadLibraryFromKnownFolder
+## [PyIShellLibrary](#pyishelllibrary)\.LoadLibraryFromKnownFolder
 
- __LoadLibraryFromKnownFolder( *Library*  *, Mode* __ )
+ **LoadLibraryFromKnownFolder\( *Library*  *, Mode* ** \)
 Initializes library from a known folder
 
 #### Parameters
@@ -174,15 +174,15 @@ Initializes library from a known folder
 
   -  *Library* :[PyIID](#pyiid)
 
-    Known folder id, shell.FOLDERID_*
+    Known folder id, shell\.FOLDERID\_\*
 
   -  *Mode* : int
 
-    Access mode, combination of storagecon.STGM_* flags
+    Access mode, combination of storagecon\.STGM\_\* flags
 
-## [PyIShellLibrary](#pyishelllibrary).RemoveFolder
+## [PyIShellLibrary](#pyishelllibrary)\.RemoveFolder
 
- __RemoveFolder( *Location* __ )
+ **RemoveFolder\( *Location* ** \)
 Removes a folder
 
 #### Parameters
@@ -192,9 +192,9 @@ Removes a folder
 
     Shell item interface representing the folder
 
-## [PyIShellLibrary](#pyishelllibrary).ResolveFolder
+## [PyIShellLibrary](#pyishelllibrary)\.ResolveFolder
 
-[PyIShellItem](#pyishellitem)= __ResolveFolder( *FolderToResolve*  *, Timeout*  *, riid* __ )
+[PyIShellItem](#pyishellitem)\= **ResolveFolder\( *FolderToResolve*  *, Timeout*  *, riid* ** \)
 Attempts to locate a folder that has been moved or renamed
 
 #### Parameters
@@ -208,13 +208,13 @@ Attempts to locate a folder that has been moved or renamed
 
     Max search time, specified in milliseconds
 
-  -  *riid=IID_IShellItem* :[PyIID](#pyiid)
+  -  *riid\=IID\_IShellItem* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIShellLibrary](#pyishelllibrary).Save
+## [PyIShellLibrary](#pyishelllibrary)\.Save
 
-[PyIShellItem](#pyishellitem)= __Save( *FolderToSaveIn*  *, LibraryName*  *, Flags* __ )
+[PyIShellItem](#pyishellitem)\= **Save\( *FolderToSaveIn*  *, LibraryName*  *, Flags* ** \)
 Saves the library to a specific location
 
 #### Parameters
@@ -230,14 +230,14 @@ Saves the library to a specific location
 
   -  *Flags* : int
 
-    Determines behaviour if file already exists, shellcon.LSF_*
+    Determines behaviour if file already exists, shellcon\.LSF\_\*
 
 #### Return Value
-Returns a shell item for the saved file.
+Returns a shell item for the saved file\.
 
-## [PyIShellLibrary](#pyishelllibrary).SaveInKnownFolder
+## [PyIShellLibrary](#pyishelllibrary)\.SaveInKnownFolder
 
-[PyIShellItem](#pyishellitem)= __SaveInKnownFolder( *FolderToSaveIn*  *, LibraryName*  *, Flags* __ )
+[PyIShellItem](#pyishellitem)\= **SaveInKnownFolder\( *FolderToSaveIn*  *, LibraryName*  *, Flags* ** \)
 Saves the library in a known folder
 
 #### Parameters
@@ -245,7 +245,7 @@ Saves the library in a known folder
 
   -  *FolderToSaveIn* :[PyIID](#pyiid)
 
-    The destination folder, shell.FOLDERID_*
+    The destination folder, shell\.FOLDERID\_\*
 
   -  *LibraryName* : str
 
@@ -253,11 +253,11 @@ Saves the library in a known folder
 
   -  *Flags* : int
 
-    Determines behaviour if file already exists, shellcon.LSF_*
+    Determines behaviour if file already exists, shellcon\.LSF\_\*
 
-## [PyIShellLibrary](#pyishelllibrary).SetDefaultSaveFolder
+## [PyIShellLibrary](#pyishelllibrary)\.SetDefaultSaveFolder
 
- __SetDefaultSaveFolder( *Type*  *, SaveFolder* __ )
+ **SetDefaultSaveFolder\( *Type*  *, SaveFolder* ** \)
 Sets the default save location
 
 #### Parameters
@@ -265,15 +265,15 @@ Sets the default save location
 
   -  *Type* : int
 
-    Specifies public or private save location, shellcon.DSFT_*
+    Specifies public or private save location, shellcon\.DSFT\_\*
 
   -  *SaveFolder* :[PyIShellItem](#pyishellitem)
 
     New default location, must be in the library
 
-## [PyIShellLibrary](#pyishelllibrary).SetFolderType
+## [PyIShellLibrary](#pyishelllibrary)\.SetFolderType
 
- __SetFolderType( *Type* __ )
+ **SetFolderType\( *Type* ** \)
 Sets the folder type for the library
 
 #### Parameters
@@ -281,11 +281,11 @@ Sets the folder type for the library
 
   -  *Type* :[PyIID](#pyiid)
 
-    New type, shell.FOLDERTYPEID_*
+    New type, shell\.FOLDERTYPEID\_\*
 
-## [PyIShellLibrary](#pyishelllibrary).SetIcon
+## [PyIShellLibrary](#pyishelllibrary)\.SetIcon
 
- __SetIcon( *Icon* __ )
+ **SetIcon\( *Icon* ** \)
 Sets the library icon
 
 #### Parameters
@@ -295,9 +295,9 @@ Sets the library icon
 
     Icon location in "module,resource" syntax
 
-## [PyIShellLibrary](#pyishelllibrary).SetOptions
+## [PyIShellLibrary](#pyishelllibrary)\.SetOptions
 
- __SetOptions( *Mask*  *, Options* __ )
+ **SetOptions\( *Mask*  *, Options* ** \)
 Sets library option flags
 
 #### Parameters
@@ -305,8 +305,8 @@ Sets library option flags
 
   -  *Mask* : int
 
-    Bitmask of flags to be changed, combination of shellcon.LOF_* values
+    Bitmask of flags to be changed, combination of shellcon\.LOF\_\* values
 
   -  *Options* : int
 
-    New options, combination of shellcon.LOF_* values
+    New options, combination of shellcon\.LOF\_\* values

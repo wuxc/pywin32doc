@@ -35,9 +35,9 @@ Gateway wrapper for the implement-only ISecurityInformation interface
 
     Invoked each time a property sheet page is created or destroyed&nbsp;
 
-## [PyGSecurityInformation](#pygsecurityinformation).GetAccessRights
+## [PyGSecurityInformation](#pygsecurityinformation)\.GetAccessRights
 
-(([SI_ACCESS](SI.md#siaccess),...)  int) = __GetAccessRights( *ObjectType*  *, Flags* __ )
+\(\([SI\_ACCESS](SI.md#siaccess),\.\.\.\)  int\) \= **GetAccessRights\( *ObjectType*  *, Flags* ** \)
 Retrieves permission that can be set
 
 #### Parameters
@@ -49,24 +49,24 @@ Retrieves permission that can be set
 
   -  *Flags* : int
 
-    Indicates which page is requesting the access rights (SI_ADVANCED, SI_EDIT_AUDITS, SI_EDIT_PROPERTIES)
+    Indicates which page is requesting the access rights \(SI\_ADVANCED, SI\_EDIT\_AUDITS, SI\_EDIT\_PROPERTIES\)
 
 #### Return Value
-This method should return a 2-tuple containing a sequence of[SI_ACCESS](SI.md#siaccess)tuples, 
+This method should return a 2-tuple containing a sequence of[SI\_ACCESS](SI.md#siaccess)tuples, 
 
 and a zero-based index indicating which of them is the default
 
-## [PyGSecurityInformation](#pygsecurityinformation).GetInheritTypes
+## [PyGSecurityInformation](#pygsecurityinformation)\.GetInheritTypes
 
-([SI_INHERIT_TYPE](SI.md#siinherit_type),...) = __GetInheritTypes(__ )
+\([SI\_INHERIT\_TYPE](SI.md#siinherit_type),\.\.\.\) \= **GetInheritTypes\(** \)
 Requests types of inheritance that your implementation supports
 
 #### Return Value
-Returns a sequence of[SI_INHERIT_TYPE](SI.md#siinherit_type)tuples
+Returns a sequence of[SI\_INHERIT\_TYPE](SI.md#siinherit_type)tuples
 
-## [PyGSecurityInformation](#pygsecurityinformation).GetObjectInformation
+## [PyGSecurityInformation](#pygsecurityinformation)\.GetObjectInformation
 
-[SI_OBJECT_INFO](SI.md#siobject_info)= __GetObjectInformation(__ )
+[SI\_OBJECT\_INFO](SI.md#siobject_info)\= **GetObjectInformation\(** \)
 Returns information identifying the object 
 
 whose security is to be editted, and which pages are to appear in the property sheet
@@ -74,16 +74,16 @@ whose security is to be editted, and which pages are to appear in the property s
 #### Comments
 Due to peculiarities of the underlying system calls, this method will only be called once, 
 
-and subsequent calls will return the information obtained on the first call.  As a consequence, a new 
+and subsequent calls will return the information obtained on the first call\.  As a consequence, a new 
 
-instance of the interface will need to be created for each object whose security is to be displayed.
+instance of the interface will need to be created for each object whose security is to be displayed\.
 
 #### Return Value
-Your implementation of this method should return a[SI_OBJECT_INFO](SI.md#siobject_info)tuple
+Your implementation of this method should return a[SI\_OBJECT\_INFO](SI.md#siobject_info)tuple
 
-## [PyGSecurityInformation](#pygsecurityinformation).GetSecurity
+## [PyGSecurityInformation](#pygsecurityinformation)\.GetSecurity
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __GetSecurity( *RequestedInformation*  *, Default* __ )
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\= **GetSecurity\( *RequestedInformation*  *, Default* ** \)
 Retrieves the object's current security settings
 
 #### Parameters
@@ -91,15 +91,15 @@ Retrieves the object's current security settings
 
   -  *RequestedInformation* : int
 
-    Combination of SECURITY_INFORMATION flags indicating which components of the object's security descriptor you should return
+    Combination of SECURITY\_INFORMATION flags indicating which components of the object's security descriptor you should return
 
   -  *Default* : bool
 
-    If true, return a default security descriptor rather than current security.  (invoked when 'Reset' button is clicked)
+    If true, return a default security descriptor rather than current security\.  \(invoked when 'Reset' button is clicked\)
 
-## [PyGSecurityInformation](#pygsecurityinformation).MapGeneric
+## [PyGSecurityInformation](#pygsecurityinformation)\.MapGeneric
 
-int = __MapGeneric( *ObjectType*  *, AceFlags*  *, Mask* __ )
+int \= **MapGeneric\( *ObjectType*  *, AceFlags*  *, Mask* ** \)
 Translates generic access rights to specific equivalents
 
 #### Parameters
@@ -107,7 +107,7 @@ Translates generic access rights to specific equivalents
 
   -  *ObjectType* :[PyIID](#pyiid)
 
-    Type of object that permissions apply to, None or GUID_NULL indicates object itself
+    Type of object that permissions apply to, None or GUID\_NULL indicates object itself
 
   -  *AceFlags* : int
 
@@ -123,9 +123,9 @@ See[win32security::MapGenericMask](win32security.md#win32securitymapgenericmask)
 #### Return Value
 This method should return the input bitmask will all generic rights mapped to specific rights
 
-## [PyGSecurityInformation](#pygsecurityinformation).PropertySheetPageCallback
+## [PyGSecurityInformation](#pygsecurityinformation)\.PropertySheetPageCallback
 
- __PropertySheetPageCallback( *hwnd*  *, Msg*  *, Page* __ )
+ **PropertySheetPageCallback\( *hwnd*  *, Msg*  *, Page* ** \)
 Called by each page as it is created and destroyed
 
 #### Parameters
@@ -137,18 +137,18 @@ Called by each page as it is created and destroyed
 
   -  *Msg* : int
 
-    Flag indicating type of event, one of PSPCB_CREATE,PSPCB_RELEASE,PSPCB_SI_INITDIALOG
+    Flag indicating type of event, one of PSPCB\_CREATE,PSPCB\_RELEASE,PSPCB\_SI\_INITDIALOG
 
   -  *Page* : int
 
-    SI_PAGE_TYPE value indicating which page is making the call (ntsecuritycon.SI_PAGE_*)
+    SI\_PAGE\_TYPE value indicating which page is making the call \(ntsecuritycon\.SI\_PAGE\_\*\)
 
 #### Return Value
 Any returned value will be ignored
 
-## [PyGSecurityInformation](#pygsecurityinformation).SetSecurity
+## [PyGSecurityInformation](#pygsecurityinformation)\.SetSecurity
 
- __SetSecurity( *SecurityInformation*  *, SecurityDescriptor* __ )
+ **SetSecurity\( *SecurityInformation*  *, SecurityDescriptor* ** \)
 Applies the modified security to the object
 
 #### Parameters
@@ -156,9 +156,9 @@ Applies the modified security to the object
 
   -  *SecurityInformation* : int
 
-    SECURITY_INFORMATION flags specifying which types of security information are to be applied
+    SECURITY\_INFORMATION flags specifying which types of security information are to be applied
 
-  -  *SecurityDescriptor* :[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
+  -  *SecurityDescriptor* :[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
 
     The security information to be applied to the object
 

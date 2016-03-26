@@ -17,7 +17,7 @@ Gives access to the details of a property definition
 
   - [GetPropertyType](PyIPropertyDescription.md#pyipropertydescriptiongetpropertytype)
 
-    Returns the variant type of the property (VT_*)&nbsp;
+    Returns the variant type of the property \(VT\_\*\)&nbsp;
 
   - [GetDisplayName](PyIPropertyDescription.md#pyipropertydescriptiongetdisplayname)
 
@@ -33,7 +33,7 @@ Gives access to the details of a property definition
 
   - [GetViewFlags](PyIPropertyDescription.md#pyipropertydescriptiongetviewflags)
 
-    Returns the view flags that control how the property is displayed (PDVF_*)&nbsp;
+    Returns the view flags that control how the property is displayed \(PDVF\_\*\)&nbsp;
 
   - [GetDefaultColumnWidth](PyIPropertyDescription.md#pyipropertydescriptiongetdefaultcolumnwidth)
 
@@ -41,19 +41,19 @@ Gives access to the details of a property definition
 
   - [GetDisplayType](PyIPropertyDescription.md#pyipropertydescriptiongetdisplaytype)
 
-    Returns the display type (PDDT_*)&nbsp;
+    Returns the display type \(PDDT\_\*\)&nbsp;
 
   - [GetColumnState](PyIPropertyDescription.md#pyipropertydescriptiongetcolumnstate)
 
-    Returns flags that control how property is displayed in column (SHCOLSTATE_*)&nbsp;
+    Returns flags that control how property is displayed in column \(SHCOLSTATE\_\*\)&nbsp;
 
   - [GetGroupingRange](PyIPropertyDescription.md#pyipropertydescriptiongetgroupingrange)
 
-    Returns property's grouping attributes (PDGR_*)&nbsp;
+    Returns property's grouping attributes \(PDGR\_\*\)&nbsp;
 
   - [GetRelativeDescriptionType](PyIPropertyDescription.md#pyipropertydescriptiongetrelativedescriptiontype)
 
-    Returns the relative description type (PDRDT_*)&nbsp;
+    Returns the relative description type \(PDRDT\_\*\)&nbsp;
 
   - [GetRelativeDescription](PyIPropertyDescription.md#pyipropertydescriptiongetrelativedescription)
 
@@ -61,7 +61,7 @@ Gives access to the details of a property definition
 
   - [GetSortDescription](PyIPropertyDescription.md#pyipropertydescriptiongetsortdescription)
 
-    Returns value that determines how sorting options are displayed (PDSD_*)&nbsp;
+    Returns value that determines how sorting options are displayed \(PDSD\_\*\)&nbsp;
 
   - [GetSortDescriptionLabel](PyIPropertyDescription.md#pyipropertydescriptiongetsortdescriptionlabel)
 
@@ -69,7 +69,7 @@ Gives access to the details of a property definition
 
   - [GetAggregationType](PyIPropertyDescription.md#pyipropertydescriptiongetaggregationtype)
 
-    Describes how properties for multiple items are displayed (PDAT_*)&nbsp;
+    Describes how properties for multiple items are displayed \(PDAT\_\*\)&nbsp;
 
   - [GetConditionType](PyIPropertyDescription.md#pyipropertydescriptiongetconditiontype)
 
@@ -91,9 +91,9 @@ Gives access to the details of a property definition
 
     Determines if a value exactly matches the specification for the property&nbsp;
 
-## [PyIPropertyDescription](#pyipropertydescription).CoerceToCanonicalValue
+## [PyIPropertyDescription](#pyipropertydescription)\.CoerceToCanonicalValue
 
-int = __CoerceToCanonicalValue( *Value* __ )
+int \= **CoerceToCanonicalValue\( *Value* ** \)
 Converts a variant value to the exact type expected by the property
 
 #### Parameters
@@ -104,14 +104,14 @@ Converts a variant value to the exact type expected by the property
     The property value to be converted
 
 #### Comments
-This method mutates the PyPROPVARIANT in place.  It may be cleared on failure.
+This method mutates the PyPROPVARIANT in place\.  It may be cleared on failure\.
 
 #### Return Value
-Returns the HRESULT from the operation on success.
+Returns the HRESULT from the operation on success\.
 
-## [PyIPropertyDescription](#pyipropertydescription).FormatForDisplay
+## [PyIPropertyDescription](#pyipropertydescription)\.FormatForDisplay
 
-str = __FormatForDisplay( *Value*  *, Flags* __ )
+str \= **FormatForDisplay\( *Value*  *, Flags* ** \)
 Converts a value to its string representation
 
 #### Parameters
@@ -121,83 +121,83 @@ Converts a value to its string representation
 
     The value to be formatted
 
-  -  *Flags=PDFF_DEFAULT* : int
+  -  *Flags\=PDFF\_DEFAULT* : int
 
-    Combination of PROPDESC_FORMAT_FLAGS (PDFF_*)
+    Combination of PROPDESC\_FORMAT\_FLAGS \(PDFF\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetAggregationType
+## [PyIPropertyDescription](#pyipropertydescription)\.GetAggregationType
 
-int = __GetAggregationType(__ )
-Describes how properties for multiple items are displayed (PDAT_*)
+int \= **GetAggregationType\(** \)
+Describes how properties for multiple items are displayed \(PDAT\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetCanonicalName
+## [PyIPropertyDescription](#pyipropertydescription)\.GetCanonicalName
 
-str = __GetCanonicalName(__ )
+str \= **GetCanonicalName\(** \)
 Returns the name of the property
 
-## [PyIPropertyDescription](#pyipropertydescription).GetColumnState
+## [PyIPropertyDescription](#pyipropertydescription)\.GetColumnState
 
-int = __GetColumnState(__ )
-Returns flags that control how property is displayed in column (SHCOLSTATE_*)
+int \= **GetColumnState\(** \)
+Returns flags that control how property is displayed in column \(SHCOLSTATE\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetConditionType
+## [PyIPropertyDescription](#pyipropertydescription)\.GetConditionType
 
-(int, int) = __GetConditionType(__ )
+\(int, int\) \= **GetConditionType\(** \)
 Returns options that determine how the property is used to build a search query
 
 #### Return Value
-Returns the condition type (PDCOT_*) and default operation (COP_*)
+Returns the condition type \(PDCOT\_\*\) and default operation \(COP\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetDefaultColumnWidth
+## [PyIPropertyDescription](#pyipropertydescription)\.GetDefaultColumnWidth
 
-int = __GetDefaultColumnWidth(__ )
+int \= **GetDefaultColumnWidth\(** \)
 Returns the default width in characters
 
-## [PyIPropertyDescription](#pyipropertydescription).GetDisplayName
+## [PyIPropertyDescription](#pyipropertydescription)\.GetDisplayName
 
-str = __GetDisplayName(__ )
+str \= **GetDisplayName\(** \)
 Returns the property name as shown in the UI
 
-## [PyIPropertyDescription](#pyipropertydescription).GetDisplayType
+## [PyIPropertyDescription](#pyipropertydescription)\.GetDisplayType
 
-int = __GetDisplayType(__ )
-Returns the display type (PDDT_*)
+int \= **GetDisplayType\(** \)
+Returns the display type \(PDDT\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetEditInvitation
+## [PyIPropertyDescription](#pyipropertydescription)\.GetEditInvitation
 
-str = __GetEditInvitation(__ )
+str \= **GetEditInvitation\(** \)
 Returns the input prompt used in edit controls
 
-## [PyIPropertyDescription](#pyipropertydescription).GetEnumTypeList
+## [PyIPropertyDescription](#pyipropertydescription)\.GetEnumTypeList
 
-[PyIPropertyEnumTypeList](#pyipropertyenumtypelist)= __GetEnumTypeList( *riid* __ )
+[PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\= **GetEnumTypeList\( *riid* ** \)
 Returns an interface used for querying valid property range
 
 #### Parameters
 
 
-  -  *riid=IID_IPropertyEnumTypeList* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyEnumTypeList* :[PyIID](#pyiid)
 
     IID of the requested interface
 
-## [PyIPropertyDescription](#pyipropertydescription).GetGroupingRange
+## [PyIPropertyDescription](#pyipropertydescription)\.GetGroupingRange
 
-int = __GetGroupingRange(__ )
-Returns property's grouping attributes (PDGR_*)
+int \= **GetGroupingRange\(** \)
+Returns property's grouping attributes \(PDGR\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetPropertyKey
+## [PyIPropertyDescription](#pyipropertydescription)\.GetPropertyKey
 
-[PyPROPERTYKEY](#pypropertykey)= __GetPropertyKey(__ )
+[PyPROPERTYKEY](#pypropertykey)\= **GetPropertyKey\(** \)
 Returns the unique identifier for a property
 
-## [PyIPropertyDescription](#pyipropertydescription).GetPropertyType
+## [PyIPropertyDescription](#pyipropertydescription)\.GetPropertyType
 
-int = __GetPropertyType(__ )
-Returns the variant type of the property (VT_*)
+int \= **GetPropertyType\(** \)
+Returns the variant type of the property \(VT\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetRelativeDescription
+## [PyIPropertyDescription](#pyipropertydescription)\.GetRelativeDescription
 
-(str, str) = __GetRelativeDescription( *var1*  *, var2* __ )
+\(str, str\) \= **GetRelativeDescription\( *var1*  *, var2* ** \)
 Compares two values
 
 #### Parameters
@@ -211,19 +211,19 @@ Compares two values
 
     The second value
 
-## [PyIPropertyDescription](#pyipropertydescription).GetRelativeDescriptionType
+## [PyIPropertyDescription](#pyipropertydescription)\.GetRelativeDescriptionType
 
-int = __GetRelativeDescriptionType(__ )
-Returns the relative description type (PDRDT_*)
+int \= **GetRelativeDescriptionType\(** \)
+Returns the relative description type \(PDRDT\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetSortDescription
+## [PyIPropertyDescription](#pyipropertydescription)\.GetSortDescription
 
-int = __GetSortDescription(__ )
-Returns value that determines how sorting options are displayed (PDSD_*)
+int \= **GetSortDescription\(** \)
+Returns value that determines how sorting options are displayed \(PDSD\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetSortDescriptionLabel
+## [PyIPropertyDescription](#pyipropertydescription)\.GetSortDescriptionLabel
 
-str = __GetSortDescriptionLabel( *Descending* __ )
+str \= **GetSortDescriptionLabel\( *Descending* ** \)
 Returns description of current sort order
 
 #### Parameters
@@ -233,26 +233,26 @@ Returns description of current sort order
 
     Indicates if order is reversed
 
-## [PyIPropertyDescription](#pyipropertydescription).GetTypeFlags
+## [PyIPropertyDescription](#pyipropertydescription)\.GetTypeFlags
 
-int = __GetTypeFlags( *mask* __ )
+int \= **GetTypeFlags\( *mask* ** \)
 Returns type flags for the property
 
 #### Parameters
 
 
-  -  *mask=PDTF_MASK_ALL* : int
+  -  *mask\=PDTF\_MASK\_ALL* : int
 
-    Specifies which flags to retrieve (PDTF_*)
+    Specifies which flags to retrieve \(PDTF\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).GetViewFlags
+## [PyIPropertyDescription](#pyipropertydescription)\.GetViewFlags
 
-int = __GetViewFlags(__ )
-Returns the view flags that control how the property is displayed (PDVF_*)
+int \= **GetViewFlags\(** \)
+Returns the view flags that control how the property is displayed \(PDVF\_\*\)
 
-## [PyIPropertyDescription](#pyipropertydescription).IsValueCanonical
+## [PyIPropertyDescription](#pyipropertydescription)\.IsValueCanonical
 
-bool = __IsValueCanonical( *Value* __ )
+bool \= **IsValueCanonical\( *Value* ** \)
 Determines if a value exactly matches the specification for the property
 
 #### Parameters

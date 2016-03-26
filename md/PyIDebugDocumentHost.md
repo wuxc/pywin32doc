@@ -31,10 +31,10 @@ Description of the interface
 
     Description of NotifyChanged&nbsp;
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost).GetDeferredText
+## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetDeferredText
 
- __GetDeferredText( *dwTextStartCookie*  *, cMaxChars* __ )
-Description of GetDeferredText.
+ **GetDeferredText\( *dwTextStartCookie*  *, cMaxChars* ** \)
+Description of GetDeferredText\.
 
 #### Parameters
 
@@ -47,29 +47,29 @@ Description of GetDeferredText.
 
     Description for cMaxChars
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost).GetFileName
+## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetFileName
 
- __GetFileName(__ )
-Description of GetFileName.
+ **GetFileName\(** \)
+Description of GetFileName\.
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost).GetPathName
+## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetPathName
 
- __GetPathName(__ )
-Description of GetPathName.
+ **GetPathName\(** \)
+Description of GetPathName\.
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost).GetScriptTextAttributes
+## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetScriptTextAttributes
 
- __GetScriptTextAttributes( *pstrCode*  *, pstrDelimiter*  *, dwFlags* __ )
-Description of GetScriptTextAttributes.
+ **GetScriptTextAttributes\( *pstrCode*  *, pstrDelimiter*  *, dwFlags* ** \)
+Description of GetScriptTextAttributes\.
 
 #### Parameters
 
 
-  -  *pstrCode* : __unicode__ 
+  -  *pstrCode* : **unicode** 
 
     Description for pstrCode
 
-  -  *pstrDelimiter* : __unicode__ 
+  -  *pstrDelimiter* : **unicode** 
 
     Description for pstrDelimiter
 
@@ -77,12 +77,12 @@ Description of GetScriptTextAttributes.
 
     Description for dwFlags
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost).NotifyChanged
+## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.NotifyChanged
 
- __NotifyChanged(__ )
-Description of NotifyChanged.
+ **NotifyChanged\(** \)
+Description of NotifyChanged\.
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost).OnCreateDocumentContext
+## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.OnCreateDocumentContext
 
- __OnCreateDocumentContext(__ )
-Description of OnCreateDocumentContext.
+ **OnCreateDocumentContext\(** \)
+Description of OnCreateDocumentContext\.

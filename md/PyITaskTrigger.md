@@ -9,34 +9,34 @@ Python object that encapsulates the ITaskTrigger interface
 
   - [SetTrigger](PyITaskTrigger.md#pyitasktriggersettrigger)
 
-    Set trigger parameters from a PyTASK_TRIGGER object&nbsp;
+    Set trigger parameters from a PyTASK\_TRIGGER object&nbsp;
 
   - [GetTrigger](PyITaskTrigger.md#pyitasktriggergettrigger)
 
-    Retrieves trigger parms as a PyTASK_TRIGGER object&nbsp;
+    Retrieves trigger parms as a PyTASK\_TRIGGER object&nbsp;
 
   - [GetTriggerString](PyITaskTrigger.md#pyitasktriggergettriggerstring)
 
     Build text summary of trigger&nbsp;
 
-## [PyITaskTrigger](#pyitasktrigger).GetTrigger
+## [PyITaskTrigger](#pyitasktrigger)\.GetTrigger
 
-[PyTASK_TRIGGER](PyTASK.md#pytasktrigger)= __GetTrigger(__ )
-Retrieves trigger parms as a PyTASK_TRIGGER object
+[PyTASK\_TRIGGER](PyTASK.md#pytasktrigger)\= **GetTrigger\(** \)
+Retrieves trigger parms as a PyTASK\_TRIGGER object
 
-## [PyITaskTrigger](#pyitasktrigger).GetTriggerString
+## [PyITaskTrigger](#pyitasktrigger)\.GetTriggerString
 
-[PyUnicode](#pyunicode)= __GetTriggerString(__ )
+[PyUnicode](#pyunicode)\= **GetTriggerString\(** \)
 Build text summary of trigger
 
-## [PyITaskTrigger](#pyitasktrigger).SetTrigger
+## [PyITaskTrigger](#pyitasktrigger)\.SetTrigger
 
- __SetTrigger( *Trigger* __ )
-Set trigger parameters from a PyTASK_TRIGGER object
+ **SetTrigger\( *Trigger* ** \)
+Set trigger parameters from a PyTASK\_TRIGGER object
 
 #### Parameters
 
 
-  -  *Trigger* :[PyTASK_TRIGGER](PyTASK.md#pytasktrigger)
+  -  *Trigger* :[PyTASK\_TRIGGER](PyTASK.md#pytasktrigger)
 
-    Python object representing a TASK_TRIGGER struct
+    Python object representing a TASK\_TRIGGER struct

@@ -19,9 +19,9 @@ Description of the interface
 
     Makes a private copy of a proxy interface&nbsp;
 
-## [PyIClientSecurity](#pyiclientsecurity).CopyProxy
+## [PyIClientSecurity](#pyiclientsecurity)\.CopyProxy
 
-[PyIUnknown](#pyiunknown)= __CopyProxy( *Proxy* __ )
+[PyIUnknown](#pyiunknown)\= **CopyProxy\( *Proxy* ** \)
 Makes a private copy of a proxy interface
 
 #### Parameters
@@ -31,9 +31,9 @@ Makes a private copy of a proxy interface
 
     The remote interface to be copied
 
-## [PyIClientSecurity](#pyiclientsecurity).QueryBlanket
+## [PyIClientSecurity](#pyiclientsecurity)\.QueryBlanket
 
-dict = __QueryBlanket( *Proxy* __ )
+dict \= **QueryBlanket\( *Proxy* ** \)
 Retrieves the authentication settings for an interface
 
 #### Parameters
@@ -43,9 +43,9 @@ Retrieves the authentication settings for an interface
 
     An interface created through a proxy
 
-## [PyIClientSecurity](#pyiclientsecurity).SetBlanket
+## [PyIClientSecurity](#pyiclientsecurity)\.SetBlanket
 
- __SetBlanket( *Proxy*  *, AuthnSvc*  *, AuthzSvc*  *, ServerPrincipalName*  *, AuthnLevel*  *, ImpLevel*  *, AuthInfo*  *, Capabilities* __ )
+ **SetBlanket\( *Proxy*  *, AuthnSvc*  *, AuthzSvc*  *, ServerPrincipalName*  *, AuthnLevel*  *, ImpLevel*  *, AuthInfo*  *, Capabilities* ** \)
 Changes the authentication options used with an interface
 
 #### Parameters
@@ -57,11 +57,11 @@ Changes the authentication options used with an interface
 
   -  *AuthnSvc* : int
 
-    Authentication service identifier, pythoncom.RPC_C_AUTHN_* (but not RPC_C_AUTHN_LEVEL_*)
+    Authentication service identifier, pythoncom\.RPC\_C\_AUTHN\_\* \(but not RPC\_C\_AUTHN\_LEVEL\_\*\)
 
   -  *AuthzSvc* : int
 
-    Authorization service identifier, pythoncom.RPC_C_AUTHZ_*
+    Authorization service identifier, pythoncom\.RPC\_C\_AUTHZ\_\*
 
   -  *ServerPrincipalName* :[PyUnicode](#pyunicode)
 
@@ -69,11 +69,11 @@ Changes the authentication options used with an interface
 
   -  *AuthnLevel* : int
 
-    Authentication level, pythoncom.RPC_C_AUTHN_LEVEL_*
+    Authentication level, pythoncom\.RPC\_C\_AUTHN\_LEVEL\_\*
 
   -  *ImpLevel* : int
 
-    Impersonation level, pythoncom.RPC_C_IMP_LEVEL_*
+    Impersonation level, pythoncom\.RPC\_C\_IMP\_LEVEL\_\*
 
   -  *AuthInfo* : None
 
@@ -81,6 +81,6 @@ Changes the authentication options used with an interface
 
   -  *Capabilities* : int
 
-    Combination of pythoncom.EOAC_* flags.  Must be a subset of the 
+    Combination of pythoncom\.EOAC\_\* flags\.  Must be a subset of the 
 
-capabilities of the specified authentication service.
+capabilities of the specified authentication service\.

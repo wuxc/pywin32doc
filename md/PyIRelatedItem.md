@@ -4,7 +4,7 @@
 
 Interface used as the base for objects that have a related shell item 
 
-(eg ITransferMediumItem, IDisplayItem, etc).  Should not be used directly.
+\(eg ITransferMediumItem, IDisplayItem, etc\)\.  Should not be used directly\.
 
 #### Methods
 
@@ -17,12 +17,12 @@ Interface used as the base for objects that have a related shell item
 
     Returns the related item&nbsp;
 
-## [PyIRelatedItem](#pyirelateditem).GetItem
+## [PyIRelatedItem](#pyirelateditem)\.GetItem
 
-[PyIShellItem](#pyishellitem)= __GetItem(__ )
+[PyIShellItem](#pyishellitem)\= **GetItem\(** \)
 Returns the related item
 
-## [PyIRelatedItem](#pyirelateditem).GetItemIDList
+## [PyIRelatedItem](#pyirelateditem)\.GetItemIDList
 
-[PyIDL](#pyidl)= __GetItemIDList(__ )
+[PyIDL](#pyidl)\= **GetItemIDList\(** \)
 Returns the ID list of the related item

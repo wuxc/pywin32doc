@@ -79,15 +79,15 @@ Description of the interface
 
     Description of BringDocumentContextToTop&nbsp;
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).AddDBCSText
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.AddDBCSText
 
- __AddDBCSText(__ )
-Description of AddDBCSText.
+ **AddDBCSText\(** \)
+Description of AddDBCSText\.
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).AddDeferredText
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.AddDeferredText
 
- __AddDeferredText( *cChars*  *, dwTextStartCookie* __ )
-Description of AddDeferredText.
+ **AddDeferredText\( *cChars*  *, dwTextStartCookie* ** \)
+Description of AddDeferredText\.
 
 #### Parameters
 
@@ -100,21 +100,21 @@ Description of AddDeferredText.
 
     Description for dwTextStartCookie
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).AddUnicodeText
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.AddUnicodeText
 
- __AddUnicodeText( *pszText* __ )
-Description of AddUnicodeText.
+ **AddUnicodeText\( *pszText* ** \)
+Description of AddUnicodeText\.
 
 #### Parameters
 
 
-  -  *pszText* : __unicode__ 
+  -  *pszText* : **unicode** 
 
     Description for pszText
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).Attach
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.Attach
 
- __Attach( *pddhParent* __ )
+ **Attach\( *pddhParent* ** \)
 Add the document to the doc tree
 
 #### Parameters
@@ -122,12 +122,12 @@ Add the document to the doc tree
 
   -  *pddhParent* :[PyIDebugDocumentHelper](#pyidebugdocumenthelper)
 
-    Parent item.  If none, this item is top level.
+    Parent item\.  If none, this item is top level\.
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).BringDocumentContextToTop
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.BringDocumentContextToTop
 
- __BringDocumentContextToTop( *pddc* __ )
-Description of BringDocumentContextToTop.
+ **BringDocumentContextToTop\( *pddc* ** \)
+Description of BringDocumentContextToTop\.
 
 #### Parameters
 
@@ -136,15 +136,15 @@ Description of BringDocumentContextToTop.
 
     Description for pddc
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).BringDocumentToTop
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.BringDocumentToTop
 
- __BringDocumentToTop(__ )
-Description of BringDocumentToTop.
+ **BringDocumentToTop\(** \)
+Description of BringDocumentToTop\.
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).CreateDebugDocumentContext
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.CreateDebugDocumentContext
 
- __CreateDebugDocumentContext( *iCharPos*  *, cChars* __ )
-Description of CreateDebugDocumentContext.
+ **CreateDebugDocumentContext\( *iCharPos*  *, cChars* ** \)
+Description of CreateDebugDocumentContext\.
 
 #### Parameters
 
@@ -157,10 +157,10 @@ Description of CreateDebugDocumentContext.
 
     Description for cChars
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).DefineScriptBlock
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.DefineScriptBlock
 
- __DefineScriptBlock( *ulCharOffset*  *, cChars*  *, pas*  *, fScriptlet* __ )
-Description of DefineScriptBlock.
+ **DefineScriptBlock\( *ulCharOffset*  *, cChars*  *, pas*  *, fScriptlet* ** \)
+Description of DefineScriptBlock\.
 
 #### Parameters
 
@@ -173,7 +173,7 @@ Description of DefineScriptBlock.
 
     Description for cChars
 
-  -  *pas* : __PyIActiveScript__ 
+  -  *pas* : **PyIActiveScript** 
 
     Description for pas
 
@@ -181,20 +181,20 @@ Description of DefineScriptBlock.
 
     Description for fScriptlet
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).Detach
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.Detach
 
- __Detach(__ )
-Description of Detach.
+ **Detach\(** \)
+Description of Detach\.
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).GetDebugApplicationNode
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.GetDebugApplicationNode
 
- __GetDebugApplicationNode(__ )
-Description of GetDebugApplicationNode.
+ **GetDebugApplicationNode\(** \)
+Description of GetDebugApplicationNode\.
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).GetScriptBlockInfo
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.GetScriptBlockInfo
 
- __GetScriptBlockInfo( *dwSourceContext* __ )
-Description of GetScriptBlockInfo.
+ **GetScriptBlockInfo\( *dwSourceContext* ** \)
+Description of GetScriptBlockInfo\.
 
 #### Parameters
 
@@ -203,10 +203,10 @@ Description of GetScriptBlockInfo.
 
     Description for dwSourceContext
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).Init
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.Init
 
- __Init( *pda*  *, pszShortName*  *, pszLongName*  *, docAttr* __ )
-Description of Init.
+ **Init\( *pda*  *, pszShortName*  *, pszLongName*  *, docAttr* ** \)
+Description of Init\.
 
 #### Parameters
 
@@ -215,11 +215,11 @@ Description of Init.
 
     Description for pda
 
-  -  *pszShortName* : __unicode__ 
+  -  *pszShortName* : **unicode** 
 
     Description for pszShortName
 
-  -  *pszLongName* : __unicode__ 
+  -  *pszLongName* : **unicode** 
 
     Description for pszLongName
 
@@ -227,10 +227,10 @@ Description of Init.
 
     Description for docAttr
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).SetDebugDocumentHost
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetDebugDocumentHost
 
- __SetDebugDocumentHost( *pddh* __ )
-Description of SetDebugDocumentHost.
+ **SetDebugDocumentHost\( *pddh* ** \)
+Description of SetDebugDocumentHost\.
 
 #### Parameters
 
@@ -239,10 +239,10 @@ Description of SetDebugDocumentHost.
 
     Description for pddh
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).SetDefaultTextAttr
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetDefaultTextAttr
 
- __SetDefaultTextAttr( *staTextAttr* __ )
-Description of SetDefaultTextAttr.
+ **SetDefaultTextAttr\( *staTextAttr* ** \)
+Description of SetDefaultTextAttr\.
 
 #### Parameters
 
@@ -251,10 +251,10 @@ Description of SetDefaultTextAttr.
 
     Description for staTextAttr
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).SetDocumentAttr
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetDocumentAttr
 
- __SetDocumentAttr( *pszAttributes* __ )
-Description of SetDocumentAttr.
+ **SetDocumentAttr\( *pszAttributes* ** \)
+Description of SetDocumentAttr\.
 
 #### Parameters
 
@@ -263,34 +263,34 @@ Description of SetDocumentAttr.
 
     Description for pszAttributes
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).SetLongName
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetLongName
 
- __SetLongName( *pszLongName* __ )
-Description of SetLongName.
+ **SetLongName\( *pszLongName* ** \)
+Description of SetLongName\.
 
 #### Parameters
 
 
-  -  *pszLongName* : __unicode__ 
+  -  *pszLongName* : **unicode** 
 
     Description for pszLongName
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).SetShortName
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetShortName
 
- __SetShortName( *pszShortName* __ )
-Description of SetShortName.
+ **SetShortName\( *pszShortName* ** \)
+Description of SetShortName\.
 
 #### Parameters
 
 
-  -  *pszShortName* : __unicode__ 
+  -  *pszShortName* : **unicode** 
 
     Description for pszShortName
 
-## [PyIDebugDocumentHelper](#pyidebugdocumenthelper).SetTextAttributes
+## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetTextAttributes
 
- __SetTextAttributes( *ulCharOffset*  *, obAttr* __ )
-Description of SetTextAttributes.
+ **SetTextAttributes\( *ulCharOffset*  *, obAttr* ** \)
+Description of SetTextAttributes\.
 
 #### Parameters
 
@@ -301,4 +301,4 @@ Description of SetTextAttributes.
 
   -  *obAttr* : object
 
-    A sequence of attributes.
+    A sequence of attributes\.

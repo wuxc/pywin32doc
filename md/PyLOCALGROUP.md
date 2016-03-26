@@ -1,89 +1,89 @@
 # PyLOCALGROUP
 
-## PyLOCALGROUP_INFO_* Object
+## PyLOCALGROUP\_INFO\_\* Object
 
-The following LOCALGROUP_INFO levels are supported.
+The following LOCALGROUP\_INFO levels are supported\.
 
 
-## PyLOCALGROUP_INFO_0 Object
+## PyLOCALGROUP\_INFO\_0 Object
 
-A dictionary holding the information in a Win32 LOCALGROUP_INFO_0 structure.
+A dictionary holding the information in a Win32 LOCALGROUP\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     Name of the group
 
-## PyLOCALGROUP_INFO_1 Object
+## PyLOCALGROUP\_INFO\_1 Object
 
-A dictionary holding the information in a Win32 LOCALGROUP_INFO_1 structure.
+A dictionary holding the information in a Win32 LOCALGROUP\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     Name of the group
 
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    The group's comment.
+  -  **string/[PyUnicode](#pyunicode)comment** 
+    The group's comment\.
 
-## PyLOCALGROUP_INFO_1002 Object
+## PyLOCALGROUP\_INFO\_1002 Object
 
-A dictionary holding the information in a Win32 LOCALGROUP_INFO_1002 structure.
-
-#### Properties
-
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    
-
-## PyLOCALGROUP_MEMBERS_INFO_* Object
-
-The following LOCALGROUP_MEMBER_INFO levels are supported.
-
-
-## PyLOCALGROUP_MEMBERS_INFO_0 Object
-
-A dictionary holding the information in a Win32 LOCALGROUP_MEMBERS_INFO_0 structure.
+A dictionary holding the information in a Win32 LOCALGROUP\_INFO\_1002 structure\.
 
 #### Properties
 
-  -  __[PySID](#pysid)sid__ 
+  -  **string/[PyUnicode](#pyunicode)comment** 
     
 
-## PyLOCALGROUP_MEMBERS_INFO_1 Object
+## PyLOCALGROUP\_MEMBERS\_INFO\_\* Object
 
-A dictionary holding the information in a Win32 LOCALGROUP_MEMBERS_INFO_1 structure.
+The following LOCALGROUP\_MEMBER\_INFO levels are supported\.
+
+
+## PyLOCALGROUP\_MEMBERS\_INFO\_0 Object
+
+A dictionary holding the information in a Win32 LOCALGROUP\_MEMBERS\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __[PySID](#pysid)sid__ 
+  -  **[PySID](#pysid)sid** 
     
 
-  -  __int sidusage__ 
-    
+## PyLOCALGROUP\_MEMBERS\_INFO\_1 Object
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
-    
-
-## PyLOCALGROUP_MEMBERS_INFO_2 Object
-
-A dictionary holding the information in a Win32 LOCALGROUP_MEMBERS_INFO_2 structure.
+A dictionary holding the information in a Win32 LOCALGROUP\_MEMBERS\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __[PySID](#pysid)sid__ 
+  -  **[PySID](#pysid)sid** 
     
 
-  -  __int sidusage__ 
+  -  **int sidusage** 
     
 
-  -  __string/[PyUnicode](#pyunicode)domainandname__ 
-    string containing the name of the member prefixed by the domain name and the "\\" separator character
+  -  **string/[PyUnicode](#pyunicode)name** 
+    
 
-## PyLOCALGROUP_MEMBERS_INFO_3 Object
+## PyLOCALGROUP\_MEMBERS\_INFO\_2 Object
 
-A dictionary holding the information in a Win32 LOCALGROUP_MEMBERS_INFO_3 structure.
+A dictionary holding the information in a Win32 LOCALGROUP\_MEMBERS\_INFO\_2 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)domainandname__ 
-    string containing the name of the member prefixed by the domain name and the "\\" separator character
+  -  **[PySID](#pysid)sid** 
+    
+
+  -  **int sidusage** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)domainandname** 
+    string containing the name of the member prefixed by the domain name and the "\\\\" separator character
+
+## PyLOCALGROUP\_MEMBERS\_INFO\_3 Object
+
+A dictionary holding the information in a Win32 LOCALGROUP\_MEMBERS\_INFO\_3 structure\.
+
+#### Properties
+
+  -  **string/[PyUnicode](#pyunicode)domainandname** 
+    string containing the name of the member prefixed by the domain name and the "\\\\" separator character

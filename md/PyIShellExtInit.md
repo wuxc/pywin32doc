@@ -11,10 +11,10 @@ Description of the interface
 
     Description of Initialize&nbsp;
 
-## [PyIShellExtInit](#pyishellextinit).Initialize
+## [PyIShellExtInit](#pyishellextinit)\.Initialize
 
- __Initialize( *pFolder*  *, pDataObject*  *, hkey* __ )
-Description of Initialize.
+ **Initialize\( *pFolder*  *, pDataObject*  *, hkey* ** \)
+Description of Initialize\.
 
 #### Parameters
 

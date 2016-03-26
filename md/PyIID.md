@@ -2,50 +2,50 @@
 
 ## PyIID Object
 
-A Python object, representing an IID/CLSID.
+A Python object, representing an IID/CLSID\.
 All pythoncom functions that return a CLSID/IID will return one of these 
 
-objects.  However, in almost all cases, functions that expect a CLSID/IID 
+objects\.  However, in almost all cases, functions that expect a CLSID/IID 
 
-as a param will accept either a string object, or a native PyIID object.
+as a param will accept either a string object, or a native PyIID object\.
 
 #### Methods
 
 
-  - [__repr__](PyIID.md#pyiid__repr__)
+  - [\_\_repr\_\_](PyIID.md#pyiid__repr__)
 
-    Used whenever a repr() is called for the object 
+    Used whenever a repr\(\) is called for the object 
 
-tp_repr&nbsp;
+tp\_repr&nbsp;
 
-  - [__hash__](PyIID.md#pyiid__hash__)
+  - [\_\_hash\_\_](PyIID.md#pyiid__hash__)
 
     Used when the hash value of an IID object is required 
 
-tp_hash&nbsp;
+tp\_hash&nbsp;
 
-  - [__str__](PyIID.md#pyiid__str__)
+  - [\_\_str\_\_](PyIID.md#pyiid__str__)
 
-    Used whenever a string representation of the IID is required. 
+    Used whenever a string representation of the IID is required\. 
 
-tp_str&nbsp;
+tp\_str&nbsp;
 
 #### Comments
-Note that IID objects support the buffer interface.  Thus buffer(iid) can be used to obtain the raw bytes. 
+Note that IID objects support the buffer interface\.  Thus buffer\(iid\) can be used to obtain the raw bytes\. 
 
-tp_as_buffer
+tp\_as\_buffer
 
-## [PyIID](#pyiid).__hash__
+## [PyIID](#pyiid)\.\_\_hash\_\_
 
-int = ____hash__(__ )
+int \= **\_\_hash\_\_\(** \)
 Used when the hash value of an IID object is required
 
-## [PyIID](#pyiid).__repr__
+## [PyIID](#pyiid)\.\_\_repr\_\_
 
-string = ____repr__(__ )
+string \= **\_\_repr\_\_\(** \)
 
 
-## [PyIID](#pyiid).__str__
+## [PyIID](#pyiid)\.\_\_str\_\_
 
-string = ____str__(__ )
-Used whenever a string representation of the IID is required.
+string \= **\_\_str\_\_\(** \)
+Used whenever a string representation of the IID is required\.

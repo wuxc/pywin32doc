@@ -1,114 +1,114 @@
 # PySHARE
 
-## PySHARE_INFO_* Object
+## PySHARE\_INFO\_\* Object
 
-The following SHARE_INFO levels are supported.
+The following SHARE\_INFO levels are supported\.
 
 
-## PySHARE_INFO_0 Object
+## PySHARE\_INFO\_0 Object
 
-A dictionary holding the infomation in a Win32 SHARE_INFO_0 structure.
-
-#### Properties
-
-  -  __string/[PyUnicode](#pyunicode)netname__ 
-    
-
-## PySHARE_INFO_1 Object
-
-A dictionary holding the infomation in a Win32 SHARE_INFO_1 structure.
+A dictionary holding the infomation in a Win32 SHARE\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)netname__ 
+  -  **string/[PyUnicode](#pyunicode)netname** 
     
 
-  -  __int type__ 
-    
+## PySHARE\_INFO\_1 Object
 
-  -  __string/[PyUnicode](#pyunicode)remark__ 
-    
-
-## PySHARE_INFO_2 Object
-
-A dictionary holding the infomation in a Win32 SHARE_INFO_2 structure.
+A dictionary holding the infomation in a Win32 SHARE\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)netname__ 
+  -  **string/[PyUnicode](#pyunicode)netname** 
     
 
-  -  __int type__ 
+  -  **int type** 
     
 
-  -  __string/[PyUnicode](#pyunicode)remark__ 
+  -  **string/[PyUnicode](#pyunicode)remark** 
     
 
-  -  __int permissions__ 
-    
+## PySHARE\_INFO\_2 Object
 
-  -  __int max_uses__ 
-    
-
-  -  __int current_uses__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)path__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)passwd__ 
-    
-
-## PySHARE_INFO_501 Object
-
-A dictionary holding the infomation in a Win32 SHARE_INFO_501 structure.
+A dictionary holding the infomation in a Win32 SHARE\_INFO\_2 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)netname__ 
+  -  **string/[PyUnicode](#pyunicode)netname** 
     
 
-  -  __int type__ 
+  -  **int type** 
     
 
-  -  __string/[PyUnicode](#pyunicode)remark__ 
+  -  **string/[PyUnicode](#pyunicode)remark** 
     
 
-  -  __int flags__ 
+  -  **int permissions** 
     
 
-## PySHARE_INFO_502 Object
+  -  **int max\_uses** 
+    
 
-A dictionary holding the infomation in a Win32 SHARE_INFO_502 structure.
+  -  **int current\_uses** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)path** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)passwd** 
+    
+
+## PySHARE\_INFO\_501 Object
+
+A dictionary holding the infomation in a Win32 SHARE\_INFO\_501 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)netname__ 
+  -  **string/[PyUnicode](#pyunicode)netname** 
     
 
-  -  __int type__ 
+  -  **int type** 
     
 
-  -  __string/[PyUnicode](#pyunicode)remark__ 
+  -  **string/[PyUnicode](#pyunicode)remark** 
     
 
-  -  __int permissions__ 
+  -  **int flags** 
     
 
-  -  __int max_uses__ 
+## PySHARE\_INFO\_502 Object
+
+A dictionary holding the infomation in a Win32 SHARE\_INFO\_502 structure\.
+
+#### Properties
+
+  -  **string/[PyUnicode](#pyunicode)netname** 
     
 
-  -  __int current_uses__ 
+  -  **int type** 
     
 
-  -  __string/[PyUnicode](#pyunicode)path__ 
+  -  **string/[PyUnicode](#pyunicode)remark** 
     
 
-  -  __string/[PyUnicode](#pyunicode)passwd__ 
+  -  **int permissions** 
     
 
-  -  __int reserved__ 
+  -  **int max\_uses** 
     
 
-  -  __[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)security_descriptor__ 
+  -  **int current\_uses** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)path** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)passwd** 
+    
+
+  -  **int reserved** 
+    
+
+  -  **[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)security\_descriptor** 
     

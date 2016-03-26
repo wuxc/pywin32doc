@@ -2,7 +2,7 @@
 
 ## PyIDebugDocumentTextAuthor Object
 
-This preliminary interface is provided by text documents that support editing. Derived from[PyIDebugDocumentText](#pyidebugdocumenttext)
+This preliminary interface is provided by text documents that support editing\. Derived from[PyIDebugDocumentText](#pyidebugdocumenttext)
 
 #### Methods
 
@@ -19,10 +19,10 @@ This preliminary interface is provided by text documents that support editing. D
 
     Description of ReplaceText&nbsp;
 
-## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor).InsertText
+## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor)\.InsertText
 
- __InsertText( *cCharacterPosition*  *, cNumToInsert*  *, pcharText* __ )
-Description of InsertText.
+ **InsertText\( *cCharacterPosition*  *, cNumToInsert*  *, pcharText* ** \)
+Description of InsertText\.
 
 #### Parameters
 
@@ -35,14 +35,14 @@ Description of InsertText.
 
     Description for cNumToInsert
 
-  -  *pcharText* : __unicode__ 
+  -  *pcharText* : **unicode** 
 
     Description for pcharText
 
-## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor).RemoveText
+## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor)\.RemoveText
 
- __RemoveText( *cCharacterPosition*  *, cNumToRemove* __ )
-Description of RemoveText.
+ **RemoveText\( *cCharacterPosition*  *, cNumToRemove* ** \)
+Description of RemoveText\.
 
 #### Parameters
 
@@ -55,10 +55,10 @@ Description of RemoveText.
 
     Description for cNumToRemove
 
-## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor).ReplaceText
+## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor)\.ReplaceText
 
- __ReplaceText( *cCharacterPosition*  *, cNumToReplace*  *, pcharText* __ )
-Description of ReplaceText.
+ **ReplaceText\( *cCharacterPosition*  *, cNumToReplace*  *, pcharText* ** \)
+Description of ReplaceText\.
 
 #### Parameters
 
@@ -71,6 +71,6 @@ Description of ReplaceText.
 
     Description for cNumToReplace
 
-  -  *pcharText* : __unicode__ 
+  -  *pcharText* : **unicode** 
 
     Description for pcharText

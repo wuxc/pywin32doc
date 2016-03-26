@@ -43,45 +43,45 @@ Description of the interface
 
     Description of GetSuspendCount&nbsp;
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).EnumStackFrames
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.EnumStackFrames
 
- __EnumStackFrames(__ )
-Description of EnumStackFrames.
+ **EnumStackFrames\(** \)
+Description of EnumStackFrames\.
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).GetApplication
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetApplication
 
- __GetApplication(__ )
-Description of GetApplication.
+ **GetApplication\(** \)
+Description of GetApplication\.
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).GetDescription
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetDescription
 
- __GetDescription(__ )
-Description of GetDescription.
+ **GetDescription\(** \)
+Description of GetDescription\.
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).GetState
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetState
 
- __GetState(__ )
-Description of GetState.
+ **GetState\(** \)
+Description of GetState\.
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).GetSuspendCount
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetSuspendCount
 
- __GetSuspendCount(__ )
-Description of GetSuspendCount.
+ **GetSuspendCount\(** \)
+Description of GetSuspendCount\.
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).GetSystemThreadId
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetSystemThreadId
 
- __GetSystemThreadId(__ )
-Description of GetSystemThreadId.
+ **GetSystemThreadId\(** \)
+Description of GetSystemThreadId\.
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).Resume
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.Resume
 
- __Resume(__ )
-Description of Resume.
+ **Resume\(** \)
+Description of Resume\.
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).SetNextStatement
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.SetNextStatement
 
- __SetNextStatement( *pStackFrame*  *, pCodeContext* __ )
-Description of SetNextStatement.
+ **SetNextStatement\( *pStackFrame*  *, pCodeContext* ** \)
+Description of SetNextStatement\.
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Description of SetNextStatement.
 
     Description for pCodeContext
 
-## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread).Suspend
+## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.Suspend
 
- __Suspend(__ )
-Description of Suspend.
+ **Suspend\(** \)
+Description of Suspend\.

@@ -1,5 +1,5 @@
 # PyTASK
 
-## PyTASK_TRIGGER Object
+## PyTASK\_TRIGGER Object
 
-Python object representing a TASK_TRIGGER structure via the structmember Api
+Python object representing a TASK\_TRIGGER structure via the structmember Api

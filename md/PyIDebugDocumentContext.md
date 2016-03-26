@@ -15,12 +15,12 @@ Description of the interface
 
     Description of EnumCodeContexts&nbsp;
 
-## [PyIDebugDocumentContext](#pyidebugdocumentcontext).EnumCodeContexts
+## [PyIDebugDocumentContext](#pyidebugdocumentcontext)\.EnumCodeContexts
 
- __EnumCodeContexts(__ )
-Description of EnumCodeContexts.
+ **EnumCodeContexts\(** \)
+Description of EnumCodeContexts\.
 
-## [PyIDebugDocumentContext](#pyidebugdocumentcontext).GetDocument
+## [PyIDebugDocumentContext](#pyidebugdocumentcontext)\.GetDocument
 
- __GetDocument(__ )
-Description of GetDocument.
+ **GetDocument\(** \)
+Description of GetDocument\.

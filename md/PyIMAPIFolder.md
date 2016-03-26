@@ -14,7 +14,7 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
   - [CreateFolder](PyIMAPIFolder.md#pyimapifoldercreatefolder)
 
-    Creates a folder object.&nbsp;
+    Creates a folder object\.&nbsp;
 
   - [CreateMessage](PyIMAPIFolder.md#pyimapifoldercreatemessage)
 
@@ -26,19 +26,19 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
   - [DeleteFolder](PyIMAPIFolder.md#pyimapifolderdeletefolder)
 
-    Deletes a subfolder.&nbsp;
+    Deletes a subfolder\.&nbsp;
 
   - [DeleteMessages](PyIMAPIFolder.md#pyimapifolderdeletemessages)
 
-    Deletes the specified messages.&nbsp;
+    Deletes the specified messages\.&nbsp;
 
   - [EmptyFolder](PyIMAPIFolder.md#pyimapifolderemptyfolder)
 
-    deletes all messages and subfolders from a folder without deleting the folder itself.&nbsp;
+    deletes all messages and subfolders from a folder without deleting the folder itself\.&nbsp;
 
-## [PyIMAPIFolder](#pyimapifolder).CopyMessages
+## [PyIMAPIFolder](#pyimapifolder)\.CopyMessages
 
- __CopyMessages( *msgs*  *, iid*  *, folder*  *, ulUIParam*  *, progress*  *, flags* __ )
+ **CopyMessages\( *msgs*  *, iid*  *, folder*  *, ulUIParam*  *, progress*  *, flags* ** \)
 Copies the specified messages
 
 #### Parameters
@@ -50,7 +50,7 @@ Copies the specified messages
 
   -  *iid* :[PyIID](#pyiid)
 
-    IID representing the interface to be used to access the destination folder.  Should usually be None.
+    IID representing the interface to be used to access the destination folder\.  Should usually be None\.
 
   -  *folder* :[PyIMAPIFolder](#pyimapifolder)
 
@@ -58,9 +58,9 @@ Copies the specified messages
 
   -  *ulUIParam* : long
 
-    Handle of the parent window for any dialog boxes or windows this method displays.
+    Handle of the parent window for any dialog boxes or windows this method displays\.
 
-  -  *progress* : __PyIMAPIProgress__ 
+  -  *progress* : **PyIMAPIProgress** 
 
     A progress object, or None
 
@@ -69,10 +69,10 @@ Copies the specified messages
     A bitmask of
 
 
-## [PyIMAPIFolder](#pyimapifolder).CreateFolder
+## [PyIMAPIFolder](#pyimapifolder)\.CreateFolder
 
-[PyIMAPIFolder](#pyimapifolder)= __CreateFolder( *folderType*  *, folderName*  *, folderComment*  *, iid*  *, flags* __ )
-Creates a folder object.
+[PyIMAPIFolder](#pyimapifolder)\= **CreateFolder\( *folderType*  *, folderName*  *, folderComment*  *, iid*  *, flags* ** \)
+Creates a folder object\.
 
 #### Parameters
 
@@ -83,7 +83,7 @@ Creates a folder object.
 
   -  *folderName* : string
 
-    The name of the folder.
+    The name of the folder\.
 
   -  *folderComment* : string
 
@@ -91,15 +91,15 @@ Creates a folder object.
 
   -  *iid* :[PyIID](#pyiid)
 
-    The IID of the object to return.  Should usually be None.
+    The IID of the object to return\.  Should usually be None\.
 
   -  *flags* : int
 
     
 
-## [PyIMAPIFolder](#pyimapifolder).CreateMessage
+## [PyIMAPIFolder](#pyimapifolder)\.CreateMessage
 
-[PyIMessage](#pyimessage)= __CreateMessage( *iid*  *, flags* __ )
+[PyIMessage](#pyimessage)\= **CreateMessage\( *iid*  *, flags* ** \)
 Creates a message in a folder
 
 #### Parameters
@@ -107,36 +107,36 @@ Creates a message in a folder
 
   -  *iid* :[PyIID](#pyiid)
 
-    The IID of the object to return.  Should usually be None.
+    The IID of the object to return\.  Should usually be None\.
 
   -  *flags* : int
 
     
 
-## [PyIMAPIFolder](#pyimapifolder).DeleteFolder
+## [PyIMAPIFolder](#pyimapifolder)\.DeleteFolder
 
- __DeleteFolder( *entryId*  *, uiParam*  *, progress* __ )
-Deletes a subfolder.
+ **DeleteFolder\( *entryId*  *, uiParam*  *, progress* ** \)
+Deletes a subfolder\.
 
 #### Parameters
 
 
   -  *entryId* : string
 
-    The EntryID of the subfolder to delete.
+    The EntryID of the subfolder to delete\.
 
   -  *uiParam* : long
 
-    Handle of the parent window of the progress indicator.
+    Handle of the parent window of the progress indicator\.
 
-  -  *progress* : __PyIMAPIProgress__ 
+  -  *progress* : **PyIMAPIProgress** 
 
     A progress object, or None
 
-## [PyIMAPIFolder](#pyimapifolder).DeleteMessages
+## [PyIMAPIFolder](#pyimapifolder)\.DeleteMessages
 
- __DeleteMessages( *msgs*  *, uiParam*  *, progress*  *, flags* __ )
-Deletes the specified messages.
+ **DeleteMessages\( *msgs*  *, uiParam*  *, progress*  *, flags* ** \)
+Deletes the specified messages\.
 
 #### Parameters
 
@@ -149,7 +149,7 @@ Deletes the specified messages.
 
     A HWND for the progress
 
-  -  *progress* : __PyIMAPIProgress__ 
+  -  *progress* : **PyIMAPIProgress** 
 
     A progress object, or None
 
@@ -157,10 +157,10 @@ Deletes the specified messages.
 
     
 
-## [PyIMAPIFolder](#pyimapifolder).EmptyFolder
+## [PyIMAPIFolder](#pyimapifolder)\.EmptyFolder
 
- __EmptyFolder( *uiParam*  *, progress*  *, flags* __ )
-deletes all messages and subfolders from a folder without deleting the folder itself.
+ **EmptyFolder\( *uiParam*  *, progress*  *, flags* ** \)
+deletes all messages and subfolders from a folder without deleting the folder itself\.
 
 #### Parameters
 
@@ -169,7 +169,7 @@ deletes all messages and subfolders from a folder without deleting the folder it
 
     A HWND for the progress
 
-  -  *progress* : __PyIMAPIProgress__ 
+  -  *progress* : **PyIMAPIProgress** 
 
     A progress object, or None
 
@@ -177,9 +177,9 @@ deletes all messages and subfolders from a folder without deleting the folder it
 
     
 
-## [PyIMAPIFolder](#pyimapifolder).GetLastError
+## [PyIMAPIFolder](#pyimapifolder)\.GetLastError
 
- __PyMAPIError__ = __GetLastError( *hr*  *, flags* __ )
+ **PyMAPIError** \= **GetLastError\( *hr*  *, flags* ** \)
 Returns the last error associated with this object
 
 #### Parameters

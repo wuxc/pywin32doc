@@ -19,10 +19,10 @@ Description of the interface
 
     Description of EnumCodeContextsOfPosition&nbsp;
 
-## [PyIActiveScriptDebug](#pyiactivescriptdebug).EnumCodeContextsOfPosition
+## [PyIActiveScriptDebug](#pyiactivescriptdebug)\.EnumCodeContextsOfPosition
 
- __EnumCodeContextsOfPosition( *dwSourceContext*  *, uCharacterOffset*  *, uNumChars* __ )
-Description of EnumCodeContextsOfPosition.
+ **EnumCodeContextsOfPosition\( *dwSourceContext*  *, uCharacterOffset*  *, uNumChars* ** \)
+Description of EnumCodeContextsOfPosition\.
 
 #### Parameters
 
@@ -39,45 +39,45 @@ Description of EnumCodeContextsOfPosition.
 
     Description for uNumChars
 
-## [PyIActiveScriptDebug](#pyiactivescriptdebug).GetScriptTextAttributes
+## [PyIActiveScriptDebug](#pyiactivescriptdebug)\.GetScriptTextAttributes
 
-(int,...) = __GetScriptTextAttributes( *pstrCode*  *, pstrDelimiter*  *, dwFlags* __ )
-Returns the text attributes for an arbitrary block of script text.
+\(int,\.\.\.\) \= **GetScriptTextAttributes\( *pstrCode*  *, pstrDelimiter*  *, dwFlags* ** \)
+Returns the text attributes for an arbitrary block of script text\.
 
 #### Parameters
 
 
   -  *pstrCode* : string
 
-    The script block text.
+    The script block text\.
 
   -  *pstrDelimiter* : string
 
-    See __PyIActiveScriptParse::ParseScriptText__ for a description of this argument.
+    See **PyIActiveScriptParse::ParseScriptText** for a description of this argument\.
 
   -  *dwFlags* : int
 
-    See __PyIActiveScriptParse::ParseScriptText__ for a description of this argument.
+    See **PyIActiveScriptParse::ParseScriptText** for a description of this argument\.
 
 #### Comments
-Smart hosts use this call to delegate GetText calls made on their __axscript::PyIDebugDocumentText__ 
+Smart hosts use this call to delegate GetText calls made on their **axscript::PyIDebugDocumentText** 
 
-## [PyIActiveScriptDebug](#pyiactivescriptdebug).GetScriptletTextAttributes
+## [PyIActiveScriptDebug](#pyiactivescriptdebug)\.GetScriptletTextAttributes
 
- __GetScriptletTextAttributes( *pstrCode*  *, pstrDelimiter*  *, dwFlags* __ )
-Description of GetScriptletTextAttributes.
+ **GetScriptletTextAttributes\( *pstrCode*  *, pstrDelimiter*  *, dwFlags* ** \)
+Description of GetScriptletTextAttributes\.
 
 #### Parameters
 
 
   -  *pstrCode* : string
 
-    The script block text.
+    The script block text\.
 
   -  *pstrDelimiter* : string
 
-    See __PyIActiveScriptParse::ParseScriptText__ for a description of this argument.
+    See **PyIActiveScriptParse::ParseScriptText** for a description of this argument\.
 
   -  *dwFlags* : int
 
-    See __PyIActiveScriptParse::ParseScriptText__ for a description of this argument.
+    See **PyIActiveScriptParse::ParseScriptText** for a description of this argument\.

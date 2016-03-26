@@ -15,10 +15,10 @@ Description of the interface
 
     Description of GetSite&nbsp;
 
-## [PyIObjectWithSite](#pyiobjectwithsite).GetSite
+## [PyIObjectWithSite](#pyiobjectwithsite)\.GetSite
 
- __GetSite( *riid* __ )
-Description of GetSite.
+ **GetSite\( *riid* ** \)
+Description of GetSite\.
 
 #### Parameters
 
@@ -27,14 +27,14 @@ Description of GetSite.
 
     Description for riid
 
-## [PyIObjectWithSite](#pyiobjectwithsite).SetSite
+## [PyIObjectWithSite](#pyiobjectwithsite)\.SetSite
 
- __SetSite( *pUnkSite* __ )
-Description of SetSite.
+ **SetSite\( *pUnkSite* ** \)
+Description of SetSite\.
 
 #### Parameters
 
 
-  -  *pUnkSite* : __PyIUnknown *__ 
+  -  *pUnkSite* : **PyIUnknown \*** 
 
     Description for pUnkSite

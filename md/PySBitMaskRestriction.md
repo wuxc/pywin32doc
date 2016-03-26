@@ -13,8 +13,8 @@
 
   -  *propTag* : ULONG
 
-    The property ID.
+    The property ID\.
 
-  -  *ulMask=0* : int
+  -  *ulMask\=0* : int
 
     

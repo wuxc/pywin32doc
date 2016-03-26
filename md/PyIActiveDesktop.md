@@ -9,7 +9,7 @@ An interface to the ActiveDesktop
 
   - [ApplyChanges](PyIActiveDesktop.md#pyiactivedesktopapplychanges)
 
-    Applies changes to ActiveDesktop settings and persists them to the registry.&nbsp;
+    Applies changes to ActiveDesktop settings and persists them to the registry\.&nbsp;
 
   - [GetWallpaper](PyIActiveDesktop.md#pyiactivedesktopgetwallpaper)
 
@@ -37,7 +37,7 @@ An interface to the ActiveDesktop
 
   - [GetDesktopItemOptions](PyIActiveDesktop.md#pyiactivedesktopgetdesktopitemoptions)
 
-    Returns options for Active Desktop.&nbsp;
+    Returns options for Active Desktop\.&nbsp;
 
   - [SetDesktopItemOptions](PyIActiveDesktop.md#pyiactivedesktopsetdesktopitemoptions)
 
@@ -61,7 +61,7 @@ An interface to the ActiveDesktop
 
   - [GetDesktopItemCount](PyIActiveDesktop.md#pyiactivedesktopgetdesktopitemcount)
 
-    Returns number of defined desktop items.&nbsp;
+    Returns number of defined desktop items\.&nbsp;
 
   - [GetDesktopItem](PyIActiveDesktop.md#pyiactivedesktopgetdesktopitem)
 
@@ -83,9 +83,9 @@ An interface to the ActiveDesktop
 
     Returns desktop item parameters by URL&nbsp;
 
-## [PyIActiveDesktop](#pyiactivedesktop).AddDesktopItem
+## [PyIActiveDesktop](#pyiactivedesktop)\.AddDesktopItem
 
- __AddDesktopItem( *comp*  *, Reserved* __ )
+ **AddDesktopItem\( *comp*  *, Reserved* ** \)
 Creates a new item to display on the desktop
 
 #### Parameters
@@ -95,13 +95,13 @@ Creates a new item to display on the desktop
 
     [COMPONENT](#component)dictionary
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
-## [PyIActiveDesktop](#pyiactivedesktop).AddDesktopItemWithUI
+## [PyIActiveDesktop](#pyiactivedesktop)\.AddDesktopItemWithUI
 
- __AddDesktopItemWithUI( *hwnd*  *, comp*  *, Flags* __ )
+ **AddDesktopItemWithUI\( *hwnd*  *, comp*  *, Flags* ** \)
 Adds a desktop item, allowing user interaction
 
 #### Parameters
@@ -117,11 +117,11 @@ Adds a desktop item, allowing user interaction
 
   -  *Flags* : int
 
-    One of shellcon.DTI_ADDUI_* flags
+    One of shellcon\.DTI\_ADDUI\_\* flags
 
-## [PyIActiveDesktop](#pyiactivedesktop).AddUrl
+## [PyIActiveDesktop](#pyiactivedesktop)\.AddUrl
 
- __AddUrl( *hwnd*  *, Source*  *, comp*  *, Flags* __ )
+ **AddUrl\( *hwnd*  *, Source*  *, comp*  *, Flags* ** \)
 Adds a web page to desktop, allowing user interaction
 
 #### Parameters
@@ -141,23 +141,23 @@ Adds a web page to desktop, allowing user interaction
 
   -  *Flags* : int
 
-    ADDURL_SILENT, or 0
+    ADDURL\_SILENT, or 0
 
-## [PyIActiveDesktop](#pyiactivedesktop).ApplyChanges
+## [PyIActiveDesktop](#pyiactivedesktop)\.ApplyChanges
 
- __ApplyChanges( *Flags* __ )
-Applies changes to ActiveDesktop settings and persists them to the registry.
+ **ApplyChanges\( *Flags* ** \)
+Applies changes to ActiveDesktop settings and persists them to the registry\.
 
 #### Parameters
 
 
   -  *Flags* : int
 
-    Combination of shellcon.AD_APPLY_* flags
+    Combination of shellcon\.AD\_APPLY\_\* flags
 
-## [PyIActiveDesktop](#pyiactivedesktop).GenerateDesktopItemHtml
+## [PyIActiveDesktop](#pyiactivedesktop)\.GenerateDesktopItemHtml
 
- __GenerateDesktopItemHtml( *FileName*  *, comp*  *, Reserved* __ )
+ **GenerateDesktopItemHtml\( *FileName*  *, comp*  *, Reserved* ** \)
 Creates an HTML page for the desktop item
 
 #### Parameters
@@ -171,13 +171,13 @@ Creates an HTML page for the desktop item
 
     [COMPONENT](#component)dictionary specifying the desktop item
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetDesktopItem
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetDesktopItem
 
-dict = __GetDesktopItem( *Component*  *, Reserved* __ )
+dict \= **GetDesktopItem\( *Component*  *, Reserved* ** \)
 Returns desktop item parameters by index
 
 #### Parameters
@@ -187,16 +187,16 @@ Returns desktop item parameters by index
 
     The zero-based index of the component to get
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
 #### Return Value
 Returns a[COMPONENT](#component)dictionary describing the item
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetDesktopItemByID
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetDesktopItemByID
 
-dict = __GetDesktopItemByID( *ID*  *, reserved* __ )
+dict \= **GetDesktopItemByID\( *ID*  *, reserved* ** \)
 Returns desktop item parameters by Id
 
 #### Parameters
@@ -206,16 +206,16 @@ Returns desktop item parameters by Id
 
     The Id of the desktop item
 
-  -  *reserved=0* : int
+  -  *reserved\=0* : int
 
     Use 0 if passed in
 
 #### Return Value
 Returns a[COMPONENT](#component)dictionary
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetDesktopItemBySource
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetDesktopItemBySource
 
-dict = __GetDesktopItemBySource( *Source*  *, Reserved* __ )
+dict \= **GetDesktopItemBySource\( *Source*  *, Reserved* ** \)
 Returns desktop item parameters by URL
 
 #### Parameters
@@ -225,79 +225,79 @@ Returns desktop item parameters by URL
 
     The URL address of the item to retrieve
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
 #### Return Value
 Returns a[COMPONENT](#component)dictionary
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetDesktopItemCount
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetDesktopItemCount
 
- __GetDesktopItemCount(__ )
-Returns number of defined desktop items.
+ **GetDesktopItemCount\(** \)
+Returns number of defined desktop items\.
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetDesktopItemOptions
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetDesktopItemOptions
 
-dict = __GetDesktopItemOptions(__ )
-Returns options for Active Desktop.
+dict \= **GetDesktopItemOptions\(** \)
+Returns options for Active Desktop\.
 
 #### Return Value
 Returns a[COMPONENTSOPT](#componentsopt)dictionary
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetPattern
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetPattern
 
- __GetPattern( *cchPattern*  *, Reserved* __ )
+ **GetPattern\( *cchPattern*  *, Reserved* ** \)
 Returns the wallpaper pattern
 
 #### Parameters
 
 
-  -  *cchPattern=1024* : int
+  -  *cchPattern\=1024* : int
 
     Number of characters to allocate for buffer
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
 #### Return Value
 Returns a unicode string containing decimal values representing the pattern
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetWallpaper
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetWallpaper
 
-[PyUNICODE](#pyunicode)= __GetWallpaper( *cchWallpaper*  *, Reserved* __ )
+[PyUNICODE](#pyunicode)\= **GetWallpaper\( *cchWallpaper*  *, Reserved* ** \)
 Returns the current wallpaper
 
 #### Parameters
 
 
-  -  *cchWallpaper=MAX_PATH* : int
+  -  *cchWallpaper\=MAX\_PATH* : int
 
     Number of characters to allocate for buffer
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
-## [PyIActiveDesktop](#pyiactivedesktop).GetWallpaperOptions
+## [PyIActiveDesktop](#pyiactivedesktop)\.GetWallpaperOptions
 
-int = __GetWallpaperOptions( *Reserved* __ )
+int \= **GetWallpaperOptions\( *Reserved* ** \)
 Returns wallpaper style
 
 #### Parameters
 
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
 #### Return Value
-Returns one of the WPSTYLE_* values
+Returns one of the WPSTYLE\_\* values
 
-## [PyIActiveDesktop](#pyiactivedesktop).ModifyDesktopItem
+## [PyIActiveDesktop](#pyiactivedesktop)\.ModifyDesktopItem
 
- __ModifyDesktopItem( *comp*  *, Flags* __ )
+ **ModifyDesktopItem\( *comp*  *, Flags* ** \)
 Changes parameters for a desktop item
 
 #### Parameters
@@ -309,11 +309,11 @@ Changes parameters for a desktop item
 
   -  *Flags* : int
 
-    Combination of shellcon.COMP_ELEM_* flags
+    Combination of shellcon\.COMP\_ELEM\_\* flags
 
-## [PyIActiveDesktop](#pyiactivedesktop).RemoveDesktopItem
+## [PyIActiveDesktop](#pyiactivedesktop)\.RemoveDesktopItem
 
- __RemoveDesktopItem( *comp*  *, Reserved* __ )
+ **RemoveDesktopItem\( *comp*  *, Reserved* ** \)
 Removes an item from the Active Desktop
 
 #### Parameters
@@ -323,13 +323,13 @@ Removes an item from the Active Desktop
 
     [COMPONENT](#component)dictionary specifying which component to remove
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
-## [PyIActiveDesktop](#pyiactivedesktop).SetDesktopItemOptions
+## [PyIActiveDesktop](#pyiactivedesktop)\.SetDesktopItemOptions
 
- __SetDesktopItemOptions( *comp*  *, Reserved* __ )
+ **SetDesktopItemOptions\( *comp*  *, Reserved* ** \)
 Sets Active Desktop options
 
 #### Parameters
@@ -339,13 +339,13 @@ Sets Active Desktop options
 
     [COMPONENTSOPT](#componentsopt)dictionary
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
-## [PyIActiveDesktop](#pyiactivedesktop).SetPattern
+## [PyIActiveDesktop](#pyiactivedesktop)\.SetPattern
 
- __SetPattern( *Pattern*  *, Reserved* __ )
+ **SetPattern\( *Pattern*  *, Reserved* ** \)
 Sets the wallpaper pattern
 
 #### Parameters
@@ -355,13 +355,13 @@ Sets the wallpaper pattern
 
     String of decimal numbers representing a picture
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Use 0 if passed in
 
-## [PyIActiveDesktop](#pyiactivedesktop).SetWallpaper
+## [PyIActiveDesktop](#pyiactivedesktop)\.SetWallpaper
 
- __SetWallpaper( *Wallpaper*  *, Reserved* __ )
+ **SetWallpaper\( *Wallpaper*  *, Reserved* ** \)
 Sets the desktop wallpaper
 
 #### Parameters
@@ -371,13 +371,13 @@ Sets the desktop wallpaper
 
     File to be used as new wallpaper
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Reserved, use 0 if passed in
 
-## [PyIActiveDesktop](#pyiactivedesktop).SetWallpaperOptions
+## [PyIActiveDesktop](#pyiactivedesktop)\.SetWallpaperOptions
 
- __SetWallpaperOptions( *Style*  *, Reserved* __ )
+ **SetWallpaperOptions\( *Style*  *, Reserved* ** \)
 Sets wallpaper style
 
 #### Parameters
@@ -385,8 +385,8 @@ Sets wallpaper style
 
   -  *Style* : int
 
-    The wallpaper style, one of the WPSTYLE_* constants
+    The wallpaper style, one of the WPSTYLE\_\* constants
 
-  -  *Reserved=0* : int
+  -  *Reserved\=0* : int
 
     Reserved, use 0 if passed in

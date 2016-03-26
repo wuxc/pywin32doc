@@ -15,10 +15,10 @@ Description of the interface
 
     Description of GiveFeedback&nbsp;
 
-## [PyIDropSource](#pyidropsource).GiveFeedback
+## [PyIDropSource](#pyidropsource)\.GiveFeedback
 
- __GiveFeedback( *dwEffect* __ )
-Description of GiveFeedback.
+ **GiveFeedback\( *dwEffect* ** \)
+Description of GiveFeedback\.
 
 #### Parameters
 
@@ -27,10 +27,10 @@ Description of GiveFeedback.
 
     Description for dwEffect
 
-## [PyIDropSource](#pyidropsource).QueryContinueDrag
+## [PyIDropSource](#pyidropsource)\.QueryContinueDrag
 
- __QueryContinueDrag( *fEscapePressed*  *, grfKeyState* __ )
-Description of QueryContinueDrag.
+ **QueryContinueDrag\( *fEscapePressed*  *, grfKeyState* ** \)
+Description of QueryContinueDrag\.
 
 #### Parameters
 

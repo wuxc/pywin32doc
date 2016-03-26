@@ -39,31 +39,31 @@ Interface to the Windows Task Scheduler
 
     Check if named task supports specified interface&nbsp;
 
-## [PyITaskScheduler](#pyitaskscheduler).Activate
+## [PyITaskScheduler](#pyitaskscheduler)\.Activate
 
-[PyITask](#pyitask)= __Activate( *Name*  *, riid* __ )
+[PyITask](#pyitask)\= **Activate\( *Name*  *, riid* ** \)
 Opens the specified task and returns an ITask interface for it
 
 #### Parameters
 
 
-  -  *Name* : __unicode__ 
+  -  *Name* : **unicode** 
 
     Name of task to retreive
 
-  -  *riid=IID_ITask* :[PyIID](#pyiid)
+  -  *riid\=IID\_ITask* :[PyIID](#pyiid)
 
-    IID to return, currently only IID_ITask accepted
+    IID to return, currently only IID\_ITask accepted
 
-## [PyITaskScheduler](#pyitaskscheduler).AddWorkItem
+## [PyITaskScheduler](#pyitaskscheduler)\.AddWorkItem
 
- __AddWorkItem( *TaskName*  *, WorkItem* __ )
+ **AddWorkItem\( *TaskName*  *, WorkItem* ** \)
 Create a new scheduled task from PyITask object
 
 #### Parameters
 
 
-  -  *TaskName* : __unicode__ 
+  -  *TaskName* : **unicode** 
 
     Name of task to be created
 
@@ -74,37 +74,37 @@ Create a new scheduled task from PyITask object
 #### Comments
 The PyItask passed in is modified in place and on success is associated with the new task, not the old one
 
-## [PyITaskScheduler](#pyitaskscheduler).Delete
+## [PyITaskScheduler](#pyitaskscheduler)\.Delete
 
- __Delete( *TaskName* __ )
+ **Delete\( *TaskName* ** \)
 Delete task by name
 
 #### Parameters
 
 
-  -  *TaskName* : __unicode__ 
+  -  *TaskName* : **unicode** 
 
     Name of task to delete
 
-## [PyITaskScheduler](#pyitaskscheduler).Enum
+## [PyITaskScheduler](#pyitaskscheduler)\.Enum
 
-[PyUnicode](#pyunicode),... = __Enum(__ )
+[PyUnicode](#pyunicode),\.\.\. \= **Enum\(** \)
 Retrieve list of task names
 
-## [PyITaskScheduler](#pyitaskscheduler).GetTargetComputer
+## [PyITaskScheduler](#pyitaskscheduler)\.GetTargetComputer
 
- __unicode__ = __GetTargetComputer(__ )
+ **unicode** \= **GetTargetComputer\(** \)
 Returns name of computer that the Task Scheduler is connected to
 
-## [PyITaskScheduler](#pyitaskscheduler).IsOfType
+## [PyITaskScheduler](#pyitaskscheduler)\.IsOfType
 
- __IsOfType( *Name*  *, riid* __ )
+ **IsOfType\( *Name*  *, riid* ** \)
 Check if named object supports specified interface
 
 #### Parameters
 
 
-  -  *Name* : __unicode__ 
+  -  *Name* : **unicode** 
 
     Name of object
 
@@ -112,37 +112,37 @@ Check if named object supports specified interface
 
     Named object is checked that it supports the interface of this IID
 
-## [PyITaskScheduler](#pyitaskscheduler).NewWorkItem
+## [PyITaskScheduler](#pyitaskscheduler)\.NewWorkItem
 
-[PyITask](#pyitask)= __NewWorkItem( *TaskName*  *, rclsid*  *, riid* __ )
+[PyITask](#pyitask)\= **NewWorkItem\( *TaskName*  *, rclsid*  *, riid* ** \)
 Creates a new task
 
 #### Parameters
 
 
-  -  *TaskName* : __unicode__ 
+  -  *TaskName* : **unicode** 
 
     Name of new task
 
-  -  *rclsid=CLSID_CTask* :[PyIID](#pyiid)
+  -  *rclsid\=CLSID\_CTask* :[PyIID](#pyiid)
 
-    Class id of work item, currently only CLSID_CTask (defaults if not passed in)
+    Class id of work item, currently only CLSID\_CTask \(defaults if not passed in\)
 
-  -  *riid=IID_ITask* :[PyIID](#pyiid)
+  -  *riid\=IID\_ITask* :[PyIID](#pyiid)
 
-    Interface IID to return, currently only IID_ITask (defaults if not passed in)
+    Interface IID to return, currently only IID\_ITask \(defaults if not passed in\)
 
-## [PyITaskScheduler](#pyitaskscheduler).SetTargetComputer
+## [PyITaskScheduler](#pyitaskscheduler)\.SetTargetComputer
 
- __SetTargetComputer( *Computer* __ )
+ **SetTargetComputer\( *Computer* ** \)
 Connect to another machine to manage its tasks
 
 #### Parameters
 
 
-  -  *Computer* : __unicode__ 
+  -  *Computer* : **unicode** 
 
     Name of system to connect to
 
 #### Comments
-Leading backslashes are required.  Call will succeed without them, but no other methods will work.
+Leading backslashes are required\.  Call will succeed without them, but no other methods will work\.

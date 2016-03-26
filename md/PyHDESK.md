@@ -2,7 +2,7 @@
 
 ## PyHDESK Object
 
-Object representing a handle to a desktop, created by[win32service::CreateDesktop](win32service.md#win32servicecreatedesktop),[win32service::GetThreadDesktop](win32service.md#win32servicegetthreaddesktop)and[win32service::OpenDesktop](win32service.md#win32serviceopendesktop).
+Object representing a handle to a desktop, created by[win32service::CreateDesktop](win32service.md#win32servicecreatedesktop),[win32service::GetThreadDesktop](win32service.md#win32servicegetthreaddesktop)and[win32service::OpenDesktop](win32service.md#win32serviceopendesktop)\.
 
 #### Methods
 
@@ -27,22 +27,22 @@ Object representing a handle to a desktop, created by[win32service::CreateDeskto
 
     Releases reference to handle without closing it&nbsp;
 
-## [PyHDESK](#pyhdesk).CloseDesktop
+## [PyHDESK](#pyhdesk)\.CloseDesktop
 
- __CloseDesktop(__ )
+ **CloseDesktop\(** \)
 Closes the desktop handle
 
-## [PyHDESK](#pyhdesk).EnumDesktopWindows
+## [PyHDESK](#pyhdesk)\.EnumDesktopWindows
 
-([PyHANDLE](#pyhandle),...) = __EnumDesktopWindows(__ )
+\([PyHANDLE](#pyhandle),\.\.\.\) \= **EnumDesktopWindows\(** \)
 Returns a list of handles to all top-level windows on desktop
 
-## [PyHDESK](#pyhdesk).SetThreadDesktop
+## [PyHDESK](#pyhdesk)\.SetThreadDesktop
 
- __SetThreadDesktop(__ )
+ **SetThreadDesktop\(** \)
 Assigns this desktop to the calling thread
 
-## [PyHDESK](#pyhdesk).SwitchDesktop
+## [PyHDESK](#pyhdesk)\.SwitchDesktop
 
- __SwitchDesktop(__ )
+ **SwitchDesktop\(** \)
 Activates the desktop

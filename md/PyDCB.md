@@ -7,89 +7,89 @@ A Python object, representing an DCB structure
 #### Comments
 Typically you query a device for its DCB using[win32file::GetCommState](win32file.md#win32filegetcommstate), change any setting necessary, then 
 
-call[win32file::SetCommState](win32file.md#win32filesetcommstate)with the new structure. 
+call[win32file::SetCommState](win32file.md#win32filesetcommstate)with the new structure\. 
 
-TRUE*/)
+TRUE\*/\)
 
 #### Properties
 
-  -  __integer BaudRate__ 
+  -  **integer BaudRate** 
     current baud rate
 
-  -  __integer wReserved__ 
+  -  **integer wReserved** 
     not currently used
 
-  -  __integer XonLim__ 
+  -  **integer XonLim** 
     transmit XON threshold
 
-  -  __integer XoffLim__ 
+  -  **integer XoffLim** 
     transmit XOFF threshold
 
-  -  __integer ByteSize__ 
+  -  **integer ByteSize** 
     number of bits/byte, 4-8
 
-  -  __integer Parity__ 
-    0-4=no,odd,even,mark,space
+  -  **integer Parity** 
+    0-4\=no,odd,even,mark,space
 
-  -  __integer StopBits__ 
-    0,1,2 = 1, 1.5, 2
+  -  **integer StopBits** 
+    0,1,2 \= 1, 1\.5, 2
 
-  -  __character XonChar__ 
+  -  **character XonChar** 
     Tx and Rx XON character
 
-  -  __character XoffChar__ 
+  -  **character XoffChar** 
     Tx and Rx XOFF character
 
-  -  __character ErrorChar__ 
+  -  **character ErrorChar** 
     error replacement character
 
-  -  __character EofChar__ 
+  -  **character EofChar** 
     end of input character
 
-  -  __character EvtChar__ 
+  -  **character EvtChar** 
     received event character
 
-  -  __integer wReserved1__ 
+  -  **integer wReserved1** 
     reserved; do not use
 
-  -  __integer fBinary__ 
+  -  **integer fBinary** 
     binary mode, no EOF check
 
-  -  __integer fParity__ 
+  -  **integer fParity** 
     enable parity checking
 
-  -  __integer fOutxCtsFlow__ 
+  -  **integer fOutxCtsFlow** 
     CTS output flow control
 
-  -  __integer fOutxDsrFlow__ 
+  -  **integer fOutxDsrFlow** 
     DSR output flow control
 
-  -  __integer fDtrControl__ 
+  -  **integer fDtrControl** 
     DTR flow control type
 
-  -  __integer fDsrSensitivity__ 
+  -  **integer fDsrSensitivity** 
     DSR sensitivity
 
-  -  __integer fTXContinueOnXoff__ 
+  -  **integer fTXContinueOnXoff** 
     XOFF continues Tx
 
-  -  __integer fOutX__ 
+  -  **integer fOutX** 
     XON/XOFF out flow control
 
-  -  __integer fInX__ 
+  -  **integer fInX** 
     XON/XOFF in flow control
 
-  -  __integer fErrorChar__ 
+  -  **integer fErrorChar** 
     enable error replacement
 
-  -  __integer fNull__ 
+  -  **integer fNull** 
     enable null stripping
 
-  -  __integer fRtsControl__ 
+  -  **integer fRtsControl** 
     RTS flow control
 
-  -  __integer fAbortOnError__ 
+  -  **integer fAbortOnError** 
     abort on error
 
-  -  __integer fDummy2__ 
+  -  **integer fDummy2** 
     reserved

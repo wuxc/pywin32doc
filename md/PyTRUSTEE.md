@@ -2,21 +2,21 @@
 
 ## PyTRUSTEE Object
 
-A dictionary representing a TRUSTEE structure.
+A dictionary representing a TRUSTEE structure\.
 
 #### Properties
 
-  -  __int TrusteeForm__ 
+  -  **int TrusteeForm** 
     
 
-  -  __int TrusteeType__ 
+  -  **int TrusteeType** 
     
 
-  -  __object Identifier__ 
-    Depends on the value of TrusteeForm (string or sid)
+  -  **object Identifier** 
+    Depends on the value of TrusteeForm \(string or sid\)
 
-  -  __object MultipleTrustee__ 
+  -  **object MultipleTrustee** 
     default is None
 
-  -  __object MultipleTrusteeOperation__ 
+  -  **object MultipleTrusteeOperation** 
     default is None

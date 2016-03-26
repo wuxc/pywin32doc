@@ -47,39 +47,39 @@ Description of the interface
 
     Description of SaveAllChanges&nbsp;
 
-## [PyICreateTypeLib](#pyicreatetypelib).CreateTypeInfo
+## [PyICreateTypeLib](#pyicreatetypelib)\.CreateTypeInfo
 
- __CreateTypeInfo( *szName* __ )
-Description of CreateTypeInfo.
+ **CreateTypeInfo\( *szName* ** \)
+Description of CreateTypeInfo\.
 
 #### Parameters
 
 
-  -  *szName* : __unicode__ 
+  -  *szName* : **unicode** 
 
     Description for szName
 
-## [PyICreateTypeLib](#pyicreatetypelib).SaveAllChanges
+## [PyICreateTypeLib](#pyicreatetypelib)\.SaveAllChanges
 
- __SaveAllChanges(__ )
-Description of SaveAllChanges.
+ **SaveAllChanges\(** \)
+Description of SaveAllChanges\.
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetDocString
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetDocString
 
- __SetDocString( *szDoc* __ )
-Description of SetDocString.
+ **SetDocString\( *szDoc* ** \)
+Description of SetDocString\.
 
 #### Parameters
 
 
-  -  *szDoc* : __unicode__ 
+  -  *szDoc* : **unicode** 
 
     Description for szDoc
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetGuid
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetGuid
 
- __SetGuid( *guid* __ )
-Description of SetGuid.
+ **SetGuid\( *guid* ** \)
+Description of SetGuid\.
 
 #### Parameters
 
@@ -88,10 +88,10 @@ Description of SetGuid.
 
     Description for guid
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetHelpContext
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetHelpContext
 
- __SetHelpContext( *dwHelpContext* __ )
-Description of SetHelpContext.
+ **SetHelpContext\( *dwHelpContext* ** \)
+Description of SetHelpContext\.
 
 #### Parameters
 
@@ -100,27 +100,27 @@ Description of SetHelpContext.
 
     Description for dwHelpContext
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetHelpFileName
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetHelpFileName
 
- __SetHelpFileName( *szHelpFileName* __ )
-Description of SetHelpFileName.
+ **SetHelpFileName\( *szHelpFileName* ** \)
+Description of SetHelpFileName\.
 
 #### Parameters
 
 
-  -  *szHelpFileName* : __unicode__ 
+  -  *szHelpFileName* : **unicode** 
 
     Description for szHelpFileName
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetLcid
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetLcid
 
- __SetLcid(__ )
-Description of SetLcid.
+ **SetLcid\(** \)
+Description of SetLcid\.
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetLibFlags
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetLibFlags
 
- __SetLibFlags( *uLibFlags* __ )
-Description of SetLibFlags.
+ **SetLibFlags\( *uLibFlags* ** \)
+Description of SetLibFlags\.
 
 #### Parameters
 
@@ -129,22 +129,22 @@ Description of SetLibFlags.
 
     Description for uLibFlags
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetName
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetName
 
- __SetName( *szName* __ )
-Description of SetName.
+ **SetName\( *szName* ** \)
+Description of SetName\.
 
 #### Parameters
 
 
-  -  *szName* : __unicode__ 
+  -  *szName* : **unicode** 
 
     Description for szName
 
-## [PyICreateTypeLib](#pyicreatetypelib).SetVersion
+## [PyICreateTypeLib](#pyicreatetypelib)\.SetVersion
 
- __SetVersion( *wMajorVerNum*  *, wMinorVerNum* __ )
-Description of SetVersion.
+ **SetVersion\( *wMajorVerNum*  *, wMinorVerNum* ** \)
+Description of SetVersion\.
 
 #### Parameters
 

@@ -2,16 +2,16 @@
 
 ## Module servicemanager
 
-A module that interfaces with the Windows Service Control Manager.  While this 
+A module that interfaces with the Windows Service Control Manager\.  While this 
 
 module can be imported by regular Python programs, it is only useful when used by a Python program 
 
-hosting a service - and even then is generally used automatically by the Python Service framework. 
+hosting a service - and even then is generally used automatically by the Python Service framework\. 
 
-See the pipeTestService sample for an example of using this module.
-The module[win32service](#win32service)and __win32serviceutil__ provide other facilities for controlling 
+See the pipeTestService sample for an example of using this module\.
+The module[win32service](#win32service)and **win32serviceutil** provide other facilities for controlling 
 
-and managing services.
+and managing services\.
 
 #### Methods
 
@@ -26,19 +26,19 @@ and managing services.
 
   - [RegisterServiceCtrlHandler](servicemanager.md#servicemanagerregisterservicectrlhandler)
 
-    Registers a function to retrieve service control notification messages.&nbsp;
+    Registers a function to retrieve service control notification messages\.&nbsp;
 
   - [LogMsg](servicemanager.md#servicemanagerlogmsg)
 
-    Write an specific message to the log.&nbsp;
+    Write an specific message to the log\.&nbsp;
 
   - [LogInfoMsg](servicemanager.md#servicemanagerloginfomsg)
 
-    Write an informational message to the log.&nbsp;
+    Write an informational message to the log\.&nbsp;
 
   - [LogErrorMsg](servicemanager.md#servicemanagerlogerrormsg)
 
-    Write an error message to the log.&nbsp;
+    Write an error message to the log\.&nbsp;
 
   - [LogWarningMsg](servicemanager.md#servicemanagerlogwarningmsg)
 
@@ -46,15 +46,15 @@ and managing services.
 
   - [PumpWaitingMessages](servicemanager.md#servicemanagerpumpwaitingmessages)
 
-    Pumps waiting window messages for the service.&nbsp;
+    Pumps waiting window messages for the service\.&nbsp;
 
   - [Debugging](servicemanager.md#servicemanagerdebugging)
 
-    Indicates if the service is running in debug mode.&nbsp;
+    Indicates if the service is running in debug mode\.&nbsp;
 
   - [StartServiceCtrlDispatcher](servicemanager.md#servicemanagerstartservicectrldispatcher)
 
-    Starts the service by calling the win32 StartServiceCtrlDispatcher function.&nbsp;
+    Starts the service by calling the win32 StartServiceCtrlDispatcher function\.&nbsp;
 
   - [Initialize](servicemanager.md#servicemanagerinitialize)
 
@@ -74,64 +74,64 @@ and managing services.
 
   - [RunningAsService](servicemanager.md#servicemanagerrunningasservice)
 
-    Indicates if the code is running as a service.&nbsp;
+    Indicates if the code is running as a service\.&nbsp;
 
   - [SetEventSourceName](servicemanager.md#servicemanagerseteventsourcename)
 
-    Sets the event source name for event log entries written by the service.&nbsp;
+    Sets the event source name for event log entries written by the service\.&nbsp;
 
-## [servicemanager](#servicemanager).CoInitializeEx
+## [servicemanager](#servicemanager)\.CoInitializeEx
 
- __CoInitializeEx(__ )
-Initialize OLE with additional options.
+ **CoInitializeEx\(** \)
+Initialize OLE with additional options\.
 
-## [servicemanager](#servicemanager).CoUninitialize
+## [servicemanager](#servicemanager)\.CoUninitialize
 
- __CoUninitialize(__ )
+ **CoUninitialize\(** \)
 Unitialize OLE
 
-## [servicemanager](#servicemanager).Debugging
+## [servicemanager](#servicemanager)\.Debugging
 
-True/False = __Debugging( *newVal* __ )
+True/False \= **Debugging\( *newVal* ** \)
 Indicates if the service is running in debug mode 
 
-and optionally toggles the debug flag.
+and optionally toggles the debug flag\.
 
 #### Parameters
 
 
-  -  *newVal=-1* : int
+  -  *newVal\=-1* : int
 
-    If not -1, a new value for the debugging flag. 
+    If not -1, a new value for the debugging flag\. 
 
-The result is the value of the flag before it is changed.
+The result is the value of the flag before it is changed\.
 
-## [servicemanager](#servicemanager).Finalize
+## [servicemanager](#servicemanager)\.Finalize
 
- __Finalize(__ )
+ **Finalize\(** \)
 
 
-## [servicemanager](#servicemanager).Initialize
+## [servicemanager](#servicemanager)\.Initialize
 
- __Initialize( *eventSourceName*  *, eventSourceFile* __ )
-Initialize the module for hosting a service.  This is generally called automatically
+ **Initialize\( *eventSourceName*  *, eventSourceFile* ** \)
+Initialize the module for hosting a service\.  This is generally called automatically
 
 #### Parameters
 
 
-  -  *eventSourceName=None* :[PyUnicode](#pyunicode)
+  -  *eventSourceName\=None* :[PyUnicode](#pyunicode)
 
     The event source name
 
-  -  *eventSourceFile=None* :[PyUnicode](#pyunicode)
+  -  *eventSourceFile\=None* :[PyUnicode](#pyunicode)
 
     The name of the file 
 
-(generally a DLL) with the event source messages.
+\(generally a DLL\) with the event source messages\.
 
-## [servicemanager](#servicemanager).LogErrorMsg
+## [servicemanager](#servicemanager)\.LogErrorMsg
 
- __LogErrorMsg( *msg* __ )
+ **LogErrorMsg\( *msg* ** \)
 Logs a generic error message to the event log
 
 #### Parameters
@@ -139,11 +139,11 @@ Logs a generic error message to the event log
 
   -  *msg* :[PyUnicode](#pyunicode)
 
-    The message to write.
+    The message to write\.
 
-## [servicemanager](#servicemanager).LogInfoMsg
+## [servicemanager](#servicemanager)\.LogInfoMsg
 
- __LogInfoMsg( *msg* __ )
+ **LogInfoMsg\( *msg* ** \)
 Logs a generic informational message to the event log
 
 #### Parameters
@@ -151,11 +151,11 @@ Logs a generic informational message to the event log
 
   -  *msg* :[PyUnicode](#pyunicode)
 
-    The message to write.
+    The message to write\.
 
-## [servicemanager](#servicemanager).LogMsg
+## [servicemanager](#servicemanager)\.LogMsg
 
- __LogMsg( *errorType*  *, eventId*  *, inserts* __ )
+ **LogMsg\( *errorType*  *, eventId*  *, inserts* ** \)
 Logs a specific message
 
 #### Parameters
@@ -169,13 +169,13 @@ Logs a specific message
 
     
 
-  -  *inserts=None* : (string, )
+  -  *inserts\=None* : \(string, \)
 
     
 
-## [servicemanager](#servicemanager).LogWarningMsg
+## [servicemanager](#servicemanager)\.LogWarningMsg
 
- __LogWarningMsg( *msg* __ )
+ **LogWarningMsg\( *msg* ** \)
 Logs a generic warning message to the event log
 
 #### Parameters
@@ -183,84 +183,84 @@ Logs a generic warning message to the event log
 
   -  *msg* :[PyUnicode](#pyunicode)
 
-    The message to write.
+    The message to write\.
 
-## [servicemanager](#servicemanager).PrepareToHostMultiple
+## [servicemanager](#servicemanager)\.PrepareToHostMultiple
 
- __PrepareToHostMultiple( *service_name*  *, klass* __ )
+ **PrepareToHostMultiple\( *service\_name*  *, klass* ** \)
 Prepare for hosting a multiple services in this EXE
 
 #### Parameters
 
 
-  -  *service_name* : string/unicode
+  -  *service\_name* : string/unicode
 
     The name of the service hosted by the class
 
   -  *klass* : object
 
-    The Python class to host.
+    The Python class to host\.
 
-## [servicemanager](#servicemanager).PrepareToHostSingle
+## [servicemanager](#servicemanager)\.PrepareToHostSingle
 
- __PrepareToHostSingle( *klass* __ )
+ **PrepareToHostSingle\( *klass* ** \)
 Prepare for hosting a single service in this EXE
 
 #### Parameters
 
 
-  -  *klass=None* : object
+  -  *klass\=None* : object
 
-    The Python class to host.  If not specified, the 
+    The Python class to host\.  If not specified, the 
 
-service name is looked up in the registry and the specified class instantiated.
+service name is looked up in the registry and the specified class instantiated\.
 
-## [servicemanager](#servicemanager).PumpWaitingMessages
+## [servicemanager](#servicemanager)\.PumpWaitingMessages
 
-int = __PumpWaitingMessages(__ )
-Pumps all waiting messages.
+int \= **PumpWaitingMessages\(** \)
+Pumps all waiting messages\.
 
 #### Return Value
-Returns 1 if a WM_QUIT message was received, else 0
+Returns 1 if a WM\_QUIT message was received, else 0
 
-## [servicemanager](#servicemanager).RegisterServiceCtrlHandler
+## [servicemanager](#servicemanager)\.RegisterServiceCtrlHandler
 
-int/None = __RegisterServiceCtrlHandler( *serviceName*  *, callback*  *, extra_args* __ )
-Registers the Python service control handler function.
+int/None \= **RegisterServiceCtrlHandler\( *serviceName*  *, callback*  *, extra\_args* ** \)
+Registers the Python service control handler function\.
 
 #### Parameters
 
 
   -  *serviceName* :[PyUnicode](#pyunicode)
 
-    The name of the service.  This is provided in args[0] of the service class __init__ method.
+    The name of the service\.  This is provided in args\[0\] of the service class \_\_init\_\_ method\.
 
   -  *callback* : object
 
-    The Python function that performs as the control function.  This will be called with an integer status argument.
+    The Python function that performs as the control function\.  This will be called with an integer status argument\.
 
-  -  *extra_args=False* : bool
+  -  *extra\_args\=False* : bool
 
     Is this callback expecting the additional 2 args passed by HandlerEx?
 
 #### Return Value
 If the service manager is in debug mode, this returns None, indicating 
 
-there is no service control manager handle, otherwise the handle to the Win32 service manager.
+there is no service control manager handle, otherwise the handle to the Win32 service manager\.
 
-## [servicemanager](#servicemanager).RunningAsService
+## [servicemanager](#servicemanager)\.RunningAsService
 
-True/False = __RunningAsService(__ )
+True/False \= **RunningAsService\(** \)
 Indicates if the code is 
 
-being executed as a service.
+being executed as a service\.
 
-## [servicemanager](#servicemanager).SetEventSourceName
+## [servicemanager](#servicemanager)\.SetEventSourceName
 
- __SetEventSourceName( *sourceName*  *, registerNow* __ )
+ **SetEventSourceName\( *sourceName*  *, registerNow* ** \)
 Sets the event source name 
 
-for event log entries written by the service.
+for event log entries written by the service\.
 
 #### Parameters
 
@@ -269,21 +269,21 @@ for event log entries written by the service.
 
     The event source name
 
-  -  *registerNow=False* : bool
+  -  *registerNow\=False* : bool
 
     If True, the event source name in the 
 
-registry will be updated immediately. 
+registry will be updated immediately\. 
 
 If False, the name will be registered the first time an event log entry 
 
-is written via any pythonservice methods (or possibly never if no record 
+is written via any pythonservice methods \(or possibly never if no record 
 
-if written).
+if written\)\.
 Note that in some cases, the service itself will not have permission 
 
-to write the event source in the registry.  Therefore, it would be 
+to write the event source in the registry\.  Therefore, it would be 
 
 prudent for your installation program to call this function with 
 
-registerNow=True, to ensure your services can write useful entries.
+registerNow\=True, to ensure your services can write useful entries\.

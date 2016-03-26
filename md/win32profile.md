@@ -51,9 +51,9 @@ Wraps functions for dealing with user profiles
 
     Unload profile loaded by LoadUserProfile&nbsp;
 
-## [win32profile](#win32profile).CreateEnvironmentBlock
+## [win32profile](#win32profile)\.CreateEnvironmentBlock
 
-dict = __CreateEnvironmentBlock( *Token*  *, Inherit* __ )
+dict \= **CreateEnvironmentBlock\( *Token*  *, Inherit* ** \)
 Retrieves environment variables for a user
 
 #### Parameters
@@ -67,29 +67,29 @@ Retrieves environment variables for a user
 
     Indicates if environment of current process should be inherited
 
-## [win32profile](#win32profile).DeleteProfile
+## [win32profile](#win32profile)\.DeleteProfile
 
- __DeleteProfile( *SidString*  *, ProfilePath*  *, ComputerName* __ )
-Remove profile for a user identified by string SID from specified machine.
+ **DeleteProfile\( *SidString*  *, ProfilePath*  *, ComputerName* ** \)
+Remove profile for a user identified by string SID from specified machine\.
 
 #### Parameters
 
 
   -  *SidString* :[PyUnicode](#pyunicode)
 
-    String representation of user's Sid.  See[win32security::ConvertSidToStringSid](win32security.md#win32securityconvertsidtostringsid).
+    String representation of user's Sid\.  See[win32security::ConvertSidToStringSid](win32security.md#win32securityconvertsidtostringsid)\.
 
-  -  *ProfilePath=None* :[PyUnicode](#pyunicode)
+  -  *ProfilePath\=None* :[PyUnicode](#pyunicode)
 
     Profile directory, value queried from registry if not specified
 
-  -  *ComputerName=None* :[PyUnicode](#pyunicode)
+  -  *ComputerName\=None* :[PyUnicode](#pyunicode)
 
     Name of computer from which to delete profile, local machine assumed if not specified
 
-## [win32profile](#win32profile).ExpandEnvironmentStringsForUser
+## [win32profile](#win32profile)\.ExpandEnvironmentStringsForUser
 
-[PyUnicode](#pyunicode)= __ExpandEnvironmentStringsForUser( *Token*  *, Src* __ )
+[PyUnicode](#pyunicode)\= **ExpandEnvironmentStringsForUser\( *Token*  *, Src* ** \)
 Replaces environment variables in a string with per-user values
 
 #### Parameters
@@ -97,43 +97,43 @@ Replaces environment variables in a string with per-user values
 
   -  *Token* :[PyHANDLE](#pyhandle)
 
-    The logon token for a user.  Use None for system variables.
+    The logon token for a user\.  Use None for system variables\.
 
   -  *Src* :[PyUnicode](#pyunicode)
 
     String containing environment variables enclosed in % signs
 
-## [win32profile](#win32profile).GetAllUsersProfileDirectory
+## [win32profile](#win32profile)\.GetAllUsersProfileDirectory
 
-[PyUnicode](#pyunicode)= __GetAllUsersProfileDirectory(__ )
+[PyUnicode](#pyunicode)\= **GetAllUsersProfileDirectory\(** \)
 Retrieve All Users profile path
 
-## [win32profile](#win32profile).GetDefaultUserProfileDirectory
+## [win32profile](#win32profile)\.GetDefaultUserProfileDirectory
 
-[PyUnicode](#pyunicode)= __GetDefaultUserProfileDirectory(__ )
+[PyUnicode](#pyunicode)\= **GetDefaultUserProfileDirectory\(** \)
 Retrieve Default user profile
 
-## [win32profile](#win32profile).GetEnvironmentStrings
+## [win32profile](#win32profile)\.GetEnvironmentStrings
 
-dict = __GetEnvironmentStrings(__ )
+dict \= **GetEnvironmentStrings\(** \)
 Retrieves environment variables for current process
 
-## [win32profile](#win32profile).GetProfileType
+## [win32profile](#win32profile)\.GetProfileType
 
-int = __GetProfileType(__ )
+int \= **GetProfileType\(** \)
 Returns type of current user's profile
 
 #### Return Value
-Returns a combination of PT_* flags
+Returns a combination of PT\_\* flags
 
-## [win32profile](#win32profile).GetProfilesDirectory
+## [win32profile](#win32profile)\.GetProfilesDirectory
 
-[PyUnicode](#pyunicode)= __GetProfilesDirectory(__ )
+[PyUnicode](#pyunicode)\= **GetProfilesDirectory\(** \)
 Retrieves directory where user profiles are stored
 
-## [win32profile](#win32profile).GetUserProfileDirectory
+## [win32profile](#win32profile)\.GetUserProfileDirectory
 
-[PyUnicode](#pyunicode)= __GetUserProfileDirectory( *Token* __ )
+[PyUnicode](#pyunicode)\= **GetUserProfileDirectory\( *Token* ** \)
 Returns profile directory for a logon token
 
 #### Parameters
@@ -143,9 +143,9 @@ Returns profile directory for a logon token
 
     User token as returned by[win32security::LogonUser](win32security.md#win32securitylogonuser)
 
-## [win32profile](#win32profile).LoadUserProfile
+## [win32profile](#win32profile)\.LoadUserProfile
 
-[PyHKEY](#pyhkey)= __LoadUserProfile( *hToken*  *, ProfileInfo* __ )
+[PyHKEY](#pyhkey)\= **LoadUserProfile\( *hToken*  *, ProfileInfo* ** \)
 Loads user settings into registry
 
 #### Parameters
@@ -160,14 +160,14 @@ Loads user settings into registry
     Dictionary representing a PROFILEINFO structure
 
 #### Comments
-SE_BACKUP_NAME and SE_RESTORE_NAME privs are required, but do not have to be enabled
+SE\_BACKUP\_NAME and SE\_RESTORE\_NAME privs are required, but do not have to be enabled
 
 #### Return Value
-Returns a handle to user's registry key.
+Returns a handle to user's registry key\.
 
-## [win32profile](#win32profile).UnloadUserProfile
+## [win32profile](#win32profile)\.UnloadUserProfile
 
- __UnloadUserProfile( *Token*  *, Profile* __ )
+ **UnloadUserProfile\( *Token*  *, Profile* ** \)
 Unloads user profile loaded by[win32profile::LoadUserProfile](win32profile.md#win32profileloaduserprofile)
 
 #### Parameters

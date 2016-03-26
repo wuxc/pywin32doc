@@ -1,551 +1,551 @@
 # PyUSER
 
-## PyUSER_INFO_* Object
+## PyUSER\_INFO\_\* Object
 
-The following USER_INFO levels are supported.
+The following USER\_INFO levels are supported\.
 
 
-## PyUSER_INFO_0 Object
+## PyUSER\_INFO\_0 Object
 
-A dictionary holding the information in a Win32 USER_INFO_0 structure.
-
-#### Properties
-
-  -  __string/[PyUnicode](#pyunicode)name__ 
-    
-
-## PyUSER_INFO_1 Object
-
-A dictionary holding the information in a Win32 USER_INFO_1 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_0 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     
 
-  -  __string/[PyUnicode](#pyunicode)password__ 
-    
+## PyUSER\_INFO\_1 Object
 
-  -  __int password_age__ 
-    
-
-  -  __int priv__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)home_dir__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    
-
-  -  __int flags__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)script_path__ 
-    
-
-## PyUSER_INFO_10 Object
-
-A dictionary holding the information in a Win32 USER_INFO_10 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     
 
-  -  __string/[PyUnicode](#pyunicode)comment__ 
+  -  **string/[PyUnicode](#pyunicode)password** 
     
 
-  -  __string/[PyUnicode](#pyunicode)usr_comment__ 
+  -  **int password\_age** 
     
 
-  -  __string/[PyUnicode](#pyunicode)full_name__ 
+  -  **int priv** 
     
 
-## PyUSER_INFO_1003 Object
-
-A dictionary holding the information in a Win32 USER_INFO_1003 structure.
-
-#### Properties
-
-  -  __string/[PyUnicode](#pyunicode)password__ 
+  -  **string/[PyUnicode](#pyunicode)home\_dir** 
     
 
-## PyUSER_INFO_1005 Object
-
-A dictionary holding the information in a Win32 USER_INFO_1005 structure.
-
-#### Properties
-
-  -  __int priv__ 
+  -  **string/[PyUnicode](#pyunicode)comment** 
     
 
-## PyUSER_INFO_1006 Object
+  -  **int flags** 
+    
 
-A dictionary holding the information in a Win32 USER_INFO_1006 structure.
+  -  **string/[PyUnicode](#pyunicode)script\_path** 
+    
+
+## PyUSER\_INFO\_10 Object
+
+A dictionary holding the information in a Win32 USER\_INFO\_10 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)home_dir__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     
 
-## PyUSER_INFO_1007 Object
-
-A dictionary holding the information in a Win32 USER_INFO_1007 structure.
-
-#### Properties
-
-  -  __string/[PyUnicode](#pyunicode)comment__ 
+  -  **string/[PyUnicode](#pyunicode)comment** 
     
 
-## PyUSER_INFO_1008 Object
-
-A dictionary holding the information in a Win32 USER_INFO_1008 structure.
-
-#### Properties
-
-  -  __int flags__ 
+  -  **string/[PyUnicode](#pyunicode)usr\_comment** 
     
 
-## PyUSER_INFO_1009 Object
+  -  **string/[PyUnicode](#pyunicode)full\_name** 
+    
 
-A dictionary holding the information in a Win32 USER_INFO_1009 structure.
+## PyUSER\_INFO\_1003 Object
+
+A dictionary holding the information in a Win32 USER\_INFO\_1003 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)script_path__ 
+  -  **string/[PyUnicode](#pyunicode)password** 
     
 
-## PyUSER_INFO_1010 Object
+## PyUSER\_INFO\_1005 Object
 
-A dictionary holding the information in a Win32 USER_INFO_1010 structure.
-
-#### Properties
-
-  -  __int auth_flags__ 
-    
-
-## PyUSER_INFO_1011 Object
-
-A dictionary holding the information in a Win32 USER_INFO_1011 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1005 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)full_name__ 
+  -  **int priv** 
     
 
-## PyUSER_INFO_11 Object
+## PyUSER\_INFO\_1006 Object
 
-A dictionary holding the information in a Win32 USER_INFO_11 structure.
-
-#### Properties
-
-  -  __string/[PyUnicode](#pyunicode)name__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)usr_comment__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)full_name__ 
-    
-
-  -  __int priv__ 
-    
-
-  -  __int auth_flags__ 
-    
-
-  -  __int password_age__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)home_dir__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)parms__ 
-    
-
-  -  __int last_logon__ 
-    
-
-  -  __int last_logoff__ 
-    
-
-  -  __int bad_pw_count__ 
-    
-
-  -  __int num_logons__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)logon_server__ 
-    
-
-  -  __int country_code__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)workstations__ 
-    
-
-  -  __int max_storage__ 
-    
-
-  -  __int units_per_week__ 
-    
-
-  -  __string logon_hours__ 
-    
-
-  -  __int code_page__ 
-    
-
-## PyUSER_INFO_2 Object
-
-A dictionary holding the information in a Win32 USER_INFO_2 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1006 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)home\_dir** 
     
 
-  -  __string/[PyUnicode](#pyunicode)password__ 
-    
+## PyUSER\_INFO\_1007 Object
 
-  -  __int password_age__ 
-    
-
-  -  __int priv__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)home_dir__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    
-
-  -  __int flags__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)script_path__ 
-    
-
-  -  __int auth_flags__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)full_name__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)usr_comment__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)parms__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)workstations__ 
-    
-
-  -  __int last_logon__ 
-    
-
-  -  __int last_logoff__ 
-    
-
-  -  __int acct_expires__ 
-    
-
-  -  __int max_storage__ 
-    
-
-  -  __int units_per_week__ 
-    
-
-  -  __string logon_hours__ 
-    
-
-  -  __int bad_pw_count__ 
-    
-
-  -  __int num_logons__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)logon_server__ 
-    
-
-  -  __int country_code__ 
-    
-
-  -  __int code_page__ 
-    
-
-## PyUSER_INFO_20 Object
-
-A dictionary holding the information in a Win32 USER_INFO_20 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1007 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)comment** 
     
 
-  -  __string/[PyUnicode](#pyunicode)full_name__ 
-    
+## PyUSER\_INFO\_1008 Object
 
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    
-
-  -  __int flags__ 
-    
-
-  -  __int user_id__ 
-    
-
-## PyUSER_INFO_3 Object
-
-A dictionary holding the information in a Win32 USER_INFO_3 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1008 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **int flags** 
     
 
-  -  __string/[PyUnicode](#pyunicode)password__ 
-    
+## PyUSER\_INFO\_1009 Object
 
-  -  __int password_age__ 
-    
-
-  -  __int priv__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)home_dir__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    
-
-  -  __int flags__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)script_path__ 
-    
-
-  -  __int auth_flags__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)full_name__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)usr_comment__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)parms__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)workstations__ 
-    
-
-  -  __int last_logon__ 
-    
-
-  -  __int last_logoff__ 
-    
-
-  -  __int acct_expires__ 
-    
-
-  -  __int max_storage__ 
-    
-
-  -  __int units_per_week__ 
-    
-
-  -  __string logon_hours__ 
-    
-
-  -  __int bad_pw_count__ 
-    
-
-  -  __int num_logons__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)logon_server__ 
-    
-
-  -  __int country_code__ 
-    
-
-  -  __int code_page__ 
-    
-
-  -  __int user_id__ 
-    
-
-  -  __int primary_group_id__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)profile__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)home_dir_drive__ 
-    
-
-  -  __int password_expired__ 
-    
-
-## PyUSER_INFO_4 Object
-
-A dictionary holding the information in a Win32 USER_INFO_4 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1009 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)name__ 
+  -  **string/[PyUnicode](#pyunicode)script\_path** 
     
 
-  -  __string/[PyUnicode](#pyunicode)password__ 
-    
+## PyUSER\_INFO\_1010 Object
 
-  -  __int password_age__ 
-    
-
-  -  __int priv__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)home_dir__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)comment__ 
-    
-
-  -  __int flags__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)script_path__ 
-    
-
-  -  __int auth_flags__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)full_name__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)usr_comment__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)parms__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)workstations__ 
-    
-
-  -  __int last_logon__ 
-    
-
-  -  __int last_logoff__ 
-    
-
-  -  __int acct_expires__ 
-    
-
-  -  __int max_storage__ 
-    
-
-  -  __int units_per_week__ 
-    
-
-  -  __string logon_hours__ 
-    
-
-  -  __int bad_pw_count__ 
-    
-
-  -  __int num_logons__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)logon_server__ 
-    
-
-  -  __int country_code__ 
-    
-
-  -  __int code_page__ 
-    
-
-  -  __[PySID](#pysid)user_sid__ 
-    
-
-  -  __int primary_group_id__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)profile__ 
-    
-
-  -  __string/[PyUnicode](#pyunicode)home_dir_drive__ 
-    
-
-  -  __int password_expired__ 
-    
-
-## PyUSER_MODALS_INFO_* Object
-
-The following USER_MODALS_INFO levels are supported.
-
-
-## PyUSER_MODALS_INFO_0 Object
-
-A dictionary holding the information in a Win32 USER_MODALS_INFO_0 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1010 structure\.
 
 #### Properties
 
-  -  __int min_passwd_len__ 
+  -  **int auth\_flags** 
     
 
-  -  __int max_passwd_age__ 
-    
+## PyUSER\_INFO\_1011 Object
 
-  -  __int min_passwd_age__ 
-    
-
-  -  __int force_logoff__ 
-    
-
-  -  __int password_hist_len__ 
-    
-
-## PyUSER_MODALS_INFO_1 Object
-
-A dictionary holding the information in a Win32 USER_MODALS_INFO_1 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_1011 structure\.
 
 #### Properties
 
-  -  __int role__ 
+  -  **string/[PyUnicode](#pyunicode)full\_name** 
     
 
-  -  __string/[PyUnicode](#pyunicode)primary__ 
-    
+## PyUSER\_INFO\_11 Object
 
-## PyUSER_MODALS_INFO_2 Object
-
-A dictionary holding the information in a Win32 USER_MODALS_INFO_2 structure.
+A dictionary holding the information in a Win32 USER\_INFO\_11 structure\.
 
 #### Properties
 
-  -  __string/[PyUnicode](#pyunicode)domain_name__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     
 
-  -  __[PySID](#pysid)domain_id__ 
+  -  **string/[PyUnicode](#pyunicode)comment** 
     
 
-## PyUSER_MODALS_INFO_3 Object
+  -  **string/[PyUnicode](#pyunicode)usr\_comment** 
+    
 
-A dictionary holding the information in a Win32 USER_MODALS_INFO_3 structure.
+  -  **string/[PyUnicode](#pyunicode)full\_name** 
+    
+
+  -  **int priv** 
+    
+
+  -  **int auth\_flags** 
+    
+
+  -  **int password\_age** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)home\_dir** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)parms** 
+    
+
+  -  **int last\_logon** 
+    
+
+  -  **int last\_logoff** 
+    
+
+  -  **int bad\_pw\_count** 
+    
+
+  -  **int num\_logons** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)logon\_server** 
+    
+
+  -  **int country\_code** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)workstations** 
+    
+
+  -  **int max\_storage** 
+    
+
+  -  **int units\_per\_week** 
+    
+
+  -  **string logon\_hours** 
+    
+
+  -  **int code\_page** 
+    
+
+## PyUSER\_INFO\_2 Object
+
+A dictionary holding the information in a Win32 USER\_INFO\_2 structure\.
 
 #### Properties
 
-  -  __int lockout_duration__ 
+  -  **string/[PyUnicode](#pyunicode)name** 
     
 
-  -  __int lockout_observation_window__ 
+  -  **string/[PyUnicode](#pyunicode)password** 
     
 
-  -  __int usrmod3_lockout_threshold__ 
+  -  **int password\_age** 
+    
+
+  -  **int priv** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)home\_dir** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)comment** 
+    
+
+  -  **int flags** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)script\_path** 
+    
+
+  -  **int auth\_flags** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)full\_name** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)usr\_comment** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)parms** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)workstations** 
+    
+
+  -  **int last\_logon** 
+    
+
+  -  **int last\_logoff** 
+    
+
+  -  **int acct\_expires** 
+    
+
+  -  **int max\_storage** 
+    
+
+  -  **int units\_per\_week** 
+    
+
+  -  **string logon\_hours** 
+    
+
+  -  **int bad\_pw\_count** 
+    
+
+  -  **int num\_logons** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)logon\_server** 
+    
+
+  -  **int country\_code** 
+    
+
+  -  **int code\_page** 
+    
+
+## PyUSER\_INFO\_20 Object
+
+A dictionary holding the information in a Win32 USER\_INFO\_20 structure\.
+
+#### Properties
+
+  -  **string/[PyUnicode](#pyunicode)name** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)full\_name** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)comment** 
+    
+
+  -  **int flags** 
+    
+
+  -  **int user\_id** 
+    
+
+## PyUSER\_INFO\_3 Object
+
+A dictionary holding the information in a Win32 USER\_INFO\_3 structure\.
+
+#### Properties
+
+  -  **string/[PyUnicode](#pyunicode)name** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)password** 
+    
+
+  -  **int password\_age** 
+    
+
+  -  **int priv** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)home\_dir** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)comment** 
+    
+
+  -  **int flags** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)script\_path** 
+    
+
+  -  **int auth\_flags** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)full\_name** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)usr\_comment** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)parms** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)workstations** 
+    
+
+  -  **int last\_logon** 
+    
+
+  -  **int last\_logoff** 
+    
+
+  -  **int acct\_expires** 
+    
+
+  -  **int max\_storage** 
+    
+
+  -  **int units\_per\_week** 
+    
+
+  -  **string logon\_hours** 
+    
+
+  -  **int bad\_pw\_count** 
+    
+
+  -  **int num\_logons** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)logon\_server** 
+    
+
+  -  **int country\_code** 
+    
+
+  -  **int code\_page** 
+    
+
+  -  **int user\_id** 
+    
+
+  -  **int primary\_group\_id** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)profile** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)home\_dir\_drive** 
+    
+
+  -  **int password\_expired** 
+    
+
+## PyUSER\_INFO\_4 Object
+
+A dictionary holding the information in a Win32 USER\_INFO\_4 structure\.
+
+#### Properties
+
+  -  **string/[PyUnicode](#pyunicode)name** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)password** 
+    
+
+  -  **int password\_age** 
+    
+
+  -  **int priv** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)home\_dir** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)comment** 
+    
+
+  -  **int flags** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)script\_path** 
+    
+
+  -  **int auth\_flags** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)full\_name** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)usr\_comment** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)parms** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)workstations** 
+    
+
+  -  **int last\_logon** 
+    
+
+  -  **int last\_logoff** 
+    
+
+  -  **int acct\_expires** 
+    
+
+  -  **int max\_storage** 
+    
+
+  -  **int units\_per\_week** 
+    
+
+  -  **string logon\_hours** 
+    
+
+  -  **int bad\_pw\_count** 
+    
+
+  -  **int num\_logons** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)logon\_server** 
+    
+
+  -  **int country\_code** 
+    
+
+  -  **int code\_page** 
+    
+
+  -  **[PySID](#pysid)user\_sid** 
+    
+
+  -  **int primary\_group\_id** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)profile** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)home\_dir\_drive** 
+    
+
+  -  **int password\_expired** 
+    
+
+## PyUSER\_MODALS\_INFO\_\* Object
+
+The following USER\_MODALS\_INFO levels are supported\.
+
+
+## PyUSER\_MODALS\_INFO\_0 Object
+
+A dictionary holding the information in a Win32 USER\_MODALS\_INFO\_0 structure\.
+
+#### Properties
+
+  -  **int min\_passwd\_len** 
+    
+
+  -  **int max\_passwd\_age** 
+    
+
+  -  **int min\_passwd\_age** 
+    
+
+  -  **int force\_logoff** 
+    
+
+  -  **int password\_hist\_len** 
+    
+
+## PyUSER\_MODALS\_INFO\_1 Object
+
+A dictionary holding the information in a Win32 USER\_MODALS\_INFO\_1 structure\.
+
+#### Properties
+
+  -  **int role** 
+    
+
+  -  **string/[PyUnicode](#pyunicode)primary** 
+    
+
+## PyUSER\_MODALS\_INFO\_2 Object
+
+A dictionary holding the information in a Win32 USER\_MODALS\_INFO\_2 structure\.
+
+#### Properties
+
+  -  **string/[PyUnicode](#pyunicode)domain\_name** 
+    
+
+  -  **[PySID](#pysid)domain\_id** 
+    
+
+## PyUSER\_MODALS\_INFO\_3 Object
+
+A dictionary holding the information in a Win32 USER\_MODALS\_INFO\_3 structure\.
+
+#### Properties
+
+  -  **int lockout\_duration** 
+    
+
+  -  **int lockout\_observation\_window** 
+    
+
+  -  **int usrmod3\_lockout\_threshold** 
     

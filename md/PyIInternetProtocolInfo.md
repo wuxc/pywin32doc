@@ -23,19 +23,19 @@ Description of the interface
 
     Description of QueryInfo&nbsp;
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo).CombineUrl
+## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.CombineUrl
 
- __CombineUrl( *pwzBaseUrl*  *, pwzRelativeUrl*  *, dwCombineFlags*  *, cchResult*  *, dwReserved* __ )
-Description of CombineUrl.
+ **CombineUrl\( *pwzBaseUrl*  *, pwzRelativeUrl*  *, dwCombineFlags*  *, cchResult*  *, dwReserved* ** \)
+Description of CombineUrl\.
 
 #### Parameters
 
 
-  -  *pwzBaseUrl* : __unicode__ 
+  -  *pwzBaseUrl* : **unicode** 
 
     Description for pwzBaseUrl
 
-  -  *pwzRelativeUrl* : __unicode__ 
+  -  *pwzRelativeUrl* : **unicode** 
 
     Description for pwzRelativeUrl
 
@@ -51,19 +51,19 @@ Description of CombineUrl.
 
     Description for dwReserved
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo).CompareUrl
+## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.CompareUrl
 
- __CompareUrl( *pwzUrl1*  *, pwzUrl2*  *, dwCompareFlags* __ )
-Description of CompareUrl.
+ **CompareUrl\( *pwzUrl1*  *, pwzUrl2*  *, dwCompareFlags* ** \)
+Description of CompareUrl\.
 
 #### Parameters
 
 
-  -  *pwzUrl1* : __unicode__ 
+  -  *pwzUrl1* : **unicode** 
 
     Description for pwzUrl1
 
-  -  *pwzUrl2* : __unicode__ 
+  -  *pwzUrl2* : **unicode** 
 
     Description for pwzUrl2
 
@@ -71,15 +71,15 @@ Description of CompareUrl.
 
     Description for dwCompareFlags
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo).ParseUrl
+## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.ParseUrl
 
- __ParseUrl( *pwzUrl*  *, ParseAction*  *, dwParseFlags*  *, cchResult*  *, dwReserved* __ )
-Description of ParseUrl.
+ **ParseUrl\( *pwzUrl*  *, ParseAction*  *, dwParseFlags*  *, cchResult*  *, dwReserved* ** \)
+Description of ParseUrl\.
 
 #### Parameters
 
 
-  -  *pwzUrl* : __unicode__ 
+  -  *pwzUrl* : **unicode** 
 
     Description for pwzUrl
 
@@ -99,15 +99,15 @@ Description of ParseUrl.
 
     Description for dwReserved
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo).QueryInfo
+## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.QueryInfo
 
-int|string = __QueryInfo( *pwzUrl*  *, OueryOption*  *, dwQueryFlags*  *, cbBuffer*  *, dwReserved* __ )
-Description of QueryInfo.
+int|string \= **QueryInfo\( *pwzUrl*  *, OueryOption*  *, dwQueryFlags*  *, cbBuffer*  *, dwReserved* ** \)
+Description of QueryInfo\.
 
 #### Parameters
 
 
-  -  *pwzUrl* : __unicode__ 
+  -  *pwzUrl* : **unicode** 
 
     Description for pwzUrl
 
@@ -128,4 +128,4 @@ Description of QueryInfo.
     Description for dwReserved
 
 #### Comments
-If the buffer size is the size of an integer, an integer will be returned, otherwise a string.
+If the buffer size is the size of an integer, an integer will be returned, otherwise a string\.

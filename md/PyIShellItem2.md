@@ -37,11 +37,11 @@ Extends the IShellItem interface, giving access to an item's properties
 
   - [GetFileTime](PyIShellItem2.md#pyishellitem2getfiletime)
 
-    Retrieves the value of a property as a file time.&nbsp;
+    Retrieves the value of a property as a file time\.&nbsp;
 
   - [GetInt32](PyIShellItem2.md#pyishellitem2getint32)
 
-    Retrieves the value of a property as a 32 bit int.&nbsp;
+    Retrieves the value of a property as a 32 bit int\.&nbsp;
 
   - [GetString](PyIShellItem2.md#pyishellitem2getstring)
 
@@ -59,9 +59,9 @@ Extends the IShellItem interface, giving access to an item's properties
 
     Returns the value of a property as a boolean&nbsp;
 
-## [PyIShellItem2](#pyishellitem2).GetBool
+## [PyIShellItem2](#pyishellitem2)\.GetBool
 
-boolean = __GetBool( *key* __ )
+boolean \= **GetBool\( *key* ** \)
 Returns the value of a property as a boolean
 
 #### Parameters
@@ -71,10 +71,10 @@ Returns the value of a property as a boolean
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2).GetCLSID
+## [PyIShellItem2](#pyishellitem2)\.GetCLSID
 
-[PyIID](#pyiid)= __GetCLSID( *key* __ )
-Retrieves the value of a property as a CLSID (VT_CLSID)
+[PyIID](#pyiid)\= **GetCLSID\( *key* ** \)
+Retrieves the value of a property as a CLSID \(VT\_CLSID\)
 
 #### Parameters
 
@@ -83,9 +83,9 @@ Retrieves the value of a property as a CLSID (VT_CLSID)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2).GetFileTime
+## [PyIShellItem2](#pyishellitem2)\.GetFileTime
 
-[PyTime](#pytime)= __GetFileTime( *key* __ )
+[PyTime](#pytime)\= **GetFileTime\( *key* ** \)
 Retrieves the value of a property as a FILETIME
 
 #### Parameters
@@ -95,10 +95,10 @@ Retrieves the value of a property as a FILETIME
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2).GetInt32
+## [PyIShellItem2](#pyishellitem2)\.GetInt32
 
-int = __GetInt32( *key* __ )
-Retrieves the value of a property as a 32 bit int.
+int \= **GetInt32\( *key* ** \)
+Retrieves the value of a property as a 32 bit int\.
 
 #### Parameters
 
@@ -107,9 +107,9 @@ Retrieves the value of a property as a 32 bit int.
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2).GetProperty
+## [PyIShellItem2](#pyishellitem2)\.GetProperty
 
-object = __GetProperty( *key* __ )
+object \= **GetProperty\( *key* ** \)
 Retrieves the value of a property, converted to an appropriate python type
 
 #### Parameters
@@ -122,9 +122,9 @@ Retrieves the value of a property, converted to an appropriate python type
 #### Return Value
 Type of returned object is determined by the variant type of the property
 
-## [PyIShellItem2](#pyishellitem2).GetPropertyDescriptionList
+## [PyIShellItem2](#pyishellitem2)\.GetPropertyDescriptionList
 
-[PyIPropertyDescriptionList](#pyipropertydescriptionlist)= __GetPropertyDescriptionList( *Type*  *, riid* __ )
+[PyIPropertyDescriptionList](#pyipropertydescriptionlist)\= **GetPropertyDescriptionList\( *Type*  *, riid* ** \)
 Retrieves descriptions of properties in a particular group
 
 #### Parameters
@@ -132,51 +132,51 @@ Retrieves descriptions of properties in a particular group
 
   -  *Type* :[PyPROPERTYKEY](#pypropertykey)
 
-    Property list identifier (pscon.PKEY_PropList_*)
+    Property list identifier \(pscon\.PKEY\_PropList\_\*\)
 
-  -  *riid=IID_IPropertyDescriptionList* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyDescriptionList* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIShellItem2](#pyishellitem2).GetPropertyStore
+## [PyIShellItem2](#pyishellitem2)\.GetPropertyStore
 
-[PyIPropertyStore](#pyipropertystore)= __GetPropertyStore( *Flags*  *, riid* __ )
+[PyIPropertyStore](#pyipropertystore)\= **GetPropertyStore\( *Flags*  *, riid* ** \)
 Returns a collection of the item's properties
 
 #### Parameters
 
 
-  -  *Flags=GPS_DEFAULT* : int
+  -  *Flags\=GPS\_DEFAULT* : int
 
-    Combination of GETPROPERTYSTOREFLAGS values (shellcon.GPS_*)
+    Combination of GETPROPERTYSTOREFLAGS values \(shellcon\.GPS\_\*\)
 
-  -  *riid=IID_IPropertyStore* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIShellItem2](#pyishellitem2).GetPropertyStoreForKeys
+## [PyIShellItem2](#pyishellitem2)\.GetPropertyStoreForKeys
 
-[PyIPropertyStore](#pyipropertystore)= __GetPropertyStoreForKeys( *Keys*  *, Flags*  *, riid* __ )
+[PyIPropertyStore](#pyipropertystore)\= **GetPropertyStoreForKeys\( *Keys*  *, Flags*  *, riid* ** \)
 Creates a property store containing just the specified properties of the item
 
 #### Parameters
 
 
-  -  *Keys* : ( __SHCOLUMNID__ ,...))
+  -  *Keys* : \( **SHCOLUMNID** ,\.\.\.\)\)
 
     A sequence of property identifiers
 
-  -  *Flags=GPS_DEFAULT* : int
+  -  *Flags\=GPS\_DEFAULT* : int
 
-    Combination of GETPROPERTYSTOREFLAGS values (shellcon.GPS_*)
+    Combination of GETPROPERTYSTOREFLAGS values \(shellcon\.GPS\_\*\)
 
-  -  *riid=IID_IPropertyStore* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
 
     The interface to return
 
-## [PyIShellItem2](#pyishellitem2).GetPropertyStoreWithCreateObject
+## [PyIShellItem2](#pyishellitem2)\.GetPropertyStoreWithCreateObject
 
-[PyIPropertyStore](#pyipropertystore)= __GetPropertyStoreWithCreateObject( *Flags*  *, CreateObject*  *, riid* __ )
+[PyIPropertyStore](#pyipropertystore)\= **GetPropertyStoreWithCreateObject\( *Flags*  *, CreateObject*  *, riid* ** \)
 Returns the property store for the item, with alternate handler instantiation
 
 #### Parameters
@@ -184,22 +184,22 @@ Returns the property store for the item, with alternate handler instantiation
 
   -  *Flags* : int
 
-    Combination of GETPROPERTYSTOREFLAGS values (shellcon.GPS_*)
+    Combination of GETPROPERTYSTOREFLAGS values \(shellcon\.GPS\_\*\)
 
   -  *CreateObject* :[PyIUnknown](#pyiunknown)
 
     An interface that implements ICreateObject, used to create the property handler
 
-  -  *riid=IID_IPropertyStore* :[PyIID](#pyiid)
+  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
 
     The interface to be created
 
 #### Comments
 Primarily used to create a handler in a separate process with reduced privileges
 
-## [PyIShellItem2](#pyishellitem2).GetString
+## [PyIShellItem2](#pyishellitem2)\.GetString
 
-str = __GetString( *key* __ )
+str \= **GetString\( *key* ** \)
 Retrieves the value of a property as a string
 
 #### Parameters
@@ -209,9 +209,9 @@ Retrieves the value of a property as a string
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2).GetUInt32
+## [PyIShellItem2](#pyishellitem2)\.GetUInt32
 
-int = __GetUInt32( *key* __ )
+int \= **GetUInt32\( *key* ** \)
 Returns the value of a property as a 32 bit unsigned int
 
 #### Parameters
@@ -221,9 +221,9 @@ Returns the value of a property as a 32 bit unsigned int
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2).GetUInt64
+## [PyIShellItem2](#pyishellitem2)\.GetUInt64
 
-int = __GetUInt64( *key* __ )
+int \= **GetUInt64\( *key* ** \)
 Returns the value of a property as an unsigned 64-bit int
 
 #### Parameters
@@ -233,14 +233,14 @@ Returns the value of a property as an unsigned 64-bit int
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2).Update
+## [PyIShellItem2](#pyishellitem2)\.Update
 
- __Update( *BindCtx* __ )
+ **Update\( *BindCtx* ** \)
 Refreshes properties that have been modified since interface was created
 
 #### Parameters
 
 
-  -  *BindCtx=None* : __PyIBindCxt__ 
+  -  *BindCtx\=None* : **PyIBindCxt** 
 
     Bind context used when requesting the interface, or None

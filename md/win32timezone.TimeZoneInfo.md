@@ -1,32 +1,32 @@
 # win32timezone.TimeZoneInfo
 
-## win32timezone.TimeZoneInfo Object
+## win32timezone\.TimeZoneInfo Object
 
-Main class for handling Windows time zones. 
+Main class for handling Windows time zones\. 
 
 Usage: 
 
-TimeZoneInfo(&ltTime Zone Standard Name&gt, [&ltFix Standard Time&gt])
+TimeZoneInfo\(&ltTime Zone Standard Name&gt, \[&ltFix Standard Time&gt\]\)
 
 #### Comments
 If &ltFix Standard Time&gt evaluates to True, daylight savings time is 
 
-calculated in the same way as standard time.
-&gt&gt&gt tzi = TimeZoneInfo('Pacific Standard Time')
+calculated in the same way as standard time\.
+&gt&gt&gt tzi \= TimeZoneInfo\('Pacific Standard Time'\)
 
-&gt&gt&gt march31 = datetime.datetime(2000,3,31)
+&gt&gt&gt march31 \= datetime\.datetime\(2000,3,31\)
 We know that time zone definitions haven't changed from 2007 
 
 to 2012, so regardless of whether dynamic info is available, 
 
-there should be consistent results for these years.
-&gt&gt&gt subsequent_years = [march31.replace(year=year)
+there should be consistent results for these years\.
+&gt&gt&gt subsequent\_years \= \[march31\.replace\(year\=year\)
 
-...     for year in range(2007, 2013)]
+\.\.\.     for year in range\(2007, 2013\)\]
 
-&gt&gt&gt offsets = set(tzi.utcoffset(year) for year in subsequent_years)
+&gt&gt&gt offsets \= set\(tzi\.utcoffset\(year\) for year in subsequent\_years\)
 
-&gt&gt&gt len(offsets)
+&gt&gt&gt len\(offsets\)
 
 1
 
@@ -37,29 +37,29 @@ there should be consistent results for these years.
 
     Given a year, determines the time when daylight savings time starts&nbsp;
 
-  - [get_sorted_time_zones](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfoget_sorted_time_zones)
+  - [get\_sorted\_time\_zones](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfoget_sorted_time_zones)
 
-    Return the time zones sorted by some key.&nbsp;
+    Return the time zones sorted by some key\.&nbsp;
 
   - [utc](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfoutc)
 
-    Returns a time-zone representing UTC.&nbsp;
+    Returns a time-zone representing UTC\.&nbsp;
 
   - [GetDSTEndTime](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfogetdstendtime)
 
-    Given a year, determines the time when daylight savings ends.&nbsp;
+    Given a year, determines the time when daylight savings ends\.&nbsp;
 
   - [dst](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfodst)
 
-    Calculates the daylight savings offset according to the datetime.tzinfo spec&nbsp;
+    Calculates the daylight savings offset according to the datetime\.tzinfo spec&nbsp;
 
-  - [get_sorted_time_zone_names](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfoget_sorted_time_zone_names)
+  - [get\_sorted\_time\_zone\_names](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfoget_sorted_time_zone_names)
 
     Return a list of time zone names that can be used to initialize TimeZoneInfo instances&nbsp;
 
   - [utcoffset](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfoutcoffset)
 
-    Calculates the utcoffset according to the datetime.tzinfo spec&nbsp;
+    Calculates the utcoffset according to the datetime\.tzinfo spec&nbsp;
 
   - [getWinInfo](win32timezone.TimeZoneInfo.md#win32timezone.timezoneinfogetwininfo)
 
@@ -69,36 +69,15 @@ there should be consistent results for these years.
 
     Returns the local time zone as defined by the operating system in the&nbsp;
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).GetDSTEndTime
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.GetDSTEndTime
 
- __GetDSTEndTime(__ )
-Given a year, determines the time when daylight savings ends.
+ **GetDSTEndTime\(** \)
+Given a year, determines the time when daylight savings ends\.
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).GetDSTEndTime
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.GetDSTEndTime
 
- __GetDSTEndTime( *self*  *, year* __ )
-Given a year, determines the time when daylight savings ends.
-
-#### Parameters
-
-
-  -  *self* :
-
-    self
-
-  -  *year* :
-
-    year
-
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).GetDSTStartTime
-
- __GetDSTStartTime(__ )
-Given a year, determines the time when daylight savings time starts
-
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).GetDSTStartTime
-
- __GetDSTStartTime( *self*  *, year* __ )
-Given a year, determines the time when daylight savings time starts
+ **GetDSTEndTime\( *self*  *, year* ** \)
+Given a year, determines the time when daylight savings ends\.
 
 #### Parameters
 
@@ -111,15 +90,36 @@ Given a year, determines the time when daylight savings time starts
 
     year
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).dst
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.GetDSTStartTime
 
- __dst(__ )
-Calculates the daylight savings offset according to the datetime.tzinfo spec
+ **GetDSTStartTime\(** \)
+Given a year, determines the time when daylight savings time starts
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).dst
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.GetDSTStartTime
 
- __dst( *self*  *, dt* __ )
-Calculates the daylight savings offset according to the datetime.tzinfo spec
+ **GetDSTStartTime\( *self*  *, year* ** \)
+Given a year, determines the time when daylight savings time starts
+
+#### Parameters
+
+
+  -  *self* :
+
+    self
+
+  -  *year* :
+
+    year
+
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.dst
+
+ **dst\(** \)
+Calculates the daylight savings offset according to the datetime\.tzinfo spec
+
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.dst
+
+ **dst\( *self*  *, dt* ** \)
+Calculates the daylight savings offset according to the datetime\.tzinfo spec
 
 #### Parameters
 
@@ -132,19 +132,19 @@ Calculates the daylight savings offset according to the datetime.tzinfo spec
 
     dt
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).getWinInfo
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.getWinInfo
 
- __getWinInfo(__ )
+ **getWinInfo\(** \)
 Return the most relevant "info" for this time zone 
 
-in the target year.
+in the target year\.
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).getWinInfo
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.getWinInfo
 
- __getWinInfo( *self*  *, targetYear* __ )
+ **getWinInfo\( *self*  *, targetYear* ** \)
 Return the most relevant "info" for this time zone 
 
-in the target year.
+in the target year\.
 
 #### Parameters
 
@@ -157,154 +157,154 @@ in the target year.
 
     targetYear
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).get_sorted_time_zone_names
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.get\_sorted\_time\_zone\_names
 
- __get_sorted_time_zone_names(__ )
+ **get\_sorted\_time\_zone\_names\(** \)
 Return a list of time zone names that can be used to initialize TimeZoneInfo instances
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).get_sorted_time_zone_names
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.get\_sorted\_time\_zone\_names
 
- __get_sorted_time_zone_names(__ )
+ **get\_sorted\_time\_zone\_names\(** \)
 Return a list of time zone names that can be used to initialize TimeZoneInfo instances
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).get_sorted_time_zones
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.get\_sorted\_time\_zones
 
- __get_sorted_time_zones(__ )
-Return the time zones sorted by some key. 
+ **get\_sorted\_time\_zones\(** \)
+Return the time zones sorted by some key\. 
 
 key must be a function that takes a TimeZoneInfo object and returns 
 
-a value suitable for sorting on. 
+a value suitable for sorting on\. 
 
-The key defaults to the bias (descending), as is done in Windows 
+The key defaults to the bias \(descending\), as is done in Windows 
 
-(see http://blogs.msdn.com/michkap/archive/2006/12/22/1350684.aspx)
+\(see http://blogs\.msdn\.com/michkap/archive/2006/12/22/1350684\.aspx\)
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).get_sorted_time_zones
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.get\_sorted\_time\_zones
 
- __get_sorted_time_zones( *key* __ )
-Return the time zones sorted by some key. 
+ **get\_sorted\_time\_zones\( *key* ** \)
+Return the time zones sorted by some key\. 
 
 key must be a function that takes a TimeZoneInfo object and returns 
 
-a value suitable for sorting on. 
+a value suitable for sorting on\. 
 
-The key defaults to the bias (descending), as is done in Windows 
+The key defaults to the bias \(descending\), as is done in Windows 
 
-(see http://blogs.msdn.com/michkap/archive/2006/12/22/1350684.aspx)
+\(see http://blogs\.msdn\.com/michkap/archive/2006/12/22/1350684\.aspx\)
 
 #### Parameters
 
 
-  -  *key=None* :
+  -  *key\=None* :
 
     key
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).local
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.local
 
- __local(__ )
+ **local\(** \)
 Returns the local time zone as defined by the operating system in the 
 
-registry.
+registry\.
 
 #### Comments
 Now one can compare the results of the two offset aware values
-&gt&gt&gt (now_UTC - now_local) &lt datetime.timedelta(seconds = 5)
+&gt&gt&gt \(now\_UTC - now\_local\) &lt datetime\.timedelta\(seconds \= 5\)
 
 True
-This is a @classmethod.
-&gt&gt&gt localTZ = TimeZoneInfo.local()
+This is a @classmethod\.
+&gt&gt&gt localTZ \= TimeZoneInfo\.local\(\)
 
-&gt&gt&gt now_local = datetime.datetime.now(localTZ)
+&gt&gt&gt now\_local \= datetime\.datetime\.now\(localTZ\)
 
-&gt&gt&gt now_UTC = datetime.datetime.utcnow()
+&gt&gt&gt now\_UTC \= datetime\.datetime\.utcnow\(\)
 
-&gt&gt&gt (now_UTC - now_local) &lt datetime.timedelta(seconds = 5)
+&gt&gt&gt \(now\_UTC - now\_local\) &lt datetime\.timedelta\(seconds \= 5\)
 
-Traceback (most recent call last):
+Traceback \(most recent call last\):
 
-...
+\.\.\.
 
 TypeError: can't subtract offset-naive and offset-aware datetimes
-&gt&gt&gt now_UTC = now_UTC.replace(tzinfo = TimeZoneInfo('GMT Standard Time', True))
+&gt&gt&gt now\_UTC \= now\_UTC\.replace\(tzinfo \= TimeZoneInfo\('GMT Standard Time', True\)\)
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).local
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.local
 
- __local( *class_* __ )
+ **local\( *class\_* ** \)
 Returns the local time zone as defined by the operating system in the 
 
-registry.
+registry\.
 
 #### Parameters
 
 
-  -  *class_* :
+  -  *class\_* :
 
-    class_
+    class\_
 
 #### Comments
 Now one can compare the results of the two offset aware values
-&gt&gt&gt (now_UTC - now_local) &lt datetime.timedelta(seconds = 5)
+&gt&gt&gt \(now\_UTC - now\_local\) &lt datetime\.timedelta\(seconds \= 5\)
 
 True
-&gt&gt&gt localTZ = TimeZoneInfo.local()
+&gt&gt&gt localTZ \= TimeZoneInfo\.local\(\)
 
-&gt&gt&gt now_local = datetime.datetime.now(localTZ)
+&gt&gt&gt now\_local \= datetime\.datetime\.now\(localTZ\)
 
-&gt&gt&gt now_UTC = datetime.datetime.utcnow()
+&gt&gt&gt now\_UTC \= datetime\.datetime\.utcnow\(\)
 
-&gt&gt&gt (now_UTC - now_local) &lt datetime.timedelta(seconds = 5)
+&gt&gt&gt \(now\_UTC - now\_local\) &lt datetime\.timedelta\(seconds \= 5\)
 
-Traceback (most recent call last):
+Traceback \(most recent call last\):
 
-...
+\.\.\.
 
 TypeError: can't subtract offset-naive and offset-aware datetimes
-&gt&gt&gt now_UTC = now_UTC.replace(tzinfo = TimeZoneInfo('GMT Standard Time', True))
+&gt&gt&gt now\_UTC \= now\_UTC\.replace\(tzinfo \= TimeZoneInfo\('GMT Standard Time', True\)\)
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).utc
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.utc
 
- __utc(__ )
-Returns a time-zone representing UTC.
+ **utc\(** \)
+Returns a time-zone representing UTC\.
 
 #### Comments
-Same as TimeZoneInfo('GMT Standard Time', True) but caches the result 
+Same as TimeZoneInfo\('GMT Standard Time', True\) but caches the result 
 
-for performance.
-&gt&gt&gt isinstance(TimeZoneInfo.utc(), TimeZoneInfo)
+for performance\.
+&gt&gt&gt isinstance\(TimeZoneInfo\.utc\(\), TimeZoneInfo\)
 
 True
-This is a @classmethod.
+This is a @classmethod\.
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).utc
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.utc
 
- __utc( *class_* __ )
-Returns a time-zone representing UTC.
+ **utc\( *class\_* ** \)
+Returns a time-zone representing UTC\.
 
 #### Parameters
 
 
-  -  *class_* :
+  -  *class\_* :
 
-    class_
+    class\_
 
 #### Comments
-Same as TimeZoneInfo('GMT Standard Time', True) but caches the result 
+Same as TimeZoneInfo\('GMT Standard Time', True\) but caches the result 
 
-for performance.
-&gt&gt&gt isinstance(TimeZoneInfo.utc(), TimeZoneInfo)
+for performance\.
+&gt&gt&gt isinstance\(TimeZoneInfo\.utc\(\), TimeZoneInfo\)
 
 True
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).utcoffset
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.utcoffset
 
- __utcoffset(__ )
-Calculates the utcoffset according to the datetime.tzinfo spec
+ **utcoffset\(** \)
+Calculates the utcoffset according to the datetime\.tzinfo spec
 
-## [win32timezone.TimeZoneInfo](#win32timezone.timezoneinfo).utcoffset
+## [win32timezone\.TimeZoneInfo](#win32timezone.timezoneinfo)\.utcoffset
 
- __utcoffset( *self*  *, dt* __ )
-Calculates the utcoffset according to the datetime.tzinfo spec
+ **utcoffset\( *self*  *, dt* ** \)
+Calculates the utcoffset according to the datetime\.tzinfo spec
 
 #### Parameters
 
