@@ -1,5 +1,46 @@
 
-## [win32job](#README.md#win32job).AssignProcessToJobObject
+## Module win32job
+
+An interface to the win32 Process and Thread API's, 
+
+available in Windows 2000 and later.
+
+#### Methods
+
+
+  - [AssignProcessToJobObject](win32job.md#win32jobAssignProcessToJobObject)
+
+    Associates a process with an existing job object.&nbsp;
+
+  - [CreateJobObject](win32job.md#win32jobCreateJobObject)
+
+    Creates or opens a job object.&nbsp;
+
+  - [OpenJobObject](win32job.md#win32jobOpenJobObject)
+
+    Opens an existing job object.&nbsp;
+
+  - [TerminateJobObject](win32job.md#win32jobTerminateJobObject)
+
+    Terminates all processes currently associated with the job.&nbsp;
+
+  - [UserHandleGrantAccess](win32job.md#win32jobUserHandleGrantAccess)
+
+    Grants or denies access to a handle to a User object to a job that has a user-interface restriction.&nbsp;
+
+  - [IsProcessInJob](win32job.md#win32jobIsProcessInJob)
+
+    Determines if the process is running in the specified job.&nbsp;
+
+  - [QueryInformationJobObject](win32job.md#win32jobQueryInformationJobObject)
+
+    Retrieves limit and job state information from the job object.&nbsp;
+
+  - [SetInformationJobObject](win32job.md#win32jobSetInformationJobObject)
+
+    Sets quotas and limits for a job&nbsp;
+
+## [win32job](README.md#win32job).AssignProcessToJobObject
 
  **AssignProcessToJobObject( *hJob*  *, hProcess* ** )
 Associates a process with an existing job object.
@@ -7,15 +48,15 @@ Associates a process with an existing job object.
 #### Parameters
 
 
-     *hJob* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hJob* :[PyHANDLE](README.md#PyHANDLE)
 
     
 
-     *hProcess* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
 
     
 
-## [win32job](#README.md#win32job).CreateJobObject
+## [win32job](README.md#win32job).CreateJobObject
 
  **CreateJobObject( *jobAttributes*  *, name* ** )
 Creates or opens a job object.
@@ -23,15 +64,15 @@ Creates or opens a job object.
 #### Parameters
 
 
-     *jobAttributes* :[PySECURITY_ATTRIBUTES](#PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *jobAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
 
     
 
-     *name* : unicode
+  -  *name* : unicode
 
     
 
-## [win32job](#README.md#win32job).IsProcessInJob
+## [win32job](README.md#win32job).IsProcessInJob
 
 boolean = **IsProcessInJob( *hProcess*  *, hJob* ** )
 Determines if the process is running in the specified job.
@@ -39,11 +80,11 @@ Determines if the process is running in the specified job.
 #### Parameters
 
 
-     *hProcess* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hProcess* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to a process
 
-     *hJob* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hJob* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to a job, use None to check if process is part of any job
 
@@ -298,7 +339,7 @@ Function is only available on WinXP and later
  **const win32job.MaxJobObjectInfoClass;** 
 
 
-## [win32job](#README.md#win32job).OpenJobObject
+## [win32job](README.md#win32job).OpenJobObject
 
  **OpenJobObject( *desiredAccess*  *, inheritHandles*  *, name* ** )
 Opens an existing job object.
@@ -306,19 +347,19 @@ Opens an existing job object.
 #### Parameters
 
 
-     *desiredAccess* : int
+  -  *desiredAccess* : int
 
     
 
-     *inheritHandles* : bool
+  -  *inheritHandles* : bool
 
     
 
-     *name* : unicode
+  -  *name* : unicode
 
     
 
-## [win32job](#README.md#win32job).QueryInformationJobObject
+## [win32job](README.md#win32job).QueryInformationJobObject
 
 dict = **QueryInformationJobObject( *Job*  *, JobObjectInfoClass* ** )
 Retrieves limit and job state information from the job object.
@@ -326,11 +367,11 @@ Retrieves limit and job state information from the job object.
 #### Parameters
 
 
-     *Job* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *Job* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to a job, use None for job that calling process is part of
 
-     *JobObjectInfoClass* : int
+  -  *JobObjectInfoClass* : int
 
     The type of data required, one of JobObject* values
 
@@ -338,7 +379,7 @@ Retrieves limit and job state information from the job object.
 #### Return Value
 The type of the returned information is dependent on the class requested
 
-## [win32job](#README.md#win32job).SetInformationJobObject
+## [win32job](README.md#win32job).SetInformationJobObject
 
  **SetInformationJobObject( *Job*  *, JobObjectInfoClass*  *, JobObjectInfo* ** )
 Sets quotas and limits for a job
@@ -346,20 +387,20 @@ Sets quotas and limits for a job
 #### Parameters
 
 
-     *Job* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *Job* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to a job
 
-     *JobObjectInfoClass* : int
+  -  *JobObjectInfoClass* : int
 
     The type of data required, one of JobObject* values
 
-     *JobObjectInfo* : dict
+  -  *JobObjectInfo* : dict
 
-    Dictionary containing info to be set, as returned by[win32job::QueryInformationJobObject](#win32job.md#win32jobQueryInformationJobObject)
+    Dictionary containing info to be set, as returned by[win32job::QueryInformationJobObject](win32job.md#win32jobQueryInformationJobObject)
 
 
-## [win32job](#README.md#win32job).TerminateJobObject
+## [win32job](README.md#win32job).TerminateJobObject
 
  **TerminateJobObject( *hJob*  *, exitCode* ** )
 Terminates all processes currently associated with the job.
@@ -367,15 +408,15 @@ Terminates all processes currently associated with the job.
 #### Parameters
 
 
-     *hJob* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hJob* :[PyHANDLE](README.md#PyHANDLE)
 
     
 
-     *exitCode* : int
+  -  *exitCode* : int
 
     
 
-## [win32job](#README.md#win32job).UserHandleGrantAccess
+## [win32job](README.md#win32job).UserHandleGrantAccess
 
  **UserHandleGrantAccess( *hUserHandle*  *, hJob*  *, grant* ** )
 Grants or denies access to a handle to a User object to a job that has a user-interface restriction.
@@ -383,14 +424,14 @@ Grants or denies access to a handle to a User object to a job that has a user-in
 #### Parameters
 
 
-     *hUserHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hUserHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     
 
-     *hJob* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hJob* :[PyHANDLE](README.md#PyHANDLE)
 
     
 
-     *grant* : bool
+  -  *grant* : bool
 
     

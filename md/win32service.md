@@ -1,5 +1,148 @@
 
-## [win32service](#README.md#win32service).ChangeServiceConfig
+## Module win32service
+
+An interface to the Windows NT Service API
+
+#### Methods
+
+
+  - [GetThreadDesktop](win32service.md#win32serviceGetThreadDesktop)
+
+    Retrieves a handle to the desktop for a thread&nbsp;
+
+  - [EnumWindowStations](win32service.md#win32serviceEnumWindowStations)
+
+    Lists names of window stations&nbsp;
+
+  - [GetUserObjectInformation](win32service.md#win32serviceGetUserObjectInformation)
+
+    Returns specified type of info about a window station or desktop&nbsp;
+
+  - [SetUserObjectInformation](win32service.md#win32serviceSetUserObjectInformation)
+
+    Set specified type of info for a window station or desktop object&nbsp;
+
+  - [OpenWindowStation](win32service.md#win32serviceOpenWindowStation)
+
+    Returns a handle to the specified window station&nbsp;
+
+  - [OpenDesktop](win32service.md#win32serviceOpenDesktop)
+
+    Opens a handle to a desktop&nbsp;
+
+  - [CreateDesktop](win32service.md#win32serviceCreateDesktop)
+
+    Creates a new desktop in calling process's current window station&nbsp;
+
+  - [OpenInputDesktop](win32service.md#win32serviceOpenInputDesktop)
+
+    Returns a handle to desktop for logged-in user&nbsp;
+
+  - [GetProcessWindowStation](win32service.md#win32serviceGetProcessWindowStation)
+
+    Returns a handle to calling process's current window station&nbsp;
+
+  - [CreateWindowStation](win32service.md#win32serviceCreateWindowStation)
+
+    Creates a new window station&nbsp;
+
+  - [EnumServicesStatus](win32service.md#win32serviceEnumServicesStatus)
+
+    Returns a tuple of status info for each service that meets specified criteria&nbsp;
+
+  - [EnumServicesStatusEx](win32service.md#win32serviceEnumServicesStatusEx)
+
+    Lists the status of services that meet the specified criteria&nbsp;
+
+  - [EnumDependentServices](win32service.md#win32serviceEnumDependentServices)
+
+    Lists services that depend on a service&nbsp;
+
+  - [QueryServiceConfig](win32service.md#win32serviceQueryServiceConfig)
+
+    Retrieves configuration parameters for a service&nbsp;
+
+  - [StartService](win32service.md#win32serviceStartService)
+
+    Starts the specified service&nbsp;
+
+  - [OpenService](win32service.md#win32serviceOpenService)
+
+    Returns a handle to the specified service.&nbsp;
+
+  - [OpenSCManager](win32service.md#win32serviceOpenSCManager)
+
+    Returns a handle to the service control manager&nbsp;
+
+  - [CloseServiceHandle](win32service.md#win32serviceCloseServiceHandle)
+
+    Closes a service or SCM handle&nbsp;
+
+  - [QueryServiceStatus](win32service.md#win32serviceQueryServiceStatus)
+
+    Queries a service status&nbsp;
+
+  - [QueryServiceStatusEx](win32service.md#win32serviceQueryServiceStatusEx)
+
+    Queries a service status&nbsp;
+
+  - [SetServiceObjectSecurity](win32service.md#win32serviceSetServiceObjectSecurity)
+
+    Set the security descriptor for a service&nbsp;
+
+  - [QueryServiceObjectSecurity](win32service.md#win32serviceQueryServiceObjectSecurity)
+
+    Retrieves information from the security descriptor for a service&nbsp;
+
+  - [GetServiceKeyName](win32service.md#win32serviceGetServiceKeyName)
+
+    Translates a service display name into its registry key name&nbsp;
+
+  - [GetServiceDisplayName](win32service.md#win32serviceGetServiceDisplayName)
+
+    Translates an internal service name into its display name&nbsp;
+
+  - [SetServiceStatus](win32service.md#win32serviceSetServiceStatus)
+
+    Sets a service status&nbsp;
+
+  - [ControlService](win32service.md#win32serviceControlService)
+
+    Sends a control message to a service.&nbsp;
+
+  - [DeleteService](win32service.md#win32serviceDeleteService)
+
+    Deletes the specified service&nbsp;
+
+  - [CreateService](win32service.md#win32serviceCreateService)
+
+    Creates a new service.&nbsp;
+
+  - [ChangeServiceConfig](win32service.md#win32serviceChangeServiceConfig)
+
+    Changes the configuration of an existing service.&nbsp;
+
+  - [LockServiceDatabase](win32service.md#win32serviceLockServiceDatabase)
+
+    Locks the service database.&nbsp;
+
+  - [UnlockServiceDatabase](win32service.md#win32serviceUnlockServiceDatabase)
+
+    Unlocks the service database.&nbsp;
+
+  - [QueryServiceLockStatus](win32service.md#win32serviceQueryServiceLockStatus)
+
+    Retrieves the lock status of the specified service control manager database.&nbsp;
+
+  - [ChangeServiceConfig2](win32service.md#win32serviceChangeServiceConfig2)
+
+    Modifies advanced service parameters&nbsp;
+
+  - [QueryServiceConfig2](win32service.md#win32serviceQueryServiceConfig2)
+
+    Retrieves advanced service configuration options&nbsp;
+
+## [win32service](README.md#win32service).ChangeServiceConfig
 
 int/None = **ChangeServiceConfig( *hService*  *, serviceType*  *, startType*  *, errorControl*  *, binaryFile*  *, loadOrderGroup*  *, bFetchTag*  *, serviceDeps*  *, acctName*  *, password*  *, displayName* ** )
 Changes the configuration of an existing service.
@@ -7,51 +150,51 @@ Changes the configuration of an existing service.
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     handle to service to be modified
 
-     *serviceType* : int
+  -  *serviceType* : int
 
     type of service, or SERVICE_NO_CHANGE
 
-     *startType* : int
+  -  *startType* : int
 
     When/how to start service, or SERVICE_NO_CHANGE
 
-     *errorControl* : int
+  -  *errorControl* : int
 
     severity if service fails to start, or SERVICE_NO_CHANGE
 
-     *binaryFile* :[PyUnicode](#README.md#PyUnicode)
+  -  *binaryFile* :[PyUnicode](README.md#PyUnicode)
 
     name of binary file, or None
 
-     *loadOrderGroup* :[PyUnicode](#README.md#PyUnicode)
+  -  *loadOrderGroup* :[PyUnicode](README.md#PyUnicode)
 
     name of load ordering group , or None
 
-     *bFetchTag* : int
+  -  *bFetchTag* : int
 
     Should the tag be fetched and returned?  If TRUE, the result is the tag, else None.
 
-     *serviceDeps* : [[PyUnicode](#README.md#PyUnicode),...]
+  -  *serviceDeps* : [[PyUnicode](README.md#PyUnicode),...]
 
     sequence of dependency names
 
-     *acctName* :[PyUnicode](#README.md#PyUnicode)
+  -  *acctName* :[PyUnicode](README.md#PyUnicode)
 
     account name of service, or None
 
-     *password* :[PyUnicode](#README.md#PyUnicode)
+  -  *password* :[PyUnicode](README.md#PyUnicode)
 
     password for service account , or None
 
-     *displayName* :[PyUnicode](#README.md#PyUnicode)
+  -  *displayName* :[PyUnicode](README.md#PyUnicode)
 
     Display name
 
-## [win32service](#README.md#win32service).ChangeServiceConfig2
+## [win32service](README.md#win32service).ChangeServiceConfig2
 
  **ChangeServiceConfig2( *hService*  *, InfoLevel*  *, info* ** )
 Modifies advanced service parameters
@@ -59,20 +202,20 @@ Modifies advanced service parameters
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Service handle as returned by[win32service::OpenService](#win32service.md#win32serviceOpenService)
+    Service handle as returned by[win32service::OpenService](win32service.md#win32serviceOpenService)
 
-     *InfoLevel* : int
+  -  *InfoLevel* : int
 
     One of win32service.SERVICE_CONFIG_* values
 
-     *info* : object
+  -  *info* : object
 
     Type depends on InfoLevel
 
 
-## [win32service](#README.md#win32service).CloseServiceHandle
+## [win32service](README.md#win32service).CloseServiceHandle
 
  **CloseServiceHandle( *scHandle* ** )
 Closes a service or SCM handle
@@ -80,134 +223,134 @@ Closes a service or SCM handle
 #### Parameters
 
 
-     *scHandle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *scHandle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to close
 
-## [win32service](#README.md#win32service).ControlService
+## [win32service](README.md#win32service).ControlService
 
-[SERVICE_STATUS](#SERVICE.md#SERVICESTATUS)= **ControlService( *scHandle*  *, code* ** )
+[SERVICE_STATUS](SERVICE.md#SERVICESTATUS)= **ControlService( *scHandle*  *, code* ** )
 Sends a control message to a service.
 
 #### Parameters
 
 
-     *scHandle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *scHandle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to control
 
-     *code* : int
+  -  *code* : int
 
     The service control code.
 
 #### Return Value
 The result is the new service status.
 
-## [win32service](#README.md#win32service).CreateDesktop
+## [win32service](README.md#win32service).CreateDesktop
 
-[PyHDESK](#README.md#PyHDESK)= **CreateDesktop( *Desktop*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* ** )
+[PyHDESK](README.md#PyHDESK)= **CreateDesktop( *Desktop*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* ** )
 Creates a new desktop in calling process's current window station
 
 #### Parameters
 
 
-     *Desktop* : str/unicode
+  -  *Desktop* : str/unicode
 
     Name of desktop to create
 
-     *Flags* : int
+  -  *Flags* : int
 
     DF_ALLOWOTHERACCOUNTHOOK or 0
 
-     *DesiredAccess* : int
+  -  *DesiredAccess* : int
 
     An ACCESS_MASK determining level of access available thru returned handle
 
-     *SecurityAttributes* :[PySECURITY_ATTRIBUTES](#PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
 
     Specifies inheritance and controls access to desktop
 
-## [win32service](#README.md#win32service).CreateService
+## [win32service](README.md#win32service).CreateService
 
-[PySC_HANDLE](#PySC.md#PySCHANDLE)/([PySC_HANDLE](#PySC.md#PySCHANDLE), int) = **CreateService( *scHandle*  *, name*  *, displayName*  *, desiredAccess*  *, serviceType*  *, startType*  *, errorControl*  *, binaryFile*  *, loadOrderGroup*  *, bFetchTag*  *, serviceDeps*  *, acctName*  *, password* ** )
+[PySC_HANDLE](PySC.md#PySCHANDLE)/([PySC_HANDLE](PySC.md#PySCHANDLE), int) = **CreateService( *scHandle*  *, name*  *, displayName*  *, desiredAccess*  *, serviceType*  *, startType*  *, errorControl*  *, binaryFile*  *, loadOrderGroup*  *, bFetchTag*  *, serviceDeps*  *, acctName*  *, password* ** )
 Creates a new service.
 
 #### Parameters
 
 
-     *scHandle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *scHandle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     handle to service control manager database
 
-     *name* :[PyUnicode](#README.md#PyUnicode)
+  -  *name* :[PyUnicode](README.md#PyUnicode)
 
     Name of service
 
-     *displayName* :[PyUnicode](#README.md#PyUnicode)
+  -  *displayName* :[PyUnicode](README.md#PyUnicode)
 
     Display name
 
-     *desiredAccess* : int
+  -  *desiredAccess* : int
 
     type of access to service
 
-     *serviceType* : int
+  -  *serviceType* : int
 
     type of service
 
-     *startType* : int
+  -  *startType* : int
 
     When/how to start service
 
-     *errorControl* : int
+  -  *errorControl* : int
 
     severity if service fails to start
 
-     *binaryFile* :[PyUnicode](#README.md#PyUnicode)
+  -  *binaryFile* :[PyUnicode](README.md#PyUnicode)
 
     name of binary file
 
-     *loadOrderGroup* :[PyUnicode](#README.md#PyUnicode)
+  -  *loadOrderGroup* :[PyUnicode](README.md#PyUnicode)
 
     name of load ordering group , or None
 
-     *bFetchTag* : int
+  -  *bFetchTag* : int
 
     Should the tag be fetched and returned?  If TRUE, the result is a tuple of (handle, tag), otherwise just handle.
 
-     *serviceDeps* : [[PyUnicode](#README.md#PyUnicode),...]
+  -  *serviceDeps* : [[PyUnicode](README.md#PyUnicode),...]
 
     sequence of dependency names
 
-     *acctName* :[PyUnicode](#README.md#PyUnicode)
+  -  *acctName* :[PyUnicode](README.md#PyUnicode)
 
     account name of service, or None
 
-     *password* :[PyUnicode](#README.md#PyUnicode)
+  -  *password* :[PyUnicode](README.md#PyUnicode)
 
     password for service account , or None
 
-## [win32service](#README.md#win32service).CreateWindowStation
+## [win32service](README.md#win32service).CreateWindowStation
 
-[PyHWINSTA](#README.md#PyHWINSTA)= **CreateWindowStation( *WindowStation*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* ** )
+[PyHWINSTA](README.md#PyHWINSTA)= **CreateWindowStation( *WindowStation*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* ** )
 Creates a new window station
 
 #### Parameters
 
 
-     *WindowStation* : str/unicode
+  -  *WindowStation* : str/unicode
 
     Name of window station to create, or None
 
-     *Flags* : int
+  -  *Flags* : int
 
     CWF_CREATE_ONLY or 0
 
-     *DesiredAccess* : int
+  -  *DesiredAccess* : int
 
     Bitmask of access types available to returned handle
 
-     *SecurityAttributes* :[PySECURITY_ATTRIBUTES](#PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *SecurityAttributes* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
 
     Specifies security for window station, and whether handle is inheritable
 
@@ -258,7 +401,7 @@ type specific event
  **const win32service.DF_ALLOWOTHERACCOUNTHOOK;** 
 #define CWF_CREATE_ONLY CWF_CREATE_ONLY
 
-## [win32service](#README.md#win32service).DeleteService
+## [win32service](README.md#win32service).DeleteService
 
  **DeleteService( *scHandle* ** )
 Deletes the specified service
@@ -266,11 +409,11 @@ Deletes the specified service
 #### Parameters
 
 
-     *scHandle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *scHandle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to service to be deleted
 
-## [win32service](#README.md#win32service).EnumDependentServices
+## [win32service](README.md#win32service).EnumDependentServices
 
 (tuple,...) = **EnumDependentServices( *hService*  *, ServiceState* ** )
 Lists services that depend on a service
@@ -278,18 +421,18 @@ Lists services that depend on a service
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Handle to service for which to list dependent services (as returned by[win32service::OpenService](#win32service.md#win32serviceOpenService))
+    Handle to service for which to list dependent services (as returned by[win32service::OpenService](win32service.md#win32serviceOpenService))
 
-     *ServiceState=SERVICE_STATE_ALL* : int
+  -  *ServiceState=SERVICE_STATE_ALL* : int
 
     Limits to services in specified state - One of SERVICE_STATE_ALL, SERVICE_ACTIVE, SERVICE_INACTIVE
 
 #### Return Value
-Returns a sequence of tuples representing ENUM_SERVICE_STATUS structs: (ServiceName, DisplayName,[SERVICE_STATUS](#SERVICE.md#SERVICESTATUS))
+Returns a sequence of tuples representing ENUM_SERVICE_STATUS structs: (ServiceName, DisplayName,[SERVICE_STATUS](SERVICE.md#SERVICESTATUS))
 
-## [win32service](#README.md#win32service).EnumServicesStatus
+## [win32service](README.md#win32service).EnumServicesStatus
 
 (tuple,...) = **EnumServicesStatus( *hSCManager*  *, ServiceType*  *, ServiceState* ** )
 Returns a tuple of status info for each service that meets specified criteria
@@ -297,22 +440,22 @@ Returns a tuple of status info for each service that meets specified criteria
 #### Parameters
 
 
-     *hSCManager* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hSCManager* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Handle to service control manager as returned by[win32service::OpenSCManager](#win32service.md#win32serviceOpenSCManager)
+    Handle to service control manager as returned by[win32service::OpenSCManager](win32service.md#win32serviceOpenSCManager)
 
-     *ServiceType=SERVICE_WIN32* : int
+  -  *ServiceType=SERVICE_WIN32* : int
 
     Types of services to enumerate (SERVICE_DRIVER and/or SERVICE_WIN32)
 
-     *ServiceState=SERVICE_STATE_ALL* : int
+  -  *ServiceState=SERVICE_STATE_ALL* : int
 
     Limits to services in specified state
 
 #### Return Value
-Returns a sequence of tuples representing ENUM_SERVICE_STATUS structs: (ServiceName, DisplayName,[SERVICE_STATUS](#SERVICE.md#SERVICESTATUS))
+Returns a sequence of tuples representing ENUM_SERVICE_STATUS structs: (ServiceName, DisplayName,[SERVICE_STATUS](SERVICE.md#SERVICESTATUS))
 
-## [win32service](#README.md#win32service).EnumServicesStatusEx
+## [win32service](README.md#win32service).EnumServicesStatusEx
 
 (dict,...) = **EnumServicesStatusEx( *SCManager*  *, ServiceType*  *, ServiceState*  *, GroupName*  *, InfoLevel* ** )
 Lists the status of services that meet the specified criteria
@@ -320,94 +463,94 @@ Lists the status of services that meet the specified criteria
 #### Parameters
 
 
-     *SCManager* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *SCManager* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Handle to service control manager as returned by[win32service::OpenSCManager](#win32service.md#win32serviceOpenSCManager)
+    Handle to service control manager as returned by[win32service::OpenSCManager](win32service.md#win32serviceOpenSCManager)
 
-     *ServiceType=SERVICE_WIN32* : int
+  -  *ServiceType=SERVICE_WIN32* : int
 
     Types of services to enumerate (SERVICE_DRIVER and/or SERVICE_WIN32)
 
-     *ServiceState=SERVICE_STATE_ALL* : int
+  -  *ServiceState=SERVICE_STATE_ALL* : int
 
     Limits to services in specified state
 
-     *GroupName=None* : str
+  -  *GroupName=None* : str
 
     Name of group - use None for all, or '' for services that don't belong to a group
 
-     *InfoLevel=SC_ENUM_PROCESS_INFO* : int
+  -  *InfoLevel=SC_ENUM_PROCESS_INFO* : int
 
     Currently SC_ENUM_PROCESS_INFO is only level defined
 
 #### Win32 API References
 
 
-    Search for *EnumServicesStatusEx* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=EnumServicesStatusEx),[google](#README.md#http://www.google.com/search?q=EnumServicesStatusEx)or[google groups](#README.md#http://groups.google.com/groups?q=EnumServicesStatusEx).
+  - Search for *EnumServicesStatusEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=EnumServicesStatusEx),[google](README.md#http://www.google.com/search?q=EnumServicesStatusEx)or[google groups](README.md#http://groups.google.com/groups?q=EnumServicesStatusEx).
 
 #### Return Value
 Returns a sequence of dicts, whose contents depend on information level requested. 
 
 Currently, only information level supported is SC_ENUM_PROCESS_INFO (returns ENUM_SERVICE_STATUS_PROCESS).
 
-## [win32service](#README.md#win32service).EnumWindowStations
+## [win32service](README.md#win32service).EnumWindowStations
 
-([PyUnicode](#README.md#PyUnicode),,...) = **EnumWindowStations(** )
+([PyUnicode](README.md#PyUnicode),,...) = **EnumWindowStations(** )
 Lists names of window stations
 
 #### Comments
 Only window stations for which you have WINSTA_ENUMERATE access will be returned
 
-## [win32service](#README.md#win32service).GetProcessWindowStation
+## [win32service](README.md#win32service).GetProcessWindowStation
 
-[PyHWINSTA](#README.md#PyHWINSTA)= **GetProcessWindowStation(** )
+[PyHWINSTA](README.md#PyHWINSTA)= **GetProcessWindowStation(** )
 Returns a handle to calling process's current window station
 
-## [win32service](#README.md#win32service).GetServiceDisplayName
+## [win32service](README.md#win32service).GetServiceDisplayName
 
-[PyUNICODE](#README.md#PyUNICODE)= **GetServiceDisplayName( *hSCManager*  *, ServiceName* ** )
+[PyUNICODE](README.md#PyUNICODE)= **GetServiceDisplayName( *hSCManager*  *, ServiceName* ** )
 Translates an internal service name into its display name
 
 #### Parameters
 
 
-     *hSCManager* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hSCManager* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Handle to service control manager as returned by[win32service::OpenSCManager](#win32service.md#win32serviceOpenSCManager)
+    Handle to service control manager as returned by[win32service::OpenSCManager](win32service.md#win32serviceOpenSCManager)
 
-     *ServiceName* :[PyUNICODE](#README.md#PyUNICODE)
+  -  *ServiceName* :[PyUNICODE](README.md#PyUNICODE)
 
     Name of service
 
-## [win32service](#README.md#win32service).GetServiceKeyName
+## [win32service](README.md#win32service).GetServiceKeyName
 
-[PyUNICODE](#README.md#PyUNICODE)= **GetServiceKeyName( *hSCManager*  *, DisplayName* ** )
+[PyUNICODE](README.md#PyUNICODE)= **GetServiceKeyName( *hSCManager*  *, DisplayName* ** )
 Translates a service display name into its registry key name
 
 #### Parameters
 
 
-     *hSCManager* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hSCManager* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Handle to service control manager as returned by[win32service::OpenSCManager](#win32service.md#win32serviceOpenSCManager)
+    Handle to service control manager as returned by[win32service::OpenSCManager](win32service.md#win32serviceOpenSCManager)
 
-     *DisplayName* :[PyUNICODE](#README.md#PyUNICODE)
+  -  *DisplayName* :[PyUNICODE](README.md#PyUNICODE)
 
     Display name of a service
 
-## [win32service](#README.md#win32service).GetThreadDesktop
+## [win32service](README.md#win32service).GetThreadDesktop
 
-[PyHDESK](#README.md#PyHDESK)= **GetThreadDesktop( *ThreadId* ** )
+[PyHDESK](README.md#PyHDESK)= **GetThreadDesktop( *ThreadId* ** )
 Retrieves a handle to the desktop for a thread
 
 #### Parameters
 
 
-     *ThreadId* : int
+  -  *ThreadId* : int
 
     Id of thread
 
-## [win32service](#README.md#win32service).GetUserObjectInformation
+## [win32service](README.md#win32service).GetUserObjectInformation
 
  **GetUserObjectInformation( *Handle*  *, type* ** )
 Returns specified type of info about a window station or desktop
@@ -415,18 +558,18 @@ Returns specified type of info about a window station or desktop
 #### Parameters
 
 
-     *Handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *Handle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to window station or desktop
 
-     *type* : int
+  -  *type* : int
 
     Type of info to return, one of UOI_FLAGS,UOI_NAME, UOI_TYPE, or UOI_USER_SID
 
 #### Return Value
 Return type is dependent on UOI_* constant passed in
 
-## [win32service](#README.md#win32service).LockServiceDatabase
+## [win32service](README.md#win32service).LockServiceDatabase
 
 int = **LockServiceDatabase( *sc_handle* ** )
 Locks the service database.
@@ -434,115 +577,115 @@ Locks the service database.
 #### Parameters
 
 
-     *sc_handle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *sc_handle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     A handle to the SCM.
 
-## [win32service](#README.md#win32service).OpenDesktop
+## [win32service](README.md#win32service).OpenDesktop
 
-[PyHDESK](#README.md#PyHDESK)= **OpenDesktop( *szDesktop*  *, Flags*  *, Inherit*  *, DesiredAccess* ** )
+[PyHDESK](README.md#PyHDESK)= **OpenDesktop( *szDesktop*  *, Flags*  *, Inherit*  *, DesiredAccess* ** )
 Opens a handle to a desktop
 
 #### Parameters
 
 
-     *szDesktop* : str/unicode
+  -  *szDesktop* : str/unicode
 
     Name of desktop to open
 
-     *Flags* : int
+  -  *Flags* : int
 
     DF_ALLOWOTHERACCOUNTHOOK or 0
 
-     *Inherit* : bool
+  -  *Inherit* : bool
 
     Allow handle to be inherited
 
-     *DesiredAccess* : int
+  -  *DesiredAccess* : int
 
     ACCESS_MASK specifying level of access for handle
 
-## [win32service](#README.md#win32service).OpenInputDesktop
+## [win32service](README.md#win32service).OpenInputDesktop
 
-[PyHDESK](#README.md#PyHDESK)= **OpenInputDesktop( *Flags*  *, Inherit*  *, DesiredAccess* ** )
+[PyHDESK](README.md#PyHDESK)= **OpenInputDesktop( *Flags*  *, Inherit*  *, DesiredAccess* ** )
 Returns a handle to desktop for logged-in user
 
 #### Parameters
 
 
-     *Flags* : int
+  -  *Flags* : int
 
     DF_ALLOWOTHERACCOUNTHOOK or 0
 
-     *Inherit* : bool
+  -  *Inherit* : bool
 
     Specifies if handle will be inheritable
 
-     *DesiredAccess* : int
+  -  *DesiredAccess* : int
 
     ACCESS_MASK specifying access available to returned handle
 
-## [win32service](#README.md#win32service).OpenSCManager
+## [win32service](README.md#win32service).OpenSCManager
 
-[PySC_HANDLE](#PySC.md#PySCHANDLE)= **OpenSCManager( *machineName*  *, dbName*  *, desiredAccess* ** )
+[PySC_HANDLE](PySC.md#PySCHANDLE)= **OpenSCManager( *machineName*  *, dbName*  *, desiredAccess* ** )
 Returns a handle to the service control manager
 
 #### Parameters
 
 
-     *machineName* :[PyUnicode](#README.md#PyUnicode)
+  -  *machineName* :[PyUnicode](README.md#PyUnicode)
 
     The name of the computer, or None
 
-     *dbName* :[PyUnicode](#README.md#PyUnicode)
+  -  *dbName* :[PyUnicode](README.md#PyUnicode)
 
     The name of the service database, or None
 
-     *desiredAccess* : int
+  -  *desiredAccess* : int
 
     The access desired. (combination of win32service.SC_MANAGER_* flags)
 
-## [win32service](#README.md#win32service).OpenService
+## [win32service](README.md#win32service).OpenService
 
-[PySC_HANDLE](#PySC.md#PySCHANDLE)= **OpenService( *scHandle*  *, name*  *, desiredAccess* ** )
+[PySC_HANDLE](PySC.md#PySCHANDLE)= **OpenService( *scHandle*  *, name*  *, desiredAccess* ** )
 Returns a handle to the specified service.
 
 #### Parameters
 
 
-     *scHandle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *scHandle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to the Service Control Mananger
 
-     *name* :[PyUnicode](#README.md#PyUnicode)
+  -  *name* :[PyUnicode](README.md#PyUnicode)
 
     The name of the service to open.
 
-     *desiredAccess* : int
+  -  *desiredAccess* : int
 
     The access desired.
 
-## [win32service](#README.md#win32service).OpenWindowStation
+## [win32service](README.md#win32service).OpenWindowStation
 
-[PyHWINSTA](#README.md#PyHWINSTA)= **OpenWindowStation( *szWinSta*  *, Inherit*  *, DesiredAccess* ** )
+[PyHWINSTA](README.md#PyHWINSTA)= **OpenWindowStation( *szWinSta*  *, Inherit*  *, DesiredAccess* ** )
 Returns a handle to the specified window station
 
 #### Parameters
 
 
-     *szWinSta* : str/PyUNICODE
+  -  *szWinSta* : str/PyUNICODE
 
     Name of window station
 
-     *Inherit* : Bool
+  -  *Inherit* : Bool
 
     Allow handle to be inherited by subprocesses
 
-     *DesiredAccess* : int
+  -  *DesiredAccess* : int
 
     Bitmask of access types
 
-## [win32service](#README.md#win32service).QueryServiceConfig
+## [win32service](README.md#win32service).QueryServiceConfig
 
 tuple = **QueryServiceConfig( *hService* ** )
 Retrieves configuration parameters for a service
@@ -550,9 +693,9 @@ Retrieves configuration parameters for a service
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Service handle as returned by[win32service::OpenService](#win32service.md#win32serviceOpenService)
+    Service handle as returned by[win32service::OpenService](win32service.md#win32serviceOpenService)
 
 #### Return Value
 Returns a tuple representing a QUERY_SERVICE_CONFIG struct:
@@ -560,43 +703,43 @@ Returns a tuple representing a QUERY_SERVICE_CONFIG struct:
 #### Items
 
 
-    [0] *int* : ServiceType
+  - [0] *int* : ServiceType
 
     Combination of SERVICE_*_DRIVER or SERVICE_*_PROCESS constants
 
-    [1] *int* : StartType
+  - [1] *int* : StartType
 
     One of SERVICE_*_START constants
 
-    [2] *int* : ErrorControl
+  - [2] *int* : ErrorControl
 
     One of SERVICE_ERROR_* constants
 
-    [3] *[PyUnicode](#README.md#PyUnicode)* : BinaryPathName
+  - [3] *[PyUnicode](README.md#PyUnicode)* : BinaryPathName
 
     Service's binary executable, can also contain command line args
 
-    [4] *[PyUnicode](#README.md#PyUnicode)* : LoadOrderGroup
+  - [4] *[PyUnicode](README.md#PyUnicode)* : LoadOrderGroup
 
     Loading group that service is a member of
 
-    [5] *int* : TagId
+  - [5] *int* : TagId
 
     Order of service within its load order group
 
-    [6] *[[PyUnicode](#README.md#PyUnicode),...]* : Dependencies
+  - [6] *[[PyUnicode](README.md#PyUnicode),...]* : Dependencies
 
     Sequence of names of services on which this service depends
 
-    [7] *[PyUnicode](#README.md#PyUnicode)* : ServiceStartName
+  - [7] *[PyUnicode](README.md#PyUnicode)* : ServiceStartName
 
     Account name under which service will run
 
-    [8] *[PyUnicode](#README.md#PyUnicode)* : DisplayName
+  - [8] *[PyUnicode](README.md#PyUnicode)* : DisplayName
 
     Name of service
 
-## [win32service](#README.md#win32service).QueryServiceConfig2
+## [win32service](README.md#win32service).QueryServiceConfig2
 
 object = **QueryServiceConfig2( *hService*  *, InfoLevel* ** )
 Retrieves advanced service configuration options
@@ -604,11 +747,11 @@ Retrieves advanced service configuration options
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
-    Service handle as returned by[win32service::OpenService](#win32service.md#win32serviceOpenService)
+    Service handle as returned by[win32service::OpenService](win32service.md#win32serviceOpenService)
 
-     *InfoLevel* : int
+  -  *InfoLevel* : int
 
     One of win32service.SERVICE_CONFIG_* values
 
@@ -616,58 +759,58 @@ Retrieves advanced service configuration options
 #### Return Value
 Type of returned object depends on InfoLevel
 
-## [win32service](#README.md#win32service).QueryServiceLockStatus
+## [win32service](README.md#win32service).QueryServiceLockStatus
 
-(int,[PyUnicode](#README.md#PyUnicode), int) = **QueryServiceLockStatus( *hSCManager* ** )
+(int,[PyUnicode](README.md#PyUnicode), int) = **QueryServiceLockStatus( *hSCManager* ** )
 Retrieves the lock status of the specified service control manager database.
 
 #### Parameters
 
 
-     *hSCManager* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hSCManager* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to the SCM.
 
 #### Return Value
 The result is a tuple of (bIsLocked, userName, lockDuration)
 
-## [win32service](#README.md#win32service).QueryServiceObjectSecurity
+## [win32service](README.md#win32service).QueryServiceObjectSecurity
 
-[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)= **QueryServiceObjectSecurity( *Handle*  *, SecurityInformation* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)= **QueryServiceObjectSecurity( *Handle*  *, SecurityInformation* ** )
 Retrieves information from the security descriptor for a service
 
 #### Parameters
 
 
-     *Handle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *Handle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Service handle
 
-     *SecurityInformation* : int
+  -  *SecurityInformation* : int
 
     Type of infomation to retrieve, combination of values from SECURITY_INFORMATION enum
 
-## [win32service](#README.md#win32service).QueryServiceStatus
+## [win32service](README.md#win32service).QueryServiceStatus
 
-[SERVICE_STATUS](#SERVICE.md#SERVICESTATUS)= **QueryServiceStatus( *hService* ** )
+[SERVICE_STATUS](SERVICE.md#SERVICESTATUS)= **QueryServiceStatus( *hService* ** )
 Queries a service status
 
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to service to be queried
 
-## [win32service](#README.md#win32service).QueryServiceStatusEx
+## [win32service](README.md#win32service).QueryServiceStatusEx
 
-[SERVICE_STATUS](#SERVICE.md#SERVICESTATUS)= **QueryServiceStatusEx( *hService* ** )
+[SERVICE_STATUS](SERVICE.md#SERVICESTATUS)= **QueryServiceStatusEx( *hService* ** )
 Queries a service status
 
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to service to be queried
 
@@ -1015,7 +1158,7 @@ A service type flag that indicates a Win32 service that runs in its own process.
  **const win32service.SERVICE_WIN32_SHARE_PROCESS;** 
 A service type flag that indicates a Win32 service that shares a process with other services.
 
-## [win32service](#README.md#win32service).SetServiceObjectSecurity
+## [win32service](README.md#win32service).SetServiceObjectSecurity
 
  **SetServiceObjectSecurity( *Handle*  *, SecurityInformation*  *, SecurityDescriptor* ** )
 Set the security descriptor for a service
@@ -1023,19 +1166,19 @@ Set the security descriptor for a service
 #### Parameters
 
 
-     *Handle* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *Handle* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Service handle
 
-     *SecurityInformation* : int
+  -  *SecurityInformation* : int
 
     Type of infomation to set, combination of values from SECURITY_INFORMATION enum
 
-     *SecurityDescriptor* :[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)
+  -  *SecurityDescriptor* :[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)
 
     PySECURITY_DESCRIPTOR containing infomation to set
 
-## [win32service](#README.md#win32service).SetServiceStatus
+## [win32service](README.md#win32service).SetServiceStatus
 
  **SetServiceStatus( *scHandle*  *, serviceStatus* ** )
 Sets a service status
@@ -1043,15 +1186,15 @@ Sets a service status
 #### Parameters
 
 
-     *scHandle* : int
+  -  *scHandle* : int
 
     Handle to set
 
-     *serviceStatus* :[SERVICE_STATUS](#SERVICE.md#SERVICESTATUS)
+  -  *serviceStatus* :[SERVICE_STATUS](SERVICE.md#SERVICESTATUS)
 
     The new status
 
-## [win32service](#README.md#win32service).SetUserObjectInformation
+## [win32service](README.md#win32service).SetUserObjectInformation
 
  **SetUserObjectInformation( *Handle*  *, info*  *, type* ** )
 Set specified type of info for a window station or desktop object
@@ -1059,22 +1202,22 @@ Set specified type of info for a window station or desktop object
 #### Parameters
 
 
-     *Handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *Handle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to window station or desktop
 
-     *info* : object
+  -  *info* : object
 
     Information to set for handle, currently only a dictionary representing USEROBJECTFLAGS struct
 
-     *type=UOI_FLAGS* : int
+  -  *type=UOI_FLAGS* : int
 
     Type of info to set, currently only accepts UOI_FLAGS
 
 #### Comments
 Currently only UOI_FLAGS supported
 
-## [win32service](#README.md#win32service).StartService
+## [win32service](README.md#win32service).StartService
 
  **StartService( *hService*  *, args* ** )
 Starts the specified service
@@ -1082,11 +1225,11 @@ Starts the specified service
 #### Parameters
 
 
-     *hService* :[PySC_HANDLE](#PySC.md#PySCHANDLE)
+  -  *hService* :[PySC_HANDLE](PySC.md#PySCHANDLE)
 
     Handle to the service to be started
 
-     *args* : [string, ...]
+  -  *args* : [string, ...]
 
     Arguments to the service.
 
@@ -1106,7 +1249,7 @@ Starts the specified service
  **const win32service.UOI_USER_SID;** 
 
 
-## [win32service](#README.md#win32service).UnlockServiceDatabase
+## [win32service](README.md#win32service).UnlockServiceDatabase
 
 int = **UnlockServiceDatabase( *lock* ** )
 Unlocks the service database.
@@ -1114,9 +1257,9 @@ Unlocks the service database.
 #### Parameters
 
 
-     *lock* : int
+  -  *lock* : int
 
-    A lock provided by[win32service::LockServiceDatabase](#win32service.md#win32serviceLockServiceDatabase)
+    A lock provided by[win32service::LockServiceDatabase](win32service.md#win32serviceLockServiceDatabase)
 
 ## WSF_VISIBLE
  **const win32service.WSF_VISIBLE;** 

@@ -3,7 +3,7 @@
 Following is documentation for the PyIShellLink object.
 
 #### Example
-To create a[PyIShellLink](#README.md#PyIShellLink)object
+To create a[PyIShellLink](README.md#PyIShellLink)object
 from win32com.shell import shell
 
 import pythoncom

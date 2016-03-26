@@ -1,5 +1,60 @@
 
-## [win32ras](#README.md#win32ras).CreatePhonebookEntry
+## Module win32ras
+
+A module encapsulating the Windows Remote Access Service (RAS) API.
+
+#### Methods
+
+
+  - [CreatePhonebookEntry](win32ras.md#win32rasCreatePhonebookEntry)
+
+    Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry.&nbsp;
+
+  - [Dial](win32ras.md#win32rasDial)
+
+    Establishes a RAS connection to a RAS server.&nbsp;
+
+  - [EditPhonebookEntry](win32ras.md#win32rasEditPhonebookEntry)
+
+    Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry&nbsp;
+
+  - [EnumConnections](win32ras.md#win32rasEnumConnections)
+
+    Returns a list of tuples, one for each active connection.&nbsp;
+
+  - [EnumEntries](win32ras.md#win32rasEnumEntries)
+
+    Returns a list of tuples, one for each phonebook entry.&nbsp;
+
+  - [GetConnectStatus](win32ras.md#win32rasGetConnectStatus)
+
+    Returns a tuple with connection information.&nbsp;
+
+  - [GetEntryDialParams](win32ras.md#win32rasGetEntryDialParams)
+
+    Returns a tuple with the most recently set dial parameters for the specified entry.&nbsp;
+
+  - [GetErrorString](win32ras.md#win32rasGetErrorString)
+
+    Returns an error string for a RAS error code.&nbsp;
+
+  - [HangUp](win32ras.md#win32rasHangUp)
+
+    Terminates a remote access session.&nbsp;
+
+  - [IsHandleValid](win32ras.md#win32rasIsHandleValid)
+
+    Indicates if the given RAS handle is valid.&nbsp;
+
+  - [SetEntryDialParams](win32ras.md#win32rasSetEntryDialParams)
+
+    Sets the dial parameters for the specified entry.&nbsp;
+
+  - [RASDIALEXTENSIONS](win32ras.md#win32rasRASDIALEXTENSIONS)
+
+    Creates a new[RASDIALEXTENSIONS](README.md#RASDIALEXTENSIONS)object&nbsp;
+
+## [win32ras](README.md#win32ras).CreatePhonebookEntry
 
  **CreatePhonebookEntry( *hWnd*  *, fileName* ** )
 Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry
@@ -7,20 +62,20 @@ Creates a new phonebook entry.  The function displays a dialog box into which th
 #### Parameters
 
 
-     *hWnd* : int
+  -  *hWnd* : int
 
     Handle to the parent window of the dialog box.
 
-     *fileName=None* : string
+  -  *fileName=None* : string
 
     Specifies the filename of the phonebook entry.  Currently this is ignored.
 
 #### Win32 API References
 
 
-    Search for *RasCreatePhonebookEntry* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasCreatePhonebookEntry),[google](#README.md#http://www.google.com/search?q=RasCreatePhonebookEntry)or[google groups](#README.md#http://groups.google.com/groups?q=RasCreatePhonebookEntry).
+  - Search for *RasCreatePhonebookEntry* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasCreatePhonebookEntry),[google](README.md#http://www.google.com/search?q=RasCreatePhonebookEntry)or[google groups](README.md#http://groups.google.com/groups?q=RasCreatePhonebookEntry).
 
-## [win32ras](#README.md#win32ras).Dial
+## [win32ras](README.md#win32ras).Dial
 
 int, int = **Dial( *dialExtensions*  *, fileName*  *, RasDialParams*  *, callback* ** )
 Establishes a RAS connection to a RAS server.
@@ -28,24 +83,24 @@ Establishes a RAS connection to a RAS server.
 #### Parameters
 
 
-     *dialExtensions* : **PyRASDIALEXTENSIONS** 
+  -  *dialExtensions* : **PyRASDIALEXTENSIONS** 
 
     An object providing the RASDIALEXTENSIONS information, or None
 
-     *fileName* : string
+  -  *fileName* : string
 
     Specifies the filename of the phonebook entry, or None.  Ignored on Win95.
 
-     *RasDialParams* :[RASDIALPARAMS](#README.md#RASDIALPARAMS)
+  -  *RasDialParams* :[RASDIALPARAMS](README.md#RASDIALPARAMS)
 
     A tuple describing a RASDIALPARAMS structure.
 
-     *callback* : method or hwnd
+  -  *callback* : method or hwnd
 
-    The method to be called when RAS events occur, or None.  If not None, the function must have the signature of[win32ras::RasDialFunc1](#win32ras.md#win32rasRasDialFunc1)
+    The method to be called when RAS events occur, or None.  If not None, the function must have the signature of[win32ras::RasDialFunc1](win32ras.md#win32rasRasDialFunc1)
 
 #### Comments
-Note - this handle must be closed using[win32ras::HangUp](#win32ras.md#win32rasHangUp), or 
+Note - this handle must be closed using[win32ras::HangUp](win32ras.md#win32rasHangUp), or 
 
 else the RAS port will remain open, even after the program has terminated. 
 
@@ -54,14 +109,14 @@ Your operating system may need rebooting to clean up otherwise!
 #### Win32 API References
 
 
-    Search for *RasDial* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasDial),[google](#README.md#http://www.google.com/search?q=RasDial)or[google groups](#README.md#http://groups.google.com/groups?q=RasDial).
+  - Search for *RasDial* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasDial),[google](README.md#http://www.google.com/search?q=RasDial)or[google groups](README.md#http://groups.google.com/groups?q=RasDial).
 
 #### Return Value
 The return value is (handle, retCode).
 It is possible for a valid handle to be returned even on failure.
 If the returned handle is = 0, then it can be assumed invalid.
 
-## [win32ras](#README.md#win32ras).EditPhonebookEntry
+## [win32ras](README.md#win32ras).EditPhonebookEntry
 
  **EditPhonebookEntry( *hWnd*  *, fileName*  *, entryName* ** )
 Creates a new phonebook entry.  The function displays a dialog box into which the user can enter information about the entry
@@ -69,24 +124,24 @@ Creates a new phonebook entry.  The function displays a dialog box into which th
 #### Parameters
 
 
-     *hWnd* : int
+  -  *hWnd* : int
 
     Handle to the parent window of the dialog box.
 
-     *fileName* : string
+  -  *fileName* : string
 
     Specifies the filename of the phonebook entry, or None.  Currently this is ignored.
 
-     *entryName=None* : string
+  -  *entryName=None* : string
 
     Specifies the name of the phonebook entry to edit
 
 #### Win32 API References
 
 
-    Search for *RasEditPhonebookEntry* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasEditPhonebookEntry),[google](#README.md#http://www.google.com/search?q=RasEditPhonebookEntry)or[google groups](#README.md#http://groups.google.com/groups?q=RasEditPhonebookEntry).
+  - Search for *RasEditPhonebookEntry* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasEditPhonebookEntry),[google](README.md#http://www.google.com/search?q=RasEditPhonebookEntry)or[google groups](README.md#http://groups.google.com/groups?q=RasEditPhonebookEntry).
 
-## [win32ras](#README.md#win32ras).EnumConnections
+## [win32ras](README.md#win32ras).EnumConnections
 
 list = **EnumConnections(** )
 Returns a list of tuples, one for each active connection.
@@ -94,12 +149,12 @@ Returns a list of tuples, one for each active connection.
 #### Win32 API References
 
 
-    Search for *RasEnumConnections* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasEnumConnections),[google](#README.md#http://www.google.com/search?q=RasEnumConnections)or[google groups](#README.md#http://groups.google.com/groups?q=RasEnumConnections).
+  - Search for *RasEnumConnections* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasEnumConnections),[google](README.md#http://www.google.com/search?q=RasEnumConnections)or[google groups](README.md#http://groups.google.com/groups?q=RasEnumConnections).
 
 #### Return Value
 Each tuple is of format (handle, entryName, deviceType, deviceName)
 
-## [win32ras](#README.md#win32ras).EnumEntries
+## [win32ras](README.md#win32ras).EnumEntries
 
  **EnumEntries( *reserved*  *, fileName* ** )
 Returns a list of tuples, one for each phonebook entry.
@@ -107,15 +162,15 @@ Returns a list of tuples, one for each phonebook entry.
 #### Parameters
 
 
-     *reserved=None* : string
+  -  *reserved=None* : string
 
     Reserved - must be None
 
-     *fileName=None* : string
+  -  *fileName=None* : string
 
     The name of the phonebook file, or None.
 
-## [win32ras](#README.md#win32ras).GetConnectStatus
+## [win32ras](README.md#win32ras).GetConnectStatus
 
 (int, int, string, string) = **GetConnectStatus( *hrasconn* ** )
 Returns a tuple with connection information.
@@ -123,18 +178,18 @@ Returns a tuple with connection information.
 #### Parameters
 
 
-     *hrasconn* : int
+  -  *hrasconn* : int
 
     Handle to the RAS session.
 
 #### Win32 API References
 
 
-    Search for *RasGetConnectStatus* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](#README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](#README.md#http://groups.google.com/groups?q=RasGetConnectStatus).
+  - Search for *RasGetConnectStatus* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](README.md#http://groups.google.com/groups?q=RasGetConnectStatus).
 
-    Search for *RasGetConnectStatus* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](#README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](#README.md#http://groups.google.com/groups?q=RasGetConnectStatus).
+  - Search for *RasGetConnectStatus* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](README.md#http://groups.google.com/groups?q=RasGetConnectStatus).
 
-## [win32ras](#README.md#win32ras).GetEntryDialParams
+## [win32ras](README.md#win32ras).GetEntryDialParams
 
 (s,s,s,s,s,s),i = **GetEntryDialParams( *fileName*  *, entryName* ** )
 Returns a tuple with the most recently set dial parameters for the specified entry.
@@ -142,27 +197,27 @@ Returns a tuple with the most recently set dial parameters for the specified ent
 #### Parameters
 
 
-     *fileName* : string
+  -  *fileName* : string
 
     The filename of the phonebook, or None.
 
-     *entryName* : string
+  -  *entryName* : string
 
     The name of the entry to retrieve the params for.
 
 #### Win32 API References
 
 
-    Search for *RasGetEntryDialParams* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetEntryDialParams),[google](#README.md#http://www.google.com/search?q=RasGetEntryDialParams)or[google groups](#README.md#http://groups.google.com/groups?q=RasGetEntryDialParams).
+  - Search for *RasGetEntryDialParams* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetEntryDialParams),[google](README.md#http://www.google.com/search?q=RasGetEntryDialParams)or[google groups](README.md#http://groups.google.com/groups?q=RasGetEntryDialParams).
 
-    Search for *RasGetConnectStatus* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](#README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](#README.md#http://groups.google.com/groups?q=RasGetConnectStatus).
+  - Search for *RasGetConnectStatus* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](README.md#http://groups.google.com/groups?q=RasGetConnectStatus).
 
 #### Return Value
 The return value is a tuple describing the params retrieved, plus a BOOL integer 
 
 indicating if the password was also retrieved.
 
-## [win32ras](#README.md#win32ras).GetErrorString
+## [win32ras](README.md#win32ras).GetErrorString
 
 string = **GetErrorString( *error* ** )
 Returns an error string for a RAS error code.
@@ -170,16 +225,16 @@ Returns an error string for a RAS error code.
 #### Parameters
 
 
-     *error* : int
+  -  *error* : int
 
     The error value being queried.
 
 #### Win32 API References
 
 
-    Search for *RasGetErrorString* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetErrorString),[google](#README.md#http://www.google.com/search?q=RasGetErrorString)or[google groups](#README.md#http://groups.google.com/groups?q=RasGetErrorString).
+  - Search for *RasGetErrorString* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetErrorString),[google](README.md#http://www.google.com/search?q=RasGetErrorString)or[google groups](README.md#http://groups.google.com/groups?q=RasGetErrorString).
 
-## [win32ras](#README.md#win32ras).HangUp
+## [win32ras](README.md#win32ras).HangUp
 
  **HangUp( *hras* ** )
 Terminates a remote access session.
@@ -187,16 +242,16 @@ Terminates a remote access session.
 #### Parameters
 
 
-     *hras* : int
+  -  *hras* : int
 
     The handle to the RAS connection to be terminated.
 
 #### Win32 API References
 
 
-    Search for *RasHangUp* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasHangUp),[google](#README.md#http://www.google.com/search?q=RasHangUp)or[google groups](#README.md#http://groups.google.com/groups?q=RasHangUp).
+  - Search for *RasHangUp* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasHangUp),[google](README.md#http://www.google.com/search?q=RasHangUp)or[google groups](README.md#http://groups.google.com/groups?q=RasHangUp).
 
-## [win32ras](#README.md#win32ras).IsHandleValid
+## [win32ras](README.md#win32ras).IsHandleValid
 
  **IsHandleValid( *hras* ** )
 Indicates if the given RAS handle is valid.
@@ -204,7 +259,7 @@ Indicates if the given RAS handle is valid.
 #### Parameters
 
 
-     *hras* : int
+  -  *hras* : int
 
     The handle to the RAS connection being checked.
 
@@ -335,27 +390,27 @@ to these functions.
 #### Parameters
 
 
-     *hrascon* : int
+  -  *hrascon* : int
 
     The handle to the RAS session.
 
-     *msg* : int
+  -  *msg* : int
 
     A message code identifying the reason for the callback.
 
-     *rascs* : int
+  -  *rascs* : int
 
     Connection state about to be entered.
 
-     *error* : int
+  -  *error* : int
 
     The error state of the connection
 
-     *extendedError* : int
+  -  *extendedError* : int
 
     
 
-## [win32ras](#README.md#win32ras).SetEntryDialParams
+## [win32ras](README.md#win32ras).SetEntryDialParams
 
  **SetEntryDialParams( *fileName*  *, RasDialParams*  *, bSavePassword* ** )
 Sets the dial parameters for the specified entry.
@@ -363,21 +418,21 @@ Sets the dial parameters for the specified entry.
 #### Parameters
 
 
-     *fileName* : string
+  -  *fileName* : string
 
     The filename of the phonebook, or None.
 
-     *RasDialParams* : (tuple)
+  -  *RasDialParams* : (tuple)
 
     A tuple describing a RASDIALPARAMS structure.
 
-     *bSavePassword* : int
+  -  *bSavePassword* : int
 
     Indicates whether to remove password from entry's parameters.
 
 #### Win32 API References
 
 
-    Search for *RasSetEntryDialParams* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasSetEntryDialParams),[google](#README.md#http://www.google.com/search?q=RasSetEntryDialParams)or[google groups](#README.md#http://groups.google.com/groups?q=RasSetEntryDialParams).
+  - Search for *RasSetEntryDialParams* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasSetEntryDialParams),[google](README.md#http://www.google.com/search?q=RasSetEntryDialParams)or[google groups](README.md#http://groups.google.com/groups?q=RasSetEntryDialParams).
 
-    Search for *RasGetConnectStatus* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](#README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](#README.md#http://groups.google.com/groups?q=RasGetConnectStatus).
+  - Search for *RasGetConnectStatus* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RasGetConnectStatus),[google](README.md#http://www.google.com/search?q=RasGetConnectStatus)or[google groups](README.md#http://groups.google.com/groups?q=RasGetConnectStatus).

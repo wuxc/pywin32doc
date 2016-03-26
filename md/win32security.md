@@ -1,4 +1,351 @@
 
+## Module win32security
+
+An interface to the win32 security API's
+
+#### Methods
+
+
+  - [DsGetSpn](win32security.md#win32securityDsGetSpn)
+
+    Compose one or more service principal names to be registered using[win32security::DsWriteAccountSpn](win32security.md#win32securityDsWriteAccountSpn)&nbsp;
+
+  - [DsWriteAccountSpn](win32security.md#win32securityDsWriteAccountSpn)
+
+    Associates a set of service principal names with an account&nbsp;
+
+  - [DsBind](win32security.md#win32securityDsBind)
+
+    Creates a connection to a directory service&nbsp;
+
+  - [DsUnBind](win32security.md#win32securityDsUnBind)
+
+    Closes a directory services handle created by[win32security::DsBind](win32security.md#win32securityDsBind)&nbsp;
+
+  - [DsGetDcName](win32security.md#win32securityDsGetDcName)
+
+    Returns the name of a domain controller (DC) in a specified domain. 
+
+You can supply DC selection criteria to this function to indicate preference for a DC with particular characteristics.&nbsp;
+
+  - [DsCrackNames](win32security.md#win32securityDsCrackNames)
+
+    Converts an array of directory service object names from one format to another.&nbsp;
+
+  - [DsListInfoForServer](win32security.md#win32securityDsListInfoForServer)
+
+    Lists miscellaneous information for a server.&nbsp;
+
+  - [DsListServersInSite](win32security.md#win32securityDsListServersInSite)
+
+    &nbsp;
+
+  - [DsListServersInSite](win32security.md#win32securityDsListServersInSite)
+
+    &nbsp;
+
+  - [DsListServersInSite](win32security.md#win32securityDsListServersInSite)
+
+    &nbsp;
+
+  - [DsListRoles](win32security.md#win32securityDsListRoles)
+
+    &nbsp;
+
+  - [DsListDomainsInSite](win32security.md#win32securityDsListDomainsInSite)
+
+    &nbsp;
+
+  - [ACL](win32security.md#win32securityACL)
+
+    Creates a new[PyACL](README.md#PyACL)object.&nbsp;
+
+  - [SID](win32security.md#win32securitySID)
+
+    Creates a new[PySID](README.md#PySID)object.&nbsp;
+
+  - [SECURITY_ATTRIBUTES](win32security.md#win32securitySECURITY_ATTRIBUTES)
+
+    Creates a new[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)object.&nbsp;
+
+  - [SECURITY_DESCRIPTOR](win32security.md#win32securitySECURITY_DESCRIPTOR)
+
+    Creates a new[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)object.&nbsp;
+
+  - [ImpersonateNamedPipeClient](win32security.md#win32securityImpersonateNamedPipeClient)
+
+    Impersonates a named-pipe client application.&nbsp;
+
+  - [ImpersonateLoggedOnUser](win32security.md#win32securityImpersonateLoggedOnUser)
+
+    Impersonates a logged on user.&nbsp;
+
+  - [ImpersonateAnonymousToken](win32security.md#win32securityImpersonateAnonymousToken)
+
+    Cause a thread to act in the security context of an anonymous token&nbsp;
+
+  - [IsTokenRestricted](win32security.md#win32securityIsTokenRestricted)
+
+    Checks if a token contains restricted sids&nbsp;
+
+  - [RevertToSelf](win32security.md#win32securityRevertToSelf)
+
+    Terminates the impersonation of a client application.&nbsp;
+
+  - [LogonUser](win32security.md#win32securityLogonUser)
+
+    Attempts to log a user on to the local computer, that is, to the computer from which LogonUser was called. You cannot use LogonUser to log on to a remote computer.&nbsp;
+
+  - [LogonUserEx](win32security.md#win32securityLogonUserEx)
+
+    Log a user onto the local machine,&nbsp;
+
+  - [LookupAccountName](win32security.md#win32securityLookupAccountName)
+
+    Accepts the name of a system and an account as input. It retrieves a security identifier (SID) for the account and the name of the domain on which the account was found.&nbsp;
+
+  - [LookupAccountSid](win32security.md#win32securityLookupAccountSid)
+
+    Accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.&nbsp;
+
+  - [GetBinarySid](win32security.md#win32securityGetBinarySid)
+
+    Accepts a SID string (eg: S-1-5-32-544) and returns the SID as a PySID object.&nbsp;
+
+  - [SetSecurityInfo](win32security.md#win32securitySetSecurityInfo)
+
+    Sets security info for an object by handle&nbsp;
+
+  - [GetSecurityInfo](win32security.md#win32securityGetSecurityInfo)
+
+    Retrieve security info for an object by handle&nbsp;
+
+  - [SetNamedSecurityInfo](win32security.md#win32securitySetNamedSecurityInfo)
+
+    Sets security info for an object by name&nbsp;
+
+  - [GetNamedSecurityInfo](win32security.md#win32securityGetNamedSecurityInfo)
+
+    Retrieve security info for an object by name&nbsp;
+
+  - [OpenProcessToken](win32security.md#win32securityOpenProcessToken)
+
+    Opens the access token associated with a process.&nbsp;
+
+  - [LookupPrivilegeValue](win32security.md#win32securityLookupPrivilegeValue)
+
+    Retrieves the locally unique id for a privilege name&nbsp;
+
+  - [LookupPrivilegeName](win32security.md#win32securityLookupPrivilegeName)
+
+    return the text name for a privilege LUID&nbsp;
+
+  - [LookupPrivilegeDisplayName](win32security.md#win32securityLookupPrivilegeDisplayName)
+
+    Returns long description for a privilege name&nbsp;
+
+  - [AdjustTokenPrivileges](win32security.md#win32securityAdjustTokenPrivileges)
+
+    Enables or disables privileges for an access token.&nbsp;
+
+  - [AdjustTokenGroups](win32security.md#win32securityAdjustTokenGroups)
+
+    Sets the groups associated to an access token.&nbsp;
+
+  - [GetTokenInformation](win32security.md#win32securityGetTokenInformation)
+
+    Retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.&nbsp;
+
+  - [OpenThreadToken](win32security.md#win32securityOpenThreadToken)
+
+    Opens the access token associated with a thread.&nbsp;
+
+  - [SetThreadToken](win32security.md#win32securitySetThreadToken)
+
+    Assigns an impersonation token to a thread. The function 
+
+can also cause a thread to stop using an impersonation token.&nbsp;
+
+  - [GetFileSecurity](win32security.md#win32securityGetFileSecurity)
+
+    Obtains specified information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+
+  - [SetFileSecurity](win32security.md#win32securitySetFileSecurity)
+
+    Sets information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+
+  - [GetUserObjectSecurity](win32security.md#win32securityGetUserObjectSecurity)
+
+    Obtains specified information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+
+  - [SetUserObjectSecurity](win32security.md#win32securitySetUserObjectSecurity)
+
+    Sets information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+
+  - [GetKernelObjectSecurity](win32security.md#win32securityGetKernelObjectSecurity)
+
+    Obtains specified information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+
+  - [SetKernelObjectSecurity](win32security.md#win32securitySetKernelObjectSecurity)
+
+    Sets information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.&nbsp;
+
+  - [SetTokenInformation](win32security.md#win32securitySetTokenInformation)
+
+    Set a specified type of information in an access token&nbsp;
+
+  - [LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
+
+    Opens a policy handle for the specified system&nbsp;
+
+  - [LsaClose](win32security.md#win32securityLsaClose)
+
+    Closes a policy handle created by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)&nbsp;
+
+  - [LsaQueryInformationPolicy](win32security.md#win32securityLsaQueryInformationPolicy)
+
+    Retrieves information from the policy handle&nbsp;
+
+  - [LsaSetInformationPolicy](win32security.md#win32securityLsaSetInformationPolicy)
+
+    Sets policy options&nbsp;
+
+  - [LsaAddAccountRights](win32security.md#win32securityLsaAddAccountRights)
+
+    Adds a list of privileges to an account&nbsp;
+
+  - [LsaRemoveAccountRights](win32security.md#win32securityLsaRemoveAccountRights)
+
+    Removes privs from an account&nbsp;
+
+  - [LsaEnumerateAccountRights](win32security.md#win32securityLsaEnumerateAccountRights)
+
+    Lists privileges held by SID&nbsp;
+
+  - [LsaEnumerateAccountsWithUserRight](win32security.md#win32securityLsaEnumerateAccountsWithUserRight)
+
+    Return SIDs that hold specified priv&nbsp;
+
+  - [ConvertSidToStringSid](win32security.md#win32securityConvertSidToStringSid)
+
+    Return string representation of a SID&nbsp;
+
+  - [ConvertStringSidToSid](win32security.md#win32securityConvertStringSidToSid)
+
+    Creates a SID from a string representation&nbsp;
+
+  - [ConvertSecurityDescriptorToStringSecurityDescriptor](win32security.md#win32securityConvertSecurityDescriptorToStringSecurityDescriptor)
+
+    Return string representation of a SECURITY_DESCRIPTOR&nbsp;
+
+  - [ConvertStringSecurityDescriptorToSecurityDescriptor](win32security.md#win32securityConvertStringSecurityDescriptorToSecurityDescriptor)
+
+    Turns string representation of a SECURITY_DESCRIPTOR into the real thing&nbsp;
+
+  - [LsaStorePrivateData](win32security.md#win32securityLsaStorePrivateData)
+
+    Stores encrypted unicode data under specified Lsa registry key. Returns None on success&nbsp;
+
+  - [LsaRetrievePrivateData](win32security.md#win32securityLsaRetrievePrivateData)
+
+    Retreives encrypted unicode data from Lsa registry key.&nbsp;
+
+  - [LsaRegisterPolicyChangeNotification](win32security.md#win32securityLsaRegisterPolicyChangeNotification)
+
+    Register an event handle to receive policy change events&nbsp;
+
+  - [LsaUnregisterPolicyChangeNotification](win32security.md#win32securityLsaUnregisterPolicyChangeNotification)
+
+    Stop receiving policy change notification&nbsp;
+
+  - [CryptEnumProviders](win32security.md#win32securityCryptEnumProviders)
+
+    List cryptography providers&nbsp;
+
+  - [EnumerateSecurityPackages](win32security.md#win32securityEnumerateSecurityPackages)
+
+    List available security packages as a sequence of dictionaries representing SecPkgInfo structures&nbsp;
+
+  - [AllocateLocallyUniqueId](win32security.md#win32securityAllocateLocallyUniqueId)
+
+    Creates a new LUID&nbsp;
+
+  - [ImpersonateSelf](win32security.md#win32securityImpersonateSelf)
+
+    Assigns an impersonation token for current security context to current process&nbsp;
+
+  - [DuplicateToken](win32security.md#win32securityDuplicateToken)
+
+    Creates a copy of an access token with specified impersonation level&nbsp;
+
+  - [DuplicateTokenEx](win32security.md#win32securityDuplicateTokenEx)
+
+    Extended version of DuplicateToken.&nbsp;
+
+  - [CheckTokenMembership](win32security.md#win32securityCheckTokenMembership)
+
+    Checks if a SID is enabled in a token&nbsp;
+
+  - [CreateRestrictedToken](win32security.md#win32securityCreateRestrictedToken)
+
+    Creates a restricted copy of an access token with reduced privs - requires win2K or higher&nbsp;
+
+  - [LsaRegisterLogonProcess](win32security.md#win32securityLsaRegisterLogonProcess)
+
+    Creates a trusted connection to LSA&nbsp;
+
+  - [LsaConnectUntrusted](win32security.md#win32securityLsaConnectUntrusted)
+
+    Creates untrusted connection to LSA&nbsp;
+
+  - [LsaDeregisterLogonProcess](win32security.md#win32securityLsaDeregisterLogonProcess)
+
+    Closes connection to LSA server&nbsp;
+
+  - [LsaLookupAuthenticationPackage](win32security.md#win32securityLsaLookupAuthenticationPackage)
+
+    Retrieves the unique id for an authentication package&nbsp;
+
+  - [LsaEnumerateLogonSessions](win32security.md#win32securityLsaEnumerateLogonSessions)
+
+    Lists all current logon ids&nbsp;
+
+  - [LsaGetLogonSessionData](win32security.md#win32securityLsaGetLogonSessionData)
+
+    Returns information about a logon session&nbsp;
+
+  - [AcquireCredentialsHandle](win32security.md#win32securityAcquireCredentialsHandle)
+
+    Creates a handle to credentials for use with SSPI&nbsp;
+
+  - [InitializeSecurityContext](win32security.md#win32securityInitializeSecurityContext)
+
+    Creates a security context based on credentials created by AcquireCredentialsHandle&nbsp;
+
+  - [AcceptSecurityContext](win32security.md#win32securityAcceptSecurityContext)
+
+    Builds security context between server and client&nbsp;
+
+  - [QuerySecurityPackageInfo](win32security.md#win32securityQuerySecurityPackageInfo)
+
+    Retrieves parameters for a security package&nbsp;
+
+  - [LsaCallAuthenticationPackage](win32security.md#win32securityLsaCallAuthenticationPackage)
+
+    Requests the services of an authentication package&nbsp;
+
+  - [TranslateName](win32security.md#win32securityTranslateName)
+
+    Converts a directory service object name from one format to another.&nbsp;
+
+  - [CreateWellKnownSid](win32security.md#win32securityCreateWellKnownSid)
+
+    Returns one of the predefined well known sids&nbsp;
+
+  - [MapGenericMask](win32security.md#win32securityMapGenericMask)
+
+    Translates generic access rights into specific rights&nbsp;
+
 ## ACCESS_ALLOWED_ACE_TYPE
  **const win32security.ACCESS_ALLOWED_ACE_TYPE;** 
 Access-allowed ACE that uses the ACCESS_ALLOWED_ACE structure.
@@ -15,15 +362,15 @@ Access-denied ACE that uses the ACCESS_DENIED_ACE structure.
  **const win32security.ACCESS_DENIED_OBJECT_ACE_TYPE;** 
 Windows 2000/XP: Object-specific access-denied ACE that uses the ACCESS_DENIED_OBJECT_ACE structure.
 
-## [win32security](#README.md#win32security).ACL
+## [win32security](README.md#win32security).ACL
 
 PyACL = **ACL( *bufSize* ** )
-Creates a new[PyACL](#README.md#PyACL)object.
+Creates a new[PyACL](README.md#PyACL)object.
 
 #### Parameters
 
 
-     *bufSize=64* : int
+  -  *bufSize=64* : int
 
     The size of the buffer for the ACL.
 
@@ -35,7 +382,7 @@ Creates a new[PyACL](#README.md#PyACL)object.
  **const win32security.ACL_REVISION_DS;** 
 
 
-## [win32security](#README.md#win32security).AcceptSecurityContext
+## [win32security](README.md#win32security).AcceptSecurityContext
 
 (int, long, int) = **AcceptSecurityContext( *Credential*  *, Context*  *, pInput*  *, ContextReq*  *, TargetDataRep*  *, NewContext*  *, pOutput* ** )
 Builds security context between server and client
@@ -43,85 +390,85 @@ Builds security context between server and client
 #### Parameters
 
 
-     *Credential* :[PyCredHandle](#README.md#PyCredHandle)
+  -  *Credential* :[PyCredHandle](README.md#PyCredHandle)
 
     Handle to server's credentials (see AcquireCredentialsHandle)
 
-     *Context* :[PyCtxtHandle](#README.md#PyCtxtHandle)
+  -  *Context* :[PyCtxtHandle](README.md#PyCtxtHandle)
 
     Use None on initial call, then handle returned in NewContext thereafter
 
-     *pInput* :[PySecBufferDesc](#README.md#PySecBufferDesc)
+  -  *pInput* :[PySecBufferDesc](README.md#PySecBufferDesc)
 
     Data buffer received from client
 
-     *ContextReq* : int
+  -  *ContextReq* : int
 
     Combination of ASC_REQ_* flags
 
-     *TargetDataRep* : int
+  -  *TargetDataRep* : int
 
     One of SECURITY_NATIVE_DREP,SECURITY_NETWORK_DREP
 
-     *NewContext* :[PyCtxtHandle](#README.md#PyCtxtHandle)
+  -  *NewContext* :[PyCtxtHandle](README.md#PyCtxtHandle)
 
     Uninitialized context handle to receive output
 
-     *pOutput* :[PySecBufferDesc](#README.md#PySecBufferDesc)
+  -  *pOutput* :[PySecBufferDesc](README.md#PySecBufferDesc)
 
     Buffer that receives output data, to be passed back as pInput on subsequent calls
 
 #### Return Value
 Returns a tuple of (return code, context attributes, context expiration time)
 
-## [win32security](#README.md#win32security).AcquireCredentialsHandle
+## [win32security](README.md#win32security).AcquireCredentialsHandle
 
-([PyCredHandle](#README.md#PyCredHandle),[PyTime](#README.md#PyTime)) = **AcquireCredentialsHandle( *Principal*  *, Package*  *, CredentialUse*  *, LogonID*  *, AuthData* ** )
+([PyCredHandle](README.md#PyCredHandle),[PyTime](README.md#PyTime)) = **AcquireCredentialsHandle( *Principal*  *, Package*  *, CredentialUse*  *, LogonID*  *, AuthData* ** )
 Creates a handle to credentials for use with SSPI
 
 #### Parameters
 
 
-     *Principal* : str/unicode
+  -  *Principal* : str/unicode
 
     Use None for current security context
 
-     *Package* : str/unicode
+  -  *Package* : str/unicode
 
     Name of security package that credentials will be used with
 
-     *CredentialUse* : int
+  -  *CredentialUse* : int
 
     Intended use of requested credentials, SECPKG_CRED_INBOUND, SECPKG_CRED_OUTBOUND, or SECPKG_CRED_BOTH
 
-     *LogonID* : long
+  -  *LogonID* : long
 
     LUID representing a logon session, can be None
 
-     *AuthData* : tuple
+  -  *AuthData* : tuple
 
     Sequence of 3 strings: (User, Domain, Password) - use none for existing credentials
 
 #### Return Value
 Returns credential handle and credential's expiration time
 
-## [win32security](#README.md#win32security).AdjustTokenGroups
+## [win32security](README.md#win32security).AdjustTokenGroups
 
-[PyTOKEN_GROUPS](#PyTOKEN.md#PyTOKENGROUPS)= **AdjustTokenGroups( *TokenHandle*  *, ResetToDefault*  *, NewState* ** )
+[PyTOKEN_GROUPS](PyTOKEN.md#PyTOKENGROUPS)= **AdjustTokenGroups( *TokenHandle*  *, ResetToDefault*  *, NewState* ** )
 Sets the groups associated to an access token.
 
 #### Parameters
 
 
-     *TokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *TokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     The handle to access token to be modified
 
-     *ResetToDefault* : boolean
+  -  *ResetToDefault* : boolean
 
     Sets groups to default enabled/disabled states,
 
-     *NewState* :[PyTOKEN_GROUPS](#PyTOKEN.md#PyTOKENGROUPS)
+  -  *NewState* :[PyTOKEN_GROUPS](PyTOKEN.md#PyTOKENGROUPS)
 
     Groups and attributes to be set for token
 
@@ -131,23 +478,23 @@ Accepts keyword args.
 #### Return Value
 Returns previous state of groups modified
 
-## [win32security](#README.md#win32security).AdjustTokenPrivileges
+## [win32security](README.md#win32security).AdjustTokenPrivileges
 
-[PyTOKEN_PRIVILEGES](#PyTOKEN.md#PyTOKENPRIVILEGES)= **AdjustTokenPrivileges( *TokenHandle*  *, bDisableAllPrivileges*  *, NewState* ** )
+[PyTOKEN_PRIVILEGES](PyTOKEN.md#PyTOKENPRIVILEGES)= **AdjustTokenPrivileges( *TokenHandle*  *, bDisableAllPrivileges*  *, NewState* ** )
 Enables or disables privileges for an access token.
 
 #### Parameters
 
 
-     *TokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *TokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to an access token
 
-     *bDisableAllPrivileges* : int
+  -  *bDisableAllPrivileges* : int
 
     Flag for disabling all privileges
 
-     *NewState* :[PyTOKEN_PRIVILEGES](#PyTOKEN.md#PyTOKENPRIVILEGES)
+  -  *NewState* :[PyTOKEN_PRIVILEGES](PyTOKEN.md#PyTOKENPRIVILEGES)
 
     The new state, can be None if bDisableAllPrivileges is True
 
@@ -159,7 +506,7 @@ Returns modified privileges for later restoral.  Privileges deleted from the tok
 
 SE_PRIVILEGE_REMOVED are not returned.
 
-## [win32security](#README.md#win32security).AllocateLocallyUniqueId
+## [win32security](README.md#win32security).AllocateLocallyUniqueId
 
  **AllocateLocallyUniqueId(** )
 Creates a new LUID
@@ -204,7 +551,7 @@ Creates a new LUID
  **const win32security.CONTAINER_INHERIT_ACE;** 
 
 
-## [win32security](#README.md#win32security).CheckTokenMembership
+## [win32security](README.md#win32security).CheckTokenMembership
 
 bool = **CheckTokenMembership( *TokenHandle*  *, SidToCheck* ** )
 Checks if a SID is enabled in a token
@@ -212,15 +559,15 @@ Checks if a SID is enabled in a token
 #### Parameters
 
 
-     *TokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *TokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to an access token, current process token used if None
 
-     *SidToCheck* :[PySID](#README.md#PySID)
+  -  *SidToCheck* :[PySID](README.md#PySID)
 
     Sid to be checked for presence in token
 
-## [win32security](#README.md#win32security).ConvertSecurityDescriptorToStringSecurityDescriptor
+## [win32security](README.md#win32security).ConvertSecurityDescriptorToStringSecurityDescriptor
 
 string = **ConvertSecurityDescriptorToStringSecurityDescriptor( *SecurityDescriptor*  *, RequestedStringSDRevision*  *, SecurityInformation* ** )
 Return string representation of a SECURITY_DESCRIPTOR
@@ -228,19 +575,19 @@ Return string representation of a SECURITY_DESCRIPTOR
 #### Parameters
 
 
-     *SecurityDescriptor* :[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)
+  -  *SecurityDescriptor* :[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)
 
     PySECURITY_DESCRIPTOR object
 
-     *RequestedStringSDRevision* : int
+  -  *RequestedStringSDRevision* : int
 
     Only SDDL_REVISION_1 currently valid
 
-     *SecurityInformation* : int
+  -  *SecurityInformation* : int
 
     Combination of bit flags from SECURITY_INFORMATION enum
 
-## [win32security](#README.md#win32security).ConvertSidToStringSid
+## [win32security](README.md#win32security).ConvertSidToStringSid
 
 string = **ConvertSidToStringSid( *Sid* ** )
 Return string representation of a SID
@@ -248,85 +595,85 @@ Return string representation of a SID
 #### Parameters
 
 
-     *Sid* :[PySID](#README.md#PySID)
+  -  *Sid* :[PySID](README.md#PySID)
 
     PySID object
 
-## [win32security](#README.md#win32security).ConvertStringSecurityDescriptorToSecurityDescriptor
+## [win32security](README.md#win32security).ConvertStringSecurityDescriptorToSecurityDescriptor
 
-[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)= **ConvertStringSecurityDescriptorToSecurityDescriptor( *StringSecurityDescriptor*  *, StringSDRevision* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)= **ConvertStringSecurityDescriptorToSecurityDescriptor( *StringSecurityDescriptor*  *, StringSDRevision* ** )
 Turns string representation of a SECURITY_DESCRIPTOR into the real thing
 
 #### Parameters
 
 
-     *StringSecurityDescriptor* : string
+  -  *StringSecurityDescriptor* : string
 
     String representation of a SECURITY_DESCRIPTOR
 
-     *StringSDRevision* : int
+  -  *StringSDRevision* : int
 
     Only SDDL_REVISION_1 currently valid
 
-## [win32security](#README.md#win32security).ConvertStringSidToSid
+## [win32security](README.md#win32security).ConvertStringSidToSid
 
-[PySID](#README.md#PySID)= **ConvertStringSidToSid( *StringSid* ** )
+[PySID](README.md#PySID)= **ConvertStringSidToSid( *StringSid* ** )
 Creates a SID from a string representation
 
 #### Parameters
 
 
-     *StringSid* : string
+  -  *StringSid* : string
 
     String representation of a SID
 
-## [win32security](#README.md#win32security).CreateRestrictedToken
+## [win32security](README.md#win32security).CreateRestrictedToken
 
-[PyHANDLE](#README.md#PyHANDLE)= **CreateRestrictedToken( *ExistingTokenHandle*  *, Flags*  *, SidsToDisable*  *, PrivilegesToDelete*  *, SidsToRestrict* ** )
+[PyHANDLE](README.md#PyHANDLE)= **CreateRestrictedToken( *ExistingTokenHandle*  *, Flags*  *, SidsToDisable*  *, PrivilegesToDelete*  *, SidsToRestrict* ** )
 Creates a restricted copy of an access token with reduced privs - requires win2K or higher
 
 #### Parameters
 
 
-     *ExistingTokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *ExistingTokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
-    Handle to an access token (see[win32security::LogonUser](#win32security.md#win32securityLogonUser),[win32security::OpenProcessToken](#win32security.md#win32securityOpenProcessToken)
+    Handle to an access token (see[win32security::LogonUser](win32security.md#win32securityLogonUser),[win32security::OpenProcessToken](win32security.md#win32securityOpenProcessToken)
 
-     *Flags* : int
+  -  *Flags* : int
 
     Valid values are zero or a combination of DISABLE_MAX_PRIVILEGE and SANDBOX_INERT
 
-     *SidsToDisable* : ([PySID_AND_ATTRIBUTES](#PySID.md#PySIDAND_ATTRIBUTES),...)
+  -  *SidsToDisable* : ([PySID_AND_ATTRIBUTES](PySID.md#PySIDAND_ATTRIBUTES),...)
 
-    Ssequence of[PySID_AND_ATTRIBUTES](#PySID.md#PySIDAND_ATTRIBUTES)tuples, or None
+    Ssequence of[PySID_AND_ATTRIBUTES](PySID.md#PySIDAND_ATTRIBUTES)tuples, or None
 
-     *PrivilegesToDelete* : ([PyLUID_AND_ATTRIBUTES](#PyLUID.md#PyLUIDAND_ATTRIBUTES),...)
+  -  *PrivilegesToDelete* : ([PyLUID_AND_ATTRIBUTES](PyLUID.md#PyLUIDAND_ATTRIBUTES),...)
 
     Privilege LUIDS to remove from token (attributes are ignored), or None
 
-     *SidsToRestrict* : ([PySID_AND_ATTRIBUTES](#PySID.md#PySIDAND_ATTRIBUTES),...)
+  -  *SidsToRestrict* : ([PySID_AND_ATTRIBUTES](PySID.md#PySIDAND_ATTRIBUTES),...)
 
-    Sequence of[PySID_AND_ATTRIBUTES](#PySID.md#PySIDAND_ATTRIBUTES)tuples (attributes must be 0).  Can be None.
+    Sequence of[PySID_AND_ATTRIBUTES](PySID.md#PySIDAND_ATTRIBUTES)tuples (attributes must be 0).  Can be None.
 
-## [win32security](#README.md#win32security).CreateWellKnownSid
+## [win32security](README.md#win32security).CreateWellKnownSid
 
-[PySID](#README.md#PySID)= **CreateWellKnownSid( *WellKnownSidType*  *, DomainSid* ** )
+[PySID](README.md#PySID)= **CreateWellKnownSid( *WellKnownSidType*  *, DomainSid* ** )
 Returns one of the predefined well known sids
 
 #### Parameters
 
 
-     *WellKnownSidType* : int
+  -  *WellKnownSidType* : int
 
     One of the Win*Sid constants
 
-     *DomainSid=None* :[PySID](#README.md#PySID)
+  -  *DomainSid=None* :[PySID](README.md#PySID)
 
     Domain for the new SID, or None for local machine
 
-## [win32security](#README.md#win32security).CryptEnumProviders
+## [win32security](README.md#win32security).CryptEnumProviders
 
-[([PyUnicode](#README.md#PyUnicode),int),...] = **CryptEnumProviders(** )
+[([PyUnicode](README.md#PyUnicode),int),...] = **CryptEnumProviders(** )
 List cryptography providers
 
 #### Return Value
@@ -380,23 +727,23 @@ Indicates the discretionary ACL of the object is being referenced.
  **const win32security.DS_SPN_SERVICE;** 
 
 
-## [win32security](#README.md#win32security).DsBind
+## [win32security](README.md#win32security).DsBind
 
-[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)= **DsBind( *DomainController*  *, DnsDomainName* ** )
+[PyDS_HANDLE](PyDS.md#PyDSHANDLE)= **DsBind( *DomainController*  *, DnsDomainName* ** )
 Creates a connection to a directory service
 
 #### Parameters
 
 
-     *DomainController* :[PyUnicode](#README.md#PyUnicode)
+  -  *DomainController* :[PyUnicode](README.md#PyUnicode)
 
     Name of domain controller to contact, can be None
 
-     *DnsDomainName* :[PyUnicode](#README.md#PyUnicode)
+  -  *DnsDomainName* :[PyUnicode](README.md#PyUnicode)
 
     Dotted name of domain to bind to, can be None
 
-## [win32security](#README.md#win32security).DsCrackNames
+## [win32security](README.md#win32security).DsCrackNames
 
 [ (status, domain, name) ] = **DsCrackNames( *hds*  *, flags*  *, formatOffered*  *, formatDesired*  *, names* ** )
 Converts an array of directory service object names from one format to another.
@@ -404,27 +751,27 @@ Converts an array of directory service object names from one format to another.
 #### Parameters
 
 
-     *hds* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hds* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    Directory service handle as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
+    Directory service handle as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
 
-     *flags* : int
-
-    
-
-     *formatOffered* : int
+  -  *flags* : int
 
     
 
-     *formatDesired* : int
+  -  *formatOffered* : int
 
     
 
-     *names* : [name, ...]
+  -  *formatDesired* : int
 
     
 
-## [win32security](#README.md#win32security).DsGetDcName
+  -  *names* : [name, ...]
+
+    
+
+## [win32security](README.md#win32security).DsGetDcName
 
 dict = **DsGetDcName( *computerName*  *, domainName*  *, domainGUID*  *, siteName*  *, flags* ** )
 Returns the name of a domain controller (DC) in a specified domain. 
@@ -434,162 +781,162 @@ You can supply DC selection criteria to this function to indicate preference for
 #### Parameters
 
 
-     *computerName=None* :[PyUnicode](#README.md#PyUnicode)
+  -  *computerName=None* :[PyUnicode](README.md#PyUnicode)
 
     
 
-     *domainName=None* :[PyUnicode](#README.md#PyUnicode)
+  -  *domainName=None* :[PyUnicode](README.md#PyUnicode)
 
     
 
-     *domainGUID=None* :[PyIID](#README.md#PyIID)
+  -  *domainGUID=None* :[PyIID](README.md#PyIID)
 
     
 
-     *siteName=None* :[PyUnicode](#README.md#PyUnicode)
+  -  *siteName=None* :[PyUnicode](README.md#PyUnicode)
 
     
 
-     *flags=0* : int
+  -  *flags=0* : int
 
     
 
 #### Comments
 This function supports keyword arguments.
 
-## [win32security](#README.md#win32security).DsGetSpn
+## [win32security](README.md#win32security).DsGetSpn
 
-([PyUnicode](#README.md#PyUnicode),...) = **DsGetSpn( *ServiceType*  *, ServiceClass*  *, ServiceName*  *, InstancePort*  *, InstanceNames*  *, InstancePorts* ** )
-Compose one or more service principal names to be registered using[win32security::DsWriteAccountSpn](#win32security.md#win32securityDsWriteAccountSpn)
+([PyUnicode](README.md#PyUnicode),...) = **DsGetSpn( *ServiceType*  *, ServiceClass*  *, ServiceName*  *, InstancePort*  *, InstanceNames*  *, InstancePorts* ** )
+Compose one or more service principal names to be registered using[win32security::DsWriteAccountSpn](win32security.md#win32securityDsWriteAccountSpn)
 
 #### Parameters
 
 
-     *ServiceType* : int
+  -  *ServiceType* : int
 
     Type of Spn to create, one of the DS_SPN_* constants
 
-     *ServiceClass* :[PyUnicode](#README.md#PyUnicode)
+  -  *ServiceClass* :[PyUnicode](README.md#PyUnicode)
 
     Arbitrary string that describes type of service, eg http
 
-     *ServiceName* :[PyUnicode](#README.md#PyUnicode)
+  -  *ServiceName* :[PyUnicode](README.md#PyUnicode)
 
     Name of service, can be None (not required for DS_SPN_*_HOST Spn's)
 
-     *InstancePort=0* : int
+  -  *InstancePort=0* : int
 
     Port nbr for service instance, use 0 for no port
 
-     *InstanceNames=None* : ([PyUnicode](#README.md#PyUnicode),...)
+  -  *InstanceNames=None* : ([PyUnicode](README.md#PyUnicode),...)
 
     A sequence of service instance names, can be None - not required for for host Spn's
 
-     *InstancePorts=None* : (int,...)
+  -  *InstancePorts=None* : (int,...)
 
     A sequence of extra instance ports.  If specified, must be same length as InstanceNames.
 
-## [win32security](#README.md#win32security).DsListDomainsInSite
+## [win32security](README.md#win32security).DsListDomainsInSite
 
-[[PyDS_NAME_RESULT_ITEM](#PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListDomainsInSite( *hds* ** )
+[[PyDS_NAME_RESULT_ITEM](PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListDomainsInSite( *hds* ** )
 
 
 #### Parameters
 
 
-     *hds* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hds* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    Directory service handle as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
+    Directory service handle as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
 
-## [win32security](#README.md#win32security).DsListInfoForServer
+## [win32security](README.md#win32security).DsListInfoForServer
 
-[[PyDS_NAME_RESULT_ITEM](#PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListInfoForServer( *hds*  *, server* ** )
+[[PyDS_NAME_RESULT_ITEM](PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListInfoForServer( *hds*  *, server* ** )
 Lists miscellaneous information for a server.
 
 #### Parameters
 
 
-     *hds* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hds* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    Directory service handle as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
+    Directory service handle as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
 
-     *server* :[PyUnicode](#README.md#PyUnicode)
+  -  *server* :[PyUnicode](README.md#PyUnicode)
 
     
 
-## [win32security](#README.md#win32security).DsListRoles
+## [win32security](README.md#win32security).DsListRoles
 
-[[PyDS_NAME_RESULT_ITEM](#PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListRoles( *hds* ** )
+[[PyDS_NAME_RESULT_ITEM](PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListRoles( *hds* ** )
 
 
 #### Parameters
 
 
-     *hds* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hds* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    Directory service handle as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
+    Directory service handle as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
 
-## [win32security](#README.md#win32security).DsListServersInSite
+## [win32security](README.md#win32security).DsListServersInSite
 
-[[PyDS_NAME_RESULT_ITEM](#PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListServersInSite( *hds*  *, site* ** )
-
-
-#### Parameters
-
-
-     *hds* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
-
-    Directory service handle as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
-
-     *site* :[PyUnicode](#README.md#PyUnicode)
-
-    
-
-## [win32security](#README.md#win32security).DsListServersInSite
-
-[[PyDS_NAME_RESULT_ITEM](#PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListServersInSite( *hds*  *, domain*  *, site* ** )
+[[PyDS_NAME_RESULT_ITEM](PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListServersInSite( *hds*  *, site* ** )
 
 
 #### Parameters
 
 
-     *hds* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hds* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    Directory service handle as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
+    Directory service handle as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
 
-     *domain* :[PyUnicode](#README.md#PyUnicode)
-
-    
-
-     *site* :[PyUnicode](#README.md#PyUnicode)
+  -  *site* :[PyUnicode](README.md#PyUnicode)
 
     
 
-## [win32security](#README.md#win32security).DsListServersInSite
+## [win32security](README.md#win32security).DsListServersInSite
 
-[[PyDS_NAME_RESULT_ITEM](#PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListServersInSite( *hds* ** )
+[[PyDS_NAME_RESULT_ITEM](PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListServersInSite( *hds*  *, domain*  *, site* ** )
 
 
 #### Parameters
 
 
-     *hds* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hds* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    Directory service handle as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
+    Directory service handle as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
 
-## [win32security](#README.md#win32security).DsUnBind
+  -  *domain* :[PyUnicode](README.md#PyUnicode)
+
+    
+
+  -  *site* :[PyUnicode](README.md#PyUnicode)
+
+    
+
+## [win32security](README.md#win32security).DsListServersInSite
+
+[[PyDS_NAME_RESULT_ITEM](PyDS.md#PyDSNAME_RESULT_ITEM), ...] = **DsListServersInSite( *hds* ** )
+
+
+#### Parameters
+
+
+  -  *hds* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
+
+    Directory service handle as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
+
+## [win32security](README.md#win32security).DsUnBind
 
  **DsUnBind( *hDS* ** )
-Closes a directory services handle created by[win32security::DsBind](#win32security.md#win32securityDsBind)
+Closes a directory services handle created by[win32security::DsBind](win32security.md#win32securityDsBind)
 
 #### Parameters
 
 
-     *hDS* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hDS* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    A handle to a directory service as returned by[win32security::DsBind](#win32security.md#win32securityDsBind)
+    A handle to a directory service as returned by[win32security::DsBind](win32security.md#win32securityDsBind)
 
-## [win32security](#README.md#win32security).DsWriteAccountSpn
+## [win32security](README.md#win32security).DsWriteAccountSpn
 
  **DsWriteAccountSpn( *hDS*  *, Operation*  *, Account*  *, Spns* ** )
 Associates a set of service principal names with an account
@@ -597,70 +944,70 @@ Associates a set of service principal names with an account
 #### Parameters
 
 
-     *hDS* :[PyDS_HANDLE](#PyDS.md#PyDSHANDLE)
+  -  *hDS* :[PyDS_HANDLE](PyDS.md#PyDSHANDLE)
 
-    Directory service handle as returned from[win32security::DsBind](#win32security.md#win32securityDsBind)
+    Directory service handle as returned from[win32security::DsBind](win32security.md#win32securityDsBind)
 
-     *Operation* : int
+  -  *Operation* : int
 
     Constant from DS_SPN_WRITE_OP enum
 
-     *Account* :[PyUnicode](#README.md#PyUnicode)
+  -  *Account* :[PyUnicode](README.md#PyUnicode)
 
     Distinguished name of account whose Spn's will be modified
 
-     *Spns* : ([PyUnicode](#README.md#PyUnicode),...)
+  -  *Spns* : ([PyUnicode](README.md#PyUnicode),...)
 
-    A sequence of target Spn's as returned by[win32security::DsGetSpn](#win32security.md#win32securityDsGetSpn)
+    A sequence of target Spn's as returned by[win32security::DsGetSpn](win32security.md#win32securityDsGetSpn)
 
-## [win32security](#README.md#win32security).DuplicateToken
+## [win32security](README.md#win32security).DuplicateToken
 
-[PyHANDLE](#README.md#PyHANDLE)= **DuplicateToken( *ExistingTokenHandle*  *, ImpersonationLevel* ** )
+[PyHANDLE](README.md#PyHANDLE)= **DuplicateToken( *ExistingTokenHandle*  *, ImpersonationLevel* ** )
 Creates a copy of an access token with specified impersonation level
 
 #### Parameters
 
 
-     *ExistingTokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *ExistingTokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
-    Handle to an access token (see[win32security::LogonUser](#win32security.md#win32securityLogonUser),[win32security::OpenProcessToken](#win32security.md#win32securityOpenProcessToken))
+    Handle to an access token (see[win32security::LogonUser](win32security.md#win32securityLogonUser),[win32security::OpenProcessToken](win32security.md#win32securityOpenProcessToken))
 
-     *ImpersonationLevel* : int
+  -  *ImpersonationLevel* : int
 
     A value from SECURITY_IMPERSONATION_LEVEL enum
 
-## [win32security](#README.md#win32security).DuplicateTokenEx
+## [win32security](README.md#win32security).DuplicateTokenEx
 
-[PyHANDLE](#README.md#PyHANDLE)= **DuplicateTokenEx( *ExistingToken*  *, ImpersonationLevel*  *, DesiredAccess*  *, TokenType*  *, TokenAttributes* ** )
+[PyHANDLE](README.md#PyHANDLE)= **DuplicateTokenEx( *ExistingToken*  *, ImpersonationLevel*  *, DesiredAccess*  *, TokenType*  *, TokenAttributes* ** )
 Extended version of DuplicateToken.
 
 #### Parameters
 
 
-     *ExistingToken* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *ExistingToken* :[PyHANDLE](README.md#PyHANDLE)
 
     Logon token opened with TOKEN_DUPLICATE access
 
-     *ImpersonationLevel* : int
+  -  *ImpersonationLevel* : int
 
     One of win32security.Security* values
 
-     *DesiredAccess* : int
+  -  *DesiredAccess* : int
 
     Type of access required for the handle, combination of win32security.TOKEN_* flags
 
-     *TokenType* : int
+  -  *TokenType* : int
 
     Type of token to be created, TokenPrimary or TokenImpersonation
 
-     *TokenAttributes=None* :[PySECURITY_ATTRIBUTES](#PySECURITY.md#PySECURITYATTRIBUTES)
+  -  *TokenAttributes=None* :[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)
 
     Specifies security and inheritance for the new handle.  None results in default DACL and no inheritance,
 
 #### Comments
 Accepts keyword arguments
 
-## [win32security](#README.md#win32security).EnumerateSecurityPackages
+## [win32security](README.md#win32security).EnumerateSecurityPackages
 
 (dict,...) = **EnumerateSecurityPackages(** )
 List available security packages as a sequence of dictionaries representing SecPkgInfo structures
@@ -677,31 +1024,31 @@ List available security packages as a sequence of dictionaries representing SecP
  **const win32security.GROUP_SECURITY_INFORMATION;** 
 Indicates the primary group identifier of the object is being referenced.
 
-## [win32security](#README.md#win32security).GetBinarySid
+## [win32security](README.md#win32security).GetBinarySid
 
-[PySID](#README.md#PySID)= **GetBinarySid( *SID* ** )
+[PySID](README.md#PySID)= **GetBinarySid( *SID* ** )
 Accepts a SID string (eg: S-1-5-32-544) and returns the SID as a PySID object.
 
 #### Parameters
 
 
-     *SID* : string
+  -  *SID* : string
 
     Textual representation of a SID. Textual SID example: S-1-5-32-544
 
-## [win32security](#README.md#win32security).GetFileSecurity
+## [win32security](README.md#win32security).GetFileSecurity
 
-[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)= **GetFileSecurity( *filename*  *, info* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)= **GetFileSecurity( *filename*  *, info* ** )
 Obtains specified information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.
 
 #### Parameters
 
 
-     *filename* : string
+  -  *filename* : string
 
     The name of the file
 
-     *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
+  -  *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
 
     Flags that specify the information requested.
 
@@ -710,39 +1057,39 @@ This function reportedly will not return the INHERITED_ACE flag on some Windows 
 
 Use GetNamedSecurityInfo if you encounter this problem.
 
-## [win32security](#README.md#win32security).GetKernelObjectSecurity
+## [win32security](README.md#win32security).GetKernelObjectSecurity
 
-[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)= **GetKernelObjectSecurity( *handle*  *, info* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)= **GetKernelObjectSecurity( *handle*  *, info* ** )
 Obtains specified information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.
 
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
     The handle to the object
 
-     *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
+  -  *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
 
     Flags that specify the information requested.
 
-## [win32security](#README.md#win32security).GetNamedSecurityInfo
+## [win32security](README.md#win32security).GetNamedSecurityInfo
 
-[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)= **GetNamedSecurityInfo( *ObjectName*  *, ObjectType*  *, SecurityInfo* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)= **GetNamedSecurityInfo( *ObjectName*  *, ObjectType*  *, SecurityInfo* ** )
 Retrieve security info for an object by name
 
 #### Parameters
 
 
-     *ObjectName* : str/unicode
+  -  *ObjectName* : str/unicode
 
     Name of object
 
-     *ObjectType* : int
+  -  *ObjectType* : int
 
     Value from SE_OBJECT_TYPE enum
 
-     *SecurityInfo* : int
+  -  *SecurityInfo* : int
 
     Combination of SECURITY_INFORMATION constants
 
@@ -751,23 +1098,23 @@ Separate owner, group, dacl, and sacl are not returned as they can be easily ret
 
 the returned PySECURITY_DESCRIPTOR
 
-## [win32security](#README.md#win32security).GetSecurityInfo
+## [win32security](README.md#win32security).GetSecurityInfo
 
-[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)= **GetSecurityInfo( *handle*  *, ObjectType*  *, SecurityInfo* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)= **GetSecurityInfo( *handle*  *, ObjectType*  *, SecurityInfo* ** )
 Retrieve security info for an object by handle
 
 #### Parameters
 
 
-     *handle* : int/[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* : int/[PyHANDLE](README.md#PyHANDLE)
 
     Handle to object
 
-     *ObjectType* : int
+  -  *ObjectType* : int
 
     Value from SE_OBJECT_TYPE enum
 
-     *SecurityInfo* : int
+  -  *SecurityInfo* : int
 
     Combination of SECURITY_INFORMATION constants
 
@@ -776,7 +1123,7 @@ Separate owner, group, dacl, and sacl are not returned as they can be easily ret
 
 the returned PySECURITY_DESCRIPTOR
 
-## [win32security](#README.md#win32security).GetTokenInformation
+## [win32security](README.md#win32security).GetTokenInformation
 
 object = **GetTokenInformation( *TokenHandle*  *, TokenInformationClass* ** )
 Retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
@@ -784,11 +1131,11 @@ Retrieves a specified type of information about an access token. The calling pro
 #### Parameters
 
 
-     *TokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *TokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to an access token.
 
-     *TokenInformationClass* : int
+  -  *TokenInformationClass* : int
 
     Specifies a value from the TOKEN_INFORMATION_CLASS enumerated type identifying the type of information the function retrieves.
 
@@ -796,19 +1143,19 @@ Retrieves a specified type of information about an access token. The calling pro
 The following types are supported
 
 
-## [win32security](#README.md#win32security).GetUserObjectSecurity
+## [win32security](README.md#win32security).GetUserObjectSecurity
 
-[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)= **GetUserObjectSecurity( *handle*  *, info* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)= **GetUserObjectSecurity( *handle*  *, info* ** )
 Obtains specified information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.
 
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
     The handle to the object
 
-     *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
+  -  *info=OWNER_SECURITY_INFORMATION | GROUP_SECURITY_INFORMATION | DACL_SECURITY_INFORMATION | SACL_SECURITY_INFORMATION* : int
 
     Flags that specify the information requested.
 
@@ -820,7 +1167,7 @@ Obtains specified information about the security of a user object. The informati
  **const win32security.INHERIT_ONLY_ACE;** 
 
 
-## [win32security](#README.md#win32security).ImpersonateAnonymousToken
+## [win32security](README.md#win32security).ImpersonateAnonymousToken
 
  **ImpersonateAnonymousToken( *ThreadHandle* ** )
 Cause a thread to act in the security context of an anonymous token
@@ -828,11 +1175,11 @@ Cause a thread to act in the security context of an anonymous token
 #### Parameters
 
 
-     *ThreadHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *ThreadHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to thread that will
 
-## [win32security](#README.md#win32security).ImpersonateLoggedOnUser
+## [win32security](README.md#win32security).ImpersonateLoggedOnUser
 
  **ImpersonateLoggedOnUser( *handle* ** )
 Impersonates a logged on user.
@@ -840,11 +1187,11 @@ Impersonates a logged on user.
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to a token that represents a logged-on user
 
-## [win32security](#README.md#win32security).ImpersonateNamedPipeClient
+## [win32security](README.md#win32security).ImpersonateNamedPipeClient
 
  **ImpersonateNamedPipeClient( *handle* ** )
 Impersonates a named-pipe client application.
@@ -852,11 +1199,11 @@ Impersonates a named-pipe client application.
 #### Parameters
 
 
-     *handle* : int
+  -  *handle* : int
 
     handle of a named pipe.
 
-## [win32security](#README.md#win32security).ImpersonateSelf
+## [win32security](README.md#win32security).ImpersonateSelf
 
  **ImpersonateSelf( *ImpersonationLevel* ** )
 Assigns an impersonation token for current security context to current process
@@ -864,54 +1211,54 @@ Assigns an impersonation token for current security context to current process
 #### Parameters
 
 
-     *ImpersonationLevel* : int
+  -  *ImpersonationLevel* : int
 
     A value from SECURITY_IMPERSONATION_LEVEL enum
 
-## [win32security](#README.md#win32security).InitializeSecurityContext
+## [win32security](README.md#win32security).InitializeSecurityContext
 
-(int, int,[PyTime](#README.md#PyTime)) = **InitializeSecurityContext( *Credential*  *, Context*  *, TargetName*  *, ContextReq*  *, TargetDataRep*  *, pInput*  *, NewContext*  *, pOutput* ** )
+(int, int,[PyTime](README.md#PyTime)) = **InitializeSecurityContext( *Credential*  *, Context*  *, TargetName*  *, ContextReq*  *, TargetDataRep*  *, pInput*  *, NewContext*  *, pOutput* ** )
 Creates a security context based on credentials created by AcquireCredentialsHandle
 
 #### Parameters
 
 
-     *Credential* :[PyCredHandle](#README.md#PyCredHandle)
+  -  *Credential* :[PyCredHandle](README.md#PyCredHandle)
 
-    A credentials handle as returned by[win32security::AcquireCredentialsHandle](#win32security.md#win32securityAcquireCredentialsHandle)
+    A credentials handle as returned by[win32security::AcquireCredentialsHandle](win32security.md#win32securityAcquireCredentialsHandle)
 
-     *Context* :[PyCtxtHandle](#README.md#PyCtxtHandle)
+  -  *Context* :[PyCtxtHandle](README.md#PyCtxtHandle)
 
     Use None on initial call, then handle returned in NewContext thereafter
 
-     *TargetName* : str/unicode
+  -  *TargetName* : str/unicode
 
     Target of context, security package specific - Use None with NTLM
 
-     *ContextReq* : int
+  -  *ContextReq* : int
 
     Combination of ISC_REQ_* flags
 
-     *TargetDataRep* : int
+  -  *TargetDataRep* : int
 
     One of SECURITY_NATIVE_DREP,SECURITY_NETWORK_DREP
 
-     *pInput* :[PySecBufferDesc](#README.md#PySecBufferDesc)
+  -  *pInput* :[PySecBufferDesc](README.md#PySecBufferDesc)
 
     Data buffer - use None initially
 
-     *NewContext* :[PyCtxtHandle](#README.md#PyCtxtHandle)
+  -  *NewContext* :[PyCtxtHandle](README.md#PyCtxtHandle)
 
     Uninitialized context handle to receive output
 
-     *pOutput* :[PySecBufferDesc](#README.md#PySecBufferDesc)
+  -  *pOutput* :[PySecBufferDesc](README.md#PySecBufferDesc)
 
     Buffer that receives output data for subsequent calls
 
 #### Return Value
 Return value is a tuple of (return code, attribute flags, expiration time)
 
-## [win32security](#README.md#win32security).IsTokenRestricted
+## [win32security](README.md#win32security).IsTokenRestricted
 
 bool = **IsTokenRestricted( *TokenHandle* ** )
 Checks if a token contains restricted sids
@@ -919,7 +1266,7 @@ Checks if a token contains restricted sids
 #### Parameters
 
 
-     *TokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *TokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to an access token
 
@@ -971,33 +1318,33 @@ Use the Windows NT 4.0 logon provider
  **const win32security.LOGON32_PROVIDER_WINNT50;** 
 Use the Negotiate protocol
 
-## [win32security](#README.md#win32security).LogonUser
+## [win32security](README.md#win32security).LogonUser
 
-[PyHANDLE](#README.md#PyHANDLE)= **LogonUser( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* ** )
+[PyHANDLE](README.md#PyHANDLE)= **LogonUser( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* ** )
 Attempts to log a user on to the local computer, that is, to the computer from which LogonUser was called. You cannot use LogonUser to log on to a remote computer.
 
 #### Parameters
 
 
-     *Username* :[PyUnicode](#README.md#PyUnicode)
+  -  *Username* :[PyUnicode](README.md#PyUnicode)
 
     The name of the user account to log on to. 
 
-This may also be a marshalled credential (see[win32cred::CredMarshalCredential](#win32cred.md#win32credCredMarshalCredential)).
+This may also be a marshalled credential (see[win32cred::CredMarshalCredential](win32cred.md#win32credCredMarshalCredential)).
 
-     *Domain* :[PyUnicode](#README.md#PyUnicode)
+  -  *Domain* :[PyUnicode](README.md#PyUnicode)
 
     The name of the domain, or None for the current domain
 
-     *Password* :[PyUnicode](#README.md#PyUnicode)
+  -  *Password* :[PyUnicode](README.md#PyUnicode)
 
     User's password.  Use a blank string if Username contains a marshalled credential.
 
-     *LogonType* : int
+  -  *LogonType* : int
 
     One of LOGON32_LOGON_* values
 
-     *LogonProvider* : int
+  -  *LogonProvider* : int
 
     One of LOGON32_PROVIDER_* values
 
@@ -1005,33 +1352,33 @@ This may also be a marshalled credential (see[win32cred::CredMarshalCredential](
 Accepts keyword args
 On Windows 2000 and earlier, the calling process must have SE_TCB_NAME privilege.
 
-## [win32security](#README.md#win32security).LogonUserEx
+## [win32security](README.md#win32security).LogonUserEx
 
-([PyHANDLE](#README.md#PyHANDLE),[PySID](#README.md#PySID), str, dict) = **LogonUserEx( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* ** )
+([PyHANDLE](README.md#PyHANDLE),[PySID](README.md#PySID), str, dict) = **LogonUserEx( *Username*  *, Domain*  *, Password*  *, LogonType*  *, LogonProvider* ** )
 Log a user onto the local machine,
 
 #### Parameters
 
 
-     *Username* :[PyUnicode](#README.md#PyUnicode)
+  -  *Username* :[PyUnicode](README.md#PyUnicode)
 
     User account, may be specified as a UPN (user@domain.com). 
 
-This may also be a marshalled credential (see[win32cred::CredMarshalCredential](#win32cred.md#win32credCredMarshalCredential)).
+This may also be a marshalled credential (see[win32cred::CredMarshalCredential](win32cred.md#win32credCredMarshalCredential)).
 
-     *Domain* :[PyUnicode](#README.md#PyUnicode)
+  -  *Domain* :[PyUnicode](README.md#PyUnicode)
 
     User's domain. Can be None if Username is a full UPN.
 
-     *Password* :[PyUnicode](#README.md#PyUnicode)
+  -  *Password* :[PyUnicode](README.md#PyUnicode)
 
     User's password.  Use a blank string if Username contains a marshalled credential.
 
-     *LogonType* : int
+  -  *LogonType* : int
 
     One of LOGON32_LOGON_* values
 
-     *LogonProvider* : int
+  -  *LogonProvider* : int
 
     One of LOGON32_PROVIDER_* values
 
@@ -1044,26 +1391,26 @@ Returns access token, logon sid, profile buffer, and process quotas.
 
 Format of the profile buffer is not known, so returned object is subject to change.
 
-## [win32security](#README.md#win32security).LookupAccountName
+## [win32security](README.md#win32security).LookupAccountName
 
-[PySID](#README.md#PySID), string, int = **LookupAccountName( *systemName*  *, accountName* ** )
+[PySID](README.md#PySID), string, int = **LookupAccountName( *systemName*  *, accountName* ** )
 Accepts the name of a system and an account as input. It retrieves a security identifier (SID) for the account and the name of the domain on which the account was found.
 
 #### Parameters
 
 
-     *systemName* : string
+  -  *systemName* : string
 
     The system name, or None
 
-     *accountName* : string
+  -  *accountName* : string
 
     The account name
 
 #### Return Value
 The result is a tuple of new SID object, the domain name where the account was found, and the type of account the SID is for.
 
-## [win32security](#README.md#win32security).LookupAccountSid
+## [win32security](README.md#win32security).LookupAccountSid
 
 string, string, int = **LookupAccountSid( *systemName*  *, sid* ** )
 Accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.
@@ -1071,66 +1418,66 @@ Accepts a security identifier (SID) as input. It retrieves the name of the accou
 #### Parameters
 
 
-     *systemName* : string
+  -  *systemName* : string
 
     The system name, or None
 
-     *sid* :[PySID](#README.md#PySID)
+  -  *sid* :[PySID](README.md#PySID)
 
     The SID
 
 #### Return Value
 The result is a tuple of the name, the domain name where the account was found, and the type of account the SID is for.
 
-## [win32security](#README.md#win32security).LookupPrivilegeDisplayName
+## [win32security](README.md#win32security).LookupPrivilegeDisplayName
 
-[PyUnicode](#README.md#PyUnicode)= **LookupPrivilegeDisplayName( *SystemName*  *, Name* ** )
+[PyUnicode](README.md#PyUnicode)= **LookupPrivilegeDisplayName( *SystemName*  *, Name* ** )
 Returns long description for a privilege name
 
 #### Parameters
 
 
-     *SystemName* : string/[PyUnicode](#README.md#PyUnicode)
+  -  *SystemName* : string/[PyUnicode](README.md#PyUnicode)
 
     System name, local system assumed if not specified
 
-     *Name* : string/[PyUnicode](#README.md#PyUnicode)
+  -  *Name* : string/[PyUnicode](README.md#PyUnicode)
 
     Name of privilege, Se...Privilege string constants (win32security.SE_*_NAME)
 
-## [win32security](#README.md#win32security).LookupPrivilegeName
+## [win32security](README.md#win32security).LookupPrivilegeName
 
-[PyUnicode](#README.md#PyUnicode)= **LookupPrivilegeName( *SystemName*  *, luid* ** )
+[PyUnicode](README.md#PyUnicode)= **LookupPrivilegeName( *SystemName*  *, luid* ** )
 return the text name for a privilege LUID
 
 #### Parameters
 
 
-     *SystemName* : string/[PyUnicode](#README.md#PyUnicode)
+  -  *SystemName* : string/[PyUnicode](README.md#PyUnicode)
 
     System name, local system assumed if not specified
 
-     *luid* : LARGE_INTEGER
+  -  *luid* : LARGE_INTEGER
 
     64 bit value representing a privilege
 
-## [win32security](#README.md#win32security).LookupPrivilegeValue
+## [win32security](README.md#win32security).LookupPrivilegeValue
 
-[LARGE_INTEGER](#LARGE.md#LARGEINTEGER)= **LookupPrivilegeValue( *systemName*  *, privilegeName* ** )
+[LARGE_INTEGER](LARGE.md#LARGEINTEGER)= **LookupPrivilegeValue( *systemName*  *, privilegeName* ** )
 Retrieves the locally unique id for a privilege name
 
 #### Parameters
 
 
-     *systemName* : string
+  -  *systemName* : string
 
     String specifying the system, use None for local machine
 
-     *privilegeName* : string
+  -  *privilegeName* : string
 
     String specifying the privilege (win32security.SE_*_NAME)
 
-## [win32security](#README.md#win32security).LsaAddAccountRights
+## [win32security](README.md#win32security).LsaAddAccountRights
 
  **LsaAddAccountRights( *PolicyHandle*  *, AccountSid*  *, UserRights* ** )
 Adds a list of privileges to an account
@@ -1138,15 +1485,15 @@ Adds a list of privileges to an account
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *AccountSid* :[PySID](#README.md#PySID)
+  -  *AccountSid* :[PySID](README.md#PySID)
 
     Account to which privs will be added
 
-     *UserRights* : (str/unicode,...)
+  -  *UserRights* : (str/unicode,...)
 
     Sequence of privilege names (SE_*_NAME unicode constants)
 
@@ -1154,7 +1501,7 @@ Adds a list of privileges to an account
 Account is created if it doesn't already exist.
 Accepts keyword args.
 
-## [win32security](#README.md#win32security).LsaCallAuthenticationPackage
+## [win32security](README.md#win32security).LsaCallAuthenticationPackage
 
  **LsaCallAuthenticationPackage( *LsaHandle*  *, AuthenticationPackage*  *, MessageType*  *, ProtocolSubmitBuffer* ** )
 Requests the services of an authentication package
@@ -1162,19 +1509,19 @@ Requests the services of an authentication package
 #### Parameters
 
 
-     *LsaHandle* :[PyLsaLogon_HANDLE](#PyLsaLogon.md#PyLsaLogonHANDLE)
+  -  *LsaHandle* :[PyLsaLogon_HANDLE](PyLsaLogon.md#PyLsaLogonHANDLE)
 
-    Lsa handle as returned by[win32security::LsaRegisterLogonProcess](#win32security.md#win32securityLsaRegisterLogonProcess)or[win32security::LsaConnectUntrusted](#win32security.md#win32securityLsaConnectUntrusted)
+    Lsa handle as returned by[win32security::LsaRegisterLogonProcess](win32security.md#win32securityLsaRegisterLogonProcess)or[win32security::LsaConnectUntrusted](win32security.md#win32securityLsaConnectUntrusted)
 
-     *AuthenticationPackage* : int
+  -  *AuthenticationPackage* : int
 
-    Id of authentication package to call, as returned by[win32security::LsaLookupAuthenticationPackage](#win32security.md#win32securityLsaLookupAuthenticationPackage)
+    Id of authentication package to call, as returned by[win32security::LsaLookupAuthenticationPackage](win32security.md#win32securityLsaLookupAuthenticationPackage)
 
-     *MessageType* : int
+  -  *MessageType* : int
 
     Type of request that is being made, Kerb*Message or MsV1_0* constant
 
-     *ProtocolSubmitBuffer* : object
+  -  *ProtocolSubmitBuffer* : object
 
     Type is dependent on MessageType
 
@@ -1183,28 +1530,28 @@ Message type is embedded in different types of submit buffers in the API call, b
 
 from python for simplicity of parsing input
 
- **MessageType**  **Input type** KerbQueryTicketCacheMessagelong - a logon id, use 0 for current logon sessionKerbRetrieveTicketMessagelong - a logon id, use 0 for current logon sessionKerbPurgeTicketCacheMessage(long,[PyUnicode](#README.md#PyUnicode),[PyUnicode](#README.md#PyUnicode)) - tuple containing (LogonId, ServerName, RealmName)KerbRetrieveEncodedTicketMessage(LogonId, TargetName, TicketFlags, CacheOptions, EncryptionType, CredentialsHandle) 
+ **MessageType**  **Input type** KerbQueryTicketCacheMessagelong - a logon id, use 0 for current logon sessionKerbRetrieveTicketMessagelong - a logon id, use 0 for current logon sessionKerbPurgeTicketCacheMessage(long,[PyUnicode](README.md#PyUnicode),[PyUnicode](README.md#PyUnicode)) - tuple containing (LogonId, ServerName, RealmName)KerbRetrieveEncodedTicketMessage(LogonId, TargetName, TicketFlags, CacheOptions, EncryptionType, CredentialsHandle) 
 
-(int,[PyUnicode](#README.md#PyUnicode), int, int, int,[PyCredHandle](#README.md#PyCredHandle))
+(int,[PyUnicode](README.md#PyUnicode), int, int, int,[PyCredHandle](README.md#PyCredHandle))
  **MessageType**  **Return type** KerbQueryTicketCacheMessage(dict,...) - Returns all tickets for the specified logon session (form is KERB_TICKET_CACHE_INFO)KerbPurgeTicketCacheMessageNoneKerbRetrieveTicketMessageReturns the ticket granting ticket for the logon session as a KERB_EXTERNAL_TICKETKerbRetrieveEncodedTicketMessageReturns specified ticket as a KERB_EXTERNAL_TICKET
 #### Return Value
 Type of returned object is dependent on MessageType
 
-## [win32security](#README.md#win32security).LsaClose
+## [win32security](README.md#win32security).LsaClose
 
  **LsaClose( *PolicyHandle* ** )
-Closes a policy handle created by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+Closes a policy handle created by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
 #### Parameters
 
 
-     *PolicyHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *PolicyHandle* :[PyHANDLE](README.md#PyHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-## [win32security](#README.md#win32security).LsaConnectUntrusted
+## [win32security](README.md#win32security).LsaConnectUntrusted
 
-[PyLsaLogon_HANDLE](#PyLsaLogon.md#PyLsaLogonHANDLE)= **LsaConnectUntrusted(** )
+[PyLsaLogon_HANDLE](PyLsaLogon.md#PyLsaLogonHANDLE)= **LsaConnectUntrusted(** )
 Creates untrusted connection to LSA
 
 #### Comments
@@ -1212,7 +1559,7 @@ You don't need SeTcbPrivilege to execute this function as you do with
 
 LsaRegisterLogonProcess, but functionality of handle is limited
 
-## [win32security](#README.md#win32security).LsaDeregisterLogonProcess
+## [win32security](README.md#win32security).LsaDeregisterLogonProcess
 
  **LsaDeregisterLogonProcess( *LsaHandle* ** )
 Closes connection to LSA server
@@ -1220,48 +1567,48 @@ Closes connection to LSA server
 #### Parameters
 
 
-     *LsaHandle* :[PyLsaLogon_HANDLE](#PyLsaLogon.md#PyLsaLogonHANDLE)
+  -  *LsaHandle* :[PyLsaLogon_HANDLE](PyLsaLogon.md#PyLsaLogonHANDLE)
 
-    An Lsa handle as returned by[win32security::LsaConnectUntrusted](#win32security.md#win32securityLsaConnectUntrusted)or[win32security::LsaRegisterLogonProcess](#win32security.md#win32securityLsaRegisterLogonProcess)
+    An Lsa handle as returned by[win32security::LsaConnectUntrusted](win32security.md#win32securityLsaConnectUntrusted)or[win32security::LsaRegisterLogonProcess](win32security.md#win32securityLsaRegisterLogonProcess)
 
-## [win32security](#README.md#win32security).LsaEnumerateAccountRights
+## [win32security](README.md#win32security).LsaEnumerateAccountRights
 
-[[PyUnicode](#README.md#PyUnicode), ...] = **LsaEnumerateAccountRights( *PolicyHandle*  *, AccountSid* ** )
+[[PyUnicode](README.md#PyUnicode), ...] = **LsaEnumerateAccountRights( *PolicyHandle*  *, AccountSid* ** )
 Lists privileges held by SID
 
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *AccountSid* :[PySID](#README.md#PySID)
+  -  *AccountSid* :[PySID](README.md#PySID)
 
     Security identifier of account for which to list privs
 
-## [win32security](#README.md#win32security).LsaEnumerateAccountsWithUserRight
+## [win32security](README.md#win32security).LsaEnumerateAccountsWithUserRight
 
-([PySID](#README.md#PySID),...) = **LsaEnumerateAccountsWithUserRight( *PolicyHandle*  *, UserRight* ** )
+([PySID](README.md#PySID),...) = **LsaEnumerateAccountsWithUserRight( *PolicyHandle*  *, UserRight* ** )
 Return SIDs that hold specified priv
 
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *UserRight* : str/unicode
+  -  *UserRight* : str/unicode
 
     Name of privilege (SE_*_NAME unicode constant)
 
-## [win32security](#README.md#win32security).LsaEnumerateLogonSessions
+## [win32security](README.md#win32security).LsaEnumerateLogonSessions
 
 (long,...) = **LsaEnumerateLogonSessions(** )
 Lists all current logon ids
 
-## [win32security](#README.md#win32security).LsaGetLogonSessionData
+## [win32security](README.md#win32security).LsaGetLogonSessionData
 
 (dict,...) = **LsaGetLogonSessionData( *LogonId* ** )
 Returns information about a logon session
@@ -1269,14 +1616,14 @@ Returns information about a logon session
 #### Parameters
 
 
-     *LogonId* : **PyLARGE_INTEGER** 
+  -  *LogonId* : **PyLARGE_INTEGER** 
 
     An LUID identifying a logon session
 
 #### Return Value
 Returns a dictionary representing a SECURITY_LOGON_SESSION_DATA structure
 
-## [win32security](#README.md#win32security).LsaLookupAuthenticationPackage
+## [win32security](README.md#win32security).LsaLookupAuthenticationPackage
 
 int = **LsaLookupAuthenticationPackage( *LsaHandle*  *, PackageName* ** )
 Retrieves the unique id for an authentication package
@@ -1284,31 +1631,31 @@ Retrieves the unique id for an authentication package
 #### Parameters
 
 
-     *LsaHandle* :[PyLsaLogon_HANDLE](#PyLsaLogon.md#PyLsaLogonHANDLE)
+  -  *LsaHandle* :[PyLsaLogon_HANDLE](PyLsaLogon.md#PyLsaLogonHANDLE)
 
-    An Lsa handle as returned by[win32security::LsaConnectUntrusted](#win32security.md#win32securityLsaConnectUntrusted)or[win32security::LsaRegisterLogonProcess](#win32security.md#win32securityLsaRegisterLogonProcess)
+    An Lsa handle as returned by[win32security::LsaConnectUntrusted](win32security.md#win32securityLsaConnectUntrusted)or[win32security::LsaRegisterLogonProcess](win32security.md#win32securityLsaRegisterLogonProcess)
 
-     *PackageName* : string
+  -  *PackageName* : string
 
     Name of security package to be identified
 
-## [win32security](#README.md#win32security).LsaOpenPolicy
+## [win32security](README.md#win32security).LsaOpenPolicy
 
-[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)= **LsaOpenPolicy( *system_name*  *, access_mask* ** )
+[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)= **LsaOpenPolicy( *system_name*  *, access_mask* ** )
 Opens a policy handle for the specified system
 
 #### Parameters
 
 
-     *system_name* : string/[PyUnicode](#README.md#PyUnicode)
+  -  *system_name* : string/[PyUnicode](README.md#PyUnicode)
 
     System name, local system assumed if not specified
 
-     *access_mask* : int
+  -  *access_mask* : int
 
     Bitmask of requested access types
 
-## [win32security](#README.md#win32security).LsaQueryInformationPolicy
+## [win32security](README.md#win32security).LsaQueryInformationPolicy
 
  **LsaQueryInformationPolicy( *PolicyHandle*  *, InformationClass* ** )
 Retrieves information from the policy handle
@@ -1316,31 +1663,31 @@ Retrieves information from the policy handle
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *InformationClass* : int
+  -  *InformationClass* : int
 
     POLICY_INFORMATION_CLASS value
 
 
-## [win32security](#README.md#win32security).LsaRegisterLogonProcess
+## [win32security](README.md#win32security).LsaRegisterLogonProcess
 
-[PyLsaLogon_HANDLE](#PyLsaLogon.md#PyLsaLogonHANDLE)= **LsaRegisterLogonProcess( *LogonProcessName* ** )
+[PyLsaLogon_HANDLE](PyLsaLogon.md#PyLsaLogonHANDLE)= **LsaRegisterLogonProcess( *LogonProcessName* ** )
 Creates a trusted connection to LSA
 
 #### Parameters
 
 
-     *LogonProcessName* : string
+  -  *LogonProcessName* : string
 
     Name to use for this logon process
 
 #### Comments
 Requires SeTcbPrivilege (and must be enabled)
 
-## [win32security](#README.md#win32security).LsaRegisterPolicyChangeNotification
+## [win32security](README.md#win32security).LsaRegisterPolicyChangeNotification
 
  **LsaRegisterPolicyChangeNotification( *InformationClass*  *, NotificationEventHandle* ** )
 Register an event handle to receive policy change events
@@ -1348,15 +1695,15 @@ Register an event handle to receive policy change events
 #### Parameters
 
 
-     *InformationClass* : int
+  -  *InformationClass* : int
 
     One of POLICY_NOTIFICATION_INFORMATION_CLASS contants
 
-     *NotificationEventHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *NotificationEventHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Event handle to receives notification
 
-## [win32security](#README.md#win32security).LsaRemoveAccountRights
+## [win32security](README.md#win32security).LsaRemoveAccountRights
 
  **LsaRemoveAccountRights( *PolicyHandle*  *, AccountSid*  *, AllRights*  *, UserRights* ** )
 Removes privs from an account
@@ -1364,19 +1711,19 @@ Removes privs from an account
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *AccountSid* :[PySID](#README.md#PySID)
+  -  *AccountSid* :[PySID](README.md#PySID)
 
     Account whose privileges will be removed
 
-     *AllRights* : int
+  -  *AllRights* : int
 
     Boolean value indicating if all privs should be removed from account
 
-     *UserRights* : (str/unicode,...)
+  -  *UserRights* : (str/unicode,...)
 
     List of privilege names to be removed (SE_*_NAME unicode constants)
 
@@ -1384,23 +1731,23 @@ Removes privs from an account
 If AllRights parm is true, account is *deleted*
 Accepts keyword args.
 
-## [win32security](#README.md#win32security).LsaRetrievePrivateData
+## [win32security](README.md#win32security).LsaRetrievePrivateData
 
-[PyUnicode](#README.md#PyUnicode)= **LsaRetrievePrivateData( *PolicyHandle*  *, KeyName* ** )
+[PyUnicode](README.md#PyUnicode)= **LsaRetrievePrivateData( *PolicyHandle*  *, KeyName* ** )
 Retreives encrypted unicode data from Lsa registry key.
 
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *KeyName* : string
+  -  *KeyName* : string
 
     Registry key to read
 
-## [win32security](#README.md#win32security).LsaSetInformationPolicy
+## [win32security](README.md#win32security).LsaSetInformationPolicy
 
  **LsaSetInformationPolicy( *PolicyHandle*  *, InformationClass*  *, Information* ** )
 Sets policy options
@@ -1408,22 +1755,22 @@ Sets policy options
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *InformationClass* : int
+  -  *InformationClass* : int
 
     POLICY_INFORMATION_CLASS value
 
-     *Information* : object
+  -  *Information* : object
 
     Type is dependent on InformationClass
 
  **InformationClass**  **Type of input expected** PolicyAuditEventsInformation(boolean, (int, ...))
 First member imdicates whether auditing is enabled or not.
 
-## [win32security](#README.md#win32security).LsaStorePrivateData
+## [win32security](README.md#win32security).LsaStorePrivateData
 
  **LsaStorePrivateData( *PolicyHandle*  *, KeyName*  *, PrivateData* ** )
 Stores encrypted unicode data under specified Lsa registry key. Returns None on success
@@ -1431,19 +1778,19 @@ Stores encrypted unicode data under specified Lsa registry key. Returns None on 
 #### Parameters
 
 
-     *PolicyHandle* :[PyLSA_HANDLE](#PyLSA.md#PyLSAHANDLE)
+  -  *PolicyHandle* :[PyLSA_HANDLE](PyLSA.md#PyLSAHANDLE)
 
-    An LSA policy handle as returned by[win32security::LsaOpenPolicy](#win32security.md#win32securityLsaOpenPolicy)
+    An LSA policy handle as returned by[win32security::LsaOpenPolicy](win32security.md#win32securityLsaOpenPolicy)
 
-     *KeyName* : string
+  -  *KeyName* : string
 
     Registry key in which to store data
 
-     *PrivateData* :[PyUNICODE](#README.md#PyUNICODE)
+  -  *PrivateData* :[PyUNICODE](README.md#PyUNICODE)
 
     Unicode string to be encrypted and stored
 
-## [win32security](#README.md#win32security).LsaUnregisterPolicyChangeNotification
+## [win32security](README.md#win32security).LsaUnregisterPolicyChangeNotification
 
  **LsaUnregisterPolicyChangeNotification( *InformationClass*  *, NotificationEventHandle* ** )
 Stop receiving policy change notification
@@ -1451,15 +1798,15 @@ Stop receiving policy change notification
 #### Parameters
 
 
-     *InformationClass* : int
+  -  *InformationClass* : int
 
     POLICY_NOTIFICATION_INFORMATION_CLASS constant
 
-     *NotificationEventHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *NotificationEventHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Event handle previously registered to receive policy change events
 
-## [win32security](#README.md#win32security).MapGenericMask
+## [win32security](README.md#win32security).MapGenericMask
 
 int = **MapGenericMask( *AccessMask*  *, GenericMapping* ** )
 Translates generic access rights into specific rights
@@ -1467,11 +1814,11 @@ Translates generic access rights into specific rights
 #### Parameters
 
 
-     *AccessMask* : int
+  -  *AccessMask* : int
 
     A bitmask of generic rights to be interpreted according to GenericMapping
 
-     *GenericMapping* : (int,int,int,int)
+  -  *GenericMapping* : (int,int,int,int)
 
     A tuple of 4 bitmasks (GenericRead, GenericWrite, GenericExecute, GenericAll) 
 
@@ -1500,39 +1847,39 @@ The input AccessMask will be returned with any generic access rights translated 
  **const win32security.OWNER_SECURITY_INFORMATION;** 
 Indicates the owner identifier of the object is being referenced.
 
-## [win32security](#README.md#win32security).OpenProcessToken
+## [win32security](README.md#win32security).OpenProcessToken
 
-[PyHANDLE](#README.md#PyHANDLE)= **OpenProcessToken( *processHandle*  *, desiredAccess* ** )
+[PyHANDLE](README.md#PyHANDLE)= **OpenProcessToken( *processHandle*  *, desiredAccess* ** )
 Opens the access token associated with a process.
 
 #### Parameters
 
 
-     *processHandle* : int
+  -  *processHandle* : int
 
     The handle of the process to open.
 
-     *desiredAccess* : int
+  -  *desiredAccess* : int
 
     Desired access to process
 
-## [win32security](#README.md#win32security).OpenThreadToken
+## [win32security](README.md#win32security).OpenThreadToken
 
-[PyHandle](#README.md#PyHandle)= **OpenThreadToken( *handle*  *, desiredAccess*  *, openAsSelf* ** )
+[PyHandle](README.md#PyHandle)= **OpenThreadToken( *handle*  *, desiredAccess*  *, openAsSelf* ** )
 Opens the access token associated with a thread.
 
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
     handle to thread
 
-     *desiredAccess* : int
+  -  *desiredAccess* : int
 
     access to process
 
-     *openAsSelf* : int
+  -  *openAsSelf* : int
 
     Flag for process or thread security
 
@@ -1728,7 +2075,7 @@ For set operations, specify this value to leave the current options unchanged. T
  **const win32security.PolicyServerRolePrimary;** 
 
 
-## [win32security](#README.md#win32security).QuerySecurityPackageInfo
+## [win32security](README.md#win32security).QuerySecurityPackageInfo
 
 dict = **QuerySecurityPackageInfo( *PackageName* ** )
 Retrieves parameters for a security package
@@ -1736,7 +2083,7 @@ Retrieves parameters for a security package
 #### Parameters
 
 
-     *PackageName* :[PyUNICODE](#README.md#PyUNICODE)
+  -  *PackageName* :[PyUNICODE](README.md#PyUNICODE)
 
     Name of the security package to query
 
@@ -1747,7 +2094,7 @@ Returns a dictionary representing a SecPkgInfo struct
  **const win32security.REVOKE_ACCESS;** 
 
 
-## [win32security](#README.md#win32security).RevertToSelf
+## [win32security](README.md#win32security).RevertToSelf
 
  **RevertToSelf(** )
 Terminates the impersonation of a client application.
@@ -1820,19 +2167,19 @@ Indicates the system ACL of the object is being referenced.
  **const win32security.SECPKG_FLAG_TOKEN_ONLY;** 
 
 
-## [win32security](#README.md#win32security).SECURITY_ATTRIBUTES
+## [win32security](README.md#win32security).SECURITY_ATTRIBUTES
 
 PySECURITY_ATTRIBUTES = **SECURITY_ATTRIBUTES(** )
-Creates a new[PySECURITY_ATTRIBUTES](#PySECURITY.md#PySECURITYATTRIBUTES)object.
+Creates a new[PySECURITY_ATTRIBUTES](PySECURITY.md#PySECURITYATTRIBUTES)object.
 
 ## SECURITY_CREATOR_SID_AUTHORITY
  **const win32security.SECURITY_CREATOR_SID_AUTHORITY;** 
 
 
-## [win32security](#README.md#win32security).SECURITY_DESCRIPTOR
+## [win32security](README.md#win32security).SECURITY_DESCRIPTOR
 
 PySECURITY_DESCRIPTOR = **SECURITY_DESCRIPTOR(** )
-Creates a new[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)object.
+Creates a new[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)object.
 
 ## SECURITY_LOCAL_SID_AUTHORITY
  **const win32security.SECURITY_LOCAL_SID_AUTHORITY;** 
@@ -2010,10 +2357,10 @@ win2k and up
  **const win32security.SE_WMIGUID_OBJECT;** 
 
 
-## [win32security](#README.md#win32security).SID
+## [win32security](README.md#win32security).SID
 
 PySID = **SID(** )
-Creates a new[PySID](#README.md#PySID)object.
+Creates a new[PySID](README.md#PySID)object.
 
 ## STYPE_DEVICE
  **const win32security.STYPE_DEVICE;** 
@@ -2079,7 +2426,7 @@ System-audit ACE that uses the SYSTEM_AUDIT_ACE structure.
  **const win32security.SecurityImpersonation;** 
 
 
-## [win32security](#README.md#win32security).SetFileSecurity
+## [win32security](README.md#win32security).SetFileSecurity
 
  **SetFileSecurity( *filename*  *, info*  *, security* ** )
 Sets information about the security of a file or directory. The information obtained is constrained by the caller's access rights and privileges.
@@ -2087,19 +2434,19 @@ Sets information about the security of a file or directory. The information obta
 #### Parameters
 
 
-     *filename* : string
+  -  *filename* : string
 
     The name of the file
 
-     *info* : int
+  -  *info* : int
 
     The type of information to set.
 
-     *security* :[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)
+  -  *security* :[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)
 
     The security information
 
-## [win32security](#README.md#win32security).SetKernelObjectSecurity
+## [win32security](README.md#win32security).SetKernelObjectSecurity
 
  **SetKernelObjectSecurity( *handle*  *, info*  *, security* ** )
 Sets information about the security of a kernel object. The information obtained is constrained by the caller's access rights and privileges.
@@ -2107,19 +2454,19 @@ Sets information about the security of a kernel object. The information obtained
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
     The handle to an object for which security information will be set.
 
-     *info* : int
+  -  *info* : int
 
     The type of information to set - combination of SECURITY_INFORMATION values
 
-     *security* :[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)
+  -  *security* :[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)
 
     The security information
 
-## [win32security](#README.md#win32security).SetNamedSecurityInfo
+## [win32security](README.md#win32security).SetNamedSecurityInfo
 
  **SetNamedSecurityInfo( *ObjectName*  *, ObjectType*  *, SecurityInfo*  *, Owner*  *, Group*  *, Dacl*  *, Sacl* ** )
 Sets security info for an object by name
@@ -2127,35 +2474,35 @@ Sets security info for an object by name
 #### Parameters
 
 
-     *ObjectName* : str/unicode
+  -  *ObjectName* : str/unicode
 
     Name of object
 
-     *ObjectType* : int
+  -  *ObjectType* : int
 
     Value from SE_OBJECT_TYPE enum
 
-     *SecurityInfo* : int
+  -  *SecurityInfo* : int
 
     Combination of SECURITY_INFORMATION constants
 
-     *Owner* :[PySID](#README.md#PySID)
+  -  *Owner* :[PySID](README.md#PySID)
 
     Sid to set as owner of object, can be None
 
-     *Group* :[PySID](#README.md#PySID)
+  -  *Group* :[PySID](README.md#PySID)
 
     Group Sid, can be None
 
-     *Dacl* :[PyACL](#README.md#PyACL)
+  -  *Dacl* :[PyACL](README.md#PyACL)
 
     Discretionary ACL to set for object, can be None
 
-     *Sacl* :[PyACL](#README.md#PyACL)
+  -  *Sacl* :[PyACL](README.md#PyACL)
 
     System Audit ACL to set for object, can be None
 
-## [win32security](#README.md#win32security).SetSecurityInfo
+## [win32security](README.md#win32security).SetSecurityInfo
 
  **SetSecurityInfo( *handle*  *, ObjectType*  *, SecurityInfo*  *, Owner*  *, Group*  *, Dacl*  *, Sacl* ** )
 Sets security info for an object by handle
@@ -2163,35 +2510,35 @@ Sets security info for an object by handle
 #### Parameters
 
 
-     *handle* : int/[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* : int/[PyHANDLE](README.md#PyHANDLE)
 
     Handle to object
 
-     *ObjectType* : int
+  -  *ObjectType* : int
 
     Value from SE_OBJECT_TYPE enum
 
-     *SecurityInfo* : int
+  -  *SecurityInfo* : int
 
     Combination of SECURITY_INFORMATION constants
 
-     *Owner* :[PySID](#README.md#PySID)
+  -  *Owner* :[PySID](README.md#PySID)
 
     Sid to set as owner of object, can be None
 
-     *Group* :[PySID](#README.md#PySID)
+  -  *Group* :[PySID](README.md#PySID)
 
     Group Sid, can be None
 
-     *Dacl* :[PyACL](#README.md#PyACL)
+  -  *Dacl* :[PyACL](README.md#PyACL)
 
     Discretionary ACL to set for object, can be None
 
-     *Sacl* :[PyACL](#README.md#PyACL)
+  -  *Sacl* :[PyACL](README.md#PyACL)
 
     System Audit ACL to set for object, can be None
 
-## [win32security](#README.md#win32security).SetThreadToken
+## [win32security](README.md#win32security).SetThreadToken
 
  **SetThreadToken( *Thread*  *, Token* ** )
 Assigns an impersonation token to a thread. The function 
@@ -2201,15 +2548,15 @@ can also cause a thread to stop using an impersonation token.
 #### Parameters
 
 
-     *Thread* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *Thread* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to a thread.  Use None to indicate calling thread.
 
-     *Token* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *Token* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to an impersonation token.  Use None to end impersonation.
 
-## [win32security](#README.md#win32security).SetTokenInformation
+## [win32security](README.md#win32security).SetTokenInformation
 
  **SetTokenInformation( *TokenHandle*  *, TokenInformationClass*  *, TokenInformation* ** )
 Set a specified type of information in an access token
@@ -2217,20 +2564,20 @@ Set a specified type of information in an access token
 #### Parameters
 
 
-     *TokenHandle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *TokenHandle* :[PyHANDLE](README.md#PyHANDLE)
 
     Handle to an access token to be modified
 
-     *TokenInformationClass* : int
+  -  *TokenInformationClass* : int
 
     Specifies a value from the TOKEN_INFORMATION_CLASS enumerated type identifying the type of information to be modfied
 
-     *TokenInformation* : object
+  -  *TokenInformation* : object
 
     Type is dependent on TokenInformationClass
 
 
-## [win32security](#README.md#win32security).SetUserObjectSecurity
+## [win32security](README.md#win32security).SetUserObjectSecurity
 
  **SetUserObjectSecurity( *handle*  *, info*  *, security* ** )
 Sets information about the security of a user object. The information obtained is constrained by the caller's access rights and privileges.
@@ -2238,15 +2585,15 @@ Sets information about the security of a user object. The information obtained i
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
     The handle to an object for which security information will be set.
 
-     *info* : int
+  -  *info* : int
 
     The type of information to set - combination of SECURITY_INFORMATION values
 
-     *security* :[PySECURITY_DESCRIPTOR](#PySECURITY.md#PySECURITYDESCRIPTOR)
+  -  *security* :[PySECURITY_DESCRIPTOR](PySECURITY.md#PySECURITYDESCRIPTOR)
 
     The security information
 
@@ -2398,27 +2745,27 @@ Combines the STANDARD_RIGHTS_WRITE standard access rights and the TOKEN_ADJUST_P
  **const win32security.TokenPrimary;** 
 
 
-## [win32security](#README.md#win32security).TranslateName
+## [win32security](README.md#win32security).TranslateName
 
-[PyUnicode](#README.md#PyUnicode)= **TranslateName( *accountName*  *, accountNameFormat*  *, accountNameFormat*  *, numChars* ** )
+[PyUnicode](README.md#PyUnicode)= **TranslateName( *accountName*  *, accountNameFormat*  *, accountNameFormat*  *, numChars* ** )
 Converts a directory service object name from one format to another.
 
 #### Parameters
 
 
-     *accountName* :[PyUnicode](#README.md#PyUnicode)
+  -  *accountName* :[PyUnicode](README.md#PyUnicode)
 
     object name
 
-     *accountNameFormat* : int
+  -  *accountNameFormat* : int
 
     A value from the EXTENDED_NAME_FORMAT enumeration type indicating the format of the accountName name.
 
-     *accountNameFormat* : int
+  -  *accountNameFormat* : int
 
     A value from the EXTENDED_NAME_FORMAT enumeration type indicating the format of the desired name.
 
-     *numChars=1024* : int
+  -  *numChars=1024* : int
 
     Number of Unicode characters to allocate for the return buffer.
 

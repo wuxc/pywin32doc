@@ -1,5 +1,56 @@
 
-## [win32uiole](#README.md#win32uiole).AfxOleInit
+## Module win32uiole
+
+A module, encapsulating the Microsoft Foundation Classes OLE functionality.
+
+#### Methods
+
+
+  - [AfxOleInit](win32uiole.md#win32uioleAfxOleInit)
+
+    &nbsp;
+
+  - [CreateInsertDialog](win32uiole.md#win32uioleCreateInsertDialog)
+
+    Creates a InsertObject dialog.&nbsp;
+
+  - [CreateOleClientItem](win32uiole.md#win32uioleCreateOleClientItem)
+
+    Creates a[PyCOleClientItem](README.md#PyCOleClientItem)object.&nbsp;
+
+  - [CreateOleDocument](win32uiole.md#win32uioleCreateOleDocument)
+
+    Creates a[PyCOleDocument](README.md#PyCOleDocument)object.&nbsp;
+
+  - [DaoGetEngine](win32uiole.md#win32uioleDaoGetEngine)
+
+    &nbsp;
+
+  - [GetIDispatchForWindow](win32uiole.md#win32uioleGetIDispatchForWindow)
+
+    Gets an OCX IDispatch pointer, if the window has one!&nbsp;
+
+  - [OleGetUserCtrl](win32uiole.md#win32uioleOleGetUserCtrl)
+
+    Retrieves the current user-control flag.&nbsp;
+
+  - [OleSetUserCtrl](win32uiole.md#win32uioleOleSetUserCtrl)
+
+    Sets the current user-control flag.&nbsp;
+
+  - [SetMessagePendingDelay](win32uiole.md#win32uioleSetMessagePendingDelay)
+
+    &nbsp;
+
+  - [EnableNotRespondingDialog](win32uiole.md#win32uioleEnableNotRespondingDialog)
+
+    &nbsp;
+
+  - [EnableNotRespondingDialog](win32uiole.md#win32uioleEnableNotRespondingDialog)
+
+    &nbsp;
+
+## [win32uiole](README.md#win32uiole).AfxOleInit
 
  **AfxOleInit( *enabled* ** )
 
@@ -7,7 +58,7 @@
 #### Parameters
 
 
-     *enabled* : bool
+  -  *enabled* : bool
 
     
 
@@ -31,40 +82,40 @@
  **const win32uiole.COleClientItem_openState;** 
 
 
-## [win32uiole](#README.md#win32uiole).CreateInsertDialog
+## [win32uiole](README.md#win32uiole).CreateInsertDialog
 
-[PyCOleInsertDialog](#README.md#PyCOleInsertDialog)= **CreateInsertDialog(** )
+[PyCOleInsertDialog](README.md#PyCOleInsertDialog)= **CreateInsertDialog(** )
 Creates a InsertObject dialog. 
 
 self*/, PyObject *args )
 
-## [win32uiole](#README.md#win32uiole).CreateOleClientItem
+## [win32uiole](README.md#win32uiole).CreateOleClientItem
 
-[PyCOleClientItem](#README.md#PyCOleClientItem)= **CreateOleClientItem(** )
-Creates a[PyCOleClientItem](#README.md#PyCOleClientItem)object.
+[PyCOleClientItem](README.md#PyCOleClientItem)= **CreateOleClientItem(** )
+Creates a[PyCOleClientItem](README.md#PyCOleClientItem)object.
 
-## [win32uiole](#README.md#win32uiole).CreateOleDocument
+## [win32uiole](README.md#win32uiole).CreateOleDocument
 
-[PyCOleDocument](#README.md#PyCOleDocument)= **CreateOleDocument( *template*  *, fileName* ** )
+[PyCOleDocument](README.md#PyCOleDocument)= **CreateOleDocument( *template*  *, fileName* ** )
 Creates an OLE document.
 
 #### Parameters
 
 
-     *template* :[PyCDocTemplate](#README.md#PyCDocTemplate)
+  -  *template* :[PyCDocTemplate](README.md#PyCDocTemplate)
 
     The template to be attached to this document.
 
-     *fileName=None* : string
+  -  *fileName=None* : string
 
     The filename for the document.
 
-## [win32uiole](#README.md#win32uiole).DaoGetEngine
+## [win32uiole](README.md#win32uiole).DaoGetEngine
 
-[PyIDispatch](#README.md#PyIDispatch)= **DaoGetEngine(** )
+[PyIDispatch](README.md#PyIDispatch)= **DaoGetEngine(** )
 
 
-## [win32uiole](#README.md#win32uiole).EnableBusyDialog
+## [win32uiole](README.md#win32uiole).EnableBusyDialog
 
  **EnableBusyDialog( *enabled* ** )
 
@@ -72,11 +123,11 @@ Creates an OLE document.
 #### Parameters
 
 
-     *enabled* : bool
+  -  *enabled* : bool
 
     
 
-## [win32uiole](#README.md#win32uiole).EnableNotRespondingDialog
+## [win32uiole](README.md#win32uiole).EnableNotRespondingDialog
 
  **EnableNotRespondingDialog( *enabled* ** )
 
@@ -84,13 +135,13 @@ Creates an OLE document.
 #### Parameters
 
 
-     *enabled* : bool
+  -  *enabled* : bool
 
     
 
-## [win32uiole](#README.md#win32uiole).GetIDispatchForWindow
+## [win32uiole](README.md#win32uiole).GetIDispatchForWindow
 
-[PyIDispatch](#README.md#PyIDispatch)= **GetIDispatchForWindow(** )
+[PyIDispatch](README.md#PyIDispatch)= **GetIDispatchForWindow(** )
 Gets an OCX IDispatch pointer, if the window has one!
 
 ## OLE_CHANGED
@@ -117,12 +168,12 @@ the item has changed its moniker
  **const win32uiole.OLE_SAVED;** 
 the item has committed its storage
 
-## [win32uiole](#README.md#win32uiole).OleGetUserCtrl
+## [win32uiole](README.md#win32uiole).OleGetUserCtrl
 
 int = **OleGetUserCtrl(** )
 Returns the application name.
 
-## [win32uiole](#README.md#win32uiole).OleSetUserCtrl
+## [win32uiole](README.md#win32uiole).OleSetUserCtrl
 
 int = **OleSetUserCtrl( *bUserCtrl* ** )
 Sets or clears the user control flag.
@@ -130,11 +181,11 @@ Sets or clears the user control flag.
 #### Parameters
 
 
-     *bUserCtrl* : int
+  -  *bUserCtrl* : int
 
     Specifies whether the user-control flag is to be set or cleared.
 
-## [win32uiole](#README.md#win32uiole).SetMessagePendingDelay
+## [win32uiole](README.md#win32uiole).SetMessagePendingDelay
 
  **SetMessagePendingDelay( *delay* ** )
 
@@ -142,6 +193,6 @@ Sets or clears the user control flag.
 #### Parameters
 
 
-     *delay* : int
+  -  *delay* : int
 
     

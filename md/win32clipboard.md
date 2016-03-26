@@ -1,5 +1,124 @@
 
-## [win32clipboard](#README.md#win32clipboard).ChangeClipboardChain
+## Module win32clipboard
+
+A module which supports the Windows Clipboard API.
+
+#### Methods
+
+
+  - [ChangeClipboardChain](win32clipboard.md#win32clipboardChangeClipboardChain)
+
+    Removes a specified window from the chain 
+
+of clipboard viewers.&nbsp;
+
+  - [CloseClipboard](win32clipboard.md#win32clipboardCloseClipboard)
+
+    Closes the clipboard.&nbsp;
+
+  - [CountClipboardFormats](win32clipboard.md#win32clipboardCountClipboardFormats)
+
+    Retrieves the number of different data 
+
+formats currently on the clipboard.&nbsp;
+
+  - [EmptyClipboard](win32clipboard.md#win32clipboardEmptyClipboard)
+
+    Empties the clipboard and frees handles to data 
+
+in the clipboard.&nbsp;
+
+  - [EnumClipboardFormats](win32clipboard.md#win32clipboardEnumClipboardFormats)
+
+    Lets you enumerate the data formats that 
+
+are currently available on the clipboard.&nbsp;
+
+  - [GetClipboardData](win32clipboard.md#win32clipboardGetClipboardData)
+
+    Retrieves data from the clipboard in a 
+
+specified format.&nbsp;
+
+  - [GetClipboardDataHandle](win32clipboard.md#win32clipboardGetClipboardDataHandle)
+
+    Retrieves data from the clipboard in a 
+
+specified format, returning the underlying integer handle.&nbsp;
+
+  - [GetClipboardFormatName](win32clipboard.md#win32clipboardGetClipboardFormatName)
+
+    Retrieves from the clipboard the name 
+
+of the specified registered format.&nbsp;
+
+  - [GetClipboardOwner](win32clipboard.md#win32clipboardGetClipboardOwner)
+
+    Retrieves the window handle of the current 
+
+owner of the clipboard.&nbsp;
+
+  - [GetClipboardSequenceNumber](win32clipboard.md#win32clipboardGetClipboardSequenceNumber)
+
+    Returns the clipboard sequence number 
+
+for the current window station.&nbsp;
+
+  - [GetClipboardViewer](win32clipboard.md#win32clipboardGetClipboardViewer)
+
+    Retrieves the handle of the first window in 
+
+the clipboard viewer chain.&nbsp;
+
+  - [GetGlobalMemory](win32clipboard.md#win32clipboardGetGlobalMemory)
+
+    Returns the contents of the specified global 
+
+memory object.&nbsp;
+
+  - [GetOpenClipboardWindow](win32clipboard.md#win32clipboardGetOpenClipboardWindow)
+
+    Retrieves the handle of the window that 
+
+currently has the clipboard open.&nbsp;
+
+  - [GetPriorityClipboardFormat](win32clipboard.md#win32clipboardGetPriorityClipboardFormat)
+
+    Returns the first available clipboard 
+
+format in the specified list.&nbsp;
+
+  - [IsClipboardFormatAvailable](win32clipboard.md#win32clipboardIsClipboardFormatAvailable)
+
+    Determines whether the clipboard 
+
+contains data in the specified format.&nbsp;
+
+  - [OpenClipboard](win32clipboard.md#win32clipboardOpenClipboard)
+
+    Opens the clipboard for examination.&nbsp;
+
+  - [RegisterClipboardFormat](win32clipboard.md#win32clipboardRegisterClipboardFormat)
+
+    Registers a new clipboard format.&nbsp;
+
+  - [SetClipboardData](win32clipboard.md#win32clipboardSetClipboardData)
+
+    Places data on the clipboard in a specified 
+
+clipboard format.&nbsp;
+
+  - [SetClipboardText](win32clipboard.md#win32clipboardSetClipboardText)
+
+    Places text on the clipboard .&nbsp;
+
+  - [SetClipboardViewer](win32clipboard.md#win32clipboardSetClipboardViewer)
+
+    Adds the specified window to the chain of 
+
+clipboard viewers&nbsp;
+
+## [win32clipboard](README.md#win32clipboard).ChangeClipboardChain
 
 int = **ChangeClipboardChain( *hWndRemove*  *, hWndNewNext* ** )
 The ChangeClipboardChain 
@@ -9,7 +128,7 @@ function removes a specified window from the chain of clipboard viewers.
 #### Parameters
 
 
-     *hWndRemove* : int
+  -  *hWndRemove* : int
 
     Integer handle to the window to be removed from 
 
@@ -17,7 +136,7 @@ the chain. The handle must have been passed to the SetClipboardViewer
 
 function.
 
-     *hWndNewNext* : int
+  -  *hWndNewNext* : int
 
     Integer handle to the window that follows the 
 
@@ -37,7 +156,7 @@ message to the first window in the clipboard viewer chain.
 #### Win32 API References
 
 
-    Search for *ChangeClipboardChain* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ChangeClipboardChain),[google](#README.md#http://www.google.com/search?q=ChangeClipboardChain)or[google groups](#README.md#http://groups.google.com/groups?q=ChangeClipboardChain).
+  - Search for *ChangeClipboardChain* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ChangeClipboardChain),[google](README.md#http://www.google.com/search?q=ChangeClipboardChain)or[google groups](README.md#http://groups.google.com/groups?q=ChangeClipboardChain).
 
 #### Return Value
 The return value indicates the result of passing the 
@@ -52,7 +171,7 @@ FALSE. If there is only one window in the chain, the return value is
 
 typically TRUE.
 
-## [win32clipboard](#README.md#win32clipboard).CloseClipboard
+## [win32clipboard](README.md#win32clipboard).CloseClipboard
 
 None = **CloseClipboard(** )
 The CloseClipboard function closes 
@@ -71,7 +190,7 @@ Do not place an object on the clipboard after calling CloseClipboard.
 #### Win32 API References
 
 
-    Search for *CloseClipboard* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CloseClipboard),[google](#README.md#http://www.google.com/search?q=CloseClipboard)or[google groups](#README.md#http://groups.google.com/groups?q=CloseClipboard).
+  - Search for *CloseClipboard* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CloseClipboard),[google](README.md#http://www.google.com/search?q=CloseClipboard)or[google groups](README.md#http://groups.google.com/groups?q=CloseClipboard).
 
 #### Return Value
 If the function succeeds, the return value is None.
@@ -79,7 +198,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).CountClipboardFormats
+## [win32clipboard](README.md#win32clipboard).CountClipboardFormats
 
 int = **CountClipboardFormats(** )
 The CountClipboardFormats 
@@ -91,7 +210,7 @@ clipboard.
 #### Win32 API References
 
 
-    Search for *CountClipboardFormats* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CountClipboardFormats),[google](#README.md#http://www.google.com/search?q=CountClipboardFormats)or[google groups](#README.md#http://groups.google.com/groups?q=CountClipboardFormats).
+  - Search for *CountClipboardFormats* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CountClipboardFormats),[google](README.md#http://www.google.com/search?q=CountClipboardFormats)or[google groups](README.md#http://groups.google.com/groups?q=CountClipboardFormats).
 
 #### Return Value
 If the function succeeds, the return value is the number of 
@@ -102,7 +221,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).EmptyClipboard
+## [win32clipboard](README.md#win32clipboard).EmptyClipboard
 
 None = **EmptyClipboard(** )
 The EmptyClipboard function empties 
@@ -125,7 +244,7 @@ succeeds but sets the clipboard owner to NULL.
 #### Win32 API References
 
 
-    Search for *EmptyClipboard* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=EmptyClipboard),[google](#README.md#http://www.google.com/search?q=EmptyClipboard)or[google groups](#README.md#http://groups.google.com/groups?q=EmptyClipboard).
+  - Search for *EmptyClipboard* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=EmptyClipboard),[google](README.md#http://www.google.com/search?q=EmptyClipboard)or[google groups](README.md#http://groups.google.com/groups?q=EmptyClipboard).
 
 #### Return Value
 If the function succeeds, the return value is None.
@@ -133,7 +252,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).EnumClipboardFormats
+## [win32clipboard](README.md#win32clipboard).EnumClipboardFormats
 
 int = **EnumClipboardFormats( *format* ** )
 The EnumClipboardFormats 
@@ -145,7 +264,7 @@ on the clipboard.
 #### Parameters
 
 
-     *format=0* : int
+  -  *format=0* : int
 
     Specifies a clipboard format that is known to be 
 
@@ -199,7 +318,7 @@ Synthesized Clipboard Formats.
 #### Win32 API References
 
 
-    Search for *EnumClipboardFormats* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=EnumClipboardFormats),[google](#README.md#http://www.google.com/search?q=EnumClipboardFormats)or[google groups](#README.md#http://groups.google.com/groups?q=EnumClipboardFormats).
+  - Search for *EnumClipboardFormats* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=EnumClipboardFormats),[google](README.md#http://www.google.com/search?q=EnumClipboardFormats)or[google groups](README.md#http://groups.google.com/groups?q=EnumClipboardFormats).
 
 #### Return Value
 If the function succeeds, the return value is the clipboard 
@@ -214,7 +333,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).GetClipboardData
+## [win32clipboard](README.md#win32clipboard).GetClipboardData
 
 string/unicode = **GetClipboardData( *format* ** )
 The GetClipboardData function 
@@ -223,12 +342,12 @@ retrieves data from the clipboard in a specified format. The clipboard
 
 must have been opened previously.  Note that not all data formats are supported, 
 
-and that the underlying handle can be retrieved with[win32clipboard::GetClipboardDataHandle](#win32clipboard.md#win32clipboardGetClipboardDataHandle)
+and that the underlying handle can be retrieved with[win32clipboard::GetClipboardDataHandle](win32clipboard.md#win32clipboardGetClipboardDataHandle)
 
 #### Parameters
 
 
-     *format=CF_TEXT* : int
+  -  *format=CF_TEXT* : int
 
     Specifies a clipboard format. For a description of 
 
@@ -264,9 +383,9 @@ Synthesized Clipboard Formats.
 #### Win32 API References
 
 
-    Search for *GetClipboardData* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardData),[google](#README.md#http://www.google.com/search?q=GetClipboardData)or[google groups](#README.md#http://groups.google.com/groups?q=GetClipboardData).
+  - Search for *GetClipboardData* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardData),[google](README.md#http://www.google.com/search?q=GetClipboardData)or[google groups](README.md#http://groups.google.com/groups?q=GetClipboardData).
 
-    Search for *Standard Clipboard Formats* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Standard Clipboard Formats),[google](#README.md#http://www.google.com/search?q=Standard Clipboard Formats)or[google groups](#README.md#http://groups.google.com/groups?q=Standard Clipboard Formats).
+  - Search for *Standard Clipboard Formats* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Standard Clipboard Formats),[google](README.md#http://www.google.com/search?q=Standard Clipboard Formats)or[google groups](README.md#http://groups.google.com/groups?q=Standard Clipboard Formats).
 
 #### To Do
 CF_METAFILEPICT format returns a pointer to a METAFILEPICT struct which contains the metafile handle, 
@@ -283,25 +402,25 @@ is raised.  If the function succeeds, the return value is as
 described in the following table:
 
 
-## [win32clipboard](#README.md#win32clipboard).GetClipboardDataHandle
+## [win32clipboard](README.md#win32clipboard).GetClipboardDataHandle
 
 int = **GetClipboardDataHandle( *format* ** )
 Retrieves data from the 
 
 clipboard in a specified format, and returns an integer handle to the data. 
 
-To get the data bytes, use the[win32clipboard::GetClipboardData](#win32clipboard.md#win32clipboardGetClipboardData)function.
+To get the data bytes, use the[win32clipboard::GetClipboardData](win32clipboard.md#win32clipboardGetClipboardData)function.
 
 #### Parameters
 
 
-     *format=CF_TEXT* : int
+  -  *format=CF_TEXT* : int
 
     Specifies a clipboard format. For a description of 
 
 the standard clipboard formats, see Standard Clipboard Formats.
 
-## [win32clipboard](#README.md#win32clipboard).GetClipboardFormatName
+## [win32clipboard](README.md#win32clipboard).GetClipboardFormatName
 
 string = **GetClipboardFormatName( *format* ** )
 The GetClipboardFormatName 
@@ -313,7 +432,7 @@ format.
 #### Parameters
 
 
-     *format* : int
+  -  *format* : int
 
     Specifies the type of format to be retrieved. This 
 
@@ -322,7 +441,7 @@ parameter must not specify any of the predefined clipboard formats.
 #### Win32 API References
 
 
-    Search for *GetClipboardFormatName* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardFormatName),[google](#README.md#http://www.google.com/search?q=GetClipboardFormatName)or[google groups](#README.md#http://groups.google.com/groups?q=GetClipboardFormatName).
+  - Search for *GetClipboardFormatName* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardFormatName),[google](README.md#http://www.google.com/search?q=GetClipboardFormatName)or[google groups](README.md#http://groups.google.com/groups?q=GetClipboardFormatName).
 
 #### Return Value
 If the function succeeds, the return value is the string containing 
@@ -332,7 +451,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).GetClipboardOwner
+## [win32clipboard](README.md#win32clipboard).GetClipboardOwner
 
 int = **GetClipboardOwner(** )
 The GetClipboardOwner function 
@@ -350,7 +469,7 @@ clipboard. The EmptyClipboard function assigns clipboard ownership.
 #### Win32 API References
 
 
-    Search for *GetClipboardOwner* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardOwner),[google](#README.md#http://www.google.com/search?q=GetClipboardOwner)or[google groups](#README.md#http://groups.google.com/groups?q=GetClipboardOwner).
+  - Search for *GetClipboardOwner* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardOwner),[google](README.md#http://www.google.com/search?q=GetClipboardOwner)or[google groups](README.md#http://groups.google.com/groups?q=GetClipboardOwner).
 
 #### Return Value
 If the function succeeds, the return value is the handle of the 
@@ -361,7 +480,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).GetClipboardSequenceNumber
+## [win32clipboard](README.md#win32clipboard).GetClipboardSequenceNumber
 
 int = **GetClipboardSequenceNumber(** )
 The 
@@ -388,7 +507,7 @@ number is not incremented until the changes are rendered.
 #### Win32 API References
 
 
-    Search for *GetClipboardSequenceNumber* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardSequenceNumber),[google](#README.md#http://www.google.com/search?q=GetClipboardSequenceNumber)or[google groups](#README.md#http://groups.google.com/groups?q=GetClipboardSequenceNumber).
+  - Search for *GetClipboardSequenceNumber* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardSequenceNumber),[google](README.md#http://www.google.com/search?q=GetClipboardSequenceNumber)or[google groups](README.md#http://groups.google.com/groups?q=GetClipboardSequenceNumber).
 
 #### Return Value
 The return value is the clipboard sequence number. If you do not 
@@ -397,7 +516,7 @@ have WINSTA_ACCESSCLIPBOARD access to the window station, the function
 
 returns zero.
 
-## [win32clipboard](#README.md#win32clipboard).GetClipboardViewer
+## [win32clipboard](README.md#win32clipboard).GetClipboardViewer
 
 int = **GetClipboardViewer(** )
 The GetClipboardViewer function 
@@ -407,7 +526,7 @@ retrieves the handle of the first window in the clipboard viewer chain.
 #### Win32 API References
 
 
-    Search for *GetClipboardViewer* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardViewer),[google](#README.md#http://www.google.com/search?q=GetClipboardViewer)or[google groups](#README.md#http://groups.google.com/groups?q=GetClipboardViewer).
+  - Search for *GetClipboardViewer* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetClipboardViewer),[google](README.md#http://www.google.com/search?q=GetClipboardViewer)or[google groups](README.md#http://groups.google.com/groups?q=GetClipboardViewer).
 
 #### Return Value
 If the function succeeds, the return value is the handle of the 
@@ -418,7 +537,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).GetGlobalMemory
+## [win32clipboard](README.md#win32clipboard).GetGlobalMemory
 
 string = **GetGlobalMemory( *hglobal* ** )
 Returns the contents of the specified 
@@ -428,11 +547,11 @@ global memory object.
 #### Parameters
 
 
-     *hglobal* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hglobal* :[PyHANDLE](README.md#PyHANDLE)
 
     The handle to the global memory object
 
-## [win32clipboard](#README.md#win32clipboard).GetOpenClipboardWindow
+## [win32clipboard](README.md#win32clipboard).GetOpenClipboardWindow
 
 int = **GetOpenClipboardWindow(** )
 The GetOpenClipboardWindow 
@@ -453,7 +572,7 @@ GetOpenClipboardWindow returns NULL.
 #### Win32 API References
 
 
-    Search for *GetOpenClipboardWindow* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetOpenClipboardWindow),[google](#README.md#http://www.google.com/search?q=GetOpenClipboardWindow)or[google groups](#README.md#http://groups.google.com/groups?q=GetOpenClipboardWindow).
+  - Search for *GetOpenClipboardWindow* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetOpenClipboardWindow),[google](README.md#http://www.google.com/search?q=GetOpenClipboardWindow)or[google groups](README.md#http://groups.google.com/groups?q=GetOpenClipboardWindow).
 
 #### Return Value
 If the function succeeds, the return value is the handle of the 
@@ -464,7 +583,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).GetPriorityClipboardFormat
+## [win32clipboard](README.md#win32clipboard).GetPriorityClipboardFormat
 
 int = **GetPriorityClipboardFormat( *formats* ** )
 Returns the first available clipboard format in the specified list.
@@ -472,7 +591,7 @@ Returns the first available clipboard format in the specified list.
 #### Parameters
 
 
-     *formats* : sequence
+  -  *formats* : sequence
 
     Sequence of integers identifying clipboard formats, 
 
@@ -483,9 +602,9 @@ see Standard Clipboard Formats.
 #### Win32 API References
 
 
-    Search for *GetPriorityClipboardFormat* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetPriorityClipboardFormat),[google](#README.md#http://www.google.com/search?q=GetPriorityClipboardFormat)or[google groups](#README.md#http://groups.google.com/groups?q=GetPriorityClipboardFormat).
+  - Search for *GetPriorityClipboardFormat* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetPriorityClipboardFormat),[google](README.md#http://www.google.com/search?q=GetPriorityClipboardFormat)or[google groups](README.md#http://groups.google.com/groups?q=GetPriorityClipboardFormat).
 
-    Search for *Standard Clipboard Formats* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Standard Clipboard Formats),[google](#README.md#http://www.google.com/search?q=Standard Clipboard Formats)or[google groups](#README.md#http://groups.google.com/groups?q=Standard Clipboard Formats).
+  - Search for *Standard Clipboard Formats* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Standard Clipboard Formats),[google](README.md#http://www.google.com/search?q=Standard Clipboard Formats)or[google groups](README.md#http://groups.google.com/groups?q=Standard Clipboard Formats).
 
 #### Return Value
 If the function succeeds, the return value is the first clipboard 
@@ -496,7 +615,7 @@ empty, the return value is NULL. If the clipboard contains data, but not
 
 in any of the specified formats, the return value is -1.
 
-## [win32clipboard](#README.md#win32clipboard).IsClipboardFormatAvailable
+## [win32clipboard](README.md#win32clipboard).IsClipboardFormatAvailable
 
 int = **IsClipboardFormatAvailable( *format* ** )
 The 
@@ -508,7 +627,7 @@ contains data in the specified format.
 #### Parameters
 
 
-     *format* : int
+  -  *format* : int
 
     Specifies a clipboard format. For a description of 
 
@@ -530,14 +649,14 @@ GetPriorityClipboardFormat function for this purpose.
 #### Win32 API References
 
 
-    Search for *IsClipboardFormatAvailable* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=IsClipboardFormatAvailable),[google](#README.md#http://www.google.com/search?q=IsClipboardFormatAvailable)or[google groups](#README.md#http://groups.google.com/groups?q=IsClipboardFormatAvailable).
+  - Search for *IsClipboardFormatAvailable* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=IsClipboardFormatAvailable),[google](README.md#http://www.google.com/search?q=IsClipboardFormatAvailable)or[google groups](README.md#http://groups.google.com/groups?q=IsClipboardFormatAvailable).
 
-    Search for *Standard Clipboard Formats* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Standard Clipboard Formats),[google](#README.md#http://www.google.com/search?q=Standard Clipboard Formats)or[google groups](#README.md#http://groups.google.com/groups?q=Standard Clipboard Formats).
+  - Search for *Standard Clipboard Formats* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Standard Clipboard Formats),[google](README.md#http://www.google.com/search?q=Standard Clipboard Formats)or[google groups](README.md#http://groups.google.com/groups?q=Standard Clipboard Formats).
 
 #### Return Value
 If the clipboard format is available, the return value is nonzero.
 
-## [win32clipboard](#README.md#win32clipboard).OpenClipboard
+## [win32clipboard](README.md#win32clipboard).OpenClipboard
 
 None = **OpenClipboard( *hWnd* ** )
 The OpenClipboard function opens the 
@@ -549,7 +668,7 @@ the clipboard content.
 #### Parameters
 
 
-     *hWnd=None* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hWnd=None* :[PyHANDLE](README.md#PyHANDLE)
 
     Integer handle to the window to be associated with the 
 
@@ -569,7 +688,7 @@ clipboard owner unless the EmptyClipboard function is called.
 #### Win32 API References
 
 
-    Search for *OpenClipboard* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=OpenClipboard),[google](#README.md#http://www.google.com/search?q=OpenClipboard)or[google groups](#README.md#http://groups.google.com/groups?q=OpenClipboard).
+  - Search for *OpenClipboard* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=OpenClipboard),[google](README.md#http://www.google.com/search?q=OpenClipboard)or[google groups](README.md#http://groups.google.com/groups?q=OpenClipboard).
 
 #### Return Value
 If the function succeeds, the return value is None.
@@ -577,7 +696,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).RegisterClipboardFormat
+## [win32clipboard](README.md#win32clipboard).RegisterClipboardFormat
 
 None = **RegisterClipboardFormat( *name* ** )
 The 
@@ -589,7 +708,7 @@ This format can then be used as a valid clipboard format.
 #### Parameters
 
 
-     *name* : string
+  -  *name* : string
 
     String that names the new format.
 
@@ -610,7 +729,7 @@ through 0xFFFF.
 #### Win32 API References
 
 
-    Search for *RegisterClipboardFormat* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegisterClipboardFormat),[google](#README.md#http://www.google.com/search?q=RegisterClipboardFormat)or[google groups](#README.md#http://groups.google.com/groups?q=RegisterClipboardFormat).
+  - Search for *RegisterClipboardFormat* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegisterClipboardFormat),[google](README.md#http://www.google.com/search?q=RegisterClipboardFormat)or[google groups](README.md#http://groups.google.com/groups?q=RegisterClipboardFormat).
 
 #### Return Value
 If the function succeeds, the return value identifies the 
@@ -621,7 +740,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).SetClipboardData
+## [win32clipboard](README.md#win32clipboard).SetClipboardData
 
 int = **SetClipboardData( *format*  *, hMem* ** )
 The SetClipboardData function 
@@ -639,13 +758,13 @@ OpenClipboard before calling SetClipboardData.)
 #### Parameters
 
 
-     *format* : int
+  -  *format* : int
 
     Specifies a clipboard format. For a description of 
 
 the standard clipboard formats, see Standard Clipboard Formats.
 
-     *hMem* : int/buffer
+  -  *hMem* : int/buffer
 
     Integer handle to the data in the specified 
 
@@ -691,7 +810,7 @@ Synthesized Clipboard Formats.
 #### Win32 API References
 
 
-    Search for *SetClipboardData* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetClipboardData),[google](#README.md#http://www.google.com/search?q=SetClipboardData)or[google groups](#README.md#http://groups.google.com/groups?q=SetClipboardData).
+  - Search for *SetClipboardData* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetClipboardData),[google](README.md#http://www.google.com/search?q=SetClipboardData)or[google groups](README.md#http://groups.google.com/groups?q=SetClipboardData).
 
 #### Return Value
 If the function succeeds, the return value is integer handle 
@@ -701,7 +820,7 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).SetClipboardText
+## [win32clipboard](README.md#win32clipboard).SetClipboardText
 
 int = **SetClipboardText( *text*  *, format* ** )
 Convienience function to 
@@ -711,11 +830,11 @@ call SetClipboardData with text.
 #### Parameters
 
 
-     *text* : str/unicode
+  -  *text* : str/unicode
 
     The text to place on the clipboard.
 
-     *format=CF_TEXT* : int
+  -  *format=CF_TEXT* : int
 
     The clipboard format to use - must be CF_TEXT or CF_UNICODETEXT
 
@@ -732,7 +851,7 @@ same string specified but CF_UNICODETEXT specified the second.
 #### Win32 API References
 
 
-    Search for *SetClipboardData* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetClipboardData),[google](#README.md#http://www.google.com/search?q=SetClipboardData)or[google groups](#README.md#http://groups.google.com/groups?q=SetClipboardData).
+  - Search for *SetClipboardData* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetClipboardData),[google](README.md#http://www.google.com/search?q=SetClipboardData)or[google groups](README.md#http://groups.google.com/groups?q=SetClipboardData).
 
 #### Return Value
 If the function succeeds, the return value is integer handle 
@@ -742,9 +861,9 @@ If the function fails, win32api.error is raised with the GetLastError
 
 info.
 
-## [win32clipboard](#README.md#win32clipboard).SetClipboardViewer
+## [win32clipboard](README.md#win32clipboard).SetClipboardViewer
 
-[PyHANDLE](#README.md#PyHANDLE)= **SetClipboardViewer( *hWndNewViewer* ** )
+[PyHANDLE](README.md#PyHANDLE)= **SetClipboardViewer( *hWndNewViewer* ** )
 The SetClipboardViewer function 
 
 adds the specified window to the chain of clipboard viewers. Clipboard 
@@ -756,7 +875,7 @@ the clipboard changes.
 #### Parameters
 
 
-     *hWndNewViewer* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *hWndNewViewer* :[PyHANDLE](README.md#PyHANDLE)
 
     Integer handle to the window to be added to 
 
@@ -781,7 +900,7 @@ in response to theWM_DESTROY message.
 #### Win32 API References
 
 
-    Search for *SetClipboardViewer* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetClipboardViewer),[google](#README.md#http://www.google.com/search?q=SetClipboardViewer)or[google groups](#README.md#http://groups.google.com/groups?q=SetClipboardViewer).
+  - Search for *SetClipboardViewer* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetClipboardViewer),[google](README.md#http://www.google.com/search?q=SetClipboardViewer)or[google groups](README.md#http://groups.google.com/groups?q=SetClipboardViewer).
 
 #### Return Value
 Returns a handle to the next window in chain, or None if no other viewer exists.

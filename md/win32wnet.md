@@ -1,5 +1,76 @@
 
-## [win32wnet](#README.md#win32wnet).NCBBuffer
+## Module win32wnet
+
+A module that exposes the Windows Networking API.
+
+#### Methods
+
+
+  - [NETRESOURCE](win32wnet.md#win32wnetNETRESOURCE)
+
+    The[PyNETRESOURCE](README.md#PyNETRESOURCE)type - can be used to create a new[PyNETRESOURCE](README.md#PyNETRESOURCE)object.&nbsp;
+
+  - [NCB](win32wnet.md#win32wnetNCB)
+
+    The **PyNCB** type - can be used to create a new **PyNCB** object.&nbsp;
+
+  - [NCBBuffer](win32wnet.md#win32wnetNCBBuffer)
+
+    Creates a new buffer&nbsp;
+
+  - [Netbios](win32wnet.md#win32wnetNetbios)
+
+    Executes a Netbios call.&nbsp;
+
+  - [WNetAddConnection2](win32wnet.md#win32wnetWNetAddConnection2)
+
+    Creates a connection to a network resource.&nbsp;
+
+  - [WNetAddConnection3](win32wnet.md#win32wnetWNetAddConnection3)
+
+    Creates a connection to a network resource.&nbsp;
+
+  - [WNetCancelConnection2](win32wnet.md#win32wnetWNetCancelConnection2)
+
+    Closes network connections made by WNetAddConnection2 or 3&nbsp;
+
+  - [WNetOpenEnum](win32wnet.md#win32wnetWNetOpenEnum)
+
+    Opens an Enumeration Handle for Enumerating Resources with[win32wnet::WNetEnumResource](win32wnet.md#win32wnetWNetEnumResource)&nbsp;
+
+  - [WNetCloseEnum](win32wnet.md#win32wnetWNetCloseEnum)
+
+    Closes a PyHANDLE that represents an Open Enumeration (from[win32wnet::WNetOpenEnum](win32wnet.md#win32wnetWNetOpenEnum))&nbsp;
+
+  - [WNetEnumResource](win32wnet.md#win32wnetWNetEnumResource)
+
+    Enumerates a list of resources&nbsp;
+
+  - [WNetGetUser](win32wnet.md#win32wnetWNetGetUser)
+
+    Retrieves the current default user name, or the user name used to establish a network connection.&nbsp;
+
+  - [WNetGetUniversalName](win32wnet.md#win32wnetWNetGetUniversalName)
+
+    Takes a drive-based path for a network resource and returns an information structure that contains a more universal form of the name.&nbsp;
+
+  - [WNetGetResourceInformation](win32wnet.md#win32wnetWNetGetResourceInformation)
+
+    Finds the type and provider of a network resource&nbsp;
+
+  - [WNetGetLastError](win32wnet.md#win32wnetWNetGetLastError)
+
+    Retrieves extended error information set by a network provider when one of the WNet* functions fails&nbsp;
+
+  - [WNetGetResourceParent](win32wnet.md#win32wnetWNetGetResourceParent)
+
+    Finds the parent resource of a network resource&nbsp;
+
+  - [WNetGetConnection](win32wnet.md#win32wnetWNetGetConnection)
+
+    Retrieves the name of the network resource associated with a local device.&nbsp;
+
+## [win32wnet](README.md#win32wnet).NCBBuffer
 
 buffer = **NCBBuffer( *size* ** )
 Creates an NCB buffer of the relevant size.
@@ -7,11 +78,11 @@ Creates an NCB buffer of the relevant size.
 #### Parameters
 
 
-     *size* : int
+  -  *size* : int
 
     The number of bytes to allocate.
 
-## [win32wnet](#README.md#win32wnet).Netbios
+## [win32wnet](README.md#win32wnet).Netbios
 
 int = **Netbios( *ncb* ** )
 Executes a Netbios call.
@@ -19,11 +90,11 @@ Executes a Netbios call.
 #### Parameters
 
 
-     *ncb* :[NCB](#README.md#NCB)
+  -  *ncb* :[NCB](README.md#NCB)
 
     The NCB object to use for the call.
 
-## [win32wnet](#README.md#win32wnet).WNetAddConnection2
+## [win32wnet](README.md#win32wnet).WNetAddConnection2
 
  **WNetAddConnection2( *NetResource*  *, Password*  *, UserName*  *, Flags* ** )
 Creates a connection to a network resource. The function can redirect 
@@ -33,19 +104,19 @@ a local device to the network resource.
 #### Parameters
 
 
-     *NetResource* :[PyNETRESOURCE](#README.md#PyNETRESOURCE)
+  -  *NetResource* :[PyNETRESOURCE](README.md#PyNETRESOURCE)
 
     Describes the network resource for the connection.
 
-     *Password=None* : str
+  -  *Password=None* : str
 
     The password to use.  Use None for default credentials.
 
-     *UserName=None* : str
+  -  *UserName=None* : str
 
     The user name to connect as.  Use None for default credentials.
 
-     *Flags=0* : int
+  -  *Flags=0* : int
 
     Combination win32netcon.CONNECT_* flags
 
@@ -58,9 +129,9 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-    Search for *WNetAddConnection2* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WNetAddConnection2),[google](#README.md#http://www.google.com/search?q=WNetAddConnection2)or[google groups](#README.md#http://groups.google.com/groups?q=WNetAddConnection2).
+  - Search for *WNetAddConnection2* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WNetAddConnection2),[google](README.md#http://www.google.com/search?q=WNetAddConnection2)or[google groups](README.md#http://groups.google.com/groups?q=WNetAddConnection2).
 
-## [win32wnet](#README.md#win32wnet).WNetAddConnection3
+## [win32wnet](README.md#win32wnet).WNetAddConnection3
 
  **WNetAddConnection3( *hwnd*  *, NetResource*  *, Password*  *, UserName*  *, Flags* ** )
 Creates a connection to a network resource.
@@ -68,23 +139,23 @@ Creates a connection to a network resource.
 #### Parameters
 
 
-     *hwnd* : int
+  -  *hwnd* : int
 
     Handle to a parent window.
 
-     *NetResource* :[PyNETRESOURCE](#README.md#PyNETRESOURCE)
+  -  *NetResource* :[PyNETRESOURCE](README.md#PyNETRESOURCE)
 
     Describes the network resource for the connection.
 
-     *Password=None* : str
+  -  *Password=None* : str
 
     The password to use.  Use None for default credentials.
 
-     *UserName=None* : str
+  -  *UserName=None* : str
 
     The user name to connect as.  Use None for default credentials.
 
-     *Flags=0* : int
+  -  *Flags=0* : int
 
     Combination win32netcon.CONNECT_* flags
 
@@ -94,9 +165,9 @@ Accepts keyword arguments.
 #### Win32 API References
 
 
-    Search for *WNetAddConnection3* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WNetAddConnection3),[google](#README.md#http://www.google.com/search?q=WNetAddConnection3)or[google groups](#README.md#http://groups.google.com/groups?q=WNetAddConnection3).
+  - Search for *WNetAddConnection3* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WNetAddConnection3),[google](README.md#http://www.google.com/search?q=WNetAddConnection3)or[google groups](README.md#http://groups.google.com/groups?q=WNetAddConnection3).
 
-## [win32wnet](#README.md#win32wnet).WNetCancelConnection2
+## [win32wnet](README.md#win32wnet).WNetCancelConnection2
 
  **WNetCancelConnection2( *name*  *, flags*  *, force* ** )
 Closes network connections made by WNetAddConnection2 or 3
@@ -104,46 +175,46 @@ Closes network connections made by WNetAddConnection2 or 3
 #### Parameters
 
 
-     *name* : string
+  -  *name* : string
 
     Name of existing connection to be closed
 
-     *flags* : int
+  -  *flags* : int
 
     Currently determines if the persisent connection information will be updated as a result of this call.
 
-     *force* : int
+  -  *force* : int
 
     indicates if the close operation should be forced. (i.e. ignore open files and connections)
 
-## [win32wnet](#README.md#win32wnet).WNetCloseEnum
+## [win32wnet](README.md#win32wnet).WNetCloseEnum
 
  **WNetCloseEnum( *handle* ** )
-Closes a PyHANDLE that represents an Open Enumeration (from[win32wnet::WNetOpenEnum](#win32wnet.md#win32wnetWNetOpenEnum))
+Closes a PyHANDLE that represents an Open Enumeration (from[win32wnet::WNetOpenEnum](win32wnet.md#win32wnetWNetOpenEnum))
 
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
-    The handle to close, as obtained from[win32wnet::WNetOpenEnum](#win32wnet.md#win32wnetWNetOpenEnum)
+    The handle to close, as obtained from[win32wnet::WNetOpenEnum](win32wnet.md#win32wnetWNetOpenEnum)
 
 #### Comments
-You should perform a WNetClose for each handle returned from[win32wnet::WNetOpenEnum](#win32wnet.md#win32wnetWNetOpenEnum).
+You should perform a WNetClose for each handle returned from[win32wnet::WNetOpenEnum](win32wnet.md#win32wnetWNetOpenEnum).
 
-## [win32wnet](#README.md#win32wnet).WNetEnumResource
+## [win32wnet](README.md#win32wnet).WNetEnumResource
 
-[[PyNETRESOURCE](#README.md#PyNETRESOURCE), ...] = **WNetEnumResource( *handle*  *, maxExtries* ** )
+[[PyNETRESOURCE](README.md#PyNETRESOURCE), ...] = **WNetEnumResource( *handle*  *, maxExtries* ** )
 Enumerates a list of resources
 
 #### Parameters
 
 
-     *handle* :[PyHANDLE](#README.md#PyHANDLE)
+  -  *handle* :[PyHANDLE](README.md#PyHANDLE)
 
-    A handle to an open Enumeration Object (from[win32wnet::WNetOpenEnum](#win32wnet.md#win32wnetWNetOpenEnum))
+    A handle to an open Enumeration Object (from[win32wnet::WNetOpenEnum](win32wnet.md#win32wnetWNetOpenEnum))
 
-     *maxExtries=64* : int
+  -  *maxExtries=64* : int
 
     The maximum number of entries to return. 
 
@@ -163,7 +234,7 @@ The list contains PyNETRESOURCE entries. The total number of PyNETRESOURCE entri
 
 requested (excepting the default behavior of requesting 0, which returns up to 64)
 
-## [win32wnet](#README.md#win32wnet).WNetGetConnection
+## [win32wnet](README.md#win32wnet).WNetGetConnection
 
 string = **WNetGetConnection( *connection* ** )
 Retrieves the name of the network resource associated with a local device.
@@ -171,13 +242,13 @@ Retrieves the name of the network resource associated with a local device.
 #### Parameters
 
 
-     *connection=None* : string
+  -  *connection=None* : string
 
     A string that is a drive-based path for a network resource. 
 
 For example, if drive H has been mapped to a network drive share, and the network resource of interest is a file named Sample.doc in the directory \\Win32\\Examples on that share, the drive-based path is H:\\Win32\\Examples\\Sample.doc.
 
-## [win32wnet](#README.md#win32wnet).WNetGetLastError
+## [win32wnet](README.md#win32wnet).WNetGetLastError
 
 (int,str,str) = **WNetGetLastError(** )
 Retrieves extended error information set by a network provider when one of the WNet* functions fails
@@ -188,34 +259,34 @@ The error description or the network provider name may be truncated if they exce
 #### Return Value
 Returns the error code, a text description of the error, and the name of the network provider
 
-## [win32wnet](#README.md#win32wnet).WNetGetResourceInformation
+## [win32wnet](README.md#win32wnet).WNetGetResourceInformation
 
-([PyNETRESOURCE](#README.md#PyNETRESOURCE), str) = **WNetGetResourceInformation( *NetResource* ** )
+([PyNETRESOURCE](README.md#PyNETRESOURCE), str) = **WNetGetResourceInformation( *NetResource* ** )
 Finds the type and provider of a network resource
 
 #### Parameters
 
 
-     *NetResource* :[PyNETRESOURCE](#README.md#PyNETRESOURCE)
+  -  *NetResource* :[PyNETRESOURCE](README.md#PyNETRESOURCE)
 
     Describes a network resource.  lpRemoteName is required, dwType and lpProvider can be supplied if known
 
 #### Return Value
 Returns a NETRESOURCE and a string containing the trailing part of the remote path
 
-## [win32wnet](#README.md#win32wnet).WNetGetResourceParent
+## [win32wnet](README.md#win32wnet).WNetGetResourceParent
 
-[PyNETRESOURCE](#README.md#PyNETRESOURCE)= **WNetGetResourceParent( *NetResource* ** )
+[PyNETRESOURCE](README.md#PyNETRESOURCE)= **WNetGetResourceParent( *NetResource* ** )
 Finds the parent resource of a network resource
 
 #### Parameters
 
 
-     *NetResource* :[PyNETRESOURCE](#README.md#PyNETRESOURCE)
+  -  *NetResource* :[PyNETRESOURCE](README.md#PyNETRESOURCE)
 
     Describes a network resource.  lpRemoteName and lpProvider are required, dwType is recommended for efficiency
 
-## [win32wnet](#README.md#win32wnet).WNetGetUniversalName
+## [win32wnet](README.md#win32wnet).WNetGetUniversalName
 
 string/tuple = **WNetGetUniversalName( *localPath*  *, infoLevel* ** )
 Takes a drive-based path for a network resource and returns an information structure that contains a more universal form of the name.
@@ -223,7 +294,7 @@ Takes a drive-based path for a network resource and returns an information struc
 #### Parameters
 
 
-     *localPath* : string
+  -  *localPath* : string
 
     A string that is a drive-based path for a network resource.
 For example, if drive H has been mapped to a network drive share, and the network 
@@ -232,7 +303,7 @@ resource of interest is a file named SAMPLE.DOC in the directory \\WIN32\\EXAMPL
 
 that share, the drive-based path is H:\\WIN32\\EXAMPLES\\SAMPLE.DOC.
 
-     *infoLevel=UNIVERSAL_NAME_INFO_LEVEL* : int
+  -  *infoLevel=UNIVERSAL_NAME_INFO_LEVEL* : int
 
     Specifies the type of structure that the function stores in the buffer pointed to by the lpBuffer parameter. 
 
@@ -242,7 +313,7 @@ This parameter can be one of the following values.
 #### Return Value
 If the infoLevel parameter is REMOTE_NAME_INFO_LEVEL, the result is a tuple of 3 strings: (UNCName, connectionName, remainingPath)
 
-## [win32wnet](#README.md#win32wnet).WNetGetUser
+## [win32wnet](README.md#win32wnet).WNetGetUser
 
 string = **WNetGetUser( *connection* ** )
 Retrieves the current default user name, or the user name used to establish a network connection.
@@ -250,33 +321,33 @@ Retrieves the current default user name, or the user name used to establish a ne
 #### Parameters
 
 
-     *connection=None* : string
+  -  *connection=None* : string
 
     A string that specifies either the name of a local device that has been redirected to a network resource, or the remote name of a network resource to which a connection has been made without redirecting a local device. 
 
 If this parameter is None, the system returns the name of the current user for the process.
 
-## [win32wnet](#README.md#win32wnet).WNetOpenEnum
+## [win32wnet](README.md#win32wnet).WNetOpenEnum
 
-[PyHANDLE](#README.md#PyHANDLE)= **WNetOpenEnum( *scope*  *, type*  *, usage*  *, resource* ** )
-Opens an Enumeration Handle for Enumerating Resources with[win32wnet::WNetEnumResource](#win32wnet.md#win32wnetWNetEnumResource)
+[PyHANDLE](README.md#PyHANDLE)= **WNetOpenEnum( *scope*  *, type*  *, usage*  *, resource* ** )
+Opens an Enumeration Handle for Enumerating Resources with[win32wnet::WNetEnumResource](win32wnet.md#win32wnetWNetEnumResource)
 
 #### Parameters
 
 
-     *scope* : int
+  -  *scope* : int
 
     Specifies the scope of the enumeration.
 
-     *type* : int
+  -  *type* : int
 
     Specifies the resource types to enumerate.
 
-     *usage* : int
+  -  *usage* : int
 
     Specifies the resource usage to be enumerated.
 
-     *resource* :[PyNETRESOURCE](#README.md#PyNETRESOURCE)
+  -  *resource* :[PyNETRESOURCE](README.md#PyNETRESOURCE)
 
     Python NETRESOURCE object.
 
@@ -286,6 +357,6 @@ See the Microsoft SDK  for complete information on WNetOpenEnum.
 #### Return Value
 PyHANDLE representing the Win32 HANDLE for the open resource. 
 
-This handle will be automatically be closed via[win32wnet::WNetCloseEnum](#win32wnet.md#win32wnetWNetCloseEnum), but 
+This handle will be automatically be closed via[win32wnet::WNetCloseEnum](win32wnet.md#win32wnetWNetCloseEnum), but 
 
 good style dictates it still be closed manually.

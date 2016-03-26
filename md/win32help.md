@@ -1,4 +1,47 @@
 
+## Module win32help
+
+A module, encapsulating the Win32 help API's.
+
+#### Methods
+
+
+  - [WinHelp](win32help.md#win32helpWinHelp)
+
+    Invokes the Windows Help system.&nbsp;
+
+  - [HH_AKLINK](win32help.md#win32helpHH_AKLINK)
+
+    Create and returns an HH_AKLINK structure&nbsp;
+
+  - [HH_FTS_QUERY](win32help.md#win32helpHH_FTS_QUERY)
+
+    Create and returns an HH_FTS_QUERY structure&nbsp;
+
+  - [HH_POPUP](win32help.md#win32helpHH_POPUP)
+
+    Create and returns an HH_POPUP structure&nbsp;
+
+  - [HH_WINTYPE](win32help.md#win32helpHH_WINTYPE)
+
+    Create and returns an HH_WINTYPE structure&nbsp;
+
+  - [NMHDR](win32help.md#win32helpNMHDR)
+
+    Create and returns an NMHDR structure&nbsp;
+
+  - [HHN_NOTIFY](win32help.md#win32helpHHN_NOTIFY)
+
+    Create and returns an HHN_NOTIFY structure&nbsp;
+
+  - [HHNTRACK](win32help.md#win32helpHHNTRACK)
+
+    Create and returns an HHNTRACK structure&nbsp;
+
+  - [HtmlHelp](win32help.md#win32helpHtmlHelp)
+
+    Invokes the Windows HTML Help system.&nbsp;
+
 ## HHACT_BACK
  **const win32help.HHACT_BACK;** 
 
@@ -95,9 +138,9 @@
  **const win32help.HHACT_ZOOM;** 
 
 
-## [win32help](#README.md#win32help).HHNTRACK
+## [win32help](README.md#win32help).HHNTRACK
 
-[PyHHNTRACK](#README.md#PyHHNTRACK)= **HHNTRACK(** )
+[PyHHNTRACK](README.md#PyHHNTRACK)= **HHNTRACK(** )
 Creates a new HHNTRACK object.
 
 ## HHN_FIRST
@@ -112,9 +155,9 @@ Creates a new HHNTRACK object.
  **const win32help.HHN_NAVCOMPLETE;** 
 
 
-## [win32help](#README.md#win32help).HHN_NOTIFY
+## [win32help](README.md#win32help).HHN_NOTIFY
 
-[PyHHN_NOTIFY](#PyHHN.md#PyHHNNOTIFY)= **HHN_NOTIFY(** )
+[PyHHN_NOTIFY](PyHHN.md#PyHHNNOTIFY)= **HHN_NOTIFY(** )
 Creates a new HHN_NOTIFY object.
 
 ## HHN_TRACK
@@ -421,9 +464,9 @@ controls window size/position
  **const win32help.HHWIN_TB_MARGIN;** 
 the window type has a margin
 
-## [win32help](#README.md#win32help).HH_AKLINK
+## [win32help](README.md#win32help).HH_AKLINK
 
-[PyHH_AKLINK](#PyHH.md#PyHHAKLINK)= **HH_AKLINK(** )
+[PyHH_AKLINK](PyHH.md#PyHHAKLINK)= **HH_AKLINK(** )
 Creates a new HH_AKLINK object.
 
 ## HH_ALINK_LOOKUP
@@ -480,9 +523,9 @@ repeatedly to enumerate, -1 at end
  **const win32help.HH_FTS_DEFAULT_PROXIMITY;** 
 
 
-## [win32help](#README.md#win32help).HH_FTS_QUERY
+## [win32help](README.md#win32help).HH_FTS_QUERY
 
-[PyHH_FTS_QUERY](#PyHH.md#PyHHFTS_QUERY)= **HH_FTS_QUERY(** )
+[PyHH_FTS_QUERY](PyHH.md#PyHHFTS_QUERY)= **HH_FTS_QUERY(** )
 Creates a new HH_FTS_QUERY object.
 
 ## HH_GET_LAST_ERROR
@@ -547,9 +590,9 @@ Initializes the help system.
  **const win32help.HH_MAX_TABS_CUSTOM;** 
 
 
-## [win32help](#README.md#win32help).HH_POPUP
+## [win32help](README.md#win32help).HH_POPUP
 
-[PyHH_POPUP](#PyHH.md#PyHHPOPUP)= **HH_POPUP(** )
+[PyHH_POPUP](PyHH.md#PyHHPOPUP)= **HH_POPUP(** )
 Creates a new HH_POPUP object.
 
 ## HH_PRETRANSLATEMESSAGE
@@ -654,12 +697,12 @@ WinHelp HELP_WM_HELP
  **const win32help.HH_UNINITIALIZE;** 
 Uninitializes the help system.
 
-## [win32help](#README.md#win32help).HH_WINTYPE
+## [win32help](README.md#win32help).HH_WINTYPE
 
-[PyHH_WINTYPE](#PyHH.md#PyHHWINTYPE)= **HH_WINTYPE(** )
+[PyHH_WINTYPE](PyHH.md#PyHHWINTYPE)= **HH_WINTYPE(** )
 Creates a new HH_WINTYPE object.
 
-## [win32help](#README.md#win32help).HtmlHelp
+## [win32help](README.md#win32help).HtmlHelp
 
 int = **HtmlHelp( *hwnd*  *, file*  *, cmd*  *, data* ** )
 Invokes the Windows Html Help system.
@@ -667,15 +710,15 @@ Invokes the Windows Html Help system.
 #### Parameters
 
 
-     *hwnd* : int
+  -  *hwnd* : int
 
     The handle of the window requesting help.
 
-     *file* : string/None
+  -  *file* : string/None
 
     The name of the help file, or None.
 
-     *cmd* : int
+  -  *cmd* : int
 
     The type of help.  Valid values are:
 
@@ -684,7 +727,7 @@ Invokes the Windows Html Help system.
 in a compiled help (.chm) file.
 The ALink names to search for, and the action to be taken if no matches 
 
-are found, are specified in the[win32help::HH_AKLINK](#win32help.md#win32helpHH_AKLINK)structure.
+are found, are specified in the[win32help::HH_AKLINK](win32help.md#win32helpHH_AKLINK)structure.
 
  **file** : Specifies a compiled help (.chm) file, or a specific topic 
 
@@ -718,12 +761,12 @@ within a compiled help file.
 
 the HTML Help Viewer and performs a search for the term specified in the 
 
-searchQuery parameter of the[win32help::HH_FTS_QUERY](#win32help.md#win32helpHH_FTS_QUERY)structure.
+searchQuery parameter of the[win32help::HH_FTS_QUERY](win32help.md#win32helpHH_FTS_QUERY)structure.
 
  **file** : Specifies a compiled help (.chm) file, or a specific topic 
 
 within a compiled help file.
- **data** : Specifies a pointer to an[win32help::HH_FTS_QUERY](#win32help.md#win32helpHH_FTS_QUERY)structure.
+ **data** : Specifies a pointer to an[win32help::HH_FTS_QUERY](win32help.md#win32helpHH_FTS_QUERY)structure.
 
  **HH_DISPLAY_TEXT_POPUP** : Opens a pop-up window that displays the 
 
@@ -741,7 +784,7 @@ string from a resource, use None. To use text string from a text file
 contained in a compiled help file, specify the .chm file and the text 
 
 file within the .chm file.
- **data** : Specifies a pointer to an[win32help::HH_POPUP](#win32help.md#win32helpHH_POPUP)structure.
+ **data** : Specifies a pointer to an[win32help::HH_POPUP](win32help.md#win32helpHH_POPUP)structure.
 
  **HH_DISPLAY_TOC** : Selects the Contents tab in the Navigation pane of 
 
@@ -790,7 +833,7 @@ the window type is defined.
 
 return.
 
- **HH_GET_WIN_TYPE** : Retrieves a pointer to the[win32help::HH_WINTYPE](#win32help.md#win32helpHH_WINTYPE)structure associated with a specified window type.
+ **HH_GET_WIN_TYPE** : Retrieves a pointer to the[win32help::HH_WINTYPE](win32help.md#win32helpHH_WINTYPE)structure associated with a specified window type.
 
  **file** : Specifies the name of the window type whose information you 
 
@@ -843,12 +886,12 @@ by calling the **HH_PRETRANSLATEMESSAGE** command.
 
 (.chm) file. The keywords to search for and the action to be taken if 
 
-no matches are found are specified in the[win32help::HH_AKLINK](#win32help.md#win32helpHH_AKLINK)structure.
+no matches are found are specified in the[win32help::HH_AKLINK](win32help.md#win32helpHH_AKLINK)structure.
 
  **file** : Specifies the compiled help (.chm) file that contains 
 
 keywords.
- **data** : Points to an[win32help::HH_AKLINK](#win32help.md#win32helpHH_AKLINK)structure.
+ **data** : Points to an[win32help::HH_AKLINK](win32help.md#win32helpHH_AKLINK)structure.
 
  **HH_PRETRANSLATEMESSAGE** : This command is called in the message loop 
 
@@ -877,7 +920,7 @@ the window type is defined. The window type name must begin with a
 greater-than (&gt) character and must be preceded by the name of the 
 
 compiled help file in which it is defined.
- **data** : Points to an[win32help::HH_WINTYPE](#win32help.md#win32helpHH_WINTYPE)structure.
+ **data** : Points to an[win32help::HH_WINTYPE](win32help.md#win32helpHH_WINTYPE)structure.
 
  **HH_SYNC** : Locates and selects the contents entry for the help topic 
 
@@ -971,20 +1014,20 @@ file arg is not checked, just set to the value it "Must" be.
 
 
 
-     *data=0* : None/int/string/int tuple/[win32help::HH_AKLINK](#win32help.md#win32helpHH_AKLINK)/[win32help::HH_FTS_QUERY](#win32help.md#win32helpHH_FTS_QUERY)/[win32help::HH_POPUP](#win32help.md#win32helpHH_POPUP)/[win32help::HH_WINTYPE](#win32help.md#win32helpHH_WINTYPE)
+  -  *data=0* : None/int/string/int tuple/[win32help::HH_AKLINK](win32help.md#win32helpHH_AKLINK)/[win32help::HH_FTS_QUERY](win32help.md#win32helpHH_FTS_QUERY)/[win32help::HH_POPUP](win32help.md#win32helpHH_POPUP)/[win32help::HH_WINTYPE](win32help.md#win32helpHH_WINTYPE)
 
     Additional data specific to the help call.
 
 #### Win32 API References
 
 
-    Search for *HtmlHelp* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=HtmlHelp),[google](#README.md#http://www.google.com/search?q=HtmlHelp)or[google groups](#README.md#http://groups.google.com/groups?q=HtmlHelp).
+  - Search for *HtmlHelp* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=HtmlHelp),[google](README.md#http://www.google.com/search?q=HtmlHelp)or[google groups](README.md#http://groups.google.com/groups?q=HtmlHelp).
 
 #### Return Value
 Depending on the specified cmd and the result:
 
  **HH_GET_WIN_TYPE** :
-tuple: (hwnd as below, and the[win32help::HH_WINTYPE](#win32help.md#win32helpHH_WINTYPE)object).
+tuple: (hwnd as below, and the[win32help::HH_WINTYPE](win32help.md#win32helpHH_WINTYPE)object).
 Deep copy the structure to which dwData points before modifying the 
 
 structure.
@@ -1100,12 +1143,12 @@ not implemented
  **const win32help.IDTB_ZOOM;** 
 
 
-## [win32help](#README.md#win32help).NMHDR
+## [win32help](README.md#win32help).NMHDR
 
-[PyNMHDR](#README.md#PyNMHDR)= **NMHDR(** )
+[PyNMHDR](README.md#PyNMHDR)= **NMHDR(** )
 Creates a new NMHDR object.
 
-## [win32help](#README.md#win32help).WinHelp
+## [win32help](README.md#win32help).WinHelp
 
  **WinHelp( *hwnd*  *, hlpFile*  *, cmd*  *, data* ** )
 Invokes the Windows Help system.
@@ -1113,26 +1156,26 @@ Invokes the Windows Help system.
 #### Parameters
 
 
-     *hwnd* : int
+  -  *hwnd* : int
 
     The handle of the window requesting help.
 
-     *hlpFile* : string
+  -  *hlpFile* : string
 
     The name of the help file.
 
-     *cmd* : int
+  -  *cmd* : int
 
     The type of help.  See the api for full details.
 
-     *data=None* : None/int/string
+  -  *data=None* : None/int/string
 
     Additional data specific to the help call. Can be a buffer or pointer-sized int.
 
 #### Win32 API References
 
 
-    Search for *WinHelp* at[msdn](#README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WinHelp),[google](#README.md#http://www.google.com/search?q=WinHelp)or[google groups](#README.md#http://groups.google.com/groups?q=WinHelp).
+  - Search for *WinHelp* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WinHelp),[google](README.md#http://www.google.com/search?q=WinHelp)or[google groups](README.md#http://groups.google.com/groups?q=WinHelp).
 
 #### Return Value
 The method raises an exception if an error occurs.
