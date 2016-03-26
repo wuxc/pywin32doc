@@ -1,3 +1,4 @@
+# win32ui
 
 ## Module win32ui
 
@@ -32,7 +33,7 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateBrush](win32ui.md#win32uicreatebrush)
 
-    Creates a new GDI brush object.  Returns a[PyCBrush](README.md#pycbrush)object.&nbsp;
+    Creates a new GDI brush object.  Returns a[PyCBrush](#pycbrush)object.&nbsp;
 
   - [CreateButton](win32ui.md#win32uicreatebutton)
 
@@ -56,31 +57,31 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateDC](win32ui.md#win32uicreatedc)
 
-    Creates a[PyCDC](README.md#pycdc)object.&nbsp;
+    Creates a[PyCDC](#pycdc)object.&nbsp;
 
   - [CreateDCFromHandle](win32ui.md#win32uicreatedcfromhandle)
 
-    Creates a[PyCDC](README.md#pycdc)object from an integer handle.&nbsp;
+    Creates a[PyCDC](#pycdc)object from an integer handle.&nbsp;
 
   - [CreateDialog](win32ui.md#win32uicreatedialog)
 
-    Creates a[PyCDialog](README.md#pycdialog)object.&nbsp;
+    Creates a[PyCDialog](#pycdialog)object.&nbsp;
 
   - [CreateDialogBar](win32ui.md#win32uicreatedialogbar)
 
-    Creates a[PyCDialogBar](README.md#pycdialogbar)object.&nbsp;
+    Creates a[PyCDialogBar](#pycdialogbar)object.&nbsp;
 
   - [CreateDialogIndirect](win32ui.md#win32uicreatedialogindirect)
 
-    Creates a[PyCDialog](README.md#pycdialog)object from a template.&nbsp;
+    Creates a[PyCDialog](#pycdialog)object from a template.&nbsp;
 
   - [CreatePrintDialog](win32ui.md#win32uicreateprintdialog)
 
-    Creates a[PyCPrintDialog](README.md#pycprintdialog)object.&nbsp;
+    Creates a[PyCPrintDialog](#pycprintdialog)object.&nbsp;
 
   - [CreateDocTemplate](win32ui.md#win32uicreatedoctemplate)
 
-    Create a[PyCDocTemplate](README.md#pycdoctemplate)object.&nbsp;
+    Create a[PyCDocTemplate](#pycdoctemplate)object.&nbsp;
 
   - [CreateEdit](win32ui.md#win32uicreateedit)
 
@@ -104,7 +105,7 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateImageList](win32ui.md#win32uicreateimagelist)
 
-    Creates an[PyCImageList](README.md#pycimagelist)object.&nbsp;
+    Creates an[PyCImageList](#pycimagelist)object.&nbsp;
 
   - [CreateListCtrl](win32ui.md#win32uicreatelistctrl)
 
@@ -112,7 +113,7 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateListView](win32ui.md#win32uicreatelistview)
 
-    Creates a[PyCListView](README.md#pyclistview)object.&nbsp;
+    Creates a[PyCListView](#pyclistview)object.&nbsp;
 
   - [CreateTreeCtrl](win32ui.md#win32uicreatetreectrl)
 
@@ -120,7 +121,7 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateTreeView](win32ui.md#win32uicreatetreeview)
 
-    Creates a[PyCTreeView](README.md#pyctreeview)object.&nbsp;
+    Creates a[PyCTreeView](#pyctreeview)object.&nbsp;
 
   - [CreatePalette](win32ui.md#win32uicreatepalette)
 
@@ -136,7 +137,7 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreatePen](win32ui.md#win32uicreatepen)
 
-    Creates a **PyCPen** object.&nbsp;
+    Creates a __PyCPen__ object.&nbsp;
 
   - [CreateProgressCtrl](win32ui.md#win32uicreateprogressctrl)
 
@@ -144,23 +145,23 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreatePropertyPage](win32ui.md#win32uicreatepropertypage)
 
-    Creates a[PyCPropertyPage](README.md#pycpropertypage)object.&nbsp;
+    Creates a[PyCPropertyPage](#pycpropertypage)object.&nbsp;
 
   - [CreatePropertyPageIndirect](win32ui.md#win32uicreatepropertypageindirect)
 
-    Creates a[PyCPropertyPage](README.md#pycpropertypage)object from a template.&nbsp;
+    Creates a[PyCPropertyPage](#pycpropertypage)object from a template.&nbsp;
 
   - [CreatePropertySheet](win32ui.md#win32uicreatepropertysheet)
 
-    Creates a[PyCPropertySheet](README.md#pycpropertysheet)object&nbsp;
+    Creates a[PyCPropertySheet](#pycpropertysheet)object&nbsp;
 
   - [CreateRectRgn](win32ui.md#win32uicreaterectrgn)
 
-    Initializes a[PyCRgn](README.md#pycrgn)to a rectangle&nbsp;
+    Initializes a[PyCRgn](#pycrgn)to a rectangle&nbsp;
 
   - [CreateRgn](win32ui.md#win32uicreatergn)
 
-    Creates a new[PyCRgn](README.md#pycrgn)object.&nbsp;
+    Creates a new[PyCRgn](#pycrgn)object.&nbsp;
 
   - [CreateRichEditCtrl](win32ui.md#win32uicreatericheditctrl)
 
@@ -168,11 +169,11 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateRichEditDocTemplate](win32ui.md#win32uicreatericheditdoctemplate)
 
-    Create a[PyCRichEditDocTemplate](README.md#pycricheditdoctemplate)object.&nbsp;
+    Create a[PyCRichEditDocTemplate](#pycricheditdoctemplate)object.&nbsp;
 
   - [CreateRichEditView](win32ui.md#win32uicreatericheditview)
 
-    Creates a[PyCRichEditView](README.md#pycricheditview)object.&nbsp;
+    Creates a[PyCRichEditView](#pycricheditview)object.&nbsp;
 
   - [CreateSliderCtrl](win32ui.md#win32uicreatesliderctrl)
 
@@ -192,7 +193,7 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateFont](win32ui.md#win32uicreatefont)
 
-    Creates a[PyCFont](README.md#pycfont)object.&nbsp;
+    Creates a[PyCFont](#pycfont)object.&nbsp;
 
   - [CreateToolBar](win32ui.md#win32uicreatetoolbar)
 
@@ -208,15 +209,15 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateThread](win32ui.md#win32uicreatethread)
 
-    Creates a[PyCWinThread](README.md#pycwinthread)object.&nbsp;
+    Creates a[PyCWinThread](#pycwinthread)object.&nbsp;
 
   - [CreateView](win32ui.md#win32uicreateview)
 
-    Creates a[PyCView](README.md#pycview)object.&nbsp;
+    Creates a[PyCView](#pycview)object.&nbsp;
 
   - [CreateEditView](win32ui.md#win32uicreateeditview)
 
-    Creates an[PyCEditView](README.md#pyceditview)object.&nbsp;
+    Creates an[PyCEditView](#pyceditview)object.&nbsp;
 
   - [CreateDebuggerThread](win32ui.md#win32uicreatedebuggerthread)
 
@@ -224,11 +225,11 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [CreateWindowFromHandle](win32ui.md#win32uicreatewindowfromhandle)
 
-    Creates a[PyCWnd](README.md#pycwnd)from an integer containing a HWND&nbsp;
+    Creates a[PyCWnd](#pycwnd)from an integer containing a HWND&nbsp;
 
   - [CreateWnd](win32ui.md#win32uicreatewnd)
 
-    Create a new unitialized[PyCWnd](README.md#pycwnd)object&nbsp;
+    Create a new unitialized[PyCWnd](#pycwnd)object&nbsp;
 
   - [DestroyDebuggerThread](win32ui.md#win32uidestroydebuggerthread)
 
@@ -364,7 +365,7 @@ A module, encapsulating the Microsoft Foundation Classes.
 
   - [LoadLibrary](win32ui.md#win32uiloadlibrary)
 
-    Creates a[PyDLL](README.md#pydll)object.&nbsp;
+    Creates a[PyDLL](#pydll)object.&nbsp;
 
   - [LoadMenu](win32ui.md#win32uiloadmenu)
 
@@ -467,20 +468,20 @@ A module, encapsulating the Microsoft Foundation Classes.
     Writes a value to the INI file.&nbsp;
 
 ## AFX_IDW_PANE_FIRST
- **const win32ui.AFX_IDW_PANE_FIRST;** 
+ __const win32ui.AFX_IDW_PANE_FIRST;__ 
 Id of the first splitter pane
 
 ## AFX_IDW_PANE_LAST
- **const win32ui.AFX_IDW_PANE_LAST;** 
+ __const win32ui.AFX_IDW_PANE_LAST;__ 
 Id of the last splitter pane
 
 ## AFX_WS_DEFAULT_VIEW
- **const win32ui.AFX_WS_DEFAULT_VIEW;** 
+ __const win32ui.AFX_WS_DEFAULT_VIEW;__ 
 
 
-## [win32ui](README.md#win32ui).AddToRecentFileList
+## [win32ui](#win32ui).AddToRecentFileList
 
- **AddToRecentFileList( *fileName* ** )
+ __AddToRecentFileList( *fileName* __ )
 Adds an entry to the applications Recent File List.
 
 #### Parameters
@@ -496,72 +497,72 @@ Adds an entry to the applications Recent File List.
   - CWinApp::AddToRecentFileList
 
 ## CDocTemplate_Confidence_maybeAttemptForeign
- **const win32ui.CDocTemplate_Confidence_maybeAttemptForeign;** 
+ __const win32ui.CDocTemplate_Confidence_maybeAttemptForeign;__ 
 
 
 ## CDocTemplate_Confidence_maybeAttemptNative
- **const win32ui.CDocTemplate_Confidence_maybeAttemptNative;** 
+ __const win32ui.CDocTemplate_Confidence_maybeAttemptNative;__ 
 
 
 ## CDocTemplate_Confidence_noAttempt
- **const win32ui.CDocTemplate_Confidence_noAttempt;** 
+ __const win32ui.CDocTemplate_Confidence_noAttempt;__ 
 
 
 ## CDocTemplate_Confidence_yesAlreadyOpen
- **const win32ui.CDocTemplate_Confidence_yesAlreadyOpen;** 
+ __const win32ui.CDocTemplate_Confidence_yesAlreadyOpen;__ 
 
 
 ## CDocTemplate_Confidence_yesAttemptForeign
- **const win32ui.CDocTemplate_Confidence_yesAttemptForeign;** 
+ __const win32ui.CDocTemplate_Confidence_yesAttemptForeign;__ 
 
 
 ## CDocTemplate_Confidence_yesAttemptNative
- **const win32ui.CDocTemplate_Confidence_yesAttemptNative;** 
+ __const win32ui.CDocTemplate_Confidence_yesAttemptNative;__ 
 
 
 ## CDocTemplate_docName
- **const win32ui.CDocTemplate_docName;** 
+ __const win32ui.CDocTemplate_docName;__ 
 
 
 ## CDocTemplate_fileNewName
- **const win32ui.CDocTemplate_fileNewName;** 
+ __const win32ui.CDocTemplate_fileNewName;__ 
 
 
 ## CDocTemplate_filterExt
- **const win32ui.CDocTemplate_filterExt;** 
+ __const win32ui.CDocTemplate_filterExt;__ 
 
 
 ## CDocTemplate_filterName
- **const win32ui.CDocTemplate_filterName;** 
+ __const win32ui.CDocTemplate_filterName;__ 
 
 
 ## CDocTemplate_regFileTypeId
- **const win32ui.CDocTemplate_regFileTypeId;** 
+ __const win32ui.CDocTemplate_regFileTypeId;__ 
 
 
 ## CDocTemplate_regFileTypeName
- **const win32ui.CDocTemplate_regFileTypeName;** 
+ __const win32ui.CDocTemplate_regFileTypeName;__ 
 
 
 ## CDocTemplate_windowTitle
- **const win32ui.CDocTemplate_windowTitle;** 
+ __const win32ui.CDocTemplate_windowTitle;__ 
 
 
 ## CRichEditView_WrapNone
- **const win32ui.CRichEditView_WrapNone;** 
+ __const win32ui.CRichEditView_WrapNone;__ 
 
 
 ## CRichEditView_WrapToTargetDevice
- **const win32ui.CRichEditView_WrapToTargetDevice;** 
+ __const win32ui.CRichEditView_WrapToTargetDevice;__ 
 
 
 ## CRichEditView_WrapToWindow
- **const win32ui.CRichEditView_WrapToWindow;** 
+ __const win32ui.CRichEditView_WrapToWindow;__ 
 
 
-## [win32ui](README.md#win32ui).ComparePath
+## [win32ui](#win32ui).ComparePath
 
-int = **ComparePath( *path1*  *, path2* ** )
+int = __ComparePath( *path1*  *, path2* __ )
 Compares 2 paths.
 
 #### Parameters
@@ -575,19 +576,19 @@ Compares 2 paths.
 
     The path name.
 
-## [win32ui](README.md#win32ui).CreateBitmap
+## [win32ui](#win32ui).CreateBitmap
 
-[PyCBitMap](README.md#pycbitmap)= **CreateBitmap(** )
+[PyCBitMap](#pycbitmap)= __CreateBitmap(__ )
 Creates a bitmap object.
 
-## [win32ui](README.md#win32ui).CreateBitmapFromHandle
+## [win32ui](#win32ui).CreateBitmapFromHandle
 
-[PyCBitMap](README.md#pycbitmap)= **CreateBitmapFromHandle(** )
+[PyCBitMap](#pycbitmap)= __CreateBitmapFromHandle(__ )
 Creates a bitmap object from a HBITMAP.
 
-## [win32ui](README.md#win32ui).CreateBrush
+## [win32ui](#win32ui).CreateBrush
 
-[PyCBrush](README.md#pycbrush)= **CreateBrush(** )
+[PyCBrush](#pycbrush)= __CreateBrush(__ )
 Creates a new brush object.
 
 #### Alternative Parameters
@@ -608,14 +609,14 @@ Creates a new brush object.
 #### Comments
 If called with no arguments, an uninitialized brush is created.
 
-## [win32ui](README.md#win32ui).CreateButton
+## [win32ui](#win32ui).CreateButton
 
-[PyCButton](README.md#pycbutton)= **CreateButton(** )
+[PyCButton](#pycbutton)= __CreateButton(__ )
 Creates a button object.[PyCButton::CreateWindow](PyCButton.md#pycbuttoncreatewindow)creates the actual control.
 
-## [win32ui](README.md#win32ui).CreateColorDialog
+## [win32ui](#win32ui).CreateColorDialog
 
-[PyCColorDialog](README.md#pyccolordialog)= **CreateColorDialog( *initColor*  *, flags*  *, parent* ** )
+[PyCColorDialog](#pyccolordialog)= __CreateColorDialog( *initColor*  *, flags*  *, parent* __ )
 Creates a color selection dialog box. 
 
 self*/, PyObject *args )
@@ -631,13 +632,13 @@ self*/, PyObject *args )
 
     The choose-color flags to use.
 
-  -  *parent=None* :[PyCWnd](README.md#pycwnd)
+  -  *parent=None* :[PyCWnd](#pycwnd)
 
     The parent or owner window of the dialog.
 
-## [win32ui](README.md#win32ui).CreateControl
+## [win32ui](#win32ui).CreateControl
 
-[PyCWnd](README.md#pycwnd)= **CreateControl( *classId*  *, windowName*  *, style*  *, rect*  *, parent*  *, id*  *, obPersist*  *, bStorage*  *, licKey* ** )
+[PyCWnd](#pycwnd)= __CreateControl( *classId*  *, windowName*  *, style*  *, rect*  *, parent*  *, id*  *, obPersist*  *, bStorage*  *, licKey* __ )
 Creates an OLE control.
 
 #### Parameters
@@ -659,7 +660,7 @@ Creates an OLE control.
 
     The default position of the window.
 
-  -  *parent* :[PyCWnd](README.md#pycwnd)
+  -  *parent* :[PyCWnd](#pycwnd)
 
     The parent window
 
@@ -680,22 +681,22 @@ Creates an OLE control.
     The licence key for the control.
 
 #### Return Value
-The result is a[PyCWnd](README.md#pycwnd)(or derived) object, or a win32ui.error exception is raised.
+The result is a[PyCWnd](#pycwnd)(or derived) object, or a win32ui.error exception is raised.
 
-## [win32ui](README.md#win32ui).CreateControlBar
+## [win32ui](#win32ui).CreateControlBar
 
-[PyCControlBar](README.md#pyccontrolbar)= **CreateControlBar(** )
+[PyCControlBar](#pyccontrolbar)= __CreateControlBar(__ )
 Creates a control bar object.
 
-## [win32ui](README.md#win32ui).CreateCtrlView
+## [win32ui](#win32ui).CreateCtrlView
 
-[PyCCtrlView](README.md#pycctrlview)= **CreateCtrlView( *doc*  *, className*  *, style* ** )
+[PyCCtrlView](#pycctrlview)= __CreateCtrlView( *doc*  *, className*  *, style* __ )
 Creates a control view object.
 
 #### Parameters
 
 
-  -  *doc* :[PyCDocument](README.md#pycdocument)
+  -  *doc* :[PyCDocument](#pycdocument)
 
     The document.
 
@@ -707,27 +708,27 @@ Creates a control view object.
 
     Additional style bits
 
-## [win32ui](README.md#win32ui).CreateDC
+## [win32ui](#win32ui).CreateDC
 
- **CreateDC(** )
+ __CreateDC(__ )
 Creates an uninitialised device context.
 
-## [win32ui](README.md#win32ui).CreateDCFromHandle
+## [win32ui](#win32ui).CreateDCFromHandle
 
- **CreateDCFromHandle(** )
+ __CreateDCFromHandle(__ )
 Creates a DC object from an integer handle.
 
-## [win32ui](README.md#win32ui).CreateDebuggerThread
+## [win32ui](#win32ui).CreateDebuggerThread
 
- **CreateDebuggerThread(** )
+ __CreateDebuggerThread(__ )
 Starts a debugging thread (ie, creates the "break" button).
 
 #### Comments
 This allows an application which is performing a long operation to dispatch paint messages during the operation.
 
-## [win32ui](README.md#win32ui).CreateDialog
+## [win32ui](#win32ui).CreateDialog
 
-[PyCDialog](README.md#pycdialog)= **CreateDialog( *idRes*  *, dll* ** )
+[PyCDialog](#pycdialog)= __CreateDialog( *idRes*  *, dll* __ )
 Creates a dialog object.
 
 #### Parameters
@@ -737,18 +738,18 @@ Creates a dialog object.
 
     The ID of the dialog resource to load.
 
-  -  *dll=None* :[PyDLL](README.md#pydll)
+  -  *dll=None* :[PyDLL](#pydll)
 
     The DLL object to load the dialog from.
 
-## [win32ui](README.md#win32ui).CreateDialogBar
+## [win32ui](#win32ui).CreateDialogBar
 
-[PyCDialogBar](README.md#pycdialogbar)= **CreateDialogBar(** )
-Creates a[PyCDialogBar](README.md#pycdialogbar)object.
+[PyCDialogBar](#pycdialogbar)= __CreateDialogBar(__ )
+Creates a[PyCDialogBar](#pycdialogbar)object.
 
-## [win32ui](README.md#win32ui).CreateDialogIndirect
+## [win32ui](#win32ui).CreateDialogIndirect
 
-[PyCDialog](README.md#pycdialog)= **CreateDialogIndirect( *obList* ** )
+[PyCDialog](#pycdialog)= __CreateDialogIndirect( *obList* __ )
 Creates a dialog object from a template.
 
 #### Parameters
@@ -756,11 +757,11 @@ Creates a dialog object from a template.
 
   -  *obList* : list
 
-    A list of [[PyDLGTEMPLATE](README.md#pydlgtemplate),[PyDLGITEMTEMPLATE](README.md#pydlgitemtemplate), ...], which describe the dialog to be created.
+    A list of [[PyDLGTEMPLATE](#pydlgtemplate),[PyDLGITEMTEMPLATE](#pydlgitemtemplate), ...], which describe the dialog to be created.
 
-## [win32ui](README.md#win32ui).CreateDocTemplate
+## [win32ui](#win32ui).CreateDocTemplate
 
-[PyCDocTemplate](README.md#pycdoctemplate)= **CreateDocTemplate( *idRes* ** )
+[PyCDocTemplate](#pycdoctemplate)= __CreateDocTemplate( *idRes* __ )
 Creates a document template object.
 
 #### Parameters
@@ -770,26 +771,26 @@ Creates a document template object.
 
     The ID for resources for documents of this type.
 
-## [win32ui](README.md#win32ui).CreateEdit
+## [win32ui](#win32ui).CreateEdit
 
-[PyCEdit](README.md#pycedit)= **CreateEdit(** )
+[PyCEdit](#pycedit)= __CreateEdit(__ )
 Creates an Edit object.[PyCEdit::CreateWindow](PyCEdit.md#pyceditcreatewindow)creates the actual control.
 
-## [win32ui](README.md#win32ui).CreateEditView
+## [win32ui](#win32ui).CreateEditView
 
-[PyCEditView](README.md#pyceditview)= **CreateEditView( *doc* ** )
+[PyCEditView](#pyceditview)= __CreateEditView( *doc* __ )
 Creates a PyEditView object.
 
 #### Parameters
 
 
-  -  *doc* :[PyCDocument](README.md#pycdocument)
+  -  *doc* :[PyCDocument](#pycdocument)
 
     The document to use with the view.
 
-## [win32ui](README.md#win32ui).CreateFileDialog
+## [win32ui](#win32ui).CreateFileDialog
 
-[PyCFileDialog](README.md#pycfiledialog)= **CreateFileDialog( *bFileOpen*  *, defExt*  *, fileName*  *, flags*  *, filter*  *, parent* ** )
+[PyCFileDialog](#pycfiledialog)= __CreateFileDialog( *bFileOpen*  *, defExt*  *, fileName*  *, flags*  *, filter*  *, parent* __ )
 Creates a File Open/Save/etc Common Dialog. 
 
 self*/, PyObject *args )
@@ -827,14 +828,14 @@ Multiple extensions may be specified using ';' as the delimiter.
 
 The string ends with two '|' characters.  May be None.
 
-  -  *parent=None* :[PyCWnd](README.md#pycwnd)
+  -  *parent=None* :[PyCWnd](#pycwnd)
 
     The parent or owner window of the dialog.
 
-## [win32ui](README.md#win32ui).CreateFont
+## [win32ui](#win32ui).CreateFont
 
-[PyCFont](README.md#pycfont)= **CreateFont( *properties* ** )
-Creates a[PyCFont](README.md#pycfont)object.
+[PyCFont](#pycfont)= __CreateFont( *properties* __ )
+Creates a[PyCFont](#pycfont)object.
 
 #### Parameters
 
@@ -866,9 +867,9 @@ The code for the PyCFont was contributed by Dave Brennan
 
 args contains a dict of font properties
 
-## [win32ui](README.md#win32ui).CreateFontDialog
+## [win32ui](#win32ui).CreateFontDialog
 
-[PyCFontDialog](README.md#pycfontdialog)= **CreateFontDialog( *font*  *, flags*  *, dcPrinter*  *, parent* ** )
+[PyCFontDialog](#pycfontdialog)= __CreateFontDialog( *font*  *, flags*  *, dcPrinter*  *, parent* __ )
 Creates a font selection dialog box. 
 
 self*/, PyObject *args )
@@ -884,23 +885,23 @@ self*/, PyObject *args )
 
     The choose-font flags to use.
 
-  -  *dcPrinter=None* :[PyCDC](README.md#pycdc)
+  -  *dcPrinter=None* :[PyCDC](#pycdc)
 
     Show fonts available for the specified device.
 
-  -  *parent=None* :[PyCWnd](README.md#pycwnd)
+  -  *parent=None* :[PyCWnd](#pycwnd)
 
     The parent or owner window of the dialog.
 
-## [win32ui](README.md#win32ui).CreateFormView
+## [win32ui](#win32ui).CreateFormView
 
-[PyCFormView](README.md#pycformview)= **CreateFormView( *doc*  *, Template* ** )
+[PyCFormView](#pycformview)= __CreateFormView( *doc*  *, Template* __ )
 Creates a form view object.
 
 #### Parameters
 
 
-  -  *doc* :[PyCDocument](README.md#pycdocument)
+  -  *doc* :[PyCDocument](#pycdocument)
 
     The document to use with the view.
 
@@ -908,17 +909,17 @@ Creates a form view object.
 
     Name or ID of the dialog template resource
 
-## [win32ui](README.md#win32ui).CreateFrame
+## [win32ui](#win32ui).CreateFrame
 
- **PyFrameWnd** = **CreateFrame(** )
+ __PyFrameWnd__ = __CreateFrame(__ )
 Creates a Frame window.
 
 #### Return Value
 The window object (not the OS window) created.  An exception is raised if an error occurs.
 
-## [win32ui](README.md#win32ui).CreateImageList
+## [win32ui](#win32ui).CreateImageList
 
-int = **CreateImageList( *cx*  *, cy*  *, mask*  *, initial*  *, grow* ** )
+int = __CreateImageList( *cx*  *, cy*  *, mask*  *, initial*  *, grow* __ )
 Creates an image list.
 
 #### Parameters
@@ -963,34 +964,34 @@ Creates an image list.
 
     Color used to generate a mask. Each pixel of this color in the specified bitmap is changed to black, and the corresponding bit in the mask is set to one.
 
-## [win32ui](README.md#win32ui).CreateListCtrl
+## [win32ui](#win32ui).CreateListCtrl
 
-[PyCListCtrl](README.md#pyclistctrl)= **CreateListCtrl(** )
+[PyCListCtrl](#pyclistctrl)= __CreateListCtrl(__ )
 Creates a list control.
 
-## [win32ui](README.md#win32ui).CreateListView
+## [win32ui](#win32ui).CreateListView
 
-[PyCListView](README.md#pyclistview)= **CreateListView( *doc* ** )
+[PyCListView](#pyclistview)= __CreateListView( *doc* __ )
 Creates a PyCListView object.
 
 #### Parameters
 
 
-  -  *doc* :[PyCDocument](README.md#pycdocument)
+  -  *doc* :[PyCDocument](#pycdocument)
 
     The document to use with the view.
 
-## [win32ui](README.md#win32ui).CreateMDIChild
+## [win32ui](#win32ui).CreateMDIChild
 
-[PyCMDIChildWnd](README.md#pycmdichildwnd)= **CreateMDIChild(** )
+[PyCMDIChildWnd](#pycmdichildwnd)= __CreateMDIChild(__ )
 Creates an MDI Child window.
 
 #### Return Value
 The window object created.  An exception is raised if an error occurs.
 
-## [win32ui](README.md#win32ui).CreateMDIFrame
+## [win32ui](#win32ui).CreateMDIFrame
 
-[PyCMDIFrameWnd](README.md#pycmdiframewnd)= **CreateMDIFrame(** )
+[PyCMDIFrameWnd](#pycmdiframewnd)= __CreateMDIFrame(__ )
 Creates an MDI Frame window.
 
 #### Comments
@@ -1004,27 +1005,27 @@ window already exists.
 #### Return Value
 The window object created.  An exception is raised if an error occurs.
 
-## [win32ui](README.md#win32ui).CreateMenu
+## [win32ui](#win32ui).CreateMenu
 
-[PyCMenu](README.md#pycmenu)= **CreateMenu(** )
+[PyCMenu](#pycmenu)= __CreateMenu(__ )
 Creates a menu object.
 
-## [win32ui](README.md#win32ui).CreatePalette
+## [win32ui](#win32ui).CreatePalette
 
-int = **CreatePalette( *lp* ** )
+int = __CreatePalette( *lp* __ )
 Creates a HPALETTE
 
 #### Parameters
 
 
-  -  *lp* : **LOGPALETTE** 
+  -  *lp* : __LOGPALETTE__ 
 
     The entries for the palette.
 
-## [win32ui](README.md#win32ui).CreatePen
+## [win32ui](#win32ui).CreatePen
 
- **PyCPen** = **CreatePen( *style*  *, width*  *, color* ** )
-Creates a **PyCPen** object. 
+ __PyCPen__ = __CreatePen( *style*  *, width*  *, color* __ )
+Creates a __PyCPen__ object. 
 
 static*/ PyObject *
 
@@ -1043,14 +1044,14 @@ static*/ PyObject *
 
     The pen color.
 
-## [win32ui](README.md#win32ui).CreatePopupMenu
+## [win32ui](#win32ui).CreatePopupMenu
 
-[PyCMenu](README.md#pycmenu)= **CreatePopupMenu(** )
+[PyCMenu](#pycmenu)= __CreatePopupMenu(__ )
 Creates a popup menu object.
 
-## [win32ui](README.md#win32ui).CreatePrintDialog
+## [win32ui](#win32ui).CreatePrintDialog
 
-[PyCPrintDialog](README.md#pycprintdialog)= **CreatePrintDialog( *idRes*  *, bPrintSetupOnly*  *, dwFlags*  *, parent*  *, dll* ** )
+[PyCPrintDialog](#pycprintdialog)= __CreatePrintDialog( *idRes*  *, bPrintSetupOnly*  *, dwFlags*  *, parent*  *, dll* __ )
 Creates a print dialog object.
 
 #### Parameters
@@ -1068,28 +1069,28 @@ Creates a print dialog object.
 
     One or more flags you can use to customize the settings of the dialog box, combined using the bitwise OR operator.
 
-  -  *parent=None* :[PyCWnd](README.md#pycwnd)
+  -  *parent=None* :[PyCWnd](#pycwnd)
 
     A pointer to the dialog box parent or owner window.
 
-  -  *dll=None* :[PyDLL](README.md#pydll)
+  -  *dll=None* :[PyDLL](#pydll)
 
     The DLL object to load the dialog from.
 
-## [win32ui](README.md#win32ui).CreateProgressCtrl
+## [win32ui](#win32ui).CreateProgressCtrl
 
-[PyCProgressCtrl](README.md#pycprogressctrl)= **CreateProgressCtrl(** )
-Creates a progress control object. **PyProgressCtrl::Create** creates the actual control.
+[PyCProgressCtrl](#pycprogressctrl)= __CreateProgressCtrl(__ )
+Creates a progress control object. __PyProgressCtrl::Create__ creates the actual control.
 
-## [win32ui](README.md#win32ui).CreatePropertyPage
+## [win32ui](#win32ui).CreatePropertyPage
 
-[PyCPropertyPage](README.md#pycpropertypage)= **CreatePropertyPage( *resource*  *, caption* ** )
+[PyCPropertyPage](#pycpropertypage)= __CreatePropertyPage( *resource*  *, caption* __ )
 Creates a property page object.
 
 #### Parameters
 
 
-  -  *resource* :[PyResourceId](README.md#pyresourceid)
+  -  *resource* :[PyResourceId](#pyresourceid)
 
     String template name or inteter resource ID to use for the page.
 
@@ -1097,15 +1098,15 @@ Creates a property page object.
 
     The ID if the string resource to use for the caption.
 
-## [win32ui](README.md#win32ui).CreatePropertyPageIndirect
+## [win32ui](#win32ui).CreatePropertyPageIndirect
 
-[PyCPropertyPage](README.md#pycpropertypage)= **CreatePropertyPageIndirect( *resourceList*  *, caption* ** )
+[PyCPropertyPage](#pycpropertypage)= __CreatePropertyPageIndirect( *resourceList*  *, caption* __ )
 Creates a property page object from a template.
 
 #### Parameters
 
 
-  -  *resourceList* :[PyDialogTemplate](README.md#pydialogtemplate)
+  -  *resourceList* :[PyDialogTemplate](#pydialogtemplate)
 
     Definition of the page to be created.
 
@@ -1113,19 +1114,19 @@ Creates a property page object from a template.
 
     The ID if the string resource to use for the caption.
 
-## [win32ui](README.md#win32ui).CreatePropertySheet
+## [win32ui](#win32ui).CreatePropertySheet
 
-[PyCPropertySheet](README.md#pycpropertysheet)= **CreatePropertySheet( *caption*  *, parent*  *, select* ** )
+[PyCPropertySheet](#pycpropertysheet)= __CreatePropertySheet( *caption*  *, parent*  *, select* __ )
 Creates a property sheet object.
 
 #### Parameters
 
 
-  -  *caption* :[PyResourceId](README.md#pyresourceid)
+  -  *caption* :[PyResourceId](#pyresourceid)
 
     The caption for the property sheet, or id of the caption
 
-  -  *parent=None* :[PyCWnd](README.md#pycwnd)
+  -  *parent=None* :[PyCWnd](#pycwnd)
 
     The parent window of the property sheet.
 
@@ -1133,24 +1134,24 @@ Creates a property sheet object.
 
     The index of the first page to be selected.
 
-## [win32ui](README.md#win32ui).CreateRgn
+## [win32ui](#win32ui).CreateRgn
 
-[PyCRgn](README.md#pycrgn)= **CreateRgn(** )
+[PyCRgn](#pycrgn)= __CreateRgn(__ )
 Creates a new rgn object. 
 
 Return Values: a PyCRgn object
 
-## [win32ui](README.md#win32ui).CreateRichEditCtrl
+## [win32ui](#win32ui).CreateRichEditCtrl
 
-[PyCRichEditCtrl](README.md#pycricheditctrl)= **CreateRichEditCtrl(** )
+[PyCRichEditCtrl](#pycricheditctrl)= __CreateRichEditCtrl(__ )
 Creates a rich edit control.
 
 #### Comments
-This method only creates the RichEdit object. To create the window, (ie, the control itself), call **PyCRichEdit::CreateWindow** 
+This method only creates the RichEdit object. To create the window, (ie, the control itself), call __PyCRichEdit::CreateWindow__ 
 
-## [win32ui](README.md#win32ui).CreateRichEditDocTemplate
+## [win32ui](#win32ui).CreateRichEditDocTemplate
 
-[PyCRichEditDocTemplate](README.md#pycricheditdoctemplate)= **CreateRichEditDocTemplate( *idRes* ** )
+[PyCRichEditDocTemplate](#pycricheditdoctemplate)= __CreateRichEditDocTemplate( *idRes* __ )
 Creates a document template object.
 
 #### Parameters
@@ -1160,42 +1161,42 @@ Creates a document template object.
 
     The ID for resources for documents of this type.
 
-## [win32ui](README.md#win32ui).CreateRichEditView
+## [win32ui](#win32ui).CreateRichEditView
 
-[PyCRichEditView](README.md#pycricheditview)= **CreateRichEditView( *doc* ** )
+[PyCRichEditView](#pycricheditview)= __CreateRichEditView( *doc* __ )
 Creates a PyRichEditView object.
 
 #### Parameters
 
 
-  -  *doc=None* :[PyCDocument](README.md#pycdocument)
+  -  *doc=None* :[PyCDocument](#pycdocument)
 
     The document to use with the view, or None for NULL.
 
-## [win32ui](README.md#win32ui).CreateSliderCtrl
+## [win32ui](#win32ui).CreateSliderCtrl
 
-[PyCSliderCtrl](README.md#pycsliderctrl)= **CreateSliderCtrl(** )
+[PyCSliderCtrl](#pycsliderctrl)= __CreateSliderCtrl(__ )
 Creates a Slider control object.
 
 #### Comments
-The method **PySliderCtrl::CreateWindow** is used to 
+The method __PySliderCtrl::CreateWindow__ is used to 
 
 create the actual control.
 
-## [win32ui](README.md#win32ui).CreateSplitter
+## [win32ui](#win32ui).CreateSplitter
 
-[PyCSplitterWnd](README.md#pycsplitterwnd)= **CreateSplitter(** )
+[PyCSplitterWnd](#pycsplitterwnd)= __CreateSplitter(__ )
 Creates a splitter window object.
 
-## [win32ui](README.md#win32ui).CreateStatusBar
+## [win32ui](#win32ui).CreateStatusBar
 
-[PyCStatusBar](README.md#pycstatusbar)= **CreateStatusBar( *parent*  *, style*  *, windowId*  *, ctrlStype* ** )
+[PyCStatusBar](#pycstatusbar)= __CreateStatusBar( *parent*  *, style*  *, windowId*  *, ctrlStype* __ )
 Creates a statusbar object.
 
 #### Parameters
 
 
-  -  *parent* :[PyCWnd](README.md#pycwnd)
+  -  *parent* :[PyCWnd](#pycwnd)
 
     The parent window for the status bar.
 
@@ -1209,7 +1210,7 @@ Creates a statusbar object.
 
   -  *ctrlStype=0* : int
 
-    Additional styles for the creation of the embedded[PyCStatusBarCtrl](README.md#pycstatusbarctrl)object.
+    Additional styles for the creation of the embedded[PyCStatusBarCtrl](#pycstatusbarctrl)object.
 Status bar styles supported are:
 commctrl.SBARS_SIZEGRIP - The status bar control includes a 
 
@@ -1226,25 +1227,25 @@ You must ensure no 2 status bars share the same ID.
 
   - CStatusBar::CreateEx
 
-## [win32ui](README.md#win32ui).CreateStatusBarCtrl
+## [win32ui](#win32ui).CreateStatusBarCtrl
 
-[PyCStatusBarCtrl](README.md#pycstatusbarctrl)= **CreateStatusBarCtrl(** )
-Creates a progress control object. **PyStatusBarCtrl::Create** creates the actual control.
+[PyCStatusBarCtrl](#pycstatusbarctrl)= __CreateStatusBarCtrl(__ )
+Creates a progress control object. __PyStatusBarCtrl::Create__ creates the actual control.
 
-## [win32ui](README.md#win32ui).CreateThread
+## [win32ui](#win32ui).CreateThread
 
-[PyCWinThread](README.md#pycwinthread)= **CreateThread(** )
-Creates a new[PyCWinThread](README.md#pycwinthread)object
+[PyCWinThread](#pycwinthread)= __CreateThread(__ )
+Creates a new[PyCWinThread](#pycwinthread)object
 
-## [win32ui](README.md#win32ui).CreateToolBar
+## [win32ui](#win32ui).CreateToolBar
 
-[PyCToolBar](README.md#pyctoolbar)= **CreateToolBar( *parent*  *, style*  *, windowId* ** )
+[PyCToolBar](#pyctoolbar)= __CreateToolBar( *parent*  *, style*  *, windowId* __ )
 Creates a toolbar object.
 
 #### Parameters
 
 
-  -  *parent* :[PyCWnd](README.md#pycwnd)
+  -  *parent* :[PyCWnd](#pycwnd)
 
     The parent window for the toolbar.
 
@@ -1259,49 +1260,49 @@ Creates a toolbar object.
 #### Comments
 You must ensure no 2 toolbars share the same ID.
 
-## [win32ui](README.md#win32ui).CreateToolBarCtrl
+## [win32ui](#win32ui).CreateToolBarCtrl
 
-[PyCToolBarCtrl](README.md#pyctoolbarctrl)= **CreateToolBarCtrl(** )
+[PyCToolBarCtrl](#pyctoolbarctrl)= __CreateToolBarCtrl(__ )
 Creates a toolbar control object.[PyCToolBarCtrl::CreateWindow](PyCToolBarCtrl.md#pyctoolbarctrlcreatewindow)creates the actual control.
 
-## [win32ui](README.md#win32ui).CreateToolTipCtrl
+## [win32ui](#win32ui).CreateToolTipCtrl
 
-[PyCToolTipCtrl](README.md#pyctooltipctrl)= **CreateToolTipCtrl(** )
-Creates a progress control object. **PyToolTipCtrl::Create** creates the actual control.
+[PyCToolTipCtrl](#pyctooltipctrl)= __CreateToolTipCtrl(__ )
+Creates a progress control object. __PyToolTipCtrl::Create__ creates the actual control.
 
-## [win32ui](README.md#win32ui).CreateTreeCtrl
+## [win32ui](#win32ui).CreateTreeCtrl
 
-[PyCTreeCtrl](README.md#pyctreectrl)= **CreateTreeCtrl(** )
+[PyCTreeCtrl](#pyctreectrl)= __CreateTreeCtrl(__ )
 Creates a tree control.
 
-## [win32ui](README.md#win32ui).CreateTreeView
+## [win32ui](#win32ui).CreateTreeView
 
-[PyCTreeView](README.md#pyctreeview)= **CreateTreeView( *doc* ** )
+[PyCTreeView](#pyctreeview)= __CreateTreeView( *doc* __ )
 Creates a PyCTreeView object.
 
 #### Parameters
 
 
-  -  *doc* :[PyCDocument](README.md#pycdocument)
+  -  *doc* :[PyCDocument](#pycdocument)
 
     The document to use with the view.
 
-## [win32ui](README.md#win32ui).CreateView
+## [win32ui](#win32ui).CreateView
 
-[PyCScrollView](README.md#pycscrollview)= **CreateView( *doc* ** )
+[PyCScrollView](#pycscrollview)= __CreateView( *doc* __ )
 Creates a generic view object.
 
 #### Parameters
 
 
-  -  *doc* :[PyCDocument](README.md#pycdocument)
+  -  *doc* :[PyCDocument](#pycdocument)
 
     The document to use with the view.
 
-## [win32ui](README.md#win32ui).CreateWindowFromHandle
+## [win32ui](#win32ui).CreateWindowFromHandle
 
-[PyCWnd](README.md#pycwnd)= **CreateWindowFromHandle( *hwnd* ** )
-Creates a[PyCWnd](README.md#pycwnd)from an integer containing a HWND
+[PyCWnd](#pycwnd)= __CreateWindowFromHandle( *hwnd* __ )
+Creates a[PyCWnd](#pycwnd)from an integer containing a HWND
 
 #### Parameters
 
@@ -1311,26 +1312,26 @@ Creates a[PyCWnd](README.md#pycwnd)from an integer containing a HWND
     The window handle.
 
 #### Return Value
-The result is a[PyCWnd](README.md#pycwnd)(or derived) object, or a win32ui.error exception is raised.
+The result is a[PyCWnd](#pycwnd)(or derived) object, or a win32ui.error exception is raised.
 
-## [win32ui](README.md#win32ui).CreateWnd
+## [win32ui](#win32ui).CreateWnd
 
-[PyCWnd](README.md#pycwnd)= **CreateWnd(** )
-Creates an unitialized[PyCWnd](README.md#pycwnd)
+[PyCWnd](#pycwnd)= __CreateWnd(__ )
+Creates an unitialized[PyCWnd](#pycwnd)
 
-## [win32ui](README.md#win32ui).DestroyDebuggerThread
+## [win32ui](#win32ui).DestroyDebuggerThread
 
- **DestroyDebuggerThread(** )
+ __DestroyDebuggerThread(__ )
 Cleans up the debugger thread.  See[win32ui::CreateDebuggerThread](win32ui.md#win32uicreatedebuggerthread).
 
-## [win32ui](README.md#win32ui).DisplayTraceback
+## [win32ui](#win32ui).DisplayTraceback
 
- **DisplayTraceback(** )
+ __DisplayTraceback(__ )
 Displays a traceback in a dialog box.
 
-## [win32ui](README.md#win32ui).DoWaitCursor
+## [win32ui](#win32ui).DoWaitCursor
 
- **DoWaitCursor( *code* ** )
+ __DoWaitCursor( *code* __ )
 Dispay a wait cursor.
 
 #### Parameters
@@ -1340,34 +1341,34 @@ Dispay a wait cursor.
 
     If this parameter is 0, the original cursor is restored. If 1, a wait cursor appears. If -1, the wait cursor ends.
 
-## [win32ui](README.md#win32ui).Enable3dControls
+## [win32ui](#win32ui).Enable3dControls
 
-int = **Enable3dControls(** )
+int = __Enable3dControls(__ )
 Enables 3d controls for the application.
 
 #### Return Value
 True if 3d controls could be enabled, false otherwise.
 
-## [win32ui](README.md#win32ui).EnableControlContainer
+## [win32ui](#win32ui).EnableControlContainer
 
-int = **EnableControlContainer(** )
+int = __EnableControlContainer(__ )
 Enables support for containment of OLE controls.
 
 ## FWS_ADDTOTITLE
- **const win32ui.FWS_ADDTOTITLE;** 
+ __const win32ui.FWS_ADDTOTITLE;__ 
 MFC Frame Window style extension.  Add document title to window title.
 
 ## FWS_PREFIXTITLE
- **const win32ui.FWS_PREFIXTITLE;** 
+ __const win32ui.FWS_PREFIXTITLE;__ 
 MFC Frame Window style extension.
 
 ## FWS_SNAPTOBARS
- **const win32ui.FWS_SNAPTOBARS;** 
+ __const win32ui.FWS_SNAPTOBARS;__ 
 MFC Frame Window style extension.
 
-## [win32ui](README.md#win32ui).FindWindow
+## [win32ui](#win32ui).FindWindow
 
-[PyCWnd](README.md#pycwnd)= **FindWindow( *className*  *, windowName* ** )
+[PyCWnd](#pycwnd)= __FindWindow( *className*  *, windowName* __ )
 Searches for the specified top-level window
 
 #### Parameters
@@ -1382,21 +1383,21 @@ Searches for the specified top-level window
     The window name (ie, title) to find, else None
 
 #### Return Value
-The result is a[PyCWnd](README.md#pycwnd)(or derived) object, or a win32ui.error exception is raised.
+The result is a[PyCWnd](#pycwnd)(or derived) object, or a win32ui.error exception is raised.
 
-## [win32ui](README.md#win32ui).FindWindowEx
+## [win32ui](#win32ui).FindWindowEx
 
-[PyCWnd](README.md#pycwnd)= **FindWindowEx( *parentWindow*  *, childAfter*  *, className*  *, windowName* ** )
+[PyCWnd](#pycwnd)= __FindWindowEx( *parentWindow*  *, childAfter*  *, className*  *, windowName* __ )
 Searches for the specified top-level or child window
 
 #### Parameters
 
 
-  -  *parentWindow* :[PyCWnd](README.md#pycwnd)
+  -  *parentWindow* :[PyCWnd](#pycwnd)
 
     The parent whose children will be searched.  If None, the desktops window will be used.
 
-  -  *childAfter* :[PyCWnd](README.md#pycwnd)
+  -  *childAfter* :[PyCWnd](#pycwnd)
 
     The search begins with the next window in the Z order.  If None, all children are searched.
 
@@ -1409,11 +1410,11 @@ Searches for the specified top-level or child window
     The window name (ie, title) to find, else None
 
 #### Return Value
-The result is a[PyCWnd](README.md#pycwnd)(or derived) object, or a win32ui.error exception is raised.
+The result is a[PyCWnd](#pycwnd)(or derived) object, or a win32ui.error exception is raised.
 
-## [win32ui](README.md#win32ui).FullPath
+## [win32ui](#win32ui).FullPath
 
-string = **FullPath( *path* ** )
+string = __FullPath( *path* __ )
 Return the fully qualified path of a file name.
 
 #### Parameters
@@ -1423,35 +1424,35 @@ Return the fully qualified path of a file name.
 
     The path name.
 
-## [win32ui](README.md#win32ui).GetActiveWindow
+## [win32ui](#win32ui).GetActiveWindow
 
-[PyCWnd](README.md#pycwnd)= **GetActiveWindow(** )
+[PyCWnd](#pycwnd)= __GetActiveWindow(__ )
 Retrieves the active window.
 
 #### Return Value
-The result is a[PyCWnd](README.md#pycwnd)(or derived) object, or a win32ui.error exception is raised.
+The result is a[PyCWnd](#pycwnd)(or derived) object, or a win32ui.error exception is raised.
 
-## [win32ui](README.md#win32ui).GetApp
+## [win32ui](#win32ui).GetApp
 
-[PyCWinApp](README.md#pycwinapp)= **GetApp(** )
+[PyCWinApp](#pycwinapp)= __GetApp(__ )
 Retrieves the application object.
 
 #### Comments
 There will only ever be one application object per application.
 
-## [win32ui](README.md#win32ui).GetAppName
+## [win32ui](#win32ui).GetAppName
 
-int = **GetAppName(** )
+int = __GetAppName(__ )
 Returns the application name.
 
-## [win32ui](README.md#win32ui).GetAppRegistryKey
+## [win32ui](#win32ui).GetAppRegistryKey
 
- **GetAppRegistryKey(** )
+ __GetAppRegistryKey(__ )
 Returns the registry key for the application.
 
-## [win32ui](README.md#win32ui).GetBytes
+## [win32ui](#win32ui).GetBytes
 
-string = **GetBytes( *address*  *, size* ** )
+string = __GetBytes( *address*  *, size* __ )
 Gets raw bytes from memory
 
 #### Parameters
@@ -1473,19 +1474,19 @@ You must be very carefull when using this method.
 #### Return Value
 The result is a string with a length of size.
 
-## [win32ui](README.md#win32ui).GetCommandLine
+## [win32ui](#win32ui).GetCommandLine
 
-string = **GetCommandLine(** )
+string = __GetCommandLine(__ )
 Returns the application's command line.
 
 #### Win32 API References
 
 
-  - Search for *GetCommandLine* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcommandline),[google](README.md#http://www.google.com/search?q=getcommandline)or[google groups](README.md#http://groups.google.com/groups?q=getcommandline).
+  - Search for *GetCommandLine* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcommandline),[google](#http://www.google.com/search?q=getcommandline)or[google groups](#http://groups.google.com/groups?q=getcommandline).
 
-## [win32ui](README.md#win32ui).GetDeviceCaps
+## [win32ui](#win32ui).GetDeviceCaps
 
-int = **GetDeviceCaps( *hdc*  *, index* ** )
+int = __GetDeviceCaps( *hdc*  *, index* __ )
 Calls the API version of GetDeviceCaps.  See also[PyCDC::GetDeviceCaps](PyCDC.md#pycdcgetdevicecaps)
 
 #### Parameters
@@ -1499,9 +1500,9 @@ Calls the API version of GetDeviceCaps.  See also[PyCDC::GetDeviceCaps](PyCDC.md
 
     
 
-## [win32ui](README.md#win32ui).GetFileTitle
+## [win32ui](#win32ui).GetFileTitle
 
-string = **GetFileTitle( *fileName* ** )
+string = __GetFileTitle( *fileName* __ )
 Given a file name, return its title
 
 #### Parameters
@@ -1511,30 +1512,30 @@ Given a file name, return its title
 
     The file name.
 
-## [win32ui](README.md#win32ui).GetFocus
+## [win32ui](#win32ui).GetFocus
 
-[PyCWnd](README.md#pycwnd)= **GetFocus(** )
+[PyCWnd](#pycwnd)= __GetFocus(__ )
 Retrieves the window with the focus.
 
 #### Return Value
-The result is a[PyCWnd](README.md#pycwnd)(or derived) object, or a win32ui.error exception is raised.
+The result is a[PyCWnd](#pycwnd)(or derived) object, or a win32ui.error exception is raised.
 
-## [win32ui](README.md#win32ui).GetForegroundWindow
+## [win32ui](#win32ui).GetForegroundWindow
 
-[PyCWnd](README.md#pycwnd)= **GetForegroundWindow(** )
+[PyCWnd](#pycwnd)= __GetForegroundWindow(__ )
 Retrieves the foreground window.
 
 #### Return Value
-The result is a[PyCWnd](README.md#pycwnd)(or derived) object, or a win32ui.error exception is raised.
+The result is a[PyCWnd](#pycwnd)(or derived) object, or a win32ui.error exception is raised.
 
-## [win32ui](README.md#win32ui).GetHalftoneBrush
+## [win32ui](#win32ui).GetHalftoneBrush
 
-[PyCBrush](README.md#pycbrush)= **GetHalftoneBrush(** )
+[PyCBrush](#pycbrush)= __GetHalftoneBrush(__ )
 Creates a new halftone brush object.
 
-## [win32ui](README.md#win32ui).GetInitialStateRequest
+## [win32ui](#win32ui).GetInitialStateRequest
 
-int = **GetInitialStateRequest(** )
+int = __GetInitialStateRequest(__ )
 Returns the requested state that the application start in.  This is the same as the parameter available to[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)
 
 #### Comments
@@ -1542,24 +1543,24 @@ In some cases, it may not be possible to start in the requested mode.  An applic
 
 may start in its default mode, then set its mode to match the value returned from this method.
 
-## [win32ui](README.md#win32ui).GetMainFrame
+## [win32ui](#win32ui).GetMainFrame
 
-[PyCWnd](README.md#pycwnd)= **GetMainFrame(** )
+[PyCWnd](#pycwnd)= __GetMainFrame(__ )
 Returns a window object for the main application frame.
 
-## [win32ui](README.md#win32ui).GetName
+## [win32ui](#win32ui).GetName
 
-string = **GetName(** )
+string = __GetName(__ )
 Returns the name of the current executable.
 
-## [win32ui](README.md#win32ui).GetProfileFileName
+## [win32ui](#win32ui).GetProfileFileName
 
-string = **GetProfileFileName(** )
+string = __GetProfileFileName(__ )
 Returns the name of the INI file used by the application.
 
-## [win32ui](README.md#win32ui).GetProfileVal
+## [win32ui](#win32ui).GetProfileVal
 
-int/string = **GetProfileVal( *section*  *, entry*  *, defValue* ** )
+int/string = __GetProfileVal( *section*  *, entry*  *, defValue* __ )
 Returns a value from the application's INI file.
 
 #### Parameters
@@ -1577,577 +1578,577 @@ Returns a value from the application's INI file.
 
     The default value.  The type of this parameter determines the method's return type.
 
-## [win32ui](README.md#win32ui).GetRecentFileList
+## [win32ui](#win32ui).GetRecentFileList
 
-list = **GetRecentFileList(** )
+list = __GetRecentFileList(__ )
 Returns the entries in the applications Recent File List.
 
 #### Return Value
 A list of strings containing the fully qualified file names.
 
-## [win32ui](README.md#win32ui).GetRect
+## [win32ui](#win32ui).GetRect
 
-tuple = **GetRect(** )
-Returns the rectangle of the main application frame.  See **PyCWnd::GetWindowRecr** for further details.
+tuple = __GetRect(__ )
+Returns the rectangle of the main application frame.  See __PyCWnd::GetWindowRecr__ for further details.
 
 #### Return Value
 A tuple of integers with (left, top, right, bottom)
 
-## [win32ui](README.md#win32ui).GetResource
+## [win32ui](#win32ui).GetResource
 
-[PyDLL](README.md#pydll)= **GetResource(** )
+[PyDLL](#pydll)= __GetResource(__ )
 Retrieve the object associated with the applications resources.
 
-## [win32ui](README.md#win32ui).GetThread
+## [win32ui](#win32ui).GetThread
 
-[PyCWinApp](README.md#pycwinapp)= **GetThread(** )
+[PyCWinApp](#pycwinapp)= __GetThread(__ )
 Retrieves the current thread object.
 
-## [win32ui](README.md#win32ui).GetType
+## [win32ui](#win32ui).GetType
 
-object = **GetType(** )
+object = __GetType(__ )
 Retrieves a Python Type object given its name
 
 ## IDB_BROWSER_HIER
- **const win32ui.IDB_BROWSER_HIER;** 
+ __const win32ui.IDB_BROWSER_HIER;__ 
 Id of built in bitmap for the browser
 
 ## IDB_DEBUGGER_HIER
- **const win32ui.IDB_DEBUGGER_HIER;** 
+ __const win32ui.IDB_DEBUGGER_HIER;__ 
 
 
 ## IDB_HIERFOLDERS
- **const win32ui.IDB_HIERFOLDERS;** 
+ __const win32ui.IDB_HIERFOLDERS;__ 
 Id of built in bitmap for default hierarchical list
 
 ## IDC_ABOUT_VERSION
- **const win32ui.IDC_ABOUT_VERSION;** 
+ __const win32ui.IDC_ABOUT_VERSION;__ 
 Id of 'Version' control
 
 ## IDC_AUTOCOMPLETE
- **const win32ui.IDC_AUTOCOMPLETE;** 
+ __const win32ui.IDC_AUTOCOMPLETE;__ 
 
 
 ## IDC_AUTO_RELOAD
- **const win32ui.IDC_AUTO_RELOAD;** 
+ __const win32ui.IDC_AUTO_RELOAD;__ 
 
 
 ## IDC_BUTTON1
- **const win32ui.IDC_BUTTON1;** 
+ __const win32ui.IDC_BUTTON1;__ 
 
 
 ## IDC_BUTTON2
- **const win32ui.IDC_BUTTON2;** 
+ __const win32ui.IDC_BUTTON2;__ 
 
 
 ## IDC_BUTTON3
- **const win32ui.IDC_BUTTON3;** 
+ __const win32ui.IDC_BUTTON3;__ 
 
 
 ## IDC_BUTTON4
- **const win32ui.IDC_BUTTON4;** 
+ __const win32ui.IDC_BUTTON4;__ 
 
 
 ## IDC_CALLTIPS
- **const win32ui.IDC_CALLTIPS;** 
+ __const win32ui.IDC_CALLTIPS;__ 
 
 
 ## IDC_CHECK1
- **const win32ui.IDC_CHECK1;** 
+ __const win32ui.IDC_CHECK1;__ 
 
 
 ## IDC_CHECK2
- **const win32ui.IDC_CHECK2;** 
+ __const win32ui.IDC_CHECK2;__ 
 
 
 ## IDC_CHECK3
- **const win32ui.IDC_CHECK3;** 
+ __const win32ui.IDC_CHECK3;__ 
 
 
 ## IDC_COMBO1
- **const win32ui.IDC_COMBO1;** 
+ __const win32ui.IDC_COMBO1;__ 
 
 
 ## IDC_COMBO2
- **const win32ui.IDC_COMBO2;** 
+ __const win32ui.IDC_COMBO2;__ 
 
 
 ## IDC_EDIT1
- **const win32ui.IDC_EDIT1;** 
+ __const win32ui.IDC_EDIT1;__ 
 
 
 ## IDC_EDIT2
- **const win32ui.IDC_EDIT2;** 
+ __const win32ui.IDC_EDIT2;__ 
 
 
 ## IDC_EDIT3
- **const win32ui.IDC_EDIT3;** 
+ __const win32ui.IDC_EDIT3;__ 
 
 
 ## IDC_EDIT4
- **const win32ui.IDC_EDIT4;** 
+ __const win32ui.IDC_EDIT4;__ 
 
 
 ## IDC_EDIT_COLOE
- **const win32ui.IDC_EDIT_COLOE;** 
+ __const win32ui.IDC_EDIT_COLOE;__ 
 
 
 ## IDC_EDIT_TABS
- **const win32ui.IDC_EDIT_TABS;** 
+ __const win32ui.IDC_EDIT_TABS;__ 
 
 
 ## IDC_INDENT_SIZE
- **const win32ui.IDC_INDENT_SIZE;** 
+ __const win32ui.IDC_INDENT_SIZE;__ 
 
 
 ## IDC_KEYBOARD_CONFIG
- **const win32ui.IDC_KEYBOARD_CONFIG;** 
+ __const win32ui.IDC_KEYBOARD_CONFIG;__ 
 
 
 ## IDC_LIST1
- **const win32ui.IDC_LIST1;** 
+ __const win32ui.IDC_LIST1;__ 
 
 
 ## IDC_PROMPT1
- **const win32ui.IDC_PROMPT1;** 
+ __const win32ui.IDC_PROMPT1;__ 
 
 
 ## IDC_PROMPT2
- **const win32ui.IDC_PROMPT2;** 
+ __const win32ui.IDC_PROMPT2;__ 
 
 
 ## IDC_PROMPT3
- **const win32ui.IDC_PROMPT3;** 
+ __const win32ui.IDC_PROMPT3;__ 
 
 
 ## IDC_PROMPT4
- **const win32ui.IDC_PROMPT4;** 
+ __const win32ui.IDC_PROMPT4;__ 
 
 
 ## IDC_PROMPT_TABS
- **const win32ui.IDC_PROMPT_TABS;** 
+ __const win32ui.IDC_PROMPT_TABS;__ 
 
 
 ## IDC_RADIO1
- **const win32ui.IDC_RADIO1;** 
+ __const win32ui.IDC_RADIO1;__ 
 
 
 ## IDC_RADIO2
- **const win32ui.IDC_RADIO2;** 
+ __const win32ui.IDC_RADIO2;__ 
 
 
 ## IDC_RIGHTEDGE_COLUMN
- **const win32ui.IDC_RIGHTEDGE_COLUMN;** 
+ __const win32ui.IDC_RIGHTEDGE_COLUMN;__ 
 
 
 ## IDC_RIGHTEDGE_DEFINE
- **const win32ui.IDC_RIGHTEDGE_DEFINE;** 
+ __const win32ui.IDC_RIGHTEDGE_DEFINE;__ 
 
 
 ## IDC_RIGHTEDGE_ENABLE
- **const win32ui.IDC_RIGHTEDGE_ENABLE;** 
+ __const win32ui.IDC_RIGHTEDGE_ENABLE;__ 
 
 
 ## IDC_RIGHTEDGE_SAMPLE
- **const win32ui.IDC_RIGHTEDGE_SAMPLE;** 
+ __const win32ui.IDC_RIGHTEDGE_SAMPLE;__ 
 
 
 ## IDC_SPIN1
- **const win32ui.IDC_SPIN1;** 
+ __const win32ui.IDC_SPIN1;__ 
 
 
 ## IDC_SPIN2
- **const win32ui.IDC_SPIN2;** 
+ __const win32ui.IDC_SPIN2;__ 
 
 
 ## IDC_SPIN3
- **const win32ui.IDC_SPIN3;** 
+ __const win32ui.IDC_SPIN3;__ 
 
 
 ## IDC_TAB_SIZE
- **const win32ui.IDC_TAB_SIZE;** 
+ __const win32ui.IDC_TAB_SIZE;__ 
 
 
 ## IDC_USE_SMART_TABS
- **const win32ui.IDC_USE_SMART_TABS;** 
+ __const win32ui.IDC_USE_SMART_TABS;__ 
 
 
 ## IDC_USE_TABS
- **const win32ui.IDC_USE_TABS;** 
+ __const win32ui.IDC_USE_TABS;__ 
 
 
 ## IDC_VIEW_WHITESPACE
- **const win32ui.IDC_VIEW_WHITESPACE;** 
+ __const win32ui.IDC_VIEW_WHITESPACE;__ 
 
 
 ## IDC_VSS_INTEGRATE
- **const win32ui.IDC_VSS_INTEGRATE;** 
+ __const win32ui.IDC_VSS_INTEGRATE;__ 
 
 
 ## IDD_ABOUTBOX
- **const win32ui.IDD_ABOUTBOX;** 
+ __const win32ui.IDD_ABOUTBOX;__ 
 Id of built in 'About Box' dialog
 
 ## IDD_DUMMYPROPPAGE
- **const win32ui.IDD_DUMMYPROPPAGE;** 
+ __const win32ui.IDD_DUMMYPROPPAGE;__ 
 Id of built in dummy property page
 
 ## IDD_GENERAL_STATUS
- **const win32ui.IDD_GENERAL_STATUS;** 
+ __const win32ui.IDD_GENERAL_STATUS;__ 
 Id of a general status dialog box (fairly small, 3 static controls, minimize box)
 
 ## IDD_LARGE_EDIT
- **const win32ui.IDD_LARGE_EDIT;** 
+ __const win32ui.IDD_LARGE_EDIT;__ 
 Id of built in 'Large Edit' dialog (dialog box with a large edit control)
 
 ## IDD_PP_DEBUGGER
- **const win32ui.IDD_PP_DEBUGGER;** 
+ __const win32ui.IDD_PP_DEBUGGER;__ 
 
 
 ## IDD_PP_EDITOR
- **const win32ui.IDD_PP_EDITOR;** 
+ __const win32ui.IDD_PP_EDITOR;__ 
 Id of built in 'Editor' property page
 
 ## IDD_PP_FORMAT
- **const win32ui.IDD_PP_FORMAT;** 
+ __const win32ui.IDD_PP_FORMAT;__ 
 Id of built in 'Format' property page
 
 ## IDD_PP_IDE
- **const win32ui.IDD_PP_IDE;** 
+ __const win32ui.IDD_PP_IDE;__ 
 Id of built in 'IDE' property page
 
 ## IDD_PP_TABS
- **const win32ui.IDD_PP_TABS;** 
+ __const win32ui.IDD_PP_TABS;__ 
 Id of built in 'Tabs and Whitespace' property page
 
 ## IDD_PP_TOOLMENU
- **const win32ui.IDD_PP_TOOLMENU;** 
+ __const win32ui.IDD_PP_TOOLMENU;__ 
 Id of built in 'ToolsMenu' property page
 
 ## IDD_PROPDEMO1
- **const win32ui.IDD_PROPDEMO1;** 
+ __const win32ui.IDD_PROPDEMO1;__ 
 Id of built in Property Page demo dialog 1
 
 ## IDD_PROPDEMO2
- **const win32ui.IDD_PROPDEMO2;** 
+ __const win32ui.IDD_PROPDEMO2;__ 
 Id of built in Property Page demo dialog 2
 
 ## IDD_RUN_SCRIPT
- **const win32ui.IDD_RUN_SCRIPT;** 
+ __const win32ui.IDD_RUN_SCRIPT;__ 
 Id of built in 'Run Script' dialog
 
 ## IDD_SET_TABSTOPS
- **const win32ui.IDD_SET_TABSTOPS;** 
+ __const win32ui.IDD_SET_TABSTOPS;__ 
 Id of built in 'Set Tab Stops' dialog
 
 ## IDD_SIMPLE_INPUT
- **const win32ui.IDD_SIMPLE_INPUT;** 
+ __const win32ui.IDD_SIMPLE_INPUT;__ 
 Id of built in 'Simple Input' property page.
 
 ## IDD_TREE
- **const win32ui.IDD_TREE;** 
+ __const win32ui.IDD_TREE;__ 
 Id of built in dialog with a tree control.
 
 ## IDD_TREE_MB
- **const win32ui.IDD_TREE_MB;** 
+ __const win32ui.IDD_TREE_MB;__ 
 Id of built in dialog with a tree control with multiple buttons.
 
 ## IDR_CNTR_INPLACE
- **const win32ui.IDR_CNTR_INPLACE;** 
+ __const win32ui.IDR_CNTR_INPLACE;__ 
 
 
 ## IDR_DEBUGGER
- **const win32ui.IDR_DEBUGGER;** 
+ __const win32ui.IDR_DEBUGGER;__ 
 
 
 ## IDR_MAINFRAME
- **const win32ui.IDR_MAINFRAME;** 
+ __const win32ui.IDR_MAINFRAME;__ 
 
 
 ## IDR_PYTHONCONTYPE
- **const win32ui.IDR_PYTHONCONTYPE;** 
+ __const win32ui.IDR_PYTHONCONTYPE;__ 
 
 
 ## IDR_PYTHONTYPE
- **const win32ui.IDR_PYTHONTYPE;** 
+ __const win32ui.IDR_PYTHONTYPE;__ 
 
 
 ## IDR_PYTHONTYPE_CNTR_IP
- **const win32ui.IDR_PYTHONTYPE_CNTR_IP;** 
+ __const win32ui.IDR_PYTHONTYPE_CNTR_IP;__ 
 
 
 ## IDR_TEXTTYPE
- **const win32ui.IDR_TEXTTYPE;** 
+ __const win32ui.IDR_TEXTTYPE;__ 
 
 
 ## ID_APP_ABOUT
- **const win32ui.ID_APP_ABOUT;** 
+ __const win32ui.ID_APP_ABOUT;__ 
 
 
 ## ID_APP_EXIT
- **const win32ui.ID_APP_EXIT;** 
+ __const win32ui.ID_APP_EXIT;__ 
 
 
 ## ID_EDIT_CLEAR
- **const win32ui.ID_EDIT_CLEAR;** 
+ __const win32ui.ID_EDIT_CLEAR;__ 
 
 
 ## ID_EDIT_CLEAR_ALL
- **const win32ui.ID_EDIT_CLEAR_ALL;** 
+ __const win32ui.ID_EDIT_CLEAR_ALL;__ 
 
 
 ## ID_EDIT_COPY
- **const win32ui.ID_EDIT_COPY;** 
+ __const win32ui.ID_EDIT_COPY;__ 
 
 
 ## ID_EDIT_CUT
- **const win32ui.ID_EDIT_CUT;** 
+ __const win32ui.ID_EDIT_CUT;__ 
 
 
 ## ID_EDIT_FIND
- **const win32ui.ID_EDIT_FIND;** 
+ __const win32ui.ID_EDIT_FIND;__ 
 
 
 ## ID_EDIT_GOTO_LINE
- **const win32ui.ID_EDIT_GOTO_LINE;** 
+ __const win32ui.ID_EDIT_GOTO_LINE;__ 
 
 
 ## ID_EDIT_PASTE
- **const win32ui.ID_EDIT_PASTE;** 
+ __const win32ui.ID_EDIT_PASTE;__ 
 
 
 ## ID_EDIT_REDO
- **const win32ui.ID_EDIT_REDO;** 
+ __const win32ui.ID_EDIT_REDO;__ 
 
 
 ## ID_EDIT_REPEAT
- **const win32ui.ID_EDIT_REPEAT;** 
+ __const win32ui.ID_EDIT_REPEAT;__ 
 
 
 ## ID_EDIT_REPLACE
- **const win32ui.ID_EDIT_REPLACE;** 
+ __const win32ui.ID_EDIT_REPLACE;__ 
 
 
 ## ID_EDIT_SELECT_ALL
- **const win32ui.ID_EDIT_SELECT_ALL;** 
+ __const win32ui.ID_EDIT_SELECT_ALL;__ 
 
 
 ## ID_EDIT_SELECT_BLOCK
- **const win32ui.ID_EDIT_SELECT_BLOCK;** 
+ __const win32ui.ID_EDIT_SELECT_BLOCK;__ 
 
 
 ## ID_EDIT_UNDO
- **const win32ui.ID_EDIT_UNDO;** 
+ __const win32ui.ID_EDIT_UNDO;__ 
 
 
 ## ID_FILE_CHECK
- **const win32ui.ID_FILE_CHECK;** 
+ __const win32ui.ID_FILE_CHECK;__ 
 
 
 ## ID_FILE_CLOSE
- **const win32ui.ID_FILE_CLOSE;** 
+ __const win32ui.ID_FILE_CLOSE;__ 
 
 
 ## ID_FILE_IMPORT
- **const win32ui.ID_FILE_IMPORT;** 
+ __const win32ui.ID_FILE_IMPORT;__ 
 
 
 ## ID_FILE_LOCATE
- **const win32ui.ID_FILE_LOCATE;** 
+ __const win32ui.ID_FILE_LOCATE;__ 
 
 
 ## ID_FILE_MRU_FILE1
- **const win32ui.ID_FILE_MRU_FILE1;** 
+ __const win32ui.ID_FILE_MRU_FILE1;__ 
 
 
 ## ID_FILE_MRU_FILE2
- **const win32ui.ID_FILE_MRU_FILE2;** 
+ __const win32ui.ID_FILE_MRU_FILE2;__ 
 
 
 ## ID_FILE_MRU_FILE3
- **const win32ui.ID_FILE_MRU_FILE3;** 
+ __const win32ui.ID_FILE_MRU_FILE3;__ 
 
 
 ## ID_FILE_MRU_FILE4
- **const win32ui.ID_FILE_MRU_FILE4;** 
+ __const win32ui.ID_FILE_MRU_FILE4;__ 
 
 
 ## ID_FILE_NEW
- **const win32ui.ID_FILE_NEW;** 
+ __const win32ui.ID_FILE_NEW;__ 
 
 
 ## ID_FILE_OPEN
- **const win32ui.ID_FILE_OPEN;** 
+ __const win32ui.ID_FILE_OPEN;__ 
 
 
 ## ID_FILE_PAGE_SETUP
- **const win32ui.ID_FILE_PAGE_SETUP;** 
+ __const win32ui.ID_FILE_PAGE_SETUP;__ 
 
 
 ## ID_FILE_PRINT
- **const win32ui.ID_FILE_PRINT;** 
+ __const win32ui.ID_FILE_PRINT;__ 
 
 
 ## ID_FILE_PRINT_PREVIEW
- **const win32ui.ID_FILE_PRINT_PREVIEW;** 
+ __const win32ui.ID_FILE_PRINT_PREVIEW;__ 
 
 
 ## ID_FILE_PRINT_SETUP
- **const win32ui.ID_FILE_PRINT_SETUP;** 
+ __const win32ui.ID_FILE_PRINT_SETUP;__ 
 
 
 ## ID_FILE_RUN
- **const win32ui.ID_FILE_RUN;** 
+ __const win32ui.ID_FILE_RUN;__ 
 
 
 ## ID_FILE_SAVE
- **const win32ui.ID_FILE_SAVE;** 
+ __const win32ui.ID_FILE_SAVE;__ 
 
 
 ## ID_FILE_SAVE_ALL
- **const win32ui.ID_FILE_SAVE_ALL;** 
+ __const win32ui.ID_FILE_SAVE_ALL;__ 
 
 
 ## ID_FILE_SAVE_AS
- **const win32ui.ID_FILE_SAVE_AS;** 
+ __const win32ui.ID_FILE_SAVE_AS;__ 
 
 
 ## ID_HELP_GUI_REF
- **const win32ui.ID_HELP_GUI_REF;** 
+ __const win32ui.ID_HELP_GUI_REF;__ 
 
 
 ## ID_HELP_OTHER
- **const win32ui.ID_HELP_OTHER;** 
+ __const win32ui.ID_HELP_OTHER;__ 
 
 
 ## ID_HELP_PYTHON
- **const win32ui.ID_HELP_PYTHON;** 
+ __const win32ui.ID_HELP_PYTHON;__ 
 
 
 ## ID_INDICATOR_COLNUM
- **const win32ui.ID_INDICATOR_COLNUM;** 
+ __const win32ui.ID_INDICATOR_COLNUM;__ 
 
 
 ## ID_INDICATOR_LINENUM
- **const win32ui.ID_INDICATOR_LINENUM;** 
+ __const win32ui.ID_INDICATOR_LINENUM;__ 
 
 
 ## ID_NEXT_PANE
- **const win32ui.ID_NEXT_PANE;** 
+ __const win32ui.ID_NEXT_PANE;__ 
 
 
 ## ID_PREV_PANE
- **const win32ui.ID_PREV_PANE;** 
+ __const win32ui.ID_PREV_PANE;__ 
 
 
 ## ID_SEPARATOR
- **const win32ui.ID_SEPARATOR;** 
+ __const win32ui.ID_SEPARATOR;__ 
 
 
 ## ID_VIEW_BROWSE
- **const win32ui.ID_VIEW_BROWSE;** 
+ __const win32ui.ID_VIEW_BROWSE;__ 
 
 
 ## ID_VIEW_EOL
- **const win32ui.ID_VIEW_EOL;** 
+ __const win32ui.ID_VIEW_EOL;__ 
 
 
 ## ID_VIEW_FIXED_FONT
- **const win32ui.ID_VIEW_FIXED_FONT;** 
+ __const win32ui.ID_VIEW_FIXED_FONT;__ 
 
 
 ## ID_VIEW_FOLD_COLLAPSE
- **const win32ui.ID_VIEW_FOLD_COLLAPSE;** 
+ __const win32ui.ID_VIEW_FOLD_COLLAPSE;__ 
 
 
 ## ID_VIEW_FOLD_COLLAPSE_ALL
- **const win32ui.ID_VIEW_FOLD_COLLAPSE_ALL;** 
+ __const win32ui.ID_VIEW_FOLD_COLLAPSE_ALL;__ 
 
 
 ## ID_VIEW_FOLD_EXPAND
- **const win32ui.ID_VIEW_FOLD_EXPAND;** 
+ __const win32ui.ID_VIEW_FOLD_EXPAND;__ 
 
 
 ## ID_VIEW_FOLD_EXPAND_ALL
- **const win32ui.ID_VIEW_FOLD_EXPAND_ALL;** 
+ __const win32ui.ID_VIEW_FOLD_EXPAND_ALL;__ 
 
 
 ## ID_VIEW_FOLD_TOGGLE
- **const win32ui.ID_VIEW_FOLD_TOGGLE;** 
+ __const win32ui.ID_VIEW_FOLD_TOGGLE;__ 
 
 
 ## ID_VIEW_INDENTATIONGUIDES
- **const win32ui.ID_VIEW_INDENTATIONGUIDES;** 
+ __const win32ui.ID_VIEW_INDENTATIONGUIDES;__ 
 
 
 ## ID_VIEW_INTERACTIVE
- **const win32ui.ID_VIEW_INTERACTIVE;** 
+ __const win32ui.ID_VIEW_INTERACTIVE;__ 
 
 
 ## ID_VIEW_OPTIONS
- **const win32ui.ID_VIEW_OPTIONS;** 
+ __const win32ui.ID_VIEW_OPTIONS;__ 
 
 
 ## ID_VIEW_RIGHT_EDGE
- **const win32ui.ID_VIEW_RIGHT_EDGE;** 
+ __const win32ui.ID_VIEW_RIGHT_EDGE;__ 
 
 
 ## ID_VIEW_STATUS_BAR
- **const win32ui.ID_VIEW_STATUS_BAR;** 
+ __const win32ui.ID_VIEW_STATUS_BAR;__ 
 
 
 ## ID_VIEW_TOOLBAR
- **const win32ui.ID_VIEW_TOOLBAR;** 
+ __const win32ui.ID_VIEW_TOOLBAR;__ 
 
 
 ## ID_VIEW_TOOLBAR_DBG
- **const win32ui.ID_VIEW_TOOLBAR_DBG;** 
+ __const win32ui.ID_VIEW_TOOLBAR_DBG;__ 
 
 
 ## ID_VIEW_WHITESPACE
- **const win32ui.ID_VIEW_WHITESPACE;** 
+ __const win32ui.ID_VIEW_WHITESPACE;__ 
 
 
 ## ID_WINDOW_ARRANGE
- **const win32ui.ID_WINDOW_ARRANGE;** 
+ __const win32ui.ID_WINDOW_ARRANGE;__ 
 
 
 ## ID_WINDOW_CASCADE
- **const win32ui.ID_WINDOW_CASCADE;** 
+ __const win32ui.ID_WINDOW_CASCADE;__ 
 
 
 ## ID_WINDOW_NEW
- **const win32ui.ID_WINDOW_NEW;** 
+ __const win32ui.ID_WINDOW_NEW;__ 
 
 
 ## ID_WINDOW_SPLIT
- **const win32ui.ID_WINDOW_SPLIT;** 
+ __const win32ui.ID_WINDOW_SPLIT;__ 
 
 
 ## ID_WINDOW_TILE_HORZ
- **const win32ui.ID_WINDOW_TILE_HORZ;** 
+ __const win32ui.ID_WINDOW_TILE_HORZ;__ 
 
 
 ## ID_WINDOW_TILE_VERT
- **const win32ui.ID_WINDOW_TILE_VERT;** 
+ __const win32ui.ID_WINDOW_TILE_VERT;__ 
 
 
-## [win32ui](README.md#win32ui).InitRichEdit
+## [win32ui](#win32ui).InitRichEdit
 
-string = **InitRichEdit(** )
+string = __InitRichEdit(__ )
 Initializes the rich edit framework.
 
-## [win32ui](README.md#win32ui).InstallCallBackCaller
+## [win32ui](#win32ui).InstallCallBackCaller
 
-object = **InstallCallBackCaller(** )
+object = __InstallCallBackCaller(__ )
 Install a Python method which will dispatch all callbacks into Python.
 
 #### Return Value
 The previous callback caller.
 
-## [win32ui](README.md#win32ui).IsDebug
+## [win32ui](#win32ui).IsDebug
 
-int = **IsDebug(** )
+int = __IsDebug(__ )
 Returns a flag indicating if the current win32ui build is a DEBUG build.
 
 #### Comments
@@ -2157,9 +2158,9 @@ programmer.  However, under certain circumstances Python code may
 
 wish to detect this.
 
-## [win32ui](README.md#win32ui).IsObject
+## [win32ui](#win32ui).IsObject
 
-int = **IsObject( *o* ** )
+int = __IsObject( *o* __ )
 Determines if the passed object is a win32ui object.
 
 #### Parameters
@@ -2169,42 +2170,42 @@ Determines if the passed object is a win32ui object.
 
     The object to check.
 
-## [win32ui](README.md#win32ui).IsWin32s
+## [win32ui](#win32ui).IsWin32s
 
-int = **IsWin32s(** )
+int = __IsWin32s(__ )
 Determines if the application is running under Win32s.
 
 ## LM_COMMIT
- **const win32ui.LM_COMMIT;** 
+ __const win32ui.LM_COMMIT;__ 
 Remember MRUWidth
 
 ## LM_HORZ
- **const win32ui.LM_HORZ;** 
+ __const win32ui.LM_HORZ;__ 
 same as bHorz in CalcFixedLayout
 
 ## LM_HORZDOCK
- **const win32ui.LM_HORZDOCK;** 
+ __const win32ui.LM_HORZDOCK;__ 
 Horizontal Docked Dimensions
 
 ## LM_LENGTHY
- **const win32ui.LM_LENGTHY;** 
+ __const win32ui.LM_LENGTHY;__ 
 Set if nLength is a Height instead of a Width
 
 ## LM_MRUWIDTH
- **const win32ui.LM_MRUWIDTH;** 
+ __const win32ui.LM_MRUWIDTH;__ 
 Most Recently Used Dynamic Width
 
 ## LM_STRETCH
- **const win32ui.LM_STRETCH;** 
+ __const win32ui.LM_STRETCH;__ 
 same meaning as bStretch in CalcFixedLayout.  If set, ignores nLength and returns dimensions based on LM_HORZ state, otherwise LM_HORZ is used to determine if nLength is the desired horizontal or vertical length and dimensions are returned based on nLength
 
 ## LM_VERTDOCK
- **const win32ui.LM_VERTDOCK;** 
+ __const win32ui.LM_VERTDOCK;__ 
 Vertical Docked Dimensions
 
-## [win32ui](README.md#win32ui).LoadDialogResource
+## [win32ui](#win32ui).LoadDialogResource
 
-list = **LoadDialogResource( *idRes*  *, dll* ** )
+list = __LoadDialogResource( *idRes*  *, dll* __ )
 Loads a dialog resource, and returns a list detailing the objects.
 
 #### Parameters
@@ -2214,13 +2215,13 @@ Loads a dialog resource, and returns a list detailing the objects.
 
     The ID of the dialog resource to load.
 
-  -  *dll=None* :[PyDLL](README.md#pydll)
+  -  *dll=None* :[PyDLL](#pydll)
 
     The DLL object to load the dialog from.
 
-## [win32ui](README.md#win32ui).LoadLibrary
+## [win32ui](#win32ui).LoadLibrary
 
-[PyDLL](README.md#pydll)= **LoadLibrary( *fileName* ** )
+[PyDLL](#pydll)= __LoadLibrary( *fileName* __ )
 Creates a DLL object, and loads a Windows DLL into the object.
 
 #### Parameters
@@ -2230,9 +2231,9 @@ Creates a DLL object, and loads a Windows DLL into the object.
 
     The name of the DLL file to load.
 
-## [win32ui](README.md#win32ui).LoadMenu
+## [win32ui](#win32ui).LoadMenu
 
-[PyCMenu](README.md#pycmenu)= **LoadMenu( *id*  *, dll* ** )
+[PyCMenu](#pycmenu)= __LoadMenu( *id*  *, dll* __ )
 Creates and loads a menu resource from a DLL.
 
 #### Parameters
@@ -2242,13 +2243,13 @@ Creates and loads a menu resource from a DLL.
 
     The Id of the menu to load.
 
-  -  *dll=None* :[PyDLL](README.md#pydll)
+  -  *dll=None* :[PyDLL](#pydll)
 
     The DLL to load from.
 
-## [win32ui](README.md#win32ui).LoadStdProfileSettings
+## [win32ui](#win32ui).LoadStdProfileSettings
 
- **LoadStdProfileSettings( *maxFiles* ** )
+ __LoadStdProfileSettings( *maxFiles* __ )
 Loads MFC standard settings from the applications INI file.  This includes the Recent File List, etc.
 
 #### Parameters
@@ -2261,9 +2262,9 @@ Loads MFC standard settings from the applications INI file.  This includes the R
 #### Comments
 This function can only be called once in an applications lifetime, else an exception is raised.
 
-## [win32ui](README.md#win32ui).LoadString
+## [win32ui](#win32ui).LoadString
 
-[PyUnicode](README.md#pyunicode)= **LoadString( *stringId* ** )
+[PyUnicode](#pyunicode)= __LoadString( *stringId* __ )
 Loads a string from a resource file.
 
 #### Parameters
@@ -2274,28 +2275,28 @@ Loads a string from a resource file.
     The ID of the string to load.
 
 ## MFS_4THICKFRAME
- **const win32ui.MFS_4THICKFRAME;** 
+ __const win32ui.MFS_4THICKFRAME;__ 
 thick frame all around (no tiles)
 
 ## MFS_BLOCKSYSMENU
- **const win32ui.MFS_BLOCKSYSMENU;** 
+ __const win32ui.MFS_BLOCKSYSMENU;__ 
 block hit testing on system menu
 
 ## MFS_MOVEFRAME
- **const win32ui.MFS_MOVEFRAME;** 
+ __const win32ui.MFS_MOVEFRAME;__ 
 no sizing, just moving
 
 ## MFS_SYNCACTIVE
- **const win32ui.MFS_SYNCACTIVE;** 
+ __const win32ui.MFS_SYNCACTIVE;__ 
 syncronize activation w/ parent
 
 ## MFS_THICKFRAME
- **const win32ui.MFS_THICKFRAME;** 
+ __const win32ui.MFS_THICKFRAME;__ 
 use instead of WS_THICKFRAME
 
-## [win32ui](README.md#win32ui).MessageBox
+## [win32ui](#win32ui).MessageBox
 
-int = **MessageBox( *message*  *, title*  *, style* ** )
+int = __MessageBox( *message*  *, title*  *, style* __ )
 Display a message box.
 
 #### Parameters
@@ -2316,9 +2317,9 @@ Display a message box.
 #### Return Value
 An integer identifying the button pressed to dismiss the dialog.
 
-## [win32ui](README.md#win32ui).OutputDebugString
+## [win32ui](#win32ui).OutputDebugString
 
- **OutputDebugString( *msg* ** )
+ __OutputDebugString( *msg* __ )
 Sends a string to the Windows debugging device.
 
 #### Parameters
@@ -2329,120 +2330,120 @@ Sends a string to the Windows debugging device.
     The string to write.
 
 ## PD_ALLPAGES
- **const win32ui.PD_ALLPAGES;** 
+ __const win32ui.PD_ALLPAGES;__ 
 The default flag that indicates that the All radio button is initially selected. This flag is used as a placeholder to indicate that the PD_PAGENUMS and PD_SELECTION flags are not specified.
 
 ## PD_COLLATE
- **const win32ui.PD_COLLATE;** 
+ __const win32ui.PD_COLLATE;__ 
 If this flag is set, the Collate check box is checked. If this flag is set when the PrintDlg function returns, the application must simulate collation of multiple copies. For more information, see the description of the PD_USEDEVMODECOPIESANDCOLLATE flag.
 
 ## PD_DISABLEPRINTTOFILE
- **const win32ui.PD_DISABLEPRINTTOFILE;** 
+ __const win32ui.PD_DISABLEPRINTTOFILE;__ 
 Disables the Print to File check box.
 
 ## PD_ENABLEPRINTHOOK
- **const win32ui.PD_ENABLEPRINTHOOK;** 
+ __const win32ui.PD_ENABLEPRINTHOOK;__ 
 Enables the hook procedure specified in the lpfnPrintHook member. This enables the hook procedure for the Print dialog box.
 
 ## PD_ENABLEPRINTTEMPLATE
- **const win32ui.PD_ENABLEPRINTTEMPLATE;** 
+ __const win32ui.PD_ENABLEPRINTTEMPLATE;__ 
 PD_ENABLEPRINTTEMPLATE
 
 ## PD_ENABLEPRINTTEMPLATEHANDLE
- **const win32ui.PD_ENABLEPRINTTEMPLATEHANDLE;** 
+ __const win32ui.PD_ENABLEPRINTTEMPLATEHANDLE;__ 
 Indicates that the hPrintTemplate member identifies a data block that contains a preloaded dialog box template. This template replaces the default template for the Print dialog box. The system ignores the lpPrintTemplateName member if this flag is specified.
 
 ## PD_ENABLESETUPHOOK
- **const win32ui.PD_ENABLESETUPHOOK;** 
+ __const win32ui.PD_ENABLESETUPHOOK;__ 
 Enables the hook procedure specified in the lpfnSetupHook member. This enables the hook procedure for the Print Setup dialog box.
 
 ## PD_ENABLESETUPTEMPLATE
- **const win32ui.PD_ENABLESETUPTEMPLATE;** 
+ __const win32ui.PD_ENABLESETUPTEMPLATE;__ 
 Indicates that the hInstance and lpSetupTemplateName members specify a replacement for the default Print Setup dialog box template.
 
 ## PD_ENABLESETUPTEMPLATEHANDLE
- **const win32ui.PD_ENABLESETUPTEMPLATEHANDLE;** 
+ __const win32ui.PD_ENABLESETUPTEMPLATEHANDLE;__ 
 Indicates that the hSetupTemplate member identifies a data block that contains a preloaded dialog box template. This template replaces the default template for the Print Setup dialog box. The system ignores the lpSetupTemplateName member if this flag is specified.
 
 ## PD_HIDEPRINTTOFILE
- **const win32ui.PD_HIDEPRINTTOFILE;** 
+ __const win32ui.PD_HIDEPRINTTOFILE;__ 
 Hides the Print to File check box.
 
 ## PD_NONETWORKBUTTON
- **const win32ui.PD_NONETWORKBUTTON;** 
+ __const win32ui.PD_NONETWORKBUTTON;__ 
 Hides and disables the Network button.
 
 ## PD_NOPAGENUMS
- **const win32ui.PD_NOPAGENUMS;** 
+ __const win32ui.PD_NOPAGENUMS;__ 
 Disables the Pages radio button and the associated edit controls.
 
 ## PD_NOSELECTION
- **const win32ui.PD_NOSELECTION;** 
+ __const win32ui.PD_NOSELECTION;__ 
 Disables the Selection radio button.
 
 ## PD_NOWARNING
- **const win32ui.PD_NOWARNING;** 
+ __const win32ui.PD_NOWARNING;__ 
 Prevents the warning message from being displayed when there is no default printer.
 
 ## PD_PAGENUMS
- **const win32ui.PD_PAGENUMS;** 
+ __const win32ui.PD_PAGENUMS;__ 
 If this flag is set, the Pages radio button is selected. If this flag is set when the PrintDlg function returns, the nFromPage and nFromPage members indicate the starting and ending pages specified by the user.
 
 ## PD_PRINTSETUP
- **const win32ui.PD_PRINTSETUP;** 
+ __const win32ui.PD_PRINTSETUP;__ 
 Causes the system to display the Print Setup dialog box rather than the Print dialog box.
 
 ## PD_PRINTTOFILE
- **const win32ui.PD_PRINTTOFILE;** 
+ __const win32ui.PD_PRINTTOFILE;__ 
 If this flag is set, the Print to File check box is selected. If this flag is set when the PrintDlg function returns, the offset indicated by the wOutputOffset member of the DEVNAMES structure contains the string "FILE:". When you call theStartDoc function to start the printing operation, specify this "FILE:" string in the lpszOutput member of theDOCINFO structure. Specifying this string causes the print subsystem to query the user for the name of the output file.
 
 ## PD_RETURNDC
- **const win32ui.PD_RETURNDC;** 
+ __const win32ui.PD_RETURNDC;__ 
 Causes PrintDlg to return a device context matching the selections the user made in the dialog box. The device context is returned in hDC.
 
 ## PD_RETURNDEFAULT
- **const win32ui.PD_RETURNDEFAULT;** 
+ __const win32ui.PD_RETURNDEFAULT;__ 
 If this flag is set, the PrintDlg function does not display the dialog box. Instead, it sets the hDevNames and hDevMode members to handles toDEVMODE and DEVNAMES structures that are initialized for the system default printer. Both hDevNames and hDevMode must be NULL, or PrintDlg returns an error. If the system default printer is supported by an old printer driver (earlier than Windows version 3.0), only hDevNames is returned; hDevMode is NULL.
 
 ## PD_RETURNIC
- **const win32ui.PD_RETURNIC;** 
+ __const win32ui.PD_RETURNIC;__ 
 Similar to the PD_RETURNDC flag, except this flag returns an information context rather than a device context. If neither PD_RETURNDC nor PD_RETURNIC is specified, hDC is undefined on output.
 
 ## PD_SELECTION
- **const win32ui.PD_SELECTION;** 
+ __const win32ui.PD_SELECTION;__ 
 If this flag is set, the Selection radio button is selected. If neither PD_PAGENUMS nor PD_SELECTION is set, the All radio button is selected.
 
 ## PD_SHOWHELP
- **const win32ui.PD_SHOWHELP;** 
+ __const win32ui.PD_SHOWHELP;__ 
 Causes the dialog box to display the Help button. The hwndOwner member must specify the window to receive the HELPMSGSTRING registered messages that the dialog box sends when the user clicks the Help button.
 
 ## PD_USEDEVMODECOPIES
- **const win32ui.PD_USEDEVMODECOPIES;** 
+ __const win32ui.PD_USEDEVMODECOPIES;__ 
 Same as PD_USEDEVMODECOPIESANDCOLLATE
 
 ## PD_USEDEVMODECOPIESANDCOLLATE
- **const win32ui.PD_USEDEVMODECOPIESANDCOLLATE;** 
+ __const win32ui.PD_USEDEVMODECOPIESANDCOLLATE;__ 
 This flag indicates whether your application supports multiple copies and collation. Set this flag on input to indicate that your application does not support multiple copies and collation. In this case, the nCopies member of the PRINTDLG structure always returns 1, and PD_COLLATE is never set in the Flags member. If this flag is not set, the application is responsible for printing and collating multiple copies. In this case, the nCopies member of the PRINTDLG structure indicates the number of copies the user wants to print, and the PD_COLLATE flag in the Flags member indicates whether the user wants collation. Regardless of whether this flag is set, an application can determine from nCopies and PD_COLLATE how many copies to render and whether to print them collated.  If this flag is set and the printer driver does not support multiple copies, the Copies edit control is disabled. Similarly, if this flag is set and
 
 ## PSWIZB_BACK
- **const win32ui.PSWIZB_BACK;** 
+ __const win32ui.PSWIZB_BACK;__ 
 Enable/Disable the Property sheet Back button
 
 ## PSWIZB_DISABLEDFINISH
- **const win32ui.PSWIZB_DISABLEDFINISH;** 
+ __const win32ui.PSWIZB_DISABLEDFINISH;__ 
 Enable/Disable the Property sheet disabled Finish button
 
 ## PSWIZB_FINISH
- **const win32ui.PSWIZB_FINISH;** 
+ __const win32ui.PSWIZB_FINISH;__ 
 Enable/Disable the Property sheet Finish button
 
 ## PSWIZB_NEXT
- **const win32ui.PSWIZB_NEXT;** 
+ __const win32ui.PSWIZB_NEXT;__ 
 Enable/Disable the Property sheet Next button
 
-## [win32ui](README.md#win32ui).PrintTraceback
+## [win32ui](#win32ui).PrintTraceback
 
- **PrintTraceback( *tb*  *, output* ** )
+ __PrintTraceback( *tb*  *, output* __ )
 Prints a traceback using the internal Python mechanism.
 
 #### Parameters
@@ -2456,9 +2457,9 @@ Prints a traceback using the internal Python mechanism.
 
     The object to write the traceback to.
 
-## [win32ui](README.md#win32ui).PumpWaitingMessages
+## [win32ui](#win32ui).PumpWaitingMessages
 
-int = **PumpWaitingMessages( *firstMessage*  *, lastMessage* ** )
+int = __PumpWaitingMessages( *firstMessage*  *, lastMessage* __ )
 Recursively start a new message dispatching loop while any message remain in the queue.
 
 #### Parameters
@@ -2478,9 +2479,9 @@ This allows an application which is performing a long operation to dispatch pain
 #### Return Value
 The result is 1 if a WM_QUIT message was processed, otherwise 0.
 
-## [win32ui](README.md#win32ui).RegisterWndClass
+## [win32ui](#win32ui).RegisterWndClass
 
-string = **RegisterWndClass( *style*  *, hCursor*  *, hBrush*  *, hIcon* ** )
+string = __RegisterWndClass( *style*  *, hCursor*  *, hBrush*  *, hIcon* __ )
 Registers a window class
 
 #### Parameters
@@ -2505,9 +2506,9 @@ Registers a window class
 #### Comments
 The Microsoft Foundation Class Library automatically registers several standard window classes for you. Call this function if you want to register your own window classes.
 
-## [win32ui](README.md#win32ui).RemoveRecentFile
+## [win32ui](#win32ui).RemoveRecentFile
 
- **RemoveRecentFile( *index* ** )
+ __RemoveRecentFile( *index* __ )
 Removes the entry in the applications Recent File List at index.
 
 #### Parameters
@@ -2517,14 +2518,14 @@ Removes the entry in the applications Recent File List at index.
 
     Zero-based index of the file to be removed from the MRU (most recently used) file list.
 
-## [win32ui](README.md#win32ui).SetAppHelpPath
+## [win32ui](#win32ui).SetAppHelpPath
 
-int = **SetAppHelpPath(** )
+int = __SetAppHelpPath(__ )
 Set the pApp-&gtm_pszHelpFilePath variable.
 
-## [win32ui](README.md#win32ui).SetAppName
+## [win32ui](#win32ui).SetAppName
 
-int = **SetAppName( *appName* ** )
+int = __SetAppName( *appName* __ )
 Sets the name of the application.
 
 #### Parameters
@@ -2539,9 +2540,9 @@ Sets the name of the application.
 
   - CWinApp::m_pszAppName
 
-## [win32ui](README.md#win32ui).SetCurrentInstanceHandle
+## [win32ui](#win32ui).SetCurrentInstanceHandle
 
-int = **SetCurrentInstanceHandle( *newVal* ** )
+int = __SetCurrentInstanceHandle( *newVal* __ )
 Sets the MFC variable afxCurrentInstanceHandle
 
 #### Parameters
@@ -2554,9 +2555,9 @@ Sets the MFC variable afxCurrentInstanceHandle
 #### Return Value
 The result is the previous value of afxCurrentInstanceHandle
 
-## [win32ui](README.md#win32ui).SetCurrentResourceHandle
+## [win32ui](#win32ui).SetCurrentResourceHandle
 
-int = **SetCurrentResourceHandle( *newVal* ** )
+int = __SetCurrentResourceHandle( *newVal* __ )
 Sets the MFC variable afxCurrentResourceHandle
 
 #### Parameters
@@ -2569,9 +2570,9 @@ Sets the MFC variable afxCurrentResourceHandle
 #### Return Value
 The result is the previous value of afxCurrentResourceHandle
 
-## [win32ui](README.md#win32ui).SetDialogBkColor
+## [win32ui](#win32ui).SetDialogBkColor
 
-int = **SetDialogBkColor( *clrCtlBk*  *, clrCtlText* ** )
+int = __SetDialogBkColor( *clrCtlBk*  *, clrCtlText* __ )
 Sets the default background and text color for dialog boxes and message boxes within the application.
 
 #### Parameters
@@ -2590,9 +2591,9 @@ Sets the default background and text color for dialog boxes and message boxes wi
 
   - CWinApp::SetDialogBkColor
 
-## [win32ui](README.md#win32ui).SetProfileFileName
+## [win32ui](#win32ui).SetProfileFileName
 
- **SetProfileFileName( *filename* ** )
+ __SetProfileFileName( *filename* __ )
 Sets the name of the INI file used by the application.
 
 #### Parameters
@@ -2602,9 +2603,9 @@ Sets the name of the INI file used by the application.
 
     The name of the ini file.
 
-## [win32ui](README.md#win32ui).SetRegistryKey
+## [win32ui](#win32ui).SetRegistryKey
 
- **SetRegistryKey( *key* ** )
+ __SetRegistryKey( *key* __ )
 Causes application settings to be stored in the registry instead of INI files.
 
 #### Parameters
@@ -2625,24 +2626,24 @@ company. It is stored in a key of the following form:
 
 HKEY_CURRENT_USER\\Software\\&ltcompany name&gt\\&ltapplication name&gt\\&ltsection name&gt\\&ltvalue name&gt.
 
-## [win32ui](README.md#win32ui).SetResource
+## [win32ui](#win32ui).SetResource
 
-[PyDLL](README.md#pydll)= **SetResource( *dll* ** )
+[PyDLL](#pydll)= __SetResource( *dll* __ )
 Specifies the default DLL object for application resources.
 
 #### Parameters
 
 
-  -  *dll* :[PyDll](README.md#pydll)
+  -  *dll* :[PyDll](#pydll)
 
     The dll object to use for default resources.
 
 #### Return Value
 The previous default DLL object.
 
-## [win32ui](README.md#win32ui).SetStatusText
+## [win32ui](#win32ui).SetStatusText
 
- **SetStatusText( *msg*  *, bForce* ** )
+ __SetStatusText( *msg*  *, bForce* __ )
 Sets the text in the status bar of the application.
 
 #### Parameters
@@ -2656,9 +2657,9 @@ Sets the text in the status bar of the application.
 
     A flag indicating if the message should be forced to the status bar, or written in idle time.
 
-## [win32ui](README.md#win32ui).StartDebuggerPump
+## [win32ui](#win32ui).StartDebuggerPump
 
- **StartDebuggerPump(** )
+ __StartDebuggerPump(__ )
 Starts a recursive message loop, waiting for an application close message.
 
 #### Comments
@@ -2670,19 +2671,19 @@ As the Python code may be responding to a Windows Event, this function
 
 works around the inherent message queue problems.
 
-## [win32ui](README.md#win32ui).StopDebuggerPump
+## [win32ui](#win32ui).StopDebuggerPump
 
- **StopDebuggerPump(** )
+ __StopDebuggerPump(__ )
 Stops the debugger pump.  See[win32ui::StartDebuggerPump](win32ui.md#win32uistartdebuggerpump).
 
-## [win32ui](README.md#win32ui).TranslateMessage
+## [win32ui](#win32ui).TranslateMessage
 
-int = **TranslateMessage(** )
+int = __TranslateMessage(__ )
 Calls the API version of TranslateMessage.
 
-## [win32ui](README.md#win32ui).TranslateVirtualKey
+## [win32ui](#win32ui).TranslateVirtualKey
 
-string/None = **TranslateVirtualKey( *vk* ** )
+string/None = __TranslateVirtualKey( *vk* __ )
 
 
 #### Parameters
@@ -2692,9 +2693,9 @@ string/None = **TranslateVirtualKey( *vk* ** )
 
     The key to translate
 
-## [win32ui](README.md#win32ui).WinHelp
+## [win32ui](#win32ui).WinHelp
 
- **WinHelp( *cmd*  *, data* ** )
+ __WinHelp( *cmd*  *, data* __ )
 Invokes the Windows Help system.
 
 #### Parameters
@@ -2708,9 +2709,9 @@ Invokes the Windows Help system.
 
     Additional data specific to the help call.
 
-## [win32ui](README.md#win32ui).WriteProfileVal
+## [win32ui](#win32ui).WriteProfileVal
 
- **WriteProfileVal( *section*  *, entry*  *, value* ** )
+ __WriteProfileVal( *section*  *, entry*  *, value* __ )
 Writes a value to the application's INI file.
 
 #### Parameters
@@ -2729,5 +2730,5 @@ Writes a value to the application's INI file.
     The value to write. The type of this parameter determines the method's return type.
 
 ## debug
- **const win32ui.debug;** 
+ __const win32ui.debug;__ 
 1 if we are current using a _DEBUG build of win32ui, else 0.

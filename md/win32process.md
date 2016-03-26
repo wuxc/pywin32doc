@@ -1,3 +1,4 @@
+# win32process
 
 ## Module win32process
 
@@ -193,12 +194,12 @@ the virtual address space of another process.&nbsp;
     Determines whether the specified process is running under WOW64.&nbsp;
 
 ## ABOVE_NORMAL_PRIORITY_CLASS
- **const win32process.ABOVE_NORMAL_PRIORITY_CLASS;** 
+ __const win32process.ABOVE_NORMAL_PRIORITY_CLASS;__ 
 Windows 2000: Indicates a process that has priority above NORMAL_PRIORITY_CLASS but below HIGH_PRIORITY_CLASS.
 
-## [win32process](README.md#win32process).AttachThreadInput
+## [win32process](#win32process).AttachThreadInput
 
- **AttachThreadInput( *idAttach*  *, idAttachTo*  *, Attach* ** )
+ __AttachThreadInput( *idAttach*  *, idAttachTo*  *, Attach* __ )
 Attaches or detaches the input of two threads
 
 #### Parameters
@@ -217,54 +218,54 @@ Attaches or detaches the input of two threads
     Indicates whether thread should be attached or detached
 
 ## BELOW_NORMAL_PRIORITY_CLASS
- **const win32process.BELOW_NORMAL_PRIORITY_CLASS;** 
+ __const win32process.BELOW_NORMAL_PRIORITY_CLASS;__ 
 Windows 2000: Indicates a process that has priority above IDLE_PRIORITY_CLASS but below NORMAL_PRIORITY_CLASS.
 
 ## CREATE_BREAKAWAY_FROM_JOB
- **const win32process.CREATE_BREAKAWAY_FROM_JOB;** 
+ __const win32process.CREATE_BREAKAWAY_FROM_JOB;__ 
 
 
 ## CREATE_DEFAULT_ERROR_MODE
- **const win32process.CREATE_DEFAULT_ERROR_MODE;** 
+ __const win32process.CREATE_DEFAULT_ERROR_MODE;__ 
 The new process does not inherit the error mode of the calling process. Instead, CreateProcess gives the new process the current default error mode. An application sets the current default error mode by calling SetErrorMode. 
 
 This flag is particularly useful for multi-threaded shell applications that run with hard errors disabled.
 
 ## CREATE_NEW_CONSOLE
- **const win32process.CREATE_NEW_CONSOLE;** 
+ __const win32process.CREATE_NEW_CONSOLE;__ 
 The new process has a new console, instead of inheriting the parent's console. This flag cannot be used with the DETACHED_PROCESS flag.
 
 ## CREATE_NEW_PROCESS_GROUP
- **const win32process.CREATE_NEW_PROCESS_GROUP;** 
+ __const win32process.CREATE_NEW_PROCESS_GROUP;__ 
 The new process is the root process of a new process group. The process group includes all processes that are descendants of this root process. The process identifier of the new process group is the same as the process identifier, which is returned in the lpProcessInformation parameter. Process groups are used by the GenerateConsoleCtrlEvent function to enable sending a ctrl+c or ctrl+break signal to a group of console processes.
 
 ## CREATE_NO_WINDOW
- **const win32process.CREATE_NO_WINDOW;** 
+ __const win32process.CREATE_NO_WINDOW;__ 
 
 
 ## CREATE_PRESERVE_CODE_AUTHZ_LEVEL
- **const win32process.CREATE_PRESERVE_CODE_AUTHZ_LEVEL;** 
+ __const win32process.CREATE_PRESERVE_CODE_AUTHZ_LEVEL;__ 
 
 
 ## CREATE_SEPARATE_WOW_VDM
- **const win32process.CREATE_SEPARATE_WOW_VDM;** 
+ __const win32process.CREATE_SEPARATE_WOW_VDM;__ 
 Windows NT: This flag is valid only when starting a 16-bit Windows-based application. If set, the new process is run in a private Virtual DOS Machine (VDM). By default, all 16-bit Windows-based applications are run as threads in a single, shared VDM. The advantage of running separately is that a crash only kills the single VDM; any other programs running in distinct VDMs continue to function normally. Also, 16-bit Windows-based applications that are run in separate VDMs have separate input queues. That means that if one application hangs momentarily, applications in separate VDMs continue to receive input. The disadvantage of running separately is that it takes significantly more memory to do so. You should use this flag only if the user requests that 16-bit applications should run in them own VDM.
 
 ## CREATE_SHARED_WOW_VDM
- **const win32process.CREATE_SHARED_WOW_VDM;** 
+ __const win32process.CREATE_SHARED_WOW_VDM;__ 
 Windows NT: The flag is valid only when starting a 16-bit Windows-based application. If the DefaultSeparateVDM switch in the Windows section of WIN.INI is TRUE, this flag causes the CreateProcess function to override the switch and run the new process in the shared Virtual DOS Machine.
 
 ## CREATE_SUSPENDED
- **const win32process.CREATE_SUSPENDED;** 
+ __const win32process.CREATE_SUSPENDED;__ 
 
 
 ## CREATE_UNICODE_ENVIRONMENT
- **const win32process.CREATE_UNICODE_ENVIRONMENT;** 
+ __const win32process.CREATE_UNICODE_ENVIRONMENT;__ 
 If set, the environment block pointed to by lpEnvironment uses Unicode characters. If clear, the environment block uses ANSI characters.
 
-## [win32process](README.md#win32process).CreateProcess
+## [win32process](#win32process).CreateProcess
 
-[PyHANDLE](README.md#pyhandle),[PyHANDLE](README.md#pyhandle), int, int = **CreateProcess( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** )
+[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int = __CreateProcess( *appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* __ )
 Creates a new process and its primary thread. The new process executes the specified executable file.
 
 #### Parameters
@@ -294,7 +295,7 @@ Creates a new process and its primary thread. The new process executes the speci
 
     creation flags.  May be a combination of the following values from the win32con module:
 
- **Value**  **Meaning** CREATE_BREAKAWAY_FROM_JOBWindows 2000: The child processes of a process associated with a job are not associated with the job. 
+ __Value__  __Meaning__ CREATE_BREAKAWAY_FROM_JOBWindows 2000: The child processes of a process associated with a job are not associated with the job. 
 
 If the calling process is not associated with a job, this flag has no effect. If the calling process is associated with a job, the job must set the JOB_OBJECT_LIMIT_BREAKAWAY_OK limit or CreateProcess will fail.CREATE_DEFAULT_ERROR_MODEThe new process does not inherit the error mode of the calling process. Instead, CreateProcess gives the new process the current default error mode. An application sets the current default error mode by calling SetErrorMode. 
 
@@ -313,22 +314,22 @@ Windows 95/98: This flag is not valid if the new process is a 16-bit application
 
     current directory name, or None
 
-  -  *startupinfo* :[PySTARTUPINFO](README.md#pystartupinfo)
+  -  *startupinfo* :[PySTARTUPINFO](#pystartupinfo)
 
     a STARTUPINFO object that specifies how the main window for the new process should appear.
 
 #### Comments
 The result is a tuple of (hProcess, hThread, dwProcessId, dwThreadId)
 
-## [win32process](README.md#win32process).CreateProcessAsUser
+## [win32process](#win32process).CreateProcessAsUser
 
-[PyHANDLE](README.md#pyhandle),[PyHANDLE](README.md#pyhandle), int, int = **CreateProcessAsUser( *hToken*  *, appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* ** )
+[PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle), int, int = __CreateProcessAsUser( *hToken*  *, appName*  *, commandLine*  *, processAttributes*  *, threadAttributes*  *, bInheritHandles*  *, dwCreationFlags*  *, newEnvironment*  *, currentDirectory*  *, startupinfo* __ )
 Creates a new process in the context of the specified user.
 
 #### Parameters
 
 
-  -  *hToken* :[PyHANDLE](README.md#pyhandle)
+  -  *hToken* :[PyHANDLE](#pyhandle)
 
     Handle to a token that represents a logged-on user
 
@@ -364,16 +365,16 @@ Creates a new process in the context of the specified user.
 
     current directory name, or None
 
-  -  *startupinfo* :[PySTARTUPINFO](README.md#pystartupinfo)
+  -  *startupinfo* :[PySTARTUPINFO](#pystartupinfo)
 
     a STARTUPINFO object that specifies how the main window for the new process should appear.
 
 #### Comments
 The result is a tuple of (hProcess, hThread, dwProcessId, dwThreadId)
 
-## [win32process](README.md#win32process).CreateRemoteThread
+## [win32process](#win32process).CreateRemoteThread
 
-[PyHANDLE](README.md#pyhandle), int = **CreateRemoteThread( *hprocess*  *, sa*  *, stackSize*  *, entryPoint*  *, Parameter*  *, flags* ** )
+[PyHANDLE](#pyhandle), int = __CreateRemoteThread( *hprocess*  *, sa*  *, stackSize*  *, entryPoint*  *, Parameter*  *, flags* __ )
 creates a thread that runs in 
 
 the virtual address space of another process.
@@ -381,7 +382,7 @@ the virtual address space of another process.
 #### Parameters
 
 
-  -  *hprocess* :[PyHANDLE](README.md#pyhandle)
+  -  *hprocess* :[PyHANDLE](#pyhandle)
 
     The handle to the remote process.
 
@@ -409,11 +410,11 @@ the virtual address space of another process.
 The result is a tuple of the thread handle and thread ID.
 
 ## DEBUG_ONLY_THIS_PROCESS
- **const win32process.DEBUG_ONLY_THIS_PROCESS;** 
+ __const win32process.DEBUG_ONLY_THIS_PROCESS;__ 
 If not set and the calling process is being debugged, the new process becomes another process being debugged by the calling process's debugger. If the calling process is not a process being debugged, no debugging-related actions occur.
 
 ## DEBUG_PROCESS
- **const win32process.DEBUG_PROCESS;** 
+ __const win32process.DEBUG_PROCESS;__ 
 If this flag is set, the calling process is treated as a debugger, and the new process is a process being debugged. The system notifies the debugger of all debug events that occur in the process being debugged. 
 
 If you create a process with this flag set, only the calling thread (the thread that called CreateProcess) can call the WaitForDebugEvent function. 
@@ -421,30 +422,30 @@ If you create a process with this flag set, only the calling thread (the thread 
 Windows 95 and Windows 98: This flag is not valid if the new process is a 16-bit application.
 
 ## DETACHED_PROCESS
- **const win32process.DETACHED_PROCESS;** 
+ __const win32process.DETACHED_PROCESS;__ 
 For console processes, the new process does not have access to the console of the parent process. The new process can call the AllocConsole function at a later time to create a new console. This flag cannot be used with the CREATE_NEW_CONSOLE flag.
 
-## [win32process](README.md#win32process).EnumProcessModules
+## [win32process](#win32process).EnumProcessModules
 
-(long,....) = **EnumProcessModules( *hProcess* ** )
+(long,....) = __EnumProcessModules( *hProcess* __ )
 Lists loaded modules for a process handle
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by OpenProcess
 
-## [win32process](README.md#win32process).EnumProcessModulesEx
+## [win32process](#win32process).EnumProcessModulesEx
 
-(long,....) = **EnumProcessModulesEx( *hProcess*  *, FilterFlag* ** )
+(long,....) = __EnumProcessModulesEx( *hProcess*  *, FilterFlag* __ )
 Lists 32 or 64-bit modules load by a process
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -455,14 +456,14 @@ Lists 32 or 64-bit modules load by a process
 #### Comments
 Requires Vista or later
 
-## [win32process](README.md#win32process).EnumProcesses
+## [win32process](#win32process).EnumProcesses
 
-(long,....) = **EnumProcesses(** )
+(long,....) = __EnumProcesses(__ )
 Returns Pids for currently running processes
 
-## [win32process](README.md#win32process).ExitProcess
+## [win32process](#win32process).ExitProcess
 
- **ExitProcess( *exitCode* ** )
+ __ExitProcess( *exitCode* __ )
 Ends a process and all its threads
 
 #### Parameters
@@ -483,49 +484,49 @@ is detaching from the DLL. If a process terminates by calling[win32process::Term
 
 not notified of the process termination.
 
-## [win32process](README.md#win32process).GetCurrentProcess
+## [win32process](#win32process).GetCurrentProcess
 
-int = **GetCurrentProcess(** )
+int = __GetCurrentProcess(__ )
 Retrieves a pseudo handle for the current process.
 
-## [win32process](README.md#win32process).GetCurrentProcessId
+## [win32process](#win32process).GetCurrentProcessId
 
-int = **GetCurrentProcessId(** )
+int = __GetCurrentProcessId(__ )
 Retrieves the process identifier of the calling process.
 
-## [win32process](README.md#win32process).GetExitCodeProcess
+## [win32process](#win32process).GetExitCodeProcess
 
-int = **GetExitCodeProcess( *handle* ** )
+int = __GetExitCodeProcess( *handle* __ )
 
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the process
 
-## [win32process](README.md#win32process).GetExitCodeThread
+## [win32process](#win32process).GetExitCodeThread
 
-int = **GetExitCodeThread( *handle* ** )
+int = __GetExitCodeThread( *handle* __ )
 
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the thread
 
-## [win32process](README.md#win32process).GetGuiResources
+## [win32process](#win32process).GetGuiResources
 
-int = **GetGuiResources( *Process*  *, Flags* ** )
+int = __GetGuiResources( *Process*  *, Flags* __ )
 Returns the number of GDI or user object handles held by a process
 
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#pyhandle)
+  -  *Process* :[PyHANDLE](#pyhandle)
 
     Handle to a process as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess)
 
@@ -536,120 +537,120 @@ Returns the number of GDI or user object handles held by a process
 #### Comments
 Available on Win2k and up
 
-## [win32process](README.md#win32process).GetModuleFileNameEx
+## [win32process](#win32process).GetModuleFileNameEx
 
-[PyUNICODE](README.md#pyunicode)= **GetModuleFileNameEx( *hProcess*  *, hModule* ** )
+[PyUNICODE](#pyunicode)= __GetModuleFileNameEx( *hProcess*  *, hModule* __ )
 Return name of module loaded by another process (uses process handle, not pid)
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by OpenProcess
 
-  -  *hModule* :[PyHANDLE](README.md#pyhandle)
+  -  *hModule* :[PyHANDLE](#pyhandle)
 
     Module handle
 
-## [win32process](README.md#win32process).GetPriorityClass
+## [win32process](#win32process).GetPriorityClass
 
-int = **GetPriorityClass( *handle* ** )
+int = __GetPriorityClass( *handle* __ )
 
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the thread
 
-## [win32process](README.md#win32process).GetProcessAffinityMask
+## [win32process](#win32process).GetProcessAffinityMask
 
-int, int = **GetProcessAffinityMask( *hProcess* ** )
+int, int = __GetProcessAffinityMask( *hProcess* __ )
 Gets a processor affinity mask for a specified process
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     handle to the process of interest
 
 #### Return Value
 The result is a tuple of (process affinity mask, system affinity mask)
 
-## [win32process](README.md#win32process).GetProcessId
+## [win32process](#win32process).GetProcessId
 
-int = **GetProcessId( *Process* ** )
+int = __GetProcessId( *Process* __ )
 Returns the Pid for a process handle
 
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#pyhandle)
+  -  *Process* :[PyHANDLE](#pyhandle)
 
     Handle to a process
 
-## [win32process](README.md#win32process).GetProcessIoCounters
+## [win32process](#win32process).GetProcessIoCounters
 
- **dict** = **GetProcessIoCounters( *hProcess* ** )
+ __dict__ = __GetProcessIoCounters( *hProcess* __ )
 Return I/O statistics for a process as a dictionary representing an IO_COUNTERS struct.
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by OpenProcess
 
-## [win32process](README.md#win32process).GetProcessMemoryInfo
+## [win32process](#win32process).GetProcessMemoryInfo
 
- **dict** = **GetProcessMemoryInfo( *hProcess* ** )
+ __dict__ = __GetProcessMemoryInfo( *hProcess* __ )
 Returns process memory statistics as a dict representing a PROCESS_MEMORY_COUNTERS struct
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by OpenProcess
 
-## [win32process](README.md#win32process).GetProcessPriorityBoost
+## [win32process](#win32process).GetProcessPriorityBoost
 
-bool = **GetProcessPriorityBoost( *Process* ** )
+bool = __GetProcessPriorityBoost( *Process* __ )
 Determines if dynamic priority adjustment is enabled for a process
 
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#pyhandle)
+  -  *Process* :[PyHANDLE](#pyhandle)
 
     Handle to a process
 
-## [win32process](README.md#win32process).GetProcessShutdownParameters
+## [win32process](#win32process).GetProcessShutdownParameters
 
-int,int = **GetProcessShutdownParameters(** )
+int,int = __GetProcessShutdownParameters(__ )
 Retrieves shutdown priority and flags for current process
 
 #### Comments
 Ranges are 000-0FF Reserved by windows, 100-1FF Last, 200-2FF Middle, 300-3FF First, 400-4FF Reserved by Windows
 
-## [win32process](README.md#win32process).GetProcessTimes
+## [win32process](#win32process).GetProcessTimes
 
- **dict** = **GetProcessTimes( *hProcess* ** )
+ __dict__ = __GetProcessTimes( *hProcess* __ )
 Retrieve time statics for a process by handle.  (KernelTime and UserTime in 100 nanosecond units)
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by OpenProcess
 
-## [win32process](README.md#win32process).GetProcessVersion
+## [win32process](#win32process).GetProcessVersion
 
-int = **GetProcessVersion( *processId* ** )
+int = __GetProcessVersion( *processId* __ )
 Obtains the major and minor version numbers of the system on which a specified process expects to run.
 
 #### Parameters
@@ -659,79 +660,79 @@ Obtains the major and minor version numbers of the system on which a specified p
 
     identifier specifying the process of interest.
 
-## [win32process](README.md#win32process).GetProcessWindowStation
+## [win32process](#win32process).GetProcessWindowStation
 
- **GetProcessWindowStation(** )
+ __GetProcessWindowStation(__ )
 Returns a handle to the window station for the calling process
 
-## [win32process](README.md#win32process).GetProcessWorkingSetSize
+## [win32process](#win32process).GetProcessWorkingSetSize
 
-int,int = **GetProcessWorkingSetSize( *hProcess* ** )
+int,int = __GetProcessWorkingSetSize( *hProcess* __ )
 Returns min and max working set sizes for a process by handle
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess)
 
-## [win32process](README.md#win32process).GetStartupInfo
+## [win32process](#win32process).GetStartupInfo
 
-[PySTARTUPINFO](README.md#pystartupinfo)= **GetStartupInfo(** )
+[PySTARTUPINFO](#pystartupinfo)= __GetStartupInfo(__ )
 Retrieves the contents of the STARTUPINFO structure that was specified when the calling process was created.
 
-## [win32process](README.md#win32process).GetThreadIOPendingFlag
+## [win32process](#win32process).GetThreadIOPendingFlag
 
-bool = **GetThreadIOPendingFlag( *Thread* ** )
+bool = __GetThreadIOPendingFlag( *Thread* __ )
 Determines if thread has any outstanding IO requests
 
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#pyhandle)
+  -  *Thread* :[PyHANDLE](#pyhandle)
 
     Handle to a thread
 
-## [win32process](README.md#win32process).GetThreadPriority
+## [win32process](#win32process).GetThreadPriority
 
-int = **GetThreadPriority( *handle* ** )
+int = __GetThreadPriority( *handle* __ )
 
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the thread
 
-## [win32process](README.md#win32process).GetThreadPriorityBoost
+## [win32process](#win32process).GetThreadPriorityBoost
 
-bool = **GetThreadPriorityBoost( *Thread* ** )
+bool = __GetThreadPriorityBoost( *Thread* __ )
 Determines if dynamic priority adjustment is enabled for a thread
 
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#pyhandle)
+  -  *Thread* :[PyHANDLE](#pyhandle)
 
     Handle to a thread
 
-## [win32process](README.md#win32process).GetThreadTimes
+## [win32process](#win32process).GetThreadTimes
 
-dict = **GetThreadTimes( *Thread* ** )
+dict = __GetThreadTimes( *Thread* __ )
 Returns a thread's time statistics
 
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#pyhandle)
+  -  *Thread* :[PyHANDLE](#pyhandle)
 
     Handle to a thread
 
-## [win32process](README.md#win32process).GetWindowThreadProcessId
+## [win32process](#win32process).GetWindowThreadProcessId
 
-int, int = **GetWindowThreadProcessId( *hwnd* ** )
+int, int = __GetWindowThreadProcessId( *hwnd* __ )
 Retrieves the identifier of the thread and process that created the specified window.
 
 #### Parameters
@@ -745,22 +746,22 @@ Retrieves the identifier of the thread and process that created the specified wi
 The result is a tuple of (threadId, processId)
 
 ## HIGH_PRIORITY_CLASS
- **const win32process.HIGH_PRIORITY_CLASS;** 
+ __const win32process.HIGH_PRIORITY_CLASS;__ 
 Indicates a process that performs time-critical tasks that must be executed immediately for it to run correctly. The threads of a high-priority class process preempt the threads of normal-priority or idle-priority class processes. An example is the Task List, which must respond quickly when called by the user, regardless of the load on the system. Use extreme care when using the high-priority class, because a high-priority class CPU-bound application can use nearly all available cycles.
 
 ## IDLE_PRIORITY_CLASS
- **const win32process.IDLE_PRIORITY_CLASS;** 
+ __const win32process.IDLE_PRIORITY_CLASS;__ 
 Indicates a process whose threads run only when the system is idle and are preempted by the threads of any process running in a higher priority class. An example is a screen saver. The idle priority class is inherited by child processes.
 
-## [win32process](README.md#win32process).IsWow64Process
+## [win32process](#win32process).IsWow64Process
 
-bool = **IsWow64Process( *Process* ** )
+bool = __IsWow64Process( *Process* __ )
 Determines whether the specified process is running under WOW64.
 
 #### Parameters
 
 
-  -  *Process=None* :[PyHANDLE](README.md#pyhandle)
+  -  *Process=None* :[PyHANDLE](#pyhandle)
 
     Handle to a process as returned by[win32api::OpenProcess](win32api.md#win32apiopenprocess),[win32api::GetCurrentProcess](win32api.md#win32apigetcurrentprocess), etc, or 
 
@@ -776,42 +777,42 @@ However, if the function exists but fails, a win32process.error exception
 is thrown as normal.
 
 ## LIST_MODULES_32BIT
- **const win32process.LIST_MODULES_32BIT;** 
+ __const win32process.LIST_MODULES_32BIT;__ 
 
 
 ## LIST_MODULES_64BIT
- **const win32process.LIST_MODULES_64BIT;** 
+ __const win32process.LIST_MODULES_64BIT;__ 
 
 
 ## LIST_MODULES_ALL
- **const win32process.LIST_MODULES_ALL;** 
+ __const win32process.LIST_MODULES_ALL;__ 
 
 
 ## LIST_MODULES_DEFAULT
- **const win32process.LIST_MODULES_DEFAULT;** 
+ __const win32process.LIST_MODULES_DEFAULT;__ 
 
 
 ## MAXIMUM_PROCESSORS
- **const win32process.MAXIMUM_PROCESSORS;** 
+ __const win32process.MAXIMUM_PROCESSORS;__ 
 
 
 ## NORMAL_PRIORITY_CLASS
- **const win32process.NORMAL_PRIORITY_CLASS;** 
+ __const win32process.NORMAL_PRIORITY_CLASS;__ 
 Indicates a normal process with no special scheduling needs.
 
 ## REALTIME_PRIORITY_CLASS
- **const win32process.REALTIME_PRIORITY_CLASS;** 
+ __const win32process.REALTIME_PRIORITY_CLASS;__ 
 Indicates a process that has the highest possible priority. The threads of a real-time priority class process preempt the threads of all other processes, including operating system processes performing important tasks. For example, a real-time process that executes for more than a very brief interval can cause disk caches not to flush or cause the mouse to be unresponsive.
 
-## [win32process](README.md#win32process).ResumeThread
+## [win32process](#win32process).ResumeThread
 
-int = **ResumeThread( *handle* ** )
+int = __ResumeThread( *handle* __ )
 Resumes the specified thread. When the suspend count is decremented to zero, the execution of the thread is resumed.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the thread
 
@@ -819,61 +820,61 @@ Resumes the specified thread. When the suspend count is decremented to zero, the
 The return value is the thread's previous suspend count
 
 ## STARTF_FORCEOFFFEEDBACK
- **const win32process.STARTF_FORCEOFFFEEDBACK;** 
+ __const win32process.STARTF_FORCEOFFFEEDBACK;__ 
 Indicates that the feedback cursor is forced off while the process is starting. The normal cursor is displayed.
 
 ## STARTF_FORCEONFEEDBACK
- **const win32process.STARTF_FORCEONFEEDBACK;** 
+ __const win32process.STARTF_FORCEONFEEDBACK;__ 
 Indicates that the cursor is in feedback mode for two seconds after CreateProcess is called. If during those two seconds the process makes the first GUI call, the system gives five more seconds to the process. If during those five seconds the process shows a window, the system gives five more seconds to the process to finish drawing the window. 
 
 The system turns the feedback cursor off after the first call to GetMessage, regardless of whether the process is drawing.
 
 ## STARTF_RUNFULLSCREEN
- **const win32process.STARTF_RUNFULLSCREEN;** 
+ __const win32process.STARTF_RUNFULLSCREEN;__ 
 Indicates that the process should be run in full-screen mode, rather than in windowed mode. 
 
 This flag is only valid for console applications running on an x86 computer.
 
 ## STARTF_USECOUNTCHARS
- **const win32process.STARTF_USECOUNTCHARS;** 
+ __const win32process.STARTF_USECOUNTCHARS;__ 
 If this value is not specified, the dwXCountChars and dwYCountChars members are ignored.
 
 ## STARTF_USEFILLATTRIBUTE
- **const win32process.STARTF_USEFILLATTRIBUTE;** 
+ __const win32process.STARTF_USEFILLATTRIBUTE;__ 
 If this value is not specified, the dwFillAttribute member is ignored.
 
 ## STARTF_USEPOSITION
- **const win32process.STARTF_USEPOSITION;** 
+ __const win32process.STARTF_USEPOSITION;__ 
 If this value is not specified, the dwX and dwY members are ignored.
 
 ## STARTF_USESHOWWINDOW
- **const win32process.STARTF_USESHOWWINDOW;** 
+ __const win32process.STARTF_USESHOWWINDOW;__ 
 If this value is not specified, the wShowWindow member is ignored.
 
 ## STARTF_USESIZE
- **const win32process.STARTF_USESIZE;** 
+ __const win32process.STARTF_USESIZE;__ 
 If this value is not specified, the dwXSize and dwYSize members are ignored.
 
 ## STARTF_USESTDHANDLES
- **const win32process.STARTF_USESTDHANDLES;** 
+ __const win32process.STARTF_USESTDHANDLES;__ 
 Sets the standard input, standard output, and standard error handles for the process to the handles specified in the hStdInput, hStdOutput, and hStdError members of the STARTUPINFO structure. The CreateProcess function's fInheritHandles parameter must be set to TRUE for this to work properly. 
 
 If this value is not specified, the hStdInput, hStdOutput, and hStdError members of the STARTUPINFO structure are ignored.
 
-## [win32process](README.md#win32process).STARTUPINFO
+## [win32process](#win32process).STARTUPINFO
 
-[PySTARTUPINFO](README.md#pystartupinfo)= **STARTUPINFO(** )
+[PySTARTUPINFO](#pystartupinfo)= __STARTUPINFO(__ )
 Creates a new STARTUPINFO object.
 
-## [win32process](README.md#win32process).SetPriorityClass
+## [win32process](#win32process).SetPriorityClass
 
- **SetPriorityClass( *handle*  *, dwPriorityClass* ** )
+ __SetPriorityClass( *handle*  *, dwPriorityClass* __ )
 
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the process
 
@@ -881,15 +882,15 @@ Creates a new STARTUPINFO object.
 
     priority class value
 
-## [win32process](README.md#win32process).SetProcessAffinityMask
+## [win32process](#win32process).SetProcessAffinityMask
 
- **SetProcessAffinityMask( *hProcess*  *, mask* ** )
+ __SetProcessAffinityMask( *hProcess*  *, mask* __ )
 Sets a processor affinity mask for a specified process.
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     handle to the process of interest
 
@@ -900,15 +901,15 @@ Sets a processor affinity mask for a specified process.
 #### Comments
 This function does not exist on all platforms.
 
-## [win32process](README.md#win32process).SetProcessPriorityBoost
+## [win32process](#win32process).SetProcessPriorityBoost
 
- **SetProcessPriorityBoost( *Process*  *, DisablePriorityBoost* ** )
+ __SetProcessPriorityBoost( *Process*  *, DisablePriorityBoost* __ )
 Enables or disables dynamic priority adjustment for a process
 
 #### Parameters
 
 
-  -  *Process* :[PyHANDLE](README.md#pyhandle)
+  -  *Process* :[PyHANDLE](#pyhandle)
 
     Handle to a process
 
@@ -916,9 +917,9 @@ Enables or disables dynamic priority adjustment for a process
 
     True to disable or False to enable
 
-## [win32process](README.md#win32process).SetProcessShutdownParameters
+## [win32process](#win32process).SetProcessShutdownParameters
 
- **SetProcessShutdownParameters( *Level*  *, Flags* ** )
+ __SetProcessShutdownParameters( *Level*  *, Flags* __ )
 Sets shutdown priority and flags for current process
 
 #### Parameters
@@ -935,15 +936,15 @@ Sets shutdown priority and flags for current process
 #### Comments
 Ranges are 000-0FF Reserved by windows, 100-1FF Last, 200-2FF Middle, 300-3FF First, 400-4FF Reserved by windows
 
-## [win32process](README.md#win32process).SetProcessWorkingSetSize
+## [win32process](#win32process).SetProcessWorkingSetSize
 
- **SetProcessWorkingSetSize( *hProcess*  *, MinimumWorkingSetSize*  *, MaximumWorkingSetSize* ** )
+ __SetProcessWorkingSetSize( *hProcess*  *, MinimumWorkingSetSize*  *, MaximumWorkingSetSize* __ )
 Sets minimum and maximum working set sizes for a process
 
 #### Parameters
 
 
-  -  *hProcess* :[PyHANDLE](README.md#pyhandle)
+  -  *hProcess* :[PyHANDLE](#pyhandle)
 
     Process handle as returned by OpenProcess
 
@@ -958,15 +959,15 @@ Sets minimum and maximum working set sizes for a process
 #### Comments
 Set both min and max to -1 to have process swapped out completely
 
-## [win32process](README.md#win32process).SetThreadAffinityMask
+## [win32process](#win32process).SetThreadAffinityMask
 
-int = **SetThreadAffinityMask( *hThread*  *, ThreadAffinityMask* ** )
+int = __SetThreadAffinityMask( *hThread*  *, ThreadAffinityMask* __ )
 Sets a processor affinity mask for a specified thread.
 
 #### Parameters
 
 
-  -  *hThread* :[PyHANDLE](README.md#pyhandle)
+  -  *hThread* :[PyHANDLE](#pyhandle)
 
     handle to the thread of interest
 
@@ -974,15 +975,15 @@ Sets a processor affinity mask for a specified thread.
 
     a processor affinity mask
 
-## [win32process](README.md#win32process).SetThreadIdealProcessor
+## [win32process](#win32process).SetThreadIdealProcessor
 
-int = **SetThreadIdealProcessor( *handle*  *, dwIdealProcessor* ** )
+int = __SetThreadIdealProcessor( *handle*  *, dwIdealProcessor* __ )
 Used to specify a preferred processor for a thread. The system schedules threads on their preferred processors whenever possible.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the thread of interest
 
@@ -990,15 +991,15 @@ Used to specify a preferred processor for a thread. The system schedules threads
 
     ideal processor number
 
-## [win32process](README.md#win32process).SetThreadPriority
+## [win32process](#win32process).SetThreadPriority
 
- **SetThreadPriority( *handle*  *, nPriority* ** )
+ __SetThreadPriority( *handle*  *, nPriority* __ )
 
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the thread
 
@@ -1006,15 +1007,15 @@ Used to specify a preferred processor for a thread. The system schedules threads
 
     thread priority level
 
-## [win32process](README.md#win32process).SetThreadPriorityBoost
+## [win32process](#win32process).SetThreadPriorityBoost
 
- **SetThreadPriorityBoost( *Thread*  *, DisablePriorityBoost* ** )
+ __SetThreadPriorityBoost( *Thread*  *, DisablePriorityBoost* __ )
 Enables or disables dynamic priority adjustment for a thread
 
 #### Parameters
 
 
-  -  *Thread* :[PyHANDLE](README.md#pyhandle)
+  -  *Thread* :[PyHANDLE](#pyhandle)
 
     Handle to a thread
 
@@ -1022,15 +1023,15 @@ Enables or disables dynamic priority adjustment for a thread
 
     True to disable or False to enable
 
-## [win32process](README.md#win32process).SuspendThread
+## [win32process](#win32process).SuspendThread
 
-int = **SuspendThread( *handle* ** )
+int = __SuspendThread( *handle* __ )
 Suspends the specified thread.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the thread
 
@@ -1038,58 +1039,58 @@ Suspends the specified thread.
 The return value is the thread's previous suspend count
 
 ## THREAD_MODE_BACKGROUND_BEGIN
- **const win32process.THREAD_MODE_BACKGROUND_BEGIN;** 
+ __const win32process.THREAD_MODE_BACKGROUND_BEGIN;__ 
 
 
 ## THREAD_MODE_BACKGROUND_BEGIN
- **const win32process.THREAD_MODE_BACKGROUND_BEGIN;** 
+ __const win32process.THREAD_MODE_BACKGROUND_BEGIN;__ 
 
 
 ## THREAD_MODE_BACKGROUND_END
- **const win32process.THREAD_MODE_BACKGROUND_END;** 
+ __const win32process.THREAD_MODE_BACKGROUND_END;__ 
 
 
 ## THREAD_MODE_BACKGROUND_END
- **const win32process.THREAD_MODE_BACKGROUND_END;** 
+ __const win32process.THREAD_MODE_BACKGROUND_END;__ 
 
 
 ## THREAD_PRIORITY_ABOVE_NORMAL
- **const win32process.THREAD_PRIORITY_ABOVE_NORMAL;** 
+ __const win32process.THREAD_PRIORITY_ABOVE_NORMAL;__ 
 Indicates 1 point above normal priority for the priority class.
 
 ## THREAD_PRIORITY_BELOW_NORMAL
- **const win32process.THREAD_PRIORITY_BELOW_NORMAL;** 
+ __const win32process.THREAD_PRIORITY_BELOW_NORMAL;__ 
 Indicates 1 point below normal priority for the priority class.
 
 ## THREAD_PRIORITY_HIGHEST
- **const win32process.THREAD_PRIORITY_HIGHEST;** 
+ __const win32process.THREAD_PRIORITY_HIGHEST;__ 
 Indicates 2 points above normal priority for the priority class.
 
 ## THREAD_PRIORITY_IDLE
- **const win32process.THREAD_PRIORITY_IDLE;** 
+ __const win32process.THREAD_PRIORITY_IDLE;__ 
 Indicates a base priority level of 1 for IDLE_PRIORITY_CLASS, NORMAL_PRIORITY_CLASS, or HIGH_PRIORITY_CLASS processes, and a base priority level of 16 for REALTIME_PRIORITY_CLASS processes.
 
 ## THREAD_PRIORITY_LOWEST
- **const win32process.THREAD_PRIORITY_LOWEST;** 
+ __const win32process.THREAD_PRIORITY_LOWEST;__ 
 Indicates 2 points below normal priority for the priority class.
 
 ## THREAD_PRIORITY_NORMAL
- **const win32process.THREAD_PRIORITY_NORMAL;** 
+ __const win32process.THREAD_PRIORITY_NORMAL;__ 
 Indicates normal priority for the priority class.
 
 ## THREAD_PRIORITY_TIME_CRITICAL
- **const win32process.THREAD_PRIORITY_TIME_CRITICAL;** 
+ __const win32process.THREAD_PRIORITY_TIME_CRITICAL;__ 
 Indicates a base priority level of 15 for IDLE_PRIORITY_CLASS, NORMAL_PRIORITY_CLASS, or HIGH_PRIORITY_CLASS processes, and a base priority level of 31 for REALTIME_PRIORITY_CLASS processes.
 
-## [win32process](README.md#win32process).TerminateProcess
+## [win32process](#win32process).TerminateProcess
 
- **TerminateProcess( *handle*  *, exitCode* ** )
+ __TerminateProcess( *handle*  *, exitCode* __ )
 Terminates the specified process and all of its threads.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     handle to the process
 
@@ -1097,9 +1098,9 @@ Terminates the specified process and all of its threads.
 
     The exit code for the process.
 
-## [win32process](README.md#win32process).beginthreadex
+## [win32process](#win32process).beginthreadex
 
-[PyHANDLE](README.md#pyhandle), int = **beginthreadex( *sa*  *, stackSize*  *, entryPoint*  *, args*  *, flags* ** )
+[PyHANDLE](#pyhandle), int = __beginthreadex( *sa*  *, stackSize*  *, entryPoint*  *, args*  *, flags* __ )
 Creates a new thread
 
 #### Parameters

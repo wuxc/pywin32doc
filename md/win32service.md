@@ -1,3 +1,4 @@
+# win32service
 
 ## Module win32service
 
@@ -142,9 +143,9 @@ An interface to the Windows NT Service API
 
     Retrieves advanced service configuration options&nbsp;
 
-## [win32service](README.md#win32service).ChangeServiceConfig
+## [win32service](#win32service).ChangeServiceConfig
 
-int/None = **ChangeServiceConfig( *hService*  *, serviceType*  *, startType*  *, errorControl*  *, binaryFile*  *, loadOrderGroup*  *, bFetchTag*  *, serviceDeps*  *, acctName*  *, password*  *, displayName* ** )
+int/None = __ChangeServiceConfig( *hService*  *, serviceType*  *, startType*  *, errorControl*  *, binaryFile*  *, loadOrderGroup*  *, bFetchTag*  *, serviceDeps*  *, acctName*  *, password*  *, displayName* __ )
 Changes the configuration of an existing service.
 
 #### Parameters
@@ -166,11 +167,11 @@ Changes the configuration of an existing service.
 
     severity if service fails to start, or SERVICE_NO_CHANGE
 
-  -  *binaryFile* :[PyUnicode](README.md#pyunicode)
+  -  *binaryFile* :[PyUnicode](#pyunicode)
 
     name of binary file, or None
 
-  -  *loadOrderGroup* :[PyUnicode](README.md#pyunicode)
+  -  *loadOrderGroup* :[PyUnicode](#pyunicode)
 
     name of load ordering group , or None
 
@@ -178,25 +179,25 @@ Changes the configuration of an existing service.
 
     Should the tag be fetched and returned?  If TRUE, the result is the tag, else None.
 
-  -  *serviceDeps* : [[PyUnicode](README.md#pyunicode),...]
+  -  *serviceDeps* : [[PyUnicode](#pyunicode),...]
 
     sequence of dependency names
 
-  -  *acctName* :[PyUnicode](README.md#pyunicode)
+  -  *acctName* :[PyUnicode](#pyunicode)
 
     account name of service, or None
 
-  -  *password* :[PyUnicode](README.md#pyunicode)
+  -  *password* :[PyUnicode](#pyunicode)
 
     password for service account , or None
 
-  -  *displayName* :[PyUnicode](README.md#pyunicode)
+  -  *displayName* :[PyUnicode](#pyunicode)
 
     Display name
 
-## [win32service](README.md#win32service).ChangeServiceConfig2
+## [win32service](#win32service).ChangeServiceConfig2
 
- **ChangeServiceConfig2( *hService*  *, InfoLevel*  *, info* ** )
+ __ChangeServiceConfig2( *hService*  *, InfoLevel*  *, info* __ )
 Modifies advanced service parameters
 
 #### Parameters
@@ -215,9 +216,9 @@ Modifies advanced service parameters
     Type depends on InfoLevel
 
 
-## [win32service](README.md#win32service).CloseServiceHandle
+## [win32service](#win32service).CloseServiceHandle
 
- **CloseServiceHandle( *scHandle* ** )
+ __CloseServiceHandle( *scHandle* __ )
 Closes a service or SCM handle
 
 #### Parameters
@@ -227,9 +228,9 @@ Closes a service or SCM handle
 
     Handle to close
 
-## [win32service](README.md#win32service).ControlService
+## [win32service](#win32service).ControlService
 
-[SERVICE_STATUS](SERVICE.md#servicestatus)= **ControlService( *scHandle*  *, code* ** )
+[SERVICE_STATUS](SERVICE.md#servicestatus)= __ControlService( *scHandle*  *, code* __ )
 Sends a control message to a service.
 
 #### Parameters
@@ -246,9 +247,9 @@ Sends a control message to a service.
 #### Return Value
 The result is the new service status.
 
-## [win32service](README.md#win32service).CreateDesktop
+## [win32service](#win32service).CreateDesktop
 
-[PyHDESK](README.md#pyhdesk)= **CreateDesktop( *Desktop*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* ** )
+[PyHDESK](#pyhdesk)= __CreateDesktop( *Desktop*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* __ )
 Creates a new desktop in calling process's current window station
 
 #### Parameters
@@ -270,9 +271,9 @@ Creates a new desktop in calling process's current window station
 
     Specifies inheritance and controls access to desktop
 
-## [win32service](README.md#win32service).CreateService
+## [win32service](#win32service).CreateService
 
-[PySC_HANDLE](PySC.md#pyschandle)/([PySC_HANDLE](PySC.md#pyschandle), int) = **CreateService( *scHandle*  *, name*  *, displayName*  *, desiredAccess*  *, serviceType*  *, startType*  *, errorControl*  *, binaryFile*  *, loadOrderGroup*  *, bFetchTag*  *, serviceDeps*  *, acctName*  *, password* ** )
+[PySC_HANDLE](PySC.md#pyschandle)/([PySC_HANDLE](PySC.md#pyschandle), int) = __CreateService( *scHandle*  *, name*  *, displayName*  *, desiredAccess*  *, serviceType*  *, startType*  *, errorControl*  *, binaryFile*  *, loadOrderGroup*  *, bFetchTag*  *, serviceDeps*  *, acctName*  *, password* __ )
 Creates a new service.
 
 #### Parameters
@@ -282,11 +283,11 @@ Creates a new service.
 
     handle to service control manager database
 
-  -  *name* :[PyUnicode](README.md#pyunicode)
+  -  *name* :[PyUnicode](#pyunicode)
 
     Name of service
 
-  -  *displayName* :[PyUnicode](README.md#pyunicode)
+  -  *displayName* :[PyUnicode](#pyunicode)
 
     Display name
 
@@ -306,11 +307,11 @@ Creates a new service.
 
     severity if service fails to start
 
-  -  *binaryFile* :[PyUnicode](README.md#pyunicode)
+  -  *binaryFile* :[PyUnicode](#pyunicode)
 
     name of binary file
 
-  -  *loadOrderGroup* :[PyUnicode](README.md#pyunicode)
+  -  *loadOrderGroup* :[PyUnicode](#pyunicode)
 
     name of load ordering group , or None
 
@@ -318,21 +319,21 @@ Creates a new service.
 
     Should the tag be fetched and returned?  If TRUE, the result is a tuple of (handle, tag), otherwise just handle.
 
-  -  *serviceDeps* : [[PyUnicode](README.md#pyunicode),...]
+  -  *serviceDeps* : [[PyUnicode](#pyunicode),...]
 
     sequence of dependency names
 
-  -  *acctName* :[PyUnicode](README.md#pyunicode)
+  -  *acctName* :[PyUnicode](#pyunicode)
 
     account name of service, or None
 
-  -  *password* :[PyUnicode](README.md#pyunicode)
+  -  *password* :[PyUnicode](#pyunicode)
 
     password for service account , or None
 
-## [win32service](README.md#win32service).CreateWindowStation
+## [win32service](#win32service).CreateWindowStation
 
-[PyHWINSTA](README.md#pyhwinsta)= **CreateWindowStation( *WindowStation*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* ** )
+[PyHWINSTA](#pyhwinsta)= __CreateWindowStation( *WindowStation*  *, Flags*  *, DesiredAccess*  *, SecurityAttributes* __ )
 Creates a new window station
 
 #### Parameters
@@ -358,52 +359,52 @@ Creates a new window station
 If name is None or empty string, name is formatteded from logon id
 
 ## DBT_CONFIGCHANGECANCELED
- **const win32service.DBT_CONFIGCHANGECANCELED;** 
+ __const win32service.DBT_CONFIGCHANGECANCELED;__ 
 
 
 ## DBT_CONFIGCHANGED
- **const win32service.DBT_CONFIGCHANGED;** 
+ __const win32service.DBT_CONFIGCHANGED;__ 
 
 
 ## DBT_CUSTOMEVENT
- **const win32service.DBT_CUSTOMEVENT;** 
+ __const win32service.DBT_CUSTOMEVENT;__ 
 user-defined event
 
 ## DBT_DEVICEARRIVAL
- **const win32service.DBT_DEVICEARRIVAL;** 
+ __const win32service.DBT_DEVICEARRIVAL;__ 
 system detected a new device
 
 ## DBT_DEVICEQUERYREMOVE
- **const win32service.DBT_DEVICEQUERYREMOVE;** 
+ __const win32service.DBT_DEVICEQUERYREMOVE;__ 
 wants to remove, may fail
 
 ## DBT_DEVICEQUERYREMOVEFAILED
- **const win32service.DBT_DEVICEQUERYREMOVEFAILED;** 
+ __const win32service.DBT_DEVICEQUERYREMOVEFAILED;__ 
 removal aborted
 
 ## DBT_DEVICEREMOVECOMPLETE
- **const win32service.DBT_DEVICEREMOVECOMPLETE;** 
+ __const win32service.DBT_DEVICEREMOVECOMPLETE;__ 
 device is gone
 
 ## DBT_DEVICEREMOVEPENDING
- **const win32service.DBT_DEVICEREMOVEPENDING;** 
+ __const win32service.DBT_DEVICEREMOVEPENDING;__ 
 about to remove, still avail.
 
 ## DBT_DEVICETYPESPECIFIC
- **const win32service.DBT_DEVICETYPESPECIFIC;** 
+ __const win32service.DBT_DEVICETYPESPECIFIC;__ 
 type specific event
 
 ## DBT_QUERYCHANGECONFIG
- **const win32service.DBT_QUERYCHANGECONFIG;** 
+ __const win32service.DBT_QUERYCHANGECONFIG;__ 
 
 
 ## DF_ALLOWOTHERACCOUNTHOOK
- **const win32service.DF_ALLOWOTHERACCOUNTHOOK;** 
+ __const win32service.DF_ALLOWOTHERACCOUNTHOOK;__ 
 #define CWF_CREATE_ONLY CWF_CREATE_ONLY
 
-## [win32service](README.md#win32service).DeleteService
+## [win32service](#win32service).DeleteService
 
- **DeleteService( *scHandle* ** )
+ __DeleteService( *scHandle* __ )
 Deletes the specified service
 
 #### Parameters
@@ -413,9 +414,9 @@ Deletes the specified service
 
     Handle to service to be deleted
 
-## [win32service](README.md#win32service).EnumDependentServices
+## [win32service](#win32service).EnumDependentServices
 
-(tuple,...) = **EnumDependentServices( *hService*  *, ServiceState* ** )
+(tuple,...) = __EnumDependentServices( *hService*  *, ServiceState* __ )
 Lists services that depend on a service
 
 #### Parameters
@@ -432,9 +433,9 @@ Lists services that depend on a service
 #### Return Value
 Returns a sequence of tuples representing ENUM_SERVICE_STATUS structs: (ServiceName, DisplayName,[SERVICE_STATUS](SERVICE.md#servicestatus))
 
-## [win32service](README.md#win32service).EnumServicesStatus
+## [win32service](#win32service).EnumServicesStatus
 
-(tuple,...) = **EnumServicesStatus( *hSCManager*  *, ServiceType*  *, ServiceState* ** )
+(tuple,...) = __EnumServicesStatus( *hSCManager*  *, ServiceType*  *, ServiceState* __ )
 Returns a tuple of status info for each service that meets specified criteria
 
 #### Parameters
@@ -455,9 +456,9 @@ Returns a tuple of status info for each service that meets specified criteria
 #### Return Value
 Returns a sequence of tuples representing ENUM_SERVICE_STATUS structs: (ServiceName, DisplayName,[SERVICE_STATUS](SERVICE.md#servicestatus))
 
-## [win32service](README.md#win32service).EnumServicesStatusEx
+## [win32service](#win32service).EnumServicesStatusEx
 
-(dict,...) = **EnumServicesStatusEx( *SCManager*  *, ServiceType*  *, ServiceState*  *, GroupName*  *, InfoLevel* ** )
+(dict,...) = __EnumServicesStatusEx( *SCManager*  *, ServiceType*  *, ServiceState*  *, GroupName*  *, InfoLevel* __ )
 Lists the status of services that meet the specified criteria
 
 #### Parameters
@@ -486,29 +487,29 @@ Lists the status of services that meet the specified criteria
 #### Win32 API References
 
 
-  - Search for *EnumServicesStatusEx* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=enumservicesstatusex),[google](README.md#http://www.google.com/search?q=enumservicesstatusex)or[google groups](README.md#http://groups.google.com/groups?q=enumservicesstatusex).
+  - Search for *EnumServicesStatusEx* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=enumservicesstatusex),[google](#http://www.google.com/search?q=enumservicesstatusex)or[google groups](#http://groups.google.com/groups?q=enumservicesstatusex).
 
 #### Return Value
 Returns a sequence of dicts, whose contents depend on information level requested. 
 
 Currently, only information level supported is SC_ENUM_PROCESS_INFO (returns ENUM_SERVICE_STATUS_PROCESS).
 
-## [win32service](README.md#win32service).EnumWindowStations
+## [win32service](#win32service).EnumWindowStations
 
-([PyUnicode](README.md#pyunicode),,...) = **EnumWindowStations(** )
+([PyUnicode](#pyunicode),,...) = __EnumWindowStations(__ )
 Lists names of window stations
 
 #### Comments
 Only window stations for which you have WINSTA_ENUMERATE access will be returned
 
-## [win32service](README.md#win32service).GetProcessWindowStation
+## [win32service](#win32service).GetProcessWindowStation
 
-[PyHWINSTA](README.md#pyhwinsta)= **GetProcessWindowStation(** )
+[PyHWINSTA](#pyhwinsta)= __GetProcessWindowStation(__ )
 Returns a handle to calling process's current window station
 
-## [win32service](README.md#win32service).GetServiceDisplayName
+## [win32service](#win32service).GetServiceDisplayName
 
-[PyUNICODE](README.md#pyunicode)= **GetServiceDisplayName( *hSCManager*  *, ServiceName* ** )
+[PyUNICODE](#pyunicode)= __GetServiceDisplayName( *hSCManager*  *, ServiceName* __ )
 Translates an internal service name into its display name
 
 #### Parameters
@@ -518,13 +519,13 @@ Translates an internal service name into its display name
 
     Handle to service control manager as returned by[win32service::OpenSCManager](win32service.md#win32serviceopenscmanager)
 
-  -  *ServiceName* :[PyUNICODE](README.md#pyunicode)
+  -  *ServiceName* :[PyUNICODE](#pyunicode)
 
     Name of service
 
-## [win32service](README.md#win32service).GetServiceKeyName
+## [win32service](#win32service).GetServiceKeyName
 
-[PyUNICODE](README.md#pyunicode)= **GetServiceKeyName( *hSCManager*  *, DisplayName* ** )
+[PyUNICODE](#pyunicode)= __GetServiceKeyName( *hSCManager*  *, DisplayName* __ )
 Translates a service display name into its registry key name
 
 #### Parameters
@@ -534,13 +535,13 @@ Translates a service display name into its registry key name
 
     Handle to service control manager as returned by[win32service::OpenSCManager](win32service.md#win32serviceopenscmanager)
 
-  -  *DisplayName* :[PyUNICODE](README.md#pyunicode)
+  -  *DisplayName* :[PyUNICODE](#pyunicode)
 
     Display name of a service
 
-## [win32service](README.md#win32service).GetThreadDesktop
+## [win32service](#win32service).GetThreadDesktop
 
-[PyHDESK](README.md#pyhdesk)= **GetThreadDesktop( *ThreadId* ** )
+[PyHDESK](#pyhdesk)= __GetThreadDesktop( *ThreadId* __ )
 Retrieves a handle to the desktop for a thread
 
 #### Parameters
@@ -550,15 +551,15 @@ Retrieves a handle to the desktop for a thread
 
     Id of thread
 
-## [win32service](README.md#win32service).GetUserObjectInformation
+## [win32service](#win32service).GetUserObjectInformation
 
- **GetUserObjectInformation( *Handle*  *, type* ** )
+ __GetUserObjectInformation( *Handle*  *, type* __ )
 Returns specified type of info about a window station or desktop
 
 #### Parameters
 
 
-  -  *Handle* :[PyHANDLE](README.md#pyhandle)
+  -  *Handle* :[PyHANDLE](#pyhandle)
 
     Handle to window station or desktop
 
@@ -569,9 +570,9 @@ Returns specified type of info about a window station or desktop
 #### Return Value
 Return type is dependent on UOI_* constant passed in
 
-## [win32service](README.md#win32service).LockServiceDatabase
+## [win32service](#win32service).LockServiceDatabase
 
-int = **LockServiceDatabase( *sc_handle* ** )
+int = __LockServiceDatabase( *sc_handle* __ )
 Locks the service database.
 
 #### Parameters
@@ -581,9 +582,9 @@ Locks the service database.
 
     A handle to the SCM.
 
-## [win32service](README.md#win32service).OpenDesktop
+## [win32service](#win32service).OpenDesktop
 
-[PyHDESK](README.md#pyhdesk)= **OpenDesktop( *szDesktop*  *, Flags*  *, Inherit*  *, DesiredAccess* ** )
+[PyHDESK](#pyhdesk)= __OpenDesktop( *szDesktop*  *, Flags*  *, Inherit*  *, DesiredAccess* __ )
 Opens a handle to a desktop
 
 #### Parameters
@@ -605,9 +606,9 @@ Opens a handle to a desktop
 
     ACCESS_MASK specifying level of access for handle
 
-## [win32service](README.md#win32service).OpenInputDesktop
+## [win32service](#win32service).OpenInputDesktop
 
-[PyHDESK](README.md#pyhdesk)= **OpenInputDesktop( *Flags*  *, Inherit*  *, DesiredAccess* ** )
+[PyHDESK](#pyhdesk)= __OpenInputDesktop( *Flags*  *, Inherit*  *, DesiredAccess* __ )
 Returns a handle to desktop for logged-in user
 
 #### Parameters
@@ -625,19 +626,19 @@ Returns a handle to desktop for logged-in user
 
     ACCESS_MASK specifying access available to returned handle
 
-## [win32service](README.md#win32service).OpenSCManager
+## [win32service](#win32service).OpenSCManager
 
-[PySC_HANDLE](PySC.md#pyschandle)= **OpenSCManager( *machineName*  *, dbName*  *, desiredAccess* ** )
+[PySC_HANDLE](PySC.md#pyschandle)= __OpenSCManager( *machineName*  *, dbName*  *, desiredAccess* __ )
 Returns a handle to the service control manager
 
 #### Parameters
 
 
-  -  *machineName* :[PyUnicode](README.md#pyunicode)
+  -  *machineName* :[PyUnicode](#pyunicode)
 
     The name of the computer, or None
 
-  -  *dbName* :[PyUnicode](README.md#pyunicode)
+  -  *dbName* :[PyUnicode](#pyunicode)
 
     The name of the service database, or None
 
@@ -645,9 +646,9 @@ Returns a handle to the service control manager
 
     The access desired. (combination of win32service.SC_MANAGER_* flags)
 
-## [win32service](README.md#win32service).OpenService
+## [win32service](#win32service).OpenService
 
-[PySC_HANDLE](PySC.md#pyschandle)= **OpenService( *scHandle*  *, name*  *, desiredAccess* ** )
+[PySC_HANDLE](PySC.md#pyschandle)= __OpenService( *scHandle*  *, name*  *, desiredAccess* __ )
 Returns a handle to the specified service.
 
 #### Parameters
@@ -657,7 +658,7 @@ Returns a handle to the specified service.
 
     Handle to the Service Control Mananger
 
-  -  *name* :[PyUnicode](README.md#pyunicode)
+  -  *name* :[PyUnicode](#pyunicode)
 
     The name of the service to open.
 
@@ -665,9 +666,9 @@ Returns a handle to the specified service.
 
     The access desired.
 
-## [win32service](README.md#win32service).OpenWindowStation
+## [win32service](#win32service).OpenWindowStation
 
-[PyHWINSTA](README.md#pyhwinsta)= **OpenWindowStation( *szWinSta*  *, Inherit*  *, DesiredAccess* ** )
+[PyHWINSTA](#pyhwinsta)= __OpenWindowStation( *szWinSta*  *, Inherit*  *, DesiredAccess* __ )
 Returns a handle to the specified window station
 
 #### Parameters
@@ -685,9 +686,9 @@ Returns a handle to the specified window station
 
     Bitmask of access types
 
-## [win32service](README.md#win32service).QueryServiceConfig
+## [win32service](#win32service).QueryServiceConfig
 
-tuple = **QueryServiceConfig( *hService* ** )
+tuple = __QueryServiceConfig( *hService* __ )
 Retrieves configuration parameters for a service
 
 #### Parameters
@@ -715,11 +716,11 @@ Returns a tuple representing a QUERY_SERVICE_CONFIG struct:
 
     One of SERVICE_ERROR_* constants
 
-  - [3] *[PyUnicode](README.md#pyunicode)* : BinaryPathName
+  - [3] *[PyUnicode](#pyunicode)* : BinaryPathName
 
     Service's binary executable, can also contain command line args
 
-  - [4] *[PyUnicode](README.md#pyunicode)* : LoadOrderGroup
+  - [4] *[PyUnicode](#pyunicode)* : LoadOrderGroup
 
     Loading group that service is a member of
 
@@ -727,21 +728,21 @@ Returns a tuple representing a QUERY_SERVICE_CONFIG struct:
 
     Order of service within its load order group
 
-  - [6] *[[PyUnicode](README.md#pyunicode),...]* : Dependencies
+  - [6] *[[PyUnicode](#pyunicode),...]* : Dependencies
 
     Sequence of names of services on which this service depends
 
-  - [7] *[PyUnicode](README.md#pyunicode)* : ServiceStartName
+  - [7] *[PyUnicode](#pyunicode)* : ServiceStartName
 
     Account name under which service will run
 
-  - [8] *[PyUnicode](README.md#pyunicode)* : DisplayName
+  - [8] *[PyUnicode](#pyunicode)* : DisplayName
 
     Name of service
 
-## [win32service](README.md#win32service).QueryServiceConfig2
+## [win32service](#win32service).QueryServiceConfig2
 
-object = **QueryServiceConfig2( *hService*  *, InfoLevel* ** )
+object = __QueryServiceConfig2( *hService*  *, InfoLevel* __ )
 Retrieves advanced service configuration options
 
 #### Parameters
@@ -755,13 +756,13 @@ Retrieves advanced service configuration options
 
     One of win32service.SERVICE_CONFIG_* values
 
- **InfoLevel**  **Type of value returned** SERVICE_CONFIG_DESCRIPTIONUnicode stringSERVICE_CONFIG_FAILURE_ACTIONSDict representing a SERVICE_FAILURE_ACTIONS structSERVICE_CONFIG_DELAYED_AUTO_START_INFOBooleanSERVICE_CONFIG_FAILURE_ACTIONS_FLAGBooleanSERVICE_CONFIG_PRESHUTDOWN_INFOint (shutdown timeout in milliseconds)SERVICE_CONFIG_SERVICE_SID_INFOint (SERVICE_SID_TYPE_*)SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFOList of unicode strings
+ __InfoLevel__  __Type of value returned__ SERVICE_CONFIG_DESCRIPTIONUnicode stringSERVICE_CONFIG_FAILURE_ACTIONSDict representing a SERVICE_FAILURE_ACTIONS structSERVICE_CONFIG_DELAYED_AUTO_START_INFOBooleanSERVICE_CONFIG_FAILURE_ACTIONS_FLAGBooleanSERVICE_CONFIG_PRESHUTDOWN_INFOint (shutdown timeout in milliseconds)SERVICE_CONFIG_SERVICE_SID_INFOint (SERVICE_SID_TYPE_*)SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFOList of unicode strings
 #### Return Value
 Type of returned object depends on InfoLevel
 
-## [win32service](README.md#win32service).QueryServiceLockStatus
+## [win32service](#win32service).QueryServiceLockStatus
 
-(int,[PyUnicode](README.md#pyunicode), int) = **QueryServiceLockStatus( *hSCManager* ** )
+(int,[PyUnicode](#pyunicode), int) = __QueryServiceLockStatus( *hSCManager* __ )
 Retrieves the lock status of the specified service control manager database.
 
 #### Parameters
@@ -774,9 +775,9 @@ Retrieves the lock status of the specified service control manager database.
 #### Return Value
 The result is a tuple of (bIsLocked, userName, lockDuration)
 
-## [win32service](README.md#win32service).QueryServiceObjectSecurity
+## [win32service](#win32service).QueryServiceObjectSecurity
 
-[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= **QueryServiceObjectSecurity( *Handle*  *, SecurityInformation* ** )
+[PySECURITY_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)= __QueryServiceObjectSecurity( *Handle*  *, SecurityInformation* __ )
 Retrieves information from the security descriptor for a service
 
 #### Parameters
@@ -790,9 +791,9 @@ Retrieves information from the security descriptor for a service
 
     Type of infomation to retrieve, combination of values from SECURITY_INFORMATION enum
 
-## [win32service](README.md#win32service).QueryServiceStatus
+## [win32service](#win32service).QueryServiceStatus
 
-[SERVICE_STATUS](SERVICE.md#servicestatus)= **QueryServiceStatus( *hService* ** )
+[SERVICE_STATUS](SERVICE.md#servicestatus)= __QueryServiceStatus( *hService* __ )
 Queries a service status
 
 #### Parameters
@@ -802,9 +803,9 @@ Queries a service status
 
     Handle to service to be queried
 
-## [win32service](README.md#win32service).QueryServiceStatusEx
+## [win32service](#win32service).QueryServiceStatusEx
 
-[SERVICE_STATUS](SERVICE.md#servicestatus)= **QueryServiceStatusEx( *hService* ** )
+[SERVICE_STATUS](SERVICE.md#servicestatus)= __QueryServiceStatusEx( *hService* __ )
 Queries a service status
 
 #### Parameters
@@ -815,352 +816,352 @@ Queries a service status
     Handle to service to be queried
 
 ## SC_ACTION_NONE
- **const win32service.SC_ACTION_NONE;** 
+ __const win32service.SC_ACTION_NONE;__ 
 
 
 ## SC_ACTION_REBOOT
- **const win32service.SC_ACTION_REBOOT;** 
+ __const win32service.SC_ACTION_REBOOT;__ 
 
 
 ## SC_ACTION_RESTART
- **const win32service.SC_ACTION_RESTART;** 
+ __const win32service.SC_ACTION_RESTART;__ 
 
 
 ## SC_ACTION_RUN_COMMAND
- **const win32service.SC_ACTION_RUN_COMMAND;** 
+ __const win32service.SC_ACTION_RUN_COMMAND;__ 
 
 
 ## SC_ENUM_PROCESS_INFO
- **const win32service.SC_ENUM_PROCESS_INFO;** 
+ __const win32service.SC_ENUM_PROCESS_INFO;__ 
 
 
 ## SC_GROUP_IDENTIFIER
- **const win32service.SC_GROUP_IDENTIFIER;** 
+ __const win32service.SC_GROUP_IDENTIFIER;__ 
 
 
 ## SC_MANAGER_ALL_ACCESS
- **const win32service.SC_MANAGER_ALL_ACCESS;** 
+ __const win32service.SC_MANAGER_ALL_ACCESS;__ 
 Includes STANDARD_RIGHTS_REQUIRED, in addition to all of the access types listed in this table.
 
 ## SC_MANAGER_CONNECT
- **const win32service.SC_MANAGER_CONNECT;** 
+ __const win32service.SC_MANAGER_CONNECT;__ 
 Enables connecting to the service control manager.
 
 ## SC_MANAGER_CREATE_SERVICE
- **const win32service.SC_MANAGER_CREATE_SERVICE;** 
+ __const win32service.SC_MANAGER_CREATE_SERVICE;__ 
 Enables calling of the CreateService function to create a service object and add it to the database.
 
 ## SC_MANAGER_ENUMERATE_SERVICE
- **const win32service.SC_MANAGER_ENUMERATE_SERVICE;** 
+ __const win32service.SC_MANAGER_ENUMERATE_SERVICE;__ 
 Enables calling of the EnumServicesStatus function to list the services that are in the database.
 
 ## SC_MANAGER_LOCK
- **const win32service.SC_MANAGER_LOCK;** 
+ __const win32service.SC_MANAGER_LOCK;__ 
 Enables calling of the LockServiceDatabase function to acquire a lock on the database.
 
 ## SC_MANAGER_MODIFY_BOOT_CONFIG
- **const win32service.SC_MANAGER_MODIFY_BOOT_CONFIG;** 
+ __const win32service.SC_MANAGER_MODIFY_BOOT_CONFIG;__ 
 
 
 ## SC_MANAGER_QUERY_LOCK_STATUS
- **const win32service.SC_MANAGER_QUERY_LOCK_STATUS;** 
+ __const win32service.SC_MANAGER_QUERY_LOCK_STATUS;__ 
 Enables calling of the QueryServiceLockStatus function to retrieve the lock status information for the database.
 
 ## SERVICE_ACCEPT_HARDWAREPROFILECHANGE
- **const win32service.SERVICE_ACCEPT_HARDWAREPROFILECHANGE;** 
+ __const win32service.SERVICE_ACCEPT_HARDWAREPROFILECHANGE;__ 
 
 
 ## SERVICE_ACCEPT_NETBINDCHANGE
- **const win32service.SERVICE_ACCEPT_NETBINDCHANGE;** 
+ __const win32service.SERVICE_ACCEPT_NETBINDCHANGE;__ 
 
 
 ## SERVICE_ACCEPT_PARAMCHANGE
- **const win32service.SERVICE_ACCEPT_PARAMCHANGE;** 
+ __const win32service.SERVICE_ACCEPT_PARAMCHANGE;__ 
 
 
 ## SERVICE_ACCEPT_PAUSE_CONTINUE
- **const win32service.SERVICE_ACCEPT_PAUSE_CONTINUE;** 
+ __const win32service.SERVICE_ACCEPT_PAUSE_CONTINUE;__ 
 The service can be paused and continued. This enables the SERVICE_CONTROL_PAUSE and SERVICE_CONTROL_CONTINUE values.
 
 ## SERVICE_ACCEPT_POWEREVENT
- **const win32service.SERVICE_ACCEPT_POWEREVENT;** 
+ __const win32service.SERVICE_ACCEPT_POWEREVENT;__ 
 
 
 ## SERVICE_ACCEPT_PRESHUTDOWN
- **const win32service.SERVICE_ACCEPT_PRESHUTDOWN;** 
+ __const win32service.SERVICE_ACCEPT_PRESHUTDOWN;__ 
 
 
 ## SERVICE_ACCEPT_SESSIONCHANGE
- **const win32service.SERVICE_ACCEPT_SESSIONCHANGE;** 
+ __const win32service.SERVICE_ACCEPT_SESSIONCHANGE;__ 
 
 
 ## SERVICE_ACCEPT_SHUTDOWN
- **const win32service.SERVICE_ACCEPT_SHUTDOWN;** 
+ __const win32service.SERVICE_ACCEPT_SHUTDOWN;__ 
 The service is notified when system shutdown occurs. This enables the system to send a SERVICE_CONTROL_SHUTDOWN value to the service. The ControlService function cannot send this control
 
 ## SERVICE_ACCEPT_STOP
- **const win32service.SERVICE_ACCEPT_STOP;** 
+ __const win32service.SERVICE_ACCEPT_STOP;__ 
 The service can be stopped. This enables the SERVICE_CONTROL_STOP value.
 
 ## SERVICE_ACTIVE
- **const win32service.SERVICE_ACTIVE;** 
+ __const win32service.SERVICE_ACTIVE;__ 
 
 
 ## SERVICE_ALL_ACCESS
- **const win32service.SERVICE_ALL_ACCESS;** 
+ __const win32service.SERVICE_ALL_ACCESS;__ 
 Includes STANDARD_RIGHTS_REQUIRED in addition to all of the access types listed in this table.
 
 ## SERVICE_AUTO_START
- **const win32service.SERVICE_AUTO_START;** 
+ __const win32service.SERVICE_AUTO_START;__ 
 Specifies a device driver or Win32 service started by the service control manager automatically during system startup.
 
 ## SERVICE_BOOT_START
- **const win32service.SERVICE_BOOT_START;** 
+ __const win32service.SERVICE_BOOT_START;__ 
 Specifies a device driver started by the operating system loader. This value is valid only if the service type is SERVICE_KERNEL_DRIVER or SERVICE_FILE_SYSTEM_DRIVER.
 
 ## SERVICE_CHANGE_CONFIG
- **const win32service.SERVICE_CHANGE_CONFIG;** 
+ __const win32service.SERVICE_CHANGE_CONFIG;__ 
 Enables calling of the ChangeServiceConfig function to change the service configuration.
 
 ## SERVICE_CONFIG_DELAYED_AUTO_START_INFO
- **const win32service.SERVICE_CONFIG_DELAYED_AUTO_START_INFO;** 
+ __const win32service.SERVICE_CONFIG_DELAYED_AUTO_START_INFO;__ 
 
 
 ## SERVICE_CONFIG_DESCRIPTION
- **const win32service.SERVICE_CONFIG_DESCRIPTION;** 
+ __const win32service.SERVICE_CONFIG_DESCRIPTION;__ 
 
 
 ## SERVICE_CONFIG_FAILURE_ACTIONS
- **const win32service.SERVICE_CONFIG_FAILURE_ACTIONS;** 
+ __const win32service.SERVICE_CONFIG_FAILURE_ACTIONS;__ 
 These require Vista or above
 
 ## SERVICE_CONFIG_FAILURE_ACTIONS_FLAG
- **const win32service.SERVICE_CONFIG_FAILURE_ACTIONS_FLAG;** 
+ __const win32service.SERVICE_CONFIG_FAILURE_ACTIONS_FLAG;__ 
 
 
 ## SERVICE_CONFIG_PRESHUTDOWN_INFO
- **const win32service.SERVICE_CONFIG_PRESHUTDOWN_INFO;** 
+ __const win32service.SERVICE_CONFIG_PRESHUTDOWN_INFO;__ 
 
 
 ## SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFO
- **const win32service.SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFO;** 
+ __const win32service.SERVICE_CONFIG_REQUIRED_PRIVILEGES_INFO;__ 
 
 
 ## SERVICE_CONFIG_SERVICE_SID_INFO
- **const win32service.SERVICE_CONFIG_SERVICE_SID_INFO;** 
+ __const win32service.SERVICE_CONFIG_SERVICE_SID_INFO;__ 
 
 
 ## SERVICE_CONTINUE_PENDING
- **const win32service.SERVICE_CONTINUE_PENDING;** 
+ __const win32service.SERVICE_CONTINUE_PENDING;__ 
 The service continue is pending.
 
 ## SERVICE_CONTROL_CONTINUE
- **const win32service.SERVICE_CONTROL_CONTINUE;** 
+ __const win32service.SERVICE_CONTROL_CONTINUE;__ 
 Requests the paused service to resume. The hService handle must have SERVICE_PAUSE_CONTINUE access.
 
 ## SERVICE_CONTROL_DEVICEEVENT
- **const win32service.SERVICE_CONTROL_DEVICEEVENT;** 
+ __const win32service.SERVICE_CONTROL_DEVICEEVENT;__ 
 
 
 ## SERVICE_CONTROL_HARDWAREPROFILECHANGE
- **const win32service.SERVICE_CONTROL_HARDWAREPROFILECHANGE;** 
+ __const win32service.SERVICE_CONTROL_HARDWAREPROFILECHANGE;__ 
 
 
 ## SERVICE_CONTROL_INTERROGATE
- **const win32service.SERVICE_CONTROL_INTERROGATE;** 
+ __const win32service.SERVICE_CONTROL_INTERROGATE;__ 
 Requests the service to update immediately its current status information to the service control manager. The hService handle must have SERVICE_INTERROGATE access.
 
 ## SERVICE_CONTROL_NETBINDADD
- **const win32service.SERVICE_CONTROL_NETBINDADD;** 
+ __const win32service.SERVICE_CONTROL_NETBINDADD;__ 
 
 
 ## SERVICE_CONTROL_NETBINDDISABLE
- **const win32service.SERVICE_CONTROL_NETBINDDISABLE;** 
+ __const win32service.SERVICE_CONTROL_NETBINDDISABLE;__ 
 
 
 ## SERVICE_CONTROL_NETBINDENABLE
- **const win32service.SERVICE_CONTROL_NETBINDENABLE;** 
+ __const win32service.SERVICE_CONTROL_NETBINDENABLE;__ 
 
 
 ## SERVICE_CONTROL_NETBINDREMOVE
- **const win32service.SERVICE_CONTROL_NETBINDREMOVE;** 
+ __const win32service.SERVICE_CONTROL_NETBINDREMOVE;__ 
 
 
 ## SERVICE_CONTROL_PARAMCHANGE
- **const win32service.SERVICE_CONTROL_PARAMCHANGE;** 
+ __const win32service.SERVICE_CONTROL_PARAMCHANGE;__ 
 
 
 ## SERVICE_CONTROL_PAUSE
- **const win32service.SERVICE_CONTROL_PAUSE;** 
+ __const win32service.SERVICE_CONTROL_PAUSE;__ 
 Requests the service to pause. The hService handle must have SERVICE_PAUSE_CONTINUE access.
 
 ## SERVICE_CONTROL_POWEREVENT
- **const win32service.SERVICE_CONTROL_POWEREVENT;** 
+ __const win32service.SERVICE_CONTROL_POWEREVENT;__ 
 
 
 ## SERVICE_CONTROL_PRESHUTDOWN
- **const win32service.SERVICE_CONTROL_PRESHUTDOWN;** 
+ __const win32service.SERVICE_CONTROL_PRESHUTDOWN;__ 
 
 
 ## SERVICE_CONTROL_SESSIONCHANGE
- **const win32service.SERVICE_CONTROL_SESSIONCHANGE;** 
+ __const win32service.SERVICE_CONTROL_SESSIONCHANGE;__ 
 
 
 ## SERVICE_CONTROL_SHUTDOWN
- **const win32service.SERVICE_CONTROL_SHUTDOWN;** 
+ __const win32service.SERVICE_CONTROL_SHUTDOWN;__ 
 The ControlService function fails if this control code is specified.
 
 ## SERVICE_CONTROL_STOP
- **const win32service.SERVICE_CONTROL_STOP;** 
+ __const win32service.SERVICE_CONTROL_STOP;__ 
 Requests the service to stop. The hService handle must have SERVICE_STOP access.
 
 ## SERVICE_DEMAND_START
- **const win32service.SERVICE_DEMAND_START;** 
+ __const win32service.SERVICE_DEMAND_START;__ 
 Specifies a device driver or Win32 service started by the service control manager when a process calls the StartService function.
 
 ## SERVICE_DISABLED
- **const win32service.SERVICE_DISABLED;** 
+ __const win32service.SERVICE_DISABLED;__ 
 Specifies a device driver or Win32 service that can no longer be started.
 
 ## SERVICE_DRIVER
- **const win32service.SERVICE_DRIVER;** 
+ __const win32service.SERVICE_DRIVER;__ 
 
 
 ## SERVICE_ENUMERATE_DEPENDENTS
- **const win32service.SERVICE_ENUMERATE_DEPENDENTS;** 
+ __const win32service.SERVICE_ENUMERATE_DEPENDENTS;__ 
 Enables calling of the EnumDependentServices function to enumerate all the services dependent on the service.
 
 ## SERVICE_ERROR_CRITICAL
- **const win32service.SERVICE_ERROR_CRITICAL;** 
+ __const win32service.SERVICE_ERROR_CRITICAL;__ 
 The startup program logs the error, if possible. If the last-known good configuration is being started, 
 
 the startup operation fails. Otherwise, the system is restarted with the last-known good configuration.
 
 ## SERVICE_ERROR_IGNORE
- **const win32service.SERVICE_ERROR_IGNORE;** 
+ __const win32service.SERVICE_ERROR_IGNORE;__ 
 The startup (boot) program logs the error but continues the startup operation.
 
 ## SERVICE_ERROR_NORMAL
- **const win32service.SERVICE_ERROR_NORMAL;** 
+ __const win32service.SERVICE_ERROR_NORMAL;__ 
 The startup program logs the error and displays a message box pop-up but continues the startup operation.
 
 ## SERVICE_ERROR_SEVERE
- **const win32service.SERVICE_ERROR_SEVERE;** 
+ __const win32service.SERVICE_ERROR_SEVERE;__ 
 The startup program logs the error. If the last-known good configuration is being started, 
 
 the startup operation continues. Otherwise, the system is restarted with the last-known-good configuration.
 
 ## SERVICE_FILE_SYSTEM_DRIVER
- **const win32service.SERVICE_FILE_SYSTEM_DRIVER;** 
+ __const win32service.SERVICE_FILE_SYSTEM_DRIVER;__ 
 A service type flag that indicates a Windows NT file system driver.
 
 ## SERVICE_INACTIVE
- **const win32service.SERVICE_INACTIVE;** 
+ __const win32service.SERVICE_INACTIVE;__ 
 
 
 ## SERVICE_INTERACTIVE_PROCESS
- **const win32service.SERVICE_INTERACTIVE_PROCESS;** 
+ __const win32service.SERVICE_INTERACTIVE_PROCESS;__ 
 A flag that indicates a Win32 service process that can interact with the desktop.
 
 ## SERVICE_INTERROGATE
- **const win32service.SERVICE_INTERROGATE;** 
+ __const win32service.SERVICE_INTERROGATE;__ 
 Enables calling of the ControlService function to ask the service to report its status immediately.
 
 ## SERVICE_KERNEL_DRIVER
- **const win32service.SERVICE_KERNEL_DRIVER;** 
+ __const win32service.SERVICE_KERNEL_DRIVER;__ 
 A service type flag that indicates a Windows NT device driver.
 
 ## SERVICE_NO_CHANGE
- **const win32service.SERVICE_NO_CHANGE;** 
+ __const win32service.SERVICE_NO_CHANGE;__ 
 Indicates the parameter should not be changed.
 
 ## SERVICE_PAUSED
- **const win32service.SERVICE_PAUSED;** 
+ __const win32service.SERVICE_PAUSED;__ 
 The service is paused.
 
 ## SERVICE_PAUSE_CONTINUE
- **const win32service.SERVICE_PAUSE_CONTINUE;** 
+ __const win32service.SERVICE_PAUSE_CONTINUE;__ 
 Enables calling of the ControlService function to pause or continue the service.
 
 ## SERVICE_PAUSE_PENDING
- **const win32service.SERVICE_PAUSE_PENDING;** 
+ __const win32service.SERVICE_PAUSE_PENDING;__ 
 The service pause is pending.
 
 ## SERVICE_QUERY_CONFIG
- **const win32service.SERVICE_QUERY_CONFIG;** 
+ __const win32service.SERVICE_QUERY_CONFIG;__ 
 Enables calling of the QueryServiceConfig function to query the service configuration.
 
 ## SERVICE_QUERY_STATUS
- **const win32service.SERVICE_QUERY_STATUS;** 
+ __const win32service.SERVICE_QUERY_STATUS;__ 
 Enables calling of the QueryServiceStatus function to ask the service control manager about the status of the service.
 
 ## SERVICE_RUNNING
- **const win32service.SERVICE_RUNNING;** 
+ __const win32service.SERVICE_RUNNING;__ 
 The service is running.
 
 ## SERVICE_SID_TYPE_NONE
- **const win32service.SERVICE_SID_TYPE_NONE;** 
+ __const win32service.SERVICE_SID_TYPE_NONE;__ 
 
 
 ## SERVICE_SID_TYPE_RESTRICTED
- **const win32service.SERVICE_SID_TYPE_RESTRICTED;** 
+ __const win32service.SERVICE_SID_TYPE_RESTRICTED;__ 
 
 
 ## SERVICE_SID_TYPE_UNRESTRICTED
- **const win32service.SERVICE_SID_TYPE_UNRESTRICTED;** 
+ __const win32service.SERVICE_SID_TYPE_UNRESTRICTED;__ 
 
 
 ## SERVICE_SPECIFIC_ERROR
- **const win32service.SERVICE_SPECIFIC_ERROR;** 
+ __const win32service.SERVICE_SPECIFIC_ERROR;__ 
 A service specific error has occurred.
 
 ## SERVICE_START
- **const win32service.SERVICE_START;** 
+ __const win32service.SERVICE_START;__ 
 Enables calling of the StartService function to start the service.
 
 ## SERVICE_START_PENDING
- **const win32service.SERVICE_START_PENDING;** 
+ __const win32service.SERVICE_START_PENDING;__ 
 The service is starting.
 
 ## SERVICE_STATE_ALL
- **const win32service.SERVICE_STATE_ALL;** 
+ __const win32service.SERVICE_STATE_ALL;__ 
 
 
 ## SERVICE_STOP
- **const win32service.SERVICE_STOP;** 
+ __const win32service.SERVICE_STOP;__ 
 Enables calling of the ControlService function to stop the service.
 
 ## SERVICE_STOPPED
- **const win32service.SERVICE_STOPPED;** 
+ __const win32service.SERVICE_STOPPED;__ 
 The service is not running.
 
 ## SERVICE_STOP_PENDING
- **const win32service.SERVICE_STOP_PENDING;** 
+ __const win32service.SERVICE_STOP_PENDING;__ 
 The service is stopping.
 
 ## SERVICE_SYSTEM_START
- **const win32service.SERVICE_SYSTEM_START;** 
+ __const win32service.SERVICE_SYSTEM_START;__ 
 Specifies a device driver started by the IoInitSystem function. This value is valid only if the service type is SERVICE_KERNEL_DRIVER or SERVICE_FILE_SYSTEM_DRIVER.
 
 ## SERVICE_USER_DEFINED_CONTROL
- **const win32service.SERVICE_USER_DEFINED_CONTROL;** 
+ __const win32service.SERVICE_USER_DEFINED_CONTROL;__ 
 Enables calling of the ControlService function to specify a user-defined control code.
 
 ## SERVICE_WIN32
- **const win32service.SERVICE_WIN32;** 
+ __const win32service.SERVICE_WIN32;__ 
 
 
 ## SERVICE_WIN32_OWN_PROCESS
- **const win32service.SERVICE_WIN32_OWN_PROCESS;** 
+ __const win32service.SERVICE_WIN32_OWN_PROCESS;__ 
 A service type flag that indicates a Win32 service that runs in its own process.
 
 ## SERVICE_WIN32_SHARE_PROCESS
- **const win32service.SERVICE_WIN32_SHARE_PROCESS;** 
+ __const win32service.SERVICE_WIN32_SHARE_PROCESS;__ 
 A service type flag that indicates a Win32 service that shares a process with other services.
 
-## [win32service](README.md#win32service).SetServiceObjectSecurity
+## [win32service](#win32service).SetServiceObjectSecurity
 
- **SetServiceObjectSecurity( *Handle*  *, SecurityInformation*  *, SecurityDescriptor* ** )
+ __SetServiceObjectSecurity( *Handle*  *, SecurityInformation*  *, SecurityDescriptor* __ )
 Set the security descriptor for a service
 
 #### Parameters
@@ -1178,9 +1179,9 @@ Set the security descriptor for a service
 
     PySECURITY_DESCRIPTOR containing infomation to set
 
-## [win32service](README.md#win32service).SetServiceStatus
+## [win32service](#win32service).SetServiceStatus
 
- **SetServiceStatus( *scHandle*  *, serviceStatus* ** )
+ __SetServiceStatus( *scHandle*  *, serviceStatus* __ )
 Sets a service status
 
 #### Parameters
@@ -1194,15 +1195,15 @@ Sets a service status
 
     The new status
 
-## [win32service](README.md#win32service).SetUserObjectInformation
+## [win32service](#win32service).SetUserObjectInformation
 
- **SetUserObjectInformation( *Handle*  *, info*  *, type* ** )
+ __SetUserObjectInformation( *Handle*  *, info*  *, type* __ )
 Set specified type of info for a window station or desktop object
 
 #### Parameters
 
 
-  -  *Handle* :[PyHANDLE](README.md#pyhandle)
+  -  *Handle* :[PyHANDLE](#pyhandle)
 
     Handle to window station or desktop
 
@@ -1217,9 +1218,9 @@ Set specified type of info for a window station or desktop object
 #### Comments
 Currently only UOI_FLAGS supported
 
-## [win32service](README.md#win32service).StartService
+## [win32service](#win32service).StartService
 
- **StartService( *hService*  *, args* ** )
+ __StartService( *hService*  *, args* __ )
 Starts the specified service
 
 #### Parameters
@@ -1234,24 +1235,24 @@ Starts the specified service
     Arguments to the service.
 
 ## UOI_FLAGS
- **const win32service.UOI_FLAGS;** 
+ __const win32service.UOI_FLAGS;__ 
 
 
 ## UOI_NAME
- **const win32service.UOI_NAME;** 
+ __const win32service.UOI_NAME;__ 
 
 
 ## UOI_TYPE
- **const win32service.UOI_TYPE;** 
+ __const win32service.UOI_TYPE;__ 
 
 
 ## UOI_USER_SID
- **const win32service.UOI_USER_SID;** 
+ __const win32service.UOI_USER_SID;__ 
 
 
-## [win32service](README.md#win32service).UnlockServiceDatabase
+## [win32service](#win32service).UnlockServiceDatabase
 
-int = **UnlockServiceDatabase( *lock* ** )
+int = __UnlockServiceDatabase( *lock* __ )
 Unlocks the service database.
 
 #### Parameters
@@ -1262,4 +1263,4 @@ Unlocks the service database.
     A lock provided by[win32service::LockServiceDatabase](win32service.md#win32servicelockservicedatabase)
 
 ## WSF_VISIBLE
- **const win32service.WSF_VISIBLE;** 
+ __const win32service.WSF_VISIBLE;__ 

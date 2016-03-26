@@ -1,3 +1,4 @@
+# win32console
 
 ## Module win32console
 
@@ -86,37 +87,37 @@ Interface to the Windows Console functions for dealing with character-mode appli
 
     Returns one of calling process's standard handles&nbsp;
 
-## [win32console](README.md#win32console).AddConsoleAlias
+## [win32console](#win32console).AddConsoleAlias
 
- **AddConsoleAlias( *Source*  *, Target*  *, ExeName* ** )
+ __AddConsoleAlias( *Source*  *, Target*  *, ExeName* __ )
 Creates a new console alias
 
 #### Parameters
 
 
-  -  *Source* :[PyUNICODE](README.md#pyunicode)
+  -  *Source* :[PyUNICODE](#pyunicode)
 
     The string to be mapped to the target string
 
-  -  *Target* :[PyUNICODE](README.md#pyunicode)
+  -  *Target* :[PyUNICODE](#pyunicode)
 
     String to be substituted for Source.  If None, alias is removed
 
-  -  *ExeName* :[PyUNICODE](README.md#pyunicode)
+  -  *ExeName* :[PyUNICODE](#pyunicode)
 
     Name of executable that will use alias
 
-## [win32console](README.md#win32console).AllocConsole
+## [win32console](#win32console).AllocConsole
 
- **AllocConsole(** )
+ __AllocConsole(__ )
 Creates a new console for the calling process
 
 #### Comments
 Calling process must not already be attached to another console
 
-## [win32console](README.md#win32console).AttachConsole
+## [win32console](#win32console).AttachConsole
 
- **AttachConsole( *ProcessId* ** )
+ __AttachConsole( *ProcessId* __ )
 Attaches to console of another process
 
 #### Parameters
@@ -129,9 +130,9 @@ Attaches to console of another process
 #### Comments
 Calling process must not already be attached to another console
 
-## [win32console](README.md#win32console).CreateConsoleScreenBuffer
+## [win32console](#win32console).CreateConsoleScreenBuffer
 
-[PyConsoleScreenBuffer](README.md#pyconsolescreenbuffer)= **CreateConsoleScreenBuffer( *DesiredAccess*  *, ShareMode*  *, SecurityAttributes*  *, Flags* ** )
+[PyConsoleScreenBuffer](#pyconsolescreenbuffer)= __CreateConsoleScreenBuffer( *DesiredAccess*  *, ShareMode*  *, SecurityAttributes*  *, Flags* __ )
 Creates a new console screen buffer
 
 #### Parameters
@@ -153,14 +154,14 @@ Creates a new console screen buffer
 
     CONSOLE_TEXTMODE_BUFFER is currently only valid flag
 
-## [win32console](README.md#win32console).FreeConsole
+## [win32console](#win32console).FreeConsole
 
- **FreeConsole(** )
+ __FreeConsole(__ )
 Detaches process from its current console
 
-## [win32console](README.md#win32console).GenerateConsoleCtrlEvent
+## [win32console](#win32console).GenerateConsoleCtrlEvent
 
- **GenerateConsoleCtrlEvent( *CtrlEvent*  *, ProcessGroupId* ** )
+ __GenerateConsoleCtrlEvent( *CtrlEvent*  *, ProcessGroupId* __ )
 Sends a control signal to a group of processes attached to a common console
 
 #### Parameters
@@ -174,23 +175,23 @@ Sends a control signal to a group of processes attached to a common console
 
     Pid of a process group, use 0 for calling process
 
-## [win32console](README.md#win32console).GetConsoleAliasExes
+## [win32console](#win32console).GetConsoleAliasExes
 
-[PyUNICODE](README.md#pyunicode)= **GetConsoleAliasExes(** )
+[PyUNICODE](#pyunicode)= __GetConsoleAliasExes(__ )
 Lists all executables that have console aliases defined
 
 #### Return Value
 Returns a unicode string containing executable names separated by NULLS
 
-## [win32console](README.md#win32console).GetConsoleAliases
+## [win32console](#win32console).GetConsoleAliases
 
-[PyUNICODE](README.md#pyunicode)= **GetConsoleAliases( *ExeName* ** )
+[PyUNICODE](#pyunicode)= __GetConsoleAliases( *ExeName* __ )
 Retrieves aliases defined under specified executable
 
 #### Parameters
 
 
-  -  *ExeName* :[PyUNICODE](README.md#pyunicode)
+  -  *ExeName* :[PyUNICODE](#pyunicode)
 
     Name of executable for which to return aliases
 
@@ -199,14 +200,14 @@ Returns a unicode string containing null-terminated pairs of aliases and their t
 
 of the form "alias1=replacementtext1\\0alias2=replacementtext2\\0"
 
-## [win32console](README.md#win32console).GetConsoleCP
+## [win32console](#win32console).GetConsoleCP
 
-int = **GetConsoleCP(** )
+int = __GetConsoleCP(__ )
 Returns the input code page for calling process's console
 
-## [win32console](README.md#win32console).GetConsoleDisplayMode
+## [win32console](#win32console).GetConsoleDisplayMode
 
-int = **GetConsoleDisplayMode(** )
+int = __GetConsoleDisplayMode(__ )
 Returns the current console's display mode
 
 #### Comments
@@ -215,56 +216,56 @@ Only exists on Wix XP and later
 #### Return Value
 CONSOLE_FULLSCREEN,CONSOLE_FULLSCREEN_HARDWARE
 
-## [win32console](README.md#win32console).GetConsoleOutputCP
+## [win32console](#win32console).GetConsoleOutputCP
 
-int = **GetConsoleOutputCP(** )
+int = __GetConsoleOutputCP(__ )
 Returns the output code page for calling process's console
 
-## [win32console](README.md#win32console).GetConsoleProcessList
+## [win32console](#win32console).GetConsoleProcessList
 
-(int,...) = **GetConsoleProcessList(** )
+(int,...) = __GetConsoleProcessList(__ )
 Returns pids of all processes attached to current console
 
-## [win32console](README.md#win32console).GetConsoleSelectionInfo
+## [win32console](#win32console).GetConsoleSelectionInfo
 
-dict = **GetConsoleSelectionInfo(** )
+dict = __GetConsoleSelectionInfo(__ )
 Returns info on text selection within the current console
 
 #### Return Value
-Returns a dictionary containing {Flags:int, SelectionAnchor:[PyCOORD](README.md#pycoord), Selection:[PySMALL_RECT](PySMALL.md#pysmallrect)} 
+Returns a dictionary containing {Flags:int, SelectionAnchor:[PyCOORD](#pycoord), Selection:[PySMALL_RECT](PySMALL.md#pysmallrect)} 
 
 Flags will contain a combination of 
 
 CONSOLE_NO_SELECTION,CONSOLE_SELECTION_IN_PROGRESS,CONSOLE_SELECTION_NOT_EMPTY,CONSOLE_MOUSE_SELECTION,CONSOLE_MOUSE_DOWN
 
-## [win32console](README.md#win32console).GetConsoleTitle
+## [win32console](#win32console).GetConsoleTitle
 
-[PyUNICODE](README.md#pyunicode)= **GetConsoleTitle(** )
+[PyUNICODE](#pyunicode)= __GetConsoleTitle(__ )
 Returns the title of the console window
 
-## [win32console](README.md#win32console).GetConsoleWindow
+## [win32console](#win32console).GetConsoleWindow
 
-int = **GetConsoleWindow(** )
+int = __GetConsoleWindow(__ )
 Returns a handle to the console's window, or 0 if none exists
 
 #### Return Value
 This function may raise NotImplementedError if it does not exist on 
 
-the platform, or a[PyHANDLE](README.md#pyhandle)object with a value of 0.  It will never 
+the platform, or a[PyHANDLE](#pyhandle)object with a value of 0.  It will never 
 
 raise a win32 exception.
 
-## [win32console](README.md#win32console).GetNumberOfConsoleFonts
+## [win32console](#win32console).GetNumberOfConsoleFonts
 
-int = **GetNumberOfConsoleFonts(** )
+int = __GetNumberOfConsoleFonts(__ )
 Returns the number of fonts available to the console
 
 #### Comments
 Function is not documented in MSDN
 
-## [win32console](README.md#win32console).GetStdHandle
+## [win32console](#win32console).GetStdHandle
 
-[PyConsoleScreenBuffer](README.md#pyconsolescreenbuffer)= **GetStdHandle( *StdHandle* ** )
+[PyConsoleScreenBuffer](#pyconsolescreenbuffer)= __GetStdHandle( *StdHandle* __ )
 Returns one of calling process's standard handles
 
 #### Parameters
@@ -275,11 +276,11 @@ Returns one of calling process's standard handles
     Specifies the handle to return - STD_INPUT_HANDLE, STD_OUTPUT_HANDLE, or STD_ERROR_HANDLE
 
 #### Return Value
-Returns a[PyConsoleScreenBuffer](README.md#pyconsolescreenbuffer)wrapping the handle, or None if specified handle does not exist
+Returns a[PyConsoleScreenBuffer](#pyconsolescreenbuffer)wrapping the handle, or None if specified handle does not exist
 
-## [win32console](README.md#win32console).SetConsoleCP
+## [win32console](#win32console).SetConsoleCP
 
- **SetConsoleCP( *CodePageId* ** )
+ __SetConsoleCP( *CodePageId* __ )
 Sets the input code page for calling process's console
 
 #### Parameters
@@ -289,9 +290,9 @@ Sets the input code page for calling process's console
 
     The code page to set
 
-## [win32console](README.md#win32console).SetConsoleOutputCP
+## [win32console](#win32console).SetConsoleOutputCP
 
- **SetConsoleOutputCP( *CodePageID* ** )
+ __SetConsoleOutputCP( *CodePageID* __ )
 Sets the output code page for calling process's console
 
 #### Parameters
@@ -301,14 +302,14 @@ Sets the output code page for calling process's console
 
     The code page to set
 
-## [win32console](README.md#win32console).SetConsoleTitle
+## [win32console](#win32console).SetConsoleTitle
 
- **SetConsoleTitle( *ConsoleTitle* ** )
+ __SetConsoleTitle( *ConsoleTitle* __ )
 Sets the title of the console window
 
 #### Parameters
 
 
-  -  *ConsoleTitle* :[PyUNICODE](README.md#pyunicode)
+  -  *ConsoleTitle* :[PyUNICODE](#pyunicode)
 
     New title for the console

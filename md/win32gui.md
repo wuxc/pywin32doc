@@ -1,10 +1,11 @@
+# win32gui
 
 ## Module win32gui
 
 A module which provides an interface to the native win32 
 
 GUI API.
-Note that a module[winxpgui](README.md#winxpgui)also exists, 
+Note that a module[winxpgui](#winxpgui)also exists, 
 
 which has the same methods as win32gui, but has an XP 
 
@@ -1370,27 +1371,27 @@ handle values may be extracted via the struct module and need to be closed expli
 
     Registers a hotkey for a window&nbsp;
 
-## [win32gui](README.md#win32gui).AbortPath
+## [win32gui](#win32gui).AbortPath
 
- **AbortPath( *hdc* ** )
+ __AbortPath( *hdc* __ )
 Cancels a path begun by[win32gui::BeginPath](win32gui.md#win32guibeginpath)
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).AlphaBlend
+## [win32gui](#win32gui).AlphaBlend
 
- **AlphaBlend( *Dest*  *, XOriginDest*  *, YOriginDest*  *, WidthDest*  *, HeightDest*  *, Src*  *, XOriginSrc*  *, YOriginSrc*  *, WidthSrc*  *, HeightSrc*  *, blendFunction* ** )
+ __AlphaBlend( *Dest*  *, XOriginDest*  *, YOriginDest*  *, WidthDest*  *, HeightDest*  *, Src*  *, XOriginSrc*  *, YOriginSrc*  *, WidthSrc*  *, HeightSrc*  *, blendFunction* __ )
 Transfers color information using alpha blending
 
 #### Parameters
 
 
-  -  *Dest* :[PyHANDLE](README.md#pyhandle)
+  -  *Dest* :[PyHANDLE](#pyhandle)
 
     Destination device context handle
 
@@ -1410,7 +1411,7 @@ Transfers color information using alpha blending
 
     Height of dest rect
 
-  -  *Src* :[PyHANDLE](README.md#pyhandle)
+  -  *Src* :[PyHANDLE](#pyhandle)
 
     Source DC handle
 
@@ -1430,19 +1431,19 @@ Transfers color information using alpha blending
 
     Height of src rect
 
-  -  *blendFunction* :[PyBLENDFUNCTION](README.md#pyblendfunction)
+  -  *blendFunction* :[PyBLENDFUNCTION](#pyblendfunction)
 
     Alpha blending parameters
 
-## [win32gui](README.md#win32gui).AngleArc
+## [win32gui](#win32gui).AngleArc
 
- **AngleArc( *hdc*  *, Y*  *, Y*  *, Radius*  *, StartAngle*  *, SweepAngle* ** )
+ __AngleArc( *hdc*  *, Y*  *, Y*  *, Radius*  *, StartAngle*  *, SweepAngle* __ )
 Draws a line from current pos and a section of a circle's arc
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -1466,15 +1467,15 @@ Draws a line from current pos and a section of a circle's arc
 
     Angle that arc covers, in degrees
 
-## [win32gui](README.md#win32gui).AnimateWindow
+## [win32gui](#win32gui).AnimateWindow
 
- **AnimateWindow( *hwnd*  *, Time*  *, Flags* ** )
+ __AnimateWindow( *hwnd*  *, Time*  *, Flags* __ )
 Enables you to produce special effects when showing or hiding windows. There are three types of animation: roll, slide, and alpha-blended fade.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     handle to window
 
@@ -1490,20 +1491,20 @@ Enables you to produce special effects when showing or hiding windows. There are
 This function is available on Win2k and later
 Accepts keyword args
 
-## [win32gui](README.md#win32gui).AppendMenu
+## [win32gui](#win32gui).AppendMenu
 
- **AppendMenu(** )
+ __AppendMenu(__ )
 
 
-## [win32gui](README.md#win32gui).Arc
+## [win32gui](#win32gui).Arc
 
- **Arc( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* ** )
+ __Arc( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* __ )
 Draws an arc defined by an ellipse and 2 radials
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Device context on which to draw
 
@@ -1539,15 +1540,15 @@ Draws an arc defined by an ellipse and 2 radials
 
     Vertical pos of Radial2 endpoint
 
-## [win32gui](README.md#win32gui).ArcTo
+## [win32gui](#win32gui).ArcTo
 
- **ArcTo( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* ** )
+ __ArcTo( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* __ )
 Draws an arc defined by an ellipse and 2 radials
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Device context on which to draw
 
@@ -1586,26 +1587,26 @@ Draws an arc defined by an ellipse and 2 radials
 #### Comments
 Draws exactly as[win32gui::Arc](win32gui.md#win32guiarc), but changes current drawing position
 
-## [win32gui](README.md#win32gui).BeginPaint
+## [win32gui](#win32gui).BeginPaint
 
-hdc, paintstruct = **BeginPaint(** )
+hdc, paintstruct = __BeginPaint(__ )
 
 
-## [win32gui](README.md#win32gui).BeginPath
+## [win32gui](#win32gui).BeginPath
 
- **BeginPath( *hdc* ** )
+ __BeginPath( *hdc* __ )
 Initializes a path in a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).BitBlt
+## [win32gui](#win32gui).BitBlt
 
- **BitBlt( *hdcDest*  *, x*  *, y*  *, width*  *, height*  *, hdcSrc*  *, nXSrc*  *, nYSrc*  *, dwRop* ** )
+ __BitBlt( *hdcDest*  *, x*  *, y*  *, width*  *, height*  *, hdcSrc*  *, nXSrc*  *, nYSrc*  *, dwRop* __ )
 Performs a bit-block transfer of the color data corresponding 
 
 to a rectangle of pixels from the specified source device context into a 
@@ -1651,9 +1652,9 @@ destination device context.
 
     raster operation code
 
-## [win32gui](README.md#win32gui).BringWindowToTop
+## [win32gui](#win32gui).BringWindowToTop
 
- **BringWindowToTop( *hwnd* ** )
+ __BringWindowToTop( *hwnd* __ )
 
 
 #### Parameters
@@ -1664,12 +1665,12 @@ destination device context.
     The handle to the window
 
 ## CLR_NONE
- **const win32gui.CLR_NONE;** 
+ __const win32gui.CLR_NONE;__ 
 
 
-## [win32gui](README.md#win32gui).CallWindowProc
+## [win32gui](#win32gui).CallWindowProc
 
-int = **CallWindowProc( *wndproc*  *, hwnd*  *, msg*  *, wparam*  *, lparam* ** )
+int = __CallWindowProc( *wndproc*  *, hwnd*  *, msg*  *, wparam*  *, lparam* __ )
 
 
 #### Parameters
@@ -1679,7 +1680,7 @@ int = **CallWindowProc( *wndproc*  *, hwnd*  *, msg*  *, wparam*  *, lparam* ** 
 
     The wndproc to call - this is generally the return value of SetWindowLong(GWL_WNDPROC)
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     Handle to the window
 
@@ -1695,14 +1696,14 @@ int = **CallWindowProc( *wndproc*  *, hwnd*  *, msg*  *, wparam*  *, lparam* ** 
 
     Type is dependent on the message
 
-## [win32gui](README.md#win32gui).CheckMenuItem
+## [win32gui](#win32gui).CheckMenuItem
 
-int = **CheckMenuItem(** )
+int = __CheckMenuItem(__ )
 
 
-## [win32gui](README.md#win32gui).CheckMenuRadioItem
+## [win32gui](#win32gui).CheckMenuRadioItem
 
- **CheckMenuRadioItem( *hMenu*  *, idFirst*  *, idLast*  *, idCheck*  *, uFlags* ** )
+ __CheckMenuRadioItem( *hMenu*  *, idFirst*  *, idLast*  *, idCheck*  *, uFlags* __ )
 Checks a specified menu item and makes it a 
 
 radio item. At the same time, the function clears all other menu items in 
@@ -1732,9 +1733,9 @@ the associated group and clears the radio-item type flag for those items.
 
     options
 
-## [win32gui](README.md#win32gui).ChildWindowFromPoint
+## [win32gui](#win32gui).ChildWindowFromPoint
 
-int = **ChildWindowFromPoint( *hwndParent*  *, point* ** )
+int = __ChildWindowFromPoint( *hwndParent*  *, point* __ )
 Determines which, if any, of the child windows belonging to a parent window contains the specified point.
 
 #### Parameters
@@ -1748,9 +1749,9 @@ Determines which, if any, of the child windows belonging to a parent window cont
 
     The point.
 
-## [win32gui](README.md#win32gui).ChildWindowFromPoint
+## [win32gui](#win32gui).ChildWindowFromPoint
 
-int = **ChildWindowFromPoint( *hwndParent*  *, point*  *, flags* ** )
+int = __ChildWindowFromPoint( *hwndParent*  *, point*  *, flags* __ )
 Determines which, if any, of the child windows belonging to a parent window contains the specified point.
 
 #### Parameters
@@ -1768,15 +1769,15 @@ Determines which, if any, of the child windows belonging to a parent window cont
 
     Specifies which child windows to skip. This parameter can be one or more of the CWP_* constants.
 
-## [win32gui](README.md#win32gui).Chord
+## [win32gui](#win32gui).Chord
 
- **Chord( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* ** )
+ __Chord( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* __ )
 Draws a chord defined by an ellipse and 2 radials
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Device context on which to draw
 
@@ -1812,15 +1813,15 @@ Draws a chord defined by an ellipse and 2 radials
 
     Vertical pos of Radial2 endpoint
 
-## [win32gui](README.md#win32gui).ClientToScreen
+## [win32gui](#win32gui).ClientToScreen
 
-(int,int) = **ClientToScreen( *hWnd*  *, Point* ** )
+(int,int) = __ClientToScreen( *hWnd*  *, Point* __ )
 Convert client coordinates to screen coords
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
@@ -1828,40 +1829,40 @@ Convert client coordinates to screen coords
 
     Client coordinates to be converted
 
-## [win32gui](README.md#win32gui).CloseFigure
+## [win32gui](#win32gui).CloseFigure
 
- **CloseFigure( *hdc* ** )
+ __CloseFigure( *hdc* __ )
 Closes a section of a path by connecting the beginning pos with the current pos
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context that contains an open path. See[win32gui::BeginPath](win32gui.md#win32guibeginpath).
 
-## [win32gui](README.md#win32gui).CloseWindow
+## [win32gui](#win32gui).CloseWindow
 
- **CloseWindow(** )
+ __CloseWindow(__ )
 
 
-## [win32gui](README.md#win32gui).CombineRgn
+## [win32gui](#win32gui).CombineRgn
 
-int = **CombineRgn( *Dest*  *, Src1*  *, Src2*  *, CombineMode* ** )
+int = __CombineRgn( *Dest*  *, Src1*  *, Src2*  *, CombineMode* __ )
 Combines two regions
 
 #### Parameters
 
 
-  -  *Dest* :[PyGdiHandle](README.md#pygdihandle)
+  -  *Dest* :[PyGdiHandle](#pygdihandle)
 
     Handle to existing region that will receive combined region
 
-  -  *Src1* :[PyGdiHandle](README.md#pygdihandle)
+  -  *Src1* :[PyGdiHandle](#pygdihandle)
 
     Handle to first region
 
-  -  *Src2* :[PyGdiHandle](README.md#pygdihandle)
+  -  *Src2* :[PyGdiHandle](#pygdihandle)
 
     Handle to second region
 
@@ -1872,30 +1873,30 @@ Combines two regions
 #### Return Value
 Returns the type of region created, one of NULLREGION, SIMPLEREGION, COMPLEXREGION
 
-## [win32gui](README.md#win32gui).CombineTransform
+## [win32gui](#win32gui).CombineTransform
 
-[PyXFORM](README.md#pyxform)= **CombineTransform( *xform1*  *, xform2* ** )
+[PyXFORM](#pyxform)= __CombineTransform( *xform1*  *, xform2* __ )
 Combines two coordinate space transformations
 
 #### Parameters
 
 
-  -  *xform1* :[PyXFORM](README.md#pyxform)
+  -  *xform1* :[PyXFORM](#pyxform)
 
     First transformation
 
-  -  *xform2* :[PyXFORM](README.md#pyxform)
+  -  *xform2* :[PyXFORM](#pyxform)
 
     Second transformation
 
-## [win32gui](README.md#win32gui).CommDlgExtendedError
+## [win32gui](#win32gui).CommDlgExtendedError
 
-int = **CommDlgExtendedError(** )
+int = __CommDlgExtendedError(__ )
 
 
-## [win32gui](README.md#win32gui).CopyIcon
+## [win32gui](#win32gui).CopyIcon
 
-HICON = **CopyIcon( *hicon* ** )
+HICON = __CopyIcon( *hicon* __ )
 Copies an icon
 
 #### Parameters
@@ -1905,9 +1906,9 @@ Copies an icon
 
     Existing icon
 
-## [win32gui](README.md#win32gui).CreateAcceleratorTable
+## [win32gui](#win32gui).CreateAcceleratorTable
 
-HACCEL = **CreateAcceleratorTable( *accels* ** )
+HACCEL = __CreateAcceleratorTable( *accels* __ )
 Creates an accelerator table
 
 #### Parameters
@@ -1919,9 +1920,9 @@ Creates an accelerator table
 
 as per the Win32 ACCEL structure.
 
-## [win32gui](README.md#win32gui).CreateBitmap
+## [win32gui](#win32gui).CreateBitmap
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreateBitmap( *width*  *, height*  *, cPlanes*  *, cBitsPerPixel*  *, bitmap bits* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreateBitmap( *width*  *, height*  *, cPlanes*  *, cBitsPerPixel*  *, bitmap bits* __ )
 Creates a bitmap
 
 #### Parameters
@@ -1947,21 +1948,21 @@ Creates a bitmap
 
     Must be None
 
-## [win32gui](README.md#win32gui).CreateBrushIndirect
+## [win32gui](#win32gui).CreateBrushIndirect
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreateBrushIndirect( *lb* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreateBrushIndirect( *lb* __ )
 Creates a GDI brush from a LOGBRUSH struct
 
 #### Parameters
 
 
-  -  *lb* :[PyLOGBRUSH](README.md#pylogbrush)
+  -  *lb* :[PyLOGBRUSH](#pylogbrush)
 
     Dict containing brush creation parameters
 
-## [win32gui](README.md#win32gui).CreateCaret
+## [win32gui](#win32gui).CreateCaret
 
- **CreateCaret( *hWnd*  *, hBitmap*  *, nWidth*  *, nHeight* ** )
+ __CreateCaret( *hWnd*  *, hBitmap*  *, nWidth*  *, nHeight* __ )
 Creates a new caret for a window
 
 #### Parameters
@@ -1971,7 +1972,7 @@ Creates a new caret for a window
 
     handle to owner window
 
-  -  *hBitmap* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hBitmap* :[PyGdiHANDLE](#pygdihandle)
 
     handle to bitmap for caret shape
 
@@ -1983,9 +1984,9 @@ Creates a new caret for a window
 
     caret height
 
-## [win32gui](README.md#win32gui).CreateCompatibleBitmap
+## [win32gui](#win32gui).CreateCompatibleBitmap
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreateCompatibleBitmap( *hdc*  *, width*  *, height* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreateCompatibleBitmap( *hdc*  *, width*  *, height* __ )
 Creates a bitmap compatible with the device that is associated with the specified device context.
 
 #### Parameters
@@ -2003,9 +2004,9 @@ Creates a bitmap compatible with the device that is associated with the specifie
 
     height of bitmap, in pixels
 
-## [win32gui](README.md#win32gui).CreateCompatibleDC
+## [win32gui](#win32gui).CreateCompatibleDC
 
-HDC = **CreateCompatibleDC( *dc* ** )
+HDC = __CreateCompatibleDC( *dc* __ )
 Creates a memory device context (DC) compatible with the specified device.
 
 #### Parameters
@@ -2015,9 +2016,9 @@ Creates a memory device context (DC) compatible with the specified device.
 
     handle to DC
 
-## [win32gui](README.md#win32gui).CreateDC
+## [win32gui](#win32gui).CreateDC
 
-int = **CreateDC( *Driver*  *, Device*  *, InitData* ** )
+int = __CreateDC( *Driver*  *, Device*  *, InitData* __ )
 Creates a device context for a printer or display device
 
 #### Parameters
@@ -2031,27 +2032,27 @@ Creates a device context for a printer or display device
 
     Name of specific device, eg printer name returned from GetDefaultPrinter
 
-  -  *InitData* :[PyDEVMODE](README.md#pydevmode)
+  -  *InitData* :[PyDEVMODE](#pydevmode)
 
     A PyDEVMODE that specifies printing parameters, use None for printer defaults
 
-## [win32gui](README.md#win32gui).CreateDialogIndirect
+## [win32gui](#win32gui).CreateDialogIndirect
 
-int = **CreateDialogIndirect( *hInstance*  *, controlList*  *, hWndParent*  *, DialogFunc*  *, InitParam* ** )
+int = __CreateDialogIndirect( *hInstance*  *, controlList*  *, hWndParent*  *, DialogFunc*  *, InitParam* __ )
 Creates a modeless dialog box from a template, see[win32ui::CreateDialogIndirect](win32ui.md#win32uicreatedialogindirect)
 
 #### Parameters
 
 
-  -  *hInstance* :[PyHANDLE](README.md#pyhandle)
+  -  *hInstance* :[PyHANDLE](#pyhandle)
 
     Handle to module creating the dialog box
 
-  -  *controlList* :[PyDialogTemplate](README.md#pydialogtemplate)
+  -  *controlList* :[PyDialogTemplate](#pydialogtemplate)
 
-    Sequence containing a[PyDLGTEMPLATE](README.md#pydlgtemplate), followed by variable number of[PyDLGITEMTEMPLATE](README.md#pydlgitemtemplate)s
+    Sequence containing a[PyDLGTEMPLATE](#pydlgtemplate), followed by variable number of[PyDLGITEMTEMPLATE](#pydlgitemtemplate)s
 
-  -  *hWndParent* :[PyHANDLE](README.md#pyhandle)
+  -  *hWndParent* :[PyHANDLE](#pyhandle)
 
     Handle to dialog's parent window
 
@@ -2063,21 +2064,21 @@ Creates a modeless dialog box from a template, see[win32ui::CreateDialogIndirect
 
     Initialization data to be passed to above procedure during WM_INITDIALOG processing
 
-## [win32gui](README.md#win32gui).CreateEllipticRgnIndirect
+## [win32gui](#win32gui).CreateEllipticRgnIndirect
 
-[PyGdiHandle](README.md#pygdihandle)= **CreateEllipticRgnIndirect( *rc* ** )
+[PyGdiHandle](#pygdihandle)= __CreateEllipticRgnIndirect( *rc* __ )
 Creates an ellipse region,
 
 #### Parameters
 
 
-  -  *rc* :[PyRECT](README.md#pyrect)
+  -  *rc* :[PyRECT](#pyrect)
 
     Coordinates of bounding rectangle in logical units
 
-## [win32gui](README.md#win32gui).CreateFontIndirect
+## [win32gui](#win32gui).CreateFontIndirect
 
-[PyGdiHandle](README.md#pygdihandle)= **CreateFontIndirect( *lplf* ** )
+[PyGdiHandle](#pygdihandle)= __CreateFontIndirect( *lplf* __ )
 function creates a logical font that has the specified characteristics. 
 
 The font can subsequently be selected as the current font for any device context.
@@ -2085,13 +2086,13 @@ The font can subsequently be selected as the current font for any device context
 #### Parameters
 
 
-  -  *lplf* :[PyLOGFONT](README.md#pylogfont)
+  -  *lplf* :[PyLOGFONT](#pylogfont)
 
     A LOGFONT object as returned by[win32gui::LOGFONT](win32gui.md#win32guilogfont)
 
-## [win32gui](README.md#win32gui).CreateHatchBrush
+## [win32gui](#win32gui).CreateHatchBrush
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreateHatchBrush( *Style*  *, clrref* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreateHatchBrush( *Style*  *, clrref* __ )
 Creates a hatch brush with specified style and color
 
 #### Parameters
@@ -2105,9 +2106,9 @@ Creates a hatch brush with specified style and color
 
     Rgb color value.  See[win32api::RGB](win32api.md#win32apirgb).
 
-## [win32gui](README.md#win32gui).CreateIconFromResource
+## [win32gui](#win32gui).CreateIconFromResource
 
-[PyHANDLE](README.md#pyhandle)= **CreateIconFromResource( *bits*  *, fIcon*  *, ver* ** )
+[PyHANDLE](#pyhandle)= __CreateIconFromResource( *bits*  *, fIcon*  *, ver* __ )
 Creates an icon or cursor from resource bits describing the icon.
 
 #### Parameters
@@ -2129,41 +2130,41 @@ format for the resource bits pointed to by the presbits parameter.
 
 This parameter can be 0x00030000.
 
-## [win32gui](README.md#win32gui).CreateIconIndirect
+## [win32gui](#win32gui).CreateIconIndirect
 
-int = **CreateIconIndirect( *iconinfo* ** )
+int = __CreateIconIndirect( *iconinfo* __ )
 Creates an icon or cursor from an ICONINFO structure.
 
 #### Parameters
 
 
-  -  *iconinfo* :[PyICONINFO](README.md#pyiconinfo)
+  -  *iconinfo* :[PyICONINFO](#pyiconinfo)
 
     Tuple defining the icon parameters
 
-## [win32gui](README.md#win32gui).CreateMenu
+## [win32gui](#win32gui).CreateMenu
 
-int = **CreateMenu(** )
+int = __CreateMenu(__ )
 
 
 #### Return Value
 The result is a HMENU to the new menu.
 
-## [win32gui](README.md#win32gui).CreatePatternBrush
+## [win32gui](#win32gui).CreatePatternBrush
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreatePatternBrush( *hbmp* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreatePatternBrush( *hbmp* __ )
 Creates a brush using a bitmap as a pattern
 
 #### Parameters
 
 
-  -  *hbmp* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hbmp* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to a bitmap
 
-## [win32gui](README.md#win32gui).CreatePen
+## [win32gui](#win32gui).CreatePen
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreatePen( *PenStyle*  *, Width*  *, Color* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreatePen( *PenStyle*  *, Width*  *, Color* __ )
 Create a GDI pen
 
 #### Parameters
@@ -2181,9 +2182,9 @@ Create a GDI pen
 
     RGB color value.  See[win32api::RGB](win32api.md#win32apirgb).
 
-## [win32gui](README.md#win32gui).CreatePolygonRgn
+## [win32gui](#win32gui).CreatePolygonRgn
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreatePolygonRgn( *Points*  *, PolyFillMode* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreatePolygonRgn( *Points*  *, PolyFillMode* __ )
 Creates a region from a sequence of vertices
 
 #### Parameters
@@ -2197,29 +2198,29 @@ Creates a region from a sequence of vertices
 
     Filling mode, one of ALTERNATE, WINDING
 
-## [win32gui](README.md#win32gui).CreatePopupMenu
+## [win32gui](#win32gui).CreatePopupMenu
 
-int = **CreatePopupMenu(** )
+int = __CreatePopupMenu(__ )
 
 
 #### Return Value
 The result is a HMENU to the new menu.
 
-## [win32gui](README.md#win32gui).CreateRectRgnIndirect
+## [win32gui](#win32gui).CreateRectRgnIndirect
 
-[PyGdiHandle](README.md#pygdihandle)= **CreateRectRgnIndirect( *rc* ** )
+[PyGdiHandle](#pygdihandle)= __CreateRectRgnIndirect( *rc* __ )
 Creates a rectangular region,
 
 #### Parameters
 
 
-  -  *rc* :[PyRECT](README.md#pyrect)
+  -  *rc* :[PyRECT](#pyrect)
 
     Coordinates of rectangle
 
-## [win32gui](README.md#win32gui).CreateRoundRectRgn
+## [win32gui](#win32gui).CreateRoundRectRgn
 
-[PyGdiHandle](README.md#pygdihandle)= **CreateRoundRectRgn( *LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, WidthEllipse*  *, HeightEllipse* ** )
+[PyGdiHandle](#pygdihandle)= __CreateRoundRectRgn( *LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, WidthEllipse*  *, HeightEllipse* __ )
 Create a rectangular region with elliptically rounded corners,
 
 #### Parameters
@@ -2249,9 +2250,9 @@ Create a rectangular region with elliptically rounded corners,
 
     Height of ellipse
 
-## [win32gui](README.md#win32gui).CreateSolidBrush
+## [win32gui](#win32gui).CreateSolidBrush
 
-[PyGdiHANDLE](README.md#pygdihandle)= **CreateSolidBrush( *Color* ** )
+[PyGdiHANDLE](#pygdihandle)= __CreateSolidBrush( *Color* __ )
 Creates a solid brush of specified color
 
 #### Parameters
@@ -2261,9 +2262,9 @@ Creates a solid brush of specified color
 
     RGB color value.  See[win32api::RGB](win32api.md#win32apirgb).
 
-## [win32gui](README.md#win32gui).CreateWindow
+## [win32gui](#win32gui).CreateWindow
 
-int = **CreateWindow( *className*  *, windowTitle*  *, style*  *, x*  *, y*  *, width*  *, height*  *, parent*  *, menu*  *, hinstance*  *, reserved* ** )
+int = __CreateWindow( *className*  *, windowTitle*  *, style*  *, x*  *, y*  *, width*  *, height*  *, parent*  *, menu*  *, hinstance*  *, reserved* __ )
 Creates a new window.
 
 #### Parameters
@@ -2313,9 +2314,9 @@ Creates a new window.
 
     Must be None
 
-## [win32gui](README.md#win32gui).CreateWindowEx
+## [win32gui](#win32gui).CreateWindowEx
 
-int = **CreateWindowEx( *dwExStyle*  *, className*  *, windowTitle*  *, style*  *, x*  *, y*  *, width*  *, height*  *, parent*  *, menu*  *, hinstance*  *, reserved* ** )
+int = __CreateWindowEx( *dwExStyle*  *, className*  *, windowTitle*  *, style*  *, x*  *, y*  *, width*  *, height*  *, parent*  *, menu*  *, hinstance*  *, reserved* __ )
 Creates a new window with Extended Style.
 
 #### Parameters
@@ -2369,9 +2370,9 @@ Creates a new window with Extended Style.
 
     Must be None
 
-## [win32gui](README.md#win32gui).DefWindowProc
+## [win32gui](#win32gui).DefWindowProc
 
-int = **DefWindowProc( *hwnd*  *, message*  *, wparam*  *, lparam* ** )
+int = __DefWindowProc( *hwnd*  *, message*  *, wparam*  *, lparam* __ )
 
 
 #### Parameters
@@ -2393,9 +2394,9 @@ int = **DefWindowProc( *hwnd*  *, message*  *, wparam*  *, lparam* ** )
 
     An integer whose value depends on the message
 
-## [win32gui](README.md#win32gui).DeleteDC
+## [win32gui](#win32gui).DeleteDC
 
- **DeleteDC( *hdc* ** )
+ __DeleteDC( *hdc* __ )
 Deletes a DC
 
 #### Parameters
@@ -2405,9 +2406,9 @@ Deletes a DC
 
     The source DC
 
-## [win32gui](README.md#win32gui).DeleteMenu
+## [win32gui](#win32gui).DeleteMenu
 
- **DeleteMenu( *hmenu*  *, position*  *, flags* ** )
+ __DeleteMenu( *hmenu*  *, position*  *, flags* __ )
 
 
 #### Parameters
@@ -2425,21 +2426,21 @@ Deletes a DC
 
     
 
-## [win32gui](README.md#win32gui).DeleteObject
+## [win32gui](#win32gui).DeleteObject
 
- **DeleteObject( *handle* ** )
+ __DeleteObject( *handle* __ )
 Deletes a logical pen, brush, font, bitmap, region, or palette, freeing all system resources associated with the object. After the object is deleted, the specified handle is no longer valid.
 
 #### Parameters
 
 
-  -  *handle* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *handle* :[PyGdiHANDLE](#pygdihandle)
 
     handle to the object to delete.
 
-## [win32gui](README.md#win32gui).DestroyAccleratorTable
+## [win32gui](#win32gui).DestroyAccleratorTable
 
- **DestroyAccleratorTable( *haccel* ** )
+ __DestroyAccleratorTable( *haccel* __ )
 Destroys an accelerator table
 
 #### Parameters
@@ -2449,14 +2450,14 @@ Destroys an accelerator table
 
     
 
-## [win32gui](README.md#win32gui).DestroyCaret
+## [win32gui](#win32gui).DestroyCaret
 
- **DestroyCaret(** )
+ __DestroyCaret(__ )
 Destroys caret for current task
 
-## [win32gui](README.md#win32gui).DestroyIcon
+## [win32gui](#win32gui).DestroyIcon
 
- **DestroyIcon( *hicon* ** )
+ __DestroyIcon( *hicon* __ )
 
 
 #### Parameters
@@ -2466,14 +2467,14 @@ Destroys caret for current task
 
     The icon to destroy.
 
-## [win32gui](README.md#win32gui).DestroyMenu
+## [win32gui](#win32gui).DestroyMenu
 
- **DestroyMenu(** )
+ __DestroyMenu(__ )
 Destroys a previously loaded menu.
 
-## [win32gui](README.md#win32gui).DestroyWindow
+## [win32gui](#win32gui).DestroyWindow
 
- **DestroyWindow( *hwnd* ** )
+ __DestroyWindow( *hwnd* __ )
 
 
 #### Parameters
@@ -2483,23 +2484,23 @@ Destroys a previously loaded menu.
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).DialogBox
+## [win32gui](#win32gui).DialogBox
 
-int = **DialogBox( *hInstance*  *, TemplateName*  *, hWndParent*  *, DialogFunc*  *, InitParam* ** )
+int = __DialogBox( *hInstance*  *, TemplateName*  *, hWndParent*  *, DialogFunc*  *, InitParam* __ )
 Creates a modal dialog box.
 
 #### Parameters
 
 
-  -  *hInstance* :[PyHANDLE](README.md#pyhandle)
+  -  *hInstance* :[PyHANDLE](#pyhandle)
 
     Handle to module that contains the dialog template
 
-  -  *TemplateName* :[PyResourceId](README.md#pyresourceid)
+  -  *TemplateName* :[PyResourceId](#pyresourceid)
 
     Name or resource id of the dialog resource
 
-  -  *hWndParent* :[PyHANDLE](README.md#pyhandle)
+  -  *hWndParent* :[PyHANDLE](#pyhandle)
 
     Handle to dialog's parent window
 
@@ -2511,23 +2512,23 @@ Creates a modal dialog box.
 
     Initialization data to be passed to above procedure during WM_INITDIALOG processing
 
-## [win32gui](README.md#win32gui).DialogBoxIndirect
+## [win32gui](#win32gui).DialogBoxIndirect
 
-int = **DialogBoxIndirect( *hInstance*  *, controlList*  *, hWndParent*  *, DialogFunc*  *, InitParam* ** )
+int = __DialogBoxIndirect( *hInstance*  *, controlList*  *, hWndParent*  *, DialogFunc*  *, InitParam* __ )
 Creates a modal dialog box from a template, see[win32ui::CreateDialogIndirect](win32ui.md#win32uicreatedialogindirect)
 
 #### Parameters
 
 
-  -  *hInstance* :[PyHANDLE](README.md#pyhandle)
+  -  *hInstance* :[PyHANDLE](#pyhandle)
 
     Handle to module creating the dialog box
 
-  -  *controlList* :[PyDialogTemplate](README.md#pydialogtemplate)
+  -  *controlList* :[PyDialogTemplate](#pydialogtemplate)
 
     Sequence of items defining the dialog box and subcontrols
 
-  -  *hWndParent* :[PyHANDLE](README.md#pyhandle)
+  -  *hWndParent* :[PyHANDLE](#pyhandle)
 
     Handle to dialog's parent window
 
@@ -2539,24 +2540,24 @@ Creates a modal dialog box from a template, see[win32ui::CreateDialogIndirect](w
 
     Initialization data to be passed to above procedure during WM_INITDIALOG processing
 
-## [win32gui](README.md#win32gui).DialogBoxIndirectParam
+## [win32gui](#win32gui).DialogBoxIndirectParam
 
-int = **DialogBoxIndirectParam(** )
+int = __DialogBoxIndirectParam(__ )
 See[win32gui::DialogBoxIndirect](win32gui.md#win32guidialogboxindirect)
 
-## [win32gui](README.md#win32gui).DialogBoxIndirectParam
+## [win32gui](#win32gui).DialogBoxIndirectParam
 
-int = **DialogBoxIndirectParam(** )
+int = __DialogBoxIndirectParam(__ )
 See[win32gui::CreateDialogIndirect](win32gui.md#win32guicreatedialogindirect)
 
-## [win32gui](README.md#win32gui).DialogBoxParam
+## [win32gui](#win32gui).DialogBoxParam
 
-int = **DialogBoxParam(** )
+int = __DialogBoxParam(__ )
 See[win32gui::DialogBox](win32gui.md#win32guidialogbox)
 
-## [win32gui](README.md#win32gui).DispatchMessage
+## [win32gui](#win32gui).DispatchMessage
 
-int = **DispatchMessage( *msg* ** )
+int = __DispatchMessage( *msg* __ )
 
 
 #### Parameters
@@ -2566,9 +2567,9 @@ int = **DispatchMessage( *msg* ** )
 
     
 
-## [win32gui](README.md#win32gui).DragAcceptFiles
+## [win32gui](#win32gui).DragAcceptFiles
 
- **DragAcceptFiles( *hwnd*  *, fAccept* ** )
+ __DragAcceptFiles( *hwnd*  *, fAccept* __ )
 Registers whether a window accepts dropped files.
 
 #### Parameters
@@ -2584,9 +2585,9 @@ Registers whether a window accepts dropped files.
 
 This value is True to accept dropped files or False to discontinue accepting dropped files.
 
-## [win32gui](README.md#win32gui).DragDetect
+## [win32gui](#win32gui).DragDetect
 
- **DragDetect( *hwnd*  *, point* ** )
+ __DragDetect( *hwnd*  *, point* __ )
 captures the mouse and tracks its movement until the user releases the left button, presses the ESC key, or moves the mouse outside the drag rectangle around the specified point.
 
 #### Parameters
@@ -2604,9 +2605,9 @@ captures the mouse and tracks its movement until the user releases the left butt
 If the user moved the mouse outside of the drag rectangle while holding down the left button , the return value is nonzero.
 If the user did not move the mouse outside of the drag rectangle while holding down the left button , the return value is zero.
 
-## [win32gui](README.md#win32gui).DrawAnimatedRects
+## [win32gui](#win32gui).DrawAnimatedRects
 
- **DrawAnimatedRects( *hwnd*  *, idAni*  *, minCoords*  *, restCoords* ** )
+ __DrawAnimatedRects( *hwnd*  *, idAni*  *, minCoords*  *, restCoords* __ )
 Animates a rectangle in the manner of minimizing, mazimizing, or opening
 
 #### Parameters
@@ -2620,27 +2621,27 @@ Animates a rectangle in the manner of minimizing, mazimizing, or opening
 
     type of animation, win32con.IDANI_*
 
-  -  *minCoords* :[PyRECT](README.md#pyrect)
+  -  *minCoords* :[PyRECT](#pyrect)
 
     rectangle coordinates (minimized)
 
-  -  *restCoords* :[PyRECT](README.md#pyrect)
+  -  *restCoords* :[PyRECT](#pyrect)
 
     rectangle coordinates (restored)
 
-## [win32gui](README.md#win32gui).DrawEdge
+## [win32gui](#win32gui).DrawEdge
 
-[PyRECT](README.md#pyrect)= **DrawEdge( *hdc*  *, rc*  *, edge*  *, Flags* ** )
+[PyRECT](#pyrect)= __DrawEdge( *hdc*  *, rc*  *, edge*  *, Flags* __ )
 Draws edge(s) of a rectangle
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-  -  *rc* :[PyRECT](README.md#pyrect)
+  -  *rc* :[PyRECT](#pyrect)
 
     Rectangle whose edge(s) will be drawn
 
@@ -2655,15 +2656,15 @@ Draws edge(s) of a rectangle
 #### Return Value
 BF_ADJUST flag causes input rectange to be shrunk by size of border.. Rectangle is always returned.
 
-## [win32gui](README.md#win32gui).DrawFocusRect
+## [win32gui](#win32gui).DrawFocusRect
 
- **DrawFocusRect( *hDC*  *, rc* ** )
+ __DrawFocusRect( *hDC*  *, rc* __ )
 Draws a standard focus outline around a rectangle
 
 #### Parameters
 
 
-  -  *hDC* :[PyHANDLE](README.md#pyhandle)
+  -  *hDC* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -2671,9 +2672,9 @@ Draws a standard focus outline around a rectangle
 
     Tuple of (left,top,right,bottom) defining the rectangle
 
-## [win32gui](README.md#win32gui).DrawIcon
+## [win32gui](#win32gui).DrawIcon
 
- **DrawIcon( *hDC*  *, X*  *, Y*  *, hicon* ** )
+ __DrawIcon( *hDC*  *, X*  *, Y*  *, hicon* __ )
 Draws an icon or cursor into the specified device context. 
 
 To specify additional drawing options, use the[win32gui::DrawIconEx](win32gui.md#win32guidrawiconex)function.
@@ -2697,9 +2698,9 @@ To specify additional drawing options, use the[win32gui::DrawIconEx](win32gui.md
 
     handle to icon
 
-## [win32gui](README.md#win32gui).DrawIconEx
+## [win32gui](#win32gui).DrawIconEx
 
- **DrawIconEx( *hDC*  *, xLeft*  *, yTop*  *, hIcon*  *, cxWidth*  *, cyWidth*  *, istepIfAniCur*  *, hbrFlickerFreeDraw*  *, diFlags* ** )
+ __DrawIconEx( *hDC*  *, xLeft*  *, yTop*  *, hIcon*  *, cxWidth*  *, cyWidth*  *, istepIfAniCur*  *, hbrFlickerFreeDraw*  *, diFlags* __ )
 Draws an icon or cursor into the specified device context, 
 
 performing the specified raster operations, and stretching or compressing the 
@@ -2737,7 +2738,7 @@ icon or cursor as specified.
 
     frame index, animated cursor
 
-  -  *hbrFlickerFreeDraw* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hbrFlickerFreeDraw* :[PyGdiHANDLE](#pygdihandle)
 
     handle to background brush, can be None
 
@@ -2745,9 +2746,9 @@ icon or cursor as specified.
 
     icon-drawing flags (win32con.DI_*)
 
-## [win32gui](README.md#win32gui).DrawMenuBar
+## [win32gui](#win32gui).DrawMenuBar
 
- **DrawMenuBar( *hwnd* ** )
+ __DrawMenuBar( *hwnd* __ )
 
 
 #### Parameters
@@ -2757,15 +2758,15 @@ icon or cursor as specified.
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).DrawText
+## [win32gui](#win32gui).DrawText
 
-(int,[PyRECT](README.md#pyrect)) = **DrawText( *hDC*  *, String*  *, nCount*  *, Rect*  *, Format* ** )
+(int,[PyRECT](#pyrect)) = __DrawText( *hDC*  *, String*  *, nCount*  *, Rect*  *, Format* __ )
 Draws formatted text on a device context
 
 #### Parameters
 
 
-  -  *hDC* : int/[PyHANDLE](README.md#pyhandle)
+  -  *hDC* : int/[PyHANDLE](#pyhandle)
 
     The device context on which to draw
 
@@ -2777,7 +2778,7 @@ Draws formatted text on a device context
 
     The number of characters, use -1 for simple null-terminated string
 
-  -  *Rect* :[PyRECT](README.md#pyrect)
+  -  *Rect* :[PyRECT](#pyrect)
 
     Tuple of 4 ints specifying the position (left, top, right, bottom)
 
@@ -2788,19 +2789,19 @@ Draws formatted text on a device context
 #### Return Value
 Returns the height of the drawn text, and the rectangle coordinates
 
-## [win32gui](README.md#win32gui).DrawTextW
+## [win32gui](#win32gui).DrawTextW
 
-int,[PyRECT](README.md#pyrect)= **DrawTextW( *hDC*  *, String*  *, Count*  *, Rect*  *, Format* ** )
+int,[PyRECT](#pyrect)= __DrawTextW( *hDC*  *, String*  *, Count*  *, Rect*  *, Format* __ )
 Draws Unicode text on a device context.
 
 #### Parameters
 
 
-  -  *hDC* :[PyHANDLE](README.md#pyhandle)
+  -  *hDC* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-  -  *String* :[PyUnicode](README.md#pyunicode)
+  -  *String* :[PyUnicode](#pyunicode)
 
     Text to be drawn
 
@@ -2808,7 +2809,7 @@ Draws Unicode text on a device context.
 
     Number of characters to draw, use -1 for entire null terminated string
 
-  -  *Rect* :[PyRECT](README.md#pyrect)
+  -  *Rect* :[PyRECT](#pyrect)
 
     Rectangle in which to draw text
 
@@ -2822,15 +2823,15 @@ Accepts keyword args.
 #### Return Value
 Returns the height of the drawn text, and the rectangle coordinates
 
-## [win32gui](README.md#win32gui).Ellipse
+## [win32gui](#win32gui).Ellipse
 
- **Ellipse( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect* ** )
+ __Ellipse( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect* __ )
 Draws a filled ellipse on a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Device context on which to draw
 
@@ -2850,20 +2851,20 @@ Draws a filled ellipse on a device context
 
     Bottom limit of ellipse
 
-## [win32gui](README.md#win32gui).EnableMenuItem
+## [win32gui](#win32gui).EnableMenuItem
 
- **EnableMenuItem(** )
+ __EnableMenuItem(__ )
 
 
-## [win32gui](README.md#win32gui).EnableWindow
+## [win32gui](#win32gui).EnableWindow
 
-int = **EnableWindow( *hWnd*  *, bEnable* ** )
+int = __EnableWindow( *hWnd*  *, bEnable* __ )
 Enables and disables keyboard and mouse input to a window
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to window
 
@@ -2874,9 +2875,9 @@ Enables and disables keyboard and mouse input to a window
 #### Return Value
 Returns True if window was already disabled when call was made, False otherwise
 
-## [win32gui](README.md#win32gui).EndDialog
+## [win32gui](#win32gui).EndDialog
 
- **EndDialog( *hwnd*  *, result* ** )
+ __EndDialog( *hwnd*  *, result* __ )
 Ends a dialog box.
 
 #### Parameters
@@ -2890,9 +2891,9 @@ Ends a dialog box.
 
     result
 
-## [win32gui](README.md#win32gui).EndPaint
+## [win32gui](#win32gui).EndPaint
 
- **EndPaint( *hwnd*  *, ps* ** )
+ __EndPaint( *hwnd*  *, ps* __ )
 
 
 #### Parameters
@@ -2906,27 +2907,27 @@ Ends a dialog box.
 
     As returned from[win32gui::BeginPaint](win32gui.md#win32guibeginpaint)
 
-## [win32gui](README.md#win32gui).EndPath
+## [win32gui](#win32gui).EndPath
 
- **EndPath( *hdc* ** )
+ __EndPath( *hdc* __ )
 Finalizes a path begun by[win32gui::BeginPath](win32gui.md#win32guibeginpath)
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).EnumChildWindows
+## [win32gui](#win32gui).EnumChildWindows
 
- **EnumChildWindows( *hwnd*  *, callback*  *, extra* ** )
+ __EnumChildWindows( *hwnd*  *, callback*  *, extra* __ )
 Enumerates the child windows that belong to the specified parent window by passing the handle to each child window, in turn, to an application-defined callback function. EnumChildWindows continues until the last child window is enumerated or the callback function returns FALSE.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     The handle to the window to enumerate.
 
@@ -2938,19 +2939,19 @@ Enumerates the child windows that belong to the specified parent window by passi
 
     Any python object - this is passed to the callback function as the second param (first is the hwnd).
 
-## [win32gui](README.md#win32gui).EnumFontFamilies
+## [win32gui](#win32gui).EnumFontFamilies
 
-int = **EnumFontFamilies( *hdc*  *, Family*  *, EnumFontFamProc*  *, Param* ** )
+int = __EnumFontFamilies( *hdc*  *, Family*  *, EnumFontFamProc*  *, Param* __ )
 Enumerates the available font families.
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context for which to enumerate available fonts
 
-  -  *Family* : string/[PyUnicode](README.md#pyunicode)
+  -  *Family* : string/[PyUnicode](#pyunicode)
 
     Family of fonts to enumerate. If none, first member of each font family will be returned.
 
@@ -2964,14 +2965,14 @@ Enumerates the available font families.
 
 #### Comments
 The parameters that the callback function will receive are as follows:
-[PyLOGFONT](README.md#pylogfont)- contains the font parameters
+[PyLOGFONT](#pylogfont)- contains the font parameters
 None - Placeholder for a TEXTMETRIC structure, not supported yet
 int - Font type, combination of DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE
 object - The Param originally passed in to EnumFontFamilies
 
-## [win32gui](README.md#win32gui).EnumPropsEx
+## [win32gui](#win32gui).EnumPropsEx
 
- **EnumPropsEx( *hWnd*  *, EnumFunc*  *, Param* ** )
+ __EnumPropsEx( *hWnd*  *, EnumFunc*  *, Param* __ )
 Enumerates properties attached to a window. 
 
 Each property is passed to a callback function, which receives 4 arguments:
@@ -2980,7 +2981,7 @@ Handle to the window, name of the property, handle to the property data, and Par
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
@@ -2992,9 +2993,9 @@ Handle to the window, name of the property, handle to the property data, and Par
 
     Arbitrary object to be passed to callback function
 
-## [win32gui](README.md#win32gui).EnumThreadWindows
+## [win32gui](#win32gui).EnumThreadWindows
 
- **EnumThreadWindows( *dwThreadId*  *, callback*  *, extra* ** )
+ __EnumThreadWindows( *dwThreadId*  *, callback*  *, extra* __ )
 Enumerates all top-level windows associated with a thread on the screen by passing the handle to each window, in turn, to an application-defined callback function. EnumThreadWindows continues until the last top-level window associated with the thread is enumerated or the callback function returns FALSE
 
 #### Parameters
@@ -3012,9 +3013,9 @@ Enumerates all top-level windows associated with a thread on the screen by passi
 
     Any python object - this is passed to the callback function as the second param (first is the hwnd).
 
-## [win32gui](README.md#win32gui).EnumWindows
+## [win32gui](#win32gui).EnumWindows
 
- **EnumWindows( *callback*  *, extra* ** )
+ __EnumWindows( *callback*  *, extra* __ )
 Enumerates all top-level windows on the screen by passing the handle to each window, in turn, to an application-defined callback function.
 
 #### Parameters
@@ -3028,25 +3029,25 @@ Enumerates all top-level windows on the screen by passing the handle to each win
 
     Any python object - this is passed to the callback function as the second param (first is the hwnd).
 
-## [win32gui](README.md#win32gui).EqualRgn
+## [win32gui](#win32gui).EqualRgn
 
-boolean = **EqualRgn( *SrcRgn1*  *, SrcRgn2* ** )
+boolean = __EqualRgn( *SrcRgn1*  *, SrcRgn2* __ )
 Determines if 2 regions are equal
 
 #### Parameters
 
 
-  -  *SrcRgn1* :[PyGdiHandle](README.md#pygdihandle)
+  -  *SrcRgn1* :[PyGdiHandle](#pygdihandle)
 
     Handle to a region
 
-  -  *SrcRgn2* :[PyGdiHandle](README.md#pygdihandle)
+  -  *SrcRgn2* :[PyGdiHandle](#pygdihandle)
 
     Handle to a region
 
-## [win32gui](README.md#win32gui).ExtCreatePen
+## [win32gui](#win32gui).ExtCreatePen
 
-[PyHANDLE](README.md#pyhandle)= **ExtCreatePen( *PenStyle*  *, Width*  *, lb*  *, Style* ** )
+[PyHANDLE](#pyhandle)= __ExtCreatePen( *PenStyle*  *, Width*  *, lb*  *, Style* __ )
 Creates a GDI pen object
 
 #### Parameters
@@ -3060,7 +3061,7 @@ Creates a GDI pen object
 
     Width of pen in logical units.  Must be 1 for PS_COSMETIC.
 
-  -  *lb* :[PyLOGBRUSH](README.md#pylogbrush)
+  -  *lb* :[PyLOGBRUSH](#pylogbrush)
 
     Dict containing brush creation parameters
 
@@ -3068,15 +3069,15 @@ Creates a GDI pen object
 
     Sequence containing lengths of dashes and spaces  Used only with PS_USERSTYLE, otherwise must be None.
 
-## [win32gui](README.md#win32gui).ExtFloodFill
+## [win32gui](#win32gui).ExtFloodFill
 
- **ExtFloodFill( **  *, XStart*  *, YStart*  *, Color*  *, FillType* ** )
+ __ExtFloodFill( **  *, XStart*  *, YStart*  *, Color*  *, FillType* __ )
 Fills an area with current brush
 
 #### Parameters
 
 
-  -  *=hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *=hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -3096,15 +3097,15 @@ Fills an area with current brush
 
     One of win32con.FLOODFILL* values
 
-## [win32gui](README.md#win32gui).ExtTextOut
+## [win32gui](#win32gui).ExtTextOut
 
-int = **ExtTextOut( *hdc*  *, int*  *, int*  *, int*  *, rect*  *, string*  *, tuple* ** )
+int = __ExtTextOut( *hdc*  *, int*  *, int*  *, int*  *, rect*  *, string*  *, tuple* __ )
 Writes text to a DC.
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -3120,7 +3121,7 @@ Writes text to a DC.
 
     Specifies the rectangle type. This parameter can be one, both, or neither of ETO_CLIPPED and ETO_OPAQUE
 
-  -  *rect* :[PyRECT](README.md#pyrect)
+  -  *rect* :[PyRECT](#pyrect)
 
     Specifies the text's bounding rectangle.  (Can be None.)
 
@@ -3135,14 +3136,14 @@ Writes text to a DC.
 #### Win32 API References
 
 
-  - Search for *ExtTextOut* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=exttextout),[google](README.md#http://www.google.com/search?q=exttextout)or[google groups](README.md#http://groups.google.com/groups?q=exttextout).
+  - Search for *ExtTextOut* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=exttextout),[google](#http://www.google.com/search?q=exttextout)or[google groups](#http://groups.google.com/groups?q=exttextout).
 
 #### Return Value
 Always none.  If the function fails, an exception is raised.
 
-## [win32gui](README.md#win32gui).ExtractIcon
+## [win32gui](#win32gui).ExtractIcon
 
-int = **ExtractIcon( *hinstance*  *, moduleName*  *, index* ** )
+int = __ExtractIcon( *hinstance*  *, moduleName*  *, index* __ )
 
 
 #### Parameters
@@ -3152,7 +3153,7 @@ int = **ExtractIcon( *hinstance*  *, moduleName*  *, index* ** )
 
     
 
-  -  *moduleName* : string/[PyUnicode](README.md#pyunicode)
+  -  *moduleName* : string/[PyUnicode](#pyunicode)
 
     
 
@@ -3166,9 +3167,9 @@ You must destroy the icon handle returned by calling the[win32gui::DestroyIcon](
 #### Return Value
 The result is a HICON.
 
-## [win32gui](README.md#win32gui).ExtractIconEx
+## [win32gui](#win32gui).ExtractIconEx
 
-int = **ExtractIconEx( *moduleName*  *, index*  *, numIcons* ** )
+int = __ExtractIconEx( *moduleName*  *, index*  *, numIcons* __ )
 
 
 #### Parameters
@@ -3194,70 +3195,70 @@ If index==-1, the result is an integer with the number of icons in
 
 the file, otherwise it is 2 arrays of icon handles.
 
-## [win32gui](README.md#win32gui).FillPath
+## [win32gui](#win32gui).FillPath
 
- **FillPath( *hdc* ** )
+ __FillPath( *hdc* __ )
 Fills a path with currently selected brush
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context that contains a finalized path. See[win32gui::EndPath](win32gui.md#win32guiendpath).
 
 #### Comments
 Any open figures are closed and path is deselected from the DC.
 
-## [win32gui](README.md#win32gui).FillRect
+## [win32gui](#win32gui).FillRect
 
- **FillRect( *hDC*  *, rc*  *, hbr* ** )
+ __FillRect( *hDC*  *, rc*  *, hbr* __ )
 Fills a rectangular area with specified brush
 
 #### Parameters
 
 
-  -  *hDC* :[PyHANDLE](README.md#pyhandle)
+  -  *hDC* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-  -  *rc* :[PyRECT](README.md#pyrect)
+  -  *rc* :[PyRECT](#pyrect)
 
     Rectangle to be filled
 
-  -  *hbr* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hbr* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to brush to be used to fill area
 
-## [win32gui](README.md#win32gui).FillRgn
+## [win32gui](#win32gui).FillRgn
 
- **FillRgn( *hdc*  *, hrgn*  *, hbr* ** )
+ __FillRgn( *hdc*  *, hrgn*  *, hbr* __ )
 Fills a region with specified brush
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to the device context
 
-  -  *hrgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to the region
 
-  -  *hbr* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hbr* :[PyGdiHANDLE](#pygdihandle)
 
     Brush to be used
 
-## [win32gui](README.md#win32gui).FindWindow
+## [win32gui](#win32gui).FindWindow
 
-[PyHANDLE](README.md#pyhandle)= **FindWindow( *ClassName*  *, WindowName* ** )
+[PyHANDLE](#pyhandle)= __FindWindow( *ClassName*  *, WindowName* __ )
 Retrieves a handle to the top-level window whose class name and window name match the specified strings.
 
 #### Parameters
 
 
-  -  *ClassName* :[PyResourceId](README.md#pyresourceid)
+  -  *ClassName* :[PyResourceId](#pyresourceid)
 
     Name or atom of window class to find, can be None
 
@@ -3265,23 +3266,23 @@ Retrieves a handle to the top-level window whose class name and window name matc
 
     Title of window to find, can be None
 
-## [win32gui](README.md#win32gui).FindWindowEx
+## [win32gui](#win32gui).FindWindowEx
 
-[PyHANDLE](README.md#pyhandle)= **FindWindowEx( *Parent*  *, ChildAfter*  *, ClassName*  *, WindowName* ** )
+[PyHANDLE](#pyhandle)= __FindWindowEx( *Parent*  *, ChildAfter*  *, ClassName*  *, WindowName* __ )
 Retrieves a handle to the top-level window whose class name and window name match the specified strings.
 
 #### Parameters
 
 
-  -  *Parent* :[PyHANDLE](README.md#pyhandle)
+  -  *Parent* :[PyHANDLE](#pyhandle)
 
     Window whose child windows will be searched.  If 0, desktop window is assumed.
 
-  -  *ChildAfter* :[PyHANDLE](README.md#pyhandle)
+  -  *ChildAfter* :[PyHANDLE](#pyhandle)
 
     Child window after which to search in Z-order, can be 0 to search all
 
-  -  *ClassName* :[PyResourceId](README.md#pyresourceid)
+  -  *ClassName* :[PyResourceId](#pyresourceid)
 
     Name or atom of window class to find, can be None
 
@@ -3289,15 +3290,15 @@ Retrieves a handle to the top-level window whose class name and window name matc
 
     Title of window to find, can be None
 
-## [win32gui](README.md#win32gui).FlashWindow
+## [win32gui](#win32gui).FlashWindow
 
-int = **FlashWindow( *hwnd*  *, bInvert* ** )
+int = __FlashWindow( *hwnd*  *, bInvert* __ )
 The FlashWindow function flashes the specified window one time. It does not change the active state of the window.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
@@ -3305,15 +3306,15 @@ The FlashWindow function flashes the specified window one time. It does not chan
 
     Indicates if window should toggle between active and inactive
 
-## [win32gui](README.md#win32gui).FlashWindowEx
+## [win32gui](#win32gui).FlashWindowEx
 
-int = **FlashWindowEx( *hwnd*  *, dwFlags*  *, uCount*  *, dwTimeout* ** )
+int = __FlashWindowEx( *hwnd*  *, dwFlags*  *, uCount*  *, dwTimeout* __ )
 The FlashWindowEx function flashes the specified window a specified number of times.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
@@ -3329,55 +3330,55 @@ The FlashWindowEx function flashes the specified window a specified number of ti
 
     Elapsed time between flashes, in milliseconds
 
-## [win32gui](README.md#win32gui).FlattenPath
+## [win32gui](#win32gui).FlattenPath
 
- **FlattenPath( *hdc* ** )
+ __FlattenPath( *hdc* __ )
 Flattens any curves in current path into a series of lines
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context that contains a closed path. See[win32gui::EndPath](win32gui.md#win32guiendpath).
 
-## [win32gui](README.md#win32gui).FrameRect
+## [win32gui](#win32gui).FrameRect
 
- **FrameRect( *hDC*  *, rc*  *, hbr* ** )
+ __FrameRect( *hDC*  *, rc*  *, hbr* __ )
 Draws an outline around a rectangle
 
 #### Parameters
 
 
-  -  *hDC* :[PyHANDLE](README.md#pyhandle)
+  -  *hDC* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-  -  *rc* :[PyRECT](README.md#pyrect)
+  -  *rc* :[PyRECT](#pyrect)
 
     Rectangle around which to draw
 
-  -  *hbr* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hbr* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to brush created using CreateHatchBrush, CreatePatternBrush, CreateSolidBrush, or GetStockObject
 
-## [win32gui](README.md#win32gui).FrameRgn
+## [win32gui](#win32gui).FrameRgn
 
- **FrameRgn( *hdc*  *, hrgn*  *, hbr*  *, Width*  *, Height* ** )
+ __FrameRgn( *hdc*  *, hrgn*  *, hbr*  *, Width*  *, Height* __ )
 Draws a frame around a region
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to the device context
 
-  -  *hrgn* :[PyGdiHandle](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHandle](#pygdihandle)
 
     Handle to the region
 
-  -  *hbr* :[PyGdiHandle](README.md#pygdihandle)
+  -  *hbr* :[PyGdiHandle](#pygdihandle)
 
     Handle to brush to be used
 
@@ -3389,69 +3390,69 @@ Draws a frame around a region
 
     Frame height
 
-## [win32gui](README.md#win32gui).GetActiveWindow
+## [win32gui](#win32gui).GetActiveWindow
 
-HWND = **GetActiveWindow(** )
+HWND = __GetActiveWindow(__ )
 
 
-## [win32gui](README.md#win32gui).GetArcDirection
+## [win32gui](#win32gui).GetArcDirection
 
-int = **GetArcDirection( *hdc* ** )
+int = __GetArcDirection( *hdc* __ )
 Returns the direction in which rectangles and arcs are drawn
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Recturns one of win32con.AD_* values
 
-## [win32gui](README.md#win32gui).GetBkColor
+## [win32gui](#win32gui).GetBkColor
 
-int = **GetBkColor( *hdc* ** )
+int = __GetBkColor( *hdc* __ )
 Returns the background color for a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns an RGB color value.  On error, returns CLR_INVALID.
 
-## [win32gui](README.md#win32gui).GetBkMode
+## [win32gui](#win32gui).GetBkMode
 
-int = **GetBkMode( *hdc* ** )
+int = __GetBkMode( *hdc* __ )
 Returns the background mode for a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns OPAQUE, TRANSPARENT, or 0 on failure
 
-## [win32gui](README.md#win32gui).GetCapture
+## [win32gui](#win32gui).GetCapture
 
-int = **GetCapture(** )
+int = __GetCapture(__ )
 Returns the window with the mouse capture.
 
-## [win32gui](README.md#win32gui).GetCaretPos
+## [win32gui](#win32gui).GetCaretPos
 
-int,int = **GetCaretPos(** )
+int,int = __GetCaretPos(__ )
 Returns the current caret position
 
-## [win32gui](README.md#win32gui).GetClassLong
+## [win32gui](#win32gui).GetClassLong
 
-int = **GetClassLong( *hwnd*  *, index* ** )
+int = __GetClassLong( *hwnd*  *, index* __ )
 
 
 #### Parameters
@@ -3465,21 +3466,21 @@ int = **GetClassLong( *hwnd*  *, index* ** )
 
     
 
-## [win32gui](README.md#win32gui).GetClassName
+## [win32gui](#win32gui).GetClassName
 
-string = **GetClassName( *hwnd* ** )
+string = __GetClassName( *hwnd* __ )
 Retrieves the name of the class to which the specified window belongs.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).GetClientRect
+## [win32gui](#win32gui).GetClientRect
 
-(left, top, right, bottom) = **GetClientRect( *hwnd* ** )
+(left, top, right, bottom) = __GetClientRect( *hwnd* __ )
 Returns the rectangle of the client area of a window, in client coordinates
 
 #### Parameters
@@ -3489,15 +3490,15 @@ Returns the rectangle of the client area of a window, in client coordinates
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).GetCurrentObject
+## [win32gui](#win32gui).GetCurrentObject
 
-[PyHANDLE](README.md#pyhandle)= **GetCurrentObject( *hdc*  *, ObjectType* ** )
+[PyHANDLE](#pyhandle)= __GetCurrentObject( *hdc*  *, ObjectType* __ )
 Retrieves currently selected object from a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -3505,36 +3506,36 @@ Retrieves currently selected object from a DC
 
     Type of object to retrieve, one of win32con.OBJ_*;
 
-## [win32gui](README.md#win32gui).GetCurrentPositionEx
+## [win32gui](#win32gui).GetCurrentPositionEx
 
-(int,int) = **GetCurrentPositionEx( *hdc* ** )
+(int,int) = __GetCurrentPositionEx( *hdc* __ )
 Returns a device context's current drawing position
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Device context
 
-## [win32gui](README.md#win32gui).GetCursor
+## [win32gui](#win32gui).GetCursor
 
-HCURSOR = **GetCursor(** )
+HCURSOR = __GetCursor(__ )
 
 
-## [win32gui](README.md#win32gui).GetCursorInfo
+## [win32gui](#win32gui).GetCursorInfo
 
-flags, hcursor, (x,y) = **GetCursorInfo(** )
+flags, hcursor, (x,y) = __GetCursorInfo(__ )
 Retrieves information about the global cursor.
 
-## [win32gui](README.md#win32gui).GetCursorPos
+## [win32gui](#win32gui).GetCursorPos
 
-(int, int) = **GetCursorPos(** )
+(int, int) = __GetCursorPos(__ )
 retrieves the cursor's position, in screen coordinates.
 
-## [win32gui](README.md#win32gui).GetDC
+## [win32gui](#win32gui).GetDC
 
-HDC = **GetDC( *hwnd* ** )
+HDC = __GetDC( *hwnd* __ )
 Gets the device context for the window.
 
 #### Parameters
@@ -3544,14 +3545,14 @@ Gets the device context for the window.
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).GetDesktopWindow
+## [win32gui](#win32gui).GetDesktopWindow
 
-int = **GetDesktopWindow(** )
+int = __GetDesktopWindow(__ )
 returns the desktop window
 
-## [win32gui](README.md#win32gui).GetDlgCtrlID
+## [win32gui](#win32gui).GetDlgCtrlID
 
-int = **GetDlgCtrlID( *hwnd* ** )
+int = __GetDlgCtrlID( *hwnd* __ )
 Retrieves the identifier of the specified control.
 
 #### Parameters
@@ -3561,15 +3562,15 @@ Retrieves the identifier of the specified control.
 
     The handle to the control
 
-## [win32gui](README.md#win32gui).GetDlgItem
+## [win32gui](#win32gui).GetDlgItem
 
-HWND = **GetDlgItem( *hDlg*  *, IDDlgItem* ** )
+HWND = __GetDlgItem( *hDlg*  *, IDDlgItem* __ )
 Retrieves the handle to a control in the specified dialog box.
 
 #### Parameters
 
 
-  -  *hDlg* :[PyHANDLE](README.md#pyhandle)
+  -  *hDlg* :[PyHANDLE](#pyhandle)
 
     Handle to a dialog window
 
@@ -3577,15 +3578,15 @@ Retrieves the handle to a control in the specified dialog box.
 
     Identifier of one of the dialog's controls
 
-## [win32gui](README.md#win32gui).GetDlgItemInt
+## [win32gui](#win32gui).GetDlgItemInt
 
- **GetDlgItemInt( *hDlg*  *, IDDlgItem*  *, Signed* ** )
+ __GetDlgItemInt( *hDlg*  *, IDDlgItem*  *, Signed* __ )
 Returns the integer value of a dialog control
 
 #### Parameters
 
 
-  -  *hDlg* :[PyHANDLE](README.md#pyhandle)
+  -  *hDlg* :[PyHANDLE](#pyhandle)
 
     Handle to a dialog window
 
@@ -3597,15 +3598,15 @@ Returns the integer value of a dialog control
 
     Indicates whether control value should be interpreted as signed
 
-## [win32gui](README.md#win32gui).GetDlgItemText
+## [win32gui](#win32gui).GetDlgItemText
 
-string = **GetDlgItemText( *hDlg*  *, IDDlgItem* ** )
+string = __GetDlgItemText( *hDlg*  *, IDDlgItem* __ )
 Returns the text of a dialog control
 
 #### Parameters
 
 
-  -  *hDlg* :[PyHANDLE](README.md#pyhandle)
+  -  *hDlg* :[PyHANDLE](#pyhandle)
 
     Handle to a dialog window
 
@@ -3613,45 +3614,45 @@ Returns the text of a dialog control
 
     The Id of a control within the dialog
 
-## [win32gui](README.md#win32gui).GetDoubleClickTime
+## [win32gui](#win32gui).GetDoubleClickTime
 
-int = **GetDoubleClickTime(** )
+int = __GetDoubleClickTime(__ )
 
 
-## [win32gui](README.md#win32gui).GetFocus
+## [win32gui](#win32gui).GetFocus
 
- **GetFocus(** )
+ __GetFocus(__ )
 Returns the HWND of the window with focus.
 
-## [win32gui](README.md#win32gui).GetForegroundWindow
+## [win32gui](#win32gui).GetForegroundWindow
 
-HWND = **GetForegroundWindow(** )
+HWND = __GetForegroundWindow(__ )
 
 
-## [win32gui](README.md#win32gui).GetGraphicsMode
+## [win32gui](#win32gui).GetGraphicsMode
 
-int = **GetGraphicsMode( *hdc* ** )
+int = __GetGraphicsMode( *hdc* __ )
 Determines if advanced GDI features are enabled for a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns GM_COMPATIBLE or GM_ADVANCED
 
-## [win32gui](README.md#win32gui).GetIconInfo
+## [win32gui](#win32gui).GetIconInfo
 
-[PyICONINFO](README.md#pyiconinfo)= **GetIconInfo( *hicon* ** )
+[PyICONINFO](#pyiconinfo)= __GetIconInfo( *hicon* __ )
 Returns parameters for an icon or cursor
 
 #### Parameters
 
 
-  -  *hicon* :[PyHANDLE](README.md#pyhandle)
+  -  *hicon* :[PyHANDLE](#pyhandle)
 
     The icon to query
 
@@ -3660,15 +3661,15 @@ The result is a tuple of (fIcon, xHotspot, yHotspot, hbmMask, hbmColor)
 
 The hbmMask and hbmColor items are bitmaps created for the caller, so must be freed.
 
-## [win32gui](README.md#win32gui).GetLayeredWindowAttributes
+## [win32gui](#win32gui).GetLayeredWindowAttributes
 
-(int,int,int) = **GetLayeredWindowAttributes( *hwnd* ** )
+(int,int,int) = __GetLayeredWindowAttributes( *hwnd* __ )
 Retrieves the layering parameters of a window with the WS_EX_LAYERED extended style
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     Handle to a layered window
 
@@ -3679,44 +3680,44 @@ Accepts keyword arguments.
 #### Return Value
 Returns a tuple of (color key, alpha, flags)
 
-## [win32gui](README.md#win32gui).GetLayout
+## [win32gui](#win32gui).GetLayout
 
-int = **GetLayout( *hdc* ** )
+int = __GetLayout( *hdc* __ )
 Retrieves the layout mode of a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns one of win32con.LAYOUT_*
 
-## [win32gui](README.md#win32gui).GetMapMode
+## [win32gui](#win32gui).GetMapMode
 
-int = **GetMapMode( *hdc* ** )
+int = __GetMapMode( *hdc* __ )
 Returns the method a device context uses to translate logical units to physical units
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns one of win32con.MM_* values
 
-## [win32gui](README.md#win32gui).GetMenu
+## [win32gui](#win32gui).GetMenu
 
- **GetMenu(** )
+ __GetMenu(__ )
 Gets the menu for the specified window.
 
-## [win32gui](README.md#win32gui).GetMenuDefaultItem
+## [win32gui](#win32gui).GetMenuDefaultItem
 
-int = **GetMenuDefaultItem( *hMenu*  *, fByPos*  *, flags* ** )
+int = __GetMenuDefaultItem( *hMenu*  *, fByPos*  *, flags* __ )
 
 
 #### Parameters
@@ -3734,9 +3735,9 @@ int = **GetMenuDefaultItem( *hMenu*  *, fByPos*  *, flags* ** )
 
     
 
-## [win32gui](README.md#win32gui).GetMenuInfo
+## [win32gui](#win32gui).GetMenuInfo
 
- **GetMenuInfo( *hmenu*  *, info* ** )
+ __GetMenuInfo( *hmenu*  *, info* __ )
 Gets information about a specified menu.
 
 #### Parameters
@@ -3754,9 +3755,9 @@ Gets information about a specified menu.
 See win32gui_struct for helper functions.
 This function will raise NotImplementedError on early platforms (eg, Windows NT.)
 
-## [win32gui](README.md#win32gui).GetMenuItemCount
+## [win32gui](#win32gui).GetMenuItemCount
 
-int = **GetMenuItemCount( *hMenu* ** )
+int = __GetMenuItemCount( *hMenu* __ )
 
 
 #### Parameters
@@ -3766,9 +3767,9 @@ int = **GetMenuItemCount( *hMenu* ** )
 
     Handle to the menu
 
-## [win32gui](README.md#win32gui).GetMenuItemID
+## [win32gui](#win32gui).GetMenuItemID
 
-int = **GetMenuItemID( *hMenu*  *, nPos* ** )
+int = __GetMenuItemID( *hMenu*  *, nPos* __ )
 Retrieves the menu item identifier of a menu item located at the specified position in a menu.
 
 #### Parameters
@@ -3782,9 +3783,9 @@ Retrieves the menu item identifier of a menu item located at the specified posit
 
     position of menu item
 
-## [win32gui](README.md#win32gui).GetMenuItemInfo
+## [win32gui](#win32gui).GetMenuItemInfo
 
- **GetMenuItemInfo( *hMenu*  *, uItem*  *, fByPosition*  *, menuItem* ** )
+ __GetMenuItemInfo( *hMenu*  *, uItem*  *, fByPosition*  *, menuItem* __ )
 Gets menu information
 
 #### Parameters
@@ -3804,11 +3805,11 @@ Gets menu information
 
   -  *menuItem* : buffer
 
-    A string or buffer in the format of a **MENUITEMINFO** structure.
+    A string or buffer in the format of a __MENUITEMINFO__ structure.
 
-## [win32gui](README.md#win32gui).GetMenuItemRect
+## [win32gui](#win32gui).GetMenuItemRect
 
-(int, int, int, int) = **GetMenuItemRect( *hWnd*  *, hMenu*  *, uItem* ** )
+(int, int, int, int) = __GetMenuItemRect( *hWnd*  *, hMenu*  *, uItem* __ )
 
 
 #### Parameters
@@ -3826,9 +3827,9 @@ Gets menu information
 
     
 
-## [win32gui](README.md#win32gui).GetMenuState
+## [win32gui](#win32gui).GetMenuState
 
-int = **GetMenuState( *hMenu*  *, uID*  *, flags* ** )
+int = __GetMenuState( *hMenu*  *, uID*  *, flags* __ )
 
 
 #### Parameters
@@ -3846,9 +3847,9 @@ int = **GetMenuState( *hMenu*  *, uID*  *, flags* ** )
 
     
 
-## [win32gui](README.md#win32gui).GetMessage
+## [win32gui](#win32gui).GetMessage
 
-MSG = **GetMessage( *hwnd*  *, min*  *, max* ** )
+MSG = __GetMessage( *hwnd*  *, min*  *, max* __ )
 
 
 #### Parameters
@@ -3866,21 +3867,21 @@ MSG = **GetMessage( *hwnd*  *, min*  *, max* ** )
 
     
 
-## [win32gui](README.md#win32gui).GetMiterLimit
+## [win32gui](#win32gui).GetMiterLimit
 
-float = **GetMiterLimit( *hdc* ** )
+float = __GetMiterLimit( *hdc* __ )
 Retrieves the limit of miter joins for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).GetNextDlgGroupItem
+## [win32gui](#win32gui).GetNextDlgGroupItem
 
-HWND = **GetNextDlgGroupItem( *hDlg*  *, hCtl*  *, bPrevious* ** )
+HWND = __GetNextDlgGroupItem( *hDlg*  *, hCtl*  *, bPrevious* __ )
 Retrieves a handle to the first control in a group of controls that precedes (or follows) the specified control in a dialog box.
 
 #### Parameters
@@ -3898,9 +3899,9 @@ Retrieves a handle to the first control in a group of controls that precedes (or
 
     direction flag
 
-## [win32gui](README.md#win32gui).GetNextDlgTabItem
+## [win32gui](#win32gui).GetNextDlgTabItem
 
-HWND = **GetNextDlgTabItem( *hDlg*  *, hCtl*  *, bPrevious* ** )
+HWND = __GetNextDlgTabItem( *hDlg*  *, hCtl*  *, bPrevious* __ )
 Retrieves a handle to the first control that has the WS_TABSTOP style that precedes (or follows) the specified control.
 
 #### Parameters
@@ -3918,15 +3919,15 @@ Retrieves a handle to the first control that has the WS_TABSTOP style that prece
 
     direction flag
 
-## [win32gui](README.md#win32gui).GetObject
+## [win32gui](#win32gui).GetObject
 
-object = **GetObject( *handle* ** )
+object = __GetObject( *handle* __ )
 Returns a struct containing the parameters used to create a GDI object
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     Handle to the object.
 
@@ -3934,21 +3935,21 @@ Returns a struct containing the parameters used to create a GDI object
 The result depends on the type of the handle.
 
 
-## [win32gui](README.md#win32gui).GetObjectType
+## [win32gui](#win32gui).GetObjectType
 
-int = **GetObjectType( *h* ** )
+int = __GetObjectType( *h* __ )
 Returns the type (OBJ_* constant) of a GDI handle
 
 #### Parameters
 
 
-  -  *h* :[PyHANDLE](README.md#pyhandle)
+  -  *h* :[PyHANDLE](#pyhandle)
 
     A handle to a GDI object
 
-## [win32gui](README.md#win32gui).GetOpenFileName
+## [win32gui](#win32gui).GetOpenFileName
 
-int = **GetOpenFileName( *OPENFILENAME* ** )
+int = __GetOpenFileName( *OPENFILENAME* __ )
 Creates an Open dialog box that lets the user specify the drive, directory, and the name of a file or set of files to open.
 
 #### Parameters
@@ -3966,29 +3967,29 @@ If the user presses OK, the function returns TRUE.  Otherwise, use CommDlgExtend
 
 (ie, a win32gui.error is raised).  If the user cancels the dialog, the winerror attribute of the exception will be zero.
 
-## [win32gui](README.md#win32gui).GetOpenFileNameW
+## [win32gui](#win32gui).GetOpenFileNameW
 
-([PyUNICODE](README.md#pyunicode),[PyUNICODE](README.md#pyunicode), int) = **GetOpenFileNameW( *hwndOwner*  *, hInstance*  *, Filter*  *, CustomFilter*  *, FilterIndex*  *, File*  *, MaxFile*  *, InitialDir*  *, Title*  *, Flags*  *, DefExt*  *, TemplateName* ** )
+([PyUNICODE](#pyunicode),[PyUNICODE](#pyunicode), int) = __GetOpenFileNameW( *hwndOwner*  *, hInstance*  *, Filter*  *, CustomFilter*  *, FilterIndex*  *, File*  *, MaxFile*  *, InitialDir*  *, Title*  *, Flags*  *, DefExt*  *, TemplateName* __ )
 Creates a dialog to allow user to select file(s) to open
 
 #### Parameters
 
 
-  -  *hwndOwner=None* :[PyHANDLE](README.md#pyhandle)
+  -  *hwndOwner=None* :[PyHANDLE](#pyhandle)
 
     Handle to window that owns dialog
 
-  -  *hInstance=None* :[PyHANDLE](README.md#pyhandle)
+  -  *hInstance=None* :[PyHANDLE](#pyhandle)
 
     Handle to module that contains dialog template
 
-  -  *Filter=None* :[PyUNICODE](README.md#pyunicode)
+  -  *Filter=None* :[PyUNICODE](#pyunicode)
 
     Contains pairs of descriptions and filespecs separated by NULLS, with a final trailing NULL. 
 
 Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
-  -  *CustomFilter=None* :[PyUNICODE](README.md#pyunicode)
+  -  *CustomFilter=None* :[PyUNICODE](#pyunicode)
 
     Description to be used for filter that user selected or typed, can also contain a filespec as above
 
@@ -3996,7 +3997,7 @@ Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
     Specifies which of the filters is initially selected, use 0 for CustomFilter
 
-  -  *File=None* :[PyUNICODE](README.md#pyunicode)
+  -  *File=None* :[PyUNICODE](#pyunicode)
 
     The file name initially displayed
 
@@ -4004,11 +4005,11 @@ Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
     Number of characters to allocate for selected filename, override if large number of files expected
 
-  -  *InitialDir=None* :[PyUNICODE](README.md#pyunicode)
+  -  *InitialDir=None* :[PyUNICODE](#pyunicode)
 
     The starting directory
 
-  -  *Title=None* :[PyUNICODE](README.md#pyunicode)
+  -  *Title=None* :[PyUNICODE](#pyunicode)
 
     The title of the dialog box
 
@@ -4016,11 +4017,11 @@ Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
     Combination of win32con.OFN_* constants
 
-  -  *DefExt=None* :[PyUNICODE](README.md#pyunicode)
+  -  *DefExt=None* :[PyUNICODE](#pyunicode)
 
     The default extension to use
 
-  -  *TemplateName=None* :[PyResourceId](README.md#pyresourceid)
+  -  *TemplateName=None* :[PyResourceId](#pyresourceid)
 
     Name or resource id of dialog box template
 
@@ -4029,9 +4030,9 @@ Accepts keyword arguments, all arguments optional
 
 Input parameters and return values are identical to[win32gui::GetSaveFileNameW](win32gui.md#win32guigetsavefilenamew)
 
-## [win32gui](README.md#win32gui).GetParent
+## [win32gui](#win32gui).GetParent
 
-int = **GetParent( *child* ** )
+int = __GetParent( *child* __ )
 Retrieves a handle to the specified child window's parent window.
 
 #### Parameters
@@ -4041,30 +4042,30 @@ Retrieves a handle to the specified child window's parent window.
 
     handle to child window
 
-## [win32gui](README.md#win32gui).GetPath
+## [win32gui](#win32gui).GetPath
 
-tuple,tuple = **GetPath( *hdc* ** )
+tuple,tuple = __GetPath( *hdc* __ )
 Returns a sequence of points that describe the current path
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context containing a finalized path.  See[win32gui::EndPath](win32gui.md#win32guiendpath)
 
 #### Return Value
 Returns a sequence of POINT tuples, and a sequence of ints designating each point's function (combination of win32con.PT_* values)
 
-## [win32gui](README.md#win32gui).GetPixel
+## [win32gui](#win32gui).GetPixel
 
-int = **GetPixel( *hdc*  *, XPos*  *, YPos* ** )
+int = __GetPixel( *hdc*  *, XPos*  *, YPos* __ )
 Returns the RGB color of a single pixel
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -4076,74 +4077,74 @@ Returns the RGB color of a single pixel
 
     Vertical pos
 
-## [win32gui](README.md#win32gui).GetPolyFillMode
+## [win32gui](#win32gui).GetPolyFillMode
 
-int = **GetPolyFillMode( *hdc* ** )
+int = __GetPolyFillMode( *hdc* __ )
 Returns the polygon filling mode for a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns win32con.ALTERNATE or win32con.WINDING
 
-## [win32gui](README.md#win32gui).GetROP2
+## [win32gui](#win32gui).GetROP2
 
-int = **GetROP2( *hdc* ** )
+int = __GetROP2( *hdc* __ )
 Returns the foreground mixing mode of a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns one of win32con.R2_* values
 
-## [win32gui](README.md#win32gui).GetRgnBox
+## [win32gui](#win32gui).GetRgnBox
 
-int,[PyRECT](README.md#pyrect)= **GetRgnBox( *hrgn* ** )
+int,[PyRECT](#pyrect)= __GetRgnBox( *hrgn* __ )
 Calculates the bounding box of a region
 
 #### Parameters
 
 
-  -  *hrgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to a region
 
 #### Return Value
 Returns type of region (COMPLEXREGION, NULLREGION, or SIMPLEREGION) and rectangle in logical units
 
-## [win32gui](README.md#win32gui).GetSaveFileNameW
+## [win32gui](#win32gui).GetSaveFileNameW
 
-([PyUNICODE](README.md#pyunicode),[PyUNICODE](README.md#pyunicode),int) = **GetSaveFileNameW( *hwndOwner*  *, hInstance*  *, Filter*  *, CustomFilter*  *, FilterIndex*  *, File*  *, MaxFile*  *, InitialDir*  *, Title*  *, Flags*  *, DefExt*  *, TemplateName* ** )
+([PyUNICODE](#pyunicode),[PyUNICODE](#pyunicode),int) = __GetSaveFileNameW( *hwndOwner*  *, hInstance*  *, Filter*  *, CustomFilter*  *, FilterIndex*  *, File*  *, MaxFile*  *, InitialDir*  *, Title*  *, Flags*  *, DefExt*  *, TemplateName* __ )
 Creates a dialog for user to specify location to save a file or files
 
 #### Parameters
 
 
-  -  *hwndOwner=None* :[PyHANDLE](README.md#pyhandle)
+  -  *hwndOwner=None* :[PyHANDLE](#pyhandle)
 
     Handle to window that owns dialog
 
-  -  *hInstance=None* :[PyHANDLE](README.md#pyhandle)
+  -  *hInstance=None* :[PyHANDLE](#pyhandle)
 
     Handle to module that contains dialog template
 
-  -  *Filter=None* :[PyUNICODE](README.md#pyunicode)
+  -  *Filter=None* :[PyUNICODE](#pyunicode)
 
     Contains pairs of descriptions and filespecs separated by NULLS, with a final trailing NULL. 
 
 Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
-  -  *CustomFilter=None* :[PyUNICODE](README.md#pyunicode)
+  -  *CustomFilter=None* :[PyUNICODE](#pyunicode)
 
     Description to be used for filter that user selected or typed, can also contain a filespec as above
 
@@ -4151,7 +4152,7 @@ Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
     Specifies which of the filters is initially selected, use 0 for CustomFilter
 
-  -  *File=None* :[PyUNICODE](README.md#pyunicode)
+  -  *File=None* :[PyUNICODE](#pyunicode)
 
     The file name initially displayed
 
@@ -4159,11 +4160,11 @@ Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
     Number of characters to allocate for selected filename(s), override if large number of files expected
 
-  -  *InitialDir=None* :[PyUNICODE](README.md#pyunicode)
+  -  *InitialDir=None* :[PyUNICODE](#pyunicode)
 
     The starting directory
 
-  -  *Title=None* :[PyUNICODE](README.md#pyunicode)
+  -  *Title=None* :[PyUNICODE](#pyunicode)
 
     The title of the dialog box
 
@@ -4171,11 +4172,11 @@ Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 
     Combination of win32con.OFN_* constants
 
-  -  *DefExt=None* :[PyUNICODE](README.md#pyunicode)
+  -  *DefExt=None* :[PyUNICODE](#pyunicode)
 
     The default extension to use
 
-  -  *TemplateName=None* :[PyResourceId](README.md#pyresourceid)
+  -  *TemplateName=None* :[PyResourceId](#pyresourceid)
 
     Name or resource id of dialog box template
 
@@ -4183,7 +4184,7 @@ Example: 'Python Scripts\\0*.py;*.pyw;*.pys\\0Text files\\0*.txt\\0'
 Accepts keyword arguments, all arguments optional
 
 #### Return Value
-Returns a tuple of 3 values ([PyUNICODE](README.md#pyunicode),[PyUNICODE](README.md#pyunicode), int):
+Returns a tuple of 3 values ([PyUNICODE](#pyunicode),[PyUNICODE](#pyunicode), int):
 First is the selected file(s). If multiple files are selected, returned string will be the directory followed by files names 
 
 separated by nulls, otherwise it will be the full path.  In other words, if you use the OFN_ALLOWMULTISELECT flag 
@@ -4199,9 +4200,9 @@ If the user presses cancel or an error occurs, a
 
 win32gui.error is raised.  If the user pressed cancel, the error number (ie, the winerror attribute of the exception) will be zero.
 
-## [win32gui](README.md#win32gui).GetScrollInfo
+## [win32gui](#win32gui).GetScrollInfo
 
-[PySCROLLINFO](README.md#pyscrollinfo)= **GetScrollInfo( *hwnd*  *, nBar*  *, mask* ** )
+[PySCROLLINFO](#pyscrollinfo)= __GetScrollInfo( *hwnd*  *, nBar*  *, mask* __ )
 Returns information about a scroll bar
 
 #### Parameters
@@ -4219,9 +4220,9 @@ Returns information about a scroll bar
 
     The mask for attributes to retrieve.
 
-## [win32gui](README.md#win32gui).GetStockObject
+## [win32gui](#win32gui).GetStockObject
 
-[PyHANDLE](README.md#pyhandle)= **GetStockObject( *Object* ** )
+[PyHANDLE](#pyhandle)= __GetStockObject( *Object* __ )
 Creates a handle to one of the standard system Gdi objects
 
 #### Parameters
@@ -4231,24 +4232,24 @@ Creates a handle to one of the standard system Gdi objects
 
     One of *_BRUSH, *_PEN, *_FONT, or *_PALLETTE constants
 
-## [win32gui](README.md#win32gui).GetStretchBltMode
+## [win32gui](#win32gui).GetStretchBltMode
 
-int = **GetStretchBltMode( *hdc* ** )
+int = __GetStretchBltMode( *hdc* __ )
 Returns the stretching mode used by[win32gui::StretchBlt](win32gui.md#win32guistretchblt)
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns one of BLACKONWHITE,COLORONCOLOR,HALFTONE,STRETCH_ANDSCANS,STRETCH_DELETESCANS,STRETCH_HALFTONE,STRETCH_ORSCANS,WHITEONBLACK, or 0 on error.
 
-## [win32gui](README.md#win32gui).GetSubMenu
+## [win32gui](#win32gui).GetSubMenu
 
-HMENU = **GetSubMenu( *hMenu*  *, nPos* ** )
+HMENU = __GetSubMenu( *hMenu*  *, nPos* __ )
 
 
 #### Parameters
@@ -4262,9 +4263,9 @@ HMENU = **GetSubMenu( *hMenu*  *, nPos* ** )
 
     
 
-## [win32gui](README.md#win32gui).GetSysColor
+## [win32gui](#win32gui).GetSysColor
 
-int = **GetSysColor( *Index* ** )
+int = __GetSysColor( *Index* __ )
 Returns the color of a window element
 
 #### Parameters
@@ -4274,9 +4275,9 @@ Returns the color of a window element
 
     One of win32con.COLOR_* values
 
-## [win32gui](README.md#win32gui).GetSysColorBrush
+## [win32gui](#win32gui).GetSysColorBrush
 
-[PyGdiHANDLE](README.md#pygdihandle)= **GetSysColorBrush( *Index* ** )
+[PyGdiHANDLE](#pygdihandle)= __GetSysColorBrush( *Index* __ )
 Creates a handle to a system color brush
 
 #### Parameters
@@ -4286,9 +4287,9 @@ Creates a handle to a system color brush
 
     Index of a window element color (win32con.COLOR_*)
 
-## [win32gui](README.md#win32gui).GetSystemMenu
+## [win32gui](#win32gui).GetSystemMenu
 
-int = **GetSystemMenu( *hwnd*  *, bRevert* ** )
+int = __GetSystemMenu( *hwnd*  *, bRevert* __ )
 
 
 #### Parameters
@@ -4305,36 +4306,36 @@ int = **GetSystemMenu( *hwnd*  *, bRevert* ** )
 #### Return Value
 The result is a HMENU to the menu.
 
-## [win32gui](README.md#win32gui).GetTextAlign
+## [win32gui](#win32gui).GetTextAlign
 
-int = **GetTextAlign( *hdc* ** )
+int = __GetTextAlign( *hdc* __ )
 Returns horizontal and vertical alignment for text in a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns combination of win32con.TA_* flags
 
-## [win32gui](README.md#win32gui).GetTextCharacterExtra
+## [win32gui](#win32gui).GetTextCharacterExtra
 
-int = **GetTextCharacterExtra( *hdc* ** )
+int = __GetTextCharacterExtra( *hdc* __ )
 Returns the space between characters
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).GetTextColor
+## [win32gui](#win32gui).GetTextColor
 
-int = **GetTextColor( *hdc* ** )
+int = __GetTextColor( *hdc* __ )
 Returns the text color for a DC
 
 #### Parameters
@@ -4347,15 +4348,15 @@ Returns the text color for a DC
 #### Return Value
 Returns an RGB color.  On error, returns CLR_INVALID
 
-## [win32gui](README.md#win32gui).GetTextExtentPoint32
+## [win32gui](#win32gui).GetTextExtentPoint32
 
-cx, cy = **GetTextExtentPoint32( *hdc*  *, str* ** )
+cx, cy = __GetTextExtentPoint32( *hdc*  *, str* __ )
 Computes the width and height of the specified string of text.
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     The device context
 
@@ -4363,39 +4364,39 @@ Computes the width and height of the specified string of text.
 
     The string to measure.
 
-## [win32gui](README.md#win32gui).GetTextFace
+## [win32gui](#win32gui).GetTextFace
 
-[PyUnicode](README.md#pyunicode)= **GetTextFace( *hdc* ** )
+[PyUnicode](#pyunicode)= __GetTextFace( *hdc* __ )
 Retrieves the name of the font currently selected in a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Comments
 Calls unicode api function (GetTextFaceW)
 
-## [win32gui](README.md#win32gui).GetTextMetrics
+## [win32gui](#win32gui).GetTextMetrics
 
-dict = **GetTextMetrics(** )
+dict = __GetTextMetrics(__ )
 Returns info for the font selected into a DC
 
-## [win32gui](README.md#win32gui).GetUpdateRgn
+## [win32gui](#win32gui).GetUpdateRgn
 
-int = **GetUpdateRgn( *hWnd*  *, hRgn*  *, Erase* ** )
+int = __GetUpdateRgn( *hWnd*  *, hRgn*  *, Erase* __ )
 Copies the update region of a window into an existing region
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
-  -  *hRgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hRgn* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to an existing region to receive update area
 
@@ -4406,36 +4407,36 @@ Copies the update region of a window into an existing region
 #### Return Value
 Returns type of region, one of COMPLEXREGION, NULLREGION, or SIMPLEREGION
 
-## [win32gui](README.md#win32gui).GetViewportExtEx
+## [win32gui](#win32gui).GetViewportExtEx
 
-(int,int) = **GetViewportExtEx( *hdc* ** )
+(int,int) = __GetViewportExtEx( *hdc* __ )
 Retrieves the viewport extents for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns the extents as (x,y) in logical units
 
-## [win32gui](README.md#win32gui).GetViewportOrgEx
+## [win32gui](#win32gui).GetViewportOrgEx
 
-(int,int) = **GetViewportOrgEx( *hdc* ** )
+(int,int) = __GetViewportOrgEx( *hdc* __ )
 Retrievs the origin for a DC's viewport
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).GetWindow
+## [win32gui](#win32gui).GetWindow
 
-int = **GetWindow( *hWnd*  *, uCmd* ** )
+int = __GetWindow( *hWnd*  *, uCmd* __ )
 returns a window that has the specified relationship (Z order or owner) to the specified window.
 
 #### Parameters
@@ -4449,9 +4450,9 @@ returns a window that has the specified relationship (Z order or owner) to the s
 
     relationship flag
 
-## [win32gui](README.md#win32gui).GetWindowDC
+## [win32gui](#win32gui).GetWindowDC
 
-int = **GetWindowDC( *hWnd* ** )
+int = __GetWindowDC( *hWnd* __ )
 returns the device context (DC) for the entire window, including title bar, menus, and scroll bars.
 
 #### Parameters
@@ -4461,24 +4462,24 @@ returns the device context (DC) for the entire window, including title bar, menu
 
     handle of window
 
-## [win32gui](README.md#win32gui).GetWindowExtEx
+## [win32gui](#win32gui).GetWindowExtEx
 
-(int,int) = **GetWindowExtEx( *hdc* ** )
+(int,int) = __GetWindowExtEx( *hdc* __ )
 Retrieves the window extents for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns the extents as (x,y) in logical units
 
-## [win32gui](README.md#win32gui).GetWindowLong
+## [win32gui](#win32gui).GetWindowLong
 
-int = **GetWindowLong( *hwnd*  *, index* ** )
+int = __GetWindowLong( *hwnd*  *, index* __ )
 
 
 #### Parameters
@@ -4492,21 +4493,21 @@ int = **GetWindowLong( *hwnd*  *, index* ** )
 
     
 
-## [win32gui](README.md#win32gui).GetWindowOrgEx
+## [win32gui](#win32gui).GetWindowOrgEx
 
-(int,int) = **GetWindowOrgEx( *hdc* ** )
+(int,int) = __GetWindowOrgEx( *hdc* __ )
 Retrievs the window origin for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).GetWindowPlacement
+## [win32gui](#win32gui).GetWindowPlacement
 
-tuple = **GetWindowPlacement(** )
+tuple = __GetWindowPlacement(__ )
 Returns placement information about the current window.
 
 #### Return Value
@@ -4515,9 +4516,9 @@ The result is a tuple of
 (flags, showCmd, (minposX, minposY), (maxposX, maxposY), (normalposX, normalposY))
 
 
-## [win32gui](README.md#win32gui).GetWindowRect
+## [win32gui](#win32gui).GetWindowRect
 
-(left, top, right, bottom) = **GetWindowRect( *hwnd* ** )
+(left, top, right, bottom) = __GetWindowRect( *hwnd* __ )
 Returns the rectangle for a window in screen coordinates
 
 #### Parameters
@@ -4527,34 +4528,34 @@ Returns the rectangle for a window in screen coordinates
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).GetWindowRgn
+## [win32gui](#win32gui).GetWindowRgn
 
-int = **GetWindowRgn( *hWnd*  *, hRgn* ** )
+int = __GetWindowRgn( *hWnd*  *, hRgn* __ )
 Copies the window region of a window into an existing region
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
-  -  *hRgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hRgn* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to an existing region that receives window region
 
 #### Return Value
 Returns type of region, one of COMPLEXREGION, NULLREGION, or SIMPLEREGION
 
-## [win32gui](README.md#win32gui).GetWindowRgnBox
+## [win32gui](#win32gui).GetWindowRgnBox
 
-int,[PyRECT](README.md#pyrect)= **GetWindowRgnBox( *hWnd* ** )
+int,[PyRECT](#pyrect)= __GetWindowRgnBox( *hWnd* __ )
 Returns the bounding box for a window's region
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window that has a window region. (see[win32gui::SetWindowRgn](win32gui.md#win32guisetwindowrgn))
 
@@ -4564,15 +4565,15 @@ Only available in winxpgui
 #### Return Value
 Returns type of region and rectangle coordinates in device units
 
-## [win32gui](README.md#win32gui).GetWindowText
+## [win32gui](#win32gui).GetWindowText
 
-string = **GetWindowText( *hwnd* ** )
+string = __GetWindowText( *hwnd* __ )
 Get the window text.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     The handle to the window
 
@@ -4583,24 +4584,24 @@ object when the string was empty, or an MBCS encoded string value
 
 otherwise.  A String is now returned in all cases.
 
-## [win32gui](README.md#win32gui).GetWorldTransform
+## [win32gui](#win32gui).GetWorldTransform
 
-[PyXFORM](README.md#pyxform)= **GetWorldTransform( *hdc* ** )
+[PyXFORM](#pyxform)= __GetWorldTransform( *hdc* __ )
 Retrieves a device context's coordinate space translation matrix
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Comments
 DC's mode must be set to GM_ADVANCED.  See[win32gui::SetGraphicsMode](win32gui.md#win32guisetgraphicsmode).
 
-## [win32gui](README.md#win32gui).GradientFill
+## [win32gui](#win32gui).GradientFill
 
- **GradientFill( *hdc*  *, Vertex*  *, Mesh*  *, Mode* ** )
+ __GradientFill( *hdc*  *, Vertex*  *, Mesh*  *, Mode* __ )
 Shades triangles or rectangles by interpolating between vertex colors
 
 #### Parameters
@@ -4610,7 +4611,7 @@ Shades triangles or rectangles by interpolating between vertex colors
 
     Handle to device context
 
-  -  *Vertex* : ([PyTRIVERTEX](README.md#pytrivertex),...)
+  -  *Vertex* : ([PyTRIVERTEX](#pytrivertex),...)
 
     Sequence of TRIVERTEX dicts defining color info
 
@@ -4622,97 +4623,97 @@ Shades triangles or rectangles by interpolating between vertex colors
 
     win32con.GRADIENT_FILL_* value defining whether to fill by triangle or by rectangle
 
-## [win32gui](README.md#win32gui).HideCaret
+## [win32gui](#win32gui).HideCaret
 
- **HideCaret( *hWnd* ** )
+ __HideCaret( *hWnd* __ )
 Hides the caret
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Window that owns the caret, can be 0.
 
 ## ILC_COLOR
- **const win32gui.ILC_COLOR;** 
+ __const win32gui.ILC_COLOR;__ 
 
 
 ## ILC_COLOR16
- **const win32gui.ILC_COLOR16;** 
+ __const win32gui.ILC_COLOR16;__ 
 
 
 ## ILC_COLOR24
- **const win32gui.ILC_COLOR24;** 
+ __const win32gui.ILC_COLOR24;__ 
 
 
 ## ILC_COLOR32
- **const win32gui.ILC_COLOR32;** 
+ __const win32gui.ILC_COLOR32;__ 
 
 
 ## ILC_COLOR4
- **const win32gui.ILC_COLOR4;** 
+ __const win32gui.ILC_COLOR4;__ 
 
 
 ## ILC_COLOR8
- **const win32gui.ILC_COLOR8;** 
+ __const win32gui.ILC_COLOR8;__ 
 
 
 ## ILC_COLORDDB
- **const win32gui.ILC_COLORDDB;** 
+ __const win32gui.ILC_COLORDDB;__ 
 
 
 ## ILC_MASK
- **const win32gui.ILC_MASK;** 
+ __const win32gui.ILC_MASK;__ 
 
 
 ## ILD_BLEND
- **const win32gui.ILD_BLEND;** 
+ __const win32gui.ILD_BLEND;__ 
 
 
 ## ILD_BLEND25
- **const win32gui.ILD_BLEND25;** 
+ __const win32gui.ILD_BLEND25;__ 
 
 
 ## ILD_BLEND50
- **const win32gui.ILD_BLEND50;** 
+ __const win32gui.ILD_BLEND50;__ 
 
 
 ## ILD_FOCUS
- **const win32gui.ILD_FOCUS;** 
+ __const win32gui.ILD_FOCUS;__ 
 
 
 ## ILD_MASK
- **const win32gui.ILD_MASK;** 
+ __const win32gui.ILD_MASK;__ 
 
 
 ## ILD_NORMAL
- **const win32gui.ILD_NORMAL;** 
+ __const win32gui.ILD_NORMAL;__ 
 
 
 ## ILD_SELECTED
- **const win32gui.ILD_SELECTED;** 
+ __const win32gui.ILD_SELECTED;__ 
 
 
 ## ILD_TRANSPARENT
- **const win32gui.ILD_TRANSPARENT;** 
+ __const win32gui.ILD_TRANSPARENT;__ 
 
 
 ## IMAGE_BITMAP
- **const win32gui.IMAGE_BITMAP;** 
+ __const win32gui.IMAGE_BITMAP;__ 
 
 
 ## IMAGE_CURSOR
- **const win32gui.IMAGE_CURSOR;** 
+ __const win32gui.IMAGE_CURSOR;__ 
 
 
 ## IMAGE_ICON
- **const win32gui.IMAGE_ICON;** 
+ __const win32gui.IMAGE_ICON;__ 
 
 
-## [win32gui](README.md#win32gui).ImageList_Add
+## [win32gui](#win32gui).ImageList_Add
 
-int = **ImageList_Add( *himl*  *, hbmImage*  *, hbmMask* ** )
+int = __ImageList_Add( *himl*  *, hbmImage*  *, hbmMask* __ )
 Adds an image or images to an image list.
 
 #### Parameters
@@ -4722,80 +4723,80 @@ Adds an image or images to an image list.
 
     Handle to the image list.
 
-  -  *hbmImage* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hbmImage* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to the bitmap that contains the image or images. The number of images is inferred from the width of the bitmap.
 
-  -  *hbmMask* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hbmMask* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to the bitmap that contains the mask. If no mask is used with the image list, this parameter is ignored
 
 #### Return Value
 Returns the index of the first new image if successful, or -1 otherwise.
 
-## [win32gui](README.md#win32gui).ImageList_Create
+## [win32gui](#win32gui).ImageList_Create
 
-HIMAGELIST = **ImageList_Create(** )
+HIMAGELIST = __ImageList_Create(__ )
 Create an image list
 
-## [win32gui](README.md#win32gui).ImageList_Destroy
+## [win32gui](#win32gui).ImageList_Destroy
 
-BOOL = **ImageList_Destroy(** )
+BOOL = __ImageList_Destroy(__ )
 Destroy an imagelist
 
-## [win32gui](README.md#win32gui).ImageList_Draw
+## [win32gui](#win32gui).ImageList_Draw
 
-BOOL = **ImageList_Draw(** )
+BOOL = __ImageList_Draw(__ )
 Draw an image on an HDC
 
-## [win32gui](README.md#win32gui).ImageList_DrawEx
+## [win32gui](#win32gui).ImageList_DrawEx
 
-BOOL = **ImageList_DrawEx(** )
+BOOL = __ImageList_DrawEx(__ )
 Draw an image on an HDC
 
-## [win32gui](README.md#win32gui).ImageList_GetIcon
+## [win32gui](#win32gui).ImageList_GetIcon
 
-HICON = **ImageList_GetIcon(** )
+HICON = __ImageList_GetIcon(__ )
 Extract an icon from an imagelist
 
-## [win32gui](README.md#win32gui).ImageList_GetImageCount
+## [win32gui](#win32gui).ImageList_GetImageCount
 
-int = **ImageList_GetImageCount(** )
+int = __ImageList_GetImageCount(__ )
 Return count of images in imagelist
 
-## [win32gui](README.md#win32gui).ImageList_LoadBitmap
+## [win32gui](#win32gui).ImageList_LoadBitmap
 
-HANDLE = **ImageList_LoadBitmap(** )
+HANDLE = __ImageList_LoadBitmap(__ )
 Creates an image list from the specified bitmap resource.
 
-## [win32gui](README.md#win32gui).ImageList_LoadImage
+## [win32gui](#win32gui).ImageList_LoadImage
 
-HANDLE = **ImageList_LoadImage(** )
+HANDLE = __ImageList_LoadImage(__ )
 Loads bitmaps, cursors or icons, creates imagelist
 
-## [win32gui](README.md#win32gui).ImageList_Remove
+## [win32gui](#win32gui).ImageList_Remove
 
-BOOL = **ImageList_Remove(** )
+BOOL = __ImageList_Remove(__ )
 Remove an image from an imagelist
 
-## [win32gui](README.md#win32gui).ImageList_Replace
+## [win32gui](#win32gui).ImageList_Replace
 
-BOOL = **ImageList_Replace(** )
+BOOL = __ImageList_Replace(__ )
 Replace an image in an imagelist with a bitmap image
 
-## [win32gui](README.md#win32gui).ImageList_ReplaceIcon
+## [win32gui](#win32gui).ImageList_ReplaceIcon
 
-BOOL = **ImageList_ReplaceIcon(** )
+BOOL = __ImageList_ReplaceIcon(__ )
 Replace an image in an imagelist with an icon image
 
-## [win32gui](README.md#win32gui).ImageList_SetBkColor
+## [win32gui](#win32gui).ImageList_SetBkColor
 
-COLORREF = **ImageList_SetBkColor(** )
+COLORREF = __ImageList_SetBkColor(__ )
 Set the background color for the imagelist
 
-## [win32gui](README.md#win32gui).ImageList_SetOverlayImage
+## [win32gui](#win32gui).ImageList_SetOverlayImage
 
- **ImageList_SetOverlayImage( *hImageList*  *, iImage*  *, iOverlay* ** )
+ __ImageList_SetOverlayImage( *hImageList*  *, iImage*  *, iOverlay* __ )
 Adds a specified image to the list of images to be used as overlay masks. An image list can have up to four overlay masks in version 4.70 and earlier and up to 15 in version 4.71. The function assigns an overlay mask index to the specified image.
 
 #### Parameters
@@ -4813,14 +4814,14 @@ Adds a specified image to the list of images to be used as overlay masks. An ima
 
     
 
-## [win32gui](README.md#win32gui).InitCommonControls
+## [win32gui](#win32gui).InitCommonControls
 
- **InitCommonControls(** )
+ __InitCommonControls(__ )
 Initializes the common controls.
 
-## [win32gui](README.md#win32gui).InitCommonControlsEx
+## [win32gui](#win32gui).InitCommonControlsEx
 
- **InitCommonControlsEx( *flag* ** )
+ __InitCommonControlsEx( *flag* __ )
 Initializes specific common controls.
 
 #### Parameters
@@ -4830,14 +4831,14 @@ Initializes specific common controls.
 
     One of the ICC_ constants
 
-## [win32gui](README.md#win32gui).InsertMenu
+## [win32gui](#win32gui).InsertMenu
 
- **InsertMenu(** )
+ __InsertMenu(__ )
 
 
-## [win32gui](README.md#win32gui).InsertMenuItem
+## [win32gui](#win32gui).InsertMenuItem
 
- **InsertMenuItem( *hMenu*  *, uItem*  *, fByPosition*  *, menuItem* ** )
+ __InsertMenuItem( *hMenu*  *, uItem*  *, fByPosition*  *, menuItem* __ )
 Inserts a menu item
 
 #### Parameters
@@ -4857,21 +4858,21 @@ Inserts a menu item
 
   -  *menuItem* : buffer
 
-    A string or buffer in the format of a **MENUITEMINFO** structure.
+    A string or buffer in the format of a __MENUITEMINFO__ structure.
 
-## [win32gui](README.md#win32gui).InvalidateRect
+## [win32gui](#win32gui).InvalidateRect
 
- **InvalidateRect( *hWnd*  *, Rect*  *, Erase* ** )
+ __InvalidateRect( *hWnd*  *, Rect*  *, Erase* __ )
 Invalidates a rectangular area of a window and adds it to the window's update region
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to the window
 
-  -  *Rect* :[PyRECT](README.md#pyrect)
+  -  *Rect* :[PyRECT](#pyrect)
 
     Client coordinates defining area to be redrawn.  Use None for entire client area.
 
@@ -4879,19 +4880,19 @@ Invalidates a rectangular area of a window and adds it to the window's update re
 
     Indicates if background should be erased
 
-## [win32gui](README.md#win32gui).InvalidateRgn
+## [win32gui](#win32gui).InvalidateRgn
 
- **InvalidateRgn( *hWnd*  *, hRgn*  *, Erase* ** )
+ __InvalidateRgn( *hWnd*  *, hRgn*  *, Erase* __ )
 Adds a region to a window's update region
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to the window
 
-  -  *hRgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hRgn* :[PyGdiHANDLE](#pygdihandle)
 
     Region to be redrawn
 
@@ -4899,41 +4900,41 @@ Adds a region to a window's update region
 
     Indidates if background should be erased
 
-## [win32gui](README.md#win32gui).InvertRect
+## [win32gui](#win32gui).InvertRect
 
- **InvertRect( *hDC*  *, rc* ** )
+ __InvertRect( *hDC*  *, rc* __ )
 Inverts the colors in a regtangular region
 
 #### Parameters
 
 
-  -  *hDC* :[PyHANDLE](README.md#pyhandle)
+  -  *hDC* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-  -  *rc* :[PyRECT](README.md#pyrect)
+  -  *rc* :[PyRECT](#pyrect)
 
     Coordinates of rectangle to invert
 
-## [win32gui](README.md#win32gui).InvertRgn
+## [win32gui](#win32gui).InvertRgn
 
- **InvertRgn( *hdc*  *, hrgn* ** )
+ __InvertRgn( *hdc*  *, hrgn* __ )
 Inverts the colors in a region
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to the device context
 
-  -  *hrgn* :[PyGdiHandle](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHandle](#pygdihandle)
 
     Handle to the region
 
-## [win32gui](README.md#win32gui).IsChild
+## [win32gui](#win32gui).IsChild
 
- **IsChild( *hWndParent*  *, hWnd* ** )
+ __IsChild( *hWndParent*  *, hWnd* __ )
 Tests whether a window is a child window or descendant window of a specified parent window
 
 #### Parameters
@@ -4947,9 +4948,9 @@ Tests whether a window is a child window or descendant window of a specified par
 
     handle to window to test
 
-## [win32gui](README.md#win32gui).IsIconic
+## [win32gui](#win32gui).IsIconic
 
- **IsIconic( *hWnd* ** )
+ __IsIconic( *hWnd* __ )
 determines whether the specified window is minimized (iconic).
 
 #### Parameters
@@ -4959,9 +4960,9 @@ determines whether the specified window is minimized (iconic).
 
     handle to window
 
-## [win32gui](README.md#win32gui).IsWindow
+## [win32gui](#win32gui).IsWindow
 
- **IsWindow( *hWnd* ** )
+ __IsWindow( *hWnd* __ )
 determines whether the specified window handle identifies an existing window.
 
 #### Parameters
@@ -4971,9 +4972,9 @@ determines whether the specified window handle identifies an existing window.
 
     handle to window
 
-## [win32gui](README.md#win32gui).IsWindowEnabled
+## [win32gui](#win32gui).IsWindowEnabled
 
-int = **IsWindowEnabled( *hwnd* ** )
+int = __IsWindowEnabled( *hwnd* __ )
 Indicates if the window is enabled.
 
 #### Parameters
@@ -4983,9 +4984,9 @@ Indicates if the window is enabled.
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).IsWindowVisible
+## [win32gui](#win32gui).IsWindowVisible
 
-int = **IsWindowVisible( *hwnd* ** )
+int = __IsWindowVisible( *hwnd* __ )
 Indicates if the window has the WS_VISIBLE style.
 
 #### Parameters
@@ -4995,56 +4996,56 @@ Indicates if the window has the WS_VISIBLE style.
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).LOGFONT
+## [win32gui](#win32gui).LOGFONT
 
-[PyLOGFONT](README.md#pylogfont)= **LOGFONT(** )
+[PyLOGFONT](#pylogfont)= __LOGFONT(__ )
 Creates a LOGFONT object.
 
 ## LR_CREATEDIBSECTION
- **const win32gui.LR_CREATEDIBSECTION;** 
+ __const win32gui.LR_CREATEDIBSECTION;__ 
 
 
 ## LR_DEFAULTCOLOR
- **const win32gui.LR_DEFAULTCOLOR;** 
+ __const win32gui.LR_DEFAULTCOLOR;__ 
 
 
 ## LR_DEFAULTSIZE
- **const win32gui.LR_DEFAULTSIZE;** 
+ __const win32gui.LR_DEFAULTSIZE;__ 
 
 
 ## LR_LOADFROMFILE
- **const win32gui.LR_LOADFROMFILE;** 
+ __const win32gui.LR_LOADFROMFILE;__ 
 
 
 ## LR_LOADMAP3DCOLORS
- **const win32gui.LR_LOADMAP3DCOLORS;** 
+ __const win32gui.LR_LOADMAP3DCOLORS;__ 
 
 
 ## LR_LOADTRANSPARENT
- **const win32gui.LR_LOADTRANSPARENT;** 
+ __const win32gui.LR_LOADTRANSPARENT;__ 
 
 
 ## LR_MONOCHROME
- **const win32gui.LR_MONOCHROME;** 
+ __const win32gui.LR_MONOCHROME;__ 
 
 
 ## LR_SHARED
- **const win32gui.LR_SHARED;** 
+ __const win32gui.LR_SHARED;__ 
 
 
 ## LR_VGACOLOR
- **const win32gui.LR_VGACOLOR;** 
+ __const win32gui.LR_VGACOLOR;__ 
 
 
-## [win32gui](README.md#win32gui).LineTo
+## [win32gui](#win32gui).LineTo
 
- **LineTo( *hdc*  *, XEnd*  *, YEnd* ** )
+ __LineTo( *hdc*  *, XEnd*  *, YEnd* __ )
 Draw a line from current position to specified point
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -5056,9 +5057,9 @@ Draw a line from current position to specified point
 
     Vertical position in logical units
 
-## [win32gui](README.md#win32gui).ListView_SortItems
+## [win32gui](#win32gui).ListView_SortItems
 
- **ListView_SortItems( *hwnd*  *, callback*  *, param* ** )
+ __ListView_SortItems( *hwnd*  *, callback*  *, param* __ )
 Uses an application-defined comparison function to sort the items of a list view control.
 
 #### Parameters
@@ -5076,9 +5077,9 @@ Uses an application-defined comparison function to sort the items of a list view
 
     The third param to the callback function.
 
-## [win32gui](README.md#win32gui).ListView_SortItemsEx
+## [win32gui](#win32gui).ListView_SortItemsEx
 
- **ListView_SortItemsEx( *hwnd*  *, callback*  *, param* ** )
+ __ListView_SortItemsEx( *hwnd*  *, callback*  *, param* __ )
 Uses an application-defined comparison function to sort the items of a list view control.
 
 #### Parameters
@@ -5096,9 +5097,9 @@ Uses an application-defined comparison function to sort the items of a list view
 
     The third param to the callback function.
 
-## [win32gui](README.md#win32gui).LoadCursor
+## [win32gui](#win32gui).LoadCursor
 
-HCURSOR = **LoadCursor( *hinstance*  *, resid* ** )
+HCURSOR = __LoadCursor( *hinstance*  *, resid* __ )
 Loads a cursor.
 
 #### Parameters
@@ -5112,9 +5113,9 @@ Loads a cursor.
 
     The resource ID
 
-## [win32gui](README.md#win32gui).LoadIcon
+## [win32gui](#win32gui).LoadIcon
 
-HCURSOR = **LoadIcon( *hinstance*  *, resource_id* ** )
+HCURSOR = __LoadIcon( *hinstance*  *, resource_id* __ )
 Loads an icon
 
 #### Parameters
@@ -5128,9 +5129,9 @@ Loads an icon
 
     
 
-## [win32gui](README.md#win32gui).LoadImage
+## [win32gui](#win32gui).LoadImage
 
-HANDLE = **LoadImage( *hinst*  *, name*  *, type*  *, cxDesired*  *, cyDesired*  *, fuLoad* ** )
+HANDLE = __LoadImage( *hinst*  *, name*  *, type*  *, cxDesired*  *, cyDesired*  *, fuLoad* __ )
 Loads a bitmap, cursor or icon
 
 #### Parameters
@@ -5160,9 +5161,9 @@ Loads a bitmap, cursor or icon
 
     
 
-## [win32gui](README.md#win32gui).LoadMenu
+## [win32gui](#win32gui).LoadMenu
 
-HMENU = **LoadMenu( *hinstance*  *, resource_id* ** )
+HMENU = __LoadMenu( *hinstance*  *, resource_id* __ )
 Loads a menu
 
 #### Parameters
@@ -5176,9 +5177,9 @@ Loads a menu
 
     
 
-## [win32gui](README.md#win32gui).MaskBlt
+## [win32gui](#win32gui).MaskBlt
 
- **MaskBlt( *Dest*  *, XDest*  *, YDest*  *, Width*  *, Height*  *, Src*  *, XSrc*  *, YSrc*  *, Mask*  *, xMask*  *, yMask*  *, Rop* ** )
+ __MaskBlt( *Dest*  *, XDest*  *, YDest*  *, Width*  *, Height*  *, Src*  *, XSrc*  *, YSrc*  *, Mask*  *, xMask*  *, yMask*  *, Rop* __ )
 Combines the color data for the source and destination 
 
 bitmaps using the specified mask and raster operation.
@@ -5186,7 +5187,7 @@ bitmaps using the specified mask and raster operation.
 #### Parameters
 
 
-  -  *Dest* :[PyHANDLE](README.md#pyhandle)
+  -  *Dest* :[PyHANDLE](#pyhandle)
 
     Destination device context handle
 
@@ -5206,7 +5207,7 @@ bitmaps using the specified mask and raster operation.
 
     Height of rect to be copied
 
-  -  *Src* :[PyHANDLE](README.md#pyhandle)
+  -  *Src* :[PyHANDLE](#pyhandle)
 
     Source DC handle
 
@@ -5218,7 +5219,7 @@ bitmaps using the specified mask and raster operation.
 
     Y pos of src rect
 
-  -  *Mask* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *Mask* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to monochrome bitmap used to mask color
 
@@ -5240,11 +5241,11 @@ This function is not supported on Win9x.
 #### Win32 API References
 
 
-  - Search for *MaskBlt* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=maskblt),[google](README.md#http://www.google.com/search?q=maskblt)or[google groups](README.md#http://groups.google.com/groups?q=maskblt).
+  - Search for *MaskBlt* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=maskblt),[google](#http://www.google.com/search?q=maskblt)or[google groups](#http://groups.google.com/groups?q=maskblt).
 
-## [win32gui](README.md#win32gui).MessageBeep
+## [win32gui](#win32gui).MessageBeep
 
- **MessageBeep( *type* ** )
+ __MessageBeep( *type* __ )
 Plays a waveform sound.
 
 #### Parameters
@@ -5254,9 +5255,9 @@ Plays a waveform sound.
 
     The type of the beep
 
-## [win32gui](README.md#win32gui).MessageBox
+## [win32gui](#win32gui).MessageBox
 
-int = **MessageBox( *parent*  *, text*  *, caption*  *, flags* ** )
+int = __MessageBox( *parent*  *, text*  *, caption*  *, flags* __ )
 Displays a message box
 
 #### Parameters
@@ -5266,11 +5267,11 @@ Displays a message box
 
     The parent window
 
-  -  *text* : string/[PyUnicode](README.md#pyunicode)
+  -  *text* : string/[PyUnicode](#pyunicode)
 
     The text for the message box
 
-  -  *caption* : string/[PyUnicode](README.md#pyunicode)
+  -  *caption* : string/[PyUnicode](#pyunicode)
 
     The caption for the message box
 
@@ -5278,9 +5279,9 @@ Displays a message box
 
     
 
-## [win32gui](README.md#win32gui).ModifyMenu
+## [win32gui](#win32gui).ModifyMenu
 
- **ModifyMenu( *hMnu*  *, uPosition*  *, uFlags*  *, uIDNewItem*  *, newItem* ** )
+ __ModifyMenu( *hMnu*  *, uPosition*  *, uFlags*  *, uIDNewItem*  *, newItem* __ )
 Changes an existing menu item. This function is used to specify the content, appearance, and behavior of the menu item.
 
 #### Parameters
@@ -5306,19 +5307,19 @@ Changes an existing menu item. This function is used to specify the content, app
 
     menu item content
 
-## [win32gui](README.md#win32gui).ModifyWorldTransform
+## [win32gui](#win32gui).ModifyWorldTransform
 
- **ModifyWorldTransform( *hdc*  *, Xform*  *, Mode* ** )
+ __ModifyWorldTransform( *hdc*  *, Xform*  *, Mode* __ )
 Combines a coordinate tranformation with device context's current transformation
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-  -  *Xform* :[PyXFORM](README.md#pyxform)
+  -  *Xform* :[PyXFORM](#pyxform)
 
     Transformation to be applied.  Ignored if Mode is MWT_IDENTITY.
 
@@ -5329,15 +5330,15 @@ Combines a coordinate tranformation with device context's current transformation
 #### Comments
 DC's mode must be set to GM_ADVANCED.  See[win32gui::SetGraphicsMode](win32gui.md#win32guisetgraphicsmode).
 
-## [win32gui](README.md#win32gui).MoveToEx
+## [win32gui](#win32gui).MoveToEx
 
-(int, int) = **MoveToEx( *hdc*  *, X*  *, Y* ** )
+(int, int) = __MoveToEx( *hdc*  *, X*  *, Y* __ )
 Changes the current drawing position
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Device context handle
 
@@ -5352,9 +5353,9 @@ Changes the current drawing position
 #### Return Value
 Returns the previous position as (X, Y)
 
-## [win32gui](README.md#win32gui).MoveWindow
+## [win32gui](#win32gui).MoveWindow
 
- **MoveWindow( *hwnd*  *, x*  *, y*  *, width*  *, height*  *, bRepaint* ** )
+ __MoveWindow( *hwnd*  *, x*  *, y*  *, width*  *, height*  *, bRepaint* __ )
 
 
 #### Parameters
@@ -5385,78 +5386,78 @@ Returns the previous position as (X, Y)
     
 
 ## NIF_ICON
- **const win32gui.NIF_ICON;** 
+ __const win32gui.NIF_ICON;__ 
 
 
 ## NIF_INFO
- **const win32gui.NIF_INFO;** 
+ __const win32gui.NIF_INFO;__ 
 
 
 ## NIF_MESSAGE
- **const win32gui.NIF_MESSAGE;** 
+ __const win32gui.NIF_MESSAGE;__ 
 
 
 ## NIF_STATE
- **const win32gui.NIF_STATE;** 
+ __const win32gui.NIF_STATE;__ 
 #define NIF_GUID NIF_GUID
 
 ## NIF_TIP
- **const win32gui.NIF_TIP;** 
+ __const win32gui.NIF_TIP;__ 
 
 
 ## NIIF_ERROR
- **const win32gui.NIIF_ERROR;** 
+ __const win32gui.NIIF_ERROR;__ 
 
 
 ## NIIF_ICON_MASK
- **const win32gui.NIIF_ICON_MASK;** 
+ __const win32gui.NIIF_ICON_MASK;__ 
 
 
 ## NIIF_INFO
- **const win32gui.NIIF_INFO;** 
+ __const win32gui.NIIF_INFO;__ 
 #define NIIF_USER NIIF_USER
 
 ## NIIF_NONE
- **const win32gui.NIIF_NONE;** 
+ __const win32gui.NIIF_NONE;__ 
 
 
 ## NIIF_NOSOUND
- **const win32gui.NIIF_NOSOUND;** 
+ __const win32gui.NIIF_NOSOUND;__ 
 
 
 ## NIIF_WARNING
- **const win32gui.NIIF_WARNING;** 
+ __const win32gui.NIIF_WARNING;__ 
 
 
 ## NIM_ADD
- **const win32gui.NIM_ADD;** 
+ __const win32gui.NIM_ADD;__ 
 Adds an icon to the status area.
 
 ## NIM_DELETE
- **const win32gui.NIM_DELETE;** 
+ __const win32gui.NIM_DELETE;__ 
 Deletes an icon from the status area.
 
 ## NIM_MODIFY
- **const win32gui.NIM_MODIFY;** 
+ __const win32gui.NIM_MODIFY;__ 
 Modifies an icon in the status area.
 
 ## NIM_SETFOCUS
- **const win32gui.NIM_SETFOCUS;** 
+ __const win32gui.NIM_SETFOCUS;__ 
 Give the icon focus.
 
 ## NIM_SETVERSION
- **const win32gui.NIM_SETVERSION;** 
+ __const win32gui.NIM_SETVERSION;__ 
 
 
-## [win32gui](README.md#win32gui).OffsetRgn
+## [win32gui](#win32gui).OffsetRgn
 
-int = **OffsetRgn( *hrgn*  *, XOffset*  *, YOffset* ** )
+int = __OffsetRgn( *hrgn*  *, XOffset*  *, YOffset* __ )
 Relocates a region
 
 #### Parameters
 
 
-  -  *hrgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to a region
 
@@ -5471,43 +5472,43 @@ Relocates a region
 #### Return Value
 Returns type of region (COMPLEXREGION, NULLREGION, or SIMPLEREGION)
 
-## [win32gui](README.md#win32gui).PaintDesktop
+## [win32gui](#win32gui).PaintDesktop
 
- **PaintDesktop( *hdc* ** )
+ __PaintDesktop( *hdc* __ )
 Fills a DC with the destop background
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-## [win32gui](README.md#win32gui).PaintRgn
+## [win32gui](#win32gui).PaintRgn
 
- **PaintRgn( *hdc*  *, hrgn* ** )
+ __PaintRgn( *hdc*  *, hrgn* __ )
 Paints a region with current brush
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to the device context
 
-  -  *hrgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to the region
 
-## [win32gui](README.md#win32gui).PatBlt
+## [win32gui](#win32gui).PatBlt
 
- **PatBlt( *hdc*  *, XLeft*  *, YLeft*  *, Width*  *, Height*  *, Rop* ** )
+ __PatBlt( *hdc*  *, XLeft*  *, YLeft*  *, Width*  *, Height*  *, Rop* __ )
 Paints a rectangle by combining the current brush with existing colors
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -5531,24 +5532,24 @@ Paints a rectangle by combining the current brush with existing colors
 
     Raster operation, one of PATCOPY,PATINVERT,DSTINVERT,BLACKNESS,WHITENESS
 
-## [win32gui](README.md#win32gui).PathToRegion
+## [win32gui](#win32gui).PathToRegion
 
-[PyGdiHANDLE](README.md#pygdihandle)= **PathToRegion( *hdc* ** )
+[PyGdiHANDLE](#pygdihandle)= __PathToRegion( *hdc* __ )
 Converts a closed path in a DC to a region
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context that contains a closed path. See[win32gui::EndPath](win32gui.md#win32guiendpath).
 
 #### Comments
 On success, the path is deselected from the DC
 
-## [win32gui](README.md#win32gui).PeekMessage
+## [win32gui](#win32gui).PeekMessage
 
-MSG = **PeekMessage( *hwnd*  *, filterMin*  *, filterMax*  *, removalOptions* ** )
+MSG = __PeekMessage( *hwnd*  *, filterMin*  *, filterMax*  *, removalOptions* __ )
 
 
 #### Parameters
@@ -5570,15 +5571,15 @@ MSG = **PeekMessage( *hwnd*  *, filterMin*  *, filterMax*  *, removalOptions* **
 
     
 
-## [win32gui](README.md#win32gui).Pie
+## [win32gui](#win32gui).Pie
 
- **Pie( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* ** )
+ __Pie( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, XRadial1*  *, YRadial1*  *, XRadial2*  *, YRadial2* __ )
 Draws a section of an ellipse cut by 2 radials
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Device context on which to draw
 
@@ -5614,15 +5615,15 @@ Draws a section of an ellipse cut by 2 radials
 
     Vertical pos of Radial2 endpoint
 
-## [win32gui](README.md#win32gui).PlgBlt
+## [win32gui](#win32gui).PlgBlt
 
- **PlgBlt( *Dest*  *, Point*  *, Src*  *, XSrc*  *, YSrc*  *, Width*  *, Height*  *, Mask*  *, xMask*  *, yMask* ** )
+ __PlgBlt( *Dest*  *, Point*  *, Src*  *, XSrc*  *, YSrc*  *, Width*  *, Height*  *, Mask*  *, xMask*  *, yMask* __ )
 Copies color from a rectangle into a parallelogram
 
 #### Parameters
 
 
-  -  *Dest* :[PyHANDLE](README.md#pyhandle)
+  -  *Dest* :[PyHANDLE](#pyhandle)
 
     Destination DC
 
@@ -5630,7 +5631,7 @@ Copies color from a rectangle into a parallelogram
 
     Sequence of 3 POINT tuples (x,y) describing a paralellogram
 
-  -  *Src* :[PyHANDLE](README.md#pyhandle)
+  -  *Src* :[PyHANDLE](#pyhandle)
 
     Source device context
 
@@ -5650,7 +5651,7 @@ Copies color from a rectangle into a parallelogram
 
     Height of source rectangle
 
-  -  *Mask=None* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *Mask=None* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to monochrome bitmap to mask source, can be None
 
@@ -5662,15 +5663,15 @@ Copies color from a rectangle into a parallelogram
 
     y pos in mask
 
-## [win32gui](README.md#win32gui).PolyBezier
+## [win32gui](#win32gui).PolyBezier
 
- **PolyBezier( *hdc*  *, Points* ** )
+ __PolyBezier( *hdc*  *, Points* __ )
 Draws a series of Bezier curves starting from first point specified.
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -5681,15 +5682,15 @@ Draws a series of Bezier curves starting from first point specified.
 #### Comments
 Number of points must be a multiple of 3 plus 1.
 
-## [win32gui](README.md#win32gui).PolyBezierTo
+## [win32gui](#win32gui).PolyBezierTo
 
- **PolyBezierTo( *hdc*  *, Points* ** )
+ __PolyBezierTo( *hdc*  *, Points* __ )
 Draws a series of Bezier curves starting from current drawing position.
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -5700,15 +5701,15 @@ Draws a series of Bezier curves starting from current drawing position.
 #### Comments
 Points must contain 3 points for each curve.  Current position is updated with last endpoint.
 
-## [win32gui](README.md#win32gui).Polygon
+## [win32gui](#win32gui).Polygon
 
- **Polygon( *hdc*  *, Points* ** )
+ __Polygon( *hdc*  *, Points* __ )
 Draws a closed filled polygon defined by a sequence of points
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -5716,15 +5717,15 @@ Draws a closed filled polygon defined by a sequence of points
 
     Sequence of POINT tuples: ((x,y),...)
 
-## [win32gui](README.md#win32gui).Polyline
+## [win32gui](#win32gui).Polyline
 
- **Polyline( *hdc*  *, Points* ** )
+ __Polyline( *hdc*  *, Points* __ )
 Connects a sequence of points using currently selected pen
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -5732,15 +5733,15 @@ Connects a sequence of points using currently selected pen
 
     Sequence of POINT tuples: ((x,y),...)
 
-## [win32gui](README.md#win32gui).PolylineTo
+## [win32gui](#win32gui).PolylineTo
 
- **PolylineTo( *hdc*  *, Points* ** )
+ __PolylineTo( *hdc*  *, Points* __ )
 Draws a series of lines starting from current position.  Updates current position with end point.
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -5748,9 +5749,9 @@ Draws a series of lines starting from current position.  Updates current positio
 
     Sequence of POINT tuples: ((x,y),...)
 
-## [win32gui](README.md#win32gui).PostMessage
+## [win32gui](#win32gui).PostMessage
 
- **PostMessage( *hwnd*  *, message*  *, wparam*  *, lparam* ** )
+ __PostMessage( *hwnd*  *, message*  *, wparam*  *, lparam* __ )
 
 
 #### Parameters
@@ -5772,9 +5773,9 @@ Draws a series of lines starting from current position.  Updates current positio
 
     An integer whose value depends on the message
 
-## [win32gui](README.md#win32gui).PostQuitMessage
+## [win32gui](#win32gui).PostQuitMessage
 
- **PostQuitMessage( *rc* ** )
+ __PostQuitMessage( *rc* __ )
 
 
 #### Parameters
@@ -5784,9 +5785,9 @@ Draws a series of lines starting from current position.  Updates current positio
 
     
 
-## [win32gui](README.md#win32gui).PostThreadMessage
+## [win32gui](#win32gui).PostThreadMessage
 
- **PostThreadMessage( *threadId*  *, message*  *, wparam*  *, lparam* ** )
+ __PostThreadMessage( *threadId*  *, message*  *, wparam*  *, lparam* __ )
 
 
 #### Parameters
@@ -5808,9 +5809,9 @@ Draws a series of lines starting from current position.  Updates current positio
 
     An integer whose value depends on the message
 
-## [win32gui](README.md#win32gui).PtInRect
+## [win32gui](#win32gui).PtInRect
 
-boolean = **PtInRect( *rect*  *, point* ** )
+boolean = __PtInRect( *rect*  *, point* __ )
 Determines if a rectangle contains a point
 
 #### Parameters
@@ -5824,15 +5825,15 @@ Determines if a rectangle contains a point
 
     The point
 
-## [win32gui](README.md#win32gui).PtInRegion
+## [win32gui](#win32gui).PtInRegion
 
-boolean = **PtInRegion( *hrgn*  *, X*  *, Y* ** )
+boolean = __PtInRegion( *hrgn*  *, X*  *, Y* __ )
 Determines if a region contains a point
 
 #### Parameters
 
 
-  -  *hrgn* :[PyGdiHandle](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHandle](#pygdihandle)
 
     Handle to a region
 
@@ -5844,9 +5845,9 @@ Determines if a region contains a point
 
     Y coord
 
-## [win32gui](README.md#win32gui).PumpMessages
+## [win32gui](#win32gui).PumpMessages
 
- **PumpMessages(** )
+ __PumpMessages(__ )
 Runs a message loop until a WM_QUIT message is received.
 
 #### See Also
@@ -5857,9 +5858,9 @@ Runs a message loop until a WM_QUIT message is received.
 #### Return Value
 Returns exit code from PostQuitMessage when a WM_QUIT message is received
 
-## [win32gui](README.md#win32gui).PumpWaitingMessages
+## [win32gui](#win32gui).PumpWaitingMessages
 
-int = **PumpWaitingMessages(** )
+int = __PumpWaitingMessages(__ )
 Pumps all waiting messages for the current thread.
 
 #### See Also
@@ -5870,14 +5871,14 @@ Pumps all waiting messages for the current thread.
 #### Win32 API References
 
 
-  - Search for *PeekMessage and DispatchMessage* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=peekmessage and dispatchmessage),[google](README.md#http://www.google.com/search?q=peekmessage and dispatchmessage)or[google groups](README.md#http://groups.google.com/groups?q=peekmessage and dispatchmessage).
+  - Search for *PeekMessage and DispatchMessage* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=peekmessage and dispatchmessage),[google](#http://www.google.com/search?q=peekmessage and dispatchmessage)or[google groups](#http://groups.google.com/groups?q=peekmessage and dispatchmessage).
 
 #### Return Value
 Returns non-zero (exit code from PostQuitMessage) if a WM_QUIT message was received, else 0
 
-## [win32gui](README.md#win32gui).PyGetArraySignedLong
+## [win32gui](#win32gui).PyGetArraySignedLong
 
-object = **PyGetArraySignedLong( *array*  *, index* ** )
+object = __PyGetArraySignedLong( *array*  *, index* __ )
 Returns a signed long from an array object at specified index
 
 #### Parameters
@@ -5891,9 +5892,9 @@ Returns a signed long from an array object at specified index
 
     index of offset
 
-## [win32gui](README.md#win32gui).PyGetBufferAddressAndLen
+## [win32gui](#win32gui).PyGetBufferAddressAndLen
 
-object = **PyGetBufferAddressAndLen( *obj* ** )
+object = __PyGetBufferAddressAndLen( *obj* __ )
 Returns a buffer object address and len
 
 #### Parameters
@@ -5903,9 +5904,9 @@ Returns a buffer object address and len
 
     the buffer object
 
-## [win32gui](README.md#win32gui).PyGetMemory
+## [win32gui](#win32gui).PyGetMemory
 
-object = **PyGetMemory( *addr*  *, len* ** )
+object = __PyGetMemory( *addr*  *, len* __ )
 Returns a buffer object from and address and length
 
 #### Parameters
@@ -5922,9 +5923,9 @@ Returns a buffer object from and address and length
 #### Comments
 If zero is passed a ValueError will be raised.
 
-## [win32gui](README.md#win32gui).PyGetString
+## [win32gui](#win32gui).PyGetString
 
-string = **PyGetString( *addr*  *, len* ** )
+string = __PyGetString( *addr*  *, len* __ )
 Returns a string from an address.
 
 #### Parameters
@@ -5943,9 +5944,9 @@ string must be NULL terminated.
 #### Return Value
 If win32gui.UNICODE is True, this will return a unicode object.
 
-## [win32gui](README.md#win32gui).PySetMemory
+## [win32gui](#win32gui).PySetMemory
 
-object = **PySetMemory( *addr*  *, String* ** )
+object = __PySetMemory( *addr*  *, String* __ )
 Copies bytes to an address.
 
 #### Parameters
@@ -5959,9 +5960,9 @@ Copies bytes to an address.
 
     The string to copy
 
-## [win32gui](README.md#win32gui).PySetString
+## [win32gui](#win32gui).PySetString
 
-object = **PySetString( *addr*  *, String*  *, maxLen* ** )
+object = __PySetString( *addr*  *, String*  *, maxLen* __ )
 Copies a string to an address (null terminated). 
 
 You almost certainly should use[win32gui::PySetMemory](win32gui.md#win32guipysetmemory)instead.
@@ -5981,31 +5982,31 @@ You almost certainly should use[win32gui::PySetMemory](win32gui.md#win32guipyset
 
     Maximum number of chars to copy (optional)
 
-## [win32gui](README.md#win32gui).RectInRegion
+## [win32gui](#win32gui).RectInRegion
 
-boolean = **RectInRegion( *hrgn*  *, rc* ** )
+boolean = __RectInRegion( *hrgn*  *, rc* __ )
 Determines if a region and rectangle overlap at any point
 
 #### Parameters
 
 
-  -  *hrgn* :[PyGdiHandle](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHandle](#pygdihandle)
 
     Handle to a region
 
-  -  *rc* :[PyRECT](README.md#pyrect)
+  -  *rc* :[PyRECT](#pyrect)
 
     Rectangle coordinates in logical units
 
-## [win32gui](README.md#win32gui).Rectangle
+## [win32gui](#win32gui).Rectangle
 
- **Rectangle( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect* ** )
+ __Rectangle( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect* __ )
 Creates a solid rectangle using currently selected pen and brush
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to device context
 
@@ -6025,15 +6026,15 @@ Creates a solid rectangle using currently selected pen and brush
 
     Position of bottom edge of rectangle
 
-## [win32gui](README.md#win32gui).RedrawWindow
+## [win32gui](#win32gui).RedrawWindow
 
- **RedrawWindow( *hWnd*  *, rcUpdate*  *, hrgnUpdate*  *, flags* ** )
+ __RedrawWindow( *hWnd*  *, rcUpdate*  *, hrgnUpdate*  *, flags* __ )
 Causes a portion of a window to be redrawn
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to window to be redrawn
 
@@ -6041,7 +6042,7 @@ Causes a portion of a window to be redrawn
 
     Rectangle (left, top, right, bottom) identifying part of window to be redrawn, can be None
 
-  -  *hrgnUpdate* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hrgnUpdate* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to region to be redrawn, can be None to indicate entire client area
 
@@ -6049,27 +6050,27 @@ Causes a portion of a window to be redrawn
 
     Combination of win32con.RDW_* flags
 
-## [win32gui](README.md#win32gui).RegisterClass
+## [win32gui](#win32gui).RegisterClass
 
-int = **RegisterClass( *wndClass* ** )
+int = __RegisterClass( *wndClass* __ )
 Registers a window class.
 
 #### Parameters
 
 
-  -  *wndClass* :[PyWNDCLASS](README.md#pywndclass)
+  -  *wndClass* :[PyWNDCLASS](#pywndclass)
 
     An object describing the window class.
 
-## [win32gui](README.md#win32gui).RegisterDeviceNotification
+## [win32gui](#win32gui).RegisterDeviceNotification
 
-[PyHDEVNOTIFY](README.md#pyhdevnotify)= **RegisterDeviceNotification( *handle*  *, filter*  *, flags* ** )
+[PyHDEVNOTIFY](#pyhdevnotify)= __RegisterDeviceNotification( *handle*  *, filter*  *, flags* __ )
 Registers the device or type of device for which a window will receive notifications.
 
 #### Parameters
 
 
-  -  *handle* :[PyHANDLE](README.md#pyhandle)
+  -  *handle* :[PyHANDLE](#pyhandle)
 
     The handle to a window or a service
 
@@ -6084,17 +6085,17 @@ Registers the device or type of device for which a window will receive notificat
 #### Win32 API References
 
 
-  - Search for *RegisterDeviceNotification* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=registerdevicenotification),[google](README.md#http://www.google.com/search?q=registerdevicenotification)or[google groups](README.md#http://groups.google.com/groups?q=registerdevicenotification).
+  - Search for *RegisterDeviceNotification* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=registerdevicenotification),[google](#http://www.google.com/search?q=registerdevicenotification)or[google groups](#http://groups.google.com/groups?q=registerdevicenotification).
 
-## [win32gui](README.md#win32gui).RegisterHotKey
+## [win32gui](#win32gui).RegisterHotKey
 
- **RegisterHotKey( *hWnd*  *, id*  *, Modifiers*  *, vk* ** )
+ __RegisterHotKey( *hWnd*  *, id*  *, Modifiers*  *, vk* __ )
 Registers a hotkey for a window
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to window that will receive WM_HOTKEY messages
 
@@ -6113,11 +6114,11 @@ Registers a hotkey for a window
 #### Win32 API References
 
 
-  - Search for *RegisterHotKey* at[msdn](README.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=registerhotkey),[google](README.md#http://www.google.com/search?q=registerhotkey)or[google groups](README.md#http://groups.google.com/groups?q=registerhotkey).
+  - Search for *RegisterHotKey* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=registerhotkey),[google](#http://www.google.com/search?q=registerhotkey)or[google groups](#http://groups.google.com/groups?q=registerhotkey).
 
-## [win32gui](README.md#win32gui).RegisterWindowMessage
+## [win32gui](#win32gui).RegisterWindowMessage
 
-int = **RegisterWindowMessage( *name* ** )
+int = __RegisterWindowMessage( *name* __ )
 Defines a new window message that is guaranteed to be unique throughout the system. The message value can be used when sending or posting messages.
 
 #### Parameters
@@ -6127,14 +6128,14 @@ Defines a new window message that is guaranteed to be unique throughout the syst
 
     The string
 
-## [win32gui](README.md#win32gui).ReleaseCapture
+## [win32gui](#win32gui).ReleaseCapture
 
- **ReleaseCapture(** )
+ __ReleaseCapture(__ )
 Releases the moust capture for a window.
 
-## [win32gui](README.md#win32gui).ReleaseDC
+## [win32gui](#win32gui).ReleaseDC
 
-int = **ReleaseDC( *hWnd*  *, hDC* ** )
+int = __ReleaseDC( *hWnd*  *, hDC* __ )
 Releases a device context.
 
 #### Parameters
@@ -6148,9 +6149,9 @@ Releases a device context.
 
     handle to device context
 
-## [win32gui](README.md#win32gui).RemoveMenu
+## [win32gui](#win32gui).RemoveMenu
 
- **RemoveMenu( *hmenu*  *, position*  *, flags* ** )
+ __RemoveMenu( *hmenu*  *, position*  *, flags* __ )
 
 
 #### Parameters
@@ -6168,9 +6169,9 @@ Releases a device context.
 
     
 
-## [win32gui](README.md#win32gui).ReplyMessage
+## [win32gui](#win32gui).ReplyMessage
 
-int = **ReplyMessage( *result* ** )
+int = __ReplyMessage( *result* __ )
 Used to reply to a message sent through the SendMessage function without returning control to the function that called SendMessage.
 
 #### Parameters
@@ -6180,15 +6181,15 @@ Used to reply to a message sent through the SendMessage function without returni
 
     Specifies the result of the message processing. The possible values are based on the message sent.
 
-## [win32gui](README.md#win32gui).RestoreDC
+## [win32gui](#win32gui).RestoreDC
 
- **RestoreDC( *hdc*  *, SavedDC* ** )
+ __RestoreDC( *hdc*  *, SavedDC* __ )
 Restores a device context state
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6196,15 +6197,15 @@ Restores a device context state
 
     Identifier of state to be restored, as returned by[win32gui::SaveDC](win32gui.md#win32guisavedc).
 
-## [win32gui](README.md#win32gui).RoundRect
+## [win32gui](#win32gui).RoundRect
 
- **RoundRect( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, Width*  *, Height* ** )
+ __RoundRect( *hdc*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect*  *, Width*  *, Height* __ )
 Draws a rectangle with elliptically rounded corners, filled using using current brush
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to device context
 
@@ -6232,30 +6233,30 @@ Draws a rectangle with elliptically rounded corners, filled using using current 
 
     Height of ellipse
 
-## [win32gui](README.md#win32gui).SaveDC
+## [win32gui](#win32gui).SaveDC
 
-int = **SaveDC( *hdc* ** )
+int = __SaveDC( *hdc* __ )
 Save the state of a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to device context
 
 #### Return Value
 Returns a value identifying the state that can be passed to[win32gui::RestoreDC](win32gui.md#win32guirestoredc).  On error, returns 0.
 
-## [win32gui](README.md#win32gui).ScreenToClient
+## [win32gui](#win32gui).ScreenToClient
 
-(int,int) = **ScreenToClient( *hWnd*  *, Point* ** )
+(int,int) = __ScreenToClient( *hWnd*  *, Point* __ )
 Convert screen coordinates to client coords
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
@@ -6263,9 +6264,9 @@ Convert screen coordinates to client coords
 
     Screen coordinates to be converted
 
-## [win32gui](README.md#win32gui).ScrollWindowEx
+## [win32gui](#win32gui).ScrollWindowEx
 
-int,[PyRECT](README.md#pyrect)= **ScrollWindowEx( *hWnd*  *, dx*  *, dy*  *, rcScroll*  *, rcClip*  *, hrgnUpdate*  *, flags* ** )
+int,[PyRECT](#pyrect)= __ScrollWindowEx( *hWnd*  *, dx*  *, dy*  *, rcScroll*  *, rcClip*  *, hrgnUpdate*  *, flags* __ )
 scrolls the content of the specified window's client area.
 
 #### Parameters
@@ -6283,15 +6284,15 @@ scrolls the content of the specified window's client area.
 
     Amount of vertical scrolling, in device units
 
-  -  *rcScroll* :[PyRECT](README.md#pyrect)
+  -  *rcScroll* :[PyRECT](#pyrect)
 
     Scroll rectangle, can be None for entire client area
 
-  -  *rcClip* :[PyRECT](README.md#pyrect)
+  -  *rcClip* :[PyRECT](#pyrect)
 
     Clipping rectangle, can be None
 
-  -  *hrgnUpdate* :[PyGdiHandle](README.md#pygdihandle)
+  -  *hrgnUpdate* :[PyGdiHandle](#pygdihandle)
 
     Handle to region which will be updated with area invalidated by scroll operation, can be None
 
@@ -6304,9 +6305,9 @@ If SW_SMOOTHSCROLL is specified, use upper 16 bits to specify time in millisecon
 #### Return Value
 Returns the type of region invalidated by scrolling, and a rectangle defining the affected area.
 
-## [win32gui](README.md#win32gui).SelectObject
+## [win32gui](#win32gui).SelectObject
 
-HGDIOBJ = **SelectObject( *hdc*  *, object* ** )
+HGDIOBJ = __SelectObject( *hdc*  *, object* __ )
 Selects an object into the specified device context (DC). The new object replaces the previous object of the same type.
 
 #### Parameters
@@ -6320,9 +6321,9 @@ Selects an object into the specified device context (DC). The new object replace
 
     The GDI object
 
-## [win32gui](README.md#win32gui).SendMessage
+## [win32gui](#win32gui).SendMessage
 
-int = **SendMessage( *hwnd*  *, message*  *, wparam*  *, lparam* ** )
+int = __SendMessage( *hwnd*  *, message*  *, wparam*  *, lparam* __ )
 Sends a message to the window.
 
 #### Parameters
@@ -6344,9 +6345,9 @@ Sends a message to the window.
 
     Type depends on the message
 
-## [win32gui](README.md#win32gui).SendMessageTimeout
+## [win32gui](#win32gui).SendMessageTimeout
 
-int,int = **SendMessageTimeout( *hwnd*  *, message*  *, wparam*  *, lparam*  *, flags*  *, timeout* ** )
+int,int = __SendMessageTimeout( *hwnd*  *, message*  *, wparam*  *, lparam*  *, flags*  *, timeout* __ )
 Sends a message to the window.
 
 #### Parameters
@@ -6383,9 +6384,9 @@ If the timeout period expires, a pywintypes.error exception will be thrown,
 
 with zero as the error code.  See the Microsoft documentation for more information.
 
-## [win32gui](README.md#win32gui).SetActiveWindow
+## [win32gui](#win32gui).SetActiveWindow
 
-HWND = **SetActiveWindow( *hwnd* ** )
+HWND = __SetActiveWindow( *hwnd* __ )
 
 
 #### Parameters
@@ -6395,15 +6396,15 @@ HWND = **SetActiveWindow( *hwnd* ** )
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).SetArcDirection
+## [win32gui](#win32gui).SetArcDirection
 
-int = **SetArcDirection( *hdc*  *, ArcDirection* ** )
+int = __SetArcDirection( *hdc*  *, ArcDirection* __ )
 Sets the drawing direction for arcs and rectangles
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6414,15 +6415,15 @@ Sets the drawing direction for arcs and rectangles
 #### Return Value
 Returns the previous direction, or 0 on error.
 
-## [win32gui](README.md#win32gui).SetBkColor
+## [win32gui](#win32gui).SetBkColor
 
-int = **SetBkColor( *hdc*  *, color* ** )
+int = __SetBkColor( *hdc*  *, color* __ )
 Sets the background color for a device context
 
 #### Parameters
 
 
-  -  *hdc* : int/[PyHANDLE](README.md#pyhandle)
+  -  *hdc* : int/[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6433,15 +6434,15 @@ Sets the background color for a device context
 #### Return Value
 Returns the previous color, or CLR_INVALID on failure
 
-## [win32gui](README.md#win32gui).SetBkMode
+## [win32gui](#win32gui).SetBkMode
 
-int = **SetBkMode( *hdc*  *, BkMode* ** )
+int = __SetBkMode( *hdc*  *, BkMode* __ )
 Sets the background mode for a device context
 
 #### Parameters
 
 
-  -  *hdc* : int/[PyHANDLE](README.md#pyhandle)
+  -  *hdc* : int/[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6452,14 +6453,14 @@ Sets the background mode for a device context
 #### Return Value
 Returns the previous mode, or 0 on failure
 
-## [win32gui](README.md#win32gui).SetCapture
+## [win32gui](#win32gui).SetCapture
 
- **SetCapture(** )
+ __SetCapture(__ )
 Captures the mouse for the specified window.
 
-## [win32gui](README.md#win32gui).SetCaretPos
+## [win32gui](#win32gui).SetCaretPos
 
- **SetCaretPos( *x*  *, y* ** )
+ __SetCaretPos( *x*  *, y* __ )
 Changes the position of the caret
 
 #### Parameters
@@ -6473,9 +6474,9 @@ Changes the position of the caret
 
     vertical position
 
-## [win32gui](README.md#win32gui).SetCursor
+## [win32gui](#win32gui).SetCursor
 
-HCURSOR = **SetCursor( *hcursor* ** )
+HCURSOR = __SetCursor( *hcursor* __ )
 
 
 #### Parameters
@@ -6485,15 +6486,15 @@ HCURSOR = **SetCursor( *hcursor* ** )
 
     
 
-## [win32gui](README.md#win32gui).SetDlgItemInt
+## [win32gui](#win32gui).SetDlgItemInt
 
- **SetDlgItemInt( *hDlg*  *, IDDlgItem*  *, Value*  *, Signed* ** )
+ __SetDlgItemInt( *hDlg*  *, IDDlgItem*  *, Value*  *, Signed* __ )
 Places an integer value in a dialog control
 
 #### Parameters
 
 
-  -  *hDlg* :[PyHANDLE](README.md#pyhandle)
+  -  *hDlg* :[PyHANDLE](#pyhandle)
 
     Handle to a dialog window
 
@@ -6509,15 +6510,15 @@ Places an integer value in a dialog control
 
     Indicates if the input value is signed
 
-## [win32gui](README.md#win32gui).SetDlgItemText
+## [win32gui](#win32gui).SetDlgItemText
 
- **SetDlgItemText( *hDlg*  *, IDDlgItem*  *, String* ** )
+ __SetDlgItemText( *hDlg*  *, IDDlgItem*  *, String* __ )
 Sets the text for a window or control
 
 #### Parameters
 
 
-  -  *hDlg* :[PyHANDLE](README.md#pyhandle)
+  -  *hDlg* :[PyHANDLE](#pyhandle)
 
     Handle to a dialog window
 
@@ -6529,9 +6530,9 @@ Sets the text for a window or control
 
     The text to put in the control
 
-## [win32gui](README.md#win32gui).SetDoubleClickTime
+## [win32gui](#win32gui).SetDoubleClickTime
 
- **SetDoubleClickTime( *newVal* ** )
+ __SetDoubleClickTime( *newVal* __ )
 
 
 #### Parameters
@@ -6541,9 +6542,9 @@ Sets the text for a window or control
 
     
 
-## [win32gui](README.md#win32gui).SetFocus
+## [win32gui](#win32gui).SetFocus
 
- **SetFocus( *hwnd* ** )
+ __SetFocus( *hwnd* __ )
 Sets focus to the specified window.
 
 #### Parameters
@@ -6553,9 +6554,9 @@ Sets focus to the specified window.
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).SetForegroundWindow
+## [win32gui](#win32gui).SetForegroundWindow
 
-HWND = **SetForegroundWindow( *hwnd* ** )
+HWND = __SetForegroundWindow( *hwnd* __ )
 
 
 #### Parameters
@@ -6565,15 +6566,15 @@ HWND = **SetForegroundWindow( *hwnd* ** )
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).SetGraphicsMode
+## [win32gui](#win32gui).SetGraphicsMode
 
-int = **SetGraphicsMode( *hdc*  *, Mode* ** )
+int = __SetGraphicsMode( *hdc*  *, Mode* __ )
 Enables or disables advanced graphics features for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6584,15 +6585,15 @@ Enables or disables advanced graphics features for a DC
 #### Return Value
 Returns the previous mode, one of win32con.GM_COMPATIBLE or win32con.GM_ADVANCED
 
-## [win32gui](README.md#win32gui).SetLayeredWindowAttributes
+## [win32gui](#win32gui).SetLayeredWindowAttributes
 
- **SetLayeredWindowAttributes( *hwnd*  *, Key*  *, Alpha*  *, Flags* ** )
+ __SetLayeredWindowAttributes( *hwnd*  *, Key*  *, Alpha*  *, Flags* __ )
 Sets the opacity and transparency color key of a layered window.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     handle to the layered window
 
@@ -6612,15 +6613,15 @@ Sets the opacity and transparency color key of a layered window.
 This function only exists on Win2k and later
 Accepts keyword arguments
 
-## [win32gui](README.md#win32gui).SetLayout
+## [win32gui](#win32gui).SetLayout
 
-int = **SetLayout( *hdc*  *, Layout* ** )
+int = __SetLayout( *hdc*  *, Layout* __ )
 Sets the layout for a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6631,15 +6632,15 @@ Sets the layout for a device context
 #### Return Value
 Returns the previous layout mode
 
-## [win32gui](README.md#win32gui).SetMapMode
+## [win32gui](#win32gui).SetMapMode
 
-int = **SetMapMode( *hdc*  *, MapMode* ** )
+int = __SetMapMode( *hdc*  *, MapMode* __ )
 Sets the method used for translating logical units to device units
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6650,9 +6651,9 @@ Sets the method used for translating logical units to device units
 #### Return Value
 Returns the previous mapping mode, one of win32con.MM_* constants
 
-## [win32gui](README.md#win32gui).SetMenu
+## [win32gui](#win32gui).SetMenu
 
- **SetMenu( *hwnd*  *, hmenu* ** )
+ __SetMenu( *hwnd*  *, hmenu* __ )
 Sets the menu for the specified window.
 
 #### Parameters
@@ -6666,9 +6667,9 @@ Sets the menu for the specified window.
 
     
 
-## [win32gui](README.md#win32gui).SetMenuDefaultItem
+## [win32gui](#win32gui).SetMenuDefaultItem
 
- **SetMenuDefaultItem( *hMenu*  *, uItem*  *, fByPos* ** )
+ __SetMenuDefaultItem( *hMenu*  *, uItem*  *, fByPos* __ )
 
 
 #### Parameters
@@ -6686,9 +6687,9 @@ Sets the menu for the specified window.
 
     
 
-## [win32gui](README.md#win32gui).SetMenuInfo
+## [win32gui](#win32gui).SetMenuInfo
 
- **SetMenuInfo( *hmenu*  *, info* ** )
+ __SetMenuInfo( *hmenu*  *, info* __ )
 Sets information for a specified menu.
 
 #### Parameters
@@ -6698,7 +6699,7 @@ Sets information for a specified menu.
 
     handle to menu
 
-  -  *info* : **MENUINFO** 
+  -  *info* : __MENUINFO__ 
 
     menu information in the format of a buffer.
 
@@ -6706,9 +6707,9 @@ Sets information for a specified menu.
 See win32gui_struct for helper functions.
 This function will raise NotImplementedError on early platforms (eg, Windows NT.)
 
-## [win32gui](README.md#win32gui).SetMenuItemBitmaps
+## [win32gui](#win32gui).SetMenuItemBitmaps
 
- **SetMenuItemBitmaps( *hMenu*  *, uPosition*  *, uFlags*  *, hBitmapUnchecked*  *, hBitmapChecked* ** )
+ __SetMenuItemBitmaps( *hMenu*  *, uPosition*  *, uFlags*  *, hBitmapUnchecked*  *, hBitmapChecked* __ )
 Associates the specified bitmap with a menu item. Whether the menu item is selected or clear, the system displays the appropriate bitmap next to the menu item.
 
 #### Parameters
@@ -6726,17 +6727,17 @@ Associates the specified bitmap with a menu item. Whether the menu item is selec
 
     options
 
-  -  *hBitmapUnchecked* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hBitmapUnchecked* :[PyGdiHANDLE](#pygdihandle)
 
     handle to unchecked bitmap, can be None
 
-  -  *hBitmapChecked* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hBitmapChecked* :[PyGdiHANDLE](#pygdihandle)
 
     handle to checked bitmap, can be None
 
-## [win32gui](README.md#win32gui).SetMenuItemInfo
+## [win32gui](#win32gui).SetMenuItemInfo
 
- **SetMenuItemInfo( *hMenu*  *, uItem*  *, fByPosition*  *, menuItem* ** )
+ __SetMenuItemInfo( *hMenu*  *, uItem*  *, fByPosition*  *, menuItem* __ )
 Sets menu information
 
 #### Parameters
@@ -6756,17 +6757,17 @@ Sets menu information
 
   -  *menuItem* : buffer
 
-    A string or buffer in the format of a **MENUITEMINFO** structure.
+    A string or buffer in the format of a __MENUITEMINFO__ structure.
 
-## [win32gui](README.md#win32gui).SetMiterLimit
+## [win32gui](#win32gui).SetMiterLimit
 
-float = **SetMiterLimit( *hdc*  *, NewLimit* ** )
+float = __SetMiterLimit( *hdc*  *, NewLimit* __ )
 Set the limit of miter joins for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6777,9 +6778,9 @@ Set the limit of miter joins for a DC
 #### Return Value
 Returns the previous limit
 
-## [win32gui](README.md#win32gui).SetParent
+## [win32gui](#win32gui).SetParent
 
-int = **SetParent( *child*  *, child* ** )
+int = __SetParent( *child*  *, child* __ )
 changes the parent window of the specified child window.
 
 #### Parameters
@@ -6793,15 +6794,15 @@ changes the parent window of the specified child window.
 
     handle to new parent window
 
-## [win32gui](README.md#win32gui).SetPixel
+## [win32gui](#win32gui).SetPixel
 
-int = **SetPixel( *hdc*  *, X*  *, Y*  *, Color* ** )
+int = __SetPixel( *hdc*  *, X*  *, Y*  *, Color* __ )
 Set the color of a single pixel
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6820,15 +6821,15 @@ Set the color of a single pixel
 #### Return Value
 Returns the RGB color actually set, which may be different from the one passed in
 
-## [win32gui](README.md#win32gui).SetPixelV
+## [win32gui](#win32gui).SetPixelV
 
- **SetPixelV( *hdc*  *, X*  *, Y*  *, Color* ** )
+ __SetPixelV( *hdc*  *, X*  *, Y*  *, Color* __ )
 Sets the color of a single pixel to an approximation of specified color
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6844,15 +6845,15 @@ Sets the color of a single pixel to an approximation of specified color
 
     RGB color to be set.
 
-## [win32gui](README.md#win32gui).SetPolyFillMode
+## [win32gui](#win32gui).SetPolyFillMode
 
-int = **SetPolyFillMode( *hdc*  *, PolyFillMode* ** )
+int = __SetPolyFillMode( *hdc*  *, PolyFillMode* __ )
 Sets the polygon filling mode for a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6863,15 +6864,15 @@ Sets the polygon filling mode for a device context
 #### Return Value
 Returns the previous mode, one of win32con.ALTERNATE or win32con.WINDING
 
-## [win32gui](README.md#win32gui).SetROP2
+## [win32gui](#win32gui).SetROP2
 
-int = **SetROP2( *hdc*  *, DrawMode* ** )
+int = __SetROP2( *hdc*  *, DrawMode* __ )
 Sets the foreground mixing mode of a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6882,15 +6883,15 @@ Sets the foreground mixing mode of a DC
 #### Return Value
 Returns previous mode
 
-## [win32gui](README.md#win32gui).SetRectRgn
+## [win32gui](#win32gui).SetRectRgn
 
- **SetRectRgn( *hrgn*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect* ** )
+ __SetRectRgn( *hrgn*  *, LeftRect*  *, TopRect*  *, RightRect*  *, BottomRect* __ )
 Makes an existing region rectangular
 
 #### Parameters
 
 
-  -  *hrgn* :[PyGdiHandle](README.md#pygdihandle)
+  -  *hrgn* :[PyGdiHandle](#pygdihandle)
 
     Handle to a region
 
@@ -6910,9 +6911,9 @@ Makes an existing region rectangular
 
     Bottom edge in logical units
 
-## [win32gui](README.md#win32gui).SetScrollInfo
+## [win32gui](#win32gui).SetScrollInfo
 
- **SetScrollInfo( *hwnd*  *, nBar*  *, scollInfo*  *, bRedraw* ** )
+ __SetScrollInfo( *hwnd*  *, nBar*  *, scollInfo*  *, bRedraw* __ )
 Sets information about a scroll-bar
 
 #### Parameters
@@ -6926,7 +6927,7 @@ Sets information about a scroll-bar
 
     Identifies the bar.
 
-  -  *scollInfo* :[PySCROLLINFO](README.md#pyscrollinfo)
+  -  *scollInfo* :[PySCROLLINFO](#pyscrollinfo)
 
     Scollbar info.
 
@@ -6937,15 +6938,15 @@ Sets information about a scroll-bar
 #### Return Value
 Returns an int with the current position of the scroll box.
 
-## [win32gui](README.md#win32gui).SetStretchBltMode
+## [win32gui](#win32gui).SetStretchBltMode
 
-int = **SetStretchBltMode( *hdc*  *, StretchMode* ** )
+int = __SetStretchBltMode( *hdc*  *, StretchMode* __ )
 Sets the stretching mode used by[win32gui::StretchBlt](win32gui.md#win32guistretchblt)
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6957,15 +6958,15 @@ Sets the stretching mode used by[win32gui::StretchBlt](win32gui.md#win32guistret
 If the function succeeds, the return value is the previous stretching mode.
 If the function fails, the return value is zero.
 
-## [win32gui](README.md#win32gui).SetTextAlign
+## [win32gui](#win32gui).SetTextAlign
 
-int = **SetTextAlign( *hdc*  *, Mode* ** )
+int = __SetTextAlign( *hdc*  *, Mode* __ )
 Sets horizontal and vertical alignment for text in a device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6976,15 +6977,15 @@ Sets horizontal and vertical alignment for text in a device context
 #### Return Value
 Returns the previous alignment flags
 
-## [win32gui](README.md#win32gui).SetTextCharacterExtra
+## [win32gui](#win32gui).SetTextCharacterExtra
 
-int = **SetTextCharacterExtra( *hdc*  *, CharExtra* ** )
+int = __SetTextCharacterExtra( *hdc*  *, CharExtra* __ )
 Sets the spacing between characters
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -6995,9 +6996,9 @@ Sets the spacing between characters
 #### Return Value
 Returns the previous spacing
 
-## [win32gui](README.md#win32gui).SetTextColor
+## [win32gui](#win32gui).SetTextColor
 
-int = **SetTextColor( *hdc*  *, color* ** )
+int = __SetTextColor( *hdc*  *, color* __ )
 Changes the text color for a device context
 
 #### Parameters
@@ -7014,15 +7015,15 @@ Changes the text color for a device context
 #### Return Value
 Returns the previous color, or CLR_INVALID on failure
 
-## [win32gui](README.md#win32gui).SetViewportExtEx
+## [win32gui](#win32gui).SetViewportExtEx
 
-(int,int) = **SetViewportExtEx( *hdc*  *, XExtent*  *, YExtent* ** )
+(int,int) = __SetViewportExtEx( *hdc*  *, XExtent*  *, YExtent* __ )
 Changes the viewport extents for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -7037,15 +7038,15 @@ Changes the viewport extents for a DC
 #### Return Value
 Returns the previous extents as (x,y) in logical units
 
-## [win32gui](README.md#win32gui).SetViewportOrgEx
+## [win32gui](#win32gui).SetViewportOrgEx
 
-(int,int) = **SetViewportOrgEx( *hdc*  *, X*  *, Y* ** )
+(int,int) = __SetViewportOrgEx( *hdc*  *, X*  *, Y* __ )
 Changes the viewport origin for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -7060,15 +7061,15 @@ Changes the viewport origin for a DC
 #### Return Value
 Returns the previous origin as (x,y)
 
-## [win32gui](README.md#win32gui).SetWindowExtEx
+## [win32gui](#win32gui).SetWindowExtEx
 
-(int,int) = **SetWindowExtEx( *hdc*  *, XExtent*  *, YExtent* ** )
+(int,int) = __SetWindowExtEx( *hdc*  *, XExtent*  *, YExtent* __ )
 Changes the window extents for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -7083,15 +7084,15 @@ Changes the window extents for a DC
 #### Return Value
 Returns the previous extents
 
-## [win32gui](README.md#win32gui).SetWindowLong
+## [win32gui](#win32gui).SetWindowLong
 
-int = **SetWindowLong( *hwnd*  *, index*  *, value* ** )
+int = __SetWindowLong( *hwnd*  *, index*  *, value* __ )
 Places a long value at the specified offset into the extra window memory of the given window.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     The handle to the window
 
@@ -7111,15 +7112,15 @@ must be a callable object (or a dictionary) to use as the
 
 new window procedure.
 
-## [win32gui](README.md#win32gui).SetWindowOrgEx
+## [win32gui](#win32gui).SetWindowOrgEx
 
-(int,int) = **SetWindowOrgEx( *hdc*  *, X*  *, Y* ** )
+(int,int) = __SetWindowOrgEx( *hdc*  *, X*  *, Y* __ )
 Changes the window origin for a DC
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
@@ -7134,15 +7135,15 @@ Changes the window origin for a DC
 #### Return Value
 Returns the previous origin
 
-## [win32gui](README.md#win32gui).SetWindowPlacement
+## [win32gui](#win32gui).SetWindowPlacement
 
- **SetWindowPlacement( *hWnd*  *, placement* ** )
+ __SetWindowPlacement( *hWnd*  *, placement* __ )
 Sets the windows placement
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
@@ -7150,19 +7151,19 @@ Sets the windows placement
 
     A tuple representing the WINDOWPLACEMENT structure.
 
-## [win32gui](README.md#win32gui).SetWindowPos
+## [win32gui](#win32gui).SetWindowPos
 
- **SetWindowPos( *hWnd*  *, InsertAfter*  *, X*  *, Y*  *, cx*  *, cy*  *, Flags* ** )
+ __SetWindowPos( *hWnd*  *, InsertAfter*  *, X*  *, Y*  *, cx*  *, cy*  *, Flags* __ )
 Sets the position and size of a window
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to the window
 
-  -  *InsertAfter* :[PyHANDLE](README.md#pyhandle)
+  -  *InsertAfter* :[PyHANDLE](#pyhandle)
 
     Window that hWnd will be placed below.  Can be a window handle or one of HWND_BOTTOM,HWND_NOTOPMOST,HWND_TOP, or HWND_TOPMOST
 
@@ -7186,19 +7187,19 @@ Sets the position and size of a window
 
     Combination of win32con.SWP_* flags
 
-## [win32gui](README.md#win32gui).SetWindowRgn
+## [win32gui](#win32gui).SetWindowRgn
 
- **SetWindowRgn( *hWnd*  *, hRgn*  *, Redraw* ** )
+ __SetWindowRgn( *hWnd*  *, hRgn*  *, Redraw* __ )
 Sets the visible region of a window
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
-  -  *hRgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hRgn* :[PyGdiHANDLE](#pygdihandle)
 
     Handle to region to be set, can be None
 
@@ -7211,33 +7212,33 @@ On success, the system assumes ownership of the region so you should call the ha
 
 method to prevent it from being automatically closed.
 
-## [win32gui](README.md#win32gui).SetWindowText
+## [win32gui](#win32gui).SetWindowText
 
- **SetWindowText(** )
+ __SetWindowText(__ )
 Sets the window text.
 
-## [win32gui](README.md#win32gui).SetWorldTransform
+## [win32gui](#win32gui).SetWorldTransform
 
- **SetWorldTransform( *hdc*  *, Xform* ** )
+ __SetWorldTransform( *hdc*  *, Xform* __ )
 Transforms a device context's coordinate space
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
-  -  *Xform* :[PyXFORM](README.md#pyxform)
+  -  *Xform* :[PyXFORM](#pyxform)
 
     Matrix defining the transformation
 
 #### Comments
 DC's mode must be set to GM_ADVANCED.  See[win32gui::SetGraphicsMode](win32gui.md#win32guisetgraphicsmode).
 
-## [win32gui](README.md#win32gui).Shell_NotifyIcon
+## [win32gui](#win32gui).Shell_NotifyIcon
 
- **Shell_NotifyIcon( *Message*  *, nid* ** )
+ __Shell_NotifyIcon( *Message*  *, nid* __ )
 Adds, removes or modifies a taskbar icon.
 
 #### Parameters
@@ -7247,25 +7248,25 @@ Adds, removes or modifies a taskbar icon.
 
     One of win32gui.NIM_* flags
 
-  -  *nid* :[PyNOTIFYICONDATA](README.md#pynotifyicondata)
+  -  *nid* :[PyNOTIFYICONDATA](#pynotifyicondata)
 
     Tuple containing NOTIFYICONDATA info
 
-## [win32gui](README.md#win32gui).ShowCaret
+## [win32gui](#win32gui).ShowCaret
 
- **ShowCaret( *hWnd* ** )
+ __ShowCaret( *hWnd* __ )
 Shows the caret at its current position
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Window that owns the caret, can be 0.
 
-## [win32gui](README.md#win32gui).ShowWindow
+## [win32gui](#win32gui).ShowWindow
 
-boolean = **ShowWindow( *hWnd*  *, cmdShow* ** )
+boolean = __ShowWindow( *hWnd*  *, cmdShow* __ )
 Shows or hides a window and changes its state
 
 #### Parameters
@@ -7279,9 +7280,9 @@ Shows or hides a window and changes its state
 
     Combination of win32con.SW_* flags
 
-## [win32gui](README.md#win32gui).StretchBlt
+## [win32gui](#win32gui).StretchBlt
 
- **StretchBlt( *hdcDest*  *, x*  *, y*  *, width*  *, height*  *, hdcSrc*  *, nXSrc*  *, nYSrc*  *, nWidthSrc*  *, nHeightSrc*  *, dwRop* ** )
+ __StretchBlt( *hdcDest*  *, x*  *, y*  *, width*  *, height*  *, hdcSrc*  *, nXSrc*  *, nYSrc*  *, nWidthSrc*  *, nHeightSrc*  *, dwRop* __ )
 Copies a bitmap from a source rectangle into a destination 
 
 rectangle, stretching or compressing the bitmap to fit the dimensions of the 
@@ -7335,33 +7336,33 @@ destination rectangle, if necessary
 
     raster operation code
 
-## [win32gui](README.md#win32gui).StrokeAndFillPath
+## [win32gui](#win32gui).StrokeAndFillPath
 
- **StrokeAndFillPath( *hdc* ** )
+ __StrokeAndFillPath( *hdc* __ )
 Combines operations of StrokePath and FillPath with no overlap
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context that contains a closed path. See[win32gui::EndPath](win32gui.md#win32guiendpath).
 
-## [win32gui](README.md#win32gui).StrokePath
+## [win32gui](#win32gui).StrokePath
 
- **StrokePath( *hdc* ** )
+ __StrokePath( *hdc* __ )
 Draws current path with currently selected pen
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context that contains a closed path. See[win32gui::EndPath](win32gui.md#win32guiendpath).
 
-## [win32gui](README.md#win32gui).SystemParametersInfo
+## [win32gui](#win32gui).SystemParametersInfo
 
- **SystemParametersInfo( *Action*  *, Param*  *, WinIni* ** )
+ __SystemParametersInfo( *Action*  *, Param*  *, WinIni* __ )
 Queries or sets system-wide parameters. This function can also update the user profile while setting a parameter.
 
 #### Parameters
@@ -7379,7 +7380,7 @@ Queries or sets system-wide parameters. This function can also update the user p
 
     Flags specifying whether change should be permanent, and if all windows should be notified of change. Combination of SPIF_UPDATEINIFILE, SPIF_SENDCHANGE, SPIF_SENDWININICHANGE
 
- **Action**  **Input/return type** SPI_GETDESKWALLPAPERReturns the path to the bmp used as wallpaperSPI_SETDESKWALLPAPERParam should be a string specifying a .bmp fileSPI_GETDROPSHADOWReturns a booleanSPI_GETFLATMENUReturns a booleanSPI_GETFONTSMOOTHINGReturns a booleanSPI_GETICONTITLEWRAPReturns a booleanSPI_GETSNAPTODEFBUTTONReturns a booleanSPI_GETBEEPReturns a booleanSPI_GETBLOCKSENDINPUTRESETSReturns a booleanSPI_GETMENUUNDERLINESReturns a booleanSPI_GETKEYBOARDCUESReturns a booleanSPI_GETKEYBOARDPREFReturns a booleanSPI_GETSCREENSAVEACTIVEReturns a booleanSPI_GETSCREENSAVERRUNNINGReturns a booleanSPI_GETMENUDROPALIGNMENTReturns a boolean (True indicates left aligned, False right aligned)SPI_GETMENUFADEReturns a booleanSPI_GETLOWPOWERACTIVEReturns a booleanSPI_GETPOWEROFFACTIVEReturns a booleanSPI_GETCOMBOBOXANIMATIONReturns a booleanSPI_GETCURSORSHADOWReturns a booleanSPI_GETGRADIENTCAPTIONSReturns a booleanSPI_GETHOTTRACKINGReturns a booleanSPI_GETLISTBOXSMOOTHSCROLLINGReturns a booleanSPI_GETMENUANIMATIONReturns a booleanSPI_GETSELECTIONFADEReturns a booleanSPI_GETTOOLTIPANIMATIONReturns a booleanSPI_GETTOOLTIPFADEReturns a boolean (TRUE=fade, False=slide)SPI_GETUIEFFECTSReturns a booleanSPI_GETACTIVEWINDOWTRACKINGReturns a booleanSPI_GETACTIVEWNDTRKZORDERReturns a booleanSPI_GETDRAGFULLWINDOWSReturns a booleanSPI_GETSHOWIMEUIReturns a booleanSPI_GETMOUSECLICKLOCKReturns a booleanSPI_GETMOUSESONARReturns a booleanSPI_GETMOUSEVANISHReturns a booleanSPI_GETSCREENREADERReturns a booleanSPI_GETSHOWSOUNDSReturns a booleanSPI_SETDROPSHADOWParam must be a booleanSPI_SETDROPSHADOWParam must be a booleanSPI_SETMENUUNDERLINESParam must be a booleanSPI_SETKEYBOARDCUESParam must be a booleanSPI_SETMENUFADEParam must be a booleanSPI_SETCOMBOBOXANIMATIONParam must be a booleanSPI_SETCURSORSHADOWParam must be a booleanSPI_SETGRADIENTCAPTIONSParam must be a booleanSPI_SETHOTTRACKINGParam must be a booleanSPI_SETLISTBOXSMOOTHSCROLLINGParam must be a booleanSPI_SETMENUANIMATIONParam must be a booleanSPI_SETSELECTIONFADEParam must be a booleanSPI_SETTOOLTIPANIMATIONParam must be a booleanSPI_SETTOOLTIPFADEParam must be a booleanSPI_SETUIEFFECTSParam must be a booleanSPI_SETACTIVEWINDOWTRACKINGParam must be a booleanSPI_SETACTIVEWNDTRKZORDERParam must be a booleanSPI_SETMOUSESONARParam must be a booleanSPI_SETMOUSEVANISHParam must be a booleanSPI_SETMOUSECLICKLOCKParam must be a booleanSPI_SETFONTSMOOTHINGParam should specify a booleanSPI_SETICONTITLEWRAPParam should specify a booleanSPI_SETSNAPTODEFBUTTONParam is a booleanSPI_SETBEEPParam is a booleanSPI_SETBLOCKSENDINPUTRESETSParam is a booleanSPI_SETKEYBOARDPREFParam is a booleanSPI_SETMOUSEBUTTONSWAPParam is a booleanSPI_SETSCREENSAVEACTIVEParam is a booleanSPI_SETMENUDROPALIGNMENTParam is a boolean (True=left aligned, False=right aligned)SPI_SETLOWPOWERACTIVEParam is a booleanSPI_SETPOWEROFFACTIVEParam is a booleanSPI_SETDRAGFULLWINDOWSParam is a booleanSPI_SETSHOWIMEUIParam is a booleanSPI_SETSCREENREADERParam is a booleanSPI_SETSHOWSOUNDSParam is a booleanSPI_SETMOUSETRAILSParam should be an int specifying the nbr of cursors in the trail (0 or 1 means disabled)SPI_SETWHEELSCROLLLINESParam is an int specifying nbr of linesSPI_SETKEYBOARDDELAYParam is an int in the range 0 - 3SPI_SETKEYBOARDSPEEDParam is an int in the range 0 - 31SPI_SETDOUBLECLICKTIMEParam is an int (in milliseconds),  Use[win32gui::GetDoubleClickTime](win32gui.md#win32guigetdoubleclicktime)to retrieve the value.SPI_SETDOUBLECLKWIDTHParam is an int.  Use win32api.GetSystemMetrics(SM_CXDOUBLECLK) to retrieve the value.SPI_SETDOUBLECLKHEIGHTParam is an int,  Use win32api.GetSystemMetrics(SM_CYDOUBLECLK) to retrieve the value.SPI_SETMOUSEHOVERHEIGHTParam is an intSPI_SETMOUSEHOVERWIDTHParam is an intSPI_SETMOUSEHOVERTIMEParam is an intSPI_SETSCREENSAVETIMEOUTParam is an int specifying the timeout in secondsSPI_SETMENUSHOWDELAYParam is an int specifying the shortcut menu delay in millisecondsSPI_SETLOWPOWERTIMEOUTParam is an int (in seconds)SPI_SETPOWEROFFTIMEOUTParam is an int (in seconds)SPI_SETDRAGHEIGHTParam is an int. Use win32api.GetSystemMetrics(SM_CYDRAG) to retrieve the value.SPI_SETDRAGWIDTHParam is an int. Use win32api.GetSystemMetrics(SM_CXDRAG) to retrieve the value.SPI_SETBORDERParam is an intSPI_GETFONTSMOOTHINGCONTRASTReturns an intSPI_GETFONTSMOOTHINGTYPEReturns an intSPI_GETMOUSETRAILSReturns an int specifying the nbr of cursor images in the trail, 0 or 1 indicates disabledSPI_GETWHEELSCROLLLINESReturns the nbr of lines to scroll for the mouse wheelSPI_GETKEYBOARDDELAYReturns an intSPI_GETKEYBOARDSPEEDReturns an intSPI_GETMOUSESPEEDReturns an intSPI_GETMOUSEHOVERHEIGHTReturns an intSPI_GETMOUSEHOVERWIDTHReturns an intSPI_GETMOUSEHOVERTIMEReturns an intSPI_GETSCREENSAVETIMEOUTReturns an int (idle time in seconds)SPI_GETMENUSHOWDELAYReturns an int (shortcut delay in milliseconds)SPI_GETLOWPOWERTIMEOUTReturns an int (in seconds)SPI_GETPOWEROFFTIMEOUTReturns an int (in seconds)SPI_GETACTIVEWNDTRKTIMEOUTReturns an int (milliseconds)SPI_GETBORDERReturns an intSPI_GETCARETWIDTHReturns an intSPI_GETFOREGROUNDFLASHCOUNTReturns an intSPI_GETFOREGROUNDLOCKTIMEOUTReturns an intSPI_GETFOCUSBORDERHEIGHTReturns an intSPI_GETFOCUSBORDERWIDTHReturns an intSPI_GETMOUSECLICKLOCKTIMEReturns an int (in milliseconds)SPI_SETFONTSMOOTHINGCONTRASTParam should be an int in the range 1000 to 2200SPI_SETFONTSMOOTHINGTYPEParam should be one of the FE_FONTSMOOTHING* constantsSPI_SETMOUSESPEEDParam should be an int in the range 1 - 20SPI_SETACTIVEWNDTRKTIMEOUTParam is an int (in milliseconds)SPI_SETCARETWIDTHParam is an int (in pixels)SPI_SETFOREGROUNDFLASHCOUNTParam is an intSPI_SETFOREGROUNDLOCKTIMEOUTParam is an int (in milliseconds)SPI_SETFOCUSBORDERHEIGHTReturns an intSPI_SETFOCUSBORDERWIDTHReturns an intSPI_SETMOUSECLICKLOCKTIMEParam is an int (in milliseconds)SPI_GETICONTITLELOGFONTReturns a[PyLOGFONT](README.md#pylogfont),SPI_SETICONTITLELOGFONTParam must be a[PyLOGFONT](README.md#pylogfont),SPI_SETLANGTOGGLEParam is ignored. Sets the language toggle hotkey from registry key HKCU\\keyboard layout\\toggleSPI_SETICONSReloads the system icons.  Param is not usedSPI_GETMOUSEReturns a tuple of 3 ints containing the x and y mouse thresholds and the acceleration factor.SPI_SETMOUSEParam should be a sequence of 3 intsSPI_GETDEFAULTINPUTLANGReturns an int (locale id for default language)SPI_SETDEFAULTINPUTLANGParam is an int containing a locale idSPI_GETANIMATIONReturns an intSPI_SETANIMATIONParam is an intSPI_ICONHORIZONTALSPACINGFunctions as both a get and set operation.  If Param is None, functions as a get operation, otherwise Param is an int to be set as the new valueSPI_ICONVERTICALSPACINGFunctions as both a get and set operation.  If Param is None, functions as a get operation, otherwise Param is an int to be set as the new valueSPI_GETNONCLIENTMETRICSParam must be None.  The result is a dict.SPI_SETNONCLIENTMETRICSParam is a dict in the form of a NONCLIENTMETRICS struct, as returned by SPI_GETNONCLIENTMETRICS operationSPI_GETMINIMIZEDMETRICSReturns a dict representing a MINIMIZEDMETRICS struct.  Param is not used.SPI_SETMINIMIZEDMETRICSParam should be a MINIMIZEDMETRICS dict as returned by SPI_GETMINIMIZEDMETRICS actionSPI_SETDESKPATTERNUnsupported (obsolete)SPI_GETFASTTASKSWITCHUnsupported (obsolete)SPI_SETFASTTASKSWITCHUnsupported (obsolete)SPI_SETSCREENSAVERRUNNINGUnsupported (documented as internal use only)SPI_SCREENSAVERRUNNINGSame as SPI_SETSCREENSAVERRUNNINGSPI_SETPENWINDOWSUnsupported (only relevant for win95)SPI_GETWINDOWSEXTENSIONUnsupported (only relevant for win95)SPI_GETGRIDGRANULARITYUnsupported (obsolete)SPI_SETGRIDGRANULARITYUnsupported (obsolete)SPI_LANGDRIVERUnsupported (use is not documented)SPI_GETFONTSMOOTHINGORIENTATIONUnsupported (use is not documented)SPI_SETFONTSMOOTHINGORIENTATIONUnsupported (use is not documented)SPI_SETHANDHELDUnsupported (use is not documented)SPI_GETICONMETRICSNot implemented yetSPI_SETICONMETRICSNot implemented yetSPI_GETWORKAREANot implemented yetSPI_SETWORKAREANot implemented yetSPI_GETSERIALKEYSNot implemented yetSPI_SETSERIALKEYSNot implemented yetSPI_SETMOUSEKEYSNot implemented yetSPI_GETMOUSEKEYSNot implemented yetSPI_GETHIGHCONTRASTNot implemented yetSPI_SETHIGHCONTRASTNot implemented yetSPI_GETSOUNDSENTRYNot implemented yetSPI_SETSOUNDSENTRYNot implemented yetSPI_GETSTICKYKEYSNot implemented yetSPI_SETSTICKYKEYSNot implemented yetSPI_GETTOGGLEKEYSNot implemented yetSPI_SETTOGGLEKEYSNot implemented yetSPI_GETACCESSTIMEOUTNot implemented yetSPI_SETACCESSTIMEOUTNot implemented yetSPI_GETFILTERKEYSNot implemented yetSPI_SETFILTERKEYSNot implemented yet
+ __Action__  __Input/return type__ SPI_GETDESKWALLPAPERReturns the path to the bmp used as wallpaperSPI_SETDESKWALLPAPERParam should be a string specifying a .bmp fileSPI_GETDROPSHADOWReturns a booleanSPI_GETFLATMENUReturns a booleanSPI_GETFONTSMOOTHINGReturns a booleanSPI_GETICONTITLEWRAPReturns a booleanSPI_GETSNAPTODEFBUTTONReturns a booleanSPI_GETBEEPReturns a booleanSPI_GETBLOCKSENDINPUTRESETSReturns a booleanSPI_GETMENUUNDERLINESReturns a booleanSPI_GETKEYBOARDCUESReturns a booleanSPI_GETKEYBOARDPREFReturns a booleanSPI_GETSCREENSAVEACTIVEReturns a booleanSPI_GETSCREENSAVERRUNNINGReturns a booleanSPI_GETMENUDROPALIGNMENTReturns a boolean (True indicates left aligned, False right aligned)SPI_GETMENUFADEReturns a booleanSPI_GETLOWPOWERACTIVEReturns a booleanSPI_GETPOWEROFFACTIVEReturns a booleanSPI_GETCOMBOBOXANIMATIONReturns a booleanSPI_GETCURSORSHADOWReturns a booleanSPI_GETGRADIENTCAPTIONSReturns a booleanSPI_GETHOTTRACKINGReturns a booleanSPI_GETLISTBOXSMOOTHSCROLLINGReturns a booleanSPI_GETMENUANIMATIONReturns a booleanSPI_GETSELECTIONFADEReturns a booleanSPI_GETTOOLTIPANIMATIONReturns a booleanSPI_GETTOOLTIPFADEReturns a boolean (TRUE=fade, False=slide)SPI_GETUIEFFECTSReturns a booleanSPI_GETACTIVEWINDOWTRACKINGReturns a booleanSPI_GETACTIVEWNDTRKZORDERReturns a booleanSPI_GETDRAGFULLWINDOWSReturns a booleanSPI_GETSHOWIMEUIReturns a booleanSPI_GETMOUSECLICKLOCKReturns a booleanSPI_GETMOUSESONARReturns a booleanSPI_GETMOUSEVANISHReturns a booleanSPI_GETSCREENREADERReturns a booleanSPI_GETSHOWSOUNDSReturns a booleanSPI_SETDROPSHADOWParam must be a booleanSPI_SETDROPSHADOWParam must be a booleanSPI_SETMENUUNDERLINESParam must be a booleanSPI_SETKEYBOARDCUESParam must be a booleanSPI_SETMENUFADEParam must be a booleanSPI_SETCOMBOBOXANIMATIONParam must be a booleanSPI_SETCURSORSHADOWParam must be a booleanSPI_SETGRADIENTCAPTIONSParam must be a booleanSPI_SETHOTTRACKINGParam must be a booleanSPI_SETLISTBOXSMOOTHSCROLLINGParam must be a booleanSPI_SETMENUANIMATIONParam must be a booleanSPI_SETSELECTIONFADEParam must be a booleanSPI_SETTOOLTIPANIMATIONParam must be a booleanSPI_SETTOOLTIPFADEParam must be a booleanSPI_SETUIEFFECTSParam must be a booleanSPI_SETACTIVEWINDOWTRACKINGParam must be a booleanSPI_SETACTIVEWNDTRKZORDERParam must be a booleanSPI_SETMOUSESONARParam must be a booleanSPI_SETMOUSEVANISHParam must be a booleanSPI_SETMOUSECLICKLOCKParam must be a booleanSPI_SETFONTSMOOTHINGParam should specify a booleanSPI_SETICONTITLEWRAPParam should specify a booleanSPI_SETSNAPTODEFBUTTONParam is a booleanSPI_SETBEEPParam is a booleanSPI_SETBLOCKSENDINPUTRESETSParam is a booleanSPI_SETKEYBOARDPREFParam is a booleanSPI_SETMOUSEBUTTONSWAPParam is a booleanSPI_SETSCREENSAVEACTIVEParam is a booleanSPI_SETMENUDROPALIGNMENTParam is a boolean (True=left aligned, False=right aligned)SPI_SETLOWPOWERACTIVEParam is a booleanSPI_SETPOWEROFFACTIVEParam is a booleanSPI_SETDRAGFULLWINDOWSParam is a booleanSPI_SETSHOWIMEUIParam is a booleanSPI_SETSCREENREADERParam is a booleanSPI_SETSHOWSOUNDSParam is a booleanSPI_SETMOUSETRAILSParam should be an int specifying the nbr of cursors in the trail (0 or 1 means disabled)SPI_SETWHEELSCROLLLINESParam is an int specifying nbr of linesSPI_SETKEYBOARDDELAYParam is an int in the range 0 - 3SPI_SETKEYBOARDSPEEDParam is an int in the range 0 - 31SPI_SETDOUBLECLICKTIMEParam is an int (in milliseconds),  Use[win32gui::GetDoubleClickTime](win32gui.md#win32guigetdoubleclicktime)to retrieve the value.SPI_SETDOUBLECLKWIDTHParam is an int.  Use win32api.GetSystemMetrics(SM_CXDOUBLECLK) to retrieve the value.SPI_SETDOUBLECLKHEIGHTParam is an int,  Use win32api.GetSystemMetrics(SM_CYDOUBLECLK) to retrieve the value.SPI_SETMOUSEHOVERHEIGHTParam is an intSPI_SETMOUSEHOVERWIDTHParam is an intSPI_SETMOUSEHOVERTIMEParam is an intSPI_SETSCREENSAVETIMEOUTParam is an int specifying the timeout in secondsSPI_SETMENUSHOWDELAYParam is an int specifying the shortcut menu delay in millisecondsSPI_SETLOWPOWERTIMEOUTParam is an int (in seconds)SPI_SETPOWEROFFTIMEOUTParam is an int (in seconds)SPI_SETDRAGHEIGHTParam is an int. Use win32api.GetSystemMetrics(SM_CYDRAG) to retrieve the value.SPI_SETDRAGWIDTHParam is an int. Use win32api.GetSystemMetrics(SM_CXDRAG) to retrieve the value.SPI_SETBORDERParam is an intSPI_GETFONTSMOOTHINGCONTRASTReturns an intSPI_GETFONTSMOOTHINGTYPEReturns an intSPI_GETMOUSETRAILSReturns an int specifying the nbr of cursor images in the trail, 0 or 1 indicates disabledSPI_GETWHEELSCROLLLINESReturns the nbr of lines to scroll for the mouse wheelSPI_GETKEYBOARDDELAYReturns an intSPI_GETKEYBOARDSPEEDReturns an intSPI_GETMOUSESPEEDReturns an intSPI_GETMOUSEHOVERHEIGHTReturns an intSPI_GETMOUSEHOVERWIDTHReturns an intSPI_GETMOUSEHOVERTIMEReturns an intSPI_GETSCREENSAVETIMEOUTReturns an int (idle time in seconds)SPI_GETMENUSHOWDELAYReturns an int (shortcut delay in milliseconds)SPI_GETLOWPOWERTIMEOUTReturns an int (in seconds)SPI_GETPOWEROFFTIMEOUTReturns an int (in seconds)SPI_GETACTIVEWNDTRKTIMEOUTReturns an int (milliseconds)SPI_GETBORDERReturns an intSPI_GETCARETWIDTHReturns an intSPI_GETFOREGROUNDFLASHCOUNTReturns an intSPI_GETFOREGROUNDLOCKTIMEOUTReturns an intSPI_GETFOCUSBORDERHEIGHTReturns an intSPI_GETFOCUSBORDERWIDTHReturns an intSPI_GETMOUSECLICKLOCKTIMEReturns an int (in milliseconds)SPI_SETFONTSMOOTHINGCONTRASTParam should be an int in the range 1000 to 2200SPI_SETFONTSMOOTHINGTYPEParam should be one of the FE_FONTSMOOTHING* constantsSPI_SETMOUSESPEEDParam should be an int in the range 1 - 20SPI_SETACTIVEWNDTRKTIMEOUTParam is an int (in milliseconds)SPI_SETCARETWIDTHParam is an int (in pixels)SPI_SETFOREGROUNDFLASHCOUNTParam is an intSPI_SETFOREGROUNDLOCKTIMEOUTParam is an int (in milliseconds)SPI_SETFOCUSBORDERHEIGHTReturns an intSPI_SETFOCUSBORDERWIDTHReturns an intSPI_SETMOUSECLICKLOCKTIMEParam is an int (in milliseconds)SPI_GETICONTITLELOGFONTReturns a[PyLOGFONT](#pylogfont),SPI_SETICONTITLELOGFONTParam must be a[PyLOGFONT](#pylogfont),SPI_SETLANGTOGGLEParam is ignored. Sets the language toggle hotkey from registry key HKCU\\keyboard layout\\toggleSPI_SETICONSReloads the system icons.  Param is not usedSPI_GETMOUSEReturns a tuple of 3 ints containing the x and y mouse thresholds and the acceleration factor.SPI_SETMOUSEParam should be a sequence of 3 intsSPI_GETDEFAULTINPUTLANGReturns an int (locale id for default language)SPI_SETDEFAULTINPUTLANGParam is an int containing a locale idSPI_GETANIMATIONReturns an intSPI_SETANIMATIONParam is an intSPI_ICONHORIZONTALSPACINGFunctions as both a get and set operation.  If Param is None, functions as a get operation, otherwise Param is an int to be set as the new valueSPI_ICONVERTICALSPACINGFunctions as both a get and set operation.  If Param is None, functions as a get operation, otherwise Param is an int to be set as the new valueSPI_GETNONCLIENTMETRICSParam must be None.  The result is a dict.SPI_SETNONCLIENTMETRICSParam is a dict in the form of a NONCLIENTMETRICS struct, as returned by SPI_GETNONCLIENTMETRICS operationSPI_GETMINIMIZEDMETRICSReturns a dict representing a MINIMIZEDMETRICS struct.  Param is not used.SPI_SETMINIMIZEDMETRICSParam should be a MINIMIZEDMETRICS dict as returned by SPI_GETMINIMIZEDMETRICS actionSPI_SETDESKPATTERNUnsupported (obsolete)SPI_GETFASTTASKSWITCHUnsupported (obsolete)SPI_SETFASTTASKSWITCHUnsupported (obsolete)SPI_SETSCREENSAVERRUNNINGUnsupported (documented as internal use only)SPI_SCREENSAVERRUNNINGSame as SPI_SETSCREENSAVERRUNNINGSPI_SETPENWINDOWSUnsupported (only relevant for win95)SPI_GETWINDOWSEXTENSIONUnsupported (only relevant for win95)SPI_GETGRIDGRANULARITYUnsupported (obsolete)SPI_SETGRIDGRANULARITYUnsupported (obsolete)SPI_LANGDRIVERUnsupported (use is not documented)SPI_GETFONTSMOOTHINGORIENTATIONUnsupported (use is not documented)SPI_SETFONTSMOOTHINGORIENTATIONUnsupported (use is not documented)SPI_SETHANDHELDUnsupported (use is not documented)SPI_GETICONMETRICSNot implemented yetSPI_SETICONMETRICSNot implemented yetSPI_GETWORKAREANot implemented yetSPI_SETWORKAREANot implemented yetSPI_GETSERIALKEYSNot implemented yetSPI_SETSERIALKEYSNot implemented yetSPI_SETMOUSEKEYSNot implemented yetSPI_GETMOUSEKEYSNot implemented yetSPI_GETHIGHCONTRASTNot implemented yetSPI_SETHIGHCONTRASTNot implemented yetSPI_GETSOUNDSENTRYNot implemented yetSPI_SETSOUNDSENTRYNot implemented yetSPI_GETSTICKYKEYSNot implemented yetSPI_SETSTICKYKEYSNot implemented yetSPI_GETTOGGLEKEYSNot implemented yetSPI_SETTOGGLEKEYSNot implemented yetSPI_GETACCESSTIMEOUTNot implemented yetSPI_SETACCESSTIMEOUTNot implemented yetSPI_GETFILTERKEYSNot implemented yetSPI_SETFILTERKEYSNot implemented yet
 #### Comments
 Param and WinIni are not used with any of the SPI_GET operations
 Boolean parameters can be any object that can be evaluated as True or False
@@ -7388,48 +7389,48 @@ Boolean parameters can be any object that can be evaluated as True or False
 SPI_SET functions all return None on success.  Types returned by SPI_GET functions are dependent on the operation
 
 ## TPM_BOTTOMALIGN
- **const win32gui.TPM_BOTTOMALIGN;** 
+ __const win32gui.TPM_BOTTOMALIGN;__ 
 
 
 ## TPM_CENTERALIGN
- **const win32gui.TPM_CENTERALIGN;** 
+ __const win32gui.TPM_CENTERALIGN;__ 
 
 
 ## TPM_LEFTALIGN
- **const win32gui.TPM_LEFTALIGN;** 
+ __const win32gui.TPM_LEFTALIGN;__ 
 
 
 ## TPM_LEFTBUTTON
- **const win32gui.TPM_LEFTBUTTON;** 
+ __const win32gui.TPM_LEFTBUTTON;__ 
 
 
 ## TPM_NONOTIFY
- **const win32gui.TPM_NONOTIFY;** 
+ __const win32gui.TPM_NONOTIFY;__ 
 
 
 ## TPM_RETURNCMD
- **const win32gui.TPM_RETURNCMD;** 
+ __const win32gui.TPM_RETURNCMD;__ 
 
 
 ## TPM_RIGHTALIGN
- **const win32gui.TPM_RIGHTALIGN;** 
+ __const win32gui.TPM_RIGHTALIGN;__ 
 
 
 ## TPM_RIGHTBUTTON
- **const win32gui.TPM_RIGHTBUTTON;** 
+ __const win32gui.TPM_RIGHTBUTTON;__ 
 
 
 ## TPM_TOPALIGN
- **const win32gui.TPM_TOPALIGN;** 
+ __const win32gui.TPM_TOPALIGN;__ 
 
 
 ## TPM_VCENTERALIGN
- **const win32gui.TPM_VCENTERALIGN;** 
+ __const win32gui.TPM_VCENTERALIGN;__ 
 
 
-## [win32gui](README.md#win32gui).TrackPopupMenu
+## [win32gui](#win32gui).TrackPopupMenu
 
-int = **TrackPopupMenu( *hmenu*  *, flags*  *, x*  *, y*  *, reserved*  *, hwnd*  *, prcRect* ** )
+int = __TrackPopupMenu( *hmenu*  *, flags*  *, x*  *, y*  *, reserved*  *, hwnd*  *, prcRect* __ )
 Display popup shortcut menu
 
 #### Parameters
@@ -7459,13 +7460,13 @@ Display popup shortcut menu
 
     owner window
 
-  -  *prcRect* :[PyRECT](README.md#pyrect)
+  -  *prcRect* :[PyRECT](#pyrect)
 
     Pointer to rec (can be None)
 
-## [win32gui](README.md#win32gui).TranslateAccelerator
+## [win32gui](#win32gui).TranslateAccelerator
 
-int = **TranslateAccelerator( *hwnd*  *, haccel*  *, msg* ** )
+int = __TranslateAccelerator( *hwnd*  *, haccel*  *, msg* __ )
 
 
 #### Parameters
@@ -7483,9 +7484,9 @@ int = **TranslateAccelerator( *hwnd*  *, haccel*  *, msg* ** )
 
     
 
-## [win32gui](README.md#win32gui).TranslateMessage
+## [win32gui](#win32gui).TranslateMessage
 
-int = **TranslateMessage( *msg* ** )
+int = __TranslateMessage( *msg* __ )
 
 
 #### Parameters
@@ -7495,15 +7496,15 @@ int = **TranslateMessage( *msg* ** )
 
     
 
-## [win32gui](README.md#win32gui).TransparentBlt
+## [win32gui](#win32gui).TransparentBlt
 
- **TransparentBlt( *Dest*  *, XOriginDest*  *, YOriginDest*  *, WidthDest*  *, HeightDest*  *, Src*  *, XOriginSrc*  *, YOriginSrc*  *, WidthSrc*  *, HeightSrc*  *, Transparent* ** )
+ __TransparentBlt( *Dest*  *, XOriginDest*  *, YOriginDest*  *, WidthDest*  *, HeightDest*  *, Src*  *, XOriginSrc*  *, YOriginSrc*  *, WidthSrc*  *, HeightSrc*  *, Transparent* __ )
 Transfers color from one DC to another, with one color treated as transparent
 
 #### Parameters
 
 
-  -  *Dest* :[PyHANDLE](README.md#pyhandle)
+  -  *Dest* :[PyHANDLE](#pyhandle)
 
     Destination device context handle
 
@@ -7523,7 +7524,7 @@ Transfers color from one DC to another, with one color treated as transparent
 
     Height of dest rect
 
-  -  *Src* :[PyHANDLE](README.md#pyhandle)
+  -  *Src* :[PyHANDLE](#pyhandle)
 
     Source DC handle
 
@@ -7547,44 +7548,44 @@ Transfers color from one DC to another, with one color treated as transparent
 
     RGB color value that will be transparent
 
-## [win32gui](README.md#win32gui).UnregisterClass
+## [win32gui](#win32gui).UnregisterClass
 
- **UnregisterClass( *atom*  *, hinst* ** )
+ __UnregisterClass( *atom*  *, hinst* __ )
 Unregisters a window class created by[win32gui::RegisterClass](win32gui.md#win32guiregisterclass)
 
 #### Parameters
 
 
-  -  *atom* :[PyResourceId](README.md#pyresourceid)
+  -  *atom* :[PyResourceId](#pyresourceid)
 
     The atom or classname identifying the class previously registered.
 
-  -  *hinst* :[PyHANDLE](README.md#pyhandle)
+  -  *hinst* :[PyHANDLE](#pyhandle)
 
     The handle to the instance unregistering the class, can be None
 
-## [win32gui](README.md#win32gui).UnregisterDeviceNotification
+## [win32gui](#win32gui).UnregisterDeviceNotification
 
- **UnregisterDeviceNotification(** )
+ __UnregisterDeviceNotification(__ )
 Unregisters a Device Notification handle. 
 
 It is generally not necessary to call this function manually, but in some cases, 
 
 handle values may be extracted via the struct module and need to be closed explicitly.
 
-## [win32gui](README.md#win32gui).UpdateLayeredWindow
+## [win32gui](#win32gui).UpdateLayeredWindow
 
- **UpdateLayeredWindow( *hwnd*  *, hdcDst*  *, ptDst*  *, size*  *, hdcSrc*  *, ptSrc*  *, Key*  *, blend*  *, Flags* ** )
+ __UpdateLayeredWindow( *hwnd*  *, hdcDst*  *, ptDst*  *, size*  *, hdcSrc*  *, ptSrc*  *, Key*  *, blend*  *, Flags* __ )
 Updates the position, size, shape, content, and translucency of a layered window.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hwnd* :[PyHANDLE](#pyhandle)
 
     handle to layered window
 
-  -  *hdcDst=None* :[PyHANDLE](README.md#pyhandle)
+  -  *hdcDst=None* :[PyHANDLE](#pyhandle)
 
     handle to screen DC, can be None.  *Must* be None if hdcSrc is None
 
@@ -7610,7 +7611,7 @@ Updates the position, size, shape, content, and translucency of a layered window
 
   -  *blend=(0,0,255,0)* : (int, int, int, int)
 
-    [PyBLENDFUNCTION](README.md#pyblendfunction)specifying alpha blending parameters
+    [PyBLENDFUNCTION](#pyblendfunction)specifying alpha blending parameters
 
   -  *Flags=0* : int
 
@@ -7620,9 +7621,9 @@ Updates the position, size, shape, content, and translucency of a layered window
 This function is only available on Windows 2000 and later
 Accepts keyword arguments.
 
-## [win32gui](README.md#win32gui).UpdateWindow
+## [win32gui](#win32gui).UpdateWindow
 
- **UpdateWindow( *hwnd* ** )
+ __UpdateWindow( *hwnd* __ )
 
 
 #### Parameters
@@ -7632,57 +7633,57 @@ Accepts keyword arguments.
 
     The handle to the window
 
-## [win32gui](README.md#win32gui).ValidateRgn
+## [win32gui](#win32gui).ValidateRgn
 
- **ValidateRgn( *hWnd*  *, hRgn* ** )
+ __ValidateRgn( *hWnd*  *, hRgn* __ )
 Removes a region from a window's update region
 
 #### Parameters
 
 
-  -  *hWnd* :[PyHANDLE](README.md#pyhandle)
+  -  *hWnd* :[PyHANDLE](#pyhandle)
 
     Handle to the window
 
-  -  *hRgn* :[PyGdiHANDLE](README.md#pygdihandle)
+  -  *hRgn* :[PyGdiHANDLE](#pygdihandle)
 
     Region to be validated
 
-## [win32gui](README.md#win32gui).WaitMessage
+## [win32gui](#win32gui).WaitMessage
 
- **WaitMessage(** )
+ __WaitMessage(__ )
 Waits for a message
 
-## [win32gui](README.md#win32gui).WidenPath
+## [win32gui](#win32gui).WidenPath
 
- **WidenPath( *hdc* ** )
+ __WidenPath( *hdc* __ )
 Widens current path by amount it would increase by if drawn with currently selected pen
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](README.md#pyhandle)
+  -  *hdc* :[PyHANDLE](#pyhandle)
 
     Handle to a device context that contains a closed path. See[win32gui::EndPath](win32gui.md#win32guiendpath).
 
-## [win32gui](README.md#win32gui).WindowFromDC
+## [win32gui](#win32gui).WindowFromDC
 
-[PyHANDLE](README.md#pyhandle)= **WindowFromDC( *hDC* ** )
+[PyHANDLE](#pyhandle)= __WindowFromDC( *hDC* __ )
 Finds the window associated with a device context
 
 #### Parameters
 
 
-  -  *hDC* :[PyHANDLE](README.md#pyhandle)
+  -  *hDC* :[PyHANDLE](#pyhandle)
 
     Handle to a device context
 
 #### Return Value
 Returns a handle to the window, or 0 if the DC is not associated with a window
 
-## [win32gui](README.md#win32gui).WindowFromPoint
+## [win32gui](#win32gui).WindowFromPoint
 
-int = **WindowFromPoint( *point* ** )
+int = __WindowFromPoint( *point* __ )
 Retrieves a handle to the window that contains the specified point.
 
 #### Parameters
@@ -7692,21 +7693,21 @@ Retrieves a handle to the window that contains the specified point.
 
     The point.
 
-## [win32gui](README.md#win32gui)._TrackMouseEvent
+## [win32gui](#win32gui)._TrackMouseEvent
 
- **_TrackMouseEvent( *tme* ** )
+ ___TrackMouseEvent( *tme* __ )
 Posts messages when the mouse pointer leaves a window or hovers over a window for a specified amount of time.
 
 #### Parameters
 
 
-  -  *tme* :[TRACKMOUSEEVENT](README.md#trackmouseevent)
+  -  *tme* :[TRACKMOUSEEVENT](#trackmouseevent)
 
     
 
-## [win32gui](README.md#win32gui).set_logger
+## [win32gui](#win32gui).set_logger
 
- **set_logger( *logger* ** )
+ __set_logger( *logger* __ )
 Sets a logger object for exceptions and error information
 
 #### Parameters
