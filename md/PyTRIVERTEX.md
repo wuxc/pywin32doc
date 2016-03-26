@@ -2,29 +2,31 @@
 
 ## PyTRIVERTEX Object
 
+
+
 Dict representing a TRIVERTEX struct containing color information at a point
 
 #### Win32 API References
 
 
-  - Search for *TRIVERTEX* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=trivertex),[google](#http://www.google.com/search?q=trivertex)or[google groups](#http://groups.google.com/groups?q=trivertex)\.
+  - Search forTRIVERTEX at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=trivertex),[google](#http://www.google.com/search?q=trivertex) or[google groups](#http://groups.google.com/groups?q=trivertex)\.
 
 #### Properties
 
-  -  **int x** 
+  - int x
     X coord in logical units
 
-  -  **int y** 
+  - int y
     Y coord in logical units
 
-  -  **int Red** 
+  - int Red
     Red component
 
-  -  **int Green** 
+  - int Green
     Green component
 
-  -  **int Blue** 
+  - int Blue
     Blue component
 
-  -  **int Alpha** 
+  - int Alpha
     Transparency value

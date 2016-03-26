@@ -2,6 +2,8 @@
 
 ## PyIDirectSound Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,72 +31,74 @@ Description of the interface
 
 ## [PyIDirectSound](#pyidirectsound)\.Compact
 
- **Compact\(** \)
+Compact\(\)
 The Compact method moves the unused portions of on-board sound memory, if any, to a contiguous block so that the largest portion of free memory will be available\.
 
 ## [PyIDirectSound](#pyidirectsound)\.CreateSoundBuffer
 
- **CreateSoundBuffer\( *lpDSCBufferDesc*  *, unk* ** \)
+CreateSoundBuffer\(lpDSCBufferDesc, unk\)
 The IDirectSound::CreateSoundBuffer method creates a DirectSoundBuffer object to hold a sequence of audio samples\.
 
 #### Parameters
 
 
-  -  *lpDSCBufferDesc* :[PyDSCBUFFERDESC](#pydscbufferdesc)
+  - lpDSCBufferDesc :[PyDSCBUFFERDESC](#pydscbufferdesc)
 
     a DSBUFFERDESC structure containing values for the sound buffer being created\.
 
-  -  *unk\=None* : **PyIUknown** 
+  - unk=None :PyIUknown
 
     The IUnknown for COM aggregation\.
 
 ## [PyIDirectSound](#pyidirectsound)\.GetCaps
 
- **GetCaps\(** \)
-The GetCaps method retrieves the capabilities of the hardware device that is represented by the DirectSound object\. See[DSCAPS contants](DSCAPS.md#dscapscontants)\.
+GetCaps\(\)
+The GetCaps method retrieves the capabilities of the hardware device that is represented by the DirectSound object\. See[DSCAPS contants](DSCAPS.md#dscapscontants)
+
+\.
 
 ## [PyIDirectSound](#pyidirectsound)\.GetSpeakerConfig
 
- **GetSpeakerConfig\(** \)
+GetSpeakerConfig\(\)
 The GetSpeakerConfig method retrieves the speaker configuration\.
 
 ## [PyIDirectSound](#pyidirectsound)\.Initialize
 
- **Initialize\( *guid* ** \)
+Initialize\(guid\)
 Description of Initialize\.
 
 #### Parameters
 
 
-  -  *guid* :[PyIID](#pyiid)
+  - guid :[PyIID](#pyiid)
 
     Globally unique identifier \(GUID\) specifying the sound driver to which this DirectSound object binds\. Pass None to select the primary sound driver\.
 
 ## [PyIDirectSound](#pyidirectsound)\.SetCooperativeLevel
 
- **SetCooperativeLevel\( *hwnd*  *, level* ** \)
+SetCooperativeLevel\(hwnd, level\)
 The IDirectSound::SetCooperativeLevel method sets the cooperative level of the application for this sound device\.
 
 #### Parameters
 
 
-  -  *hwnd* : int
+  - hwnd : int
 
     Window handle to the application or None\.
 
-  -  *level* : int
+  - level : int
 
     Requested priority level\. Specify one of the following values:
 
 
 ## [PyIDirectSound](#pyidirectsound)\.SetSpeakerConfig
 
- **SetSpeakerConfig\( *dwSpeakerConfig* ** \)
+SetSpeakerConfig\(dwSpeakerConfig\)
 The SetSpeakerConfig method specifies the speaker configuration of the DirectSound object\.
 
 #### Parameters
 
 
-  -  *dwSpeakerConfig* : int
+  - dwSpeakerConfig : int
 
     Speaker configuration of the specified DirectSound object\. See the DSSPEAKER constants\.

@@ -2,7 +2,17 @@
 
 ## PyCPrintInfo Object
 
-Encapsulates an MFC CPrintInfo class, its member **CPrintDialog** class, and the **PRINTDLG** structure member of the CPrintDialog\.
+
+
+Encapsulates an MFC CPrintInfo class, its memberCPrintDialog
+
+
+
+ class, and thePRINTDLG
+
+
+
+ structure member of the CPrintDialog\.
 
 #### Methods
 
@@ -225,7 +235,7 @@ Encapsulates an MFC CPrintInfo class, its member **CPrintDialog** class, and the
 
 ## [PyCPrintInfo](#pycprintinfo)\.CreatePrinterDC
 
- **CreatePrinterDC\(** \)
+CreatePrinterDC\(\)
 Handle to the newly created printer device context, call only after DoModal finishes\.
 
 #### MFC References
@@ -235,7 +245,7 @@ Handle to the newly created printer device context, call only after DoModal fini
 
 ## [PyCPrintInfo](#pycprintinfo)\.DoModal
 
- **DoModal\(** \)
+DoModal\(\)
 Call DoModal on the dialog\.
 
 #### MFC References
@@ -245,7 +255,7 @@ Call DoModal on the dialog\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.DocObject
 
- **DocObject\(** \)
+DocObject\(\)
 Return true if the document being printed is a DocObject\.
 
 #### MFC References
@@ -255,7 +265,7 @@ Return true if the document being printed is a DocObject\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.FreeDefaults
 
- **FreeDefaults\(** \)
+FreeDefaults\(\)
 After a call to GetDefaults, and you are through with the CPrintDialog object, this call deletes the printer DC and calls GlobalFree function on the handles\.
 
 #### MFC References
@@ -265,7 +275,7 @@ After a call to GetDefaults, and you are through with the CPrintDialog object, t
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetContinuePrinting
 
- **GetContinuePrinting\(** \)
+GetContinuePrinting\(\)
 A flag indicating whether the framework should continue the print loop\.
 
 #### MFC References
@@ -275,7 +285,7 @@ A flag indicating whether the framework should continue the print loop\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetCopies
 
- **GetCopies\(** \)
+GetCopies\(\)
 The number of copies requested, call only after DoModal finishes\.
 
 #### MFC References
@@ -285,7 +295,7 @@ The number of copies requested, call only after DoModal finishes\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetCurPage
 
- **GetCurPage\(** \)
+GetCurPage\(\)
 Get the number of the current page\.
 
 #### MFC References
@@ -295,7 +305,7 @@ Get the number of the current page\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDefaults
 
- **GetDefaults\(** \)
+GetDefaults\(\)
 Nonzero if the function was successful; otherwise 0\.  Call this function to retrieve the device defaults of the default printer without displaying a dialog box\. The retrieved values are placed in the m\_pd structure\.  In some cases, a call to this function will call the constructor for CPrintDialog with bPrintSetupOnly set to FALSE\. In these cases, a printer DC and hDevNames and hDevMode \(two handles located in the m\_pd data member\) are automatically allocated\.  If the constructor for CPrintDialog was called with bPrintSetupOnly set to FALSE, this function will not only return hDevNames and hDevMode \(located in m\_pd\.hDevNames and m\_pd\.hDevMode\) to the caller, but will also return a printer DC in m\_pd\.hDC\. It is the responsibility of the caller to delete the printer DC and call the WindowsGlobalFree function on the handles when you are finished with the CPrintDialog object\.
 
 #### MFC References
@@ -305,7 +315,7 @@ Nonzero if the function was successful; otherwise 0\.  Call this function to ret
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDeviceName
 
- **GetDeviceName\(** \)
+GetDeviceName\(\)
 The name of the currently selected printer, call only after DoModal finishes\.
 
 #### MFC References
@@ -315,7 +325,7 @@ The name of the currently selected printer, call only after DoModal finishes\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDirect
 
- **GetDirect\(** \)
+GetDirect\(\)
 TRUE if the Print dialog box will be bypassed for direct printing; FALSE otherwise\.
 
 #### MFC References
@@ -325,7 +335,7 @@ TRUE if the Print dialog box will be bypassed for direct printing; FALSE otherwi
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDlgFromPage
 
- **GetDlgFromPage\(** \)
+GetDlgFromPage\(\)
 Retrieves the starting page of the print range\.
 
 #### MFC References
@@ -335,7 +345,7 @@ Retrieves the starting page of the print range\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDlgToPage
 
- **GetDlgToPage\(** \)
+GetDlgToPage\(\)
 Retrieves the ending page of the print range\.
 
 #### MFC References
@@ -345,7 +355,7 @@ Retrieves the ending page of the print range\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDocOffsetPage
 
- **GetDocOffsetPage\(** \)
+GetDocOffsetPage\(\)
 Get the number of pages preceding the first page of a particular DocObject in a combined DocObject print job\.
 
 #### MFC References
@@ -355,7 +365,7 @@ Get the number of pages preceding the first page of a particular DocObject in a 
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDraw
 
- **GetDraw\(** \)
+GetDraw\(\)
 Get the usable drawing area of the page in logical coordinates\.
 
 #### MFC References
@@ -365,7 +375,7 @@ Get the usable drawing area of the page in logical coordinates\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDriverName
 
- **GetDriverName\(** \)
+GetDriverName\(\)
 The name of the currently selected printer device driver, call only after DoModal finishes\.
 
 #### MFC References
@@ -375,7 +385,7 @@ The name of the currently selected printer device driver, call only after DoModa
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetDwFlags
 
- **GetDwFlags\(** \)
+GetDwFlags\(\)
 A flags specifying DocObject printing operations\. Valid only if data member m\_bDocObject is TRUE\.
 
 #### MFC References
@@ -385,7 +395,7 @@ A flags specifying DocObject printing operations\. Valid only if data member m\_
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetFlags
 
- **GetFlags\(** \)
+GetFlags\(\)
 A set of bit flags that you can use to initialize the Print common dialog box\. When the dialog box returns, it sets these flags to indicate the user's input\. This member can be a combination of the following flags: PD\_ALLPAGES, PD\_COLLATE, PD\_DISABLEPRINTTOFILE, PD\_ENABLEPRINTHOOK, PD\_ENABLEPRINTTEMPLATE, PD\_ENABLEPRINTTEMPLATEHANDLE, PD\_ENABLESETUPHOOK, PD\_ENABLESETUPTEMPLATE, PD\_ENABLESETUPTEMPLATEHANDLE, PD\_HIDEPRINTTOFILE, PD\_NONETWORKBUTTON, PD\_NOPAGENUMS, PD\_NOSELECTION, PD\_NOWARNING, PD\_PAGENUMS, PD\_PRINTSETUP, PD\_PRINTTOFILE, PD\_RETURNDC, PD\_RETURNDEFAULT, PD\_RETURNIC, PD\_SELECTION, PD\_SHOWHELP, PD\_USEDEVMODECOPIES, PD\_USEDEVMODECOPIESANDCOLLATE\.
 
 #### MFC References
@@ -395,7 +405,7 @@ A set of bit flags that you can use to initialize the Print common dialog box\. 
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetFromPage
 
- **GetFromPage\(** \)
+GetFromPage\(\)
 The number of the first page to be printed\.
 
 #### MFC References
@@ -405,7 +415,7 @@ The number of the first page to be printed\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetHDC
 
- **GetHDC\(** \)
+GetHDC\(\)
 Identifies a device context or an information context, depending on whether the Flags member specifies the PD\_RETURNDC or PC\_RETURNIC flag\. If neither flag is specified, the value of this member is undefined\. If both flags are specified, PD\_RETURNDC has priority\.
 
 #### MFC References
@@ -415,7 +425,7 @@ Identifies a device context or an information context, depending on whether the 
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetMaxPage
 
- **GetMaxPage\(** \)
+GetMaxPage\(\)
 Get the number of the last page of the document\.
 
 #### MFC References
@@ -425,7 +435,7 @@ Get the number of the last page of the document\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetMinPage
 
- **GetMinPage\(** \)
+GetMinPage\(\)
 Get the number of the first page of the document\.
 
 #### MFC References
@@ -435,7 +445,7 @@ Get the number of the first page of the document\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetNumPreviewPages
 
- **GetNumPreviewPages\(** \)
+GetNumPreviewPages\(\)
 Get the number of pages displayed in preview mode\.
 
 #### MFC References
@@ -445,7 +455,7 @@ Get the number of pages displayed in preview mode\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetOffsetPage
 
- **GetOffsetPage\(** \)
+GetOffsetPage\(\)
 Get the number of pages preceding the first page of a DocObject item being printed in a combined DocObject print job\.  This currently does NOT work, as, if I include the symbol pInfo-&gtGetOffsetPage\(\), the link fails to find its definition\.  Allways returns 0\.
 
 #### MFC References
@@ -455,7 +465,7 @@ Get the number of pages preceding the first page of a DocObject item being print
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetPRINTDLGCopies
 
- **GetPRINTDLGCopies\(** \)
+GetPRINTDLGCopies\(\)
 Get the initial number of copies for the Copies edit control if hDevMode is NULL; otherwise, the dmCopies member of theDEVMODE structure contains the initial value\. When PrintDlg returns, nCopies contains the actual number of copies to print\. This value depends on whether the application or the printer driver is responsible for printing multiple copies\. If the PD\_USEDEVMODECOPIESANDCOLLATE flag is set in the Flags member, nCopies is always 1 on return, and the printer driver is responsible for printing multiple copies\. If the flag is not set, the application is responsible for printing the number of copies specified by nCopies\. For more information, see the description of the PD\_USEDEVMODECOPIESANDCOLLATE flag\.
 
 #### MFC References
@@ -465,7 +475,7 @@ Get the initial number of copies for the Copies edit control if hDevMode is NULL
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetPRINTDLGMinPage
 
- **GetPRINTDLGMinPage\(** \)
+GetPRINTDLGMinPage\(\)
 Get the minimum value for the page range specified in the From and To page edit controls\. If nMinPage equals nMaxPage, the Pages radio button and the starting and ending page edit controls are disabled\.
 
 #### MFC References
@@ -475,7 +485,7 @@ Get the minimum value for the page range specified in the From and To page edit 
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetPageDesc
 
- **GetPageDesc\(** \)
+GetPageDesc\(\)
 Get the format string used to display the page numbers during print preview
 
 #### MFC References
@@ -485,7 +495,7 @@ Get the format string used to display the page numbers during print preview
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetPortName
 
- **GetPortName\(** \)
+GetPortName\(\)
 The name of the currently selected printer port, call only after DoModal finishes\.
 
 #### MFC References
@@ -495,7 +505,7 @@ The name of the currently selected printer port, call only after DoModal finishe
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetPreview
 
- **GetPreview\(** \)
+GetPreview\(\)
 A flag indicating whether the document is being previewed\.
 
 #### MFC References
@@ -505,7 +515,7 @@ A flag indicating whether the document is being previewed\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetPrinterDC
 
- **GetPrinterDC\(** \)
+GetPrinterDC\(\)
 A handle to the printer device context if successful; otherwise NULL\.  If the bPrintSetupOnly parameter of the CPrintDialog constructor was FALSE \(indicating that the Print dialog box is displayed\), then GetPrinterDC returns a handle to the printer device context\. You must call the WindowsDeleteDC function to delete the device context when you are done using it\.
 
 #### MFC References
@@ -515,7 +525,7 @@ A handle to the printer device context if successful; otherwise NULL\.  If the b
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetToPage
 
- **GetToPage\(** \)
+GetToPage\(\)
 The number of the last page to be printed\.
 
 #### MFC References
@@ -525,7 +535,7 @@ The number of the last page to be printed\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.GetUserData
 
- **GetUserData\(** \)
+GetUserData\(\)
 Get a user-created structure\.
 
 #### MFC References
@@ -535,7 +545,7 @@ Get a user-created structure\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.PrintAll
 
- **PrintAll\(** \)
+PrintAll\(\)
 Nonzero if all pages in the document are to be printed; otherwise 0, call only after DoModal finishes\.
 
 #### MFC References
@@ -545,7 +555,7 @@ Nonzero if all pages in the document are to be printed; otherwise 0, call only a
 
 ## [PyCPrintInfo](#pycprintinfo)\.PrintCollate
 
- **PrintCollate\(** \)
+PrintCollate\(\)
 Nonzero if the user selects the collate check box in the dialog box; otherwise 0, call only after DoModal finishes\.
 
 #### MFC References
@@ -555,7 +565,7 @@ Nonzero if the user selects the collate check box in the dialog box; otherwise 0
 
 ## [PyCPrintInfo](#pycprintinfo)\.PrintRange
 
- **PrintRange\(** \)
+PrintRange\(\)
 Nonzero if only a range of pages in the document are to be printed; otherwise 0, call only after DoModal finishes\.
 
 #### MFC References
@@ -565,7 +575,7 @@ Nonzero if only a range of pages in the document are to be printed; otherwise 0,
 
 ## [PyCPrintInfo](#pycprintinfo)\.PrintSelection
 
- **PrintSelection\(** \)
+PrintSelection\(\)
 Nonzero if only the selected items are to be printed; otherwise 0\., call only after DoModal finishes
 
 #### MFC References
@@ -575,7 +585,7 @@ Nonzero if only the selected items are to be printed; otherwise 0\., call only a
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetContinuePrinting
 
- **SetContinuePrinting\(** \)
+SetContinuePrinting\(\)
 Set whether the framework should continue the print loop\.
 
 #### MFC References
@@ -585,7 +595,7 @@ Set whether the framework should continue the print loop\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetCurPage
 
- **SetCurPage\(** \)
+SetCurPage\(\)
 Set the number of the current page\.
 
 #### MFC References
@@ -595,7 +605,7 @@ Set the number of the current page\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetDirect
 
- **SetDirect\(** \)
+SetDirect\(\)
 Sets to TRUE if the Print dialog box will be bypassed for direct printing; FALSE otherwise\.
 
 #### MFC References
@@ -605,7 +615,7 @@ Sets to TRUE if the Print dialog box will be bypassed for direct printing; FALSE
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetDocOffsetPage
 
- **SetDocOffsetPage\(** \)
+SetDocOffsetPage\(\)
 Set the number of pages preceding the first page of a particular DocObject in a combined DocObject print job\.
 
 #### MFC References
@@ -615,7 +625,7 @@ Set the number of pages preceding the first page of a particular DocObject in a 
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetDraw
 
- **SetDraw\(** \)
+SetDraw\(\)
 Set the usable drawing area of the page in logical coordinates\.
 
 #### MFC References
@@ -625,7 +635,7 @@ Set the usable drawing area of the page in logical coordinates\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetDwFlags
 
- **SetDwFlags\(** \)
+SetDwFlags\(\)
 Set a flag specifying DocObject printing operations\. Valid only if data member m\_bDocObject is TRUE\.
 
 #### MFC References
@@ -635,7 +645,7 @@ Set a flag specifying DocObject printing operations\. Valid only if data member 
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetFlags
 
- **SetFlags\(** \)
+SetFlags\(\)
 A set of bit flags that you can use to initialize the Print common dialog box\. When the dialog box returns, it sets these flags to indicate the user's input\. This member can be a combination of the following flags: PD\_ALLPAGES, PD\_COLLATE, PD\_DISABLEPRINTTOFILE, PD\_ENABLEPRINTHOOK, PD\_ENABLEPRINTTEMPLATE, PD\_ENABLEPRINTTEMPLATEHANDLE, PD\_ENABLESETUPHOOK, PD\_ENABLESETUPTEMPLATE, PD\_ENABLESETUPTEMPLATEHANDLE, PD\_HIDEPRINTTOFILE, PD\_NONETWORKBUTTON, PD\_NOPAGENUMS, PD\_NOSELECTION, PD\_NOWARNING, PD\_PAGENUMS, PD\_PRINTSETUP, PD\_PRINTTOFILE, PD\_RETURNDC, PD\_RETURNDEFAULT, PD\_RETURNIC, PD\_SELECTION, PD\_SHOWHELP, PD\_USEDEVMODECOPIES, PD\_USEDEVMODECOPIESANDCOLLATE\.
 
 #### MFC References
@@ -645,7 +655,7 @@ A set of bit flags that you can use to initialize the Print common dialog box\. 
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetFromPage
 
- **SetFromPage\(** \)
+SetFromPage\(\)
 The number of the first page to be printed\.
 
 #### MFC References
@@ -655,13 +665,13 @@ The number of the first page to be printed\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetHDC
 
- **SetHDC\( *hdc* ** \)
+SetHDC\(hdc\)
 Sets the printer DC compatible with the users choices, call after the print dialog DoModal finishes\.
 
 #### Parameters
 
 
-  -  *hdc* : int
+  - hdc : int
 
     The DC\.
 
@@ -674,7 +684,7 @@ Sets the printer DC compatible with the users choices, call after the print dial
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetMaxPage
 
- **SetMaxPage\(** \)
+SetMaxPage\(\)
 Set the number of the last page of the document\.
 
 #### MFC References
@@ -684,7 +694,7 @@ Set the number of the last page of the document\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetMinPage
 
- **SetMinPage\(** \)
+SetMinPage\(\)
 Set the number of the first page of the document\.
 
 #### MFC References
@@ -694,7 +704,7 @@ Set the number of the first page of the document\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetNumPreviewPages
 
- **SetNumPreviewPages\(** \)
+SetNumPreviewPages\(\)
 Set the number of pages displayed in preview mode\.
 
 #### MFC References
@@ -704,7 +714,7 @@ Set the number of pages displayed in preview mode\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetPRINTDLGCopies
 
- **SetPRINTDLGCopies\(** \)
+SetPRINTDLGCopies\(\)
 Set the initial number of copies for the Copies edit control if hDevMode is NULL; otherwise, the dmCopies member of theDEVMODE structure contains the initial value\. When PrintDlg returns, nCopies contains the actual number of copies to print\. This value depends on whether the application or the printer driver is responsible for printing multiple copies\. If the PD\_USEDEVMODECOPIESANDCOLLATE flag is set in the Flags member, nCopies is always 1 on return, and the printer driver is responsible for printing multiple copies\. If the flag is not set, the application is responsible for printing the number of copies specified by nCopies\. For more information, see the description of the PD\_USEDEVMODECOPIESANDCOLLATE flag\.
 
 #### MFC References
@@ -714,7 +724,7 @@ Set the initial number of copies for the Copies edit control if hDevMode is NULL
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetPRINTDLGMinPage
 
- **SetPRINTDLGMinPage\(** \)
+SetPRINTDLGMinPage\(\)
 Set the minimum value for the page range specified in the From and To page edit controls\. If nMinPage equals nMaxPage, the Pages radio button and the starting and ending page edit controls are disabled\.
 
 #### MFC References
@@ -724,7 +734,7 @@ Set the minimum value for the page range specified in the From and To page edit 
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetPageDesc
 
- **SetPageDesc\(** \)
+SetPageDesc\(\)
 Set the format string used to display the page numbers during print preview
 
 #### MFC References
@@ -734,7 +744,7 @@ Set the format string used to display the page numbers during print preview
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetPreview
 
- **SetPreview\(** \)
+SetPreview\(\)
 Set whether the document is being previewed\.
 
 #### MFC References
@@ -744,7 +754,7 @@ Set whether the document is being previewed\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetPrintDialog
 
- **SetPrintDialog\(** \)
+SetPrintDialog\(\)
 Set a pointer to the CPrintDialog object used to display the Print dialog box for the print job\.
 
 #### MFC References
@@ -754,7 +764,7 @@ Set a pointer to the CPrintDialog object used to display the Print dialog box fo
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetToPage
 
- **SetToPage\(** \)
+SetToPage\(\)
 The number of the last page to be printed\.
 
 #### MFC References
@@ -764,7 +774,7 @@ The number of the last page to be printed\.
 
 ## [PyCPrintInfo](#pycprintinfo)\.SetUserData
 
- **SetUserData\(** \)
+SetUserData\(\)
 Set a user-created structure\.
 
 #### MFC References

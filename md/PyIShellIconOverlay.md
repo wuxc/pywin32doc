@@ -2,6 +2,8 @@
 
 ## PyIShellIconOverlay Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,24 +19,24 @@ Description of the interface
 
 ## [PyIShellIconOverlay](#pyishelliconoverlay)\.GetOverlayIconIndex
 
- **GetOverlayIconIndex\( *pidl* ** \)
+GetOverlayIconIndex\(pidl\)
 Description of GetOverlayIconIndex\.
 
 #### Parameters
 
 
-  -  *pidl* :[PyIDL](#pyidl)
+  - pidl :[PyIDL](#pyidl)
 
     Description for pidl
 
 ## [PyIShellIconOverlay](#pyishelliconoverlay)\.GetOverlayIndex
 
- **GetOverlayIndex\( *pidl* ** \)
+GetOverlayIndex\(pidl\)
 Description of GetOverlayIndex\.
 
 #### Parameters
 
 
-  -  *pidl* :[PyIDL](#pyidl)
+  - pidl :[PyIDL](#pyidl)
 
     Description for pidl

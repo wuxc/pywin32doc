@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentHost Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,56 +35,56 @@ Description of the interface
 
 ## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetDeferredText
 
- **GetDeferredText\( *dwTextStartCookie*  *, cMaxChars* ** \)
+GetDeferredText\(dwTextStartCookie, cMaxChars\)
 Description of GetDeferredText\.
 
 #### Parameters
 
 
-  -  *dwTextStartCookie* : int
+  - dwTextStartCookie : int
 
     Description for dwTextStartCookie
 
-  -  *cMaxChars* : int
+  - cMaxChars : int
 
     Description for cMaxChars
 
 ## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetFileName
 
- **GetFileName\(** \)
+GetFileName\(\)
 Description of GetFileName\.
 
 ## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetPathName
 
- **GetPathName\(** \)
+GetPathName\(\)
 Description of GetPathName\.
 
 ## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetScriptTextAttributes
 
- **GetScriptTextAttributes\( *pstrCode*  *, pstrDelimiter*  *, dwFlags* ** \)
+GetScriptTextAttributes\(pstrCode, pstrDelimiter, dwFlags\)
 Description of GetScriptTextAttributes\.
 
 #### Parameters
 
 
-  -  *pstrCode* : **unicode** 
+  - pstrCode :unicode
 
     Description for pstrCode
 
-  -  *pstrDelimiter* : **unicode** 
+  - pstrDelimiter :unicode
 
     Description for pstrDelimiter
 
-  -  *dwFlags* : int
+  - dwFlags : int
 
     Description for dwFlags
 
 ## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.NotifyChanged
 
- **NotifyChanged\(** \)
+NotifyChanged\(\)
 Description of NotifyChanged\.
 
 ## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.OnCreateDocumentContext
 
- **OnCreateDocumentContext\(** \)
+OnCreateDocumentContext\(\)
 Description of OnCreateDocumentContext\.

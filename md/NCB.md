@@ -2,45 +2,47 @@
 
 ## NCB Object
 
+
+
 A Python object that encapsulates a Win32 NCB structure\.
 
 #### Properties
 
-  -  **int Command** 
+  - int Command
     
 
-  -  **int Retcode** 
+  - int Retcode
     
 
-  -  **int Lsn** 
+  - int Lsn
     
 
-  -  **int Num** 
+  - int Num
     
 
-  -  **int Bufflen** 
+  - int Bufflen
     read-only
 
-  -  **string Callname** 
+  - string Callname
     - The strings need to be space padded to 16 chars exactly
 
-  -  **string Name** 
+  - string Name
     - The strings need to be space padded to 16 chars exactly
 
-  -  **string Rto** 
+  - string Rto
     - The strings need to be space padded to 16 chars exactly
 
-  -  **string Sto** 
+  - string Sto
     - The strings need to be space padded to 16 chars exactly
 
-  -  **int Lana\_num** 
+  - int Lana\_num
     
 
-  -  **int Cmd\_cplt** 
+  - int Cmd\_cplt
     
 
-  -  **int Event** 
+  - int Event
     
 
-  -  **int Post** 
+  - int Post
     

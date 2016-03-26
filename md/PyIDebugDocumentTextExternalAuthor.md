@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentTextExternalAuthor Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,15 +23,15 @@ Description of the interface
 
 ## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor)\.GetFileName
 
- **GetFileName\(** \)
+GetFileName\(\)
 Description of GetFileName\.
 
 ## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor)\.GetPathName
 
- **GetPathName\(** \)
+GetPathName\(\)
 Description of GetPathName\.
 
 ## [PyIDebugDocumentTextExternalAuthor](#pyidebugdocumenttextexternalauthor)\.NotifyChanged
 
- **NotifyChanged\(** \)
+NotifyChanged\(\)
 Description of NotifyChanged\.

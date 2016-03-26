@@ -2,6 +2,8 @@
 
 ## PySID Object
 
+
+
 A Python object, representing a SID structure
 
 #### Methods
@@ -36,73 +38,89 @@ A Python object, representing a SID structure
     Return identifier for the authority who issued the SID \(one of the SID\_IDENTIFIER\_AUTHORITY constants\)&nbsp;
 
 #### Comments
+
+
 Note the PySID object supports the buffer interface\.  Thus buffer\(sid\) can be used to obtain the raw bytes\. 
 
 tp\_as\_buffer
 
 ## PySID\_AND\_ATTRIBUTES Object
 
+
+
 A sequence containing \([PySID](#pysid),Attributes\) Representing a SID\_AND\_ATTRIBUTES structure
 
 #### Comments
+
+
 Attributes is an integer containing flags that depend on intended usage
 
 ## [PySID](#pysid)\.GetLength
 
-int \= **GetLength\(** \)
+
+
+int =GetLength\(\)
 return length of SID \(GetLengthSid\)\.
 
 ## [PySID](#pysid)\.GetSidIdentifierAuthority
 
-\(int,int,int,int,int,int\) \= **GetSidIdentifierAuthority\(** \)
+
+
+\(int,int,int,int,int,int\) =GetSidIdentifierAuthority\(\)
 Returns a tuple of 6 SID\_IDENTIFIER\_AUTHORITY constants
 
 ## [PySID](#pysid)\.GetSubAuthority
 
-int \= **GetSubAuthority\(** \)
+
+
+int =GetSubAuthority\(\)
 Returns specified subauthority from SID
 
 ## [PySID](#pysid)\.GetSubAuthorityCount
 
-int \= **GetSubAuthorityCount\(** \)
+
+
+int =GetSubAuthorityCount\(\)
 return nbr of subauthorities from SID
 
 ## [PySID](#pysid)\.Initialize
 
- **Initialize\( *idAuthority*  *, numSubauthorities* ** \)
+Initialize\(idAuthority, numSubauthorities\)
 Initialize the SID\.
 
 #### Parameters
 
 
-  -  *idAuthority* : **SID\_IDENTIFIER\_AUTHORITY** 
+  - idAuthority :SID\_IDENTIFIER\_AUTHORITY
 
     The identifier authority\.
 
-  -  *numSubauthorities* : int
+  - numSubauthorities : int
 
     The number of sub authorities to allocate\.
 
 ## [PySID](#pysid)\.IsValid
 
- **IsValid\(** \)
+IsValid\(\)
 Determines if the SID is valid\.
 
 ## [PySID](#pysid)\.SetSubAuthority
 
- **SetSubAuthority\( *index*  *, val* ** \)
+SetSubAuthority\(index, val\)
 Sets a SID SubAuthority
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the sub authority to set
 
-  -  *val* : int
+  - val : int
 
     The value for the sub authority
 
 #### Comments
+
+
 See the function SetSidSubAuthority

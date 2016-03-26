@@ -1,6 +1,8 @@
 # MTS
 
 ## MTS and Python for NT
+
+
 How to use python w/MTS on NT\.
 
 MTS represents microsoft's attempt to simplify computing for a 
@@ -89,9 +91,11 @@ is in the role you created that has lists of users or groups\.
 
 #### Example
 In python you setup the ObjectContext object in the following manner:
-mtsobj \= win32com\.client\.Dispatch\("MTXAS\.AppServer\.1"\)
+mtsobj = win32com\.client\.Dispatch\("MTXAS\.AppServer\.1"\)
 
-mts\=mtsobj\.GetObjectContext\(\)and can then make calls like:
+mts=mtsobj\.GetObjectContext\(\)
+
+and can then make calls like:
 if mts\.IsCallerInRole\('bedrock'\):
 
 &\#09do\_this\(\)
@@ -106,24 +110,28 @@ Explorer\. Anything but wilma and betty will cause the aborted list to
 
 increment\. If wila or betty are supplied from the ASP, you notice
 
-Committed increasing\.Here is an extremely simple python active server page that calls the mts object:
-&ltSCRIPT Language\="Python" RunAt\="Server"&gt
+Committed increasing\.
+
+Here is an extremely simple python active server page that calls the mts object:
+&ltSCRIPT Language="Python" RunAt="Server"&gt
 
 
 
 import win32com
 
-find\_pebbles \= win32com\.client\.dynamic\.Dispatch\("mts1"\)
+find\_pebbles = win32com\.client\.dynamic\.Dispatch\("mts1"\)
 
 
 
-a\=find\_pebbles\('wilma'\)
+a=find\_pebbles\('wilma'\)
 
 Response\.Write\(a\)
 
 
 
-&lt/SCRIPT&gtHere is the mts COM object:
+&lt/SCRIPT&gt
+
+Here is the mts COM object:
 from win32com\.server\.exception import COMException
 
 import win32com\.server\.util
@@ -144,19 +152,19 @@ class Mts:
 
 &\#09\# COM attributes\.
 
-&\#09\_reg\_clsid\_ \= '\{3D094770-B73E-11D3-99FC-00902776D585\}'
+&\#09\_reg\_clsid\_ = '\{3D094770-B73E-11D3-99FC-00902776D585\}'
 
 &\#09&\#09       \#guid for your class in registry
 
-&\#09\_reg\_desc\_ \= "test mts functions"
+&\#09\_reg\_desc\_ = "test mts functions"
 
-&\#09\_reg\_progid\_ \= "mts1" \#The progid for this class
+&\#09\_reg\_progid\_ = "mts1" \#The progid for this class
 
-&\#09\_reg\_class\_spec\_ \= "mts\_test\.Mts"
+&\#09\_reg\_class\_spec\_ = "mts\_test\.Mts"
 
 &\#09&\#09&\#09   \#tells Python how to create the object: filename\.class
 
-&\#09\_public\_methods\_ \= \['getkid' \]  \#names of callable methods
+&\#09\_public\_methods\_ = \['getkid' \]  \#names of callable methods
 
 
 
@@ -170,9 +178,9 @@ class Mts:
 
 
 
-&\#09&\#09mtsobj \= win32com\.client\.Dispatch\("MTXAS\.AppServer\.1"\)
+&\#09&\#09mtsobj = win32com\.client\.Dispatch\("MTXAS\.AppServer\.1"\)
 
-&\#09&\#09mts\=mtsobj\.GetObjectContext\(\)
+&\#09&\#09mts=mtsobj\.GetObjectContext\(\)
 
 
 
@@ -180,7 +188,7 @@ class Mts:
 
 &\#09&\#09&\#09\#com obj -- no mts
 
-&\#09&\#09&\#09result\='error: mts not available'
+&\#09&\#09&\#09result='error: mts not available'
 
 &\#09&\#09else:
 
@@ -190,32 +198,34 @@ class Mts:
 
 &\#09&\#09&\#09if mts\.IsCallerInRole\('bedrock'\):
 
-&\#09&\#09&\#09&\#09moms\=\{'wilma':'bambam','betty':'pebbles'\}
+&\#09&\#09&\#09&\#09moms=\{'wilma':'bambam','betty':'pebbles'\}
 
-&\#09&\#09&\#09&\#09person\=str\(person\) \#convert from unicode to string
+&\#09&\#09&\#09&\#09person=str\(person\) \#convert from unicode to string
 
 &\#09&\#09&\#09&\#09if moms\.has\_key\(person\):
 
 &\#09&\#09&\#09&\#09&\#09mts\.SetComplete\(\)
 
-&\#09&\#09&\#09&\#09&\#09result\=moms\[person\]
+&\#09&\#09&\#09&\#09&\#09result=moms\[person\]
 
 &\#09&\#09&\#09&\#09else:
 
-&\#09&\#09&\#09&\#09&\#09result\='not in bedrock'
+&\#09&\#09&\#09&\#09&\#09result='not in bedrock'
 
 &\#09&\#09&\#09&\#09&\#09mts\.SetAbort\(\)
 
 &\#09&\#09&\#09else:
 
-&\#09&\#09&\#09&\#09result\='sorry can't let you know'
+&\#09&\#09&\#09&\#09result='sorry can't let you know'
 
 &\#09&\#09return result
 
 
 
-if \_\_name\_\_\=\='\_\_main\_\_':
+if \_\_name\_\_=='\_\_main\_\_':
 
 &\#09import win32com\.server\.register
 
-&\#09win32com\.server\.register\.UseCommandLine\(Mts\)Have a great time with programming with python\!
+&\#09win32com\.server\.register\.UseCommandLine\(Mts\)
+
+Have a great time with programming with python\!

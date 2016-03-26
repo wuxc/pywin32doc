@@ -2,6 +2,8 @@
 
 ## PyICreateTypeInfo Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -97,298 +99,300 @@ Description of the interface
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.AddFuncDesc
 
- **AddFuncDesc\( *index* ** \)
+AddFuncDesc\(index\)
 Description of AddFuncDesc\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.AddImplType
 
- **AddImplType\( *index*  *, hRefType* ** \)
+AddImplType\(index, hRefType\)
 Description of AddImplType\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *hRefType* : int
+  - hRefType : int
 
     A hRefType
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.AddRefTypeInfo
 
- **AddRefTypeInfo\( *pTInfo* ** \)
+AddRefTypeInfo\(pTInfo\)
 Description of AddRefTypeInfo\.
 
 #### Parameters
 
 
-  -  *pTInfo* :[PyITypeInfo](#pyitypeinfo)
+  - pTInfo :[PyITypeInfo](#pyitypeinfo)
 
     Description for pTInfo
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.AddVarDesc
 
- **AddVarDesc\( *index* ** \)
+AddVarDesc\(index\)
 Description of AddVarDesc\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.DefineFuncAsDllEntry
 
- **DefineFuncAsDllEntry\( *index*  *, szDllName*  *, szProcName* ** \)
+DefineFuncAsDllEntry\(index, szDllName, szProcName\)
 Description of DefineFuncAsDllEntry\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *szDllName* : **unicode** 
+  - szDllName :unicode
 
     Description for szDllName
 
-  -  *szProcName* : **unicode** 
+  - szProcName :unicode
 
     Description for szProcName
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.LayOut
 
- **LayOut\(** \)
+LayOut\(\)
 Description of LayOut\.
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetAlignment
 
- **SetAlignment\( *cbAlignment* ** \)
+SetAlignment\(cbAlignment\)
 Description of SetAlignment\.
 
 #### Parameters
 
 
-  -  *cbAlignment* : int
+  - cbAlignment : int
 
     Description for cbAlignment
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetDocString
 
- **SetDocString\( *pStrDoc* ** \)
+SetDocString\(pStrDoc\)
 Description of SetDocString\.
 
 #### Parameters
 
 
-  -  *pStrDoc* : **unicode** 
+  - pStrDoc :unicode
 
     Description for pStrDoc
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetFuncAndParamNames
 
- **SetFuncAndParamNames\( *index*  *, rgszNames* ** \)
+SetFuncAndParamNames\(index, rgszNames\)
 Description of SetFuncAndParamNames\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Index of the item to set\.
 
-  -  *rgszNames* : \( **unicode** , \.\.\.\)
+  - rgszNames : \(unicode
+
+, \.\.\.\)
 
     A sequence of unicode or String objects\.
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetFuncDocString
 
- **SetFuncDocString\( *index*  *, szDocString* ** \)
+SetFuncDocString\(index, szDocString\)
 Description of SetFuncDocString\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *szDocString* : **unicode** 
+  - szDocString :unicode
 
     Description for szDocString
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetFuncHelpContext
 
- **SetFuncHelpContext\( *index*  *, dwHelpContext* ** \)
+SetFuncHelpContext\(index, dwHelpContext\)
 Description of SetFuncHelpContext\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *dwHelpContext* : int
+  - dwHelpContext : int
 
     Description for dwHelpContext
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetGuid
 
- **SetGuid\( *guid* ** \)
+SetGuid\(guid\)
 Description of SetGuid\.
 
 #### Parameters
 
 
-  -  *guid* :[PyIID](#pyiid)
+  - guid :[PyIID](#pyiid)
 
     Description for guid
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetHelpContext
 
- **SetHelpContext\( *dwHelpContext* ** \)
+SetHelpContext\(dwHelpContext\)
 Description of SetHelpContext\.
 
 #### Parameters
 
 
-  -  *dwHelpContext* : int
+  - dwHelpContext : int
 
     Description for dwHelpContext
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetImplTypeFlags
 
- **SetImplTypeFlags\( *index*  *, implTypeFlags* ** \)
+SetImplTypeFlags\(index, implTypeFlags\)
 Description of SetImplTypeFlags\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *implTypeFlags* : int
+  - implTypeFlags : int
 
     Description for implTypeFlags
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetMops
 
- **SetMops\( *index*  *, bstrMops* ** \)
+SetMops\(index, bstrMops\)
 Description of SetMops\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *bstrMops* : **unicode** 
+  - bstrMops :unicode
 
     Description for bstrMops
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetSchema
 
- **SetSchema\( *pStrSchema* ** \)
+SetSchema\(pStrSchema\)
 Description of SetSchema\.
 
 #### Parameters
 
 
-  -  *pStrSchema* : **unicode** 
+  - pStrSchema :unicode
 
     Description for pStrSchema
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetTypeDescAlias
 
- **SetTypeDescAlias\(** \)
+SetTypeDescAlias\(\)
 Description of SetTypeDescAlias\.
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetTypeFlags
 
- **SetTypeFlags\( *uTypeFlags* ** \)
+SetTypeFlags\(uTypeFlags\)
 Description of SetTypeFlags\.
 
 #### Parameters
 
 
-  -  *uTypeFlags* : int
+  - uTypeFlags : int
 
     Description for uTypeFlags
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetVarDocString
 
- **SetVarDocString\( *index*  *, szDocString* ** \)
+SetVarDocString\(index, szDocString\)
 Description of SetVarDocString\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *szDocString* : **unicode** 
+  - szDocString :unicode
 
     Description for szDocString
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetVarHelpContext
 
- **SetVarHelpContext\( *index*  *, dwHelpContext* ** \)
+SetVarHelpContext\(index, dwHelpContext\)
 Description of SetVarHelpContext\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *dwHelpContext* : int
+  - dwHelpContext : int
 
     Description for dwHelpContext
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetVarName
 
- **SetVarName\( *index*  *, szName* ** \)
+SetVarName\(index, szName\)
 Description of SetVarName\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Description for index
 
-  -  *szName* : **unicode** 
+  - szName :unicode
 
     Description for szName
 
 ## [PyICreateTypeInfo](#pyicreatetypeinfo)\.SetVersion
 
- **SetVersion\( *wMajorVerNum*  *, wMinorVerNum* ** \)
+SetVersion\(wMajorVerNum, wMinorVerNum\)
 Description of SetVersion\.
 
 #### Parameters
 
 
-  -  *wMajorVerNum* : int
+  - wMajorVerNum : int
 
     Description for wMajorVerNum
 
-  -  *wMinorVerNum* : int
+  - wMinorVerNum : int
 
     Description for wMinorVerNum

@@ -2,7 +2,11 @@
 
 ## PyCStatusBar Object
 
-A class which encapsulates an MFC **CStatusBar** \.  Derived from a[PyCControlBar](#pyccontrolbar)object\.
+
+
+A class which encapsulates an MFCCStatusBar
+
+\.  Derived from a[PyCControlBar](#pyccontrolbar) object\.
 
 #### Methods
 
@@ -25,13 +29,15 @@ A class which encapsulates an MFC **CStatusBar** \.  Derived from a[PyCControlBa
 
 ## [PyCStatusBar](#pycstatusbar)\.GetPaneInfo
 
-\(id, style, width\) \= **GetPaneInfo\( *index* ** \)
+
+
+\(id, style, width\) =GetPaneInfo\(index\)
 Returns the id, style, and width of the indicator pane at the location specified by index\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Index of the pane whose information is to be retrieved\.
 
@@ -42,7 +48,7 @@ Returns the id, style, and width of the indicator pane at the location specified
 
 ## [PyCStatusBar](#pycstatusbar)\.GetStatusBarCtrl
 
-[PyCStatusBarCtrl](#pycstatusbarctrl)\= **GetStatusBarCtrl\(** \)
+[PyCStatusBarCtrl](#pycstatusbarctrl) =GetStatusBarCtrl\(\)
 Gets the statusbar control object for the statusbar\.
 
 #### MFC References
@@ -62,33 +68,33 @@ which will fail the type tests\.
 
 ## [PyCStatusBar](#pycstatusbar)\.SetIndicators
 
- **SetIndicators\( *indicators* ** \)
+SetIndicators\(indicators\)
 Sets each indicator's ID\.
 
 #### Parameters
 
 
-  -  *indicators* : tuple
+  - indicators : tuple
 
     A tuple containing the ID's of the indicators\.
 
 ## [PyCStatusBar](#pycstatusbar)\.SetPaneInfo
 
- **SetPaneInfo\( *index*  *, id*  *, style*  *, width* ** \)
+SetPaneInfo\(index, id, style, width\)
 Sets the specified indicator pane to a new ID, style, and width\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Index of the indicator pane whose style is to be set\.
 
-  -  *id* : int
+  - id : int
 
     New ID for the indicator pane\.
 
-  -  *style* : int
+  - style : int
 
     New style for the indicator pane\.
 The following indicator styles are supported:
@@ -98,7 +104,7 @@ afxres\.SBPS\_DISABLED - Do not draw text\.
 afxres\.SBPS\_STRETCH - Stretch pane to fill unused space\. Only one pane per status bar can have this style\.
 afxres\.SBPS\_NORMAL - No stretch, borders, or pop-out\.
 
-  -  *width* : int
+  - width : int
 
     New width for the indicator pane\.
 

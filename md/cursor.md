@@ -2,6 +2,8 @@
 
 ## cursor Object
 
+
+
 An object representing an ODBC cursor\.
 
 #### Methods
@@ -37,48 +39,58 @@ An object representing an ODBC cursor\.
 
 ## [cursor](#cursor)\.close
 
- **close\(** \)
+close\(\)
 Closes the cursor
 
 #### Comments
+
+
 This method does nothing\!\!  I presume it should\!?\!?\!
 
 ## [cursor](#cursor)\.execute
 
-int \= **execute\( *sql*  *, \[var, \.\.\.\]* ** \)
+
+
+int =execute\(sql, \[var, \.\.\.\]\)
 Execute some SQL
 
 #### Parameters
 
 
-  -  *sql* : string
+  - sql : string
 
     The SQL to execute
 
-  -  *\[var, \.\.\.\]\=\[\]* : sequence
+  - \[var, \.\.\.\]=\[\] : sequence
 
     Input variables\.
 
 ## [cursor](#cursor)\.fetchall
 
-\[data, \.\.\.\] \= **fetchall\(** \)
+
+
+\[data, \.\.\.\] =fetchall\(\)
 Fetch all rows of data
 
 ## [cursor](#cursor)\.fetchmany
 
-\[data, \.\.\.\] \= **fetchmany\(** \)
+
+
+\[data, \.\.\.\] =fetchmany\(\)
 Fetch many rows of data
 
 ## [cursor](#cursor)\.fetchone
 
-data \= **fetchone\(** \)
+
+
+data =fetchone\(\)
 Fetch one row of data
 
 ## [cursor](#cursor)\.setinputsizes
 
- **setinputsizes\(** \)
+setinputsizes\(\)
 
 
 ## [cursor](#cursor)\.setoutputsize
 
- **setoutputsize\(** \)
+setoutputsize\(\)

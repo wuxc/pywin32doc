@@ -2,6 +2,8 @@
 
 ## PyICatInformation Object
 
+
+
 A Python interface to ICatInformation
 
 #### Methods
@@ -22,43 +24,47 @@ A Python interface to ICatInformation
 
 ## [PyICatInformation](#pyicatinformation)\.EnumCategories
 
-[PyIEnumCATEGORYINFO](#pyienumcategoryinfo)\= **EnumCategories\( *lcid* ** \)
+[PyIEnumCATEGORYINFO](#pyienumcategoryinfo) =EnumCategories\(lcid\)
 Returns an enumerator for the component categories registered on the system\.
 
 #### Parameters
 
 
-  -  *lcid\=0* : int
+  - lcid=0 : int
 
     lcid
 
 ## [PyICatInformation](#pyicatinformation)\.EnumClassesOfCategories
 
-[PyIEnumGUID](#pyienumguid)\= **EnumClassesOfCategories\( *listIIdImplemented*  *, listIIdRequired* ** \)
+[PyIEnumGUID](#pyienumguid) =EnumClassesOfCategories\(listIIdImplemented, listIIdRequired\)
 Returns an enumerator over the classes that implement one or more interfaces\.
 
 #### Parameters
 
 
-  -  *listIIdImplemented\=None* : \[[PyIID](#pyiid), \.\.\.\]
+  - listIIdImplemented=None : \[[PyIID](#pyiid), \.\.\.\]
 
-    A sequence of[PyIID](#pyiid)objects, or None\.
+    A sequence of[PyIID](#pyiid) objects, or None\.
 
-  -  *listIIdRequired\=None* : list iid
+  - listIIdRequired=None : list iid
 
-    A sequence of[PyIID](#pyiid)objects, or None\.
+    A sequence of[PyIID](#pyiid) objects, or None\.
 
 ## [PyICatInformation](#pyicatinformation)\.GetCategoryDesc
 
-string \= **GetCategoryDesc\( *lcid* ** \)
+
+
+string =GetCategoryDesc\(lcid\)
 Retrieves the localized description string for a specific category ID\.
 
 #### Parameters
 
 
-  -  *lcid\=0* : int
+  - lcid=0 : int
 
     lcid
 
 #### Comments
+
+
 The return type is a unicode object\.

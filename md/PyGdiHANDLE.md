@@ -2,6 +2,8 @@
 
 ## PyGdiHANDLE Object
 
+
+
 Gdi objects such as brush \(HBRUSH\), pen \(HPEN\), font \(HFONT\), region \(HRGN\), bitmap \(HBITMAP\) 
 
 On destruction, the handle is closed using DeleteObject\.  The object's Close\(\) method also calls DeleteObject\. 

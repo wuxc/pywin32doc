@@ -2,7 +2,13 @@
 
 ## PyCOleClientItem Object
 
-An OLE client item class\.  Encapsulates an MFC **COleClientItem** class
+
+
+An OLE client item class\.  Encapsulates an MFCCOleClientItem
+
+
+
+ class
 
 #### Methods
 
@@ -73,133 +79,137 @@ An OLE client item class\.  Encapsulates an MFC **COleClientItem** class
 
 ## [PyCOleClientItem](#pycoleclientitem)\.Close
 
- **Close\(** \)
+Close\(\)
 Closes the item
 
 ## [PyCOleClientItem](#pycoleclientitem)\.CreateNewItem
 
- **CreateNewItem\(** \)
+CreateNewItem\(\)
 Creates an embedded item\.
 
 ## [PyCOleClientItem](#pycoleclientitem)\.DoVerb
 
- **DoVerb\(** \)
+DoVerb\(\)
 Executes the specified verb\.
 
 ## [PyCOleClientItem](#pycoleclientitem)\.Draw
 
- **Draw\(** \)
+Draw\(\)
 Draws the OLE item into the specified bounding rectangle using the specified device context\.
 
 ## [PyCOleClientItem](#pycoleclientitem)\.GetActiveView
 
-[PyCView](#pycview)\= **GetActiveView\(** \)
+[PyCView](#pycview) =GetActiveView\(\)
 Obtains the active view for the item
 
 ## [PyCOleClientItem](#pycoleclientitem)\.GetDocument
 
-[PyCDocument](#pycdocument)\= **GetDocument\(** \)
+[PyCDocument](#pycdocument) =GetDocument\(\)
 Obtains the current document for the item
 
 ## [PyCOleClientItem](#pycoleclientitem)\.GetInPlaceWindow
 
-[PyCWnd](#pycwnd)\= **GetInPlaceWindow\(** \)
+[PyCWnd](#pycwnd) =GetInPlaceWindow\(\)
 Obtains the window in which the item has been opened for in-place editing\.
 
 ## [PyCOleClientItem](#pycoleclientitem)\.GetItemState
 
- **GetItemState\(** \)
+GetItemState\(\)
 Obtains the OLE item's current state
 
 ## [PyCOleClientItem](#pycoleclientitem)\.GetObject
 
-[PyIUnknown](#pyiunknown)\= **GetObject\(** \)
+[PyIUnknown](#pyiunknown) =GetObject\(\)
 Returns the COM object to the item\.  This is the m\_lpObject variable in MFC\.
 
 ## [PyCOleClientItem](#pycoleclientitem)\.GetStorage
 
- **GetStorage\(** \)
+GetStorage\(\)
 Returns the COM object used for storage
 
 ## [PyCOleClientItem](#pycoleclientitem)\.OnActivate
 
- **OnActivate\(** \)
+OnActivate\(\)
 Calls the underlying MFC method\.
 
-## [PyCOleClientItem\.OnActivate](#pycoleclientitem)Virtual
+## [PyCOleClientItem\.OnActivate](#pycoleclientitem) Virtual
 
- **OnActivate\(** \)
+OnActivate\(\)
 
 
 ## [PyCOleClientItem](#pycoleclientitem)\.OnChange
 
- **OnChange\(** \)
+OnChange\(\)
 Calls the underlying MFC method\.
 
 ## [PyCOleClientItem](#pycoleclientitem)\.OnChangeItemPosition
 
-int \= **OnChangeItemPosition\(** \)
+
+
+int =OnChangeItemPosition\(\)
 Calls the underlying MFC method\.
 
 #### Return Value
 The result is a BOOL indicating if the function succeeded\.  No exception is thrown\.
 
-## [PyCOleClientItem\.OnChangeItemPosition](#pycoleclientitem)Virtual
+## [PyCOleClientItem\.OnChangeItemPosition](#pycoleclientitem) Virtual
 
- **OnChangeItemPosition\( *\(left, top, right, bottom\)* ** \)
+OnChangeItemPosition\(\(left, top, right, bottom\)\)
 
 
 #### Parameters
 
 
-  -  *\(left, top, right, bottom\)* : \(int, int, int, int\)
+  - \(left, top, right, bottom\) : \(int, int, int, int\)
 
     The new position
 
-## [PyCOleClientItem\.OnChange](#pycoleclientitem)Virtual
+## [PyCOleClientItem\.OnChange](#pycoleclientitem) Virtual
 
- **OnChange\( *wNotification*  *, dwParam* ** \)
+OnChange\(wNotification, dwParam\)
 
 
 #### Parameters
 
 
-  -  *wNotification* : int
+  - wNotification : int
 
     
 
-  -  *dwParam* : int
+  - dwParam : int
 
     
 
 ## [PyCOleClientItem](#pycoleclientitem)\.OnDeactivateUI
 
-int \= **OnDeactivateUI\(** \)
+
+
+int =OnDeactivateUI\(\)
 Calls the underlying MFC method\.
 
-## [PyCOleClientItem\.OnDeactivateUI](#pycoleclientitem)Virtual
+## [PyCOleClientItem\.OnDeactivateUI](#pycoleclientitem) Virtual
 
- **OnDeactivateUI\( *bUndoable* ** \)
+OnDeactivateUI\(bUndoable\)
 
 
 #### Parameters
 
 
-  -  *bUndoable* : int
+  - bUndoable : int
 
     
 
-## [PyCOleClientItem\.OnGetItemPosition](#pycoleclientitem)Virtual
+## [PyCOleClientItem\.OnGetItemPosition](#pycoleclientitem) Virtual
 
- **OnGetItemPosition\(** \)
+OnGetItemPosition\(\)
 
 
 ## [PyCOleClientItem](#pycoleclientitem)\.Run
 
- **Run\(** \)
+Run\(\)
 Runs the application associated with this item\.
 
 ## [PyCOleClientItem](#pycoleclientitem)\.SetItemRects
 
- **SetItemRects\(** \)
+SetItemRects\(\)
 Sets the bounding rectangle or the visible rectangle of the OLE item\.

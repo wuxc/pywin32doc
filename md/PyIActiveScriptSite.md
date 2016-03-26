@@ -2,6 +2,8 @@
 
 ## PyIActiveScriptSite Object
 
+
+
 An object providing the IActiveScriptSite interface
 
 #### Methods
@@ -41,39 +43,55 @@ An object providing the IActiveScriptSite interface
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetDocVersionString
 
-int \= **GetDocVersionString\(** \)
+
+
+int =GetDocVersionString\(\)
 
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetItemInfo
 
-int \= **GetItemInfo\(** \)
+
+
+int =GetItemInfo\(\)
 
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetLCID
 
-int \= **GetLCID\(** \)
+
+
+int =GetLCID\(\)
 
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnEnterScript
 
-int \= **OnEnterScript\(** \)
+
+
+int =OnEnterScript\(\)
 
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnLeaveScript
 
-int \= **OnLeaveScript\(** \)
+
+
+int =OnLeaveScript\(\)
 
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnScriptError
 
-int \= **OnScriptError\(** \)
+
+
+int =OnScriptError\(\)
 
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnScriptTerminate
 
-int \= **OnScriptTerminate\(** \)
+
+
+int =OnScriptTerminate\(\)
 
 
 ## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnStateChange
 
-int \= **OnStateChange\(** \)
+
+
+int =OnStateChange\(\)

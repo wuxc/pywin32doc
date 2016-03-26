@@ -2,6 +2,8 @@
 
 ## PyIInternetProtocolRoot Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,71 +35,71 @@ Description of the interface
 
 ## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Abort
 
- **Abort\( *hrReason*  *, dwOptions* ** \)
+Abort\(hrReason, dwOptions\)
 Description of Abort\.
 
 #### Parameters
 
 
-  -  *hrReason* : int
+  - hrReason : int
 
     Description for hrReason
 
-  -  *dwOptions* : int
+  - dwOptions : int
 
     Description for dwOptions
 
 ## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Continue
 
- **Continue\(** \)
+Continue\(\)
 Description of Continue\.
 
 ## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Resume
 
- **Resume\(** \)
+Resume\(\)
 Description of Resume\.
 
 ## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Start
 
- **Start\( *szUrl*  *, pOIProtSink*  *, pOIBindInfo*  *, grfPI*  *, dwReserved* ** \)
+Start\(szUrl, pOIProtSink, pOIBindInfo, grfPI, dwReserved\)
 Description of Start\.
 
 #### Parameters
 
 
-  -  *szUrl* : **unicode** 
+  - szUrl :unicode
 
     Description for szUrl
 
-  -  *pOIProtSink* :[PyIInternetProtocolSink](#pyiinternetprotocolsink)
+  - pOIProtSink :[PyIInternetProtocolSink](#pyiinternetprotocolsink)
 
     Description for pOIProtSink
 
-  -  *pOIBindInfo* :[PyIInternetBindInfo](#pyiinternetbindinfo)
+  - pOIBindInfo :[PyIInternetBindInfo](#pyiinternetbindinfo)
 
     Description for pOIBindInfo
 
-  -  *grfPI* : int
+  - grfPI : int
 
     Description for grfPI
 
-  -  *dwReserved* : int
+  - dwReserved : int
 
     Description for dwReserved
 
 ## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Suspend
 
- **Suspend\(** \)
+Suspend\(\)
 Description of Suspend\.
 
 ## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Terminate
 
- **Terminate\( *dwOptions* ** \)
+Terminate\(dwOptions\)
 Description of Terminate\.
 
 #### Parameters
 
 
-  -  *dwOptions* : int
+  - dwOptions : int
 
     Description for dwOptions

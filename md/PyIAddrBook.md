@@ -2,6 +2,8 @@
 
 ## PyIAddrBook Object
 
+
+
 An COM interface to MAPI's IAddrBook interface\.
 Derived from[PyIMAPIProp](#pyimapiprop)
 
@@ -22,21 +24,23 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
 ## [PyIAddrBook](#pyiaddrbook)\.CompareEntryIDs
 
-int \= **CompareEntryIDs\( *entryId*  *, entryId*  *, flags* ** \)
+
+
+int =CompareEntryIDs\(entryId, entryId, flags\)
 Compares two entry identifiers belonging to a particular address book provider to determine if they refer to the same address book object
 
 #### Parameters
 
 
-  -  *entryId* : string
+  - entryId : string
 
     The first entry ID to be compared
 
-  -  *entryId* : string
+  - entryId : string
 
     The second entry ID to be compared
 
-  -  *flags\=0* : int
+  - flags=0 : int
 
     Reserved - must be zero\.
 
@@ -45,44 +49,46 @@ The result is set to TRUE if the two entry identifiers refer to the same object,
 
 ## [PyIAddrBook](#pyiaddrbook)\.OpenEntry
 
- **PyIInterface** \= **OpenEntry\( *entryId*  *, iid*  *, flags* ** \)
+PyIInterface
+
+ =OpenEntry\(entryId, iid, flags\)
 Opens a folder or message and returns an interface object for further access\.
 
 #### Parameters
 
 
-  -  *entryId* : string
+  - entryId : string
 
     The entryID of the object
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the object to return, or None for the default IID
 
-  -  *flags* : int
+  - flags : int
 
     Bitmask of flags that controls how the object is opened\.
 
 ## [PyIAddrBook](#pyiaddrbook)\.ResolveName
 
- **ResolveName\( *uiParm*  *, flags*  *, entryTitle*  *, ADRLIST* ** \)
+ResolveName\(uiParm, flags, entryTitle, ADRLIST\)
 Performs name resolution, assigning entry identifiers to recipients in a recipient list\.
 
 #### Parameters
 
 
-  -  *uiParm* : int
+  - uiParm : int
 
     hwnd of a dialogs parent\.
 
-  -  *flags* : int
+  - flags : int
 
     Bitmask of flags that controls whether a dialog box can be displayed\.
 
-  -  *entryTitle* : string
+  - entryTitle : string
 
     
 
-  -  *ADRLIST* : **PyADRLIST** 
+  - ADRLIST :PyADRLIST
 
     Partial addresses to resolve\.

@@ -2,7 +2,13 @@
 
 ## PyCRichEditCtrl Object
 
-A windows Rich Text edit control\.  Encapsulates an MFC **CRichEditCtrl** class\.  Derived from a[PyCControl](#pyccontrol)object\.
+
+
+A windows Rich Text edit control\.  Encapsulates an MFCCRichEditCtrl
+
+
+
+ class\.  Derived from a[PyCControl](#pyccontrol) object\.
 
 #### Methods
 
@@ -33,7 +39,7 @@ A windows Rich Text edit control\.  Encapsulates an MFC **CRichEditCtrl** class\
 
   - [GetDefaultCharFormat](PyCRichEditCtrl.md#pycricheditctrlgetdefaultcharformat)
 
-    Returns the current default character formatting attributes in this **PyCRichEditCtrl** object\.&nbsp;
+    Returns the current default character formatting attributes in thisPyCRichEditCtrl object\.&nbsp;
 
   - [GetEventMask](PyCRichEditCtrl.md#pycricheditctrlgeteventmask)
 
@@ -41,7 +47,7 @@ A windows Rich Text edit control\.  Encapsulates an MFC **CRichEditCtrl** class\
 
   - [GetSelectionCharFormat](PyCRichEditCtrl.md#pycricheditctrlgetselectioncharformat)
 
-    Returns the character formatting attributes of the current selection in this **PyCRichEditCtrl** object\.&nbsp;
+    Returns the character formatting attributes of the current selection in thisPyCRichEditCtrl object\.&nbsp;
 
   - [GetFirstVisibleLine](PyCRichEditCtrl.md#pycricheditctrlgetfirstvisibleline)
 
@@ -153,7 +159,9 @@ A windows Rich Text edit control\.  Encapsulates an MFC **CRichEditCtrl** class\
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.Clear
 
-int \= **Clear\(** \)
+
+
+int =Clear\(\)
 Clears all text in an edit control\.
 
 #### MFC References
@@ -163,7 +171,7 @@ Clears all text in an edit control\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.Copy
 
- **Copy\(** \)
+Copy\(\)
 Copys the current selection to the clipboard\.
 
 #### MFC References
@@ -173,31 +181,31 @@ Copys the current selection to the clipboard\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.CreateWindow
 
- **CreateWindow\( *style*  *, rect*  *, parent*  *, id* ** \)
+CreateWindow\(style, rect, parent, id\)
 Creates a rich edit control window\.
 
 #### Parameters
 
 
-  -  *style* : int
+  - style : int
 
     The control style
 
-  -  *rect* : int,int,int,int
+  - rect : int,int,int,int
 
     The position of the control
 
-  -  *parent* :[PyCWnd](#pycwnd)
+  - parent :[PyCWnd](#pycwnd)
 
     The parent window\.  Must not be None
 
-  -  *id* : int
+  - id : int
 
     The control ID
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.Cut
 
- **Cut\(** \)
+Cut\(\)
 Cuts the current selection to the clipboard\.
 
 #### MFC References
@@ -207,35 +215,41 @@ Cuts the current selection to the clipboard\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.FindText
 
-int, \(start, end\) \= **FindText\( *charPos* ** \)
+
+
+int, \(start, end\) =FindText\(charPos\)
 Finds text in the control
 
 #### Parameters
 
 
-  -  *charPos* : int
+  - charPos : int
 
     The character position
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetCharPos
 
-\(tuple\) \= **GetCharPos\( *charPos* ** \)
+
+
+\(tuple\) =GetCharPos\(charPos\)
 Returns the location of the top-left corner of the character specified by charPos\.
 
 #### Parameters
 
 
-  -  *charPos* : int
+  - charPos : int
 
     The character position
 
 #### Return Value
-The return value is a **win32ui::CHARFORMAT tuple** 
+The return value is awin32ui::CHARFORMAT tuple
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetDefaultCharFormat
 
-\(tuple\) \= **GetDefaultCharFormat\(** \)
-Returns the current default character formatting attributes in this[PyCRichEditCtrl](#pycricheditctrl)object\.
+
+
+\(tuple\) =GetDefaultCharFormat\(\)
+Returns the current default character formatting attributes in this[PyCRichEditCtrl](#pycricheditctrl) object\.
 
 #### MFC References
 
@@ -243,11 +257,13 @@ Returns the current default character formatting attributes in this[PyCRichEditC
   - CRichEditCtrl::GetDefaultCharFormat
 
 #### Return Value
-The return value is a **win32ui::CHARFORMAT tuple** 
+The return value is awin32ui::CHARFORMAT tuple
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetEventMask
 
-int \= **GetEventMask\(** \)
+
+
+int =GetEventMask\(\)
 Returns the current event mask\.
 
 #### MFC References
@@ -257,7 +273,9 @@ Returns the current event mask\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetFirstVisibleLine
 
-int \= **GetFirstVisibleLine\(** \)
+
+
+int =GetFirstVisibleLine\(\)
 Returns zero-based index of the topmost visible line\.
 
 #### MFC References
@@ -270,22 +288,28 @@ The zero-based index of the topmost visible line\. For single-line edit controls
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetLine
 
-int \= **GetLine\( *lineNo* ** \)
+
+
+int =GetLine\(lineNo\)
 Returns the text in a specified line\.
 
 #### Parameters
 
 
-  -  *lineNo\=current* : int
+  - lineNo=current : int
 
     Contains the zero-based index value for the desired line\.
 
 #### Comments
+
+
 This function is not an MFC wrapper\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetLineCount
 
-int \= **GetLineCount\(** \)
+
+
+int =GetLineCount\(\)
 Gets the number of lines in an edit control\.
 
 #### MFC References
@@ -298,7 +322,9 @@ The number of lines in the buffer\.  If the control is empty, the return value i
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetModify
 
-int \= **GetModify\(** \)
+
+
+int =GetModify\(\)
 Nonzero if the text in this control has been modified; otherwise 0\.
 
 #### MFC References
@@ -308,7 +334,9 @@ Nonzero if the text in this control has been modified; otherwise 0\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetParaFormat
 
-\(tuple\) \= **GetParaFormat\(** \)
+
+
+\(tuple\) =GetParaFormat\(\)
 Returns the current paragraph formatting attributes\.
 
 #### MFC References
@@ -317,11 +345,13 @@ Returns the current paragraph formatting attributes\.
   - CRichEditCtrl::GetParaFormat
 
 #### Return Value
-The return value is a **win32ui::PARAFORMAT tuple** 
+The return value is awin32ui::PARAFORMAT tuple
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetSel
 
-\(start, end\) \= **GetSel\(** \)
+
+
+\(start, end\) =GetSel\(\)
 Returns the start and end of the current selection\.
 
 #### MFC References
@@ -334,12 +364,16 @@ The return tuple is \(the first character in the current selection, first nonsel
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetSelText
 
-string \= **GetSelText\(** \)
+
+
+string =GetSelText\(\)
 Returns the currently selected text
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetSelectionCharFormat
 
-\(tuple\) \= **GetSelectionCharFormat\(** \)
+
+
+\(tuple\) =GetSelectionCharFormat\(\)
 Returns the character formatting of the selection\.
 
 #### MFC References
@@ -349,7 +383,9 @@ Returns the character formatting of the selection\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.GetTextLength
 
-int \= **GetTextLength\(** \)
+
+
+int =GetTextLength\(\)
 Returns the length of the text in the control\.
 
 #### MFC References
@@ -359,13 +395,13 @@ Returns the length of the text in the control\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.LimitText
 
- **LimitText\( *nChars* ** \)
+LimitText\(nChars\)
 Sets max length of text that user can enter
 
 #### Parameters
 
 
-  -  *nChars\=0* : int
+  - nChars=0 : int
 
     Specifies the length \(in bytes\) of the text that the user can enter\. If this parameter is 0, the text length is set to 
 
@@ -378,13 +414,15 @@ UINT\_MAX bytes\. This is the default behavior\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.LineFromChar
 
-int \= **LineFromChar\( *charNo* ** \)
+
+
+int =LineFromChar\(charNo\)
 Returns the line number of the specified character\.
 
 #### Parameters
 
 
-  -  *charNo\=-1* : int
+  - charNo=-1 : int
 
     Contains the zero-based index value for the desired character in the text of the edit 
 
@@ -404,19 +442,23 @@ If there is no selection, the current line number is returned\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.LineIndex
 
-int \= **LineIndex\( *lineNo* ** \)
+
+
+int =LineIndex\(lineNo\)
 Retrieves the character index of a line within a multiple-line edit control\.
 
 #### Parameters
 
 
-  -  *lineNo\=-1* : int
+  - lineNo=-1 : int
 
     Contains the index value for the desired line in the text 
 
 of the edit control, or contains -1\.  If -1, then it specifies the current line\.
 
 #### Comments
+
+
 This method only works on multi-linr edit controls\.
 
 #### MFC References
@@ -433,23 +475,27 @@ the edit control\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.LineScroll
 
-int \= **LineScroll\( *nLines*  *, nChars* ** \)
+
+
+int =LineScroll\(nLines, nChars\)
 Scroll the control vertically and horizontally
 
 #### Parameters
 
 
-  -  *nLines* : int
+  - nLines : int
 
     Specifies the number of lines to scroll vertically\.
 
-  -  *nChars\=0* : int
+  - nChars=0 : int
 
     Specifies the number of character positions to scroll horizontally\. This value is ignored if the edit control has either the 
 
 ES\_RIGHT or ES\_CENTER style\.
 
 #### Comments
+
+
 This method only works on multi-linr edit controls\.
 
 #### MFC References
@@ -459,7 +505,7 @@ This method only works on multi-linr edit controls\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.Paste
 
- **Paste\(** \)
+Paste\(\)
 Pastes the contents of the clipboard into the control\.
 
 #### MFC References
@@ -469,13 +515,13 @@ Pastes the contents of the clipboard into the control\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.ReplaceSel
 
- **ReplaceSel\( *text* ** \)
+ReplaceSel\(text\)
 Replaces the selection with the specified text\.
 
 #### Parameters
 
 
-  -  *text* : string
+  - text : string
 
     The text to replace the selection with\.
 
@@ -486,17 +532,19 @@ Replaces the selection with the specified text\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetBackgroundColor
 
-int \= **SetBackgroundColor\( *bSysColor*  *, cr* ** \)
+
+
+int =SetBackgroundColor\(bSysColor, cr\)
 Sets the background color for the control\.
 
 #### Parameters
 
 
-  -  *bSysColor* : int
+  - bSysColor : int
 
     Indicates if the background color should be set to the system value\. If this value is TRUE, cr is ignored\.
 
-  -  *cr\=0* : int
+  - cr=0 : int
 
     The requested background color\. Used only if bSysColor is FALSE\.
 
@@ -510,15 +558,19 @@ The return value is the previous background color\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetDefaultCharFormat
 
- **SetDefaultCharFormat\( *charFormat* ** \)
-Sets the current default character formatting attributes in this[PyCRichEditCtrl](#pycricheditctrl)object\.
+SetDefaultCharFormat\(charFormat\)
+Sets the current default character formatting attributes in this[PyCRichEditCtrl](#pycricheditctrl) object\.
 
 #### Parameters
 
 
-  -  *charFormat* : tuple
+  - charFormat : tuple
 
-    A charformat tuple\.  See **win32ui::CHARFORMAT tuple** for details\.
+    A charformat tuple\.  Seewin32ui::CHARFORMAT tuple
+
+
+
+ for details\.
 
 #### MFC References
 
@@ -527,13 +579,15 @@ Sets the current default character formatting attributes in this[PyCRichEditCtrl
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetEventMask
 
-int \= **SetEventMask\( *eventMask* ** \)
+
+
+int =SetEventMask\(eventMask\)
 Sets the event motification mask\.
 
 #### Parameters
 
 
-  -  *eventMask* : int
+  - eventMask : int
 
     The new event mask\.  Must be one of the win32con\.ENM\_\* flags\.
 
@@ -547,13 +601,13 @@ The return value is the previous event mask\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetModify
 
- **SetModify\( *modified* ** \)
+SetModify\(modified\)
 Sets the modified flag for this control
 
 #### Parameters
 
 
-  -  *modified\=1* : int
+  - modified=1 : int
 
     Indicates the new value for the modified flag\.
 
@@ -564,17 +618,17 @@ Sets the modified flag for this control
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetOptions
 
- **SetOptions\( *op*  *, flags* ** \)
+SetOptions\(op, flags\)
 Sets options for the control\.
 
 #### Parameters
 
 
-  -  *op* : int
+  - op : int
 
     Indicates the operation\.  Must be one of the win32con\.ECOOP\_\* flags\.
 
-  -  *flags* : int
+  - flags : int
 
     Indicates the options\.  Must be one a combination of win32con\.ECO\_\* flags\.
 
@@ -585,15 +639,21 @@ Sets options for the control\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetParaFormat
 
-int \= **SetParaFormat\( *paraFormat* ** \)
+
+
+int =SetParaFormat\(paraFormat\)
 Sets the paragraph formatting
 
 #### Parameters
 
 
-  -  *paraFormat* : tuple
+  - paraFormat : tuple
 
-    A charformat tuple\.  See **win32ui::PARAFORMAT tuple** for details\.
+    A charformat tuple\.  Seewin32ui::PARAFORMAT tuple
+
+
+
+ for details\.
 
 #### MFC References
 
@@ -609,13 +669,13 @@ but the BOOL return code is passed back\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetReadOnly
 
- **SetReadOnly\( *bReadOnly* ** \)
+SetReadOnly\(bReadOnly\)
 Sets or clears the read-only status of the listbox\.
 
 #### Parameters
 
 
-  -  *bReadOnly\=1* : int
+  - bReadOnly=1 : int
 
     The read-only state to set\.
 
@@ -626,13 +686,13 @@ Sets or clears the read-only status of the listbox\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetSel
 
- **SetSel\( *start*  *, end* ** \)
+SetSel\(start, end\)
 Sets the selection in the edit control\.
 
 #### Parameters
 
 
-  -  *start* : int
+  - start : int
 
     Specifies the starting position\. 
 
@@ -640,14 +700,14 @@ If start is 0 and end is -1, all the text in the edit control is selected\.
 
 If start is -1, any current selection is removed\.
 
-  -  *end\=start* : int
+  - end=start : int
 
     Specifies the ending position\.
 
 #### Alternative Parameters
 
 
-  -  *start,end\)* 
+  - start,end\)
 
     As for normal start, end args\.
 
@@ -658,17 +718,23 @@ If start is -1, any current selection is removed\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetSelAndCharFormat
 
- **SetSelAndCharFormat\( *charFormat* ** \)
+SetSelAndCharFormat\(charFormat\)
 Sets the selection and char format\.
 
 #### Parameters
 
 
-  -  *charFormat* : tuple
+  - charFormat : tuple
 
-    A charformat tuple\.  See **win32ui::CHARFORMAT tuple** for details\.
+    A charformat tuple\.  Seewin32ui::CHARFORMAT tuple
+
+
+
+ for details\.
 
 #### Comments
+
+
 Highly optimised for speed for color editors\.
 
 #### MFC References
@@ -680,15 +746,19 @@ Highly optimised for speed for color editors\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetSelectionCharFormat
 
- **SetSelectionCharFormat\( *charFormat* ** \)
+SetSelectionCharFormat\(charFormat\)
 Sets the current selections character formatting attributes\.
 
 #### Parameters
 
 
-  -  *charFormat* : tuple
+  - charFormat : tuple
 
-    A charformat tuple\.  See **win32ui::CHARFORMAT tuple** for details\.
+    A charformat tuple\.  Seewin32ui::CHARFORMAT tuple
+
+
+
+ for details\.
 
 #### MFC References
 
@@ -697,17 +767,17 @@ Sets the current selections character formatting attributes\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetTargetDevice
 
- **SetTargetDevice\( *dc*  *, lineWidth* ** \)
+SetTargetDevice\(dc, lineWidth\)
 Sets the target device for the control
 
 #### Parameters
 
 
-  -  *dc* :[PyCDC](#pycdc)
+  - dc :[PyCDC](#pycdc)
 
     The new DC - may be None
 
-  -  *lineWidth* : int
+  - lineWidth : int
 
     Line width to use for formatting\.
 
@@ -718,15 +788,19 @@ Sets the target device for the control
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.SetWordCharFormat
 
- **SetWordCharFormat\( *charFormat* ** \)
+SetWordCharFormat\(charFormat\)
 Sets the currently selected word's character formatting attributes\.
 
 #### Parameters
 
 
-  -  *charFormat* : tuple
+  - charFormat : tuple
 
-    A charformat tuple\.  See **win32ui::CHARFORMAT tuple** for details\.
+    A charformat tuple\.  Seewin32ui::CHARFORMAT tuple
+
+
+
+ for details\.
 
 #### MFC References
 
@@ -735,17 +809,19 @@ Sets the currently selected word's character formatting attributes\.
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.StreamIn
 
-\(int,int\) \= **StreamIn\( *format*  *, method* ** \)
+
+
+\(int,int\) =StreamIn\(format, method\)
 Invokes a callback to stream data into the control\.
 
 #### Parameters
 
 
-  -  *format* : int
+  - format : int
 
     The format\.  One of the win32con\.SF\_\* flags \(SF\_TEXT,SF\_RTF\)
 
-  -  *method* : object
+  - method : object
 
     A callable object \(eg, a method or function\) 
 
@@ -765,17 +841,19 @@ The return value is a tuple of \(no bytes written, error code\)
 
 ## [PyCRichEditCtrl](#pycricheditctrl)\.StreamOut
 
-\(int, int\) \= **StreamOut\( *format*  *, method* ** \)
+
+
+\(int, int\) =StreamOut\(format, method\)
 Invokes a callback to stream data into the control\.
 
 #### Parameters
 
 
-  -  *format* : int
+  - format : int
 
     The format\.  One of the win32con\.SF\_\* flags \(SF\_TEXT,SF\_RTF\) and may also combine SFF\_SELECTION\.
 
-  -  *method* : object
+  - method : object
 
     A callable object \(eg, a method or function\) 
 

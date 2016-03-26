@@ -7,14 +7,14 @@
 #### Parameters
 
 
-  -  *relOp* : int
+  - relOp : int
 
     
 
-  -  *propTag* : ULONG
+  - propTag : ULONG
 
     The property ID\.
 
-  -  *propertyValue* :[PySPropValue](#pyspropvalue)
+  - propertyValue :[PySPropValue](#pyspropvalue)
 
     

@@ -2,6 +2,8 @@
 
 ## PyIOleInPlaceObject Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -25,20 +27,20 @@ Description of the interface
 
 ## [PyIOleInPlaceObject](#pyioleinplaceobject)\.InPlaceDeactivate
 
- **InPlaceDeactivate\(** \)
+InPlaceDeactivate\(\)
 Description of InPlaceDeactivate\.
 
 ## [PyIOleInPlaceObject](#pyioleinplaceobject)\.ReactivateAndUndo
 
- **ReactivateAndUndo\(** \)
+ReactivateAndUndo\(\)
 Description of ReactivateAndUndo\.
 
 ## [PyIOleInPlaceObject](#pyioleinplaceobject)\.SetObjectRects
 
- **SetObjectRects\(** \)
+SetObjectRects\(\)
 Description of SetObjectRects\.
 
 ## [PyIOleInPlaceObject](#pyioleinplaceobject)\.UIDeactivate
 
- **UIDeactivate\(** \)
+UIDeactivate\(\)
 Description of UIDeactivate\.

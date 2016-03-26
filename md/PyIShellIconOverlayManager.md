@@ -2,6 +2,8 @@
 
 ## PyIShellIconOverlayManager Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,77 +31,79 @@ Description of the interface
 
 ## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.GetFileOverlayInfo
 
-int \= **GetFileOverlayInfo\( *path*  *, attrib*  *, flags* ** \)
+
+
+int =GetFileOverlayInfo\(path, attrib, flags\)
 Returns an index into the system image list for the icon image or overlay image
 
 #### Parameters
 
 
-  -  *path* : str
+  - path : str
 
     Full path to the file
 
-  -  *attrib* : int
+  - attrib : int
 
     File attributes \(win32com\.FILE\_ATTRIBUTE\_\*\)
 
-  -  *flags* : int
+  - flags : int
 
     SIOM\_OVERLAYINDEX \(1\) or SIOM\_ICONINDEX \(2\)
 
 ## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.GetReservedOverlayInfo
 
- **GetReservedOverlayInfo\( *path*  *, attrib*  *, flags*  *, ireservedID* ** \)
+GetReservedOverlayInfo\(path, attrib, flags, ireservedID\)
 Description of GetReservedOverlayInfo\.
 
 #### Parameters
 
 
-  -  *path* : str
+  - path : str
 
     Description for path
 
-  -  *attrib* : int
+  - attrib : int
 
     Description for attrib
 
-  -  *flags* : int
+  - flags : int
 
     Description for flags
 
-  -  *ireservedID* : int
+  - ireservedID : int
 
     Description for ireservedID
 
 ## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.LoadNonloadedOverlayIdentifiers
 
- **LoadNonloadedOverlayIdentifiers\(** \)
+LoadNonloadedOverlayIdentifiers\(\)
 Description of LoadNonloadedOverlayIdentifiers\.
 
 ## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.OverlayIndexFromImageIndex
 
- **OverlayIndexFromImageIndex\( *iImage*  *, fAdd* ** \)
+OverlayIndexFromImageIndex\(iImage, fAdd\)
 Description of OverlayIndexFromImageIndex\.
 
 #### Parameters
 
 
-  -  *iImage* : int
+  - iImage : int
 
     Description for iImage
 
-  -  *fAdd* : int
+  - fAdd : int
 
     Description for fAdd
 
 ## [PyIShellIconOverlayManager](#pyishelliconoverlaymanager)\.RefreshOverlayImages
 
- **RefreshOverlayImages\( *flags* ** \)
+RefreshOverlayImages\(flags\)
 Description of RefreshOverlayImages\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     Description for flags

@@ -2,7 +2,9 @@
 
 ## PyCColorDialog Object
 
-A class which encapsulates an MFC CColorDialog object\.  Derived from a[PyCDialog](#pycdialog)object\.
+
+
+A class which encapsulates an MFC CColorDialog object\.  Derived from a[PyCDialog](#pycdialog) object\.
 
 #### Methods
 
@@ -34,7 +36,9 @@ A class which encapsulates an MFC CColorDialog object\.  Derived from a[PyCDialo
 
 ## [PyCColorDialog](#pyccolordialog)\.DoModal
 
-int \= **DoModal\(** \)
+
+
+int =DoModal\(\)
 Displays a dialog and allows the user to make a selection\.
 
 #### MFC References
@@ -44,7 +48,9 @@ Displays a dialog and allows the user to make a selection\.
 
 ## [PyCColorDialog](#pyccolordialog)\.GetColor
 
-int \= **GetColor\(** \)
+
+
+int =GetColor\(\)
 Determines the selected color\.
 
 #### MFC References
@@ -54,12 +60,16 @@ Determines the selected color\.
 
 ## [PyCColorDialog](#pyccolordialog)\.GetCustomColors
 
-\(int,\.\.\.\) \= **GetCustomColors\(** \)
+
+
+\(int,\.\.\.\) =GetCustomColors\(\)
 Gets the 16 currently defined custom colors
 
 ## [PyCColorDialog](#pyccolordialog)\.GetSavedCustomColors
 
-int \= **GetSavedCustomColors\(** \)
+
+
+int =GetSavedCustomColors\(\)
 Returns the saved custom colors\.
 
 #### MFC References
@@ -69,13 +79,13 @@ Returns the saved custom colors\.
 
 ## [PyCColorDialog](#pyccolordialog)\.SetCurrentColor
 
- **SetCurrentColor\( *color* ** \)
+SetCurrentColor\(color\)
 Sets the currently selected color\.
 
 #### Parameters
 
 
-  -  *color* : int
+  - color : int
 
     The color to set\.
 
@@ -86,5 +96,5 @@ Sets the currently selected color\.
 
 ## [PyCColorDialog](#pyccolordialog)\.SetCustomColors
 
- **SetCustomColors\(** \)
+SetCustomColors\(\)
 Sets one or more custom colors

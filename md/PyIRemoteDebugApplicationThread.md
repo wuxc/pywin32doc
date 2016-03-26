@@ -2,6 +2,8 @@
 
 ## PyIRemoteDebugApplicationThread Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -45,56 +47,56 @@ Description of the interface
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.EnumStackFrames
 
- **EnumStackFrames\(** \)
+EnumStackFrames\(\)
 Description of EnumStackFrames\.
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetApplication
 
- **GetApplication\(** \)
+GetApplication\(\)
 Description of GetApplication\.
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetDescription
 
- **GetDescription\(** \)
+GetDescription\(\)
 Description of GetDescription\.
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetState
 
- **GetState\(** \)
+GetState\(\)
 Description of GetState\.
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetSuspendCount
 
- **GetSuspendCount\(** \)
+GetSuspendCount\(\)
 Description of GetSuspendCount\.
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.GetSystemThreadId
 
- **GetSystemThreadId\(** \)
+GetSystemThreadId\(\)
 Description of GetSystemThreadId\.
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.Resume
 
- **Resume\(** \)
+Resume\(\)
 Description of Resume\.
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.SetNextStatement
 
- **SetNextStatement\( *pStackFrame*  *, pCodeContext* ** \)
+SetNextStatement\(pStackFrame, pCodeContext\)
 Description of SetNextStatement\.
 
 #### Parameters
 
 
-  -  *pStackFrame* :[PyIDebugStackFrame](#pyidebugstackframe)
+  - pStackFrame :[PyIDebugStackFrame](#pyidebugstackframe)
 
     Description for pStackFrame
 
-  -  *pCodeContext* :[PyIDebugCodeContext](#pyidebugcodecontext)
+  - pCodeContext :[PyIDebugCodeContext](#pyidebugcodecontext)
 
     Description for pCodeContext
 
 ## [PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)\.Suspend
 
- **Suspend\(** \)
+Suspend\(\)
 Description of Suspend\.

@@ -1,7 +1,11 @@
 # Source
 
 ## Source Safe Integration
+
+
 Note you will need to restart Pythonwin for this option to take effect\.
+
+
 Before using the VSS integration, you must create a "mssccprj\.scc" file 
 
 in the directory, or a parent directory, of the files you wish to 
@@ -11,7 +15,9 @@ integrate\. There are no limits on how many of these files exist\. This is
 the same name and format as VB uses for VSS integration - a Windows INI 
 
 file\.
-This file must have a section \[Python\] with entry "Project\=ProjectName"\. 
+
+
+This file must have a section \[Python\] with entry "Project=ProjectName"\. 
 
 The project name is the name of the VSS project used to check the out 
 
@@ -23,7 +29,7 @@ structure, you only need a single \.scc file in the VSS "root" directory\.
 
 For example, assuming you have the file c:\\\\src\\\\mssccprj\.scc with the contents:
 \[Python\]
-Project\=OurProject
+Project=OurProject
 -eof-
 The file c:\\\\src\\\\source1\.py will be checked out from project OurProject, 
 
@@ -32,6 +38,8 @@ c:\\\\src\\\\sub\\\\source2\.py will be checked out from project OurProject\\\\s
 etc\.
 
 ## Source code folding in the editor
+
+
 Thanks to Scintilla \(http://www\.scintilla\.org\), Pythonwin supports 
 
 source code folding\.  Folding is the ability to collapse sections of 
@@ -48,11 +56,15 @@ selecting one of the folding keystrokes \(see[Keyboard Bindings](Keyboard.md#key
 
 by using View-&gtFolding menu\.\)
 
+
+
 All find/replace or 'goto linenumber' functions work correctly when 
 
 code is folded - the code is simply unfolded if necessary before the 
 
 relevant operation\.
+
+
 
 You may configure Pythonwin so that all files have their top-levels 
 

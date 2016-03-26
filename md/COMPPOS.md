@@ -2,39 +2,41 @@
 
 ## COMPPOS Object
 
+
+
 A dictionary containing data to fill a COMPPOS struct
 
 #### Properties
 
-  -  **int Left** 
+  - int Left
     
 
-  -  **int Top** 
+  - int Top
     
 
-  -  **int Width** 
+  - int Width
     
 
-  -  **int Height** 
+  - int Height
     
 
-  -  **int Index** 
+  - int Index
     
 
-  -  **int CanResize** 
+  - int CanResize
     
 
-  -  **int CanResizeX** 
+  - int CanResizeX
     
 
-  -  **int CanResizeY** 
+  - int CanResizeY
     
 
-  -  **int PreferredLeftPercent** 
+  - int PreferredLeftPercent
     
 
-  -  **int PreferredTopPercent** 
+  - int PreferredTopPercent
     
 
-  -  **int Size** 
+  - int Size
     Size of structure, ignored on input

@@ -2,6 +2,8 @@
 
 ## PyIShellFolder2 Object
 
+
+
 Represents an explorer folder, giving access to details of items in the folder\. 
 
 Inherits all methods of[PyIShellFolder](#pyishellfolder)\.
@@ -43,26 +45,34 @@ Inherits all methods of[PyIShellFolder](#pyishellfolder)\.
 
 ## [PyIShellFolder2](#pyishellfolder2)\.EnumSearches
 
- **PyIEnumExtraSearch** \= **EnumSearches\(** \)
+PyIEnumExtraSearch
+
+ =EnumSearches\(\)
 Returns an interface that lists searches defined for the folder
 
 #### Comments
+
+
 IEnumExtraSearch is not yet wrapped by Pywin32
 
 ## [PyIShellFolder2](#pyishellfolder2)\.GetDefaultColumn
 
-\(int, int\) \= **GetDefaultColumn\(** \)
+
+
+\(int, int\) =GetDefaultColumn\(\)
 Returns the columns used for sorting and display
 
 ## [PyIShellFolder2](#pyishellfolder2)\.GetDefaultColumnState
 
-int \= **GetDefaultColumnState\( *iColumn* ** \)
+
+
+int =GetDefaultColumnState\(iColumn\)
 Returns flags indicating the default behaviour of the column
 
 #### Parameters
 
 
-  -  *iColumn* : int
+  - iColumn : int
 
     Zero-based index of the column
 
@@ -71,29 +81,31 @@ Returns a combination of shellcon\.SHCOLSTATE\_\* flags
 
 ## [PyIShellFolder2](#pyishellfolder2)\.GetDefaultSearchGUID
 
-[PyIID](#pyiid)\= **GetDefaultSearchGUID\( *pguid* ** \)
+[PyIID](#pyiid) =GetDefaultSearchGUID\(pguid\)
 Retrieves the default search for the folder
 
 #### Parameters
 
 
-  -  *pguid* :[PyIID](#pyiid)
+  - pguid :[PyIID](#pyiid)
 
     Description for pguid
 
 ## [PyIShellFolder2](#pyishellfolder2)\.GetDetailsEx
 
-object \= **GetDetailsEx\( *pidl*  *, pscid* ** \)
+
+
+object =GetDetailsEx\(pidl, pscid\)
 Returns the details of an item by Column ID
 
 #### Parameters
 
 
-  -  *pidl* :[PyIDL](#pyidl)
+  - pidl :[PyIDL](#pyidl)
 
     Relative id list of an item in the folder
 
-  -  *pscid* : **SHCOLUMNID** 
+  - pscid :SHCOLUMNID
 
     The Column id/property key of a column in the folder's Details view
 
@@ -102,17 +114,19 @@ The type of returned object is determined by the variant type of the requested c
 
 ## [PyIShellFolder2](#pyishellfolder2)\.GetDetailsOf
 
-\(int, int, str\) \= **GetDetailsOf\( *pidl*  *, iColumn* ** \)
+
+
+\(int, int, str\) =GetDetailsOf\(pidl, iColumn\)
 Returns the value or title of a column in the folder's Details view\.
 
 #### Parameters
 
 
-  -  *pidl* :[PyIDL](#pyidl)
+  - pidl :[PyIDL](#pyidl)
 
     The relative idl of an item in the folder\.  Use None to retrieve column title\.
 
-  -  *iColumn* : int
+  - iColumn : int
 
     Zero based index of column
 
@@ -123,13 +137,15 @@ and string representation of the requested value
 
 ## [PyIShellFolder2](#pyishellfolder2)\.MapColumnToSCID
 
- **SHCOLUMNID** \= **MapColumnToSCID\( *Column* ** \)
+SHCOLUMNID
+
+ =MapColumnToSCID\(Column\)
 Returns the unique identifier \(FMTID, pid\) of a column
 
 #### Parameters
 
 
-  -  *Column* : int
+  - Column : int
 
     The zero-based index of the column as presented by the folder's Details view
 

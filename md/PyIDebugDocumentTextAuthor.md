@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentTextAuthor Object
 
+
+
 This preliminary interface is provided by text documents that support editing\. Derived from[PyIDebugDocumentText](#pyidebugdocumenttext)
 
 #### Methods
@@ -21,56 +23,56 @@ This preliminary interface is provided by text documents that support editing\. 
 
 ## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor)\.InsertText
 
- **InsertText\( *cCharacterPosition*  *, cNumToInsert*  *, pcharText* ** \)
+InsertText\(cCharacterPosition, cNumToInsert, pcharText\)
 Description of InsertText\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumToInsert* : int
+  - cNumToInsert : int
 
     Description for cNumToInsert
 
-  -  *pcharText* : **unicode** 
+  - pcharText :unicode
 
     Description for pcharText
 
 ## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor)\.RemoveText
 
- **RemoveText\( *cCharacterPosition*  *, cNumToRemove* ** \)
+RemoveText\(cCharacterPosition, cNumToRemove\)
 Description of RemoveText\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumToRemove* : int
+  - cNumToRemove : int
 
     Description for cNumToRemove
 
 ## [PyIDebugDocumentTextAuthor](#pyidebugdocumenttextauthor)\.ReplaceText
 
- **ReplaceText\( *cCharacterPosition*  *, cNumToReplace*  *, pcharText* ** \)
+ReplaceText\(cCharacterPosition, cNumToReplace, pcharText\)
 Description of ReplaceText\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumToReplace* : int
+  - cNumToReplace : int
 
     Description for cNumToReplace
 
-  -  *pcharText* : **unicode** 
+  - pcharText :unicode
 
     Description for pcharText

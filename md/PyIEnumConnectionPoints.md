@@ -2,6 +2,8 @@
 
 ## PyIEnumConnectionPoints Object
 
+
+
 A Python interface to IEnumConnectionPoints
 
 #### Methods
@@ -26,27 +28,29 @@ A Python interface to IEnumConnectionPoints
 
 ## [PyIEnumConnectionPoints](#pyienumconnectionpoints)\.Clone
 
-[PyIEnumConnectionPoints](#pyienumconnectionpoints)\= **Clone\(** \)
+[PyIEnumConnectionPoints](#pyienumconnectionpoints) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumConnectionPoints](#pyienumconnectionpoints)\.Next
 
-\([PyIConnectionPoint](#pyiconnectionpoint), \.\.\.\) \= **Next\( *num* ** \)
+
+
+\([PyIConnectionPoint](#pyiconnectionpoint), \.\.\.\) =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumConnectionPoints](#pyienumconnectionpoints)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumConnectionPoints](#pyienumconnectionpoints)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

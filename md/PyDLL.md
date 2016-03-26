@@ -2,6 +2,8 @@
 
 ## PyDLL Object
 
+
+
 A DLL object\.  A general utility object, and not associated with an MFC object\.
 
 #### Methods
@@ -17,10 +19,12 @@ A DLL object\.  A general utility object, and not associated with an MFC object\
 
 ## [PyDLL](#pydll)\.AttachToMFC
 
- **AttachToMFC\(** \)
+AttachToMFC\(\)
 Attaches the DLL object to the MFC list of DLL's\.
 
 #### Comments
+
+
 After calling this method, MFC will search this DLL when looking for resources\. 
 
 A program can use this function once, instead of specifying the DLL 
@@ -34,20 +38,26 @@ ID's in an external DLL\.
 
 ## [PyDLL](#pydll)\.GetFileName
 
-string \= **GetFileName\(** \)
+
+
+string =GetFileName\(\)
 Returns the name of the module associated with the DLL\.
 
 #### Comments
+
+
 Note that this is the name that Windows knows the DLL by, not necessarily 
 
 the name that was specified\!
 
 ## [PyDLL](#pydll)\.\_\_repr\_\_
 
-string \= **\_\_repr\_\_\(** \)
+
+
+string =\_\_repr\_\_\(\)
 Returns the HINSTANCE and filename of the DLL\.
 
 #### Win32 API References
 
 
-  - Search for *GetModuleFileName* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getmodulefilename),[google](#http://www.google.com/search?q=getmodulefilename)or[google groups](#http://groups.google.com/groups?q=getmodulefilename)\.
+  - Search forGetModuleFileName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getmodulefilename),[google](#http://www.google.com/search?q=getmodulefilename) or[google groups](#http://groups.google.com/groups?q=getmodulefilename)\.

@@ -2,6 +2,8 @@
 
 ## PyIRemoteDebugApplication Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -53,56 +55,62 @@ Description of the interface
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.CauseBreak
 
- **CauseBreak\(** \)
+CauseBreak\(\)
 Causes the application to break into the debugger at the earliest opportunity\.
 
 #### Comments
+
+
 Note that a long time may elapse before the application actually breaks, particularly if 
 
 the application is not currently executing script code\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.ConnectDebugger
 
- **ConnectDebugger\( *pad* ** \)
+ConnectDebugger\(pad\)
 Connects a debugger to the application\.
 
 #### Parameters
 
 
-  -  *pad* :[PyIApplicationDebugger](#pyiapplicationdebugger)
+  - pad :[PyIApplicationDebugger](#pyiapplicationdebugger)
 
     Description for pad
 
 #### Comments
+
+
 Only one debugger may be connected at a 
 
 time; this method fails if there is already a debugger connected\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.CreateInstanceAtApplication
 
-[PyIUnknown](#pyiunknown)\= **CreateInstanceAtApplication\( *rclsid*  *, pUnkOuter*  *, dwClsContext*  *, riid* ** \)
+[PyIUnknown](#pyiunknown) =CreateInstanceAtApplication\(rclsid, pUnkOuter, dwClsContext, riid\)
 Create objects in the application process address space\.
 
 #### Parameters
 
 
-  -  *rclsid* :[PyIID](#pyiid)
+  - rclsid :[PyIID](#pyiid)
 
     Description for rclsid
 
-  -  *pUnkOuter* :[PyIUnknown](#pyiunknown)
+  - pUnkOuter :[PyIUnknown](#pyiunknown)
 
     Description for pUnkOuter
 
-  -  *dwClsContext* : int
+  - dwClsContext : int
 
     Description for dwClsContext
 
-  -  *riid* :[PyIID](#pyiid)
+  - riid :[PyIID](#pyiid)
 
     Description for riid
 
 #### Comments
+
+
 Provides a mechanism for the debugger IDE, running out-of-process to the 
 
 application, to create objects in the application process\. 
@@ -111,58 +119,62 @@ This method simply delegates to CoCreateInstance\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.DisconnectDebugger
 
- **DisconnectDebugger\(** \)
+DisconnectDebugger\(\)
 Disconnects the current debugger from the application\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.EnumGlobalExpressionContexts
 
- **IEnumDebugExpressionContexts** \= **EnumGlobalExpressionContexts\(** \)
+IEnumDebugExpressionContexts
+
+ =EnumGlobalExpressionContexts\(\)
 Enumerates all global expression contexts
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.EnumThreads
 
-[PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads)\= **EnumThreads\(** \)
+[PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads) =EnumThreads\(\)
 Enumerates all threads known to be associated with the application\.
 
 #### Comments
+
+
 New threads may be added at any time\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.GetDebugger
 
-[PyIApplicationDebugger](#pyiapplicationdebugger)\= **GetDebugger\(** \)
+[PyIApplicationDebugger](#pyiapplicationdebugger) =GetDebugger\(\)
 Returns the current debugger connected to the application\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.GetName
 
- **GetName\(** \)
+GetName\(\)
 Description of GetName\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.GetRootNode
 
-[PyIDebugApplicationNode](#pyidebugapplicationnode)\= **GetRootNode\(** \)
+[PyIDebugApplicationNode](#pyidebugapplicationnode) =GetRootNode\(\)
 Returns the application node under which all nodes associated with the application are added\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.QueryAlive
 
- **QueryAlive\(** \)
+QueryAlive\(\)
 Returns True if alive, else False\.
 
 ## [PyIRemoteDebugApplication](#pyiremotedebugapplication)\.ResumeFromBreakPoint
 
- **ResumeFromBreakPoint\( *prptFocus*  *, bra*  *, era* ** \)
+ResumeFromBreakPoint\(prptFocus, bra, era\)
 Continue an application which is currently in a breakpoint\.
 
 #### Parameters
 
 
-  -  *prptFocus* :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+  - prptFocus :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
 
     Description for prptFocus
 
-  -  *bra* : int
+  - bra : int
 
     Break resume action
 
-  -  *era* : int
+  - era : int
 
     Error resume action

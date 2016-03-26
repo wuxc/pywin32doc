@@ -2,6 +2,8 @@
 
 ## PyIPersist Object
 
+
+
 A Python interface to IPersist
 
 #### Methods
@@ -14,5 +16,5 @@ A Python interface to IPersist
 
 ## [PyIPersist](#pyipersist)\.GetClassID
 
-[PyIID](#pyiid)\= **GetClassID\(** \)
+[PyIID](#pyiid) =GetClassID\(\)
 Returns the class identifier \(CLSID\) for the component object\.

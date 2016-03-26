@@ -2,6 +2,8 @@
 
 ## PyIPersistFolder Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,12 +15,12 @@ Description of the interface
 
 ## [PyIPersistFolder](#pyipersistfolder)\.Initialize
 
- **Initialize\( *pidl* ** \)
+Initialize\(pidl\)
 Description of Initialize\.
 
 #### Parameters
 
 
-  -  *pidl* :[PyIDL](#pyidl)
+  - pidl :[PyIDL](#pyidl)
 
     Description for pidl

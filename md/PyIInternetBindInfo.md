@@ -2,6 +2,8 @@
 
 ## PyIInternetBindInfo Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,10 +19,10 @@ Description of the interface
 
 ## [PyIInternetBindInfo](#pyiinternetbindinfo)\.GetBindInfo
 
- **GetBindInfo\(** \)
+GetBindInfo\(\)
 Description of GetBindInfo\.
 
 ## [PyIInternetBindInfo](#pyiinternetbindinfo)\.GetBindString
 
- **GetBindString\(** \)
+GetBindString\(\)
 Description of GetBindString\.

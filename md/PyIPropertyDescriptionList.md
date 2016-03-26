@@ -2,6 +2,8 @@
 
 ## PyIPropertyDescriptionList Object
 
+
+
 Container for a number of property descriptions
 
 #### Methods
@@ -17,21 +19,23 @@ Container for a number of property descriptions
 
 ## [PyIPropertyDescriptionList](#pyipropertydescriptionlist)\.GetAt
 
-[PyIPropertyDescription](#pyipropertydescription)\= **GetAt\( *Elem*  *, riid* ** \)
+[PyIPropertyDescription](#pyipropertydescription) =GetAt\(Elem, riid\)
 Retrieves a description from the list
 
 #### Parameters
 
 
-  -  *Elem* : int
+  - Elem : int
 
     Index of the element to return
 
-  -  *riid\=IID\_IPropertyDescription* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyDescription :[PyIID](#pyiid)
 
     The interface to return
 
 ## [PyIPropertyDescriptionList](#pyipropertydescriptionlist)\.GetCount
 
-int \= **GetCount\(** \)
+
+
+int =GetCount\(\)
 Gets the number of properties in the list

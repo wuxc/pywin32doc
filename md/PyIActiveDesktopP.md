@@ -2,6 +2,8 @@
 
 ## PyIActiveDesktopP Object
 
+
+
 An interface to the ActiveDesktop
 
 #### Methods
@@ -13,12 +15,12 @@ An interface to the ActiveDesktop
 
 ## [PyIActiveDesktopP](#pyiactivedesktopp)\.SetSafeMode
 
- **SetSafeMode\( *Flags* ** \)
+SetSafeMode\(Flags\)
 Changes Active Desktop to safe mode
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     One of shellcon\.SSM\_\* flags

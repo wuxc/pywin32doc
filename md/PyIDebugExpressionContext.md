@@ -2,6 +2,8 @@
 
 ## PyIDebugExpressionContext Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,29 +19,29 @@ Description of the interface
 
 ## [PyIDebugExpressionContext](#pyidebugexpressioncontext)\.GetLanguageInfo
 
- **GetLanguageInfo\(** \)
+GetLanguageInfo\(\)
 Description of GetLanguageInfo\.
 
 ## [PyIDebugExpressionContext](#pyidebugexpressioncontext)\.ParseLanguageText
 
- **ParseLanguageText\( *pstrCode*  *, nRadix*  *, pstrDelimiter*  *, dwFlags* ** \)
+ParseLanguageText\(pstrCode, nRadix, pstrDelimiter, dwFlags\)
 Description of ParseLanguageText\.
 
 #### Parameters
 
 
-  -  *pstrCode* : **unicode** 
+  - pstrCode :unicode
 
     Description for pstrCode
 
-  -  *nRadix* : int
+  - nRadix : int
 
     Description for nRadix
 
-  -  *pstrDelimiter* : **unicode** 
+  - pstrDelimiter :unicode
 
     Description for pstrDelimiter
 
-  -  *dwFlags* : int
+  - dwFlags : int
 
     Description for dwFlags

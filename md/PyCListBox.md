@@ -2,7 +2,13 @@
 
 ## PyCListBox Object
 
-A windows listbox control\.  Encapsulates an MFC **CListBox** class\.  Derived from a[PyCControl](#pyccontrol)object\.
+
+
+A windows listbox control\.  Encapsulates an MFCCListBox
+
+
+
+ class\.  Derived from a[PyCControl](#pyccontrol) object\.
 
 #### Methods
 
@@ -113,13 +119,15 @@ A windows listbox control\.  Encapsulates an MFC **CListBox** class\.  Derived f
 
 ## [PyCListBox](#pyclistbox)\.AddString
 
-int \= **AddString\( *object* ** \)
+
+
+int =AddString\(object\)
 Adds a string to a listbox\.
 
 #### Parameters
 
 
-  -  *object* : any
+  - object : any
 
     Any object\.  If not a string, \_\_str\_\_, \_\_repr\_\_ or a default repr\(\) will be used
 
@@ -133,13 +141,15 @@ The zero based index of the new string\.
 
 ## [PyCListBox](#pyclistbox)\.DeleteString
 
-int \= **DeleteString\( *pos* ** \)
+
+
+int =DeleteString\(pos\)
 Deletes an item from a listbox\.
 
 #### Parameters
 
 
-  -  *pos* : int
+  - pos : int
 
     The zero based index of the item to delete\.
 
@@ -153,17 +163,19 @@ The count of the items remaining in the list\.
 
 ## [PyCListBox](#pyclistbox)\.Dir
 
-int \= **Dir\( *attr*  *, wild* ** \)
+
+
+int =Dir\(attr, wild\)
 Fills a listbox with a directory listing\.
 
 #### Parameters
 
 
-  -  *attr* : int
+  - attr : int
 
     The attributes of the files to locate
 
-  -  *wild* : string
+  - wild : string
 
     A file specification string - eg, \*\.\*
 
@@ -177,7 +189,9 @@ The index of the last file name added to the list\.
 
 ## [PyCListBox](#pyclistbox)\.GetCaretIndex
 
-int \= **GetCaretIndex\(** \)
+
+
+int =GetCaretIndex\(\)
 Returns the index of the item which has focus\.
 
 #### Return Value
@@ -187,7 +201,9 @@ If the list box is a single-selection list box, the return value is the index of
 
 ## [PyCListBox](#pyclistbox)\.GetCount
 
-int \= **GetCount\(** \)
+
+
+int =GetCount\(\)
 Returns the count of items in the listbox\.
 
 #### MFC References
@@ -200,10 +216,14 @@ Returns the number of items currently in the listbox\.
 
 ## [PyCListBox](#pyclistbox)\.GetCurSel
 
-int \= **GetCurSel\(** \)
+
+
+int =GetCurSel\(\)
 Returns the index of the currently selected item\.
 
 #### Comments
+
+
 Should not be called for a multiple selection listbox\.
 
 #### MFC References
@@ -213,37 +233,43 @@ Should not be called for a multiple selection listbox\.
 
 ## [PyCListBox](#pyclistbox)\.GetItemData
 
-object \= **GetItemData\( *item* ** \)
+
+
+object =GetItemData\(item\)
 Retrieves the application-specific object associated with an item\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     The index of the item whose data is to be retrieved\.
 
 ## [PyCListBox](#pyclistbox)\.GetItemValue
 
-int \= **GetItemValue\( *item* ** \)
+
+
+int =GetItemValue\(item\)
 Retrieves the application-specific value associated with an item\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     The index of the item whose data is to be retrieved\.
 
 ## [PyCListBox](#pyclistbox)\.GetSel
 
-int \= **GetSel\( *index* ** \)
+
+
+int =GetSel\(index\)
 Returns the selection state of a specified item\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the item to return the state for\.
 
@@ -257,7 +283,9 @@ A \+ve number if the item is selected, else zero\.
 
 ## [PyCListBox](#pyclistbox)\.GetSelCount
 
-int \= **GetSelCount\(** \)
+
+
+int =GetSelCount\(\)
 Returns the number of selected items in a multiple selection listbox\.
 
 #### MFC References
@@ -267,7 +295,9 @@ Returns the number of selected items in a multiple selection listbox\.
 
 ## [PyCListBox](#pyclistbox)\.GetSelItems
 
-list \= **GetSelItems\(** \)
+
+
+list =GetSelItems\(\)
 Returns a list of the indexes of the currently selected items in a multiple selection listbox\.
 
 #### MFC References
@@ -279,7 +309,9 @@ Returns a list of the indexes of the currently selected items in a multiple sele
 
 ## [PyCListBox](#pyclistbox)\.GetSelTextItems
 
-list \= **GetSelTextItems\(** \)
+
+
+list =GetSelTextItems\(\)
 Returns a list of the strings of the currently selected items in a multiple selection listbox\.
 
 #### MFC References
@@ -293,25 +325,29 @@ Returns a list of the strings of the currently selected items in a multiple sele
 
 ## [PyCListBox](#pyclistbox)\.GetText
 
-string \= **GetText\( *index* ** \)
+
+
+string =GetText\(index\)
 Returns the string for a specified item\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the item to retrieve the text of
 
 ## [PyCListBox](#pyclistbox)\.GetTextLen
 
-int \= **GetTextLen\( *index* ** \)
+
+
+int =GetTextLen\(index\)
 Returns the length of the string for a specified item\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the item to retrieve the length of the text\.
 
@@ -322,7 +358,9 @@ Returns the length of the string for a specified item\.
 
 ## [PyCListBox](#pyclistbox)\.GetTopIndex
 
-int \= **GetTopIndex\(** \)
+
+
+int =GetTopIndex\(\)
 Returns the index of the top most visible item\.
 
 #### MFC References
@@ -335,17 +373,19 @@ The zero based index of the top most visible item\.
 
 ## [PyCListBox](#pyclistbox)\.InsertString
 
-int \= **InsertString\( *pos*  *, object* ** \)
+
+
+int =InsertString\(pos, object\)
 Insert a string into a listbox\.
 
 #### Parameters
 
 
-  -  *pos* : int
+  - pos : int
 
     The zero based index in the listbox to insert the new string
 
-  -  *object* : any
+  - object : any
 
     The object to be added to the listbox
 
@@ -359,7 +399,7 @@ The zero based index of the new string added\.
 
 ## [PyCListBox](#pyclistbox)\.ResetContent
 
- **ResetContent\(** \)
+ResetContent\(\)
 Clear all the items from a listbox\.
 
 #### MFC References
@@ -369,37 +409,37 @@ Clear all the items from a listbox\.
 
 ## [PyCListBox](#pyclistbox)\.SelItemRange
 
- **SelItemRange\( *bSel*  *, start*  *, end* ** \)
+SelItemRange\(bSel, start, end\)
 Selects an item range\.
 
 #### Parameters
 
 
-  -  *bSel* : int
+  - bSel : int
 
     Should the selection specified be set or cleared?
 
-  -  *start* : int
+  - start : int
 
     The zero based index of the first item to select\.
 
-  -  *end* : int
+  - end : int
 
     The zero based index of the last item to select\.
 
 ## [PyCListBox](#pyclistbox)\.SelectString
 
- **SelectString\( *after*  *, string* ** \)
+SelectString\(after, string\)
 Searches for a list-box item that matches the specified string, and selects it\.
 
 #### Parameters
 
 
-  -  *after* : int
+  - after : int
 
     Contains the zero-based index of the item before the first item to be searched, or -1 for the entire listbox\.
 
-  -  *string* : string
+  - string : string
 
     The string to search for\.
 
@@ -413,17 +453,17 @@ The return value is always None - an exception is raised if the string can not b
 
 ## [PyCListBox](#pyclistbox)\.SetCaretIndex
 
- **SetCaretIndex\( *index*  *, bScroll* ** \)
+SetCaretIndex\(index, bScroll\)
 Sets the focus rectange to a specified item\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The zero based index of the item\.
 
-  -  *bScroll\=1* : int
+  - bScroll=1 : int
 
     Should the listbox scroll to the item?
 
@@ -434,13 +474,13 @@ Sets the focus rectange to a specified item\.
 
 ## [PyCListBox](#pyclistbox)\.SetCurSel
 
- **SetCurSel\( *index* ** \)
+SetCurSel\(index\)
 Selects an item in a single selection listbox\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The zero based index of the item to select\.
 
@@ -451,54 +491,60 @@ Selects an item in a single selection listbox\.
 
 ## [PyCListBox](#pyclistbox)\.SetItemData
 
-int \= **SetItemData\( *item*  *, Data* ** \)
+
+
+int =SetItemData\(item, Data\)
 Sets the item's application-specific object value\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     Index of the item whose Data is to be set\.
 
-  -  *Data* : object
+  - Data : object
 
     New value for the data\.
 
 #### Comments
+
+
 Note that a reference count is not added to the object\.  This it is your 
 
 responsibility to make sure the object remains alive while in the list\.
 
 ## [PyCListBox](#pyclistbox)\.SetItemValue
 
-int \= **SetItemValue\( *item*  *, data* ** \)
+
+
+int =SetItemValue\(item, data\)
 Sets the item's application-specific value\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     Index of the item whose Data is to be set\.
 
-  -  *data* : int
+  - data : int
 
     New value for the data\.
 
 ## [PyCListBox](#pyclistbox)\.SetSel
 
- **SetSel\( *index*  *, bSel* ** \)
+SetSel\(index, bSel\)
 Selects an item in a multiple selection listbox\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The zero based index of the item to select\.
 
-  -  *bSel\=1* : int
+  - bSel=1 : int
 
     Should the item be selected or deselected?
 
@@ -509,32 +555,32 @@ Selects an item in a multiple selection listbox\.
 
 ## [PyCListBox](#pyclistbox)\.SetTabStops
 
- **SetTabStops\( *eachTabStop* ** \)
+SetTabStops\(eachTabStop\)
 Sets the tab stops for a listbox\.
 
 #### Parameters
 
 
-  -  *eachTabStop* : int
+  - eachTabStop : int
 
     The position for each tab stop\.
 
 #### Alternative Parameters
 
 
-  -  *tabStops* 
+  - tabStops
 
     Each individual tab stop\.
 
 ## [PyCListBox](#pyclistbox)\.SetTopIndex
 
- **SetTopIndex\( *index* ** \)
+SetTopIndex\(index\)
 Sets the top index \(top most visible item\) of the listbox\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The zero based index of the item to place at the top of the list\.
 

@@ -2,6 +2,8 @@
 
 ## PyIObjectWithSite Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,24 +19,24 @@ Description of the interface
 
 ## [PyIObjectWithSite](#pyiobjectwithsite)\.GetSite
 
- **GetSite\( *riid* ** \)
+GetSite\(riid\)
 Description of GetSite\.
 
 #### Parameters
 
 
-  -  *riid* :[PyIID](#pyiid)
+  - riid :[PyIID](#pyiid)
 
     Description for riid
 
 ## [PyIObjectWithSite](#pyiobjectwithsite)\.SetSite
 
- **SetSite\( *pUnkSite* ** \)
+SetSite\(pUnkSite\)
 Description of SetSite\.
 
 #### Parameters
 
 
-  -  *pUnkSite* : **PyIUnknown \*** 
+  - pUnkSite :PyIUnknown \*
 
     Description for pUnkSite

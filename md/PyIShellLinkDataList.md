@@ -2,7 +2,11 @@
 
 ## PyIShellLinkDataList Object
 
-Interface to a link's extra data blocks\. Can be obtained from[PyIShellLink](#pyishelllink)by calling QueryInterface with IID\_IShellLinkDataList
+
+
+Interface to a link's extra data blocks\. Can be obtained from[PyIShellLink](#pyishelllink) 
+
+by calling QueryInterface with IID\_IShellLinkDataList
 
 #### Methods
 
@@ -29,28 +33,32 @@ Interface to a link's extra data blocks\. Can be obtained from[PyIShellLink](#py
 
 ## [PyIShellLinkDataList](#pyishelllinkdatalist)\.AddDataBlock
 
- **AddDataBlock\( *DataBlock* ** \)
+AddDataBlock\(DataBlock\)
 Inserts a data block into the link
 
 #### Parameters
 
 
-  -  *DataBlock* : dict
+  - DataBlock : dict
 
     Contents are dependent on type of data block being added
 
 #### Comments
+
+
 Input should be one of[NT\_CONSOLE\_PROPS](NT.md#ntconsole_props),[NT\_FE\_CONSOLE\_PROPS](NT.md#ntfe_console_props),[EXP\_SPECIAL\_FOLDER](EXP.md#expspecial_folder),[EXP\_DARWIN\_LINK](EXP.md#expdarwin_link), or[EXP\_SZ\_LINK](EXP.md#expsz_link)\.  Expected form is indicated by the Signature member\.
 
 ## [PyIShellLinkDataList](#pyishelllinkdatalist)\.CopyDataBlock
 
-dict \= **CopyDataBlock\( *Sig* ** \)
+
+
+dict =CopyDataBlock\(Sig\)
 Retrieves the specified data block from the link
 
 #### Parameters
 
 
-  -  *Sig* : int
+  - Sig : int
 
     The type of data block to retrieve, one of the shellcon\.\*\_SIG constants
 
@@ -59,7 +67,9 @@ The returned dictionary will contain different information depending on the valu
 
 ## [PyIShellLinkDataList](#pyishelllinkdatalist)\.GetFlags
 
-int \= **GetFlags\(** \)
+
+
+int =GetFlags\(\)
 Retrieves the link's flags
 
 #### Return Value
@@ -67,24 +77,24 @@ Returns combination of shellcon\.SLDF\_\* flags
 
 ## [PyIShellLinkDataList](#pyishelllinkdatalist)\.RemoveDataBlock
 
- **RemoveDataBlock\( *Sig* ** \)
+RemoveDataBlock\(Sig\)
 Deletes one of the link's data blocks
 
 #### Parameters
 
 
-  -  *Sig* : int
+  - Sig : int
 
     Identifies which block is to be removed, one of shellcon\.\*\_SIG constants
 
 ## [PyIShellLinkDataList](#pyishelllinkdatalist)\.SetFlags
 
- **SetFlags\( *Flags* ** \)
+SetFlags\(Flags\)
 Sets the flags indicating which data blocks are present
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Combination of shellcon\.SLDF\_\* flags

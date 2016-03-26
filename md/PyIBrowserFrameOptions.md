@@ -2,6 +2,8 @@
 
 ## PyIBrowserFrameOptions Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,12 +15,12 @@ Description of the interface
 
 ## [PyIBrowserFrameOptions](#pyibrowserframeoptions)\.GetFrameOptions
 
- **GetFrameOptions\( *dwMask* ** \)
+GetFrameOptions\(dwMask\)
 Description of GetFrameOptions\.
 
 #### Parameters
 
 
-  -  *dwMask* : int
+  - dwMask : int
 
     Description for dwMask

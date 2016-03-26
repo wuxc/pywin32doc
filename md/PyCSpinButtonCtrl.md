@@ -2,6 +2,8 @@
 
 ## PyCSpinButtonCtrl Object
 
+
+
 A windows spin button control\.  Encapsulates an MFC CSpinButtonCtrl object\.
 
 #### Methods
@@ -25,18 +27,22 @@ A windows spin button control\.  Encapsulates an MFC CSpinButtonCtrl object\.
 
 ## [PyCSpinButtonCtrl](#pycspinbuttonctrl)\.GetPos
 
-int \= **GetPos\(** \)
+
+
+int =GetPos\(\)
 Obtains the current position for a spin button control\.
 
 ## [PyCSpinButtonCtrl](#pycspinbuttonctrl)\.SetPos
 
-int \= **SetPos\( *pos* ** \)
+
+
+int =SetPos\(pos\)
 Sets the current position for a spin button control\.
 
 #### Parameters
 
 
-  -  *pos* : int
+  - pos : int
 
     The new position\.
 
@@ -45,10 +51,14 @@ The result is the previous position\.
 
 ## [PyCSpinButtonCtrl](#pycspinbuttonctrl)\.SetRange
 
-int \= **SetRange\(** \)
+
+
+int =SetRange\(\)
 Sets the upper and lower limits \(range\) for a spin button control\.
 
 ## [PyCSpinButtonCtrl](#pycspinbuttonctrl)\.SetRange32
 
-int \= **SetRange32\(** \)
+
+
+int =SetRange32\(\)
 Sets the 32 bit upper and lower limits \(range\) for a spin button control\.

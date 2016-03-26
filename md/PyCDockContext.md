@@ -2,6 +2,8 @@
 
 ## PyCDockContext Object
 
+
+
 A class which encapsulates an MFC CDockContext object
 
 #### Methods
@@ -29,103 +31,113 @@ A class which encapsulates an MFC CDockContext object
 
 #### Properties
 
-  -  **x,y ptLast** 
+  - x,y ptLast
     
 
-  -  **left, top, right, bottom rectLast** 
+  - left, top, right, bottom rectLast
     
 
-  -  **cx, cy sizeLast** 
+  - cx, cy sizeLast
     
 
-  -  **int bDitherLast** 
+  - int bDitherLast
     
 
-  -  **left, top, right, bottom rectDragHorz** 
+  - left, top, right, bottom rectDragHorz
     
 
-  -  **left, top, right, bottom rectDragVert** 
+  - left, top, right, bottom rectDragVert
     
 
-  -  **left, top, right, bottom rectFrameDragHorz** 
+  - left, top, right, bottom rectFrameDragHorz
     
 
-  -  **left, top, right, bottom rectFrameDragVert** 
+  - left, top, right, bottom rectFrameDragVert
     
 
-  -  **int dwDockStyle** 
+  - int dwDockStyle
     allowable dock styles for bar
 
-  -  **int dwOverDockStyle** 
+  - int dwOverDockStyle
     style of dock that rect is over
 
-  -  **int dwStyle** 
+  - int dwStyle
     style of control bar
 
-  -  **int bFlip** 
+  - int bFlip
     if shift key is down
 
-  -  **int bForceFrame** 
+  - int bForceFrame
     if ctrl key is down 
 
 CDC\* m\_pDC;                 // where to draw during drag
 
-  -  **int bDragging** 
+  - int bDragging
     
 
-  -  **int nHitTest** 
+  - int nHitTest
     
 
-  -  **int uMRUDockID** 
+  - int uMRUDockID
     
 
-  -  **left, top, right, bottom rectMRUDockPos** 
+  - left, top, right, bottom rectMRUDockPos
     
 
-  -  **int dwMRUFloatStyle** 
+  - int dwMRUFloatStyle
     
 
-  -  **x,y ptMRUFloatPos** 
+  - x,y ptMRUFloatPos
     Sentinel
 
 ## [PyCDockContext](#pycdockcontext)\.EndDrag
 
-int \= **EndDrag\(** \)
+
+
+int =EndDrag\(\)
 
 
 ## [PyCDockContext](#pycdockcontext)\.EndResize
 
-int \= **EndResize\(** \)
+
+
+int =EndResize\(\)
 
 
 ## [PyCDockContext](#pycdockcontext)\.StartDrag
 
-int \= **StartDrag\( *pt* ** \)
+
+
+int =StartDrag\(pt\)
 
 
 #### Parameters
 
 
-  -  *pt* : int, int
+  - pt : int, int
 
     
 
 ## [PyCDockContext](#pycdockcontext)\.StartResize
 
-int \= **StartResize\( *hittest*  *, pt* ** \)
+
+
+int =StartResize\(hittest, pt\)
 
 
 #### Parameters
 
 
-  -  *hittest* : int
+  - hittest : int
 
     
 
-  -  *pt* : int, int
+  - pt : int, int
 
     
 
 ## [PyCDockContext](#pycdockcontext)\.ToggleDocking
 
-int \= **ToggleDocking\(** \)
+
+
+int =ToggleDocking\(\)

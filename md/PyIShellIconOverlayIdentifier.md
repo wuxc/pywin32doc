@@ -2,6 +2,8 @@
 
 ## PyIShellIconOverlayIdentifier Object
 
+
+
 Interface that supplies icon overlay information to the shell
 
 #### Methods
@@ -21,7 +23,9 @@ Interface that supplies icon overlay information to the shell
 
 ## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier)\.GetOverlayInfo
 
-\([PyUnicode](#pyunicode), int, int\) \= **GetOverlayInfo\(** \)
+
+
+\([PyUnicode](#pyunicode), int, int\) =GetOverlayInfo\(\)
 Retrieves the path to the overlay icon
 
 #### Return Value
@@ -31,7 +35,9 @@ combination of shellcon\.ISIOI\_ICON\* flags
 
 ## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier)\.GetPriority
 
-int \= **GetPriority\(** \)
+
+
+int =GetPriority\(\)
 Retrieves the relative priority of the overlay
 
 #### Return Value
@@ -39,17 +45,19 @@ Implementation of this function should return a number in the range 0-100 \(0 is
 
 ## [PyIShellIconOverlayIdentifier](#pyishelliconoverlayidentifier)\.IsMemberOf
 
-int \= **IsMemberOf\( *path*  *, attrib* ** \)
+
+
+int =IsMemberOf\(path, attrib\)
 Determines if a shell object should have an icon overlay
 
 #### Parameters
 
 
-  -  *path* :[PyUnicode](#pyunicode)
+  - path :[PyUnicode](#pyunicode)
 
     Fully qualified path of the shell object
 
-  -  *attrib* : int
+  - attrib : int
 
     Shell attributes, combination of shellcon\.SFGAO\_\* flags
 
@@ -59,4 +67,4 @@ The gateway implementation of this function should return winerror\.S\_OK to
 display the overlay, S\_FALSE if not, or throw a COM exception with E\_FAIL on error\.
 The client implementation of this function returns the same values - ie, 
 
-Python's True and False should not be used, as S\_OK\=\=0\=\=False\.
+Python's True and False should not be used, as S\_OK==0==False\.

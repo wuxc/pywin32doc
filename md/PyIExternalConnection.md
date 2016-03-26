@@ -2,9 +2,13 @@
 
 ## PyIExternalConnection Object
 
+
+
 A Python wrapper for a COM IExternalConnection interface\.
 
 #### Comments
+
+
 The IExternalConnection interface manages a server object's count of marshaled, or external, connections\. A server that maintains such a count can detect when it has no external connections and shut itself down in an orderly fashion\.
 
 #### Methods
@@ -21,17 +25,19 @@ The IExternalConnection interface manages a server object's count of marshaled, 
 
 ## [PyIExternalConnection](#pyiexternalconnection)\.AddConnection
 
-int \= **AddConnection\( *extconn*  *, reserved* ** \)
+
+
+int =AddConnection\(extconn, reserved\)
 Increments an object's count of its strong external connections \(links\)\.
 
 #### Parameters
 
 
-  -  *extconn* : int
+  - extconn : int
 
-    Type of external connection to the object\. The only type of external connection currently supported by this interface is strong, which means that the object must remain alive as long as this external connection exists\. Strong external connections are represented by the value EXTCONN\_STRONG \= 0x0001, which is defined in the enumeration EXTCON
+    Type of external connection to the object\. The only type of external connection currently supported by this interface is strong, which means that the object must remain alive as long as this external connection exists\. Strong external connections are represented by the value EXTCONN\_STRONG = 0x0001, which is defined in the enumeration EXTCON
 
-  -  *reserved\=0* : int
+  - reserved=0 : int
 
     A reserved parameter
 
@@ -40,21 +46,23 @@ The result is the number of reference counts on the object; used for debugging p
 
 ## [PyIExternalConnection](#pyiexternalconnection)\.ReleaseConnection
 
-int \= **ReleaseConnection\( *extconn*  *, reserved*  *, fLastReleaseCloses* ** \)
+
+
+int =ReleaseConnection\(extconn, reserved, fLastReleaseCloses\)
 Decrements an object's count of its strong external connections \(references\)\.
 
 #### Parameters
 
 
-  -  *extconn* : int
+  - extconn : int
 
     Type of external connection
 
-  -  *reserved* : int
+  - reserved : int
 
     A reserved parameter\.
 
-  -  *fLastReleaseCloses* : int
+  - fLastReleaseCloses : int
 
     TRUE specifies that if the connection being released is the last external lock on the object, the object should close\. FALSE specifies that the object should remain open until closed by the user or another process\.
 

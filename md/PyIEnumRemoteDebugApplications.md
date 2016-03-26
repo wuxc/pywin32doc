@@ -2,6 +2,8 @@
 
 ## PyIEnumRemoteDebugApplications Object
 
+
+
 A Python interface to IEnumRemoteDebugApplications
 
 #### Methods
@@ -25,27 +27,29 @@ A Python interface to IEnumRemoteDebugApplications
 
 ## [PyIEnumRemoteDebugApplications](#pyienumremotedebugapplications)\.Clone
 
-[PyIEnumRemoteDebugApplications](#pyienumremotedebugapplications)\= **Clone\(** \)
+[PyIEnumRemoteDebugApplications](#pyienumremotedebugapplications) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumRemoteDebugApplications](#pyienumremotedebugapplications)\.Next
 
-object \= **Next\( *num* ** \)
+
+
+object =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumRemoteDebugApplications](#pyienumremotedebugapplications)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumRemoteDebugApplications](#pyienumremotedebugapplications)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

@@ -2,6 +2,8 @@
 
 ## PyIInternetProtocolSink Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -25,61 +27,61 @@ Description of the interface
 
 ## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.ReportData
 
- **ReportData\( *grfBSCF*  *, ulProgress*  *, ulProgressMax* ** \)
+ReportData\(grfBSCF, ulProgress, ulProgressMax\)
 Description of ReportData\.
 
 #### Parameters
 
 
-  -  *grfBSCF* : int
+  - grfBSCF : int
 
     Description for grfBSCF
 
-  -  *ulProgress* : int
+  - ulProgress : int
 
     Description for ulProgress
 
-  -  *ulProgressMax* : int
+  - ulProgressMax : int
 
     Description for ulProgressMax
 
 ## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.ReportProgress
 
- **ReportProgress\( *ulStatusCode*  *, szStatusText* ** \)
+ReportProgress\(ulStatusCode, szStatusText\)
 Description of ReportProgress\.
 
 #### Parameters
 
 
-  -  *ulStatusCode* : int
+  - ulStatusCode : int
 
     Description for ulStatusCode
 
-  -  *szStatusText* : **unicode** 
+  - szStatusText :unicode
 
     Description for szStatusText
 
 ## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.ReportResult
 
- **ReportResult\( *hrResult*  *, dwError*  *, szResult* ** \)
+ReportResult\(hrResult, dwError, szResult\)
 Description of ReportResult\.
 
 #### Parameters
 
 
-  -  *hrResult* : int
+  - hrResult : int
 
     Description for hrResult
 
-  -  *dwError* : int
+  - dwError : int
 
     Description for dwError
 
-  -  *szResult* : **unicode** 
+  - szResult :unicode
 
     Description for szResult
 
 ## [PyIInternetProtocolSink](#pyiinternetprotocolsink)\.Switch
 
- **Switch\(** \)
+Switch\(\)
 Description of Switch\.

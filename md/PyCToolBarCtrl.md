@@ -2,7 +2,11 @@
 
 ## PyCToolBarCtrl Object
 
-A class which encapsulates an MFC **CToolBarCtrl** \.  Derived from a[PyCWnd](#pycwnd)object\. Created using[PyCToolBar::GetToolBarCtrl](PyCToolBar.md#pyctoolbargettoolbarctrl)
+
+
+A class which encapsulates an MFCCToolBarCtrl
+
+\.  Derived from a[PyCWnd](#pycwnd) object\. Created using[PyCToolBar::GetToolBarCtrl](PyCToolBar.md#pyctoolbargettoolbarctrl)
 
 #### Methods
 
@@ -121,17 +125,19 @@ A class which encapsulates an MFC **CToolBarCtrl** \.  Derived from a[PyCWnd](#p
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.AddBitmap
 
-int \= **AddBitmap\( *numButtons*  *, bitmap* ** \)
+
+
+int =AddBitmap\(numButtons, bitmap\)
 Add one or more button images to the list of button images
 
 #### Parameters
 
 
-  -  *numButtons* : int
+  - numButtons : int
 
     Number of button images in the bitmap\.
 
-  -  *bitmap* :[PyBitmap](#pybitmap)
+  - bitmap :[PyBitmap](#pybitmap)
 
     Bitmap containing button or buttons to be added
 
@@ -142,7 +148,9 @@ Add one or more button images to the list of button images
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.AddButtons
 
-int \= **AddButtons\(** \)
+
+
+int =AddButtons\(\)
 Add one or more buttons to the toolbar
 
 #### MFC References
@@ -152,19 +160,21 @@ Add one or more buttons to the toolbar
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.AddStrings
 
-int \= **AddStrings\( *strings* ** \)
+
+
+int =AddStrings\(strings\)
 Add one or more strings to the toolbar
 
 #### Parameters
 
 
-  -  *strings* : string\.\.\.
+  - strings : string\.\.\.
 
     Strings to add\. Can give more than one string\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.AutoSize
 
- **AutoSize\(** \)
+AutoSize\(\)
 Resize the entire toolbar control
 
 #### MFC References
@@ -174,17 +184,19 @@ Resize the entire toolbar control
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.CheckButton
 
-int \= **CheckButton\( *nID*  *, bCheck* ** \)
+
+
+int =CheckButton\(nID, bCheck\)
 Check or clear a given button in a toolbar control
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     Command identifier of the button to check or clear\.
 
-  -  *bCheck\=1* : int
+  - bCheck=1 : int
 
     1 to check, 0 to clear the button
 
@@ -195,13 +207,15 @@ Check or clear a given button in a toolbar control
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.CommandToIndex
 
-int \= **CommandToIndex\( *nID* ** \)
+
+
+int =CommandToIndex\(nID\)
 Retrieve the zero-based index for the button associated with the specified command identifier\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     Command identifier of the button you want to find\.
 
@@ -212,25 +226,25 @@ Retrieve the zero-based index for the button associated with the specified comma
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.CreateWindow
 
- **CreateWindow\( *style*  *, rect*  *, parent*  *, id* ** \)
+CreateWindow\(style, rect, parent, id\)
 Creates the window for a new toolbar object
 
 #### Parameters
 
 
-  -  *style* : int
+  - style : int
 
     The style for the button\.  Use any of the win32con\.BS\_\* constants\.
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     The size and position of the button\.
 
-  -  *parent* :[PyCWnd](#pycwnd)
+  - parent :[PyCWnd](#pycwnd)
 
     The parent window of the button\.  Usually a[PyCDialog](#pycdialog)\.
 
-  -  *id* : int
+  - id : int
 
     The buttons control ID\.
 
@@ -241,7 +255,7 @@ Creates the window for a new toolbar object
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.Customize
 
- **Customize\(** \)
+Customize\(\)
 Display the Customize Toolbar dialog box\.
 
 #### MFC References
@@ -251,13 +265,13 @@ Display the Customize Toolbar dialog box\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.DeleteButton
 
- **DeleteButton\( *nID* ** \)
+DeleteButton\(nID\)
 Delete a button from the toolbar control\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to delete\.
 
@@ -268,17 +282,17 @@ Delete a button from the toolbar control\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.EnableButton
 
- **EnableButton\( *nID*  *, bEnable* ** \)
+EnableButton\(nID, bEnable\)
 Enable or disable a toolbar control button\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to enable or disable\.
 
-  -  *bEnable\=1* : int
+  - bEnable=1 : int
 
     1 to enable, 0 to disable
 
@@ -289,7 +303,9 @@ Enable or disable a toolbar control button\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.GetBitmapFlags
 
-int \= **GetBitmapFlags\(** \)
+
+
+int =GetBitmapFlags\(\)
 retrieve the bitmap flags from the toolbar\.
 
 #### MFC References
@@ -299,13 +315,17 @@ retrieve the bitmap flags from the toolbar\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.GetButton
 
- **PyCToolBarCtrl::TBBUTTON** \= **GetButton\( *nID* ** \)
+PyCToolBarCtrl::TBBUTTON
+
+
+
+ =GetButton\(nID\)
 Retrieve information about the specified button in a toolbar control\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to retrieve\.
 
@@ -316,7 +336,9 @@ Retrieve information about the specified button in a toolbar control\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.GetButtonCount
 
-int \= **GetButtonCount\(** \)
+
+
+int =GetButtonCount\(\)
 Retrieve a count of the buttons currently in the toolbar control\.
 
 #### MFC References
@@ -326,13 +348,15 @@ Retrieve a count of the buttons currently in the toolbar control\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.GetItemRect
 
-left, top, right, bottom \= **GetItemRect\( *nID* ** \)
+
+
+left, top, right, bottom =GetItemRect\(nID\)
 Retrieve the bounding rectangle of a button in a toolbar control\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button\.
 
@@ -343,7 +367,9 @@ Retrieve the bounding rectangle of a button in a toolbar control\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.GetRows
 
-left, top, right, bottom \= **GetRows\(** \)
+
+
+left, top, right, bottom =GetRows\(\)
 Retrieve the number of rows of buttons currently displayed
 
 #### MFC References
@@ -353,17 +379,17 @@ Retrieve the number of rows of buttons currently displayed
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.HideButton
 
- **HideButton\( *nID*  *, bEnable* ** \)
+HideButton\(nID, bEnable\)
 Hide or show the specified button in a toolbar control\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to hide\.
 
-  -  *bEnable\=1* : int
+  - bEnable=1 : int
 
     1 to hide, 0 to show\.
 
@@ -374,17 +400,17 @@ Hide or show the specified button in a toolbar control\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.Indeterminate
 
- **Indeterminate\( *nID*  *, bEnable* ** \)
+Indeterminate\(nID, bEnable\)
 Mark or unmark the specified button as indeterminate
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to mark\.
 
-  -  *bEnable\=1* : int
+  - bEnable=1 : int
 
     1 to hide, 0 to show\.
 
@@ -395,24 +421,32 @@ Mark or unmark the specified button as indeterminate
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.InsertButton
 
-int \= **InsertButton\( *nID*  *, button* ** \)
+
+
+int =InsertButton\(nID, button\)
 Insert a button in a toolbar control\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     Zero-based index of a button\. This function inserts the new button to the left of this button\.
 
-  -  *button* : **PyCToolBarCtrl::TBBUTTON** 
+  - button :PyCToolBarCtrl::TBBUTTON
 
     Bitmap containing button to be inserted
 
 #### Comments
+
+
 The image and/or string whose index you provide must have 
 
-previously been added to the toolbar control's list using[PyCToolBarCtrl::AddBitmap](PyCToolBarCtrl.md#pyctoolbarctrladdbitmap), **PyCToolBarCtrl::AddString** , 
+previously been added to the toolbar control's list using[PyCToolBarCtrl::AddBitmap](PyCToolBarCtrl.md#pyctoolbarctrladdbitmap),PyCToolBarCtrl::AddString
+
+
+
+, 
 
 and/or[PyCToolBarCtrl::AddStrings](PyCToolBarCtrl.md#pyctoolbarctrladdstrings)\.
 
@@ -423,13 +457,15 @@ and/or[PyCToolBarCtrl::AddStrings](PyCToolBarCtrl.md#pyctoolbarctrladdstrings)\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.IsButtonChecked
 
-int \= **IsButtonChecked\( *nID* ** \)
+
+
+int =IsButtonChecked\(nID\)
 Determine whether the specified button in a toolbar control is checked\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to check\.
 
@@ -440,13 +476,15 @@ Determine whether the specified button in a toolbar control is checked\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.IsButtonEnabled
 
-int \= **IsButtonEnabled\( *nID* ** \)
+
+
+int =IsButtonEnabled\(nID\)
 Determine whether the specified button in a toolbar control is enabled\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to check\.
 
@@ -457,13 +495,15 @@ Determine whether the specified button in a toolbar control is enabled\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.IsButtonHidden
 
-int \= **IsButtonHidden\( *nID* ** \)
+
+
+int =IsButtonHidden\(nID\)
 Determine whether the specified button in a toolbar control is hidden\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to check\.
 
@@ -474,13 +514,15 @@ Determine whether the specified button in a toolbar control is hidden\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.IsButtonIndeterminate
 
-int \= **IsButtonIndeterminate\( *nID* ** \)
+
+
+int =IsButtonIndeterminate\(nID\)
 Determine whether the specified button in a toolbar control is indeterminate\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to check\.
 
@@ -491,13 +533,15 @@ Determine whether the specified button in a toolbar control is indeterminate\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.IsButtonPressed
 
-int \= **IsButtonPressed\( *nID* ** \)
+
+
+int =IsButtonPressed\(nID\)
 Determine whether the specified button in a toolbar control is pressed\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to check\.
 
@@ -508,17 +552,17 @@ Determine whether the specified button in a toolbar control is pressed\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.PressButton
 
- **PressButton\( *nID*  *, bEnable* ** \)
+PressButton\(nID, bEnable\)
 Mark or unmark the specified button as pressed\.
 
 #### Parameters
 
 
-  -  *nID* : int
+  - nID : int
 
     ID of the button to mark\.
 
-  -  *bEnable\=1* : int
+  - bEnable=1 : int
 
     1 to mark, 0 to unmark\.
 
@@ -529,28 +573,28 @@ Mark or unmark the specified button as pressed\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.SetBitmapSize
 
- **SetBitmapSize\( *width*  *, height* ** \)
+SetBitmapSize\(width, height\)
 Set the size of the actual bitmapped images to be added to a toolbar control\.
 
 #### Parameters
 
 
-  -  *width\=16* : int
+  - width=16 : int
 
     Width of bitmap images\.
 
-  -  *height\=15* : int
+  - height=15 : int
 
     Height of bitmap images\.
 
 #### Alternative Parameters
 
 
-  -  *width* 
+  - width
 
     Width of bitmap images\.
 
-  -  *height* 
+  - height
 
     Height of bitmap images\.
 
@@ -561,28 +605,28 @@ Set the size of the actual bitmapped images to be added to a toolbar control\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.SetButtonSize
 
- **SetButtonSize\( *width*  *, height* ** \)
+SetButtonSize\(width, height\)
 Set the size of the buttons to be added to a toolbar control\.
 
 #### Parameters
 
 
-  -  *width\=16* : int
+  - width=16 : int
 
     Width of buttons
 
-  -  *height\=15* : int
+  - height=15 : int
 
     Height of buttons
 
 #### Alternative Parameters
 
 
-  -  *width* 
+  - width
 
     Width of bitmap images\.
 
-  -  *height* 
+  - height
 
     Height of bitmap images\.
 
@@ -593,17 +637,17 @@ Set the size of the buttons to be added to a toolbar control\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.SetCmdID
 
- **SetCmdID\( *nIndex*  *, nID* ** \)
+SetCmdID\(nIndex, nID\)
 Set the command identifier which will be sent to the owner window when the specified button is pressed\.
 
 #### Parameters
 
 
-  -  *nIndex* : int
+  - nIndex : int
 
     The zero-based index of the button whose command ID is to be set\.
 
-  -  *nID* : int
+  - nID : int
 
     The command ID to set the selected button to\.
 
@@ -614,17 +658,19 @@ Set the command identifier which will be sent to the owner window when the speci
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.SetRows
 
-left, top, right, bottom \= **SetRows\( *nRows*  *, bLarger* ** \)
+
+
+left, top, right, bottom =SetRows\(nRows, bLarger\)
 Ask the toolbar control to resize itself to the requested number of rows\.
 
 #### Parameters
 
 
-  -  *nRows* : int
+  - nRows : int
 
     Requested number of rows\.
 
-  -  *bLarger* : int
+  - bLarger : int
 
     Tells whether to use more rows or fewer rows if the toolbar cannot be resized to the requested number of rows\.
 
@@ -635,35 +681,37 @@ Ask the toolbar control to resize itself to the requested number of rows\.
 
 ## [PyCToolBarCtrl](#pyctoolbarctrl)\.TBUTTON tuple
 
- **TBUTTON tuple\( *iBitmap*  *, idCommand*  *, fsState*  *, fsStyle*  *, userob*  *, iString* ** \)
+TBUTTON tuple\(iBitmap, idCommand, fsState, fsStyle, userob, iString\)
 Describes a TBUTTON tuple, used by the PyCToolBarCtrl AddButtons method
 
 #### Parameters
 
 
-  -  *iBitmap* : int
+  - iBitmap : int
 
     Zero-based index of button image
 
-  -  *idCommand* : int
+  - idCommand : int
 
     Command to be sent when button pressed
 
-  -  *fsState* : int
+  - fsState : int
 
     Button state\. Can be any of the TBSTATE values defined in win32con
 
-  -  *fsStyle* : int
+  - fsStyle : int
 
     Button style\. Can be any of the TBSTYLE values defined in win32con
 
-  -  *userob* : object
+  - userob : object
 
     Arbitrary Python object
 
-  -  *iString* : int
+  - iString : int
 
     Zero-based index of button label string
 
 #### Comments
+
+
 Userob is any Python object at all, but no reference count is kept, so you must ensure the object remains referenced throughout\.

@@ -2,6 +2,8 @@
 
 ## PyIMAPIContainer Object
 
+
+
 An COM interface to MAPI's IMAPIContainer interface\.
 Derived from[PyIMAPIProp](#pyimapiprop)
 
@@ -22,44 +24,46 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
 ## [PyIMAPIContainer](#pyimapicontainer)\.GetContentsTable
 
-[PyIMAPITable](#pyimapitable)\= **GetContentsTable\( *flags* ** \)
+[PyIMAPITable](#pyimapitable) =GetContentsTable\(flags\)
 Returns an object representing the container's contents table\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     The flags to use\.
 
 ## [PyIMAPIContainer](#pyimapicontainer)\.GetHierarchyTable
 
-[PyIMAPITable](#pyimapitable)\= **GetHierarchyTable\( *flags* ** \)
+[PyIMAPITable](#pyimapitable) =GetHierarchyTable\(flags\)
 Returns an object representing the container's hierarchy table\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     The flags to use\.
 
 ## [PyIMAPIContainer](#pyimapicontainer)\.OpenEntry
 
- **PyIInterface** \= **OpenEntry\( *entryId*  *, iid*  *, flags* ** \)
+PyIInterface
+
+ =OpenEntry\(entryId, iid, flags\)
 Opens an object and returns an interface object for further access\.
 
 #### Parameters
 
 
-  -  *entryId* : string
+  - entryId : string
 
     The EntryID to open\.
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the returned interface, or None for the default interface\.
 
-  -  *flags* : int
+  - flags : int
 
     Flags for the call\.  May include MAPI\_BEST\_ACCESS, MAPI\_DEFERRED\_ERRORS, MAPI\_MODIFY and possibly others \(see the MAPI documentation\)

@@ -2,6 +2,8 @@
 
 ## PyIExtractImage Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,29 +19,29 @@ Description of the interface
 
 ## [PyIExtractImage](#pyiextractimage)\.Extract
 
- **Extract\(** \)
+Extract\(\)
 Description of Extract\.
 
 ## [PyIExtractImage](#pyiextractimage)\.GetLocation
 
- **GetLocation\( *dwPriority*  *, size*  *, dwRecClrDepth*  *, pdwFlags* ** \)
+GetLocation\(dwPriority, size, dwRecClrDepth, pdwFlags\)
 Description of GetLocation\.
 
 #### Parameters
 
 
-  -  *dwPriority* : int
+  - dwPriority : int
 
     Description for dwPriority
 
-  -  *size* : \(int, int\)
+  - size : \(int, int\)
 
     Description for prgSize
 
-  -  *dwRecClrDepth* : int
+  - dwRecClrDepth : int
 
     Description for dwRecClrDepth
 
-  -  *pdwFlags* : int
+  - pdwFlags : int
 
     Description for pdwFlags

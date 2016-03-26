@@ -2,6 +2,8 @@
 
 ## connection Object
 
+
+
 An object representing an ODBC connection
 
 #### Methods
@@ -21,7 +23,7 @@ An object representing an ODBC connection
 
   - [cursor](connection.md#connectioncursor)
 
-    Creates a[cursor](#cursor)object&nbsp;
+    Creates a[cursor](#cursor) object&nbsp;
 
   - [close](connection.md#connectionclose)
 
@@ -29,32 +31,32 @@ An object representing an ODBC connection
 
 ## [connection](#connection)\.close
 
- **close\(** \)
+close\(\)
 Closes the connection\.
 
 ## [connection](#connection)\.commit
 
- **commit\(** \)
+commit\(\)
 Commits a transaction\.
 
 ## [connection](#connection)\.cursor
 
- **cursor\(** \)
-Creates a[cursor](#cursor)object
+cursor\(\)
+Creates a[cursor](#cursor) object
 
 ## [connection](#connection)\.rollback
 
- **rollback\(** \)
+rollback\(\)
 Rollsback a transaction\.
 
 ## [connection](#connection)\.setautocommit
 
- **setautocommit\( *c* ** \)
+setautocommit\(c\)
 Sets the autocommit mode\.
 
 #### Parameters
 
 
-  -  *c* : int
+  - c : int
 
     The boolean autocommit mode\.

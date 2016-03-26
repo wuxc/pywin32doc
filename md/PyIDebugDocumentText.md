@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentText Object
 
+
+
 The interface to a text only debug document\. Derived from[PyIDebugDocument](#pyidebugdocument)
 
 #### Methods
@@ -37,82 +39,82 @@ The interface to a text only debug document\. Derived from[PyIDebugDocument](#py
 
 ## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetContextOfPosition
 
- **GetContextOfPosition\( *cCharacterPosition*  *, cNumChars* ** \)
+GetContextOfPosition\(cCharacterPosition, cNumChars\)
 Description of GetContextOfPosition\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumChars* : int
+  - cNumChars : int
 
     Description for cNumChars
 
 ## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetDocumentAttributes
 
- **GetDocumentAttributes\(** \)
+GetDocumentAttributes\(\)
 Description of GetDocumentAttributes\.
 
 ## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetLineOfPosition
 
- **GetLineOfPosition\( *cCharacterPosition* ** \)
+GetLineOfPosition\(cCharacterPosition\)
 Description of GetLineOfPosition\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
 ## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetPositionOfContext
 
- **GetPositionOfContext\( *psc* ** \)
+GetPositionOfContext\(psc\)
 Description of GetPositionOfContext\.
 
 #### Parameters
 
 
-  -  *psc* :[PyIDebugDocumentContext](#pyidebugdocumentcontext)
+  - psc :[PyIDebugDocumentContext](#pyidebugdocumentcontext)
 
     Description for psc
 
 ## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetPositionOfLine
 
- **GetPositionOfLine\( *cLineNumber* ** \)
+GetPositionOfLine\(cLineNumber\)
 Description of GetPositionOfLine\.
 
 #### Parameters
 
 
-  -  *cLineNumber* : int
+  - cLineNumber : int
 
     Description for cLineNumber
 
 ## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetSize
 
- **GetSize\(** \)
+GetSize\(\)
 Description of GetSize\.
 
 ## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetText
 
- **GetText\( *cCharacterPosition*  *, cMaxChars*  *, bWantAttr* ** \)
+GetText\(cCharacterPosition, cMaxChars, bWantAttr\)
 Description of GetText\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     
 
-  -  *cMaxChars* : int
+  - cMaxChars : int
 
     Max chars to return
 
-  -  *bWantAttr\=1* : int
+  - bWantAttr=1 : int
 
     Should the attributes be returned?

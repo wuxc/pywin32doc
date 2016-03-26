@@ -2,6 +2,8 @@
 
 ## PySecBuffer Object
 
+
+
 Python object wrapping a SecBuffer structure 
 
 Created using win32security\.PySecBufferType\(type,size\) where type is a SECBUFFER\_\* constant
@@ -15,19 +17,19 @@ Created using win32security\.PySecBufferType\(type,size\) where type is a SECBUF
 
 #### Properties
 
-  -  **int BufferType** 
+  - int BufferType
     
 
-  -  **string Buffer** 
+  - string Buffer
     
 
-  -  **int BufferSize** 
+  - int BufferSize
     
 
-  -  **int MaxBufferSize** 
+  - int MaxBufferSize
     
 
 ## [PySecBuffer](#pysecbuffer)\.Clear
 
- **Clear\(** \)
+Clear\(\)
 Resets the buffer to all NULL's, and set the current size to maximum

@@ -2,7 +2,9 @@
 
 ## PyCFileDialog Object
 
-A class which encapsulates an MFC CFileDialog object\.  Derived from a[PyCDialog](#pycdialog)object\.
+
+
+A class which encapsulates an MFC CFileDialog object\.  Derived from a[PyCDialog](#pycdialog) object\.
 
 #### Methods
 
@@ -42,7 +44,9 @@ A class which encapsulates an MFC CFileDialog object\.  Derived from a[PyCDialog
 
 ## [PyCFileDialog](#pycfiledialog)\.GetFileExt
 
-string \= **GetFileExt\(** \)
+
+
+string =GetFileExt\(\)
 Retrives the file extension from the file dialog\.
 
 #### MFC References
@@ -52,7 +56,9 @@ Retrives the file extension from the file dialog\.
 
 ## [PyCFileDialog](#pycfiledialog)\.GetFileName
 
-string \= **GetFileName\(** \)
+
+
+string =GetFileName\(\)
 Retrives the file name from the file dialog\.
 
 #### MFC References
@@ -62,7 +68,9 @@ Retrives the file name from the file dialog\.
 
 ## [PyCFileDialog](#pycfiledialog)\.GetFileTitle
 
-string \= **GetFileTitle\(** \)
+
+
+string =GetFileTitle\(\)
 Retrives the file title from the file dialog\.
 
 #### MFC References
@@ -72,7 +80,9 @@ Retrives the file title from the file dialog\.
 
 ## [PyCFileDialog](#pycfiledialog)\.GetPathName
 
-string \= **GetPathName\(** \)
+
+
+string =GetPathName\(\)
 Retrives the path name from the file dialog\.
 
 #### MFC References
@@ -82,10 +92,14 @@ Retrives the path name from the file dialog\.
 
 ## [PyCFileDialog](#pycfiledialog)\.GetPathNames
 
-string \= **GetPathNames\(** \)
+
+
+string =GetPathNames\(\)
 Retrieves the list of path names from the file dialog\.
 
 #### Comments
+
+
 This method is useful when a multi-select dialog is used\.
 
 #### MFC References
@@ -95,7 +109,9 @@ This method is useful when a multi-select dialog is used\.
 
 ## [PyCFileDialog](#pycfiledialog)\.GetReadOnlyPref
 
-int \= **GetReadOnlyPref\(** \)
+
+
+int =GetReadOnlyPref\(\)
 Retrives the value of the "Read Only" checkbox on the file dialog\.
 
 #### MFC References
@@ -105,24 +121,24 @@ Retrives the value of the "Read Only" checkbox on the file dialog\.
 
 ## [PyCFileDialog](#pycfiledialog)\.SetOFNInitialDir
 
- **SetOFNInitialDir\( *title* ** \)
+SetOFNInitialDir\(title\)
 Sets the initial directory for the dialog\.
 
 #### Parameters
 
 
-  -  *title* : string
+  - title : string
 
     The initial directory for the dialog box\.  May be None\.
 
 ## [PyCFileDialog](#pycfiledialog)\.SetOFNTitle
 
- **SetOFNTitle\( *title* ** \)
+SetOFNTitle\(title\)
 Sets the Title for the dialog\.
 
 #### Parameters
 
 
-  -  *title* : string
+  - title : string
 
     The title for the dialog box\.  May be None\.

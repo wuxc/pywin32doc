@@ -2,6 +2,8 @@
 
 ## PyIInputObject Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,29 +23,29 @@ Description of the interface
 
 ## [PyIInputObject](#pyiinputobject)\.HasFocusIO
 
- **HasFocusIO\(** \)
+HasFocusIO\(\)
 Description of Refresh\.
 
 ## [PyIInputObject](#pyiinputobject)\.TranslateAccelerator
 
- **TranslateAccelerator\( *pmsg* ** \)
+TranslateAccelerator\(pmsg\)
 Description of TranslateAccelerator\.
 
 #### Parameters
 
 
-  -  *pmsg* : tuple
+  - pmsg : tuple
 
     Description for pmsg
 
 ## [PyIInputObject](#pyiinputobject)\.UIActivate
 
- **UIActivate\( *uState* ** \)
+UIActivate\(uState\)
 Description of UIActivate\.
 
 #### Parameters
 
 
-  -  *uState* : int
+  - uState : int
 
     Description for uState

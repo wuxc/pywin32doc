@@ -2,6 +2,8 @@
 
 ## PyIDebugApplicationThread Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,44 +31,44 @@ Description of the interface
 
 ## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.QueryIsCurrentThread
 
- **QueryIsCurrentThread\(** \)
+QueryIsCurrentThread\(\)
 Description of QueryIsCurrentThread\.
 
 ## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.QueryIsDebuggerThread
 
- **QueryIsDebuggerThread\(** \)
+QueryIsDebuggerThread\(\)
 Description of QueryIsDebuggerThread\.
 
 ## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.SetDescription
 
- **SetDescription\(** \)
+SetDescription\(\)
 Description of SetDescription\.
 
 ## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.SetStateString
 
- **SetStateString\(** \)
+SetStateString\(\)
 Description of SetStateString\.
 
 ## [PyIDebugApplicationThread](#pyidebugapplicationthread)\.SynchronousCallIntoThread
 
- **SynchronousCallIntoThread\( *pstcb*  *, dwParam1*  *, dwParam2*  *, dwParam3* ** \)
+SynchronousCallIntoThread\(pstcb, dwParam1, dwParam2, dwParam3\)
 Description of SynchronousCallIntoThread\.
 
 #### Parameters
 
 
-  -  *pstcb* : **PyIDebugThreadCall** 
+  - pstcb :PyIDebugThreadCall
 
     Description for pstcb
 
-  -  *dwParam1* : int
+  - dwParam1 : int
 
     Description for dwParam1
 
-  -  *dwParam2* : int
+  - dwParam2 : int
 
     Description for dwParam2
 
-  -  *dwParam3* : int
+  - dwParam3 : int
 
     Description for dwParam3

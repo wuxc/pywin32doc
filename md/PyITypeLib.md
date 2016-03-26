@@ -2,6 +2,8 @@
 
 ## PyITypeLib Object
 
+
+
 An object that implements the ITypeLib interface\.
 
 #### Methods
@@ -17,7 +19,9 @@ An object that implements the ITypeLib interface\.
 
   - [GetTypeComp](PyITypeLib.md#pyitypelibgettypecomp)
 
-    Retrieves a **ITypeComp** object for Name to VARDESC/FUNCDESC mapping\.&nbsp;
+    Retrieves aITypeComp
+
+ object for Name to VARDESC/FUNCDESC mapping\.&nbsp;
 
   - [GetTypeInfo](PyITypeLib.md#pyitypelibgettypeinfo)
 
@@ -40,13 +44,15 @@ sentinel&nbsp;
 
 ## [PyITypeLib](#pyitypelib)\.GetDocumentation
 
-tuple \= **GetDocumentation\( *index* ** \)
+
+
+tuple =GetDocumentation\(index\)
 Retrieves documentation information about the library\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the type description within the library
 
@@ -55,51 +61,57 @@ The return type is a tuple of \(name of item, documentation string, help context
 
 ## [PyITypeLib](#pyitypelib)\.GetLibAttr
 
-[TLIBATTR](#tlibattr)\= **GetLibAttr\(** \)
+[TLIBATTR](#tlibattr) =GetLibAttr\(\)
 Retrieves the libraries attributes
 
 ## [PyITypeLib](#pyitypelib)\.GetTypeComp
 
-[PyITypeComp](#pyitypecomp)\= **GetTypeComp\(** \)
-Retrieves a **ITypeComp** object for Name to VARDESC/FUNCDESC mapping\.
+[PyITypeComp](#pyitypecomp) =GetTypeComp\(\)
+Retrieves aITypeComp
+
+ object for Name to VARDESC/FUNCDESC mapping\.
 
 ## [PyITypeLib](#pyitypelib)\.GetTypeInfo
 
-[PyITypeInfo](#pyitypeinfo)\= **GetTypeInfo\( *index* ** \)
+[PyITypeInfo](#pyitypeinfo) =GetTypeInfo\(index\)
 Retrieves the specified type description in the library\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the type description within the library
 
 ## [PyITypeLib](#pyitypelib)\.GetTypeInfoCount
 
-int \= **GetTypeInfoCount\(** \)
+
+
+int =GetTypeInfoCount\(\)
 Retrieves the number of[PyITypeInfo](#pyitypeinfo)s in the type library\.
 
 ## [PyITypeLib](#pyitypelib)\.GetTypeInfoOfGuid
 
-[PyITypeInfo](#pyitypeinfo)\= **GetTypeInfoOfGuid\( *iid* ** \)
+[PyITypeInfo](#pyitypeinfo) =GetTypeInfoOfGuid\(iid\)
 Retrieves the type info of the specified GUID\.
 
 #### Parameters
 
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     GUID of the type description\.
 
 ## [PyITypeLib](#pyitypelib)\.GetTypeInfoType
 
- **TYPEKIND** \= **GetTypeInfoType\( *index* ** \)
+TYPEKIND
+
+ =GetTypeInfoType\(index\)
 Retrieves the type of a type description\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the type description within the library

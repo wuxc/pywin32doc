@@ -2,6 +2,8 @@
 
 ## PyIPropertySetStorage Object
 
+
+
 Container for a collection of property sets\. 
 
 Can be iterated over to enumerate property sets\.
@@ -27,57 +29,57 @@ Can be iterated over to enumerate property sets\.
 
 ## [PyIPropertySetStorage](#pyipropertysetstorage)\.Create
 
-[PyIPropertyStorage](#pyipropertystorage)\= **Create\( *fmtid*  *, clsid*  *, Flags*  *, Mode* ** \)
+[PyIPropertyStorage](#pyipropertystorage) =Create\(fmtid, clsid, Flags, Mode\)
 Creates a new property set in the storage object
 
 #### Parameters
 
 
-  -  *fmtid* :[PyIID](#pyiid)
+  - fmtid :[PyIID](#pyiid)
 
     GUID identifying a property set, pythoncom\.FMTID\_\*
 
-  -  *clsid* :[PyIID](#pyiid)
+  - clsid :[PyIID](#pyiid)
 
     CLSID of property set handler, usually same as fmtid
 
-  -  *Flags* : int
+  - Flags : int
 
     Specifies behaviour of property set, storagecon\.PROPSETFLAG\_\*
 
-  -  *Mode* : int
+  - Mode : int
 
     Access mode, combination of storagecon\.STGM\_\* flags
 
 ## [PyIPropertySetStorage](#pyipropertysetstorage)\.Delete
 
- **Delete\( *fmtid* ** \)
+Delete\(fmtid\)
 Removes a property set from this storage object
 
 #### Parameters
 
 
-  -  *fmtid* :[PyIID](#pyiid)
+  - fmtid :[PyIID](#pyiid)
 
     GUID of a property set, pythoncom\.FMTID\_\*
 
 ## [PyIPropertySetStorage](#pyipropertysetstorage)\.Enum
 
-[PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg)\= **Enum\(** \)
+[PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg) =Enum\(\)
 Creates an iterator to enumerate contained property sets
 
 ## [PyIPropertySetStorage](#pyipropertysetstorage)\.Open
 
-[PyIPropertyStorage](#pyipropertystorage)\= **Open\( *fmtid*  *, Mode* ** \)
+[PyIPropertyStorage](#pyipropertystorage) =Open\(fmtid, Mode\)
 Opens an existing property set
 
 #### Parameters
 
 
-  -  *fmtid* :[PyIID](#pyiid)
+  - fmtid :[PyIID](#pyiid)
 
     GUID of a property set, pythoncom\.FMTID\_\*
 
-  -  *Mode\=STGM\_READ | STGM\_SHARE\_EXCLUSIVE* : int
+  - Mode=STGM\_READ | STGM\_SHARE\_EXCLUSIVE : int
 
     Access mode, combination of storagecon\.STGM\_\* flags

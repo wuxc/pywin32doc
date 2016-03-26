@@ -2,6 +2,8 @@
 
 ## PyIOleInPlaceSite Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -49,57 +51,57 @@ Description of the interface
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.CanInPlaceActivate
 
- **CanInPlaceActivate\(** \)
+CanInPlaceActivate\(\)
 Description of CanInPlaceActivate\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.DeactivateAndUndo
 
- **DeactivateAndUndo\(** \)
+DeactivateAndUndo\(\)
 Description of DeactivateAndUndo\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.DiscardUndoState
 
- **DiscardUndoState\(** \)
+DiscardUndoState\(\)
 Description of DiscardUndoState\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.GetWindowContext
 
- **GetWindowContext\(** \)
+GetWindowContext\(\)
 Description of GetWindowContext\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnInPlaceActivate
 
- **OnInPlaceActivate\(** \)
+OnInPlaceActivate\(\)
 Description of OnInPlaceActivate\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnInPlaceDeactivate
 
- **OnInPlaceDeactivate\(** \)
+OnInPlaceDeactivate\(\)
 Description of OnInPlaceDeactivate\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnPosRectChange
 
- **OnPosRectChange\(** \)
+OnPosRectChange\(\)
 Description of OnPosRectChange\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnUIActivate
 
- **OnUIActivate\(** \)
+OnUIActivate\(\)
 Description of OnUIActivate\.
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnUIDeactivate
 
- **OnUIDeactivate\( *fUndoable* ** \)
+OnUIDeactivate\(fUndoable\)
 Description of OnUIDeactivate\.
 
 #### Parameters
 
 
-  -  *fUndoable* : int
+  - fUndoable : int
 
     Description for fUndoable
 
 ## [PyIOleInPlaceSite](#pyioleinplacesite)\.Scroll
 
- **Scroll\(** \)
+Scroll\(\)
 Description of Scroll\.

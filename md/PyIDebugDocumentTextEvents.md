@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentTextEvents Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,81 +35,81 @@ Description of the interface
 
 ## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onDestroy
 
- **onDestroy\(** \)
+onDestroy\(\)
 Description of onDestroy\.
 
 ## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onInsertText
 
- **onInsertText\( *cCharacterPosition*  *, cNumToInsert* ** \)
+onInsertText\(cCharacterPosition, cNumToInsert\)
 Description of onInsertText\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumToInsert* : int
+  - cNumToInsert : int
 
     Description for cNumToInsert
 
 ## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onRemoveText
 
- **onRemoveText\( *cCharacterPosition*  *, cNumToRemove* ** \)
+onRemoveText\(cCharacterPosition, cNumToRemove\)
 Description of onRemoveText\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumToRemove* : int
+  - cNumToRemove : int
 
     Description for cNumToRemove
 
 ## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onReplaceText
 
- **onReplaceText\( *cCharacterPosition*  *, cNumToReplace* ** \)
+onReplaceText\(cCharacterPosition, cNumToReplace\)
 Description of onReplaceText\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumToReplace* : int
+  - cNumToReplace : int
 
     Description for cNumToReplace
 
 ## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onUpdateDocumentAttributes
 
- **onUpdateDocumentAttributes\( *textdocattr* ** \)
+onUpdateDocumentAttributes\(textdocattr\)
 Description of onUpdateDocumentAttributes\.
 
 #### Parameters
 
 
-  -  *textdocattr* : int
+  - textdocattr : int
 
     Description for textdocattr
 
 ## [PyIDebugDocumentTextEvents](#pyidebugdocumenttextevents)\.onUpdateTextAttributes
 
- **onUpdateTextAttributes\( *cCharacterPosition*  *, cNumToUpdate* ** \)
+onUpdateTextAttributes\(cCharacterPosition, cNumToUpdate\)
 Description of onUpdateTextAttributes\.
 
 #### Parameters
 
 
-  -  *cCharacterPosition* : int
+  - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-  -  *cNumToUpdate* : int
+  - cNumToUpdate : int
 
     Description for cNumToUpdate

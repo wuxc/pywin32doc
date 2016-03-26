@@ -2,6 +2,8 @@
 
 ## PyIContextMenu Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,60 +23,64 @@ Description of the interface
 
 ## [PyIContextMenu](#pyicontextmenu)\.GetCommandString
 
-str \= **GetCommandString\( *idCmd*  *, uType*  *, cchMax* ** \)
+
+
+str =GetCommandString\(idCmd, uType, cchMax\)
 Retrieves verb or help text for a context menu option
 
 #### Parameters
 
 
-  -  *idCmd* : int
+  - idCmd : int
 
     Id of the command
 
-  -  *uType* : int
+  - uType : int
 
     One of the shellcon\.GCS\_\* constants
 
-  -  *cchMax\=2048* : int
+  - cchMax=2048 : int
 
     Size of buffer to create for returned string
 
 ## [PyIContextMenu](#pyicontextmenu)\.InvokeCommand
 
- **InvokeCommand\( *pici* ** \)
+InvokeCommand\(pici\)
 Executes a context menu option
 
 #### Parameters
 
 
-  -  *pici* :[PyCMINVOKECOMMANDINFO](#pycminvokecommandinfo)
+  - pici :[PyCMINVOKECOMMANDINFO](#pycminvokecommandinfo)
 
     Tuple of parameters representing a CMINVOKECOMMANDINFO struct
 
 ## [PyIContextMenu](#pyicontextmenu)\.QueryContextMenu
 
-int \= **QueryContextMenu\( *hmenu*  *, indexMenu*  *, idCmdFirst*  *, idCmdLast*  *, uFlags* ** \)
+
+
+int =QueryContextMenu\(hmenu, indexMenu, idCmdFirst, idCmdLast, uFlags\)
 Adds options to a context menu
 
 #### Parameters
 
 
-  -  *hmenu* :[PyHANDLE](#pyhandle)
+  - hmenu :[PyHANDLE](#pyhandle)
 
     Handle to menu to which items should be added
 
-  -  *indexMenu* : int
+  - indexMenu : int
 
     Zero-based index at which to add first item
 
-  -  *idCmdFirst* : int
+  - idCmdFirst : int
 
     Minimum menu item Id
 
-  -  *idCmdLast* : int
+  - idCmdLast : int
 
     Max menu item Id
 
-  -  *uFlags* : int
+  - uFlags : int
 
     Combination of shellcon\.CMF\_\* flags, can be 0

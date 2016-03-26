@@ -2,7 +2,9 @@
 
 ## PyIPropertyEnumTypeList Object
 
-Contains a collection of[PyIPropertyEnumType](#pyipropertyenumtype)objects that define the allowable values for a property
+
+
+Contains a collection of[PyIPropertyEnumType](#pyipropertyenumtype) objects that define the allowable values for a property
 
 #### Methods
 
@@ -21,33 +23,37 @@ Contains a collection of[PyIPropertyEnumType](#pyipropertyenumtype)objects that 
 
 ## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\.FindMatchingIndex
 
-int \= **FindMatchingIndex\( *Cmp* ** \)
+
+
+int =FindMatchingIndex\(Cmp\)
 Attempts to match the specified value to one of the allowable values for the property
 
 #### Parameters
 
 
-  -  *Cmp* :[PyPROPVARIANT](#pypropvariant)
+  - Cmp :[PyPROPVARIANT](#pypropvariant)
 
     A value to match against the defined values of the property
 
 ## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\.GetAt
 
-[PyIPropertyEnumType](#pyipropertyenumtype)\= **GetAt\( *itype*  *, riid* ** \)
+[PyIPropertyEnumType](#pyipropertyenumtype) =GetAt\(itype, riid\)
 Retrieves an item by index
 
 #### Parameters
 
 
-  -  *itype* : int
+  - itype : int
 
     Zero based index of type to return
 
-  -  *riid\=IID\_IPropertyEnumType* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyEnumType :[PyIID](#pyiid)
 
     The interface to return
 
 ## [PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\.GetCount
 
-int \= **GetCount\(** \)
+
+
+int =GetCount\(\)
 Returns the number of objects in the list

@@ -2,6 +2,8 @@
 
 ## PyIExplorerBrowserEvents Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -25,48 +27,48 @@ Description of the interface
 
 ## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationComplete
 
- **OnNavigationComplete\( *pidlFolder* ** \)
+OnNavigationComplete\(pidlFolder\)
 Description of OnNavigationComplete\.
 
 #### Parameters
 
 
-  -  *pidlFolder* : **PyPCIDLIST\_ABSOLUTE** 
+  - pidlFolder :PyPCIDLIST\_ABSOLUTE
 
     Description for pidlFolder
 
 ## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationFailed
 
- **OnNavigationFailed\( *pidlFolder* ** \)
+OnNavigationFailed\(pidlFolder\)
 Description of OnNavigationFailed\.
 
 #### Parameters
 
 
-  -  *pidlFolder* : **PyPCIDLIST\_ABSOLUTE** 
+  - pidlFolder :PyPCIDLIST\_ABSOLUTE
 
     Description for pidlFolder
 
 ## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationPending
 
- **OnNavigationPending\( *pidlFolder* ** \)
+OnNavigationPending\(pidlFolder\)
 Description of OnNavigationPending\.
 
 #### Parameters
 
 
-  -  *pidlFolder* : **PyPCIDLIST\_ABSOLUTE** 
+  - pidlFolder :PyPCIDLIST\_ABSOLUTE
 
     Description for pidlFolder
 
 ## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnViewCreated
 
- **OnViewCreated\( *psv* ** \)
+OnViewCreated\(psv\)
 Description of OnViewCreated\.
 
 #### Parameters
 
 
-  -  *psv* :[PyIShellView](#pyishellview)
+  - psv :[PyIShellView](#pyishellview)
 
     Description for psv

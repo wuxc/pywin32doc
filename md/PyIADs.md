@@ -2,6 +2,8 @@
 
 ## PyIADs Object
 
+
+
 An object representing the IADs interface\. 
 
 In most cases you can achieve the same result via IDispatch - however, this 
@@ -39,36 +41,38 @@ overhead\.
 
 #### Properties
 
-  -  **[PyUnicode](#pyunicode)ADsPath** 
+  - [PyUnicode](#pyunicode) ADsPath
     
 
-  -  **[PyUnicode](#pyunicode)AdsPath** 
+  - [PyUnicode](#pyunicode) AdsPath
     Synonym for ADsPath
 
-  -  **[PyUnicode](#pyunicode)Class** 
+  - [PyUnicode](#pyunicode) Class
     
 
-  -  **[PyUnicode](#pyunicode)GUID** 
+  - [PyUnicode](#pyunicode) GUID
     Like the IADs method, this returns a string rather than a GUID object\.
 
-  -  **[PyUnicode](#pyunicode)Name** 
+  - [PyUnicode](#pyunicode) Name
     
 
-  -  **[PyUnicode](#pyunicode)Parent** 
+  - [PyUnicode](#pyunicode) Parent
     
 
-  -  **[PyUnicode](#pyunicode)Schema** 
+  - [PyUnicode](#pyunicode) Schema
     
 
 ## [PyIADs](#pyiads)\.Get
 
-object \= **Get\( *prop* ** \)
+
+
+object =Get\(prop\)
 Description of Get\.
 
 #### Parameters
 
 
-  -  *prop* :[PyUnicode](#pyunicode)
+  - prop :[PyUnicode](#pyunicode)
 
     The name of the property to fetch
 
@@ -79,26 +83,26 @@ may be an array, or any types supported by COM variant\.
 
 ## [PyIADs](#pyiads)\.GetInfo
 
- **GetInfo\(** \)
+GetInfo\(\)
 Description of GetInfo\.
 
 ## [PyIADs](#pyiads)\.Put
 
- **Put\( *property*  *, val* ** \)
+Put\(property, val\)
 Description of Put\.
 
 #### Parameters
 
 
-  -  *property* :[PyUnicode](#pyunicode)
+  - property :[PyUnicode](#pyunicode)
 
     The property name to set
 
-  -  *val* : object
+  - val : object
 
     The value to set\.
 
 ## [PyIADs](#pyiads)\.SetInfo
 
- **SetInfo\(** \)
+SetInfo\(\)
 Description of SetInfo\.

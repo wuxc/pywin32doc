@@ -2,9 +2,13 @@
 
 ## PyIEmptyVolumeCache Object
 
+
+
 Used for cleaning up temporary file \("disk cleanup"\)
 
 #### Comments
+
+
 This is a "gateway" object only - you can only implement this 
 
 interface - see the shell/demos/server/empty\_volume\_cache\.py\.  The methods 
@@ -35,28 +39,30 @@ Please contribute to these docs\!
 
     InitializeEx
 
+
+
 Gateway Implementation&nbsp;
 
 ## [PyIEmptyVolumeCache](#pyiemptyvolumecache)\.Deactivate
 
- **Deactivate\(** \)
+Deactivate\(\)
 
 
 ## [PyIEmptyVolumeCache](#pyiemptyvolumecache)\.GetSpaceUsed
 
- **GetSpaceUsed\(** \)
+GetSpaceUsed\(\)
 
 
 ## [PyIEmptyVolumeCache](#pyiemptyvolumecache)\.Initialize
 
- **Initialize\(** \)
+Initialize\(\)
 
 
 ## [PyIEmptyVolumeCache](#pyiemptyvolumecache)\.Purge
 
- **Purge\(** \)
+Purge\(\)
 
 
 ## [PyIEmptyVolumeCache](#pyiemptyvolumecache)\.ShowProperties
 
- **ShowProperties\(** \)
+ShowProperties\(\)

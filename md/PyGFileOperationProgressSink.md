@@ -2,9 +2,11 @@
 
 ## PyGFileOperationProgressSink Object
 
+
+
 Implement-only gateway for IFileOperationProgressSink, 
 
-used to receive events from a[PyIFileOperation](#pyifileoperation)object\.
+used to receive events from a[PyIFileOperation](#pyifileoperation) object\.
 To abort the operation, an implementation of any method can raise a 
 
 com\_error with an appropriate HRESULT\.
@@ -78,304 +80,304 @@ com\_error with an appropriate HRESULT\.
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.FinishOperations
 
- **FinishOperations\( *Result* ** \)
+FinishOperations\(Result\)
 Called after all actions have been performed
 
 #### Parameters
 
 
-  -  *Result* : int
+  - Result : int
 
     HRESULT of last operation performed
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PauseTimer
 
- **PauseTimer\(** \)
+PauseTimer\(\)
 Not implemented, according to MSDN
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostCopyItem
 
- **PostCopyItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName*  *, hrCopy*  *, NewlyCreated* ** \)
+PostCopyItem\(Flags, Item, DestinationFolder, NewName, hrCopy, NewlyCreated\)
 Called after each copy operation
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying copy behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     The original item
 
-  -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
+  - DestinationFolder :[PyIShellItem](#pyishellitem)
 
     Folder into which it was copied
 
-  -  *NewName* : str
+  - NewName : str
 
     Name of item after copy, may be mangled in case of name conflict
 
-  -  *hrCopy* : int
+  - hrCopy : int
 
     HRESULT of the copy operation
 
-  -  *NewlyCreated* :[PyIShellItem](#pyishellitem)
+  - NewlyCreated :[PyIShellItem](#pyishellitem)
 
     Shell interface of the copy
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostDeleteItem
 
- **PostDeleteItem\( *Flags*  *, Item*  *, hrDelete*  *, NewlyCreated* ** \)
+PostDeleteItem\(Flags, Item, hrDelete, NewlyCreated\)
 Called after each delete operation
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying delete behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     Item that was deleted
 
-  -  *hrDelete* : int
+  - hrDelete : int
 
     HRESULT of the delete operation
 
-  -  *NewlyCreated* :[PyIShellItem](#pyishellitem)
+  - NewlyCreated :[PyIShellItem](#pyishellitem)
 
     Item in the recycle bin, or None if deleted without recycling
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostMoveItem
 
- **PostMoveItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName*  *, hrMove*  *, NewlyCreated* ** \)
+PostMoveItem\(Flags, Item, DestinationFolder, NewName, hrMove, NewlyCreated\)
 Called after each move operation
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying move behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     Interface of the item before it was moved
 
-  -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
+  - DestinationFolder :[PyIShellItem](#pyishellitem)
 
     The folder into which it was moved
 
-  -  *NewName* : str
+  - NewName : str
 
     Name of item in its new location, may be mangled in case of conflict
 
-  -  *hrMove* : int
+  - hrMove : int
 
     HRESULT of the move operation
 
-  -  *NewlyCreated* :[PyIShellItem](#pyishellitem)
+  - NewlyCreated :[PyIShellItem](#pyishellitem)
 
     Shell interface of the item in its new location
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostNewItem
 
- **PostNewItem\( *Flags*  *, DestinationFolder*  *, NewName*  *, TemplateName*  *, FileAttributes*  *, hrNew*  *, NewItem* ** \)
+PostNewItem\(Flags, DestinationFolder, NewName, TemplateName, FileAttributes, hrNew, NewItem\)
 Called after each new file is created
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying creation behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
+  - DestinationFolder :[PyIShellItem](#pyishellitem)
 
     Folder in which item was created
 
-  -  *NewName* : str
+  - NewName : str
 
     Name of created item, may be mangled if file name conflicts occurred
 
-  -  *TemplateName* : str
+  - TemplateName : str
 
     Template file used to initialize new item
 
-  -  *FileAttributes* : int
+  - FileAttributes : int
 
     File attributes of new item
 
-  -  *hrNew* : int
+  - hrNew : int
 
     HRESULT of the create operation
 
-  -  *NewItem* :[PyIShellItem](#pyishellitem)
+  - NewItem :[PyIShellItem](#pyishellitem)
 
     Shell interface of created item
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PostRenameItem
 
- **PostRenameItem\( *Flags*  *, Item*  *, NewName*  *, hrRename*  *, NewlyCreated* ** \)
+PostRenameItem\(Flags, Item, NewName, hrRename, NewlyCreated\)
 Called after each file rename
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying rename behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     Shell interface of item before rename
 
-  -  *NewName* : str
+  - NewName : str
 
     The new name of the item, may be mangled to resolve filename conflicts
 
-  -  *hrRename* : int
+  - hrRename : int
 
     HRESULT of the rename operation
 
-  -  *NewlyCreated* :[PyIShellItem](#pyishellitem)
+  - NewlyCreated :[PyIShellItem](#pyishellitem)
 
     Shell interface of the item after rename
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreCopyItem
 
- **PreCopyItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName* ** \)
+PreCopyItem\(Flags, Item, DestinationFolder, NewName\)
 Called before each copy operation
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying copy behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     The item to be copied
 
-  -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
+  - DestinationFolder :[PyIShellItem](#pyishellitem)
 
     Folder into which it will be copied
 
-  -  *NewName* : str
+  - NewName : str
 
     Name to be given to the copy, will be None if keeping original name
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreDeleteItem
 
- **PreDeleteItem\( *Flags*  *, Item* ** \)
+PreDeleteItem\(Flags, Item\)
 Called before each delete operation
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying delete behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     Item to be deleted
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreMoveItem
 
- **PreMoveItem\( *Flags*  *, Item*  *, DestinationFolder*  *, NewName* ** \)
+PreMoveItem\(Flags, Item, DestinationFolder, NewName\)
 Called before each move operation
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying move behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     The item to be moved
 
-  -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
+  - DestinationFolder :[PyIShellItem](#pyishellitem)
 
     The folder into which it will be moved
 
-  -  *NewName* : str
+  - NewName : str
 
     Name of moved item, may be None if not to be changed
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreNewItem
 
- **PreNewItem\( *Flags*  *, DestinationFolder*  *, NewName* ** \)
+PreNewItem\(Flags, DestinationFolder, NewName\)
 Called before each new file is created
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying creation behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *DestinationFolder* :[PyIShellItem](#pyishellitem)
+  - DestinationFolder :[PyIShellItem](#pyishellitem)
 
     Folder where item will be created
 
-  -  *NewName* : str
+  - NewName : str
 
     Name of item to be created
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.PreRenameItem
 
- **PreRenameItem\( *Flags*  *, Item*  *, NewName* ** \)
+PreRenameItem\(Flags, Item, NewName\)
 Called before each file rename
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     Flags specifying copy behaviour, combination of shellcon\.TSF\_\* flags
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     Shell interface of the copied item
 
-  -  *NewName* : str
+  - NewName : str
 
     New display name of the item
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.ResetTimer
 
- **ResetTimer\(** \)
+ResetTimer\(\)
 Not implemented, according to MSDN
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.ResumeTimer
 
- **ResumeTimer\(** \)
+ResumeTimer\(\)
 Not implemented, according to MSDN
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.StartOperations
 
- **StartOperations\(** \)
+StartOperations\(\)
 Called as operation begins, before any modifications are done
 
 ## [PyGFileOperationProgressSink](#pygfileoperationprogresssink)\.UpdateProgress
 
- **UpdateProgress\( *WorkTotal*  *, WorkSoFar* ** \)
+UpdateProgress\(WorkTotal, WorkSoFar\)
 Gives an estimate of total work completed
 
 #### Parameters
 
 
-  -  *WorkTotal* : int
+  - WorkTotal : int
 
     Undimensioned number representing total amount of work
 
-  -  *WorkSoFar* : int
+  - WorkSoFar : int
 
     Undimensioned number representing amount already completed

@@ -2,6 +2,8 @@
 
 ## PyIADsUser Object
 
+
+
 A COM interface to ADSI's IADsUser interface\.
 Derived from[PyIDispatch](#pyidispatch)
 
@@ -122,242 +124,270 @@ Derived from[PyIDispatch](#pyidispatch)
 
 ## [PyIADsUser](#pyiadsuser)\.ChangePassword
 
- **ChangePassword\( *oldval*  *, newval* ** \)
+ChangePassword\(oldval, newval\)
 
 
 #### Parameters
 
 
-  -  *oldval* : unicode
+  - oldval : unicode
 
     
 
-  -  *newval* : unicode
+  - newval : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.SetPassword
 
- **SetPassword\( *val* ** \)
+SetPassword\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.get\_AccountDisabled
 
-int \= **get\_AccountDisabled\(** \)
+
+
+int =get\_AccountDisabled\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_AccountExpirationDate
 
-int \= **get\_AccountExpirationDate\(** \)
+
+
+int =get\_AccountExpirationDate\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_BadLoginAddress
 
-unicode \= **get\_BadLoginAddress\(** \)
+
+
+unicode =get\_BadLoginAddress\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_BadLoginCount
 
-int \= **get\_BadLoginCount\(** \)
+
+
+int =get\_BadLoginCount\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_Department
 
-unicode \= **get\_Department\(** \)
+
+
+unicode =get\_Department\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_Description
 
-unicode \= **get\_Description\(** \)
+
+
+unicode =get\_Description\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_Division
 
-unicode \= **get\_Division\(** \)
+
+
+unicode =get\_Division\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_EmailAddress
 
-unicode \= **get\_EmailAddress\(** \)
+
+
+unicode =get\_EmailAddress\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_EmployeeID
 
-unicode \= **get\_EmployeeID\(** \)
+
+
+unicode =get\_EmployeeID\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_FirstName
 
-unicode \= **get\_FirstName\(** \)
+
+
+unicode =get\_FirstName\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_FullName
 
-unicode \= **get\_FullName\(** \)
+
+
+unicode =get\_FullName\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_HomeDirectory
 
-unicode \= **get\_HomeDirectory\(** \)
+
+
+unicode =get\_HomeDirectory\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_HomePage
 
-unicode \= **get\_HomePage\(** \)
+
+
+unicode =get\_HomePage\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.get\_LoginScript
 
-unicode \= **get\_LoginScript\(** \)
+
+
+unicode =get\_LoginScript\(\)
 
 
 ## [PyIADsUser](#pyiadsuser)\.put\_AccountDisabled
 
- **put\_AccountDisabled\( *val* ** \)
+put\_AccountDisabled\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : int
+  - val : int
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_AccountExpirationDate
 
- **put\_AccountExpirationDate\( *val* ** \)
+put\_AccountExpirationDate\(val\)
 
 
 #### Parameters
 
 
-  -  *val* :[PyTime](#pytime)
+  - val :[PyTime](#pytime)
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_Department
 
- **put\_Department\( *val* ** \)
+put\_Department\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_Description
 
- **put\_Description\( *val* ** \)
+put\_Description\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_Division
 
- **put\_Division\( *val* ** \)
+put\_Division\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_EmailAddress
 
- **put\_EmailAddress\( *val* ** \)
+put\_EmailAddress\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_EmployeeID
 
- **put\_EmployeeID\( *val* ** \)
+put\_EmployeeID\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_FirstName
 
- **put\_FirstName\( *val* ** \)
+put\_FirstName\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_FullName
 
- **put\_FullName\( *val* ** \)
+put\_FullName\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_HomeDirectory
 
- **put\_HomeDirectory\( *val* ** \)
+put\_HomeDirectory\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_HomePage
 
- **put\_HomePage\( *val* ** \)
+put\_HomePage\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     
 
 ## [PyIADsUser](#pyiadsuser)\.put\_LoginScript
 
- **put\_LoginScript\( *val* ** \)
+put\_LoginScript\(val\)
 
 
 #### Parameters
 
 
-  -  *val* : unicode
+  - val : unicode
 
     

@@ -2,6 +2,8 @@
 
 ## PyDDEServer Object
 
+
+
 A DDE server\.
 
 #### Methods
@@ -31,49 +33,55 @@ sentinel&nbsp;
 
 ## [PyDDEServer](#pyddeserver)\.AddTopic
 
- **AddTopic\( *topic* ** \)
+AddTopic\(topic\)
 
 
 #### Parameters
 
 
-  -  *topic* :[PyDDETopic](#pyddetopic)
+  - topic :[PyDDETopic](#pyddetopic)
 
     The topic to add\.
 
 ## [PyDDEServer](#pyddeserver)\.Create
 
- **Create\( *name*  *, filterFlags* ** \)
+Create\(name, filterFlags\)
 Create a server
 
 #### Parameters
 
 
-  -  *name* : string
+  - name : string
 
     Name of the server to start\.
 
-  -  *filterFlags\=0* : int
+  - filterFlags=0 : int
 
     Filter flags\.
 
 #### Comments
+
+
 Note there can only be one server per application\.
 
 ## [PyDDEServer](#pyddeserver)\.Destroy
 
- **Destroy\(** \)
+Destroy\(\)
 
 
 ## [PyDDEServer](#pyddeserver)\.GetLastError
 
-int \= **GetLastError\(** \)
+
+
+int =GetLastError\(\)
 
 
 ## [PyDDEServer](#pyddeserver)\.Shutdown
 
- **Shutdown\(** \)
+Shutdown\(\)
 
 
 #### Comments
+
+
 Note the underlying DDE object \(ie, Server, Topics and Items\) are not cleaned up by this call\.

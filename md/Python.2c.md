@@ -1,6 +1,8 @@
 # Python.2c
 
 ## Python, C\+\+, and COM
+
+
 Python a helpful cousin to C\+\+ COM development
 
 Ever want to write your pseudo-code for C\+\+ win32 or COM 
@@ -33,7 +35,7 @@ class IFlintstone
 
 public:
 
-  virtual TellWilma\(long when\)\=0;
+  virtual TellWilma\(long when\)=0;
 
 \};
 
@@ -45,7 +47,7 @@ class IRubble
 
 public:
 
-  virtual AskBetty\(long when\)\=0;
+  virtual AskBetty\(long when\)=0;
 
 \};
 
@@ -57,15 +59,17 @@ public:
 
 class IFlintstone:
 
-  def TellWilma\(self,when\=0\):
+  def TellWilma\(self,when=0\):
 
     raise RuntimeError, 'virtual function'
 
 class IRubble:
 
-  def AskBetty\(self,when\=0\):
+  def AskBetty\(self,when=0\):
 
-    raise RuntimeError, 'virtual function'Also, in the Win32 world, python and C\+\+ are very similar\. You'll 
+    raise RuntimeError, 'virtual function'
+
+Also, in the Win32 world, python and C\+\+ are very similar\. You'll 
 
 notice that if you look at some of the other win32 examples in 
 
@@ -121,7 +125,9 @@ interface IRubble : IUnknown
 
   HRESULT AskBetty\(\[in\] int when\);
 
-\}After running it through the MIDL compiler, you include the header 
+\}
+
+After running it through the MIDL compiler, you include the header 
 
 file created by MIDL and then inherit this just as with the class 
 
@@ -185,7 +191,9 @@ public:
 
    \}
 
-\};How does python manage this? First of all, You do not bother to 
+\};
+
+How does python manage this? First of all, You do not bother to 
 
 write IUnknown and IClassFactory \(python, being a dynamic language, 
 
@@ -227,13 +235,13 @@ Basic python COM code
 
 class IFlintstone:
 
-  def TellWilma\(self,when\=0\):
+  def TellWilma\(self,when=0\):
 
     raise RuntimeError, 'virtual function'
 
 class IRubble:
 
-  def AskBetty\(self,when\=0\):
+  def AskBetty\(self,when=0\):
 
     raise RuntimeError, 'virtual function'
 
@@ -241,11 +249,11 @@ class IRubble:
 
 class BedRock\(IFlintstone, IRubble\): \#no need to use MIDL for these
 
-    \_public\_methods\_ \= \['TellWilma', 'AskBetty'\]
+    \_public\_methods\_ = \['TellWilma', 'AskBetty'\]
 
-    \_reg\_progid\_ \= "Python\.Bedrock"
+    \_reg\_progid\_ = "Python\.Bedrock"
 
-    \_reg\_clsid\_ \= "\{12345678-1234-5678-1234-567812345678\}"
+    \_reg\_clsid\_ = "\{12345678-1234-5678-1234-567812345678\}"
 
     def \_\_init\_\_\(self\): \#constructur
 
@@ -257,16 +265,18 @@ class BedRock\(IFlintstone, IRubble\): \#no need to use MIDL for these
 
 &\#09pass \#not much going on here either
 
-    def TellWilma\(self,when\=0\):
+    def TellWilma\(self,when=0\):
 
 &\#09write\_to\_cartoon\(when,"Wilma\!"\)
 
-    def AskBetty\(self,when\=0\):
+    def AskBetty\(self,when=0\):
 
 &\#09write\_to\_cartoon\(when,"Hey uh Betty"\)
 
 
 
-if \_\_name\_\_\=\='\_\_main\_\_':
+if \_\_name\_\_=='\_\_main\_\_':
 
-    UseCommandLine\(BedRock\)Have a great time with programming with python\!
+    UseCommandLine\(BedRock\)
+
+Have a great time with programming with python\!

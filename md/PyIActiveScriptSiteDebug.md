@@ -2,6 +2,8 @@
 
 ## PyIActiveScriptSiteDebug Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -25,37 +27,39 @@ Description of the interface
 
 ## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.GetApplication
 
- **GetApplication\(** \)
+GetApplication\(\)
 Description of GetApplication\.
 
 ## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.GetDocumentContextFromPosition
 
- **GetDocumentContextFromPosition\( *dwSourceContext*  *, uCharacterOffset*  *, uNumChars* ** \)
+GetDocumentContextFromPosition\(dwSourceContext, uCharacterOffset, uNumChars\)
 Description of GetDocumentContextFromPosition\.
 
 #### Parameters
 
 
-  -  *dwSourceContext* : int
+  - dwSourceContext : int
 
     Description for dwSourceContext
 
-  -  *uCharacterOffset* : int
+  - uCharacterOffset : int
 
     Description for uCharacterOffset
 
-  -  *uNumChars* : int
+  - uNumChars : int
 
     Description for uNumChars
 
 ## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.GetRootApplicationNode
 
- **GetRootApplicationNode\(** \)
+GetRootApplicationNode\(\)
 Description of GetRootApplicationNode\.
 
 ## [PyIActiveScriptSiteDebug](#pyiactivescriptsitedebug)\.OnScriptErrorDebug
 
-int, int \= **OnScriptErrorDebug\(** \)
+
+
+int, int =OnScriptErrorDebug\(\)
 Allows a smart host to control the handling of runtime errors
 
 #### Return Value

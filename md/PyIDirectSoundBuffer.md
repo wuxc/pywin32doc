@@ -2,6 +2,8 @@
 
 ## PyIDirectSoundBuffer Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -77,92 +79,92 @@ Description of the interface
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.GetCaps
 
- **GetCaps\(** \)
+GetCaps\(\)
 Retrieves the capabilities of the DirectSoundBuffer object as a DSBCAPS object\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.GetCurrentPosition
 
- **GetCurrentPosition\(** \)
+GetCurrentPosition\(\)
 Description of GetCurrentPosition\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.GetFormat
 
- **GetFormat\(** \)
+GetFormat\(\)
 Description of GetFormat\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.GetFrequency
 
- **GetFrequency\(** \)
+GetFrequency\(\)
 Description of GetFrequency\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.GetPan
 
- **GetPan\(** \)
+GetPan\(\)
 Description of GetPan\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.GetStatus
 
- **GetStatus\(** \)
+GetStatus\(\)
 Retrieves the current status of the sound buffer\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.GetVolume
 
- **GetVolume\(** \)
+GetVolume\(\)
 Description of GetVolume\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.Initialize
 
- **Initialize\(** \)
+Initialize\(\)
 Description of Initialize\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.Play
 
- **Play\(** \)
+Play\(\)
 Description of Play\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.Restore
 
- **Restore\(** \)
+Restore\(\)
 Restores the memory allocation for a lost sound buffer for the specified DirectSoundBuffer object\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.SetCurrentPosition
 
- **SetCurrentPosition\(** \)
+SetCurrentPosition\(\)
 Description of SetCurrentPosition\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.SetFormat
 
- **SetFormat\( *format* ** \)
+SetFormat\(format\)
 Sets the format of the primary sound buffer for the application\. Whenever this application has the input focus, DirectSound will set the primary buffer to the specified format\.
 
 #### Parameters
 
 
-  -  *format* : WAVEFORMATEX
+  - format : WAVEFORMATEX
 
     A WAVEFORMATEX object that describes the new format for the primary sound buffer\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.SetFrequency
 
- **SetFrequency\(** \)
+SetFrequency\(\)
 Description of SetFrequency\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.SetPan
 
- **SetPan\(** \)
+SetPan\(\)
 Description of SetPan\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.SetVolume
 
- **SetVolume\(** \)
+SetVolume\(\)
 Description of SetVolume\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.Stop
 
- **Stop\(** \)
+Stop\(\)
 Description of Stop\.
 
 ## [PyIDirectSoundBuffer](#pyidirectsoundbuffer)\.Update
 
- **Update\(** \)
+Update\(\)
 Description of Update\.

@@ -2,7 +2,9 @@
 
 ## PyCFontDialog Object
 
-A class which encapsulates an MFC CFontDialog object\.  Derived from a[PyCDialog](#pycdialog)object\.
+
+
+A class which encapsulates an MFC CFontDialog object\.  Derived from a[PyCDialog](#pycdialog) object\.
 
 #### Methods
 
@@ -58,7 +60,9 @@ A class which encapsulates an MFC CFontDialog object\.  Derived from a[PyCDialog
 
 ## [PyCFontDialog](#pycfontdialog)\.DoModal
 
-int \= **DoModal\(** \)
+
+
+int =DoModal\(\)
 Displays a dialog and allows the user to make a selection\.
 
 #### MFC References
@@ -68,7 +72,9 @@ Displays a dialog and allows the user to make a selection\.
 
 ## [PyCFontDialog](#pycfontdialog)\.GetCharFormat
 
-tuple \= **GetCharFormat\(** \)
+
+
+tuple =GetCharFormat\(\)
 Returns the font selection in a CHARFORMAT tuple\.
 
 #### MFC References
@@ -78,7 +84,9 @@ Returns the font selection in a CHARFORMAT tuple\.
 
 ## [PyCFontDialog](#pycfontdialog)\.GetColor
 
-int \= **GetColor\(** \)
+
+
+int =GetColor\(\)
 Determines the color of the selected font\.
 
 #### MFC References
@@ -88,7 +96,9 @@ Determines the color of the selected font\.
 
 ## [PyCFontDialog](#pycfontdialog)\.GetCurrentFont
 
-dict \= **GetCurrentFont\(** \)
+
+
+dict =GetCurrentFont\(\)
 Returns a dictionary describing the current font\.
 
 #### MFC References
@@ -98,7 +108,9 @@ Returns a dictionary describing the current font\.
 
 ## [PyCFontDialog](#pycfontdialog)\.GetFaceName
 
-string \= **GetFaceName\(** \)
+
+
+string =GetFaceName\(\)
 Returns the face name of the selected font\.
 
 #### MFC References
@@ -108,7 +120,9 @@ Returns the face name of the selected font\.
 
 ## [PyCFontDialog](#pycfontdialog)\.GetSize
 
-int \= **GetSize\(** \)
+
+
+int =GetSize\(\)
 Returns he font's size, in tenths of a point\.
 
 #### MFC References
@@ -118,7 +132,9 @@ Returns he font's size, in tenths of a point\.
 
 ## [PyCFontDialog](#pycfontdialog)\.GetStyleName
 
-string \= **GetStyleName\(** \)
+
+
+string =GetStyleName\(\)
 Returns the style name of the selected font\.
 
 #### MFC References
@@ -128,7 +144,9 @@ Returns the style name of the selected font\.
 
 ## [PyCFontDialog](#pycfontdialog)\.GetWeight
 
-int \= **GetWeight\(** \)
+
+
+int =GetWeight\(\)
 Returns the font's weight\.
 
 #### MFC References
@@ -138,7 +156,9 @@ Returns the font's weight\.
 
 ## [PyCFontDialog](#pycfontdialog)\.IsBold
 
-int \= **IsBold\(** \)
+
+
+int =IsBold\(\)
 Determines whether the font is displayed bold\.
 
 #### MFC References
@@ -148,7 +168,9 @@ Determines whether the font is displayed bold\.
 
 ## [PyCFontDialog](#pycfontdialog)\.IsItalic
 
-int \= **IsItalic\(** \)
+
+
+int =IsItalic\(\)
 Determines whether the font is displayed with italic\.
 
 #### MFC References
@@ -158,7 +180,9 @@ Determines whether the font is displayed with italic\.
 
 ## [PyCFontDialog](#pycfontdialog)\.IsStrikeOut
 
-int \= **IsStrikeOut\(** \)
+
+
+int =IsStrikeOut\(\)
 Determines whether the font is displayed with strikeout\.
 
 #### MFC References
@@ -168,7 +192,9 @@ Determines whether the font is displayed with strikeout\.
 
 ## [PyCFontDialog](#pycfontdialog)\.IsUnderline
 
-int \= **IsUnderline\(** \)
+
+
+int =IsUnderline\(\)
 Determines whether the font is displayed with underline\.
 
 #### MFC References

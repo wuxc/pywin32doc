@@ -2,6 +2,8 @@
 
 ## PyIProvideTaskPage Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,19 +15,21 @@ Description of the interface
 
 ## [PyIProvideTaskPage](#pyiprovidetaskpage)\.GetPage
 
- **GetPage\( *tpType*  *, PersistChanges* ** \)
+GetPage\(tpType, PersistChanges\)
 Return a property sheet page handle for the spedified type \(TASKPAGE\_TASK,TASKPAGE\_SCHEDULE,TASKPAGE\_SETTINGS\)
 
 #### Parameters
 
 
-  -  *tpType* : int
+  - tpType : int
 
     Type of page to retreive \(TASKPAGE\_TASK,TASKPAGE\_SCHEDULE,TASKPAGE\_SETTINGS\)
 
-  -  *PersistChanges* : bool
+  - PersistChanges : bool
 
     Indicates if changes should be saved automatically
 
 #### Comments
+
+
 There's not yet anything useful that can be done with this handle - return type subject to change

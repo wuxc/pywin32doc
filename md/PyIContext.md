@@ -2,6 +2,8 @@
 
 ## PyIContext Object
 
+
+
 Allows access to properties defined for the current context \(Requires win2k or later\)
 
 #### Methods
@@ -25,18 +27,20 @@ Allows access to properties defined for the current context \(Requires win2k or 
 
 ## [PyIContext](#pyicontext)\.EnumContextProps
 
-[PyIEnumContextProps](#pyienumcontextprops)\= **EnumContextProps\(** \)
+[PyIEnumContextProps](#pyienumcontextprops) =EnumContextProps\(\)
 Returns an enumerator for the context properties
 
 ## [PyIContext](#pyicontext)\.GetProperty
 
-\(int,[PyIUnknown](#pyiunknown)\) \= **GetProperty\( *rGuid* ** \)
+
+
+\(int,[PyIUnknown](#pyiunknown)\) =GetProperty\(rGuid\)
 Retrieves a context property
 
 #### Parameters
 
 
-  -  *rGuid* :[PyIID](#pyiid)
+  - rGuid :[PyIID](#pyiid)
 
     GUID that identifies a context property
 
@@ -45,32 +49,32 @@ Returns flags \(CPFLAGS is reserved, no defined values\) and the IUnknown interf
 
 ## [PyIContext](#pyicontext)\.RemoveProperty
 
- **RemoveProperty\( *rPolicyId* ** \)
+RemoveProperty\(rPolicyId\)
 Removes a property from the context
 
 #### Parameters
 
 
-  -  *rPolicyId* :[PyIID](#pyiid)
+  - rPolicyId :[PyIID](#pyiid)
 
     GUID that identifies a context property
 
 ## [PyIContext](#pyicontext)\.SetProperty
 
- **SetProperty\( *rpolicyId*  *, flags*  *, pUnk* ** \)
+SetProperty\(rpolicyId, flags, pUnk\)
 Sets a property on the context
 
 #### Parameters
 
 
-  -  *rpolicyId* :[PyIID](#pyiid)
+  - rpolicyId :[PyIID](#pyiid)
 
     GUID identifying the property to be set
 
-  -  *flags* : int
+  - flags : int
 
     Reserved, use only 0
 
-  -  *pUnk* :[PyIUnknown](#pyiunknown)
+  - pUnk :[PyIUnknown](#pyiunknown)
 
     The property value

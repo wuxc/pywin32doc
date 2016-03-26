@@ -2,7 +2,13 @@
 
 ## PyCCmdUI Object
 
-A class for manipulating user-interface elements\.  Encapsulates an MFC **CCmdUI** class
+
+
+A class for manipulating user-interface elements\.  Encapsulates an MFCCCmdUI
+
+
+
+ class
 
 #### Methods
 
@@ -29,67 +35,67 @@ A class for manipulating user-interface elements\.  Encapsulates an MFC **CCmdUI
 
 #### Properties
 
-  -  **int m\_nIndex** 
+  - int m\_nIndex
     
 
-  -  **int m\_nID** 
+  - int m\_nID
     
 
-  -  **[PyCMenu](#pycmenu)m\_pMenu** 
+  - [PyCMenu](#pycmenu) m\_pMenu
     
 
-  -  **[PyCMenu](#pycmenu)m\_pSubMenu** 
+  - [PyCMenu](#pycmenu) m\_pSubMenu
     
 
 ## [PyCCmdUI](#pyccmdui)\.ContinueRouting
 
- **ContinueRouting\(** \)
+ContinueRouting\(\)
 Tells the command-routing mechanism to continue routing the current message down the chain of handlers\.
 
 ## [PyCCmdUI](#pyccmdui)\.Enable
 
- **Enable\( *bEnable* ** \)
+Enable\(bEnable\)
 Enables or disables the user-interface item for this command\.
 
 #### Parameters
 
 
-  -  *bEnable\=1* : int
+  - bEnable=1 : int
 
     TRUE if the item should be enabled, false otherwise\.
 
 ## [PyCCmdUI](#pyccmdui)\.SetCheck
 
- **SetCheck\( *state* ** \)
+SetCheck\(state\)
 Sets the check state of the user-interface item for this command\.
 
 #### Parameters
 
 
-  -  *state\=1* : int
+  - state=1 : int
 
     0 for unchecked, 1 for checked, or 2 for indeterminate\.
 
 ## [PyCCmdUI](#pyccmdui)\.SetRadio
 
- **SetRadio\( *bOn* ** \)
+SetRadio\(bOn\)
 Like the SetCheck member function, but operates on radio groups\.
 
 #### Parameters
 
 
-  -  *bOn\=1* : int
+  - bOn=1 : int
 
     TRUE if the item should be enabled, false otherwise\.
 
 ## [PyCCmdUI](#pyccmdui)\.SetText
 
- **SetText\( *text* ** \)
+SetText\(text\)
 Sets the text for the user-interface item for this command\.
 
 #### Parameters
 
 
-  -  *text* : string
+  - text : string
 
     The text for the interface element\.

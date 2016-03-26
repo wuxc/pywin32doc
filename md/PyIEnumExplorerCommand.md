@@ -2,6 +2,8 @@
 
 ## PyIEnumExplorerCommand Object
 
+
+
 A Python interface to IEnumExplorerCommand
 
 #### Methods
@@ -25,27 +27,29 @@ A Python interface to IEnumExplorerCommand
 
 ## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Clone
 
-[PyIEnumExplorerCommand](#pyienumexplorercommand)\= **Clone\(** \)
+[PyIEnumExplorerCommand](#pyienumexplorercommand) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Next
 
-object \= **Next\( *num* ** \)
+
+
+object =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

@@ -2,6 +2,8 @@
 
 ## PyIOleControlSite Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -37,60 +39,60 @@ Description of the interface
 
 ## [PyIOleControlSite](#pyiolecontrolsite)\.GetExtendedControl
 
- **GetExtendedControl\(** \)
+GetExtendedControl\(\)
 Description of GetExtendedControl\.
 
 ## [PyIOleControlSite](#pyiolecontrolsite)\.LockInPlaceActive
 
- **LockInPlaceActive\( *fLock* ** \)
+LockInPlaceActive\(fLock\)
 Description of LockInPlaceActive\.
 
 #### Parameters
 
 
-  -  *fLock* : int
+  - fLock : int
 
     Description for fLock
 
 ## [PyIOleControlSite](#pyiolecontrolsite)\.OnControlInfoChanged
 
- **OnControlInfoChanged\(** \)
+OnControlInfoChanged\(\)
 Description of OnControlInfoChanged\.
 
 ## [PyIOleControlSite](#pyiolecontrolsite)\.OnFocus
 
- **OnFocus\( *fGotFocus* ** \)
+OnFocus\(fGotFocus\)
 Description of OnFocus\.
 
 #### Parameters
 
 
-  -  *fGotFocus* : int
+  - fGotFocus : int
 
     Description for fGotFocus
 
 ## [PyIOleControlSite](#pyiolecontrolsite)\.ShowPropertyFrame
 
- **ShowPropertyFrame\(** \)
+ShowPropertyFrame\(\)
 Description of ShowPropertyFrame\.
 
 ## [PyIOleControlSite](#pyiolecontrolsite)\.TransformCoords
 
- **TransformCoords\( *PtlHimetric*  *, pPtfContainer*  *, dwFlags* ** \)
+TransformCoords\(PtlHimetric, pPtfContainer, dwFlags\)
 Description of TransformCoords\.
 
 #### Parameters
 
 
-  -  *PtlHimetric* : \(int, int\)
+  - PtlHimetric : \(int, int\)
 
     Description for pPtlHimetric
 
-  -  *pPtfContainer* : \(float, float\)\)
+  - pPtfContainer : \(float, float\)\)
 
     Description for pPtfContainer
 
-  -  *dwFlags* : int
+  - dwFlags : int
 
     Description for dwFlags
 
@@ -101,16 +103,16 @@ a tuple of \(\(int, int\), \(float, float\)\)
 
 ## [PyIOleControlSite](#pyiolecontrolsite)\.TranslateAccelerator
 
- **TranslateAccelerator\( *pMsg*  *, grfModifiers* ** \)
+TranslateAccelerator\(pMsg, grfModifiers\)
 Description of TranslateAccelerator\.
 
 #### Parameters
 
 
-  -  *pMsg* :[PyMSG](#pymsg)
+  - pMsg :[PyMSG](#pymsg)
 
     Description for pMsg
 
-  -  *grfModifiers* : int
+  - grfModifiers : int
 
     Description for grfModifiers

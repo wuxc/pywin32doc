@@ -2,6 +2,8 @@
 
 ## PyDISPLAY\_DEVICE Object
 
+
+
 Python object wrapping a DISPLAY\_DEVICE structure
 
 #### Methods
@@ -13,25 +15,25 @@ Python object wrapping a DISPLAY\_DEVICE structure
 
 #### Properties
 
-  -  **int Size** 
+  - int Size
     Size of structure
 
-  -  **str DeviceName** 
+  - str DeviceName
     String of at most 32 chars
 
-  -  **str DeviceString** 
+  - str DeviceString
     String of at most 128 chars
 
-  -  **int StateFlags** 
+  - int StateFlags
     Bitmask of win32con\.DISPLAY\_DEVICE\_\* constants indicating current device status
 
-  -  **str DeviceID** 
+  - str DeviceID
     String of at most 128 chars
 
-  -  **str DeviceKey** 
+  - str DeviceKey
     String of at most 128 chars
 
 ## [PyDISPLAY\_DEVICE](PyDISPLAY.md#pydisplaydevice)\.Clear
 
- **Clear\(** \)
+Clear\(\)
 Resets all members of the structure

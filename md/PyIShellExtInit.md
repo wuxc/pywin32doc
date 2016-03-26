@@ -2,6 +2,8 @@
 
 ## PyIShellExtInit Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,20 +15,20 @@ Description of the interface
 
 ## [PyIShellExtInit](#pyishellextinit)\.Initialize
 
- **Initialize\( *pFolder*  *, pDataObject*  *, hkey* ** \)
+Initialize\(pFolder, pDataObject, hkey\)
 Description of Initialize\.
 
 #### Parameters
 
 
-  -  *pFolder* :[PyIDL](#pyidl)
+  - pFolder :[PyIDL](#pyidl)
 
     Description for pFolder
 
-  -  *pDataObject* :[PyIDataObject](#pyidataobject)
+  - pDataObject :[PyIDataObject](#pyidataobject)
 
     Description for pDataObject
 
-  -  *hkey* :[PyHANDLE](#pyhandle)
+  - hkey :[PyHANDLE](#pyhandle)
 
     Description for hkey

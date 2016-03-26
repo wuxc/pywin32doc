@@ -2,6 +2,8 @@
 
 ## PyIEnumShellItems Object
 
+
+
 A Python interface to IEnumShellItems
 
 #### Methods
@@ -25,27 +27,29 @@ A Python interface to IEnumShellItems
 
 ## [PyIEnumShellItems](#pyienumshellitems)\.Clone
 
-[PyIEnumShellItems](#pyienumshellitems)\= **Clone\(** \)
+[PyIEnumShellItems](#pyienumshellitems) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumShellItems](#pyienumshellitems)\.Next
 
-\([PyIShellItem](#pyishellitem),\.\.\.\) \= **Next\( *num* ** \)
+
+
+\([PyIShellItem](#pyishellitem),\.\.\.\) =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumShellItems](#pyienumshellitems)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumShellItems](#pyienumshellitems)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

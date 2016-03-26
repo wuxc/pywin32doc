@@ -2,6 +2,8 @@
 
 ## PyIEnumDebugPropertyInfo Object
 
+
+
 A Python interface to IEnumDebugPropertyInfo
 
 #### Methods
@@ -29,32 +31,36 @@ A Python interface to IEnumDebugPropertyInfo
 
 ## [PyIEnumDebugPropertyInfo](#pyienumdebugpropertyinfo)\.Clone
 
-[PyIEnumDebugPropertyInfo](#pyienumdebugpropertyinfo)\= **Clone\(** \)
+[PyIEnumDebugPropertyInfo](#pyienumdebugpropertyinfo) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumDebugPropertyInfo](#pyienumdebugpropertyinfo)\.GetCount
 
-int \= **GetCount\(** \)
+
+
+int =GetCount\(\)
 Obtains the number of items
 
 ## [PyIEnumDebugPropertyInfo](#pyienumdebugpropertyinfo)\.Next
 
-object \= **Next\( *num* ** \)
+
+
+object =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumDebugPropertyInfo](#pyienumdebugpropertyinfo)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumDebugPropertyInfo](#pyienumdebugpropertyinfo)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

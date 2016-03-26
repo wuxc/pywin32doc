@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentHelper Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -81,224 +83,224 @@ Description of the interface
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.AddDBCSText
 
- **AddDBCSText\(** \)
+AddDBCSText\(\)
 Description of AddDBCSText\.
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.AddDeferredText
 
- **AddDeferredText\( *cChars*  *, dwTextStartCookie* ** \)
+AddDeferredText\(cChars, dwTextStartCookie\)
 Description of AddDeferredText\.
 
 #### Parameters
 
 
-  -  *cChars* : int
+  - cChars : int
 
     Description for cChars
 
-  -  *dwTextStartCookie* : int
+  - dwTextStartCookie : int
 
     Description for dwTextStartCookie
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.AddUnicodeText
 
- **AddUnicodeText\( *pszText* ** \)
+AddUnicodeText\(pszText\)
 Description of AddUnicodeText\.
 
 #### Parameters
 
 
-  -  *pszText* : **unicode** 
+  - pszText :unicode
 
     Description for pszText
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.Attach
 
- **Attach\( *pddhParent* ** \)
+Attach\(pddhParent\)
 Add the document to the doc tree
 
 #### Parameters
 
 
-  -  *pddhParent* :[PyIDebugDocumentHelper](#pyidebugdocumenthelper)
+  - pddhParent :[PyIDebugDocumentHelper](#pyidebugdocumenthelper)
 
     Parent item\.  If none, this item is top level\.
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.BringDocumentContextToTop
 
- **BringDocumentContextToTop\( *pddc* ** \)
+BringDocumentContextToTop\(pddc\)
 Description of BringDocumentContextToTop\.
 
 #### Parameters
 
 
-  -  *pddc* :[PyIDebugDocumentContext](#pyidebugdocumentcontext)
+  - pddc :[PyIDebugDocumentContext](#pyidebugdocumentcontext)
 
     Description for pddc
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.BringDocumentToTop
 
- **BringDocumentToTop\(** \)
+BringDocumentToTop\(\)
 Description of BringDocumentToTop\.
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.CreateDebugDocumentContext
 
- **CreateDebugDocumentContext\( *iCharPos*  *, cChars* ** \)
+CreateDebugDocumentContext\(iCharPos, cChars\)
 Description of CreateDebugDocumentContext\.
 
 #### Parameters
 
 
-  -  *iCharPos* : int
+  - iCharPos : int
 
     Description for iCharPos
 
-  -  *cChars* : int
+  - cChars : int
 
     Description for cChars
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.DefineScriptBlock
 
- **DefineScriptBlock\( *ulCharOffset*  *, cChars*  *, pas*  *, fScriptlet* ** \)
+DefineScriptBlock\(ulCharOffset, cChars, pas, fScriptlet\)
 Description of DefineScriptBlock\.
 
 #### Parameters
 
 
-  -  *ulCharOffset* : int
+  - ulCharOffset : int
 
     Description for ulCharOffset
 
-  -  *cChars* : int
+  - cChars : int
 
     Description for cChars
 
-  -  *pas* : **PyIActiveScript** 
+  - pas :PyIActiveScript
 
     Description for pas
 
-  -  *fScriptlet* : int
+  - fScriptlet : int
 
     Description for fScriptlet
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.Detach
 
- **Detach\(** \)
+Detach\(\)
 Description of Detach\.
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.GetDebugApplicationNode
 
- **GetDebugApplicationNode\(** \)
+GetDebugApplicationNode\(\)
 Description of GetDebugApplicationNode\.
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.GetScriptBlockInfo
 
- **GetScriptBlockInfo\( *dwSourceContext* ** \)
+GetScriptBlockInfo\(dwSourceContext\)
 Description of GetScriptBlockInfo\.
 
 #### Parameters
 
 
-  -  *dwSourceContext* : int
+  - dwSourceContext : int
 
     Description for dwSourceContext
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.Init
 
- **Init\( *pda*  *, pszShortName*  *, pszLongName*  *, docAttr* ** \)
+Init\(pda, pszShortName, pszLongName, docAttr\)
 Description of Init\.
 
 #### Parameters
 
 
-  -  *pda* :[PyIDebugApplication](#pyidebugapplication)
+  - pda :[PyIDebugApplication](#pyidebugapplication)
 
     Description for pda
 
-  -  *pszShortName* : **unicode** 
+  - pszShortName :unicode
 
     Description for pszShortName
 
-  -  *pszLongName* : **unicode** 
+  - pszLongName :unicode
 
     Description for pszLongName
 
-  -  *docAttr* : int
+  - docAttr : int
 
     Description for docAttr
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetDebugDocumentHost
 
- **SetDebugDocumentHost\( *pddh* ** \)
+SetDebugDocumentHost\(pddh\)
 Description of SetDebugDocumentHost\.
 
 #### Parameters
 
 
-  -  *pddh* :[PyIDebugDocumentHost](#pyidebugdocumenthost)
+  - pddh :[PyIDebugDocumentHost](#pyidebugdocumenthost)
 
     Description for pddh
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetDefaultTextAttr
 
- **SetDefaultTextAttr\( *staTextAttr* ** \)
+SetDefaultTextAttr\(staTextAttr\)
 Description of SetDefaultTextAttr\.
 
 #### Parameters
 
 
-  -  *staTextAttr* : int
+  - staTextAttr : int
 
     Description for staTextAttr
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetDocumentAttr
 
- **SetDocumentAttr\( *pszAttributes* ** \)
+SetDocumentAttr\(pszAttributes\)
 Description of SetDocumentAttr\.
 
 #### Parameters
 
 
-  -  *pszAttributes* : int
+  - pszAttributes : int
 
     Description for pszAttributes
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetLongName
 
- **SetLongName\( *pszLongName* ** \)
+SetLongName\(pszLongName\)
 Description of SetLongName\.
 
 #### Parameters
 
 
-  -  *pszLongName* : **unicode** 
+  - pszLongName :unicode
 
     Description for pszLongName
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetShortName
 
- **SetShortName\( *pszShortName* ** \)
+SetShortName\(pszShortName\)
 Description of SetShortName\.
 
 #### Parameters
 
 
-  -  *pszShortName* : **unicode** 
+  - pszShortName :unicode
 
     Description for pszShortName
 
 ## [PyIDebugDocumentHelper](#pyidebugdocumenthelper)\.SetTextAttributes
 
- **SetTextAttributes\( *ulCharOffset*  *, obAttr* ** \)
+SetTextAttributes\(ulCharOffset, obAttr\)
 Description of SetTextAttributes\.
 
 #### Parameters
 
 
-  -  *ulCharOffset* : int
+  - ulCharOffset : int
 
     Description for ulCharOffset
 
-  -  *obAttr* : object
+  - obAttr : object
 
     A sequence of attributes\.

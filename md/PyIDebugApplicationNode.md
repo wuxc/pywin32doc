@@ -2,6 +2,8 @@
 
 ## PyIDebugApplicationNode Object
 
+
+
 Provides the functionality of IDebugDocumentProvider, plus a context within a project tree\.  Derived from[PyIDebugDocumentProvider](#pyidebugdocumentprovider)
 
 #### Methods
@@ -33,44 +35,44 @@ Provides the functionality of IDebugDocumentProvider, plus a context within a pr
 
 ## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.Attach
 
- **Attach\( *pdanParent* ** \)
+Attach\(pdanParent\)
 Attach a node to its parent\.
 
 #### Parameters
 
 
-  -  *pdanParent* :[PyIDebugApplicationNode](#pyidebugapplicationnode)
+  - pdanParent :[PyIDebugApplicationNode](#pyidebugapplicationnode)
 
     The parent node\.  None is not acceptable\.
 
 ## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.Close
 
- **Close\(** \)
+Close\(\)
 Description of Close\.
 
 ## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.Detach
 
- **Detach\(** \)
+Detach\(\)
 Detach a node from its parent\.
 
 ## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.EnumChildren
 
- **EnumChildren\(** \)
+EnumChildren\(\)
 Description of EnumChildren\.
 
 ## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.GetParent
 
-[PyIDebugApplicationNode](#pyidebugapplicationnode)\= **GetParent\(** \)
+[PyIDebugApplicationNode](#pyidebugapplicationnode) =GetParent\(\)
 Returns the parent node\.
 
 ## [PyIDebugApplicationNode](#pyidebugapplicationnode)\.SetDocumentProvider
 
- **SetDocumentProvider\( *pddp* ** \)
+SetDocumentProvider\(pddp\)
 Description of SetDocumentProvider\.
 
 #### Parameters
 
 
-  -  *pddp* :[PyIDebugDocumentProvider](#pyidebugdocumentprovider)
+  - pddp :[PyIDebugDocumentProvider](#pyidebugdocumentprovider)
 
     Description for pddp

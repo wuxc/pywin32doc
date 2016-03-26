@@ -2,6 +2,8 @@
 
 ## PyIADesktopP2 Object
 
+
+
 An interface to the ActiveDesktop
 
 #### Methods
@@ -13,5 +15,5 @@ An interface to the ActiveDesktop
 
 ## [PyIADesktopP2](#pyiadesktopp2)\.UpdateAllDesktopSubscriptions
 
- **UpdateAllDesktopSubscriptions\(** \)
+UpdateAllDesktopSubscriptions\(\)
 Updates webpage subscriptions on the desktop

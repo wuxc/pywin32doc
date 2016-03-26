@@ -2,7 +2,9 @@
 
 ## PyCEditView Object
 
-A class which implementes a CView of a text file\.  Derived from[PyCView](#pycview)and[PyCEdit](#pycedit)objects\.
+
+
+A class which implementes a CView of a text file\.  Derived from[PyCView](#pycview) and[PyCEdit](#pycedit) objects\.
 
 #### Methods
 
@@ -21,7 +23,7 @@ A class which implementes a CView of a text file\.  Derived from[PyCView](#pycvi
 
   - [GetEditCtrl](PyCEditView.md#pyceditviewgeteditctrl)
 
-    Returns the underlying[PyCEdit](#pycedit)object&nbsp;
+    Returns the underlying[PyCEdit](#pycedit) object&nbsp;
 
   - [PreCreateWindow](PyCEditView.md#pyceditviewprecreatewindow)
 
@@ -38,79 +40,85 @@ A class which implementes a CView of a text file\.  Derived from[PyCView](#pycvi
 
 ## [PyCEditView](#pyceditview)\.GetEditCtrl
 
- **PyCEditCtrl** \= **GetEditCtrl\(** \)
+PyCEditCtrl
+
+ =GetEditCtrl\(\)
 returns the underlying edit control object\.
 
 ## [PyCEditView](#pyceditview)\.IsModified
 
-int \= **IsModified\(** \)
+
+
+int =IsModified\(\)
 Indicates if the view's document has the modified flag set\.
 
 ## [PyCEditView](#pyceditview)\.LoadFile
 
- **LoadFile\( *fileName* ** \)
+LoadFile\(fileName\)
 Loads a file into the view\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the file to be loaded\.
 
 ## [PyCEditView](#pyceditview)\.OnCommand
 
- **OnCommand\( *wparam*  *, lparam* ** \)
+OnCommand\(wparam, lparam\)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
 
 
-  -  *wparam* : int
+  - wparam : int
 
     
 
-  -  *lparam* : int
+  - lparam : int
 
     
 
 #### See Also
 
 
-  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
+  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual) virtual method
 
 ## [PyCEditView](#pyceditview)\.PreCreateWindow
 
-tuple \= **PreCreateWindow\( *createStruct* ** \)
+
+
+tuple =PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
 
 
-  -  *createStruct* : tuple
+  - createStruct : tuple
 
     A tuple representing a CREATESTRUCT structure\.
 
 ## [PyCEditView](#pyceditview)\.SaveFile
 
- **SaveFile\( *fileName* ** \)
+SaveFile\(fileName\)
 Saves the view to a file\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the file to be written\.
 
 ## [PyCEditView](#pyceditview)\.SetModifiedFlag
 
- **SetModifiedFlag\( *bModified* ** \)
+SetModifiedFlag\(bModified\)
 Sets the modified flag for the view's document\.
 
 #### Parameters
 
 
-  -  *bModified\=1* : int
+  - bModified=1 : int
 
     The modified state to set\.

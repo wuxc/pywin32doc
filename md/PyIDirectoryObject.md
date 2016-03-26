@@ -2,6 +2,8 @@
 
 ## PyIDirectoryObject Object
 
+
+
 A COM interface to ADSI's IDirectoryObject interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
@@ -10,15 +12,15 @@ Derived from[PyIUnknown](#pyiunknown)
 
   - [GetObjectInformation](PyIDirectoryObject.md#pyidirectoryobjectgetobjectinformation)
 
-    Retrieves an[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info)object that contains information about the identity and location of a directory service object\.&nbsp;
+    Retrieves an[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info) object that contains information about the identity and location of a directory service object\.&nbsp;
 
   - [GetObjectAttributes](PyIDirectoryObject.md#pyidirectoryobjectgetobjectattributes)
 
-    Gets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.&nbsp;
+    Gets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info) structure\.&nbsp;
 
   - [SetObjectAttributes](PyIDirectoryObject.md#pyidirectoryobjectsetobjectattributes)
 
-    Sets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.&nbsp;
+    Sets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info) structure\.&nbsp;
 
   - [CreateDSObject](PyIDirectoryObject.md#pyidirectoryobjectcreatedsobject)
 
@@ -30,57 +32,61 @@ Derived from[PyIUnknown](#pyiunknown)
 
 ## [PyIDirectoryObject](#pyidirectoryobject)\.CreateDSObject
 
-[PyIDispatch](#pyidispatch)\= **CreateDSObject\( *rdn*  *, attrs* ** \)
+[PyIDispatch](#pyidispatch) =CreateDSObject\(rdn, attrs\)
 
 
 #### Parameters
 
 
-  -  *rdn* :[PyUnicode](#pyunicode)
+  - rdn :[PyUnicode](#pyunicode)
 
     The relative distinguished name \(relative path\) of the object to be created\.
 
-  -  *attrs* : \([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\)
+  - attrs : \([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\)
 
     The attributes to set\.
 
 ## [PyIDirectoryObject](#pyidirectoryobject)\.DeleteDSObject
 
- **DeleteDSObject\( *rdn* ** \)
+DeleteDSObject\(rdn\)
 Deletes a leaf object in a directory tree
 
 #### Parameters
 
 
-  -  *rdn* : string
+  - rdn : string
 
     The relative distinguished name \(relative path\) of the object to be deleted\.
 
 ## [PyIDirectoryObject](#pyidirectoryobject)\.GetObjectAttributes
 
-\([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\) \= **GetObjectAttributes\( *names* ** \)
-Gets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.
+
+
+\([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\) =GetObjectAttributes\(names\)
+Gets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info) structure\.
 
 #### Parameters
 
 
-  -  *names* : \([PyUnicode](#pyunicode), \.\.\.\)
+  - names : \([PyUnicode](#pyunicode), \.\.\.\)
 
     
 
 ## [PyIDirectoryObject](#pyidirectoryobject)\.GetObjectInformation
 
-[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info)\= **GetObjectInformation\(** \)
-Retrieves an[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info)object that contains information about the identity and location of a directory service object\.
+[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info) =GetObjectInformation\(\)
+Retrieves an[PyADS\_OBJECT\_INFO](PyADS.md#pyadsobject_info) object that contains information about the identity and location of a directory service object\.
 
 ## [PyIDirectoryObject](#pyidirectoryobject)\.SetObjectAttributes
 
-int \= **SetObjectAttributes\( *attrs* ** \)
-Sets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info)structure\.
+
+
+int =SetObjectAttributes\(attrs\)
+Sets one or more specified attributes of the directory service object, as defined in the[PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info) structure\.
 
 #### Parameters
 
 
-  -  *attrs* : \([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\)
+  - attrs : \([PyADS\_ATTR\_INFO](PyADS.md#pyadsattr_info), \.\.\.\)
 
     The attributes to set

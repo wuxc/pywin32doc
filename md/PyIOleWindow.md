@@ -2,6 +2,8 @@
 
 ## PyIOleWindow Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,17 +19,17 @@ Description of the interface
 
 ## [PyIOleWindow](#pyiolewindow)\.ContextSensitiveHelp
 
- **ContextSensitiveHelp\( *fEnterMode* ** \)
+ContextSensitiveHelp\(fEnterMode\)
 Description of ContextSensitiveHelp\.
 
 #### Parameters
 
 
-  -  *fEnterMode* : int
+  - fEnterMode : int
 
     Description for fEnterMode
 
 ## [PyIOleWindow](#pyiolewindow)\.GetWindow
 
- **GetWindow\(** \)
+GetWindow\(\)
 Description of GetWindow\.

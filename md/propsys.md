@@ -2,6 +2,8 @@
 
 ## Module propsys
 
+
+
 A module, encapsulating the Vista Property System interfaces
 
 #### Methods
@@ -45,7 +47,7 @@ A module, encapsulating the Vista Property System interfaces
 
   - [StgDeserializePropVariant](propsys.md#propsysstgdeserializepropvariant)
 
-    Creates a[PyPROPVARIANT](#pypropvariant)from a serialized buffer&nbsp;
+    Creates a[PyPROPVARIANT](#pypropvariant) from a serialized buffer&nbsp;
 
   - [PSCreateMemoryPropertyStore](propsys.md#propsyspscreatememorypropertystore)
 
@@ -53,7 +55,7 @@ A module, encapsulating the Vista Property System interfaces
 
   - [PSCreatePropertyStoreFromPropertySetStorage](propsys.md#propsyspscreatepropertystorefrompropertysetstorage)
 
-    Wraps a[PyIPropertySetStorage](#pyipropertysetstorage)interface in a[PyIPropertyStore](#pyipropertystore)object&nbsp;
+    Wraps a[PyIPropertySetStorage](#pyipropertysetstorage) interface in a[PyIPropertyStore](#pyipropertystore) object&nbsp;
 
   - [PSLookupPropertyHandlerCLSID](propsys.md#propsyspslookuppropertyhandlerclsid)
 
@@ -73,11 +75,11 @@ A module, encapsulating the Vista Property System interfaces
 
   - [PSCreateSimplePropertyChange](propsys.md#propsyspscreatesimplepropertychange)
 
-    Creates a[PyIPropertyChange](#pyipropertychange)interface used to apply changes to a[PyPROPVARIANT](#pypropvariant)&nbsp;
+    Creates a[PyIPropertyChange](#pyipropertychange) interface used to apply changes to a[PyPROPVARIANT](#pypropvariant)&nbsp;
 
   - [PSCreatePropertyChangeArray](propsys.md#propsyspscreatepropertychangearray)
 
-    Creates a[PyIPropertyChangeArray](#pyipropertychangearray)interface to be used with[PyIFileOperation](#pyifileoperation)&nbsp;
+    Creates a[PyIPropertyChangeArray](#pyipropertychangearray) interface to be used with[PyIFileOperation](#pyifileoperation)&nbsp;
 
   - [SHSetDefaultProperties](propsys.md#propsysshsetdefaultproperties)
 
@@ -85,241 +87,255 @@ A module, encapsulating the Vista Property System interfaces
 
 ## [propsys](#propsys)\.PSCreateMemoryPropertyStore
 
-[PyIPropertyStore](#pyipropertystore)\= **PSCreateMemoryPropertyStore\( *riid* ** \)
+[PyIPropertyStore](#pyipropertystore) =PSCreateMemoryPropertyStore\(riid\)
 Creates a temporary property store that is not connected to any backing storage
 
 #### Parameters
 
 
-  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
 
     The interface to create
 
 #### Comments
+
+
 May also be used to create[PyINamedPropertyStore](#pyinamedpropertystore),[PyIPropertyStoreCache](#pyipropertystorecache),[PyIPersistStream](#pyipersiststream), or[PyIPropertyBag](#pyipropertybag)
 
 ## [propsys](#propsys)\.PSCreatePropertyChangeArray
 
-[PyIPropertyChangeArray](#pyipropertychangearray)\= **PSCreatePropertyChangeArray\(** \)
+[PyIPropertyChangeArray](#pyipropertychangearray) =PSCreatePropertyChangeArray\(\)
 Creates an IPropertyChangeArray interface to be used with[PyIFileOperation](#pyifileoperation)
 
 #### Comments
+
+
 Currently only creates an empty array to be filled in later
 
 ## [propsys](#propsys)\.PSCreatePropertyStoreFromPropertySetStorage
 
-[PyIPropertyStore](#pyipropertystore)\= **PSCreatePropertyStoreFromPropertySetStorage\( *pss*  *, Mode*  *, riid* ** \)
-Wraps a[PyIPropertySetStorage](#pyipropertysetstorage)interface in a[PyIPropertyStore](#pyipropertystore)object
+[PyIPropertyStore](#pyipropertystore) =PSCreatePropertyStoreFromPropertySetStorage\(pss, Mode, riid\)
+Wraps a[PyIPropertySetStorage](#pyipropertysetstorage) interface in a[PyIPropertyStore](#pyipropertystore) object
 
 #### Parameters
 
 
-  -  *pss* :[PyIPropertySetStorage](#pyipropertysetstorage)
+  - pss :[PyIPropertySetStorage](#pyipropertysetstorage)
 
     Property container to be adapted
 
-  -  *Mode* : int
+  - Mode : int
 
     Read or write mode, shellcon\.STGM\_\*\.  Must match mode used to open input interface\.
 
-  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
 
     The interface to create
 
 #### Comments
+
+
 This function does not work for the NTFS property storage implementation based on 
 
 alternate data streams\.
 
 ## [propsys](#propsys)\.PSCreateSimplePropertyChange
 
-[PyIPropertyChange](#pyipropertychange)\= **PSCreateSimplePropertyChange\( *flags*  *, key*  *, val*  *, riid* ** \)
+[PyIPropertyChange](#pyipropertychange) =PSCreateSimplePropertyChange\(flags, key, val, riid\)
 Creates an IPropertyChange interface used to apply changes to a[PyPROPVARIANT](#pypropvariant)
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     The change operation, pscon\.PKA\_\*
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     The property key
 
-  -  *val* :[PyPROPVARIANT](#pypropvariant)
+  - val :[PyPROPVARIANT](#pypropvariant)
 
     The value that the change operation will apply
 
-  -  *riid\=IID\_IPropertyChange* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyChange :[PyIID](#pyiid)
 
     The interface to return\.
 
 ## [propsys](#propsys)\.PSGetItemPropertyHandler
 
-[PyIPropertyStore](#pyipropertystore)\= **PSGetItemPropertyHandler\( *Item*  *, ReadWrite*  *, riid* ** \)
+[PyIPropertyStore](#pyipropertystore) =PSGetItemPropertyHandler\(Item, ReadWrite, riid\)
 Retrieves the property store for a shell item
 
 #### Parameters
 
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     A shell item
 
-  -  *ReadWrite\=False* : bool
+  - ReadWrite=False : bool
 
     Pass True for a writeable property store
 
-  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
 
     Interface to return
 
 ## [propsys](#propsys)\.PSGetNameFromPropertyKey
 
-string \= **PSGetNameFromPropertyKey\( *Key* ** \)
+
+
+string =PSGetNameFromPropertyKey\(Key\)
 Retrieves the canonical name of a property
 
 #### Parameters
 
 
-  -  *Key* :[PyPROPERTYKEY](#pypropertykey)
+  - Key :[PyPROPERTYKEY](#pypropertykey)
 
     A property key
 
 ## [propsys](#propsys)\.PSGetNamedPropertyFromPropertyStorage
 
-[PyPROPVARIANT](#pypropvariant)\= **PSGetNamedPropertyFromPropertyStorage\( *ps*  *, name* ** \)
+[PyPROPVARIANT](#pypropvariant) =PSGetNamedPropertyFromPropertyStorage\(ps, name\)
 Extracts a property value from a serialized buffer by name
 
 #### Parameters
 
 
-  -  *ps* : buffer
+  - ps : buffer
 
     Bytes or buffer \(or str in python 2\) containing a serialized property set \(see[PyIPersistSerializedPropStorage::GetPropertyStorage](PyIPersistSerializedPropStorage.md#pyipersistserializedpropstoragegetpropertystorage)\)
 
-  -  *name* : str
+  - name : str
 
     Property to return
 
 ## [propsys](#propsys)\.PSGetPropertyDescription
 
-[PyIPropertyDescription](#pyipropertydescription)\= **PSGetPropertyDescription\( *Key*  *, riid* ** \)
+[PyIPropertyDescription](#pyipropertydescription) =PSGetPropertyDescription\(Key, riid\)
 Gets a description interface for a property
 
 #### Parameters
 
 
-  -  *Key* :[PyPROPERTYKEY](#pypropertykey)
+  - Key :[PyPROPERTYKEY](#pypropertykey)
 
     A property key identifier
 
-  -  *riid\=IID\_IPropertyDescription* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyDescription :[PyIID](#pyiid)
 
     The interface to return
 
 #### Comments
+
+
 Possible interfaces include IPropertyDescription, IPropertyDescriptionAliasInfo, and IPropertyDescriptionSearchInfo
 
 ## [propsys](#propsys)\.PSGetPropertyFromPropertyStorage
 
-[PyPROPVARIANT](#pypropvariant)\= **PSGetPropertyFromPropertyStorage\( *ps*  *, key* ** \)
+[PyPROPVARIANT](#pypropvariant) =PSGetPropertyFromPropertyStorage\(ps, key\)
 Extracts a property value from a serialized buffer by key
 
 #### Parameters
 
 
-  -  *ps* : buffer
+  - ps : buffer
 
     Bytes or buffer \(or str in python 2\) containing a serialized property set \(see[PyIPersistSerializedPropStorage::GetPropertyStorage](PyIPersistSerializedPropStorage.md#pyipersistserializedpropstoragegetpropertystorage)\)
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     Property to return
 
 ## [propsys](#propsys)\.PSGetPropertyKeyFromName
 
-[PyPROPERTYKEY](#pypropertykey)\= **PSGetPropertyKeyFromName\( *Name* ** \)
+[PyPROPERTYKEY](#pypropertykey) =PSGetPropertyKeyFromName\(Name\)
 Retrieves the property key by canonical name
 
 #### Parameters
 
 
-  -  *Name* : str
+  - Name : str
 
     The canonical name of a property \(eg System\.Author\)
 
 ## [propsys](#propsys)\.PSGetPropertySystem
 
-[PyIPropertySystem](#pyipropertysystem)\= **PSGetPropertySystem\( *riid* ** \)
+[PyIPropertySystem](#pyipropertysystem) =PSGetPropertySystem\(riid\)
 Creates an IPropertySystem interface
 
 #### Parameters
 
 
-  -  *riid\=IID\_IPropertySystem* :[PyIID](#pyiid)
+  - riid=IID\_IPropertySystem :[PyIID](#pyiid)
 
     The interface to return
 
 ## [propsys](#propsys)\.PSLookupPropertyHandlerCLSID
 
-[PyIID](#pyiid)\= **PSLookupPropertyHandlerCLSID\( *FilePath* ** \)
+[PyIID](#pyiid) =PSLookupPropertyHandlerCLSID\(FilePath\)
 Returns the GUID of the property handler for a file
 
 #### Parameters
 
 
-  -  *FilePath* : str
+  - FilePath : str
 
     Name of file
 
 #### Comments
+
+
 If no handler is found, the returned error code can be deceptive as it seems to indicate 
 
 that the file itself was not found
 
 ## [propsys](#propsys)\.PSRegisterPropertySchema
 
- **PSRegisterPropertySchema\( *filename* ** \)
+PSRegisterPropertySchema\(filename\)
 Registers a group of properties described in a schema file
 
 #### Parameters
 
 
-  -  *filename* : unicode
+  - filename : unicode
 
     An XML file that defines a property schema \(\*\.propdesc\)
 
 ## [propsys](#propsys)\.PSUnregisterPropertySchema
 
- **PSUnregisterPropertySchema\( *filename* ** \)
+PSUnregisterPropertySchema\(filename\)
 Removes a property schema definition
 
 #### Parameters
 
 
-  -  *filename* : unicode
+  - filename : unicode
 
     A previously registered schema definition file
 
 ## [propsys](#propsys)\.SHGetPropertyStoreForWindow
 
-[PyIPropertyStore](#pyipropertystore)\= **SHGetPropertyStoreForWindow\( *hwnd*  *, riid* ** \)
+[PyIPropertyStore](#pyipropertystore) =SHGetPropertyStoreForWindow\(hwnd, riid\)
 Retrieves a collection of a window's properties
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](#pyhandle)
+  - hwnd :[PyHANDLE](#pyhandle)
 
     Handle to a window
 
-  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
 
     The interface to create
 
 #### Comments
+
+
 Requires Windows 7 or later\.
 
 #### Return Value
@@ -329,78 +345,84 @@ are grouped on the taskbar
 
 ## [propsys](#propsys)\.SHGetPropertyStoreFromParsingName
 
-[PyIPropertyStore](#pyipropertystore)\= **SHGetPropertyStoreFromParsingName\( *Path*  *, BindCtx*  *, Flags*  *, riid* ** \)
+[PyIPropertyStore](#pyipropertystore) =SHGetPropertyStoreFromParsingName\(Path, BindCtx, Flags, riid\)
 Retrieves the property store for an item by path
 
 #### Parameters
 
 
-  -  *Path* : string
+  - Path : string
 
     Path to file
 
-  -  *BindCtx\=None* :[PyIBindCtx](#pyibindctx)
+  - BindCtx=None :[PyIBindCtx](#pyibindctx)
 
     Bind context, or None
 
-  -  *Flags\=GPS\_DEFAULT* : int
+  - Flags=GPS\_DEFAULT : int
 
     Combination of GETPROPERTYSTOREFLAGS values \(shellcon\.GPS\_\*\)
 
-  -  *riid\=IID\_IPropertyStore* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
 
     The interface to return
 
 #### Comments
+
+
 This function does not exist on XP, even with Desktop Search installed
 
 ## [propsys](#propsys)\.SHSetDefaultProperties
 
- **SHSetDefaultProperties\( *hwnd*  *, Item*  *, FileOpFlags*  *, Sink* ** \)
+SHSetDefaultProperties\(hwnd, Item, FileOpFlags, Sink\)
 Sets the default properties for a file\.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](#pyhandle)
+  - hwnd :[PyHANDLE](#pyhandle)
 
     Parent window for any notifications, can be None
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     Shell item whose defaults are to be set
 
-  -  *FileOpFlags\=0* : int
+  - FileOpFlags=0 : int
 
     File operation flags, as used with[PyIFileOperation::SetOperationFlags](PyIFileOperation.md#pyifileoperationsetoperationflags)
 
-  -  *Sink\=None* :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
+  - Sink=None :[PyGFileOperationProgressSink](#pygfileoperationprogresssink)
 
     Event sink to receive notifications
 
 #### Comments
+
+
 Default properties are registered by filetype under SetDefaultsFor value\.
 
 ## [propsys](#propsys)\.StgDeserializePropVariant
 
-[PyPROPVARIANT](#pypropvariant)\= **StgDeserializePropVariant\( *prop* ** \)
-Creates a[PyPROPVARIANT](#pypropvariant)from a serialized buffer
+[PyPROPVARIANT](#pypropvariant) =StgDeserializePropVariant\(prop\)
+Creates a[PyPROPVARIANT](#pypropvariant) from a serialized buffer
 
 #### Parameters
 
 
-  -  *prop* : bytes
+  - prop : bytes
 
     Buffer or bytes object \(or str in Python 2\) containing a serialized value
 
 ## [propsys](#propsys)\.StgSerializePropVariant
 
-bytes \= **StgSerializePropVariant\( *propvar* ** \)
+
+
+bytes =StgSerializePropVariant\(propvar\)
 Serializes a[PyPROPVARIANT](#pypropvariant)
 
 #### Parameters
 
 
-  -  *propvar* :[PyPROPVARIANT](#pypropvariant)
+  - propvar :[PyPROPVARIANT](#pypropvariant)
 
     The value to serialize

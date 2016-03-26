@@ -2,6 +2,8 @@
 
 ## PyIDirectorySearch Object
 
+
+
 A COM interface to ADSI's IDirectorySearch interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
@@ -16,7 +18,7 @@ Derived from[PyIUnknown](#pyiunknown)
 
     Executes a search and passes the results to the caller\. 
 
-Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow)method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)method\.&nbsp;
+Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow) method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow) method\.&nbsp;
 
   - [GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)
 
@@ -48,74 +50,82 @@ Some providers, such as LDAP, will defer the actual execution until the caller i
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.AdandonSearch
 
- **AdandonSearch\( *handle* ** \)
+AdandonSearch\(handle\)
 
 
 #### Parameters
 
 
-  -  *handle* : int
+  - handle : int
 
     
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.CloseSearchHandle
 
- **CloseSearchHandle\( *handle* ** \)
+CloseSearchHandle\(handle\)
 Closes a previously opened search handle\.
 
 #### Parameters
 
 
-  -  *handle* : int
+  - handle : int
 
     
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.ExecuteSearch
 
-int \= **ExecuteSearch\( *filter*  *, attrNames* ** \)
+
+
+int =ExecuteSearch\(filter, attrNames\)
 Executes a search and passes the results to the caller\. 
 
-Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow)method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow)method\.
+Some providers, such as LDAP, will defer the actual execution until the caller invokes the[PyIDirectorySearch::GetFirstRow](PyIDirectorySearch.md#pyidirectorysearchgetfirstrow) method or the[PyIDirectorySearch::GetNextRow](PyIDirectorySearch.md#pyidirectorysearchgetnextrow) method\.
 
 #### Parameters
 
 
-  -  *filter* :[PyUnicode](#pyunicode)
+  - filter :[PyUnicode](#pyunicode)
 
     
 
-  -  *attrNames* : \[[PyUnicode](#pyunicode), \.\.\.\]
+  - attrNames : \[[PyUnicode](#pyunicode), \.\.\.\]
 
     
 
 #### Return Value
-The result is an integer search handle\.[PyIDirectorySearch::CloseSearchHandle](PyIDirectorySearch.md#pyidirectorysearchclosesearchhandle)should be called to close the handle\.
+The result is an integer search handle\.[PyIDirectorySearch::CloseSearchHandle](PyIDirectorySearch.md#pyidirectorysearchclosesearchhandle) 
+
+should be called to close the handle\.
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.GetColumn
 
-\(name, type, values\) \= **GetColumn\( *handle*  *, name* ** \)
+
+
+\(name, type, values\) =GetColumn\(handle, name\)
 
 
 #### Parameters
 
 
-  -  *handle* : int
+  - handle : int
 
     Handle to a search
 
-  -  *name* :[PyUnicode](#pyunicode)
+  - name :[PyUnicode](#pyunicode)
 
     The column name to fetch
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.GetFirstRow
 
-int \= **GetFirstRow\( *handle* ** \)
+
+
+int =GetFirstRow\(handle\)
 
 
 #### Parameters
 
 
-  -  *handle* : int
+  - handle : int
 
     
 
@@ -124,7 +134,7 @@ The result is the HRESULT from the call - no exceptions are thrown
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.GetNextColumnName
 
- **GetNextColumnName\(** \)
+GetNextColumnName\(\)
 
 
 #### Return Value
@@ -132,13 +142,15 @@ Returns None when the underlying ADSI function return S\_ADS\_NOMORE\_COLUMNS\.
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.GetNextRow
 
-int \= **GetNextRow\( *handle* ** \)
+
+
+int =GetNextRow\(handle\)
 
 
 #### Parameters
 
 
-  -  *handle* : int
+  - handle : int
 
     
 
@@ -147,13 +159,15 @@ The result is the HRESULT from the call - no exceptions are thrown
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.GetPreviousRow
 
-int \= **GetPreviousRow\( *handle* ** \)
+
+
+int =GetPreviousRow\(handle\)
 
 
 #### Parameters
 
 
-  -  *handle* : int
+  - handle : int
 
     
 
@@ -162,13 +176,15 @@ The result is the HRESULT from the call - no exceptions are thrown
 
 ## [PyIDirectorySearch](#pyidirectorysearch)\.SetSearchPreference
 
-int, \[int, \.\.\.\] \= **SetSearchPreference\( *prefs* ** \)
+
+
+int, \[int, \.\.\.\] =SetSearchPreference\(prefs\)
 
 
 #### Parameters
 
 
-  -  *prefs* : ADS\_SEARCHPREF\_INFO
+  - prefs : ADS\_SEARCHPREF\_INFO
 
     
 

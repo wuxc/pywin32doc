@@ -2,6 +2,8 @@
 
 ## PyIMachineDebugManager Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,29 +23,29 @@ Description of the interface
 
 ## [PyIMachineDebugManager](#pyimachinedebugmanager)\.AddApplication
 
- **AddApplication\( *pda* ** \)
+AddApplication\(pda\)
 Description of AddApplication\.
 
 #### Parameters
 
 
-  -  *pda* :[PyIRemoteDebugApplication](#pyiremotedebugapplication)
+  - pda :[PyIRemoteDebugApplication](#pyiremotedebugapplication)
 
     Description for pda
 
 ## [PyIMachineDebugManager](#pyimachinedebugmanager)\.EnumApplications
 
- **EnumApplications\(** \)
+EnumApplications\(\)
 Description of EnumApplications\.
 
 ## [PyIMachineDebugManager](#pyimachinedebugmanager)\.RemoveApplication
 
- **RemoveApplication\( *dwAppCookie* ** \)
+RemoveApplication\(dwAppCookie\)
 Description of RemoveApplication\.
 
 #### Parameters
 
 
-  -  *dwAppCookie* : int
+  - dwAppCookie : int
 
     Description for dwAppCookie

@@ -2,6 +2,8 @@
 
 ## PyICreateTypeLib2 Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -49,110 +51,110 @@ Description of the interface
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.CreateTypeInfo
 
- **CreateTypeInfo\( *szName* ** \)
+CreateTypeInfo\(szName\)
 Description of CreateTypeInfo\.
 
 #### Parameters
 
 
-  -  *szName* : **unicode** 
+  - szName :unicode
 
     Description for szName
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SaveAllChanges
 
- **SaveAllChanges\(** \)
+SaveAllChanges\(\)
 Description of SaveAllChanges\.
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetDocString
 
- **SetDocString\( *szDoc* ** \)
+SetDocString\(szDoc\)
 Description of SetDocString\.
 
 #### Parameters
 
 
-  -  *szDoc* : **unicode** 
+  - szDoc :unicode
 
     Description for szDoc
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetGuid
 
- **SetGuid\( *guid* ** \)
+SetGuid\(guid\)
 Description of SetGuid\.
 
 #### Parameters
 
 
-  -  *guid* :[PyIID](#pyiid)
+  - guid :[PyIID](#pyiid)
 
     Description for guid
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetHelpContext
 
- **SetHelpContext\( *dwHelpContext* ** \)
+SetHelpContext\(dwHelpContext\)
 Description of SetHelpContext\.
 
 #### Parameters
 
 
-  -  *dwHelpContext* : int
+  - dwHelpContext : int
 
     Description for dwHelpContext
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetHelpFileName
 
- **SetHelpFileName\( *szHelpFileName* ** \)
+SetHelpFileName\(szHelpFileName\)
 Description of SetHelpFileName\.
 
 #### Parameters
 
 
-  -  *szHelpFileName* : **unicode** 
+  - szHelpFileName :unicode
 
     Description for szHelpFileName
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetLcid
 
- **SetLcid\(** \)
+SetLcid\(\)
 Description of SetLcid\.
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetLibFlags
 
- **SetLibFlags\( *uLibFlags* ** \)
+SetLibFlags\(uLibFlags\)
 Description of SetLibFlags\.
 
 #### Parameters
 
 
-  -  *uLibFlags* : int
+  - uLibFlags : int
 
     Description for uLibFlags
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetName
 
- **SetName\( *szName* ** \)
+SetName\(szName\)
 Description of SetName\.
 
 #### Parameters
 
 
-  -  *szName* : **unicode** 
+  - szName :unicode
 
     Description for szName
 
 ## [PyICreateTypeLib2](#pyicreatetypelib2)\.SetVersion
 
- **SetVersion\( *wMajorVerNum*  *, wMinorVerNum* ** \)
+SetVersion\(wMajorVerNum, wMinorVerNum\)
 Description of SetVersion\.
 
 #### Parameters
 
 
-  -  *wMajorVerNum* : int
+  - wMajorVerNum : int
 
     Description for wMajorVerNum
 
-  -  *wMinorVerNum* : int
+  - wMinorVerNum : int
 
     Description for wMinorVerNum

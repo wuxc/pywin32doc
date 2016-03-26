@@ -2,6 +2,8 @@
 
 ## PyIActiveScriptParseProcedure Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,44 +15,44 @@ Description of the interface
 
 ## [PyIActiveScriptParseProcedure](#pyiactivescriptparseprocedure)\.ParseProcedureText
 
- **ParseProcedureText\( *pstrCode*  *, pstrFormalParams*  *, pstrProcedureName*  *, pstrItemName*  *, punkContext*  *, pstrDelimiter*  *, dwSourceContextCookie*  *, ulStartingLineNumber*  *, dwFlags* ** \)
+ParseProcedureText\(pstrCode, pstrFormalParams, pstrProcedureName, pstrItemName, punkContext, pstrDelimiter, dwSourceContextCookie, ulStartingLineNumber, dwFlags\)
 Description of ParseProcedureText\.
 
 #### Parameters
 
 
-  -  *pstrCode* : **unicode** 
+  - pstrCode :unicode
 
     Description for pstrCode
 
-  -  *pstrFormalParams* : **unicode** 
+  - pstrFormalParams :unicode
 
     Description for pstrFormalParams
 
-  -  *pstrProcedureName* : **unicode** 
+  - pstrProcedureName :unicode
 
     Description for pstrProcedureName
 
-  -  *pstrItemName* : **unicode** 
+  - pstrItemName :unicode
 
     Description for pstrItemName
 
-  -  *punkContext* :[PyIUnknown](#pyiunknown)
+  - punkContext :[PyIUnknown](#pyiunknown)
 
     Description for punkContext
 
-  -  *pstrDelimiter* : **unicode** 
+  - pstrDelimiter :unicode
 
     Description for pstrDelimiter
 
-  -  *dwSourceContextCookie* : int
+  - dwSourceContextCookie : int
 
     Description for dwSourceContextCookie
 
-  -  *ulStartingLineNumber* : int
+  - ulStartingLineNumber : int
 
     Description for ulStartingLineNumber
 
-  -  *dwFlags* : int
+  - dwFlags : int
 
     Description for dwFlags

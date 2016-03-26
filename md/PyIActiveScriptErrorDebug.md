@@ -2,6 +2,8 @@
 
 ## PyIActiveScriptErrorDebug Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,10 +19,10 @@ Description of the interface
 
 ## [PyIActiveScriptErrorDebug](#pyiactivescripterrordebug)\.GetDocumentContext
 
- **GetDocumentContext\(** \)
+GetDocumentContext\(\)
 Description of GetDocumentContext\.
 
 ## [PyIActiveScriptErrorDebug](#pyiactivescripterrordebug)\.GetStackFrame
 
- **GetStackFrame\(** \)
+GetStackFrame\(\)
 Description of GetStackFrame\.

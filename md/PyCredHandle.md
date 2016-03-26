@@ -2,9 +2,13 @@
 
 ## PyCredHandle Object
 
+
+
 Handle to a set of logon credentials, used with sspi authentication functions
 
 #### Comments
+
+
 This object is usually created using[win32security::AcquireCredentialsHandle](win32security.md#win32securityacquirecredentialshandle)\. 
 
 An uninitialized handle can also be created using win32security\.PyCredHandleType\(\)
@@ -26,30 +30,34 @@ An uninitialized handle can also be created using win32security\.PyCredHandleTyp
 
 ## [PyCredHandle](#pycredhandle)\.Detach
 
-long \= **Detach\(** \)
+
+
+long =Detach\(\)
 Disassociates object from handle and returns integer value of handle,
 
 ## [PyCredHandle](#pycredhandle)\.FreeCredentialsHandle
 
- **FreeCredentialsHandle\(** \)
+FreeCredentialsHandle\(\)
 Releases the credentials handle and makes object unusable
 
 ## [PyCredHandle](#pycredhandle)\.QueryCredentialsAttributes
 
- **QueryCredentialsAttributes\( *Attribute* ** \)
+QueryCredentialsAttributes\(Attribute\)
 Returns information about the credentials
 
 #### Parameters
 
 
-  -  *Attribute* : int
+  - Attribute : int
 
     SECPKG\_\* constant specifying which type of information to return
 
 #### Comments
+
+
 Only SECPKG\_CRED\_ATTR\_NAMES currently supported
 
- **Attribute**  **Return type** SECPKG\_CRED\_ATTR\_NAMES[PyUnicode](#pyunicode)- returns username that credentials representSECPKG\_ATTR\_SUPPORTED\_ALGSNot supported yet 
+AttributeReturn typeSECPKG\_CRED\_ATTR\_NAMES[PyUnicode](#pyunicode) - returns username that credentials representSECPKG\_ATTR\_SUPPORTED\_ALGSNot supported yet 
 
 SecPkgCred\_SupportedAlgs:SECPKG\_ATTR\_CIPHER\_STRENGTHSNot supported yet 
 

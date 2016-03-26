@@ -2,6 +2,8 @@
 
 ## PyIOleInPlaceActiveObject Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,68 +31,68 @@ Description of the interface
 
 ## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.EnableModeless
 
- **EnableModeless\( *fEnable* ** \)
+EnableModeless\(fEnable\)
 Description of EnableModeless\.
 
 #### Parameters
 
 
-  -  *fEnable* : int
+  - fEnable : int
 
     Description for fEnable
 
 ## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.OnDocWindowActivate
 
- **OnDocWindowActivate\( *fActivate* ** \)
+OnDocWindowActivate\(fActivate\)
 Description of OnDocWindowActivate\.
 
 #### Parameters
 
 
-  -  *fActivate* : int
+  - fActivate : int
 
     Description for fActivate
 
 ## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.OnFrameWindowActivate
 
- **OnFrameWindowActivate\( *fActivate* ** \)
+OnFrameWindowActivate\(fActivate\)
 Description of OnFrameWindowActivate\.
 
 #### Parameters
 
 
-  -  *fActivate* : int
+  - fActivate : int
 
     Description for fActivate
 
 ## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.ResizeBorder
 
- **ResizeBorder\( *rcBorder*  *, pUIWindow*  *, fFrameWindow* ** \)
+ResizeBorder\(rcBorder, pUIWindow, fFrameWindow\)
 Description of ResizeBorder\.
 
 #### Parameters
 
 
-  -  *rcBorder* : \(int, int, int, int\)
+  - rcBorder : \(int, int, int, int\)
 
     Description for prcBorder
 
-  -  *pUIWindow* :[PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)
+  - pUIWindow :[PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)
 
     Description for pUIWindow
 
-  -  *fFrameWindow* : int
+  - fFrameWindow : int
 
     Description for fFrameWindow
 
 ## [PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)\.TranslateAccelerator
 
- **TranslateAccelerator\( *lpmsg* ** \)
+TranslateAccelerator\(lpmsg\)
 Description of TranslateAccelerator\.
 
 #### Parameters
 
 
-  -  *lpmsg* :[PyMSG](#pymsg)
+  - lpmsg :[PyMSG](#pymsg)
 
     Description for lpmsg

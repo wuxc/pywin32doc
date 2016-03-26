@@ -2,6 +2,8 @@
 
 ## PyIInitializeWithFile Object
 
+
+
 Initializes a property handler that requires a file path instead of a stream
 
 #### Methods
@@ -13,16 +15,16 @@ Initializes a property handler that requires a file path instead of a stream
 
 ## [PyIInitializeWithFile](#pyiinitializewithfile)\.Initialize
 
- **Initialize\( *FilePath*  *, Mode* ** \)
+Initialize\(FilePath, Mode\)
 Passes a file path to a property handler on startup
 
 #### Parameters
 
 
-  -  *FilePath* : str
+  - FilePath : str
 
     Full path to the file whose properties are to be accessed
 
-  -  *Mode* : int
+  - Mode : int
 
     Indicates if properties can be written, STGM\_READ or STGM\_READWRITE

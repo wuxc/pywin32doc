@@ -2,6 +2,8 @@
 
 ## Module win32pipe
 
+
+
 An interface to the win32 pipe API's
 
 #### Methods
@@ -53,7 +55,7 @@ network operation\.&nbsp;
 
   - [WaitNamedPipe](win32pipe.md#win32pipewaitnamedpipe)
 
-    Waits until either a time-out interval elapses or an instance of the specified named pipe is available to be connected to \(that is, the pipe's server process has a pending[win32pipe::ConnectNamedPipe](win32pipe.md#win32pipeconnectnamedpipe)operation on the pipe\)\.&nbsp;
+    Waits until either a time-out interval elapses or an instance of the specified named pipe is available to be connected to \(that is, the pipe's server process has a pending[win32pipe::ConnectNamedPipe](win32pipe.md#win32pipeconnectnamedpipe) operation on the pipe\)\.&nbsp;
 
   - [GetNamedPipeInfo](win32pipe.md#win32pipegetnamedpipeinfo)
 
@@ -84,6 +86,8 @@ network operation\.&nbsp;
     Version of popen that works in a GUI&nbsp;
 
 #### Comments
+
+
 Not implemented in py3k\.
 
 #### Methods
@@ -112,46 +116,52 @@ Not implemented in py3k\.
 
 ## [win32pipe](#win32pipe)\.CallNamedPipe
 
-string \= **CallNamedPipe\( *pipeName*  *, data*  *, bufSize*  *, timeOut* ** \)
+
+
+string =CallNamedPipe\(pipeName, data, bufSize, timeOut\)
 Opens and performs a transaction on a named pipe\.
 
 #### Parameters
 
 
-  -  *pipeName* :[PyUNICODE](#pyunicode)
+  - pipeName :[PyUNICODE](#pyunicode)
 
     The name of the pipe\.
 
-  -  *data* : string
+  - data : string
 
     The data to write\.
 
-  -  *bufSize* : int
+  - bufSize : int
 
     The size of the result buffer to allocate for the read\.
 
-  -  *timeOut* : int
+  - timeOut : int
 
     Specifies the number of milliseconds to wait for the named pipe to be available\. In addition to numeric values, the following special values can be specified\.
 
 
 ## [win32pipe](#win32pipe)\.ConnectNamedPipe
 
-int \= **ConnectNamedPipe\( *hPipe*  *, overlapped* ** \)
+
+
+int =ConnectNamedPipe\(hPipe, overlapped\)
 Connects to a named pipe
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
-  -  *overlapped\=None* :[PyOVERLAPPED](#pyoverlapped)
+  - overlapped=None :[PyOVERLAPPED](#pyoverlapped)
 
     An overlapped object to use, else None
 
 #### Comments
+
+
 The result is zero if the function succeeds\.  If the function fails, 
 
 GetLastError\(\) is called, and if the result is ERROR\_IO\_PENDING or ERROR\_PIPE\_CONNECTED 
@@ -164,298 +174,330 @@ can be extracted\)
 
 ## [win32pipe](#win32pipe)\.CreateNamedPipe
 
-[PyHANDLE](#pyhandle)\= **CreateNamedPipe\( *pipeName*  *, openMode*  *, pipeMode*  *, nMaxInstances*  *, nOutBufferSize*  *, nInBufferSize*  *, nDefaultTimeOut*  *, sa* ** \)
+[PyHANDLE](#pyhandle) =CreateNamedPipe\(pipeName, openMode, pipeMode, nMaxInstances, nOutBufferSize, nInBufferSize, nDefaultTimeOut, sa\)
 Creates an instance of a named pipe and returns a handle for subsequent pipe operations
 
 #### Parameters
 
 
-  -  *pipeName* :[PyUnicode](#pyunicode)
+  - pipeName :[PyUnicode](#pyunicode)
 
     The name of the pipe
 
-  -  *openMode* : int
+  - openMode : int
 
     OpenMode of the pipe
 
-  -  *pipeMode* : int
+  - pipeMode : int
 
     
 
-  -  *nMaxInstances* : int
+  - nMaxInstances : int
 
     
 
-  -  *nOutBufferSize* : int
+  - nOutBufferSize : int
 
     
 
-  -  *nInBufferSize* : int
+  - nInBufferSize : int
 
     
 
-  -  *nDefaultTimeOut* : int
+  - nDefaultTimeOut : int
 
     
 
-  -  *sa* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  - sa :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     
 
 ## [win32pipe](#win32pipe)\.CreatePipe
 
-\([PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle)\) \= **CreatePipe\( *sa*  *, nSize* ** \)
+
+
+\([PyHANDLE](#pyhandle),[PyHANDLE](#pyhandle)\) =CreatePipe\(sa, nSize\)
 Creates an anonymous pipe, and returns handles to the read and write ends of the pipe
 
 #### Parameters
 
 
-  -  *sa* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  - sa :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     
 
-  -  *nSize* : int
+  - nSize : int
 
     
 
 ## [win32pipe](#win32pipe)\.DisconnectNamedPipe
 
- **DisconnectNamedPipe\( *hFile* ** \)
+DisconnectNamedPipe\(hFile\)
 Disconnects the server end of a named pipe instance from a client process\.
 
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](#pyhandle)
+  - hFile :[PyHANDLE](#pyhandle)
 
     The handle to the pipe to disconnect\.
 
 ## [win32pipe](#win32pipe)\.FdCreatePipe
 
-\(int, int\) \= **FdCreatePipe\( *sa*  *, nSize*  *, mode* ** \)
+
+
+\(int, int\) =FdCreatePipe\(sa, nSize, mode\)
 As CreatePipe but returns file descriptors
 
 #### Parameters
 
 
-  -  *sa* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  - sa :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies security and inheritance for the pipe
 
-  -  *nSize* : int
+  - nSize : int
 
     Buffer size for pipe\.  Use 0 for default size\.
 
-  -  *mode* : int
+  - mode : int
 
     O\_TEXT or O\_BINARY
 
 ## [win32pipe](#win32pipe)\.GetNamedPipeClientProcessId
 
-int \= **GetNamedPipeClientProcessId\( *hPipe* ** \)
+
+
+int =GetNamedPipeClientProcessId\(hPipe\)
 Returns the process id of client that is connected to a named pipe
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
 #### Comments
+
+
 Requires Vista or later
 
 ## [win32pipe](#win32pipe)\.GetNamedPipeClientSessionId
 
-int \= **GetNamedPipeClientSessionId\( *hPipe* ** \)
+
+
+int =GetNamedPipeClientSessionId\(hPipe\)
 Returns the session id of client that is connected to a named pipe
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
 #### Comments
+
+
 Requires Vista or later
 
 ## [win32pipe](#win32pipe)\.GetNamedPipeHandleState
 
-\(int, int, int/None, int/None,[PyUnicode](#pyunicode)\= **GetNamedPipeHandleState\( *hPipe*  *, bGetCollectionData* ** \)
+
+
+\(int, int, int/None, int/None,[PyUnicode](#pyunicode) =GetNamedPipeHandleState\(hPipe, bGetCollectionData\)
 Determines the state of the named pipe\.
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
-  -  *bGetCollectionData\=0* : int
+  - bGetCollectionData=0 : int
 
     Determines of the collection data should be returned\.  If not, None is returned in their place\.
 
 ## [win32pipe](#win32pipe)\.GetNamedPipeInfo
 
-\(int, int, int, int\) \= **GetNamedPipeInfo\( *hNamedPipe* ** \)
+
+
+\(int, int, int, int\) =GetNamedPipeInfo\(hNamedPipe\)
 Returns pipe's flags, buffer sizes, and max instances
 
 #### Parameters
 
 
-  -  *hNamedPipe* :[PyHANDLE](#pyhandle)
+  - hNamedPipe :[PyHANDLE](#pyhandle)
 
     Handle to a named pipe
 
 ## [win32pipe](#win32pipe)\.GetNamedPipeServerProcessId
 
-int \= **GetNamedPipeServerProcessId\( *hPipe* ** \)
+
+
+int =GetNamedPipeServerProcessId\(hPipe\)
 Returns pid of server process that created a named pipe
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
 #### Comments
+
+
 Requires Vista or later
 
 ## [win32pipe](#win32pipe)\.GetNamedPipeServerSessionId
 
-int \= **GetNamedPipeServerSessionId\( *hPipe* ** \)
+
+
+int =GetNamedPipeServerSessionId\(hPipe\)
 Returns session id of server process that created a named pipe
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
 #### Comments
+
+
 Requires Vista or later
 
 ## [win32pipe](#win32pipe)\.GetOverlappedResult
 
-int \= **GetOverlappedResult\( *hFile*  *, overlapped*  *, bWait* ** \)
+
+
+int =GetOverlappedResult\(hFile, overlapped, bWait\)
 Determines the result of the most recent call with an OVERLAPPED object\.
 
 #### Parameters
 
 
-  -  *hFile* :[PyHANDLE](#pyhandle)
+  - hFile :[PyHANDLE](#pyhandle)
 
     The handle to the pipe or file
 
-  -  *overlapped* :[PyOVERLAPPED](#pyoverlapped)
+  - overlapped :[PyOVERLAPPED](#pyoverlapped)
 
     The overlapped object to check\.
 
-  -  *bWait* : int
+  - bWait : int
 
     Indicates if the function should wait for data to become available\.
 
 #### Comments
+
+
 The result is the number of bytes transferred\.  The overlapped object's attributes will be changed during this call\.
 
 ## NMPWAIT\_NOWAIT
- **const win32pipe\.NMPWAIT\_NOWAIT;** 
+const win32pipe\.NMPWAIT\_NOWAIT;
 
 
 ## NMPWAIT\_USE\_DEFAULT\_WAIT
- **const win32pipe\.NMPWAIT\_USE\_DEFAULT\_WAIT;** 
+const win32pipe\.NMPWAIT\_USE\_DEFAULT\_WAIT;
 
 
 ## NMPWAIT\_WAIT\_FOREVER
- **const win32pipe\.NMPWAIT\_WAIT\_FOREVER;** 
+const win32pipe\.NMPWAIT\_WAIT\_FOREVER;
 
 
 ## PIPE\_ACCESS\_DUPLEX
- **const win32pipe\.PIPE\_ACCESS\_DUPLEX;** 
+const win32pipe\.PIPE\_ACCESS\_DUPLEX;
 
 
 ## PIPE\_ACCESS\_INBOUND
- **const win32pipe\.PIPE\_ACCESS\_INBOUND;** 
+const win32pipe\.PIPE\_ACCESS\_INBOUND;
 
 
 ## PIPE\_ACCESS\_OUTBOUND
- **const win32pipe\.PIPE\_ACCESS\_OUTBOUND;** 
+const win32pipe\.PIPE\_ACCESS\_OUTBOUND;
 
 
 ## PIPE\_NOWAIT
- **const win32pipe\.PIPE\_NOWAIT;** 
+const win32pipe\.PIPE\_NOWAIT;
 
 
 ## PIPE\_READMODE\_BYTE
- **const win32pipe\.PIPE\_READMODE\_BYTE;** 
+const win32pipe\.PIPE\_READMODE\_BYTE;
 
 
 ## PIPE\_READMODE\_MESSAGE
- **const win32pipe\.PIPE\_READMODE\_MESSAGE;** 
+const win32pipe\.PIPE\_READMODE\_MESSAGE;
 
 
 ## PIPE\_TYPE\_BYTE
- **const win32pipe\.PIPE\_TYPE\_BYTE;** 
+const win32pipe\.PIPE\_TYPE\_BYTE;
 
 
 ## PIPE\_TYPE\_MESSAGE
- **const win32pipe\.PIPE\_TYPE\_MESSAGE;** 
+const win32pipe\.PIPE\_TYPE\_MESSAGE;
 
 
 ## PIPE\_UNLIMITED\_INSTANCES
- **const win32pipe\.PIPE\_UNLIMITED\_INSTANCES;** 
+const win32pipe\.PIPE\_UNLIMITED\_INSTANCES;
 
 
 ## PIPE\_WAIT
- **const win32pipe\.PIPE\_WAIT;** 
+const win32pipe\.PIPE\_WAIT;
 
 
 ## [win32pipe](#win32pipe)\.PeekNamedPipe
 
-\(string, int, int\) \= **PeekNamedPipe\( *hPipe*  *, size* ** \)
+
+
+\(string, int, int\) =PeekNamedPipe\(hPipe, size\)
 Copies data from a named or anonymous pipe into a buffer without removing it from the pipe\. It also returns information about data in the pipe\.
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
-  -  *size* : int
+  - size : int
 
     The size of the buffer\.
 
 ## [win32pipe](#win32pipe)\.SetNamedPipeHandleState
 
- **SetNamedPipeHandleState\( *hPipe*  *, Mode*  *, MaxCollectionCount*  *, CollectDataTimeout* ** \)
+SetNamedPipeHandleState\(hPipe, Mode, MaxCollectionCount, CollectDataTimeout\)
 Sets the state of the named pipe\.
 
 #### Parameters
 
 
-  -  *hPipe* :[PyHANDLE](#pyhandle)
+  - hPipe :[PyHANDLE](#pyhandle)
 
     The handle to the pipe\.
 
-  -  *Mode* : int/None
+  - Mode : int/None
 
     The pipe read mode\.
 
-  -  *MaxCollectionCount* : int/None
+  - MaxCollectionCount : int/None
 
     Maximum bytes collected before transmission to the server\.
 
-  -  *CollectDataTimeout* : int/None
+  - CollectDataTimeout : int/None
 
     Maximum time to wait, in milliseconds, before transmission to server\.
 
 ## [win32pipe](#win32pipe)\.TransactNamedPipe
 
-string/buffer \= **TransactNamedPipe\( *pipeName*  *, writeData*  *, buffer/bufSize*  *, overlapped* ** \)
+
+
+string/buffer =TransactNamedPipe\(pipeName, writeData, buffer/bufSize, overlapped\)
 Combines the functions that write a 
 
 message to and read a message from the specified named pipe into a single 
@@ -465,15 +507,15 @@ network operation\.
 #### Parameters
 
 
-  -  *pipeName* :[PyUNICODE](#pyunicode)
+  - pipeName :[PyUNICODE](#pyunicode)
 
     The name of the pipe\.
 
-  -  *writeData* : string/buffer
+  - writeData : string/buffer
 
     The data to write to the pipe\.
 
-  -  *buffer/bufSize* :[PyOVERLAPPEDReadBuffer](#pyoverlappedreadbuffer)/int
+  - buffer/bufSize :[PyOVERLAPPEDReadBuffer](#pyoverlappedreadbuffer)/int
 
     Size of the buffer to create for the result, 
 
@@ -483,12 +525,14 @@ the buffer itself\.  If a buffer but no overlapped is passed, the result is a ne
 
 built from the buffer, but with a length that reflects the data actually read\.
 
-  -  *overlapped\=None* :[PyOVERLAPPED](#pyoverlapped)
+  - overlapped=None :[PyOVERLAPPED](#pyoverlapped)
 
     An overlapped structure or None
 
 #### Comments
-This function is modelled on[win32file::ReadFile](win32file.md#win32filereadfile)- for overlapped 
+
+
+This function is modelled on[win32file::ReadFile](win32file.md#win32filereadfile) - for overlapped 
 
 operations you are expected to provide a buffer which will be filled 
 
@@ -496,17 +540,17 @@ asynchronously\.
 
 ## [win32pipe](#win32pipe)\.WaitNamedPipe
 
- **WaitNamedPipe\( *pipeName*  *, timeout* ** \)
-Waits until either a time-out interval elapses or an instance of the specified named pipe is available to be connected to \(that is, the pipe's server process has a pending[win32pipe::ConnectNamedPipe](win32pipe.md#win32pipeconnectnamedpipe)operation on the pipe\)\.
+WaitNamedPipe\(pipeName, timeout\)
+Waits until either a time-out interval elapses or an instance of the specified named pipe is available to be connected to \(that is, the pipe's server process has a pending[win32pipe::ConnectNamedPipe](win32pipe.md#win32pipeconnectnamedpipe) operation on the pipe\)\.
 
 #### Parameters
 
 
-  -  *pipeName* :[PyUnicode](#pyunicode)
+  - pipeName :[PyUnicode](#pyunicode)
 
     The name of the pipe
 
-  -  *timeout* : int
+  - timeout : int
 
     The number of milliseconds the function will wait\. 
 
@@ -515,17 +559,19 @@ instead of a literal value, you can specify one of the following values for the 
 
 ## [win32pipe](#win32pipe)\.popen
 
-pipe \= **popen\( *cmdstring*  *, mode* ** \)
+
+
+pipe =popen\(cmdstring, mode\)
 Popen that works from a GUI\.
 
 #### Parameters
 
 
-  -  *cmdstring* : string
+  - cmdstring : string
 
     The cmdstring to pass to the shell
 
-  -  *mode* : string
+  - mode : string
 
     Either 'r' or 'w'
 
@@ -536,17 +582,19 @@ processes stdin or stdout, depending on the requested mode\.
 
 ## [win32pipe](#win32pipe)\.popen2
 
-\(pipe, pipe\) \= **popen2\( *cmdstring*  *, mode* ** \)
+
+
+\(pipe, pipe\) =popen2\(cmdstring, mode\)
 Variation on[win32pipe::popen](win32pipe.md#win32pipepopen)
 
 #### Parameters
 
 
-  -  *cmdstring* : string
+  - cmdstring : string
 
     The cmdstring to pass to the shell
 
-  -  *mode* : string
+  - mode : string
 
     Either 't' or 'b'
 
@@ -557,17 +605,19 @@ processes stdin, and a pipe connected to the processes stdout\.
 
 ## [win32pipe](#win32pipe)\.popen3
 
-\(pipe, pipe, pipe\) \= **popen3\( *cmdstring*  *, mode* ** \)
+
+
+\(pipe, pipe, pipe\) =popen3\(cmdstring, mode\)
 Variation on[win32pipe::popen](win32pipe.md#win32pipepopen)
 
 #### Parameters
 
 
-  -  *cmdstring* : string
+  - cmdstring : string
 
     The cmdstring to pass to the shell
 
-  -  *mode* : string
+  - mode : string
 
     Either 't' or 'b'
 
@@ -576,17 +626,19 @@ The result of this function is 3 pipes - the processes stdin, stdout and stderr
 
 ## [win32pipe](#win32pipe)\.popen4
 
-\(pipe, pipe\) \= **popen4\( *cmdstring*  *, mode* ** \)
+
+
+\(pipe, pipe\) =popen4\(cmdstring, mode\)
 Variation on[win32pipe::popen](win32pipe.md#win32pipepopen)
 
 #### Parameters
 
 
-  -  *cmdstring* : string
+  - cmdstring : string
 
     The cmdstring to pass to the shell
 
-  -  *mode* : string
+  - mode : string
 
     Either 't' or 'b'
 

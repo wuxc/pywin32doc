@@ -2,6 +2,8 @@
 
 ## PyITaskbarList Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,53 +31,53 @@ Description of the interface
 
 ## [PyITaskbarList](#pyitaskbarlist)\.ActivateTab
 
- **ActivateTab\( *hwnd* ** \)
+ActivateTab\(hwnd\)
 Marks a window as the active tab on the taskbar
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](#pyhandle)
+  - hwnd :[PyHANDLE](#pyhandle)
 
     Handle to window, should have WS\_CAPTION style
 
 ## [PyITaskbarList](#pyitaskbarlist)\.AddTab
 
- **AddTab\( *hwnd* ** \)
+AddTab\(hwnd\)
 Places a window on the taskbar
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](#pyhandle)
+  - hwnd :[PyHANDLE](#pyhandle)
 
     Handle to window, should have WS\_CAPTION style
 
 ## [PyITaskbarList](#pyitaskbarlist)\.DeleteTab
 
- **DeleteTab\( *hwnd* ** \)
+DeleteTab\(hwnd\)
 Removes a window from the taskbar
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](#pyhandle)
+  - hwnd :[PyHANDLE](#pyhandle)
 
     Handle to window, should have WS\_CAPTION style
 
 ## [PyITaskbarList](#pyitaskbarlist)\.HrInit
 
- **HrInit\(** \)
+HrInit\(\)
 Intializes the interface before use
 
 ## [PyITaskbarList](#pyitaskbarlist)\.SetActiveAlt
 
- **SetActiveAlt\( *hwnd* ** \)
+SetActiveAlt\(hwnd\)
 Sets the window as the active tab, without displaying it as pressed on the taskbar
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](#pyhandle)
+  - hwnd :[PyHANDLE](#pyhandle)
 
     Handle to window, should have WS\_CAPTION style

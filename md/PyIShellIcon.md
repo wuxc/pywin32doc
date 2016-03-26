@@ -2,6 +2,8 @@
 
 ## PyIShellIcon Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,12 +15,12 @@ Description of the interface
 
 ## [PyIShellIcon](#pyishellicon)\.GetIconOf
 
- **GetIconOf\( *pidl* ** \)
+GetIconOf\(pidl\)
 Description of GetIconOf\.
 
 #### Parameters
 
 
-  -  *pidl* :[PyIDL](#pyidl)
+  - pidl :[PyIDL](#pyidl)
 
     Description for pidl

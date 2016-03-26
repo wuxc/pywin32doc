@@ -2,6 +2,8 @@
 
 ## PyCImageList Object
 
+
+
 A Python type encapsulating an MFC CImageList class\.
 
 #### Methods
@@ -41,31 +43,33 @@ A Python type encapsulating an MFC CImageList class\.
 
 ## [PyCImageList](#pycimagelist)\.Add
 
-int \= **Add\( *bitmap, bitmapMask* ** \)
+
+
+int =Add\(bitmap, bitmapMask\)
 Adds an image to the list\.
 
 #### Parameters
 
 
-  -  *bitmap, bitmapMask* : \(int,int\)
+  - bitmap, bitmapMask : \(int,int\)
 
     2 Bitmaps to use \(primary and mask\)
 
 #### Alternative Parameters
 
 
-  -  *bitmap* 
+  - bitmap
 
     Bitmap to use
 
-  -  *color* 
+  - color
 
     Color to use for the mask\.
 
 #### Alternative Parameters
 
 
-  -  *hIcon* 
+  - hIcon
 
     Handle of an icon to add\.
 
@@ -74,43 +78,53 @@ Zero-based index of the first new image\.
 
 ## [PyCImageList](#pycimagelist)\.DeleteImageList
 
- **DeleteImageList\(** \)
+DeleteImageList\(\)
 Deletes an image list\.
 
 #### Comments
+
+
 This frees all resources associated with an image list\. 
 
 No further operations on the object will be allowed\.
 
 ## [PyCImageList](#pycimagelist)\.Destroy
 
- **Destroy\(** \)
+Destroy\(\)
 Destroys the underlying CImageList
 
 #### Comments
+
+
 This method actually calls delete\(\) on the CImageList - you 
 
 should ensure that no controls still require access to this list\.
 
 ## [PyCImageList](#pycimagelist)\.GetBkColor
 
-int \= **GetBkColor\(** \)
+
+
+int =GetBkColor\(\)
 Retrieves the background color of an Image List\.
 
 ## [PyCImageList](#pycimagelist)\.GetImageCount
 
-int \= **GetImageCount\(** \)
+
+
+int =GetImageCount\(\)
 Retrieves the number of images in an image list\.
 
 ## [PyCImageList](#pycimagelist)\.GetImageInfo
 
-iiii\(iiii\) \= **GetImageInfo\( *index* ** \)
+
+
+iiii\(iiii\) =GetImageInfo\(index\)
 Retrieves information about an image\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     Index of image\.
 
@@ -119,17 +133,19 @@ The return info is a tuple describing an IMAGELIST structure\.
 
 ## [PyCImageList](#pycimagelist)\.GetSafeHandle
 
-int \= **GetSafeHandle\(** \)
+
+
+int =GetSafeHandle\(\)
 Retrieves the HIMAGELIST for the object
 
 ## [PyCImageList](#pycimagelist)\.SetBkColor
 
- **SetBkColor\( *color* ** \)
+SetBkColor\(color\)
 Sets the background color for an Image List\.
 
 #### Parameters
 
 
-  -  *color* : int
+  - color : int
 
     The new background color\.

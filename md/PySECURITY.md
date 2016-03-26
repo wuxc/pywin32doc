@@ -2,17 +2,21 @@
 
 ## PySECURITY\_ATTRIBUTES Object
 
+
+
 A Python object, representing a SECURITY\_ATTRIBUTES structure
 
 #### Properties
 
-  -  **boolean bInheritHandle** 
+  - boolean bInheritHandle
     Specifies whether the returned handle is inherited when a new process is created\. If this member is TRUE, the new process inherits the handle\.
 
-  -  **[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)SECURITY\_DESCRIPTOR** 
+  - [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor) SECURITY\_DESCRIPTOR
     A PySECURITY\_DESCRIPTOR, or None
 
 #### Comments
+
+
 On platforms that support security descriptor operations, SECURITY\_DESCRIPTOR 
 
 defaults to a blank security descriptor with no owner, group, dacl, or sacl\. 
@@ -28,6 +32,8 @@ When SECURITY\_DESCRIPTOR is not None, any of its methods can be invoked directl
 on the PySECURITY\_ATTRIBUTES object
 
 ## PySECURITY\_DESCRIPTOR Object
+
+
 
 A Python object, representing a SECURITY\_DESCRIPTOR structure
 
@@ -91,142 +97,150 @@ A Python object, representing a SECURITY\_DESCRIPTOR structure
     Sets control bitmask of a security descriptor&nbsp;
 
 #### Comments
+
+
 Note the PySECURITY\_DESCRIPTOR object supports the buffer interface\.  Thus buffer\(sd\) can be used to obtain the raw bytes\. 
 
 tp\_as\_buffer
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.GetLength
 
- **GetLength\(** \)
+GetLength\(\)
 return length of security descriptor \(GetSecurityDescriptorLenght\)\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.GetSecurityDescriptorControl
 
-\(int,int\) \= **GetSecurityDescriptorControl\(** \)
+
+
+\(int,int\) =GetSecurityDescriptorControl\(\)
 Returns tuple of Control bit flags and revision of SD\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.GetSecurityDescriptorDacl
 
-[PyACL](#pyacl)\= **GetSecurityDescriptorDacl\(** \)
+[PyACL](#pyacl) =GetSecurityDescriptorDacl\(\)
 Return the discretionary ACL of the security descriptor\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.GetSecurityDescriptorGroup
 
-[PySID](#pysid)\= **GetSecurityDescriptorGroup\(** \)
+[PySID](#pysid) =GetSecurityDescriptorGroup\(\)
 Return the group owning the security descriptor\. SID is returned\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.GetSecurityDescriptorOwner
 
-[PySID](#pysid)\= **GetSecurityDescriptorOwner\(** \)
+[PySID](#pysid) =GetSecurityDescriptorOwner\(\)
 Return the owner of the security descriptor\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.GetSecurityDescriptorSacl
 
-[PyACL](#pyacl)\= **GetSecurityDescriptorSacl\(** \)
+[PyACL](#pyacl) =GetSecurityDescriptorSacl\(\)
 Return system access control list \(SACL\) of SD
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.Initialize
 
- **Initialize\(** \)
+Initialize\(\)
 Initialize the SD\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.IsSelfRelative
 
- **IsSelfRelative\(** \)
+IsSelfRelative\(\)
 Returns 1 if security descriptor is self relative, 0 if absolute
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.IsValid
 
- **IsValid\(** \)
+IsValid\(\)
 Determines if the security descriptor is valid\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.SetSecurityDescriptorControl
 
- **SetSecurityDescriptorControl\( *ControlBitsOfInterest*  *, ControlBitsToSet* ** \)
+SetSecurityDescriptorControl\(ControlBitsOfInterest, ControlBitsToSet\)
 Sets the control bit flags related to inheritance for a security descriptor
 
 #### Parameters
 
 
-  -  *ControlBitsOfInterest* : int
+  - ControlBitsOfInterest : int
 
     Bitmask of flags to be modified
 
-  -  *ControlBitsToSet* : int
+  - ControlBitsToSet : int
 
     Bitmask containing flag values to set
 
 #### Comments
+
+
 Only exists on Windows 2000 or later
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.SetSecurityDescriptorDacl
 
- **SetSecurityDescriptorDacl\( *bDaclPresent*  *, DACL*  *, bDaclDefaulted* ** \)
+SetSecurityDescriptorDacl\(bDaclPresent, DACL, bDaclDefaulted\)
 Replaces DACL in a security descriptor\.
 
 #### Parameters
 
 
-  -  *bDaclPresent* : int
+  - bDaclPresent : int
 
     A flag indicating if the SE\_DACL\_PRESENT flag should be set\.
 
-  -  *DACL* :[PyACL](#pyacl)
+  - DACL :[PyACL](#pyacl)
 
     The DACL to set\.  If None, a NULL ACL will be created allowing world access\.
 
-  -  *bDaclDefaulted* : int
+  - bDaclDefaulted : int
 
     A flag indicating if the SE\_DACL\_DEFAULTED flag should be set\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.SetSecurityDescriptorGroup
 
-int \= **SetSecurityDescriptorGroup\( *sid*  *, bOwnerDefaulted* ** \)
+
+
+int =SetSecurityDescriptorGroup\(sid, bOwnerDefaulted\)
 Set group SID\.
 
 #### Parameters
 
 
-  -  *sid* :[PySID](#pysid)
+  - sid :[PySID](#pysid)
 
     The group sid to be set in the security descriptor\.
 
-  -  *bOwnerDefaulted* : int
+  - bOwnerDefaulted : int
 
     Normally set to false since this explicitely set the owner\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.SetSecurityDescriptorOwner
 
- **SetSecurityDescriptorOwner\( *sid*  *, bOwnerDefaulted* ** \)
+SetSecurityDescriptorOwner\(sid, bOwnerDefaulted\)
 Set owner SID\.
 
 #### Parameters
 
 
-  -  *sid* :[PySID](#pysid)
+  - sid :[PySID](#pysid)
 
     The sid to be set as owner in the security descriptor\.
 
-  -  *bOwnerDefaulted* : int
+  - bOwnerDefaulted : int
 
     Normally set to false since this explicitely set the owner\.
 
 ## [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)\.SetSecurityDescriptorSacl
 
- **SetSecurityDescriptorSacl\( *bSaclPresent*  *, SACL*  *, bSaclDefaulted* ** \)
+SetSecurityDescriptorSacl\(bSaclPresent, SACL, bSaclDefaulted\)
 Replaces system access control list \(SACL\) in the security descriptor\.
 
 #### Parameters
 
 
-  -  *bSaclPresent* : int
+  - bSaclPresent : int
 
     A flag indicating if SACL is to be used\. If false, last 2 parms are ignored\.
 
-  -  *SACL* :[PyACL](#pyacl)
+  - SACL :[PyACL](#pyacl)
 
     The SACL to set in the security descriptor
 
-  -  *bSaclDefaulted* : int
+  - bSaclDefaulted : int
 
     Flag, set to false if user has specifically set the SACL\.

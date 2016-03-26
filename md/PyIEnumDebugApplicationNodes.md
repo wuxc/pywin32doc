@@ -2,6 +2,8 @@
 
 ## PyIEnumDebugApplicationNodes Object
 
+
+
 A Python interface to IEnumDebugApplicationNodes
 
 #### Methods
@@ -25,27 +27,29 @@ A Python interface to IEnumDebugApplicationNodes
 
 ## [PyIEnumDebugApplicationNodes](#pyienumdebugapplicationnodes)\.Clone
 
-[PyIEnumDebugApplicationNodes](#pyienumdebugapplicationnodes)\= **Clone\(** \)
+[PyIEnumDebugApplicationNodes](#pyienumdebugapplicationnodes) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumDebugApplicationNodes](#pyienumdebugapplicationnodes)\.Next
 
-object \= **Next\( *num* ** \)
+
+
+object =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumDebugApplicationNodes](#pyienumdebugapplicationnodes)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumDebugApplicationNodes](#pyienumdebugapplicationnodes)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

@@ -2,94 +2,98 @@
 
 ## PyDCB Object
 
+
+
 A Python object, representing an DCB structure
 
 #### Comments
+
+
 Typically you query a device for its DCB using[win32file::GetCommState](win32file.md#win32filegetcommstate), change any setting necessary, then 
 
-call[win32file::SetCommState](win32file.md#win32filesetcommstate)with the new structure\. 
+call[win32file::SetCommState](win32file.md#win32filesetcommstate) with the new structure\. 
 
 TRUE\*/\)
 
 #### Properties
 
-  -  **integer BaudRate** 
+  - integer BaudRate
     current baud rate
 
-  -  **integer wReserved** 
+  - integer wReserved
     not currently used
 
-  -  **integer XonLim** 
+  - integer XonLim
     transmit XON threshold
 
-  -  **integer XoffLim** 
+  - integer XoffLim
     transmit XOFF threshold
 
-  -  **integer ByteSize** 
+  - integer ByteSize
     number of bits/byte, 4-8
 
-  -  **integer Parity** 
-    0-4\=no,odd,even,mark,space
+  - integer Parity
+    0-4=no,odd,even,mark,space
 
-  -  **integer StopBits** 
-    0,1,2 \= 1, 1\.5, 2
+  - integer StopBits
+    0,1,2 = 1, 1\.5, 2
 
-  -  **character XonChar** 
+  - character XonChar
     Tx and Rx XON character
 
-  -  **character XoffChar** 
+  - character XoffChar
     Tx and Rx XOFF character
 
-  -  **character ErrorChar** 
+  - character ErrorChar
     error replacement character
 
-  -  **character EofChar** 
+  - character EofChar
     end of input character
 
-  -  **character EvtChar** 
+  - character EvtChar
     received event character
 
-  -  **integer wReserved1** 
+  - integer wReserved1
     reserved; do not use
 
-  -  **integer fBinary** 
+  - integer fBinary
     binary mode, no EOF check
 
-  -  **integer fParity** 
+  - integer fParity
     enable parity checking
 
-  -  **integer fOutxCtsFlow** 
+  - integer fOutxCtsFlow
     CTS output flow control
 
-  -  **integer fOutxDsrFlow** 
+  - integer fOutxDsrFlow
     DSR output flow control
 
-  -  **integer fDtrControl** 
+  - integer fDtrControl
     DTR flow control type
 
-  -  **integer fDsrSensitivity** 
+  - integer fDsrSensitivity
     DSR sensitivity
 
-  -  **integer fTXContinueOnXoff** 
+  - integer fTXContinueOnXoff
     XOFF continues Tx
 
-  -  **integer fOutX** 
+  - integer fOutX
     XON/XOFF out flow control
 
-  -  **integer fInX** 
+  - integer fInX
     XON/XOFF in flow control
 
-  -  **integer fErrorChar** 
+  - integer fErrorChar
     enable error replacement
 
-  -  **integer fNull** 
+  - integer fNull
     enable null stripping
 
-  -  **integer fRtsControl** 
+  - integer fRtsControl
     RTS flow control
 
-  -  **integer fAbortOnError** 
+  - integer fAbortOnError
     abort on error
 
-  -  **integer fDummy2** 
+  - integer fDummy2
     reserved

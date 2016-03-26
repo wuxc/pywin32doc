@@ -2,6 +2,8 @@
 
 ## Module win32print
 
+
+
 A module encapsulating the Windows printing API\.
 
 #### Methods
@@ -197,56 +199,56 @@ A module encapsulating the Windows printing API\.
 
 ## [win32print](#win32print)\.AbortDoc
 
- **AbortDoc\( *hdc* ** \)
+AbortDoc\(hdc\)
 Cancels a print job
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](#pyhandle)
+  - hdc :[PyHANDLE](#pyhandle)
 
     Printer device context handle as returned by[win32gui::CreateDC](win32gui.md#win32guicreatedc)
 
 ## [win32print](#win32print)\.AbortPrinter
 
- **AbortPrinter\( *hPrinter* ** \)
+AbortPrinter\(hPrinter\)
 Deletes spool file for a printer
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Handle to printer as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
 ## [win32print](#win32print)\.AddForm
 
- **AddForm\( *hprinter*  *, Form* ** \)
+AddForm\(hprinter, Form\)
 Adds a form for a printer
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *Form* : dict
+  - Form : dict
 
-    [FORM\_INFO\_1](FORM.md#forminfo_1)dictionary
+    [FORM\_INFO\_1](FORM.md#forminfo_1) dictionary
 
 #### Return Value
 Returns None on success, throws an exception otherwise
 
 ## [win32print](#win32print)\.AddJob
 
- **AddJob\( *hprinter* ** \)
+AddJob\(hprinter\)
 Add a job to be spooled to a printer queue
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
@@ -255,25 +257,27 @@ Returns the file name to which data should be written and the job id of the new 
 
 ## [win32print](#win32print)\.AddPrinter
 
-[PyPrinterHANDLE](#pyprinterhandle)\= **AddPrinter\( *Name*  *, Level*  *, pPrinter* ** \)
+[PyPrinterHANDLE](#pyprinterhandle) =AddPrinter\(Name, Level, pPrinter\)
 Installs a printer on a server
 
 #### Parameters
 
 
-  -  *Name* : string
+  - Name : string
 
     Name of server on which to install printer, None indicates local machine
 
-  -  *Level* : int
+  - Level : int
 
     Level of data contained in pPrinter, only level 2 currently supported
 
-  -  *pPrinter* : dict
+  - pPrinter : dict
 
     PRINTER\_INFO\_2 dict as returned by[win32print::GetPrinter](win32print.md#win32printgetprinter)
 
 #### Comments
+
+
 pPrinterName, pPortName, pDriverName, and pPrintProcessor are required
 
 #### Return Value
@@ -281,41 +285,43 @@ Returns a handle to the new printer
 
 ## [win32print](#win32print)\.AddPrinterConnection
 
-None \= **AddPrinterConnection\( *printer* ** \)
+
+
+None =AddPrinterConnection\(printer\)
 Connects to remote printer
 
 #### Parameters
 
 
-  -  *printer* : string
+  - printer : string
 
     printer to connect to \(eg: \\\\server\\\\printer\)\.
 
 ## [win32print](#win32print)\.ClosePrinter
 
- **ClosePrinter\( *hPrinter* ** \)
+ClosePrinter\(hPrinter\)
 Closes a handle to a printer\.
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     handle to printer object
 
 ## [win32print](#win32print)\.DeleteForm
 
- **DeleteForm\( *hprinter*  *, FormName* ** \)
+DeleteForm\(hprinter, FormName\)
 Deletes a form defined for a printer
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *FormName* :[PyUnicode](#pyunicode)
+  - FormName :[PyUnicode](#pyunicode)
 
     Name of form to be deleted
 
@@ -324,138 +330,146 @@ Returns None on success, throws an exception otherwise
 
 ## [win32print](#win32print)\.DeletePrinter
 
- **DeletePrinter\( *hPrinter* ** \)
+DeletePrinter\(hPrinter\)
 Deletes an existing printer
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
-    Handle to printer as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)or[win32print::AddPrinter](win32print.md#win32printaddprinter)
+    Handle to printer as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter) or[win32print::AddPrinter](win32print.md#win32printaddprinter)
 
 #### Comments
+
+
 Printer handle must be opened for PRINTER\_ACCESS\_ADMINISTER 
 
 If there are any pending print jobs for the printer, actual deletion does not happen until they are done
 
 ## [win32print](#win32print)\.DeletePrinterConnection
 
-None \= **DeletePrinterConnection\( *printer* ** \)
+
+
+None =DeletePrinterConnection\(printer\)
 Removes connection to remote printer
 
 #### Parameters
 
 
-  -  *printer* : string
+  - printer : string
 
     printer to disconnect from \(eg: \\\\server\\\\printer\)\.
 
 ## [win32print](#win32print)\.DeletePrinterDriver
 
- **DeletePrinterDriver\( *Server*  *, Environment*  *, DriverName* ** \)
+DeletePrinterDriver\(Server, Environment, DriverName\)
 Removes the specified printer driver from a server
 
 #### Parameters
 
 
-  -  *Server* : string/[PyUnicode](#pyunicode)
+  - Server : string/[PyUnicode](#pyunicode)
 
     Name of print server, use None for local machine
 
-  -  *Environment* : string/[PyUnicode](#pyunicode)
+  - Environment : string/[PyUnicode](#pyunicode)
 
     Environment - eg 'Windows NT x86' - use None for current client environment
 
-  -  *DriverName* : string/[PyUnicode](#pyunicode)
+  - DriverName : string/[PyUnicode](#pyunicode)
 
     Name of driver to remove
 
 #### Comments
-Does not delete associated driver files - use[win32print::DeletePrinterDriverEx](win32print.md#win32printdeleteprinterdriverex)if this is required
+
+
+Does not delete associated driver files - use[win32print::DeletePrinterDriverEx](win32print.md#win32printdeleteprinterdriverex) if this is required
 
 ## [win32print](#win32print)\.DeletePrinterDriverEx
 
- **DeletePrinterDriverEx\( *Server*  *, Environment*  *, DriverName*  *, DeleteFlag*  *, VersionFlag* ** \)
+DeletePrinterDriverEx\(Server, Environment, DriverName, DeleteFlag, VersionFlag\)
 Deletes a printer driver and its associated files
 
 #### Parameters
 
 
-  -  *Server* : string/[PyUnicode](#pyunicode)
+  - Server : string/[PyUnicode](#pyunicode)
 
     Name of print server, use None for local machine
 
-  -  *Environment* : string/[PyUnicode](#pyunicode)
+  - Environment : string/[PyUnicode](#pyunicode)
 
     Environment - eg 'Windows NT x86' - use None for current client environment
 
-  -  *DriverName* : string/[PyUnicode](#pyunicode)
+  - DriverName : string/[PyUnicode](#pyunicode)
 
     Name of driver to remove
 
-  -  *DeleteFlag* : int
+  - DeleteFlag : int
 
     Combination of DPD\_DELETE\_SPECIFIC\_VERSION, DPD\_DELETE\_UNUSED\_FILES, and DPD\_DELETE\_ALL\_FILES
 
-  -  *VersionFlag* : int
+  - VersionFlag : int
 
     Can be 0,1,2, or 3\.  Only used if DPD\_DELETE\_SPECIFIC\_VERSION is specified in DeleteFlag
 
 ## [win32print](#win32print)\.DeviceCapabilities
 
- **DeviceCapabilities\( *Device*  *, Port*  *, Capability*  *, DEVMODE* ** \)
+DeviceCapabilities\(Device, Port, Capability, DEVMODE\)
 Queries a printer for its capabilities
 
 #### Parameters
 
 
-  -  *Device* : string
+  - Device : string
 
     Name of printer
 
-  -  *Port* : string
+  - Port : string
 
     Port that printer is using
 
-  -  *Capability* : int
+  - Capability : int
 
     Type of capability to return - DC\_\* constant
 
-  -  *DEVMODE\=None* :[PyDEVMODE](#pydevmode)
+  - DEVMODE=None :[PyDEVMODE](#pydevmode)
 
     If present, function returns values from it, otherwise the printer defaults are used
 
 
 ## [win32print](#win32print)\.DocumentProperties
 
-int \= **DocumentProperties\( *HWnd*  *, hPrinter*  *, DeviceName*  *, DevModeOutput*  *, DevModeInput*  *, Mode* ** \)
+
+
+int =DocumentProperties\(HWnd, hPrinter, DeviceName, DevModeOutput, DevModeInput, Mode\)
 Changes printer configuration for a printer
 
 #### Parameters
 
 
-  -  *HWnd* :[PyHANDLE](#pyhandle)
+  - HWnd :[PyHANDLE](#pyhandle)
 
     Parent window handle to use if DM\_IN\_PROMPT is specified to display printer dialog
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *DeviceName* : string
+  - DeviceName : string
 
     Name of printer
 
-  -  *DevModeOutput* :[PyDEVMODE](#pydevmode)
+  - DevModeOutput :[PyDEVMODE](#pydevmode)
 
     PyDEVMODE object that receives modified info, can be None if DM\_OUT\_BUFFER not specified
 
-  -  *DevModeInput* :[PyDEVMODE](#pydevmode)
+  - DevModeInput :[PyDEVMODE](#pydevmode)
 
     PyDEVMODE that specifies initial configuration, can be None if DM\_IN\_BUFFER not specified
 
-  -  *Mode* : int
+  - Mode : int
 
     A combination of DM\_IN\_BUFFER, DM\_OUT\_BUFFER, and DM\_IN\_PROMPT - pass 0 to retrieve driver data size
 
@@ -464,61 +478,65 @@ If DM\_IN\_PROMPT is specified, returned value will be IDOK or IDCANCEL
 
 ## [win32print](#win32print)\.EndDoc
 
- **EndDoc\( *hdc* ** \)
+EndDoc\(hdc\)
 Stops spooling a print job on a printer device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](#pyhandle)
+  - hdc :[PyHANDLE](#pyhandle)
 
     Printer device context handle as returned by[win32gui::CreateDC](win32gui.md#win32guicreatedc)
 
 ## [win32print](#win32print)\.EndDocPrinter
 
-None \= **EndDocPrinter\( *hPrinter* ** \)
+
+
+None =EndDocPrinter\(hPrinter\)
 The EndDocPrinter function ends a print job for the specified printer\. To be used after using WritePrinter\.
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     handle to printer \(from[win32print::OpenPrinter](win32print.md#win32printopenprinter)\)
 
 ## [win32print](#win32print)\.EndPage
 
- **EndPage\( *hdc* ** \)
+EndPage\(hdc\)
 Ends a page on a printer device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](#pyhandle)
+  - hdc :[PyHANDLE](#pyhandle)
 
     Printer device context handle as returned by[win32gui::CreateDC](win32gui.md#win32guicreatedc)
 
 ## [win32print](#win32print)\.EndPagePrinter
 
- **EndPagePrinter\( *hprinter* ** \)
+EndPagePrinter\(hprinter\)
 Ends a page in a print job
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
 ## [win32print](#win32print)\.EnumForms
 
-\([FORM\_INFO\_1](FORM.md#forminfo_1),\.\.\.\) \= **EnumForms\( *hprinter* ** \)
+
+
+\([FORM\_INFO\_1](FORM.md#forminfo_1),\.\.\.\) =EnumForms\(hprinter\)
 Lists forms for a printer
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
@@ -527,25 +545,27 @@ Returns a sequence of dictionaries representing FORM\_INFO\_1 structures
 
 ## [win32print](#win32print)\.EnumJobs
 
-tuple \= **EnumJobs\( *hPrinter*  *, FirstJob*  *, NoJobs*  *, Level* ** \)
+
+
+tuple =EnumJobs\(hPrinter, FirstJob, NoJobs, Level\)
 Enumerates print jobs on specified printer\.
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Handle of printer\.
 
-  -  *FirstJob* : int
+  - FirstJob : int
 
     location of first job in print queue to enumerate\.
 
-  -  *NoJobs* : int
+  - NoJobs : int
 
     Number of jobs to enumerate\.
 
-  -  *Level\=1* : int
+  - Level=1 : int
 
     Level of information to return \(JOB\_INFO\_1, JOB\_INFO\_2, JOB\_INFO\_3 supported\)\.
 
@@ -554,17 +574,19 @@ Returns a sequence of dictionaries representing JOB\_INFO\_\* structures, depend
 
 ## [win32print](#win32print)\.EnumMonitors
 
-\(dict,\.\.\.\) \= **EnumMonitors\( *Name*  *, Level* ** \)
+
+
+\(dict,\.\.\.\) =EnumMonitors\(Name, Level\)
 Lists installed printer port monitors
 
 #### Parameters
 
 
-  -  *Name* : str/[PyUnicode](#pyunicode)
+  - Name : str/[PyUnicode](#pyunicode)
 
     Name of server, use None for local machine
 
-  -  *Level* : int
+  - Level : int
 
     Level of information to return, 1 and 2 supported
 
@@ -573,17 +595,19 @@ Returns a sequence of dicts representing MONITOR\_INFO\_\* structures depending 
 
 ## [win32print](#win32print)\.EnumPorts
 
-\(dict,\.\.\.\) \= **EnumPorts\( *Name*  *, Level* ** \)
+
+
+\(dict,\.\.\.\) =EnumPorts\(Name, Level\)
 Lists printer port on a server
 
 #### Parameters
 
 
-  -  *Name* : str/[PyUnicode](#pyunicode)
+  - Name : str/[PyUnicode](#pyunicode)
 
     Name of server, use None for local machine
 
-  -  *Level* : int
+  - Level : int
 
     Level of information to return, 1 and 2 supported
 
@@ -592,57 +616,65 @@ Returns a sequence of dicts representing PORT\_INFO\_\* structures depending on 
 
 ## [win32print](#win32print)\.EnumPrintProcessorDatatypes
 
-\([PyUnicode](#pyunicode),\.\.\.\) \= **EnumPrintProcessorDatatypes\( *ServerName*  *, PrintProcessorName* ** \)
+
+
+\([PyUnicode](#pyunicode),\.\.\.\) =EnumPrintProcessorDatatypes\(ServerName, PrintProcessorName\)
 List data types that specified print provider recognizes
 
 #### Parameters
 
 
-  -  *ServerName* : string/[PyUnicode](#pyunicode)
+  - ServerName : string/[PyUnicode](#pyunicode)
 
     Name of print server, use None for local machine
 
-  -  *PrintProcessorName* : string/[PyUnicode](#pyunicode)
+  - PrintProcessorName : string/[PyUnicode](#pyunicode)
 
     Name of print processor
 
 ## [win32print](#win32print)\.EnumPrintProcessors
 
-\([PyUnicode](#pyunicode),\.\.\.\) \= **EnumPrintProcessors\( *Server*  *, Environment* ** \)
+
+
+\([PyUnicode](#pyunicode),\.\.\.\) =EnumPrintProcessors\(Server, Environment\)
 List printer processors for specified server and environment
 
 #### Parameters
 
 
-  -  *Server\=None* : string/[PyUnicode](#pyunicode)
+  - Server=None : string/[PyUnicode](#pyunicode)
 
     Name of print server, use None for local machine
 
-  -  *Environment\=None* : string/[PyUnicode](#pyunicode)
+  - Environment=None : string/[PyUnicode](#pyunicode)
 
     Environment - eg 'Windows NT x86' - use None for current client environment
 
 ## [win32print](#win32print)\.EnumPrinterDrivers
 
-\(dict,\.\.\.\) \= **EnumPrinterDrivers\( *Server*  *, Environment*  *, Level* ** \)
+
+
+\(dict,\.\.\.\) =EnumPrinterDrivers\(Server, Environment, Level\)
 Lists installed printer drivers
 
 #### Parameters
 
 
-  -  *Server\=None* : string/unicode
+  - Server=None : string/unicode
 
     Name of print server, use None for local machine
 
-  -  *Environment\=None* : string/unicode
+  - Environment=None : string/unicode
 
     Environment - eg 'Windows NT x86' - use None for current client environment
 
-  -  *Level\=1* : int
+  - Level=1 : int
 
     Level of information to return, 1-6 \(not all levels are supported on all platforms\)
 
 #### Comments
+
+
 On Win2k and up, 'all' can be passed for environment
 
 #### Return Value
@@ -650,52 +682,64 @@ Returns a sequence of dictionaries representing DRIVER\_INFO\_\* structures
 
 ## [win32print](#win32print)\.EnumPrinters
 
-tuple \= **EnumPrinters\( *flags*  *, name*  *, level* ** \)
+
+
+tuple =EnumPrinters\(flags, name, level\)
 Enumerates printers, print servers, domains and print providers\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     types of printer objects to enumerate \(combination of PRINTER\_ENUM\_\* constants\)\.
 
-  -  *name\=None* : string
+  - name=None : string
 
     name of printer object\.
 
-  -  *level\=1* : int
+  - level=1 : int
 
     type of printer info structure \(Levels 1,2,4,5 supported\)
 
 #### Comments
-Use Flags\=PRINTER\_ENUM\_NAME, Name\=None, Level\=1 to enumerate print providers\.
-Use Flags\=PRINTER\_ENUM\_NAME, Name\=\\\\servername, Level\=2 or 5 to list printers on another server\.
+
+
+Use Flags=PRINTER\_ENUM\_NAME, Name=None, Level=1 to enumerate print providers\.
+ 
+
+Use Flags=PRINTER\_ENUM\_NAME, Name=\\\\servername, Level=2 or 5 to list printers on another server\.
+ 
+
 See MSDN docs for EnumPrinters for other specific combinations
 
 #### Return Value
 Level 1 returns a tuple of tuples for backward compatibility\. 
 
 Each individual element is a tuple of \(flags, description, name, comment\)
+ 
+
 All other levels return a tuple of dictionaries representing PRINTER\_INFO\_\* structures
 
 ## [win32print](#win32print)\.FlushPrinter
 
-int \= **FlushPrinter\( *Printer*  *, Buf*  *, Sleep* ** \)
+
+
+int =FlushPrinter\(Printer, Buf, Sleep\)
 Clears printer from error state if WritePrinter fails
 
 #### Parameters
 
 
-  -  *Printer* :[PyPrinterHANDLE](#pyprinterhandle)
+  - Printer :[PyPrinterHANDLE](#pyprinterhandle)
 
     Handle to a printer
 
-  -  *Buf* : str
+  - Buf : str
 
     Data to be sent to printer
 
-  -  *Sleep* : int
+  - Sleep : int
 
     Number of milliseconds to suspend printer
 
@@ -704,77 +748,87 @@ Returns the number of bytes actually written to the printer
 
 ## [win32print](#win32print)\.GetDefaultPrinter
 
-string \= **GetDefaultPrinter\(** \)
+
+
+string =GetDefaultPrinter\(\)
 Returns the default printer\.
 
 ## [win32print](#win32print)\.GetDefaultPrinterW
 
-[PyUnicode](#pyunicode)\= **GetDefaultPrinterW\(** \)
+[PyUnicode](#pyunicode) =GetDefaultPrinterW\(\)
 Returns the default printer\.
 
 #### Comments
+
+
 Unlike[win32print::GetDefaultPrinter](win32print.md#win32printgetdefaultprinter), this method calls the GetDefaultPrinter API function\.
 
 ## [win32print](#win32print)\.GetDeviceCaps
 
-int \= **GetDeviceCaps\( *hdc*  *, Index* ** \)
+
+
+int =GetDeviceCaps\(hdc, Index\)
 Retrieves device-specific parameters and settings
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](#pyhandle)
+  - hdc :[PyHANDLE](#pyhandle)
 
     Handle to a printer or display device context
 
-  -  *Index* : int
+  - Index : int
 
     The capability to return\.  See MSDN for valid values\.
 
 #### Comments
+
+
 Can also be used for Display DCs in addition to printer DCs
 
 #### Win32 API References
 
 
-  - Search for *GetDeviceCaps* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getdevicecaps),[google](#http://www.google.com/search?q=getdevicecaps)or[google groups](#http://groups.google.com/groups?q=getdevicecaps)\.
+  - Search forGetDeviceCaps at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getdevicecaps),[google](#http://www.google.com/search?q=getdevicecaps) or[google groups](#http://groups.google.com/groups?q=getdevicecaps)\.
 
 ## [win32print](#win32print)\.GetForm
 
- **GetForm\( *hprinter*  *, FormName* ** \)
+GetForm\(hprinter, FormName\)
 Retrieves information about a form defined for a printer
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *FormName* :[PyUnicode](#pyunicode)
+  - FormName :[PyUnicode](#pyunicode)
 
     Name of form for which to retrieve info
 
 #### Return Value
-Returns a[FORM\_INFO\_1](FORM.md#forminfo_1)dict
+Returns a[FORM\_INFO\_1](FORM.md#forminfo_1) dict
 
 ## [win32print](#win32print)\.GetJob
 
-dictionary \= **GetJob\( *hPrinter*  *, JobID*  *, Level* ** \)
+
+
+dictionary =GetJob\(hPrinter, JobID, Level\)
 Returns dictionary of information about a specified print job\.
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Handle to a printer as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)\.
 
-  -  *JobID* : int
+  - JobID : int
 
     Job Identifier\.
 
-  -  *Level\=1* : int
+  - Level=1 : int
 
     Level of information to return \(JOB\_INFO\_1, JOB\_INFO\_2, JOB\_INFO\_3 supported\)\.
 
@@ -783,37 +837,41 @@ Returns a dict representing a JOB\_INFO\_\* struct, depending on level
 
 ## [win32print](#win32print)\.GetPrintProcessorDirectory
 
-[PyUnicode](#pyunicode)\= **GetPrintProcessorDirectory\( *Name*  *, Environment* ** \)
+[PyUnicode](#pyunicode) =GetPrintProcessorDirectory\(Name, Environment\)
 Returns the directory where print processor files reside
 
 #### Parameters
 
 
-  -  *Name* : str/[PyUnicode](#pyunicode)
+  - Name : str/[PyUnicode](#pyunicode)
 
     Name of server, use None for local machine
 
-  -  *Environment* : str/[PyUnicode](#pyunicode)
+  - Environment : str/[PyUnicode](#pyunicode)
 
     Environment - eg 'Windows NT x86' - use None for current client environment
 
 ## [win32print](#win32print)\.GetPrinter
 
-dict \= **GetPrinter\( *hPrinter*  *, Level* ** \)
+
+
+dict =GetPrinter\(hPrinter, Level\)
 Retrieves information about a printer
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     handle to printer object as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *Level\=2* : int
+  - Level=2 : int
 
     Level of data returned \(1,2,3,4,5,7,8,9\)
 
 #### Comments
+
+
 Original implementation used level 2 only and returned a tuple 
 
 Pass single arg as indicator to use old behaviour for backward compatibility
@@ -825,221 +883,241 @@ returns a tuple of PRINTER\_INFO\_2 data if no level is passed in\.
 
 ## [win32print](#win32print)\.GetPrinterDriverDirectory
 
-[PyUnicode](#pyunicode)\= **GetPrinterDriverDirectory\( *Name*  *, Environment* ** \)
+[PyUnicode](#pyunicode) =GetPrinterDriverDirectory\(Name, Environment\)
 Returns the directory where printer drivers are installed
 
 #### Parameters
 
 
-  -  *Name* : str/[PyUnicode](#pyunicode)
+  - Name : str/[PyUnicode](#pyunicode)
 
     Name of server, use None for local machine
 
-  -  *Environment* : str/[PyUnicode](#pyunicode)
+  - Environment : str/[PyUnicode](#pyunicode)
 
     Environment - eg 'Windows NT x86' - use None for current client environment
 
 ## [win32print](#win32print)\.OpenPrinter
 
-[PyPrinterHANDLE](#pyprinterhandle)\= **OpenPrinter\( *printer*  *, Defaults* ** \)
+[PyPrinterHANDLE](#pyprinterhandle) =OpenPrinter\(printer, Defaults\)
 Retrieves a handle to a printer\.
 
 #### Parameters
 
 
-  -  *printer* : string
+  - printer : string
 
     Printer or print server name\.  Use None to open local print server\.
 
-  -  *Defaults\=None* : dict
+  - Defaults=None : dict
 
-    [PRINTER\_DEFAULTS](PRINTER.md#printerdefaults)dict, or None
+    [PRINTER\_DEFAULTS](PRINTER.md#printerdefaults) dict, or None
 
 ## [win32print](#win32print)\.ScheduleJob
 
- **ScheduleJob\( *hprinter*  *, JobId* ** \)
+ScheduleJob\(hprinter, JobId\)
 Schedules a spooled job to be printed
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *JobId* : int
+  - JobId : int
 
     Job Id as returned by[win32print::AddJob](win32print.md#win32printaddjob)
 
 ## [win32print](#win32print)\.SetDefaultPrinter
 
-None \= **SetDefaultPrinter\( *printer* ** \)
+
+
+None =SetDefaultPrinter\(printer\)
 Sets the default printer\.
 
 #### Parameters
 
 
-  -  *printer* : string
+  - printer : string
 
     printer to set as default
 
 #### Comments
+
+
 This function uses the pre-win2k method of WriteProfileString rather than the SetDefaultPrinter API function
 
 ## [win32print](#win32print)\.SetDefaultPrinterW
 
-None \= **SetDefaultPrinterW\( *Printer* ** \)
+
+
+None =SetDefaultPrinterW\(Printer\)
 Sets the default printer
 
 #### Parameters
 
 
-  -  *Printer* :[PyUnicode](#pyunicode)
+  - Printer :[PyUnicode](#pyunicode)
 
     Name of printer, can be None to use first available printer
 
 #### Comments
+
+
 Unlike[win32print::SetDefaultPrinter](win32print.md#win32printsetdefaultprinter), this method calls the SetDefaultPrinter API function\.
 
 ## [win32print](#win32print)\.SetForm
 
- **SetForm\( *hprinter*  *, FormName*  *, Form* ** \)
+SetForm\(hprinter, FormName, Form\)
 Change information for a form
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *FormName* :[PyUnicode](#pyunicode)
+  - FormName :[PyUnicode](#pyunicode)
 
     Name of form
 
-  -  *Form* : dict
+  - Form : dict
 
-    [FORM\_INFO\_1](FORM.md#forminfo_1)dictionary
+    [FORM\_INFO\_1](FORM.md#forminfo_1) dictionary
 
 #### Return Value
 Returns None on success
 
 ## [win32print](#win32print)\.SetJob
 
-None \= **SetJob\( *hPrinter*  *, JobID*  *, Level*  *, JobInfo*  *, Command* ** \)
+
+
+None =SetJob\(hPrinter, JobID, Level, JobInfo, Command\)
 Pause, cancel, resume, set priority levels on a print job\.
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Handle of printer\.
 
-  -  *JobID* : int
+  - JobID : int
 
     Job Identifier\.
 
-  -  *Level* : int
+  - Level : int
 
     Level of information in JobInfo dict \(0, 1, 2, and 3 are supported\)\.
 
-  -  *JobInfo* : dict
+  - JobInfo : dict
 
-    JOB\_INFO\_\* Dictionary as returned by[win32print::GetJob](win32print.md#win32printgetjob)or[win32print::EnumJobs](win32print.md#win32printenumjobs)\(can be None if Level is 0\)\.
+    JOB\_INFO\_\* Dictionary as returned by[win32print::GetJob](win32print.md#win32printgetjob) or[win32print::EnumJobs](win32print.md#win32printenumjobs) \(can be None if Level is 0\)\.
 
-  -  *Command* : int
+  - Command : int
 
     Job command value \(JOB\_CONTROL\_\*\)\.
 
 #### Comments
+
+
 If printer is not opened with at least PRINTER\_ACCESS\_ADMINISTER access, 'Position' member of 
 
 JOB\_INFO\_1 and JOB\_INFO\_2 must be set to JOB\_POSITION\_UNSPECIFIED
 
 ## [win32print](#win32print)\.SetPrinter
 
- **SetPrinter\( *hPrinter*  *, Level*  *, pPrinter*  *, Command* ** \)
+SetPrinter\(hPrinter, Level, pPrinter, Command\)
 Change printer configuration and status
 
 #### Parameters
 
 
-  -  *hPrinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hPrinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
-  -  *Level* : int
+  - Level : int
 
     Level of data contained in pPrinter
 
-  -  *pPrinter* : dict
+  - pPrinter : dict
 
     PRINTER\_INFO\_\* dict as returned by[win32print::GetPrinter](win32print.md#win32printgetprinter), can be None if level is 0
 
-  -  *Command* : int
+  - Command : int
 
     Command to send to printer - one of the PRINTER\_CONTROL\_\* constants, or 0
 
 #### Comments
+
+
 If Level is 0 and Command is PRINTER\_CONTROL\_SET\_STATUS, pPrinter should be an integer, 
 
 and is interpreted as the new printer status to set \(one of the PRINTER\_STATUS\_\* constants\)\.
 
 ## [win32print](#win32print)\.StartDoc
 
-int \= **StartDoc\( *hdc*  *, docinfo* ** \)
+
+
+int =StartDoc\(hdc, docinfo\)
 Starts spooling a print job on a printer device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](#pyhandle)
+  - hdc :[PyHANDLE](#pyhandle)
 
     Printer device context handle as returned by[win32gui::CreateDC](win32gui.md#win32guicreatedc)
 
-  -  *docinfo* : tuple
+  - docinfo : tuple
 
-    [DOCINFO](#docinfo)tuple specifying print job parameters
+    [DOCINFO](#docinfo) tuple specifying print job parameters
 
 #### Return Value
 On success, returns the job id of the print job
 
 ## [win32print](#win32print)\.StartDocPrinter
 
-int \= **StartDocPrinter\( *hprinter*  *, level*  *, tuple* ** \)
+
+
+int =StartDocPrinter\(hprinter, level, tuple\)
 Notifies the print spooler that a document is to be spooled for printing\. To be used before using WritePrinter\. Returns the Jobid of the started job\.
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     handle to printer \(from[win32print::OpenPrinter](win32print.md#win32printopenprinter)\)
 
-  -  *level\=1* : int
+  - level=1 : int
 
     type of docinfo structure \(only docinfo level 1 supported\)
 
-  -  *tuple* : data
+  - tuple : data
 
     A tuple corresponding to the level parameter\.
 
 #### Comments
+
+
 For level 1, the tuple is:
 
 #### Items
 
 
-  - \[0\] *string* : docName
+  - \[0\]string : docName
 
     Specifies the name of the document\.
 
-  - \[1\] *string* : outputFile
+  - \[1\]string : outputFile
 
     Specifies the name of an output file\. To print to a printer, set this to None\.
 
-  - \[2\] *string* : dataType
+  - \[2\]string : dataType
 
     Identifies the type of data used to record the document, such 
 
@@ -1051,31 +1129,33 @@ ignore the requested data type\.
 
 ## [win32print](#win32print)\.StartPage
 
- **StartPage\( *hdc* ** \)
+StartPage\(hdc\)
 Starts a page on a printer device context
 
 #### Parameters
 
 
-  -  *hdc* :[PyHANDLE](#pyhandle)
+  - hdc :[PyHANDLE](#pyhandle)
 
     Printer device context handle as returned by[win32gui::CreateDC](win32gui.md#win32guicreatedc)
 
 ## [win32print](#win32print)\.StartPagePrinter
 
- **StartPagePrinter\( *hprinter* ** \)
+StartPagePrinter\(hprinter\)
 Notifies the print spooler that a page is to be printed on specified printer
 
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Printer handle as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)
 
 ## [win32print](#win32print)\.WritePrinter
 
-int \= **WritePrinter\( *hprinter*  *, buf* ** \)
+
+
+int =WritePrinter\(hprinter, buf\)
 Copies the specified bytes to the specified printer\. 
 
 Suitable for copying raw Postscript or HPGL files to a printer\. 
@@ -1085,11 +1165,11 @@ StartDocPrinter and EndDocPrinter should be called before and after\.
 #### Parameters
 
 
-  -  *hprinter* :[PyPrinterHANDLE](#pyprinterhandle)
+  - hprinter :[PyPrinterHANDLE](#pyprinterhandle)
 
     Handle to printer as returned by[win32print::OpenPrinter](win32print.md#win32printopenprinter)\.
 
-  -  *buf* : string
+  - buf : string
 
     String or buffer containing data to send to printer\. Embedded NULL bytes are allowed\.
 

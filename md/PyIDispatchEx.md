@@ -2,6 +2,8 @@
 
 ## PyIDispatchEx Object
 
+
+
 A OLE automation client object that uses the IDispatchEx scripting interface\.\.
 
 #### Methods
@@ -13,7 +15,7 @@ A OLE automation client object that uses the IDispatchEx scripting interface\.\.
 
   - [InvokeEx](PyIDispatchEx.md#pyidispatchexinvokeex)
 
-    Provides access to properties and methods exposed by a **PyIDispatchEx** object\.&nbsp;
+    Provides access to properties and methods exposed by aPyIDispatchEx object\.&nbsp;
 
   - [DeleteMemberByName](PyIDispatchEx.md#pyidispatchexdeletememberbyname)
 
@@ -38,124 +40,134 @@ A OLE automation client object that uses the IDispatchEx scripting interface\.\.
 
 ## [PyIDispatchEx](#pyidispatchex)\.DeleteMemberByDispID
 
- **DeleteMemberByDispID\( *dispid* ** \)
+DeleteMemberByDispID\(dispid\)
 
 
 #### Parameters
 
 
-  -  *dispid* : int
+  - dispid : int
 
     
 
 ## [PyIDispatchEx](#pyidispatchex)\.DeleteMemberByName
 
- **DeleteMemberByName\( *name*  *, fdex* ** \)
+DeleteMemberByName\(name, fdex\)
 
 
 #### Parameters
 
 
-  -  *name* :[PyUnicode](#pyunicode)
+  - name :[PyUnicode](#pyunicode)
 
     Passed in name to be mapped
 
-  -  *fdex* : int
+  - fdex : int
 
     Determines the options
 
 ## [PyIDispatchEx](#pyidispatchex)\.GetDispID
 
-int \= **GetDispID\( *name*  *, fdex* ** \)
+
+
+int =GetDispID\(name, fdex\)
 Returns the member id for a name
 
 #### Parameters
 
 
-  -  *name* :[PyUnicode](#pyunicode)
+  - name :[PyUnicode](#pyunicode)
 
     Passed in name to be mapped
 
-  -  *fdex* : int
+  - fdex : int
 
     Determines the options for obtaining the member identifier\. This can be a combination of the fdex\* constants:
 
 ## [PyIDispatchEx](#pyidispatchex)\.GetMemberName
 
-str \= **GetMemberName\( *dispid* ** \)
+
+
+str =GetMemberName\(dispid\)
 Returns the name associated with a member id
 
 #### Parameters
 
 
-  -  *dispid* : int
+  - dispid : int
 
     The member id
 
 ## [PyIDispatchEx](#pyidispatchex)\.GetMemberProperties
 
-int \= **GetMemberProperties\( *dispid*  *, fdex* ** \)
+
+
+int =GetMemberProperties\(dispid, fdex\)
 Returns mask of fdex\* flags describing a member
 
 #### Parameters
 
 
-  -  *dispid* : int
+  - dispid : int
 
     The member id
 
-  -  *fdex* : int
+  - fdex : int
 
     fdex\* flags specifying which properties to return
 
 ## [PyIDispatchEx](#pyidispatchex)\.GetNextDispID
 
-int \= **GetNextDispID\( *fdex*  *, dispid* ** \)
+
+
+int =GetNextDispID\(fdex, dispid\)
 Enumerates member ids\.
 
 #### Parameters
 
 
-  -  *fdex* : int
+  - fdex : int
 
     Determines the options
 
-  -  *dispid* : int
+  - dispid : int
 
     Current member, or DISPID\_STARTENUM to begin enumeration\. GetNextDispID will retrieve the item in the enumeration after this one\.
 
 ## [PyIDispatchEx](#pyidispatchex)\.InvokeEx
 
-object \= **InvokeEx\( *dispid*  *, lcid*  *, flags*  *, args*  *, types*  *, returnDesc*  *, serviceProvider* ** \)
-Provides access to properties and methods exposed by a[PyIDispatchEx](#pyidispatchex)object\.
+
+
+object =InvokeEx\(dispid, lcid, flags, args, types, returnDesc, serviceProvider\)
+Provides access to properties and methods exposed by a[PyIDispatchEx](#pyidispatchex) object\.
 
 #### Parameters
 
 
-  -  *dispid* : int
+  - dispid : int
 
     
 
-  -  *lcid* : int
+  - lcid : int
 
     
 
-  -  *flags* : int
+  - flags : int
 
     
 
-  -  *args* : \[object, \.\.\.\]
+  - args : \[object, \.\.\.\]
 
     The arguments\.
 
-  -  *types\=None* : \[object, \.\.\.\]
+  - types=None : \[object, \.\.\.\]
 
     A tuple of type description object, or None if type descriptions are not available\.
 
-  -  *returnDesc\=1* : object|int
+  - returnDesc=1 : object|int
 
-    If types\=\=None, should be a BOOL indicating if the result is needed\.  If types is a tuple, then should a be type description\.
+    If types==None, should be a BOOL indicating if the result is needed\.  If types is a tuple, then should a be type description\.
 
-  -  *serviceProvider\=None* :[PyIServiceProvider](#pyiserviceprovider)
+  - serviceProvider=None :[PyIServiceProvider](#pyiserviceprovider)
 
     A service provider object supplied by the caller which allows the object to obtain services from the caller\. Can be None\.

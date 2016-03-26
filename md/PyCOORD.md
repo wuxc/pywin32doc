@@ -2,12 +2,14 @@
 
 ## PyCOORD Object
 
+
+
 Wrapper for a COORD struct\.  Create using PyCOORDType\(X,Y\)
 
 #### Properties
 
-  -  **int X** 
+  - int X
     Horizontal coordinate
 
-  -  **int Y** 
+  - int Y
     Vertical coordinate

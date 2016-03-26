@@ -2,6 +2,8 @@
 
 ## PyIDirectSoundCaptureBuffer Object
 
+
+
 The methods of the IDirectSoundCaptureBuffer interface are used to manipulate sound capture buffers\.
 
 #### Methods
@@ -41,38 +43,38 @@ The methods of the IDirectSoundCaptureBuffer interface are used to manipulate so
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetCaps
 
- **GetCaps\(** \)
+GetCaps\(\)
 Returns the capabilities of the DirectSound Capture Buffer\.
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetCurrentPosition
 
- **GetCurrentPosition\(** \)
+GetCurrentPosition\(\)
 Returns a tuple of the current capture and read position in the buffer\. The capture position is ahead of the read position\. These positions are not always identical due to possible buffering of captured data either on the physical device or in the host\. The data after the read position up to and including the capture position is not necessarily valid data\.
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetFormat
 
- **GetFormat\(** \)
+GetFormat\(\)
 Retrieves the current format of the sound capture buffer as a WAVEFORMATEX object\.
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetStatus
 
- **GetStatus\(** \)
+GetStatus\(\)
 Retrieves the current status of the sound capture buffer\.
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Initialize
 
- **Initialize\(** \)
+Initialize\(\)
 Not normally used\. Used IDirectSoundCapture\.CreateCaptureBuffer instead\.
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Start
 
- **Start\( *dwFlags* ** \)
+Start\(dwFlags\)
 The PyIDirectSoundCaptureBuffer::Start method puts the capture buffer into the capture state and begins capturing data into the buffer\. If the capture buffer is already in the capture state then the method has no effect\.
 
 #### Parameters
 
 
-  -  *dwFlags\=0* : int
+  - dwFlags=0 : int
 
     Flags that specify the behavior for the capture buffer when capturing sound data\. Possible values for dwFlags can be one of the following: 
 
@@ -80,26 +82,26 @@ DSCBSTART\_LOOPING
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Stop
 
- **Stop\(** \)
+Stop\(\)
 The IDirectSoundCaptureBuffer::Stop method puts the capture buffer into the "stop" state and stops capturing data\. If the capture buffer is already in the stop state then the method has no effect\.
 
 ## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Update
 
- **Update\( *dwReadCursor*  *, dwReadBytes*  *, dwFlags* ** \)
+Update\(dwReadCursor, dwReadBytes, dwFlags\)
 Retrieve data from the capture buffer\.
 
 #### Parameters
 
 
-  -  *dwReadCursor* : int
+  - dwReadCursor : int
 
     Offset, in bytes, from the start of the buffer to where the update begins\.
 
-  -  *dwReadBytes* : int
+  - dwReadBytes : int
 
     Size, in bytes, of the portion of the buffer to update\.
 
-  -  *dwFlags\=0* : int
+  - dwFlags=0 : int
 
     Flags modifying the update event\. This value can be 0 or the following flag: DSCBLOCK\_ENTIREBUFFER 
 

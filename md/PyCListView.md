@@ -2,7 +2,9 @@
 
 ## PyCListView Object
 
-A class which implementes a CListView\.  Derived from[PyCView](#pycview)and[PyCListCtrl](#pyclistctrl)objects\.
+
+
+A class which implementes a CListView\.  Derived from[PyCView](#pycview) and[PyCListCtrl](#pyclistctrl) objects\.
 
 #### Methods
 
@@ -22,38 +24,40 @@ A class which implementes a CListView\.  Derived from[PyCView](#pycview)and[PyCL
 
 ## [PyCListView](#pyclistview)\.GetListCtrl
 
-[PyCListCtrl](#pyclistctrl)\= **GetListCtrl\(** \)
+[PyCListCtrl](#pyclistctrl) =GetListCtrl\(\)
 Returns the underlying list control object\.
 
 ## [PyCListView](#pyclistview)\.OnCommand
 
- **OnCommand\( *wparam*  *, lparam* ** \)
+OnCommand\(wparam, lparam\)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
 
 
-  -  *wparam* : int
+  - wparam : int
 
     
 
-  -  *lparam* : int
+  - lparam : int
 
     
 
 #### See Also
 
 
-  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
+  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual) virtual method
 
 ## [PyCListView](#pyclistview)\.PreCreateWindow
 
-tuple \= **PreCreateWindow\( *createStruct* ** \)
+
+
+tuple =PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
 
 
-  -  *createStruct* : tuple
+  - createStruct : tuple
 
     A tuple representing a CREATESTRUCT structure\.

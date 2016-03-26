@@ -2,6 +2,8 @@
 
 ## PyIDebugStackFrameSnifferEx Object
 
+
+
 Derived from[PyIDebugStackFrameSniffer](#pyidebugstackframesniffer)
 
 #### Methods
@@ -13,5 +15,5 @@ Derived from[PyIDebugStackFrameSniffer](#pyidebugstackframesniffer)
 
 ## [PyIDebugStackFrameSnifferEx](#pyidebugstackframesnifferex)\.EnumStackFramesEx
 
- **EnumStackFramesEx\(** \)
+EnumStackFramesEx\(\)
 Description of EnumStackFrames\.

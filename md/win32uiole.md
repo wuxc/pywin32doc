@@ -2,6 +2,8 @@
 
 ## Module win32uiole
 
+
+
 A module, encapsulating the Microsoft Foundation Classes OLE functionality\.
 
 #### Methods
@@ -17,11 +19,11 @@ A module, encapsulating the Microsoft Foundation Classes OLE functionality\.
 
   - [CreateOleClientItem](win32uiole.md#win32uiolecreateoleclientitem)
 
-    Creates a[PyCOleClientItem](#pycoleclientitem)object\.&nbsp;
+    Creates a[PyCOleClientItem](#pycoleclientitem) object\.&nbsp;
 
   - [CreateOleDocument](win32uiole.md#win32uiolecreateoledocument)
 
-    Creates a[PyCOleDocument](#pycoledocument)object\.&nbsp;
+    Creates a[PyCOleDocument](#pycoledocument) object\.&nbsp;
 
   - [DaoGetEngine](win32uiole.md#win32uioledaogetengine)
 
@@ -53,147 +55,163 @@ A module, encapsulating the Microsoft Foundation Classes OLE functionality\.
 
 ## [win32uiole](#win32uiole)\.AfxOleInit
 
- **AfxOleInit\( *enabled* ** \)
+AfxOleInit\(enabled\)
 
 
 #### Parameters
 
 
-  -  *enabled* : bool
+  - enabled : bool
 
     
 
 ## COleClientItem\_activeState
- **const win32uiole\.COleClientItem\_activeState;** 
+const win32uiole\.COleClientItem\_activeState;
 
 
 ## COleClientItem\_activeUIState
- **const win32uiole\.COleClientItem\_activeUIState;** 
+const win32uiole\.COleClientItem\_activeUIState;
 
 
 ## COleClientItem\_emptyState
- **const win32uiole\.COleClientItem\_emptyState;** 
+const win32uiole\.COleClientItem\_emptyState;
 
 
 ## COleClientItem\_loadedState
- **const win32uiole\.COleClientItem\_loadedState;** 
+const win32uiole\.COleClientItem\_loadedState;
 
 
 ## COleClientItem\_openState
- **const win32uiole\.COleClientItem\_openState;** 
+const win32uiole\.COleClientItem\_openState;
 
 
 ## [win32uiole](#win32uiole)\.CreateInsertDialog
 
-[PyCOleInsertDialog](#pycoleinsertdialog)\= **CreateInsertDialog\(** \)
+[PyCOleInsertDialog](#pycoleinsertdialog) =CreateInsertDialog\(\)
 Creates a InsertObject dialog\. 
 
 self\*/, PyObject \*args \)
 
 ## [win32uiole](#win32uiole)\.CreateOleClientItem
 
-[PyCOleClientItem](#pycoleclientitem)\= **CreateOleClientItem\(** \)
-Creates a[PyCOleClientItem](#pycoleclientitem)object\.
+[PyCOleClientItem](#pycoleclientitem) =CreateOleClientItem\(\)
+Creates a[PyCOleClientItem](#pycoleclientitem) object\.
 
 ## [win32uiole](#win32uiole)\.CreateOleDocument
 
-[PyCOleDocument](#pycoledocument)\= **CreateOleDocument\( *template*  *, fileName* ** \)
+[PyCOleDocument](#pycoledocument) =CreateOleDocument\(template, fileName\)
 Creates an OLE document\.
 
 #### Parameters
 
 
-  -  *template* :[PyCDocTemplate](#pycdoctemplate)
+  - template :[PyCDocTemplate](#pycdoctemplate)
 
     The template to be attached to this document\.
 
-  -  *fileName\=None* : string
+  - fileName=None : string
 
     The filename for the document\.
 
 ## [win32uiole](#win32uiole)\.DaoGetEngine
 
-[PyIDispatch](#pyidispatch)\= **DaoGetEngine\(** \)
+[PyIDispatch](#pyidispatch) =DaoGetEngine\(\)
 
 
 ## [win32uiole](#win32uiole)\.EnableBusyDialog
 
- **EnableBusyDialog\( *enabled* ** \)
+EnableBusyDialog\(enabled\)
 
 
 #### Parameters
 
 
-  -  *enabled* : bool
+  - enabled : bool
 
     
 
 ## [win32uiole](#win32uiole)\.EnableNotRespondingDialog
 
- **EnableNotRespondingDialog\( *enabled* ** \)
+EnableNotRespondingDialog\(enabled\)
 
 
 #### Parameters
 
 
-  -  *enabled* : bool
+  - enabled : bool
 
     
 
 ## [win32uiole](#win32uiole)\.GetIDispatchForWindow
 
-[PyIDispatch](#pyidispatch)\= **GetIDispatchForWindow\(** \)
+[PyIDispatch](#pyidispatch) =GetIDispatchForWindow\(\)
 Gets an OCX IDispatch pointer, if the window has one\!
 
 ## OLE\_CHANGED
- **const win32uiole\.OLE\_CHANGED;** 
+const win32uiole\.OLE\_CHANGED;
+
+
 representation of a draw aspect has changed
 
 ## OLE\_CHANGED\_ASPECT
- **const win32uiole\.OLE\_CHANGED\_ASPECT;** 
+const win32uiole\.OLE\_CHANGED\_ASPECT;
+
+
 the item draw aspect has changed
 
 ## OLE\_CHANGED\_STATE
- **const win32uiole\.OLE\_CHANGED\_STATE;** 
+const win32uiole\.OLE\_CHANGED\_STATE;
+
+
 the item state \(open, active, etc\.\) has changed
 
 ## OLE\_CLOSED
- **const win32uiole\.OLE\_CLOSED;** 
+const win32uiole\.OLE\_CLOSED;
+
+
 the item has closed
 
 ## OLE\_RENAMED
- **const win32uiole\.OLE\_RENAMED;** 
+const win32uiole\.OLE\_RENAMED;
+
+
 the item has changed its moniker
 
 ## OLE\_SAVED
- **const win32uiole\.OLE\_SAVED;** 
+const win32uiole\.OLE\_SAVED;
+
+
 the item has committed its storage
 
 ## [win32uiole](#win32uiole)\.OleGetUserCtrl
 
-int \= **OleGetUserCtrl\(** \)
+
+
+int =OleGetUserCtrl\(\)
 Returns the application name\.
 
 ## [win32uiole](#win32uiole)\.OleSetUserCtrl
 
-int \= **OleSetUserCtrl\( *bUserCtrl* ** \)
+
+
+int =OleSetUserCtrl\(bUserCtrl\)
 Sets or clears the user control flag\.
 
 #### Parameters
 
 
-  -  *bUserCtrl* : int
+  - bUserCtrl : int
 
     Specifies whether the user-control flag is to be set or cleared\.
 
 ## [win32uiole](#win32uiole)\.SetMessagePendingDelay
 
- **SetMessagePendingDelay\( *delay* ** \)
+SetMessagePendingDelay\(delay\)
 
 
 #### Parameters
 
 
-  -  *delay* : int
+  - delay : int
 
     

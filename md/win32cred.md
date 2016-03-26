@@ -2,12 +2,22 @@
 
 ## Module win32cred
 
+
+
 Interface to credentials management functions\. 
 
 The functions in this module are only available on Windows XP and later\.
+ 
+
 Functions operate only on the credential set of the calling user\.
+ 
+
 User's profile must be loaded for stored credentials to be accessible\.
+ 
+
 Each credential is uniquely identified by its TargetName and Type\.
+ 
+
 All functions accept keyword arguments\.
 
 #### Methods
@@ -83,201 +93,223 @@ All functions accept keyword arguments\.
 
 ## [win32cred](#win32cred)\.CredDelete
 
- **CredDelete\( *TargetName*  *, Type*  *, Flags* ** \)
+CredDelete\(TargetName, Type, Flags\)
 Deletes a stored credential
 
 #### Parameters
 
 
-  -  *TargetName* :[PyUnicode](#pyunicode)
+  - TargetName :[PyUnicode](#pyunicode)
 
     Target of credential to be deleted
 
-  -  *Type* : int
+  - Type : int
 
     One of the CRED\_TYPE\_\* values
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved, use only 0
 
 ## [win32cred](#win32cred)\.CredEnumerate
 
-\(dict,\.\.\.\) \= **CredEnumerate\( *Filter*  *, Flags* ** \)
+
+
+\(dict,\.\.\.\) =CredEnumerate\(Filter, Flags\)
 Lists credentials for current logon session
 
 #### Parameters
 
 
-  -  *Filter\=None* :[PyUnicode](#pyunicode)
+  - Filter=None :[PyUnicode](#pyunicode)
 
     Matches credentials' target names by prefix, can be None
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved, use 0 if passed in
 
 #### Return Value
-Returns a sequence of[PyCREDENTIAL](#pycredential)dictionaries
+Returns a sequence of[PyCREDENTIAL](#pycredential) dictionaries
 
 ## [win32cred](#win32cred)\.CredGetTargetInfo
 
-dict \= **CredGetTargetInfo\( *TargetName*  *, Flags* ** \)
+
+
+dict =CredGetTargetInfo\(TargetName, Flags\)
 Determines type and location of credential target
 
 #### Parameters
 
 
-  -  *TargetName* :[PyUnicode](#pyunicode)
+  - TargetName :[PyUnicode](#pyunicode)
 
     Name of server that is target of stored credentials
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRED\_ALLOW\_NAME\_RESOLUTION, or 0
 
 #### Comments
+
+
 The target information will not be available until an attempt is made to authenticate against it
 
 #### Return Value
-Returns a[PyCREDENTIAL\_TARGET\_INFORMATION](PyCREDENTIAL.md#pycredentialtarget_information)dict
+Returns a[PyCREDENTIAL\_TARGET\_INFORMATION](PyCREDENTIAL.md#pycredentialtarget_information) dict
 
 ## [win32cred](#win32cred)\.CredIsMarshaledCredential
 
-boolean \= **CredIsMarshaledCredential\( *MarshaledCredential* ** \)
+
+
+boolean =CredIsMarshaledCredential\(MarshaledCredential\)
 Checks if a string matches the form of a marshaled credential
 
 #### Parameters
 
 
-  -  *MarshaledCredential* :[PyUnicode](#pyunicode)
+  - MarshaledCredential :[PyUnicode](#pyunicode)
 
     Marshaled credential as returned by[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)
 
 ## [win32cred](#win32cred)\.CredMarshalCredential
 
-[PyUnicode](#pyunicode)\= **CredMarshalCredential\( *CredType*  *, Credential* ** \)
+[PyUnicode](#pyunicode) =CredMarshalCredential\(CredType, Credential\)
 Marshals a credential into a unicode string
 
 #### Parameters
 
 
-  -  *CredType* : int
+  - CredType : int
 
     CertCredential or UsernameTargetCredential
 
-  -  *Credential* : str/[PyUnicode](#pyunicode)
+  - Credential : str/[PyUnicode](#pyunicode)
 
     The credential to be marshalled\.  Type is dependent on CredType\.
 
- **CredType**  **Type of Credential** CertCredentialString containing the SHA1 hash of user's certificateUsernameTargetCredentialUnicode string containing a username for which credentials exist in current logon session
+CredTypeType of CredentialCertCredentialString containing the SHA1 hash of user's certificateUsernameTargetCredentialUnicode string containing a username for which credentials exist in current logon session
 #### Comments
+
+
 Credentials with Flags that contain CRED\_FLAGS\_USERNAME\_TARGET can be marshalled to be passed as the username 
 
-to functions that normally require a username/password combination, such as[win32security::LogonUser](win32security.md#win32securitylogonuser)and[win32net::NetUseAdd](win32net.md#win32netnetuseadd)
+to functions that normally require a username/password combination, such as[win32security::LogonUser](win32security.md#win32securitylogonuser) and[win32net::NetUseAdd](win32net.md#win32netnetuseadd)
 
 ## [win32cred](#win32cred)\.CredRead
 
-dict \= **CredRead\( *TargetName*  *, Type*  *, Flags* ** \)
+
+
+dict =CredRead\(TargetName, Type, Flags\)
 Retrieves a stored credential
 
 #### Parameters
 
 
-  -  *TargetName* :[PyUnicode](#pyunicode)
+  - TargetName :[PyUnicode](#pyunicode)
 
     The target of the credentials to retrieve
 
-  -  *Type* : int
+  - Type : int
 
     One of the CRED\_TYPE\_\* constants
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved, use 0
 
 #### Return Value
-Returns a[PyCREDENTIAL](#pycredential)dict
+Returns a[PyCREDENTIAL](#pycredential) dict
 
 ## [win32cred](#win32cred)\.CredReadDomainCredentials
 
-\(dict,\.\.\.\) \= **CredReadDomainCredentials\( *TargetInfo*  *, Flags* ** \)
+
+
+\(dict,\.\.\.\) =CredReadDomainCredentials\(TargetInfo, Flags\)
 Retrieves credentials for a domain or server
 
 #### Parameters
 
 
-  -  *TargetInfo* : dict
+  - TargetInfo : dict
 
-    [PyCREDENTIAL\_TARGET\_INFORMATION](PyCREDENTIAL.md#pycredentialtarget_information)identifying a domain or server\. At least one of the Names is required\.
+    [PyCREDENTIAL\_TARGET\_INFORMATION](PyCREDENTIAL.md#pycredentialtarget_information) identifying a domain or server\. At least one of the Names is required\.
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRED\_CACHE\_TARGET\_INFORMATION is only valid flag
 
 #### Return Value
-Returns a sequence of[PyCREDENTIAL](#pycredential)dicts
+Returns a sequence of[PyCREDENTIAL](#pycredential) dicts
 
 ## [win32cred](#win32cred)\.CredRename
 
-dict \= **CredRename\( *OldTargetName*  *, NewTargetName*  *, Type*  *, Flags* ** \)
+
+
+dict =CredRename\(OldTargetName, NewTargetName, Type, Flags\)
 Changes the target name of stored credentials
 
 #### Parameters
 
 
-  -  *OldTargetName* :[PyUnicode](#pyunicode)
+  - OldTargetName :[PyUnicode](#pyunicode)
 
     The target of credential to be renamed
 
-  -  *NewTargetName* :[PyUnicode](#pyunicode)
+  - NewTargetName :[PyUnicode](#pyunicode)
 
     New target for the specified credential
 
-  -  *Type* : int
+  - Type : int
 
     Type of the credential to be renamed \(CRED\_TYPE\_\*\)
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved, use only 0
 
 #### Comments
+
+
 CRED\_FLAGS\_USERNAME\_TARGET credentials can't be renamed since their TargetName and Username must be equal
 
 ## [win32cred](#win32cred)\.CredUICmdLinePromptForCredentials
 
-\([PyUnicode](#pyunicode),[PyUnicode](#pyunicode), boolean\) \= **CredUICmdLinePromptForCredentials\( *TargetName*  *, AuthError*  *, UserName*  *, Password*  *, Save*  *, Flags* ** \)
+
+
+\([PyUnicode](#pyunicode),[PyUnicode](#pyunicode), boolean\) =CredUICmdLinePromptForCredentials\(TargetName, AuthError, UserName, Password, Save, Flags\)
 Prompt for username/passwd from a console app
 
 #### Parameters
 
 
-  -  *TargetName* :[PyUnicode](#pyunicode)
+  - TargetName :[PyUnicode](#pyunicode)
 
     Server or domain against which to authenticate
 
-  -  *AuthError\=0* : int
+  - AuthError=0 : int
 
     Error code indicating why credentials are required, can be 0
 
-  -  *UserName\=None* :[PyUnicode](#pyunicode)
+  - UserName=None :[PyUnicode](#pyunicode)
 
     Default username, can be None\.  At most CREDUI\_MAX\_USERNAME\_LENGTH chars
 
-  -  *Password\=None* :[PyUnicode](#pyunicode)
+  - Password=None :[PyUnicode](#pyunicode)
 
     Password, can be None\.  At most CREDUI\_MAX\_PASSWORD\_LENGTH chars
 
-  -  *Save\=True* : boolean
+  - Save=True : boolean
 
     Specifies default value for Save prompt
 
-  -  *Flags\=CREDUI\_FLAGS\_EXCLUDE\_CERTIFICATES* : int
+  - Flags=CREDUI\_FLAGS\_EXCLUDE\_CERTIFICATES : int
 
     Combination of CREDUI\_FLAGS\_\* values
 
 #### Comments
+
+
 The command-line version of this function does not accept certificates, so Flags 
 
 must contain CREDUI\_FLAGS\_EXCLUDE\_CERTIFICATES or CREDUI\_FLAGS\_REQUIRE\_SMARTCARD
@@ -287,36 +319,50 @@ Returns the username and password entered, and a boolean indicating if credentia
 
 ## [win32cred](#win32cred)\.CredUIConfirmCredentials
 
- **CredUIConfirmCredentials\( *TargetName*  *, Confirm* ** \)
+CredUIConfirmCredentials\(TargetName, Confirm\)
 Confirms whether credentials entered by user are valid or not
 
 #### Parameters
 
 
-  -  *TargetName* :[PyUnicode](#pyunicode)
+  - TargetName :[PyUnicode](#pyunicode)
 
     Target of credentials that are pending confirmation
 
-  -  *Confirm* : boolean
+  - Confirm : boolean
 
     Indicates if authentication succeeded
 
 #### Comments
-This function should be called to confirm credentials entered via[win32cred::CredUICmdLinePromptForCredentials](win32cred.md#win32credcreduicmdlinepromptforcredentials)or[win32cred::CredUIPromptForCredentials](win32cred.md#win32credcreduipromptforcredentials)if CREDUI\_FLAGS\_EXPECT\_CONFIRMATION was passed in Flags to either function\.
+
+
+This function should be called to confirm credentials entered via[win32cred::CredUICmdLinePromptForCredentials](win32cred.md#win32credcreduicmdlinepromptforcredentials) or[win32cred::CredUIPromptForCredentials](win32cred.md#win32credcreduipromptforcredentials) 
+
+if CREDUI\_FLAGS\_EXPECT\_CONFIRMATION was passed in Flags to either function\.
+ 
+
 Sequence of operations:
+ 
+
 Prompt for credentials
+ 
+
 Authenticate against target using credentials
+ 
+
 Call this function to indicate if authentication succeeded or not
 
 ## [win32cred](#win32cred)\.CredUIParseUserName
 
-\([PyUnicode](#pyunicode),[PyUnicode](#pyunicode)\) \= **CredUIParseUserName\( *UserName* ** \)
+
+
+\([PyUnicode](#pyunicode),[PyUnicode](#pyunicode)\) =CredUIParseUserName\(UserName\)
 Parses a full username into domain and username
 
 #### Parameters
 
 
-  -  *UserName* :[PyUnicode](#pyunicode)
+  - UserName :[PyUnicode](#pyunicode)
 
     Username as returned by[win32cred::CredUIPromptForCredentials](win32cred.md#win32credcreduipromptforcredentials)
 
@@ -325,137 +371,145 @@ Returns the username and domain
 
 ## [win32cred](#win32cred)\.CredUIPromptForCredentials
 
-\([PyUnicode](#pyunicode),[PyUnicode](#pyunicode), boolean\) \= **CredUIPromptForCredentials\( *TargetName*  *, AuthError*  *, UserName*  *, Password*  *, Save*  *, Flags*  *, UiInfo* ** \)
+
+
+\([PyUnicode](#pyunicode),[PyUnicode](#pyunicode), boolean\) =CredUIPromptForCredentials\(TargetName, AuthError, UserName, Password, Save, Flags, UiInfo\)
 Initiates dialog to request user credentials
 
 #### Parameters
 
 
-  -  *TargetName* :[PyUnicode](#pyunicode)
+  - TargetName :[PyUnicode](#pyunicode)
 
     Server or domain against which to authenticate
 
-  -  *AuthError\=0* : int
+  - AuthError=0 : int
 
     Error code indicating why credentials are required, can be 0
 
-  -  *UserName\=None* :[PyUnicode](#pyunicode)
+  - UserName=None :[PyUnicode](#pyunicode)
 
     Default username, can be None\.  At most CREDUI\_MAX\_USERNAME\_LENGTH chars
 
-  -  *Password\=None* :[PyUnicode](#pyunicode)
+  - Password=None :[PyUnicode](#pyunicode)
 
     Password, can be None\.  At most CREDUI\_MAX\_PASSWORD\_LENGTH chars
 
-  -  *Save\=True* : boolean
+  - Save=True : boolean
 
     Specifies whether Save checkbox defaults to checked or unchecked
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Combination of CREDUI\_FLAGS\_\* values
 
-  -  *UiInfo\=None* : dict
+  - UiInfo=None : dict
 
-    [PyCREDUI\_INFO](PyCREDUI.md#pycreduiinfo)dict for customizing the dialog, can be None
+    [PyCREDUI\_INFO](PyCREDUI.md#pycreduiinfo) dict for customizing the dialog, can be None
 
 #### Return Value
 Returns the username, password, and a boolean indicating if credential was persisted
 
 ## [win32cred](#win32cred)\.CredUIReadSSOCredW
 
-[PyUnicode](#pyunicode)\= **CredUIReadSSOCredW\( *Realm* ** \)
+[PyUnicode](#pyunicode) =CredUIReadSSOCredW\(Realm\)
 Retrieves single sign on username
 
 #### Parameters
 
 
-  -  *Realm\=None* :[PyUnicode](#pyunicode)
+  - Realm=None :[PyUnicode](#pyunicode)
 
     Realm for which to read username, can be None
 
 ## [win32cred](#win32cred)\.CredUIStoreSSOCredW
 
- **CredUIStoreSSOCredW\( *Realm*  *, Username*  *, Password*  *, Persist* ** \)
+CredUIStoreSSOCredW\(Realm, Username, Password, Persist\)
 Creates a single sign on credential
 
 #### Parameters
 
 
-  -  *Realm* :[PyUnicode](#pyunicode)
+  - Realm :[PyUnicode](#pyunicode)
 
     Realm for which to read username, can be None for default realm
 
-  -  *Username* :[PyUnicode](#pyunicode)
+  - Username :[PyUnicode](#pyunicode)
 
     Username for realm
 
-  -  *Password* :[PyUnicode](#pyunicode)
+  - Password :[PyUnicode](#pyunicode)
 
     User's password
 
-  -  *Persist* : boolean
+  - Persist : boolean
 
     Specifies whether to save credential
 
 ## [win32cred](#win32cred)\.CredUnmarshalCredential
 
-int,[PyUnicode](#pyunicode)\= **CredUnmarshalCredential\( *MarshaledCredential* ** \)
+
+
+int,[PyUnicode](#pyunicode) =CredUnmarshalCredential\(MarshaledCredential\)
 Unmarshals credentials formatted using[win32cred::CredMarshalCredential](win32cred.md#win32credcredmarshalcredential)
 
 #### Parameters
 
 
-  -  *MarshaledCredential* :[PyUnicode](#pyunicode)
+  - MarshaledCredential :[PyUnicode](#pyunicode)
 
     Unicode string containing marshaled credential
 
- **CredType**  **Type of output credentials** CertCredentialCharacter string containing SHA1 hash of a certificateUsernameTargetCredentialUnicode string containing username
+CredTypeType of output credentialsCertCredentialCharacter string containing SHA1 hash of a certificateUsernameTargetCredentialUnicode string containing username
 #### Return Value
 Returns the credential type and credentials\.
 
 ## [win32cred](#win32cred)\.CredWrite
 
- **CredWrite\( *Credential*  *, Flags* ** \)
+CredWrite\(Credential, Flags\)
 Creates or updates a stored credential
 
 #### Parameters
 
 
-  -  *Credential* : dict
+  - Credential : dict
 
-    [PyCREDENTIAL](#pycredential)dict containing the credentials to be stored
+    [PyCREDENTIAL](#pycredential) dict containing the credentials to be stored
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRED\_PRESERVE\_CREDENTIAL\_BLOB is only defined flag
 
 #### Comments
+
+
 When updating a credential, to preserve a previously stored password use None or '' 
 
 for CredentialBlob member of Credential and pass CRED\_PRESERVE\_CREDENTIAL\_BLOB in Flags
 
 ## [win32cred](#win32cred)\.CredWriteDomainCredentials
 
- **CredWriteDomainCredentials\( *TargetInfo*  *, Credential*  *, Flags* ** \)
+CredWriteDomainCredentials\(TargetInfo, Credential, Flags\)
 Creates or updates credential for a domain or server
 
 #### Parameters
 
 
-  -  *TargetInfo* : dict
+  - TargetInfo : dict
 
-    [PyCREDENTIAL\_TARGET\_INFORMATION](PyCREDENTIAL.md#pycredentialtarget_information)identifying the target domain\. At least one of the Names is required
+    [PyCREDENTIAL\_TARGET\_INFORMATION](PyCREDENTIAL.md#pycredentialtarget_information) identifying the target domain\. At least one of the Names is required
 
-  -  *Credential* : dict
+  - Credential : dict
 
-    [PyCREDENTIAL](#pycredential)dict containing the credentials to be stored
+    [PyCREDENTIAL](#pycredential) dict containing the credentials to be stored
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRED\_PRESERVE\_CREDENTIAL\_BLOB is only defined flag
 
 #### Comments
+
+
 When updating a credential, to preserve a previously stored password use None or '' 
 
 for CredentialBlob member of Credential and pass CRED\_PRESERVE\_CREDENTIAL\_BLOB in Flags

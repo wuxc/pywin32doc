@@ -2,6 +2,8 @@
 
 ## Pymmapfile Object
 
+
+
 Object that provides access to memory-mapped file operations\.
 
 #### Methods
@@ -61,22 +63,24 @@ Object that provides access to memory-mapped file operations\.
 
 ## [Pymmapfile](#pymmapfile)\.close
 
- **close\(** \)
+close\(\)
 Closes the file mapping handle and releases mapped view
 
 ## [Pymmapfile](#pymmapfile)\.find
 
-int \= **find\( *needle*  *, start* ** \)
+
+
+int =find\(needle, start\)
 Finds a string in the buffer\.
 
 #### Parameters
 
 
-  -  *needle* : str
+  - needle : str
 
     String to be located
 
-  -  *start* : int
+  - start : int
 
     Pos at which to start search, current pos assumed if not specified
 
@@ -85,133 +89,147 @@ Returns pos of string, or -1 if not found
 
 ## [Pymmapfile](#pymmapfile)\.flush
 
- **flush\( *offset*  *, size* ** \)
+flush\(offset, size\)
 Flushes memory buffer to disk
 
 #### Parameters
 
 
-  -  *offset\=0* : int
+  - offset=0 : int
 
     Position in buffer at which to flush
 
-  -  *size\=0* : int
+  - size=0 : int
 
     Number of bytes to flush, 0 to flush remainder of buffer past the offset
 
 ## [Pymmapfile](#pymmapfile)\.move
 
- **move\( *dest*  *, src*  *, count* ** \)
+move\(dest, src, count\)
 Moves data from one place in buffer to another
 
 #### Parameters
 
 
-  -  *dest* : int
+  - dest : int
 
     Destination position in buffer
 
-  -  *src* : int
+  - src : int
 
     Source position in buffer
 
-  -  *count* : int
+  - count : int
 
     Number of bytes to move
 
 ## [Pymmapfile](#pymmapfile)\.read
 
-str \= **read\( *num\_bytes* ** \)
+
+
+str =read\(num\_bytes\)
 Returns specified number of bytes from buffer, and advances current position
 
 #### Parameters
 
 
-  -  *num\_bytes* : int
+  - num\_bytes : int
 
     Number of bytes to read
 
 ## [Pymmapfile](#pymmapfile)\.read\_byte
 
-str \= **read\_byte\(** \)
+
+
+str =read\_byte\(\)
 Reads a single character from current pos
 
 ## [Pymmapfile](#pymmapfile)\.read\_line
 
-str \= **read\_line\(** \)
+
+
+str =read\_line\(\)
 Reads data from current pos up to next EOL\.
 
 ## [Pymmapfile](#pymmapfile)\.resize
 
- **resize\( *MaximumSize*  *, FileOffset*  *, NumberOfBytesToMap* ** \)
+resize\(MaximumSize, FileOffset, NumberOfBytesToMap\)
 Resizes the file mapping and view\.
 
 #### Parameters
 
 
-  -  *MaximumSize* : long
+  - MaximumSize : long
 
     New size for file mapping\. Use a multiple of system page size \(see[win32api::GetSystemInfo](win32api.md#win32apigetsysteminfo)\)
 
-  -  *FileOffset\=0* : long
+  - FileOffset=0 : long
 
     Offset into file mapping\.  Must be multiple of allocation granularity\.
 
-  -  *NumberOfBytesToMap\=0* : long
+  - NumberOfBytesToMap=0 : long
 
     New view size\.  Specify a multiple of system page size\.
 
 #### Comments
+
+
 If MaximumSize is 0, only the mapped view will be affected\.
+
+
 Accepts keyword args\.
 
 ## [Pymmapfile](#pymmapfile)\.seek
 
- **seek\( *dist*  *, how* ** \)
+seek\(dist, how\)
 Changes current position
 
 #### Parameters
 
 
-  -  *dist* : int
+  - dist : int
 
     Distance to seek
 
-  -  *how\=0* : int
+  - how=0 : int
 
     Pos from which to seek
 
 
 ## [Pymmapfile](#pymmapfile)\.size
 
-long \= **size\(** \)
+
+
+long =size\(\)
 Returns size of current view
 
 ## [Pymmapfile](#pymmapfile)\.tell
 
-int \= **tell\(** \)
+
+
+int =tell\(\)
 Returns current position in buffer
 
 ## [Pymmapfile](#pymmapfile)\.write
 
- **write\( *data* ** \)
+write\(data\)
 Places data at current pos in buffer\.
 
 #### Parameters
 
 
-  -  *data* : str
+  - data : str
 
     Data to be written
 
 ## [Pymmapfile](#pymmapfile)\.write\_byte
 
- **write\_byte\( *char* ** \)
+write\_byte\(char\)
 Writes a single character of data
 
 #### Parameters
 
 
-  -  *char* : str
+  - char : str
 
     Single byte to be placed in buffer

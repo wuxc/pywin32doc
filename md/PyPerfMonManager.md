@@ -2,6 +2,8 @@
 
 ## PyPerfMonManager Object
 
+
+
 A Python object
 
 #### Methods
@@ -13,5 +15,5 @@ A Python object
 
 ## [PyPerfMonManager](#pyperfmonmanager)\.Close
 
- **Close\(** \)
+Close\(\)
 Closes the performance monitor manager\.

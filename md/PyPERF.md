@@ -2,16 +2,20 @@
 
 ## PyPERF\_COUNTER\_DEFINITION Object
 
+
+
 An object encapsulating a Windows NT Performance Monitor counter definition \(PERF\_COUNTER\_DEFINITION\)\.
 
 #### Comments
+
+
 Note that all the counter "set" functions will silently do nothing 
 
 if the counter does not appear in a block\.  This is so the application can avoid 
 
 excessive tests for lack of performance monitor functionality\. 
 
-However, the method[PyPERF\_COUNTER\_DEFINITION::Get](PyPERF.md#pyperfcounter_definition_get)will raise a ValueError exception in this case\.
+However, the method[PyPERF\_COUNTER\_DEFINITION::Get](PyPERF.md#pyperfcounter_definition_get) will raise a ValueError exception in this case\.
 
 #### Methods
 
@@ -34,42 +38,44 @@ However, the method[PyPERF\_COUNTER\_DEFINITION::Get](PyPERF.md#pyperfcounter_de
 
 #### Properties
 
-  -  **integer DefaultScale** 
+  - integer DefaultScale
     The default scale of the counter\.
 
-  -  **integer DetailLevel** 
+  - integer DetailLevel
     The detail level of the counter\.
 
-  -  **integer CounterType** 
+  - integer CounterType
     The counter type\.
 
-  -  **integer CounterNameTitleIndex** 
+  - integer CounterNameTitleIndex
     
 
-  -  **integer CounterHelpTitleIndex** 
+  - integer CounterHelpTitleIndex
     Sentinel
 
 ## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Decrement
 
- **Decrement\(** \)
+Decrement\(\)
 Decrements the value of the performance counter
 
 ## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Get
 
- **Get\(** \)
+Get\(\)
 Gets the current value of the counter
 
 ## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Increment
 
- **Increment\(** \)
+Increment\(\)
 Increments the value of the performance counter
 
 ## [PyPERF\_COUNTER\_DEFINITION](PyPERF.md#pyperfcounter_definition)\.Set
 
- **Set\(** \)
+Set\(\)
 Sets the counter to a specific value
 
 ## PyPERF\_OBJECT\_TYPE Object
+
+
 
 A Python object, representing a PERF\_OBJECT\_TYPE structure
 
@@ -82,16 +88,16 @@ A Python object, representing a PERF\_OBJECT\_TYPE structure
 
 #### Properties
 
-  -  **integer ObjectNameTitleIndex** 
+  - integer ObjectNameTitleIndex
     
 
-  -  **integer ObjectHelpTitleIndex** 
+  - integer ObjectHelpTitleIndex
     
 
-  -  **integer DefaultCounterIndex** 
+  - integer DefaultCounterIndex
     
 
 ## [PyPERF\_OBJECT\_TYPE](PyPERF.md#pyperfobject_type)\.Close
 
- **Close\(** \)
+Close\(\)
 Closes the object\.

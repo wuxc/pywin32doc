@@ -2,446 +2,462 @@
 
 ## PySERVER\_INFO\_\* Object
 
+
+
 The following SERVER\_INFO levels are supported\.
 
 
 ## PySERVER\_INFO\_100 Object
 
+
+
 A dictionary holding the information in a Win32 SERVER\_INFO\_100 structure\.
 
 #### Properties
 
-  -  **int platform\_id** 
+  - int platform\_id
     
 
-  -  **string/[PyUnicode](#pyunicode)name** 
+  - string/[PyUnicode](#pyunicode) name
     
 
 ## PySERVER\_INFO\_101 Object
+
+
 
 A dictionary holding the information in a Win32 SERVER\_INFO\_101 structure\.
 
 #### Properties
 
-  -  **int platform\_id** 
+  - int platform\_id
     
 
-  -  **string/[PyUnicode](#pyunicode)name** 
+  - string/[PyUnicode](#pyunicode) name
     
 
-  -  **int version\_major** 
+  - int version\_major
     
 
-  -  **int version\_minor** 
+  - int version\_minor
     
 
-  -  **int type** 
+  - int type
     one of the SV\_TYPE\_\* constants
 
-  -  **string/[PyUnicode](#pyunicode)comment** 
+  - string/[PyUnicode](#pyunicode) comment
     
 
 ## PySERVER\_INFO\_102 Object
+
+
 
 A dictionary holding the information in a Win32 SERVER\_INFO\_102 structure\.
 
 #### Properties
 
-  -  **int platform\_id** 
+  - int platform\_id
     
 
-  -  **string/[PyUnicode](#pyunicode)name** 
+  - string/[PyUnicode](#pyunicode) name
     
 
-  -  **int version\_major** 
+  - int version\_major
     
 
-  -  **int version\_minor** 
+  - int version\_minor
     
 
-  -  **int type** 
+  - int type
     one of the SV\_TYPE\_\* constants
 
-  -  **string/[PyUnicode](#pyunicode)comment** 
+  - string/[PyUnicode](#pyunicode) comment
     
 
-  -  **int users** 
+  - int users
     
 
-  -  **int disc** 
+  - int disc
     
 
-  -  **bool hidden** 
+  - bool hidden
     
 
-  -  **int announce** 
+  - int announce
     
 
-  -  **int anndelta** 
+  - int anndelta
     
 
-  -  **string/[PyUnicode](#pyunicode)userpath** 
+  - string/[PyUnicode](#pyunicode) userpath
     
 
 ## PySERVER\_INFO\_402 Object
+
+
 
 A dictionary holding the information in a Win32 SERVER\_INFO\_402 structure\.
 
 #### Properties
 
-  -  **int ulist\_mtime** 
+  - int ulist\_mtime
     
 
-  -  **int glist\_mtime** 
+  - int glist\_mtime
     
 
-  -  **int alist\_mtime** 
+  - int alist\_mtime
     
 
-  -  **int security** 
+  - int security
     
 
-  -  **int numadmin** 
+  - int numadmin
     
 
-  -  **int lanmask** 
+  - int lanmask
     
 
-  -  **string/[PyUnicode](#pyunicode)guestacct** 
+  - string/[PyUnicode](#pyunicode) guestacct
     
 
-  -  **int chdevs** 
+  - int chdevs
     
 
-  -  **int chdevq** 
+  - int chdevq
     
 
-  -  **int chdevjobs** 
+  - int chdevjobs
     
 
-  -  **int connections** 
+  - int connections
     
 
-  -  **int shares** 
+  - int shares
     
 
-  -  **int openfiles** 
+  - int openfiles
     
 
-  -  **int sessopens** 
+  - int sessopens
     
 
-  -  **int sessvcs** 
+  - int sessvcs
     
 
-  -  **int sessreqs** 
+  - int sessreqs
     
 
-  -  **int opensearch** 
+  - int opensearch
     
 
-  -  **int activelocks** 
+  - int activelocks
     
 
-  -  **int numreqbuf** 
+  - int numreqbuf
     
 
-  -  **int sizreqbuf** 
+  - int sizreqbuf
     
 
-  -  **int numbigbuf** 
+  - int numbigbuf
     
 
-  -  **int numfiletasks** 
+  - int numfiletasks
     
 
-  -  **int alertsched** 
+  - int alertsched
     
 
-  -  **int erroralert** 
+  - int erroralert
     
 
-  -  **int logonalert** 
+  - int logonalert
     
 
-  -  **int accessalert** 
+  - int accessalert
     
 
-  -  **int diskalert** 
+  - int diskalert
     
 
-  -  **int netioalert** 
+  - int netioalert
     
 
-  -  **int maxauditsz** 
+  - int maxauditsz
     
 
-  -  **string/[PyUnicode](#pyunicode)srvheuristics** 
+  - string/[PyUnicode](#pyunicode) srvheuristics
     
 
 ## PySERVER\_INFO\_403 Object
+
+
 
 A dictionary holding the information in a Win32 SERVER\_INFO\_403 structure\.
 
 #### Properties
 
-  -  **int ulist\_mtime** 
+  - int ulist\_mtime
     
 
-  -  **int glist\_mtime** 
+  - int glist\_mtime
     
 
-  -  **int alist\_mtime** 
+  - int alist\_mtime
     
 
-  -  **int security** 
+  - int security
     
 
-  -  **int numadmin** 
+  - int numadmin
     
 
-  -  **int lanmask** 
+  - int lanmask
     
 
-  -  **string/[PyUnicode](#pyunicode)guestacct** 
+  - string/[PyUnicode](#pyunicode) guestacct
     
 
-  -  **int chdevs** 
+  - int chdevs
     
 
-  -  **int chdevq** 
+  - int chdevq
     
 
-  -  **int chdevjobs** 
+  - int chdevjobs
     
 
-  -  **int connections** 
+  - int connections
     
 
-  -  **int shares** 
+  - int shares
     
 
-  -  **int openfiles** 
+  - int openfiles
     
 
-  -  **int sessopens** 
+  - int sessopens
     
 
-  -  **int sessvcs** 
+  - int sessvcs
     
 
-  -  **int sessreqs** 
+  - int sessreqs
     
 
-  -  **int opensearch** 
+  - int opensearch
     
 
-  -  **int activelocks** 
+  - int activelocks
     
 
-  -  **int numreqbuf** 
+  - int numreqbuf
     
 
-  -  **int sizreqbuf** 
+  - int sizreqbuf
     
 
-  -  **int numbigbuf** 
+  - int numbigbuf
     
 
-  -  **int numfiletasks** 
+  - int numfiletasks
     
 
-  -  **int alertsched** 
+  - int alertsched
     
 
-  -  **int erroralert** 
+  - int erroralert
     
 
-  -  **int logonalert** 
+  - int logonalert
     
 
-  -  **int accessalert** 
+  - int accessalert
     
 
-  -  **int diskalert** 
+  - int diskalert
     
 
-  -  **int netioalert** 
+  - int netioalert
     
 
-  -  **int maxauditsz** 
+  - int maxauditsz
     
 
-  -  **string/[PyUnicode](#pyunicode)srvheuristics** 
+  - string/[PyUnicode](#pyunicode) srvheuristics
     
 
-  -  **int auditedevents** 
+  - int auditedevents
     
 
-  -  **int autoprofile** 
+  - int autoprofile
     
 
-  -  **string/[PyUnicode](#pyunicode)autopath** 
+  - string/[PyUnicode](#pyunicode) autopath
     
 
 ## PySERVER\_INFO\_502 Object
+
+
 
 A dictionary holding the information in a Win32 SERVER\_INFO\_502 structure\.
 
 #### Properties
 
-  -  **int sessopens** 
+  - int sessopens
     
 
-  -  **int sessvcs** 
+  - int sessvcs
     
 
-  -  **int opensearch** 
+  - int opensearch
     
 
-  -  **int sizreqbuf** 
+  - int sizreqbuf
     
 
-  -  **int initworkitems** 
+  - int initworkitems
     
 
-  -  **int maxworkitems** 
+  - int maxworkitems
     
 
-  -  **int rawworkitems** 
+  - int rawworkitems
     
 
-  -  **int irpstacksize** 
+  - int irpstacksize
     
 
-  -  **int maxrawbuflen** 
+  - int maxrawbuflen
     
 
-  -  **int sessusers** 
+  - int sessusers
     
 
-  -  **int sessconns** 
+  - int sessconns
     
 
-  -  **int maxpagedmemoryusage** 
+  - int maxpagedmemoryusage
     
 
-  -  **int maxnonpagedmemoryusage** 
+  - int maxnonpagedmemoryusage
     
 
-  -  **bool enableforcedlogoff** 
+  - bool enableforcedlogoff
     
 
-  -  **bool timesource** 
+  - bool timesource
     
 
-  -  **bool acceptdownlevelapis** 
+  - bool acceptdownlevelapis
     
 
-  -  **bool lmannounce** 
+  - bool lmannounce
     
 
 ## PySERVER\_INFO\_503 Object
+
+
 
 A dictionary holding the information in a Win32 SERVER\_INFO\_503 structure\.
 
 #### Properties
 
-  -  **int sessopens** 
+  - int sessopens
     
 
-  -  **int sessvcs** 
+  - int sessvcs
     
 
-  -  **int opensearch** 
+  - int opensearch
     
 
-  -  **int sizreqbuf** 
+  - int sizreqbuf
     
 
-  -  **int initworkitems** 
+  - int initworkitems
     
 
-  -  **int maxworkitems** 
+  - int maxworkitems
     
 
-  -  **int rawworkitems** 
+  - int rawworkitems
     
 
-  -  **int irpstacksize** 
+  - int irpstacksize
     
 
-  -  **int maxrawbuflen** 
+  - int maxrawbuflen
     
 
-  -  **int sessusers** 
+  - int sessusers
     
 
-  -  **int sessconns** 
+  - int sessconns
     
 
-  -  **int maxpagedmemoryusage** 
+  - int maxpagedmemoryusage
     
 
-  -  **int maxnonpagedmemoryusage** 
+  - int maxnonpagedmemoryusage
     
 
-  -  **bool enableforcedlogoff** 
+  - bool enableforcedlogoff
     
 
-  -  **bool timesource** 
+  - bool timesource
     
 
-  -  **bool acceptdownlevelapis** 
+  - bool acceptdownlevelapis
     
 
-  -  **bool lmannounce** 
+  - bool lmannounce
     
 
-  -  **string/[PyUnicode](#pyunicode)domain** 
+  - string/[PyUnicode](#pyunicode) domain
     
 
-  -  **int maxkeepsearch** 
+  - int maxkeepsearch
     
 
-  -  **int scavtimeout** 
+  - int scavtimeout
     
 
-  -  **int minrcvqueue** 
+  - int minrcvqueue
     
 
-  -  **int minfreeworkitems** 
+  - int minfreeworkitems
     
 
-  -  **int xactmemsize** 
+  - int xactmemsize
     
 
-  -  **int threadpriority** 
+  - int threadpriority
     
 
-  -  **int maxmpxct** 
+  - int maxmpxct
     
 
-  -  **int oplockbreakwait** 
+  - int oplockbreakwait
     
 
-  -  **int oplockbreakresponsewait** 
+  - int oplockbreakresponsewait
     
 
-  -  **bool enableoplocks** 
+  - bool enableoplocks
     
 
-  -  **bool enablefcbopens** 
+  - bool enablefcbopens
     
 
-  -  **bool enableraw** 
+  - bool enableraw
     
 
-  -  **bool enablesharednetdrives** 
+  - bool enablesharednetdrives
     
 
-  -  **int minfreeconnections** 
+  - int minfreeconnections
     
 
-  -  **int maxfreeconnections** 
+  - int maxfreeconnections
     

@@ -2,7 +2,13 @@
 
 ## PyCWinApp Object
 
-An application class\.  Encapsulates an MFC **CWinApp** class
+
+
+An application class\.  Encapsulates an MFCCWinApp
+
+
+
+ class
 
 #### Methods
 
@@ -69,148 +75,166 @@ An application class\.  Encapsulates an MFC **CWinApp** class
 
 ## [PyCWinApp](#pycwinapp)\.AddDocTemplate
 
- **AddDocTemplate\( *template* ** \)
+AddDocTemplate\(template\)
 Adds a template to the application list\.
 
 #### Parameters
 
 
-  -  *template* :[PyCDocTemplate](#pycdoctemplate)
+  - template :[PyCDocTemplate](#pycdoctemplate)
 
     The template to be added\.
 
 ## [PyCWinApp](#pycwinapp)\.FindOpenDocument
 
-[PyCDocument](#pycdocument)\= **FindOpenDocument\( *fileName* ** \)
+[PyCDocument](#pycdocument) =FindOpenDocument\(fileName\)
 Returns an existing document with the specified file name\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The fully qualified filename to search for\.
 
 ## [PyCWinApp](#pycwinapp)\.GetDocTemplateList
 
-\[[PyCDocTemplate](#pycdoctemplate),\.\.\.\] \= **GetDocTemplateList\(** \)
+
+
+\[[PyCDocTemplate](#pycdoctemplate),\.\.\.\] =GetDocTemplateList\(\)
 Returns a list of all document templates\.
 
 ## [PyCWinApp](#pycwinapp)\.InitDlgInstance
 
- **InitDlgInstance\( *dialog* ** \)
+InitDlgInstance\(dialog\)
 Calls critical InitInstance processing for a dialog based application\.
 
 #### Parameters
 
 
-  -  *dialog* :[PyCDialog](#pycdialog)
+  - dialog :[PyCDialog](#pycdialog)
 
     The dialog object to be used as the main window for the application\.
 
 ## [PyCWinApp](#pycwinapp)\.IsInproc
 
-int \= **IsInproc\(** \)
+
+
+int =IsInproc\(\)
 Returns a flag to indicate if the created CWinApp was in the DLL, or an external EXE\.
 
 ## [PyCWinApp](#pycwinapp)\.LoadCursor
 
-int \= **LoadCursor\( *cursorId* ** \)
+
+
+int =LoadCursor\(cursorId\)
 Loads a cursor\.
 
 #### Parameters
 
 
-  -  *cursorId* :[PyResourceId](#pyresourceid)
+  - cursorId :[PyResourceId](#pyresourceid)
 
     The resource id or name of the cursor to load\.
 
 ## [PyCWinApp](#pycwinapp)\.LoadIcon
 
-int \= **LoadIcon\( *idResource* ** \)
+
+
+int =LoadIcon\(idResource\)
 Loads an icon resource\.
 
 #### Parameters
 
 
-  -  *idResource* : int
+  - idResource : int
 
     The ID of the icon to load\.
 
 ## [PyCWinApp](#pycwinapp)\.LoadOEMCursor
 
-int \= **LoadOEMCursor\( *cursorId* ** \)
+
+
+int =LoadOEMCursor\(cursorId\)
 Loads an OEM cursor\.
 
 #### Parameters
 
 
-  -  *cursorId* : int
+  - cursorId : int
 
     The ID of the cursor to load\.
 
 ## [PyCWinApp](#pycwinapp)\.LoadStandardCursor
 
-int \= **LoadStandardCursor\( *cursorId* ** \)
+
+
+int =LoadStandardCursor\(cursorId\)
 Loads a standard cursor\.
 
 #### Parameters
 
 
-  -  *cursorId* :[PyResourceId](#pyresourceid)
+  - cursorId :[PyResourceId](#pyresourceid)
 
     The resource ID or name of the cursor to load\.
 
 ## [PyCWinApp](#pycwinapp)\.LoadStandardIcon
 
-int \= **LoadStandardIcon\( *resourceName* ** \)
+
+
+int =LoadStandardIcon\(resourceName\)
 Loads an icon resource\.
 
 #### Parameters
 
 
-  -  *resourceName* :[PyResourceId](#pyresourceid)
+  - resourceName :[PyResourceId](#pyresourceid)
 
     The resource name or id of the standard icon to load\.
 
 ## [PyCWinApp](#pycwinapp)\.OnFileNew
 
- **OnFileNew\(** \)
+OnFileNew\(\)
 Calls the underlying OnFileNew MFC method\.
 
 ## [PyCWinApp](#pycwinapp)\.OnFileOpen
 
- **OnFileOpen\(** \)
+OnFileOpen\(\)
 Calls the underlying OnFileOpen MFC method\.
 
 ## [PyCWinApp](#pycwinapp)\.OpenDocumentFile
 
- **OpenDocumentFile\( *fileName* ** \)
+OpenDocumentFile\(fileName\)
 Opens a document file by name\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the document to open\.
 
 ## [PyCWinApp](#pycwinapp)\.RemoveDocTemplate
 
- **RemoveDocTemplate\( *template* ** \)
+RemoveDocTemplate\(template\)
 Removes a template to the application list\.
 
 #### Parameters
 
 
-  -  *template* :[PyCDocTemplate](#pycdoctemplate)
+  - template :[PyCDocTemplate](#pycdoctemplate)
 
     The template to be removed\.  Must have previously been added by[PyCWinApp::AddDocTemplate](PyCWinApp.md#pycwinappadddoctemplate)\.
 
 #### Comments
+
+
 Note that MFC does not provide an equivilent function\.
 
 ## [PyCWinApp](#pycwinapp)\.Run
 
-int \= **Run\(** \)
+
+
+int =Run\(\)
 Starts the message pump\.  Advanced users only

@@ -2,6 +2,8 @@
 
 ## PyIClassFactory Object
 
+
+
 An object which represents the IClassFactory interface\.  Derived from[PyIUnknown](#pyiunknown)
 
 #### Methods
@@ -17,17 +19,17 @@ An object which represents the IClassFactory interface\.  Derived from[PyIUnknow
 
 ## [PyIClassFactory](#pyiclassfactory)\.CreateInstance
 
-[PyIUnknown](#pyiunknown)\= **CreateInstance\( *outerUnknown*  *, iid* ** \)
+[PyIUnknown](#pyiunknown) =CreateInstance\(outerUnknown, iid\)
 Creates an uninitialized object\.
 
 #### Parameters
 
 
-  -  *outerUnknown* :[PyIUnknown](#pyiunknown)
+  - outerUnknown :[PyIUnknown](#pyiunknown)
 
     Usually None, otherwise the outer unknown if the object is being created as part of an aggregate\.
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the resultant object\.
 
@@ -38,12 +40,12 @@ type specified by iid\.
 
 ## [PyIClassFactory](#pyiclassfactory)\.LockServer
 
- **LockServer\( *bInc* ** \)
+LockServer\(bInc\)
 Called by the client of a class object to keep a server open in memory, allowing instances to be created more quickly\.
 
 #### Parameters
 
 
-  -  *bInc* : int
+  - bInc : int
 
     1 of the server should be locked, 0 if the server should be unlocked\.

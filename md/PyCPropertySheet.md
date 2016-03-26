@@ -2,7 +2,9 @@
 
 ## PyCPropertySheet Object
 
-A class which encapsulates an MFC CPropertySheet object\.  Derived from a[PyCWnd](#pycwnd)object\.
+
+
+A class which encapsulates an MFC CPropertySheet object\.  Derived from a[PyCWnd](#pycwnd) object\.
 
 #### Methods
 
@@ -89,17 +91,19 @@ A class which encapsulates an MFC CPropertySheet object\.  Derived from a[PyCWnd
 
 ## [PyCPropertySheet](#pycpropertysheet)\.AddPage
 
- **AddPage\( *page* ** \)
+AddPage\(page\)
 Adds the supplied page with the rightmost tab in the property sheet\.
 
 #### Parameters
 
 
-  -  *page* :[PyCPropertyPage](#pycpropertypage)
+  - page :[PyCPropertyPage](#pycpropertypage)
 
     The page to be added\.
 
 #### Comments
+
+
 Add pages to the property sheet in the left-to-right order you want them to appear\.
 
 #### MFC References
@@ -109,61 +113,65 @@ Add pages to the property sheet in the left-to-right order you want them to appe
 
 ## [PyCPropertySheet](#pycpropertysheet)\.CreateWindow
 
- **CreateWindow\( *parent*  *, style*  *, exStyle* ** \)
+CreateWindow\(parent, style, exStyle\)
 Displays the property sheet as a modeless dialog\.
 
 #### Parameters
 
 
-  -  *parent\=None* :[PyCWnd](#pycwnd)
+  - parent=None :[PyCWnd](#pycwnd)
 
     The parent of the dialog\.
 
-  -  *style\=WS\_SYSMENU|WS\_POPUP|WS\_CAPTION|DS\_MODALFRAME|WS\_VISIBLE* : int
+  - style=WS\_SYSMENU|WS\_POPUP|WS\_CAPTION|DS\_MODALFRAME|WS\_VISIBLE : int
 
     The style for the window\.
 
-  -  *exStyle\=WS\_EX\_DLGMODALFRAME* : int
+  - exStyle=WS\_EX\_DLGMODALFRAME : int
 
     The extended style for the window\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.DoModal
 
-int \= **DoModal\(** \)
+
+
+int =DoModal\(\)
 Displays the property sheet as a modal dialog\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.EnableStackedTabs
 
-[PyCPropertyPage](#pycpropertypage)\= **EnableStackedTabs\( *stacked* ** \)
+[PyCPropertyPage](#pycpropertypage) =EnableStackedTabs\(stacked\)
 Enables or disables stacked tabs\.
 
 #### Parameters
 
 
-  -  *stacked* : int
+  - stacked : int
 
     A boolean flag
 
 ## [PyCPropertySheet](#pycpropertysheet)\.EndDialog
 
- **EndDialog\( *result* ** \)
+EndDialog\(result\)
 Closes the dialog, with the specified result\.
 
 #### Parameters
 
 
-  -  *result* : int
+  - result : int
 
     The result to be returned by DoModal\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.GetActiveIndex
 
-int \= **GetActiveIndex\(** \)
+
+
+int =GetActiveIndex\(\)
 Retrieves the index of the active page of the property sheet\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.GetActivePage
 
-[PyCPropertyPage](#pycpropertypage)\= **GetActivePage\(** \)
+[PyCPropertyPage](#pycpropertypage) =GetActivePage\(\)
 Returns the currently active property page\.
 
 #### MFC References
@@ -173,13 +181,13 @@ Returns the currently active property page\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.GetPage
 
-[PyCPropertyPage](#pycpropertypage)\= **GetPage\( *pageNo* ** \)
+[PyCPropertyPage](#pycpropertypage) =GetPage\(pageNo\)
 Returns the specified property page\.
 
 #### Parameters
 
 
-  -  *pageNo* : int
+  - pageNo : int
 
     The index of the page toretrieve\.
 
@@ -190,42 +198,50 @@ Returns the specified property page\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.GetPageCount
 
-int \= **GetPageCount\(** \)
+
+
+int =GetPageCount\(\)
 Returns the number of pages\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.GetPageIndex
 
-int \= **GetPageIndex\( *page* ** \)
+
+
+int =GetPageIndex\(page\)
 Retrieves the index of the specified page of the property sheet\.
 
 #### Parameters
 
 
-  -  *page* :[PyCPropertyPage](#pycpropertypage)
+  - page :[PyCPropertyPage](#pycpropertypage)
 
     The page\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.GetTabCtrl
 
-[PyCTabCtrl](#pyctabctrl)\= **GetTabCtrl\(** \)
+[PyCTabCtrl](#pyctabctrl) =GetTabCtrl\(\)
 Returns the tab control used by the sheet\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.OnInitDialog
 
-int \= **OnInitDialog\(** \)
+
+
+int =OnInitDialog\(\)
 Calls the default MFC OnInitDialog handler\.
 
 #### See Also
 
 
-  - [PyCPropertySheet\.OnInitDialog](PyCPropertySheet.md#pycpropertysheetoninitdialog_virtual)virtual method
+  - [PyCPropertySheet\.OnInitDialog](PyCPropertySheet.md#pycpropertysheetoninitdialog_virtual) virtual method
 
-## [PyCPropertySheet\.OnInitDialog](#pycpropertysheet)Virtual
+## [PyCPropertySheet\.OnInitDialog](#pycpropertysheet) Virtual
 
- **OnInitDialog\(** \)
+OnInitDialog\(\)
 Override to augment dialog-box initialization\.
 
 #### Comments
+
+
 The base implementation is not called if a handler exists\.  This can be 
 
 done via[PyCDialog::OnInitDialog](PyCDialog.md#pycdialogoninitdialog)\.
@@ -248,12 +264,14 @@ it has explicitly set the input focus to one of the controls in the
 
 dialog box\.
 
-## [PyCPropertySheet\.OnInitDialog](#pycpropertysheet)Virtual
+## [PyCPropertySheet\.OnInitDialog](#pycpropertysheet) Virtual
 
- **OnInitDialog\(** \)
+OnInitDialog\(\)
 Override to augment dialog-box initialization\.
 
 #### Comments
+
+
 The base implementation is not called if a handler exists\.  This can be 
 
 done via[PyCPropertySheet::OnInitDialog](PyCPropertySheet.md#pycpropertysheetoninitdialog)\.
@@ -278,105 +296,105 @@ dialog box\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.PressButton
 
- **PressButton\( *button* ** \)
+PressButton\(button\)
 Simulates the choice of the specified button in a property sheet\.
 
 #### Parameters
 
 
-  -  *button* : int
+  - button : int
 
     The button to press
 
 ## [PyCPropertySheet](#pycpropertysheet)\.RemovePage
 
- **RemovePage\( *offset* ** \)
+RemovePage\(offset\)
 Removes the specified page from the sheet\.
 
 #### Parameters
 
 
-  -  *offset* : int
+  - offset : int
 
     The page number to remove
 
 #### Alternative Parameters
 
 
-  -  *page* 
+  - page
 
     The page to remove
 
 ## [PyCPropertySheet](#pycpropertysheet)\.SetActivePage
 
- **SetActivePage\( *page* ** \)
+SetActivePage\(page\)
 Programmatically sets the active page object\.
 
 #### Parameters
 
 
-  -  *page* :[PyCPropertyPage](#pycpropertypage)
+  - page :[PyCPropertyPage](#pycpropertypage)
 
     The page\.
 
 ## [PyCPropertySheet](#pycpropertysheet)\.SetFinishText
 
- **SetFinishText\( *text* ** \)
+SetFinishText\(text\)
 Sets the text for the Finish button
 
 #### Parameters
 
 
-  -  *text* : string
+  - text : string
 
     The next for the button
 
 ## [PyCPropertySheet](#pycpropertysheet)\.SetPSHBit
 
- **SetPSHBit\( *bitMask*  *, bitValue* ** \)
+SetPSHBit\(bitMask, bitValue\)
 Sets or clears a bit in m\_psh\.dwFlags
 
 #### Parameters
 
 
-  -  *bitMask* : int
+  - bitMask : int
 
     The PSH\_\* bit mask constant
 
-  -  *bitValue* : int
+  - bitValue : int
 
     1 to set, 0 to clear
 
 ## [PyCPropertySheet](#pycpropertysheet)\.SetTitle
 
- **SetTitle\( *title* ** \)
+SetTitle\(title\)
 Sets the caption for the property sheet\.
 
 #### Parameters
 
 
-  -  *title* : string
+  - title : string
 
     The new caption
 
 ## [PyCPropertySheet](#pycpropertysheet)\.SetWizardButtons
 
- **SetWizardButtons\( *flags* ** \)
+SetWizardButtons\(flags\)
 Enables the wizard buttons
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     The wizard flags
 
 ## [PyCPropertySheet](#pycpropertysheet)\.SetWizardMode
 
- **SetWizardMode\(** \)
+SetWizardMode\(\)
 Enables the wizard mode
 
-## [PyCPropertySheet\.WindowProc](#pycpropertysheet)Virtual
+## [PyCPropertySheet\.WindowProc](#pycpropertysheet) Virtual
 
- **WindowProc\(** \)
+WindowProc\(\)
 Default message handler\.

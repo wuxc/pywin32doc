@@ -2,7 +2,9 @@
 
 ## PyITransferAdviseSink Object
 
-Interface that receives notifications from[PyITransferSource](#pyitransfersource)or[PyITransferDestination](#pyitransferdestination)
+
+
+Interface that receives notifications from[PyITransferSource](#pyitransfersource) or[PyITransferDestination](#pyitransferdestination)
 
 #### Methods
 
@@ -37,53 +39,59 @@ Interface that receives notifications from[PyITransferSource](#pyitransfersource
 
 ## [PyITransferAdviseSink](#pyitransferadvisesink)\.ConfirmEncryptionLoss
 
-int \= **ConfirmEncryptionLoss\( *Source* ** \)
+
+
+int =ConfirmEncryptionLoss\(Source\)
 Notifies user when an item can't be encrypted at destination
 
 #### Parameters
 
 
-  -  *Source* :[PyIShellItem](#pyishellitem)
+  - Source :[PyIShellItem](#pyishellitem)
 
     Item that failed to be encrypted
 
 ## [PyITransferAdviseSink](#pyitransferadvisesink)\.ConfirmOverwrite
 
-int \= **ConfirmOverwrite\( *Source*  *, DestParent*  *, Name* ** \)
+
+
+int =ConfirmOverwrite\(Source, DestParent, Name\)
 Asks user for permission to overwrite an existing item
 
 #### Parameters
 
 
-  -  *Source* :[PyIShellItem](#pyishellitem)
+  - Source :[PyIShellItem](#pyishellitem)
 
     The item that will replace existing item
 
-  -  *DestParent* :[PyIShellItem](#pyishellitem)
+  - DestParent :[PyIShellItem](#pyishellitem)
 
     Folder into which item will be placed
 
-  -  *Name* : str
+  - Name : str
 
     New name for item, or None if item is to keep original name
 
 ## [PyITransferAdviseSink](#pyitransferadvisesink)\.FileFailure
 
-\(int,str\) \= **FileFailure\( *Item*  *, ItemName*  *, Error* ** \)
+
+
+\(int,str\) =FileFailure\(Item, ItemName, Error\)
 Notifies user of failure, and queries how to proceed
 
 #### Parameters
 
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     The shell item that caused the failure
 
-  -  *ItemName* : str
+  - ItemName : str
 
     Name of item if different than above, can be None
 
-  -  *Error* : int
+  - Error : int
 
     HRESULT error code from operation
 
@@ -92,21 +100,23 @@ Returns the HRESULT and new file name if renaming resolved the failure
 
 ## [PyITransferAdviseSink](#pyitransferadvisesink)\.PropertyFailure
 
-int \= **PropertyFailure\( *Item*  *, key*  *, Error* ** \)
+
+
+int =PropertyFailure\(Item, key, Error\)
 Notifies user of failure to set an item's properties
 
 #### Parameters
 
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     The item whose property could not be set
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     Identifies the property that caused the error, or None if all properties failed
 
-  -  *Error* : int
+  - Error : int
 
     HRESULT error code returned by the operation
 
@@ -117,21 +127,23 @@ COPYENGINE\_E\_USERCANCELLED to cancel pending operations
 
 ## [PyITransferAdviseSink](#pyitransferadvisesink)\.SubStreamFailure
 
-int \= **SubStreamFailure\( *Item*  *, StreamName*  *, Error* ** \)
+
+
+int =SubStreamFailure\(Item, StreamName, Error\)
 Notifies user of failure on a substream, and queries how to proceed
 
 #### Parameters
 
 
-  -  *Item* :[PyIShellItem](#pyishellitem)
+  - Item :[PyIShellItem](#pyishellitem)
 
     The item whose stream couldn't be created
 
-  -  *StreamName* : str
+  - StreamName : str
 
     Name of the failed stream
 
-  -  *Error* : int
+  - Error : int
 
     HRESULT failure code from operation
 
@@ -140,44 +152,44 @@ Returns COPYENGINE\_S\_\* if operation is to continue, or COPYENGINE\_E\_\* HRES
 
 ## [PyITransferAdviseSink](#pyitransferadvisesink)\.UpdateProgress
 
- **UpdateProgress\( *SizeCurrent*  *, SizeTotal*  *, FilesCurrent*  *, FilesTotal*  *, FoldersCurrent*  *, FoldersTotal* ** \)
+UpdateProgress\(SizeCurrent, SizeTotal, FilesCurrent, FilesTotal, FoldersCurrent, FoldersTotal\)
 Gives an estimate of amount of work completed
 
 #### Parameters
 
 
-  -  *SizeCurrent* : int
+  - SizeCurrent : int
 
     Bytes transferred so far
 
-  -  *SizeTotal* : int
+  - SizeTotal : int
 
     Total number of bytes
 
-  -  *FilesCurrent* : int
+  - FilesCurrent : int
 
     Number of files processed already
 
-  -  *FilesTotal* : int
+  - FilesTotal : int
 
     Total number of files
 
-  -  *FoldersCurrent* : int
+  - FoldersCurrent : int
 
     Number of folders processed already
 
-  -  *FoldersTotal* : int
+  - FoldersTotal : int
 
     Total number of folder
 
 ## [PyITransferAdviseSink](#pyitransferadvisesink)\.UpdateTransferState
 
- **UpdateTransferState\( *State* ** \)
+UpdateTransferState\(State\)
 Notifies client of current operation state
 
 #### Parameters
 
 
-  -  *State* : int
+  - State : int
 
     A TRANSFER\_ADVISE\_STATE value \(shellcon\.TS\_\*\)

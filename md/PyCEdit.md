@@ -2,7 +2,13 @@
 
 ## PyCEdit Object
 
-A windows edit control\.  Encapsulates an MFC **CEdit** class\.  Derived from a[PyCControl](#pyccontrol)object\.
+
+
+A windows edit control\.  Encapsulates an MFCCEdit
+
+
+
+ class\.  Derived from a[PyCControl](#pyccontrol) object\.
 
 #### Methods
 
@@ -79,7 +85,9 @@ sentinel&nbsp;
 
 ## [PyCEdit](#pycedit)\.Clear
 
-int \= **Clear\(** \)
+
+
+int =Clear\(\)
 Clears all text in an edit control\.
 
 #### MFC References
@@ -89,7 +97,7 @@ Clears all text in an edit control\.
 
 ## [PyCEdit](#pycedit)\.Copy
 
- **Copy\(** \)
+Copy\(\)
 Copys the current selection to the clipboard\.
 
 #### MFC References
@@ -99,31 +107,31 @@ Copys the current selection to the clipboard\.
 
 ## [PyCEdit](#pycedit)\.CreateWindow
 
- **CreateWindow\( *style*  *, rect*  *, parent*  *, id* ** \)
+CreateWindow\(style, rect, parent, id\)
 Creates the window for a new Edit object\.
 
 #### Parameters
 
 
-  -  *style* : int
+  - style : int
 
     The style for the Edit\.  Use any of the win32con\.BS\_\* constants\.
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     The size and position of the Edit\.
 
-  -  *parent* :[PyCWnd](#pycwnd)
+  - parent :[PyCWnd](#pycwnd)
 
     The parent window of the Edit\.  Usually a[PyCDialog](#pycdialog)\.
 
-  -  *id* : int
+  - id : int
 
     The Edits control ID\.
 
 ## [PyCEdit](#pycedit)\.Cut
 
- **Cut\(** \)
+Cut\(\)
 Cuts the current selection to the clipboard\.
 
 #### MFC References
@@ -133,13 +141,15 @@ Cuts the current selection to the clipboard\.
 
 ## [PyCEdit](#pycedit)\.FmtLines
 
-int \= **FmtLines\( *bAddEOL* ** \)
+
+
+int =FmtLines\(bAddEOL\)
 Sets the formatting options for the control\.
 
 #### Parameters
 
 
-  -  *bAddEOL* : int
+  - bAddEOL : int
 
     Specifies whether soft line-break characters are to be inserted\. 
 
@@ -155,7 +165,9 @@ Nonzero if any formatting occurs; otherwise 0\.
 
 ## [PyCEdit](#pycedit)\.GetFirstVisibleLine
 
-int \= **GetFirstVisibleLine\(** \)
+
+
+int =GetFirstVisibleLine\(\)
 Returns zero-based index of the topmost visible line\.
 
 #### MFC References
@@ -168,22 +180,28 @@ The zero-based index of the topmost visible line\. For single-line edit controls
 
 ## [PyCEdit](#pycedit)\.GetLine
 
-int \= **GetLine\( *lineNo* ** \)
+
+
+int =GetLine\(lineNo\)
 Returns the text in a specified line\.
 
 #### Parameters
 
 
-  -  *lineNo\=current* : int
+  - lineNo=current : int
 
     Contains the zero-based index value for the desired line\.
 
 #### Comments
+
+
 This function is not an MFC wrapper\.
 
 ## [PyCEdit](#pycedit)\.GetLineCount
 
-int \= **GetLineCount\(** \)
+
+
+int =GetLineCount\(\)
 Gets the number of lines in an edit control\.
 
 #### MFC References
@@ -196,7 +214,9 @@ The number of lines in the buffer\.  If the control is empty, the return value i
 
 ## [PyCEdit](#pycedit)\.GetSel
 
-\(start, end\) \= **GetSel\(** \)
+
+
+\(start, end\) =GetSel\(\)
 Returns the start and end of the current selection\.
 
 #### MFC References
@@ -209,13 +229,13 @@ The return tuple is \(the first character in the current selection, first nonsel
 
 ## [PyCEdit](#pycedit)\.LimitText
 
- **LimitText\( *nChars* ** \)
+LimitText\(nChars\)
 Sets max length of text that user can enter
 
 #### Parameters
 
 
-  -  *nChars\=0* : int
+  - nChars=0 : int
 
     Specifies the length \(in bytes\) of the text that the user can enter\. If this parameter is 0, the text length is set to 
 
@@ -228,13 +248,15 @@ UINT\_MAX bytes\. This is the default behavior\.
 
 ## [PyCEdit](#pycedit)\.LineFromChar
 
-int \= **LineFromChar\( *charNo* ** \)
+
+
+int =LineFromChar\(charNo\)
 Returns the line number of the specified character\.
 
 #### Parameters
 
 
-  -  *charNo\=-1* : int
+  - charNo=-1 : int
 
     Contains the zero-based index value for the desired character in the text of the edit 
 
@@ -254,19 +276,23 @@ If there is no selection, the current line number is returned\.
 
 ## [PyCEdit](#pycedit)\.LineIndex
 
-int \= **LineIndex\( *lineNo* ** \)
+
+
+int =LineIndex\(lineNo\)
 Retrieves the character index of a line within a multiple-line edit control\.
 
 #### Parameters
 
 
-  -  *lineNo\=-1* : int
+  - lineNo=-1 : int
 
     Contains the index value for the desired line in the text 
 
 of the edit control, or contains -1\.  If -1, then it specifies the current line\.
 
 #### Comments
+
+
 This method only works on multi-linr edit controls\.
 
 #### MFC References
@@ -283,23 +309,27 @@ the edit control\.
 
 ## [PyCEdit](#pycedit)\.LineScroll
 
-int \= **LineScroll\( *nLines*  *, nChars* ** \)
+
+
+int =LineScroll\(nLines, nChars\)
 Scroll the control vertically and horizontally
 
 #### Parameters
 
 
-  -  *nLines* : int
+  - nLines : int
 
     Specifies the number of lines to scroll vertically\.
 
-  -  *nChars\=0* : int
+  - nChars=0 : int
 
     Specifies the number of character positions to scroll horizontally\. This value is ignored if the edit control has either the 
 
 ES\_RIGHT or ES\_CENTER style\.
 
 #### Comments
+
+
 This method only works on multi-linr edit controls\.
 
 #### MFC References
@@ -309,7 +339,7 @@ This method only works on multi-linr edit controls\.
 
 ## [PyCEdit](#pycedit)\.Paste
 
- **Paste\(** \)
+Paste\(\)
 Pastes the contents of the clipboard into the control\.
 
 #### MFC References
@@ -319,13 +349,13 @@ Pastes the contents of the clipboard into the control\.
 
 ## [PyCEdit](#pycedit)\.ReplaceSel
 
- **ReplaceSel\( *text* ** \)
+ReplaceSel\(text\)
 Replaces the selection with the specified text\.
 
 #### Parameters
 
 
-  -  *text* : string
+  - text : string
 
     The text to replace the selection with\.
 
@@ -336,13 +366,13 @@ Replaces the selection with the specified text\.
 
 ## [PyCEdit](#pycedit)\.SetReadOnly
 
- **SetReadOnly\( *bReadOnly* ** \)
+SetReadOnly\(bReadOnly\)
 Sets or clears the read-only status of the listbox\.
 
 #### Parameters
 
 
-  -  *bReadOnly\=1* : int
+  - bReadOnly=1 : int
 
     The read-only state to set\.
 
@@ -353,13 +383,13 @@ Sets or clears the read-only status of the listbox\.
 
 ## [PyCEdit](#pycedit)\.SetSel
 
- **SetSel\( *start*  *, end*  *, bNoScroll* ** \)
+SetSel\(start, end, bNoScroll\)
 Sets the selection in the edit control\.
 
 #### Parameters
 
 
-  -  *start* : int
+  - start : int
 
     Specifies the starting position\. 
 
@@ -367,22 +397,22 @@ If start is 0 and end is -1, all the text in the edit control is selected\.
 
 If start is -1, any current selection is removed\.
 
-  -  *end\=start* : int
+  - end=start : int
 
     Specifies the ending position\.
 
-  -  *bNoScroll\=0* : int
+  - bNoScroll=0 : int
 
     Indicates whether the caret should be scrolled into view\. If 0, the caret is scrolled into view\. If 1, the caret is not scrolled into view\.
 
 #### Alternative Parameters
 
 
-  -  *start,end\)* 
+  - start,end\)
 
     As for normal start, end args\.
 
-  -  *bNoScroll* 
+  - bNoScroll
 
     Indicates whether the caret should be scrolled into view\. If 0, the caret is scrolled into view\. If 1, the caret is not scrolled into view\.
 

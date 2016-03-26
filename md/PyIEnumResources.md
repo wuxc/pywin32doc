@@ -2,6 +2,8 @@
 
 ## PyIEnumResources Object
 
+
+
 A Python interface to IEnumResources
 
 #### Methods
@@ -25,27 +27,29 @@ A Python interface to IEnumResources
 
 ## [PyIEnumResources](#pyienumresources)\.Clone
 
-[PyIEnumResources](#pyienumresources)\= **Clone\(** \)
+[PyIEnumResources](#pyienumresources) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumResources](#pyienumresources)\.Next
 
-object \= **Next\( *num* ** \)
+
+
+object =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumResources](#pyienumresources)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumResources](#pyienumresources)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

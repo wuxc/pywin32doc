@@ -10,7 +10,7 @@ popular_modules = ('win32api', 'win32gui', 'win32ui', 'win32process',
 docs = {}
 
 def escape(s):
-    to_escape = '\`*_{}[]()#+=.!'
+    to_escape = '\`*_{}[]()#+.!'
     s = ['\\' + c if c in to_escape else c for c in s]
     return ''.join(s)
 
@@ -51,7 +51,7 @@ def parse(fname, badhtml):
         if tag in ignores:
             pos = e
             continue
-        curline = curline + escape(badhtml[pos:s].strip())
+        curline = curline + escape(badhtml[pos:s].rstrip())
 
         # print pos, s, e, tag
         if tag in boundaries:
@@ -84,18 +84,18 @@ def parse(fname, badhtml):
             elif tag == '/a':
                 curline += '](%s)' % url
                 url = ''
-            elif tag == 'b' :
-                curline += ' **'
-            elif tag == '/b':
-                curline += '** '
-            elif tag =='i':
-                curline += ' *'
-            elif tag == '/i':
-                curline += '* '
+            # elif tag == 'b' :
+            #     curline += ' __'
+            # elif tag == '/b':
+            #     curline += '__ '
+            # elif tag =='i':
+            #     curline += ' *'
+            # elif tag == '/i':
+            #     curline += '* '
         pos = e
 
     text = '\n'.join(lines)
-    re.sub(r'\n+', '\n', text)
+    re.sub(r'\n[\n ]*', '\n', text)
     attrname = attrname or '__module_doc__'
     return text, modname, attrname
 

@@ -2,6 +2,8 @@
 
 ## PyIPropertyDescription Object
 
+
+
 Gives access to the details of a property definition
 
 #### Methods
@@ -93,17 +95,21 @@ Gives access to the details of a property definition
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.CoerceToCanonicalValue
 
-int \= **CoerceToCanonicalValue\( *Value* ** \)
+
+
+int =CoerceToCanonicalValue\(Value\)
 Converts a variant value to the exact type expected by the property
 
 #### Parameters
 
 
-  -  *Value* :[PyPROPVARIANT](#pypropvariant)
+  - Value :[PyPROPVARIANT](#pypropvariant)
 
     The property value to be converted
 
 #### Comments
+
+
 This method mutates the PyPROPVARIANT in place\.  It may be cleared on failure\.
 
 #### Return Value
@@ -111,38 +117,48 @@ Returns the HRESULT from the operation on success\.
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.FormatForDisplay
 
-str \= **FormatForDisplay\( *Value*  *, Flags* ** \)
+
+
+str =FormatForDisplay\(Value, Flags\)
 Converts a value to its string representation
 
 #### Parameters
 
 
-  -  *Value* :[PyPROPVARIANT](#pypropvariant)
+  - Value :[PyPROPVARIANT](#pypropvariant)
 
     The value to be formatted
 
-  -  *Flags\=PDFF\_DEFAULT* : int
+  - Flags=PDFF\_DEFAULT : int
 
     Combination of PROPDESC\_FORMAT\_FLAGS \(PDFF\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetAggregationType
 
-int \= **GetAggregationType\(** \)
+
+
+int =GetAggregationType\(\)
 Describes how properties for multiple items are displayed \(PDAT\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetCanonicalName
 
-str \= **GetCanonicalName\(** \)
+
+
+str =GetCanonicalName\(\)
 Returns the name of the property
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetColumnState
 
-int \= **GetColumnState\(** \)
+
+
+int =GetColumnState\(\)
 Returns flags that control how property is displayed in column \(SHCOLSTATE\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetConditionType
 
-\(int, int\) \= **GetConditionType\(** \)
+
+
+\(int, int\) =GetConditionType\(\)
 Returns options that determine how the property is used to build a search query
 
 #### Return Value
@@ -150,114 +166,140 @@ Returns the condition type \(PDCOT\_\*\) and default operation \(COP\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetDefaultColumnWidth
 
-int \= **GetDefaultColumnWidth\(** \)
+
+
+int =GetDefaultColumnWidth\(\)
 Returns the default width in characters
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetDisplayName
 
-str \= **GetDisplayName\(** \)
+
+
+str =GetDisplayName\(\)
 Returns the property name as shown in the UI
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetDisplayType
 
-int \= **GetDisplayType\(** \)
+
+
+int =GetDisplayType\(\)
 Returns the display type \(PDDT\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetEditInvitation
 
-str \= **GetEditInvitation\(** \)
+
+
+str =GetEditInvitation\(\)
 Returns the input prompt used in edit controls
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetEnumTypeList
 
-[PyIPropertyEnumTypeList](#pyipropertyenumtypelist)\= **GetEnumTypeList\( *riid* ** \)
+[PyIPropertyEnumTypeList](#pyipropertyenumtypelist) =GetEnumTypeList\(riid\)
 Returns an interface used for querying valid property range
 
 #### Parameters
 
 
-  -  *riid\=IID\_IPropertyEnumTypeList* :[PyIID](#pyiid)
+  - riid=IID\_IPropertyEnumTypeList :[PyIID](#pyiid)
 
     IID of the requested interface
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetGroupingRange
 
-int \= **GetGroupingRange\(** \)
+
+
+int =GetGroupingRange\(\)
 Returns property's grouping attributes \(PDGR\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetPropertyKey
 
-[PyPROPERTYKEY](#pypropertykey)\= **GetPropertyKey\(** \)
+[PyPROPERTYKEY](#pypropertykey) =GetPropertyKey\(\)
 Returns the unique identifier for a property
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetPropertyType
 
-int \= **GetPropertyType\(** \)
+
+
+int =GetPropertyType\(\)
 Returns the variant type of the property \(VT\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetRelativeDescription
 
-\(str, str\) \= **GetRelativeDescription\( *var1*  *, var2* ** \)
+
+
+\(str, str\) =GetRelativeDescription\(var1, var2\)
 Compares two values
 
 #### Parameters
 
 
-  -  *var1* :[PyPROPVARIANT](#pypropvariant)
+  - var1 :[PyPROPVARIANT](#pypropvariant)
 
     The first value
 
-  -  *var2* :[PyPROPVARIANT](#pypropvariant)
+  - var2 :[PyPROPVARIANT](#pypropvariant)
 
     The second value
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetRelativeDescriptionType
 
-int \= **GetRelativeDescriptionType\(** \)
+
+
+int =GetRelativeDescriptionType\(\)
 Returns the relative description type \(PDRDT\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetSortDescription
 
-int \= **GetSortDescription\(** \)
+
+
+int =GetSortDescription\(\)
 Returns value that determines how sorting options are displayed \(PDSD\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetSortDescriptionLabel
 
-str \= **GetSortDescriptionLabel\( *Descending* ** \)
+
+
+str =GetSortDescriptionLabel\(Descending\)
 Returns description of current sort order
 
 #### Parameters
 
 
-  -  *Descending* : bool
+  - Descending : bool
 
     Indicates if order is reversed
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetTypeFlags
 
-int \= **GetTypeFlags\( *mask* ** \)
+
+
+int =GetTypeFlags\(mask\)
 Returns type flags for the property
 
 #### Parameters
 
 
-  -  *mask\=PDTF\_MASK\_ALL* : int
+  - mask=PDTF\_MASK\_ALL : int
 
     Specifies which flags to retrieve \(PDTF\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.GetViewFlags
 
-int \= **GetViewFlags\(** \)
+
+
+int =GetViewFlags\(\)
 Returns the view flags that control how the property is displayed \(PDVF\_\*\)
 
 ## [PyIPropertyDescription](#pyipropertydescription)\.IsValueCanonical
 
-bool \= **IsValueCanonical\( *Value* ** \)
+
+
+bool =IsValueCanonical\(Value\)
 Determines if a value exactly matches the specification for the property
 
 #### Parameters
 
 
-  -  *Value* : PROPVARIANT
+  - Value : PROPVARIANT
 
     The value to check

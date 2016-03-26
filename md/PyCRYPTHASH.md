@@ -2,6 +2,8 @@
 
 ## PyCRYPTHASH Object
 
+
+
 Handle to a cryptographic hash
 
 #### Methods
@@ -37,38 +39,42 @@ Handle to a cryptographic hash
 
 ## [PyCRYPTHASH](#pycrypthash)\.CryptDestroyHash
 
- **CryptDestroyHash\(** \)
+CryptDestroyHash\(\)
 Frees the hash object
 
 ## [PyCRYPTHASH](#pycrypthash)\.CryptDuplicateHash
 
-[PyCRYPTHASH](#pycrypthash)\= **CryptDuplicateHash\( *Flags* ** \)
+[PyCRYPTHASH](#pycrypthash) =CryptDuplicateHash\(Flags\)
 Clones the hash object
 
 #### Parameters
 
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved, use 0 if passed
 
 ## [PyCRYPTHASH](#pycrypthash)\.CryptGetHashParam
 
-int/str \= **CryptGetHashParam\( *Param*  *, Flags* ** \)
+
+
+int/str =CryptGetHashParam\(Param, Flags\)
 Retrieves the specified attribute of the hash
 
 #### Parameters
 
 
-  -  *Param* : int
+  - Param : int
 
     The parameter to retrieve: HP\_ALGID, HP\_HASHSIZE, or HP\_HASHVAL
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved, use 0 if passed in
 
 #### Comments
+
+
 After this method has been called, no more data can be hashed
 
 #### Return Value
@@ -76,76 +82,82 @@ Type of returned object is dependent on the Param passed in
 
 ## [PyCRYPTHASH](#pycrypthash)\.CryptHashData
 
- **CryptHashData\( *Data*  *, Flags* ** \)
+CryptHashData\(Data, Flags\)
 Adds data to the hash
 
 #### Parameters
 
 
-  -  *Data* : string
+  - Data : string
 
     Data to be hashed
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRYPT\_USERDATA or 0
 
 #### Comments
+
+
 If Flags is CRYPT\_USERDATA, provider is expected to prompt user to 
 
 enter data\.  MSDN says that MS CSPs ignore this flag
 
 ## [PyCRYPTHASH](#pycrypthash)\.CryptHashSessionKey
 
- **CryptHashSessionKey\( *Key*  *, Flags* ** \)
+CryptHashSessionKey\(Key, Flags\)
 Hashes a session key
 
 #### Parameters
 
 
-  -  *Key* :[PyCRYPTKEY](#pycryptkey)
+  - Key :[PyCRYPTKEY](#pycryptkey)
 
     The session key to be hashed
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRYPT\_LITTLE\_ENDIAN or 0
 
 ## [PyCRYPTHASH](#pycrypthash)\.CryptSignHash
 
-string \= **CryptSignHash\( *KeySpec*  *, Flags* ** \)
+
+
+string =CryptSignHash\(KeySpec, Flags\)
 Signs the hash
 
 #### Parameters
 
 
-  -  *KeySpec* : int
+  - KeySpec : int
 
     The key to be used to sign the hash, AT\_KEYEXCHANGE,AT\_SIGNATURE
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRYPT\_NOHASHOID,CRYPT\_X931\_FORMAT or 0
 
 #### Comments
+
+
 This methods signs only the hash, not the data that the hash represents
 
 ## [PyCRYPTHASH](#pycrypthash)\.CryptVerifySignature
 
- **CryptVerifySignature\( *Signature*  *, PubKey*  *, Flags* ** \)
+CryptVerifySignature\(Signature, PubKey, Flags\)
 Verifies that a signature matches hashed data
 
 #### Parameters
 
 
-  -  *Signature* : string
+  - Signature : string
 
     Signature data to verify
 
-  -  *PubKey* :[PyCRYPTKEY](#pycryptkey)
+  - PubKey :[PyCRYPTKEY](#pycryptkey)
 
     Public key of signer
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     CRYPT\_NOHASHOID,CRYPT\_X931\_FORMAT or 0

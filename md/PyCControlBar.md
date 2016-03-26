@@ -2,7 +2,11 @@
 
 ## PyCControlBar Object
 
-A class which encapsulates an MFC **CControlBar** \.  Derived from a[PyCWnd](#pycwnd)object\.
+
+
+A class which encapsulates an MFCCControlBar
+
+\.  Derived from a[PyCWnd](#pycwnd) object\.
 
 #### Methods
 
@@ -49,165 +53,197 @@ A class which encapsulates an MFC **CControlBar** \.  Derived from a[PyCWnd](#py
 
 #### Properties
 
-  -  **[PyCFrameWnd](#pycframewnd)dockSite** 
+  - [PyCFrameWnd](#pycframewnd) dockSite
     Current dock site, if dockable
 
-  -  **[PyCWnd](#pycwnd)dockBar** 
+  - [PyCWnd](#pycwnd) dockBar
     Current dock bar, if dockable
 
-  -  **[PyCDockContext](#pycdockcontext)dockContext** 
+  - [PyCDockContext](#pycdockcontext) dockContext
     Used during dragging
 
-  -  **int dwStyle** 
+  - int dwStyle
     creation style \(used for layout\)
 
-  -  **int dwDockStyle** 
+  - int dwDockStyle
     indicates how bar can be docked
 
 ## [PyCControlBar](#pyccontrolbar)\.CalcDynamicLayout
 
-int \= **CalcDynamicLayout\( *length*  *, dwMode* ** \)
+
+
+int =CalcDynamicLayout\(length, dwMode\)
 The framework calls this member function to calculate the dimensions of a dynamic toolbar\.
 
 #### Parameters
 
 
-  -  *length* : int
+  - length : int
 
     The requested dimension of the control bar, either horizontal or vertical, depending on dwMode\.
 
-  -  *dwMode* : int
+  - dwMode : int
 
     A combination of flags\.
 
-## [PyCControlBar\.CalcDynamicLayout](#pyccontrolbar)Virtual
+## [PyCControlBar\.CalcDynamicLayout](#pyccontrolbar) Virtual
 
- **CalcDynamicLayout\(** \)
+CalcDynamicLayout\(\)
 Override to augment control-bar size calculations\.
 
 #### Comments
+
+
 The base implementation is not called if a handler exists\.  This can be 
 
-done via **CPythonControlBar::CalcDynamicLayout** \.
+done viaCPythonControlBar::CalcDynamicLayout
+
+
+
+\.
 
 #### See Also
 
 
-  -  **CPythonControlBar::CalcDynamicLayout** 
+  - CPythonControlBar::CalcDynamicLayout
 
 ## [PyCControlBar](#pyccontrolbar)\.CalcFixedLayout
 
-int \= **CalcFixedLayout\( *bStretch*  *, bHorz* ** \)
+
+
+int =CalcFixedLayout\(bStretch, bHorz\)
 Calculates the horizontal size of a control bar
 
 #### Parameters
 
 
-  -  *bStretch* : int
+  - bStretch : int
 
     Indicates whether the bar should be stretched to the size of the frame\. The bStretch parameter is nonzero when the bar is not a docking bar \(not available for docking\) and is 0 when it is docked or floating \(available for docking\)\.
 
-  -  *bHorz* : int
+  - bHorz : int
 
     Indicates that the bar is horizontally or vertically oriented\.
 
-## [PyCControlBar\.CalcFixedLayout](#pyccontrolbar)Virtual
+## [PyCControlBar\.CalcFixedLayout](#pyccontrolbar) Virtual
 
- **CalcFixedLayout\(** \)
+CalcFixedLayout\(\)
 Override to augment control-bar size calculations\.
 
 #### Comments
+
+
 The base implementation is not called if a handler exists\.  This can be 
 
-done via **CPythonControlBar::CalcFixedLayout** \.
+done viaCPythonControlBar::CalcFixedLayout
+
+
+
+\.
 
 #### See Also
 
 
-  -  **CPythonControlBar::CalcFixedLayout** 
+  - CPythonControlBar::CalcFixedLayout
 
 ## [PyCControlBar](#pyccontrolbar)\.EnableDocking
 
- **EnableDocking\( *style* ** \)
+EnableDocking\(style\)
 pecifies whether the control bar supports docking and the sides of its parent window\.
 
 #### Parameters
 
 
-  -  *style* : int
+  - style : int
 
     Enables a control bar to be docked\.
 
 ## [PyCControlBar](#pyccontrolbar)\.EraseNonClient
 
- **EraseNonClient\(** \)
+EraseNonClient\(\)
 
 
 ## [PyCControlBar](#pyccontrolbar)\.GetBarStyle
 
-int \= **GetBarStyle\(** \)
+
+
+int =GetBarStyle\(\)
 Retrieves the control bar style settings\.
 
 ## [PyCControlBar](#pyccontrolbar)\.GetCount
 
-int \= **GetCount\(** \)
+
+
+int =GetCount\(\)
 Returns the number of non-HWND elements in the control bar\.
 
 ## [PyCControlBar](#pyccontrolbar)\.GetDockingFrame
 
-[PyCFrameWnd](#pycframewnd)\= **GetDockingFrame\(** \)
+[PyCFrameWnd](#pycframewnd) =GetDockingFrame\(\)
 Returns the frame window to which a control bar is docked\.
 
 ## [PyCControlBar](#pyccontrolbar)\.IsFloating
 
-int \= **IsFloating\(** \)
+
+
+int =IsFloating\(\)
 Returns a nonzero value if the control bar in question is a floating control bar\.
 
-## [PyCControlBar\.OnBarStyleChange](#pyccontrolbar)Virtual
+## [PyCControlBar\.OnBarStyleChange](#pyccontrolbar) Virtual
 
- **OnBarStyleChange\(** \)
+OnBarStyleChange\(\)
 Override to augment control-bar size calculations\.
 
 #### Comments
+
+
 The base implementation is not called if a handler exists\.  This can be 
 
-done via **CPythonControlBar::OnBarStyleChange** \.
+done viaCPythonControlBar::OnBarStyleChange
 
-## [PyCControlBar\.OnUpdateCmdUI](#pyccontrolbar)Virtual
 
- **OnUpdateCmdUI\( *frame*  *, bDisableIsNoHandler* ** \)
+
+\.
+
+## [PyCControlBar\.OnUpdateCmdUI](#pyccontrolbar) Virtual
+
+OnUpdateCmdUI\(frame, bDisableIsNoHandler\)
 
 
 #### Parameters
 
 
-  -  *frame* :[PyCFrameWnd](#pycframewnd)
+  - frame :[PyCFrameWnd](#pycframewnd)
 
     
 
-  -  *bDisableIsNoHandler* : int
+  - bDisableIsNoHandler : int
 
     
 
 ## [PyCControlBar](#pyccontrolbar)\.SetBarStyle
 
- **SetBarStyle\( *style* ** \)
+SetBarStyle\(style\)
 Modifies the control bar style settings\.
 
 #### Parameters
 
 
-  -  *style* : int
+  - style : int
 
     The new style
 
 ## [PyCControlBar](#pyccontrolbar)\.ShowWindow
 
-int \= **ShowWindow\(** \)
+
+
+int =ShowWindow\(\)
 Shows the toolbar, and recalculates the button layout\.
 
 #### Comments
-This method is provided for convenience\.  For further details, see[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)and[PyCFrameWnd::RecalcLayout](PyCFrameWnd.md#pycframewndrecalclayout)
+
+
+This method is provided for convenience\.  For further details, see[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow) and[PyCFrameWnd::RecalcLayout](PyCFrameWnd.md#pycframewndrecalclayout)
 
 #### Return Value
 The return value is that returned from[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)

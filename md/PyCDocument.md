@@ -2,7 +2,13 @@
 
 ## PyCDocument Object
 
-A document class\.  Encapsulates an MFC **CDocument** class
+
+
+A document class\.  Encapsulates an MFCCDocument
+
+
+
+ class
 
 #### Methods
 
@@ -21,7 +27,7 @@ A document class\.  Encapsulates an MFC **CDocument** class
 
   - [GetDocTemplate](PyCDocument.md#pycdocumentgetdoctemplate)
 
-    Returns the[PyCDocTemplate](#pycdoctemplate)for the document\.&nbsp;
+    Returns the[PyCDocTemplate](#pycdoctemplate) for the document\.&nbsp;
 
   - [GetAllViews](PyCDocument.md#pycdocumentgetallviews)
 
@@ -88,7 +94,7 @@ sentinel&nbsp;
 
 ## [PyCDocument](#pycdocument)\.DeleteContents
 
- **DeleteContents\(** \)
+DeleteContents\(\)
 Call the MFC DeleteContents method\. 
 
 This routine is provided so a document object which overrides this method 
@@ -98,19 +104,21 @@ can call the original MFC version if required\.
 #### See Also
 
 
-  - [PyCDocument\.DeleteContents](PyCDocument.md#pycdocumentdeletecontents_virtual)virtual method
+  - [PyCDocument\.DeleteContents](PyCDocument.md#pycdocumentdeletecontents_virtual) virtual method
 
 #### MFC References
 
 
   - CDocument::DeleteContents
 
-## [PyCDocument\.DeleteContents](#pycdocument)Virtual
+## [PyCDocument\.DeleteContents](#pycdocument) Virtual
 
- **DeleteContents\(** \)
+DeleteContents\(\)
 Called by the MFC architecture when a document is newly created or closed\.
 
 #### Comments
+
+
 If a handler is defined for this function, the base \(MFC\) function will not 
 
 be called\.  If necessary, the handler must call this function explicitely\.
@@ -122,7 +130,7 @@ be called\.  If necessary, the handler must call this function explicitely\.
 
 ## [PyCDocument](#pycdocument)\.DoFileSave
 
- **DoFileSave\(** \)
+DoFileSave\(\)
 Checks the file attributes\. 
 
 If the file is read only, a new name is prompted, else the 
@@ -132,21 +140,23 @@ file is saved \(by calling DoSave\)
 #### See Also
 
 
-  - [PyCDocument\.DoFileSave](PyCDocument.md#pycdocumentdofilesave_virtual)virtual method
+  - [PyCDocument\.DoFileSave](PyCDocument.md#pycdocumentdofilesave_virtual) virtual method
 
 #### Undocumented MFC References
 
   - CDocument::DoFileSave
 
-## [PyCDocument\.DoFileSave](#pycdocument)Virtual
+## [PyCDocument\.DoFileSave](#pycdocument) Virtual
 
- **DoFileSave\(** \)
+DoFileSave\(\)
 Called by the MFC architecture\.
 
 #### Comments
+
+
 If a handler is defined for this function, it must call the 
 
-base class[PyCDocument::DoFileSave](PyCDocument.md#pycdocumentdofilesave)method\.
+base class[PyCDocument::DoFileSave](PyCDocument.md#pycdocumentdofilesave) method\.
 
 #### See Also
 
@@ -158,21 +168,23 @@ TRUE if the document could be saved, else FALSE\.
 
 ## [PyCDocument](#pycdocument)\.DoSave
 
- **DoSave\( *fileName*  *, bReplace* ** \)
+DoSave\(fileName, bReplace\)
 Calls the underlying MFC DoSave method\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the file to save to\.
 
-  -  *bReplace\=1* : int
+  - bReplace=1 : int
 
     Should an existing file be silently replaced?\.
 
 #### Comments
+
+
 If invalid or no filename, will prompt for a name, else 
 
 will perform the actual saving of the document\.
@@ -180,32 +192,34 @@ will perform the actual saving of the document\.
 #### See Also
 
 
-  - [PyCDocument\.DoSave](PyCDocument.md#pycdocumentdosave_virtual)virtual method
+  - [PyCDocument\.DoSave](PyCDocument.md#pycdocumentdosave_virtual) virtual method
 
 #### Undocumented MFC References
 
   - CDocument::DoSave
 
-## [PyCDocument\.DoSave](#pycdocument)Virtual
+## [PyCDocument\.DoSave](#pycdocument) Virtual
 
- **DoSave\( *fileName*  *, bReplace* ** \)
+DoSave\(fileName, bReplace\)
 Called by the MFC architecture to save a document\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the file being saved\.
 
-  -  *bReplace* : int
+  - bReplace : int
 
     TRUE if the file should be replaced\.
 
 #### Comments
+
+
 If a handler is defined for this function, it must call the 
 
-base class[PyCDocument::DoSave](PyCDocument.md#pycdocumentdosave)method\.
+base class[PyCDocument::DoSave](PyCDocument.md#pycdocumentdosave) method\.
 
 #### See Also
 
@@ -217,7 +231,9 @@ TRUE if the document could be saved, else FALSE\.
 
 ## [PyCDocument](#pycdocument)\.GetAllViews
 
-\[[PyCView](#pycview),\.\.\.\] \= **GetAllViews\(** \)
+
+
+\[[PyCView](#pycview),\.\.\.\] =GetAllViews\(\)
 Returns a list of all views for the current document\.
 
 #### MFC References
@@ -229,7 +245,7 @@ Returns a list of all views for the current document\.
 
 ## [PyCDocument](#pycdocument)\.GetDocTemplate
 
-[PyCDocTemplate](#pycdoctemplate)\= **GetDocTemplate\(** \)
+[PyCDocTemplate](#pycdoctemplate) =GetDocTemplate\(\)
 Returns the template for the document\.
 
 #### MFC References
@@ -239,11 +255,15 @@ Returns the template for the document\.
 
 ## [PyCDocument](#pycdocument)\.GetFirstView
 
-[PyCView](#pycview)\= **GetFirstView\(** \)
+[PyCView](#pycview) =GetFirstView\(\)
 Returns the first view object attached to this document\.
 
 #### Comments
-For more info, see[PyCDocument::GetAllViews](PyCDocument.md#pycdocumentgetallviews)shouldnt be possible\.
+
+
+For more info, see[PyCDocument::GetAllViews](PyCDocument.md#pycdocumentgetallviews) 
+
+shouldnt be possible\.
 
 #### MFC References
 
@@ -254,7 +274,9 @@ For more info, see[PyCDocument::GetAllViews](PyCDocument.md#pycdocumentgetallvie
 
 ## [PyCDocument](#pycdocument)\.GetPathName
 
-string \= **GetPathName\(** \)
+
+
+string =GetPathName\(\)
 Returns the full path name of the current document\. 
 
 The string will be empty if no path name has been set\.
@@ -266,7 +288,9 @@ The string will be empty if no path name has been set\.
 
 ## [PyCDocument](#pycdocument)\.GetTitle
 
-string \= **GetTitle\(** \)
+
+
+string =GetTitle\(\)
 Returns the title of the current document\. 
 
 This will often be the file name portion of the path name\.
@@ -278,7 +302,9 @@ This will often be the file name portion of the path name\.
 
 ## [PyCDocument](#pycdocument)\.IsModified
 
-int \= **IsModified\(** \)
+
+
+int =IsModified\(\)
 Return a flag indicating if the document has been modified\.
 
 #### MFC References
@@ -288,15 +314,17 @@ Return a flag indicating if the document has been modified\.
 
 ## [PyCDocument](#pycdocument)\.OnChangedViewList
 
- **OnChangedViewList\(** \)
+OnChangedViewList\(\)
 Informs the document when a view is added or removed\.
 
-## [PyCDocument\.OnChangedViewList](#pycdocument)Virtual
+## [PyCDocument\.OnChangedViewList](#pycdocument) Virtual
 
- **OnChangedViewList\(** \)
+OnChangedViewList\(\)
 Called by the MFC architecture when after a view is attached\.
 
 #### Comments
+
+
 If a handler is defined for this function, the base \(MFC\) function will not 
 
 be called\.  If necessary, the handler must call this function explicitely\.
@@ -308,7 +336,7 @@ be called\.  If necessary, the handler must call this function explicitely\.
 
 ## [PyCDocument](#pycdocument)\.OnCloseDocument
 
- **OnCloseDocument\(** \)
+OnCloseDocument\(\)
 Call the MFC OnCloseDocument handler\. 
 
 This routine is provided so a document object which overrides this method 
@@ -318,19 +346,21 @@ can call the original MFC version if required\.
 #### See Also
 
 
-  - [PyCDocument\.OnCloseDocument](PyCDocument.md#pycdocumentonclosedocument_virtual)virtual method
+  - [PyCDocument\.OnCloseDocument](PyCDocument.md#pycdocumentonclosedocument_virtual) virtual method
 
 #### MFC References
 
 
   - CDocument::OnCloseDocument
 
-## [PyCDocument\.OnCloseDocument](#pycdocument)Virtual
+## [PyCDocument\.OnCloseDocument](#pycdocument) Virtual
 
- **OnCloseDocument\(** \)
+OnCloseDocument\(\)
 Called by the MFC architecture\.
 
 #### Comments
+
+
 If a handler is defined for this function, the base \(MFC\) function will not 
 
 be called\.  If necessary, the handler must call this function explicitely\.
@@ -342,7 +372,7 @@ be called\.  If necessary, the handler must call this function explicitely\.
 
 ## [PyCDocument](#pycdocument)\.OnNewDocument
 
- **OnNewDocument\(** \)
+OnNewDocument\(\)
 Call the MFC OnNewDocument handler\. 
 
 This routine is provided so a document object which overrides this method 
@@ -352,19 +382,21 @@ can call the original MFC version if required\.
 #### See Also
 
 
-  - [PyCDocument\.OnNewDocument](PyCDocument.md#pycdocumentonnewdocument_virtual)virtual method
+  - [PyCDocument\.OnNewDocument](PyCDocument.md#pycdocumentonnewdocument_virtual) virtual method
 
 #### MFC References
 
 
   - CDocument::OnNewDocument
 
-## [PyCDocument\.OnNewDocument](#pycdocument)Virtual
+## [PyCDocument\.OnNewDocument](#pycdocument) Virtual
 
- **OnNewDocument\(** \)
+OnNewDocument\(\)
 Called by the MFC architecture\.
 
 #### Comments
+
+
 If a handler is defined for this function, the base \(MFC\) function will not 
 
 be called\.  If necessary, the handler must call this function explicitely\.
@@ -379,7 +411,7 @@ TRUE if a new document could be created, else FALSE\.
 
 ## [PyCDocument](#pycdocument)\.OnOpenDocument
 
- **OnOpenDocument\( *pathName* ** \)
+OnOpenDocument\(pathName\)
 Call the MFC OnOpenDocument handler\. 
 
 This routine is provided so a document object which overrides this method 
@@ -389,7 +421,7 @@ can call the original MFC version if required\.
 #### Parameters
 
 
-  -  *pathName* : string
+  - pathName : string
 
     The full path of the file to open\.
 
@@ -398,19 +430,21 @@ can call the original MFC version if required\.
 
   - CDocument::OnOpenDocument
 
-## [PyCDocument\.OnOpenDocument](#pycdocument)Virtual
+## [PyCDocument\.OnOpenDocument](#pycdocument) Virtual
 
- **OnOpenDocument\( *fileName* ** \)
+OnOpenDocument\(fileName\)
 Called by the MFC architecture\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the file being opened\.
 
 #### Comments
+
+
 If a handler is defined for this function, the base \(MFC\) function will not 
 
 be called\.  If necessary, the handler must call this function explicitely\.
@@ -425,7 +459,7 @@ TRUE if the document could be opened, else FALSE\.
 
 ## [PyCDocument](#pycdocument)\.OnSaveDocument
 
- **OnSaveDocument\( *pathName* ** \)
+OnSaveDocument\(pathName\)
 Call the MFC OnSaveDocument handler\. 
 
 This routine is provided so a document object which overrides this method 
@@ -435,7 +469,7 @@ can call the original MFC version if required\.
 #### Parameters
 
 
-  -  *pathName* : string
+  - pathName : string
 
     The full path of the file to save\.
 
@@ -444,19 +478,21 @@ can call the original MFC version if required\.
 
   - CDocument::OnSaveDocument
 
-## [PyCDocument\.OnSaveDocument](#pycdocument)Virtual
+## [PyCDocument\.OnSaveDocument](#pycdocument) Virtual
 
- **OnSaveDocument\( *fileName* ** \)
+OnSaveDocument\(fileName\)
 Called by the MFC architecture\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the file being saved\.
 
 #### Comments
+
+
 If a handler is defined for this function, the base \(MFC\) function will not 
 
 be called\.  If necessary, the handler must call this function explicitely\.
@@ -469,23 +505,27 @@ be called\.  If necessary, the handler must call this function explicitely\.
 #### Return Value
 TRUE if the document could be saved, else FALSE\.
 
-## [PyCDocument\.PreCloseFrame](#pycdocument)Virtual
+## [PyCDocument\.PreCloseFrame](#pycdocument) Virtual
 
- **PreCloseFrame\(** \)
+PreCloseFrame\(\)
 Called before the frame window is closed\.
 
 #### Comments
+
+
 The MFC base implementation is always called after the Python handler returns\.
 
 ## [PyCDocument](#pycdocument)\.SaveModified
 
-int \= **SaveModified\(** \)
+
+
+int =SaveModified\(\)
 Call the underlying MFC method\.
 
 #### See Also
 
 
-  - [PyCDocument\.SaveModified](PyCDocument.md#pycdocumentsavemodified_virtual)virtual method
+  - [PyCDocument\.SaveModified](PyCDocument.md#pycdocumentsavemodified_virtual) virtual method
 
 #### MFC References
 
@@ -495,12 +535,14 @@ Call the underlying MFC method\.
 #### Return Value
 Nonzero if it is safe to continue and close the document; 0 if the document should not be closed\.
 
-## [PyCDocument\.SaveModified](#pycdocument)Virtual
+## [PyCDocument\.SaveModified](#pycdocument) Virtual
 
- **SaveModified\(** \)
+SaveModified\(\)
 Called by the MFC architecture when a document is closed\.
 
 #### Comments
+
+
 If a handler is defined for this function, the base \(MFC\) function will not 
 
 be called\.  If necessary, the handler must call this function explicitely\.
@@ -517,13 +559,13 @@ the document; 0 if the document should not be closed\.
 
 ## [PyCDocument](#pycdocument)\.SetModifiedFlag
 
- **SetModifiedFlag\( *bModified* ** \)
+SetModifiedFlag\(bModified\)
 Set the "dirty" flag for the document\.
 
 #### Parameters
 
 
-  -  *bModified\=1* : int
+  - bModified=1 : int
 
     Set dirty flag
 
@@ -534,13 +576,13 @@ Set the "dirty" flag for the document\.
 
 ## [PyCDocument](#pycdocument)\.SetPathName
 
- **SetPathName\( *path* ** \)
+SetPathName\(path\)
 Set the full path name for the document\.
 
 #### Parameters
 
 
-  -  *path* : string
+  - path : string
 
     The full path of the file\.
 
@@ -551,7 +593,7 @@ Set the full path name for the document\.
 
 ## [PyCDocument](#pycdocument)\.SetTitle
 
- **SetTitle\( *title* ** \)
+SetTitle\(title\)
 Set the title of the document \(ie, the name 
 
 to appear in the window caption for the document\.
@@ -559,7 +601,7 @@ to appear in the window caption for the document\.
 #### Parameters
 
 
-  -  *title* : string
+  - title : string
 
     The new title\.
 
@@ -570,17 +612,17 @@ to appear in the window caption for the document\.
 
 ## [PyCDocument](#pycdocument)\.UpdateAllViews
 
- **UpdateAllViews\( *sender*  *, hint* ** \)
+UpdateAllViews\(sender, hint\)
 Informs each view when a document changes\.
 
 #### Parameters
 
 
-  -  *sender* :[PyCView](#pycview)
+  - sender :[PyCView](#pycview)
 
     The view who initiated the update
 
-  -  *hint\=None* : object
+  - hint=None : object
 
     A hint for the update\.
 

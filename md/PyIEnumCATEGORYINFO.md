@@ -2,6 +2,8 @@
 
 ## PyIEnumCATEGORYINFO Object
 
+
+
 A Python interface to IEnumCATEGORYINFO
 
 #### Methods
@@ -26,18 +28,20 @@ A Python interface to IEnumCATEGORYINFO
 
 ## [PyIEnumCATEGORYINFO](#pyienumcategoryinfo)\.Clone
 
-[PyIEnumCATEGORYINFO](#pyienumcategoryinfo)\= **Clone\(** \)
+[PyIEnumCATEGORYINFO](#pyienumcategoryinfo) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumCATEGORYINFO](#pyienumcategoryinfo)\.Next
 
-\( \([PyIID](#pyiid), int, string\), \.\.\.\) \= **Next\( *num* ** \)
+
+
+\( \([PyIID](#pyiid), int, string\), \.\.\.\) =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
@@ -48,17 +52,17 @@ one for each element returned\.
 
 ## [PyIEnumCATEGORYINFO](#pyienumcategoryinfo)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumCATEGORYINFO](#pyienumcategoryinfo)\.Skip
 
- **Skip\( *num* ** \)
+Skip\(num\)
 Skips over the next specified elementes\.
 
 #### Parameters
 
 
-  -  *num* : int
+  - num : int
 
     The number of elements being requested\.

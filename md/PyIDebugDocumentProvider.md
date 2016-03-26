@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentProvider Object
 
+
+
 Provides the means for instanciating a document on demand\.  Derived from[PyIDebugDocumentInfo](#pyidebugdocumentinfo)\.
 
 #### Methods
@@ -13,5 +15,5 @@ Provides the means for instanciating a document on demand\.  Derived from[PyIDeb
 
 ## [PyIDebugDocumentProvider](#pyidebugdocumentprovider)\.GetDocument
 
-[PyIDebugDocument](#pyidebugdocument)\= **GetDocument\(** \)
+[PyIDebugDocument](#pyidebugdocument) =GetDocument\(\)
 Causes the document to be instantiated if it does not already exist\.

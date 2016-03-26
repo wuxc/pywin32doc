@@ -2,6 +2,8 @@
 
 ## PyIEnumDebugStackFrames Object
 
+
+
 A Python interface to IEnumDebugStackFrames
 
 #### Methods
@@ -25,27 +27,29 @@ A Python interface to IEnumDebugStackFrames
 
 ## [PyIEnumDebugStackFrames](#pyienumdebugstackframes)\.Clone
 
-[PyIEnumDebugStackFrames](#pyienumdebugstackframes)\= **Clone\(** \)
+[PyIEnumDebugStackFrames](#pyienumdebugstackframes) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumDebugStackFrames](#pyienumdebugstackframes)\.Next
 
-object \= **Next\( *num* ** \)
+
+
+object =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumDebugStackFrames](#pyienumdebugstackframes)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumDebugStackFrames](#pyienumdebugstackframes)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

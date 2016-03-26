@@ -2,6 +2,8 @@
 
 ## PyIOleInPlaceUIWindow Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -25,45 +27,45 @@ Description of the interface
 
 ## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.GetBorder
 
- **GetBorder\(** \)
+GetBorder\(\)
 Description of GetBorder\.
 
 ## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.RequestBorderSpace
 
- **RequestBorderSpace\( *borderwidths* ** \)
+RequestBorderSpace\(borderwidths\)
 Description of RequestBorderSpace\.
 
 #### Parameters
 
 
-  -  *borderwidths* : \(int, int, int, int\)
+  - borderwidths : \(int, int, int, int\)
 
     Description for pborderwidths
 
 ## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.SetActiveObject
 
- **SetActiveObject\( *pActiveObject*  *, pszObjName* ** \)
+SetActiveObject\(pActiveObject, pszObjName\)
 Description of SetActiveObject\.
 
 #### Parameters
 
 
-  -  *pActiveObject* :[PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)
+  - pActiveObject :[PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)
 
     Description for pActiveObject
 
-  -  *pszObjName* : **unicode** 
+  - pszObjName :unicode
 
     Description for pszObjName
 
 ## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.SetBorderSpace
 
- **SetBorderSpace\( *borderwidths* ** \)
+SetBorderSpace\(borderwidths\)
 Description of SetBorderSpace\.
 
 #### Parameters
 
 
-  -  *borderwidths* : \(int, int, int, int\)
+  - borderwidths : \(int, int, int, int\)
 
     Description for pborderwidths

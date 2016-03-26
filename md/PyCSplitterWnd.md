@@ -2,14 +2,18 @@
 
 ## PyCSplitterWnd Object
 
-A class which encapsulates an MFC **CSplitterWnd** \. Derived from a[PyCWnd](#pycwnd)object\.
+
+
+A class which encapsulates an MFCCSplitterWnd
+
+\. Derived from a[PyCWnd](#pycwnd) object\.
 
 #### Methods
 
 
   - [GetPane](PyCSplitterWnd.md#pycsplitterwndgetpane)
 
-    Returns the[PyCWnd](#pycwnd)object associated with a splitter window pane\.&nbsp;
+    Returns the[PyCWnd](#pycwnd) object associated with a splitter window pane\.&nbsp;
 
   - [CreateView](PyCSplitterWnd.md#pycsplitterwndcreateview)
 
@@ -37,33 +41,35 @@ A class which encapsulates an MFC **CSplitterWnd** \. Derived from a[PyCWnd](#py
 
 ## [PyCSplitterWnd](#pycsplitterwnd)\.CreateStatic
 
- **CreateStatic\( *parent*  *, rows*  *, cols*  *, style*  *, id* ** \)
+CreateStatic\(parent, rows, cols, style, id\)
 Creates a static splitter window\.
 
 #### Parameters
 
 
-  -  *parent* :[PyCFrameWnd](#pycframewnd)or **PyCSplitter** 
+  - parent :[PyCFrameWnd](#pycframewnd) orPyCSplitter
 
     The parent window\.
 
-  -  *rows* : int
+  - rows : int
 
     The number of rows in the splitter\.
 
-  -  *cols* : int
+  - cols : int
 
     The number of columns in the splitter\.
 
-  -  *style\=WS\_CHILD | WS\_VISIBLE* : int
+  - style=WS\_CHILD | WS\_VISIBLE : int
 
     Specifies the window style
 
-  -  *id\=AFX\_IDW\_PANE\_FIRST* : int
+  - id=AFX\_IDW\_PANE\_FIRST : int
 
     The child window ID of the window\. The ID can be AFX\_IDW\_PANE\_FIRST unless the splitter window is nested inside another splitter window\.
 
 #### Comments
+
+
 A static splitter window is a splitter where the number of panes are 
 
 fixed at window creation time\.  Currently this is the only splitter window 
@@ -77,25 +83,25 @@ supported by win32ui\.
 
 ## [PyCSplitterWnd](#pycsplitterwnd)\.CreateView
 
- **CreateView\( *view*  *, row*  *, col*  *, width, height* ** \)
+CreateView\(view, row, col, width, height\)
 Creates a view in a splitter window
 
 #### Parameters
 
 
-  -  *view* :[PyCView](#pycview)
+  - view :[PyCView](#pycview)
 
     The view to place in the splitter pane\.
 
-  -  *row* : int
+  - row : int
 
     The row in the splitter to place the view\.
 
-  -  *col* : int
+  - col : int
 
     The column in the splitter to place the view\.
 
-  -  *width, height* : \(int, int\)
+  - width, height : \(int, int\)
 
     The initial size of the new view\.
 
@@ -108,82 +114,86 @@ exception set\.
 
 ## [PyCSplitterWnd](#pycsplitterwnd)\.DoKeyboardSplit
 
-int \= **DoKeyboardSplit\(** \)
+
+
+int =DoKeyboardSplit\(\)
 
 
 ## [PyCSplitterWnd](#pycsplitterwnd)\.GetPane
 
-[PyCWnd](#pycwnd)\= **GetPane\( *row*  *, col* ** \)
-Returns the[PyCView](#pycview)associated with the specified pane\.
+[PyCWnd](#pycwnd) =GetPane\(row, col\)
+Returns the[PyCView](#pycview) associated with the specified pane\.
 
 #### Parameters
 
 
-  -  *row* : int
+  - row : int
 
     The row in the splitter\.
 
-  -  *col* : int
+  - col : int
 
     The column in the splitter\.
 
 #### Comments
-Theoretically the return value can be a[PyCWnd](#pycwnd)object, but currently it 
 
-will always be a[PyCView](#pycview)or derived object\.
+
+Theoretically the return value can be a[PyCWnd](#pycwnd) object, but currently it 
+
+will always be a[PyCView](#pycview) or derived object\.
 
 ## [PyCSplitterWnd](#pycsplitterwnd)\.IdFromRowCol
 
- **IdFromRowCol\( *row*  *, col* ** \)
+IdFromRowCol\(row, col\)
 Gets the child window ID for the specified child\.
 
 #### Parameters
 
 
-  -  *row* : int
+  - row : int
 
     The row in the splitter\.
 
-  -  *col* : int
+  - col : int
 
     The col in the splitter
 
 ## [PyCSplitterWnd](#pycsplitterwnd)\.SetColumnInfo
 
- **SetColumnInfo\( *column*  *, ideal*  *, min* ** \)
+SetColumnInfo\(column, ideal, min\)
 Sets a new minimum height and ideal height for a column
 
 #### Parameters
 
 
-  -  *column* : int
+  - column : int
 
     The column in the splitter\.
 
-  -  *ideal* : int
+  - ideal : int
 
     Specifies an ideal height for the splitter window column in pixels\.
 
-  -  *min* : int
+  - min : int
 
     Specifies a minimum height for the splitter window column in pixels\.
 
 ## [PyCSplitterWnd](#pycsplitterwnd)\.SetRowInfo
 
- **SetRowInfo\( *row*  *, ideal*  *, min* ** \)
+SetRowInfo\(row, ideal, min\)
 Sets a new minimum height and ideal height for a row\.
 
 #### Parameters
 
 
-  -  *row* : int
+  - row : int
 
     The row in the splitter\.
 
-  -  *ideal* : int
+  - ideal : int
 
     Specifies an ideal height for the splitter window row in pixels\.
 
-  -  *min* : int
+  - min : int
 
     Specifies a minimum height for the splitter window row in pixels\.

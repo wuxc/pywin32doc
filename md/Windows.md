@@ -1,6 +1,8 @@
 # Windows
 
 ## Windows NT Eventlog
+
+
 Python's win32 access for the Eventlog
 
 If you need to scan the eventlog of many servers or do specific 
@@ -8,29 +10,37 @@ If you need to scan the eventlog of many servers or do specific
 filtering based off of the event log, python's win32evtlog 
 
 win32evtlogutil libraries give you an means to do it efficiently\.
+
+
 The library of primary importance is win32evtlog\. With it you can 
 
 connect to a server's eventlog with the call\.
 
 #### Example
 Here is the basic call:
-logtype\='System'
+logtype='System'
 
-hand\=win32evtlog\.OpenEventLog\(server,logtype\)This returns a handle from which you can make calls such as one that 
+hand=win32evtlog\.OpenEventLog\(server,logtype\)
+
+This returns a handle from which you can make calls such as one that 
 
 will give you the total number of events or another examine the 
 
 details for each event\. The logtype variable is set to the type of log 
 
 you want to look at\. The default ones are: Application, Security, and System\.
+
+
 After you have the handle you can get ask for things such as the number of 
 
 records, or the specific event records:
-total\=win32evtlog\.GetNumberOfEventLogRecords\(hand\)
+total=win32evtlog\.GetNumberOfEventLogRecords\(hand\)
 
-flags \= win32evtlog\.EVENTLOG\_BACKWARDS\_READ|win32evtlog\.EVENTLOG\_SEQUENTIAL\_READ
+flags = win32evtlog\.EVENTLOG\_BACKWARDS\_READ|win32evtlog\.EVENTLOG\_SEQUENTIAL\_READ
 
-events\=win32evtlog\.ReadEventLog\(hand,flags,0\)ReadEventLog returns a number of event objects which may not be all of 
+events=win32evtlog\.ReadEventLog\(hand,flags,0\)
+
+ReadEventLog returns a number of event objects which may not be all of 
 
 them\.  You need to continously check in a loop until there are no more 
 
@@ -45,21 +55,23 @@ Here is a simple loop getting the data from the events that ReadEventLog
 returned:
 for ev\_obj in events:
 
-&\#09the\_time\=ev\_obj\.TimeGenerated\.Format\(\) \#'12/23/99 15:54:09'
+&\#09the\_time=ev\_obj\.TimeGenerated\.Format\(\) \#'12/23/99 15:54:09'
 
-&\#09evt\_id\=str\(winerror\.HRESULT\_CODE\(ev\_obj\.EventID\)\)
+&\#09evt\_id=str\(winerror\.HRESULT\_CODE\(ev\_obj\.EventID\)\)
 
-&\#09computer\=str\(ev\_obj\.ComputerName\)
+&\#09computer=str\(ev\_obj\.ComputerName\)
 
-&\#09cat\=ev\_obj\.EventCategory
+&\#09cat=ev\_obj\.EventCategory
 
-&\#09seconds\=date2sec\(the\_time\)
+&\#09seconds=date2sec\(the\_time\)
 
-&\#09record\=ev\_obj\.RecordNumber
+&\#09record=ev\_obj\.RecordNumber
 
-&\#09msg\=str\(win32evtlogutil\.SafeFormatMessage\(ev\_obj, logtype\)\)
+&\#09msg=str\(win32evtlogutil\.SafeFormatMessage\(ev\_obj, logtype\)\)
 
-&\#09source\=str\(ev\_obj\.SourceName\)We use the library win32evtlogutil to get the actual text body for the 
+&\#09source=str\(ev\_obj\.SourceName\)
+
+We use the library win32evtlogutil to get the actual text body for the 
 
 event\.  To get a easily readable date for the event, you need to 
 
@@ -84,27 +96,29 @@ def date2sec\(self,evt\_date\):
 
 &\#09'''
 
-&\#09regexp\=re\.compile\('\(\.\*\)\\\\s\(\.\*\)'\)
+&\#09regexp=re\.compile\('\(\.\*\)\\\\s\(\.\*\)'\)
 
-&\#09reg\_result\=regexp\.search\(evt\_date\)
+&\#09reg\_result=regexp\.search\(evt\_date\)
 
-&\#09date\=reg\_result\.group\(1\)
+&\#09date=reg\_result\.group\(1\)
 
-&\#09the\_time\=reg\_result\.group\(2\)
+&\#09the\_time=reg\_result\.group\(2\)
 
-&\#09\(mon,day,yr\)\=map\(lambda x: string\.atoi\(x\),string\.split\(date,'/'\)\)
+&\#09\(mon,day,yr\)=map\(lambda x: string\.atoi\(x\),string\.split\(date,'/'\)\)
 
-&\#09\(hr,min,sec\)\=map\(lambda x: string\.atoi\(x\),string\.split\(the\_time,':'\)\)
+&\#09\(hr,min,sec\)=map\(lambda x: string\.atoi\(x\),string\.split\(the\_time,':'\)\)
 
-&\#09tup\=\[yr,mon,day,hr,min,sec,0,0,0\]
+&\#09tup=\[yr,mon,day,hr,min,sec,0,0,0\]
 
-&\#09sec\=time\.mktime\(tup\)
+&\#09sec=time\.mktime\(tup\)
 
-&\#09return secIf you want to get the current localtime in seconds, you can make the call: 
+&\#09return sec
 
-begin\_sec\=time\.time\(\)\. To convert that to a date use: 
+If you want to get the current localtime in seconds, you can make the call: 
 
-begin\_time\=str\(time\.strftime\('%H:%M:%S  ',time\.localtime\( begin\_sec \)\)\)
+begin\_sec=time\.time\(\)\. To convert that to a date use: 
+
+begin\_time=str\(time\.strftime\('%H:%M:%S  ',time\.localtime\( begin\_sec \)\)\)
 
 Finally here is all the code that puts together an application which looks 
 
@@ -143,23 +157,23 @@ def date2sec\(evt\_date\):
 
 &\#09'''
 
-&\#09regexp\=re\.compile\('\(\.\*\)\\\\s\(\.\*\)'\) \#store result in site
+&\#09regexp=re\.compile\('\(\.\*\)\\\\s\(\.\*\)'\) \#store result in site
 
-&\#09reg\_result\=regexp\.search\(evt\_date\)
+&\#09reg\_result=regexp\.search\(evt\_date\)
 
-&\#09date\=reg\_result\.group\(1\)
+&\#09date=reg\_result\.group\(1\)
 
-&\#09the\_time\=reg\_result\.group\(2\)
+&\#09the\_time=reg\_result\.group\(2\)
 
-&\#09\(mon,day,yr\)\=map\(lambda x: string\.atoi\(x\),string\.split\(date,'/'\)\)
+&\#09\(mon,day,yr\)=map\(lambda x: string\.atoi\(x\),string\.split\(date,'/'\)\)
 
-&\#09\(hr,min,sec\)\=map\(lambda x: string\.atoi\(x\),string\.split\(the\_time,':'\)\)
+&\#09\(hr,min,sec\)=map\(lambda x: string\.atoi\(x\),string\.split\(the\_time,':'\)\)
 
-&\#09tup\=\[yr,mon,day,hr,min,sec,0,0,0\]
+&\#09tup=\[yr,mon,day,hr,min,sec,0,0,0\]
 
 
 
-&\#09sec\=time\.mktime\(tup\)
+&\#09sec=time\.mktime\(tup\)
 
 
 
@@ -171,7 +185,7 @@ def date2sec\(evt\_date\):
 
 \#initialize variables
 
-flags \= win32evtlog\.EVENTLOG\_BACKWARDS\_READ|\\\\
+flags = win32evtlog\.EVENTLOG\_BACKWARDS\_READ|\\\\
 
 &\#09&\#09win32evtlog\.EVENTLOG\_SEQUENTIAL\_READ
 
@@ -179,7 +193,7 @@ flags \= win32evtlog\.EVENTLOG\_BACKWARDS\_READ|\\\\
 
 \#This dict converts the event type into a human readable form
 
-evt\_dict\=\{win32con\.EVENTLOG\_AUDIT\_FAILURE:'EVENTLOG\_AUDIT\_FAILURE',\\\\
+evt\_dict=\{win32con\.EVENTLOG\_AUDIT\_FAILURE:'EVENTLOG\_AUDIT\_FAILURE',\\\\
 
 &\#09&\#09  win32con\.EVENTLOG\_AUDIT\_SUCCESS:'EVENTLOG\_AUDIT\_SUCCESS',\\\\
 
@@ -189,19 +203,19 @@ evt\_dict\=\{win32con\.EVENTLOG\_AUDIT\_FAILURE:'EVENTLOG\_AUDIT\_FAILURE',\\\\
 
 &\#09&\#09  win32con\.EVENTLOG\_ERROR\_TYPE:'EVENTLOG\_ERROR\_TYPE'\}
 
-computer\='bedrock'
+computer='bedrock'
 
-logtype\='System'
+logtype='System'
 
-begin\_sec\=time\.time\(\)
+begin\_sec=time\.time\(\)
 
-begin\_time\=time\.strftime\('%H:%M:%S  ',time\.localtime\(begin\_sec\)\)
+begin\_time=time\.strftime\('%H:%M:%S  ',time\.localtime\(begin\_sec\)\)
 
 
 
 \#open event log
 
-hand\=win32evtlog\.OpenEventLog\(computer,logtype\)
+hand=win32evtlog\.OpenEventLog\(computer,logtype\)
 
 print logtype,' events found in the last 8 hours since:',begin\_time
 
@@ -209,11 +223,11 @@ print logtype,' events found in the last 8 hours since:',begin\_time
 
 try:
 
-  events\=1
+  events=1
 
   while events:
 
-    events\=win32evtlog\.ReadEventLog\(hand,flags,0\)
+    events=win32evtlog\.ReadEventLog\(hand,flags,0\)
 
       for ev\_obj in events:
 
@@ -221,9 +235,9 @@ try:
 
 &\#09\#only want data from last 8hrs
 
-&\#09the\_time\=ev\_obj\.TimeGenerated\.Format\(\)
+&\#09the\_time=ev\_obj\.TimeGenerated\.Format\(\)
 
-&\#09seconds\=date2sec\(the\_time\)
+&\#09seconds=date2sec\(the\_time\)
 
 &\#09if seconds &lt begin\_sec-28800: break
 
@@ -231,19 +245,19 @@ try:
 
 &\#09\#data is recent enough, so print it out
 
-&\#09computer\=str\(ev\_obj\.ComputerName\)
+&\#09computer=str\(ev\_obj\.ComputerName\)
 
-&\#09cat\=str\(ev\_obj\.EventCategory\)
+&\#09cat=str\(ev\_obj\.EventCategory\)
 
-&\#09src\=str\(ev\_obj\.SourceName\)
+&\#09src=str\(ev\_obj\.SourceName\)
 
-&\#09record\=str\(ev\_obj\.RecordNumber\)
+&\#09record=str\(ev\_obj\.RecordNumber\)
 
-&\#09evt\_id\=str\(winerror\.HRESULT\_CODE\(ev\_obj\.EventID\)\)
+&\#09evt\_id=str\(winerror\.HRESULT\_CODE\(ev\_obj\.EventID\)\)
 
-&\#09evt\_type\=str\(evt\_dict\[ev\_obj\.EventType\]\)
+&\#09evt\_type=str\(evt\_dict\[ev\_obj\.EventType\]\)
 
-&\#09msg \= str\(win32evtlogutil\.SafeFormatMessage\(ev\_obj, logtype\)\)
+&\#09msg = str\(win32evtlogutil\.SafeFormatMessage\(ev\_obj, logtype\)\)
 
 &\#09print string\.join\(\(the\_time,computer,src,cat,record,evt\_id,evt\_type,msg\[0:15\]\),':'\)
 
@@ -263,10 +277,14 @@ except:
 
 &\#09Some useful additions to this would be to make it
 
-multi-threaded and deploy it as a web application, to look at many servers\.Have a great time with programming with python\!
+multi-threaded and deploy it as a web application, to look at many servers\.
+
+Have a great time with programming with python\!
 
 
 ## Windows NT Eventlog and Threading
+
+
 Python's threading to manage access access to many Eventlogs
 
 If you need to access the eventlog of many servers, it can take 
@@ -350,6 +368,8 @@ For every server in the list:
 3\)call join method to force main thread to wait for threads to complete 
 
 4\)compile data together from all thread classes created\.
+
+
 Since you don't use the return values of the 
 
 thread, you need to store data with the thread object that you 
@@ -368,9 +388,9 @@ class thread\_it \( threading\.Thread \) :
 
     threading\.Thread\.\_\_init\_\_\(self\)
 
-    self\.data\=\[\] \#store data here to get later
+    self\.data=\[\] \#store data here to get later
 
-    self\.server\=server
+    self\.server=server
 
 \# the start\(\) method invokes run
 
@@ -392,11 +412,11 @@ class thread\_it \( threading\.Thread \) :
 
 try:
 
-    l\_servers\=\('fred','barney','wilma','betty'\)
+    l\_servers=\('fred','barney','wilma','betty'\)
 
     for server in l\_servers: \#make a thread for each server
 
-&\#09    thread \= thread\_it \(server\)
+&\#09    thread = thread\_it \(server\)
 
 &\#09    threads\.append \( thread \) \#append to the a threads list
 
@@ -426,7 +446,9 @@ try:
 
 except:
 
-    print traceback\.print\_exc\(sys\.exc\_info\(\)\)Looking at the skeleton, all one really needs to do is put the 
+    print traceback\.print\_exc\(sys\.exc\_info\(\)\)
+
+Looking at the skeleton, all one really needs to do is put the 
 
 eventlog code in the run function and have it store results in the 
 
@@ -471,21 +493,21 @@ class thread\_it \( threading\.Thread \) :
 
 &\#09&\#09threading\.Thread\.\_\_init\_\_\(self\)
 
-&\#09&\#09self\.data\=\[\] \#store data here to get later
+&\#09&\#09self\.data=\[\] \#store data here to get later
 
-&\#09&\#09self\.server\=server
+&\#09&\#09self\.server=server
 
 \# the start\(\) method invokes run
 
 &\#09def run \( self\): \#overridden from threading library
 
-&\#09&\#09flags \= win32evtlog\.EVENTLOG\_BACKWARDS\_READ|\\\\
+&\#09&\#09flags = win32evtlog\.EVENTLOG\_BACKWARDS\_READ|\\\\
 
 &\#09&\#09win32evtlog\.EVENTLOG\_SEQUENTIAL\_READ
 
 &\#09&\#09\#This dict converts the event type into a human readable form
 
-&\#09&\#09evt\_dict\=\{win32con\.EVENTLOG\_AUDIT\_FAILURE:'EVENTLOG\_AUDIT\_FAILURE',\\\\
+&\#09&\#09evt\_dict=\{win32con\.EVENTLOG\_AUDIT\_FAILURE:'EVENTLOG\_AUDIT\_FAILURE',\\\\
 
 &\#09&\#09win32con\.EVENTLOG\_AUDIT\_SUCCESS:'EVENTLOG\_AUDIT\_SUCCESS',\\\\
 
@@ -495,31 +517,31 @@ class thread\_it \( threading\.Thread \) :
 
 &\#09&\#09win32con\.EVENTLOG\_ERROR\_TYPE:'EVENTLOG\_ERROR\_TYPE'\}
 
-&\#09&\#09logtype\='System'
+&\#09&\#09logtype='System'
 
-&\#09&\#09begin\_sec\=time\.time\(\)
+&\#09&\#09begin\_sec=time\.time\(\)
 
-&\#09&\#09begin\_time\=time\.strftime\('%H:%M:%S  ',time\.localtime\(begin\_sec\)\)
+&\#09&\#09begin\_time=time\.strftime\('%H:%M:%S  ',time\.localtime\(begin\_sec\)\)
 
 &\#09&\#09try:
 
-&\#09&\#09&\#09hand\=win32evtlog\.OpenEventLog\(self\.server,logtype\) \#open event log here
+&\#09&\#09&\#09hand=win32evtlog\.OpenEventLog\(self\.server,logtype\) \#open event log here
 
 &\#09&\#09&\#09self\.data\.append\('events found in the last 8 hours since:'\+begin\_time\+'for '\+self\.server\)
 
-&\#09&\#09&\#09events\=1
+&\#09&\#09&\#09events=1
 
 &\#09&\#09&\#09while events:
 
-&\#09&\#09&\#09&\#09events\=win32evtlog\.ReadEventLog\(hand,flags,0\)
+&\#09&\#09&\#09&\#09events=win32evtlog\.ReadEventLog\(hand,flags,0\)
 
 
 
 &\#09&\#09&\#09&\#09for ev\_obj in events:
 
-&\#09&\#09&\#09&\#09&\#09now\_sec\=time\.time\(\)
+&\#09&\#09&\#09&\#09&\#09now\_sec=time\.time\(\)
 
-&\#09&\#09&\#09&\#09&\#09now\_time\=time\.strftime\('now\=%H:%M:%S  ',time\.localtime\(now\_sec\)\)
+&\#09&\#09&\#09&\#09&\#09now\_time=time\.strftime\('now=%H:%M:%S  ',time\.localtime\(now\_sec\)\)
 
 
 
@@ -527,29 +549,29 @@ class thread\_it \( threading\.Thread \) :
 
 &\#09&\#09&\#09&\#09&\#09\#only want data from last 8hrs
 
-&\#09&\#09&\#09&\#09&\#09the\_time\=ev\_obj\.TimeGenerated\.Format\(\)
+&\#09&\#09&\#09&\#09&\#09the\_time=ev\_obj\.TimeGenerated\.Format\(\)
 
-&\#09&\#09&\#09&\#09&\#09seconds\=self\.date2sec\(the\_time\)
+&\#09&\#09&\#09&\#09&\#09seconds=self\.date2sec\(the\_time\)
 
 &\#09&\#09&\#09&\#09&\#09if seconds &lt begin\_sec-28800: break
 
 &\#09&\#09&\#09&\#09&\#09\#data is recent enough, so print it out
 
-&\#09&\#09&\#09&\#09&\#09computer\=str\(ev\_obj\.ComputerName\)
+&\#09&\#09&\#09&\#09&\#09computer=str\(ev\_obj\.ComputerName\)
 
-&\#09&\#09&\#09&\#09&\#09cat\=str\(ev\_obj\.EventCategory\)
+&\#09&\#09&\#09&\#09&\#09cat=str\(ev\_obj\.EventCategory\)
 
-&\#09&\#09&\#09&\#09&\#09src\=str\(ev\_obj\.SourceName\)
+&\#09&\#09&\#09&\#09&\#09src=str\(ev\_obj\.SourceName\)
 
-&\#09&\#09&\#09&\#09&\#09record\=str\(ev\_obj\.RecordNumber\)
+&\#09&\#09&\#09&\#09&\#09record=str\(ev\_obj\.RecordNumber\)
 
-&\#09&\#09&\#09&\#09&\#09evt\_id\=str\(winerror\.HRESULT\_CODE\(ev\_obj\.EventID\)\)
+&\#09&\#09&\#09&\#09&\#09evt\_id=str\(winerror\.HRESULT\_CODE\(ev\_obj\.EventID\)\)
 
-&\#09&\#09&\#09&\#09&\#09evt\_type\=str\(evt\_dict\[ev\_obj\.EventType\]\)
+&\#09&\#09&\#09&\#09&\#09evt\_type=str\(evt\_dict\[ev\_obj\.EventType\]\)
 
-&\#09&\#09&\#09&\#09&\#09msg \= str\(win32evtlogutil\.SafeFormatMessage\(ev\_obj, logtype\)\)
+&\#09&\#09&\#09&\#09&\#09msg = str\(win32evtlogutil\.SafeFormatMessage\(ev\_obj, logtype\)\)
 
-&\#09&\#09&\#09&\#09&\#09results\=string\.join\(\(now\_time,the\_time,computer,src,cat,record,evt\_id,evt\_type,msg\[0:15\]\),':'\)
+&\#09&\#09&\#09&\#09&\#09results=string\.join\(\(now\_time,the\_time,computer,src,cat,record,evt\_id,evt\_type,msg\[0:15\]\),':'\)
 
 &\#09&\#09&\#09&\#09&\#09self\.data\.append\(results\)
 
@@ -573,25 +595,25 @@ class thread\_it \( threading\.Thread \) :
 
 &\#09&\#09'''
 
-&\#09&\#09regexp\=re\.compile\('\(\.\*\)\\\\s\(\.\*\)'\) \#store result in site
+&\#09&\#09regexp=re\.compile\('\(\.\*\)\\\\s\(\.\*\)'\) \#store result in site
 
-&\#09&\#09reg\_result\=regexp\.search\(evt\_date\)
+&\#09&\#09reg\_result=regexp\.search\(evt\_date\)
 
-&\#09&\#09date\=reg\_result\.group\(1\)
+&\#09&\#09date=reg\_result\.group\(1\)
 
-&\#09&\#09the\_time\=reg\_result\.group\(2\)
-
-
-
-&\#09&\#09\(mon,day,yr\)\=map\(lambda x: string\.atoi\(x\),string\.split\(date,'/'\)\)
-
-&\#09&\#09\(hr,min,sec\)\=map\(lambda x: string\.atoi\(x\),string\.split\(the\_time,':'\)\)
-
-&\#09&\#09tup\=\[yr,mon,day,hr,min,sec,0,0,0\]
+&\#09&\#09the\_time=reg\_result\.group\(2\)
 
 
 
-&\#09&\#09sec\=time\.mktime\(tup\)
+&\#09&\#09\(mon,day,yr\)=map\(lambda x: string\.atoi\(x\),string\.split\(date,'/'\)\)
+
+&\#09&\#09\(hr,min,sec\)=map\(lambda x: string\.atoi\(x\),string\.split\(the\_time,':'\)\)
+
+&\#09&\#09tup=\[yr,mon,day,hr,min,sec,0,0,0\]
+
+
+
+&\#09&\#09sec=time\.mktime\(tup\)
 
 &\#09&\#09return sec
 
@@ -599,15 +621,15 @@ class thread\_it \( threading\.Thread \) :
 
 try:
 
-&\#09threads\=\[\]
+&\#09threads=\[\]
 
-&\#09data\=\[\]
+&\#09data=\[\]
 
-&\#09l\_servers\=\['barney','betty','fred','wilma'\]
+&\#09l\_servers=\['barney','betty','fred','wilma'\]
 
 &\#09for server in l\_servers: \#make a thread for each server
 
-&\#09&\#09&\#09thread \= thread\_it \(server\)
+&\#09&\#09&\#09thread = thread\_it \(server\)
 
 &\#09&\#09&\#09threads\.append \( thread \) \#append to the a threads list
 
@@ -637,7 +659,9 @@ try:
 
 except:
 
-&\#09print traceback\.print\_exc\(sys\.exc\_info\(\)\)A very nice addition to this would be to convert it to a web 
+&\#09print traceback\.print\_exc\(sys\.exc\_info\(\)\)
+
+A very nice addition to this would be to convert it to a web 
 
 application\. HTMLgen is a useful tool in this context\.
 
@@ -645,6 +669,8 @@ Have a great time with programming with python\!
 
 
 ## Windows NT Files -- Locking
+
+
 Python's win32 access for file locking -- flock style
 
 The need for file locking tends arise every so often\. Some people 
@@ -678,17 +704,25 @@ Do whatever to the file\. Call UnlockfileEx\. Then close the filehandle\.
 \(Some of you may want to close the filehandle to kill the locks, it 
 
 doesn't work that way with win32, at least according to the msdn\)
+
+
 Below is a class called Flock, which gives you exclusive/shared 
 
 locking with non-blocking/blocking abilities\. If you can think of any 
 
 optimizations or changes, be sure to let me know\.
+
+
 CreateFile provides many options\. It can be used for 
 
 files,directories,mailslots,sockets, etc\. In this case, we're only 
 
 interested in standard files\.
+
+
 The C\+\+ call looks like this:
+
+
 HANDLE CreateFile\( 
 
 LPCTSTR lpFileName, 
@@ -706,8 +740,12 @@ DWORD dwFlagsAndAttributes,
 HANDLE hTemplateFile 
 
 \);
+
+
 The python call is virtually the same with:
-PyHANDLE \= CreateFile\( 
+
+
+PyHANDLE = CreateFile\( 
 
 fileName, 
 
@@ -724,6 +762,8 @@ flagsAndAttributes ,
 hTemplateFile 
 
 \)
+
+
 The module win32con in python is invaluable for setting most of these 
 
 attributes\.  Besides win32con, you need win32security to create a 
@@ -744,17 +784,17 @@ import pywintypes
 
 
 
-highbits\=0xffff0000 \#high-order 32 bits of byte range to lock
+highbits=0xffff0000 \#high-order 32 bits of byte range to lock
 
-file\="c:\\\\\\\\wilma\.txt"
+file="c:\\\\\\\\wilma\.txt"
 
-secur\_att \= win32security\.SECURITY\_ATTRIBUTES\(\)
+secur\_att = win32security\.SECURITY\_ATTRIBUTES\(\)
 
 secur\_att\.Initialize\(\)
 
 
 
-hfile\=win32file\.CreateFile\( file,\\\\
+hfile=win32file\.CreateFile\( file,\\\\
 
 &\#09&\#09&\#09    win32con\.GENERIC\_READ|win32con\.GENERIC\_WRITE,\\\\
 
@@ -768,7 +808,7 @@ hfile\=win32file\.CreateFile\( file,\\\\
 
 
 
-ov\=pywintypes\.OVERLAPPED\(\) \#used to indicate starting region to lock
+ov=pywintypes\.OVERLAPPED\(\) \#used to indicate starting region to lock
 
 win32file\.LockFileEx\(hfile,win32con\.LOCKFILE\_EXCLUSIVE\_LOCK,0,highbits,ov\)
 
@@ -834,19 +874,19 @@ class Flock:
 
 &\#09def \_\_init\_\_\(self,file\):
 
-&\#09&\#09self\.file\=file
+&\#09&\#09self\.file=file
 
-&\#09&\#09self\.type\=\{'LOCK\_EX':0,'LOCK\_NB':0\}
+&\#09&\#09self\.type=\{'LOCK\_EX':0,'LOCK\_NB':0\}
 
-&\#09&\#09secur\_att \= win32security\.SECURITY\_ATTRIBUTES\(\)
+&\#09&\#09secur\_att = win32security\.SECURITY\_ATTRIBUTES\(\)
 
 &\#09&\#09secur\_att\.Initialize\(\)
 
-&\#09&\#09self\.highbits\=0xffff0000 \#high-order 32 bits of byte range to lock
+&\#09&\#09self\.highbits=0xffff0000 \#high-order 32 bits of byte range to lock
 
 &\#09&\#09\#make a handel with read/write and open or create if doesn't exist
 
-&\#09&\#09self\.hfile\=win32file\.CreateFile\( self\.file,\\\\
+&\#09&\#09self\.hfile=win32file\.CreateFile\( self\.file,\\\\
 
 &\#09&\#09&\#09&\#09&\#09win32con\.GENERIC\_READ|win32con\.GENERIC\_WRITE,\\\\
 
@@ -864,23 +904,23 @@ class Flock:
 
 &\#09&\#09&\#09if self\.type\['LOCK\_NB'\]: \#don't wait, non-blocking
 
-&\#09&\#09&\#09&\#09lock\_flags\=win32con\.LOCKFILE\_EXCLUSIVE\_LOCK|win32con\.LOCKFILE\_FAIL\_IMMEDIATELY
+&\#09&\#09&\#09&\#09lock\_flags=win32con\.LOCKFILE\_EXCLUSIVE\_LOCK|win32con\.LOCKFILE\_FAIL\_IMMEDIATELY
 
 &\#09&\#09&\#09else: \#wait for lock to free
 
-&\#09&\#09&\#09&\#09lock\_flags\=win32con\.LOCKFILE\_EXCLUSIVE\_LOCK
+&\#09&\#09&\#09&\#09lock\_flags=win32con\.LOCKFILE\_EXCLUSIVE\_LOCK
 
 &\#09&\#09else: \#shared locking
 
 &\#09&\#09&\#09if self\.type\['LOCK\_NB'\]: \#don't wait, non-blocking
 
-&\#09&\#09&\#09&\#09lock\_flags\=win32con\.LOCKFILE\_FAIL\_IMMEDIATELY
+&\#09&\#09&\#09&\#09lock\_flags=win32con\.LOCKFILE\_FAIL\_IMMEDIATELY
 
 &\#09&\#09&\#09else:\#shared lock wait for lock to free
 
-&\#09&\#09&\#09&\#09lock\_flags\=0
+&\#09&\#09&\#09&\#09lock\_flags=0
 
-&\#09&\#09self\.ov\=pywintypes\.OVERLAPPED\(\) \#used to indicate starting region to lock
+&\#09&\#09self\.ov=pywintypes\.OVERLAPPED\(\) \#used to indicate starting region to lock
 
 &\#09&\#09win32file\.LockFileEx\(self\.hfile,lock\_flags,0,self\.highbits,self\.ov\)
 
@@ -892,11 +932,11 @@ class Flock:
 
 
 
-l\=Flock\("c:\\\\\\\\a3\.txt"\)
+l=Flock\("c:\\\\\\\\a3\.txt"\)
 
-l\.type\['LOCK\_EX'\]\=0
+l\.type\['LOCK\_EX'\]=0
 
-l\.type\['LOCK\_NB'\]\=0
+l\.type\['LOCK\_NB'\]=0
 
 
 
@@ -912,10 +952,14 @@ win32api\.Sleep\(1000\)
 
 l\.unlock\(\)
 
-print 'now unlocked'Have a great time with programming with python\!
+print 'now unlocked'
+
+Have a great time with programming with python\!
 
 
 ## Windows NT Security -- Impersonation
+
+
 Python's win32 access to help to simplify providing privileged access\.
 
 There may be times when you want to give specific access to 
@@ -958,8 +1002,12 @@ BOOL LogonUser\(
 
   PHANDLE phToken
 
-\);The python documentation says this:
-PyHANDLE \= LogonUser\( userName, domain , password , logonType , logonProvider \)The api call is very similar in both cases except in python the 
+\);
+
+The python documentation says this:
+PyHANDLE = LogonUser\( userName, domain , password , logonType , logonProvider \)
+
+The api call is very similar in both cases except in python the 
 
 handel is returned seperately to the caller\. The interesting options 
 
@@ -978,6 +1026,8 @@ logonProvider, generally use win32con\.LOGON32\_PROVIDER\_DEFAULT -- it's
 for specifiying the type of logon NT 3\.5, 4\.0, win2000\. Generally, 
 
 default is fine\.
+
+
 ImpersonateLoggedOnUser is extremely simple and you'll see it's usage in the 
 
 examples\.
@@ -985,7 +1035,7 @@ examples\.
 Now for some code
 \#A raw example looks like this:
 
-handel\=win32security\.LogonUser\('barney','bedrock','bambam'\\\\
+handel=win32security\.LogonUser\('barney','bedrock','bambam'\\\\
 
 &\#09,win32con\.LOGON32\_LOGON\_INTERACTIVE,win32con\.LOGON32\_PROVIDER\_DEFAULT\)
 
@@ -1023,15 +1073,15 @@ class Impersonate:
 
     def \_\_init\_\_\(self,login,password\):
 
-&\#09self\.domain\='bedrock'
+&\#09self\.domain='bedrock'
 
-&\#09self\.login\=login
+&\#09self\.login=login
 
-&\#09self\.password\=password
+&\#09self\.password=password
 
     def logon\(self\):
 
-&\#09self\.handel\=win32security\.LogonUser\(self\.login,self\.domain,self\.password,\\\\
+&\#09self\.handel=win32security\.LogonUser\(self\.login,self\.domain,self\.password,\\\\
 
 &\#09win32con\.LOGON32\_LOGON\_INTERACTIVE,win32con\.LOGON32\_PROVIDER\_DEFAULT\)
 
@@ -1047,7 +1097,7 @@ class Impersonate:
 
 
 
-a\=Impersonate\('barney','bambam'\)
+a=Impersonate\('barney','bambam'\)
 
 
 
@@ -1063,4 +1113,6 @@ try:
 
 except:
 
-    print sys\.exc\_type , sys\.exc\_valueHave a great time with programming with python\!
+    print sys\.exc\_type , sys\.exc\_value
+
+Have a great time with programming with python\!

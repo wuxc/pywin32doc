@@ -2,6 +2,8 @@
 
 ## PyIDebugSyncOperation Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,15 +23,15 @@ Description of the interface
 
 ## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.Execute
 
- **Execute\(** \)
+Execute\(\)
 Description of Execute\.
 
 ## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.GetTargetThread
 
- **GetTargetThread\(** \)
+GetTargetThread\(\)
 Description of GetTargetThread\.
 
 ## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.InProgressAbort
 
- **InProgressAbort\(** \)
+InProgressAbort\(\)
 Description of InProgressAbort\.

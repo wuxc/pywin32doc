@@ -2,6 +2,8 @@
 
 ## PyIDebugStackFrameSniffer Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,5 +15,5 @@ Description of the interface
 
 ## [PyIDebugStackFrameSniffer](#pyidebugstackframesniffer)\.EnumStackFrames
 
- **EnumStackFrames\(** \)
+EnumStackFrames\(\)
 Description of EnumStackFrames\.

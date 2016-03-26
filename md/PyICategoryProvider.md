@@ -2,6 +2,8 @@
 
 ## PyICategoryProvider Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,65 +35,67 @@ Description of the interface
 
 ## [PyICategoryProvider](#pyicategoryprovider)\.CanCategorizeOnSCID
 
- **CanCategorizeOnSCID\( *pscid* ** \)
+CanCategorizeOnSCID\(pscid\)
 Description of CanCategorizeOnSCID\.
 
 #### Parameters
 
 
-  -  *pscid* : **SHCOLUMNID** 
+  - pscid :SHCOLUMNID
 
     Description for pscid
 
 ## [PyICategoryProvider](#pyicategoryprovider)\.CreateCategory
 
- **CreateCategory\( *guid*  *, riid* ** \)
+CreateCategory\(guid, riid\)
 Description of CreateCategory\.
 
 #### Parameters
 
 
-  -  *guid* :[PyIID](#pyiid)
+  - guid :[PyIID](#pyiid)
 
     Description for pguid
 
-  -  *riid* :[PyIID](#pyiid)
+  - riid :[PyIID](#pyiid)
 
     Description for riid
 
 ## [PyICategoryProvider](#pyicategoryprovider)\.EnumCategories
 
- **EnumCategories\(** \)
+EnumCategories\(\)
 Description of EnumCategories\.
 
 ## [PyICategoryProvider](#pyicategoryprovider)\.GetCategoryForSCID
 
- **GetCategoryForSCID\( *pscid* ** \)
+GetCategoryForSCID\(pscid\)
 Description of GetCategoryForSCID\.
 
 #### Parameters
 
 
-  -  *pscid* : **SHCOLUMNID** 
+  - pscid :SHCOLUMNID
 
     Description for pscid
 
 ## [PyICategoryProvider](#pyicategoryprovider)\.GetCategoryName
 
- **GetCategoryName\( *guid* ** \)
+GetCategoryName\(guid\)
 Description of GetCategoryName\.
 
 #### Parameters
 
 
-  -  *guid* :[PyIID](#pyiid)
+  - guid :[PyIID](#pyiid)
 
     Description for pguid
 
 #### Comments
+
+
 The buffer is always 1024 chars long
 
 ## [PyICategoryProvider](#pyicategoryprovider)\.GetDefaultCategory
 
- **GetDefaultCategory\(** \)
+GetDefaultCategory\(\)
 Description of GetDefaultCategory\.

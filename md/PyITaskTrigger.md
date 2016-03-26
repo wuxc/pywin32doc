@@ -2,6 +2,8 @@
 
 ## PyITaskTrigger Object
 
+
+
 Python object that encapsulates the ITaskTrigger interface
 
 #### Methods
@@ -21,22 +23,22 @@ Python object that encapsulates the ITaskTrigger interface
 
 ## [PyITaskTrigger](#pyitasktrigger)\.GetTrigger
 
-[PyTASK\_TRIGGER](PyTASK.md#pytasktrigger)\= **GetTrigger\(** \)
+[PyTASK\_TRIGGER](PyTASK.md#pytasktrigger) =GetTrigger\(\)
 Retrieves trigger parms as a PyTASK\_TRIGGER object
 
 ## [PyITaskTrigger](#pyitasktrigger)\.GetTriggerString
 
-[PyUnicode](#pyunicode)\= **GetTriggerString\(** \)
+[PyUnicode](#pyunicode) =GetTriggerString\(\)
 Build text summary of trigger
 
 ## [PyITaskTrigger](#pyitasktrigger)\.SetTrigger
 
- **SetTrigger\( *Trigger* ** \)
+SetTrigger\(Trigger\)
 Set trigger parameters from a PyTASK\_TRIGGER object
 
 #### Parameters
 
 
-  -  *Trigger* :[PyTASK\_TRIGGER](PyTASK.md#pytasktrigger)
+  - Trigger :[PyTASK\_TRIGGER](PyTASK.md#pytasktrigger)
 
     Python object representing a TASK\_TRIGGER struct

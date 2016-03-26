@@ -2,7 +2,9 @@
 
 ## PyIEnumSTATSTG Object
 
-An enumerator for elements contained in a[PyIStorage](#pyistorage)object
+
+
+An enumerator for elements contained in a[PyIStorage](#pyistorage) object
 
 #### Methods
 
@@ -26,27 +28,29 @@ An enumerator for elements contained in a[PyIStorage](#pyistorage)object
 
 ## [PyIEnumSTATSTG](#pyienumstatstg)\.Clone
 
-[PyIEnumSTATSTG](#pyienumstatstg)\= **Clone\(** \)
+[PyIEnumSTATSTG](#pyienumstatstg) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumSTATSTG](#pyienumstatstg)\.Next
 
-\([STATSTG](#statstg), \.\.\.\) \= **Next\( *num* ** \)
+
+
+\([STATSTG](#statstg), \.\.\.\) =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumSTATSTG](#pyienumstatstg)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumSTATSTG](#pyienumstatstg)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

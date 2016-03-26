@@ -2,6 +2,8 @@
 
 ## PyDDEStringItem Object
 
+
+
 A DDE string item\.
 
 #### Methods
@@ -15,17 +17,17 @@ sentinel&nbsp;
 
 ## [PyDDEStringItem](#pyddestringitem)\.Destroy
 
- **Destroy\(** \)
+Destroy\(\)
 Destroys an item
 
 ## [PyDDEStringItem](#pyddestringitem)\.SetData
 
- **SetData\( *data* ** \)
+SetData\(data\)
 Sets an items data, and causes any underlying notification\.
 
 #### Parameters
 
 
-  -  *data* : string
+  - data : string
 
     The data to set\.

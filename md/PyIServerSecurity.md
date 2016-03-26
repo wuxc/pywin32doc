@@ -2,9 +2,13 @@
 
 ## PyIServerSecurity Object
 
+
+
 Interface used to access client security settings and perform impersonation
 
 #### Comments
+
+
 Can be created using[pythoncom::CoGetCallContext](pythoncom.md#pythoncomcogetcallcontext)
 
 #### Methods
@@ -28,27 +32,31 @@ Can be created using[pythoncom::CoGetCallContext](pythoncom.md#pythoncomcogetcal
 
 ## [PyIServerSecurity](#pyiserversecurity)\.ImpersonateClient
 
- **ImpersonateClient\(** \)
+ImpersonateClient\(\)
 Initiates impersonation of client
 
 ## [PyIServerSecurity](#pyiserversecurity)\.IsImpersonating
 
-bool \= **IsImpersonating\(** \)
+
+
+bool =IsImpersonating\(\)
 Determines if server is currently impersonating a client
 
 ## [PyIServerSecurity](#pyiserversecurity)\.QueryBlanket
 
-dict \= **QueryBlanket\( *Capabilities* ** \)
+
+
+dict =QueryBlanket\(Capabilities\)
 Retrieves security settings specified by the client
 
 #### Parameters
 
 
-  -  *Capabilities\=0* : int
+  - Capabilities=0 : int
 
     Can be EOAC\_MAKE\_FULLSIC for SChannel provider
 
 ## [PyIServerSecurity](#pyiserversecurity)\.RevertToSelf
 
- **RevertToSelf\(** \)
+RevertToSelf\(\)
 Ends impersonation of client

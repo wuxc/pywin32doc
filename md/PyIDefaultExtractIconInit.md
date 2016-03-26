@@ -2,6 +2,8 @@
 
 ## PyIDefaultExtractIconInit Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,88 +35,88 @@ Description of the interface
 
 ## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetDefaultIcon
 
- **SetDefaultIcon\( *pszFile*  *, iIcon* ** \)
+SetDefaultIcon\(pszFile, iIcon\)
 Description of SetDefaultIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : **unicode** 
+  - pszFile :unicode
 
     Description for pszFile
 
-  -  *iIcon* : int
+  - iIcon : int
 
     Description for iIcon
 
 ## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetFlags
 
- **SetFlags\( *uFlags* ** \)
+SetFlags\(uFlags\)
 Description of SetFlags\.
 
 #### Parameters
 
 
-  -  *uFlags* : int
+  - uFlags : int
 
     Description for uFlags
 
 ## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetKey
 
- **SetKey\( *hkey* ** \)
+SetKey\(hkey\)
 Description of SetKey\.
 
 #### Parameters
 
 
-  -  *hkey* :[PyHKEY](#pyhkey)
+  - hkey :[PyHKEY](#pyhkey)
 
     Description for hkey
 
 ## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetNormalIcon
 
- **SetNormalIcon\( *pszFile*  *, iIcon* ** \)
+SetNormalIcon\(pszFile, iIcon\)
 Description of SetNormalIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : **unicode** 
+  - pszFile :unicode
 
     Description for pszFile
 
-  -  *iIcon* : int
+  - iIcon : int
 
     Description for iIcon
 
 ## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetOpenIcon
 
- **SetOpenIcon\( *pszFile*  *, iIcon* ** \)
+SetOpenIcon\(pszFile, iIcon\)
 Description of SetOpenIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : **unicode** 
+  - pszFile :unicode
 
     Description for pszFile
 
-  -  *iIcon* : int
+  - iIcon : int
 
     Description for iIcon
 
 ## [PyIDefaultExtractIconInit](#pyidefaultextracticoninit)\.SetShortcutIcon
 
- **SetShortcutIcon\( *pszFile*  *, iIcon* ** \)
+SetShortcutIcon\(pszFile, iIcon\)
 Description of SetShortcutIcon\.
 
 #### Parameters
 
 
-  -  *pszFile* : **unicode** 
+  - pszFile :unicode
 
     Description for pszFile
 
-  -  *iIcon* : int
+  - iIcon : int
 
     Description for iIcon

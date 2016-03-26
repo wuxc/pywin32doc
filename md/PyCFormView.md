@@ -2,6 +2,8 @@
 
 ## PyCFormView Object
 
+
+
 A class which implementes a CFormView \(ie, a view based on a dialog resource\.
 
 #### Methods
@@ -14,21 +16,21 @@ A class which implementes a CFormView \(ie, a view based on a dialog resource\.
 
 ## [PyCFormView](#pycformview)\.OnCommand
 
- **OnCommand\( *wparam*  *, lparam* ** \)
+OnCommand\(wparam, lparam\)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
 
 
-  -  *wparam* : int
+  - wparam : int
 
     
 
-  -  *lparam* : int
+  - lparam : int
 
     
 
 #### See Also
 
 
-  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
+  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual) virtual method

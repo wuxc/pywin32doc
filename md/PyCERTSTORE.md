@@ -2,6 +2,8 @@
 
 ## PyCERTSTORE Object
 
+
+
 Handle to a certificate store
 
 #### Methods
@@ -61,210 +63,222 @@ Handle to a certificate store
 
 #### Properties
 
-  -  **int HCERTSTORE** 
+  - int HCERTSTORE
     Integer handle
 
 ## [PyCERTSTORE](#pycertstore)\.CertAddCTLContextToStore
 
-[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)\= **CertAddCTLContextToStore\( *CtlContext*  *, AddDisposition* ** \)
+[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext) =CertAddCTLContextToStore\(CtlContext, AddDisposition\)
 Adds a certificate trust list to the store
 
 #### Parameters
 
 
-  -  *CtlContext* :[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)
+  - CtlContext :[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)
 
     CTL to be added
 
-  -  *AddDisposition* : int
+  - AddDisposition : int
 
     CERT\_STORE\_ADD\_\* constant
 
 ## [PyCERTSTORE](#pycertstore)\.CertAddCTLLinkToStore
 
-[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)\= **CertAddCTLLinkToStore\( *CtlContext*  *, AddDisposition* ** \)
+[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext) =CertAddCTLLinkToStore\(CtlContext, AddDisposition\)
 Adds a link to a CTL in another store
 
 #### Parameters
 
 
-  -  *CtlContext* :[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)
+  - CtlContext :[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)
 
     CTL to be linked
 
-  -  *AddDisposition* : int
+  - AddDisposition : int
 
     One of the CERT\_STORE\_ADD\_\* values
 
 ## [PyCERTSTORE](#pycertstore)\.CertAddCertificateContextToStore
 
-[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)\= **CertAddCertificateContextToStore\( *CertContext*  *, AddDisposition* ** \)
+[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) =CertAddCertificateContextToStore\(CertContext, AddDisposition\)
 Adds a certificate context to the store
 
 #### Parameters
 
 
-  -  *CertContext* :[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)
+  - CertContext :[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)
 
     Certificate context to be added
 
-  -  *AddDisposition* : int
+  - AddDisposition : int
 
     CERT\_STORE\_ADD\_\* constant
 
 ## [PyCERTSTORE](#pycertstore)\.CertAddCertificateLinkToStore
 
-[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)\= **CertAddCertificateLinkToStore\( *CertContext*  *, AddDisposition* ** \)
+[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) =CertAddCertificateLinkToStore\(CertContext, AddDisposition\)
 Adds a link to a cert in another store
 
 #### Parameters
 
 
-  -  *CertContext* :[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)
+  - CertContext :[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)
 
     Certificate context to be linked
 
-  -  *AddDisposition* : int
+  - AddDisposition : int
 
     One of the CERT\_STORE\_ADD\_\* values
 
 ## [PyCERTSTORE](#pycertstore)\.CertAddEncodedCertificateToStore
 
-[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)\= **CertAddEncodedCertificateToStore\( *CertEncodingType*  *, CertEncoded*  *, AddDisposition* ** \)
+[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) =CertAddEncodedCertificateToStore\(CertEncodingType, CertEncoded, AddDisposition\)
 Imports an encoded certificate into the store
 
 #### Parameters
 
 
-  -  *CertEncodingType* : int
+  - CertEncodingType : int
 
     Usually X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
-  -  *CertEncoded* : buffer
+  - CertEncoded : buffer
 
     Data containing a serialized certificate
 
-  -  *AddDisposition* : int
+  - AddDisposition : int
 
     Combination of CERT\_STORE\_ADD\_\* flags
 
 ## [PyCERTSTORE](#pycertstore)\.CertAddStoreToCollection
 
- **CertAddStoreToCollection\( *SiblingStore*  *, UpdateFlag*  *, Priority* ** \)
+CertAddStoreToCollection\(SiblingStore, UpdateFlag, Priority\)
 Adds a sibling store to a store collection
 
 #### Parameters
 
 
-  -  *SiblingStore* :[PyCERTSTORE](#pycertstore)
+  - SiblingStore :[PyCERTSTORE](#pycertstore)
 
     Store to be added to the collection
 
-  -  *UpdateFlag\=0* : int
+  - UpdateFlag=0 : int
 
     Can be CERT\_PHYSICAL\_STORE\_ADD\_ENABLE\_FLAG to enable changes to persist
 
-  -  *Priority\=0* : int
+  - Priority=0 : int
 
     Determines order in which store are searched and updated
 
 #### Comments
-A collection store is created by using **cryptoapi::CertOpenStore** with CERT\_STORE\_PROV\_COLLECTION
+
+
+A collection store is created by usingcryptoapi::CertOpenStore
+
+
+
+ with CERT\_STORE\_PROV\_COLLECTION
 
 ## [PyCERTSTORE](#pycertstore)\.CertCloseStore
 
- **CertCloseStore\( *Flags* ** \)
+CertCloseStore\(Flags\)
 Closes the certificate store
 
 #### Parameters
 
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Combination of CERT\_CLOSE\_\*\_FLAG flags
 
 ## [PyCERTSTORE](#pycertstore)\.CertControlStore
 
- **CertControlStore\( *Flags*  *, CtrlType*  *, CtrlPara* ** \)
+CertControlStore\(Flags, CtrlType, CtrlPara\)
 Controls sychronization of the certificate store
 
 #### Parameters
 
 
-  -  *Flags* : int
+  - Flags : int
 
     One of the CERT\_STORE\_CTRL\_\*\_FLAG flags
 
-  -  *CtrlType* : int
+  - CtrlType : int
 
     One of the CERT\_STORE\_CTRL\_\* flags
 
-  -  *CtrlPara* :[PyHANDLE](#pyhandle)
+  - CtrlPara :[PyHANDLE](#pyhandle)
 
     Event handle, can be None \(not used with CERT\_STORE\_CTRL\_COMMIT\)
 
 ## [PyCERTSTORE](#pycertstore)\.CertEnumCTLsInStore
 
-\[[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext),\.\.\.\] \= **CertEnumCTLsInStore\(** \)
+
+
+\[[PyCTL\_CONTEXT](PyCTL.md#pyctlcontext),\.\.\.\] =CertEnumCTLsInStore\(\)
 Finds all Certificate Trust Lists in store
 
 ## [PyCERTSTORE](#pycertstore)\.CertEnumCertificatesInStore
 
-\[[PyCERT\_CONTEXT](PyCERT.md#pycertcontext),\.\.\.\] \= **CertEnumCertificatesInStore\(** \)
+
+
+\[[PyCERT\_CONTEXT](PyCERT.md#pycertcontext),\.\.\.\] =CertEnumCertificatesInStore\(\)
 Lists all certificates in the store
 
 ## [PyCERTSTORE](#pycertstore)\.CertRemoveStoreFromCollection
 
- **CertRemoveStoreFromCollection\( *SiblingStore* ** \)
+CertRemoveStoreFromCollection\(SiblingStore\)
 Removes a sibling store from a collection
 
 #### Parameters
 
 
-  -  *SiblingStore* :[PyCERTSTORE](#pycertstore)
+  - SiblingStore :[PyCERTSTORE](#pycertstore)
 
     Store to be removed from the collection
 
 ## [PyCERTSTORE](#pycertstore)\.CertSaveStore
 
- **CertSaveStore\( *MsgAndCertEncodingType*  *, SaveAs*  *, SaveTo*  *, SaveToPara*  *, Flags* ** \)
+CertSaveStore\(MsgAndCertEncodingType, SaveAs, SaveTo, SaveToPara, Flags\)
 Serializes the store to memory or a file
 
 #### Parameters
 
 
-  -  *MsgAndCertEncodingType* : int
+  - MsgAndCertEncodingType : int
 
     Only used when saveas is CERT\_STORE\_SAVE\_AS\_PKCS7 - usually X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
-  -  *SaveAs* : int
+  - SaveAs : int
 
     One of the CERT\_STORE\_SAVE\_AS\_\* constants
 
-  -  *SaveTo* : int
+  - SaveTo : int
 
     One of the CERT\_STORE\_SAVE\_TO\_\* constants \(CERT\_STORE\_SAVE\_TO\_MEMORY not supported yet\)
 
-  -  *SaveToPara* :[PyHANDLE](#pyhandle)/string
+  - SaveToPara :[PyHANDLE](#pyhandle)/string
 
     File name or open file handle depending on SaveTo parm
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved, use 0
 
 ## [PyCERTSTORE](#pycertstore)\.PFXExportCertStoreEx
 
-bytes \= **PFXExportCertStoreEx\( *Password*  *, Flags* ** \)
+
+
+bytes =PFXExportCertStoreEx\(Password, Flags\)
 Exports certificates and associated private keys in PKCS\#12 format
 
 #### Parameters
 
 
-  -  *Password\=None* : str
+  - Password=None : str
 
     Passphrase to be used to encrypt the output
 
-  -  *Flags\=EXPORT\_PRIVATE\_KEYS|REPORT\_NO\_PRIVATE\_KEY|REPORT\_NOT\_ABLE\_TO\_EXPORT\_PRIVATE\_KEY* : int
+  - Flags=EXPORT\_PRIVATE\_KEYS|REPORT\_NO\_PRIVATE\_KEY|REPORT\_NOT\_ABLE\_TO\_EXPORT\_PRIVATE\_KEY : int
 
     Options to be used while exporting

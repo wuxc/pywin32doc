@@ -2,6 +2,8 @@
 
 ## PyHWINSTA Object
 
+
+
 Wrapper for a handle to a window station - returned by CreateWindowStation, OpenWindowStation, or GetProcessWindowStation
 
 #### Methods
@@ -25,18 +27,22 @@ Wrapper for a handle to a window station - returned by CreateWindowStation, Open
 
 ## [PyHWINSTA](#pyhwinsta)\.CloseWindowStation
 
- **CloseWindowStation\(** \)
+CloseWindowStation\(\)
 Closes the window station handle
 
 #### Comments
+
+
 This function cannot close the handle to current process's window station
 
 ## [PyHWINSTA](#pyhwinsta)\.EnumDesktops
 
-\(PyUNICODE,\.\.\.\) \= **EnumDesktops\(** \)
+
+
+\(PyUNICODE,\.\.\.\) =EnumDesktops\(\)
 Lists names of desktops in the window station
 
 ## [PyHWINSTA](#pyhwinsta)\.SetProcessWindowStation
 
- **SetProcessWindowStation\(** \)
+SetProcessWindowStation\(\)
 Associates the calling process with the window station

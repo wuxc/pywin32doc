@@ -2,6 +2,8 @@
 
 ## PyIPropertyEnumType Object
 
+
+
 Contains information about an allowable value or range for a property
 
 #### Methods
@@ -29,12 +31,14 @@ Contains information about an allowable value or range for a property
 
 ## [PyIPropertyEnumType](#pyipropertyenumtype)\.GetDisplayText
 
- **GetDisplayText\(** \)
+GetDisplayText\(\)
 Returns the display text for the enumerated type
 
 ## [PyIPropertyEnumType](#pyipropertyenumtype)\.GetEnumType
 
-int \= **GetEnumType\(** \)
+
+
+int =GetEnumType\(\)
 Retrieves the type \(PROPENUMTYPE\)
 
 #### Return Value
@@ -42,15 +46,15 @@ pscon\.PET\_\*
 
 ## [PyIPropertyEnumType](#pyipropertyenumtype)\.GetRangeMinValue
 
-[PyPROPVARIANT](#pypropvariant)\= **GetRangeMinValue\(** \)
+[PyPROPVARIANT](#pypropvariant) =GetRangeMinValue\(\)
 Returns the minimum allowed value for the property
 
 ## [PyIPropertyEnumType](#pyipropertyenumtype)\.GetRangeSetValue
 
-[PyPROPVARIANT](#pypropvariant)\= **GetRangeSetValue\(** \)
+[PyPROPVARIANT](#pypropvariant) =GetRangeSetValue\(\)
 Returns a fixed value defined for the property
 
 ## [PyIPropertyEnumType](#pyipropertyenumtype)\.GetValue
 
-[PyPROPVARIANT](#pypropvariant)\= **GetValue\(** \)
+[PyPROPVARIANT](#pypropvariant) =GetValue\(\)
 Retrieves the defined value

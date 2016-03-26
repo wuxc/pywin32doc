@@ -2,9 +2,13 @@
 
 ## RASDIALPARAMS Object
 
+
+
 A tuple that describes a Win32 RASDIALPARAMS structure
 
 #### Comments
+
+
 When used as a parameter, RASDIALPARAMS must be a sequence, of up to 
 
 6 items long\.  All items must be strings - None is not allowed\.
@@ -16,27 +20,27 @@ an empty string to phoneNumber uses the stored phone number\.
 #### Items
 
 
-  - \[0\] *string* : entryName
+  - \[0\]string : entryName
 
     name of RAS entry\.
 
-  - \[1\] *string* : phoneNumber
+  - \[1\]string : phoneNumber
 
     phone number to be used\.
 
-  - \[2\] *string* : callBackNumber
+  - \[2\]string : callBackNumber
 
     phone number to be used if callback is enabled\.
 
-  - \[3\] *string* : userName
+  - \[3\]string : userName
 
     username to log on with\.
 
-  - \[4\] *string* : password
+  - \[4\]string : password
 
     password to use
 
-  - \[5\] *string* : domain
+  - \[5\]string : domain
 
     Network domain to log on to\.
 

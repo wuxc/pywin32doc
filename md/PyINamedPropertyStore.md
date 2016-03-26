@@ -2,6 +2,8 @@
 
 ## PyINamedPropertyStore Object
 
+
+
 Contains a collection of properties indentified by name
 
 #### Methods
@@ -25,41 +27,45 @@ Contains a collection of properties indentified by name
 
 ## [PyINamedPropertyStore](#pyinamedpropertystore)\.GetNameAt
 
-str \= **GetNameAt\( *Index* ** \)
+
+
+str =GetNameAt\(Index\)
 Retrieves a property name by zero-based index
 
 #### Parameters
 
 
-  -  *Index* : int
+  - Index : int
 
     Index of the property name
 
 ## [PyINamedPropertyStore](#pyinamedpropertystore)\.GetNameCount
 
-int \= **GetNameCount\(** \)
+
+
+int =GetNameCount\(\)
 Retrieves the number of named properties in the store
 
 ## [PyINamedPropertyStore](#pyinamedpropertystore)\.GetNamedValue
 
-[PyPROPVARIANT](#pypropvariant)\= **GetNamedValue\( *Name* ** \)
+[PyPROPVARIANT](#pypropvariant) =GetNamedValue\(Name\)
 Retrieves a property value by name
 
 #### Parameters
 
 
-  -  *Name* : str
+  - Name : str
 
     Name of the property
 
 ## [PyINamedPropertyStore](#pyinamedpropertystore)\.SetNamedValue
 
- **SetNamedValue\( *propvar* ** \)
+SetNamedValue\(propvar\)
 Sets the value of a property
 
 #### Parameters
 
 
-  -  *propvar* : **Py\_\_RPC\_\_in REFPROPVARIANT** 
+  - propvar :Py\_\_RPC\_\_in REFPROPVARIANT
 
     Description for propvar

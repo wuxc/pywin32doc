@@ -2,6 +2,8 @@
 
 ## PyITransferDestination Object
 
+
+
 Implemented by shell extensions that act as targets for item copy or move operations
 
 #### Methods
@@ -21,13 +23,15 @@ Implemented by shell extensions that act as targets for item copy or move operat
 
 ## [PyITransferDestination](#pyitransferdestination)\.Advise
 
-int \= **Advise\( *Sink* ** \)
+
+
+int =Advise\(Sink\)
 Connects an advise sink
 
 #### Parameters
 
 
-  -  *Sink* :[PyITransferAdviseSink](#pyitransferadvisesink)
+  - Sink :[PyITransferAdviseSink](#pyitransferadvisesink)
 
     Event sink to receive notifications
 
@@ -36,33 +40,35 @@ Returns an id for the connection, to be passed to[PyITransferDestination::Unadvi
 
 ## [PyITransferDestination](#pyitransferdestination)\.CreateItem
 
-\(int, interface, interface\) \= **CreateItem\( *Name*  *, Attributes*  *, Size*  *, Flags*  *, riidItem*  *, riidResources* ** \)
+
+
+\(int, interface, interface\) =CreateItem\(Name, Attributes, Size, Flags, riidItem, riidResources\)
 Requests that a new item be created
 
 #### Parameters
 
 
-  -  *Name* : str
+  - Name : str
 
     Filename to be created
 
-  -  *Attributes* : int
+  - Attributes : int
 
     File attributes
 
-  -  *Size* : int
+  - Size : int
 
     Size of file
 
-  -  *Flags* : int
+  - Flags : int
 
     Combination of shellcon\.TSF\_\* flags
 
-  -  *riidItem\=IID\_IShellItem* :[PyIID](#pyiid)
+  - riidItem=IID\_IShellItem :[PyIID](#pyiid)
 
     Item interface to return
 
-  -  *riidResources\=IID\_IShellItemResources* :[PyIID](#pyiid)
+  - riidResources=IID\_IShellItemResources :[PyIID](#pyiid)
 
     Resource interface to return
 
@@ -73,12 +79,12 @@ function returns one of the informational codes \(shellcon\.COPYENGINE\_S\_\*\)
 
 ## [PyITransferDestination](#pyitransferdestination)\.Unadvise
 
- **Unadvise\( *Cookie* ** \)
+Unadvise\(Cookie\)
 Disconnects an advise sink
 
 #### Parameters
 
 
-  -  *Cookie* : int
+  - Cookie : int
 
     Connection identifier as returned by[PyITransferDestination::Advise](PyITransferDestination.md#pyitransferdestinationadvise)

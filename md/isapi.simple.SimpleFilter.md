@@ -2,6 +2,8 @@
 
 ## isapi\.simple\.SimpleFilter Object
 
+
+
 Base class for a a simple ISAPI filter
 
 #### Methods
@@ -21,10 +23,12 @@ Base class for a a simple ISAPI filter
 
 ## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.GetFilterVersion
 
- **GetFilterVersion\(** \)
+GetFilterVersion\(\)
 Called by the ISAPI framework to get the extension version
 
 #### Comments
+
+
 The default implementation uses the classes docstring to 
 
 set the extension description, and uses the classes 
@@ -35,21 +39,23 @@ must specify filter\_flags in your class\.
 
 ## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.GetFilterVersion
 
- **GetFilterVersion\( *self*  *, fv* ** \)
+GetFilterVersion\(self, fv\)
 Called by the ISAPI framework to get the extension version
 
 #### Parameters
 
 
-  -  *self* :
+  - self :
 
     self
 
-  -  *fv* :
+  - fv :
 
     fv
 
 #### Comments
+
+
 The default implementation uses the classes docstring to 
 
 set the extension description, and uses the classes 
@@ -60,48 +66,52 @@ must specify filter\_flags in your class\.
 
 ## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.HttpFilterProc
 
- **HttpFilterProc\(** \)
+HttpFilterProc\(\)
 Called by the ISAPI framework for each filter request\.
 
 #### Comments
+
+
 sub-classes must provide an implementation for this method\.
 
 ## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.HttpFilterProc
 
- **HttpFilterProc\( *self*  *, fc* ** \)
+HttpFilterProc\(self, fc\)
 Called by the ISAPI framework for each filter request\.
 
 #### Parameters
 
 
-  -  *self* :
+  - self :
 
     self
 
-  -  *fc* :
+  - fc :
 
     fc
 
 #### Comments
+
+
 sub-classes must provide an implementation for this method\.
 
 ## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.TerminateFilter
 
- **TerminateFilter\(** \)
+TerminateFilter\(\)
 Called by the ISAPI framework as the filter terminates\.
 
 ## [isapi\.simple\.SimpleFilter](#isapi.simple.simplefilter)\.TerminateFilter
 
- **TerminateFilter\( *self*  *, status* ** \)
+TerminateFilter\(self, status\)
 Called by the ISAPI framework as the filter terminates\.
 
 #### Parameters
 
 
-  -  *self* :
+  - self :
 
     self
 
-  -  *status* :
+  - status :
 
     status

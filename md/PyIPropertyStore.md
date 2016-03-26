@@ -2,6 +2,8 @@
 
 ## PyIPropertyStore Object
 
+
+
 Contains a collection of properties
 
 #### Methods
@@ -29,51 +31,53 @@ Contains a collection of properties
 
 ## [PyIPropertyStore](#pyipropertystore)\.Commit
 
- **Commit\(** \)
+Commit\(\)
 Commits property changes
 
 ## [PyIPropertyStore](#pyipropertystore)\.GetAt
 
-[PyPROPERTYKEY](#pypropertykey)\= **GetAt\( *iProp* ** \)
+[PyPROPERTYKEY](#pypropertykey) =GetAt\(iProp\)
 Returns the property key for the specified property
 
 #### Parameters
 
 
-  -  *iProp* : int
+  - iProp : int
 
     Zero-based index of property
 
 ## [PyIPropertyStore](#pyipropertystore)\.GetCount
 
-int \= **GetCount\(** \)
+
+
+int =GetCount\(\)
 Returns the number of properties in the store
 
 ## [PyIPropertyStore](#pyipropertystore)\.GetValue
 
-[PyPROPVARIANT](#pypropvariant)\= **GetValue\( *Key* ** \)
+[PyPROPVARIANT](#pypropvariant) =GetValue\(Key\)
 Retrieves the value of a property
 
 #### Parameters
 
 
-  -  *Key* :[PyPROPERTYKEY](#pypropertykey)
+  - Key :[PyPROPERTYKEY](#pypropertykey)
 
     Property key as returned by[PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)
 
 ## [PyIPropertyStore](#pyipropertystore)\.SetValue
 
- **SetValue\( *Key*  *, Value* ** \)
+SetValue\(Key, Value\)
 Sets the value of a property
 
 #### Parameters
 
 
-  -  *Key* :[PyPROPERTYKEY](#pypropertykey)
+  - Key :[PyPROPERTYKEY](#pypropertykey)
 
     Property key \(see[PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)\)
 
-  -  *Value* :[PyPROPVARIANT](#pypropvariant)
+  - Value :[PyPROPVARIANT](#pypropvariant)
 
     Variant value which can be converted to the appropriate variant type for the property 
 

@@ -14,12 +14,12 @@
 
 ## [PyIProvideClassInfo2](#pyiprovideclassinfo2)\.GetGUID
 
-[PyIID](#pyiid)\= **GetGUID\( *flags* ** \)
+[PyIID](#pyiid) =GetGUID\(flags\)
 Gets the GUID for the object\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     The flags for the GUID\.

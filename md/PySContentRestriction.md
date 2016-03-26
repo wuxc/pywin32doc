@@ -7,14 +7,14 @@
 #### Parameters
 
 
-  -  *fuzzyLevel* : int
+  - fuzzyLevel : int
 
     
 
-  -  *propTag* : ULONG
+  - propTag : ULONG
 
     The property ID\.
 
-  -  *propertyValue* :[PySPropValue](#pyspropvalue)
+  - propertyValue :[PySPropValue](#pyspropvalue)
 
     

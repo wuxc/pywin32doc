@@ -2,6 +2,8 @@
 
 ## PyIDebugStackFrame Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,39 +31,43 @@ Description of the interface
 
 ## [PyIDebugStackFrame](#pyidebugstackframe)\.GetCodeContext
 
- **GetCodeContext\(** \)
+GetCodeContext\(\)
 Returns the current code context associated with the stack frame\.
 
 ## [PyIDebugStackFrame](#pyidebugstackframe)\.GetDebugProperty
 
-[PyIDebugProperty](#pyidebugproperty)\= **GetDebugProperty\(** \)
+[PyIDebugProperty](#pyidebugproperty) =GetDebugProperty\(\)
 Returns the debug property\.
 
 ## [PyIDebugStackFrame](#pyidebugstackframe)\.GetDescriptionString
 
- **unicode** \= **GetDescriptionString\( *fLong* ** \)
+unicode
+
+ =GetDescriptionString\(fLong\)
 Returns a short or long textual description of the stack frame\.
 
 #### Parameters
 
 
-  -  *fLong* : int
+  - fLong : int
 
     If false, provide only the name of the function associated with the stack frame\. When true it may also provide the parameter\(s\) to the function or whatever else is relevant\.
 
 ## [PyIDebugStackFrame](#pyidebugstackframe)\.GetLanguageString
 
- **unicode** \= **GetLanguageString\( *fLong* ** \)
+unicode
+
+ =GetLanguageString\(fLong\)
 Returns a short or long textual description of the language\.
 
 #### Parameters
 
 
-  -  *fLong* : int
+  - fLong : int
 
     If False, just the language name should be provided, eg, "Python"\. If True a full product description may be provided \(eg, "Python 1\.4 ActiveX Debugging Host"\)
 
 ## [PyIDebugStackFrame](#pyidebugstackframe)\.GetThread
 
-[PyIDebugApplicationThread](#pyidebugapplicationthread)\= **GetThread\(** \)
+[PyIDebugApplicationThread](#pyidebugapplicationthread) =GetThread\(\)
 Returns the thread associated with this stack frame\.

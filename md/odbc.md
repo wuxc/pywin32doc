@@ -2,6 +2,8 @@
 
 ## Module odbc
 
+
+
 A Python wrapper around the ODBC API\.
 
 #### Methods
@@ -9,7 +11,7 @@ A Python wrapper around the ODBC API\.
 
   - [odbc](odbc.md#odbcodbc)
 
-    Creates an[connection](#connection)object\.&nbsp;
+    Creates an[connection](#connection) object\.&nbsp;
 
   - [SQLDataSources](odbc.md#odbcsqldatasources)
 
@@ -17,13 +19,15 @@ A Python wrapper around the ODBC API\.
 
 ## [odbc](#odbc)\.SQLDataSources
 
-\(name, desc\)/None \= **SQLDataSources\( *direction* ** \)
+
+
+\(name, desc\)/None =SQLDataSources\(direction\)
 Enumerates ODBC data sources
 
 #### Parameters
 
 
-  -  *direction* : int
+  - direction : int
 
     One of SQL\_FETCH\_\* flags indicating how to retrieve data sources
 
@@ -32,13 +36,13 @@ The result is None when SQL\_NO\_DATA is returned from ODBC\.
 
 ## [odbc](#odbc)\.odbc
 
-[connection](#connection)\= **odbc\( *connectionString* ** \)
+[connection](#connection) =odbc\(connectionString\)
 Creates an ODBC connection
 
 #### Parameters
 
 
-  -  *connectionString* : string
+  - connectionString : string
 
     An ODBC connection string\. 
 
@@ -48,4 +52,4 @@ DSN\[/username\[/password\]\] \(e\.g\. "myDSN/myUserName/myPassword"\)\.
 
 Alternatively, a full ODBC connection string can be used \(e\.g\., 
 
-"Driver\=\{SQL Server\};Server\=\(local\);Database\=myDatabase"\)\.
+"Driver=\{SQL Server\};Server=\(local\);Database=myDatabase"\)\.

@@ -2,6 +2,8 @@
 
 ## PyIExplorerPaneVisibility Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,12 +15,14 @@ Description of the interface
 
 ## [PyIExplorerPaneVisibility](#pyiexplorerpanevisibility)\.GetPaneState
 
-int \= **GetPaneState\( *ep* ** \)
+
+
+int =GetPaneState\(ep\)
 Description of Extract\.
 
 #### Parameters
 
 
-  -  *ep* : guid
+  - ep : guid
 
     Description for ep

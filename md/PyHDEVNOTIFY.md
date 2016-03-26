@@ -2,6 +2,8 @@
 
 ## PyHDEVNOTIFY Object
 
+
+
 A handle returned by RegisterDeviceNotifications which 
 
 automatically calls UnregisterDeviceNotification on destruction\. 

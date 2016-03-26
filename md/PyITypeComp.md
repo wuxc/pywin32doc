@@ -2,6 +2,8 @@
 
 ## PyITypeComp Object
 
+
+
 An object that implements the ITypeComp interface\.
 
 #### Methods
@@ -20,28 +22,32 @@ sentinel&nbsp;
 
 ## [PyITypeComp](#pyitypecomp)\.Bind
 
- **DESCKIND** \= **Bind\( *szName*  *, wflags* ** \)
+DESCKIND
+
+ =Bind\(szName, wflags\)
 binds to a variable/type
 
 #### Parameters
 
 
-  -  *szName* : string
+  - szName : string
 
     The name to bind to
 
-  -  *wflags\=0* : int
+  - wflags=0 : int
 
     the bind flags
 
 ## [PyITypeComp](#pyitypecomp)\.BindType
 
- **DESCKIND** \= **BindType\( *szName* ** \)
+DESCKIND
+
+ =BindType\(szName\)
 binds to a type
 
 #### Parameters
 
 
-  -  *szName* : string
+  - szName : string
 
     The name to bind to

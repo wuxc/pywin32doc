@@ -7,10 +7,10 @@
 #### Parameters
 
 
-  -  *restriction* :[PySRestriction](#pysrestriction)
+  - restriction :[PySRestriction](#pysrestriction)
 
     
 
-  -  *reserved\=0* : int
+  - reserved=0 : int
 
     

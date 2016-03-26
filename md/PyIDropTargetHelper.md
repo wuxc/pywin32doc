@@ -2,6 +2,8 @@
 
 ## PyIDropTargetHelper Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -25,69 +27,69 @@ Description of the interface
 
 ## [PyIDropTargetHelper](#pyidroptargethelper)\.DragEnter
 
- **DragEnter\( *hwnd*  *, pDataObj*  *, pt*  *, dwEffect* ** \)
+DragEnter\(hwnd, pDataObj, pt, dwEffect\)
 Description of DragEnter\.
 
 #### Parameters
 
 
-  -  *hwnd* :[PyHANDLE](#pyhandle)
+  - hwnd :[PyHANDLE](#pyhandle)
 
     Handle to target window
 
-  -  *pDataObj* :[PyIDataObject](#pyidataobject)
+  - pDataObj :[PyIDataObject](#pyidataobject)
 
     Object that is dragged onto the window
 
-  -  *pt* : \(int, int\)
+  - pt : \(int, int\)
 
     Coordinates where drag operation entered the window
 
-  -  *dwEffect* : int
+  - dwEffect : int
 
     One of shellcon\.DROPEFFECT\_\* values
 
 ## [PyIDropTargetHelper](#pyidroptargethelper)\.DragLeave
 
- **DragLeave\(** \)
+DragLeave\(\)
 Description of DragLeave\.
 
 ## [PyIDropTargetHelper](#pyidroptargethelper)\.DragOver
 
- **DragOver\( *hwnd*  *, pt*  *, pdwEffect* ** \)
+DragOver\(hwnd, pt, pdwEffect\)
 Description of DragOver\.
 
 #### Parameters
 
 
-  -  *hwnd* : int
+  - hwnd : int
 
     
 
-  -  *pt* : \(int, int\)
+  - pt : \(int, int\)
 
     Description for pt
 
-  -  *pdwEffect* : int
+  - pdwEffect : int
 
     Description for pdwEffect
 
 ## [PyIDropTargetHelper](#pyidroptargethelper)\.Drop
 
- **Drop\( *pDataObj*  *, pt*  *, dwEffect* ** \)
+Drop\(pDataObj, pt, dwEffect\)
 Description of Drop\.
 
 #### Parameters
 
 
-  -  *pDataObj* :[PyIDataObject](#pyidataobject)
+  - pDataObj :[PyIDataObject](#pyidataobject)
 
     Description for pDataObj
 
-  -  *pt* : \(int, int\)
+  - pt : \(int, int\)
 
     Description for pt
 
-  -  *dwEffect* : int
+  - dwEffect : int
 
     Description for dwEffect

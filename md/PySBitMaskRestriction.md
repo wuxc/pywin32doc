@@ -7,14 +7,14 @@
 #### Parameters
 
 
-  -  *relBMR* : int
+  - relBMR : int
 
     
 
-  -  *propTag* : ULONG
+  - propTag : ULONG
 
     The property ID\.
 
-  -  *ulMask\=0* : int
+  - ulMask=0 : int
 
     

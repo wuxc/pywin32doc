@@ -2,7 +2,13 @@
 
 ## PyCDocTemplate Object
 
-A document template class\.  Encapsulates an MFC **CDocTemplate** class
+
+
+A document template class\.  Encapsulates an MFCCDocTemplate
+
+
+
+ class
 
 #### Methods
 
@@ -47,68 +53,74 @@ A document template class\.  Encapsulates an MFC **CDocTemplate** class
 
     Opens a document file, creating a view and frame\.&nbsp;
 
-## [PyCDocTemplate\.CreateNewDocument](#pycdoctemplate)Virtual
+## [PyCDocTemplate\.CreateNewDocument](#pycdoctemplate) Virtual
 
- **CreateNewDocument\(** \)
+CreateNewDocument\(\)
 Called to create a new document object\.
 
-## [PyCDocTemplate\.CreateNewFrame](#pycdoctemplate)Virtual
+## [PyCDocTemplate\.CreateNewFrame](#pycdoctemplate) Virtual
 
- **CreateNewFrame\(** \)
+CreateNewFrame\(\)
 Called to create a new frame window\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.DoCreateDoc
 
-[PyCDocument](#pycdocument)\= **DoCreateDoc\( *fileName* ** \)
+[PyCDocument](#pycdocument) =DoCreateDoc\(fileName\)
 Creates an underlying document object\.
 
 #### Parameters
 
 
-  -  *fileName\=None* : string
+  - fileName=None : string
 
     The name of the file to load\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.FindOpenDocument
 
-[PyCDocument](#pycdocument)\= **FindOpenDocument\( *fileName* ** \)
+[PyCDocument](#pycdocument) =FindOpenDocument\(fileName\)
 Returns an existing document with the specified file name\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The fully qualified filename to search for\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.GetDocString
 
-string \= **GetDocString\( *docIndex* ** \)
+
+
+string =GetDocString\(docIndex\)
 Retrieves a specific substring describing the document type\.
 
 #### Parameters
 
 
-  -  *docIndex* : int
+  - docIndex : int
 
     The document index\.  Must be one of the win32ui\.CDocTemplate\_\* constants\.
 
 #### Comments
+
+
 For more information on the doc strings, please see[PyCDocTemplate::SetDocStrings](PyCDocTemplate.md#pycdoctemplatesetdocstrings)
 
 ## [PyCDocTemplate](#pycdoctemplate)\.GetDocumentList
 
-list \= **GetDocumentList\(** \)
+
+
+list =GetDocumentList\(\)
 Return a list of all open documents\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.GetResourceID
 
- **GetResourceID\(** \)
+GetResourceID\(\)
 Returns the resource ID in use\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.GetSharedMenu
 
-[PyCMenu](#pycmenu)\= **GetSharedMenu\(** \)
+[PyCMenu](#pycmenu) =GetSharedMenu\(\)
 Returns the shared menu object for all frames using this template\.
 
 #### MFC References
@@ -118,32 +130,32 @@ Returns the shared menu object for all frames using this template\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.InitialUpdateFrame
 
- **InitialUpdateFrame\( *frame*  *, doc*  *, bMakeVisible* ** \)
+InitialUpdateFrame\(frame, doc, bMakeVisible\)
 Calls the default OnInitialFrame handler\.
 
 #### Parameters
 
 
-  -  *frame\=None* :[PyCFrameWnd](#pycframewnd)
+  - frame=None :[PyCFrameWnd](#pycframewnd)
 
     The frame window\.
 
-  -  *doc\=None* :[PyCDocument](#pycdocument)
+  - doc=None :[PyCDocument](#pycdocument)
 
     A document for the frame\.
 
-  -  *bMakeVisible\=1* : int
+  - bMakeVisible=1 : int
 
     Indicates of the frame should be shown\.
 
 #### See Also
 
 
-  - [PyCDocTemplate\.InitialUpdateFrame](PyCDocTemplate.md#pycdoctemplateinitialupdateframe_virtual)virtual method
+  - [PyCDocTemplate\.InitialUpdateFrame](PyCDocTemplate.md#pycdoctemplateinitialupdateframe_virtual) virtual method
 
-## [PyCDocTemplate\.InitialUpdateFrame](#pycdoctemplate)Virtual
+## [PyCDocTemplate\.InitialUpdateFrame](#pycdoctemplate) Virtual
 
- **InitialUpdateFrame\( *frame*  *, frame*  *, bMakeVisible* ** \)
+InitialUpdateFrame\(frame, frame, bMakeVisible\)
 Called to perform the initial frame update\. 
 
 The default behaviour is to call OnInitialUpdate on all views\.
@@ -151,85 +163,89 @@ The default behaviour is to call OnInitialUpdate on all views\.
 #### Parameters
 
 
-  -  *frame* :[PyCFrameWnd](#pycframewnd)
+  - frame :[PyCFrameWnd](#pycframewnd)
 
     The frame window\.
 
-  -  *frame* :[PyCDocument](#pycdocument)
+  - frame :[PyCDocument](#pycdocument)
 
     The document attached to the frame\.
 
-  -  *bMakeVisible* : int
+  - bMakeVisible : int
 
     Indicates if the frame should be made visible\.
 
-## [PyCDocTemplate\.MatchDocType](#pycdoctemplate)Virtual
+## [PyCDocTemplate\.MatchDocType](#pycdoctemplate) Virtual
 
- **MatchDocType\( *fileName*  *, fileType* ** \)
+MatchDocType\(fileName, fileType\)
 Queries if the template can open the specified file name\.
 
 #### Parameters
 
 
-  -  *fileName* : string
+  - fileName : string
 
     The name of the file to open\.
 
-  -  *fileType* : int
+  - fileType : int
 
     Only used on the mac\.
 
 #### Comments
+
+
 This method should call PyCDocTemplate\.FindOpenDocument to return an already open 
 
 document if one exists, else it should return one of the win32ui\.CDocTemplate\_Confidence\_\* constants\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.OpenDocumentFile
 
- **OpenDocumentFile\( *filename*  *, bMakeVisible* ** \)
+OpenDocumentFile\(filename, bMakeVisible\)
 Opens a document file, creating a view and frame\.
 
 #### Parameters
 
 
-  -  *filename* : string
+  - filename : string
 
     Name of file to open, or None
 
-  -  *bMakeVisible\=1* : int
+  - bMakeVisible=1 : int
 
     Indicates if the document should be created visible\.
 
-## [PyCDocTemplate\.OpenDocumentFile](#pycdoctemplate)Virtual
+## [PyCDocTemplate\.OpenDocumentFile](#pycdoctemplate) Virtual
 
- **OpenDocumentFile\(** \)
+OpenDocumentFile\(\)
 Called when a document file is to be opened\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.SetContainerInfo
 
- **SetContainerInfo\( *id* ** \)
+SetContainerInfo\(id\)
 Sets the resources to be used when an OLE 2 object is in-place activated\.
 
 #### Parameters
 
 
-  -  *id* : int
+  - id : int
 
     The resource ID\.
 
 ## [PyCDocTemplate](#pycdoctemplate)\.SetDocStrings
 
- **SetDocStrings\( *docStrings* ** \)
+SetDocStrings\(docStrings\)
 Assigns the document strings for the template\.
 
 #### Parameters
 
 
-  -  *docStrings* : string
+  - docStrings : string
 
     The document strings\.
 
 #### Comments
+
+
 The string must be a \\\\n seperated list of docstrings\. 
 
 The elements are:

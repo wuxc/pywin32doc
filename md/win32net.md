@@ -2,6 +2,8 @@
 
 ## Module win32net
 
+
+
 A module encapsulating the Windows Network API\.
 
 #### Methods
@@ -261,7 +263,11 @@ A module encapsulating the Windows Network API\.
 
   - [NetServerComputerNameDel](win32net.md#win32netnetservercomputernamedel)
 
-    Deletes an emulated computer name created by **win32net::PyNetServerComputerNameAdd** &nbsp;
+    Deletes an emulated computer name created bywin32net::PyNetServerComputerNameAdd
+
+
+
+&nbsp;
 
   - [NetValidateName](win32net.md#win32netnetvalidatename)
 
@@ -273,41 +279,43 @@ A module encapsulating the Windows Network API\.
 
 ## [win32net](#win32net)\.NetFileClose
 
- **NetFileClose\( *servername*  *, fileid* ** \)
+NetFileClose\(servername, fileid\)
 Closes an open network resource on a server
 
 #### Parameters
 
 
-  -  *servername* : string/[PyUnicode](#pyunicode)
+  - servername : string/[PyUnicode](#pyunicode)
 
     Name of server on which to operate, local machine assumed if None
 
-  -  *fileid* : int
+  - fileid : int
 
     Id of opened resource, as returned by[win32net::NetFileEnum](win32net.md#win32netnetfileenum)
 
 ## [win32net](#win32net)\.NetFileEnum
 
-\(dict,\.\.\.\) \= **NetFileEnum\( *level*  *, servername*  *, basepath*  *, username* ** \)
+
+
+\(dict,\.\.\.\) =NetFileEnum\(level, servername, basepath, username\)
 Lists remotely opened resources on a server
 
 #### Parameters
 
 
-  -  *level* : int
+  - level : int
 
     Level of information, 2 or 3 supported
 
-  -  *servername\=None* : string/[PyUnicode](#pyunicode)
+  - servername=None : string/[PyUnicode](#pyunicode)
 
     The name of the server for which to list open resources, local machine assumed if None
 
-  -  *basepath\=None* : string/[PyUnicode](#pyunicode)
+  - basepath=None : string/[PyUnicode](#pyunicode)
 
     If specified, limits returned list to files on given path
 
-  -  *username\=None* : string/[PyUnicode](#pyunicode)
+  - username=None : string/[PyUnicode](#pyunicode)
 
     User that opened resource, or None to list open files for all users
 
@@ -316,185 +324,189 @@ Returns a sequence of dictionaries representing FILE\_INFO\_\* structs, dependin
 
 ## [win32net](#win32net)\.NetFileGetInfo
 
-dict \= **NetFileGetInfo\( *level*  *, servername*  *, fileid* ** \)
+
+
+dict =NetFileGetInfo\(level, servername, fileid\)
 Returns information about an open network resource
 
 #### Parameters
 
 
-  -  *level* : int
+  - level : int
 
     Level of information to return, 2 or 3 supported
 
-  -  *servername* : string/[PyUnicode](#pyunicode)
+  - servername : string/[PyUnicode](#pyunicode)
 
     Server on which resource is open, local machine assumed if None
 
-  -  *fileid* : int
+  - fileid : int
 
     Id of opened resource, as returned by[win32net::NetFileEnum](win32net.md#win32netnetfileenum)
 
 ## [win32net](#win32net)\.NetGetAnyDCName
 
-[PyUnicode](#pyunicode)\= **NetGetAnyDCName\( *server*  *, domain* ** \)
+[PyUnicode](#pyunicode) =NetGetAnyDCName\(server, domain\)
 Returns the name of any domain controller trusted by the specified server\.
 
 #### Parameters
 
 
-  -  *server\=None* :[PyUnicode](#pyunicode)
+  - server=None :[PyUnicode](#pyunicode)
 
     Specifies the name of the remote server on which the function is to execute\. If this parameter is None, the local computer is used\.
 
-  -  *domain\=None* :[PyUnicode](#pyunicode)
+  - domain=None :[PyUnicode](#pyunicode)
 
     Specifies the name of the domain\. If this parameter is None, the name of the domain controller for the primary domain is used\.
 
 ## [win32net](#win32net)\.NetGetDCName
 
-[PyUnicode](#pyunicode)\= **NetGetDCName\( *server*  *, domain* ** \)
+[PyUnicode](#pyunicode) =NetGetDCName\(server, domain\)
 Returns the name of the primary domain controller \(PDC\)\.
 
 #### Parameters
 
 
-  -  *server\=None* :[PyUnicode](#pyunicode)
+  - server=None :[PyUnicode](#pyunicode)
 
     Specifies the name of the remote server on which the function is to execute\. If this parameter is None, the local computer is used\.
 
-  -  *domain\=None* :[PyUnicode](#pyunicode)
+  - domain=None :[PyUnicode](#pyunicode)
 
     Specifies the name of the domain\. If this parameter is None, the name of the domain controller for the primary domain is used\.
 
 ## [win32net](#win32net)\.NetGetJoinInformation
 
-[PyUnicode](#pyunicode), int \= **NetGetJoinInformation\(** \)
+[PyUnicode](#pyunicode), int =NetGetJoinInformation\(\)
 Retrieves join status information for the specified computer\.
 
 ## [win32net](#win32net)\.NetGroupAdd
 
- **NetGroupAdd\( *server*  *, level*  *, data* ** \)
+NetGroupAdd\(server, level, data\)
 Creates a new group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* :[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a)
+  - data :[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a)
 
     A dictionary holding the group data\.
 
 #### Win32 API References
 
 
-  - Search for *NetGroupAdd* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupadd),[google](#http://www.google.com/search?q=netgroupadd)or[google groups](#http://groups.google.com/groups?q=netgroupadd)\.
+  - Search forNetGroupAdd at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupadd),[google](#http://www.google.com/search?q=netgroupadd) or[google groups](#http://groups.google.com/groups?q=netgroupadd)\.
 
 ## [win32net](#win32net)\.NetGroupAddUser
 
- **NetGroupAddUser\( *server*  *, group*  *, username* ** \)
+NetGroupAddUser\(server, group, username\)
 Adds a user to the group
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *group* : string/[PyUnicode](#pyunicode)
+  - group : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *username* : string/[PyUnicode](#pyunicode)
+  - username : string/[PyUnicode](#pyunicode)
 
     The user to add to the group\.
 
 #### Win32 API References
 
 
-  - Search for *NetGroupAddUser* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupadduser),[google](#http://www.google.com/search?q=netgroupadduser)or[google groups](#http://groups.google.com/groups?q=netgroupadduser)\.
+  - Search forNetGroupAddUser at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupadduser),[google](#http://www.google.com/search?q=netgroupadduser) or[google groups](#http://groups.google.com/groups?q=netgroupadduser)\.
 
 ## [win32net](#win32net)\.NetGroupDel
 
- **NetGroupDel\( *server*  *, groupname* ** \)
+NetGroupDel\(server, groupname\)
 Deletes a group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupname* : string/[PyUnicode](#pyunicode)
+  - groupname : string/[PyUnicode](#pyunicode)
 
     The group name
 
 #### Win32 API References
 
 
-  - Search for *NetGroupDel* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupdel),[google](#http://www.google.com/search?q=netgroupdel)or[google groups](#http://groups.google.com/groups?q=netgroupdel)\.
+  - Search forNetGroupDel at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupdel),[google](#http://www.google.com/search?q=netgroupdel) or[google groups](#http://groups.google.com/groups?q=netgroupdel)\.
 
 ## [win32net](#win32net)\.NetGroupDelUser
 
- **NetGroupDelUser\( *server*  *, group*  *, username* ** \)
+NetGroupDelUser\(server, group, username\)
 Deletes a user from the group
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *group* : string/[PyUnicode](#pyunicode)
+  - group : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *username* : string/[PyUnicode](#pyunicode)
+  - username : string/[PyUnicode](#pyunicode)
 
     The user to delete from the group\.
 
 #### Win32 API References
 
 
-  - Search for *NetGroupDelUser* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupdeluser),[google](#http://www.google.com/search?q=netgroupdeluser)or[google groups](#http://groups.google.com/groups?q=netgroupdeluser)\.
+  - Search forNetGroupDelUser at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupdeluser),[google](#http://www.google.com/search?q=netgroupdeluser) or[google groups](#http://groups.google.com/groups?q=netgroupdeluser)\.
 
 ## [win32net](#win32net)\.NetGroupEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetGroupEnum\( *server*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetGroupEnum\(server, level, resumeHandle, prefLen\)
 Enumerates all groups\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetGroupEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupenum),[google](#http://www.google.com/search?q=netgroupenum)or[google groups](#http://groups.google.com/groups?q=netgroupenum)\.
+  - Search forNetGroupEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupenum),[google](#http://www.google.com/search?q=netgroupenum) or[google groups](#http://groups.google.com/groups?q=netgroupenum)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a), depending on the level parameter\), 
@@ -513,64 +525,70 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetGroupGetInfo
 
-dict \= **NetGroupGetInfo\( *server*  *, groupname*  *, level* ** \)
+
+
+dict =NetGroupGetInfo\(server, groupname, level\)
 Retrieves information about a particular group on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupname* : string/[PyUnicode](#pyunicode)
+  - groupname : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
 #### Win32 API References
 
 
-  - Search for *NetGroupGetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupgetinfo),[google](#http://www.google.com/search?q=netgroupgetinfo)or[google groups](#http://groups.google.com/groups?q=netgroupgetinfo)\.
+  - Search forNetGroupGetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupgetinfo),[google](#http://www.google.com/search?q=netgroupgetinfo) or[google groups](#http://groups.google.com/groups?q=netgroupgetinfo)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetGroupGetUsers
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetGroupGetUsers\( *server*  *, groupName*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetGroupGetUsers\(server, groupName, level, resumeHandle, prefLen\)
 Enumerates the users in a group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupName* : string/[PyUnicode](#pyunicode)
+  - groupName : string/[PyUnicode](#pyunicode)
 
     The name of the local group\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=4096* : int
+  - prefLen=4096 : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetGroupGetUsers* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupgetusers),[google](#http://www.google.com/search?q=netgroupgetusers)or[google groups](#http://groups.google.com/groups?q=netgroupgetusers)\.
+  - Search forNetGroupGetUsers at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupgetusers),[google](#http://www.google.com/search?q=netgroupgetusers) or[google groups](#http://groups.google.com/groups?q=netgroupgetusers)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyGROUP\_USERS\_INFO\_\*](PyGROUP.md#pygroupusers_info_.2a), depending on the level parameter\), 
@@ -589,54 +607,54 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetGroupSetInfo
 
- **NetGroupSetInfo\( *server*  *, groupname*  *, level*  *, data* ** \)
+NetGroupSetInfo\(server, groupname, level, data\)
 Sets information about a particular group account on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupname* : string/[PyUnicode](#pyunicode)
+  - groupname : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* :[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a)
+  - data :[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a)
 
     A dictionary holding the group data\.
 
 #### Win32 API References
 
 
-  - Search for *NetGroupSetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupsetinfo),[google](#http://www.google.com/search?q=netgroupsetinfo)or[google groups](#http://groups.google.com/groups?q=netgroupsetinfo)\.
+  - Search forNetGroupSetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupsetinfo),[google](#http://www.google.com/search?q=netgroupsetinfo) or[google groups](#http://groups.google.com/groups?q=netgroupsetinfo)\.
 
 ## [win32net](#win32net)\.NetGroupSetUsers
 
- **NetGroupSetUsers\( *server*  *, group*  *, level*  *, members* ** \)
+NetGroupSetUsers\(server, group, level, members\)
 Sets the members of a local group\.  Any existing members not listed are removed\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *group* : string/[PyUnicode](#pyunicode)
+  - group : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *level* : int
+  - level : int
 
     The level of information in the data\. Must be 0
 
-  -  *members* : \[[PyGROUP\_USERS\_INFO\_0](PyGROUP.md#pygroupusers_info_0), \.\.\]
+  - members : \[[PyGROUP\_USERS\_INFO\_0](PyGROUP.md#pygroupusers_info_0), \.\.\]
 
     The list of new members 
 
@@ -645,100 +663,100 @@ to add\.
 #### Win32 API References
 
 
-  - Search for *NetGroupSetUsers* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupsetusers),[google](#http://www.google.com/search?q=netgroupsetusers)or[google groups](#http://groups.google.com/groups?q=netgroupsetusers)\.
+  - Search forNetGroupSetUsers at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netgroupsetusers),[google](#http://www.google.com/search?q=netgroupsetusers) or[google groups](#http://groups.google.com/groups?q=netgroupsetusers)\.
 
 ## [win32net](#win32net)\.NetLocalGroupAdd
 
- **NetLocalGroupAdd\( *server*  *, level*  *, data* ** \)
+NetLocalGroupAdd\(server, level, data\)
 Creates a new group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* :[PyLOCALGROUP\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupinfo_.2a)
+  - data :[PyLOCALGROUP\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupinfo_.2a)
 
     A dictionary holding the group data\.
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupAdd* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupadd),[google](#http://www.google.com/search?q=netlocalgroupadd)or[google groups](#http://groups.google.com/groups?q=netlocalgroupadd)\.
+  - Search forNetLocalGroupAdd at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupadd),[google](#http://www.google.com/search?q=netlocalgroupadd) or[google groups](#http://groups.google.com/groups?q=netlocalgroupadd)\.
 
 ## [win32net](#win32net)\.NetLocalGroupAddMembers
 
- **NetLocalGroupAddMembers\( *server*  *, group*  *, level*  *, members* ** \)
+NetLocalGroupAddMembers\(server, group, level, members\)
 Adds users to a local group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *group* : string/[PyUnicode](#pyunicode)
+  - group : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *level* : int
+  - level : int
 
     The level of information in the data\.
 
-  -  *members* : \[[PyLOCALGROUP\_MEMBERS\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupmembers_info_.2a), \]
+  - members : \[[PyLOCALGROUP\_MEMBERS\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupmembers_info_.2a), \]
 
     The new members to add\.
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupAddMembers* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupaddmembers),[google](#http://www.google.com/search?q=netlocalgroupaddmembers)or[google groups](#http://groups.google.com/groups?q=netlocalgroupaddmembers)\.
+  - Search forNetLocalGroupAddMembers at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupaddmembers),[google](#http://www.google.com/search?q=netlocalgroupaddmembers) or[google groups](#http://groups.google.com/groups?q=netlocalgroupaddmembers)\.
 
 ## [win32net](#win32net)\.NetLocalGroupDel
 
- **NetLocalGroupDel\( *server*  *, groupname* ** \)
+NetLocalGroupDel\(server, groupname\)
 Deletes a group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupname* : string/[PyUnicode](#pyunicode)
+  - groupname : string/[PyUnicode](#pyunicode)
 
     The group name
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupDel* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupdel),[google](#http://www.google.com/search?q=netlocalgroupdel)or[google groups](#http://groups.google.com/groups?q=netlocalgroupdel)\.
+  - Search forNetLocalGroupDel at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupdel),[google](#http://www.google.com/search?q=netlocalgroupdel) or[google groups](#http://groups.google.com/groups?q=netlocalgroupdel)\.
 
 ## [win32net](#win32net)\.NetLocalGroupDelMembers
 
- **NetLocalGroupDelMembers\( *server*  *, group*  *, members* ** \)
+NetLocalGroupDelMembers\(server, group, members\)
 Deletes users from a local group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *group* : string/[PyUnicode](#pyunicode)
+  - group : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *members* : \[string, \.\.\.\]
+  - members : \[string, \.\.\.\]
 
     A list of strings with fully qualified user names to 
 
@@ -747,36 +765,38 @@ delete from a local group\.
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupDelMembers* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupdelmembers),[google](#http://www.google.com/search?q=netlocalgroupdelmembers)or[google groups](#http://groups.google.com/groups?q=netlocalgroupdelmembers)\.
+  - Search forNetLocalGroupDelMembers at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupdelmembers),[google](#http://www.google.com/search?q=netlocalgroupdelmembers) or[google groups](#http://groups.google.com/groups?q=netlocalgroupdelmembers)\.
 
 ## [win32net](#win32net)\.NetLocalGroupEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetLocalGroupEnum\( *server*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetLocalGroupEnum\(server, level, resumeHandle, prefLen\)
 Enumerates all groups\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupenum),[google](#http://www.google.com/search?q=netlocalgroupenum)or[google groups](#http://groups.google.com/groups?q=netlocalgroupenum)\.
+  - Search forNetLocalGroupEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupenum),[google](#http://www.google.com/search?q=netlocalgroupenum) or[google groups](#http://groups.google.com/groups?q=netlocalgroupenum)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyGROUP\_INFO\_\*](PyGROUP.md#pygroupinfo_.2a), depending on the level parameter\), 
@@ -795,64 +815,70 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetLocalGroupGetInfo
 
-dict \= **NetLocalGroupGetInfo\( *server*  *, groupname*  *, level* ** \)
+
+
+dict =NetLocalGroupGetInfo\(server, groupname, level\)
 Retrieves information about a particular group on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupname* : string/[PyUnicode](#pyunicode)
+  - groupname : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupGetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupgetinfo),[google](#http://www.google.com/search?q=netlocalgroupgetinfo)or[google groups](#http://groups.google.com/groups?q=netlocalgroupgetinfo)\.
+  - Search forNetLocalGroupGetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupgetinfo),[google](#http://www.google.com/search?q=netlocalgroupgetinfo) or[google groups](#http://groups.google.com/groups?q=netlocalgroupgetinfo)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PyLOCALGROUP\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupinfo_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PyLOCALGROUP\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupinfo_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetLocalGroupGetMembers
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetLocalGroupGetMembers\( *server*  *, groupName*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetLocalGroupGetMembers\(server, groupName, level, resumeHandle, prefLen\)
 Enumerates the members in a local group\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupName* : string/[PyUnicode](#pyunicode)
+  - groupName : string/[PyUnicode](#pyunicode)
 
     The name of the local group\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=4096* : int
+  - prefLen=4096 : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupGetMembers* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupgetmembers),[google](#http://www.google.com/search?q=netlocalgroupgetmembers)or[google groups](#http://groups.google.com/groups?q=netlocalgroupgetmembers)\.
+  - Search forNetLocalGroupGetMembers at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupgetmembers),[google](#http://www.google.com/search?q=netlocalgroupgetmembers) or[google groups](#http://groups.google.com/groups?q=netlocalgroupgetmembers)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyLOCALGROUP\_MEMBERS\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupmembers_info_.2a), depending on the level parameter\), 
@@ -871,152 +897,152 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetLocalGroupSetInfo
 
- **NetLocalGroupSetInfo\( *server*  *, groupname*  *, level*  *, data* ** \)
+NetLocalGroupSetInfo\(server, groupname, level, data\)
 Sets information about a particular group account on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *groupname* : string/[PyUnicode](#pyunicode)
+  - groupname : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* :[PyLOCALGROUP\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupinfo_.2a)
+  - data :[PyLOCALGROUP\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupinfo_.2a)
 
     A dictionary holding the group data\.
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupSetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupsetinfo),[google](#http://www.google.com/search?q=netlocalgroupsetinfo)or[google groups](#http://groups.google.com/groups?q=netlocalgroupsetinfo)\.
+  - Search forNetLocalGroupSetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupsetinfo),[google](#http://www.google.com/search?q=netlocalgroupsetinfo) or[google groups](#http://groups.google.com/groups?q=netlocalgroupsetinfo)\.
 
 ## [win32net](#win32net)\.NetLocalGroupSetMembers
 
- **NetLocalGroupSetMembers\( *server*  *, group*  *, level*  *, members* ** \)
+NetLocalGroupSetMembers\(server, group, level, members\)
 Sets the members of a local group\. Any existing members not listed are removed\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *group* : string/[PyUnicode](#pyunicode)
+  - group : string/[PyUnicode](#pyunicode)
 
     The group name
 
-  -  *level* : int
+  - level : int
 
     The level of information in the data\.
 
-  -  *members* : \[[PyLOCALGROUP\_MEMBERS\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupmembers_info_.2a), \.\.\]
+  - members : \[[PyLOCALGROUP\_MEMBERS\_INFO\_\*](PyLOCALGROUP.md#pylocalgroupmembers_info_.2a), \.\.\]
 
     The list of new members to add\.
 
 #### Win32 API References
 
 
-  - Search for *NetLocalGroupSetMembers* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupsetmembers),[google](#http://www.google.com/search?q=netlocalgroupsetmembers)or[google groups](#http://groups.google.com/groups?q=netlocalgroupsetmembers)\.
+  - Search forNetLocalGroupSetMembers at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netlocalgroupsetmembers),[google](#http://www.google.com/search?q=netlocalgroupsetmembers) or[google groups](#http://groups.google.com/groups?q=netlocalgroupsetmembers)\.
 
 ## [win32net](#win32net)\.NetMessageBufferSend
 
- **NetMessageBufferSend\( *domain*  *, userName*  *, fromName*  *, message* ** \)
+NetMessageBufferSend\(domain, userName, fromName, message\)
 sends a string to a registered message alias\.
 
 #### Parameters
 
 
-  -  *domain* : string
+  - domain : string
 
     Specifies the name of the remote server on which the function is to execute\. None or empty string the local computer\.
 
-  -  *userName* : string
+  - userName : string
 
     Specifies the message name to which the message buffer should be sent\.
 
-  -  *fromName* : string
+  - fromName : string
 
     The user the message is to come from, or None for the current user\.
 
-  -  *message* : string
+  - message : string
 
     The message text
 
 #### Win32 API References
 
 
-  - Search for *NetMessageBufferSend* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netmessagebuffersend),[google](#http://www.google.com/search?q=netmessagebuffersend)or[google groups](#http://groups.google.com/groups?q=netmessagebuffersend)\.
+  - Search forNetMessageBufferSend at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netmessagebuffersend),[google](#http://www.google.com/search?q=netmessagebuffersend) or[google groups](#http://groups.google.com/groups?q=netmessagebuffersend)\.
 
 ## [win32net](#win32net)\.NetMessageNameAdd
 
- **NetMessageNameAdd\( *server*  *, msgname* ** \)
+NetMessageNameAdd\(server, msgname\)
 Adds a message alias for specified machine
 
 #### Parameters
 
 
-  -  *server* : str/unicode
+  - server : str/unicode
 
     Name of server on which to execute - leading backslashes required on NT - local machine used if None
 
-  -  *msgname* : str/unicode
+  - msgname : str/unicode
 
     Message alias to add, 15 characters max
 
 ## [win32net](#win32net)\.NetMessageNameDel
 
- **NetMessageNameDel\( *server*  *, msgname* ** \)
+NetMessageNameDel\(server, msgname\)
 Removes a message alias for specified machine
 
 #### Parameters
 
 
-  -  *server* : str/unicode
+  - server : str/unicode
 
     Name of server on which to execute - leading backslashes required on NT - local machine used if None
 
-  -  *msgname* : str/unicode
+  - msgname : str/unicode
 
     Message alias to delete for specified machine
 
 ## [win32net](#win32net)\.NetMessageNameEnum
 
- **NetMessageNameEnum\( *Server* ** \)
+NetMessageNameEnum\(Server\)
 Lists aliases for a computer
 
 #### Parameters
 
 
-  -  *Server* : str/unicode
+  - Server : str/unicode
 
     Name of server on which to execute - leading backslashes required on NT - local machine used if None
 
 ## [win32net](#win32net)\.NetServerComputerNameAdd
 
- **NetServerComputerNameAdd\( *ServerName*  *, EmulatedDomainName*  *, EmulatedServerName* ** \)
+NetServerComputerNameAdd\(ServerName, EmulatedDomainName, EmulatedServerName\)
 Adds an additional network name for a server
 
 #### Parameters
 
 
-  -  *ServerName* : string/[PyUnicode](#pyunicode)
+  - ServerName : string/[PyUnicode](#pyunicode)
 
     Name of server that will receive additional name
 
-  -  *EmulatedDomainName* : string/[PyUnicode](#pyunicode)
+  - EmulatedDomainName : string/[PyUnicode](#pyunicode)
 
     Domain under which to add the new server name, can be None
 
-  -  *EmulatedServerName* : string/[PyUnicode](#pyunicode)
+  - EmulatedServerName : string/[PyUnicode](#pyunicode)
 
     New network name that server will respond to
 
@@ -1025,17 +1051,17 @@ Returns none on success
 
 ## [win32net](#win32net)\.NetServerComputerNameDel
 
- **NetServerComputerNameDel\( *ServerName*  *, EmulatedServerName* ** \)
+NetServerComputerNameDel\(ServerName, EmulatedServerName\)
 Removes a network name added by[win32net::NetServerComputerNameAdd](win32net.md#win32netnetservercomputernameadd)
 
 #### Parameters
 
 
-  -  *ServerName* : string/[PyUnicode](#pyunicode)
+  - ServerName : string/[PyUnicode](#pyunicode)
 
     Name of server on which to operate
 
-  -  *EmulatedServerName* : string/[PyUnicode](#pyunicode)
+  - EmulatedServerName : string/[PyUnicode](#pyunicode)
 
     Network name to be removed
 
@@ -1044,64 +1070,68 @@ Returns none on success
 
 ## [win32net](#win32net)\.NetServerDiskEnum
 
-list \= **NetServerDiskEnum\( *server*  *, level* ** \)
+
+
+list =NetServerDiskEnum\(server, level\)
 Retrieves the list of disk drives on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\. Must be 0\.
 
 #### Win32 API References
 
 
-  - Search for *NetServerDiskEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netserverdiskenum),[google](#http://www.google.com/search?q=netserverdiskenum)or[google groups](#http://groups.google.com/groups?q=netserverdiskenum)\.
+  - Search forNetServerDiskEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netserverdiskenum),[google](#http://www.google.com/search?q=netserverdiskenum) or[google groups](#http://groups.google.com/groups?q=netserverdiskenum)\.
 
 #### Return Value
 The result is a list of drives on the server
 
 ## [win32net](#win32net)\.NetServerEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetServerEnum\( *server*  *, level*  *, type*  *, domain*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetServerEnum\(server, level, type, domain, resumeHandle, prefLen\)
 Retrieves information about each server of a particular type
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *type\=SV\_TYPE\_ALL* : int
+  - type=SV\_TYPE\_ALL : int
 
     Type of server to return - one of the SV\_TYPE\_\* constants\.
 
-  -  *domain\=None* : string/[PyUnicode](#pyunicode)
+  - domain=None : string/[PyUnicode](#pyunicode)
 
     The domain to enumerate, or None for the current domain\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetServerEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netserverenum),[google](#http://www.google.com/search?q=netserverenum)or[google groups](#http://groups.google.com/groups?q=netserverenum)\.
+  - Search forNetServerEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netserverenum),[google](#http://www.google.com/search?q=netserverenum) or[google groups](#http://groups.google.com/groups?q=netserverenum)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PySERVER\_INFO\_\*](PySERVER.md#pyserverinfo_.2a), depending on the level parameter\), 
@@ -1120,70 +1150,74 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetServerGetInfo
 
-dict \= **NetServerGetInfo\( *server*  *, level* ** \)
+
+
+dict =NetServerGetInfo\(server, level\)
 Retrieves information about a particular server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
 #### Win32 API References
 
 
-  - Search for *NetServerGetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netservergetinfo),[google](#http://www.google.com/search?q=netservergetinfo)or[google groups](#http://groups.google.com/groups?q=netservergetinfo)\.
+  - Search forNetServerGetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netservergetinfo),[google](#http://www.google.com/search?q=netservergetinfo) or[google groups](#http://groups.google.com/groups?q=netservergetinfo)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PySERVER\_INFO\_\*](PySERVER.md#pyserverinfo_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PySERVER\_INFO\_\*](PySERVER.md#pyserverinfo_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetServerSetInfo
 
- **NetServerSetInfo\( *server*  *, level*  *, data* ** \)
+NetServerSetInfo\(server, level, data\)
 Sets information about a particular server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the share data\.
 
 #### Win32 API References
 
 
-  - Search for *NetServerSetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netserversetinfo),[google](#http://www.google.com/search?q=netserversetinfo)or[google groups](#http://groups.google.com/groups?q=netserversetinfo)\.
+  - Search forNetServerSetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netserversetinfo),[google](#http://www.google.com/search?q=netserversetinfo) or[google groups](#http://groups.google.com/groups?q=netserversetinfo)\.
 
 ## [win32net](#win32net)\.NetSessionDel
 
- **NetSessionDel\( *server*  *, client*  *, username* ** \)
+NetSessionDel\(server, client, username\)
 Disconnects network connections on a server
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server on which to operate, local machine assumed if None or blank
 
-  -  *client\=None* : string/[PyUnicode](#pyunicode)
+  - client=None : string/[PyUnicode](#pyunicode)
 
     Name of client computer, or None
 
-  -  *username\=None* : string/[PyUnicode](#pyunicode)
+  - username=None : string/[PyUnicode](#pyunicode)
 
     User name, or None for all connected users
 
@@ -1192,25 +1226,27 @@ Returns None on success
 
 ## [win32net](#win32net)\.NetSessionEnum
 
-\(dict,\.\.\.\) \= **NetSessionEnum\( *level*  *, server*  *, client*  *, username* ** \)
+
+
+\(dict,\.\.\.\) =NetSessionEnum\(level, server, client, username\)
 Returns network sessions for a server, limited to single client and/or user if specified\.
 
 #### Parameters
 
 
-  -  *level* : int
+  - level : int
 
     Level of information requested, currently accepts 0, 1, 2, 10, and 502
 
-  -  *server\=None* : string/[PyUnicode](#pyunicode)
+  - server=None : string/[PyUnicode](#pyunicode)
 
     The name of the server for which to list sessions, local machine assumed if None
 
-  -  *client\=None* : string/[PyUnicode](#pyunicode)
+  - client=None : string/[PyUnicode](#pyunicode)
 
     Name of client computer, or None to list all computer sessions
 
-  -  *username\=None* : string/[PyUnicode](#pyunicode)
+  - username=None : string/[PyUnicode](#pyunicode)
 
     User name, or None to list all connected users
 
@@ -1219,25 +1255,27 @@ Returns a sequence of dictionaries representing SESSION\_INFO\_\* structs, depen
 
 ## [win32net](#win32net)\.NetSessionGetInfo
 
-dict \= **NetSessionGetInfo\( *level*  *, server*  *, client*  *, username* ** \)
+
+
+dict =NetSessionGetInfo\(level, server, client, username\)
 Returns information for a network session from specified client
 
 #### Parameters
 
 
-  -  *level* : int
+  - level : int
 
     Level of information requested, currently accepts 0, 1, 2, 10, and 502
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server on which to operate, None or blank assumes local machine
 
-  -  *client* : string/[PyUnicode](#pyunicode)
+  - client : string/[PyUnicode](#pyunicode)
 
     Name of client computer
 
-  -  *username* : string/[PyUnicode](#pyunicode)
+  - username : string/[PyUnicode](#pyunicode)
 
     User that established session
 
@@ -1246,118 +1284,124 @@ Returns a dictionary representing a SESSION\_INFO\_\* struct, depending on level
 
 ## [win32net](#win32net)\.NetShareAdd
 
- **NetShareAdd\( *server*  *, level*  *, data* ** \)
+NetShareAdd\(server, level, data\)
 Creates a new share\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data\.  Must be level 2 or 502\.
 
-  -  *data* : mapping
+  - data : mapping
 
-    A dictionary holding the share data, in the format of **SHARE\_INFO\_\*** 
+    A dictionary holding the share data, in the format ofSHARE\_INFO\_\*
 
 #### Win32 API References
 
 
-  - Search for *NetShareAdd* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netshareadd),[google](#http://www.google.com/search?q=netshareadd)or[google groups](#http://groups.google.com/groups?q=netshareadd)\.
+  - Search forNetShareAdd at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netshareadd),[google](#http://www.google.com/search?q=netshareadd) or[google groups](#http://groups.google.com/groups?q=netshareadd)\.
 
 ## [win32net](#win32net)\.NetShareCheck
 
-\(ret, type\) \= **NetShareCheck\( *server*  *, deviceName* ** \)
+
+
+\(ret, type\) =NetShareCheck\(server, deviceName\)
 Checks if server is sharing a device
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *deviceName* : string/[PyUnicode](#pyunicode)
+  - deviceName : string/[PyUnicode](#pyunicode)
 
     The share name
 
 #### Win32 API References
 
 
-  - Search for *NetShareCheck* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharecheck),[google](#http://www.google.com/search?q=netsharecheck)or[google groups](#http://groups.google.com/groups?q=netsharecheck)\.
+  - Search forNetShareCheck at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharecheck),[google](#http://www.google.com/search?q=netsharecheck) or[google groups](#http://groups.google.com/groups?q=netsharecheck)\.
 
 #### Return Value
 The result is \(1, type-of-device\) if device is shared, \(0, None\) if it is not shared\.
 
 ## [win32net](#win32net)\.NetShareDel
 
- **NetShareDel\( *server*  *, shareName*  *, reserved* ** \)
+NetShareDel\(server, shareName, reserved\)
 Deletes a share
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *shareName* : string/[PyUnicode](#pyunicode)
+  - shareName : string/[PyUnicode](#pyunicode)
 
     The share name
 
-  -  *reserved\=0* : int
+  - reserved=0 : int
 
     Must be zero\.
 
 #### Win32 API References
 
 
-  - Search for *NetShareDel* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharedel),[google](#http://www.google.com/search?q=netsharedel)or[google groups](#http://groups.google.com/groups?q=netsharedel)\.
+  - Search forNetShareDel at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharedel),[google](#http://www.google.com/search?q=netsharedel) or[google groups](#http://groups.google.com/groups?q=netsharedel)\.
 
 ## [win32net](#win32net)\.NetShareEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetShareEnum\( *server*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetShareEnum\(server, level, resumeHandle, prefLen\)
 Retrieves information about each shared resource on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Alternative Parameters
 
 
-  -  *serverName* 
+  - serverName
 
     The name of the server on which the call should execute, or None for the local computer\.
 
 #### Comments
+
+
 If the old style is used, the result is a list of \[\(shareName, type, remarks\), \.\.\.\]
 
 #### Win32 API References
 
 
-  - Search for *NetShareEnum 
+  - Search forNetShareEnum 
 
-param 1 is not declared as const :-\(* at[msdn](),[google]()or[google groups]()\.
+param 1 is not declared as const :-\( at[msdn](),[google]() or[google groups]()\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PySHARE\_INFO\_\*](PySHARE.md#pyshareinfo_.2a), depending on the level parameter\), 
@@ -1376,82 +1420,88 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetShareGetInfo
 
-dict \= **NetShareGetInfo\( *server*  *, netname*  *, level* ** \)
+
+
+dict =NetShareGetInfo\(server, netname, level\)
 Retrieves information about a particular share on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *netname* : string/[PyUnicode](#pyunicode)
+  - netname : string/[PyUnicode](#pyunicode)
 
     The network name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
 #### Win32 API References
 
 
-  - Search for *NetShareGetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharegetinfo),[google](#http://www.google.com/search?q=netsharegetinfo)or[google groups](#http://groups.google.com/groups?q=netsharegetinfo)\.
+  - Search forNetShareGetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharegetinfo),[google](#http://www.google.com/search?q=netsharegetinfo) or[google groups](#http://groups.google.com/groups?q=netsharegetinfo)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PySHARE\_INFO\_\*](PySHARE.md#pyshareinfo_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PySHARE\_INFO\_\*](PySHARE.md#pyshareinfo_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetShareSetInfo
 
- **NetShareSetInfo\( *server*  *, netname*  *, level*  *, data* ** \)
+NetShareSetInfo\(server, netname, level, data\)
 Sets information about a particular share on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *netname* : string/[PyUnicode](#pyunicode)
+  - netname : string/[PyUnicode](#pyunicode)
 
     The network name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the share data\.
 
 #### Win32 API References
 
 
-  - Search for *NetShareSetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharesetinfo),[google](#http://www.google.com/search?q=netsharesetinfo)or[google groups](#http://groups.google.com/groups?q=netsharesetinfo)\.
+  - Search forNetShareSetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netsharesetinfo),[google](#http://www.google.com/search?q=netsharesetinfo) or[google groups](#http://groups.google.com/groups?q=netsharesetinfo)\.
 
 ## [win32net](#win32net)\.NetStatisticsGet
 
-dict \= **NetStatisticsGet\( *server*  *, service*  *, level*  *, options* ** \)
+
+
+dict =NetStatisticsGet\(server, service, level, options\)
 Retrieves network statistics for specified service on specified machine
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     Name of server/workstation to retrieve statistics for \(None or blank uses local\)\.
 
-  -  *service* : string/[PyUnicode](#pyunicode)
+  - service : string/[PyUnicode](#pyunicode)
 
     SERVICE\_SERVER or SERVICE\_WORKSTATION
 
-  -  *level* : int
+  - level : int
 
     Only 0 currently supported\.
 
-  -  *options* : int
+  - options : int
 
     Must be zero\.
 
@@ -1460,84 +1510,86 @@ The result is a dictionary representing a STAT\_SERVER\_0 or STAT\_WORKSTATION\_
 
 ## [win32net](#win32net)\.NetUseAdd
 
- **NetUseAdd\( *server*  *, level*  *, data* ** \)
+NetUseAdd\(server, level, data\)
 Establishes connection between local or NULL device name and a shared resource through redirector
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the share data in the format of[PyUSE\_INFO\_\*](PyUSE.md#pyuseinfo_.2a)\.
 
 #### Win32 API References
 
 
-  - Search for *NetUseAdd* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuseadd),[google](#http://www.google.com/search?q=netuseadd)or[google groups](#http://groups.google.com/groups?q=netuseadd)\.
+  - Search forNetUseAdd at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuseadd),[google](#http://www.google.com/search?q=netuseadd) or[google groups](#http://groups.google.com/groups?q=netuseadd)\.
 
 ## [win32net](#win32net)\.NetUseDel
 
- **NetUseDel\( *server*  *, useName*  *, forceCond* ** \)
+NetUseDel\(server, useName, forceCond\)
 Ends connection to a shared resource\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *useName* : string/[PyUnicode](#pyunicode)
+  - useName : string/[PyUnicode](#pyunicode)
 
     The share name
 
-  -  *forceCond\=0* : int
+  - forceCond=0 : int
 
     Level of force to use\. Can be USE\_FORCE or USE\_NOFORCE or USE\_LOTS\_OF\_FORCE
 
 #### Win32 API References
 
 
-  - Search for *NetUseDel* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusedel),[google](#http://www.google.com/search?q=netusedel)or[google groups](#http://groups.google.com/groups?q=netusedel)\.
+  - Search forNetUseDel at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusedel),[google](#http://www.google.com/search?q=netusedel) or[google groups](#http://groups.google.com/groups?q=netusedel)\.
 
 ## [win32net](#win32net)\.NetUseEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetUseEnum\( *server*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetUseEnum\(server, level, resumeHandle, prefLen\)
 Retrieves information about transport protocols that are currently managed by the redirector
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\. Currently levels 0, 1 and 
 
 2 are supported\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetUseEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuseenum),[google](#http://www.google.com/search?q=netuseenum)or[google groups](#http://groups.google.com/groups?q=netuseenum)\.
+  - Search forNetUseEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuseenum),[google](#http://www.google.com/search?q=netuseenum) or[google groups](#http://groups.google.com/groups?q=netuseenum)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyUSE\_INFO\_\*](PyUSE.md#pyuseinfo_.2a), depending on the level parameter\), 
@@ -1556,82 +1608,88 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetUseGetInfo
 
-dict \= **NetUseGetInfo\( *server*  *, usename*  *, level* ** \)
+
+
+dict =NetUseGetInfo\(server, usename, level\)
 Retrieves information about the configuration elements for a workstation
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *usename* : string/[PyUnicode](#pyunicode)
+  - usename : string/[PyUnicode](#pyunicode)
 
     The name of the locally mapped resource\.
 
-  -  *level\=0* : int
+  - level=0 : int
 
     The information level contained in the data\. NOTE: levels 302 and 402 don't seem to work correctly\. They return error 124\. So currently these info levels are not available\.
 
 #### Win32 API References
 
 
-  - Search for *NetUseGetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusegetinfo),[google](#http://www.google.com/search?q=netusegetinfo)or[google groups](#http://groups.google.com/groups?q=netusegetinfo)\.
+  - Search forNetUseGetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusegetinfo),[google](#http://www.google.com/search?q=netusegetinfo) or[google groups](#http://groups.google.com/groups?q=netusegetinfo)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PyUSE\_INFO\_\*](PyUSE.md#pyuseinfo_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PyUSE\_INFO\_\*](PyUSE.md#pyuseinfo_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetUserAdd
 
- **NetUserAdd\( *server*  *, level*  *, data* ** \)
+NetUserAdd\(server, level, data\)
 Creates a new user\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the user data in the format of[PyUSER\_INFO\_\*](PyUSER.md#pyuserinfo_.2a)\.
 
 #### Win32 API References
 
 
-  - Search for *NetUserAdd* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuseradd),[google](#http://www.google.com/search?q=netuseradd)or[google groups](#http://groups.google.com/groups?q=netuseradd)\.
+  - Search forNetUserAdd at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuseradd),[google](#http://www.google.com/search?q=netuseradd) or[google groups](#http://groups.google.com/groups?q=netuseradd)\.
 
 ## [win32net](#win32net)\.NetUserChangePassword
 
- **NetUserChangePassword\( *server*  *, username*  *, oldPassword*  *, newPassword* ** \)
+NetUserChangePassword\(server, username, oldPassword, newPassword\)
 Changes the password for a user\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *username* : string/[PyUnicode](#pyunicode)
+  - username : string/[PyUnicode](#pyunicode)
 
     The user name, or None for the current username\.
 
-  -  *oldPassword* : string/[PyUnicode](#pyunicode)
+  - oldPassword : string/[PyUnicode](#pyunicode)
 
     The old password
 
-  -  *newPassword* : string/[PyUnicode](#pyunicode)
+  - newPassword : string/[PyUnicode](#pyunicode)
 
     The new password
 
 #### Comments
+
+
 A server or domain can be configured to require that a 
 
 user log on to change the password on a user account\. 
@@ -1647,61 +1705,63 @@ any user account, so long as you know the current password\.
 #### Win32 API References
 
 
-  - Search for *NetUserChangePassword* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuserchangepassword),[google](#http://www.google.com/search?q=netuserchangepassword)or[google groups](#http://groups.google.com/groups?q=netuserchangepassword)\.
+  - Search forNetUserChangePassword at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuserchangepassword),[google](#http://www.google.com/search?q=netuserchangepassword) or[google groups](#http://groups.google.com/groups?q=netuserchangepassword)\.
 
 ## [win32net](#win32net)\.NetUserDel
 
- **NetUserDel\( *server*  *, username* ** \)
+NetUserDel\(server, username\)
 Deletes a user\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *username* : string/[PyUnicode](#pyunicode)
+  - username : string/[PyUnicode](#pyunicode)
 
     The user name
 
 #### Win32 API References
 
 
-  - Search for *NetUserDel* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuserdel),[google](#http://www.google.com/search?q=netuserdel)or[google groups](#http://groups.google.com/groups?q=netuserdel)\.
+  - Search forNetUserDel at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuserdel),[google](#http://www.google.com/search?q=netuserdel) or[google groups](#http://groups.google.com/groups?q=netuserdel)\.
 
 ## [win32net](#win32net)\.NetUserEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetUserEnum\( *server*  *, level*  *, filter*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetUserEnum\(server, level, filter, resumeHandle, prefLen\)
 Enumerates all users\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *filter\=win32netcon\.FILTER\_NORMAL\_ACCOUNT* : int
+  - filter=win32netcon\.FILTER\_NORMAL\_ACCOUNT : int
 
     The types of accounts to enumerate\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetUserEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuserenum),[google](#http://www.google.com/search?q=netuserenum)or[google groups](#http://groups.google.com/groups?q=netuserenum)\.
+  - Search forNetUserEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netuserenum),[google](#http://www.google.com/search?q=netuserenum) or[google groups](#http://groups.google.com/groups?q=netuserenum)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyUSER\_INFO\_\*](PyUSER.md#pyuserinfo_.2a), depending on the level parameter\), 
@@ -1720,22 +1780,24 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetUserGetGroups
 
-\[\(groupName, attribute\), \.\.\.\] \= **NetUserGetGroups\( *serverName*  *, userName* ** \)
+
+
+\[\(groupName, attribute\), \.\.\.\] =NetUserGetGroups\(serverName, userName\)
 Returns a list of groups,attributes for all groups for the user\.
 
 #### Parameters
 
 
-  -  *serverName* : string
+  - serverName : string
 
     The name of the remote server on which the function is to execute\. None or an empty string specifies the server program running on the local computer\.
 
-  -  *userName* : string
+  - userName : string
 
     The name of the user to search for in each group account\.
 
-#### To Do
-This needs to be extended to support the new model, while 
+####  To Do
+ This needs to be extended to support the new model, while 
 
 not breaking existing code\.  A default arg would be perfect\.
 
@@ -1750,165 +1812,179 @@ Earlier version of NT have not been tested\.
 
 ## [win32net](#win32net)\.NetUserGetInfo
 
-dict \= **NetUserGetInfo\( *server*  *, username*  *, level* ** \)
+
+
+dict =NetUserGetInfo\(server, username, level\)
 Retrieves information about a particular user account on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *username* : string/[PyUnicode](#pyunicode)
+  - username : string/[PyUnicode](#pyunicode)
 
     The user name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
 #### Win32 API References
 
 
-  - Search for *NetUserGetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusergetinfo),[google](#http://www.google.com/search?q=netusergetinfo)or[google groups](#http://groups.google.com/groups?q=netusergetinfo)\.
+  - Search forNetUserGetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusergetinfo),[google](#http://www.google.com/search?q=netusergetinfo) or[google groups](#http://groups.google.com/groups?q=netusergetinfo)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PyUSER\_INFO\_\*](PyUSER.md#pyuserinfo_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PyUSER\_INFO\_\*](PyUSER.md#pyuserinfo_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetUserGetLocalGroups
 
-\[groupName, \.\.\.\] \= **NetUserGetLocalGroups\( *serverName*  *, userName*  *, flags* ** \)
+
+
+\[groupName, \.\.\.\] =NetUserGetLocalGroups\(serverName, userName, flags\)
 Retrieves a list of local groups to which a specified user belongs\.
 
 #### Parameters
 
 
-  -  *serverName* : string
+  - serverName : string
 
     The name of the remote server on which the function is to execute\. None or an empty string specifies the server program running on the local computer\.
 
-  -  *userName* : string
+  - userName : string
 
     The name of the user to search for in each group account\. This parameter can be of the form &ltUserName&gt, in which case the username is expected to be found on servername\. The user name can also be of the form &ltDomainName&gt\\\\&ltUserName&gt in which case &ltDomainName&gt is associated with servername and &ltUserName&gt is expected to be to be found on that domain\.
 
-  -  *flags\=LG\_INCLUDE\_INDIRECT* : int
+  - flags=LG\_INCLUDE\_INDIRECT : int
 
     Flags for the call\.
 
-#### To Do
-This needs to be extended to support the new model, while 
+####  To Do
+ This needs to be extended to support the new model, while 
 
 not breaking existing code\.  A default arg would be perfect\.
 
 ## [win32net](#win32net)\.NetUserModalsGet
 
-dict \= **NetUserModalsGet\( *server*  *, level* ** \)
+
+
+dict =NetUserModalsGet\(server, level\)
 Retrieves global user information on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
 #### Win32 API References
 
 
-  - Search for *NetUserModalsGet* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusermodalsget),[google](#http://www.google.com/search?q=netusermodalsget)or[google groups](#http://groups.google.com/groups?q=netusermodalsget)\.
+  - Search forNetUserModalsGet at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusermodalsget),[google](#http://www.google.com/search?q=netusermodalsget) or[google groups](#http://groups.google.com/groups?q=netusermodalsget)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PyUSER\_MODALS\_INFO\_\*](PyUSER.md#pyusermodals_info_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PyUSER\_MODALS\_INFO\_\*](PyUSER.md#pyusermodals_info_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetUserModalsSet
 
- **NetUserModalsSet\( *server*  *, level*  *, data* ** \)
+NetUserModalsSet\(server, level, data\)
 Sets global user parameters on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the data in the format of[PyUSER\_MODALS\_INFO\_\*](PyUSER.md#pyusermodals_info_.2a)\.
 
 #### Win32 API References
 
 
-  - Search for *NetUserModalsSet* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusermodalsset),[google](#http://www.google.com/search?q=netusermodalsset)or[google groups](#http://groups.google.com/groups?q=netusermodalsset)\.
+  - Search forNetUserModalsSet at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusermodalsset),[google](#http://www.google.com/search?q=netusermodalsset) or[google groups](#http://groups.google.com/groups?q=netusermodalsset)\.
 
 ## [win32net](#win32net)\.NetUserSetInfo
 
- **NetUserSetInfo\( *server*  *, username*  *, level*  *, data* ** \)
+NetUserSetInfo\(server, username, level, data\)
 Sets information about a particular user account on a server\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *username* : string/[PyUnicode](#pyunicode)
+  - username : string/[PyUnicode](#pyunicode)
 
     The user name
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the user data in the format of[PyUSER\_INFO\_\*](PyUSER.md#pyuserinfo_.2a)
 
 #### Win32 API References
 
 
-  - Search for *NetUserSetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusersetinfo),[google](#http://www.google.com/search?q=netusersetinfo)or[google groups](#http://groups.google.com/groups?q=netusersetinfo)\.
+  - Search forNetUserSetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netusersetinfo),[google](#http://www.google.com/search?q=netusersetinfo) or[google groups](#http://groups.google.com/groups?q=netusersetinfo)\.
 
 ## [win32net](#win32net)\.NetValidateName
 
- **NetValidateName\( *Server*  *, Name*  *, NameType*  *, Account*  *, Password* ** \)
+NetValidateName\(Server, Name, NameType, Account, Password\)
 Checks that domain/machine/workgroup name is valid for given context
 
 #### Parameters
 
 
-  -  *Server* : string/[PyUnicode](#pyunicode)
+  - Server : string/[PyUnicode](#pyunicode)
 
     Name of server on which to execute \(None or blank uses local\)
 
-  -  *Name* : string/[PyUnicode](#pyunicode)
+  - Name : string/[PyUnicode](#pyunicode)
 
     Machine, domain, or workgroup name to validate
 
-  -  *NameType* : int
+  - NameType : int
 
     Type of name to validate - from NETSETUP\_NAME\_TYPE enum \(win32net\.NetSetup\*\)
 
-  -  *Account\=None* : string/[PyUnicode](#pyunicode)
+  - Account=None : string/[PyUnicode](#pyunicode)
 
     Account name to use while validating, current security context is used if not specified
 
-  -  *Password\=None* : string/[PyUnicode](#pyunicode)
+  - Password=None : string/[PyUnicode](#pyunicode)
 
     Password for Account
 
 #### Comments
+
+
 If Account and Password aren't passed, current logon credentials are used
+
+
 Will raise NotImplementedError if not available on this platform\.
 
 #### Return Value
@@ -1916,7 +1992,7 @@ Returns none if valid, exception if not
 
 ## [win32net](#win32net)\.NetValidatePasswordPolicy
 
- **NetValidatePasswordPolicy\( *Server*  *, Qualifier*  *, ValidationType*  *, arg* ** \)
+NetValidatePasswordPolicy\(Server, Qualifier, ValidationType, arg\)
 Allows an application to check 
 
 password compliance against an application-provided account database and 
@@ -1928,25 +2004,31 @@ history reuse requirements of a password policy\.
 #### Parameters
 
 
-  -  *Server* : string/[PyUnicode](#pyunicode)
+  - Server : string/[PyUnicode](#pyunicode)
 
     Name of server on which to execute \(None or blank uses local\)
 
-  -  *Qualifier* : None
+  - Qualifier : None
 
     Reserved, must be None
 
-  -  *ValidationType* : int
+  - ValidationType : int
 
     The type of password validation to perform
 
-  -  *arg* : dict/tuple
+  - arg : dict/tuple
 
     Depends on the ValidationType param - either 
 
-a[PyNET\_VALIDATE\_AUTHENTICATION\_INPUT\_ARG](PyNET.md#pynetvalidate_authentication_input_arg),[PyNET\_VALIDATE\_PASSWORD\_CHANGE\_INPUT\_ARG](PyNET.md#pynetvalidate_password_change_input_arg)or **PyNET\_VALIDATE\_PASSWORD\_RESET\_INPUT\_ARG** tuple or dict\.
+a[PyNET\_VALIDATE\_AUTHENTICATION\_INPUT\_ARG](PyNET.md#pynetvalidate_authentication_input_arg),[PyNET\_VALIDATE\_PASSWORD\_CHANGE\_INPUT\_ARG](PyNET.md#pynetvalidate_password_change_input_arg) 
+
+orPyNET\_VALIDATE\_PASSWORD\_RESET\_INPUT\_ARG
+
+ tuple or dict\.
 
 #### Comments
+
+
 Will raise NotImplementedError if not available on this platform, or 
 
 raise win32net\.error if the function fails\.
@@ -1958,131 +2040,137 @@ the integer being the ValidationResult\.
 
 ## [win32net](#win32net)\.NetWkstaGetInfo
 
-dict \= **NetWkstaGetInfo\( *server*  *, level* ** \)
+
+
+dict =NetWkstaGetInfo\(server, level\)
 Retrieves information about the configuration elements for a workstation
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data\. NOTE: levels 302 and 402 don't seem to work correctly\. They return error 124\. So currently these info levels are not available\.
 
 #### Win32 API References
 
 
-  - Search for *NetWkstaGetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstagetinfo),[google](#http://www.google.com/search?q=netwkstagetinfo)or[google groups](#http://groups.google.com/groups?q=netwkstagetinfo)\.
+  - Search forNetWkstaGetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstagetinfo),[google](#http://www.google.com/search?q=netwkstagetinfo) or[google groups](#http://groups.google.com/groups?q=netwkstagetinfo)\.
 
 #### Return Value
-The result will be a dictionary in one of the[PyWKSTA\_INFO\_\*](PyWKSTA.md#pywkstainfo_.2a)formats, depending on the level parameter\.
+The result will be a dictionary in one of the[PyWKSTA\_INFO\_\*](PyWKSTA.md#pywkstainfo_.2a) 
+
+formats, depending on the level parameter\.
 
 ## [win32net](#win32net)\.NetWkstaSetInfo
 
- **NetWkstaSetInfo\( *server*  *, level*  *, data* ** \)
+NetWkstaSetInfo\(server, level, data\)
 Sets information about the configuration elements for a workstation
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the share data\.
 
 #### Win32 API References
 
 
-  - Search for *NetWkstaSetInfo* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstasetinfo),[google](#http://www.google.com/search?q=netwkstasetinfo)or[google groups](#http://groups.google.com/groups?q=netwkstasetinfo)\.
+  - Search forNetWkstaSetInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstasetinfo),[google](#http://www.google.com/search?q=netwkstasetinfo) or[google groups](#http://groups.google.com/groups?q=netwkstasetinfo)\.
 
 ## [win32net](#win32net)\.NetWkstaTransportAdd
 
- **NetWkstaTransportAdd\( *server*  *, level*  *, data* ** \)
+NetWkstaTransportAdd\(server, level, data\)
 binds the redirector to a transport
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *level* : int
+  - level : int
 
     The information level contained in the data
 
-  -  *data* : mapping
+  - data : mapping
 
     A dictionary holding the share data\.
 
 #### Win32 API References
 
 
-  - Search for *NetWkstaTransportAdd* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstatransportadd),[google](#http://www.google.com/search?q=netwkstatransportadd)or[google groups](#http://groups.google.com/groups?q=netwkstatransportadd)\.
+  - Search forNetWkstaTransportAdd at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstatransportadd),[google](#http://www.google.com/search?q=netwkstatransportadd) or[google groups](#http://groups.google.com/groups?q=netwkstatransportadd)\.
 
 ## [win32net](#win32net)\.NetWkstaTransportDel
 
- **NetWkstaTransportDel\( *server*  *, TransportName*  *, ucond* ** \)
+NetWkstaTransportDel\(server, TransportName, ucond\)
 unbinds the transport protocol from redirector
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server, or None\.
 
-  -  *TransportName* : string/[PyUnicode](#pyunicode)
+  - TransportName : string/[PyUnicode](#pyunicode)
 
     The name of the transport to delete\.
 
-  -  *ucond\=0* : int
+  - ucond=0 : int
 
     Level of force to use\. Can be USE\_FORCE or USE\_NOFORCE or USE\_LOTS\_OF\_FORCE
 
 #### Win32 API References
 
 
-  - Search for *NetWkstaTransportDel* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstatransportdel),[google](#http://www.google.com/search?q=netwkstatransportdel)or[google groups](#http://groups.google.com/groups?q=netwkstatransportdel)\.
+  - Search forNetWkstaTransportDel at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstatransportdel),[google](#http://www.google.com/search?q=netwkstatransportdel) or[google groups](#http://groups.google.com/groups?q=netwkstatransportdel)\.
 
 ## [win32net](#win32net)\.NetWkstaTransportEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetWkstaTransportEnum\( *server*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetWkstaTransportEnum\(server, level, resumeHandle, prefLen\)
 Retrieves information about transport protocols that are currently managed by the redirector
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetWkstaTransportEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstatransportenum),[google](#http://www.google.com/search?q=netwkstatransportenum)or[google groups](#http://groups.google.com/groups?q=netwkstatransportenum)\.
+  - Search forNetWkstaTransportEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstatransportenum),[google](#http://www.google.com/search?q=netwkstatransportenum) or[google groups](#http://groups.google.com/groups?q=netwkstatransportenum)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyWKSTA\_TRANSPORT\_INFO\_\*](PyWKSTA.md#pywkstatransport_info_.2a), depending on the level parameter\), 
@@ -2101,32 +2189,34 @@ returned for the new handle, indicating all the data has been read\.
 
 ## [win32net](#win32net)\.NetWkstaUserEnum
 
-\(\[dict, \.\.\.\], total, resumeHandle\) \= **NetWkstaUserEnum\( *server*  *, level*  *, resumeHandle*  *, prefLen* ** \)
+
+
+\(\[dict, \.\.\.\], total, resumeHandle\) =NetWkstaUserEnum\(server, level, resumeHandle, prefLen\)
 Retrieves information about all users currently logged on to the workstation\.
 
 #### Parameters
 
 
-  -  *server* : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](#pyunicode)
 
     The name of the server to execute on, or None\.
 
-  -  *level* : int
+  - level : int
 
     The level of data required\.
 
-  -  *resumeHandle\=0* : int
+  - resumeHandle=0 : int
 
     A resume handle\.  See the return description for more information\.
 
-  -  *prefLen\=MAX\_PREFERRED\_LENGTH* : int
+  - prefLen=MAX\_PREFERRED\_LENGTH : int
 
     The preferred length of the data buffer\.
 
 #### Win32 API References
 
 
-  - Search for *NetWkstaUserEnum* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstauserenum),[google](#http://www.google.com/search?q=netwkstauserenum)or[google groups](#http://groups.google.com/groups?q=netwkstauserenum)\.
+  - Search forNetWkstaUserEnum at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=netwkstauserenum),[google](#http://www.google.com/search?q=netwkstauserenum) or[google groups](#http://groups.google.com/groups?q=netwkstauserenum)\.
 
 #### Return Value
 The result is a list of items read \(with each item being a dictionary of format[PyWKSTA\_USER\_INFO\_\*](PyWKSTA.md#pywkstauser_info_.2a), depending on the level parameter\), 

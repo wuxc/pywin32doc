@@ -2,7 +2,9 @@
 
 ## PyCRichEditView Object
 
-A class which implementes a CRichEditView\.  Derived from **PyCRichEditView** and[PyCRichEditCtrl](#pycricheditctrl)\.
+
+
+A class which implementes a CRichEditView\.  Derived fromPyCRichEditView and[PyCRichEditCtrl](#pycricheditctrl)\.
 
 #### Methods
 
@@ -25,33 +27,39 @@ A class which implementes a CRichEditView\.  Derived from **PyCRichEditView** an
 
 ## [PyCRichEditView](#pycricheditview)\.GetRichEditCtrl
 
-[PyCRichEditCtrl](#pycricheditctrl)\= **GetRichEditCtrl\(** \)
+[PyCRichEditCtrl](#pycricheditctrl) =GetRichEditCtrl\(\)
 Returns the underlying rich edit control object\.
 
 ## [PyCRichEditView](#pycricheditview)\.SaveTextFile
 
-None \= **SaveTextFile\( *FileName* ** \)
+
+
+None =SaveTextFile\(FileName\)
 Saves the contents of the control as a test file
 
 #### Parameters
 
 
-  -  *FileName* : str
+  - FileName : str
 
     Name of file to save
 
 #### Comments
+
+
 Theere is no equivilent MFC method\.  This is implemented in this module for performance reasons\.
 
 ## [PyCRichEditView](#pycricheditview)\.SetWordWrap
 
-None \= **SetWordWrap\( *wordWrap* ** \)
+
+
+None =SetWordWrap\(wordWrap\)
 Sets the wordwrap state for the control\.
 
 #### Parameters
 
 
-  -  *wordWrap* : int
+  - wordWrap : int
 
     The new word-wrap state\.
 
@@ -62,7 +70,9 @@ Sets the wordwrap state for the control\.
 
 ## [PyCRichEditView](#pycricheditview)\.WrapChanged
 
-None \= **WrapChanged\(** \)
+
+
+None =WrapChanged\(\)
 Calls the underlying WrapChanged method\.
 
 #### MFC References

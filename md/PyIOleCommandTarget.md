@@ -2,6 +2,8 @@
 
 ## PyIOleCommandTarget Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,10 +19,10 @@ Description of the interface
 
 ## [PyIOleCommandTarget](#pyiolecommandtarget)\.Exec
 
- **Exec\(** \)
+Exec\(\)
 Description of Exec\.
 
 ## [PyIOleCommandTarget](#pyiolecommandtarget)\.QueryStatus
 
- **QueryStatus\(** \)
+QueryStatus\(\)
 Description of QueryStatus\.

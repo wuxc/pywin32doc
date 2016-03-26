@@ -2,6 +2,8 @@
 
 ## Module win32ts
 
+
+
 Interface to the Terminal Services Api 
 
 All functions in this module accept keyword arguments
@@ -87,105 +89,113 @@ All functions in this module accept keyword arguments
 
 ## [win32ts](#win32ts)\.ProcessIdToSessionId
 
-int \= **ProcessIdToSessionId\( *ProcessId* ** \)
+
+
+int =ProcessIdToSessionId\(ProcessId\)
 Finds the session under which a process is running
 
 #### Parameters
 
 
-  -  *ProcessId* : int
+  - ProcessId : int
 
     Id of a process as returned by[win32ts::WTSEnumerateProcesses](win32ts.md#win32tswtsenumerateprocesses)
 
 ## [win32ts](#win32ts)\.WTSCloseServer
 
- **WTSCloseServer\( *Server* ** \)
+WTSCloseServer\(Server\)
 Closes a terminal server handle
 
 #### Parameters
 
 
-  -  *Server* :[PyHANDLE](#pyhandle)
+  - Server :[PyHANDLE](#pyhandle)
 
     Terminal Server handle
 
 ## [win32ts](#win32ts)\.WTSDisconnectSession
 
- **WTSDisconnectSession\( *Server*  *, SessionId*  *, Wait* ** \)
+WTSDisconnectSession\(Server, SessionId, Wait\)
 Disconnects a session without logging it off
 
 #### Parameters
 
 
-  -  *Server* :[PyHANDLE](#pyhandle)
+  - Server :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server
 
-  -  *SessionId* : int
+  - SessionId : int
 
     Terminal services session id as returned by[win32ts::WTSEnumerateSessions](win32ts.md#win32tswtsenumeratesessions)
 
-  -  *Wait* : boolean
+  - Wait : boolean
 
     Indicates whether operation should be performed asynchronously
 
 ## [win32ts](#win32ts)\.WTSEnumerateProcesses
 
-\([PyUnicode](#pyunicode),\.\.\.\) \= **WTSEnumerateProcesses\( *Server*  *, Version*  *, Reserved* ** \)
+
+
+\([PyUnicode](#pyunicode),\.\.\.\) =WTSEnumerateProcesses\(Server, Version, Reserved\)
 Lists processes on a terminal server
 
 #### Parameters
 
 
-  -  *Server\=WTS\_CURRENT\_SERVER\_HANDLE* :[PyHANDLE](#pyhandle)
+  - Server=WTS\_CURRENT\_SERVER\_HANDLE :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server
 
-  -  *Version\=1* : int
+  - Version=1 : int
 
     Version of request, currently 1 is only valid value
 
-  -  *Reserved\=0* : int
+  - Reserved=0 : int
 
     Reserved, use 0 if passed in
 
 ## [win32ts](#win32ts)\.WTSEnumerateServers
 
-\([PyUnicode](#pyunicode),\.\.\.\) \= **WTSEnumerateServers\( *DomainName*  *, Version*  *, Reserved* ** \)
+
+
+\([PyUnicode](#pyunicode),\.\.\.\) =WTSEnumerateServers\(DomainName, Version, Reserved\)
 Lists terminal servers in a domain
 
 #### Parameters
 
 
-  -  *DomainName\=None* :[PyUnicode](#pyunicode)
+  - DomainName=None :[PyUnicode](#pyunicode)
 
     Use None for current domain
 
-  -  *Version\=1* : int
+  - Version=1 : int
 
     Version of request, currently 1 is only valid value
 
-  -  *Reserved\=0* : int
+  - Reserved=0 : int
 
     Reserved, use 0 if passed in
 
 ## [win32ts](#win32ts)\.WTSEnumerateSessions
 
-\(dict,\.\.\.\) \= **WTSEnumerateSessions\( *Server*  *, Version*  *, Reserved* ** \)
+
+
+\(dict,\.\.\.\) =WTSEnumerateSessions\(Server, Version, Reserved\)
 Lists sessions on a server
 
 #### Parameters
 
 
-  -  *Server\=WTS\_CURRENT\_SERVER\_HANDLE* :[PyHANDLE](#pyhandle)
+  - Server=WTS\_CURRENT\_SERVER\_HANDLE :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server
 
-  -  *Version\=1* : int
+  - Version=1 : int
 
     Version of request, currently 1 is only valid value
 
-  -  *Reserved\=0* : int
+  - Reserved=0 : int
 
     Reserved, use 0 if passed in
 
@@ -194,153 +204,163 @@ Returns a sequence of dictionaries representing WTS\_SESSION\_INFO structs, cont
 
 ## [win32ts](#win32ts)\.WTSGetActiveConsoleSessionId
 
-int \= **WTSGetActiveConsoleSessionId\(** \)
+
+
+int =WTSGetActiveConsoleSessionId\(\)
 Returns the id of the console session
 
 #### Comments
+
+
 Returns 0xffffffff if no active console session exists
 
 ## [win32ts](#win32ts)\.WTSLogoffSession
 
- **WTSLogoffSession\( *Server*  *, SessionId*  *, Wait* ** \)
+WTSLogoffSession\(Server, SessionId, Wait\)
 Logs off a user logged in through Terminal Services
 
 #### Parameters
 
 
-  -  *Server* :[PyHANDLE](#pyhandle)
+  - Server :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server
 
-  -  *SessionId* : int
+  - SessionId : int
 
     Terminal services session id as returned by[win32ts::WTSEnumerateSessions](win32ts.md#win32tswtsenumeratesessions)
 
-  -  *Wait* : boolean
+  - Wait : boolean
 
     Indicates whether operation should be performed asynchronously
 
 ## [win32ts](#win32ts)\.WTSOpenServer
 
-[PyHANDLE](#pyhandle)\= **WTSOpenServer\( *ServerName* ** \)
+[PyHANDLE](#pyhandle) =WTSOpenServer\(ServerName\)
 Opens a handle to a terminal server
 
 #### Parameters
 
 
-  -  *ServerName* :[PyUnicode](#pyunicode)
+  - ServerName :[PyUnicode](#pyunicode)
 
     Name ot terminal server to be opened
 
 ## [win32ts](#win32ts)\.WTSQuerySessionInformation
 
- **WTSQuerySessionInformation\( *Server*  *, SessionId*  *, WTSInfoClass* ** \)
+WTSQuerySessionInformation\(Server, SessionId, WTSInfoClass\)
 Returns information about a terminal services session
 
 #### Parameters
 
 
-  -  *Server* :[PyHANDLE](#pyhandle)
+  - Server :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server as returned by[win32ts::WTSOpenServer](win32ts.md#win32tswtsopenserver)
 
-  -  *SessionId* : int
+  - SessionId : int
 
     Terminal services session id as returned by[win32ts::WTSEnumerateSessions](win32ts.md#win32tswtsenumeratesessions)
 
-  -  *WTSInfoClass* : int
+  - WTSInfoClass : int
 
     Type of information requested, from WTS\_INFO\_CLASS enum
 
 
 ## [win32ts](#win32ts)\.WTSQueryUserConfig
 
-object \= **WTSQueryUserConfig\( *ServerName*  *, UserName*  *, ConfigClass* ** \)
+
+
+object =WTSQueryUserConfig\(ServerName, UserName, ConfigClass\)
 Returns user configuration
 
 #### Parameters
 
 
-  -  *ServerName* :[PyUnicode](#pyunicode)
+  - ServerName :[PyUnicode](#pyunicode)
 
     Name ot terminal server
 
-  -  *UserName* :[PyUnicode](#pyunicode)
+  - UserName :[PyUnicode](#pyunicode)
 
     Name of user
 
-  -  *ConfigClass* : int
+  - ConfigClass : int
 
     Type of information to be returned, win32ts\.WTSUserConfig\*
 
- **ConfigClass**  **Returned value** WTSUserConfigInitialProgramUnicode string, program to be run when user logs onWTSUserConfigWorkingDirectoryUnicode string, working dir for initial programWTSUserConfigModemCallbackPhoneNumberUnicode stringWTSUserConfigTerminalServerProfilePathUnicode stringWTSUserConfigTerminalServerHomeDirUnicode stringWTSUserConfigTerminalServerHomeDirDriveUnicode stringWTSUserConfigfInheritInitialProgramIntWTSUserConfigfAllowLogonTerminalServerInt, 1 if user can log on thru Terminal ServiceWTSUserConfigTimeoutSettingsConnectionsInt, max connection time \(ms\)WTSUserConfigTimeoutSettingsDisconnectionsIntWTSUserConfigTimeoutSettingsIdleInt, max idle time \(ms\)WTSUserConfigfDeviceClientDrivesIntWTSUserConfigfDeviceClientPrintersIntWTSUserConfigfDeviceClientDefaultPrinterIntWTSUserConfigBrokenTimeoutSettingsIntWTSUserConfigReconnectSettingsIntWTSUserConfigModemCallbackSettingsIntWTSUserConfigShadowingSettingsInt, indicates if user's session my be monitoredWTSUserConfigfTerminalServerRemoteHomeDirInt,
+ConfigClassReturned valueWTSUserConfigInitialProgramUnicode string, program to be run when user logs onWTSUserConfigWorkingDirectoryUnicode string, working dir for initial programWTSUserConfigModemCallbackPhoneNumberUnicode stringWTSUserConfigTerminalServerProfilePathUnicode stringWTSUserConfigTerminalServerHomeDirUnicode stringWTSUserConfigTerminalServerHomeDirDriveUnicode stringWTSUserConfigfInheritInitialProgramIntWTSUserConfigfAllowLogonTerminalServerInt, 1 if user can log on thru Terminal ServiceWTSUserConfigTimeoutSettingsConnectionsInt, max connection time \(ms\)WTSUserConfigTimeoutSettingsDisconnectionsIntWTSUserConfigTimeoutSettingsIdleInt, max idle time \(ms\)WTSUserConfigfDeviceClientDrivesIntWTSUserConfigfDeviceClientPrintersIntWTSUserConfigfDeviceClientDefaultPrinterIntWTSUserConfigBrokenTimeoutSettingsIntWTSUserConfigReconnectSettingsIntWTSUserConfigModemCallbackSettingsIntWTSUserConfigShadowingSettingsInt, indicates if user's session my be monitoredWTSUserConfigfTerminalServerRemoteHomeDirInt,
 #### Return Value
 The type of the returned value is dependent on the config class requested
 
 ## [win32ts](#win32ts)\.WTSQueryUserToken
 
-[PyHANDLE](#pyhandle)\= **WTSQueryUserToken\( *SessionId* ** \)
+[PyHANDLE](#pyhandle) =WTSQueryUserToken\(SessionId\)
 Retrieves the access token for a session
 
 #### Parameters
 
 
-  -  *SessionId* : int
+  - SessionId : int
 
     Terminal services session id
 
 #### Comments
+
+
 This function is intended only for use by trusted processes that have SE\_TCB\_PRIVILEGE enabled
 
 ## [win32ts](#win32ts)\.WTSRegisterSessionNotification
 
- **WTSRegisterSessionNotification\( *Wnd*  *, Flags* ** \)
+WTSRegisterSessionNotification\(Wnd, Flags\)
 Registers a window to receive terminal service notifications
 
 #### Parameters
 
 
-  -  *Wnd* :[PyHANDLE](#pyhandle)
+  - Wnd :[PyHANDLE](#pyhandle)
 
     Window handle to receive terminal service messages
 
-  -  *Flags* : int
+  - Flags : int
 
     NOTIFY\_FOR\_THIS\_SESSION or NOTIFY\_FOR\_ALL\_SESSIONS
 
 ## [win32ts](#win32ts)\.WTSSendMessage
 
-int \= **WTSSendMessage\( *Server*  *, SessionId*  *, Title*  *, Message*  *, Style*  *, Timeout*  *, Wait* ** \)
+
+
+int =WTSSendMessage\(Server, SessionId, Title, Message, Style, Timeout, Wait\)
 Sends a popup message to a terminal services session
 
 #### Parameters
 
 
-  -  *Server\=WTS\_CURRENT\_SERVER\_HANDLE* :[PyHANDLE](#pyhandle)
+  - Server=WTS\_CURRENT\_SERVER\_HANDLE :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server, or WTS\_CURRENT\_SERVER\_HANDLE
 
-  -  *SessionId* : int
+  - SessionId : int
 
     Terminal services session id
 
-  -  *Title* :[PyUnicode](#pyunicode)
+  - Title :[PyUnicode](#pyunicode)
 
     Title of dialog
 
-  -  *Message* :[PyUnicode](#pyunicode)
+  - Message :[PyUnicode](#pyunicode)
 
     Message to be displayed
 
-  -  *Style* : int
+  - Style : int
 
     Usually MB\_OK
 
-  -  *Timeout* : int
+  - Timeout : int
 
     Seconds to wait before returning \(only used if Wait is True\)
 
-  -  *Wait* : boolean
+  - Wait : boolean
 
     Specifies if function should wait for user input before returning
 
@@ -349,86 +369,88 @@ Returns one of IDABORT,IDCANCEL,IDIGNORE,IDNO,IDOK,IDRETRY,IDYES,IDASYNC,IDTIMEO
 
 ## [win32ts](#win32ts)\.WTSSetUserConfig
 
- **WTSSetUserConfig\( *ServerName*  *, UserName*  *, ConfigClass* ** \)
+WTSSetUserConfig\(ServerName, UserName, ConfigClass\)
 Changes user configuration
 
 #### Parameters
 
 
-  -  *ServerName* :[PyUnicode](#pyunicode)
+  - ServerName :[PyUnicode](#pyunicode)
 
     Name ot terminal server
 
-  -  *UserName* :[PyUnicode](#pyunicode)
+  - UserName :[PyUnicode](#pyunicode)
 
     Name of user
 
-  -  *ConfigClass* : int
+  - ConfigClass : int
 
     Type of information to be set, win32ts\.WTSUserConfig\*
 
 
 ## [win32ts](#win32ts)\.WTSShutdownSystem
 
- **WTSShutdownSystem\( *Server*  *, ShutdownFlag* ** \)
+WTSShutdownSystem\(Server, ShutdownFlag\)
 Issues a shutdown request to a terminal server
 
 #### Parameters
 
 
-  -  *Server* :[PyHANDLE](#pyhandle)
+  - Server :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server
 
-  -  *ShutdownFlag* : int
+  - ShutdownFlag : int
 
     One of the win32ts\.WTS\_WSD\_\* values
 
 ## [win32ts](#win32ts)\.WTSTerminateProcess
 
- **WTSTerminateProcess\( *Server*  *, ProcessId*  *, ExitCode* ** \)
+WTSTerminateProcess\(Server, ProcessId, ExitCode\)
 Kills a process on a terminal server
 
 #### Parameters
 
 
-  -  *Server* :[PyHANDLE](#pyhandle)
+  - Server :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server
 
-  -  *ProcessId* : int
+  - ProcessId : int
 
     Id of a process as returned by[win32ts::WTSEnumerateProcesses](win32ts.md#win32tswtsenumerateprocesses)
 
-  -  *ExitCode* : int
+  - ExitCode : int
 
     Exit code for the process
 
 ## [win32ts](#win32ts)\.WTSUnRegisterSessionNotification
 
- **WTSUnRegisterSessionNotification\( *Wnd* ** \)
+WTSUnRegisterSessionNotification\(Wnd\)
 Disables terminal service window messages
 
 #### Parameters
 
 
-  -  *Wnd* :[PyHANDLE](#pyhandle)
+  - Wnd :[PyHANDLE](#pyhandle)
 
     Window previously registered to receive session notifications
 
 ## [win32ts](#win32ts)\.WTSWaitSystemEvent
 
-int \= **WTSWaitSystemEvent\( *Server*  *, EventMask* ** \)
+
+
+int =WTSWaitSystemEvent\(Server, EventMask\)
 Waits for an event to occur
 
 #### Parameters
 
 
-  -  *Server\=WTS\_CURRENT\_SERVER\_HANDLE* :[PyHANDLE](#pyhandle)
+  - Server=WTS\_CURRENT\_SERVER\_HANDLE :[PyHANDLE](#pyhandle)
 
     Handle to a terminal server, or WTS\_CURRENT\_SERVER\_HANDLE
 
-  -  *EventMask\=WTS\_EVENT\_ALL* : int
+  - EventMask=WTS\_EVENT\_ALL : int
 
     Combination of WTS\_EVENT\_\* values
 

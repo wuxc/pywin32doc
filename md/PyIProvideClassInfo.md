@@ -2,6 +2,8 @@
 
 ## PyIProvideClassInfo Object
 
+
+
 A Python interface to IProvideClassInfo
 
 #### Methods
@@ -14,5 +16,5 @@ A Python interface to IProvideClassInfo
 
 ## [PyIProvideClassInfo](#pyiprovideclassinfo)\.GetClassInfo
 
-[PyITypeInfo](#pyitypeinfo)\= **GetClassInfo\(** \)
+[PyITypeInfo](#pyitypeinfo) =GetClassInfo\(\)
 Gets information about the CO\_CLASS\.

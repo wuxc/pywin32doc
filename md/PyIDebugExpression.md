@@ -2,6 +2,8 @@
 
 ## PyIDebugExpression Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,32 +31,32 @@ Description of the interface
 
 ## [PyIDebugExpression](#pyidebugexpression)\.Abort
 
- **Abort\(** \)
+Abort\(\)
 Description of Abort\.
 
 ## [PyIDebugExpression](#pyidebugexpression)\.GetResultAsDebugProperties
 
- **GetResultAsDebugProperties\(** \)
+GetResultAsDebugProperties\(\)
 Description of GetResultAsDebugProperty\.
 
 ## [PyIDebugExpression](#pyidebugexpression)\.GetResultAsString
 
- **GetResultAsString\(** \)
+GetResultAsString\(\)
 Description of GetResultAsString\.
 
 ## [PyIDebugExpression](#pyidebugexpression)\.QueryIsComplete
 
- **QueryIsComplete\(** \)
+QueryIsComplete\(\)
 Description of QueryIsComplete\.
 
 ## [PyIDebugExpression](#pyidebugexpression)\.Start
 
- **Start\( *pdecb* ** \)
+Start\(pdecb\)
 Description of Start\.
 
 #### Parameters
 
 
-  -  *pdecb* :[PyIDebugExpressionCallBack](#pyidebugexpressioncallback)
+  - pdecb :[PyIDebugExpressionCallBack](#pyidebugexpressioncallback)
 
     Description for pdecb

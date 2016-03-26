@@ -2,15 +2,17 @@
 
 ## COMPONENTSOPT Object
 
+
+
 A dictionary containing data to fill a COMPONENTSOPT struct
 
 #### Properties
 
-  -  **bool EnableComponents** 
+  - bool EnableComponents
     True if components are enabled
 
-  -  **bool ActiveDesktop** 
+  - bool ActiveDesktop
     True if Active Desktop is enabled
 
-  -  **int Size** 
+  - int Size
     Size of structure, ignored on input

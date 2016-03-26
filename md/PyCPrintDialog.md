@@ -2,39 +2,61 @@
 
 ## PyCPrintDialog Object
 
+
+
 An object which encapsulates an MFC CPrintDialog object\.
 
 
-## [PyCPrintDialog\.OnCancel](#pycprintdialog)Virtual
+## [PyCPrintDialog\.OnCancel](#pycprintdialog) Virtual
 
- **OnCancel\(** \)
+OnCancel\(\)
 Called by the MFC architecture when the user selects the Cancel button\.
 
 #### Comments
-The procedure is expected to dismiss the window with the **PyCPrintDialog::EndDialog** method\. 
+
+
+The procedure is expected to dismiss the window with thePyCPrintDialog::EndDialog
+
+
+
+ method\. 
 
 The base implementation \(which dismisses the dialog\) is not called if a handler exists\.  This can be 
 
-done via **PyCPrintDialog::OnCancel** \.
+done viaPyCPrintDialog::OnCancel
+
+
+
+\.
 
 #### See Also
 
 
   - [PyCDialog::OnCancel](PyCDialog.md#pycdialogoncancel)
 
-## [PyCPrintDialog\.OnOK](#pycprintdialog)Virtual
+## [PyCPrintDialog\.OnOK](#pycprintdialog) Virtual
 
- **OnOK\(** \)
+OnOK\(\)
 Called by the MFC architecture when the user selects the OK button\.
 
 #### Comments
-The procedure is expected to dismiss the window with the **PyCPrintDialog::EndDialog** method\. 
+
+
+The procedure is expected to dismiss the window with thePyCPrintDialog::EndDialog
+
+
+
+ method\. 
 
 The base implementation \(which dismisses the dialog\) is not called if a handler exists\.  This can be 
 
-done via **PyCPrintDialog::OnOK** \.
+done viaPyCPrintDialog::OnOK
+
+
+
+\.
 
 #### See Also
 
 
-  -  **PyCDialogDialog::OnOK** 
+  - PyCDialogDialog::OnOK

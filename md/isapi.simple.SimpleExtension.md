@@ -2,6 +2,8 @@
 
 ## isapi\.simple\.SimpleExtension Object
 
+
+
 Base class for a simple ISAPI extension
 
 #### Methods
@@ -21,79 +23,87 @@ Base class for a simple ISAPI extension
 
 ## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.GetExtensionVersion
 
- **GetExtensionVersion\(** \)
+GetExtensionVersion\(\)
 Called by the ISAPI framework to get the extension version
 
 #### Comments
+
+
 The default implementation uses the classes docstring to 
 
 set the extension description\.
 
 ## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.GetExtensionVersion
 
- **GetExtensionVersion\( *self*  *, vi* ** \)
+GetExtensionVersion\(self, vi\)
 Called by the ISAPI framework to get the extension version
 
 #### Parameters
 
 
-  -  *self* :
+  - self :
 
     self
 
-  -  *vi* :
+  - vi :
 
     vi
 
 #### Comments
+
+
 The default implementation uses the classes docstring to 
 
 set the extension description\.
 
 ## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.HttpExtensionProc
 
- **HttpExtensionProc\(** \)
+HttpExtensionProc\(\)
 Called by the ISAPI framework for each extension request\.
 
 #### Comments
+
+
 sub-classes must provide an implementation for this method\.
 
 ## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.HttpExtensionProc
 
- **HttpExtensionProc\( *self*  *, control\_block* ** \)
+HttpExtensionProc\(self, control\_block\)
 Called by the ISAPI framework for each extension request\.
 
 #### Parameters
 
 
-  -  *self* :
+  - self :
 
     self
 
-  -  *control\_block* :
+  - control\_block :
 
     control\_block
 
 #### Comments
+
+
 sub-classes must provide an implementation for this method\.
 
 ## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.TerminateExtension
 
- **TerminateExtension\(** \)
+TerminateExtension\(\)
 Called by the ISAPI framework as the extension terminates\.
 
 ## [isapi\.simple\.SimpleExtension](#isapi.simple.simpleextension)\.TerminateExtension
 
- **TerminateExtension\( *self*  *, status* ** \)
+TerminateExtension\(self, status\)
 Called by the ISAPI framework as the extension terminates\.
 
 #### Parameters
 
 
-  -  *self* :
+  - self :
 
     self
 
-  -  *status* :
+  - status :
 
     status

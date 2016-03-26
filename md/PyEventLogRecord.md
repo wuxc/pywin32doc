@@ -2,48 +2,50 @@
 
 ## PyEventLogRecord Object
 
+
+
 An object containing the data in an EVENTLOGRECORD\.
 
 #### Properties
 
-  -  **integer Reserved** 
+  - integer Reserved
     
 
-  -  **integer RecordNumber** 
+  - integer RecordNumber
     
 
-  -  **[PyTime](#pytime)TimeGenerated** 
+  - [PyTime](#pytime) TimeGenerated
     
 
-  -  **[PyTime](#pytime)TimeWritten** 
+  - [PyTime](#pytime) TimeWritten
     
 
-  -  **integer EventID** 
+  - integer EventID
     
 
-  -  **integer EventType** 
+  - integer EventType
     
 
-  -  **integer EventCategory** 
+  - integer EventCategory
     
 
-  -  **integer ReservedFlags** 
+  - integer ReservedFlags
     
 
-  -  **integer ClosingRecordNumber** 
+  - integer ClosingRecordNumber
     
 
-  -  **[PyUnicode](#pyunicode)SourceName** 
+  - [PyUnicode](#pyunicode) SourceName
     
 
-  -  **\([PyUnicode](#pyunicode),\.\.\.\) StringInserts** 
+  - \([PyUnicode](#pyunicode),\.\.\.\) StringInserts
     
 
-  -  **[PySID](#pysid)Sid** 
+  - [PySID](#pysid) Sid
     
 
-  -  **string Data** 
+  - string Data
     
 
-  -  **[PyUnicode](#pyunicode)ComputerName** 
+  - [PyUnicode](#pyunicode) ComputerName
     

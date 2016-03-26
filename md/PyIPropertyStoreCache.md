@@ -2,6 +2,8 @@
 
 ## PyIPropertyStoreCache Object
 
+
+
 Property store that allows tracking of modification state\.  Inherits all methods of[PyIPropertyStore](#pyipropertystore)\.
 
 #### Methods
@@ -25,13 +27,15 @@ Property store that allows tracking of modification state\.  Inherits all method
 
 ## [PyIPropertyStoreCache](#pyipropertystorecache)\.GetState
 
-int \= **GetState\( *key* ** \)
+
+
+int =GetState\(key\)
 Retrieves the current state of a property
 
 #### Parameters
 
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     Property identifier
 
@@ -40,48 +44,50 @@ A value from the PSC\_STATE enum \(PSC\_NORMAL, PSC\_NOTINSOURCE\. PSC\_DIRTY\)
 
 ## [PyIPropertyStoreCache](#pyipropertystorecache)\.GetValueAndState
 
-\([PyPROPVARIANT](#pypropvariant), int\) \= **GetValueAndState\( *key* ** \)
+
+
+\([PyPROPVARIANT](#pypropvariant), int\) =GetValueAndState\(key\)
 Retrieves the current value and state of a property
 
 #### Parameters
 
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     Property identifier
 
 ## [PyIPropertyStoreCache](#pyipropertystorecache)\.SetState
 
- **SetState\( *key*  *, state* ** \)
+SetState\(key, state\)
 Sets the state of a property
 
 #### Parameters
 
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     Property identifier
 
-  -  *state* : int
+  - state : int
 
     Value from the PSC\_STATE enum \(pscon\.PSC\_\*\)
 
 ## [PyIPropertyStoreCache](#pyipropertystorecache)\.SetValueAndState
 
- **SetValueAndState\( *key*  *, value*  *, state* ** \)
+SetValueAndState\(key, value, state\)
 Sets the value and state of a property
 
 #### Parameters
 
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     Property identifier
 
-  -  *value* :[PyPROPVARIANT](#pypropvariant)
+  - value :[PyPROPVARIANT](#pypropvariant)
 
     The new value
 
-  -  *state* : int
+  - state : int
 
     The new state \(pscon\.PSC\_\*\)

@@ -2,7 +2,9 @@
 
 ## PyCPropertyPage Object
 
-A class which encapsulates an MFC CPropertyPage object\.  Derived from a[PyCDialog](#pycdialog)object\.
+
+
+A class which encapsulates an MFC CPropertyPage object\.  Derived from a[PyCDialog](#pycdialog) object\.
 
 #### Methods
 
@@ -61,25 +63,27 @@ A class which encapsulates an MFC CPropertyPage object\.  Derived from a[PyCDial
 
 ## [PyCPropertyPage](#pycpropertypage)\.CancelToClose
 
- **CancelToClose\(** \)
+CancelToClose\(\)
 Changes the Cancel button to Close\.
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnApply
 
- **OnApply\(** \)
+OnApply\(\)
 Calls the default MFC OnApply handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnApply](PyCPropertyPage.md#pycpropertypageonapply_virtual)virtual method
+  - [PyCPropertyPage\.OnApply](PyCPropertyPage.md#pycpropertypageonapply_virtual) virtual method
 
-## [PyCPropertyPage\.OnApply](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnApply](#pycpropertypage) Virtual
 
- **OnApply\(** \)
+OnApply\(\)
 Called by the framework when the user chooses the OK or the Apply Now button\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnApply](PyCPropertyPage.md#pycpropertypageonapply)\) yourself
 
 #### See Also
@@ -92,37 +96,41 @@ Return Nonzero if the changes are accepted; otherwise 0\.
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnCancel
 
- **OnCancel\(** \)
+OnCancel\(\)
 Calls the default MFC OnCancel handler\.
 
 #### See Also
 
 
-  - [PyCDialog\.OnCancel](PyCDialog.md#pycdialogoncancel_virtual)virtual method
+  - [PyCDialog\.OnCancel](PyCDialog.md#pycdialogoncancel_virtual) virtual method
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnKillActive
 
-int \= **OnKillActive\(** \)
+
+
+int =OnKillActive\(\)
 Calls the default MFC OnKillActive handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnKillActive](PyCPropertyPage.md#pycpropertypageonkillactive_virtual)virtual method
+  - [PyCPropertyPage\.OnKillActive](PyCPropertyPage.md#pycpropertypageonkillactive_virtual) virtual method
 
-  - [PyCPropertyPage\.OnKillActive](PyCPropertyPage.md#pycpropertypageonkillactive_virtual)virtual method
+  - [PyCPropertyPage\.OnKillActive](PyCPropertyPage.md#pycpropertypageonkillactive_virtual) virtual method
 
 #### Return Value
 The result is true if the page should be deselected\. 
 
 Typically this result should be passed to the original OnSetActive handler\.
 
-## [PyCPropertyPage\.OnKillActive](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnKillActive](#pycpropertypage) Virtual
 
- **OnKillActive\(** \)
+OnKillActive\(\)
 Called when the page loses focus\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnKillActive](PyCPropertyPage.md#pycpropertypageonkillactive)\) yourself
 
 #### See Also
@@ -135,30 +143,32 @@ The method should return TRUE if the page can be de-activated\.
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnOK
 
- **OnOK\(** \)
+OnOK\(\)
 Calls the default MFC OnOK handler\.
 
 #### See Also
 
 
-  - [PyCDialog\.OnOK](PyCDialog.md#pycdialogonok_virtual)virtual method
+  - [PyCDialog\.OnOK](PyCDialog.md#pycdialogonok_virtual) virtual method
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnQueryCancel
 
- **OnQueryCancel\(** \)
+OnQueryCancel\(\)
 Calls the default MFC OnQueryCancel handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnQueryCancel](PyCPropertyPage.md#pycpropertypageonquerycancel_virtual)virtual method
+  - [PyCPropertyPage\.OnQueryCancel](PyCPropertyPage.md#pycpropertypageonquerycancel_virtual) virtual method
 
-## [PyCPropertyPage\.OnQueryCancel](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnQueryCancel](#pycpropertypage) Virtual
 
- **OnQueryCancel\(** \)
+OnQueryCancel\(\)
 Called by the framework when the user clicks the Cancel button and before the cancel action has taken place\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnQueryCancel](PyCPropertyPage.md#pycpropertypageonquerycancel)\) yourself
 
 #### See Also
@@ -171,20 +181,22 @@ Return FALSE to prevent the cancel operation or TRUE to allow it\.
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnReset
 
- **OnReset\(** \)
+OnReset\(\)
 Calls the default MFC OnReset handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnReset](PyCPropertyPage.md#pycpropertypageonreset_virtual)virtual method
+  - [PyCPropertyPage\.OnReset](PyCPropertyPage.md#pycpropertypageonreset_virtual) virtual method
 
-## [PyCPropertyPage\.OnReset](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnReset](#pycpropertypage) Virtual
 
- **OnReset\(** \)
+OnReset\(\)
 Called by the framework when the user chooses the Cancel button\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnReset](PyCPropertyPage.md#pycpropertypageonreset)\) yourself
 
 #### See Also
@@ -194,27 +206,31 @@ Note - If you provide a handler, you must call the underlying MFC method \([PyCP
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnSetActive
 
-int \= **OnSetActive\(** \)
+
+
+int =OnSetActive\(\)
 Calls the default MFC OnSetActive handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnSetActive](PyCPropertyPage.md#pycpropertypageonsetactive_virtual)virtual method
+  - [PyCPropertyPage\.OnSetActive](PyCPropertyPage.md#pycpropertypageonsetactive_virtual) virtual method
 
-  - [PyCPropertyPage\.OnSetActive](PyCPropertyPage.md#pycpropertypageonsetactive_virtual)virtual method
+  - [PyCPropertyPage\.OnSetActive](PyCPropertyPage.md#pycpropertypageonsetactive_virtual) virtual method
 
 #### Return Value
 The result is true if the page should be made active\. 
 
 Typically this result should be passed to the original OnSetActive handler\.
 
-## [PyCPropertyPage\.OnSetActive](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnSetActive](#pycpropertypage) Virtual
 
- **OnSetActive\(** \)
+OnSetActive\(\)
 Called when the page becomes active\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnSetActive](PyCPropertyPage.md#pycpropertypageonsetactive)\) yourself
 
 #### See Also
@@ -227,20 +243,22 @@ The method should return TRUE if the page can be activated\.
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnWizardBack
 
- **OnWizardBack\(** \)
+OnWizardBack\(\)
 Calls the default MFC OnWizardBack handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnWizardBack](PyCPropertyPage.md#pycpropertypageonwizardback_virtual)virtual method
+  - [PyCPropertyPage\.OnWizardBack](PyCPropertyPage.md#pycpropertypageonwizardback_virtual) virtual method
 
-## [PyCPropertyPage\.OnWizardBack](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnWizardBack](#pycpropertypage) Virtual
 
- **OnWizardBack\(** \)
+OnWizardBack\(\)
 Called by the framework when the user clicks on the Back button in a wizard\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnWizardBack](PyCPropertyPage.md#pycpropertypageonwizardback)\) yourself
 
 #### See Also
@@ -253,20 +271,22 @@ Return 0 to automatically advance to the next page;  -1 to prevent the page from
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnWizardFinish
 
- **OnWizardFinish\(** \)
+OnWizardFinish\(\)
 Calls the default MFC OnWizardFinish handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnWizardFinish](PyCPropertyPage.md#pycpropertypageonwizardfinish_virtual)virtual method
+  - [PyCPropertyPage\.OnWizardFinish](PyCPropertyPage.md#pycpropertypageonwizardfinish_virtual) virtual method
 
-## [PyCPropertyPage\.OnWizardFinish](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnWizardFinish](#pycpropertypage) Virtual
 
- **OnWizardFinish\(** \)
+OnWizardFinish\(\)
 Called by the framework when the user clicks on the Finish button in a wizard\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnWizardFinish](PyCPropertyPage.md#pycpropertypageonwizardfinish)\) yourself
 
 #### See Also
@@ -279,20 +299,22 @@ Return nonzero if the property sheet is destroyed when the wizard finishes; othe
 
 ## [PyCPropertyPage](#pycpropertypage)\.OnWizardNext
 
- **OnWizardNext\(** \)
+OnWizardNext\(\)
 Calls the default MFC OnWizardNext handler\.
 
 #### See Also
 
 
-  - [PyCPropertyPage\.OnWizardNext](PyCPropertyPage.md#pycpropertypageonwizardnext_virtual)virtual method
+  - [PyCPropertyPage\.OnWizardNext](PyCPropertyPage.md#pycpropertypageonwizardnext_virtual) virtual method
 
-## [PyCPropertyPage\.OnWizardNext](#pycpropertypage)Virtual
+## [PyCPropertyPage\.OnWizardNext](#pycpropertypage) Virtual
 
- **OnWizardNext\(** \)
+OnWizardNext\(\)
 Called by the framework when the user clicks on the Next button in a wizard\.
 
 #### Comments
+
+
 Note - If you provide a handler, you must call the underlying MFC method \([PyCPropertyPage::OnWizardNext](PyCPropertyPage.md#pycpropertypageonwizardnext)\) yourself
 
 #### See Also
@@ -305,28 +327,28 @@ Return 0 to automatically advance to the next page;  -1 to prevent the page from
 
 ## [PyCPropertyPage](#pycpropertypage)\.SetModified
 
- **SetModified\( *bChanged* ** \)
+SetModified\(bChanged\)
 Sets the modified flag\.
 
 #### Parameters
 
 
-  -  *bChanged\=1* : int
+  - bChanged=1 : int
 
     A flag to indicate the new modified state\.
 
 ## [PyCPropertyPage](#pycpropertypage)\.SetPSPBit
 
- **SetPSPBit\( *bitMask*  *, bitValue* ** \)
+SetPSPBit\(bitMask, bitValue\)
 Sets or clears a bit in m\_psp\.dwFlags
 
 #### Parameters
 
 
-  -  *bitMask* : int
+  - bitMask : int
 
     The PSP\_\* bit mask constant
 
-  -  *bitValue* : int
+  - bitValue : int
 
     1 to set, 0 to clear

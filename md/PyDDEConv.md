@@ -2,6 +2,8 @@
 
 ## PyDDEConv Object
 
+
+
 A DDE topic\.
 
 #### Methods
@@ -31,43 +33,43 @@ sentinel&nbsp;
 
 ## [PyDDEConv](#pyddeconv)\.ConnectTo
 
- **ConnectTo\( *service*  *, topic* ** \)
+ConnectTo\(service, topic\)
 Connects to a server
 
 #### Parameters
 
 
-  -  *service* : string
+  - service : string
 
     The service to connect to
 
-  -  *topic* : string
+  - topic : string
 
     The topic to connect to
 
 ## [PyDDEConv](#pyddeconv)\.Connected
 
- **Connected\(** \)
+Connected\(\)
 Determines if the conversation is connected\.
 
 ## [PyDDEConv](#pyddeconv)\.Exec
 
- **Exec\( *Cmd* ** \)
+Exec\(Cmd\)
 Executes a command\.
 
 #### Parameters
 
 
-  -  *Cmd* : string
+  - Cmd : string
 
     The Python statement to execute
 
 ## [PyDDEConv](#pyddeconv)\.Poke
 
- **Poke\(** \)
+Poke\(\)
 Sends a poke\.
 
 ## [PyDDEConv](#pyddeconv)\.Request
 
- **Request\(** \)
+Request\(\)
 Sends a request\.

@@ -2,6 +2,8 @@
 
 ## PyIViewObject Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,125 +35,125 @@ Description of the interface
 
 ## [PyIViewObject](#pyiviewobject)\.Draw
 
- **Draw\( *dwDrawAspect*  *, lindex*  *, aspectFlags*  *, hdcTargetDev*  *, hdcDraw*  *, left, top, right, bottom*  *, left, top, right, bottom*  *, funcContinue*  *, obContinue* ** \)
+Draw\(dwDrawAspect, lindex, aspectFlags, hdcTargetDev, hdcDraw, left, top, right, bottom, left, top, right, bottom, funcContinue, obContinue\)
 Description of Draw\.
 
 #### Parameters
 
 
-  -  *dwDrawAspect* : int
+  - dwDrawAspect : int
 
     Description for dwDrawAspect
 
-  -  *lindex* : int
+  - lindex : int
 
     Description for lindex
 
-  -  *aspectFlags* : int
+  - aspectFlags : int
 
     Integer value for the dwFlags item of the DVASPECTINFO structure\.
 
-  -  *hdcTargetDev* : HDC
+  - hdcTargetDev : HDC
 
     Description for hdcTargetDev
 
-  -  *hdcDraw* : HDC
+  - hdcDraw : HDC
 
     Description for hdcDraw
 
-  -  *left, top, right, bottom* : int, int, int, int
+  - left, top, right, bottom : int, int, int, int
 
     Bounds rectangle\.
 
-  -  *left, top, right, bottom* : int, int, int, int
+  - left, top, right, bottom : int, int, int, int
 
     WBounds rectangle\.
 
-  -  *funcContinue* : object
+  - funcContinue : object
 
     A continue function\.
 
-  -  *obContinue* : object
+  - obContinue : object
 
     Value passed to the function\.
 
 ## [PyIViewObject](#pyiviewobject)\.Freeze
 
- **Freeze\( *dwDrawAspect*  *, lindex*  *, aspectFlags* ** \)
+Freeze\(dwDrawAspect, lindex, aspectFlags\)
 Description of Freeze\.
 
 #### Parameters
 
 
-  -  *dwDrawAspect* : int
+  - dwDrawAspect : int
 
     Description for dwDrawAspect
 
-  -  *lindex* : int
+  - lindex : int
 
     Description for lindex
 
-  -  *aspectFlags* : int
+  - aspectFlags : int
 
     Integer value for the dwFlags item of the DVASPECTINFO structure\.
 
 ## [PyIViewObject](#pyiviewobject)\.GetAdvise
 
- **GetAdvise\(** \)
+GetAdvise\(\)
 Description of GetAdvise\.
 
 ## [PyIViewObject](#pyiviewobject)\.GetColorSet
 
- **GetColorSet\( *dwDrawAspect*  *, lindex*  *, aspectFlags*  *, hicTargetDev* ** \)
+GetColorSet\(dwDrawAspect, lindex, aspectFlags, hicTargetDev\)
 Description of GetColorSet\.
 
 #### Parameters
 
 
-  -  *dwDrawAspect* : int
+  - dwDrawAspect : int
 
     Description for dwDrawAspect
 
-  -  *lindex* : int
+  - lindex : int
 
     Description for lindex
 
-  -  *aspectFlags* : int
+  - aspectFlags : int
 
     Integer value for the dwFlags item of the DVASPECTINFO structure\.
 
-  -  *hicTargetDev* : HDC
+  - hicTargetDev : HDC
 
     Description for hicTargetDev
 
 ## [PyIViewObject](#pyiviewobject)\.SetAdvise
 
- **SetAdvise\( *aspects*  *, advf*  *, pAdvSink* ** \)
+SetAdvise\(aspects, advf, pAdvSink\)
 Description of SetAdvise\.
 
 #### Parameters
 
 
-  -  *aspects* : int
+  - aspects : int
 
     Description for aspects
 
-  -  *advf* : int
+  - advf : int
 
     Description for advf
 
-  -  *pAdvSink* : **PyIAdviseSink** 
+  - pAdvSink :PyIAdviseSink
 
     Description for pAdvSink
 
 ## [PyIViewObject](#pyiviewobject)\.Unfreeze
 
- **Unfreeze\( *dwFreeze* ** \)
+Unfreeze\(dwFreeze\)
 Description of Unfreeze\.
 
 #### Parameters
 
 
-  -  *dwFreeze* : int
+  - dwFreeze : int
 
     Description for dwFreeze

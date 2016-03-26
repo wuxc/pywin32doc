@@ -2,6 +2,8 @@
 
 ## PyIEmptyVolumeCache2 Object
 
+
+
 See also[PyIEmptyVolumeCache](#pyiemptyvolumecache)
 
 #### Methods
@@ -13,4 +15,4 @@ See also[PyIEmptyVolumeCache](#pyiemptyvolumecache)
 
 ## [PyIEmptyVolumeCache2](#pyiemptyvolumecache2)\.InitializeEx
 
- **InitializeEx\(** \)
+InitializeEx\(\)

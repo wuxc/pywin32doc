@@ -2,6 +2,8 @@
 
 ## PyIExtractIcon Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,21 +19,21 @@ Description of the interface
 
 ## [PyIExtractIcon](#pyiextracticon)\.Extract
 
- **Extract\( *pszFile*  *, nIconIndex*  *, nIconSize* ** \)
+Extract\(pszFile, nIconIndex, nIconSize\)
 Description of Extract\.
 
 #### Parameters
 
 
-  -  *pszFile* : **unicode** 
+  - pszFile :unicode
 
     Description for pszFile
 
-  -  *nIconIndex* : int
+  - nIconIndex : int
 
     Description for nIconIndex
 
-  -  *nIconSize* : int
+  - nIconSize : int
 
     Description for nIconIndex
 
@@ -44,16 +46,16 @@ the calling application should extract it\.
 
 ## [PyIExtractIcon](#pyiextracticon)\.GetIconLocation
 
- **GetIconLocation\( *uFlags*  *, cchMax* ** \)
+GetIconLocation\(uFlags, cchMax\)
 Description of GetIconLocation\.
 
 #### Parameters
 
 
-  -  *uFlags* : int
+  - uFlags : int
 
     Description for uFlags
 
-  -  *cchMax\=MAX\_PATH\+MAX\_FNAME* : int
+  - cchMax=MAX\_PATH\+MAX\_FNAME : int
 
     Buffer size to allocate for file name

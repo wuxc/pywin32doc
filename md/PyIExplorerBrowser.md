@@ -2,6 +2,8 @@
 
 ## PyIExplorerBrowser Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -69,183 +71,187 @@ Description of the interface
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.Advise
 
-int \= **Advise\( *psbe* ** \)
+
+
+int =Advise\(psbe\)
 Description of Advise\.
 
 #### Parameters
 
 
-  -  *psbe* :[PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)
+  - psbe :[PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)
 
     Description for psbe
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.BrowseToIDList
 
- **BrowseToIDList\( *pidl*  *, uFlags* ** \)
+BrowseToIDList\(pidl, uFlags\)
 Description of BrowseToIDList\.
 
 #### Parameters
 
 
-  -  *pidl* : **PyPCUIDLIST\_RELATIVE** 
+  - pidl :PyPCUIDLIST\_RELATIVE
 
     Description for pidl
 
-  -  *uFlags* : int
+  - uFlags : int
 
     Description for uFlags
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.BrowseToObject
 
- **BrowseToObject\( *punk*  *, uFlags* ** \)
+BrowseToObject\(punk, uFlags\)
 Description of BrowseToObject\.
 
 #### Parameters
 
 
-  -  *punk* :[PyIUnknown](#pyiunknown)
+  - punk :[PyIUnknown](#pyiunknown)
 
     Description for punk
 
-  -  *uFlags* : int
+  - uFlags : int
 
     Description for uFlags
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.Destroy
 
- **Destroy\(** \)
+Destroy\(\)
 Description of Destroy\.
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.FillFromObject
 
- **FillFromObject\( *punk*  *, dwFlags* ** \)
+FillFromObject\(punk, dwFlags\)
 Description of FillFromObject\.
 
 #### Parameters
 
 
-  -  *punk* :[PyIUnknown](#pyiunknown)
+  - punk :[PyIUnknown](#pyiunknown)
 
     Description for punk
 
-  -  *dwFlags* : **PyEXPLORER\_BROWSER\_FILL\_FLAGS** 
+  - dwFlags :PyEXPLORER\_BROWSER\_FILL\_FLAGS
 
     Description for dwFlags
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.GetCurrentView
 
-[PyIUnknown](#pyiunknown)\= **GetCurrentView\( *riid* ** \)
+[PyIUnknown](#pyiunknown) =GetCurrentView\(riid\)
 Description of GetCurrentView\.
 
 #### Parameters
 
 
-  -  *riid* :[PyIID](#pyiid)
+  - riid :[PyIID](#pyiid)
 
     Description for riid
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.GetOptions
 
-int \= **GetOptions\(** \)
+
+
+int =GetOptions\(\)
 Description of GetOptions\.
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.Initialize
 
- **Initialize\( *hwndParent*  *, prc*  *, pfs* ** \)
+Initialize\(hwndParent, prc, pfs\)
 Description of Initialize\.
 
 #### Parameters
 
 
-  -  *hwndParent* : HWND
+  - hwndParent : HWND
 
     Description for hwndParent
 
-  -  *prc* :[PyRECT](#pyrect)
+  - prc :[PyRECT](#pyrect)
 
     Description for prc
 
-  -  *pfs* : **PyFOLDERSETTINGS** 
+  - pfs :PyFOLDERSETTINGS
 
     Description for pfs
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.RemoveAll
 
- **RemoveAll\(** \)
+RemoveAll\(\)
 Description of RemoveAll\.
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.SetEmptyText
 
- **SetEmptyText\( *EmptyText* ** \)
+SetEmptyText\(EmptyText\)
 Description of SetEmptyText\.
 
 #### Parameters
 
 
-  -  *EmptyText* : str
+  - EmptyText : str
 
     Description for pszEmptyText
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.SetFolderSettings
 
- **SetFolderSettings\( *pfs* ** \)
+SetFolderSettings\(pfs\)
 Description of SetFolderSettings\.
 
 #### Parameters
 
 
-  -  *pfs* : **PyFOLDERSETTINGS** 
+  - pfs :PyFOLDERSETTINGS
 
     Description for pfs
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.SetOptions
 
- **SetOptions\( *dwFlag* ** \)
+SetOptions\(dwFlag\)
 Description of SetOptions\.
 
 #### Parameters
 
 
-  -  *dwFlag* : **PyEXPLORER\_BROWSER\_OPTIONS** 
+  - dwFlag :PyEXPLORER\_BROWSER\_OPTIONS
 
     Description for dwFlag
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.SetPropertyBag
 
- **SetPropertyBag\( *PropertyBag* ** \)
+SetPropertyBag\(PropertyBag\)
 Description of SetPropertyBag\.
 
 #### Parameters
 
 
-  -  *PropertyBag* : str
+  - PropertyBag : str
 
     Description for pszPropertyBag
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.SetRect
 
-[PyHANDLE](#pyhandle)\= **SetRect\( *hdwp*  *, rcBrowser* ** \)
+[PyHANDLE](#pyhandle) =SetRect\(hdwp, rcBrowser\)
 Description of SetRect\.
 
 #### Parameters
 
 
-  -  *hdwp* : **PyHDWP** 
+  - hdwp :PyHDWP
 
     Description for phdwp
 
-  -  *rcBrowser* :[PyRECT](#pyrect)
+  - rcBrowser :[PyRECT](#pyrect)
 
     Description for rcBrowser
 
 ## [PyIExplorerBrowser](#pyiexplorerbrowser)\.Unadvise
 
- **Unadvise\( *dwCookie* ** \)
+Unadvise\(dwCookie\)
 Description of Unadvise\.
 
 #### Parameters
 
 
-  -  *dwCookie* : int
+  - dwCookie : int
 
     Description for dwCookie

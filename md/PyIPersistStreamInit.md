@@ -2,6 +2,8 @@
 
 ## PyIPersistStreamInit Object
 
+
+
 A Python interface to IPersistStreamInit
 
 #### Methods
@@ -14,5 +16,5 @@ A Python interface to IPersistStreamInit
 
 ## [PyIPersistStreamInit](#pyipersiststreaminit)\.InitNew
 
- **InitNew\(** \)
+InitNew\(\)
 Initializes the object to a default state\.

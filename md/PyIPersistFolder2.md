@@ -2,6 +2,8 @@
 
 ## PyIPersistFolder2 Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,5 +15,5 @@ Description of the interface
 
 ## [PyIPersistFolder2](#pyipersistfolder2)\.GetCurFolder
 
- **GetCurFolder\(** \)
+GetCurFolder\(\)
 Description of GetCurFolder\.

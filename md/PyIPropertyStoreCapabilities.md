@@ -2,6 +2,8 @@
 
 ## PyIPropertyStoreCapabilities Object
 
+
+
 Property providers use this interface to indicate whether properties are writeable\.
 
 #### Methods
@@ -13,12 +15,14 @@ Property providers use this interface to indicate whether properties are writeab
 
 ## [PyIPropertyStoreCapabilities](#pyipropertystorecapabilities)\.IsPropertyWritable
 
-boolean \= **IsPropertyWritable\( *key* ** \)
+
+
+boolean =IsPropertyWritable\(key\)
 Asks provider if a property can be editted\.
 
 #### Parameters
 
 
-  -  *key* :[PyPROPERTYKEY](#pypropertykey)
+  - key :[PyPROPERTYKEY](#pypropertykey)
 
     Property identifier

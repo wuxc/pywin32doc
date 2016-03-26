@@ -2,7 +2,13 @@
 
 ## PyCComboBox Object
 
-A windows combo control\.  Encapsulates an MFC **CComboBox** class\.  Derived from a[PyCControl](#pyccontrol)object\.
+
+
+A windows combo control\.  Encapsulates an MFCCComboBox
+
+
+
+ class\.  Derived from a[PyCControl](#pyccontrol) object\.
 
 #### Methods
 
@@ -93,13 +99,15 @@ A windows combo control\.  Encapsulates an MFC **CComboBox** class\.  Derived fr
 
 ## [PyCComboBox](#pyccombobox)\.AddString
 
-int \= **AddString\( *object* ** \)
+
+
+int =AddString\(object\)
 Adds a string to a combobox\.
 
 #### Parameters
 
 
-  -  *object* : any
+  - object : any
 
     Any object\.  If not a string, \_\_str\_\_, \_\_repr\_\_ or a default repr\(\) will be used
 
@@ -113,13 +121,15 @@ The zero based index of the new string\.
 
 ## [PyCComboBox](#pyccombobox)\.DeleteString
 
-int \= **DeleteString\( *pos* ** \)
+
+
+int =DeleteString\(pos\)
 Deletes an item from a combobox\.
 
 #### Parameters
 
 
-  -  *pos* : int
+  - pos : int
 
     The zero based index of the item to delete\.
 
@@ -133,17 +143,19 @@ The count of the items remaining in the list\.
 
 ## [PyCComboBox](#pyccombobox)\.Dir
 
-int \= **Dir\( *attr*  *, wild* ** \)
+
+
+int =Dir\(attr, wild\)
 Fills the list portion of a combobox with a directory listing\.
 
 #### Parameters
 
 
-  -  *attr* : int
+  - attr : int
 
     The attributes of the files to locate
 
-  -  *wild* : string
+  - wild : string
 
     A file specification string - eg, \*\.\*
 
@@ -157,7 +169,9 @@ The index of the last file name added to the list\.
 
 ## [PyCComboBox](#pyccombobox)\.GetCount
 
-int \= **GetCount\(** \)
+
+
+int =GetCount\(\)
 Returns the count of items in the combobox\.
 
 #### MFC References
@@ -170,10 +184,14 @@ Returns the number of items currently in the combobox\.
 
 ## [PyCComboBox](#pyccombobox)\.GetCurSel
 
-int \= **GetCurSel\(** \)
+
+
+int =GetCurSel\(\)
 Returns the index of the currently selected item\.
 
 #### Comments
+
+
 Should not be called for a multiple selection listbox\.
 
 #### MFC References
@@ -183,7 +201,9 @@ Should not be called for a multiple selection listbox\.
 
 ## [PyCComboBox](#pyccombobox)\.GetEditSel
 
-int \= **GetEditSel\(** \)
+
+
+int =GetEditSel\(\)
 Returns the selection of the edit control portion of a combo box\.
 
 #### MFC References
@@ -202,7 +222,9 @@ without an edit control, an exception is raised\.
 
 ## [PyCComboBox](#pyccombobox)\.GetExtendedUI
 
-int \= **GetExtendedUI\(** \)
+
+
+int =GetExtendedUI\(\)
 Indicates if the combo has the extended interface\.
 
 #### MFC References
@@ -215,37 +237,43 @@ Nonzero if the combo box has the extended user interface; otherwise 0\.
 
 ## [PyCComboBox](#pyccombobox)\.GetItemData
 
-object \= **GetItemData\( *item* ** \)
+
+
+object =GetItemData\(item\)
 Retrieves the application-specific object associated with an item\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     The index of the item whose data is to be retrieved\.
 
 ## [PyCComboBox](#pyccombobox)\.GetItemValue
 
-int \= **GetItemValue\( *item* ** \)
+
+
+int =GetItemValue\(item\)
 Retrieves the application-specific value associated with an item\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     The index of the item whose data is to be retrieved\.
 
 ## [PyCComboBox](#pyccombobox)\.GetLBText
 
-string \= **GetLBText\( *index* ** \)
+
+
+string =GetLBText\(index\)
 Gets the string from the list of a combo box\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the item to return the string for\.
 
@@ -256,13 +284,15 @@ not specify a valid index, no exception is raised\.
 
 ## [PyCComboBox](#pyccombobox)\.GetLBTextLen
 
-int \= **GetLBTextLen\( *index* ** \)
+
+
+int =GetLBTextLen\(index\)
 Returns the length of a string in the list of a combobox\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The index of the item to return the length of\.
 
@@ -275,17 +305,19 @@ rdesc Returns the length of the string \(in bytes\), or raises an exception on e
 
 ## [PyCComboBox](#pyccombobox)\.InsertString
 
-int \= **InsertString\( *pos*  *, object* ** \)
+
+
+int =InsertString\(pos, object\)
 Insert a string into a combobox\.
 
 #### Parameters
 
 
-  -  *pos* : int
+  - pos : int
 
     The zero based index in the combobox to insert the new string
 
-  -  *object* : any
+  - object : any
 
     The object to be added to the combobox
 
@@ -299,13 +331,15 @@ The zero based index of the new string added\.
 
 ## [PyCComboBox](#pyccombobox)\.LimitText
 
-int \= **LimitText\( *max* ** \)
+
+
+int =LimitText\(max\)
 Limits the amount of text the edit portion of a combo box can hold\.
 
 #### Parameters
 
 
-  -  *max* : int
+  - max : int
 
     The maximum number of characters the user can enter\.  If zero, the size is set to \(virtually\) unlimited\.
 
@@ -316,7 +350,7 @@ Limits the amount of text the edit portion of a combo box can hold\.
 
 ## [PyCComboBox](#pyccombobox)\.ResetContent
 
- **ResetContent\(** \)
+ResetContent\(\)
 Clear all the items from a combobox\.
 
 #### MFC References
@@ -326,17 +360,17 @@ Clear all the items from a combobox\.
 
 ## [PyCComboBox](#pyccombobox)\.SelectString
 
- **SelectString\( *after*  *, string* ** \)
+SelectString\(after, string\)
 Searches for a combobox item that matches the specified string, and selects it\.
 
 #### Parameters
 
 
-  -  *after* : int
+  - after : int
 
     Contains the zero-based index of the item before the first item to be searched, or -1 for the entire combobox\.
 
-  -  *string* : string
+  - string : string
 
     The string to search for\.
 
@@ -350,13 +384,13 @@ The return value is always None - an exception is raised if the string can not b
 
 ## [PyCComboBox](#pyccombobox)\.SetCurSel
 
- **SetCurSel\( *index* ** \)
+SetCurSel\(index\)
 Selects an item in a combobox\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The zero based index of the item to select\.
 
@@ -367,17 +401,17 @@ Selects an item in a combobox\.
 
 ## [PyCComboBox](#pyccombobox)\.SetEditSel
 
- **SetEditSel\( *start*  *, end* ** \)
+SetEditSel\(start, end\)
 Sets the selection in the edit control portion of a combo box\.
 
 #### Parameters
 
 
-  -  *start* : int
+  - start : int
 
     Specifies the starting position\. If the starting position is set to -1, then any existing selection is removed\.
 
-  -  *end* : int
+  - end : int
 
     Specifies the ending position\. If the ending position is set to -1, then all text from the starting position to the last character in the edit control is selected\.
 
@@ -391,17 +425,19 @@ The return value is always None - an exception is raised if the combo is a dropd
 
 ## [PyCComboBox](#pyccombobox)\.SetExtendedUI
 
- **SetExtendedUI\( *bExtended* ** \)
+SetExtendedUI\(bExtended\)
 Selects the Extended UI mode for a combo box\.
 
 #### Parameters
 
 
-  -  *bExtended\=1* : int
+  - bExtended=1 : int
 
     Indicates if the combo should have the extended user interface\.
 
 #### Comments
+
+
 A combo box with the Extended UI flag set can be identified in the following ways:~ 
 
 Clicking the static control displays the list box only for combo boxes with the CBS\_DROPDOWNLIST style\.~ 
@@ -417,49 +453,55 @@ Scrolling in the static control is disabled when the item list is not visible \(
 
 ## [PyCComboBox](#pyccombobox)\.SetItemData
 
-int \= **SetItemData\( *item*  *, Data* ** \)
+
+
+int =SetItemData\(item, Data\)
 Sets the item's application-specific object value\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     Index of the item whose Data is to be set\.
 
-  -  *Data* : object
+  - Data : object
 
     New value for the data\.
 
 #### Comments
+
+
 Note that a reference count is not added to the object\.  This it is your 
 
 responsibility to make sure the object remains alive while in the list\.
 
 ## [PyCComboBox](#pyccombobox)\.SetItemValue
 
-int \= **SetItemValue\( *item*  *, data* ** \)
+
+
+int =SetItemValue\(item, data\)
 Sets the item's application-specific value\.
 
 #### Parameters
 
 
-  -  *item* : int
+  - item : int
 
     Index of the item whose Data is to be set\.
 
-  -  *data* : int
+  - data : int
 
     New value for the data\.
 
 ## [PyCComboBox](#pyccombobox)\.ShowDropDown
 
- **ShowDropDown\( *bShowIt* ** \)
+ShowDropDown\(bShowIt\)
 Shows or hides the listbox portion of a combo box\.
 
 #### Parameters
 
 
-  -  *bShowIt\=1* : int
+  - bShowIt=1 : int
 
     Indicates if the listbox should be shown or hidden\.

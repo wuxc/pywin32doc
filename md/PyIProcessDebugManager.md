@@ -2,6 +2,8 @@
 
 ## PyIProcessDebugManager Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,46 +31,46 @@ Description of the interface
 
 ## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.AddApplication
 
- **AddApplication\( *pda* ** \)
+AddApplication\(pda\)
 Description of AddApplication\.
 
 #### Parameters
 
 
-  -  *pda* :[PyIDebugApplication](#pyidebugapplication)
+  - pda :[PyIDebugApplication](#pyidebugapplication)
 
     Description for pda
 
 ## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.CreateApplication
 
- **CreateApplication\(** \)
+CreateApplication\(\)
 Description of CreateApplication\.
 
 ## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.CreateDebugDocumentHelper
 
- **CreateDebugDocumentHelper\( *unkOuter* ** \)
+CreateDebugDocumentHelper\(unkOuter\)
 Description of CreateDebugDocumentHelper\.
 
 #### Parameters
 
 
-  -  *unkOuter* : **PyIIUnknown** 
+  - unkOuter :PyIIUnknown
 
     The outer object for aggregation, or \(usually\!\) None
 
 ## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.GetDefaultApplication
 
- **GetDefaultApplication\(** \)
+GetDefaultApplication\(\)
 Description of GetDefaultApplication\.
 
 ## [PyIProcessDebugManager](#pyiprocessdebugmanager)\.RemoveApplication
 
- **RemoveApplication\( *dwAppCookie* ** \)
+RemoveApplication\(dwAppCookie\)
 Description of RemoveApplication\.
 
 #### Parameters
 
 
-  -  *dwAppCookie* : int
+  - dwAppCookie : int
 
     Description for dwAppCookie

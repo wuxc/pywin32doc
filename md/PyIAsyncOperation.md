@@ -2,6 +2,8 @@
 
 ## PyIAsyncOperation Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,54 +31,56 @@ Description of the interface
 
 ## [PyIAsyncOperation](#pyiasyncoperation)\.EndOperation
 
- **EndOperation\( *hResult*  *, pbcReserved*  *, dwEffects* ** \)
+EndOperation\(hResult, pbcReserved, dwEffects\)
 Description of EndOperation\.
 
 #### Parameters
 
 
-  -  *hResult* : int
+  - hResult : int
 
     Description for hResult
 
-  -  *pbcReserved* :[PyIBindCtx](#pyibindctx)
+  - pbcReserved :[PyIBindCtx](#pyibindctx)
 
     Description for pbcReserved
 
-  -  *dwEffects* : int
+  - dwEffects : int
 
     Description for dwEffects
 
 ## [PyIAsyncOperation](#pyiasyncoperation)\.GetAsyncMode
 
-bool \= **GetAsyncMode\(** \)
+
+
+bool =GetAsyncMode\(\)
 Description of GetAsyncMode\.
 
 ## [PyIAsyncOperation](#pyiasyncoperation)\.InOperation
 
- **InOperation\(** \)
+InOperation\(\)
 Description of InOperation\.
 
 ## [PyIAsyncOperation](#pyiasyncoperation)\.SetAsyncMode
 
- **SetAsyncMode\( *fDoOpAsync* ** \)
+SetAsyncMode\(fDoOpAsync\)
 Description of SetAsyncMode\.
 
 #### Parameters
 
 
-  -  *fDoOpAsync* : int
+  - fDoOpAsync : int
 
     Description for fDoOpAsync
 
 ## [PyIAsyncOperation](#pyiasyncoperation)\.StartOperation
 
- **StartOperation\( *pbcReserved* ** \)
+StartOperation\(pbcReserved\)
 Description of StartOperation\.
 
 #### Parameters
 
 
-  -  *pbcReserved* :[PyIBindCtx](#pyibindctx)
+  - pbcReserved :[PyIBindCtx](#pyibindctx)
 
     Description for pbcReserved

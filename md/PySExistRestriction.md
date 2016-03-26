@@ -7,14 +7,14 @@
 #### Parameters
 
 
-  -  *propTag* : ULONG
+  - propTag : ULONG
 
     The property ID to check for existance\.
 
-  -  *reserved1\=0* : int
+  - reserved1=0 : int
 
     
 
-  -  *reserved2\=0* : int
+  - reserved2=0 : int
 
     

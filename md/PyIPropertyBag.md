@@ -2,10 +2,16 @@
 
 ## PyIPropertyBag Object
 
+
+
 A Python wrapper for a COM IPropertyBag interface\.
 
 #### Comments
+
+
 The IPropertyBag interface provides an object with a property bag in which the object can persistently save its properties\.
+ 
+
 When a client wishes to have exact control over how individually named properties of an object are saved, it would attempt to use an object's IPersistPropertyBag interface as a persistence mechanism\. In that case the client supplies a property bag to the object in the form of an IPropertyBag interface\.
 
 #### Methods
@@ -22,39 +28,43 @@ When a client wishes to have exact control over how individually named propertie
 
 ## [PyIPropertyBag](#pyipropertybag)\.Read
 
-object \= **Read\( *propName*  *, propType*  *, errorLog* ** \)
+
+
+object =Read\(propName, propType, errorLog\)
 Called by the control to read a property from the storage provided by the container\.
 
 #### Parameters
 
 
-  -  *propName* : str
+  - propName : str
 
     Name of the property to read\.
 
-  -  *propType* : int
+  - propType : int
 
     The type of the object to read\.  Must be a VT\_\* Variant Type constant\.
 
-  -  *errorLog\=None* :[PyIErrorLog](#pyierrorlog)
+  - errorLog=None :[PyIErrorLog](#pyierrorlog)
 
-    The caller's[PyIErrorLog](#pyierrorlog)object in which the property bag stores any errors that occur during reads\. Can be None in which case the caller is not interested in errors\.
+    The caller's[PyIErrorLog](#pyierrorlog) object in which the property bag stores any errors that occur during reads\. Can be None in which case the caller is not interested in errors\.
 
 #### Comments
+
+
 The result is a Python object, mapped from a COM VARIANT of type as specified in the propType parameter\.
 
 ## [PyIPropertyBag](#pyipropertybag)\.Write
 
- **Write\( *propName*  *, value* ** \)
+Write\(propName, value\)
 Called by the control to write each property in turn to the storage provided by the container\.
 
 #### Parameters
 
 
-  -  *propName* : str
+  - propName : str
 
     Name of the property to read\.
 
-  -  *value* : object
+  - value : object
 
     The value for the property\.  The value must be able to be converted to a COM VARIANT\.

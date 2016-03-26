@@ -2,6 +2,8 @@
 
 ## PyICopyHookW Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,36 +15,36 @@ Description of the interface
 
 ## [PyICopyHookW](#pyicopyhookw)\.CopyCallback
 
- **CopyCallback\( *hwnd*  *, wFunc*  *, wFlags*  *, srcFile*  *, srcAttribs*  *, destFile*  *, destAttribs* ** \)
+CopyCallback\(hwnd, wFunc, wFlags, srcFile, srcAttribs, destFile, destAttribs\)
 Description of CopyCallback\.
 
 #### Parameters
 
 
-  -  *hwnd* : HWND
+  - hwnd : HWND
 
     Description for hwnd
 
-  -  *wFunc* : int
+  - wFunc : int
 
     Description for wFunc
 
-  -  *wFlags* : int
+  - wFlags : int
 
     Description for wFlags
 
-  -  *srcFile* : string/ **unicode** 
+  - srcFile : string/unicode
 
     Description for srcFile
 
-  -  *srcAttribs* : int
+  - srcAttribs : int
 
     Description for srcAttribs
 
-  -  *destFile* : string/ **unicode** 
+  - destFile : string/unicode
 
     Description for destFile
 
-  -  *destAttribs* : int
+  - destAttribs : int
 
     Description for destAttribs

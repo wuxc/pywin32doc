@@ -2,6 +2,8 @@
 
 ## PyIColumnProvider Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,40 +23,40 @@ Description of the interface
 
 ## [PyIColumnProvider](#pyicolumnprovider)\.GetColumnInfo
 
- **GetColumnInfo\( *dwIndex* ** \)
+GetColumnInfo\(dwIndex\)
 Description of GetColumnInfo\.
 
 #### Parameters
 
 
-  -  *dwIndex* : int
+  - dwIndex : int
 
     Description for dwIndex
 
 ## [PyIColumnProvider](#pyicolumnprovider)\.GetItemData
 
- **GetItemData\( *pscid*  *, pscd* ** \)
+GetItemData\(pscid, pscd\)
 Description of GetItemData\.
 
 #### Parameters
 
 
-  -  *pscid* : **PySHCOLUMNID** 
+  - pscid :PySHCOLUMNID
 
     Description for pscid
 
-  -  *pscd* : **PySHCOLUMNDATA** 
+  - pscd :PySHCOLUMNDATA
 
     Description for pscd
 
 ## [PyIColumnProvider](#pyicolumnprovider)\.Initialize
 
- **Initialize\( *psci* ** \)
+Initialize\(psci\)
 Description of Initialize\.
 
 #### Parameters
 
 
-  -  *psci* : **PyCSHCOLUMNINIT** 
+  - psci :PyCSHCOLUMNINIT
 
     Description for psci

@@ -2,9 +2,13 @@
 
 ## PyUnicode Object
 
+
+
 A Python object, representing a Unicode string\.
 
 #### Comments
+
+
 pywin32 uses the builtin Python Unicode object
 In general, any pywin32/COM function documented as taking a 
 

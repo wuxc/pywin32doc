@@ -2,6 +2,8 @@
 
 ## PyIMAPISession Object
 
+
+
 An COM interface to MAPI's ISession interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
@@ -54,21 +56,23 @@ Derived from[PyIUnknown](#pyiunknown)
 
 ## [PyIMAPISession](#pyimapisession)\.Advise
 
-int \= **Advise\( *entryId*  *, mask*  *, sink* ** \)
+
+
+int =Advise\(entryId, mask, sink\)
 
 
 #### Parameters
 
 
-  -  *entryId* : string
+  - entryId : string
 
     The entryID of the object
 
-  -  *mask* : int
+  - mask : int
 
     
 
-  -  *sink* : **PyIMAPIAdviseSink** 
+  - sink :PyIMAPIAdviseSink
 
     
 
@@ -77,21 +81,23 @@ The result is an integer which should be passed to[PyIMAPISession::Unadvise](PyI
 
 ## [PyIMAPISession](#pyimapisession)\.CompareEntryIDs
 
-int \= **CompareEntryIDs\( *entryId*  *, entryId*  *, flags* ** \)
+
+
+int =CompareEntryIDs\(entryId, entryId, flags\)
 Compares two entry identifiers belonging to a particular address book provider to determine if they refer to the same address book object
 
 #### Parameters
 
 
-  -  *entryId* : string
+  - entryId : string
 
     The first entry ID to be compared
 
-  -  *entryId* : string
+  - entryId : string
 
     The second entry ID to be compared
 
-  -  *flags\=0* : int
+  - flags=0 : int
 
     Reserved - must be zero\.
 
@@ -100,148 +106,156 @@ The result is set to TRUE if the two entry identifiers refer to the same object,
 
 ## [PyIMAPISession](#pyimapisession)\.GetMsgStoresTable
 
-[PyIMAPITable](#pyimapitable)\= **GetMsgStoresTable\( *flags* ** \)
+[PyIMAPITable](#pyimapitable) =GetMsgStoresTable\(flags\)
 Provides access to the message store table - a table with information about all of the message stores in the session profile\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     Flags that control the opening\.
 
 ## [PyIMAPISession](#pyimapisession)\.GetStatusTable
 
-[PyIMAPITable](#pyimapitable)\= **GetStatusTable\( *flags* ** \)
+[PyIMAPITable](#pyimapitable) =GetStatusTable\(flags\)
 Provides access to the status table - a table with information about all of the MAPI resources in the session\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     Flags that control the opening\.
 
 ## [PyIMAPISession](#pyimapisession)\.Logoff
 
- **Logoff\( *uiParm*  *, flags*  *, reserved* ** \)
+Logoff\(uiParm, flags, reserved\)
 Ends a MAPI session\.
 
 #### Parameters
 
 
-  -  *uiParm* : int
+  - uiParm : int
 
     hwnd of a dialog is to be displayed\.
 
-  -  *flags* : int
+  - flags : int
 
     Bitmask of flags that control the logoff operation\.
 
-  -  *reserved* : int
+  - reserved : int
 
     Reserved; must be zero\.
 
 ## [PyIMAPISession](#pyimapisession)\.OpenAddressBook
 
-[PyIAddrBook](#pyiaddrbook)\= **OpenAddressBook\( *uiParm*  *, iid*  *, flags* ** \)
+[PyIAddrBook](#pyiaddrbook) =OpenAddressBook\(uiParm, iid, flags\)
 Opens the integrated address book\.
 
 #### Parameters
 
 
-  -  *uiParm* : int
+  - uiParm : int
 
     hwnd of a dialog is to be displayed\.
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the interface, or None\.
 
-  -  *flags* : int
+  - flags : int
 
     Flags that control the opening - AB\_NO\_DIALOG\.
 
 ## [PyIMAPISession](#pyimapisession)\.OpenEntry
 
- **PyIInterface** \= **OpenEntry\( *entryId*  *, iid*  *, flags* ** \)
+PyIInterface
+
+ =OpenEntry\(entryId, iid, flags\)
 Opens an object and returns an interface object for further access\.
 
 #### Parameters
 
 
-  -  *entryId* : string
+  - entryId : string
 
     The EntryID to open\.
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the returned interface, or None for the default interface\.
 
-  -  *flags* : int
+  - flags : int
 
     Flags for the call\.  May include MAPI\_BEST\_ACCESS, MAPI\_DEFERRED\_ERRORS, MAPI\_MODIFY and possibly others \(see the MAPI documentation\)
 
 ## [PyIMAPISession](#pyimapisession)\.OpenMsgStore
 
-[PyIUnknown](#pyiunknown)\= **OpenMsgStore\( *uiParam*  *, entryId*  *, iid*  *, flags* ** \)
+[PyIUnknown](#pyiunknown) =OpenMsgStore\(uiParam, entryId, iid, flags\)
 Opens a message store\.
 
 #### Parameters
 
 
-  -  *uiParam* : int
+  - uiParam : int
 
     Handle to the parent window for dialogs\.
 
-  -  *entryId* : string
+  - entryId : string
 
     The entry ID of the message store to open\.
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the interface returned, or None
 
-  -  *flags* : int
+  - flags : int
 
     Options for the call\.
 
 #### Comments
+
+
 The result is the interface specified by the IID, or IID\_IMsgStore if None is used\.
 
 ## [PyIMAPISession](#pyimapisession)\.OpenProfileSection
 
- **PyIProfSection** \= **OpenProfileSection\( *iidSection*  *, iid*  *, flags* ** \)
+PyIProfSection
+
+ =OpenProfileSection\(iidSection, iid, flags\)
 Opens a section of the current profile and returns an object for futher access
 
 #### Parameters
 
 
-  -  *iidSection* :[PyIID](#pyiid)
+  - iidSection :[PyIID](#pyiid)
 
     The MAPIIID of the profile section
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the interface, or None\.
 
-  -  *flags* : int
+  - flags : int
 
     Flags that control the opening\.
 
 ## [PyIMAPISession](#pyimapisession)\.QueryIdentity
 
-string \= **QueryIdentity\(** \)
+
+
+string =QueryIdentity\(\)
 Returns the entry identifier of the object that provides the primary identity for the session\.
 
 ## [PyIMAPISession](#pyimapisession)\.Unadvise
 
- **Unadvise\( *connection* ** \)
+Unadvise\(connection\)
 
 
 #### Parameters
 
 
-  -  *connection* : int
+  - connection : int
 
     Value returned from[PyIMAPISession::Advise](PyIMAPISession.md#pyimapisessionadvise)

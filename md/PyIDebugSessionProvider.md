@@ -2,6 +2,8 @@
 
 ## PyIDebugSessionProvider Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -13,12 +15,12 @@ Description of the interface
 
 ## [PyIDebugSessionProvider](#pyidebugsessionprovider)\.StartDebugSession
 
- **StartDebugSession\( *pda* ** \)
+StartDebugSession\(pda\)
 Description of StartDebugSession\.
 
 #### Parameters
 
 
-  -  *pda* :[PyIRemoteDebugApplication](#pyiremotedebugapplication)
+  - pda :[PyIRemoteDebugApplication](#pyiremotedebugapplication)
 
     Description for pda

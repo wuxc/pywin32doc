@@ -2,35 +2,39 @@
 
 ## PyCDialogBar Object
 
-A class which encapsulates an MFC **CDialogBar** \.  Derived from a[PyCControlBar](#pyccontrolbar)object\.
+
+
+A class which encapsulates an MFCCDialogBar
+
+\.  Derived from a[PyCControlBar](#pyccontrolbar) object\.
 
 #### Methods
 
 
   - [CreateWindow](PyCDialogBar.md#pycdialogbarcreatewindow)
 
-    Creates the window for the **PyCDialogBar** object\.&nbsp;
+    Creates the window for thePyCDialogBar object\.&nbsp;
 
 ## [PyCDialogBar](#pycdialogbar)\.CreateWindow
 
- **CreateWindow\( *parent*  *, template*  *, style*  *, id* ** \)
-Creates the window for the[PyCDialogBar](#pycdialogbar)object\.
+CreateWindow\(parent, template, style, id\)
+Creates the window for the[PyCDialogBar](#pycdialogbar) object\.
 
 #### Parameters
 
 
-  -  *parent* :[PyCWnd](#pycwnd)
+  - parent :[PyCWnd](#pycwnd)
 
     The parent window
 
-  -  *template* :[PyResourceId](#pyresourceid)
+  - template :[PyResourceId](#pyresourceid)
 
     Template name or integer resource id
 
-  -  *style* : int
+  - style : int
 
     The style for the window
 
-  -  *id* : int
+  - id : int
 
     The ID of the window

@@ -2,6 +2,8 @@
 
 ## PyIExplorerCommand Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -41,83 +43,93 @@ Description of the interface
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.EnumSubCommands
 
-[PyIEnumExplorerCommand](#pyienumexplorercommand)\= **EnumSubCommands\(** \)
+[PyIEnumExplorerCommand](#pyienumexplorercommand) =EnumSubCommands\(\)
 Description of EnumSubCommands\.
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.GetCanonicalName
 
-[PyIID](#pyiid)\= **GetCanonicalName\(** \)
+[PyIID](#pyiid) =GetCanonicalName\(\)
 Description of GetCanonicalName\.
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.GetFlags
 
-int \= **GetFlags\(** \)
+
+
+int =GetFlags\(\)
 Description of GetFlags\.
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.GetIcon
 
-unicode \= **GetIcon\( *psiItemArray* ** \)
+
+
+unicode =GetIcon\(psiItemArray\)
 Description of GetIcon\.
 
 #### Parameters
 
 
-  -  *psiItemArray* :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
 
     Description for psiItemArray
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.GetState
 
-int \= **GetState\( *psiItemArray*  *, fOkToBeSlow* ** \)
+
+
+int =GetState\(psiItemArray, fOkToBeSlow\)
 Description of GetState\.
 
 #### Parameters
 
 
-  -  *psiItemArray* :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
 
     Description for psiItemArray
 
-  -  *fOkToBeSlow* : int
+  - fOkToBeSlow : int
 
     Description for fOkToBeSlow
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.GetTitle
 
-unicode \= **GetTitle\( *psiItemArray* ** \)
+
+
+unicode =GetTitle\(psiItemArray\)
 Description of GetTitle\.
 
 #### Parameters
 
 
-  -  *psiItemArray* :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
 
     Description for psiItemArray
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.GetToolTip
 
-unicode \= **GetToolTip\( *psiItemArray* ** \)
+
+
+unicode =GetToolTip\(psiItemArray\)
 Description of GetToolTip\.
 
 #### Parameters
 
 
-  -  *psiItemArray* :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
 
     Description for psiItemArray
 
 ## [PyIExplorerCommand](#pyiexplorercommand)\.Invoke
 
- **Invoke\( *psiItemArray*  *, pbc* ** \)
+Invoke\(psiItemArray, pbc\)
 Description of Invoke\.
 
 #### Parameters
 
 
-  -  *psiItemArray* :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
 
     Description for psiItemArray
 
-  -  *pbc* :[PyIBindCtx](#pyibindctx)
+  - pbc :[PyIBindCtx](#pyibindctx)
 
     Description for pbc

@@ -2,6 +2,8 @@
 
 ## PyIMAPITable Object
 
+
+
 An COM interface to MAPI
 Derived from[PyIUnknown](#pyiunknown)
 
@@ -74,77 +76,83 @@ Derived from[PyIUnknown](#pyiunknown)
 
 ## [PyIMAPITable](#pyimapitable)\.Abort
 
- **Abort\(** \)
+Abort\(\)
 Stops any asynchronous operations currently in progress for the table\.
 
 ## [PyIMAPITable](#pyimapitable)\.Advise
 
-int \= **Advise\( *eventMask*  *, adviseSink* ** \)
+
+
+int =Advise\(eventMask, adviseSink\)
 Registers to receive notification of specified events affecting the table\.
 
 #### Parameters
 
 
-  -  *eventMask* : int
+  - eventMask : int
 
     
 
-  -  *adviseSink* : **PyIMAPIAdviseSink** 
+  - adviseSink :PyIMAPIAdviseSink
 
     
 
 ## [PyIMAPITable](#pyimapitable)\.CreateBookmark
 
-int \= **CreateBookmark\(** \)
+
+
+int =CreateBookmark\(\)
 Marks the table's current position\.
 
 ## [PyIMAPITable](#pyimapitable)\.FindRow
 
- **FindRow\( *restriction*  *, bookmarkOrigin*  *, flags* ** \)
+FindRow\(restriction, bookmarkOrigin, flags\)
 Finds the next row in a table that matches specific search criteria\.
 
 #### Parameters
 
 
-  -  *restriction* :[PySRestriction](#pysrestriction)
+  - restriction :[PySRestriction](#pysrestriction)
 
     
 
-  -  *bookmarkOrigin* : int
+  - bookmarkOrigin : int
 
     
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPITable](#pyimapitable)\.FreeBookmark
 
- **FreeBookmark\( *bookmark* ** \)
+FreeBookmark\(bookmark\)
 Releases the memory associated with a bookmark\.
 
 #### Parameters
 
 
-  -  *bookmark* : int
+  - bookmark : int
 
     
 
 ## [PyIMAPITable](#pyimapitable)\.GetRowCount
 
-int \= **GetRowCount\( *flags* ** \)
+
+
+int =GetRowCount\(flags\)
 Returns the total number of rows in the table\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     Reserved - must be zero
 
 ## [PyIMAPITable](#pyimapitable)\.GetStatus
 
- **GetStatus\(** \)
+GetStatus\(\)
 Returns the table's status and type\.
 
 #### Return Value
@@ -152,19 +160,21 @@ Result is a tuple of \(tableStatus, tableType\)
 
 ## [PyIMAPITable](#pyimapitable)\.QueryColumns
 
- **SPropTagArray** \= **QueryColumns\( *flags* ** \)
+SPropTagArray
+
+ =QueryColumns\(flags\)
 Returns a list of columns for the table\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPITable](#pyimapitable)\.QueryPosition
 
- **QueryPosition\(** \)
+QueryPosition\(\)
 Retrieves the current table row position of the cursor, based on a fractional value\.
 
 #### Return Value
@@ -172,49 +182,53 @@ Result is a tuple of \(row, numerator, denominator\)
 
 ## [PyIMAPITable](#pyimapitable)\.QueryRows
 
- **SRowSet** \= **QueryRows\( *rowCount*  *, flags* ** \)
+SRowSet
+
+ =QueryRows\(rowCount, flags\)
 Returns one or more rows from a table, beginning at the current cursor position\.
 
 #### Parameters
 
 
-  -  *rowCount* : int
+  - rowCount : int
 
     Number of rows to retrieve
 
-  -  *flags* : int
+  - flags : int
 
     Flags\.
 
 ## [PyIMAPITable](#pyimapitable)\.Restrict
 
- **Restrict\( *restriction*  *, flags* ** \)
+Restrict\(restriction, flags\)
 Applies a filter to a table, reducing the row set to only those rows matching the specified criteria\.
 
 #### Parameters
 
 
-  -  *restriction* :[PySRestriction](#pysrestriction)
+  - restriction :[PySRestriction](#pysrestriction)
 
     
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPITable](#pyimapitable)\.SeekRow
 
-int \= **SeekRow\( *bookmark*  *, rowCount* ** \)
+
+
+int =SeekRow\(bookmark, rowCount\)
 Moves the cursor to a specific position in the table\.
 
 #### Parameters
 
 
-  -  *bookmark* : int
+  - bookmark : int
 
     The bookmark\.
 
-  -  *rowCount* : int
+  - rowCount : int
 
     
 
@@ -223,60 +237,60 @@ The result is the number of rows processed\.
 
 ## [PyIMAPITable](#pyimapitable)\.SeekRowApprox
 
- **SeekRowApprox\( *numerator*  *, denominator* ** \)
+SeekRowApprox\(numerator, denominator\)
 Moves the cursor to an approximate fractional position in the table\.
 
 #### Parameters
 
 
-  -  *numerator* : int
+  - numerator : int
 
     The numerator of the fraction representing the table position
 
-  -  *denominator* : int
+  - denominator : int
 
     The denominator of the fraction representing the table position\. This must not be zero\.
 
 ## [PyIMAPITable](#pyimapitable)\.SetColumns
 
- **SetColumns\( *propTags*  *, flags* ** \)
+SetColumns\(propTags, flags\)
 Defines the particular properties and order of properties to appear as columns in the table\.
 
 #### Parameters
 
 
-  -  *propTags* : **SPropTagArray** 
+  - propTags :SPropTagArray
 
     Sequence of property tags identifying properties to be included as columns in the table\.
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPITable](#pyimapitable)\.SortTable
 
- **SortTable\( *sortOrderSet*  *, flags* ** \)
+SortTable\(sortOrderSet, flags\)
 Orders the rows of the table based on sort criteria\.
 
 #### Parameters
 
 
-  -  *sortOrderSet* :[PySSortOrderSet](#pyssortorderset)
+  - sortOrderSet :[PySSortOrderSet](#pyssortorderset)
 
     
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPITable](#pyimapitable)\.Unadvise
 
- **Unadvise\( *handle* ** \)
+Unadvise\(handle\)
 Cancels the sending of notifications previously set up with a call to the IMAPITable::Advise method\.
 
 #### Parameters
 
 
-  -  *handle* : int
+  - handle : int
 
     Handle returned from[PyIMAPITable::Advise](PyIMAPITable.md#pyimapitableadvise)

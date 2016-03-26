@@ -2,6 +2,8 @@
 
 ## PyAssocObject Object
 
+
+
 An internal class\.
 
 #### Methods
@@ -17,10 +19,12 @@ An internal class\.
 
 ## [PyAssocObject](#pyassocobject)\.AttachObject
 
- **AttachObject\(** \)
+AttachObject\(\)
 Attaches a Python object for lookup of "virtual" functions\.
 
 ## [PyAssocObject](#pyassocobject)\.GetAttachedObject
 
-object \= **GetAttachedObject\(** \)
+
+
+object =GetAttachedObject\(\)
 Returned the attached Python object, or None\.

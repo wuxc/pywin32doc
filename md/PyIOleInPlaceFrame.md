@@ -2,6 +2,8 @@
 
 ## PyIOleInPlaceFrame Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,88 +35,88 @@ Description of the interface
 
 ## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.EnableModeless
 
- **EnableModeless\( *fEnable* ** \)
+EnableModeless\(fEnable\)
 Description of EnableModeless\.
 
 #### Parameters
 
 
-  -  *fEnable* : int
+  - fEnable : int
 
     Description for fEnable
 
 ## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.InsertMenus
 
- **InsertMenus\( *hmenuShared*  *, menuWidths* ** \)
+InsertMenus\(hmenuShared, menuWidths\)
 Description of InsertMenus\.
 
 #### Parameters
 
 
-  -  *hmenuShared* : int/long
+  - hmenuShared : int/long
 
     Description for hmenuShared
 
-  -  *menuWidths* :[PyOLEMENUGROUPWIDTHS](#pyolemenugroupwidths)
+  - menuWidths :[PyOLEMENUGROUPWIDTHS](#pyolemenugroupwidths)
 
     
 
 ## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.RemoveMenus
 
- **RemoveMenus\( *hmenuShared* ** \)
+RemoveMenus\(hmenuShared\)
 Description of RemoveMenus\.
 
 #### Parameters
 
 
-  -  *hmenuShared* : int/long
+  - hmenuShared : int/long
 
     Description for hmenuShared
 
 ## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.SetMenu
 
- **SetMenu\( *hmenuShared*  *, holemenu*  *, hwndActiveObject* ** \)
+SetMenu\(hmenuShared, holemenu, hwndActiveObject\)
 Description of SetMenu\.
 
 #### Parameters
 
 
-  -  *hmenuShared* : int/long
+  - hmenuShared : int/long
 
     Description for hmenuShared
 
-  -  *holemenu* : int/long
+  - holemenu : int/long
 
     Description for holemenu
 
-  -  *hwndActiveObject* : int/long
+  - hwndActiveObject : int/long
 
     Description for hwndActiveObject
 
 ## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.SetStatusText
 
- **SetStatusText\( *pszStatusText* ** \)
+SetStatusText\(pszStatusText\)
 Description of SetStatusText\.
 
 #### Parameters
 
 
-  -  *pszStatusText* : **unicode** 
+  - pszStatusText :unicode
 
     Description for pszStatusText
 
 ## [PyIOleInPlaceFrame](#pyioleinplaceframe)\.TranslateAccelerator
 
- **TranslateAccelerator\( *lpmsg*  *, wID* ** \)
+TranslateAccelerator\(lpmsg, wID\)
 Description of TranslateAccelerator\.
 
 #### Parameters
 
 
-  -  *lpmsg* :[PyMSG](#pymsg)
+  - lpmsg :[PyMSG](#pymsg)
 
     Description for lpmsg
 
-  -  *wID* : int
+  - wID : int
 
     Description for wID

@@ -2,6 +2,8 @@
 
 ## PyIDebugApplication Object
 
+
+
 This interface is an extension of[PyIRemoteDebugApplication](#pyiremotedebugapplication), exposing 
 
 non-remotable methods for use by language engines and hosts\.
@@ -43,7 +45,7 @@ non-remotable methods for use by language engines and hosts\.
 
   - [CreateAsyncDebugOperation](PyIDebugApplication.md#pyidebugapplicationcreateasyncdebugoperation)
 
-    Creates an IDebugAsyncOperation object to wrap a provided[PyIDebugSyncOperation](#pyidebugsyncoperation)object\.&nbsp;
+    Creates an IDebugAsyncOperation object to wrap a provided[PyIDebugSyncOperation](#pyidebugsyncoperation) object\.&nbsp;
 
   - [AddStackFrameSniffer](PyIDebugApplication.md#pyidebugapplicationaddstackframesniffer)
 
@@ -91,29 +93,33 @@ non-remotable methods for use by language engines and hosts\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.AddGlobalExpressionContextProvider
 
- **AddGlobalExpressionContextProvider\( *pdsfs* ** \)
+AddGlobalExpressionContextProvider\(pdsfs\)
 Description of AddGlobalExpressionContextProvider\.
 
 #### Parameters
 
 
-  -  *pdsfs* :[PyIProvideExpressionContexts](#pyiprovideexpressioncontexts)
+  - pdsfs :[PyIProvideExpressionContexts](#pyiprovideexpressioncontexts)
 
     Description for pdsfs
 
 ## [PyIDebugApplication](#pyidebugapplication)\.AddStackFrameSniffer
 
-int \= **AddStackFrameSniffer\( *pdsfs* ** \)
+
+
+int =AddStackFrameSniffer\(pdsfs\)
 Adds a stack frame sniffer to this application\.
 
 #### Parameters
 
 
-  -  *pdsfs* :[PyIDebugStackFrameSniffer](#pyidebugstackframesniffer)
+  - pdsfs :[PyIDebugStackFrameSniffer](#pyidebugstackframesniffer)
 
     Description for pdsfs
 
 #### Comments
+
+
 Generally called by a language engine 
 
 to expose its stack frames to the debugger\. It is possible for other entities to 
@@ -125,112 +131,132 @@ The result is an integer cookie, to be passed to[PyIDebugApplication::RemoveStac
 
 ## [PyIDebugApplication](#pyidebugapplication)\.Close
 
- **Close\(** \)
+Close\(\)
 Causes this application to release all references and enter a zombie state\.
 
 #### Comments
+
+
 Called by the owner of the application generally on shut down\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.CreateApplicationNode
 
-[PyIDebugApplicationNode](#pyidebugapplicationnode)\= **CreateApplicationNode\(** \)
+[PyIDebugApplicationNode](#pyidebugapplicationnode) =CreateApplicationNode\(\)
 Creates a new application node which is associated with a specific document provider\.
 
 #### Comments
+
+
 Before it is visible, the new node must be 
 
 attached to a parent node\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.CreateAsyncDebugOperation
 
- **CreateAsyncDebugOperation\( *psdo* ** \)
-Creates an IDebugAsyncOperation object to wrap a provided[PyIDebugSyncOperation](#pyidebugsyncoperation)object\.
+CreateAsyncDebugOperation\(psdo\)
+Creates an IDebugAsyncOperation object to wrap a provided[PyIDebugSyncOperation](#pyidebugsyncoperation) object\.
 
 #### Parameters
 
 
-  -  *psdo* :[PyIDebugSyncOperation](#pyidebugsyncoperation)
+  - psdo :[PyIDebugSyncOperation](#pyidebugsyncoperation)
 
     Description for psdo
 
 #### Comments
+
+
 This provides a mechanism for language engines to implement asynchronous expression and 
 
 evaluation, etc\. without having to know the details of synchronization with the 
 
-debugger thread\. See the descriptions for[PyIDebugSyncOperation](#pyidebugsyncoperation)and **PyIDebugAsyncOperation** for more details\.
+debugger thread\. See the descriptions for[PyIDebugSyncOperation](#pyidebugsyncoperation) andPyIDebugAsyncOperation
+
+ 
+
+for more details\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.DebugOutput
 
- **DebugOutput\( *pstr* ** \)
+DebugOutput\(pstr\)
 Causes the given string to be displayed by the debugger IDE, normally in an output window\.
 
 #### Parameters
 
 
-  -  *pstr* : **unicode** 
+  - pstr :unicode
 
     Description for pstr
 
 #### Comments
+
+
 This mechanism provides the means for a language engine to implement language 
 
 specific debugging output support\. Example: Debug\.writeln\("Help"\) in JavaScript\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.FCanJitDebug
 
- **FCanJitDebug\(** \)
+FCanJitDebug\(\)
 Description of FCanJitDebug\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.FIsAutoJitDebugEnabled
 
- **FIsAutoJitDebugEnabled\(** \)
+FIsAutoJitDebugEnabled\(\)
 Description of FIsAutoJitDebugEnabled\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.FireDebuggerEvent
 
- **FireDebuggerEvent\( *guid*  *, unknown* ** \)
+FireDebuggerEvent\(guid, unknown\)
 Fire a generic event to the IApplicationDebugger \(if any\)
 
 #### Parameters
 
 
-  -  *guid* : **PyIIID** 
+  - guid :PyIIID
 
     A GUID\.
 
-  -  *unknown* :[PyIUnknown](#pyiunknown)
+  - unknown :[PyIUnknown](#pyiunknown)
 
     An unknown object\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.GetBreakFlags
 
-int \= **GetBreakFlags\(** \)
+
+
+int =GetBreakFlags\(\)
 Returns the current break flags for the application\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.GetCurrentThread
 
-[PyIDebugApplicationThread](#pyidebugapplicationthread)\= **GetCurrentThread\(** \)
+[PyIDebugApplicationThread](#pyidebugapplicationthread) =GetCurrentThread\(\)
 Returns the application thread object associated with the currently running thread\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.HandleBreakPoint
 
-int \= **HandleBreakPoint\( *br* ** \)
+
+
+int =HandleBreakPoint\(br\)
 Called by the language engine in the context of a thread that has hit a breakpoint\.
 
 #### Parameters
 
 
-  -  *br* : int
+  - br : int
 
     Break reason - one of the BREAKREASON\_\* constants\.
 
 #### Comments
+
+
 This method causes the current thread to block and a notification of the breakpoint 
 
 to be sent to the debugger IDE\. When the debugger IDE resumes the application this 
 
 method returns with the action to be taken\.
+
+
 Note: While in the breakpoint the language engine may be called in this thread to do 
 
 various things such as enumerating stack frames or evaluating expressions\.
@@ -240,23 +266,23 @@ The result is the break resume action - one of the BREAKRESUMEACTION contsants\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.HandleRuntimeError
 
- **HandleRuntimeError\( *pErrorDebug*  *, pScriptSite* ** \)
+HandleRuntimeError\(pErrorDebug, pScriptSite\)
 Description of HandleRuntimeError\.
 
 #### Parameters
 
 
-  -  *pErrorDebug* :[PyIActiveScriptErrorDebug](#pyiactivescripterrordebug)
+  - pErrorDebug :[PyIActiveScriptErrorDebug](#pyiactivescripterrordebug)
 
     Description for pErrorDebug
 
-  -  *pScriptSite* :[PyIActiveScriptSite](#pyiactivescriptsite)
+  - pScriptSite :[PyIActiveScriptSite](#pyiactivescriptsite)
 
     Description for pScriptSite
 
 ## [PyIDebugApplication](#pyidebugapplication)\.QueryCurrentThreadIsDebuggerThread
 
- **QueryCurrentThreadIsDebuggerThread\(** \)
+QueryCurrentThreadIsDebuggerThread\(\)
 Determines if the current running thread is the debugger thread\.
 
 #### Return Value
@@ -266,61 +292,67 @@ Otherwise, returns S\_FALSE\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.RemoveGlobalExpressionContextProvider
 
- **RemoveGlobalExpressionContextProvider\( *dwCookie* ** \)
+RemoveGlobalExpressionContextProvider\(dwCookie\)
 Description of RemoveGlobalExpressionContextProvider\.
 
 #### Parameters
 
 
-  -  *dwCookie* : int
+  - dwCookie : int
 
     Description for dwCookie
 
 ## [PyIDebugApplication](#pyidebugapplication)\.RemoveStackFrameSniffer
 
- **RemoveStackFrameSniffer\( *dwCookie* ** \)
+RemoveStackFrameSniffer\(dwCookie\)
 Removes a stack frame sniffer from this application\.
 
 #### Parameters
 
 
-  -  *dwCookie* : int
+  - dwCookie : int
 
     A cookie obtained from[PyIDebugApplication::AddStackFrameSniffer](PyIDebugApplication.md#pyidebugapplicationaddstackframesniffer)
 
 ## [PyIDebugApplication](#pyidebugapplication)\.SetName
 
- **SetName\( *pstrName* ** \)
+SetName\(pstrName\)
 Sets the name of the application\.
 
 #### Parameters
 
 
-  -  *pstrName* : **unicode** 
+  - pstrName :unicode
 
     The name of the application\.
 
 #### Comments
+
+
 The provided name will be returned in subsequent calls 
 
 to &gtom PyIRemoteDebugApplication\.GetName&gt\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.StartDebugSession
 
- **StartDebugSession\(** \)
+StartDebugSession\(\)
 Causes a default debugger IDE to be started and a debug session to be attached to 
 
 this application if one does not already exist\.
 
 #### Comments
+
+
 This is used to implement just-in-time debugging\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.StepOutComplete
 
- **StepOutComplete\(** \)
+StepOutComplete\(\)
 Called by language engines, in single step mode, just before they return to their caller\.
 
 #### Comments
+
+
 The process debug manager uses this opportunity to notify all 
 
 other script engines that they should break at the first opportunity\. This is how 
@@ -329,29 +361,31 @@ cross language step modes are implemented\.
 
 ## [PyIDebugApplication](#pyidebugapplication)\.SynchronousCallInDebuggerThread
 
- **SynchronousCallInDebuggerThread\( *pptc*  *, dwParam1*  *, dwParam2*  *, dwParam3* ** \)
+SynchronousCallInDebuggerThread\(pptc, dwParam1, dwParam2, dwParam3\)
 Provides a mechanism for the caller to run code in the debugger thread\.
 
 #### Parameters
 
 
-  -  *pptc* : **PyIDebugThreadCall** 
+  - pptc :PyIDebugThreadCall
 
     Description for pptc
 
-  -  *dwParam1* : int
+  - dwParam1 : int
 
     Description for dwParam1
 
-  -  *dwParam2* : int
+  - dwParam2 : int
 
     Description for dwParam2
 
-  -  *dwParam3* : int
+  - dwParam3 : int
 
     Description for dwParam3
 
 #### Comments
+
+
 This is generally 
 
 used so that language engines and hosts can implement free threaded objects on top 

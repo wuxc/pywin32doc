@@ -2,6 +2,8 @@
 
 ## Module timer
 
+
+
 Extension that wraps Win32 Timer functions
 
 #### Methods
@@ -17,36 +19,44 @@ Extension that wraps Win32 Timer functions
 
 ## [timer](#timer)\.kill\_timer
 
-boolean \= **kill\_timer\( *IDEvent* ** \)
+
+
+boolean =kill\_timer\(IDEvent\)
 Creates a timer that executes a callback function
 
 #### Parameters
 
 
-  -  *IDEvent* : int
+  - IDEvent : int
 
     Timer id as returned by[timer::set\_timer](timer.md#timerset_timer)
 
 #### Comments
+
+
 Uses the KillTimer API function\.
 
 ## [timer](#timer)\.set\_timer
 
-int \= **set\_timer\( *Elapse*  *, TimerFunc* ** \)
+
+
+int =set\_timer\(Elapse, TimerFunc\)
 Creates a timer that executes a callback function
 
 #### Parameters
 
 
-  -  *Elapse* : int
+  - Elapse : int
 
     Timer period, in milliseconds
 
-  -  *TimerFunc* : function
+  - TimerFunc : function
 
     Callback function\.  Will be called with with 2 int args: \(timer\_id, time\)
 
 #### Comments
+
+
 Uses the SetTimer function\.
 
 #### Return Value

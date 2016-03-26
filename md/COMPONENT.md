@@ -2,45 +2,47 @@
 
 ## COMPONENT Object
 
+
+
 A dictionary containing data to fill a COMPPOS struct
 
 #### Properties
 
-  -  **int ID** 
+  - int ID
     Id of component, ignored when adding a new component
 
-  -  **int ComponentType** 
+  - int ComponentType
     One of shellcon\.COMP\_TYPE\_\* values
 
-  -  **bool Checked** 
+  - bool Checked
     True indicates item is currently displayed
 
-  -  **bool fDirty** 
+  - bool fDirty
     Indicates if unsaved changes exist
 
-  -  **bool NoScroll** 
+  - bool NoScroll
     True disables scrolling
 
-  -  **dict Pos** 
-    [COMPPOS](#comppos)dictionary determining window size and placement
+  - dict Pos
+    [COMPPOS](#comppos) dictionary determining window size and placement
 
-  -  **[PyUNICODE](#pyunicode)FriendlyName** 
+  - [PyUNICODE](#pyunicode) FriendlyName
     String of at most MAX\_PATH-1 characters, truncated if longer
 
-  -  **[PyUNICODE](#pyunicode)Source** 
+  - [PyUNICODE](#pyunicode) Source
     String of at most INTERNET\_MAX\_URL\_LENGTH-1 characters
 
-  -  **[PyUNICODE](#pyunicode)SubscribedURL** 
+  - [PyUNICODE](#pyunicode) SubscribedURL
     String of at most INTERNET\_MAX\_URL\_LENGTH-1 characters
 
-  -  **int CurItemState** 
+  - int CurItemState
     One of shellcon\.IS\_\* flags
 
-  -  **dict Original** 
-    [COMPSTATEINFO](#compstateinfo)dictionary
+  - dict Original
+    [COMPSTATEINFO](#compstateinfo) dictionary
 
-  -  **dict Restored** 
-    [COMPSTATEINFO](#compstateinfo)dictionary
+  - dict Restored
+    [COMPSTATEINFO](#compstateinfo) dictionary
 
-  -  **int Size** 
+  - int Size
     Size of structure, ignored on input

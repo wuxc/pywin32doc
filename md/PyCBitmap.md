@@ -2,6 +2,8 @@
 
 ## PyCBitmap Object
 
+
+
 A bitmap class, derived from a[PyCGdiObject](#pycgdiobject)\.
 
 #### Methods
@@ -51,33 +53,35 @@ sentinel&nbsp;
 
 ## [PyCBitmap](#pycbitmap)\.CreateCompatibleBitmap
 
- **CreateCompatibleBitmap\( *dc*  *, width*  *, height* ** \)
+CreateCompatibleBitmap\(dc, width, height\)
 Creates a bitmap compatible with the specified device context\.
 
 #### Parameters
 
 
-  -  *dc* :[PyCDC](#pycdc)
+  - dc :[PyCDC](#pycdc)
 
     Specifies the device context\.
 
-  -  *width* : int
+  - width : int
 
     The width \(in bits\) of the bitmap
 
-  -  *height* : int
+  - height : int
 
     The height \(in bits\) of the bitmap\.
 
 ## [PyCBitmap](#pycbitmap)\.GetBitmapBits
 
-tuple/string \= **GetBitmapBits\( *asString* ** \)
+
+
+tuple/string =GetBitmapBits\(asString\)
 Returns the bitmap bits\.
 
 #### Parameters
 
 
-  -  *asString\=0* : int
+  - asString=0 : int
 
     If False, the result is a tuple of 
 
@@ -85,48 +89,66 @@ integers, if True, the result is a Python string
 
 ## [PyCBitmap](#pycbitmap)\.GetHandle
 
-int \= **GetHandle\(** \)
+
+
+int =GetHandle\(\)
 Returns the HBITMAP for a bitmap object
 
 ## [PyCBitmap](#pycbitmap)\.GetInfo
 
-dict \= **GetInfo\(** \)
+
+
+dict =GetInfo\(\)
 Returns the BITMAP structure info
 
 #### Return Value
 A dictionary of integers, keyed by the following strings:
+ 
+
 bmType
+ 
+
 bmWidth
+ 
+
 bmHeight
+ 
+
 bmWidthBytes
+ 
+
 bmPlanes
+ 
+
 bmBitsPixel
 
 
 ## [PyCBitmap](#pycbitmap)\.GetSize
 
-\(cx,cy\) \= **GetSize\(** \)
+
+
+\(cx,cy\) =GetSize\(\)
 Returns the size of the bitmap object\.
 
 ## [PyCBitmap](#pycbitmap)\.LoadBitmap
 
- **LoadBitmap\( *idRes*  *, obDLL* ** \)
+LoadBitmap\(idRes, obDLL\)
 Loads a bitmap from a DLL object\.
 
 #### Parameters
 
 
-  -  *idRes* : int
+  - idRes : int
 
     The resource ID of the bitmap
 
-  -  *obDLL\=None* :[PyDLL](#pydll)
+  - obDLL=None :[PyDLL](#pydll)
 
     The DLL object to load from\.
 
 ## [PyCBitmap](#pycbitmap)\.LoadBitmapFile
 
- **LoadBitmapFile\( *fileObject* ** \)
+LoadBitmapFile\(fileObject\)
 Loads a bitmap \(\.BMP\) format 
 
 from a file object\.
@@ -134,13 +156,13 @@ from a file object\.
 #### Parameters
 
 
-  -  *fileObject* : file\[\.read\]
+  - fileObject : file\[\.read\]
 
     The file object to load the \.BMP format file from\.
 
 ## [PyCBitmap](#pycbitmap)\.LoadPPMFile
 
- **LoadPPMFile\( *fileObject*  *, cols*  *, rows* ** \)
+LoadPPMFile\(fileObject, cols, rows\)
 Loads a bitmap in Portable Pix Map \(PPM\) format 
 
 from a file object\.
@@ -148,50 +170,52 @@ from a file object\.
 #### Parameters
 
 
-  -  *fileObject* : file\[\.read\]
+  - fileObject : file\[\.read\]
 
     The file object to load the PPM format file from\.
 
-  -  *cols* : int
+  - cols : int
 
     The number of columns in the bitmap\.
 
-  -  *rows* : int
+  - rows : int
 
     The number of rows in the bitmap\.
 
 ## [PyCBitmap](#pycbitmap)\.Paint
 
- **Paint\( *dcObject*  *, rectDest*  *, rectSrc* ** \)
+Paint\(dcObject, rectDest, rectSrc\)
 Paint a bitmap\.
 
 #### Parameters
 
 
-  -  *dcObject* :[PyCDC](#pycdc)
+  - dcObject :[PyCDC](#pycdc)
 
     The DC object to paint the bitmap to\.
 
-  -  *rectDest\=\(0,0,0,0\)* : \(left,top,right,bottom\)
+  - rectDest=\(0,0,0,0\) : \(left,top,right,bottom\)
 
     The destination rectangle to paint to\.
 
-  -  *rectSrc\=\(0,0,0,0\)* : \(left,top,right,bottom\)
+  - rectSrc=\(0,0,0,0\) : \(left,top,right,bottom\)
 
     The source rectangle to paint from\.
 
 ## [PyCBitmap](#pycbitmap)\.SaveBitmapFile
 
-None \= **SaveBitmapFile\( *dcObject*  *, Filename* ** \)
+
+
+None =SaveBitmapFile\(dcObject, Filename\)
 Saves a bitmap to a file\.
 
 #### Parameters
 
 
-  -  *dcObject* :[PyCDC](#pycdc)
+  - dcObject :[PyCDC](#pycdc)
 
     The DC object that has rendered the bitmap\.
 
-  -  *Filename* : string
+  - Filename : string
 
     The file to save the bitmap to

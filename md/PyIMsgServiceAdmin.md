@@ -2,6 +2,8 @@
 
 ## PyIMsgServiceAdmin Object
 
+
+
 An COM interface to MAPI's IMsgServiceAdmin interface\.
 Derived from[PyIUnknown](#pyiunknown)
 
@@ -44,7 +46,9 @@ to a provider administration object\.&nbsp;
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.AdminProviders
 
- **PyIProfSect** \= **AdminProviders\( *uuid*  *, flags* ** \)
+PyIProfSect
+
+ =AdminProviders\(uuid, flags\)
 Returns an object providing access 
 
 to a provider administration object\.
@@ -52,134 +56,136 @@ to a provider administration object\.
 #### Parameters
 
 
-  -  *uuid* :[PyIID](#pyiid)
+  - uuid :[PyIID](#pyiid)
 
     The ID of the service
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.ConfigureMsgService
 
- **ConfigureMsgService\( *iid*  *, ulUIParam*  *, ulFlags*  *, \[SPropValue, \.\.\.\]* ** \)
+ConfigureMsgService\(iid, ulUIParam, ulFlags, \[SPropValue, \.\.\.\]\)
 Reconfigures a message service\.
 
 #### Parameters
 
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The unique identifier for the message service to configure\.
 
-  -  *ulUIParam* : int
+  - ulUIParam : int
 
     Handle of the parent window for the configuration property sheet\.
 
-  -  *ulFlags* : int
+  - ulFlags : int
 
     Bitmask of flags that controls the display of the property sheet\.
 
-  -  *\[SPropValue, \.\.\.\]* : \[values, \.\.\.\]
+  - \[SPropValue, \.\.\.\] : \[values, \.\.\.\]
 
     Property values describing the properties to display in the property sheet\.  Should not be None if the service is to be configured without a message service\.
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.CreateMsgService
 
- **CreateMsgService\( *serviceName*  *, displayName*  *, ulUIParam*  *, ulFlags* ** \)
+CreateMsgService\(serviceName, displayName, ulUIParam, ulFlags\)
 Creates a message service\.
 
 #### Parameters
 
 
-  -  *serviceName* : string
+  - serviceName : string
 
     The name of the service\.
 
-  -  *displayName* : string
+  - displayName : string
 
     Display name of the service, or None
 
-  -  *ulUIParam* : int
+  - ulUIParam : int
 
     Handle of the parent window for the configuration property sheet\.
 
-  -  *ulFlags* : int
+  - ulFlags : int
 
     Bitmask of flags that controls the display of the property sheet\.
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.DeleteMsgService
 
- **DeleteMsgService\( *uuid* ** \)
+DeleteMsgService\(uuid\)
 Deletes the specified service
 
 #### Parameters
 
 
-  -  *uuid* :[PyIID](#pyiid)
+  - uuid :[PyIID](#pyiid)
 
     The ID of the service
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.GetMsgServiceTable
 
-[PyIMAPITable](#pyimapitable)\= **GetMsgServiceTable\( *flags* ** \)
+[PyIMAPITable](#pyimapitable) =GetMsgServiceTable\(flags\)
 Retrieves a table of services\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.GetProviderTable
 
-[PyIMAPITable](#pyimapitable)\= **GetProviderTable\( *flags* ** \)
+[PyIMAPITable](#pyimapitable) =GetProviderTable\(flags\)
 Retrieves a table of service providers\.
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.OpenProfileSection
 
- **PyIProfSect** \= **OpenProfileSection\( *uuid*  *, iid*  *, flags* ** \)
+PyIProfSect
+
+ =OpenProfileSection\(uuid, iid, flags\)
 Opens a profile section
 
 #### Parameters
 
 
-  -  *uuid* :[PyIID](#pyiid)
+  - uuid :[PyIID](#pyiid)
 
     The ID of the service
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the resulting object, or None for the default
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMsgServiceAdmin](#pyimsgserviceadmin)\.RenameMsgService
 
- **RenameMsgService\( *uuid*  *, flags*  *, newName* ** \)
+RenameMsgService\(uuid, flags, newName\)
 Renames the specified service
 
 #### Parameters
 
 
-  -  *uuid* :[PyIID](#pyiid)
+  - uuid :[PyIID](#pyiid)
 
     The ID of the service
 
-  -  *flags* : int
+  - flags : int
 
     
 
-  -  *newName* : string
+  - newName : string
 
     The new name for the service\.

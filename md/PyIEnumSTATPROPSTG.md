@@ -2,6 +2,8 @@
 
 ## PyIEnumSTATPROPSTG Object
 
+
+
 A Python interface to IEnumSTATPROPSTG
 
 #### Methods
@@ -25,27 +27,29 @@ A Python interface to IEnumSTATPROPSTG
 
 ## [PyIEnumSTATPROPSTG](#pyienumstatpropstg)\.Clone
 
-[PyIEnumSTATPROPSTG](#pyienumstatpropstg)\= **Clone\(** \)
+[PyIEnumSTATPROPSTG](#pyienumstatpropstg) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumSTATPROPSTG](#pyienumstatpropstg)\.Next
 
-object \= **Next\( *num* ** \)
+
+
+object =Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
 ## [PyIEnumSTATPROPSTG](#pyienumstatpropstg)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumSTATPROPSTG](#pyienumstatpropstg)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

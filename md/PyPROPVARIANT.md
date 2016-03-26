@@ -2,9 +2,11 @@
 
 ## PyPROPVARIANT Object
 
+
+
 Encapsulates a PROPVARIANT structure\. 
 
-Constructed using PROPVARIANTType\(Value, Type\=VT\_ILLEGAL\)\. 
+Constructed using PROPVARIANTType\(Value, Type=VT\_ILLEGAL\)\. 
 
 Value can be any object that can be be converted to the requested variant type\. 
 
@@ -20,7 +22,7 @@ into a safearray using[PyPROPVARIANT::ChangeType](PyPROPVARIANT.md#pypropvariant
 
 #### Properties
 
-  -  **int vt** 
+  - int vt
     The variant type, a combination of VARENUM values including flags\.  \(read only\)
 
 #### Methods
@@ -40,36 +42,40 @@ into a safearray using[PyPROPVARIANT::ChangeType](PyPROPVARIANT.md#pypropvariant
 
 ## [PyPROPVARIANT](#pypropvariant)\.ChangeType
 
-[PyPROPVARIANT](#pypropvariant)\= **ChangeType\( *Type*  *, Flags* ** \)
+[PyPROPVARIANT](#pypropvariant) =ChangeType\(Type, Flags\)
 Coerce to a different variant type
 
 #### Parameters
 
 
-  -  *Type* : int
+  - Type : int
 
     New variant type, combination of pythoncom\.VT\_\* values
 
-  -  *Flags\=0* : int
+  - Flags=0 : int
 
     Reserved \(PROPVAR\_CHANGE\_FLAGS\)
 
 #### Win32 API References
 
 
-  - Search for *PropVariantChangeType* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=propvariantchangetype),[google](#http://www.google.com/search?q=propvariantchangetype)or[google groups](#http://groups.google.com/groups?q=propvariantchangetype)\.
+  - Search forPropVariantChangeType at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=propvariantchangetype),[google](#http://www.google.com/search?q=propvariantchangetype) or[google groups](#http://groups.google.com/groups?q=propvariantchangetype)\.
 
 ## [PyPROPVARIANT](#pypropvariant)\.GetValue
 
-object \= **GetValue\(** \)
+
+
+object =GetValue\(\)
 Returns an object representing the variant value
 
 ## [PyPROPVARIANT](#pypropvariant)\.ToString
 
-str \= **ToString\(** \)
+
+
+str =ToString\(\)
 Returns the value as a string
 
 #### Win32 API References
 
 
-  - Search for *PropVariantToString* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=propvarianttostring),[google](#http://www.google.com/search?q=propvarianttostring)or[google groups](#http://groups.google.com/groups?q=propvarianttostring)\.
+  - Search forPropVariantToString at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=propvarianttostring),[google](#http://www.google.com/search?q=propvarianttostring) or[google groups](#http://groups.google.com/groups?q=propvarianttostring)\.

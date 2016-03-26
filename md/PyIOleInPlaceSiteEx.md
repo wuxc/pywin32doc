@@ -2,6 +2,8 @@
 
 ## PyIOleInPlaceSiteEx Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,29 +23,29 @@ Description of the interface
 
 ## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex)\.OnInPlaceActivateEx
 
- **OnInPlaceActivateEx\( *dwFlags* ** \)
+OnInPlaceActivateEx\(dwFlags\)
 Description of OnInPlaceActivateEx\.
 
 #### Parameters
 
 
-  -  *dwFlags* : int
+  - dwFlags : int
 
     Description for dwFlags
 
 ## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex)\.OnInPlaceDeactivateEx
 
- **OnInPlaceDeactivateEx\( *fNoRedraw* ** \)
+OnInPlaceDeactivateEx\(fNoRedraw\)
 Description of OnInPlaceDeactivateEx\.
 
 #### Parameters
 
 
-  -  *fNoRedraw* : int
+  - fNoRedraw : int
 
     Description for fNoRedraw
 
 ## [PyIOleInPlaceSiteEx](#pyioleinplacesiteex)\.RequestUIActivate
 
- **RequestUIActivate\(** \)
+RequestUIActivate\(\)
 Description of RequestUIActivate\.

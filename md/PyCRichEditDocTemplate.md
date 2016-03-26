@@ -2,7 +2,13 @@
 
 ## PyCRichEditDocTemplate Object
 
-A document template class for OLE functionality\.  Encapsulates an MFC **CDocTemplate** class
+
+
+A document template class for OLE functionality\.  Encapsulates an MFCCDocTemplate
+
+
+
+ class
 
 #### Methods
 
@@ -13,12 +19,12 @@ A document template class for OLE functionality\.  Encapsulates an MFC **CDocTem
 
 ## [PyCRichEditDocTemplate](#pycricheditdoctemplate)\.DoCreateRichEditDoc
 
-[PyCRichEditDoc](#pycricheditdoc)\= **DoCreateRichEditDoc\( *fileName* ** \)
+[PyCRichEditDoc](#pycricheditdoc) =DoCreateRichEditDoc\(fileName\)
 Creates an underlying document object\.
 
 #### Parameters
 
 
-  -  *fileName\=None* : string
+  - fileName=None : string
 
     The name of the file to load\.

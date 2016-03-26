@@ -2,6 +2,8 @@
 
 ## PyIOleClientSite Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -33,48 +35,48 @@ Description of the interface
 
 ## [PyIOleClientSite](#pyioleclientsite)\.GetContainer
 
- **GetContainer\(** \)
+GetContainer\(\)
 Description of GetContainer\.
 
 ## [PyIOleClientSite](#pyioleclientsite)\.GetMoniker
 
- **GetMoniker\( *dwAssign*  *, dwWhichMoniker* ** \)
+GetMoniker\(dwAssign, dwWhichMoniker\)
 Description of GetMoniker\.
 
 #### Parameters
 
 
-  -  *dwAssign* : int
+  - dwAssign : int
 
     Description for dwAssign
 
-  -  *dwWhichMoniker* : int
+  - dwWhichMoniker : int
 
     Description for dwWhichMoniker
 
 ## [PyIOleClientSite](#pyioleclientsite)\.OnShowWindow
 
- **OnShowWindow\( *fShow* ** \)
+OnShowWindow\(fShow\)
 Description of OnShowWindow\.
 
 #### Parameters
 
 
-  -  *fShow* : int
+  - fShow : int
 
     Description for fShow
 
 ## [PyIOleClientSite](#pyioleclientsite)\.RequestNewObjectLayout
 
- **RequestNewObjectLayout\(** \)
+RequestNewObjectLayout\(\)
 Description of RequestNewObjectLayout\.
 
 ## [PyIOleClientSite](#pyioleclientsite)\.SaveObject
 
- **SaveObject\(** \)
+SaveObject\(\)
 Description of SaveObject\.
 
 ## [PyIOleClientSite](#pyioleclientsite)\.ShowObject
 
- **ShowObject\(** \)
+ShowObject\(\)
 Description of ShowObject\.

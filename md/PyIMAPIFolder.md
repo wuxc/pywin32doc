@@ -2,6 +2,8 @@
 
 ## PyIMAPIFolder Object
 
+
+
 An COM interface to MAPI
 Derived from[PyIMAPIProp](#pyimapiprop)
 
@@ -38,157 +40,159 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
 ## [PyIMAPIFolder](#pyimapifolder)\.CopyMessages
 
- **CopyMessages\( *msgs*  *, iid*  *, folder*  *, ulUIParam*  *, progress*  *, flags* ** \)
+CopyMessages\(msgs, iid, folder, ulUIParam, progress, flags\)
 Copies the specified messages
 
 #### Parameters
 
 
-  -  *msgs* :[PySBinaryArray](#pysbinaryarray)
+  - msgs :[PySBinaryArray](#pysbinaryarray)
 
     
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     IID representing the interface to be used to access the destination folder\.  Should usually be None\.
 
-  -  *folder* :[PyIMAPIFolder](#pyimapifolder)
+  - folder :[PyIMAPIFolder](#pyimapifolder)
 
     The destination folder
 
-  -  *ulUIParam* : long
+  - ulUIParam : long
 
     Handle of the parent window for any dialog boxes or windows this method displays\.
 
-  -  *progress* : **PyIMAPIProgress** 
+  - progress :PyIMAPIProgress
 
     A progress object, or None
 
-  -  *flags* : int
+  - flags : int
 
     A bitmask of
 
 
 ## [PyIMAPIFolder](#pyimapifolder)\.CreateFolder
 
-[PyIMAPIFolder](#pyimapifolder)\= **CreateFolder\( *folderType*  *, folderName*  *, folderComment*  *, iid*  *, flags* ** \)
+[PyIMAPIFolder](#pyimapifolder) =CreateFolder\(folderType, folderName, folderComment, iid, flags\)
 Creates a folder object\.
 
 #### Parameters
 
 
-  -  *folderType* : int
+  - folderType : int
 
     The type of folder to create
 
-  -  *folderName* : string
+  - folderName : string
 
     The name of the folder\.
 
-  -  *folderComment* : string
+  - folderComment : string
 
     A comment for the folder or None
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the object to return\.  Should usually be None\.
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPIFolder](#pyimapifolder)\.CreateMessage
 
-[PyIMessage](#pyimessage)\= **CreateMessage\( *iid*  *, flags* ** \)
+[PyIMessage](#pyimessage) =CreateMessage\(iid, flags\)
 Creates a message in a folder
 
 #### Parameters
 
 
-  -  *iid* :[PyIID](#pyiid)
+  - iid :[PyIID](#pyiid)
 
     The IID of the object to return\.  Should usually be None\.
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPIFolder](#pyimapifolder)\.DeleteFolder
 
- **DeleteFolder\( *entryId*  *, uiParam*  *, progress* ** \)
+DeleteFolder\(entryId, uiParam, progress\)
 Deletes a subfolder\.
 
 #### Parameters
 
 
-  -  *entryId* : string
+  - entryId : string
 
     The EntryID of the subfolder to delete\.
 
-  -  *uiParam* : long
+  - uiParam : long
 
     Handle of the parent window of the progress indicator\.
 
-  -  *progress* : **PyIMAPIProgress** 
+  - progress :PyIMAPIProgress
 
     A progress object, or None
 
 ## [PyIMAPIFolder](#pyimapifolder)\.DeleteMessages
 
- **DeleteMessages\( *msgs*  *, uiParam*  *, progress*  *, flags* ** \)
+DeleteMessages\(msgs, uiParam, progress, flags\)
 Deletes the specified messages\.
 
 #### Parameters
 
 
-  -  *msgs* :[PySBinaryArray](#pysbinaryarray)
+  - msgs :[PySBinaryArray](#pysbinaryarray)
 
     
 
-  -  *uiParam* : int
+  - uiParam : int
 
     A HWND for the progress
 
-  -  *progress* : **PyIMAPIProgress** 
+  - progress :PyIMAPIProgress
 
     A progress object, or None
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPIFolder](#pyimapifolder)\.EmptyFolder
 
- **EmptyFolder\( *uiParam*  *, progress*  *, flags* ** \)
+EmptyFolder\(uiParam, progress, flags\)
 deletes all messages and subfolders from a folder without deleting the folder itself\.
 
 #### Parameters
 
 
-  -  *uiParam* : int
+  - uiParam : int
 
     A HWND for the progress
 
-  -  *progress* : **PyIMAPIProgress** 
+  - progress :PyIMAPIProgress
 
     A progress object, or None
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPIFolder](#pyimapifolder)\.GetLastError
 
- **PyMAPIError** \= **GetLastError\( *hr*  *, flags* ** \)
+PyMAPIError
+
+ =GetLastError\(hr, flags\)
 Returns the last error associated with this object
 
 #### Parameters
 
 
-  -  *hr* : int
+  - hr : int
 
     The HRESULT
 
-  -  *flags* : int
+  - flags : int
 
     

@@ -2,6 +2,8 @@
 
 ## PyIOleInPlaceSiteWindowless Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -57,140 +59,140 @@ Description of the interface
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.AdjustRect
 
- **AdjustRect\(** \)
+AdjustRect\(\)
 Description of AdjustRect\.
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.CanWindowlessActivate
 
- **CanWindowlessActivate\(** \)
+CanWindowlessActivate\(\)
 Description of CanWindowlessActivate\.
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.GetCapture
 
- **GetCapture\(** \)
+GetCapture\(\)
 Description of GetCapture\.
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.GetDC
 
- **GetDC\( *grfFlags*  *, rect* ** \)
+GetDC\(grfFlags, rect\)
 Description of GetDC\.
 
 #### Parameters
 
 
-  -  *grfFlags* : int
+  - grfFlags : int
 
     Description for grfFlags
 
-  -  *rect* : \(int, int, int, int\)
+  - rect : \(int, int, int, int\)
 
     
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.GetFocus
 
- **GetFocus\(** \)
+GetFocus\(\)
 Description of GetFocus\.
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.InvalidateRect
 
- **InvalidateRect\( *rect*  *, fErase* ** \)
+InvalidateRect\(rect, fErase\)
 Description of InvalidateRect\.
 
 #### Parameters
 
 
-  -  *rect* : \(int, int, int, int\)
+  - rect : \(int, int, int, int\)
 
     
 
-  -  *fErase* : int
+  - fErase : int
 
     Description for fErase
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.InvalidateRgn
 
- **InvalidateRgn\( *hRgn*  *, fErase* ** \)
+InvalidateRgn\(hRgn, fErase\)
 Description of InvalidateRgn\.
 
 #### Parameters
 
 
-  -  *hRgn* : int
+  - hRgn : int
 
     Handle to a region
 
-  -  *fErase* : int
+  - fErase : int
 
     Description for fErase
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.OnDefWindowMessage
 
- **OnDefWindowMessage\( *msg*  *, wParam*  *, lParam* ** \)
+OnDefWindowMessage\(msg, wParam, lParam\)
 Description of OnDefWindowMessage\.
 
 #### Parameters
 
 
-  -  *msg* : int
+  - msg : int
 
     Description for msg
 
-  -  *wParam* : int
+  - wParam : int
 
     Description for wParam
 
-  -  *lParam* : long
+  - lParam : long
 
     Description for lParam
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.ReleaseDC
 
- **ReleaseDC\( *hDC* ** \)
+ReleaseDC\(hDC\)
 Description of ReleaseDC\.
 
 #### Parameters
 
 
-  -  *hDC* : HDC
+  - hDC : HDC
 
     Description for hDC
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.ScrollRect
 
- **ScrollRect\( *dx*  *, dy* ** \)
+ScrollRect\(dx, dy\)
 Description of ScrollRect\.
 
 #### Parameters
 
 
-  -  *dx* : int
+  - dx : int
 
     Description for dx
 
-  -  *dy* : int
+  - dy : int
 
     Description for dy
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.SetCapture
 
- **SetCapture\( *fCapture* ** \)
+SetCapture\(fCapture\)
 Description of SetCapture\.
 
 #### Parameters
 
 
-  -  *fCapture* : int
+  - fCapture : int
 
     Description for fCapture
 
 ## [PyIOleInPlaceSiteWindowless](#pyioleinplacesitewindowless)\.SetFocus
 
- **SetFocus\( *fFocus* ** \)
+SetFocus\(fFocus\)
 Description of SetFocus\.
 
 #### Parameters
 
 
-  -  *fFocus* : int
+  - fFocus : int
 
     Description for fFocus

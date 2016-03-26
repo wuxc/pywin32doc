@@ -2,6 +2,8 @@
 
 ## PyIEnumObjects Object
 
+
+
 Iterates through a number of arbitrary interfaces
 
 #### Methods
@@ -25,31 +27,33 @@ Iterates through a number of arbitrary interfaces
 
 ## [PyIEnumObjects](#pyienumobjects)\.Clone
 
-[PyIEnumObjects](#pyienumobjects)\= **Clone\(** \)
+[PyIEnumObjects](#pyienumobjects) =Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
 ## [PyIEnumObjects](#pyienumobjects)\.Next
 
-\([PyIUnknown](#pyiunknown),\.\.\.\) \= **Next\( *num*  *, riid* ** \)
+
+
+\([PyIUnknown](#pyiunknown),\.\.\.\) =Next\(num, riid\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
 
 
-  -  *num\=1* : int
+  - num=1 : int
 
     Number of items to retrieve\.
 
-  -  *riid\=IID\_IUnknown* :[PyIID](#pyiid)
+  - riid=IID\_IUnknown :[PyIID](#pyiid)
 
     The interfaces to return
 
 ## [PyIEnumObjects](#pyienumobjects)\.Reset
 
- **Reset\(** \)
+Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
 ## [PyIEnumObjects](#pyienumobjects)\.Skip
 
- **Skip\(** \)
+Skip\(\)
 Skips over the next specified elementes\.

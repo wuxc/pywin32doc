@@ -2,7 +2,13 @@
 
 ## PyCDC Object
 
-A Device Context\.  Encapsulates an MFC **CDC** class\.
+
+
+A Device Context\.  Encapsulates an MFCCDC
+
+
+
+ class\.
 
 #### Methods
 
@@ -345,22 +351,22 @@ A Device Context\.  Encapsulates an MFC **CDC** class\.
 
 ## [PyCDC](#pycdc)\.AbortDoc
 
- **AbortDoc\(** \)
+AbortDoc\(\)
 Aborts a print job
 
 ## [PyCDC](#pycdc)\.Arc
 
- **Arc\( *rect*  *, pointStart*  *, pointEnd* ** \)
+Arc\(rect, pointStart, pointEnd\)
 Draws an eliptical arc\.
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     Specifies the ellipse's bounding rectangle
 
-  -  *pointStart* : \(x,y\)
+  - pointStart : \(x,y\)
 
     Specifies the x- and y-coordinates 
 
@@ -368,7 +374,7 @@ of the point that defines the arc's starting point \(in logical units\)\.
 
 This point does not have to lie exactly on the arc\.
 
-  -  *pointEnd* : \(x,y\)
+  - pointEnd : \(x,y\)
 
     Specifies the x- and y-coordinates 
 
@@ -377,6 +383,8 @@ of the point that defines the arc's ending point \(in logical units\)\.
 This point does not have to lie exactly on the arc\.
 
 #### Comments
+
+
 The arc drawn by using the function is a segment of the ellipse defined by the specified bounding rectangle\. 
 
 The actual starting point of the arc is the point at which a ray drawn 
@@ -405,34 +413,34 @@ Always none\.  If the function fails, an exception is raised\.
 
 ## [PyCDC](#pycdc)\.BeginPath
 
- **BeginPath\(** \)
+BeginPath\(\)
 Opens a path bracket in the device context
 
 ## [PyCDC](#pycdc)\.BitBlt
 
- **BitBlt\( *destPos*  *, size*  *, dc*  *, srcPos*  *, rop* ** \)
+BitBlt\(destPos, size, dc, srcPos, rop\)
 Copies a bitmap from the source device context to this device context\.
 
 #### Parameters
 
 
-  -  *destPos* : \(x,y\)-ints
+  - destPos : \(x,y\)-ints
 
     The logical x,y coordinates of the upper-left corner of the destination rectangle\.
 
-  -  *size* : \(width, height\)-ints
+  - size : \(width, height\)-ints
 
     Specifies the width and height \(in logical units\) of the destination rectangle and source bitmap\.
 
-  -  *dc* :[PyCDC](#pycdc)
+  - dc :[PyCDC](#pycdc)
 
     Specifies the PyCDC object from which the bitmap will be copied\. It must be None if rop specifies a raster operation that does not include a source\.
 
-  -  *srcPos* : \(xSrc, ySrc\)-ints
+  - srcPos : \(xSrc, ySrc\)-ints
 
     Specifies the logical x,y coordinates of the upper-left corner of the source bitmap\.
 
-  -  *rop* : int
+  - rop : int
 
     Specifies the raster operation to be performed\. See the win32 api documentation for details\.
 
@@ -443,17 +451,17 @@ Copies a bitmap from the source device context to this device context\.
 
 ## [PyCDC](#pycdc)\.Chord
 
- **Chord\( *rect*  *, pointStart*  *, pointEnd* ** \)
+Chord\(rect, pointStart, pointEnd\)
 Draws a chord\.
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     Specifies the ellipse's bounding rectangle
 
-  -  *pointStart* : \(x,y\)
+  - pointStart : \(x,y\)
 
     Specifies the x- and y-coordinates 
 
@@ -461,7 +469,7 @@ of the point that defines the arc's starting point \(in logical units\)\.
 
 This point does not have to lie exactly on the arc\.
 
-  -  *pointEnd* : \(x,y\)
+  - pointEnd : \(x,y\)
 
     Specifies the x- and y-coordinates 
 
@@ -470,6 +478,8 @@ of the point that defines the arc's ending point \(in logical units\)\.
 This point does not have to lie exactly on the arc\.
 
 #### Comments
+
+
 Draws a chord \(a closed figure bounded by the intersection 
 
 of an ellipse and a line segment\)\. The rect parameter specify the 
@@ -496,22 +506,24 @@ Always none\.  If the function fails, an exception is raised\.
 
 ## [PyCDC](#pycdc)\.CreateCompatibleDC
 
- **CreateCompatibleDC\( *dcFrom* ** \)
+CreateCompatibleDC\(dcFrom\)
 Creates a memory device context that is compatible with this DC\.
 
 #### Parameters
 
 
-  -  *dcFrom\=None* :[PyCDC](#pycdc)
+  - dcFrom=None :[PyCDC](#pycdc)
 
     The source DC, or None to make a screen compatible DC\.
 
 #### Comments
+
+
 Note that unlike the MFC version, this function 
 
 calls the global CreateCompatibleDC function and returns 
 
-a new[PyCDC](#pycdc)object\.
+a new[PyCDC](#pycdc) object\.
 
 #### MFC References
 
@@ -520,13 +532,13 @@ a new[PyCDC](#pycdc)object\.
 
 ## [PyCDC](#pycdc)\.CreatePrinterDC
 
- **CreatePrinterDC\( *printerName* ** \)
+CreatePrinterDC\(printerName\)
 Creates a device context for a specific printer
 
 #### Parameters
 
 
-  -  *printerName\=None* : string
+  - printerName=None : string
 
     The printer name, or None for the default printer
 
@@ -537,24 +549,26 @@ Creates a device context for a specific printer
 
 ## [PyCDC](#pycdc)\.DPtoLP
 
-\(x,y\) \= **DPtoLP\( *point* ** \)
+
+
+\(x,y\) =DPtoLP\(point\)
 Converts device units into logical units\.
 
 #### Parameters
 
 
-  -  *point* : \(x,y\)
+  - point : \(x,y\)
 
     The point to convert
 
 #### Alternative Parameters
 
 
-  -  *x* 
+  - x
 
     The x coordinate to convert\.
 
-  -  *y* 
+  - y
 
     The y coordinate to convert\.
 
@@ -563,18 +577,20 @@ Converts device units into logical units\.
 
   - CDC::DPtoLP
 
-#### To Do
-Should really handle list of \(x,y\) points
+####  To Do
+ Should really handle list of \(x,y\) points
 
 #### Return Value
 The converted coordinates\.
 
 ## [PyCDC](#pycdc)\.DeleteDC
 
- **DeleteDC\(** \)
+DeleteDC\(\)
 Deletes all resources associated with a device context\.
 
 #### Comments
+
+
 In general, do not call this function; the destructor will do it for you\.
 An application should not call DeleteDC if objects have been selected into the device context\. Objects must first be selected out of the device context before it it is deleted\.
 An application must not delete a device context whose handle was obtained by calling CWnd::GetDC\. Instead, it must call CWnd::ReleaseDC to free the device context\.
@@ -582,21 +598,21 @@ The DeleteDC function is generally used to delete device contexts created with C
 
 ## [PyCDC](#pycdc)\.Draw3dRect
 
- **Draw3dRect\( *rect*  *, colorTopLeft*  *, colorBotRight* ** \)
+Draw3dRect\(rect, colorTopLeft, colorBotRight\)
 Draws a three-dimensional rectangle\.
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom
+  - rect : \(left, top, right, bottom
 
     Specifies the bounding rectangle, in logical units\.
 
-  -  *colorTopLeft* : int
+  - colorTopLeft : int
 
     Specifies the color of the top and left sides of the three-dimensional rectangle\.
 
-  -  *colorBotRight* : int
+  - colorBotRight : int
 
     Specifies the color of the bottom and right sides of the three-dimensional rectangle\.
 
@@ -607,7 +623,7 @@ Draws a three-dimensional rectangle\.
 
 ## [PyCDC](#pycdc)\.DrawFocusRect
 
- **DrawFocusRect\( *rect* ** \)
+DrawFocusRect\(rect\)
 Draws a rectangle in the style used to 
 
 indicate the rectangle has focus
@@ -615,7 +631,7 @@ indicate the rectangle has focus
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     The coordinates of the 
 
@@ -628,21 +644,21 @@ rectangle
 
 ## [PyCDC](#pycdc)\.DrawFrameControl
 
- **DrawFrameControl\( *rect*  *, typ*  *, state* ** \)
+DrawFrameControl\(rect, typ, state\)
 Draws a frame control of the specified type and style\.
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     Specifies the bounding rectangle, in logical units\.
 
-  -  *typ* : int
+  - typ : int
 
     
 
-  -  *state* : int
+  - state : int
 
     
 
@@ -653,17 +669,17 @@ Draws a frame control of the specified type and style\.
 
 ## [PyCDC](#pycdc)\.DrawIcon
 
- **DrawIcon\( *point*  *, hIcon* ** \)
+DrawIcon\(point, hIcon\)
 Draws an icon on the DC\.
 
 #### Parameters
 
 
-  -  *point* : \(x,y\)
+  - point : \(x,y\)
 
     The point coordinate to draw to\.
 
-  -  *hIcon* :[PyHANDLE](#pyhandle)
+  - hIcon :[PyHANDLE](#pyhandle)
 
     The handle of the icon to draw\.
 
@@ -674,17 +690,19 @@ Draws an icon on the DC\.
 
 ## [PyCDC](#pycdc)\.DrawText
 
-s,rc,forat \= **DrawText\( *s*  *, tuple*  *, format* ** \)
+
+
+s,rc,forat =DrawText\(s, tuple, format\)
 Formats text in the given rectangle
 
 #### Parameters
 
 
-  -  *s* : string
+  - s : string
 
     The desired output string
 
-  -  *tuple* : \(int, int, int, int\)
+  - tuple : \(int, int, int, int\)
 
     The bounding rectangle in the form: 
 
@@ -692,7 +710,7 @@ Formats text in the given rectangle
 
 selected coordinate system - see[PyCDC::SetMapMode](PyCDC.md#pycdcsetmapmode)\)
 
-  -  *format* : int
+  - format : int
 
     Specifies one or more bit-or'd format values, such as 
 
@@ -706,11 +724,11 @@ import win32ui&ltnl&gt
 
  import win32con&ltnl&gt
 
- INCH \= 1440   \# twips - 1440 per inch allows fine res&ltnl&gt
+ INCH = 1440   \# twips - 1440 per inch allows fine res&ltnl&gt
 
  def drawtext\_test\(\):&ltnl&gt
 
-     dc \= win32ui\.CreateDC\(\)&ltnl&gt
+     dc = win32ui\.CreateDC\(\)&ltnl&gt
 
      dc\.CreatePrinterDC\(\)                \# ties to default printer&ltnl&gt
 
@@ -739,6 +757,10 @@ import win32ui&ltnl&gt
      del dc&ltnl&gt
 #### Return Value
 Height of text in pixels
+
+
+
+
 The return value is the height of the text, in logical units\. 
 
 If DT\_VCENTER or DT\_BOTTOM is specified, the return value is the 
@@ -749,17 +771,19 @@ If the function fails, the return value is zero \(no Python exception is thrown\
 
 ## [PyCDC](#pycdc)\.Ellipse
 
- **Ellipse\( *rect* ** \)
+Ellipse\(rect\)
 Draws an Ellipse\.
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     Specifies the ellipse's bounding rectangle
 
 #### Comments
+
+
 The center of the ellipse is the center of the bounding rectangle 
 
 specified by rect\. The ellipse is drawn with the current pen, and its 
@@ -776,48 +800,48 @@ Always none\.  If the function fails, an exception is raised\.
 
 ## [PyCDC](#pycdc)\.EndDoc
 
- **EndDoc\(** \)
+EndDoc\(\)
 Finishes spooling the document and starts printing it
 
 ## [PyCDC](#pycdc)\.EndPage
 
- **EndPage\(** \)
+EndPage\(\)
 Finishes a page on a printer DC
 
 ## [PyCDC](#pycdc)\.EndPath
 
- **EndPath\(** \)
+EndPath\(\)
 Closes a path bracket and selects the path defined by the bracket into the specified device context
 
 ## [PyCDC](#pycdc)\.ExtTextOut
 
- **ExtTextOut\( *int*  *, int*  *, int*  *, rect*  *, string*  *, tuple* ** \)
+ExtTextOut\(int, int, int, rect, string, tuple\)
 Writes text to the DC\.
 
 #### Parameters
 
 
-  -  *int* : x
+  - int : x
 
     The x coordinate to write the text to\.
 
-  -  *int* : y
+  - int : y
 
     The y coordinate to write the text to\.
 
-  -  *int* : nOptions
+  - int : nOptions
 
     Specifies the rectangle type\. This parameter can be one, both, or neither of ETO\_CLIPPED and ETO\_OPAQUE
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     Specifies the text's bounding rectangle\.  \(Can be None\.\)
 
-  -  *string* : text
+  - string : text
 
     The text to write\.
 
-  -  *tuple* : \(width1, width2, \.\.\.\)
+  - tuple : \(width1, width2, \.\.\.\)
 
     Optional array of values that indicate distance between origins of character cells\.
 
@@ -831,22 +855,22 @@ Always none\.  If the function fails, an exception is raised\.
 
 ## [PyCDC](#pycdc)\.FillPath
 
- **FillPath\(** \)
+FillPath\(\)
 Closes any open figures in the current path and fills the path's interior by using the current brush and polygon-filling mode\. After its interior is filled, the path is discarded from the device context\.
 
 ## [PyCDC](#pycdc)\.FillRect
 
- **FillRect\( *rect*  *, brush* ** \)
+FillRect\(rect, brush\)
 Fills a given rectangle with the specified brush
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom
+  - rect : \(left, top, right, bottom
 
     Specifies the bounding rectangle, in logical units\.
 
-  -  *brush* :[PyCBrush](#pycbrush)
+  - brush :[PyCBrush](#pycbrush)
 
     Specifies the brush to use\.
 
@@ -857,17 +881,17 @@ Fills a given rectangle with the specified brush
 
 ## [PyCDC](#pycdc)\.FillSolidRect
 
- **FillSolidRect\( *rect*  *, color* ** \)
+FillSolidRect\(rect, color\)
 Fills the given rectangle with the specified solid color\.
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom
+  - rect : \(left, top, right, bottom
 
     Specifies the bounding rectangle, in logical units\.
 
-  -  *color* : int
+  - color : int
 
     Specifies the color to use\.
 
@@ -878,17 +902,17 @@ Fills the given rectangle with the specified solid color\.
 
 ## [PyCDC](#pycdc)\.FrameRect
 
- **FrameRect\( *rect*  *, brush* ** \)
+FrameRect\(rect, brush\)
 Draws a border around the rectangle specified by rect
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom
+  - rect : \(left, top, right, bottom
 
     Specifies the bounding rectangle, in logical units\.
 
-  -  *brush* :[PyCBrush](#pycbrush)
+  - brush :[PyCBrush](#pycbrush)
 
     Specifies the brush to use\.
 
@@ -899,7 +923,9 @@ Draws a border around the rectangle specified by rect
 
 ## [PyCDC](#pycdc)\.GetBrushOrg
 
-\(int,int\) \= **GetBrushOrg\(** \)
+
+
+\(int,int\) =GetBrushOrg\(\)
 Retrieves the origin \(in device units\) of the brush currently selected for the device context\.
 
 #### MFC References
@@ -909,7 +935,9 @@ Retrieves the origin \(in device units\) of the brush currently selected for the
 
 ## [PyCDC](#pycdc)\.GetClipBox
 
-\(left, top, right, bottom\) \= **GetClipBox\(** \)
+
+
+\(left, top, right, bottom\) =GetClipBox\(\)
 Retrieves the dimensions of the smallest bounding rectangle around the current clipping boundary\.
 
 #### MFC References
@@ -922,18 +950,22 @@ A tuple of integers specifying the rectangle\.
 
 ## [PyCDC](#pycdc)\.GetCurrentPosition
 
-\(x, y\) \= **GetCurrentPosition\(** \)
+
+
+\(x, y\) =GetCurrentPosition\(\)
 Retrieves the current position \(in logical coordinates\)\.
 
 ## [PyCDC](#pycdc)\.GetDeviceCaps
 
-int \= **GetDeviceCaps\( *index* ** \)
+
+
+int =GetDeviceCaps\(index\)
 Retrieves a capability of the device context\.
 
 #### Parameters
 
 
-  -  *index* : int
+  - index : int
 
     The information requested\.  See the win32api documentation for details\.
 
@@ -947,17 +979,23 @@ The value of the requested capability
 
 ## [PyCDC](#pycdc)\.GetHandleAttrib
 
-int \= **GetHandleAttrib\(** \)
+
+
+int =GetHandleAttrib\(\)
 Retrieves the handle of the attribute device context\.
 
 ## [PyCDC](#pycdc)\.GetHandleOutput
 
-int \= **GetHandleOutput\(** \)
+
+
+int =GetHandleOutput\(\)
 Retrieves the handle of the output device context\.
 
 ## [PyCDC](#pycdc)\.GetMapMode
 
-int \= **GetMapMode\(** \)
+
+
+int =GetMapMode\(\)
 Gets the mapping mode for the device context\.
 
 #### MFC References
@@ -967,35 +1005,39 @@ Gets the mapping mode for the device context\.
 
 ## [PyCDC](#pycdc)\.GetNearestColor
 
-int \= **GetNearestColor\( *color* ** \)
+
+
+int =GetNearestColor\(color\)
 Returns the closest color a device can map\.
 
 #### Parameters
 
 
-  -  *color* : int
+  - color : int
 
     Specifies the color to be matched\.
 
 ## [PyCDC](#pycdc)\.GetPixel
 
- **GetPixel\( *x*  *, y* ** \)
+GetPixel\(x, y\)
 Gets a pixel at a local in a device context
 
 #### Parameters
 
 
-  -  *x* : int
+  - x : int
 
     Horizontal coordinate\.
 
-  -  *y* : int
+  - y : int
 
     Vertical coordinate\.
 
 ## [PyCDC](#pycdc)\.GetSafeHdc
 
-int \= **GetSafeHdc\(** \)
+
+
+int =GetSafeHdc\(\)
 Returns the HDC of this DC object\.
 
 #### MFC References
@@ -1005,13 +1047,15 @@ Returns the HDC of this DC object\.
 
 ## [PyCDC](#pycdc)\.GetTextExtent
 
-\(x,y\) \= **GetTextExtent\( *text* ** \)
+
+
+\(x,y\) =GetTextExtent\(text\)
 Calculates the width and height of a line of text using the current font to determine the dimensions\.
 
 #### Parameters
 
 
-  -  *text* : string
+  - text : string
 
     The text to calculate for\.
 
@@ -1025,16 +1069,20 @@ A tuple of integers with the size of the string, in logical units\.
 
 ## [PyCDC](#pycdc)\.GetTextExtentPoint
 
-\(x,y\) \= **GetTextExtentPoint\( *text* ** \)
+
+
+\(x,y\) =GetTextExtentPoint\(text\)
 An alias for[PyCDC::GetTextExtent](PyCDC.md#pycdcgettextextent)\. 
 
 GetTextExtentPoint is the preferred win32api name, but GetTextExtent is the MFC name\.
+ 
+
 Calculates the width and height of a line of text using the current font to determine the dimensions\.
 
 #### Parameters
 
 
-  -  *text* : string
+  - text : string
 
     The text to calculate for\.
 
@@ -1043,7 +1091,9 @@ A tuple of integers with the size of the string, in logical units\.
 
 ## [PyCDC](#pycdc)\.GetTextFace
 
-string \= **GetTextFace\(** \)
+
+
+string =GetTextFace\(\)
 Returns typeface name of the current font\.
 
 #### MFC References
@@ -1053,7 +1103,9 @@ Returns typeface name of the current font\.
 
 ## [PyCDC](#pycdc)\.GetTextMetrics
 
-dict \= **GetTextMetrics\(** \)
+
+
+dict =GetTextMetrics\(\)
 Retrieves the metrics for the current font in this device context\.
 
 #### MFC References
@@ -1063,57 +1115,105 @@ Retrieves the metrics for the current font in this device context\.
 
 #### Return Value
 A dictionary of integers, keyed by the following strings:
+ 
+
 tmHeight
+ 
+
 tmAscent
+ 
+
 tmDescent
+ 
+
 tmInternalLeading
+ 
+
 tmExternalLeading
+ 
+
 tmAveCharWidth
+ 
+
 tmMaxCharWidth
+ 
+
 tmWeight
+ 
+
 tmItalic
+ 
+
 tmUnderlined
+ 
+
 tmStruckOut
+ 
+
 tmFirstChar
+ 
+
 tmLastChar
+ 
+
 tmDefaultChar
+ 
+
 tmBreakChar
+ 
+
 tmPitchAndFamily
+ 
+
 tmCharSet
+ 
+
 tmOverhang
+ 
+
 tmDigitizedAspectX
+ 
+
 tmDigitizedAspectY
 
 
 ## [PyCDC](#pycdc)\.GetViewportExt
 
-x, y \= **GetViewportExt\(** \)
+
+
+x, y =GetViewportExt\(\)
 Gets the viewport extent of the device context
 
 ## [PyCDC](#pycdc)\.GetViewportOrg
 
-x, y \= **GetViewportOrg\(** \)
+
+
+x, y =GetViewportOrg\(\)
 Gets the viewport origin of the device context
 
 ## [PyCDC](#pycdc)\.GetWindowExt
 
-x, y \= **GetWindowExt\(** \)
+
+
+x, y =GetWindowExt\(\)
 Gets the window extent of the device context
 
 ## [PyCDC](#pycdc)\.GetWindowOrg
 
-x, y \= **GetWindowOrg\(** \)
+
+
+x, y =GetWindowOrg\(\)
 Retrieves the x- and y-coordinates of the origin of the window associated with the device context\.
 
 ## [PyCDC](#pycdc)\.IntersectClipRect
 
- **IntersectClipRect\( *rect* ** \)
+IntersectClipRect\(rect\)
 Creates a new clipping region by forming the intersection of the current region and the rectangle specified
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     Specifies the bounding rectangle, in logical units\.
 
@@ -1127,29 +1227,33 @@ region type as integer
 
 ## [PyCDC](#pycdc)\.IsPrinting
 
-int \= **IsPrinting\(** \)
+
+
+int =IsPrinting\(\)
 Returns 1 if the DC is currently printing, else 0
 
 ## [PyCDC](#pycdc)\.LPtoDP
 
-\(x,y\) \= **LPtoDP\( *point* ** \)
+
+
+\(x,y\) =LPtoDP\(point\)
 Converts logical units into device units\.
 
 #### Parameters
 
 
-  -  *point* : \(x,y\)
+  - point : \(x,y\)
 
     The point coordinate to convert\.
 
 #### Alternative Parameters
 
 
-  -  *x* 
+  - x
 
     The x coordinate to convert\.
 
-  -  *y* 
+  - y
 
     The y coordinate to convert\.
 
@@ -1163,24 +1267,24 @@ The converted coordinates\.
 
 ## [PyCDC](#pycdc)\.LineTo
 
- **LineTo\( *point* ** \)
+LineTo\(point\)
 Draws a line to a specified point, using the currently selected pen\.
 
 #### Parameters
 
 
-  -  *point* : \(x,y\)
+  - point : \(x,y\)
 
     The point coordinate to draw to\.
 
 #### Alternative Parameters
 
 
-  -  *x* 
+  - x
 
     The x coordinate to draw to\.
 
-  -  *y* 
+  - y
 
     The y coordinate to draw to\.
 
@@ -1191,24 +1295,26 @@ Draws a line to a specified point, using the currently selected pen\.
 
 ## [PyCDC](#pycdc)\.MoveTo
 
-\(x,y\) \= **MoveTo\( *point* ** \)
+
+
+\(x,y\) =MoveTo\(point\)
 Moves the current position to a specified point\.
 
 #### Parameters
 
 
-  -  *point* : \(x,y\)
+  - point : \(x,y\)
 
     The point coordinate to move to\.
 
 #### Alternative Parameters
 
 
-  -  *x* 
+  - x
 
     The x coordinate to move to\.
 
-  -  *y* 
+  - y
 
     The y coordinate to move to\.
 
@@ -1222,13 +1328,15 @@ The previous position\.
 
 ## [PyCDC](#pycdc)\.OffsetViewportOrg
 
-x, y \= **OffsetViewportOrg\( *x,y* ** \)
+
+
+x, y =OffsetViewportOrg\(x,y\)
 Modifies the coordinates of the viewport origin relative to the coordinates of the current viewport origin
 
 #### Parameters
 
 
-  -  *x,y* : int, int
+  - x,y : int, int
 
     The new origin offset\.
 
@@ -1237,13 +1345,15 @@ The previous viewport origin as a tuple \(x,y\)
 
 ## [PyCDC](#pycdc)\.OffsetWindowOrg
 
-x, y \= **OffsetWindowOrg\( *x,y* ** \)
+
+
+x, y =OffsetWindowOrg\(x,y\)
 Modifies the coordinates of the window origin relative to the coordinates of the current window origin\.
 
 #### Parameters
 
 
-  -  *x,y* : int, int
+  - x,y : int, int
 
     The new origin offset\.
 
@@ -1252,21 +1362,21 @@ The previous origin as a tuple \(x,y\)
 
 ## [PyCDC](#pycdc)\.PatBlt
 
- **PatBlt\( *destPos*  *, size*  *, rop* ** \)
+PatBlt\(destPos, size, rop\)
 Creates a bit pattern on the device\.
 
 #### Parameters
 
 
-  -  *destPos* : \(x,y\)-ints
+  - destPos : \(x,y\)-ints
 
     The logical x,y coordinates of the upper-left corner of the destination rectangle\.
 
-  -  *size* : \(width, height\)-ints
+  - size : \(width, height\)-ints
 
     Specifies the width and height \(in logical units\) of the destination rectangle and source bitmap\.
 
-  -  *rop* : int
+  - rop : int
 
     Specifies the raster operation to be performed\. See the win32 api documentation for details\.
 
@@ -1277,69 +1387,71 @@ Creates a bit pattern on the device\.
 
 ## [PyCDC](#pycdc)\.Pie
 
- **Pie\( *x1*  *, y1*  *, x2*  *, y2*  *, x3*  *, y3*  *, x4*  *, y4* ** \)
+Pie\(x1, y1, x2, y2, x3, y3, x4, y4\)
 Draws a pie slice in a device context
 
 #### Parameters
 
 
-  -  *x1* : int
+  - x1 : int
 
     X coordinate of upper left corner
 
-  -  *y1* : int
+  - y1 : int
 
     Y coordinate of upper left corner
 
-  -  *x2* : int
+  - x2 : int
 
     X coordinate of lower right corner
 
-  -  *y2* : int
+  - y2 : int
 
     Y coordinate of lower right corner
 
-  -  *x3* : int
+  - x3 : int
 
     X coordinate of starting point of arc
 
-  -  *y3* : int
+  - y3 : int
 
     Y coordinate of starting point of arc
 
-  -  *x4* : int
+  - x4 : int
 
     X coordinate of ending point of arc
 
-  -  *y4* : int
+  - y4 : int
 
     Y coordinate of ending point of arc
 
 ## [PyCDC](#pycdc)\.PolyBezier
 
- **PolyBezier\(** \)
+PolyBezier\(\)
 Draws one or more Bezier splines\.
 
 ## [PyCDC](#pycdc)\.Polygon
 
- **Polygon\(** \)
+Polygon\(\)
 Draws an Polygon\.
 
 ## [PyCDC](#pycdc)\.Polyline
 
- **Polyline\( *points* ** \)
+Polyline\(points\)
 Draws a Polyline\.
 
 #### Parameters
 
 
-  -  *points* : \[\(x, y\), \.\.\.\]
+  - points : \[\(x, y\), \.\.\.\]
 
     A sequence of points
 
 ## [PyCDC](#pycdc)\.RealizePalette
 
-int \= **RealizePalette\(** \)
+
+
+int =RealizePalette\(\)
 Maps palette entries in the current logical palette to the system palette\.
 
 #### Return Value
@@ -1353,13 +1465,15 @@ was last realized\.
 
 ## [PyCDC](#pycdc)\.RectVisible
 
-int \= **RectVisible\( *rect* ** \)
+
+
+int =RectVisible\(rect\)
 Determines whether any part of the given rectangle lies within the clipping region of the display context\.
 
 #### Parameters
 
 
-  -  *rect* : \(left, top, right, bottom\)
+  - rect : \(left, top, right, bottom\)
 
     The coordinates of the reactangle to be checked\.
 
@@ -1373,18 +1487,20 @@ Non zero if any part of the rectangle lies within the clipping region, else zero
 
 ## [PyCDC](#pycdc)\.Rectangle
 
-rc \= **Rectangle\(** \)
+
+
+rc =Rectangle\(\)
 Draws a rectangle using the current pen\. The interior of the rectangle is filled using the current brush\.
 
 ## [PyCDC](#pycdc)\.RestoreDC
 
- **RestoreDC\( *saved* ** \)
+RestoreDC\(saved\)
 Restores the state of the device context\.
 
 #### Parameters
 
 
-  -  *saved* : int
+  - saved : int
 
     The id of a previously saved device context\.  See[PyCDC::SaveDC](PyCDC.md#pycdcsavedc)
 
@@ -1395,10 +1511,12 @@ Restores the state of the device context\.
 
 ## [PyCDC](#pycdc)\.SaveDC
 
-int \= **SaveDC\(** \)
+
+
+int =SaveDC\(\)
 Saves the current state of the device context\.  Windows manages a stack of state information\. 
 
-The saved device context can later be restored by using **CDC::RestoreDC** 
+The saved device context can later be restored by usingCDC::RestoreDC
 
 #### MFC References
 
@@ -1412,17 +1530,23 @@ An exception is raised if this function fails\.
 
 ## [PyCDC](#pycdc)\.ScaleViewportExt
 
-x, y \= **ScaleViewportExt\(** \)
+
+
+x, y =ScaleViewportExt\(\)
 Modifies the viewport extents relative to the current values\.
 
 ## [PyCDC](#pycdc)\.ScaleWindowExt
 
-x, y \= **ScaleWindowExt\(** \)
+
+
+x, y =ScaleWindowExt\(\)
 Modifies the window extents relative to the current values\.
 
 ## [PyCDC](#pycdc)\.SelectClipRgn
 
-obRgn \= **SelectClipRgn\(** \)
+
+
+obRgn =SelectClipRgn\(\)
 Selects the given region as the current clipping region for the device context
 
 #### Return Value
@@ -1430,14 +1554,20 @@ The return value specifies the region's complexity \(integer\)
 
 ## [PyCDC](#pycdc)\.SelectObject
 
-object \= **SelectObject\( *ob* ** \)
+
+
+object =SelectObject\(ob\)
 Selects an object into the device context\.
-Currently, only[PyCFont](#pycfont),[PyCBitMap](#pycbitmap),[PyCBrush](#pycbrush)and **PyCPen** objects are supported\.
+ 
+
+Currently, only[PyCFont](#pycfont),[PyCBitMap](#pycbitmap),[PyCBrush](#pycbrush) andPyCPen
+
+ objects are supported\.
 
 #### Parameters
 
 
-  -  *ob* : object
+  - ob : object
 
     The object to select\.
 
@@ -1451,17 +1581,19 @@ The previously selected object\.  This will be the same type as the object param
 
 ## [PyCDC](#pycdc)\.SelectPalette
 
-int \= **SelectPalette\( *hPalette*  *, forceBackground* ** \)
+
+
+int =SelectPalette\(hPalette, forceBackground\)
 Sets the logical palette\.
 
 #### Parameters
 
 
-  -  *hPalette* : int
+  - hPalette : int
 
     The handle to the palette
 
-  -  *forceBackground* : int
+  - forceBackground : int
 
     Specifies whether the logical palette is forced to be a background palette\.
 
@@ -1475,17 +1607,21 @@ The previous palette handle\.
 
 ## [PyCDC](#pycdc)\.SetBkColor
 
-int \= **SetBkColor\( *color* ** \)
+
+
+int =SetBkColor\(color\)
 Sets the current background color to the specified color\.
 
 #### Parameters
 
 
-  -  *color* : int
+  - color : int
 
     A windows color specification\.  See the win32api documentation for details\.
 
 #### Comments
+
+
 If the background mode is OPAQUE, the system uses the background color 
 
 to fill the gaps in styled lines, the gaps between hatched lines in brushes, and 
@@ -1506,17 +1642,21 @@ The return value is the previous background color\.
 
 ## [PyCDC](#pycdc)\.SetBkMode
 
-int \= **SetBkMode\( *mode* ** \)
+
+
+int =SetBkMode\(mode\)
 Sets the current background mode to the specified mode\.
 
 #### Parameters
 
 
-  -  *mode* : int
+  - mode : int
 
     A background mode\.  May be either TRANSPARENT or OPAQUE\.
 
 #### Comments
+
+
 Specifies the mode to be set\.  This parameter can be either OPAQUE or TRANSPARENT
 
 #### MFC References
@@ -1529,13 +1669,15 @@ The return value is the previous background mode\.
 
 ## [PyCDC](#pycdc)\.SetBrushOrg
 
-\(int, int\) \= **SetBrushOrg\( *point* ** \)
+
+
+\(int, int\) =SetBrushOrg\(point\)
 Specifies the origin that GDI will assign to the next brush that the application selects into the device context\.
 
 #### Parameters
 
 
-  -  *point* : \(x,y\)
+  - point : \(x,y\)
 
     The new origin in device units\.
 
@@ -1549,25 +1691,29 @@ The previous origin in device units\.
 
 ## [PyCDC](#pycdc)\.SetGraphicsMode
 
-int \= **SetGraphicsMode\( *mode* ** \)
+
+
+int =SetGraphicsMode\(mode\)
 Sets the graphics mode for the specified device context
 
 #### Parameters
 
 
-  -  *mode* : int
+  - mode : int
 
     The new mode\.
 
 ## [PyCDC](#pycdc)\.SetMapMode
 
-int \= **SetMapMode\( *newMode* ** \)
+
+
+int =SetMapMode\(newMode\)
 Sets the mapping mode for the device context\.
 
 #### Parameters
 
 
-  -  *newMode* : int
+  - newMode : int
 
     The new mode\.  Can be one of 
 
@@ -1583,33 +1729,35 @@ The previous mapping mode\.
 
 ## [PyCDC](#pycdc)\.SetPixel
 
- **SetPixel\( *x*  *, y*  *, color* ** \)
+SetPixel\(x, y, color\)
 Sets a pixel in a device context
 
 #### Parameters
 
 
-  -  *x* : int
+  - x : int
 
     Horizontal coordinate\.
 
-  -  *y* : int
+  - y : int
 
     Vertical coordinate\.
 
-  -  *color* : int
+  - color : int
 
     The brush color\.
 
 ## [PyCDC](#pycdc)\.SetPolyFillMode
 
-\(int\) \= **SetPolyFillMode\( *point* ** \)
+
+
+\(int\) =SetPolyFillMode\(point\)
 Sets the polygon-filling mode\.
 
 #### Parameters
 
 
-  -  *point* : \(x,y\)
+  - point : \(x,y\)
 
     The new origin in device units\.
 
@@ -1620,17 +1768,23 @@ Sets the polygon-filling mode\.
 
 #### Return Value
 The previous PolyFillMode as integer
+
+
+
+
 The previous PolyFillMode\.
 
 ## [PyCDC](#pycdc)\.SetROP2
 
-dict \= **SetROP2\( *mode* ** \)
+
+
+dict =SetROP2\(mode\)
 Sets the current drawing mode\.
 
 #### Parameters
 
 
-  -  *mode* : int
+  - mode : int
 
     The new drawing mode\.
 
@@ -1641,15 +1795,19 @@ Sets the current drawing mode\.
 
 ## [PyCDC](#pycdc)\.SetTextAlign
 
-int \= **SetTextAlign\( *newFlags* ** \)
+
+
+int =SetTextAlign\(newFlags\)
 Sets the text-alignment flags\.
 
 #### Parameters
 
 
-  -  *newFlags* : int
+  - newFlags : int
 
     The new alignment flags\.  Can be a combination of \(TA\_CENTER, TA\_LEFT, TA\_RIGHT\), \(TA\_BASELINE, TA\_BOTTOM, TA\_TOP\) and \(TA\_NOUPDATECP, TA\_UPDATECP\)
+ 
+
 The default is TA\_LEFT|TA\_TOP|TA\_NOUPDATECP
 
 #### MFC References
@@ -1662,17 +1820,21 @@ The old alignment flags\.
 
 ## [PyCDC](#pycdc)\.SetTextColor
 
-int \= **SetTextColor\( *color* ** \)
+
+
+int =SetTextColor\(color\)
 Sets the text color to the specified color\.
 
 #### Parameters
 
 
-  -  *color* : int
+  - color : int
 
     A windows color specification\.  See the win32api documentation for details\.
 
 #### Comments
+
+
 This text color is used when writing text to this device context and also when converting bitmaps between color and monochrome device contexts\. 
 
 If the device cannot represent the specified color, the system sets the text color to the nearest physical color\. 
@@ -1689,13 +1851,15 @@ The return value is the previous text color\.
 
 ## [PyCDC](#pycdc)\.SetViewportExt
 
-\(x,y\) \= **SetViewportExt\( *size* ** \)
+
+
+\(x,y\) =SetViewportExt\(size\)
 Sets the x,y extents of the viewport of the device context\.
 
 #### Parameters
 
 
-  -  *size* : \(x,y\)
+  - size : \(x,y\)
 
     The new size\.
 
@@ -1709,25 +1873,29 @@ The previous extents of the viewport \(in logical units\)\.
 
 ## [PyCDC](#pycdc)\.SetViewportOrg
 
-x, y \= **SetViewportOrg\( *x,y* ** \)
+
+
+x, y =SetViewportOrg\(x,y\)
 Sets the viewport origin of the device context
 
 #### Parameters
 
 
-  -  *x,y* : int, int
+  - x,y : int, int
 
     The new origin\.
 
 ## [PyCDC](#pycdc)\.SetWindowExt
 
-\(x,y\) \= **SetWindowExt\( *size* ** \)
+
+
+\(x,y\) =SetWindowExt\(size\)
 Sets the x,y extents of the window associated with the device context\.
 
 #### Parameters
 
 
-  -  *size* : \(x,y\)
+  - size : \(x,y\)
 
     The new size\.
 
@@ -1741,71 +1909,75 @@ The previous extents of the window \(in logical units\)\.
 
 ## [PyCDC](#pycdc)\.SetWindowOrg
 
-x, y \= **SetWindowOrg\( *x,y* ** \)
+
+
+x, y =SetWindowOrg\(x,y\)
 Sets the window origin of the device context
 
 #### Parameters
 
 
-  -  *x,y* : int, int
+  - x,y : int, int
 
     The new origin\.
 
 ## [PyCDC](#pycdc)\.SetWorldTransform
 
-int \= **SetWorldTransform\(** \)
+
+
+int =SetWorldTransform\(\)
 sets a two-dimensional linear transformation between world space and page space for the specified device context\. This transformation can be used to scale, rotate, shear, or translate graphics output\.
 
 ## [PyCDC](#pycdc)\.StartDoc
 
- **StartDoc\( *docName*  *, outputFile* ** \)
+StartDoc\(docName, outputFile\)
 Starts spooling a document to a printer DC
 
 #### Parameters
 
 
-  -  *docName* : string
+  - docName : string
 
     The document name
 
-  -  *outputFile* : string
+  - outputFile : string
 
     The output file name\. Use this to spool to a file\. Omit to send to the printer\.
 
 ## [PyCDC](#pycdc)\.StartPage
 
- **StartPage\(** \)
+StartPage\(\)
 Starts a new page on a printer DC
 
 ## [PyCDC](#pycdc)\.StretchBlt
 
- **StretchBlt\( *destPos*  *, size*  *, dc*  *, srcPos*  *, size*  *, rop* ** \)
+StretchBlt\(destPos, size, dc, srcPos, size, rop\)
 Copies a bitmap from the source device context to this device context\.
 
 #### Parameters
 
 
-  -  *destPos* : \(x,y\)-ints
+  - destPos : \(x,y\)-ints
 
     The logical x,y coordinates of the upper-left corner of the destination rectangle\.
 
-  -  *size* : \(width, height\)-ints
+  - size : \(width, height\)-ints
 
     Specifies the width and height \(in logical units\) of the destination rectangle and source bitmap\.
 
-  -  *dc* :[PyCDC](#pycdc)
+  - dc :[PyCDC](#pycdc)
 
     Specifies the PyCDC object from which the bitmap will be copied\. It must be None if rop specifies a raster operation that does not include a source\.
 
-  -  *srcPos* : \(xSrc, ySrc\)-ints
+  - srcPos : \(xSrc, ySrc\)-ints
 
     Specifies the logical x,y coordinates of the upper-left corner of the source bitmap\.
 
-  -  *size* : \(widthsrc, heightsrc\)-ints
+  - size : \(widthsrc, heightsrc\)-ints
 
     Specifies the width and height \(in logical units\) of the destination rectangle and source bitmap\.
 
-  -  *rop* : int
+  - rop : int
 
     Specifies the raster operation to be performed\. See the win32 api documentation for details\.
 
@@ -1816,31 +1988,31 @@ Copies a bitmap from the source device context to this device context\.
 
 ## [PyCDC](#pycdc)\.StrokeAndFillPath
 
- **StrokeAndFillPath\(** \)
+StrokeAndFillPath\(\)
 Closes any open figures in a path, strokes the outline of the path by using the current pen, and fills its interior by using the current brush\. The device context must contain a closed path\.
 
 ## [PyCDC](#pycdc)\.StrokePath
 
- **StrokePath\(** \)
+StrokePath\(\)
 Renders the specified path by using the current pen\.
 
 ## [PyCDC](#pycdc)\.TextOut
 
- **TextOut\( *int*  *, int*  *, string* ** \)
+TextOut\(int, int, string\)
 Outputs text to the display context, using the currently selected font\.
 
 #### Parameters
 
 
-  -  *int* : x
+  - int : x
 
     The x coordinate to write the text to\.
 
-  -  *int* : y
+  - int : y
 
     The y coordinate to write the text to\.
 
-  -  *string* : text
+  - string : text
 
     The text to write\.
 

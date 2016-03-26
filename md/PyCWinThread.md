@@ -2,7 +2,13 @@
 
 ## PyCWinThread Object
 
-An application class\.  Encapsulates an MFC **CWinThread** class
+
+
+An application class\.  Encapsulates an MFCCWinThread
+
+
+
+ class
 
 #### Methods
 
@@ -33,52 +39,58 @@ An application class\.  Encapsulates an MFC **CWinThread** class
 
 ## [PyCWinThread](#pycwinthread)\.CreateThread
 
- **CreateThread\(** \)
+CreateThread\(\)
 Creates the actual thread behind the thread object\.
 
 ## [PyCWinThread](#pycwinthread)\.PumpIdle
 
- **PumpIdle\(** \)
+PumpIdle\(\)
 Pumps all idle messages\.
 
 ## [PyCWinThread](#pycwinthread)\.PumpMessages
 
- **PumpMessages\(** \)
+PumpMessages\(\)
 Pumps all messages to the application until a WM\_QUIT message is received\.
 
 #### Comments
+
+
 This allows an application which is performing a long operation to dispatch paint messages during the operation\.
 
 ## [PyCWinThread](#pycwinthread)\.Run
 
-int \= **Run\(** \)
+
+
+int =Run\(\)
 Starts the message pump\.  Advanced users only
 
 ## [PyCWinThread](#pycwinthread)\.SetMainFrame
 
- **SetMainFrame\( *mainFrame* ** \)
+SetMainFrame\(mainFrame\)
 Sets the threads main frame
 
 #### Parameters
 
 
-  -  *mainFrame* :[PyCWnd](#pycwnd)
+  - mainFrame :[PyCWnd](#pycwnd)
 
     The applications main frame\.
 
 #### Comments
+
+
 You can pass None to this function to reset the main frame\. 
 
 Should I free this?  I dont think so\!
 
 ## [PyCWinThread](#pycwinthread)\.SetThreadPriority
 
- **SetThreadPriority\( *priority* ** \)
+SetThreadPriority\(priority\)
 Sets the threads priority\.  Returns TRUE if successful\.
 
 #### Parameters
 
 
-  -  *priority* :[PyCWnd](#pycwnd)
+  - priority :[PyCWnd](#pycwnd)
 
     The threads priority\.

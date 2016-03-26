@@ -2,6 +2,8 @@
 
 ## PyIMAPIStatus Object
 
+
+
 Provides status information about the MAPI 
 
 subsystem, the integrated address book and the MAPI 
@@ -34,92 +36,92 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
 ## [PyIMAPIStatus](#pyimapistatus)\.ChangePassword
 
- **ChangePassword\( *oldPassword*  *, newPassword*  *, ulFlags* ** \)
+ChangePassword\(oldPassword, newPassword, ulFlags\)
 
 
 #### Parameters
 
 
-  -  *oldPassword* : unicode
+  - oldPassword : unicode
 
     
 
-  -  *newPassword* : unicode
+  - newPassword : unicode
 
     
 
-  -  *ulFlags* : int
+  - ulFlags : int
 
     
 
 ## [PyIMAPIStatus](#pyimapistatus)\.FlushQueues
 
- **FlushQueues\( *ulUIParam*  *, transport*  *, ulFlags* ** \)
+FlushQueues\(ulUIParam, transport, ulFlags\)
 
 
 #### Parameters
 
 
-  -  *ulUIParam* : int
+  - ulUIParam : int
 
     
 
-  -  *transport* : string
+  - transport : string
 
     Blob of data
 
-  -  *ulFlags* : int
+  - ulFlags : int
 
     
 
 ## [PyIMAPIStatus](#pyimapistatus)\.FlushQueues
 
- **FlushQueues\( *uiparam*  *, entryID*  *, flags* ** \)
+FlushQueues\(uiparam, entryID, flags\)
 
 
 #### Parameters
 
 
-  -  *uiparam* : int
+  - uiparam : int
 
     
 
-  -  *entryID* : string
+  - entryID : string
 
     A blob
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [PyIMAPIStatus](#pyimapistatus)\.SettingsDialog
 
- **SettingsDialog\( *ulUIParam*  *, ulFlags* ** \)
+SettingsDialog\(ulUIParam, ulFlags\)
 
 
 #### Parameters
 
 
-  -  *ulUIParam* : int
+  - ulUIParam : int
 
     
 
-  -  *ulFlags* : int
+  - ulFlags : int
 
     
 
 ## [PyIMAPIStatus](#pyimapistatus)\.ValidateState
 
- **ValidateState\( *ulUIParam*  *, ulFlags* ** \)
+ValidateState\(ulUIParam, ulFlags\)
 
 
 #### Parameters
 
 
-  -  *ulUIParam* : int
+  - ulUIParam : int
 
     
 
-  -  *ulFlags* : int
+  - ulFlags : int
 
     

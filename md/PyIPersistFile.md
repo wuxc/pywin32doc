@@ -2,6 +2,8 @@
 
 ## PyIPersistFile Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -29,12 +31,14 @@ Description of the interface
 
 ## [PyIPersistFile](#pyipersistfile)\.GetCurFile
 
-str \= **GetCurFile\(** \)
+
+
+str =GetCurFile\(\)
 Gets the current name of the file associated with the object\.
 
 ## [PyIPersistFile](#pyipersistfile)\.IsDirty
 
- **IsDirty\(** \)
+IsDirty\(\)
 Checks an object for changes since it was last saved to its current file\.
 
 #### Return Value
@@ -46,44 +50,44 @@ Unless this method explicitly returns S\_FALSE, assume that the object must be s
 
 ## [PyIPersistFile](#pyipersistfile)\.Load
 
- **Load\( *FileName*  *, Mode* ** \)
+Load\(FileName, Mode\)
 Opens the specified file and initializes an object from the file contents\.
 
 #### Parameters
 
 
-  -  *FileName* : str
+  - FileName : str
 
     Absolute path of the file to open
 
-  -  *Mode\=STGM\_READ* : int
+  - Mode=STGM\_READ : int
 
     Specifies the access mode from the STGM enumeration\.
 
 ## [PyIPersistFile](#pyipersistfile)\.Save
 
- **Save\( *FileName*  *, fRemember* ** \)
+Save\(FileName, fRemember\)
 Saves the object into the specified file\.
 
 #### Parameters
 
 
-  -  *FileName* : str
+  - FileName : str
 
     absolute path of the file where the object is saved\.
 
-  -  *fRemember* : int
+  - fRemember : int
 
     Specifies whether the file is to be the current working file or not\.
 
 ## [PyIPersistFile](#pyipersistfile)\.SaveCompleted
 
- **SaveCompleted\( *FileName* ** \)
+SaveCompleted\(FileName\)
 Notifies the object that it can revert from NoScribble mode to Normal mode\.
 
 #### Parameters
 
 
-  -  *FileName* : str
+  - FileName : str
 
     Absolute path of the file where the object was saved\.

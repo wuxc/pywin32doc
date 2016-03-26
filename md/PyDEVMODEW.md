@@ -2,7 +2,9 @@
 
 ## PyDEVMODEW Object
 
-Unicode version of[PyDEVMODE](#pydevmode)object 
+
+
+Unicode version of[PyDEVMODE](#pydevmode) object 
 
 PyDEVMODEW is only needed when win32api, win32gui, or win32print 
 
@@ -19,125 +21,125 @@ for the unicode version\.
 
 #### Properties
 
-  -  **int SpecVersion** 
+  - int SpecVersion
     Should always be set to DM\_SPECVERSION
 
-  -  **int DriverVersion** 
+  - int DriverVersion
     Version nbr assigned to printer driver by vendor
 
-  -  **int Size** 
+  - int Size
     Size of structure
 
-  -  **int DriverExtra** 
+  - int DriverExtra
     Number of extra bytes allocated for driver data, can only be set when new object is created
 
-  -  **int Fields** 
+  - int Fields
     Bitmask of win32con\.DM\_\* constants indicating which members are set
 
-  -  **int Orientation** 
+  - int Orientation
     Only applies to printers, DMORIENT\_PORTRAIT or DMORIENT\_LANDSCAPE
 
-  -  **int PaperSize** 
+  - int PaperSize
     Use 0 if PaperWidth and PaperLength are set, otherwise win32con\.DMPAPER\_\* constant
 
-  -  **int PaperLength** 
+  - int PaperLength
     Specified in 1/10 millimeters
 
-  -  **int PaperWidth** 
+  - int PaperWidth
     Specified in 1/10 millimeters
 
-  -  **int Position\_x** 
+  - int Position\_x
     Position of display relative to desktop
 
-  -  **int Position\_y** 
+  - int Position\_y
     Position of display relative to desktop
 
-  -  **int DisplayOrientation** 
+  - int DisplayOrientation
     Display rotation: DMDO\_DEFAULT,DMDO\_90, DMDO\_180, DMDO\_270
 
-  -  **int DisplayFixedOutput** 
+  - int DisplayFixedOutput
     DMDFO\_DEFAULT, DMDFO\_CENTER, DMDFO\_STRETCH
 
-  -  **int Scale** 
+  - int Scale
     Specified as percentage, eg 50 means half size of original
 
-  -  **int Copies** 
+  - int Copies
     Nbr of copies to print
 
-  -  **int DefaultSource** 
+  - int DefaultSource
     DMBIN\_\* constant, or can be a printer-specific value
 
-  -  **int PrintQuality** 
+  - int PrintQuality
     DMRES\_\* constant, interpreted as DPI if positive
 
-  -  **int Color** 
+  - int Color
     DMCOLOR\_COLOR or DMCOLOR\_MONOCHROME
 
-  -  **int Duplex** 
+  - int Duplex
     For printers that do two-sided printing: DMDUP\_SIMPLEX, DMDUP\_HORIZONTAL, DMDUP\_VERTICAL
 
-  -  **int YResolution** 
+  - int YResolution
     Vertical printer resolution in DPI - if this is set, PrintQuality indicates horizontal DPI
 
-  -  **int TTOption** 
+  - int TTOption
     TrueType options: DMTT\_BITMAP, DMTT\_DOWNLOAD, DMTT\_DOWNLOAD\_OUTLINE, DMTT\_SUBDEV
 
-  -  **int Collate** 
+  - int Collate
     DMCOLLATE\_TRUE or DMCOLLATE\_FALSE
 
-  -  **int LogPixels** 
+  - int LogPixels
     Pixels per inch \(only for display devices
 
-  -  **int BitsPerPel** 
+  - int BitsPerPel
     Color resolution in bits per pixel
 
-  -  **int PelsWidth** 
+  - int PelsWidth
     Pixel width of display
 
-  -  **int PelsHeight** 
+  - int PelsHeight
     Pixel height of display
 
-  -  **int DisplayFlags** 
+  - int DisplayFlags
     Combination of DM\_GRAYSCALE and DM\_INTERLACED
 
-  -  **int DisplayFrequency** 
+  - int DisplayFrequency
     Refresh rate
 
-  -  **int DisplayOrientation** 
+  - int DisplayOrientation
     Display rotation: DMDO\_DEFAULT,DMDO\_90, DMDO\_180, DMDO\_270
 
-  -  **int ICMMethod** 
+  - int ICMMethod
     Indicates where ICM is performed, one of win32con\.DMICMMETHOD\_\* values
 
-  -  **int ICMIntent** 
+  - int ICMIntent
     Intent of ICM, one of win32con\.DMICM\_\* values
 
-  -  **int MediaType** 
+  - int MediaType
     win32con\.DMMEDIA\_\*, can also be a printer-specific value greater then DMMEDIA\_USER
 
-  -  **int DitherType** 
+  - int DitherType
     Dithering option, win32con\.DMDITHER\_\*
 
-  -  **int Reserved1** 
+  - int Reserved1
     Reserved, use only 0
 
-  -  **int Reserved2** 
+  - int Reserved2
     Reserved, use only 0
 
-  -  **int Nup** 
+  - int Nup
     Controls printing of multiple logical pages per physical page, DMNUP\_SYSTEM or DMNUP\_ONEUP
 
-  -  **int PanningWidth** 
+  - int PanningWidth
     Not used, leave as 0
 
-  -  **int PanningHeight** 
+  - int PanningHeight
     Not used, leave as 0
 
-  -  **[PyUnicode](#pyunicode)DeviceName** 
+  - [PyUnicode](#pyunicode) DeviceName
     String of at most 32 chars
 
-  -  **str FormName** 
+  - str FormName
     Name of form as returned by[win32print::EnumForms](win32print.md#win32printenumforms), at most 32 chars
 
-  -  **str DriverData** 
+  - str DriverData
     Driver data appended to end of structure

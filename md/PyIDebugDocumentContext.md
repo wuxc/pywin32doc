@@ -2,6 +2,8 @@
 
 ## PyIDebugDocumentContext Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -17,10 +19,10 @@ Description of the interface
 
 ## [PyIDebugDocumentContext](#pyidebugdocumentcontext)\.EnumCodeContexts
 
- **EnumCodeContexts\(** \)
+EnumCodeContexts\(\)
 Description of EnumCodeContexts\.
 
 ## [PyIDebugDocumentContext](#pyidebugdocumentcontext)\.GetDocument
 
- **GetDocument\(** \)
+GetDocument\(\)
 Description of GetDocument\.

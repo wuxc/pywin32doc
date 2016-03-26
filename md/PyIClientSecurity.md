@@ -2,6 +2,8 @@
 
 ## PyIClientSecurity Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,65 +23,67 @@ Description of the interface
 
 ## [PyIClientSecurity](#pyiclientsecurity)\.CopyProxy
 
-[PyIUnknown](#pyiunknown)\= **CopyProxy\( *Proxy* ** \)
+[PyIUnknown](#pyiunknown) =CopyProxy\(Proxy\)
 Makes a private copy of a proxy interface
 
 #### Parameters
 
 
-  -  *Proxy* :[PyIUnknown](#pyiunknown)
+  - Proxy :[PyIUnknown](#pyiunknown)
 
     The remote interface to be copied
 
 ## [PyIClientSecurity](#pyiclientsecurity)\.QueryBlanket
 
-dict \= **QueryBlanket\( *Proxy* ** \)
+
+
+dict =QueryBlanket\(Proxy\)
 Retrieves the authentication settings for an interface
 
 #### Parameters
 
 
-  -  *Proxy* :[PyIUnknown](#pyiunknown)
+  - Proxy :[PyIUnknown](#pyiunknown)
 
     An interface created through a proxy
 
 ## [PyIClientSecurity](#pyiclientsecurity)\.SetBlanket
 
- **SetBlanket\( *Proxy*  *, AuthnSvc*  *, AuthzSvc*  *, ServerPrincipalName*  *, AuthnLevel*  *, ImpLevel*  *, AuthInfo*  *, Capabilities* ** \)
+SetBlanket\(Proxy, AuthnSvc, AuthzSvc, ServerPrincipalName, AuthnLevel, ImpLevel, AuthInfo, Capabilities\)
 Changes the authentication options used with an interface
 
 #### Parameters
 
 
-  -  *Proxy* :[PyIUnknown](#pyiunknown)
+  - Proxy :[PyIUnknown](#pyiunknown)
 
     The proxy interface for which to set security options
 
-  -  *AuthnSvc* : int
+  - AuthnSvc : int
 
     Authentication service identifier, pythoncom\.RPC\_C\_AUTHN\_\* \(but not RPC\_C\_AUTHN\_LEVEL\_\*\)
 
-  -  *AuthzSvc* : int
+  - AuthzSvc : int
 
     Authorization service identifier, pythoncom\.RPC\_C\_AUTHZ\_\*
 
-  -  *ServerPrincipalName* :[PyUnicode](#pyunicode)
+  - ServerPrincipalName :[PyUnicode](#pyunicode)
 
     SPN that identifies the server, can be None
 
-  -  *AuthnLevel* : int
+  - AuthnLevel : int
 
     Authentication level, pythoncom\.RPC\_C\_AUTHN\_LEVEL\_\*
 
-  -  *ImpLevel* : int
+  - ImpLevel : int
 
     Impersonation level, pythoncom\.RPC\_C\_IMP\_LEVEL\_\*
 
-  -  *AuthInfo* : None
+  - AuthInfo : None
 
     Not supported yet, use only None
 
-  -  *Capabilities* : int
+  - Capabilities : int
 
     Combination of pythoncom\.EOAC\_\* flags\.  Must be a subset of the 
 

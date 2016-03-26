@@ -2,9 +2,13 @@
 
 ## PyHANDLE Object
 
+
+
 A Python object, representing a win32 HANDLE\.
 
 #### Comments
+
+
 This object wraps a win32 HANDLE object, automatically closing it when the object 
 
 is destroyed\.  To guarantee cleanup, you can call either[PyHANDLE::Close](PyHANDLE.md#pyhandleclose), or[win32api::CloseHandle](win32api.md#win32apiclosehandle)\.
@@ -14,7 +18,7 @@ use of the handle object is encouraged\.
 
 #### Properties
 
-  -  **long handle** 
+  - long handle
     Integer value of the handle
 
 #### Methods
@@ -62,18 +66,24 @@ tp\_str&nbsp;
 
 ## [PyHANDLE](#pyhandle)\.Close
 
- **Close\(** \)
+Close\(\)
 Closes the underlying Win32 handle\.
 
 #### Comments
+
+
 If the handle is already closed, no error is raised\.
 
 ## [PyHANDLE](#pyhandle)\.Detach
 
-int \= **Detach\(** \)
+
+
+int =Detach\(\)
 Detaches the Win32 handle from the handle object\.
 
 #### Comments
+
+
 After calling this function, the handle is effectively invalidated, 
 
 but the handle is not closed\.  You would call this function when you 
@@ -89,28 +99,34 @@ handle is already detached, this will return zero\.
 
 ## [PyHANDLE](#pyhandle)\.\_\_hash\_\_
 
-int \= **\_\_hash\_\_\(** \)
+
+
+int =\_\_hash\_\_\(\)
 Used when the hash value of a HANDLE object is required
 
 ## [PyHANDLE](#pyhandle)\.\_\_int\_\_
 
- **\_\_int\_\_\(** \)
+\_\_int\_\_\(\)
 Used when the handle as an integer is required\.
 
 #### Comments
+
+
 To get the underling win32 handle from a PyHANDLE object, use int\(handleObject\)
 
 ## [PyHANDLE](#pyhandle)\.\_\_long\_\_
 
- **\_\_long\_\_\(** \)
+\_\_long\_\_\(\)
 Used when the handle as an integer is required\.
 
 #### Comments
+
+
 To get the underling win32 handle from a PyHANDLE object, use long\(handleObject\)
 
 ## [PyHANDLE](#pyhandle)\.\_\_nonzero\_\_
 
- **\_\_nonzero\_\_\(** \)
+\_\_nonzero\_\_\(\)
 Used for detecting true/false\.
 
 #### Return Value
@@ -120,10 +136,10 @@ static\*/ int PyHANDLE::nonzeroFunc\(PyObject \*ob\)
 
 ## [PyHANDLE](#pyhandle)\.\_\_print\_\_
 
- **\_\_print\_\_\(** \)
+\_\_print\_\_\(\)
 Used when the HANDLE object is printed\.
 
 ## [PyHANDLE](#pyhandle)\.\_\_str\_\_
 
- **\_\_str\_\_\(** \)
+\_\_str\_\_\(\)
 Used when a string representation of the handle object is required\.

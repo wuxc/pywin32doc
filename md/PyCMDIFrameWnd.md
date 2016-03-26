@@ -2,7 +2,13 @@
 
 ## PyCMDIFrameWnd Object
 
-A main application frame window\.  Encapsulates an MFC **CMDIFrameWnd** class
+
+
+A main application frame window\.  Encapsulates an MFCCMDIFrameWnd
+
+
+
+ class
 
 #### Methods
 
@@ -46,95 +52,103 @@ A main application frame window\.  Encapsulates an MFC **CMDIFrameWnd** class
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.GetMDIClient
 
-[PyCMDIFrameWnd](#pycmdiframewnd)\= **GetMDIClient\(** \)
+[PyCMDIFrameWnd](#pycmdiframewnd) =GetMDIClient\(\)
 Returns the MDI client window
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.MDIActivate
 
-[PyCMDIFrameWnd](#pycmdiframewnd)\= **MDIActivate\( *window* ** \)
+[PyCMDIFrameWnd](#pycmdiframewnd) =MDIActivate\(window\)
 Activate an MDI child window
 
 #### Parameters
 
 
-  -  *window* :[PyCWnd](#pycwnd)
+  - window :[PyCWnd](#pycwnd)
 
     The window to activate\.
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.MDIGetActive
 
-\([PyCMDIChildWnd](#pycmdichildwnd), int\) \= **MDIGetActive\(** \)
+
+
+\([PyCMDIChildWnd](#pycmdichildwnd), int\) =MDIGetActive\(\)
 Retrieves the current active MDI child window, along with a flag indicating whether the child window is maximized\.
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.MDINext
 
- **MDINext\( *fNext* ** \)
+MDINext\(fNext\)
 Activates the next MDI window
 
 #### Parameters
 
 
-  -  *fNext\=0* : int
+  - fNext=0 : int
 
     Indicates if the next \(0\) or previous \(non-zero\) window is requested\.
 
 #### Comments
+
+
 Unlike MFC, this version supports the fNext param in the WM\_MDINEXT message\.
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.OnClose
 
- **OnClose\(** \)
+OnClose\(\)
 Calls the standard Python framework OnClose handler
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.OnCommand
 
- **OnCommand\( *wparam*  *, lparam* ** \)
+OnCommand\(wparam, lparam\)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
 
 
-  -  *wparam* : int
+  - wparam : int
 
     
 
-  -  *lparam* : int
+  - lparam : int
 
     
 
 #### See Also
 
 
-  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual)virtual method
+  - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual) virtual method
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.OnContextHelp
 
-None \= **OnContextHelp\(** \)
+
+
+None =OnContextHelp\(\)
 Calls the underlying MFC OnContextHelp method\.
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.PreCreateWindow
 
-tuple \= **PreCreateWindow\( *createStruct* ** \)
+
+
+tuple =PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
 
 
-  -  *createStruct* : tuple
+  - createStruct : tuple
 
     A tuple representing a CREATESTRUCT structure\.
 
 #### See Also
 
 
-  - [PyCWnd\.PreCreateWindow](PyCWnd.md#pycwndprecreatewindow_virtual)virtual method
+  - [PyCWnd\.PreCreateWindow](PyCWnd.md#pycwndprecreatewindow_virtual) virtual method
 
 ## [PyCMDIFrameWnd](#pycmdiframewnd)\.PreTranslateMessage
 
- **PreTranslateMessage\(** \)
+PreTranslateMessage\(\)
 Calls the base PreTranslateMessage handler
 
 #### See Also
 
 
-  - [PyCWnd\.PreTranslateMessage](PyCWnd.md#pycwndpretranslatemessage_virtual)virtual method
+  - [PyCWnd\.PreTranslateMessage](PyCWnd.md#pycwndpretranslatemessage_virtual) virtual method

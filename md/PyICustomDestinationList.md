@@ -2,9 +2,13 @@
 
 ## PyICustomDestinationList Object
 
+
+
 Interface used to customize an application's jump list
 
 #### Comments
+
+
 Requires Windows 7 or later
 
 #### Methods
@@ -48,58 +52,60 @@ Requires Windows 7 or later
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.AbortList
 
- **AbortList\(** \)
+AbortList\(\)
 Discards all changes
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.AddUserTasks
 
- **AddUserTasks\( *Items* ** \)
+AddUserTasks\(Items\)
 Sets the entries shown in the Tasks category
 
 #### Parameters
 
 
-  -  *Items* :[PyIObjectArray](#pyiobjectarray)
+  - Items :[PyIObjectArray](#pyiobjectarray)
 
-    Collection of[PyIShellItem](#pyishellitem)and/or[PyIShellLink](#pyishelllink)interfaces
+    Collection of[PyIShellItem](#pyishellitem) and/or[PyIShellLink](#pyishelllink) interfaces
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.AppendCategory
 
- **AppendCategory\( *Category*  *, Items* ** \)
+AppendCategory\(Category, Items\)
 Adds a custom category to the jump list
 
 #### Parameters
 
 
-  -  *Category* : str
+  - Category : str
 
     Display name of the category, can also be a dll and resource id for localization
 
-  -  *Items* :[PyIObjectArray](#pyiobjectarray)
+  - Items :[PyIObjectArray](#pyiobjectarray)
 
     Collection of IShellItem and/or IShellLink interfaces
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.AppendKnownCategory
 
- **AppendKnownCategory\( *Category* ** \)
+AppendKnownCategory\(Category\)
 Adds one of the predefined categories to the custom list
 
 #### Parameters
 
 
-  -  *Category* : int
+  - Category : int
 
     shellcon\.KDC\_RECENT or KDC\_FREQUENT
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.BeginList
 
-int,[PyIObjectArray](#pyiobjectarray)\= **BeginList\( *riid* ** \)
+
+
+int,[PyIObjectArray](#pyiobjectarray) =BeginList\(riid\)
 Clears the jump list and prepares it to be repopulated
 
 #### Parameters
 
 
-  -  *riid\=IID\_IObjectArray* :[PyIID](#pyiid)
+  - riid=IID\_IObjectArray :[PyIID](#pyiid)
 
     The interface to return
 
@@ -108,44 +114,46 @@ Returns the number of slots and a collection of all destinations removed from th
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.CommitList
 
- **CommitList\(** \)
+CommitList\(\)
 Finalizes changes\.
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.DeleteList
 
- **DeleteList\( *AppID* ** \)
+DeleteList\(AppID\)
 Removes any customization, leaving only the system-maintained Recent and Frequent lists
 
 #### Parameters
 
 
-  -  *AppID\=None* : str
+  - AppID=None : str
 
     The taskbar identifier of the application
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.GetRemovedDestinations
 
-[PyIObjectArray](#pyiobjectarray)\= **GetRemovedDestinations\( *riid* ** \)
+[PyIObjectArray](#pyiobjectarray) =GetRemovedDestinations\(riid\)
 Returns all the items removed from the jump list
 
 #### Parameters
 
 
-  -  *riid\=IID\_IObjectArray* :[PyIID](#pyiid)
+  - riid=IID\_IObjectArray :[PyIID](#pyiid)
 
     The interface to return
 
 ## [PyICustomDestinationList](#pyicustomdestinationlist)\.SetAppID
 
- **SetAppID\( *AppID* ** \)
+SetAppID\(AppID\)
 Specifies the taskbar identifier for the jump list
 
 #### Parameters
 
 
-  -  *AppID* : str
+  - AppID : str
 
     The taskbar identifier of the application
 
 #### Comments
+
+
 Only needed if the calling app doesn't use the system-assigned default

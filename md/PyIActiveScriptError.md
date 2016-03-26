@@ -2,6 +2,8 @@
 
 ## PyIActiveScriptError Object
 
+
+
 Description of the interface
 
 #### Methods
@@ -21,15 +23,15 @@ Description of the interface
 
 ## [PyIActiveScriptError](#pyiactivescripterror)\.GetExceptionInfo
 
- **GetExceptionInfo\(** \)
+GetExceptionInfo\(\)
 Description of GetExceptionInfo\.
 
 ## [PyIActiveScriptError](#pyiactivescripterror)\.GetSourceLineText
 
- **GetSourceLineText\(** \)
+GetSourceLineText\(\)
 Description of GetSourceLineText\.
 
 ## [PyIActiveScriptError](#pyiactivescripterror)\.GetSourcePosition
 
- **GetSourcePosition\(** \)
+GetSourcePosition\(\)
 Description of GetSourcePosition\.

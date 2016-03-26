@@ -2,7 +2,13 @@
 
 ## PyCCmdTarget Object
 
-An abstract command target class\.  Encapsulates an MFC **CCmdTarget** class
+
+
+An abstract command target class\.  Encapsulates an MFCCCmdTarget
+
+
+
+ class
 
 #### Methods
 
@@ -37,7 +43,7 @@ An abstract command target class\.  Encapsulates an MFC **CCmdTarget** class
 
 ## [PyCCmdTarget](#pyccmdtarget)\.BeginWaitCursor
 
- **BeginWaitCursor\(** \)
+BeginWaitCursor\(\)
 Displays the cursor as an hourglass\.  This can be used when you expect a 
 
 command to take a noticeable time to execute \(eg, when a document 
@@ -57,26 +63,34 @@ Call EndWaitCursor to restore the previous cursor\.
 
 ## [PyCCmdTarget](#pyccmdtarget)\.EndWaitCursor
 
- **EndWaitCursor\(** \)
-Ends a wait cursor\.  Should only be called after **PyCWnd::BeginWaitCursor** \.
+EndWaitCursor\(\)
+Ends a wait cursor\.  Should only be called afterPyCWnd::BeginWaitCursor
+
+
+
+\.
 
 ## [PyCCmdTarget](#pyccmdtarget)\.HookCommand
 
-object \= **HookCommand\( *obHandler*  *, id* ** \)
+
+
+object =HookCommand\(obHandler, id\)
 Hook a windows command handler\.
 
 #### Parameters
 
 
-  -  *obHandler* : object
+  - obHandler : object
 
     The handler for the command message\.  This must be a callable object\.
 
-  -  *id* : int
+  - id : int
 
     The ID of the command to be handled, or zero to handle all command messages\.
 
 #### Comments
+
+
 obHandler will be called as the application receives command notification messages with the specified ID\. 
 
 Command notification messages are usually sent in response to menu or toolbar commands\.
@@ -105,28 +119,32 @@ The return value is the previous handler, or None\.
 
 ## [PyCCmdTarget](#pyccmdtarget)\.HookCommandUpdate
 
-object \= **HookCommandUpdate\( *obHandler*  *, id* ** \)
+
+
+object =HookCommandUpdate\(obHandler, id\)
 Hook a windows command update handler\.
 
 #### Parameters
 
 
-  -  *obHandler* : object
+  - obHandler : object
 
     The handler for the command message\.  This must be a callable object\.
 
-  -  *id* : int
+  - id : int
 
     The ID of the command to be handled\.
 
 #### Comments
+
+
 The handler object passed will be called as 
 
 the application updates user interface elements 
 
 with the specified ID\. 
 
-See[PyCCmdTarget::HookCommand](PyCCmdTarget.md#pyccmdtargethookcommand)for a description 
+See[PyCCmdTarget::HookCommand](PyCCmdTarget.md#pyccmdtargethookcommand) for a description 
 
 of the rules used to determine command routing and updating\.
 
@@ -135,37 +153,51 @@ The return value is the previous handler, or None\.
 
 ## [PyCCmdTarget](#pyccmdtarget)\.HookNotify
 
-object \= **HookNotify\( *obHandler*  *, id* ** \)
+
+
+object =HookNotify\(obHandler, id\)
 Hook a windows command handler\.
 
 #### Parameters
 
 
-  -  *obHandler* : object
+  - obHandler : object
 
     The handler for the command message\.  This must be a callable object\.
 
-  -  *id* : int
+  - id : int
 
     The ID of the command to be handled, or zero to handle all command messages\.
 
 #### Comments
+
+
 obHandler will be called as the application receives control notification messages\. 
 
 These may also be handled via[PyCCmdTarget::HookCommand](PyCCmdTarget.md#pyccmdtargethookcommand), but this method is specific 
 
 to control notifications, and therefore provides more information\.
+
+
 The handler will be called with 2 arguments
+ 
+
 A tuple describing standard notification information\.
+ 
+
 A tuple describing extra notification params, or an integer containing the address of the first byte of the extended information\.
+ 
+
 If the handler returns TRUE, then the command will be passed on to the 
 
 default handler, otherwise the message will be consumed\.
+
+
 Certain notification codes are recognised internally, and these are converted to a Python tuple\. 
 
 If the extra information is not recognised, the address is passed\.  These addresses could be 
 
-extracted using[win32ui::GetBytes](win32ui.md#win32uigetbytes)and the struct module, or using 
+extracted using[win32ui::GetBytes](win32ui.md#win32uigetbytes) and the struct module, or using 
 
 Sam Rushing's calldll/dynwin module\. \(It would be possible to extend Pythonwin so a program 
 
@@ -176,7 +208,9 @@ The return value is the previous handler, or None\.
 
 ## [PyCCmdTarget](#pyccmdtarget)\.HookOleEvent
 
-object \= **HookOleEvent\(** \)
+
+
+object =HookOleEvent\(\)
 Hook an OLE Event\.
 
 #### Return Value
@@ -184,10 +218,12 @@ The return value is the previous handler, or None\.
 
 ## [PyCCmdTarget](#pyccmdtarget)\.RestoreWaitCursor
 
- **RestoreWaitCursor\(** \)
+RestoreWaitCursor\(\)
 Restores the appropriate hourglass cursor after the system cursor has changed\.
 
 #### Comments
+
+
 Call this function to restore the appropriate hourglass cursor after 
 
 the system cursor has changed \(for example, after a message box has opened 

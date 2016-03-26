@@ -2,19 +2,23 @@
 
 ## HTTP\_FILTER\_AUTHENT Object
 
+
+
 A Python representation of an ISAPI 
 
 HTTP\_FILTER\_AUTHENT structure\.
 
 #### Properties
 
-  -  **string User** 
+  - string User
     
 
-  -  **string Password** 
+  - string Password
     
 
 ## HTTP\_FILTER\_CONTEXT Object
+
+
 
 A Python representation of an ISAPI 
 
@@ -53,49 +57,51 @@ HTTP\_FILTER\_CONTEXT structure\.
 
 #### Properties
 
-  -  **int Revision** 
+  - int Revision
     \(read-only\)
 
-  -  **bool fIsSecurePort** 
+  - bool fIsSecurePort
     \(read-only\)
 
-  -  **int NotificationType** 
+  - int NotificationType
     \(read-only\)
 
-  -  **object FilterContext** 
+  - object FilterContext
     Any object you wish to associate with the request\.
 
 ## [HTTP\_FILTER\_CONTEXT](HTTP.md#httpfilter_context)\.AddResponseHeaders
 
- **AddResponseHeaders\( *data*  *, reserverd* ** \)
+AddResponseHeaders\(data, reserverd\)
 
 
 #### Parameters
 
 
-  -  *data* : string
+  - data : string
 
     
 
-  -  *reserverd\=0* : int
+  - reserverd=0 : int
 
     
 
 ## [HTTP\_FILTER\_CONTEXT](HTTP.md#httpfilter_context)\.DisableNotifications
 
- **DisableNotifications\( *flags* ** \)
+DisableNotifications\(flags\)
 
 
 #### Parameters
 
 
-  -  *flags* : int
+  - flags : int
 
     
 
 ## [HTTP\_FILTER\_CONTEXT](HTTP.md#httpfilter_context)\.GetData
 
-object \= **GetData\(** \)
+
+
+object =GetData\(\)
 Obtains the data passed to 
 
 The HttpFilterProc function\.  This is not techinally part of the 
@@ -103,22 +109,24 @@ The HttpFilterProc function\.  This is not techinally part of the
 HTTP\_FILTER\_CONTEXT structure, but packaged here for convenience\.
 
 #### Return Value
-The result depends on the value of **HTTP\_FILTER\_CONTEXT::NotificationType** 
+The result depends on the value ofHTTP\_FILTER\_CONTEXT::NotificationType
 
 
 ## [HTTP\_FILTER\_CONTEXT](HTTP.md#httpfilter_context)\.GetServerVariable
 
-string \= **GetServerVariable\( *variable*  *, default* ** \)
+
+
+string =GetServerVariable\(variable, default\)
 
 
 #### Parameters
 
 
-  -  *variable* : string
+  - variable : string
 
     
 
-  -  *default* : object
+  - default : object
 
     If specified, the function will return this 
 
@@ -133,37 +141,39 @@ ISAPI docs for more details\.
 
 ## [HTTP\_FILTER\_CONTEXT](HTTP.md#httpfilter_context)\.SendResponseHeader
 
- **SendResponseHeader\( *status*  *, header* ** \)
+SendResponseHeader\(status, header\)
 
 
 #### Parameters
 
 
-  -  *status* : string
+  - status : string
 
     
 
-  -  *header* : string
+  - header : string
 
     
 
 ## [HTTP\_FILTER\_CONTEXT](HTTP.md#httpfilter_context)\.WriteClient
 
- **WriteClient\( *data*  *, reserverd* ** \)
+WriteClient\(data, reserverd\)
 
 
 #### Parameters
 
 
-  -  *data* : string
+  - data : string
 
     
 
-  -  *reserverd\=0* : int
+  - reserverd=0 : int
 
     
 
 ## HTTP\_FILTER\_LOG Object
+
+
 
 A Python representation of an ISAPI 
 
@@ -171,31 +181,33 @@ HTTP\_FILTER\_LOG structure\.
 
 #### Properties
 
-  -  **string ClientHostName** 
+  - string ClientHostName
     
 
-  -  **string ClientUserName** 
+  - string ClientUserName
     
 
-  -  **string ServerName** 
+  - string ServerName
     
 
-  -  **string Operation** 
+  - string Operation
     
 
-  -  **string Target** 
+  - string Target
     
 
-  -  **string Parameters** 
+  - string Parameters
     
 
-  -  **int HttpStatus** 
+  - int HttpStatus
     
 
-  -  **int HttpStatus** 
+  - int HttpStatus
     
 
 ## HTTP\_FILTER\_PREPROC\_HEADERS Object
+
+
 
 A Python representation of an ISAPI 
 
@@ -218,42 +230,46 @@ HTTP\_FILTER\_PREPROC\_HEADERS structure\.
 
 ## [HTTP\_FILTER\_PREPROC\_HEADERS](HTTP.md#httpfilter_preproc_headers)\.AddHeader
 
- **AddHeader\(** \)
+AddHeader\(\)
 
 
 ## [HTTP\_FILTER\_PREPROC\_HEADERS](HTTP.md#httpfilter_preproc_headers)\.GetHeader
 
-string \= **GetHeader\( *header*  *, default* ** \)
+
+
+string =GetHeader\(header, default\)
 
 
 #### Parameters
 
 
-  -  *header* : string
+  - header : string
 
     
 
-  -  *default* : object
+  - default : object
 
     If specified, this will be returned on error\.
 
 ## [HTTP\_FILTER\_PREPROC\_HEADERS](HTTP.md#httpfilter_preproc_headers)\.SetHeader
 
- **SetHeader\( *name*  *, val* ** \)
+SetHeader\(name, val\)
 
 
 #### Parameters
 
 
-  -  *name* : string
+  - name : string
 
     
 
-  -  *val* : string
+  - val : string
 
     
 
 ## HTTP\_FILTER\_RAW\_DATA Object
+
+
 
 A Python representation of an ISAPI 
 
@@ -261,10 +277,12 @@ HTTP\_FILTER\_RAW\_DATA structure\.
 
 #### Properties
 
-  -  **string InData** 
+  - string InData
     
 
 ## HTTP\_FILTER\_URL\_MAP Object
+
+
 
 A Python representation of an ISAPI 
 
@@ -272,13 +290,15 @@ HTTP\_FILTER\_URL\_MAP structure\.
 
 #### Properties
 
-  -  **string URL** 
+  - string URL
     
 
-  -  **string PhysicalPath** 
+  - string PhysicalPath
     
 
 ## HTTP\_FILTER\_VERSION Object
+
+
 
 A Python interface to the ISAPI HTTP\_FILTER\_VERSION 
 
@@ -286,14 +306,14 @@ structure\.
 
 #### Properties
 
-  -  **int ServerFilterVersion** 
+  - int ServerFilterVersion
     \(read-only\)
 
-  -  **int FilterVersion** 
+  - int FilterVersion
     
 
-  -  **int Flags** 
+  - int Flags
     
 
-  -  **string FilterDesc** 
+  - string FilterDesc
     

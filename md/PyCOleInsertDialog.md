@@ -2,7 +2,13 @@
 
 ## PyCOleInsertDialog Object
 
-An OLE 'Insert Object' dialog\.  Encapsulates an MFC **COleInsertDialog** class
+
+
+An OLE 'Insert Object' dialog\.  Encapsulates an MFCCOleInsertDialog
+
+
+
+ class
 
 #### Methods
 
@@ -21,18 +27,26 @@ An OLE 'Insert Object' dialog\.  Encapsulates an MFC **COleInsertDialog** class
 
 ## [PyCOleInsertDialog](#pycoleinsertdialog)\.GetClassID
 
-CLSID \= **GetClassID\(** \)
+
+
+CLSID =GetClassID\(\)
 Returns the CLSID associated with the selected item
 
 ## [PyCOleInsertDialog](#pycoleinsertdialog)\.GetPathName
 
-CLSID \= **GetPathName\(** \)
+
+
+CLSID =GetPathName\(\)
 Returns the full path to the file selected in the dialog box
 
 #### Comments
+
+
 Do not call this if the selection type is createNewItem,
 
 ## [PyCOleInsertDialog](#pycoleinsertdialog)\.GetSelectionType
 
-CLSID \= **GetSelectionType\(** \)
+
+
+CLSID =GetSelectionType\(\)
 Returns the type of selection made

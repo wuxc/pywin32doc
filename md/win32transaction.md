@@ -2,12 +2,18 @@
 
 ## Module win32transaction
 
+
+
 Module wrapping Kernal Transaction Manager functions, as used with 
 
 transacted NTFS and transacted registry functions\.
 
 #### Comments
+
+
 These functions are only available on Vista and later\.
+
+
 All functions accept keyword arguments\.
 
 #### Methods
@@ -43,137 +49,137 @@ All functions accept keyword arguments\.
 
 ## [win32transaction](#win32transaction)\.CommitTransaction
 
- **CommitTransaction\( *TransactionHandle* ** \)
+CommitTransaction\(TransactionHandle\)
 Commits a transaction
 
 #### Parameters
 
 
-  -  *TransactionHandle* :[PyHANDLE](#pyhandle)
+  - TransactionHandle :[PyHANDLE](#pyhandle)
 
     Handle to a transaction
 
 #### Win32 API References
 
 
-  - Search for *CommitTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransaction),[google](#http://www.google.com/search?q=committransaction)or[google groups](#http://groups.google.com/groups?q=committransaction)\.
+  - Search forCommitTransaction at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransaction),[google](#http://www.google.com/search?q=committransaction) or[google groups](#http://groups.google.com/groups?q=committransaction)\.
 
 ## [win32transaction](#win32transaction)\.CommitTransactionAsync
 
- **CommitTransactionAsync\( *TransactionHandle* ** \)
+CommitTransactionAsync\(TransactionHandle\)
 Commits a transaction asynchronously
 
 #### Parameters
 
 
-  -  *TransactionHandle* :[PyHANDLE](#pyhandle)
+  - TransactionHandle :[PyHANDLE](#pyhandle)
 
     Handle to a transaction
 
 #### Win32 API References
 
 
-  - Search for *CommitTransactionAsync* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransactionasync),[google](#http://www.google.com/search?q=committransactionasync)or[google groups](#http://groups.google.com/groups?q=committransactionasync)\.
+  - Search forCommitTransactionAsync at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=committransactionasync),[google](#http://www.google.com/search?q=committransactionasync) or[google groups](#http://groups.google.com/groups?q=committransactionasync)\.
 
 ## [win32transaction](#win32transaction)\.CreateTransaction
 
-[PyHANDLE](#pyhandle)\= **CreateTransaction\( *TransactionAttributes*  *, UOW*  *, CreateOptions*  *, IsolationLevel*  *, IsolationFlags*  *, Timeout*  *, Description* ** \)
+[PyHANDLE](#pyhandle) =CreateTransaction\(TransactionAttributes, UOW, CreateOptions, IsolationLevel, IsolationFlags, Timeout, Description\)
 Creates a transaction
 
 #### Parameters
 
 
-  -  *TransactionAttributes\=None* :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  - TransactionAttributes=None :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Security and inheritance for the transaction, can be None
 
-  -  *UOW\=None* :[PyIID](#pyiid)
+  - UOW=None :[PyIID](#pyiid)
 
     Reserved, use only None
 
-  -  *CreateOptions\=0* : int
+  - CreateOptions=0 : int
 
     TRANSACTION\_DO\_NOT\_PROMOTE is only defined flag
 
-  -  *IsolationLevel\=0* : int
+  - IsolationLevel=0 : int
 
     Reserved, use only 0
 
-  -  *IsolationFlags\=0* : int
+  - IsolationFlags=0 : int
 
     Reserved, use only 0
 
-  -  *Timeout\=0* : int
+  - Timeout=0 : int
 
     Abort timeout in milliseconds
 
-  -  *Description\=None* :[PyUnicode](#pyunicode)
+  - Description=None :[PyUnicode](#pyunicode)
 
     Text description of transaction, can be None
 
 #### Win32 API References
 
 
-  - Search for *CreateTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createtransaction),[google](#http://www.google.com/search?q=createtransaction)or[google groups](#http://groups.google.com/groups?q=createtransaction)\.
+  - Search forCreateTransaction at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=createtransaction),[google](#http://www.google.com/search?q=createtransaction) or[google groups](#http://groups.google.com/groups?q=createtransaction)\.
 
 ## [win32transaction](#win32transaction)\.GetTransactionId
 
-[PyIID](#pyiid)\= **GetTransactionId\( *TransactionHandle* ** \)
+[PyIID](#pyiid) =GetTransactionId\(TransactionHandle\)
 Returns the transaction's GUID
 
 #### Parameters
 
 
-  -  *TransactionHandle* :[PyHANDLE](#pyhandle)
+  - TransactionHandle :[PyHANDLE](#pyhandle)
 
     Handle to a transaction
 
 ## [win32transaction](#win32transaction)\.OpenTransaction
 
-[PyHANDLE](#pyhandle)\= **OpenTransaction\( *DesiredAccess*  *, TransactionId* ** \)
+[PyHANDLE](#pyhandle) =OpenTransaction\(DesiredAccess, TransactionId\)
 Creates a handle to an existing transaction
 
 #### Parameters
 
 
-  -  *DesiredAccess* : int
+  - DesiredAccess : int
 
     Combination of TRANSACTION\_\* access rights
 
-  -  *TransactionId* :[PyIID](#pyiid)
+  - TransactionId :[PyIID](#pyiid)
 
     GUID identifying the transaction
 
 ## [win32transaction](#win32transaction)\.RollbackTransaction
 
- **RollbackTransaction\( *TransactionHandle* ** \)
+RollbackTransaction\(TransactionHandle\)
 Rolls back a transaction
 
 #### Parameters
 
 
-  -  *TransactionHandle* :[PyHANDLE](#pyhandle)
+  - TransactionHandle :[PyHANDLE](#pyhandle)
 
     Handle to a transaction
 
 #### Win32 API References
 
 
-  - Search for *RollbackTransaction* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransaction),[google](#http://www.google.com/search?q=rollbacktransaction)or[google groups](#http://groups.google.com/groups?q=rollbacktransaction)\.
+  - Search forRollbackTransaction at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransaction),[google](#http://www.google.com/search?q=rollbacktransaction) or[google groups](#http://groups.google.com/groups?q=rollbacktransaction)\.
 
 ## [win32transaction](#win32transaction)\.RollbackTransactionAsync
 
- **RollbackTransactionAsync\( *TransactionHandle* ** \)
+RollbackTransactionAsync\(TransactionHandle\)
 Rolls back a transaction asynchronously
 
 #### Parameters
 
 
-  -  *TransactionHandle* :[PyHANDLE](#pyhandle)
+  - TransactionHandle :[PyHANDLE](#pyhandle)
 
     Handle to a transaction
 
 #### Win32 API References
 
 
-  - Search for *RollbackTransactionAsync* at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransactionasync),[google](#http://www.google.com/search?q=rollbacktransactionasync)or[google groups](#http://groups.google.com/groups?q=rollbacktransactionasync)\.
+  - Search forRollbackTransactionAsync at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=rollbacktransactionasync),[google](#http://www.google.com/search?q=rollbacktransactionasync) or[google groups](#http://groups.google.com/groups?q=rollbacktransactionasync)\.

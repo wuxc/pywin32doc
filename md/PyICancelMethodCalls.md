@@ -2,6 +2,8 @@
 
 ## PyICancelMethodCalls Object
 
+
+
 Interface to request cancellation of a call\. See[pythoncom::CoGetCancelObject](pythoncom.md#pythoncomcogetcancelobject)\.
 
 #### Methods
@@ -17,19 +19,21 @@ Interface to request cancellation of a call\. See[pythoncom::CoGetCancelObject](
 
 ## [PyICancelMethodCalls](#pyicancelmethodcalls)\.Cancel
 
- **Cancel\( *Seconds* ** \)
+Cancel\(Seconds\)
 Cancels a pending call
 
 #### Parameters
 
 
-  -  *Seconds* : int
+  - Seconds : int
 
     Wait timeout in seconds
 
 ## [PyICancelMethodCalls](#pyicancelmethodcalls)\.TestCancel
 
-int \= **TestCancel\(** \)
+
+
+int =TestCancel\(\)
 Checks if a request has been made to cancel a call
 
 #### Return Value

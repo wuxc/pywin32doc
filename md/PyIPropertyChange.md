@@ -2,6 +2,8 @@
 
 ## PyIPropertyChange Object
 
+
+
 Interface used to specify a change to a property
 
 #### Methods
@@ -14,12 +16,12 @@ Interface used to specify a change to a property
 
 ## [PyIPropertyChange](#pyipropertychange)\.ApplyToPropVariant
 
-[PyPROPVARIANT](#pypropvariant)\= **ApplyToPropVariant\( *OrigVal* ** \)
+[PyPROPVARIANT](#pypropvariant) =ApplyToPropVariant\(OrigVal\)
 Applies the change to a variant value
 
 #### Parameters
 
 
-  -  *OrigVal* :[PyPROPVARIANT](#pypropvariant)
+  - OrigVal :[PyPROPVARIANT](#pypropvariant)
 
     The value to be modified
