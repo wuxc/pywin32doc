@@ -1,13 +1,11 @@
 # PyIPersistFile
 
+
 ## PyIPersistFile Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [IsDirty](PyIPersistFile.md#pyipersistfileisdirty)
 
@@ -29,14 +27,14 @@ Description of the interface
 
     Gets the current name of the file associated with the object\.&nbsp;
 
-## [PyIPersistFile](#pyipersistfile)\.GetCurFile
 
+## [PyIPersistFile](PyIPersistFile.md#pyipersistfile)\.GetCurFile
 
-
-str =GetCurFile\(\)
+str = GetCurFile\(\)
 Gets the current name of the file associated with the object\.
 
-## [PyIPersistFile](#pyipersistfile)\.IsDirty
+
+## [PyIPersistFile](PyIPersistFile.md#pyipersistfile)\.IsDirty
 
 IsDirty\(\)
 Checks an object for changes since it was last saved to its current file\.
@@ -48,13 +46,13 @@ You should treat any error return codes as an indication that the object has cha
 
 Unless this method explicitly returns S\_FALSE, assume that the object must be saved\.
 
-## [PyIPersistFile](#pyipersistfile)\.Load
+
+## [PyIPersistFile](PyIPersistFile.md#pyipersistfile)\.Load
 
 Load\(FileName, Mode\)
 Opens the specified file and initializes an object from the file contents\.
 
 #### Parameters
-
 
   - FileName : str
 
@@ -64,13 +62,13 @@ Opens the specified file and initializes an object from the file contents\.
 
     Specifies the access mode from the STGM enumeration\.
 
-## [PyIPersistFile](#pyipersistfile)\.Save
+
+## [PyIPersistFile](PyIPersistFile.md#pyipersistfile)\.Save
 
 Save\(FileName, fRemember\)
 Saves the object into the specified file\.
 
 #### Parameters
-
 
   - FileName : str
 
@@ -80,13 +78,13 @@ Saves the object into the specified file\.
 
     Specifies whether the file is to be the current working file or not\.
 
-## [PyIPersistFile](#pyipersistfile)\.SaveCompleted
+
+## [PyIPersistFile](PyIPersistFile.md#pyipersistfile)\.SaveCompleted
 
 SaveCompleted\(FileName\)
 Notifies the object that it can revert from NoScribble mode to Normal mode\.
 
 #### Parameters
-
 
   - FileName : str
 

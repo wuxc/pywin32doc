@@ -1,13 +1,11 @@
 # PyIContextMenu
 
+
 ## PyIContextMenu Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [QueryContextMenu](PyIContextMenu.md#pyicontextmenuquerycontextmenu)
 
@@ -21,15 +19,17 @@ Description of the interface
 
     Retrieves verb or help text for a context menu option&nbsp;
 
-## [PyIContextMenu](#pyicontextmenu)\.GetCommandString
 
+## [PyIContextMenu](PyIContextMenu.md#pyicontextmenu)\.GetCommandString
 
+str = GetCommandString\(idCmd, uType
 
-str =GetCommandString\(idCmd, uType, cchMax\)
+, cchMax
+
+\)
 Retrieves verb or help text for a context menu option
 
 #### Parameters
-
 
   - idCmd : int
 
@@ -43,29 +43,35 @@ Retrieves verb or help text for a context menu option
 
     Size of buffer to create for returned string
 
-## [PyIContextMenu](#pyicontextmenu)\.InvokeCommand
+
+## [PyIContextMenu](PyIContextMenu.md#pyicontextmenu)\.InvokeCommand
 
 InvokeCommand\(pici\)
 Executes a context menu option
 
 #### Parameters
 
-
-  - pici :[PyCMINVOKECOMMANDINFO](#pycminvokecommandinfo)
+  - pici : [PyCMINVOKECOMMANDINFO](PyCMINVOKECOMMANDINFO.md)
 
     Tuple of parameters representing a CMINVOKECOMMANDINFO struct
 
-## [PyIContextMenu](#pyicontextmenu)\.QueryContextMenu
 
+## [PyIContextMenu](PyIContextMenu.md#pyicontextmenu)\.QueryContextMenu
 
+int = QueryContextMenu\(hmenu, indexMenu
 
-int =QueryContextMenu\(hmenu, indexMenu, idCmdFirst, idCmdLast, uFlags\)
+, idCmdFirst
+
+, idCmdLast
+
+, uFlags
+
+\)
 Adds options to a context menu
 
 #### Parameters
 
-
-  - hmenu :[PyHANDLE](#pyhandle)
+  - hmenu : [PyHANDLE](PyHANDLE.md)
 
     Handle to menu to which items should be added
 

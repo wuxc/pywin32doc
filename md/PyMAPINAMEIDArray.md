@@ -1,9 +1,8 @@
 # PyMAPINAMEIDArray
 
+
 ## PyMAPINAMEIDArray Object
 
-
-
-A sequence \([PyIID](#pyiid), string/int\) objects 
+A sequence \([PyIID](PyIID.md), string/int\) objects 
 
 FALSE\*/ \)

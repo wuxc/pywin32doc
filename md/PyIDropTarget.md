@@ -1,13 +1,11 @@
 # PyIDropTarget
 
+
 ## PyIDropTarget Object
-
-
 
 Interface that acts as a target of OLE drag and drop operations
 
 #### Methods
-
 
   - [DragEnter](PyIDropTarget.md#pyidroptargetdragenter)
 
@@ -25,17 +23,21 @@ Interface that acts as a target of OLE drag and drop operations
 
     Called when the object is dropped onto the window&nbsp;
 
-## [PyIDropTarget](#pyidroptarget)\.DragEnter
 
+## [PyIDropTarget](PyIDropTarget.md#pyidroptarget)\.DragEnter
 
+int = DragEnter\(pDataObj, grfKeyState
 
-int =DragEnter\(pDataObj, grfKeyState, pt, pdwEffect\)
+, pt
+
+, pdwEffect
+
+\)
 Called when an object is initially dragged into a window
 
 #### Parameters
 
-
-  - pDataObj :[PyIDataObject](#pyidataobject)
+  - pDataObj : [PyIDataObject](PyIDataObject.md)
 
     IDataObject interface that contains the object being dragged
 
@@ -54,20 +56,23 @@ Called when an object is initially dragged into a window
 #### Return Value
 Your implementation of this function should return a shellcon\.DROPEFFECT\_\* value indicating if the object can be accepted
 
-## [PyIDropTarget](#pyidroptarget)\.DragLeave
+
+## [PyIDropTarget](PyIDropTarget.md#pyidroptarget)\.DragLeave
 
 DragLeave\(\)
 Called as the object is dragged back out of the window
 
-## [PyIDropTarget](#pyidroptarget)\.DragOver
 
+## [PyIDropTarget](PyIDropTarget.md#pyidroptarget)\.DragOver
 
+int = DragOver\(grfKeyState, pt
 
-int =DragOver\(grfKeyState, pt, pdwEffect\)
+, pdwEffect
+
+\)
 Called as the dragged object moves over the window
 
 #### Parameters
-
 
   - grfKeyState : int
 
@@ -86,17 +91,21 @@ Your implementation of this function should return a shellcon\.DROPEFFECT\_\* va
 
 object can be accepted at the current position
 
-## [PyIDropTarget](#pyidroptarget)\.Drop
 
+## [PyIDropTarget](PyIDropTarget.md#pyidroptarget)\.Drop
 
+int = Drop\(pDataObj, grfKeyState
 
-int =Drop\(pDataObj, grfKeyState, pt, dwEffect\)
+, pt
+
+, dwEffect
+
+\)
 Called when the object is dropped onto the window
 
 #### Parameters
 
-
-  - pDataObj :[PyIDataObject](#pyidataobject)
+  - pDataObj : [PyIDataObject](PyIDataObject.md)
 
     IDataObject interface containing the dropped object
 

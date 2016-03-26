@@ -1,13 +1,11 @@
 # PyIEnumGUID
 
+
 ## PyIEnumGUID Object
-
-
 
 A Python interface to IEnumGUID
 
 #### Methods
-
 
   - [Next](PyIEnumGUID.md#pyienumguidnext)
 
@@ -26,44 +24,45 @@ A Python interface to IEnumGUID
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
 
-## [PyIEnumGUID](#pyienumguid)\.Clone
 
-[PyIEnumGUID](#pyienumguid) =Clone\(\)
+
+## [PyIEnumGUID](PyIEnumGUID.md#pyienumguid)\.Clone
+
+[PyIEnumGUID](PyIEnumGUID.md#pyienumguid) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumGUID](#pyienumguid)\.Next
 
+## [PyIEnumGUID](PyIEnumGUID.md#pyienumguid)\.Next
 
-
-\([PyIID](#pyiid), \.\.\.\) =Next\(num\)
+\([PyIID](PyIID.md), \.\.\.\) = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
 #### Return Value
-The result is a tuple of[PyIID](#pyiid) objects, 
+The result is a tuple of [PyIID](PyIID.md) objects, 
 
 one for each element returned\.  Note that if zero elements are returned, it is not considered 
 
 an error condition - an empty tuple is simply returned\.
 
-## [PyIEnumGUID](#pyienumguid)\.Reset
+
+## [PyIEnumGUID](PyIEnumGUID.md#pyienumguid)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumGUID](#pyienumguid)\.Skip
+
+## [PyIEnumGUID](PyIEnumGUID.md#pyienumguid)\.Skip
 
 Skip\(num\)
 Skips over the next specified elementes\.
 
 #### Parameters
-
 
   - num : int
 

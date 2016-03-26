@@ -1,13 +1,11 @@
 # PyCListCtrl
 
+
 ## PyCListCtrl Object
 
-
-
-A class which encapsulates an MFC CListCtrl object\.  Derived from a[PyCWnd](#pycwnd) object\.
+A class which encapsulates an MFC CListCtrl object\.  Derived from a [PyCWnd](PyCWnd.md) object\.
 
 #### Methods
-
 
   - [Arrange](PyCListCtrl.md#pyclistctrlarrange)
 
@@ -185,37 +183,37 @@ A class which encapsulates an MFC CListCtrl object\.  Derived from a[PyCWnd](#py
 
     Determines the position of the specified item\.&nbsp;
 
-## [PyCListCtrl](#pyclistctrl)\.Arrange
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.Arrange
 
 Arrange\(code\)
 Aligns items on a grid\.
 
 #### Parameters
 
-
   - code : int
 
     Specifies the alignment style for the items
 
-## [PyCListCtrl](#pyclistctrl)\.CreateDragImage
 
-[PyCImageList](#pycimagelist),\(x,y\) =CreateDragImage\(item\)
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.CreateDragImage
+
+[PyCImageList](PyCImageList.md),\(x,y\) = CreateDragImage\(item\)
 Creates a dragging bitmap for the specified list view item\.
 
 #### Parameters
-
 
   - item : int
 
     The index of the item to edit\.
 
-## [PyCListCtrl](#pyclistctrl)\.CreateWindow
 
-CreateWindow\(style, rect,[PyCWnd](#pycwnd), id\)
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.CreateWindow
+
+CreateWindow\(style, rect, [PyCWnd](PyCWnd.md), id\)
 Creates the actual window for the object\.
 
 #### Parameters
-
 
   - style : int
 
@@ -225,7 +223,7 @@ Creates the actual window for the object\.
 
     The default rectangle
 
-  - [PyCWnd](#pycwnd) : parent
+  - [PyCWnd](PyCWnd.md) : parent
 
     The parent window
 
@@ -235,61 +233,59 @@ Creates the actual window for the object\.
 
 #### MFC References
 
-
   - CListCtrl::Create
 
-## [PyCListCtrl](#pyclistctrl)\.DeleteAllItems
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.DeleteAllItems
 
 DeleteAllItems\(\)
 Deletes all items from the list\.
 
-## [PyCListCtrl](#pyclistctrl)\.DeleteColumn
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.DeleteColumn
 
-
-int =DeleteColumn\(first\)
+int = DeleteColumn\(first\)
 Deletes the specified column from the list control\.
 
 #### Parameters
-
 
   - first : int
 
     Index of the column to be removed\.
 
-## [PyCListCtrl](#pyclistctrl)\.DeleteItem
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.DeleteItem
 
 DeleteItem\(item\)
 Deletes the specified item\.
 
 #### Parameters
 
-
   - item : int
 
     The item to delete\.
 
-## [PyCListCtrl](#pyclistctrl)\.EditLabel
 
-[PyCEdit](#pycedit) =EditLabel\(item\)
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.EditLabel
+
+[PyCEdit](PyCEdit.md) = EditLabel\(item\)
 Edits a specified list view item in-place\.
 
 #### Parameters
-
 
   - item : int
 
     The index of item to edit\.
 
-## [PyCListCtrl](#pyclistctrl)\.EnsureVisible
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.EnsureVisible
 
+int = EnsureVisible\(item, bPartialOK
 
-int =EnsureVisible\(item, bPartialOK\)
+\)
 Ensures that a list view item is visible in its list view control\.
 
 #### Parameters
-
 
   - item : int
 
@@ -299,73 +295,75 @@ Ensures that a list view item is visible in its list view control\.
 
     Specifies whether partial visibility is acceptable\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetBkColor
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetBkColor
 
-
-int =GetBkColor\(\)
+int = GetBkColor\(\)
 Retrieves the background color of the control\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetColumn
 
-[LV\_COLUMN](LV.md#lvcolumn) =GetColumn\(column\)
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetColumn
+
+[LV\_COLUMN](LV.md#lvcolumn) = GetColumn\(column\)
 Retrieves the details of a column in the control\.
 
 #### Parameters
-
 
   - column : int
 
     The index of the column whose attributes are to be retrieved\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetColumnWidth
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetColumnWidth
 
-
-int =GetColumnWidth\(first\)
+int = GetColumnWidth\(first\)
 Gets the width of the specified column in the list control\.
 
 #### Parameters
-
 
   - first : int
 
     Index of the column whose width is to be retrieved\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetCountPerPage
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetCountPerPage
 
-
-int =GetCountPerPage\(\)
+int = GetCountPerPage\(\)
 Calculates the number of items that can fit vertically in a list view control\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetEditControl
 
-[PyCEdit](#pycedit) =GetEditControl\(\)
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetEditControl
+
+[PyCEdit](PyCEdit.md) = GetEditControl\(\)
 Retrieves the handle of the edit control used to edit the specified list view item\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetImageList
 
-[PyCImageList](#pycimagelist) =GetImageList\(nImageList\)
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetImageList
+
+[PyCImageList](PyCImageList.md) = GetImageList\(nImageList\)
 Retrieves the current image list\.
 
 #### Parameters
 
-
   - nImageList : int
 
-    Value specifying which image list to retrieve\. It can be one of:
--&\#09commctrl\.LVSIL\_NORMAL   Image list with large icons\.
--&\#09commctrl\.LVSIL\_SMALL   Image list with small icons\.
+    Value specifying which image list to retrieve\. It can be one of: 
+
+-&\#09commctrl\.LVSIL\_NORMAL   Image list with large icons\. 
+
+-&\#09commctrl\.LVSIL\_SMALL   Image list with small icons\. 
+
 -&\#09commctrl\.LVSIL\_STATE   Image list with state images\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetItem
 
-[LV\_ITEM](LV.md#lvitem) =GetItem\(item, sub\)
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetItem
+
+[LV\_ITEM](LV.md#lvitem) = GetItem\(item, sub
+
+\)
 Retrieves the details of an items attributes\.
 
 #### Parameters
-
 
   - item : int
 
@@ -375,50 +373,45 @@ Retrieves the details of an items attributes\.
 
     Specifies the subitem whose text is to be retrieved\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetItemCount
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetItemCount
 
-
-int =GetItemCount\(\)
+int = GetItemCount\(\)
 Retrieves the number of items in a list view control\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetItemData
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetItemData
 
-
-object =GetItemData\(item\)
+object = GetItemData\(item\)
 Retrieves the application-specific value associated with an item\.
 
 #### Parameters
-
 
   - item : int
 
     The index of the item whose data is to be retrieved\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetItemPosition
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetItemPosition
 
-
-\(int, int\) =GetItemPosition\(item\)
+\(int, int\) = GetItemPosition\(item\)
 Determines the position of the specified item\.
 
 #### Parameters
-
 
   - item : int
 
     The item to determine the position for\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetItemRect
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetItemRect
 
+\(int, int, int, int\) = GetItemRect\(item, bTextOnly
 
-\(int, int, int, int\) =GetItemRect\(item, bTextOnly\)
+\)
 Retrieves the bounding rectangle of a list view item\.
 
 #### Parameters
-
 
   - item : int
 
@@ -428,15 +421,15 @@ Retrieves the bounding rectangle of a list view item\.
 
     f this parameter is nonzero, the bounding rectangle includes only the text of the item\. Otherwise it includes the entire line that the item occupies in the list view control\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetItemState
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetItemState
 
+int = GetItemState\(item, mask
 
-int =GetItemState\(item, mask\)
+\)
 Retrieves the state of a list view item\.
 
 #### Parameters
-
 
   - item : int
 
@@ -446,15 +439,15 @@ Retrieves the state of a list view item\.
 
     Mask specifying which of the item's state flags to return\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetItemText
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetItemText
 
+int = GetItemText\(item, sub
 
-int =GetItemText\(item, sub\)
+\)
 Retrieves the text of a list view item or subitem\.
 
 #### Parameters
-
 
   - item : int
 
@@ -464,15 +457,15 @@ Retrieves the text of a list view item or subitem\.
 
     Specifies the subitem whose text is to be retrieved\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetNextItem
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetNextItem
 
+int = GetNextItem\(item, flags
 
-int =GetNextItem\(item, flags\)
+\)
 Searches for a list view item with specified properties and with specified relationship to a given item\.
 
 #### Parameters
-
 
   - item : int
 
@@ -482,7 +475,8 @@ Searches for a list view item with specified properties and with specified relat
 
     Geometric relation of the requested item to the specified item, 
 
-and the state of the requested item\. The geometric relation can be one of these values:
+and the state of the requested item\. The geometric relation can be one of these values: 
+
 LVNI\_ABOVE
 LVNI\_ALL
 LVNI\_BELOW
@@ -490,7 +484,8 @@ LVNI\_TOLEFT
 LVNI\_TORIGHT
  
 
-The state can be zero, or it can be one or more of these values:
+The state can be zero, or it can be one or more of these values: 
+
 LVNI\_DROPHILITED
 LVNI\_FOCUSED
 LVNI\_HIDDEN
@@ -503,22 +498,19 @@ If an item does not have all of the specified state flags set, the search contin
 #### Return Value
 Returns an integer index, or raises a win32ui\.error exception if not item can be found\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetSelectedCount
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetSelectedCount
 
-
-int =GetSelectedCount\(\)
+int = GetSelectedCount\(\)
 Retrieves the number of selected items in the list view control\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetStringWidth
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetStringWidth
 
-
-int =GetStringWidth\(first\)
+int = GetStringWidth\(first\)
 Gets the necessary column width to fully display this text in a column\.
 
 #### Parameters
-
 
   - first : int
 
@@ -526,39 +518,33 @@ Gets the necessary column width to fully display this text in a column\.
 
 #### Comments
 
-
 Doesn't take the size of an included Image in account, only the size of the text is determined\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetTextBkColor
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetTextBkColor
 
-
-int =GetTextBkColor\(\)
+int = GetTextBkColor\(\)
 Retrieves the text background color of a list view control\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetTextColor
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetTextColor
 
-
-int =GetTextColor\(\)
+int = GetTextColor\(\)
 Retrieves the text color of a list view control\.
 
-## [PyCListCtrl](#pyclistctrl)\.GetTopIndex
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.GetTopIndex
 
-
-int =GetTopIndex\(\)
+int = GetTopIndex\(\)
 Retrieves the index of the topmost visible item\.
 
-## [PyCListCtrl](#pyclistctrl)\.HitTest
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.HitTest
 
-
-\(int, int, int\) =HitTest\(x,y\)
+\(int, int, int\) = HitTest\(x,y\)
 Determines which list view item, if any, is at a specified position\.
 
 #### Parameters
-
 
   - x,y : point
 
@@ -570,40 +556,38 @@ The result is a tuple of \(flags, item, subItem\)\.
 flags may be a combination of the following values:
 
 
-## [PyCListCtrl](#pyclistctrl)\.InsertColumn
 
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.InsertColumn
 
-int =InsertColumn\(colNo, item\)
+int = InsertColumn\(colNo, item
+
+\)
 Inserts a column into a list control when in report view\.
 
 #### Parameters
-
 
   - colNo : int
 
     The new column number
 
-  - item :[LV\_COLUMN](LV.md#lvcolumn)
+  - item : [LV\_COLUMN](LV.md#lvcolumn)
 
     A tuple describing the new column\.
 
-## [PyCListCtrl](#pyclistctrl)\.InsertItem
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.InsertItem
 
-
-int =InsertItem\(item\)
+int = InsertItem\(item\)
 Inserts an item into the list\.
 
 #### Parameters
 
-
-  - item :[LV\_ITEM](LV.md#lvitem)
+  - item : [LV\_ITEM](LV.md#lvitem)
 
     A tuple describing the new item\.
 
 #### Alternative Parameters
-
 
   - item
 
@@ -619,7 +603,6 @@ Inserts an item into the list\.
 
 #### Alternative Parameters
 
-
   - item
 
     The index of the item\.
@@ -628,15 +611,15 @@ Inserts an item into the list\.
 
     The text of the item\.
 
-## [PyCListCtrl](#pyclistctrl)\.RedrawItems
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.RedrawItems
 
+int = RedrawItems\(first, first
 
-int =RedrawItems\(first, first\)
+\)
 Forces a listview to repaint a range of items\.
 
 #### Parameters
-
 
   - first : int
 
@@ -648,50 +631,49 @@ Forces a listview to repaint a range of items\.
 
 #### Comments
 
-
 The specified items are not actually repainted until the list view window receives a WM\_PAINT message\. 
 
 To repaint immediately, call the Windows UpdateWindow function after using this function\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetBkColor
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetBkColor
 
 SetBkColor\(color\)
 Sets the background color of the control\.
 
 #### Parameters
 
-
   - color : int
 
     The new background color\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetColumn
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetColumn
 
+int = SetColumn\(colNo, item
 
-int =SetColumn\(colNo, item\)
+\)
 Changes column state in a list control when in report view\.
 
 #### Parameters
-
 
   - colNo : int
 
     The to be modified column number
 
-  - item :[LV\_COLUMN](LV.md#lvcolumn)
+  - item : [LV\_COLUMN](LV.md#lvcolumn)
 
     A tuple describing the modified column\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetColumnWidth
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetColumnWidth
 
+int = SetColumnWidth\(first, first
 
-int =SetColumnWidth\(first, first\)
+\)
 Sets the width of the specified column in the list control\.
 
 #### Parameters
-
 
   - first : int
 
@@ -701,17 +683,17 @@ Sets the width of the specified column in the list control\.
 
     New width of the column\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetImageList
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetImageList
 
+int = SetImageList\(imageList, imageType
 
-int =SetImageList\(imageList, imageType\)
+\)
 Assigns an image list to a list view control\.
 
 #### Parameters
 
-
-  - imageList :[PyCImageList](#pycimagelist)
+  - imageList : [PyCImageList](PyCImageList.md)
 
     The Image List to use\.
 
@@ -719,27 +701,25 @@ Assigns an image list to a list view control\.
 
     Type of image list\. It can be one of \(COMMCTRL\.\) LVSIL\_NORMAL, LVSIL\_SMALL or LVSIL\_STATE
 
-## [PyCListCtrl](#pyclistctrl)\.SetItem
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetItem
 
-
-int =SetItem\(item\)
+int = SetItem\(item\)
 Sets some of all of an items attributes\.
 
 #### Parameters
 
-
-  - item :[LV\_ITEM](LV.md#lvitem)
+  - item : [LV\_ITEM](LV.md#lvitem)
 
     A tuple describing the new item\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetItemCount
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetItemCount
 
 SetItemCount\(count\)
 Prepares a list view control for adding a large number of items\.
 
 #### Parameters
-
 
   - count : int
 
@@ -747,22 +727,21 @@ Prepares a list view control for adding a large number of items\.
 
 #### Comments
 
-
 By calling this function before adding a large number of items, 
 
 you enable a list view control to reallocate its internal data structures 
 
 only once rather than every time you add an item\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetItemData
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetItemData
 
+int = SetItemData\(item, Data
 
-int =SetItemData\(item, Data\)
+\)
 Sets the item's application-specific value\.
 
 #### Parameters
-
 
   - item : int
 
@@ -774,20 +753,21 @@ Sets the item's application-specific value\.
 
 #### Comments
 
-
 Note that a reference count is not added to the object\.  This it is your 
 
 responsibility to make sure the object remains alive while in the list\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetItemState
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetItemState
 
+int = SetItemState\(item, state
 
-int =SetItemState\(item, state, mask\)
+, mask
+
+\)
 Changes the state of an item in a list view control\.
 
 #### Parameters
-
 
   - item : int
 
@@ -801,15 +781,17 @@ Changes the state of an item in a list view control\.
 
     Mask specifying which state bits to change\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetItemText
 
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetItemText
 
+int = SetItemText\(item, sub
 
-int =SetItemText\(item, sub, text\)
+, text
+
+\)
 Changes the text of a list view item or subitem\.
 
 #### Parameters
-
 
   - item : int
 
@@ -823,37 +805,37 @@ Changes the text of a list view item or subitem\.
 
     String that contains the new item text\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetTextBkColor
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetTextBkColor
 
 SetTextBkColor\(color\)
 Sets the text background color of a list view control\.
 
 #### Parameters
 
-
   - color : int
 
     The new background color\.
 
-## [PyCListCtrl](#pyclistctrl)\.SetTextColor
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.SetTextColor
 
 SetTextColor\(color\)
 Sets the text color of a list view control\.
 
 #### Parameters
 
-
   - color : int
 
     The new color\.
 
-## [PyCListCtrl](#pyclistctrl)\.Update
+
+## [PyCListCtrl](PyCListCtrl.md#pyclistctrl)\.Update
 
 Update\(item\)
 Forces the control to repaint a specified item\.
 
 #### Parameters
-
 
   - item : int
 

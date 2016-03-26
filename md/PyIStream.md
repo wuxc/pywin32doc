@@ -1,13 +1,11 @@
 # PyIStream
 
+
 ## PyIStream Object
-
-
 
 A Python interface to IStream
 
 #### Methods
-
 
   - [Read](PyIStream.md#pyistreamread)
 
@@ -15,7 +13,7 @@ A Python interface to IStream
 
   - [read](PyIStream.md#pyistreamread)
 
-    Alias for[PyIStream::Read](PyIStream.md#pyistreamread)&nbsp;
+    Alias for [PyIStream::Read](PyIStream.md#pyistreamread)&nbsp;
 
   - [Write](PyIStream.md#pyistreamwrite)
 
@@ -23,7 +21,7 @@ A Python interface to IStream
 
   - [write](PyIStream.md#pyistreamwrite)
 
-    Alias for[PyIStream::Write](PyIStream.md#pyistreamwrite)&nbsp;
+    Alias for [PyIStream::Write](PyIStream.md#pyistreamwrite)&nbsp;
 
   - [Seek](PyIStream.md#pyistreamseek)
 
@@ -43,7 +41,7 @@ A Python interface to IStream
 
   - [Revert](PyIStream.md#pyistreamrevert)
 
-    Discards all changes that have been made to a transacted stream since the last[PyIStream::Commit](PyIStream.md#pyistreamcommit) call\.&nbsp;
+    Discards all changes that have been made to a transacted stream since the last [PyIStream::Commit](PyIStream.md#pyistreamcommit) call\.&nbsp;
 
   - [LockRegion](PyIStream.md#pyistreamlockregion)
 
@@ -51,7 +49,7 @@ A Python interface to IStream
 
   - [UnLockRegion](PyIStream.md#pyistreamunlockregion)
 
-    Removes the access restriction on a range of bytes previously restricted with[PyIStream::LockRegion](PyIStream.md#pyistreamlockregion)\.&nbsp;
+    Removes the access restriction on a range of bytes previously restricted with [PyIStream::LockRegion](PyIStream.md#pyistreamlockregion)\.&nbsp;
 
   - [Clone](PyIStream.md#pyistreamclone)
 
@@ -62,34 +60,36 @@ A Python interface to IStream
     Returns information about a stream&nbsp;
 
 
-## [PyIStream](#pyistream)\.Clone
 
-[PyIStream](#pyistream) =Clone\(\)
+
+## [PyIStream](PyIStream.md#pyistream)\.Clone
+
+[PyIStream](PyIStream.md#pyistream) = Clone\(\)
 Creates a new stream object with its own seek pointer that references the same bytes as the original stream\.
 
-## [PyIStream](#pyistream)\.Commit
+
+## [PyIStream](PyIStream.md#pyistream)\.Commit
 
 Commit\(flags\)
 Ensures that any changes made to a stream object open in transacted mode are reflected in the parent storage\.
 
 #### Parameters
 
-
   - flags=STGC\_DEFAULT : int
 
     Controls how changes are performed\.
 
-## [PyIStream](#pyistream)\.CopyTo
 
+## [PyIStream](PyIStream.md#pyistream)\.CopyTo
 
+ULARGE\_INTEGER = CopyTo\(stream, cb
 
-ULARGE\_INTEGER =CopyTo\(stream, cb\)
+\)
 Copies a specified number of bytes from the current seek pointer in the stream to the current seek pointer in another stream\.
 
 #### Parameters
 
-
-  - stream :[PyIStream](#pyistream)
+  - stream : [PyIStream](PyIStream.md#pyistream)
 
     The stream to write to\.
 
@@ -100,13 +100,13 @@ Copies a specified number of bytes from the current seek pointer in the stream t
 #### Return Value
 The return value is the number of bytes actually written\.
 
-## [PyIStream](#pyistream)\.LockRegion
+
+## [PyIStream](PyIStream.md#pyistream)\.LockRegion
 
 LockRegion\(offset, cb, lockType\)
 Restricts access to a specified range of bytes in the stream\.
 
 #### Parameters
-
 
   - offset : ULARGE\_INTEGER
 
@@ -120,15 +120,13 @@ Restricts access to a specified range of bytes in the stream\.
 
     Restrictions requested\.
 
-## [PyIStream](#pyistream)\.Read
 
+## [PyIStream](PyIStream.md#pyistream)\.Read
 
-
-string =Read\(numBytes\)
+string = Read\(numBytes\)
 Read the specified number of bytes from the string\.
 
 #### Parameters
-
 
   - numBytes : int
 
@@ -137,20 +135,21 @@ Read the specified number of bytes from the string\.
 #### Return Value
 The result is a string containing binary data\.
 
-## [PyIStream](#pyistream)\.Revert
+
+## [PyIStream](PyIStream.md#pyistream)\.Revert
 
 Revert\(\)
-Discards all changes that have been made to a transacted stream since the last[PyIStream::Commit](PyIStream.md#pyistreamcommit) call\.
-
-## [PyIStream](#pyistream)\.Seek
+Discards all changes that have been made to a transacted stream since the last [PyIStream::Commit](PyIStream.md#pyistreamcommit) call\.
 
 
+## [PyIStream](PyIStream.md#pyistream)\.Seek
 
-ULARGE\_INTEGER =Seek\(offset, origin\)
+ULARGE\_INTEGER = Seek\(offset, origin
+
+\)
 Changes the seek pointer to a new location\.
 
 #### Parameters
-
 
   - offset : int
 
@@ -160,37 +159,37 @@ Changes the seek pointer to a new location\.
 
     Relative to where?
 
-## [PyIStream](#pyistream)\.SetSize
+
+## [PyIStream](PyIStream.md#pyistream)\.SetSize
 
 SetSize\(newSize\)
 Changes the size of the stream object\.
 
 #### Parameters
 
-
   - newSize : ULARGE\_INTEGER
 
     The new size
 
-## [PyIStream](#pyistream)\.Stat
 
-[STATSTG](#statstg) =Stat\(grfStatFlag\)
+## [PyIStream](PyIStream.md#pyistream)\.Stat
+
+[STATSTG](STATSTG.md) = Stat\(grfStatFlag\)
 Returns information about the stream
 
 #### Parameters
-
 
   - grfStatFlag=0 : int
 
     Flags\.
 
-## [PyIStream](#pyistream)\.UnlockRegion
+
+## [PyIStream](PyIStream.md#pyistream)\.UnlockRegion
 
 UnlockRegion\(offset, cb, lockType\)
-Removes the access restriction on a range of bytes previously restricted with[PyIStream::LockRegion](PyIStream.md#pyistreamlockregion)\.
+Removes the access restriction on a range of bytes previously restricted with [PyIStream::LockRegion](PyIStream.md#pyistreamlockregion)\.
 
 #### Parameters
-
 
   - offset : ULARGE\_INTEGER
 
@@ -204,13 +203,13 @@ Removes the access restriction on a range of bytes previously restricted with[Py
 
     Restrictions requested\.
 
-## [PyIStream](#pyistream)\.Write
+
+## [PyIStream](PyIStream.md#pyistream)\.Write
 
 Write\(data\)
 Write data to a stream
 
 #### Parameters
-
 
   - data : string
 

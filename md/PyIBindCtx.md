@@ -1,13 +1,11 @@
 # PyIBindCtx
 
+
 ## PyIBindCtx Object
 
-
-
-A Python interface to IBindCtx\.  Derived from[PyIUnknown](#pyiunknown)
+A Python interface to IBindCtx\.  Derived from [PyIUnknown](PyIUnknown.md)
 
 #### Methods
-
 
   - [GetRunningObjectTable](PyIBindCtx.md#pyibindctxgetrunningobjecttable)
 
@@ -38,68 +36,72 @@ A Python interface to IBindCtx\.  Derived from[PyIUnknown](#pyiunknown)
     Creates an enumerator to list context's string keys&nbsp;
 
 
-## [PyIBindCtx](#pyibindctx)\.EnumObjectParam
 
-[PyIEnumString](#pyienumstring) =EnumObjectParam\(\)
+
+## [PyIBindCtx](PyIBindCtx.md#pyibindctx)\.EnumObjectParam
+
+[PyIEnumString](PyIEnumString.md) = EnumObjectParam\(\)
 Creates an enumerator to list context's string keys
 
-## [PyIBindCtx](#pyibindctx)\.GetBindOptions
 
-[PyBIND\_OPTS](PyBIND.md#pybindopts) =GetBindOptions\(\)
+## [PyIBindCtx](PyIBindCtx.md#pyibindctx)\.GetBindOptions
+
+[PyBIND\_OPTS](PyBIND.md#pybindopts) = GetBindOptions\(\)
 Retrieves the bind options for the bind context
 
-## [PyIBindCtx](#pyibindctx)\.GetObjectParam
 
-[PyIUnknown](#pyiunknown) =GetObjectParam\(Key\)
+## [PyIBindCtx](PyIBindCtx.md#pyibindctx)\.GetObjectParam
+
+[PyIUnknown](PyIUnknown.md) = GetObjectParam\(Key\)
 Returns one of the bind context's associated objects
 
 #### Parameters
 
-
-  - Key :[PyUnicode](#pyunicode)
+  - Key : [PyUnicode](PyUnicode.md)
 
     The string key for the object to be returned
 
-## [PyIBindCtx](#pyibindctx)\.GetRunningObjectTable
 
-[PyIRunningObjectTable](#pyirunningobjecttable) =GetRunningObjectTable\(\)
+## [PyIBindCtx](PyIBindCtx.md#pyibindctx)\.GetRunningObjectTable
+
+[PyIRunningObjectTable](PyIRunningObjectTable.md) = GetRunningObjectTable\(\)
 Retrieves an object interfacing to the Running Object Table\.
 
-## [PyIBindCtx](#pyibindctx)\.RegisterObjectParam
+
+## [PyIBindCtx](PyIBindCtx.md#pyibindctx)\.RegisterObjectParam
 
 RegisterObjectParam\(Key, punk\)
 Adds an object to the context's keyed table of associated objects
 
 #### Parameters
 
-
-  - Key :[PyUnicode](#pyunicode)
+  - Key : [PyUnicode](PyUnicode.md)
 
     The string key for the object to be registered
 
-  - punk :[PyIUnknown](#pyiunknown)
+  - punk : [PyIUnknown](PyIUnknown.md)
 
     COM object to be registered with the bind context
 
-## [PyIBindCtx](#pyibindctx)\.RevokeObjectParam
+
+## [PyIBindCtx](PyIBindCtx.md#pyibindctx)\.RevokeObjectParam
 
 RevokeObjectParam\(Key\)
 Removes one of the bind context's registered objects
 
 #### Parameters
 
-
-  - Key :[PyUnicode](#pyunicode)
+  - Key : [PyUnicode](PyUnicode.md)
 
     The string key for the object to be removed
 
-## [PyIBindCtx](#pyibindctx)\.SetBindOptions
+
+## [PyIBindCtx](PyIBindCtx.md#pyibindctx)\.SetBindOptions
 
 SetBindOptions\(bindopts\)
 Sets the bind options for the context
 
 #### Parameters
-
 
   - bindopts : dict
 

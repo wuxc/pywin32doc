@@ -1,13 +1,11 @@
 # PySSortOrderItem
 
+
 ## PySSortOrderItem Object
-
-
 
 An item in a SortOrderSet\.
 
 #### Parameters
-
 
   - propTag : int
 

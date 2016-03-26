@@ -1,13 +1,11 @@
 # PyCImageList
 
+
 ## PyCImageList Object
-
-
 
 A Python type encapsulating an MFC CImageList class\.
 
 #### Methods
-
 
   - [Add](PyCImageList.md#pycimagelistadd)
 
@@ -41,22 +39,19 @@ A Python type encapsulating an MFC CImageList class\.
 
     Sets the background color for an Image List\.&nbsp;
 
-## [PyCImageList](#pycimagelist)\.Add
 
+## [PyCImageList](PyCImageList.md#pycimagelist)\.Add
 
-
-int =Add\(bitmap, bitmapMask\)
+int = Add\(bitmap, bitmapMask\)
 Adds an image to the list\.
 
 #### Parameters
-
 
   - bitmap, bitmapMask : \(int,int\)
 
     2 Bitmaps to use \(primary and mask\)
 
 #### Alternative Parameters
-
 
   - bitmap
 
@@ -68,7 +63,6 @@ Adds an image to the list\.
 
 #### Alternative Parameters
 
-
   - hIcon
 
     Handle of an icon to add\.
@@ -76,53 +70,49 @@ Adds an image to the list\.
 #### Return Value
 Zero-based index of the first new image\.
 
-## [PyCImageList](#pycimagelist)\.DeleteImageList
+
+## [PyCImageList](PyCImageList.md#pycimagelist)\.DeleteImageList
 
 DeleteImageList\(\)
 Deletes an image list\.
 
 #### Comments
 
-
 This frees all resources associated with an image list\. 
 
 No further operations on the object will be allowed\.
 
-## [PyCImageList](#pycimagelist)\.Destroy
+
+## [PyCImageList](PyCImageList.md#pycimagelist)\.Destroy
 
 Destroy\(\)
 Destroys the underlying CImageList
 
 #### Comments
 
-
 This method actually calls delete\(\) on the CImageList - you 
 
 should ensure that no controls still require access to this list\.
 
-## [PyCImageList](#pycimagelist)\.GetBkColor
 
+## [PyCImageList](PyCImageList.md#pycimagelist)\.GetBkColor
 
-
-int =GetBkColor\(\)
+int = GetBkColor\(\)
 Retrieves the background color of an Image List\.
 
-## [PyCImageList](#pycimagelist)\.GetImageCount
 
+## [PyCImageList](PyCImageList.md#pycimagelist)\.GetImageCount
 
-
-int =GetImageCount\(\)
+int = GetImageCount\(\)
 Retrieves the number of images in an image list\.
 
-## [PyCImageList](#pycimagelist)\.GetImageInfo
 
+## [PyCImageList](PyCImageList.md#pycimagelist)\.GetImageInfo
 
-
-iiii\(iiii\) =GetImageInfo\(index\)
+iiii\(iiii\) = GetImageInfo\(index\)
 Retrieves information about an image\.
 
 #### Parameters
-
 
   - index : int
 
@@ -131,20 +121,19 @@ Retrieves information about an image\.
 #### Return Value
 The return info is a tuple describing an IMAGELIST structure\.
 
-## [PyCImageList](#pycimagelist)\.GetSafeHandle
 
+## [PyCImageList](PyCImageList.md#pycimagelist)\.GetSafeHandle
 
-
-int =GetSafeHandle\(\)
+int = GetSafeHandle\(\)
 Retrieves the HIMAGELIST for the object
 
-## [PyCImageList](#pycimagelist)\.SetBkColor
+
+## [PyCImageList](PyCImageList.md#pycimagelist)\.SetBkColor
 
 SetBkColor\(color\)
 Sets the background color for an Image List\.
 
 #### Parameters
-
 
   - color : int
 

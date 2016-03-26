@@ -1,13 +1,11 @@
 # PyCDialog
 
+
 ## PyCDialog Object
 
-
-
-A class which encapsulates an MFC CDialog object\.  Derived from a[PyCWnd](#pycwnd) object\.
+A class which encapsulates an MFC CDialog object\.  Derived from a [PyCWnd](PyCWnd.md) object\.
 
 #### Methods
-
 
   - [CreateWindow](PyCDialog.md#pycdialogcreatewindow)
 
@@ -44,136 +42,127 @@ A class which encapsulates an MFC CDialog object\.  Derived from a[PyCWnd](#pycw
 sentinel&nbsp;
 
 
-## [PyCDialog](#pycdialog)\.CreateWindow
+
+
+## [PyCDialog](PyCDialog.md#pycdialog)\.CreateWindow
 
 CreateWindow\(obParent\)
 Create a modeless window for the dialog box\.
 
 #### Parameters
 
-
-  - obParent=None :[PyCWnd](#pycwnd)
+  - obParent=None : [PyCWnd](PyCWnd.md)
 
     The parent window for the new window
 
 #### MFC References
 
-
   - CDialog::CreateIndirect
 
-## [PyCDialog](#pycdialog)\.DoModal
 
+## [PyCDialog](PyCDialog.md#pycdialog)\.DoModal
 
-
-int =DoModal\(\)
+int = DoModal\(\)
 Create a modal window for the dialog box\.
 
 #### MFC References
 
-
   - CDialog::DoModal
 
 #### Return Value
-The return value from the dialog\.  This is the value passed to[PyCDialog::EndDialog](PyCDialog.md#pycdialogenddialog)\.
+The return value from the dialog\.  This is the value passed to [PyCDialog::EndDialog](PyCDialog.md#pycdialogenddialog)\.
 
-## [PyCDialog](#pycdialog)\.EndDialog
+
+## [PyCDialog](PyCDialog.md#pycdialog)\.EndDialog
 
 EndDialog\(result\)
 Ends a modal dialog box\.
 
 #### Parameters
 
-
   - result : int
 
-    The value to be returned by the[PyCDialog::DoModal](PyCDialog.md#pycdialogdomodal) method\.
+    The value to be returned by the [PyCDialog::DoModal](PyCDialog.md#pycdialogdomodal) method\.
 
 #### MFC References
 
-
   - CDialog::EndDialog
 
-## [PyCDialog](#pycdialog)\.GotoDlgCtrl
+
+## [PyCDialog](PyCDialog.md#pycdialog)\.GotoDlgCtrl
 
 GotoDlgCtrl\(control\)
 Moves the focus to the specified control in the dialog box\.
 
 #### Parameters
 
-
-  - control :[PyCWnd](#pycwnd)
+  - control : [PyCWnd](PyCWnd.md)
 
     The control to get the focus\.
 
-## [PyCDialog](#pycdialog)\.MapDialogRect
 
+## [PyCDialog](PyCDialog.md#pycdialog)\.MapDialogRect
 
-
-\(left, top, right, bottom\) =MapDialogRect\(rect\)
+\(left, top, right, bottom\) = MapDialogRect\(rect\)
 Converts the dialog-box units of a rectangle to screen units\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
     The rect to be converted
 
-## [PyCDialog](#pycdialog)\.OnCancel
+
+## [PyCDialog](PyCDialog.md#pycdialog)\.OnCancel
 
 OnCancel\(\)
 Calls the default MFC OnCancel handler\.
 
 #### See Also
 
-
   - [PyCDialog\.OnCancel](PyCDialog.md#pycdialogoncancel_virtual) virtual method
 
-## [PyCDialog\.OnCancel](#pycdialog) Virtual
+
+## [PyCDialog\.OnCancel](PyCDialog.md#pycdialog) Virtual
 
 OnCancel\(\)
 Called by the MFC architecture when the user selects the Cancel button\.
 
 #### Comments
 
-
-The procedure is expected to dismiss the window with the[PyCDialog::EndDialog](PyCDialog.md#pycdialogenddialog) method\. 
+The procedure is expected to dismiss the window with the [PyCDialog::EndDialog](PyCDialog.md#pycdialogenddialog) method\. 
 
 The base implementation \(which dismisses the dialog\) is not called if a handler exists\.  This can be 
 
-done via[PyCDialog::OnCancel](PyCDialog.md#pycdialogoncancel)\.
+done via [PyCDialog::OnCancel](PyCDialog.md#pycdialogoncancel)\.
 
 #### See Also
 
-
   - [PyCDialog::OnCancel](PyCDialog.md#pycdialogoncancel)
 
-## [PyCDialog](#pycdialog)\.OnInitDialog
 
+## [PyCDialog](PyCDialog.md#pycdialog)\.OnInitDialog
 
-
-int =OnInitDialog\(\)
+int = OnInitDialog\(\)
 Calls the default MFC OnInitDialog handler\.
 
 #### See Also
 
-
   - [PyCDialog\.OnInitDialog](PyCDialog.md#pycdialogoninitdialog_virtual) virtual method
 
-## [PyCDialog\.OnInitDialog](#pycdialog) Virtual
+
+## [PyCDialog\.OnInitDialog](PyCDialog.md#pycdialog) Virtual
 
 OnInitDialog\(\)
 Override to augment dialog-box initialization\.
 
 #### Comments
 
-
 The base implementation is not called if a handler exists\.  This can be 
 
-done via[PyCDialog::OnInitDialog](PyCDialog.md#pycdialogoninitdialog)\.
+done via [PyCDialog::OnInitDialog](PyCDialog.md#pycdialogoninitdialog)\.
 
 #### See Also
-
 
   - [PyCDialog::OnInitDialog](PyCDialog.md#pycdialogoninitdialog)
 
@@ -190,31 +179,30 @@ it has explicitly set the input focus to one of the controls in the
 
 dialog box\.
 
-## [PyCDialog](#pycdialog)\.OnOK
+
+## [PyCDialog](PyCDialog.md#pycdialog)\.OnOK
 
 OnOK\(\)
 Calls the default MFC OnOK handler\.
 
 #### See Also
 
-
   - [PyCDialog\.OnOK](PyCDialog.md#pycdialogonok_virtual) virtual method
 
-## [PyCDialog\.OnOK](#pycdialog) Virtual
+
+## [PyCDialog\.OnOK](PyCDialog.md#pycdialog) Virtual
 
 OnOK\(\)
 Called by the MFC architecture when the user selects the OK button\.
 
 #### Comments
 
-
-The procedure is expected to dismiss the window with the[PyCDialog::EndDialog](PyCDialog.md#pycdialogenddialog) method\. 
+The procedure is expected to dismiss the window with the [PyCDialog::EndDialog](PyCDialog.md#pycdialogenddialog) method\. 
 
 The base implementation \(which dismisses the dialog\) is not called if a handler exists\.  This can be 
 
-done via[PyCDialog::OnOK](PyCDialog.md#pycdialogonok)\.
+done via [PyCDialog::OnOK](PyCDialog.md#pycdialogonok)\.
 
 #### See Also
-
 
   - [PyCDialog::OnOK](PyCDialog.md#pycdialogonok)

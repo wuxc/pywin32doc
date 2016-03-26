@@ -1,13 +1,11 @@
 # exchdapi
 
+
 ## Module exchdapi
-
-
 
 An COM interface to Exchange's DAPI
 
 #### Methods
-
 
   - [HrInstallService](exchdapi.md#exchdapihrinstallservice)
 
@@ -61,18 +59,18 @@ An COM interface to Exchange's DAPI
 
     Obtains the account name for a service\.&nbsp;
 
-## [exchdapi](#exchdapi)\.HrAdminProgramExists
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrAdminProgramExists
 
 HrAdminProgramExists\(\)
 
 
-## [exchdapi](#exchdapi)\.HrCreateGatewayProfile
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrCreateGatewayProfile
 
 HrCreateGatewayProfile\(serviceName, profile\)
 
-
 #### Parameters
-
 
   - serviceName : string
 
@@ -82,13 +80,12 @@ HrCreateGatewayProfile\(serviceName, profile\)
 
     The profile\.
 
-## [exchdapi](#exchdapi)\.HrCreateMailboxAgentProfile
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrCreateMailboxAgentProfile
 
 HrCreateMailboxAgentProfile\(serviceName, profile\)
 
-
 #### Parameters
-
 
   - serviceName : string
 
@@ -98,15 +95,17 @@ HrCreateMailboxAgentProfile\(serviceName, profile\)
 
     The profile\.
 
-## [exchdapi](#exchdapi)\.HrEnumContainers
 
+## [exchdapi](exchdapi.md#exchdapi)\.HrEnumContainers
 
+\[string, \.\.\.\] = HrEnumContainers\(server, siteDN
 
-\[string, \.\.\.\] =HrEnumContainers\(server, siteDN, fSubtree\)
+, fSubtree
+
+\)
 Lists the names of the containers on the server
 
 #### Parameters
-
 
   - server : string
 
@@ -120,15 +119,15 @@ Lists the names of the containers on the server
 
     
 
-## [exchdapi](#exchdapi)\.HrEnumOrganizations
 
+## [exchdapi](exchdapi.md#exchdapi)\.HrEnumOrganizations
 
+\[string, \.\.\.\] = HrEnumOrganizations\(rootDN, server
 
-\[string, \.\.\.\] =HrEnumOrganizations\(rootDN, server\)
+\)
 Lists the names of the organizations on the server\.
 
 #### Parameters
-
 
   - rootDN : string
 
@@ -138,15 +137,15 @@ Lists the names of the organizations on the server\.
 
     The name of the server
 
-## [exchdapi](#exchdapi)\.HrEnumSiteAdmins
 
+## [exchdapi](exchdapi.md#exchdapi)\.HrEnumSiteAdmins
 
+\[string, \.\.\.\] = HrEnumSiteAdmins\(server, siteDN
 
-\[string, \.\.\.\] =HrEnumSiteAdmins\(server, siteDN\)
+\)
 Lists the administrators for a site\.
 
 #### Parameters
-
 
   - server : string
 
@@ -156,15 +155,15 @@ Lists the administrators for a site\.
 
     Distinguished name \(DN\) of the site\.
 
-## [exchdapi](#exchdapi)\.HrEnumSites
 
+## [exchdapi](exchdapi.md#exchdapi)\.HrEnumSites
 
+\[string, \.\.\.\] = HrEnumSites\(server, organizationDN
 
-\[string, \.\.\.\] =HrEnumSites\(server, organizationDN\)
+\)
 Lists the names of the sites in an organization\.
 
 #### Parameters
-
 
   - server : string
 
@@ -174,16 +173,16 @@ Lists the names of the sites in an organization\.
 
     Contains the distinguished name \(DN\) of the organization\.
 
-## [exchdapi](#exchdapi)\.HrGetServiceAccountName
 
+## [exchdapi](exchdapi.md#exchdapi)\.HrGetServiceAccountName
 
+string = HrGetServiceAccountName\(serviceName, serviceName
 
-string =HrGetServiceAccountName\(serviceName, serviceName\)
+\)
 Obtains the account name for a service\.
 
 #### Parameters
 
-
   - serviceName : string
 
     The name of the service
@@ -192,23 +191,24 @@ Obtains the account name for a service\.
 
     The name of the service
 
-## [exchdapi](#exchdapi)\.HrInstallMailboxAgent
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrInstallMailboxAgent
 
 HrInstallMailboxAgent\(\)
 
 
-## [exchdapi](#exchdapi)\.HrInstallService
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrInstallService
 
 HrInstallService\(\)
 
 
-## [exchdapi](#exchdapi)\.HrMailboxAgentExists
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrMailboxAgentExists
 
 HrMailboxAgentExists\(server, siteDN, rdn\)
 
-
 #### Parameters
-
 
   - server : string
 
@@ -222,13 +222,13 @@ HrMailboxAgentExists\(server, siteDN, rdn\)
 
     RDN of the site where the mailbox agent might exist\.
 
-## [exchdapi](#exchdapi)\.HrRemoveMailboxAgent
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrRemoveMailboxAgent
 
 HrRemoveMailboxAgent\(server, siteDN, rdn\)
 Removes a Mailbox Agent
 
 #### Parameters
-
 
   - server : string
 
@@ -242,13 +242,13 @@ Removes a Mailbox Agent
 
     RDN of the site where the mailbox agent exists\.
 
-## [exchdapi](#exchdapi)\.HrRemoveProfile
+
+## [exchdapi](exchdapi.md#exchdapi)\.HrRemoveProfile
 
 HrRemoveProfile\(profile\)
 Removes a profile
 
 #### Parameters
-
 
   - profile : string
 

@@ -1,13 +1,11 @@
 # PyBITMAP
 
+
 ## PyBITMAP Object
-
-
 
 A Python object, representing an PyBITMAP structure
 
 #### Comments
-
 
 Typically you get one of these from GetObject\.  Note that currently 
 
@@ -24,19 +22,25 @@ The object can then be passed to any function which takes an BITMAP object
 #### Properties
 
   - integer bmType
+
     
 
   - integer bmWidth
+
     
 
   - integer bmHeight
+
     
 
   - integer bmWidthBytes
+
     
 
   - integer bmPlanes
+
     
 
-  - integer
+  - integer 
+
     

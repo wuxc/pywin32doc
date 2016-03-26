@@ -1,13 +1,11 @@
 # PyIEnumExplorerCommand
 
+
 ## PyIEnumExplorerCommand Object
-
-
 
 A Python interface to IEnumExplorerCommand
 
 #### Methods
-
 
   - [Next](PyIEnumExplorerCommand.md#pyienumexplorercommandnext)
 
@@ -25,31 +23,32 @@ A Python interface to IEnumExplorerCommand
 
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Clone
 
-[PyIEnumExplorerCommand](#pyienumexplorercommand) =Clone\(\)
+## [PyIEnumExplorerCommand](PyIEnumExplorerCommand.md#pyienumexplorercommand)\.Clone
+
+[PyIEnumExplorerCommand](PyIEnumExplorerCommand.md#pyienumexplorercommand) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Next
 
+## [PyIEnumExplorerCommand](PyIEnumExplorerCommand.md#pyienumexplorercommand)\.Next
 
-
-object =Next\(num\)
+object = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Reset
+
+## [PyIEnumExplorerCommand](PyIEnumExplorerCommand.md#pyienumexplorercommand)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumExplorerCommand](#pyienumexplorercommand)\.Skip
+
+## [PyIEnumExplorerCommand](PyIEnumExplorerCommand.md#pyienumexplorercommand)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

@@ -1,10 +1,9 @@
 # ExportCallback
 
+
 ## ExportCallback Object
 
-
-
-User-defined callback function used with[win32file::ReadEncryptedFileRaw](win32file.md#win32filereadencryptedfileraw)\.
+User-defined callback function used with [win32file::ReadEncryptedFileRaw](win32file.md#win32filereadencryptedfileraw)\.
  
 
 Function is called with 3 parameters: \(Data, CallbackContext, Length\)

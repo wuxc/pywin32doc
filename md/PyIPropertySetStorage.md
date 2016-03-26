@@ -1,15 +1,13 @@
 # PyIPropertySetStorage
 
+
 ## PyIPropertySetStorage Object
-
-
 
 Container for a collection of property sets\. 
 
 Can be iterated over to enumerate property sets\.
 
 #### Methods
-
 
   - [Create](PyIPropertySetStorage.md#pyipropertysetstoragecreate)
 
@@ -27,19 +25,25 @@ Can be iterated over to enumerate property sets\.
 
     Creates an iterator to enumerate contained property sets&nbsp;
 
-## [PyIPropertySetStorage](#pyipropertysetstorage)\.Create
 
-[PyIPropertyStorage](#pyipropertystorage) =Create\(fmtid, clsid, Flags, Mode\)
+## [PyIPropertySetStorage](PyIPropertySetStorage.md#pyipropertysetstorage)\.Create
+
+[PyIPropertyStorage](PyIPropertyStorage.md) = Create\(fmtid, clsid
+
+, Flags
+
+, Mode
+
+\)
 Creates a new property set in the storage object
 
 #### Parameters
 
-
-  - fmtid :[PyIID](#pyiid)
+  - fmtid : [PyIID](PyIID.md)
 
     GUID identifying a property set, pythoncom\.FMTID\_\*
 
-  - clsid :[PyIID](#pyiid)
+  - clsid : [PyIID](PyIID.md)
 
     CLSID of property set handler, usually same as fmtid
 
@@ -51,32 +55,35 @@ Creates a new property set in the storage object
 
     Access mode, combination of storagecon\.STGM\_\* flags
 
-## [PyIPropertySetStorage](#pyipropertysetstorage)\.Delete
+
+## [PyIPropertySetStorage](PyIPropertySetStorage.md#pyipropertysetstorage)\.Delete
 
 Delete\(fmtid\)
 Removes a property set from this storage object
 
 #### Parameters
 
-
-  - fmtid :[PyIID](#pyiid)
+  - fmtid : [PyIID](PyIID.md)
 
     GUID of a property set, pythoncom\.FMTID\_\*
 
-## [PyIPropertySetStorage](#pyipropertysetstorage)\.Enum
 
-[PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg) =Enum\(\)
+## [PyIPropertySetStorage](PyIPropertySetStorage.md#pyipropertysetstorage)\.Enum
+
+[PyIEnumSTATPROPSETSTG](PyIEnumSTATPROPSETSTG.md) = Enum\(\)
 Creates an iterator to enumerate contained property sets
 
-## [PyIPropertySetStorage](#pyipropertysetstorage)\.Open
 
-[PyIPropertyStorage](#pyipropertystorage) =Open\(fmtid, Mode\)
+## [PyIPropertySetStorage](PyIPropertySetStorage.md#pyipropertysetstorage)\.Open
+
+[PyIPropertyStorage](PyIPropertyStorage.md) = Open\(fmtid, Mode
+
+\)
 Opens an existing property set
 
 #### Parameters
 
-
-  - fmtid :[PyIID](#pyiid)
+  - fmtid : [PyIID](PyIID.md)
 
     GUID of a property set, pythoncom\.FMTID\_\*
 

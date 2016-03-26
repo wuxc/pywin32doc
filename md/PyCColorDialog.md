@@ -1,13 +1,11 @@
 # PyCColorDialog
 
+
 ## PyCColorDialog Object
 
-
-
-A class which encapsulates an MFC CColorDialog object\.  Derived from a[PyCDialog](#pycdialog) object\.
+A class which encapsulates an MFC CColorDialog object\.  Derived from a [PyCDialog](PyCDialog.md) object\.
 
 #### Methods
-
 
   - [GetColor](PyCColorDialog.md#pyccolordialoggetcolor)
 
@@ -34,56 +32,50 @@ A class which encapsulates an MFC CColorDialog object\.  Derived from a[PyCDialo
     Gets the currently defined custom colors\.&nbsp;
 
 
-## [PyCColorDialog](#pyccolordialog)\.DoModal
 
 
+## [PyCColorDialog](PyCColorDialog.md#pyccolordialog)\.DoModal
 
-int =DoModal\(\)
+int = DoModal\(\)
 Displays a dialog and allows the user to make a selection\.
 
 #### MFC References
 
-
   - CColorDialog::DoModal
 
-## [PyCColorDialog](#pyccolordialog)\.GetColor
 
+## [PyCColorDialog](PyCColorDialog.md#pyccolordialog)\.GetColor
 
-
-int =GetColor\(\)
+int = GetColor\(\)
 Determines the selected color\.
 
 #### MFC References
 
-
   - CColorDialog::GetColor
 
-## [PyCColorDialog](#pyccolordialog)\.GetCustomColors
 
+## [PyCColorDialog](PyCColorDialog.md#pyccolordialog)\.GetCustomColors
 
-
-\(int,\.\.\.\) =GetCustomColors\(\)
+\(int,\.\.\.\) = GetCustomColors\(\)
 Gets the 16 currently defined custom colors
 
-## [PyCColorDialog](#pyccolordialog)\.GetSavedCustomColors
 
+## [PyCColorDialog](PyCColorDialog.md#pyccolordialog)\.GetSavedCustomColors
 
-
-int =GetSavedCustomColors\(\)
+int = GetSavedCustomColors\(\)
 Returns the saved custom colors\.
 
 #### MFC References
 
-
   - CColorDialog::GetSavedCustomColors
 
-## [PyCColorDialog](#pyccolordialog)\.SetCurrentColor
+
+## [PyCColorDialog](PyCColorDialog.md#pyccolordialog)\.SetCurrentColor
 
 SetCurrentColor\(color\)
 Sets the currently selected color\.
 
 #### Parameters
-
 
   - color : int
 
@@ -91,10 +83,10 @@ Sets the currently selected color\.
 
 #### MFC References
 
-
   - CColorDialog::SetCurrentColor
 
-## [PyCColorDialog](#pyccolordialog)\.SetCustomColors
+
+## [PyCColorDialog](PyCColorDialog.md#pyccolordialog)\.SetCustomColors
 
 SetCustomColors\(\)
 Sets one or more custom colors

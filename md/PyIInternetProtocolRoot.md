@@ -1,13 +1,11 @@
 # PyIInternetProtocolRoot
 
+
 ## PyIInternetProtocolRoot Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [Start](PyIInternetProtocolRoot.md#pyiinternetprotocolrootstart)
 
@@ -33,13 +31,13 @@ Description of the interface
 
     Description of Resume&nbsp;
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Abort
+
+## [PyIInternetProtocolRoot](PyIInternetProtocolRoot.md#pyiinternetprotocolroot)\.Abort
 
 Abort\(hrReason, dwOptions\)
 Description of Abort\.
 
 #### Parameters
-
 
   - hrReason : int
 
@@ -49,33 +47,35 @@ Description of Abort\.
 
     Description for dwOptions
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Continue
+
+## [PyIInternetProtocolRoot](PyIInternetProtocolRoot.md#pyiinternetprotocolroot)\.Continue
 
 Continue\(\)
 Description of Continue\.
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Resume
+
+## [PyIInternetProtocolRoot](PyIInternetProtocolRoot.md#pyiinternetprotocolroot)\.Resume
 
 Resume\(\)
 Description of Resume\.
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Start
+
+## [PyIInternetProtocolRoot](PyIInternetProtocolRoot.md#pyiinternetprotocolroot)\.Start
 
 Start\(szUrl, pOIProtSink, pOIBindInfo, grfPI, dwReserved\)
 Description of Start\.
 
 #### Parameters
 
-
-  - szUrl :unicode
+  - szUrl : unicode
 
     Description for szUrl
 
-  - pOIProtSink :[PyIInternetProtocolSink](#pyiinternetprotocolsink)
+  - pOIProtSink : [PyIInternetProtocolSink](PyIInternetProtocolSink.md)
 
     Description for pOIProtSink
 
-  - pOIBindInfo :[PyIInternetBindInfo](#pyiinternetbindinfo)
+  - pOIBindInfo : [PyIInternetBindInfo](PyIInternetBindInfo.md)
 
     Description for pOIBindInfo
 
@@ -87,18 +87,19 @@ Description of Start\.
 
     Description for dwReserved
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Suspend
+
+## [PyIInternetProtocolRoot](PyIInternetProtocolRoot.md#pyiinternetprotocolroot)\.Suspend
 
 Suspend\(\)
 Description of Suspend\.
 
-## [PyIInternetProtocolRoot](#pyiinternetprotocolroot)\.Terminate
+
+## [PyIInternetProtocolRoot](PyIInternetProtocolRoot.md#pyiinternetprotocolroot)\.Terminate
 
 Terminate\(dwOptions\)
 Description of Terminate\.
 
 #### Parameters
-
 
   - dwOptions : int
 

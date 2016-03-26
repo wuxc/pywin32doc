@@ -1,13 +1,11 @@
 # PyITransferSource
 
+
 ## PyITransferSource Object
-
-
 
 Implemented by shell folders that can act as the source of shell item operations
 
 #### Methods
-
 
   - [Advise](PyITransferSource.md#pyitransfersourceadvise)
 
@@ -47,7 +45,7 @@ Implemented by shell folders that can act as the source of shell item operations
 
   - [ApplyPropertiesToItem](PyITransferSource.md#pyitransfersourceapplypropertiestoitem)
 
-    Changes an item's properties as specified by[PyITransferSource::SetProperties](PyITransferSource.md#pyitransfersourcesetproperties)&nbsp;
+    Changes an item's properties as specified by [PyITransferSource::SetProperties](PyITransferSource.md#pyitransfersourcesetproperties)&nbsp;
 
   - [GetDefaultDestinationName](PyITransferSource.md#pyitransfersourcegetdefaultdestinationname)
 
@@ -61,93 +59,91 @@ Implemented by shell folders that can act as the source of shell item operations
 
     Informs the copy engine that the operation on a destination folder is finished&nbsp;
 
-## [PyITransferSource](#pyitransfersource)\.Advise
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.Advise
 
-
-int =Advise\(Sink\)
+int = Advise\(Sink\)
 Connects an advise sink to receive notifications
 
 #### Parameters
 
-
-  - Sink :[PyITransferAdviseSink](#pyitransferadvisesink)
+  - Sink : [PyITransferAdviseSink](PyITransferAdviseSink.md)
 
     Event sink to respond to notifications
 
-## [PyITransferSource](#pyitransfersource)\.ApplyPropertiesToItem
 
-[PyIShellItem](#pyishellitem) =ApplyPropertiesToItem\(Source\)
-Changes an item's properties as specified by[PyITransferSource::SetProperties](PyITransferSource.md#pyitransfersourcesetproperties)
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.ApplyPropertiesToItem
+
+[PyIShellItem](PyIShellItem.md) = ApplyPropertiesToItem\(Source\)
+Changes an item's properties as specified by [PyITransferSource::SetProperties](PyITransferSource.md#pyitransfersourcesetproperties)
 
 #### Parameters
 
-
-  - Source :[PyIShellItem](#pyishellitem)
+  - Source : [PyIShellItem](PyIShellItem.md)
 
     Item whose properties are to be changed
 
-## [PyITransferSource](#pyitransfersource)\.EnterFolder
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.EnterFolder
 
-
-int =EnterFolder\(ChildFolderDest\)
+int = EnterFolder\(ChildFolderDest\)
 Informs the copy engine that a folder will be the target of a file operation
 
 #### Parameters
 
-
-  - ChildFolderDest :[PyIShellItem](#pyishellitem)
+  - ChildFolderDest : [PyIShellItem](PyIShellItem.md)
 
     The destination folder for the operation
 
-## [PyITransferSource](#pyitransfersource)\.GetDefaultDestinationName
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.GetDefaultDestinationName
 
+str = GetDefaultDestinationName\(Source, ParentDest
 
-str =GetDefaultDestinationName\(Source, ParentDest\)
+\)
 Determines the name of an item as it would appear in a given folder
 
 #### Parameters
 
-
-  - Source :[PyIShellItem](#pyishellitem)
+  - Source : [PyIShellItem](PyIShellItem.md)
 
     The item whose name is wanted
 
-  - ParentDest :[PyIShellItem](#pyishellitem)
+  - ParentDest : [PyIShellItem](PyIShellItem.md)
 
     The destination folder
 
-## [PyITransferSource](#pyitransfersource)\.LeaveFolder
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.LeaveFolder
 
-
-int =LeaveFolder\(ChildFolderDest\)
+int = LeaveFolder\(ChildFolderDest\)
 Informs the copy engine that the operation on a destination folder is finished
 
 #### Parameters
 
-
-  - ChildFolderDest :[PyIShellItem](#pyishellitem)
+  - ChildFolderDest : [PyIShellItem](PyIShellItem.md)
 
     Destination folder
 
-## [PyITransferSource](#pyitransfersource)\.LinkItem
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.LinkItem
 
+\(int, [PyIShellItem](PyIShellItem.md) = LinkItem\(Source, ParentDest
 
-\(int,[PyIShellItem](#pyishellitem) =LinkItem\(Source, ParentDest, NewName, flags\)
+, NewName
+
+, flags
+
+\)
 Not implemented, according to MSDN
 
 #### Parameters
 
-
-  - Source :[PyIShellItem](#pyishellitem)
+  - Source : [PyIShellItem](PyIShellItem.md)
 
     Description for psiSource
 
-  - ParentDest :[PyIShellItem](#pyishellitem)
+  - ParentDest : [PyIShellItem](PyIShellItem.md)
 
     Description for psiParentDest
 
@@ -159,25 +155,29 @@ Not implemented, according to MSDN
 
     Combination of shellcon\.TSF\_\* flags
 
-## [PyITransferSource](#pyitransfersource)\.MoveItem
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.MoveItem
 
+\(int, [PyIShellItem](PyIShellItem.md) = MoveItem\(Item, ParentDst
 
-\(int,[PyIShellItem](#pyishellitem) =MoveItem\(Item, ParentDst, NameDst, flags\)
+, NameDst
+
+, flags
+
+\)
 Moves a shell item into another folder
 
 #### Parameters
 
-
-  - Item :[PyIShellItem](#pyishellitem)
+  - Item : [PyIShellItem](PyIShellItem.md)
 
     Item to be moved
 
-  - ParentDst :[PyIShellItem](#pyishellitem)
+  - ParentDst : [PyIShellItem](PyIShellItem.md)
 
     The folder into which it will be moved
 
-  - NameDst :unicode
+  - NameDst : unicode
 
     New name for item after move, None to keep same name
 
@@ -192,17 +192,19 @@ when the code in one of the informational COPYENGINE\_S\_\* values\.  See MSDN f
 
 of expected actions for specific error codes\.
 
-## [PyITransferSource](#pyitransfersource)\.OpenItem
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.OpenItem
 
+\(int, [PyIShellItemResources](PyIShellItemResources.md)\) = OpenItem\(Item, flags
 
-\(int,[PyIShellItemResources](#pyishellitemresources)\) =OpenItem\(Item, flags, riid\)
+, riid
+
+\)
 Initiates the copying of an item
 
 #### Parameters
 
-
-  - Item :[PyIShellItem](#pyishellitem)
+  - Item : [PyIShellItem](PyIShellItem.md)
 
     The item to be copied\.
 
@@ -210,25 +212,27 @@ Initiates the copying of an item
 
     Combination of shellcon\.TSF\_\* flags
 
-  - riid=IID\_IShellItemResources :[PyIID](#pyiid)
+  - riid=IID\_IShellItemResources : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyITransferSource](#pyitransfersource)\.RecycleItem
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.RecycleItem
 
+\(int, [PyIShellItem](PyIShellItem.md) = RecycleItem\(Source, ParentDest
 
-\(int,[PyIShellItem](#pyishellitem) =RecycleItem\(Source, ParentDest, flags\)
+, flags
+
+\)
 Moves an item to the recycle bin
 
 #### Parameters
 
-
-  - Source :[PyIShellItem](#pyishellitem)
+  - Source : [PyIShellItem](PyIShellItem.md)
 
     The item to be recycled
 
-  - ParentDest :[PyIShellItem](#pyishellitem)
+  - ParentDest : [PyIShellItem](PyIShellItem.md)
 
     Shell item representing the recycle bin
 
@@ -236,17 +240,17 @@ Moves an item to the recycle bin
 
     Combination of shellcon\.TSF\_\* flags
 
-## [PyITransferSource](#pyitransfersource)\.RemoveItem
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.RemoveItem
 
+int = RemoveItem\(Source, flags
 
-int =RemoveItem\(Source, flags\)
+\)
 Deletes an item without recycling
 
 #### Parameters
 
-
-  - Source :[PyIShellItem](#pyishellitem)
+  - Source : [PyIShellItem](PyIShellItem.md)
 
     The item to be deleted
 
@@ -257,17 +261,19 @@ Deletes an item without recycling
 #### Return Value
 Returns the HRESULT of the operation
 
-## [PyITransferSource](#pyitransfersource)\.RenameItem
 
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.RenameItem
 
+\(int, [PyIShellItem](PyIShellItem.md)\) = RenameItem\(Source, NewName
 
-\(int,[PyIShellItem](#pyishellitem)\) =RenameItem\(Source, NewName, flags\)
+, flags
+
+\)
 Renames a shell item
 
 #### Parameters
 
-
-  - Source :[PyIShellItem](#pyishellitem)
+  - Source : [PyIShellItem](PyIShellItem.md)
 
     Item to be renamed
 
@@ -279,26 +285,26 @@ Renames a shell item
 
     Combination of shellcon\.TSF\_\* flags
 
-## [PyITransferSource](#pyitransfersource)\.SetProperties
+
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.SetProperties
 
 SetProperties\(proparray\)
 Specifies changes to be applied to items' properties
 
 #### Parameters
 
+  - proparray : [PyIPropertyChangeArray](PyIPropertyChangeArray.md)
 
-  - proparray :[PyIPropertyChangeArray](#pyipropertychangearray)
+    Property changes to be applied by [PyITransferSource::ApplyPropertiesToItem](PyITransferSource.md#pyitransfersourceapplypropertiestoitem)
 
-    Property changes to be applied by[PyITransferSource::ApplyPropertiesToItem](PyITransferSource.md#pyitransfersourceapplypropertiestoitem)
 
-## [PyITransferSource](#pyitransfersource)\.Unadvise
+## [PyITransferSource](PyITransferSource.md#pyitransfersource)\.Unadvise
 
 Unadvise\(Cookie\)
 Disconnects an event sink
 
 #### Parameters
 
-
   - Cookie : int
 
-    Connection id as returned by[PyITransferSource::Advise](PyITransferSource.md#pyitransfersourceadvise)
+    Connection id as returned by [PyITransferSource::Advise](PyITransferSource.md#pyitransfersourceadvise)

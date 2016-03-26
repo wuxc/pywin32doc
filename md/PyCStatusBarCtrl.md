@@ -1,17 +1,13 @@
 # PyCStatusBarCtrl
 
+
 ## PyCStatusBarCtrl Object
 
+A windows progress bar control\.  Encapsulates an MFC CStatusBarCtrl
 
-
-A windows progress bar control\.  Encapsulates an MFCCStatusBarCtrl
-
-
-
- class\.  Derived from[PyCControl](#pyccontrol)\.
+ class\.  Derived from [PyCControl](PyCControl.md)\.
 
 #### Methods
-
 
   - [CreateWindow](PyCStatusBarCtrl.md#pycstatusbarctrlcreatewindow)
 
@@ -57,13 +53,13 @@ A windows progress bar control\.  Encapsulates an MFCCStatusBarCtrl
 
     Sets the tooltip text for a pane in a status bar\.&nbsp;
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.CreateWindow
+
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.CreateWindow
 
 CreateWindow\(style, rect, parent, id\)
 Creates the actual control\.
 
 #### Parameters
-
 
   - style : int
 
@@ -73,37 +69,33 @@ Creates the actual control\.
 
     The size and position of the control\.
 
-  - parent :[PyCWnd](#pycwnd)
+  - parent : [PyCWnd](PyCWnd.md)
 
-    The parent window of the control\.  Usually a[PyCDialog](#pycdialog)\.
+    The parent window of the control\.  Usually a [PyCDialog](PyCDialog.md)\.
 
   - id : int
 
     The control's ID\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.GetBorders
 
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.GetBorders
 
-
-\(width, height, spacing\) =GetBorders\(\)
+\(width, height, spacing\) = GetBorders\(\)
 Retrieve the status bar control's current widths of the horizontal and vertical borders and of the space between rectangles\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.GetParts
 
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.GetParts
 
-
-\(int\) =GetParts\(nParts\)
+\(int\) = GetParts\(nParts\)
 Retrieve coordinates of the parts in a status bar control\.
 
 #### Parameters
-
 
   - nParts : int
 
     The number of coordinates to retrieve
 
 #### Comments
-
 
 This function, as designed in MFC, returns both the \*number\* of parts, and, 
 
@@ -113,11 +105,11 @@ parts\.  There is also an IN parameter saying how many coordinates to give
 
 back\.  Here, we're explicitly changing the semantics a bit\.
 
-GetParts\(\) -&gt Tuple of all coordinates
+GetParts\(\) -&gt Tuple of all coordinates 
+
 GetParts\(n\) -&gt Tuple of the first n coordinates \(or all coordinates, if 
 
 fewer than n\)
-
 
 So, in Python, you can't simultaneously find out how many coordinates there 
 
@@ -129,105 +121,97 @@ need to call the MFC method twice; once to find out how many there are, and
 
 another time to get them\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.GetRect
 
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.GetRect
 
-
-\(left, top, right, bottom\) =GetRect\(nPane\)
+\(left, top, right, bottom\) = GetRect\(nPane\)
 Retrieves the bounding rectangle of a part in a status bar control\.
 
 #### Parameters
-
 
   - nPane : int
 
     Zero-based index of the part whose bounding rectangle is to be retrieved\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.GetText
 
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.GetText
 
-
-text =GetText\(nPane\)
+text = GetText\(nPane\)
 Retrieve the text from the given part of a status bar control\.
 
 #### Parameters
 
-
   - nPane : int
 
     Zero-based index of the part whose text is to be retrieved\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.GetTextAttr
 
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.GetTextAttr
 
-
-int =GetTextAttr\(nPane\)
+int = GetTextAttr\(nPane\)
 Retrieve the attributes of the text in the given part of a status bar control\.
 
 #### Parameters
 
-
   - nPane : int
 
     Zero-based index of the part whose text is to be retrieved\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.GetTextLength
 
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.GetTextLength
 
-
-int =GetTextLength\(nPane\)
+int = GetTextLength\(nPane\)
 Retrieve the length the text in the given part of a status bar control\.
 
 #### Parameters
 
-
   - nPane : int
 
     Zero-based index of the part whose text is to be retrieved\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.SetMinHeight
+
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.SetMinHeight
 
 SetMinHeight\(nHeight\)
 Set the minimum height of a status bar control's drawing area\.
 
 #### Parameters
 
-
   - nHeight : int
 
     Minimum height
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.SetParts
+
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.SetParts
 
 SetParts\(coord\)
 Sets the number of parts in a status bar control and the coordinate of the right edge of each part\.
 
 #### Parameters
 
-
   - coord : int\.\.\.
 
     Coordinates of each part
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.SetSimple
+
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.SetSimple
 
 SetSimple\(bSimple\)
 Specify whether a status bar control displays simple text or displays all control parts set by a previous call to SetParts\.
 
 #### Parameters
 
-
   - bSimple : int
 
     If non-zero, displays simple text\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.SetText
+
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.SetText
 
 SetText\(text, nPane, nType\)
 Set the text in the given part of a status bar control\.
 
 #### Parameters
-
 
   - text : string
 
@@ -243,7 +227,6 @@ Set the text in the given part of a status bar control\.
 
 #### Comments
 
-
 The drawing type can be set to one of:~ 
 
 0 - The text is drawn with a border to appear lower than 
@@ -258,13 +241,13 @@ win32con\.SBT\_POPOUT - The text is drawn with a border to appear
 
 higher than the plane of the status bar\.
 
-## [PyCStatusBarCtrl](#pycstatusbarctrl)\.SetTipText
+
+## [PyCStatusBarCtrl](PyCStatusBarCtrl.md#pycstatusbarctrl)\.SetTipText
 
 SetTipText\(nPane, text\)
 Sets the tooltip text for a pane in a status bar\. The status bar must have been created with the afxres\.SBT\_TOOLTIPS control style to enable ToolTips\.
 
 #### Parameters
-
 
   - nPane : int
 
@@ -276,13 +259,14 @@ Sets the tooltip text for a pane in a status bar\. The status bar must have been
 
 #### Comments
 
+Pay attention, this tooltip text is ONLY displayed in two situations: 
 
-Pay attention, this tooltip text is ONLY displayed in two situations:
-1\. When the corresponding pane in the status bar contains only an icon\.
-2\. When the corresponding pane in the status bar contains text that is truncated due to the size of the pane\.
+1\. When the corresponding pane in the status bar contains only an icon\. 
+
+2\. When the corresponding pane in the status bar contains text that is truncated due to the size of the pane\. 
+
 To make the tooltip appear even if the text is not truncated, you could add additional spaces to the end of the pane text\.
 
 #### MFC References
-
 
   - CStatusBarCtrl::SetTipText

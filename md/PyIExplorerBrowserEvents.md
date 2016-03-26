@@ -1,13 +1,11 @@
 # PyIExplorerBrowserEvents
 
+
 ## PyIExplorerBrowserEvents Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [OnNavigationPending](PyIExplorerBrowserEvents.md#pyiexplorerbrowsereventsonnavigationpending)
 
@@ -25,50 +23,50 @@ Description of the interface
 
     Description of OnNavigationFailed&nbsp;
 
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationComplete
+
+## [PyIExplorerBrowserEvents](PyIExplorerBrowserEvents.md#pyiexplorerbrowserevents)\.OnNavigationComplete
 
 OnNavigationComplete\(pidlFolder\)
 Description of OnNavigationComplete\.
 
 #### Parameters
 
-
-  - pidlFolder :PyPCIDLIST\_ABSOLUTE
+  - pidlFolder : PyPCIDLIST\_ABSOLUTE
 
     Description for pidlFolder
 
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationFailed
+
+## [PyIExplorerBrowserEvents](PyIExplorerBrowserEvents.md#pyiexplorerbrowserevents)\.OnNavigationFailed
 
 OnNavigationFailed\(pidlFolder\)
 Description of OnNavigationFailed\.
 
 #### Parameters
 
-
-  - pidlFolder :PyPCIDLIST\_ABSOLUTE
+  - pidlFolder : PyPCIDLIST\_ABSOLUTE
 
     Description for pidlFolder
 
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnNavigationPending
+
+## [PyIExplorerBrowserEvents](PyIExplorerBrowserEvents.md#pyiexplorerbrowserevents)\.OnNavigationPending
 
 OnNavigationPending\(pidlFolder\)
 Description of OnNavigationPending\.
 
 #### Parameters
 
-
-  - pidlFolder :PyPCIDLIST\_ABSOLUTE
+  - pidlFolder : PyPCIDLIST\_ABSOLUTE
 
     Description for pidlFolder
 
-## [PyIExplorerBrowserEvents](#pyiexplorerbrowserevents)\.OnViewCreated
+
+## [PyIExplorerBrowserEvents](PyIExplorerBrowserEvents.md#pyiexplorerbrowserevents)\.OnViewCreated
 
 OnViewCreated\(psv\)
 Description of OnViewCreated\.
 
 #### Parameters
 
-
-  - psv :[PyIShellView](#pyishellview)
+  - psv : [PyIShellView](PyIShellView.md)
 
     Description for psv

@@ -1,23 +1,21 @@
 # PyConsoleScreenBuffer
 
+
 ## PyConsoleScreenBuffer Object
-
-
 
 Handle to a console screen buffer 
 
-Create using[win32console::CreateConsoleScreenBuffer](win32console.md#win32consolecreateconsolescreenbuffer) or[win32console::GetStdHandle](win32console.md#win32consolegetstdhandle) 
+Create using [win32console::CreateConsoleScreenBuffer](win32console.md#win32consolecreateconsolescreenbuffer) or [win32console::GetStdHandle](win32console.md#win32consolegetstdhandle) 
 
-Use PyConsoleScreenBufferType\(Handle\) to wrap a pre-existing handle as returned by[win32api::GetStdHandle](win32api.md#win32apigetstdhandle)\. 
+Use PyConsoleScreenBufferType\(Handle\) to wrap a pre-existing handle as returned by [win32api::GetStdHandle](win32api.md#win32apigetstdhandle)\. 
 
-Will also accept a handle created by[win32file::CreateFile](win32file.md#win32filecreatefile) for CONIN$ or CONOUT$\. 
+Will also accept a handle created by [win32file::CreateFile](win32file.md#win32filecreatefile) for CONIN$ or CONOUT$\. 
 
 When an existing handle is wrapped, a copy is made using DuplicateHandle, and caller is still responsible 
 
 for any cleanup of original handle\.
 
 #### Methods
-
 
   - [Detach](PyConsoleScreenBuffer.md#pyconsolescreenbufferdetach)
 
@@ -147,15 +145,17 @@ for any cleanup of original handle\.
 
     Returns the number of unread records in the input queue&nbsp;
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.FillConsoleOutputAttribute
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.FillConsoleOutputAttribute
 
+int = FillConsoleOutputAttribute\(Attribute, Length
 
-int =FillConsoleOutputAttribute\(Attribute, Length, WriteCoord\)
+, WriteCoord
+
+\)
 Set text attributes for a consecutive series of characters
 
 #### Parameters
-
 
   - Attribute : int
 
@@ -165,24 +165,26 @@ Set text attributes for a consecutive series of characters
 
     The number of characters to set
 
-  - WriteCoord :[PyCOORD](#pycoord)
+  - WriteCoord : [PyCOORD](PyCOORD.md)
 
     The screen position to begin at
 
 #### Return Value
 Returns the number of character cells whose attributes were set
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.FillConsoleOutputCharacter
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.FillConsoleOutputCharacter
 
+int = FillConsoleOutputCharacter\(Character, Length
 
-int =FillConsoleOutputCharacter\(Character, Length, WriteCoord\)
+, WriteCoord
+
+\)
 Sets consecutive character positions to a specified character
 
 #### Parameters
 
-
-  - Character :[PyUNICODE](#pyunicode)
+  - Character : [PyUNICODE](PyUNICODE.md)
 
     A single character to be used to fill the specified range
 
@@ -190,35 +192,35 @@ Sets consecutive character positions to a specified character
 
     The number of characters positions to fill
 
-  - WriteCoord :[PyCOORD](#pycoord)
+  - WriteCoord : [PyCOORD](PyCOORD.md)
 
     The screen position to begin at
 
 #### Return Value
 Returns the number of characters actually written
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.FlushConsoleInputBuffer
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.FlushConsoleInputBuffer
 
 FlushConsoleInputBuffer\(\)
 Flush input buffer
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.GetConsoleCursorInfo
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.GetConsoleCursorInfo
 
-
-\(Size, bVisible\) =GetConsoleCursorInfo\(\)
+\(Size, bVisible\) = GetConsoleCursorInfo\(\)
 Retrieves size and visibility of console's cursor
 
 #### Return Value
 Returns the size of the console's cursor expressed as a percentage of character size, and a boolen indicating if cursor is visible
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.GetConsoleFontSize
 
-[PyCOORD](#pycoord) =GetConsoleFontSize\(Font\)
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.GetConsoleFontSize
+
+[PyCOORD](PyCOORD.md) = GetConsoleFontSize\(Font\)
 Returns size of specified font for the console
 
 #### Parameters
-
 
   - Font : int
 
@@ -226,35 +228,30 @@ Returns size of specified font for the console
 
 #### Comments
 
-
 Only exists on XP or later\.
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.GetConsoleMode
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.GetConsoleMode
 
-
-int =GetConsoleMode\(\)
+int = GetConsoleMode\(\)
 Returns the input or output mode of the console buffer
 
 #### Return Value
 Returns a combination of ENABLE\_\*\_INPUT or ENABLE\_\*\_OUTPUT constants
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.GetConsoleScreenBufferInfo
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.GetConsoleScreenBufferInfo
 
-
-dict =GetConsoleScreenBufferInfo\(\)
+dict = GetConsoleScreenBufferInfo\(\)
 Returns the state of the screen buffer
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.GetCurrentConsoleFont
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.GetCurrentConsoleFont
 
-
-\(int,[PyCOORD](#pycoord)\) =GetCurrentConsoleFont\(MaximumWindow\)
+\(int, [PyCOORD](PyCOORD.md)\) = GetCurrentConsoleFont\(MaximumWindow\)
 Returns currently displayed font
 
 #### Parameters
-
 
   - MaximumWindow=False : boolean
 
@@ -262,46 +259,42 @@ Returns currently displayed font
 
 #### Comments
 
-
 Only exists on XP or later\.
  
 
 MSDN docs claim the returned COORD is the font size, but it's actually the window size\.
  
 
-Use[PyConsoleScreenBuffer::GetConsoleFontSize](PyConsoleScreenBuffer.md#pyconsolescreenbuffergetconsolefontsize) for the font size\.
+Use [PyConsoleScreenBuffer::GetConsoleFontSize](PyConsoleScreenBuffer.md#pyconsolescreenbuffergetconsolefontsize) for the font size\.
 
 #### Return Value
 Returns the index of current font and window size
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.GetLargestConsoleWindowSize
 
-[PyCOORD](#pycoord) =GetLargestConsoleWindowSize\(\)
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.GetLargestConsoleWindowSize
+
+[PyCOORD](PyCOORD.md) = GetLargestConsoleWindowSize\(\)
 Returns the largest possible size for the console's window
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.GetNumberOfConsoleInputEvents
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.GetNumberOfConsoleInputEvents
 
-
-int =GetNumberOfConsoleInputEvents\(\)
+int = GetNumberOfConsoleInputEvents\(\)
 Returns the number of unread records in the input queue
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.PeekConsoleInput
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.PeekConsoleInput
 
-
-\([PyINPUT\_RECORD](PyINPUT.md#pyinputrecord),\.\.\.\) =PeekConsoleInput\(Length\)
+\([PyINPUT\_RECORD](PyINPUT.md#pyinputrecord),\.\.\.\) = PeekConsoleInput\(Length\)
 Returns pending input records without removing them from the input queue
 
 #### Parameters
-
 
   - Length : int
 
     The number of input records to read
 
 #### Comments
-
 
 This function does not block as ReadConsoleInput does\.
  
@@ -309,29 +302,27 @@ This function does not block as ReadConsoleInput does\.
 The number of records returned may be less than the nbr requested
 
 #### Return Value
-Returns a sequence of[PyINPUT\_RECORD](PyINPUT.md#pyinputrecord) objects
+Returns a sequence of [PyINPUT\_RECORD](PyINPUT.md#pyinputrecord) objects
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.ReadConsole
 
-[PyUNICODE](#pyunicode) =ReadConsole\(NumberOfCharsToRead\)
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.ReadConsole
+
+[PyUNICODE](PyUNICODE.md) = ReadConsole\(NumberOfCharsToRead\)
 Reads characters from the console input buffer
 
 #### Parameters
-
 
   - NumberOfCharsToRead : int
 
     Characters to read
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.ReadConsoleInput
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.ReadConsoleInput
 
-
-\([PyINPUT\_RECORD](PyINPUT.md#pyinputrecord),\.\.\.\) =ReadConsoleInput\(Length\)
+\([PyINPUT\_RECORD](PyINPUT.md#pyinputrecord),\.\.\.\) = ReadConsoleInput\(Length\)
 Reads input records and removes them from the input queue
 
 #### Parameters
-
 
   - Length : int
 
@@ -339,73 +330,74 @@ Reads input records and removes them from the input queue
 
 #### Comments
 
-
 This functions blocks until at least one record is read\.
  
 
 The number of records returned may be less than the nbr requested
 
 #### Return Value
-Returns a sequence of[PyINPUT\_RECORD](PyINPUT.md#pyinputrecord) objects
-
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.ReadConsoleOutputAttribute
+Returns a sequence of [PyINPUT\_RECORD](PyINPUT.md#pyinputrecord) objects
 
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.ReadConsoleOutputAttribute
 
-\(int,\.\.\.\) =ReadConsoleOutputAttribute\(Length, ReadCoord\)
+\(int,\.\.\.\) = ReadConsoleOutputAttribute\(Length, ReadCoord
+
+\)
 Retrieves attributes from consecutive character cells
 
 #### Parameters
-
 
   - Length : int
 
     The number of attributes to read
 
-  - ReadCoord :[PyCOORD](#pycoord)
+  - ReadCoord : [PyCOORD](PyCOORD.md)
 
     The screen position from which to start reading
 
 #### Return Value
 Returns a sequence of ints containing the attributes of a range of characters
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.ReadConsoleOutputCharacter
 
-[PyUnicode](#pyunicode) =ReadConsoleOutputCharacter\(Length, ReadCoord\)
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.ReadConsoleOutputCharacter
+
+[PyUnicode](PyUnicode.md) = ReadConsoleOutputCharacter\(Length, ReadCoord
+
+\)
 Reads consecutive characters from a starting position
 
 #### Parameters
-
 
   - Length : int
 
     The number of characters positions to read
 
-  - ReadCoord :[PyCOORD](#pycoord)
+  - ReadCoord : [PyCOORD](PyCOORD.md)
 
     The screen position start reading from
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.ScrollConsoleScreenBuffer
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.ScrollConsoleScreenBuffer
 
 ScrollConsoleScreenBuffer\(ScrollRectangle, ClipRectangle, DestinationOrigin, FillCharacter, FillAttribute\)
 Scrolls a region of the display
 
 #### Parameters
 
-
-  - ScrollRectangle :[PySMALL\_RECT](PySMALL.md#pysmallrect)
+  - ScrollRectangle : [PySMALL\_RECT](PySMALL.md#pysmallrect)
 
     The region to be scrolled
 
-  - ClipRectangle :[PySMALL\_RECT](PySMALL.md#pysmallrect)
+  - ClipRectangle : [PySMALL\_RECT](PySMALL.md#pysmallrect)
 
     Rectangle that limits display area affected, can be None
 
-  - DestinationOrigin :[PyCOORD](#pycoord)
+  - DestinationOrigin : [PyCOORD](PyCOORD.md)
 
     The position to which ScrollRectangle will be moved
 
-  - FillCharacter :[PyUNICODE](#pyunicode)
+  - FillCharacter : [PyUNICODE](PyUNICODE.md)
 
     Character to fill in the area left blank by scrolling operation
 
@@ -413,18 +405,19 @@ Scrolls a region of the display
 
     Text attributes to apply to FillCharacter
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleActiveScreenBuffer
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleActiveScreenBuffer
 
 SetConsoleActiveScreenBuffer\(\)
 Sets this handle as the currently displayed screen buffer
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleCursorInfo
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleCursorInfo
 
 SetConsoleCursorInfo\(Size, Visible\)
 Sets the size and visibility of console's cursor
 
 #### Parameters
-
 
   - Size : int
 
@@ -434,41 +427,41 @@ Sets the size and visibility of console's cursor
 
     Determines if cursor is visible
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleCursorPosition
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleCursorPosition
 
 SetConsoleCursorPosition\(CursorPosition\)
 Sets the console screen buffer's cursor position
 
 #### Parameters
 
-
-  - CursorPosition :[PyCOORD](#pycoord)
+  - CursorPosition : [PyCOORD](PyCOORD.md)
 
     A PyCOORD containing the new cursor position
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleDisplayMode
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleDisplayMode
 
 SetConsoleDisplayMode\(Flags, NewScreenBufferDimensions\)
 Sets the display mode of the console buffer
 
 #### Parameters
 
-
   - Flags : int
 
     CONSOLE\_FULLSCREEN\_MODE or CONSOLE\_WINDOWED\_MODE
 
-  - NewScreenBufferDimensions :[PyCOORD](#pycoord)
+  - NewScreenBufferDimensions : [PyCOORD](PyCOORD.md)
 
     New size of the screen buffer in characters
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleFont
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleFont
 
 SetConsoleFont\(Font\)
 Changes the font used by the screen buffer
 
 #### Parameters
-
 
   - Font : int
 
@@ -476,143 +469,138 @@ Changes the font used by the screen buffer
 
 #### Comments
 
-
 Function is not documented on MSDN
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleMode
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleMode
 
 SetConsoleMode\(Mode\)
 Sets the input or output mode of the console buffer
 
 #### Parameters
 
-
   - Mode : int
 
     Combination of ENABLE\_\*\_INPUT or ENABLE\_\*\_OUTPUT constants
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleScreenBufferSize
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleScreenBufferSize
 
 SetConsoleScreenBufferSize\(Size\)
 Sets the size of the console screen buffer
 
 #### Parameters
 
-
-  - Size :[PyCOORD](#pycoord)
+  - Size : [PyCOORD](PyCOORD.md)
 
     COORD object containing the new dimensions
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleTextAttribute
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleTextAttribute
 
 SetConsoleTextAttribute\(Attributes\)
 Sets character attributes for subsequent write operations
 
 #### Parameters
 
-
   - Attributes : int
 
     Attributes to be set, combination of FOREGROUND\_\*, BACKGROUND\_\*, and COMMON\_LVB\_\* constants
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetConsoleWindowInfo
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetConsoleWindowInfo
 
 SetConsoleWindowInfo\(Absolute, ConsoleWindow\)
 Changes size and position of a console's window
 
 #### Parameters
 
-
   - Absolute : boolean
 
     If False, coordinates are relative to current position
 
-  - ConsoleWindow :[PySMALL\_RECT](PySMALL.md#pysmallrect)
+  - ConsoleWindow : [PySMALL\_RECT](PySMALL.md#pysmallrect)
 
     A SMALL\_RECT containing the new window coordinates
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.SetStdHandle
+
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.SetStdHandle
 
 SetStdHandle\(StdHandle\)
 Replaces one of calling process's standard handles with this handle
 
 #### Parameters
 
-
   - StdHandle : int
 
     Specifies handle to be replaced - STD\_INPUT\_HANDLE, STD\_OUTPUT\_HANDLE, or STD\_ERROR\_HANDLE
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.WriteConsole
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.WriteConsole
 
-
-int =WriteConsole\(Buffer\)
+int = WriteConsole\(Buffer\)
 Writes characters at current cursor position
 
 #### Parameters
 
-
-  - Buffer :[PyUNICODE](#pyunicode)
+  - Buffer : [PyUNICODE](PyUNICODE.md)
 
     String or Unicode to be written to console
 
 #### Return Value
 Returns the number of characters written
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.WriteConsoleInput
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.WriteConsoleInput
 
-
-int =WriteConsoleInput\(Buffer\)
+int = WriteConsoleInput\(Buffer\)
 Places input records in the console's input queue
 
 #### Parameters
 
-
   - Buffer : \([PyINPUT\_RECORD](PyINPUT.md#pyinputrecord),\.\.\.\)
 
-    A sequence of[PyINPUT\_RECORD](PyINPUT.md#pyinputrecord) objects
+    A sequence of [PyINPUT\_RECORD](PyINPUT.md#pyinputrecord) objects
 
 #### Return Value
 Returns the number of records written
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.WriteConsoleOutputAttribute
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.WriteConsoleOutputAttribute
 
+int = WriteConsoleOutputAttribute\(Attributes, WriteCoord
 
-int =WriteConsoleOutputAttribute\(Attributes, WriteCoord\)
+\)
 Sets the attributes of a range of character cells
 
 #### Parameters
-
 
   - Attributes : \(int,\.\.\.\)
 
     A sequence of ints containing the attributes to be set
 
-  - WriteCoord :[PyCOORD](#pycoord)
+  - WriteCoord : [PyCOORD](PyCOORD.md)
 
     The screen position at which to start writing
 
 #### Return Value
 Returns the number of attributes set
 
-## [PyConsoleScreenBuffer](#pyconsolescreenbuffer)\.WriteConsoleOutputCharacter
 
+## [PyConsoleScreenBuffer](PyConsoleScreenBuffer.md#pyconsolescreenbuffer)\.WriteConsoleOutputCharacter
 
+int = WriteConsoleOutputCharacter\(Characters, WriteCoord
 
-int =WriteConsoleOutputCharacter\(Characters, WriteCoord\)
+\)
 Writes a string of characters at a specified position
 
 #### Parameters
 
-
-  - Characters :[PyUNICODE](#pyunicode)
+  - Characters : [PyUNICODE](PyUNICODE.md)
 
     Characters to be written
 
-  - WriteCoord :[PyCOORD](#pycoord)
+  - WriteCoord : [PyCOORD](PyCOORD.md)
 
     The screen position at which to start writing
 

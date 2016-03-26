@@ -1,12 +1,12 @@
 # _winxptheme
 
+
 ## Module \_winxptheme
-
-
 
 A module which provides an interface to the Windows XP 
 
-'theme' API\.
+'theme' API\. 
+
 Note that this module will fail to load on 
 
 non-Windows XP versions\.  Generally you should use the 
@@ -23,12 +23,12 @@ when XP is used\.  See winxptheme\.py for more details\.
 
 #### Methods
 
-
   - [OpenThemeData](_winxptheme.md#_winxpthemeopenthemedata)
 
     Open the theme data for the specified HWND and 
 
-semi-colon separated list of class names\.
+semi-colon separated list of class names\. 
+
 OpenThemeData\(\) will try each class name, one at 
 
 a time, and use the first matching theme info 
@@ -37,10 +37,11 @@ found\.  If a match is found, a theme handle
 
 to the data is returned\.  If no match is found, 
 
-a "NULL" handle is returned\.
+a "NULL" handle is returned\. 
+
 When the window is destroyed or a WM\_THEMECHANGED 
 
-msg is received,[\_winxptheme::CloseThemeData](_winxptheme.md#_winxpthemeclosethemedata) should be 
+msg is received, [\_winxptheme::CloseThemeData](_winxptheme.md#_winxpthemeclosethemedata) should be 
 
 called to close the theme handle\.&nbsp;
 
@@ -88,8 +89,9 @@ specified background based on the "pContentRect"\.&nbsp;
 
     Can be used to test if a system theme is active 
 
-for the current user session\.
-use the API[\_winxptheme::IsAppThemed](_winxptheme.md#_winxpthemeisappthemed) to test if a theme is 
+for the current user session\. 
+
+use the API [\_winxptheme::IsAppThemed](_winxptheme.md#_winxpthemeisappthemed) to test if a theme is 
 
 active for the calling process\.&nbsp;
 
@@ -147,7 +149,8 @@ canonical color scheme name \(not the display name\) and the
 
 canonical size name \(not the display name\)\.&nbsp;
 
-## [\_winxptheme](#_winxptheme)\.CloseThemeData
+
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.CloseThemeData
 
 CloseThemeData\(hTheme\)
 Closes the theme data handle\.  This should be done 
@@ -162,14 +165,14 @@ handle\)\.
 
 #### Parameters
 
-
-  - hTheme :[PyHTHEME](#pyhtheme)
+  - hTheme : [PyHTHEME](PyHTHEME.md)
 
     Open theme data handle \(returned from prior call 
 
 to OpenThemeData\(\) API\)\.
 
-## [\_winxptheme](#_winxptheme)\.DrawThemeBackground
+
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.DrawThemeBackground
 
 DrawThemeBackground\(hTheme, hdc, iPartId, iStateId, pRect, pClipRect\)
 Draws the theme-specified border and fill for 
@@ -182,8 +185,7 @@ other image description\.
 
 #### Parameters
 
-
-  - hTheme :[PyHTHEME](#pyhtheme)
+  - hTheme : [PyHTHEME](PyHTHEME.md)
 
     theme data handle
 
@@ -207,7 +209,8 @@ other image description\.
 
     optional clipping rect \(don't draw outside it\)
 
-## [\_winxptheme](#_winxptheme)\.DrawThemeText
+
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.DrawThemeText
 
 DrawThemeText\(hTheme, hdc, iPartId, iStateId, pszText, dwCharCount, dwTextFlags, dwTextFlags2, pRect\)
 Draws the text using the theme-specified 
@@ -216,8 +219,7 @@ color and font for the "iPartId" and "iStateId"\.
 
 #### Parameters
 
-
-  - hTheme :[PyHTHEME](#pyhtheme)
+  - hTheme : [PyHTHEME](PyHTHEME.md)
 
     theme data handle
 
@@ -253,23 +255,36 @@ color and font for the "iPartId" and "iStateId"\.
 
     defines the size/location of the part
 
+
 ## ETDT\_DISABLE
+
 const \_winxptheme\.ETDT\_DISABLE;
 
 
+
+
 ## ETDT\_ENABLE
+
 const \_winxptheme\.ETDT\_ENABLE;
 
 
+
+
 ## ETDT\_ENABLETAB
+
 const \_winxptheme\.ETDT\_ENABLETAB;
 
 
+
+
 ## ETDT\_USETABTEXTURE
+
 const \_winxptheme\.ETDT\_USETABTEXTURE;
 
 
-## [\_winxptheme](#_winxptheme)\.EnableThemeDialogTexture
+
+
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.EnableThemeDialogTexture
 
 EnableThemeDialogTexture\(hdlg, dwFlags\)
 Enables/disables dialog background theme\. 
@@ -286,20 +301,22 @@ background texturing\.
 
 #### Parameters
 
-
   - hdlg : int
 
     The window handle of the target dialog
 
   - dwFlags : int
 
-    ETDT\_ENABLE to enable the theme-defined dialog background texturing,
-ETDT\_DISABLE to disable background texturing,
+    ETDT\_ENABLE to enable the theme-defined dialog background texturing, 
+
+ETDT\_DISABLE to disable background texturing, 
+
 ETDT\_ENABLETAB to enable the theme-defined background 
 
 texturing using the Tab texture
 
-## [\_winxptheme](#_winxptheme)\.EnableTheming
+
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.EnableTheming
 
 EnableTheming\(fEnable\)
 Enables or disables themeing for the current user 
@@ -308,45 +325,49 @@ in the current and future sessions\.
 
 #### Parameters
 
-
   - fEnable : bool
 
-    if False, disable theming & turn themes off\.
+    if False, disable theming & turn themes off\. 
+
 if True, enable themeing and, if user previously 
 
 had a theme active, make it active now\.
 
-## [\_winxptheme](#_winxptheme)\.GetCurrentThemeName
 
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.GetCurrentThemeName
 
-
-\(string, string, string\) =GetCurrentThemeName\(\)
+\(string, string, string\) = GetCurrentThemeName\(\)
 Get the name of the current theme in-use, the 
 
 canonical color scheme name \(not the display name\) and the 
 
 canonical size name \(not the display name\)\.
 
-## [\_winxptheme](#_winxptheme)\.GetThemeAppProperties
 
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.GetThemeAppProperties
 
-
-int =GetThemeAppProperties\(\)
+int = GetThemeAppProperties\(\)
 Returns the app property flags that control theming
 
-## [\_winxptheme](#_winxptheme)\.GetThemeBackgroundContentRect
 
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.GetThemeBackgroundContentRect
 
+rect = GetThemeBackgroundContentRect\(hTheme, hdc
 
-rect =GetThemeBackgroundContentRect\(hTheme, hdc, iPartId, iStateId, pBoundingRect\)
+, iPartId
+
+, iStateId
+
+, pBoundingRect
+
+\)
 Gets the size of the content for the theme-defined 
 
 background\.  This is usually the area inside the borders or Margins\.
 
 #### Parameters
 
-
-  - hTheme :[PyHTHEME](#pyhtheme)
+  - hTheme : [PyHTHEME](PyHTHEME.md)
 
     theme data handle
 
@@ -369,19 +390,25 @@ background\.  This is usually the area inside the borders or Margins\.
 #### Return Value
 The result is a rect with the content area
 
-## [\_winxptheme](#_winxptheme)\.GetThemeBackgroundExtent
 
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.GetThemeBackgroundExtent
 
+rect = GetThemeBackgroundExtent\(hTheme, hdc
 
-rect =GetThemeBackgroundExtent\(hTheme, hdc, iPartId, iStateId, pContentRect\)
+, iPartId
+
+, iStateId
+
+, pContentRect
+
+\)
 Calculates the size/location of the theme- 
 
 specified background based on the "pContentRect"\.
 
 #### Parameters
 
-
-  - hTheme :[PyHTHEME](#pyhtheme)
+  - hTheme : [PyHTHEME](PyHTHEME.md)
 
     theme data handle
 
@@ -404,61 +431,62 @@ specified background based on the "pContentRect"\.
 #### Return Value
 Result is a rect with the overall size/location of part
 
-## [\_winxptheme](#_winxptheme)\.GetWindowTheme
 
-[PyHTHEME](#pyhtheme) =GetWindowTheme\(hwnd\)
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.GetWindowTheme
+
+[PyHTHEME](PyHTHEME.md) = GetWindowTheme\(hwnd\)
 If window is themed, returns its most recent 
 
 HTHEME from OpenThemeData\(\) - otherwise, returns NULL\.
 
 #### Parameters
 
-
   - hwnd : int
 
     The window to get the HTHEME of
 
-## [\_winxptheme](#_winxptheme)\.IsAppThemed
 
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.IsAppThemed
 
-
-bool =IsAppThemed\(\)
+bool = IsAppThemed\(\)
 Returns True if a theme is active and available to 
 
 the current process
 
-## [\_winxptheme](#_winxptheme)\.IsThemeActive
 
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.IsThemeActive
 
-
-bool =IsThemeActive\(\)
+bool = IsThemeActive\(\)
 Can be used to test if a system theme is active 
 
-for the current user session\.
-use the API[\_winxptheme::IsAppThemed](_winxptheme.md#_winxpthemeisappthemed) to test if a theme is 
+for the current user session\. 
+
+use the API [\_winxptheme::IsAppThemed](_winxptheme.md#_winxpthemeisappthemed) to test if a theme is 
 
 active for the calling process\.
 
-## [\_winxptheme](#_winxptheme)\.IsThemeDialogTextureEnabled
 
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.IsThemeDialogTextureEnabled
 
-
-bool =IsThemeDialogTextureEnabled\(hdlg\)
+bool = IsThemeDialogTextureEnabled\(hdlg\)
 Reports whether the dialog supports background texturing\.
 
 #### Parameters
-
 
   - hdlg : int
 
     The window handle of the target dialog
 
-## [\_winxptheme](#_winxptheme)\.OpenThemeData
 
-[PyHTHEME](#pyhtheme) =OpenThemeData\(hwnd, pszClassList\)
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.OpenThemeData
+
+[PyHTHEME](PyHTHEME.md) = OpenThemeData\(hwnd, pszClassList
+
+\)
 Open the theme data for the specified HWND and 
 
-semi-colon separated list of class names\.
+semi-colon separated list of class names\. 
+
 OpenThemeData\(\) will try each class name, one at 
 
 a time, and use the first matching theme info 
@@ -467,15 +495,15 @@ found\.  If a match is found, a theme handle
 
 to the data is returned\.  If no match is found, 
 
-a "NULL" handle is returned\.
+a "NULL" handle is returned\. 
+
 When the window is destroyed or a WM\_THEMECHANGED 
 
-msg is received,[\_winxptheme::CloseThemeData](_winxptheme.md#_winxpthemeclosethemedata) should be 
+msg is received, [\_winxptheme::CloseThemeData](_winxptheme.md#_winxpthemeclosethemedata) should be 
 
 called to close the theme handle\.
 
 #### Parameters
-
 
   - hwnd : int
 
@@ -509,7 +537,8 @@ that will be used\.  Otherwise, we fall back on
 
 the normal Button entry\.
 
-## [\_winxptheme](#_winxptheme)\.SetWindowTheme
+
+## [\_winxptheme](_winxptheme.md#_winxptheme)\.SetWindowTheme
 
 SetWindowTheme\(hwnd, pszSubAppName, pszSubIdList\)
 Rredirects an existing Window to use a different 
@@ -517,7 +546,6 @@ Rredirects an existing Window to use a different
 section of the current theme information than its class normally asks for\.
 
 #### Parameters
-
 
   - hwnd : int
 

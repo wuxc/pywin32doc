@@ -1,13 +1,11 @@
 # PyICategoryProvider
 
+
 ## PyICategoryProvider Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [CanCategorizeOnSCID](PyICategoryProvider.md#pyicategoryprovidercancategorizeonscid)
 
@@ -33,69 +31,70 @@ Description of the interface
 
     Description of CreateCategory&nbsp;
 
-## [PyICategoryProvider](#pyicategoryprovider)\.CanCategorizeOnSCID
+
+## [PyICategoryProvider](PyICategoryProvider.md#pyicategoryprovider)\.CanCategorizeOnSCID
 
 CanCategorizeOnSCID\(pscid\)
 Description of CanCategorizeOnSCID\.
 
 #### Parameters
 
-
-  - pscid :SHCOLUMNID
+  - pscid : SHCOLUMNID
 
     Description for pscid
 
-## [PyICategoryProvider](#pyicategoryprovider)\.CreateCategory
+
+## [PyICategoryProvider](PyICategoryProvider.md#pyicategoryprovider)\.CreateCategory
 
 CreateCategory\(guid, riid\)
 Description of CreateCategory\.
 
 #### Parameters
 
-
-  - guid :[PyIID](#pyiid)
+  - guid : [PyIID](PyIID.md)
 
     Description for pguid
 
-  - riid :[PyIID](#pyiid)
+  - riid : [PyIID](PyIID.md)
 
     Description for riid
 
-## [PyICategoryProvider](#pyicategoryprovider)\.EnumCategories
+
+## [PyICategoryProvider](PyICategoryProvider.md#pyicategoryprovider)\.EnumCategories
 
 EnumCategories\(\)
 Description of EnumCategories\.
 
-## [PyICategoryProvider](#pyicategoryprovider)\.GetCategoryForSCID
+
+## [PyICategoryProvider](PyICategoryProvider.md#pyicategoryprovider)\.GetCategoryForSCID
 
 GetCategoryForSCID\(pscid\)
 Description of GetCategoryForSCID\.
 
 #### Parameters
 
-
-  - pscid :SHCOLUMNID
+  - pscid : SHCOLUMNID
 
     Description for pscid
 
-## [PyICategoryProvider](#pyicategoryprovider)\.GetCategoryName
+
+## [PyICategoryProvider](PyICategoryProvider.md#pyicategoryprovider)\.GetCategoryName
 
 GetCategoryName\(guid\)
 Description of GetCategoryName\.
 
 #### Parameters
 
-
-  - guid :[PyIID](#pyiid)
+  - guid : [PyIID](PyIID.md)
 
     Description for pguid
 
 #### Comments
 
-
 The buffer is always 1024 chars long
 
-## [PyICategoryProvider](#pyicategoryprovider)\.GetDefaultCategory
+
+## [PyICategoryProvider](PyICategoryProvider.md#pyicategoryprovider)\.GetDefaultCategory
 
 GetDefaultCategory\(\)
 Description of GetDefaultCategory\.

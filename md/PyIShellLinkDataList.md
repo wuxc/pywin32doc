@@ -1,15 +1,13 @@
 # PyIShellLinkDataList
 
+
 ## PyIShellLinkDataList Object
 
-
-
-Interface to a link's extra data blocks\. Can be obtained from[PyIShellLink](#pyishelllink) 
+Interface to a link's extra data blocks\. Can be obtained from [PyIShellLink](PyIShellLink.md) 
 
 by calling QueryInterface with IID\_IShellLinkDataList
 
 #### Methods
-
 
   - [AddDataBlock](PyIShellLinkDataList.md#pyishelllinkdatalistadddatablock)
 
@@ -31,13 +29,13 @@ by calling QueryInterface with IID\_IShellLinkDataList
 
     Sets the flags indicating which data blocks are present&nbsp;
 
-## [PyIShellLinkDataList](#pyishelllinkdatalist)\.AddDataBlock
+
+## [PyIShellLinkDataList](PyIShellLinkDataList.md#pyishelllinkdatalist)\.AddDataBlock
 
 AddDataBlock\(DataBlock\)
 Inserts a data block into the link
 
 #### Parameters
-
 
   - DataBlock : dict
 
@@ -45,18 +43,17 @@ Inserts a data block into the link
 
 #### Comments
 
+Input should be one of [NT\_CONSOLE\_PROPS](NT.md#ntconsole_props), [NT\_FE\_CONSOLE\_PROPS](NT.md#ntfe_console_props), [EXP\_SPECIAL\_FOLDER](EXP.md#expspecial_folder), 
 
-Input should be one of[NT\_CONSOLE\_PROPS](NT.md#ntconsole_props),[NT\_FE\_CONSOLE\_PROPS](NT.md#ntfe_console_props),[EXP\_SPECIAL\_FOLDER](EXP.md#expspecial_folder),[EXP\_DARWIN\_LINK](EXP.md#expdarwin_link), or[EXP\_SZ\_LINK](EXP.md#expsz_link)\.  Expected form is indicated by the Signature member\.
-
-## [PyIShellLinkDataList](#pyishelllinkdatalist)\.CopyDataBlock
-
+[EXP\_DARWIN\_LINK](EXP.md#expdarwin_link), or [EXP\_SZ\_LINK](EXP.md#expsz_link)\.  Expected form is indicated by the Signature member\.
 
 
-dict =CopyDataBlock\(Sig\)
+## [PyIShellLinkDataList](PyIShellLinkDataList.md#pyishelllinkdatalist)\.CopyDataBlock
+
+dict = CopyDataBlock\(Sig\)
 Retrieves the specified data block from the link
 
 #### Parameters
-
 
   - Sig : int
 
@@ -65,35 +62,34 @@ Retrieves the specified data block from the link
 #### Return Value
 The returned dictionary will contain different information depending on the value passed in
 
-## [PyIShellLinkDataList](#pyishelllinkdatalist)\.GetFlags
 
+## [PyIShellLinkDataList](PyIShellLinkDataList.md#pyishelllinkdatalist)\.GetFlags
 
-
-int =GetFlags\(\)
+int = GetFlags\(\)
 Retrieves the link's flags
 
 #### Return Value
 Returns combination of shellcon\.SLDF\_\* flags
 
-## [PyIShellLinkDataList](#pyishelllinkdatalist)\.RemoveDataBlock
+
+## [PyIShellLinkDataList](PyIShellLinkDataList.md#pyishelllinkdatalist)\.RemoveDataBlock
 
 RemoveDataBlock\(Sig\)
 Deletes one of the link's data blocks
 
 #### Parameters
 
-
   - Sig : int
 
     Identifies which block is to be removed, one of shellcon\.\*\_SIG constants
 
-## [PyIShellLinkDataList](#pyishelllinkdatalist)\.SetFlags
+
+## [PyIShellLinkDataList](PyIShellLinkDataList.md#pyishelllinkdatalist)\.SetFlags
 
 SetFlags\(Flags\)
 Sets the flags indicating which data blocks are present
 
 #### Parameters
-
 
   - Flags : int
 

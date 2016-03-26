@@ -1,13 +1,11 @@
 # PyIOleInPlaceUIWindow
 
+
 ## PyIOleInPlaceUIWindow Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetBorder](PyIOleInPlaceUIWindow.md#pyioleinplaceuiwindowgetborder)
 
@@ -25,46 +23,47 @@ Description of the interface
 
     Description of SetActiveObject&nbsp;
 
-## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.GetBorder
+
+## [PyIOleInPlaceUIWindow](PyIOleInPlaceUIWindow.md#pyioleinplaceuiwindow)\.GetBorder
 
 GetBorder\(\)
 Description of GetBorder\.
 
-## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.RequestBorderSpace
+
+## [PyIOleInPlaceUIWindow](PyIOleInPlaceUIWindow.md#pyioleinplaceuiwindow)\.RequestBorderSpace
 
 RequestBorderSpace\(borderwidths\)
 Description of RequestBorderSpace\.
 
 #### Parameters
 
-
   - borderwidths : \(int, int, int, int\)
 
     Description for pborderwidths
 
-## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.SetActiveObject
+
+## [PyIOleInPlaceUIWindow](PyIOleInPlaceUIWindow.md#pyioleinplaceuiwindow)\.SetActiveObject
 
 SetActiveObject\(pActiveObject, pszObjName\)
 Description of SetActiveObject\.
 
 #### Parameters
 
-
-  - pActiveObject :[PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)
+  - pActiveObject : [PyIOleInPlaceActiveObject](PyIOleInPlaceActiveObject.md)
 
     Description for pActiveObject
 
-  - pszObjName :unicode
+  - pszObjName : unicode
 
     Description for pszObjName
 
-## [PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)\.SetBorderSpace
+
+## [PyIOleInPlaceUIWindow](PyIOleInPlaceUIWindow.md#pyioleinplaceuiwindow)\.SetBorderSpace
 
 SetBorderSpace\(borderwidths\)
 Description of SetBorderSpace\.
 
 #### Parameters
-
 
   - borderwidths : \(int, int, int, int\)
 

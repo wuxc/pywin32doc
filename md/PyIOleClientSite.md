@@ -1,13 +1,11 @@
 # PyIOleClientSite
 
+
 ## PyIOleClientSite Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [SaveObject](PyIOleClientSite.md#pyioleclientsitesaveobject)
 
@@ -33,18 +31,19 @@ Description of the interface
 
     Description of RequestNewObjectLayout&nbsp;
 
-## [PyIOleClientSite](#pyioleclientsite)\.GetContainer
+
+## [PyIOleClientSite](PyIOleClientSite.md#pyioleclientsite)\.GetContainer
 
 GetContainer\(\)
 Description of GetContainer\.
 
-## [PyIOleClientSite](#pyioleclientsite)\.GetMoniker
+
+## [PyIOleClientSite](PyIOleClientSite.md#pyioleclientsite)\.GetMoniker
 
 GetMoniker\(dwAssign, dwWhichMoniker\)
 Description of GetMoniker\.
 
 #### Parameters
-
 
   - dwAssign : int
 
@@ -54,29 +53,32 @@ Description of GetMoniker\.
 
     Description for dwWhichMoniker
 
-## [PyIOleClientSite](#pyioleclientsite)\.OnShowWindow
+
+## [PyIOleClientSite](PyIOleClientSite.md#pyioleclientsite)\.OnShowWindow
 
 OnShowWindow\(fShow\)
 Description of OnShowWindow\.
 
 #### Parameters
 
-
   - fShow : int
 
     Description for fShow
 
-## [PyIOleClientSite](#pyioleclientsite)\.RequestNewObjectLayout
+
+## [PyIOleClientSite](PyIOleClientSite.md#pyioleclientsite)\.RequestNewObjectLayout
 
 RequestNewObjectLayout\(\)
 Description of RequestNewObjectLayout\.
 
-## [PyIOleClientSite](#pyioleclientsite)\.SaveObject
+
+## [PyIOleClientSite](PyIOleClientSite.md#pyioleclientsite)\.SaveObject
 
 SaveObject\(\)
 Description of SaveObject\.
 
-## [PyIOleClientSite](#pyioleclientsite)\.ShowObject
+
+## [PyIOleClientSite](PyIOleClientSite.md#pyioleclientsite)\.ShowObject
 
 ShowObject\(\)
 Description of ShowObject\.

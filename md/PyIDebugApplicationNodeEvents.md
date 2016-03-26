@@ -1,13 +1,11 @@
 # PyIDebugApplicationNodeEvents
 
+
 ## PyIDebugApplicationNodeEvents Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [onAddChild](PyIDebugApplicationNodeEvents.md#pyidebugapplicationnodeeventsonaddchild)
 
@@ -25,43 +23,44 @@ Description of the interface
 
     Description of onAttach&nbsp;
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onAddChild
+
+## [PyIDebugApplicationNodeEvents](PyIDebugApplicationNodeEvents.md#pyidebugapplicationnodeevents)\.onAddChild
 
 onAddChild\(prddpChild\)
 Description of onAddChild\.
 
 #### Parameters
 
-
-  - prddpChild :[PyIDebugApplicationNode](#pyidebugapplicationnode)
+  - prddpChild : [PyIDebugApplicationNode](PyIDebugApplicationNode.md)
 
     Description for prddpChild
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onAttach
+
+## [PyIDebugApplicationNodeEvents](PyIDebugApplicationNodeEvents.md#pyidebugapplicationnodeevents)\.onAttach
 
 onAttach\(prddpParent\)
 Description of onAttach\.
 
 #### Parameters
 
-
-  - prddpParent :[PyIDebugApplicationNode](#pyidebugapplicationnode)
+  - prddpParent : [PyIDebugApplicationNode](PyIDebugApplicationNode.md)
 
     Description for prddpParent
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onDetach
+
+## [PyIDebugApplicationNodeEvents](PyIDebugApplicationNodeEvents.md#pyidebugapplicationnodeevents)\.onDetach
 
 onDetach\(\)
 Description of onDetach\.
 
-## [PyIDebugApplicationNodeEvents](#pyidebugapplicationnodeevents)\.onRemoveChild
+
+## [PyIDebugApplicationNodeEvents](PyIDebugApplicationNodeEvents.md#pyidebugapplicationnodeevents)\.onRemoveChild
 
 onRemoveChild\(prddpChild\)
 Description of onRemoveChild\.
 
 #### Parameters
 
-
-  - prddpChild :[PyIDebugApplicationNode](#pyidebugapplicationnode)
+  - prddpChild : [PyIDebugApplicationNode](PyIDebugApplicationNode.md)
 
     Description for prddpChild

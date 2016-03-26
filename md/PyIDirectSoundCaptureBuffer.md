@@ -1,13 +1,11 @@
 # PyIDirectSoundCaptureBuffer
 
+
 ## PyIDirectSoundCaptureBuffer Object
-
-
 
 The methods of the IDirectSoundCaptureBuffer interface are used to manipulate sound capture buffers\.
 
 #### Methods
-
 
   - [Initialize](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebufferinitialize)
 
@@ -41,38 +39,43 @@ The methods of the IDirectSoundCaptureBuffer interface are used to manipulate so
 
     Description of Update\.&nbsp;
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetCaps
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.GetCaps
 
 GetCaps\(\)
 Returns the capabilities of the DirectSound Capture Buffer\.
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetCurrentPosition
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.GetCurrentPosition
 
 GetCurrentPosition\(\)
 Returns a tuple of the current capture and read position in the buffer\. The capture position is ahead of the read position\. These positions are not always identical due to possible buffering of captured data either on the physical device or in the host\. The data after the read position up to and including the capture position is not necessarily valid data\.
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetFormat
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.GetFormat
 
 GetFormat\(\)
 Retrieves the current format of the sound capture buffer as a WAVEFORMATEX object\.
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.GetStatus
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.GetStatus
 
 GetStatus\(\)
 Retrieves the current status of the sound capture buffer\.
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Initialize
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.Initialize
 
 Initialize\(\)
 Not normally used\. Used IDirectSoundCapture\.CreateCaptureBuffer instead\.
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Start
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.Start
 
 Start\(dwFlags\)
 The PyIDirectSoundCaptureBuffer::Start method puts the capture buffer into the capture state and begins capturing data into the buffer\. If the capture buffer is already in the capture state then the method has no effect\.
 
 #### Parameters
-
 
   - dwFlags=0 : int
 
@@ -80,18 +83,19 @@ The PyIDirectSoundCaptureBuffer::Start method puts the capture buffer into the c
 
 DSCBSTART\_LOOPING
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Stop
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.Stop
 
 Stop\(\)
 The IDirectSoundCaptureBuffer::Stop method puts the capture buffer into the "stop" state and stops capturing data\. If the capture buffer is already in the stop state then the method has no effect\.
 
-## [PyIDirectSoundCaptureBuffer](#pyidirectsoundcapturebuffer)\.Update
+
+## [PyIDirectSoundCaptureBuffer](PyIDirectSoundCaptureBuffer.md#pyidirectsoundcapturebuffer)\.Update
 
 Update\(dwReadCursor, dwReadBytes, dwFlags\)
 Retrieve data from the capture buffer\.
 
 #### Parameters
-
 
   - dwReadCursor : int
 

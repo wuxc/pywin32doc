@@ -1,10 +1,9 @@
 # ImportCallback
 
+
 ## ImportCallback Object
 
-
-
-User-defined callback function used with[win32file::WriteEncryptedFileRaw](win32file.md#win32filewriteencryptedfileraw)
+User-defined callback function used with [win32file::WriteEncryptedFileRaw](win32file.md#win32filewriteencryptedfileraw)
  
 
 Function is called with 3 parameters: \(Data, CallbackContext, Length\)

@@ -1,13 +1,11 @@
 # PyCView
 
+
 ## PyCView Object
 
-
-
-A class which implements a generic CView\.  Derived from a[PyCWnd](#pycwnd) object\.
+A class which implements a generic CView\.  Derived from a [PyCWnd](PyCWnd.md) object\.
 
 #### Methods
-
 
   - [CreateWindow](PyCView.md#pycviewcreatewindow)
 
@@ -54,15 +52,16 @@ A class which implements a generic CView\.  Derived from a[PyCWnd](#pycwnd) obje
     Calls the underlying MFC OnEndPrinting method\.&nbsp;
 
 
-## [PyCView](#pycview)\.CreateWindow
+
+
+## [PyCView](PyCView.md#pycview)\.CreateWindow
 
 CreateWindow\(parent, id, style, rect\)
 Creates the window for a view\.
 
 #### Parameters
 
-
-  - parent :[PyCWnd](#pycwnd)
+  - parent : [PyCWnd](PyCWnd.md)
 
     The parent window \(usually a frame\)
 
@@ -78,74 +77,78 @@ Creates the window for a view\.
 
     The default position of the window\.
 
-## [PyCView](#pycview)\.DoPreparePrinting
 
+## [PyCView](PyCView.md#pycview)\.DoPreparePrinting
 
-
-int =DoPreparePrinting\(\)
+int = DoPreparePrinting\(\)
 Invoke the Print dialog box and create a printer device context\.
 
 #### Comments
 
+This function is usually called from [PyCView\.OnPreparePrinting](PyCView.md#pycviewonprepareprinting_virtual) virtual method
 
-This function is usually called from[PyCView\.OnPreparePrinting](PyCView.md#pycviewonprepareprinting_virtual) virtual method
 
-## [PyCView](#pycview)\.GetDocument
+## [PyCView](PyCView.md#pycview)\.GetDocument
 
-[PyCDocument](#pycdocument) =GetDocument\(\)
+[PyCDocument](PyCDocument.md) = GetDocument\(\)
 Returns the document for a view\.
 
-## [PyCView](#pycview)\.OnActivateView
 
+## [PyCView](PyCView.md#pycview)\.OnActivateView
 
+int = OnActivateView\(activate, activateView
 
-int =OnActivateView\(activate, activateView, DeactivateView\)
+, DeactivateView
+
+\)
 Calls the underlying MFC OnActivateView method\.
 
 #### Parameters
-
 
   - activate : int
 
     Indicates whether the view is being activated or deactivated\.
 
-  - activateView :[PyCView](#pycview)
+  - activateView : [PyCView](PyCView.md#pycview)
 
     The view object that is being activated\.
 
-  - DeactivateView :[PyCView](#pycview)
+  - DeactivateView : [PyCView](PyCView.md#pycview)
 
     The view object that is being deactivated\.
 
 #### See Also
 
-
   - [PyCView\.OnActivateView](PyCView.md#pycviewonactivateview_virtual) virtual method
 
-## [PyCView\.OnActivateView](#pycview) Virtual
 
-OnActivateView\(bActivate, activateView, DeactivateView\)
+## [PyCView\.OnActivateView](PyCView.md#pycview) Virtual
+
+OnActivateView\(bActivate, activateView
+
+, DeactivateView
+
+\)
 Called by the framework when a view is activated or deactivated\.
 
 #### Parameters
-
 
   - bActivate : int
 
     Indicates whether the view is being activated or deactivated\.
 
-  - activateView :[PyCWnd](#pycwnd)
+  - activateView : [PyCWnd](PyCWnd.md)
 
     The view object that is being activated\.
 
-  - DeactivateView :[PyCWnd](#pycwnd)
+  - DeactivateView : [PyCWnd](PyCWnd.md)
 
     The view object that is being deactivated\.
 
 #### Comments
 
+If a handler exists, the base MFC implementation is not called\. 
 
-If a handler exists, the base MFC implementation is not called\.
 The activateView and deactiveView parameters are the same objects if the 
 
 application's main frame window is activated with no change in the 
@@ -160,134 +163,139 @@ This allows a view to re-realize its palette, if needed\.
 
 #### See Also
 
-
   - [PyCView::OnActivateView](PyCView.md#pycviewonactivateview)
 
-## [PyCView](#pycview)\.OnBeginPrinting
+
+## [PyCView](PyCView.md#pycview)\.OnBeginPrinting
 
 OnBeginPrinting\(\)
 Calls the underlying MFC OnBeginPrinting method\.
 
 #### See Also
 
-
   - [PyCView\.OnBeginPrinting](PyCView.md#pycviewonbeginprinting_virtual) virtual method
 
-## [PyCView\.OnBeginPrinting](#pycview) Virtual
 
-OnBeginPrinting\(dc, pInfo\)
+## [PyCView\.OnBeginPrinting](PyCView.md#pycview) Virtual
+
+OnBeginPrinting\(dc, pInfo
+
+\)
 Called by the framework at the beginning of a print or print preview job, after OnPreparePrinting has been called\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The DC object\.
 
-  - pInfo :[PyCPrintInfo](#pycprintinfo)
+  - pInfo : [PyCPrintInfo](PyCPrintInfo.md)
 
     The print info object\.
 
 #### See Also
 
-
   - [PyCView::OnBeginPrinting](PyCView.md#pycviewonbeginprinting)
 
-## [PyCView\.OnDraw](#pycview) Virtual
+
+## [PyCView\.OnDraw](PyCView.md#pycview) Virtual
 
 OnDraw\(dc\)
 Called when the view should be drawn\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The DC object\.
 
 #### See Also
 
-
   - PyCView::OnDraw
 
-## [PyCView](#pycview)\.OnEndPrinting
+
+
+
+## [PyCView](PyCView.md#pycview)\.OnEndPrinting
 
 OnEndPrinting\(\)
 Calls the underlying MFC OnEndPrinting method\.
 
 #### See Also
 
-
   - [PyCView\.OnEndPrinting](PyCView.md#pycviewonendprinting_virtual) virtual method
 
-## [PyCView\.OnEndPrinting](#pycview) Virtual
 
-OnEndPrinting\(dc, pInfo\)
+## [PyCView\.OnEndPrinting](PyCView.md#pycview) Virtual
+
+OnEndPrinting\(dc, pInfo
+
+\)
 Called by the framework after a document has been printed or previewed\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The DC object\.
 
-  - pInfo :[PyCPrintInfo](#pycprintinfo)
+  - pInfo : [PyCPrintInfo](PyCPrintInfo.md)
 
     The print info object\.
 
 #### See Also
 
-
   - [PyCView::OnEndPrinting](PyCView.md#pycviewonendprinting)
 
-## [PyCView](#pycview)\.OnFilePrint
+
+## [PyCView](PyCView.md#pycview)\.OnFilePrint
 
 OnFilePrint\(\)
 Calls the underlying MFC OnFilePrint method\.
 
-## [PyCView](#pycview)\.OnFilePrintPreview
+
+## [PyCView](PyCView.md#pycview)\.OnFilePrintPreview
 
 OnFilePrintPreview\(\)
 Calls the underlying MFC OnFilePrintPreview method\.
 
-## [PyCView](#pycview)\.OnInitialUpdate
+
+## [PyCView](PyCView.md#pycview)\.OnInitialUpdate
 
 OnInitialUpdate\(\)
 Calls the underlying MFC OnInitialUpdate method\.
 
 #### See Also
 
-
   - [PyCView\.OnInitialUpdate](PyCView.md#pycviewoninitialupdate_virtual) virtual method
 
-## [PyCView\.OnInitialUpdate](#pycview) Virtual
+
+## [PyCView\.OnInitialUpdate](PyCView.md#pycview) Virtual
 
 OnInitialUpdate\(\)
 Called before the first update for a view\.
 
 #### Comments
 
-
 The MFC base class is called only if no handler exists\.
 
 #### See Also
 
-
   - [PyCView::OnInitialUpdate](PyCView.md#pycviewoninitialupdate)
 
-## [PyCView](#pycview)\.OnMouseActivate
 
+## [PyCView](PyCView.md#pycview)\.OnMouseActivate
 
+int = OnMouseActivate\(wnd, hittest
 
-int =OnMouseActivate\(wnd, hittest, message\)
+, message
+
+\)
 Calls the base MFC OnMouseActivate function\.
 
 #### Parameters
 
-
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md)
 
     
 
@@ -301,99 +309,105 @@ Calls the base MFC OnMouseActivate function\.
 
 #### See Also
 
-
   - [PyCWnd\.OnMouseActivate](PyCWnd.md#pycwndonmouseactivate_virtual) virtual method
 
-## [PyCView](#pycview)\.OnPrepareDC
+
+## [PyCView](PyCView.md#pycview)\.OnPrepareDC
 
 OnPrepareDC\(\)
 Calls the underlying MFC OnPrepareDC method\.
 
 #### See Also
 
-
   - [PyCView\.OnPrepareDC](PyCView.md#pycviewonpreparedc_virtual) virtual method
 
-## [PyCView\.OnPrepareDC](#pycview) Virtual
 
-OnPrepareDC\(dc, pInfo\)
+## [PyCView\.OnPrepareDC](PyCView.md#pycview) Virtual
+
+OnPrepareDC\(dc, pInfo
+
+\)
 Called to prepare the device context for a view\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The DC object\.
 
-  - pInfo :[PyCPrintInfo](#pycprintinfo)
+  - pInfo : [PyCPrintInfo](PyCPrintInfo.md)
 
     The print info object\.
 
 #### See Also
 
-
   - PyCWnd::OnPrepareDC
 
-## [PyCView](#pycview)\.OnPreparePrinting
 
 
 
-int =OnPreparePrinting\(\)
+## [PyCView](PyCView.md#pycview)\.OnPreparePrinting
+
+int = OnPreparePrinting\(\)
 Calls the underlying MFC OnPreparePrinting method\.
 
 #### See Also
 
-
   - [PyCView\.OnPreparePrinting](PyCView.md#pycviewonprepareprinting_virtual) virtual method
 
-## [PyCView\.OnPreparePrinting](#pycview) Virtual
+
+## [PyCView\.OnPreparePrinting](PyCView.md#pycview) Virtual
 
 OnPreparePrinting\(pInfo\)
 Called by the framework before a document is printed or previewed
 
 #### Parameters
 
-
-  - pInfo :[PyCPrintInfo](#pycprintinfo)
+  - pInfo : [PyCPrintInfo](PyCPrintInfo.md)
 
     The print info object\.
 
 #### See Also
 
-
   - [PyCView::OnPreparePrinting](PyCView.md#pycviewonprepareprinting)
 
-## [PyCView\.OnPrint](#pycview) Virtual
 
-OnPrint\(dc, pInfo\)
+## [PyCView\.OnPrint](PyCView.md#pycview) Virtual
+
+OnPrint\(dc, pInfo
+
+\)
 Called when the view should be printed\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The DC object\.
 
-  - pInfo :PyPrintInfo
+  - pInfo : PyPrintInfo
 
     The PrintIfo object\.
 
 #### See Also
 
-
   - PyCView::OnPrint
 
-## [PyCView\.OnUpdate](#pycview) Virtual
 
-OnUpdate\(sender, lHint, hint\)
+
+
+## [PyCView\.OnUpdate](PyCView.md#pycview) Virtual
+
+OnUpdate\(sender, lHint
+
+, hint
+
+\)
 Called by the framework when a view needs updating\.
 
 #### Parameters
 
-
-  - sender :[PyCView](#pycview)
+  - sender : [PyCView](PyCView.md#pycview)
 
     
 
@@ -407,35 +421,32 @@ Called by the framework when a view needs updating\.
 
 #### Comments
 
-
 Typically you should not perform any drawing directly from OnUpdate\. 
 
 Instead, determine the rectangle describing, in device coordinates, the 
 
-area that requires updating; pass this rectangle to[PyCWnd::InvalidateRect](PyCWnd.md#pycwndinvalidaterect)\. 
+area that requires updating; pass this rectangle to [PyCWnd::InvalidateRect](PyCWnd.md#pycwndinvalidaterect)\. 
 
-You can then paint the update nextPyCView::OnDraw
+You can then paint the update next PyCView::OnDraw
 
 #### See Also
 
-
   - PyCView::OnUpdate
 
-## [PyCView](#pycview)\.PreCreateWindow
 
 
 
-tuple =PreCreateWindow\(createStruct\)
+## [PyCView](PyCView.md#pycview)\.PreCreateWindow
+
+tuple = PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
-
 
   - createStruct : tuple
 
     A tuple representing a CREATESTRUCT structure\.
 
 #### See Also
-
 
   - [PyCWnd\.PreCreateWindow](PyCWnd.md#pycwndprecreatewindow_virtual) virtual method

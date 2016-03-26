@@ -1,11 +1,9 @@
 # PySContentRestriction
 
+
 ## PySContentRestriction Object
 
-
-
 #### Parameters
-
 
   - fuzzyLevel : int
 
@@ -15,6 +13,6 @@
 
     The property ID\.
 
-  - propertyValue :[PySPropValue](#pyspropvalue)
+  - propertyValue : [PySPropValue](PySPropValue.md)
 
     

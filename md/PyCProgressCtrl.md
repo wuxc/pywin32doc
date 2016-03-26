@@ -1,17 +1,13 @@
 # PyCProgressCtrl
 
+
 ## PyCProgressCtrl Object
 
+A windows progress bar control\.  Encapsulates an MFC CProgressCtrl
 
-
-A windows progress bar control\.  Encapsulates an MFCCProgressCtrl
-
-
-
- class\.  Derived from[PyCControl](#pyccontrol)\.
+ class\.  Derived from [PyCControl](PyCControl.md)\.
 
 #### Methods
-
 
   - [CreateWindow](PyCProgressCtrl.md#pycprogressctrlcreatewindow)
 
@@ -37,13 +33,13 @@ A windows progress bar control\.  Encapsulates an MFCCProgressCtrl
 
     Advances the current position for a progress bar control by the step increment\. Returns previous position\.&nbsp;
 
-## [PyCProgressCtrl](#pycprogressctrl)\.CreateWindow
+
+## [PyCProgressCtrl](PyCProgressCtrl.md#pycprogressctrl)\.CreateWindow
 
 CreateWindow\(style, rect, parent, id\)
 Creates the actual control\.
 
 #### Parameters
-
 
   - style : int
 
@@ -53,49 +49,45 @@ Creates the actual control\.
 
     The size and position of the control\.
 
-  - parent :[PyCWnd](#pycwnd)
+  - parent : [PyCWnd](PyCWnd.md)
 
-    The parent window of the control\.  Usually a[PyCDialog](#pycdialog)\.
+    The parent window of the control\.  Usually a [PyCDialog](PyCDialog.md)\.
 
   - id : int
 
     The control's ID\.
 
-## [PyCProgressCtrl](#pycprogressctrl)\.OffsetPos
 
+## [PyCProgressCtrl](PyCProgressCtrl.md#pycprogressctrl)\.OffsetPos
 
-
-int =OffsetPos\(nPos\)
+int = OffsetPos\(nPos\)
 Advances the progress bar control's current position by the increment specified
 
 #### Parameters
-
 
   - nPos=1 : int
 
     Amount to advance the position\.
 
-## [PyCProgressCtrl](#pycprogressctrl)\.SetPos
 
+## [PyCProgressCtrl](PyCProgressCtrl.md#pycprogressctrl)\.SetPos
 
-
-int =SetPos\(nPos\)
+int = SetPos\(nPos\)
 Set the control's position
 
 #### Parameters
-
 
   - nPos=1 : int
 
     New position of the progress bar control\.
 
-## [PyCProgressCtrl](#pycprogressctrl)\.SetRange
+
+## [PyCProgressCtrl](PyCProgressCtrl.md#pycprogressctrl)\.SetRange
 
 SetRange\(nLower, nUpper\)
 Set the control's bounds
 
 #### Parameters
-
 
   - nLower=1 : int
 
@@ -105,23 +97,20 @@ Set the control's bounds
 
     Specifies the upper limit of the range \(default is 100\)\.
 
-## [PyCProgressCtrl](#pycprogressctrl)\.SetStep
 
+## [PyCProgressCtrl](PyCProgressCtrl.md#pycprogressctrl)\.SetStep
 
-
-int =SetStep\(nStep\)
+int = SetStep\(nStep\)
 Specifies the step increment for a progress bar control\.
 
 #### Parameters
-
 
   - nStep=1 : int
 
     New step increment\.
 
-## [PyCProgressCtrl](#pycprogressctrl)\.StepIt
 
+## [PyCProgressCtrl](PyCProgressCtrl.md#pycprogressctrl)\.StepIt
 
-
-int =StepIt\(\)
+int = StepIt\(\)
 Advances the current position for a progress bar control by the step increment\. Returns previous position\.

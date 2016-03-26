@@ -1,14 +1,13 @@
 # PyIADsContainer
 
+
 ## PyIADsContainer Object
 
+A COM interface to ADSI's IADsContainer interface\. 
 
-
-A COM interface to ADSI's IADsContainer interface\.
-Derived from[PyIUnknown](#pyiunknown)
+Derived from [PyIUnknown](PyIUnknown.md)
 
 #### Methods
-
 
   - [GetObject](PyIADsContainer.md#pyiadscontainergetobject)
 
@@ -34,13 +33,14 @@ Derived from[PyIUnknown](#pyiunknown)
 
     &nbsp;
 
-## [PyIADsContainer](#pyiadscontainer)\.GetObject
 
-[PyIDispatch](#pyidispatch) =GetObject\(class, relativeName\)
+## [PyIADsContainer](PyIADsContainer.md#pyiadscontainer)\.GetObject
 
+[PyIDispatch](PyIDispatch.md) = GetObject\(class, relativeName
+
+\)
 
 #### Parameters
-
 
   - class : string
 
@@ -50,46 +50,41 @@ Derived from[PyIUnknown](#pyiunknown)
 
     Specifies the name of the object as known in the underlying directory and identical to the one retrieved through the get\_Name property method\.
 
-## [PyIADsContainer](#pyiadscontainer)\.get\_Count
+
+## [PyIADsContainer](PyIADsContainer.md#pyiadscontainer)\.get\_Count
+
+int = get\_Count\(\)
 
 
 
-int =get\_Count\(\)
+## [PyIADsContainer](PyIADsContainer.md#pyiadscontainer)\.get\_Filter
 
-
-## [PyIADsContainer](#pyiadscontainer)\.get\_Filter
-
-
-
-object =get\_Filter\(\)
-
-
-## [PyIADsContainer](#pyiadscontainer)\.get\_Hints
+object = get\_Filter\(\)
 
 
 
-object =get\_Hints\(\)
+## [PyIADsContainer](PyIADsContainer.md#pyiadscontainer)\.get\_Hints
+
+object = get\_Hints\(\)
 
 
-## [PyIADsContainer](#pyiadscontainer)\.put\_Filter
+
+## [PyIADsContainer](PyIADsContainer.md#pyiadscontainer)\.put\_Filter
 
 put\_Filter\(val\)
 
-
 #### Parameters
-
 
   - val : object
 
     
 
-## [PyIADsContainer](#pyiadscontainer)\.put\_Hints
+
+## [PyIADsContainer](PyIADsContainer.md#pyiadscontainer)\.put\_Hints
 
 put\_Hints\(val\)
 
-
 #### Parameters
-
 
   - val : object
 

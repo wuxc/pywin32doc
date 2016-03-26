@@ -1,19 +1,15 @@
 # PyCFont
 
+
 ## PyCFont Object
 
-
-
-A windows font object\.  Encapsulates an MFCCFont
-
-
+A windows font object\.  Encapsulates an MFC CFont
 
  class\. 
 
-Derived from a[PyCGDIObject](#pycgdiobject)\.
+Derived from a [PyCGDIObject](PyCGDIObject.md)\.
 
 #### Methods
-
 
   - [GetSafeHandle](PyCFont.md#pycfontgetsafehandle)
 
@@ -21,9 +17,8 @@ Derived from a[PyCGDIObject](#pycgdiobject)\.
 
 sentinel&nbsp;
 
-## [PyCFont](#pycfont)\.GetSafeHandle
 
+## [PyCFont](PyCFont.md#pycfont)\.GetSafeHandle
 
-
-int =GetSafeHandle\(\)
+int = GetSafeHandle\(\)
 Retrieves the HFONT for the font as an integer

@@ -1,13 +1,11 @@
 # PyIDispatch
 
+
 ## PyIDispatch Object
-
-
 
 A OLE automation client object\.
 
 #### Methods
-
 
   - [Invoke](PyIDispatch.md#pyidispatchinvoke)
 
@@ -27,18 +25,17 @@ A OLE automation client object\.
 
   - [GetTypeInfoCount](PyIDispatch.md#pyidispatchgettypeinfocount)
 
-    Retrieves the number of[PyITypeInfo](#pyitypeinfo)s the object provides\.&nbsp;
-
-
-## [PyIDispatch](#pyidispatch)\.GetIDsOfNames
+    Retrieves the number of [PyITypeInfo](PyITypeInfo.md)s the object provides\.&nbsp;
 
 
 
-\(int, \.\.\.\)/int =GetIDsOfNames\(name\)
+
+## [PyIDispatch](PyIDispatch.md#pyidispatch)\.GetIDsOfNames
+
+\(int, \.\.\.\)/int = GetIDsOfNames\(name\)
 Get the DISPID for the passed names\.
 
 #### Parameters
-
 
   - name : string
 
@@ -46,13 +43,11 @@ Get the DISPID for the passed names\.
 
 #### Alternative Parameters
 
-
   - \[name, \.\.\.\]
 
     A sequence of string names to query
 
 #### Comments
-
 
 Currently the LCID can not be specified, and  LOCALE\_SYSTEM\_DEFAULT is used\.
 
@@ -63,13 +58,15 @@ for each name in the sequence\.  If the first parameter is a single string, the 
 
 is a single integer with the ID of requested item\.
 
-## [PyIDispatch](#pyidispatch)\.GetTypeInfo
 
-[PyITypeInfo](#pyitypeinfo) =GetTypeInfo\(locale, index\)
+## [PyIDispatch](PyIDispatch.md#pyidispatch)\.GetTypeInfo
+
+[PyITypeInfo](PyITypeInfo.md) = GetTypeInfo\(locale, index
+
+\)
 Get type information for the object\.
 
 #### Parameters
-
 
   - locale=LOCALE\_USER\_DEFAULT : int
 
@@ -81,26 +78,31 @@ Get type information for the object\.
 
 Note that these params are reversed from the win32 call\.
 
-## [PyIDispatch](#pyidispatch)\.GetTypeInfoCount
+
+## [PyIDispatch](PyIDispatch.md#pyidispatch)\.GetTypeInfoCount
+
+int = GetTypeInfoCount\(\)
+Retrieves the number of [PyITypeInfo](PyITypeInfo.md)s the object provides\.
 
 
+## [PyIDispatch](PyIDispatch.md#pyidispatch)\.Invoke
 
-int =GetTypeInfoCount\(\)
-Retrieves the number of[PyITypeInfo](#pyitypeinfo)s the object provides\.
+object = Invoke\(dispid, lcid
 
-## [PyIDispatch](#pyidispatch)\.Invoke
+, flags
 
+, bResultWanted
 
+, params, \.\.\.
 
-object =Invoke\(dispid, lcid, flags, bResultWanted, params, \.\.\.\)
+\)
 Invokes a DISPID, using the passed arguments\.
 
 #### Parameters
 
-
   - dispid : int
 
-    The dispid to use\.  Typically this value will come from[PyIDispatch::GetIDsOfNames](PyIDispatch.md#pyidispatchgetidsofnames) or from a type library\.
+    The dispid to use\.  Typically this value will come from [PyIDispatch::GetIDsOfNames](PyIDispatch.md#pyidispatchgetidsofnames) or from a type library\.
 
   - lcid : int
 
@@ -110,7 +112,26 @@ Invokes a DISPID, using the passed arguments\.
 
     The flags for the call\.  The following flags can be used\.
 
-FlagDescriptionDISPATCH\_METHODThe member is invoked as a method\. If a property has the same name, both this and the DISPATCH\_PROPERTYGET flag may be set\.DISPATCH\_PROPERTYGETThe member is retrieved as a property or data member\.DISPATCH\_PROPERTYPUTThe member is changed as a property or data member\.DISPATCH\_PROPERTYPUTREFThe member is changed by a reference assignment, rather than a value assignment\. This flag is valid only when the property accepts a reference to an object\.
+   
+
+       Flag
+
+   
+
+   
+
+       Description
+
+   
+
+DISPATCH\_METHODThe member is invoked as a method\. If a property has the same name, both this and the DISPATCH\_PROPERTYGET flag may be set\.
+
+DISPATCH\_PROPERTYGETThe member is retrieved as a property or data member\.
+
+DISPATCH\_PROPERTYPUTThe member is changed as a property or data member\.
+
+DISPATCH\_PROPERTYPUTREFThe member is changed by a reference assignment, rather than a value assignment\. This flag is valid only when the property accepts a reference to an object\.
+
   - bResultWanted : int
 
     Indicates if the result of the call should be requested\.
@@ -124,27 +145,35 @@ If the bResultWanted parameter is False, then the result will be None\.
 
 Otherwise, the result is determined by the COM object itself \(and may still be None\)
 
-## [PyIDispatch](#pyidispatch)\.InvokeTypes
 
+## [PyIDispatch](PyIDispatch.md#pyidispatch)\.InvokeTypes
 
+object = InvokeTypes\(dispid, lcid
 
-object =InvokeTypes\(dispid, lcid, wFlags, resultTypeDesc, typeDescs, args\)
+, wFlags
+
+, resultTypeDesc
+
+, typeDescs
+
+, args
+
+\)
 Invokes a DISPID, using the passed arguments and type descriptions\.
 
 #### Parameters
 
-
   - dispid : int
 
-    The dispid to use\.  Please see[PyIDispatch::Invoke](PyIDispatch.md#pyidispatchinvoke)\.
+    The dispid to use\.  Please see [PyIDispatch::Invoke](PyIDispatch.md#pyidispatchinvoke)\.
 
   - lcid : int
 
-    The locale ID\.  Please see[PyIDispatch::Invoke](PyIDispatch.md#pyidispatchinvoke)\.
+    The locale ID\.  Please see [PyIDispatch::Invoke](PyIDispatch.md#pyidispatchinvoke)\.
 
   - wFlags : int
 
-    Flags for the call\.  Please see[PyIDispatch::Invoke](PyIDispatch.md#pyidispatchinvoke)\.
+    Flags for the call\.  Please see [PyIDispatch::Invoke](PyIDispatch.md#pyidispatchinvoke)\.
 
   - resultTypeDesc : tuple
 
@@ -166,7 +195,6 @@ for more information\.
 
 #### Comments
 
-
 The Microsoft documentation for IDispatch should be used for all 
 
 params except 'resultTypeDesc' and 'typeDescs'\. 'resultTypeDesc' describes 
@@ -177,9 +205,25 @@ the return value of the function, and is a tuple of \(type\_id, flags\)\.
 
 same \(type\_id, flags\) tuple\.
 
-itemDescriptiontype\_idA valid "variant type" constant \(eg, VT\_I4 | VT\_ARRAY, VT\_DATE, etc - see VARIANT at MSDN\)\.flagsOne of the PARAMFLAG constants \(eg, PARAMFLAG\_FIN, PARAMFLAG\_FOUT etc - see PARAMFLAG at MSDN\)\.
+   
+
+       item
+
+   
+
+   
+
+       Description
+
+   
+
+type\_idA valid "variant type" constant \(eg, VT\_I4 | VT\_ARRAY, VT\_DATE, etc - see VARIANT at MSDN\)\.
+
+flagsOne of the PARAMFLAG constants \(eg, PARAMFLAG\_FIN, PARAMFLAG\_FOUT etc - see PARAMFLAG at MSDN\)\.
+
 #### Example
 An example from the makepy generated file for Word
+
 class Cells\(DispatchBaseClass\):
 
 \.\.\.
@@ -189,6 +233,7 @@ class Cells\(DispatchBaseClass\):
 &\#09return self\.\_oleobj\_\.InvokeTypes\(202, LCID, 1, \(24, 0\), \(\(4, 1\), \(3, 1\)\),\.\.\.\)
 
 The interesting bits are
+
 resultTypeDesc: \(24, 0\) - \(VT\_VOID, &ltno flags&gt\)
 
 typeDescs: \(\(4, 1\), \(3, 1\)\) - \(\(VT\_R4, PARAMFLAG\_FIN\), \(VT\_I4, PARAMFLAG\_FIN\)\)

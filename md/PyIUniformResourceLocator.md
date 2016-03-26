@@ -1,13 +1,11 @@
 # PyIUniformResourceLocator
 
+
 ## PyIUniformResourceLocator Object
-
-
 
 Interface to an internet shortcut
 
 #### Methods
-
 
   - [GetURL](PyIUniformResourceLocator.md#pyiuniformresourcelocatorgeturl)
 
@@ -21,22 +19,23 @@ Interface to an internet shortcut
 
     Performs one of the object's predefined actions&nbsp;
 
-## [PyIUniformResourceLocator](#pyiuniformresourcelocator)\.GetURL
 
+## [PyIUniformResourceLocator](PyIUniformResourceLocator.md#pyiuniformresourcelocator)\.GetURL
 
-
-str =GetURL\(\)
+str = GetURL\(\)
 Returns the URL for the shortcut
 
-## [PyIUniformResourceLocator](#pyiuniformresourcelocator)\.InvokeCommand
 
+## [PyIUniformResourceLocator](PyIUniformResourceLocator.md#pyiuniformresourcelocator)\.InvokeCommand
 
+int = InvokeCommand\(Verb, Flags
 
-int =InvokeCommand\(Verb, Flags, hwndParent\)
+, hwndParent
+
+\)
 Performs one of the object's predefined actions
 
 #### Parameters
-
 
   - Verb : str
 
@@ -46,17 +45,17 @@ Performs one of the object's predefined actions
 
     Combination of shellcon\.IURL\_INVOKECOMMAND\_\* flags
 
-  - hwndParent=0 :[PyHANDLE](#pyhandle)
+  - hwndParent=0 : [PyHANDLE](PyHANDLE.md)
 
     Handle to parent window
 
-## [PyIUniformResourceLocator](#pyiuniformresourcelocator)\.SetURL
+
+## [PyIUniformResourceLocator](PyIUniformResourceLocator.md#pyiuniformresourcelocator)\.SetURL
 
 SetURL\(URL, InFlags\)
 Sets the URL for the shortcut
 
 #### Parameters
-
 
   - URL : str
 

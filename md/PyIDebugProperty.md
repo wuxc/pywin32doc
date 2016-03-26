@@ -1,13 +1,11 @@
 # PyIDebugProperty
 
+
 ## PyIDebugProperty Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetPropertyInfo](PyIDebugProperty.md#pyidebugpropertygetpropertyinfo)
 
@@ -29,14 +27,14 @@ Description of the interface
 
     Description of GetParent&nbsp;
 
-## [PyIDebugProperty](#pyidebugproperty)\.EnumMembers
+
+## [PyIDebugProperty](PyIDebugProperty.md#pyidebugproperty)\.EnumMembers
 
 EnumMembers\(dwFieldSpec, nRadix, refiid\)
 Description of EnumMembers\.
 
 #### Parameters
 
-
   - dwFieldSpec : int
 
     Description for dwFieldSpec
@@ -45,28 +43,30 @@ Description of EnumMembers\.
 
     Description for nRadix
 
-  - refiid :[PyIID](#pyiid)
+  - refiid : [PyIID](PyIID.md)
 
     Description for refiid
 
-## [PyIDebugProperty](#pyidebugproperty)\.GetExtendedInfo
+
+## [PyIDebugProperty](PyIDebugProperty.md#pyidebugproperty)\.GetExtendedInfo
 
 GetExtendedInfo\(\)
 Description of GetExtendedInfo\.
 
-## [PyIDebugProperty](#pyidebugproperty)\.GetParent
+
+## [PyIDebugProperty](PyIDebugProperty.md#pyidebugproperty)\.GetParent
 
 GetParent\(\)
 Description of GetParent\.
 
-## [PyIDebugProperty](#pyidebugproperty)\.GetPropertyInfo
+
+## [PyIDebugProperty](PyIDebugProperty.md#pyidebugproperty)\.GetPropertyInfo
 
 GetPropertyInfo\(dwFieldSpec, nRadix\)
 Description of GetPropertyInfo\.
 
 #### Parameters
 
-
   - dwFieldSpec : int
 
     Description for dwFieldSpec
@@ -75,15 +75,15 @@ Description of GetPropertyInfo\.
 
     Description for nRadix
 
-## [PyIDebugProperty](#pyidebugproperty)\.SetValueAsString
+
+## [PyIDebugProperty](PyIDebugProperty.md#pyidebugproperty)\.SetValueAsString
 
 SetValueAsString\(pszValue, nRadix\)
 Description of SetValueAsString\.
 
 #### Parameters
 
-
-  - pszValue :unicode
+  - pszValue : unicode
 
     Description for pszValue
 

@@ -1,13 +1,11 @@
 # PyIViewObject
 
+
 ## PyIViewObject Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [Draw](PyIViewObject.md#pyiviewobjectdraw)
 
@@ -33,13 +31,13 @@ Description of the interface
 
     Description of GetAdvise&nbsp;
 
-## [PyIViewObject](#pyiviewobject)\.Draw
+
+## [PyIViewObject](PyIViewObject.md#pyiviewobject)\.Draw
 
 Draw\(dwDrawAspect, lindex, aspectFlags, hdcTargetDev, hdcDraw, left, top, right, bottom, left, top, right, bottom, funcContinue, obContinue\)
 Description of Draw\.
 
 #### Parameters
-
 
   - dwDrawAspect : int
 
@@ -77,13 +75,13 @@ Description of Draw\.
 
     Value passed to the function\.
 
-## [PyIViewObject](#pyiviewobject)\.Freeze
+
+## [PyIViewObject](PyIViewObject.md#pyiviewobject)\.Freeze
 
 Freeze\(dwDrawAspect, lindex, aspectFlags\)
 Description of Freeze\.
 
 #### Parameters
-
 
   - dwDrawAspect : int
 
@@ -97,18 +95,19 @@ Description of Freeze\.
 
     Integer value for the dwFlags item of the DVASPECTINFO structure\.
 
-## [PyIViewObject](#pyiviewobject)\.GetAdvise
+
+## [PyIViewObject](PyIViewObject.md#pyiviewobject)\.GetAdvise
 
 GetAdvise\(\)
 Description of GetAdvise\.
 
-## [PyIViewObject](#pyiviewobject)\.GetColorSet
+
+## [PyIViewObject](PyIViewObject.md#pyiviewobject)\.GetColorSet
 
 GetColorSet\(dwDrawAspect, lindex, aspectFlags, hicTargetDev\)
 Description of GetColorSet\.
 
 #### Parameters
-
 
   - dwDrawAspect : int
 
@@ -126,13 +125,13 @@ Description of GetColorSet\.
 
     Description for hicTargetDev
 
-## [PyIViewObject](#pyiviewobject)\.SetAdvise
+
+## [PyIViewObject](PyIViewObject.md#pyiviewobject)\.SetAdvise
 
 SetAdvise\(aspects, advf, pAdvSink\)
 Description of SetAdvise\.
 
 #### Parameters
-
 
   - aspects : int
 
@@ -142,17 +141,17 @@ Description of SetAdvise\.
 
     Description for advf
 
-  - pAdvSink :PyIAdviseSink
+  - pAdvSink : PyIAdviseSink
 
     Description for pAdvSink
 
-## [PyIViewObject](#pyiviewobject)\.Unfreeze
+
+## [PyIViewObject](PyIViewObject.md#pyiviewobject)\.Unfreeze
 
 Unfreeze\(dwFreeze\)
 Description of Unfreeze\.
 
 #### Parameters
-
 
   - dwFreeze : int
 

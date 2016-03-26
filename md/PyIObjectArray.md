@@ -1,13 +1,11 @@
 # PyIObjectArray
 
+
 ## PyIObjectArray Object
-
-
 
 Holds a collection of interface objects
 
 #### Methods
-
 
   - [GetCount](PyIObjectArray.md#pyiobjectarraygetcount)
 
@@ -17,25 +15,26 @@ Holds a collection of interface objects
 
     Retrieves an item  by zero-based index&nbsp;
 
-## [PyIObjectArray](#pyiobjectarray)\.GetAt
 
-[PyIUnknown](#pyiunknown) =GetAt\(Index, riid\)
+## [PyIObjectArray](PyIObjectArray.md#pyiobjectarray)\.GetAt
+
+[PyIUnknown](PyIUnknown.md) = GetAt\(Index, riid
+
+\)
 Retrieves an item  by zero-based index
 
 #### Parameters
-
 
   - Index : int
 
     Index of item to retrieve
 
-  - riid=IID\_IUnknown :[PyIID](#pyiid)
+  - riid=IID\_IUnknown : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIObjectArray](#pyiobjectarray)\.GetCount
 
+## [PyIObjectArray](PyIObjectArray.md#pyiobjectarray)\.GetCount
 
-
-int =GetCount\(\)
+int = GetCount\(\)
 Returns number of objects in collection

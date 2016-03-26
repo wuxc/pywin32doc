@@ -1,13 +1,11 @@
 # PyIKnownFolderManager
 
+
 ## PyIKnownFolderManager Object
-
-
 
 Interface used to manage known folder definitions\.
 
 #### Methods
-
 
   - [FolderIdFromCsidl](PyIKnownFolderManager.md#pyiknownfoldermanagerfolderidfromcsidl)
 
@@ -49,25 +47,27 @@ Interface used to manage known folder definitions\.
 
     Redirects a known folder to an alternate location&nbsp;
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.FindFolderFromIDList
 
-[PyIKnownFolder](#pyiknownfolder) =FindFolderFromIDList\(pidl\)
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.FindFolderFromIDList
+
+[PyIKnownFolder](PyIKnownFolder.md) = FindFolderFromIDList\(pidl\)
 Retrieves a known folder using its item id list\.
 
 #### Parameters
 
-
-  - pidl :[PyIDL](#pyidl)
+  - pidl : [PyIDL](PyIDL.md)
 
     Item id list of the folder
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.FindFolderFromPath
 
-[PyIKnownFolder](#pyiknownfolder) =FindFolderFromPath\(Path, Mode\)
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.FindFolderFromPath
+
+[PyIKnownFolder](PyIKnownFolder.md) = FindFolderFromPath\(Path, Mode
+
+\)
 Retrieves a known folder by path
 
 #### Parameters
-
 
   - Path : str
 
@@ -77,76 +77,73 @@ Retrieves a known folder by path
 
     FFFP\_EXACTMATCH or FFFP\_NEARESTPARENTMATCH
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.FolderIdFromCsidl
 
-[PyIID](#pyiid) =FolderIdFromCsidl\(Csidl\)
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.FolderIdFromCsidl
+
+[PyIID](PyIID.md) = FolderIdFromCsidl\(Csidl\)
 Returns the folder id that corresponds to a CSIDL
 
 #### Parameters
-
 
   - Csidl : int
 
     The legacy CSIDL identifying a folder
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.FolderIdToCsidl
 
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.FolderIdToCsidl
 
-
-int =FolderIdToCsidl\(id\)
+int = FolderIdToCsidl\(id\)
 Returns the CSIDL equivalent of a known folder
 
 #### Parameters
 
-
-  - id :[PyIID](#pyiid)
+  - id : [PyIID](PyIID.md)
 
     A known folder id \(shell\.FOLDERID\_\*\)
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.GetFolder
 
-[PyIKnownFolder](#pyiknownfolder) =GetFolder\(id\)
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.GetFolder
+
+[PyIKnownFolder](PyIKnownFolder.md) = GetFolder\(id\)
 Returns a folder by its id\.
 
 #### Parameters
 
-
-  - id :[PyIID](#pyiid)
+  - id : [PyIID](PyIID.md)
 
     A known folder id \(shell\.FOLDERID\_\*\)
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.GetFolderByName
 
-[PyIKnownFolder](#pyiknownfolder) =GetFolderByName\(Name\)
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.GetFolderByName
+
+[PyIKnownFolder](PyIKnownFolder.md) = GetFolderByName\(Name\)
 Returns a folder by canonical name
 
 #### Parameters
-
 
   - Name : str
 
     The nonlocalized name of a known folder
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.GetFolderIds
 
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.GetFolderIds
 
-
-\([PyIID](#pyiid),\.\.\.\) =GetFolderIds\(\)
+\([PyIID](PyIID.md),\.\.\.\) = GetFolderIds\(\)
 Retrieves all known folder ids\.
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.Redirect
+
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.Redirect
 
 Redirect\(id, hwnd, flags, TargetPath, Exclusion\)
 Redirects a known folder to an alternate location
 
 #### Parameters
 
-
-  - id :[PyIID](#pyiid)
+  - id : [PyIID](PyIID.md)
 
     Id of the known folder to be redirected
 
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     Handle of window to be used for user interaction
 
@@ -158,19 +155,19 @@ Redirects a known folder to an alternate location
 
     Path to which the known folder will be redirected
 
-  - Exclusion : \([PyIID](#pyiid),\.\.\.\)
+  - Exclusion : \([PyIID](PyIID.md),\.\.\.\)
 
     Sequence of known folder ids of subfolders to be excluded from redirection
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.RegisterFolder
+
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.RegisterFolder
 
 RegisterFolder\(id, Definition\)
 Defines a new known folder
 
 #### Parameters
 
-
-  - id :[PyIID](#pyiid)
+  - id : [PyIID](PyIID.md)
 
     GUID used to identify the new known folder
 
@@ -179,16 +176,17 @@ Defines a new known folder
     Dictionary containing info to be placed in a KNOWNFOLDER\_DEFINITION struct
 
 #### Comments
+
 [PyIKnownFolder::GetFolderDefinition](PyIKnownFolder.md#pyiknownfoldergetfolderdefinition) can be used to get a template dictionary
 
-## [PyIKnownFolderManager](#pyiknownfoldermanager)\.UnregisterFolder
+
+## [PyIKnownFolderManager](PyIKnownFolderManager.md#pyiknownfoldermanager)\.UnregisterFolder
 
 UnregisterFolder\(id\)
 Removes the definition of a known folder
 
 #### Parameters
 
-
-  - id :[PyIID](#pyiid)
+  - id : [PyIID](PyIID.md)
 
     GUID of a known folder to be unregistered

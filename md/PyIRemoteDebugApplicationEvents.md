@@ -1,13 +1,11 @@
 # PyIRemoteDebugApplicationEvents
 
+
 ## PyIRemoteDebugApplicationEvents Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [OnConnectDebugger](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationeventsonconnectdebugger)
 
@@ -49,112 +47,114 @@ Description of the interface
 
     Description of OnBreakFlagChange&nbsp;
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnBreakFlagChange
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnBreakFlagChange
 
 OnBreakFlagChange\(abf, prdatSteppingThread\)
 Description of OnBreakFlagChange\.
 
 #### Parameters
 
-
   - abf : int
 
     Description for abf
 
-  - prdatSteppingThread :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+  - prdatSteppingThread : [PyIRemoteDebugApplicationThread](PyIRemoteDebugApplicationThread.md)
 
     Description for prdatSteppingThread
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnClose
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnClose
 
 OnClose\(\)
 Description of OnClose\.
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnConnectDebugger
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnConnectDebugger
 
 OnConnectDebugger\(pad\)
 Description of OnConnectDebugger\.
 
 #### Parameters
 
-
-  - pad :[PyIApplicationDebugger](#pyiapplicationdebugger)
+  - pad : [PyIApplicationDebugger](PyIApplicationDebugger.md)
 
     Description for pad
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnCreateThread
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnCreateThread
 
 OnCreateThread\(prdat\)
 Description of OnCreateThread\.
 
 #### Parameters
 
-
-  - prdat :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+  - prdat : [PyIRemoteDebugApplicationThread](PyIRemoteDebugApplicationThread.md)
 
     Description for prdat
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnDebugOutput
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnDebugOutput
 
 OnDebugOutput\(pstr\)
 Description of OnDebugOutput\.
 
 #### Parameters
 
-
-  - pstr :unicode
+  - pstr : unicode
 
     Description for pstr
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnDestroyThread
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnDestroyThread
 
 OnDestroyThread\(prdat\)
 Description of OnDestroyThread\.
 
 #### Parameters
 
-
-  - prdat :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+  - prdat : [PyIRemoteDebugApplicationThread](PyIRemoteDebugApplicationThread.md)
 
     Description for prdat
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnDisconnectDebugger
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnDisconnectDebugger
 
 OnDisconnectDebugger\(\)
 Description of OnDisconnectDebugger\.
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnEnterBreakPoint
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnEnterBreakPoint
 
 OnEnterBreakPoint\(prdat\)
 Description of OnEnterBreakPoint\.
 
 #### Parameters
 
-
-  - prdat :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+  - prdat : [PyIRemoteDebugApplicationThread](PyIRemoteDebugApplicationThread.md)
 
     Description for prdat
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnLeaveBreakPoint
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnLeaveBreakPoint
 
 OnLeaveBreakPoint\(prdat\)
 Description of OnLeaveBreakPoint\.
 
 #### Parameters
 
-
-  - prdat :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+  - prdat : [PyIRemoteDebugApplicationThread](PyIRemoteDebugApplicationThread.md)
 
     Description for prdat
 
-## [PyIRemoteDebugApplicationEvents](#pyiremotedebugapplicationevents)\.OnSetName
+
+## [PyIRemoteDebugApplicationEvents](PyIRemoteDebugApplicationEvents.md#pyiremotedebugapplicationevents)\.OnSetName
 
 OnSetName\(pstrName\)
 Description of OnSetName\.
 
 #### Parameters
 
-
-  - pstrName :unicode
+  - pstrName : unicode
 
     Description for pstrName

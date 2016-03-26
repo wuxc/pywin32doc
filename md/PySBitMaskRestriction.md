@@ -1,11 +1,9 @@
 # PySBitMaskRestriction
 
+
 ## PySBitMaskRestriction Object
 
-
-
 #### Parameters
-
 
   - relBMR : int
 

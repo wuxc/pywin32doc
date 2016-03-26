@@ -1,15 +1,13 @@
 # PyNET
 
+
 ## PyNET\_VALIDATE\_AUTHENTICATION\_INPUT\_ARG Object
 
-
-
-A dictionary or tuple passed as input to[win32net::NetValidatePasswordPolicy](win32net.md#win32netnetvalidatepasswordpolicy)
+A dictionary or tuple passed as input to [win32net::NetValidatePasswordPolicy](win32net.md#win32netnetvalidatepasswordpolicy)
 
 #### Parameters
 
-
-  - InputPersistedFields=None :NET\_VALIDATE\_PERSISTED\_FIELDS
+  - InputPersistedFields=None : NET\_VALIDATE\_PERSISTED\_FIELDS
 
     
 
@@ -17,24 +15,22 @@ A dictionary or tuple passed as input to[win32net::NetValidatePasswordPolicy](wi
 
     
 
+
 ## PyNET\_VALIDATE\_PASSWORD\_CHANGE\_INPUT\_ARG Object
 
-
-
-A dictionary or tuple passed as input to[win32net::NetValidatePasswordPolicy](win32net.md#win32netnetvalidatepasswordpolicy)
+A dictionary or tuple passed as input to [win32net::NetValidatePasswordPolicy](win32net.md#win32netnetvalidatepasswordpolicy)
 
 #### Parameters
 
-
-  - InputPersistedFields=None :NET\_VALIDATE\_PERSISTED\_FIELDS
-
-    
-
-  - ClearPassword=None :[PyUnicode](#pyunicode)
+  - InputPersistedFields=None : NET\_VALIDATE\_PERSISTED\_FIELDS
 
     
 
-  - UserAccountName=None :[PyUnicode](#pyunicode)
+  - ClearPassword=None : [PyUnicode](PyUnicode.md)
+
+    
+
+  - UserAccountName=None : [PyUnicode](PyUnicode.md)
 
     
 
@@ -46,14 +42,12 @@ A dictionary or tuple passed as input to[win32net::NetValidatePasswordPolicy](wi
 
     Note MSDN incorrectly documents this member as PasswordMatched
 
+
 ## PyNET\_VALIDATE\_PERSISTED\_FIELDS Object
 
-
-
-A dictionary returned by[win32net::NetValidatePasswordPolicy](win32net.md#win32netnetvalidatepasswordpolicy)
+A dictionary returned by [win32net::NetValidatePasswordPolicy](win32net.md#win32netnetvalidatepasswordpolicy)
 
 #### Comments
-
 
 Note that these fields will only appear if the PresentFields 
 
@@ -63,16 +57,15 @@ dictionary may contain none, all, or any combination of these\.
 
 #### Parameters
 
-
-  - PasswordLastSet :[PyTime](#pytime)
-
-    
-
-  - BadPasswordTime :[PyTime](#pytime)
+  - PasswordLastSet : [PyTime](PyTime.md)
 
     
 
-  - LockoutTime :[PyTime](#pytime)
+  - BadPasswordTime : [PyTime](PyTime.md)
+
+    
+
+  - LockoutTime : [PyTime](PyTime.md)
 
     
 

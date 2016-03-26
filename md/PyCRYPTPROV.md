@@ -1,13 +1,11 @@
 # PyCRYPTPROV
 
+
 ## PyCRYPTPROV Object
 
-
-
-Handle to a cryptographic provider, created usingcryptoapi::CryptAcquireContext
+Handle to a cryptographic provider, created using cryptoapi::CryptAcquireContext
 
 #### Methods
-
 
   - [CryptReleaseContext](PyCRYPTPROV.md#pycryptprovcryptreleasecontext)
 
@@ -35,7 +33,7 @@ Handle to a cryptographic provider, created usingcryptoapi::CryptAcquireContext
 
   - [CryptImportKey](PyCRYPTPROV.md#pycryptprovcryptimportkey)
 
-    Imports a key exported by[PyCRYPTKEY::CryptExportKey](PyCRYPTKEY.md#pycryptkeycryptexportkey)&nbsp;
+    Imports a key exported by [PyCRYPTKEY::CryptExportKey](PyCRYPTKEY.md#pycryptkeycryptexportkey)&nbsp;
 
   - [CryptExportPublicKeyInfo](PyCRYPTPROV.md#pycryptprovcryptexportpublickeyinfo)
 
@@ -45,19 +43,23 @@ Handle to a cryptographic provider, created usingcryptoapi::CryptAcquireContext
 
     Imports another user's public key&nbsp;
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptCreateHash
 
-[PyCRYPTHASH](#pycrypthash) =CryptCreateHash\(Algid, Key, Flags\)
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptCreateHash
+
+[PyCRYPTHASH](PyCRYPTHASH.md) = CryptCreateHash\(Algid, Key
+
+, Flags
+
+\)
 Creates a hash object for hashing large amounts of data
 
 #### Parameters
-
 
   - Algid : int
 
     An algorithm identifier, CALG\_\*\.
 
-  - Key=None :[PyCRYPTKEY](#pycryptkey)
+  - Key=None : [PyCRYPTKEY](PyCRYPTKEY.md)
 
     Used only for keyed hashes \(MAC or HMAC\), use None otherwise
 
@@ -65,15 +67,17 @@ Creates a hash object for hashing large amounts of data
 
     Reserved, use 0 if passed in
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptExportPublicKeyInfo
 
-[PyCERT\_PUBLIC\_KEY\_INFO](PyCERT.md#pycertpublic_key_info) =CryptExportPublicKeyInfo\(KeySpec, CertEncodingType\)
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptExportPublicKeyInfo
+
+[PyCERT\_PUBLIC\_KEY\_INFO](PyCERT.md#pycertpublic_key_info) = CryptExportPublicKeyInfo\(KeySpec, CertEncodingType
+
+\)
 Exports a public key to send to other users 
 
 Returned dict can be serialized for sending to another python application using pickle\.dump
 
 #### Parameters
-
 
   - KeySpec : int
 
@@ -83,13 +87,17 @@ Returned dict can be serialized for sending to another python application using 
 
     Specifies encoding for exported key info
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptGenKey
 
-[PyCRYPTKEY](#pycryptkey) =CryptGenKey\(Algid, Flags, KeyLen\)
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptGenKey
+
+[PyCRYPTKEY](PyCRYPTKEY.md) = CryptGenKey\(Algid, Flags
+
+, KeyLen
+
+\)
 Generates a key pair or a session key
 
 #### Parameters
-
 
   - Algid : int
 
@@ -105,18 +113,17 @@ Generates a key pair or a session key
 
 #### Comments
 
-
 Differs from Api call in that the length is passed in separately
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptGenRandom
 
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptGenRandom
 
+string = CryptGenRandom\(Len, SeedData
 
-string =CryptGenRandom\(Len, SeedData\)
+\)
 Generates random data of specified length
 
 #### Parameters
-
 
   - Len : int
 
@@ -126,13 +133,13 @@ Generates random data of specified length
 
     Random seed data
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptGetProvParam
+
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptGetProvParam
 
 CryptGetProvParam\(Param, Flags\)
 Retrieves specified attribute of provider
 
 #### Parameters
-
 
   - Param : int
 
@@ -145,31 +152,35 @@ Retrieves specified attribute of provider
 #### Return Value
 Type of returned object is dependent on the attribute requested
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptGetUserKey
 
-[PyCRYPTKEY](#pycryptkey) =CryptGetUserKey\(KeySpec\)
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptGetUserKey
+
+[PyCRYPTKEY](PyCRYPTKEY.md) = CryptGetUserKey\(KeySpec\)
 Returns a handle to one of user's key pairs
 
 #### Parameters
-
 
   - KeySpec : int
 
     AT\_KEYEXCHANGE or AT\_SIGNATURE \(some providers may implement extra key specs\)
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptImportKey
 
-[PyCRYPTKEY](#pycryptkey) =CryptImportKey\(Data, PubKey, Flags\)
-Imports a key exported by[PyCRYPTKEY::CryptExportKey](PyCRYPTKEY.md#pycryptkeycryptexportkey)
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptImportKey
+
+[PyCRYPTKEY](PyCRYPTKEY.md) = CryptImportKey\(Data, PubKey
+
+, Flags
+
+\)
+Imports a key exported by [PyCRYPTKEY::CryptExportKey](PyCRYPTKEY.md#pycryptkeycryptexportkey)
 
 #### Parameters
-
 
   - Data : buffer
 
     The key blob to be imported
 
-  - PubKey=None :[PyCRYPTKEY](#pycryptkey)
+  - PubKey=None : [PyCRYPTKEY](PyCRYPTKEY.md)
 
     Key to be used to decrypt the blob, not used for importing public keys
 
@@ -177,29 +188,31 @@ Imports a key exported by[PyCRYPTKEY::CryptExportKey](PyCRYPTKEY.md#pycryptkeycr
 
     Combination of CRYPT\_EXPORTABLE, CRYPT\_OAEP, CRYPT\_NO\_SALT, CRYPT\_USER\_PROTECTED
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptImportPublicKeyInfo
 
-[PyCRYPTKEY](#pycryptkey) =CryptImportPublicKeyInfo\(Info, CertEncodingType\)
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptImportPublicKeyInfo
+
+[PyCRYPTKEY](PyCRYPTKEY.md) = CryptImportPublicKeyInfo\(Info, CertEncodingType
+
+\)
 Imports another user's public key
 
 #### Parameters
 
-
   - Info : dict
 
-    [PyCERT\_PUBLIC\_KEY\_INFO](PyCERT.md#pycertpublic_key_info) dictionary as returned by[PyCRYPTPROV::CryptExportPublicKeyInfo](PyCRYPTPROV.md#pycryptprovcryptexportpublickeyinfo)
+    [PyCERT\_PUBLIC\_KEY\_INFO](PyCERT.md#pycertpublic_key_info) dictionary as returned by [PyCRYPTPROV::CryptExportPublicKeyInfo](PyCRYPTPROV.md#pycryptprovcryptexportpublickeyinfo)
 
   - CertEncodingType=X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING : int
 
     Specifies encoding for exported key info
 
-## [PyCRYPTPROV](#pycryptprov)\.CryptReleaseContext
+
+## [PyCRYPTPROV](PyCRYPTPROV.md#pycryptprov)\.CryptReleaseContext
 
 CryptReleaseContext\(Flags\)
 Releases the CSP handle
 
 #### Parameters
-
 
   - Flags=0 : int
 

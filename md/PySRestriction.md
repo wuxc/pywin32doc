@@ -1,11 +1,9 @@
 # PySRestriction
 
+
 ## PySRestriction Object
 
-
-
 #### Parameters
-
 
   - restrictionType : int
 
@@ -17,5 +15,5 @@
 
 #### Comments
 
-
 The parameters can be one of the following pairs of values\.
+

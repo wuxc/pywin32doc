@@ -1,13 +1,11 @@
 # PyCRYPTKEY
 
+
 ## PyCRYPTKEY Object
-
-
 
 Handle to a cryptographic key
 
 #### Methods
-
 
   - [CryptDestroyKey](PyCRYPTKEY.md#pycryptkeycryptdestroykey)
 
@@ -36,20 +34,26 @@ Handle to a cryptographic key
 #### Properties
 
   - int HCRYPTPROV
+
     CSP used by the key
 
   - int HCRYPTKEY
+
     Plain integer handle to the key
 
-## [PyCRYPTKEY](#pycryptkey)\.CryptDecrypt
 
+## [PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey)\.CryptDecrypt
 
+str = CryptDecrypt\(Final, Data
 
-str =CryptDecrypt\(Final, Data, Hash, Flags\)
+, Hash
+
+, Flags
+
+\)
 Decrypts data
 
 #### Parameters
-
 
   - Final : int
 
@@ -59,7 +63,7 @@ Decrypts data
 
     Data to be decrypted
 
-  - Hash=None :[PyCRYPTHASH](#pycrypthash)
+  - Hash=None : [PyCRYPTHASH](PyCRYPTHASH.md)
 
     Hash to be used in signature verification, can be None
 
@@ -67,18 +71,21 @@ Decrypts data
 
     Reserved, use only 0
 
-## [PyCRYPTKEY](#pycryptkey)\.CryptDestroyKey
+
+## [PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey)\.CryptDestroyKey
 
 CryptDestroyKey\(\)
 Releases the handle to the key \(does not delete permanent keys\)
 
-## [PyCRYPTKEY](#pycryptkey)\.CryptDuplicateKey
 
-[PyCRYPTKEY](#pycryptkey) =CryptDuplicateKey\(Reserved, Flags\)
+## [PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey)\.CryptDuplicateKey
+
+[PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey) = CryptDuplicateKey\(Reserved, Flags
+
+\)
 Creates an independent copy of the key
 
 #### Parameters
-
 
   - Reserved=0 : int
 
@@ -88,15 +95,19 @@ Creates an independent copy of the key
 
     Also reserved, use 0
 
-## [PyCRYPTKEY](#pycryptkey)\.CryptEncrypt
 
+## [PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey)\.CryptEncrypt
 
+str = CryptEncrypt\(Final, Data
 
-str =CryptEncrypt\(Final, Data, Hash, Flags\)
+, Hash
+
+, Flags
+
+\)
 Encrypts and optionally hashes data
 
 #### Parameters
-
 
   - Final : int
 
@@ -106,7 +117,7 @@ Encrypts and optionally hashes data
 
     Data to be encrypted
 
-  - Hash=None :[PyCRYPTHASH](#pycrypthash)
+  - Hash=None : [PyCRYPTHASH](PyCRYPTHASH.md)
 
     Hash to be updated with data passed in, can be None
 
@@ -114,17 +125,19 @@ Encrypts and optionally hashes data
 
     Reserved, use 0 if passed in
 
-## [PyCRYPTKEY](#pycryptkey)\.CryptExportKey
 
+## [PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey)\.CryptExportKey
 
+str = CryptExportKey\(ExpKey, BlobType
 
-str =CryptExportKey\(ExpKey, BlobType, Flags\)
+, Flags
+
+\)
 Exports key or key pair as an encrypted blob
 
 #### Parameters
 
-
-  - ExpKey :[PyCRYPTKEY](#pycryptkey)
+  - ExpKey : [PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey)
 
     Public key or session key of destination user\.  Use None if exporting a PUBLICKEYBLOB
 
@@ -137,17 +150,17 @@ Exports key or key pair as an encrypted blob
     Combination of CRYPT\_DESTROYKEY,CRYPT\_SSL2\_FALLBACK,CRYPT\_OAEP or 0
 
 #### Return Value
-Returns a binary blob that can be imported via[PyCRYPTPROV::CryptImportKey](PyCRYPTPROV.md#pycryptprovcryptimportkey)
-
-## [PyCRYPTKEY](#pycryptkey)\.CryptGetKeyParam
+Returns a binary blob that can be imported via [PyCRYPTPROV::CryptImportKey](PyCRYPTPROV.md#pycryptprovcryptimportkey)
 
 
+## [PyCRYPTKEY](PyCRYPTKEY.md#pycryptkey)\.CryptGetKeyParam
 
-object =CryptGetKeyParam\(Param, Flags\)
+object = CryptGetKeyParam\(Param, Flags
+
+\)
 Retrieves key parameters
 
 #### Parameters
-
 
   - Param : int
 

@@ -1,13 +1,11 @@
 # PyCBrush
 
+
 ## PyCBrush Object
-
-
 
 An object encapsulating an MFC PyCBrush class\.
 
 #### Methods
-
 
   - [CreateSolidBrush](PyCBrush.md#pycbrushcreatesolidbrush)
 
@@ -17,14 +15,14 @@ An object encapsulating an MFC PyCBrush class\.
 
     Retrieves the HBRUSH for the brush as an integer&nbsp;
 
-## [PyCBrush](#pycbrush)\.CreateSolidBrush
+
+## [PyCBrush](PyCBrush.md#pycbrush)\.CreateSolidBrush
 
 CreateSolidBrush\(\)
 Initializes a brush with a specified solid color\.
 
-## [PyCBrush](#pycbrush)\.GetSafeHandle
 
+## [PyCBrush](PyCBrush.md#pycbrush)\.GetSafeHandle
 
-
-int =GetSafeHandle\(\)
+int = GetSafeHandle\(\)
 Retrieves the HBRUSH for the brush as an integer

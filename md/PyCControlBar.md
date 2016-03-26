@@ -1,15 +1,13 @@
 # PyCControlBar
 
+
 ## PyCControlBar Object
 
+A class which encapsulates an MFC CControlBar
 
-
-A class which encapsulates an MFCCControlBar
-
-\.  Derived from a[PyCWnd](#pycwnd) object\.
+\.  Derived from a [PyCWnd](PyCWnd.md) object\.
 
 #### Methods
-
 
   - [CalcDynamicLayout](PyCControlBar.md#pyccontrolbarcalcdynamiclayout)
 
@@ -53,30 +51,35 @@ A class which encapsulates an MFCCControlBar
 
 #### Properties
 
-  - [PyCFrameWnd](#pycframewnd) dockSite
+  - [PyCFrameWnd](PyCFrameWnd.md) dockSite
+
     Current dock site, if dockable
 
-  - [PyCWnd](#pycwnd) dockBar
+  - [PyCWnd](PyCWnd.md) dockBar
+
     Current dock bar, if dockable
 
-  - [PyCDockContext](#pycdockcontext) dockContext
+  - [PyCDockContext](PyCDockContext.md) dockContext
+
     Used during dragging
 
   - int dwStyle
+
     creation style \(used for layout\)
 
   - int dwDockStyle
+
     indicates how bar can be docked
 
-## [PyCControlBar](#pyccontrolbar)\.CalcDynamicLayout
 
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.CalcDynamicLayout
 
+int = CalcDynamicLayout\(length, dwMode
 
-int =CalcDynamicLayout\(length, dwMode\)
+\)
 The framework calls this member function to calculate the dimensions of a dynamic toolbar\.
 
 #### Parameters
-
 
   - length : int
 
@@ -86,36 +89,35 @@ The framework calls this member function to calculate the dimensions of a dynami
 
     A combination of flags\.
 
-## [PyCControlBar\.CalcDynamicLayout](#pyccontrolbar) Virtual
+
+## [PyCControlBar\.CalcDynamicLayout](PyCControlBar.md#pyccontrolbar) Virtual
 
 CalcDynamicLayout\(\)
 Override to augment control-bar size calculations\.
 
 #### Comments
 
-
 The base implementation is not called if a handler exists\.  This can be 
 
-done viaCPythonControlBar::CalcDynamicLayout
-
-
+done via CPythonControlBar::CalcDynamicLayout
 
 \.
 
 #### See Also
 
-
   - CPythonControlBar::CalcDynamicLayout
 
-## [PyCControlBar](#pyccontrolbar)\.CalcFixedLayout
 
 
 
-int =CalcFixedLayout\(bStretch, bHorz\)
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.CalcFixedLayout
+
+int = CalcFixedLayout\(bStretch, bHorz
+
+\)
 Calculates the horizontal size of a control bar
 
 #### Parameters
-
 
   - bStretch : int
 
@@ -125,95 +127,92 @@ Calculates the horizontal size of a control bar
 
     Indicates that the bar is horizontally or vertically oriented\.
 
-## [PyCControlBar\.CalcFixedLayout](#pyccontrolbar) Virtual
+
+## [PyCControlBar\.CalcFixedLayout](PyCControlBar.md#pyccontrolbar) Virtual
 
 CalcFixedLayout\(\)
 Override to augment control-bar size calculations\.
 
 #### Comments
 
-
 The base implementation is not called if a handler exists\.  This can be 
 
-done viaCPythonControlBar::CalcFixedLayout
-
-
+done via CPythonControlBar::CalcFixedLayout
 
 \.
 
 #### See Also
 
-
   - CPythonControlBar::CalcFixedLayout
 
-## [PyCControlBar](#pyccontrolbar)\.EnableDocking
+
+
+
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.EnableDocking
 
 EnableDocking\(style\)
 pecifies whether the control bar supports docking and the sides of its parent window\.
 
 #### Parameters
 
-
   - style : int
 
     Enables a control bar to be docked\.
 
-## [PyCControlBar](#pyccontrolbar)\.EraseNonClient
+
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.EraseNonClient
 
 EraseNonClient\(\)
 
 
-## [PyCControlBar](#pyccontrolbar)\.GetBarStyle
 
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.GetBarStyle
 
-
-int =GetBarStyle\(\)
+int = GetBarStyle\(\)
 Retrieves the control bar style settings\.
 
-## [PyCControlBar](#pyccontrolbar)\.GetCount
 
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.GetCount
 
-
-int =GetCount\(\)
+int = GetCount\(\)
 Returns the number of non-HWND elements in the control bar\.
 
-## [PyCControlBar](#pyccontrolbar)\.GetDockingFrame
 
-[PyCFrameWnd](#pycframewnd) =GetDockingFrame\(\)
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.GetDockingFrame
+
+[PyCFrameWnd](PyCFrameWnd.md) = GetDockingFrame\(\)
 Returns the frame window to which a control bar is docked\.
 
-## [PyCControlBar](#pyccontrolbar)\.IsFloating
 
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.IsFloating
 
-
-int =IsFloating\(\)
+int = IsFloating\(\)
 Returns a nonzero value if the control bar in question is a floating control bar\.
 
-## [PyCControlBar\.OnBarStyleChange](#pyccontrolbar) Virtual
+
+## [PyCControlBar\.OnBarStyleChange](PyCControlBar.md#pyccontrolbar) Virtual
 
 OnBarStyleChange\(\)
 Override to augment control-bar size calculations\.
 
 #### Comments
 
-
 The base implementation is not called if a handler exists\.  This can be 
 
-done viaCPythonControlBar::OnBarStyleChange
-
-
+done via CPythonControlBar::OnBarStyleChange
 
 \.
 
-## [PyCControlBar\.OnUpdateCmdUI](#pyccontrolbar) Virtual
 
-OnUpdateCmdUI\(frame, bDisableIsNoHandler\)
+## [PyCControlBar\.OnUpdateCmdUI](PyCControlBar.md#pyccontrolbar) Virtual
 
+OnUpdateCmdUI\(frame, bDisableIsNoHandler
+
+\)
 
 #### Parameters
 
-
-  - frame :[PyCFrameWnd](#pycframewnd)
+  - frame : [PyCFrameWnd](PyCFrameWnd.md)
 
     
 
@@ -221,29 +220,29 @@ OnUpdateCmdUI\(frame, bDisableIsNoHandler\)
 
     
 
-## [PyCControlBar](#pyccontrolbar)\.SetBarStyle
+
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.SetBarStyle
 
 SetBarStyle\(style\)
 Modifies the control bar style settings\.
 
 #### Parameters
 
-
   - style : int
 
     The new style
 
-## [PyCControlBar](#pyccontrolbar)\.ShowWindow
 
+## [PyCControlBar](PyCControlBar.md#pyccontrolbar)\.ShowWindow
 
-
-int =ShowWindow\(\)
+int = ShowWindow\(\)
 Shows the toolbar, and recalculates the button layout\.
 
 #### Comments
 
+This method is provided for convenience\.  For further details, see 
 
-This method is provided for convenience\.  For further details, see[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow) and[PyCFrameWnd::RecalcLayout](PyCFrameWnd.md#pycframewndrecalclayout)
+[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow) and [PyCFrameWnd::RecalcLayout](PyCFrameWnd.md#pycframewndrecalclayout)
 
 #### Return Value
-The return value is that returned from[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)
+The return value is that returned from [PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)

@@ -1,13 +1,11 @@
 # PyCTreeView
 
+
 ## PyCTreeView Object
 
-
-
-A class which implementes a CTreeView\.  Derived from[PyCView](#pycview) and[PyCTreeCtrl](#pyctreectrl) objects\.
+A class which implementes a CTreeView\.  Derived from [PyCView](PyCView.md) and [PyCTreeCtrl](PyCTreeCtrl.md) objects\.
 
 #### Methods
-
 
   - [PreCreateWindow](PyCTreeView.md#pyctreeviewprecreatewindow)
 
@@ -22,18 +20,20 @@ A class which implementes a CTreeView\.  Derived from[PyCView](#pycview) and[PyC
     Calls the standard Python framework OnCommand handler&nbsp;
 
 
-## [PyCTreeView](#pyctreeview)\.GetTreeCtrl
 
-[PyCTreeCtrl](#pyctreectrl) =GetTreeCtrl\(\)
+
+## [PyCTreeView](PyCTreeView.md#pyctreeview)\.GetTreeCtrl
+
+[PyCTreeCtrl](PyCTreeCtrl.md) = GetTreeCtrl\(\)
 Returns the underlying tree control object\.
 
-## [PyCTreeView](#pyctreeview)\.OnCommand
+
+## [PyCTreeView](PyCTreeView.md#pyctreeview)\.OnCommand
 
 OnCommand\(wparam, lparam\)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
-
 
   - wparam : int
 
@@ -45,18 +45,15 @@ Calls the standard Python framework OnCommand handler
 
 #### See Also
 
-
   - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual) virtual method
 
-## [PyCTreeView](#pyctreeview)\.PreCreateWindow
 
+## [PyCTreeView](PyCTreeView.md#pyctreeview)\.PreCreateWindow
 
-
-tuple =PreCreateWindow\(createStruct\)
+tuple = PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
-
 
   - createStruct : tuple
 

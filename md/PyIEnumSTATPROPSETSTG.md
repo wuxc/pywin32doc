@@ -1,13 +1,11 @@
 # PyIEnumSTATPROPSETSTG
 
+
 ## PyIEnumSTATPROPSETSTG Object
-
-
 
 A Python interface to IEnumSTATPROPSETSTG
 
 #### Methods
-
 
   - [Next](PyIEnumSTATPROPSETSTG.md#pyienumstatpropsetstgnext)
 
@@ -25,31 +23,32 @@ A Python interface to IEnumSTATPROPSETSTG
 
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg)\.Clone
 
-[PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg) =Clone\(\)
+## [PyIEnumSTATPROPSETSTG](PyIEnumSTATPROPSETSTG.md#pyienumstatpropsetstg)\.Clone
+
+[PyIEnumSTATPROPSETSTG](PyIEnumSTATPROPSETSTG.md#pyienumstatpropsetstg) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg)\.Next
 
+## [PyIEnumSTATPROPSETSTG](PyIEnumSTATPROPSETSTG.md#pyienumstatpropsetstg)\.Next
 
-
-object =Next\(num\)
+object = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg)\.Reset
+
+## [PyIEnumSTATPROPSETSTG](PyIEnumSTATPROPSETSTG.md#pyienumstatpropsetstg)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumSTATPROPSETSTG](#pyienumstatpropsetstg)\.Skip
+
+## [PyIEnumSTATPROPSETSTG](PyIEnumSTATPROPSETSTG.md#pyienumstatpropsetstg)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

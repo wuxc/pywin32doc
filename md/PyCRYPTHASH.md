@@ -1,13 +1,11 @@
 # PyCRYPTHASH
 
+
 ## PyCRYPTHASH Object
-
-
 
 Handle to a cryptographic hash
 
 #### Methods
-
 
   - [CryptDestroyHash](PyCRYPTHASH.md#pycrypthashcryptdestroyhash)
 
@@ -37,32 +35,33 @@ Handle to a cryptographic hash
 
     Retrieves the specified attribute of the hash&nbsp;
 
-## [PyCRYPTHASH](#pycrypthash)\.CryptDestroyHash
+
+## [PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash)\.CryptDestroyHash
 
 CryptDestroyHash\(\)
 Frees the hash object
 
-## [PyCRYPTHASH](#pycrypthash)\.CryptDuplicateHash
 
-[PyCRYPTHASH](#pycrypthash) =CryptDuplicateHash\(Flags\)
+## [PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash)\.CryptDuplicateHash
+
+[PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash) = CryptDuplicateHash\(Flags\)
 Clones the hash object
 
 #### Parameters
-
 
   - Flags=0 : int
 
     Reserved, use 0 if passed
 
-## [PyCRYPTHASH](#pycrypthash)\.CryptGetHashParam
 
+## [PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash)\.CryptGetHashParam
 
+int/str = CryptGetHashParam\(Param, Flags
 
-int/str =CryptGetHashParam\(Param, Flags\)
+\)
 Retrieves the specified attribute of the hash
 
 #### Parameters
-
 
   - Param : int
 
@@ -74,19 +73,18 @@ Retrieves the specified attribute of the hash
 
 #### Comments
 
-
 After this method has been called, no more data can be hashed
 
 #### Return Value
 Type of returned object is dependent on the Param passed in
 
-## [PyCRYPTHASH](#pycrypthash)\.CryptHashData
+
+## [PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash)\.CryptHashData
 
 CryptHashData\(Data, Flags\)
 Adds data to the hash
 
 #### Parameters
-
 
   - Data : string
 
@@ -98,20 +96,19 @@ Adds data to the hash
 
 #### Comments
 
-
 If Flags is CRYPT\_USERDATA, provider is expected to prompt user to 
 
 enter data\.  MSDN says that MS CSPs ignore this flag
 
-## [PyCRYPTHASH](#pycrypthash)\.CryptHashSessionKey
+
+## [PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash)\.CryptHashSessionKey
 
 CryptHashSessionKey\(Key, Flags\)
 Hashes a session key
 
 #### Parameters
 
-
-  - Key :[PyCRYPTKEY](#pycryptkey)
+  - Key : [PyCRYPTKEY](PyCRYPTKEY.md)
 
     The session key to be hashed
 
@@ -119,15 +116,15 @@ Hashes a session key
 
     CRYPT\_LITTLE\_ENDIAN or 0
 
-## [PyCRYPTHASH](#pycrypthash)\.CryptSignHash
 
+## [PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash)\.CryptSignHash
 
+string = CryptSignHash\(KeySpec, Flags
 
-string =CryptSignHash\(KeySpec, Flags\)
+\)
 Signs the hash
 
 #### Parameters
-
 
   - KeySpec : int
 
@@ -139,22 +136,21 @@ Signs the hash
 
 #### Comments
 
-
 This methods signs only the hash, not the data that the hash represents
 
-## [PyCRYPTHASH](#pycrypthash)\.CryptVerifySignature
+
+## [PyCRYPTHASH](PyCRYPTHASH.md#pycrypthash)\.CryptVerifySignature
 
 CryptVerifySignature\(Signature, PubKey, Flags\)
 Verifies that a signature matches hashed data
 
 #### Parameters
 
-
   - Signature : string
 
     Signature data to verify
 
-  - PubKey :[PyCRYPTKEY](#pycryptkey)
+  - PubKey : [PyCRYPTKEY](PyCRYPTKEY.md)
 
     Public key of signer
 

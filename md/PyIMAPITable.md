@@ -1,14 +1,13 @@
 # PyIMAPITable
 
+
 ## PyIMAPITable Object
 
+An COM interface to MAPI 
 
-
-An COM interface to MAPI
-Derived from[PyIUnknown](#pyiunknown)
+Derived from [PyIUnknown](PyIUnknown.md)
 
 #### Methods
-
 
   - [Advise](PyIMAPITable.md#pyimapitableadvise)
 
@@ -74,45 +73,45 @@ Derived from[PyIUnknown](#pyiunknown)
 
     Cancels the sending of notifications previously set up with a call to the IMAPITable::Advise method\.&nbsp;
 
-## [PyIMAPITable](#pyimapitable)\.Abort
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.Abort
 
 Abort\(\)
 Stops any asynchronous operations currently in progress for the table\.
 
-## [PyIMAPITable](#pyimapitable)\.Advise
 
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.Advise
 
+int = Advise\(eventMask, adviseSink
 
-int =Advise\(eventMask, adviseSink\)
+\)
 Registers to receive notification of specified events affecting the table\.
 
 #### Parameters
-
 
   - eventMask : int
 
     
 
-  - adviseSink :PyIMAPIAdviseSink
+  - adviseSink : PyIMAPIAdviseSink
 
     
 
-## [PyIMAPITable](#pyimapitable)\.CreateBookmark
 
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.CreateBookmark
 
-
-int =CreateBookmark\(\)
+int = CreateBookmark\(\)
 Marks the table's current position\.
 
-## [PyIMAPITable](#pyimapitable)\.FindRow
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.FindRow
 
 FindRow\(restriction, bookmarkOrigin, flags\)
 Finds the next row in a table that matches specific search criteria\.
 
 #### Parameters
 
-
-  - restriction :[PySRestriction](#pysrestriction)
+  - restriction : [PySRestriction](PySRestriction.md)
 
     
 
@@ -124,33 +123,32 @@ Finds the next row in a table that matches specific search criteria\.
 
     
 
-## [PyIMAPITable](#pyimapitable)\.FreeBookmark
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.FreeBookmark
 
 FreeBookmark\(bookmark\)
 Releases the memory associated with a bookmark\.
 
 #### Parameters
 
-
   - bookmark : int
 
     
 
-## [PyIMAPITable](#pyimapitable)\.GetRowCount
 
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.GetRowCount
 
-
-int =GetRowCount\(flags\)
+int = GetRowCount\(flags\)
 Returns the total number of rows in the table\.
 
 #### Parameters
-
 
   - flags : int
 
     Reserved - must be zero
 
-## [PyIMAPITable](#pyimapitable)\.GetStatus
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.GetStatus
 
 GetStatus\(\)
 Returns the table's status and type\.
@@ -158,21 +156,22 @@ Returns the table's status and type\.
 #### Return Value
 Result is a tuple of \(tableStatus, tableType\)
 
-## [PyIMAPITable](#pyimapitable)\.QueryColumns
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.QueryColumns
 
 SPropTagArray
 
- =QueryColumns\(flags\)
+ = QueryColumns\(flags\)
 Returns a list of columns for the table\.
 
 #### Parameters
-
 
   - flags : int
 
     
 
-## [PyIMAPITable](#pyimapitable)\.QueryPosition
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.QueryPosition
 
 QueryPosition\(\)
 Retrieves the current table row position of the cursor, based on a fractional value\.
@@ -180,15 +179,17 @@ Retrieves the current table row position of the cursor, based on a fractional va
 #### Return Value
 Result is a tuple of \(row, numerator, denominator\)
 
-## [PyIMAPITable](#pyimapitable)\.QueryRows
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.QueryRows
 
 SRowSet
 
- =QueryRows\(rowCount, flags\)
+ = QueryRows\(rowCount, flags
+
+\)
 Returns one or more rows from a table, beginning at the current cursor position\.
 
 #### Parameters
-
 
   - rowCount : int
 
@@ -198,15 +199,15 @@ Returns one or more rows from a table, beginning at the current cursor position\
 
     Flags\.
 
-## [PyIMAPITable](#pyimapitable)\.Restrict
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.Restrict
 
 Restrict\(restriction, flags\)
 Applies a filter to a table, reducing the row set to only those rows matching the specified criteria\.
 
 #### Parameters
 
-
-  - restriction :[PySRestriction](#pysrestriction)
+  - restriction : [PySRestriction](PySRestriction.md)
 
     
 
@@ -214,15 +215,15 @@ Applies a filter to a table, reducing the row set to only those rows matching th
 
     
 
-## [PyIMAPITable](#pyimapitable)\.SeekRow
 
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.SeekRow
 
+int = SeekRow\(bookmark, rowCount
 
-int =SeekRow\(bookmark, rowCount\)
+\)
 Moves the cursor to a specific position in the table\.
 
 #### Parameters
-
 
   - bookmark : int
 
@@ -235,13 +236,13 @@ Moves the cursor to a specific position in the table\.
 #### Return Value
 The result is the number of rows processed\.
 
-## [PyIMAPITable](#pyimapitable)\.SeekRowApprox
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.SeekRowApprox
 
 SeekRowApprox\(numerator, denominator\)
 Moves the cursor to an approximate fractional position in the table\.
 
 #### Parameters
-
 
   - numerator : int
 
@@ -251,15 +252,15 @@ Moves the cursor to an approximate fractional position in the table\.
 
     The denominator of the fraction representing the table position\. This must not be zero\.
 
-## [PyIMAPITable](#pyimapitable)\.SetColumns
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.SetColumns
 
 SetColumns\(propTags, flags\)
 Defines the particular properties and order of properties to appear as columns in the table\.
 
 #### Parameters
 
-
-  - propTags :SPropTagArray
+  - propTags : SPropTagArray
 
     Sequence of property tags identifying properties to be included as columns in the table\.
 
@@ -267,15 +268,15 @@ Defines the particular properties and order of properties to appear as columns i
 
     
 
-## [PyIMAPITable](#pyimapitable)\.SortTable
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.SortTable
 
 SortTable\(sortOrderSet, flags\)
 Orders the rows of the table based on sort criteria\.
 
 #### Parameters
 
-
-  - sortOrderSet :[PySSortOrderSet](#pyssortorderset)
+  - sortOrderSet : [PySSortOrderSet](PySSortOrderSet.md)
 
     
 
@@ -283,14 +284,14 @@ Orders the rows of the table based on sort criteria\.
 
     
 
-## [PyIMAPITable](#pyimapitable)\.Unadvise
+
+## [PyIMAPITable](PyIMAPITable.md#pyimapitable)\.Unadvise
 
 Unadvise\(handle\)
 Cancels the sending of notifications previously set up with a call to the IMAPITable::Advise method\.
 
 #### Parameters
 
-
   - handle : int
 
-    Handle returned from[PyIMAPITable::Advise](PyIMAPITable.md#pyimapitableadvise)
+    Handle returned from [PyIMAPITable::Advise](PyIMAPITable.md#pyimapitableadvise)

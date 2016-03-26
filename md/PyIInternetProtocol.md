@@ -1,13 +1,11 @@
 # PyIInternetProtocol
 
+
 ## PyIInternetProtocol Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [Read](PyIInternetProtocol.md#pyiinternetprotocolread)
 
@@ -25,39 +23,39 @@ Description of the interface
 
     Description of UnlockRequest&nbsp;
 
-## [PyIInternetProtocol](#pyiinternetprotocol)\.LockRequest
+
+## [PyIInternetProtocol](PyIInternetProtocol.md#pyiinternetprotocol)\.LockRequest
 
 LockRequest\(dwOptions\)
 Description of LockRequest\.
 
 #### Parameters
 
-
   - dwOptions : int
 
     Description for dwOptions
 
-## [PyIInternetProtocol](#pyiinternetprotocol)\.Read
+
+## [PyIInternetProtocol](PyIInternetProtocol.md#pyiinternetprotocol)\.Read
 
 Read\(cb\)
 Description of Read\.
 
 #### Parameters
 
-
   - cb : int
 
     Description for cb
 
-## [PyIInternetProtocol](#pyiinternetprotocol)\.Seek
+
+## [PyIInternetProtocol](PyIInternetProtocol.md#pyiinternetprotocol)\.Seek
 
 Seek\(dlibMove, dwOrigin\)
 Description of Seek\.
 
 #### Parameters
 
-
-  - dlibMove :[LARGE\_INTEGER](LARGE.md#largeinteger)
+  - dlibMove : [LARGE\_INTEGER](LARGE.md#largeinteger)
 
     Description for dlibMove
 
@@ -65,7 +63,8 @@ Description of Seek\.
 
     Description for dwOrigin
 
-## [PyIInternetProtocol](#pyiinternetprotocol)\.UnlockRequest
+
+## [PyIInternetProtocol](PyIInternetProtocol.md#pyiinternetprotocol)\.UnlockRequest
 
 UnlockRequest\(\)
 Description of UnlockRequest\.

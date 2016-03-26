@@ -1,17 +1,13 @@
 # PyCToolTipCtrl
 
+
 ## PyCToolTipCtrl Object
 
+A windows tooltip control\.  Encapsulates an MFC CToolTipCtrl
 
-
-A windows tooltip control\.  Encapsulates an MFCCToolTipCtrl
-
-
-
- class\.  Derived from[PyCControl](#pyccontrol)\.
+ class\.  Derived from [PyCControl](PyCControl.md)\.
 
 #### Methods
-
 
   - [CreateWindow](PyCToolTipCtrl.md#pyctooltipctrlcreatewindow)
 
@@ -29,15 +25,15 @@ A windows tooltip control\.  Encapsulates an MFCCToolTipCtrl
 
     &nbsp;
 
-## [PyCToolTipCtrl](#pyctooltipctrl)\.AddTool
+
+## [PyCToolTipCtrl](PyCToolTipCtrl.md#pyctooltipctrl)\.AddTool
 
 AddTool\(wnd, text, rect, id\)
 Adds a tool to tooltip control\.
 
 #### Parameters
 
-
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md)
 
     The window of the tool\.
 
@@ -53,15 +49,15 @@ Adds a tool to tooltip control\.
 
     The id of the tool
 
-## [PyCToolTipCtrl](#pyctooltipctrl)\.CreateWindow
+
+## [PyCToolTipCtrl](PyCToolTipCtrl.md#pyctooltipctrl)\.CreateWindow
 
 CreateWindow\(parent, style\)
 Creates the actual control\.
 
 #### Parameters
 
-
-  - parent :[PyCWnd](#pycwnd)
+  - parent : [PyCWnd](PyCWnd.md)
 
     The parent window of the control\.
 
@@ -69,33 +65,30 @@ Creates the actual control\.
 
     The style for the control\.
 
-## [PyCToolTipCtrl](#pyctooltipctrl)\.SetMaxTipWidth
 
+## [PyCToolTipCtrl](PyCToolTipCtrl.md#pyctooltipctrl)\.SetMaxTipWidth
 
-
-int =SetMaxTipWidth\(width\)
-
+int = SetMaxTipWidth\(width\)
 
 #### Parameters
-
 
   - width : int
 
     The new width
 
-## [PyCToolTipCtrl](#pyctooltipctrl)\.UpdateTipText
+
+## [PyCToolTipCtrl](PyCToolTipCtrl.md#pyctooltipctrl)\.UpdateTipText
 
 UpdateTipText\(text, wnd, id\)
 Update the tool tip text for a control's tools
 
 #### Parameters
 
-
   - text : string
 
     The text for the tool\.
 
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md)
 
     The window of the tool\.
 

@@ -1,13 +1,11 @@
 # PyCTL
 
+
 ## PyCTL\_CONTEXT Object
-
-
 
 Object containing a Certificate Trust List
 
 #### Methods
-
 
   - [CertFreeCTLContext](PyCTL.md#pyctlcontext_certfreectlcontext)
 
@@ -32,51 +30,49 @@ Object containing a Certificate Trust List
 #### Properties
 
   - int HCTL\_CONTEXT
+
     Raw message handle
+
 
 ## [PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)\.CertDeleteCTLFromStore
 
 CertDeleteCTLFromStore\(\)
 Removes the CTL from the store that it is contained in
 
+
 ## [PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)\.CertEnumCTLContextProperties
 
-
-
-\(int,\.\.\.\) =CertEnumCTLContextProperties\(\)
+\(int,\.\.\.\) = CertEnumCTLContextProperties\(\)
 Lists property id's for the context
+
 
 ## [PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)\.CertEnumSubjectInSortedCTL
 
-
-
-\(\(str,str\),\.\.\.\) =CertEnumSubjectInSortedCTL\(\)
+\(\(str,str\),\.\.\.\) = CertEnumSubjectInSortedCTL\(\)
 Retrieves trusted subjects contained in CRL
 
 #### Return Value
 Returns a sequence of tuples containing two strings \(SubjectIdentifier, EncodedAttributes\)
+
 
 ## [PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)\.CertFreeCTLContext
 
 CertFreeCTLContext\(\)
 Closes the CTL handle
 
+
 ## [PyCTL\_CONTEXT](PyCTL.md#pyctlcontext)\.CertSerializeCTLStoreElement
 
-
-
-string =CertSerializeCTLStoreElement\(Flags\)
+string = CertSerializeCTLStoreElement\(Flags\)
 Serializes the CTL and its properties
 
 #### Parameters
-
 
   - Flags=0 : int
 
     Reserved, use only 0 if passed in
 
+
 ## PyCTL\_USAGE Object
-
-
 
 Sequence of string OIDs \(szOID\_\*\)\.  This struct is identical to CERT\_ENHKEY\_USAGE\.

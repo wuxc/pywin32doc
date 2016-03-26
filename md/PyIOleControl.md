@@ -1,13 +1,11 @@
 # PyIOleControl
 
+
 ## PyIOleControl Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetControlInfo](PyIOleControl.md#pyiolecontrolgetcontrolinfo)
 
@@ -25,42 +23,43 @@ Description of the interface
 
     Description of FreezeEvents&nbsp;
 
-## [PyIOleControl](#pyiolecontrol)\.FreezeEvents
+
+## [PyIOleControl](PyIOleControl.md#pyiolecontrol)\.FreezeEvents
 
 FreezeEvents\(bFreeze\)
 Description of FreezeEvents\.
 
 #### Parameters
 
-
   - bFreeze : int
 
     Description for bFreeze
 
-## [PyIOleControl](#pyiolecontrol)\.GetControlInfo
+
+## [PyIOleControl](PyIOleControl.md#pyiolecontrol)\.GetControlInfo
 
 GetControlInfo\(\)
 Description of GetControlInfo\.
 
-## [PyIOleControl](#pyiolecontrol)\.OnAmbientPropertyChange
+
+## [PyIOleControl](PyIOleControl.md#pyiolecontrol)\.OnAmbientPropertyChange
 
 OnAmbientPropertyChange\(dispID\)
 Description of OnAmbientPropertyChange\.
 
 #### Parameters
 
-
   - dispID : long
 
     Description for dispID
 
-## [PyIOleControl](#pyiolecontrol)\.OnMnemonic
+
+## [PyIOleControl](PyIOleControl.md#pyiolecontrol)\.OnMnemonic
 
 OnMnemonic\(msg\)
 Description of OnMnemonic\.
 
 #### Parameters
-
 
   - msg : iiiii\(ii\)
 

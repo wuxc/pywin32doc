@@ -1,13 +1,11 @@
 # PyIDebugDocumentText
 
+
 ## PyIDebugDocumentText Object
 
-
-
-The interface to a text only debug document\. Derived from[PyIDebugDocument](#pyidebugdocument)
+The interface to a text only debug document\. Derived from [PyIDebugDocument](PyIDebugDocument.md)
 
 #### Methods
-
 
   - [GetDocumentAttributes](PyIDebugDocumentText.md#pyidebugdocumenttextgetdocumentattributes)
 
@@ -37,13 +35,13 @@ The interface to a text only debug document\. Derived from[PyIDebugDocument](#py
 
     Description of GetContextOfPosition&nbsp;
 
-## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetContextOfPosition
+
+## [PyIDebugDocumentText](PyIDebugDocumentText.md#pyidebugdocumenttext)\.GetContextOfPosition
 
 GetContextOfPosition\(cCharacterPosition, cNumChars\)
 Description of GetContextOfPosition\.
 
 #### Parameters
-
 
   - cCharacterPosition : int
 
@@ -53,59 +51,61 @@ Description of GetContextOfPosition\.
 
     Description for cNumChars
 
-## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetDocumentAttributes
+
+## [PyIDebugDocumentText](PyIDebugDocumentText.md#pyidebugdocumenttext)\.GetDocumentAttributes
 
 GetDocumentAttributes\(\)
 Description of GetDocumentAttributes\.
 
-## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetLineOfPosition
+
+## [PyIDebugDocumentText](PyIDebugDocumentText.md#pyidebugdocumenttext)\.GetLineOfPosition
 
 GetLineOfPosition\(cCharacterPosition\)
 Description of GetLineOfPosition\.
 
 #### Parameters
 
-
   - cCharacterPosition : int
 
     Description for cCharacterPosition
 
-## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetPositionOfContext
+
+## [PyIDebugDocumentText](PyIDebugDocumentText.md#pyidebugdocumenttext)\.GetPositionOfContext
 
 GetPositionOfContext\(psc\)
 Description of GetPositionOfContext\.
 
 #### Parameters
 
-
-  - psc :[PyIDebugDocumentContext](#pyidebugdocumentcontext)
+  - psc : [PyIDebugDocumentContext](PyIDebugDocumentContext.md)
 
     Description for psc
 
-## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetPositionOfLine
+
+## [PyIDebugDocumentText](PyIDebugDocumentText.md#pyidebugdocumenttext)\.GetPositionOfLine
 
 GetPositionOfLine\(cLineNumber\)
 Description of GetPositionOfLine\.
 
 #### Parameters
 
-
   - cLineNumber : int
 
     Description for cLineNumber
 
-## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetSize
+
+## [PyIDebugDocumentText](PyIDebugDocumentText.md#pyidebugdocumenttext)\.GetSize
 
 GetSize\(\)
 Description of GetSize\.
 
-## [PyIDebugDocumentText](#pyidebugdocumenttext)\.GetText
+
+## [PyIDebugDocumentText](PyIDebugDocumentText.md#pyidebugdocumenttext)\.GetText
 
 GetText\(cCharacterPosition, cMaxChars, bWantAttr\)
 Description of GetText\.
 
 #### Parameters
-
 
   - cCharacterPosition : int
 

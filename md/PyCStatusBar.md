@@ -1,15 +1,13 @@
 # PyCStatusBar
 
+
 ## PyCStatusBar Object
 
+A class which encapsulates an MFC CStatusBar
 
-
-A class which encapsulates an MFCCStatusBar
-
-\.  Derived from a[PyCControlBar](#pyccontrolbar) object\.
+\.  Derived from a [PyCControlBar](PyCControlBar.md) object\.
 
 #### Methods
-
 
   - [GetPaneInfo](PyCStatusBar.md#pycstatusbargetpaneinfo)
 
@@ -27,15 +25,13 @@ A class which encapsulates an MFCCStatusBar
 
     Sets indicator ID, style, and width for a given pane index\.&nbsp;
 
-## [PyCStatusBar](#pycstatusbar)\.GetPaneInfo
 
+## [PyCStatusBar](PyCStatusBar.md#pycstatusbar)\.GetPaneInfo
 
-
-\(id, style, width\) =GetPaneInfo\(index\)
+\(id, style, width\) = GetPaneInfo\(index\)
 Returns the id, style, and width of the indicator pane at the location specified by index\.
 
 #### Parameters
-
 
   - index : int
 
@@ -43,16 +39,15 @@ Returns the id, style, and width of the indicator pane at the location specified
 
 #### MFC References
 
-
   - CStatusBar::GetPaneInfo
 
-## [PyCStatusBar](#pycstatusbar)\.GetStatusBarCtrl
 
-[PyCStatusBarCtrl](#pycstatusbarctrl) =GetStatusBarCtrl\(\)
+## [PyCStatusBar](PyCStatusBar.md#pycstatusbar)\.GetStatusBarCtrl
+
+[PyCStatusBarCtrl](PyCStatusBarCtrl.md) = GetStatusBarCtrl\(\)
 Gets the statusbar control object for the statusbar\.
 
 #### MFC References
-
 
   - CStatusBar::GetStatusBarCtrl 
 
@@ -66,25 +61,25 @@ simply a casted CToolBarCtrl \(afxext\.inl\) so the lookup will return the PyCTo
 
 which will fail the type tests\.
 
-## [PyCStatusBar](#pycstatusbar)\.SetIndicators
+
+## [PyCStatusBar](PyCStatusBar.md#pycstatusbar)\.SetIndicators
 
 SetIndicators\(indicators\)
 Sets each indicator's ID\.
 
 #### Parameters
 
-
   - indicators : tuple
 
     A tuple containing the ID's of the indicators\.
 
-## [PyCStatusBar](#pycstatusbar)\.SetPaneInfo
+
+## [PyCStatusBar](PyCStatusBar.md#pycstatusbar)\.SetPaneInfo
 
 SetPaneInfo\(index, id, style, width\)
 Sets the specified indicator pane to a new ID, style, and width\.
 
 #### Parameters
-
 
   - index : int
 
@@ -109,6 +104,5 @@ afxres\.SBPS\_NORMAL - No stretch, borders, or pop-out\.
     New width for the indicator pane\.
 
 #### MFC References
-
 
   - CStatusBar::SetPaneInfo

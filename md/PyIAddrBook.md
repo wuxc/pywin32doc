@@ -1,14 +1,13 @@
 # PyIAddrBook
 
+
 ## PyIAddrBook Object
 
+An COM interface to MAPI's IAddrBook interface\. 
 
-
-An COM interface to MAPI's IAddrBook interface\.
-Derived from[PyIMAPIProp](#pyimapiprop)
+Derived from [PyIMAPIProp](PyIMAPIProp.md)
 
 #### Methods
-
 
   - [ResolveName](PyIAddrBook.md#pyiaddrbookresolvename)
 
@@ -22,15 +21,17 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     Compares two entry identifiers belonging to a particular address book provider to determine if they refer to the same address book object&nbsp;
 
-## [PyIAddrBook](#pyiaddrbook)\.CompareEntryIDs
 
+## [PyIAddrBook](PyIAddrBook.md#pyiaddrbook)\.CompareEntryIDs
 
+int = CompareEntryIDs\(entryId, entryId
 
-int =CompareEntryIDs\(entryId, entryId, flags\)
+, flags
+
+\)
 Compares two entry identifiers belonging to a particular address book provider to determine if they refer to the same address book object
 
 #### Parameters
-
 
   - entryId : string
 
@@ -47,21 +48,25 @@ Compares two entry identifiers belonging to a particular address book provider t
 #### Return Value
 The result is set to TRUE if the two entry identifiers refer to the same object, and FALSE otherwise\.
 
-## [PyIAddrBook](#pyiaddrbook)\.OpenEntry
+
+## [PyIAddrBook](PyIAddrBook.md#pyiaddrbook)\.OpenEntry
 
 PyIInterface
 
- =OpenEntry\(entryId, iid, flags\)
+ = OpenEntry\(entryId, iid
+
+, flags
+
+\)
 Opens a folder or message and returns an interface object for further access\.
 
 #### Parameters
-
 
   - entryId : string
 
     The entryID of the object
 
-  - iid :[PyIID](#pyiid)
+  - iid : [PyIID](PyIID.md)
 
     The IID of the object to return, or None for the default IID
 
@@ -69,13 +74,13 @@ Opens a folder or message and returns an interface object for further access\.
 
     Bitmask of flags that controls how the object is opened\.
 
-## [PyIAddrBook](#pyiaddrbook)\.ResolveName
+
+## [PyIAddrBook](PyIAddrBook.md#pyiaddrbook)\.ResolveName
 
 ResolveName\(uiParm, flags, entryTitle, ADRLIST\)
 Performs name resolution, assigning entry identifiers to recipients in a recipient list\.
 
 #### Parameters
-
 
   - uiParm : int
 
@@ -89,6 +94,6 @@ Performs name resolution, assigning entry identifiers to recipients in a recipie
 
     
 
-  - ADRLIST :PyADRLIST
+  - ADRLIST : PyADRLIST
 
     Partial addresses to resolve\.

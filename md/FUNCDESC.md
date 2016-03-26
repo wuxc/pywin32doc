@@ -1,82 +1,90 @@
 # FUNCDESC
 
+
 ## FUNCDESC Object
-
-
 
 A FUNCDESC object represents a COM TYPEATTR structure\.
 
 #### Properties
 
   - integer memid
+
     
 
   - \(int, \.\.\.\) scodeArray
+
     
 
-  - \([ELEMDESC](#elemdesc), \.\.\.\) args
+  - \([ELEMDESC](ELEMDESC.md), \.\.\.\) args
+
     
 
   - int funckind
+
     
 
   - int invkind
+
     
 
   - int callconv
+
     
 
   - int cParamsOpt
+
     
 
   - int oVft
+
     
 
-  - [ELEMDESC](#elemdesc) rettype
+  - [ELEMDESC](ELEMDESC.md) rettype
+
     
 
   - int wFuncFlags
+
     
 
 #### Items
 
-
-  - \[0\]int : memid
-
-    
-
-  - \[1\]\(int, \.\.\.\) : scodeArray
+  - \[0\] int : memid
 
     
 
-  - \[2\]\([ELEMDESC](#elemdesc), \.\.\.\) : args
+  - \[1\] \(int, \.\.\.\) : scodeArray
 
     
 
-  - \[3\]int : funckind
+  - \[2\] \([ELEMDESC](ELEMDESC.md), \.\.\.\) : args
 
     
 
-  - \[4\]int : invkind
+  - \[3\] int : funckind
 
     
 
-  - \[5\]int : callconv
+  - \[4\] int : invkind
 
     
 
-  - \[6\]int : cParamsOpt
+  - \[5\] int : callconv
 
     
 
-  - \[7\]int : oVft
+  - \[6\] int : cParamsOpt
 
     
 
-  - \[8\][ELEMDESC](#elemdesc) : rettype
+  - \[7\] int : oVft
 
     
 
-  - \[9\]int : wFuncFlags
+  - \[8\] [ELEMDESC](ELEMDESC.md) : rettype
+
+    
+
+  - \[9\] int : wFuncFlags
 
     

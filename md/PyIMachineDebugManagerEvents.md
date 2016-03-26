@@ -1,13 +1,11 @@
 # PyIMachineDebugManagerEvents
 
+
 ## PyIMachineDebugManagerEvents Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [onAddApplication](PyIMachineDebugManagerEvents.md#pyimachinedebugmanagereventsonaddapplication)
 
@@ -17,15 +15,15 @@ Description of the interface
 
     Description of onRemoveApplication&nbsp;
 
-## [PyIMachineDebugManagerEvents](#pyimachinedebugmanagerevents)\.onAddApplication
+
+## [PyIMachineDebugManagerEvents](PyIMachineDebugManagerEvents.md#pyimachinedebugmanagerevents)\.onAddApplication
 
 onAddApplication\(pda, dwAppCookie\)
 Description of onAddApplication\.
 
 #### Parameters
 
-
-  - pda :[PyIRemoteDebugApplication](#pyiremotedebugapplication)
+  - pda : [PyIRemoteDebugApplication](PyIRemoteDebugApplication.md)
 
     Description for pda
 
@@ -33,15 +31,15 @@ Description of onAddApplication\.
 
     Description for dwAppCookie
 
-## [PyIMachineDebugManagerEvents](#pyimachinedebugmanagerevents)\.onRemoveApplication
+
+## [PyIMachineDebugManagerEvents](PyIMachineDebugManagerEvents.md#pyimachinedebugmanagerevents)\.onRemoveApplication
 
 onRemoveApplication\(pda, dwAppCookie\)
 Description of onRemoveApplication\.
 
 #### Parameters
 
-
-  - pda :[PyIRemoteDebugApplication](#pyiremotedebugapplication)
+  - pda : [PyIRemoteDebugApplication](PyIRemoteDebugApplication.md)
 
     Description for pda
 

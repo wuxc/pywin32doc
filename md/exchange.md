@@ -1,13 +1,11 @@
 # exchange
 
+
 ## Module exchange
-
-
 
 A COM interface to Exchange's API
 
 #### Methods
-
 
   - [HrGetExchangeStatus](exchange.md#exchangehrgetexchangestatus)
 
@@ -95,27 +93,27 @@ A COM interface to Exchange's API
 
   - [HrOpenSessionObject](exchange.md#exchangehropensessionobject)
 
-    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop) object for the current session object\.&nbsp;
+    Retrieves a MAPI [PyIMAPIProp](PyIMAPIProp.md) object for the current session object\.&nbsp;
 
   - [HrOpenSiteContainer](exchange.md#exchangehropensitecontainer)
 
-    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop) object for a site object\.&nbsp;
+    Retrieves a MAPI [PyIMAPIProp](PyIMAPIProp.md) object for a site object\.&nbsp;
 
   - [HrOpenSiteContainerAddressing](exchange.md#exchangehropensitecontaineraddressing)
 
-    Retrieves a MAPI[PyIMAPIProp](#pyimapiprop) object for a site-addressing object\.&nbsp;
-
-## [exchange](#exchange)\.HrCreateDirEntryIdEx
+    Retrieves a MAPI [PyIMAPIProp](PyIMAPIProp.md) object for a site-addressing object\.&nbsp;
 
 
+## [exchange](exchange.md#exchange)\.HrCreateDirEntryIdEx
 
-string =HrCreateDirEntryIdEx\(addrBook, distinguishedName\)
+string = HrCreateDirEntryIdEx\(addrBook, distinguishedName
+
+\)
 Creates a directory identifier for a MAPI object, given the address of the object in the directory
 
 #### Parameters
 
-
-  - addrBook :[PyIAddrBook](#pyiaddrbook)
+  - addrBook : [PyIAddrBook](PyIAddrBook.md)
 
     The address book interface
 
@@ -123,104 +121,92 @@ Creates a directory identifier for a MAPI object, given the address of the objec
 
     The dn of the object to obtain the entry ID for\.
 
-## [exchange](#exchange)\.HrCreateProfileName
 
+## [exchange](exchange.md#exchange)\.HrCreateProfileName
 
-
-string =HrCreateProfileName\(profPrefix\)
+string = HrCreateProfileName\(profPrefix\)
 Creates a profile with the specified name
 
 #### Parameters
 
-
-  - profPrefix : string/[PyUnicode](#pyunicode)
+  - profPrefix : string/[PyUnicode](PyUnicode.md)
 
     A prefix for the new profile\.
 
-## [exchange](#exchange)\.HrFindExchangeGlobalAddressList
 
+## [exchange](exchange.md#exchange)\.HrFindExchangeGlobalAddressList
 
-
-string =HrFindExchangeGlobalAddressList\(addrBook\)
+string = HrFindExchangeGlobalAddressList\(addrBook\)
 Retrieves the entry identifier of the global address list \(GAL\) container in the address book\.
 
 #### Parameters
 
-
-  - addrBook :[PyIAddrBook](#pyiaddrbook)
+  - addrBook : [PyIAddrBook](PyIAddrBook.md)
 
     The interface containing the address book
 
-## [exchange](#exchange)\.HrGetExchangeStatus
 
+## [exchange](exchange.md#exchange)\.HrGetExchangeStatus
 
-
-int, int =HrGetExchangeStatus\(server\)
+int, int = HrGetExchangeStatus\(server\)
 Obtains the current state of the server on a computer\.
 
 #### Parameters
 
-
-  - server : string/[PyUnicode](#pyunicode)
+  - server : string/[PyUnicode](PyUnicode.md)
 
     The name of the server to query\.
 
 #### Return Value
 The result is a tuple of serviceState, serverState
 
-## [exchange](#exchange)\.HrGetMailboxDN
 
+## [exchange](exchange.md#exchange)\.HrGetMailboxDN
 
-
-string =HrGetMailboxDN\(session\)
+string = HrGetMailboxDN\(session\)
 Retrieves the distinguished name \(DN\) for a mailbox
 
 #### Parameters
 
-
-  - session :IMAPISession
+  - session : IMAPISession
 
     The root folder\.
 
-## [exchange](#exchange)\.HrGetServerDN
 
+## [exchange](exchange.md#exchange)\.HrGetServerDN
 
-
-string =HrGetServerDN\(session\)
+string = HrGetServerDN\(session\)
 Retrieves the distinguished name \(DN\) for a server
 
 #### Parameters
 
-
-  - session :IMAPISession
+  - session : IMAPISession
 
     The root folder\.
 
-## [exchange](#exchange)\.HrMAPIFindDefaultMsgStore
 
+## [exchange](exchange.md#exchange)\.HrMAPIFindDefaultMsgStore
 
-
-string =HrMAPIFindDefaultMsgStore\(session\)
+string = HrMAPIFindDefaultMsgStore\(session\)
 Retrieves the entry identifier of the default information store\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     
 
-## [exchange](#exchange)\.HrMAPIFindFolder
 
+## [exchange](exchange.md#exchange)\.HrMAPIFindFolder
 
+string = HrMAPIFindFolder\(folder, name
 
-string =HrMAPIFindFolder\(folder, name\)
+\)
 Retrieves the entry ID for a folder in an information store using the hierarchical path name of the folder\.
 
 #### Parameters
 
-
-  - folder :[PyIMAPIFolder](#pyimapifolder)
+  - folder : [PyIMAPIFolder](PyIMAPIFolder.md)
 
     The folder to search
 
@@ -228,17 +214,19 @@ Retrieves the entry ID for a folder in an information store using the hierarchic
 
     Name of the folder
 
-## [exchange](#exchange)\.HrMAPIFindFolderEx
 
+## [exchange](exchange.md#exchange)\.HrMAPIFindFolderEx
 
+string = HrMAPIFindFolderEx\(msgStore, sepString
 
-string =HrMAPIFindFolderEx\(msgStore, sepString, path\)
+, path
+
+\)
 Retrieves the entry ID of a folder in an information store using the hierarchical path name of the folder\.
 
 #### Parameters
 
-
-  - msgStore :[PyIMsgStore](#pyimsgstore)
+  - msgStore : [PyIMsgStore](PyIMsgStore.md)
 
     The folder to search
 
@@ -250,43 +238,41 @@ Retrieves the entry ID of a folder in an information store using the hierarchica
 
     Path to the folder
 
-## [exchange](#exchange)\.HrMAPIFindIPMSubtree
 
+## [exchange](exchange.md#exchange)\.HrMAPIFindIPMSubtree
 
-
-string =HrMAPIFindIPMSubtree\(msgStore\)
+string = HrMAPIFindIPMSubtree\(msgStore\)
 Retrieves the entry ID of the IPM \(interpersonal message\) subtree folder
 
 #### Parameters
 
-
-  - msgStore :[PyIMsgStore](#pyimsgstore)
+  - msgStore : [PyIMsgStore](PyIMsgStore.md)
 
     
 
-## [exchange](#exchange)\.HrMAPIFindInbox
 
+## [exchange](exchange.md#exchange)\.HrMAPIFindInbox
 
-
-string =HrMAPIFindInbox\(msgStore\)
+string = HrMAPIFindInbox\(msgStore\)
 Retrieves the Entry ID of the IPM inbox folder
 
 #### Parameters
 
-
-  - msgStore :[PyIMsgStore](#pyimsgstore)
+  - msgStore : [PyIMsgStore](PyIMsgStore.md)
 
     
 
-## [exchange](#exchange)\.HrMAPIFindStore
 
-[PyIMsgStore](#pyimsgstore) =HrMAPIFindStore\(session, name\)
+## [exchange](exchange.md#exchange)\.HrMAPIFindStore
+
+[PyIMsgStore](PyIMsgStore.md) = HrMAPIFindStore\(session, name
+
+\)
 Retrieves a pointer to the entry identifier of an information store from the display name of the store\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     
 
@@ -294,55 +280,63 @@ Retrieves a pointer to the entry identifier of an information store from the dis
 
     
 
-## [exchange](#exchange)\.HrMAPIFindSubfolderEx
 
-[PyIMsgStore](#pyimsgstore) =HrMAPIFindSubfolderEx\(rootFolder, sep, name\)
+## [exchange](exchange.md#exchange)\.HrMAPIFindSubfolderEx
+
+[PyIMsgStore](PyIMsgStore.md) = HrMAPIFindSubfolderEx\(rootFolder, sep
+
+, name
+
+\)
 Retrieves a subfolder in an information store using the hierarchical path name of the folder\.
 
 #### Parameters
 
-
-  - rootFolder :[PyIMAPIFolder](#pyimapifolder)
+  - rootFolder : [PyIMAPIFolder](PyIMAPIFolder.md)
 
     The root folder\.
 
-  - sep : string/[PyUnicode](#pyunicode)
+  - sep : string/[PyUnicode](PyUnicode.md)
 
     The folder seperator character\.
 
-  - name : string/[PyUnicode](#pyunicode)
+  - name : string/[PyUnicode](PyUnicode.md)
 
     The folder name
 
-## [exchange](#exchange)\.HrMAPIOpenFolderEx
 
-[PyIMAPIFolder](#pyimapifolder) =HrMAPIOpenFolderEx\(msgStore, sep, name\)
+## [exchange](exchange.md#exchange)\.HrMAPIOpenFolderEx
+
+[PyIMAPIFolder](PyIMAPIFolder.md) = HrMAPIOpenFolderEx\(msgStore, sep
+
+, name
+
+\)
 Opens a folder in the information store from the hierarchical path name of the folder\.
 
 #### Parameters
 
-
-  - msgStore :[PyIMsgStore](#pyimsgstore)
+  - msgStore : [PyIMsgStore](PyIMsgStore.md)
 
     
 
-  - sep : string/[PyUnicode](#pyunicode)
+  - sep : string/[PyUnicode](PyUnicode.md)
 
     The folder seperator character\.
 
-  - name : string/[PyUnicode](#pyunicode)
+  - name : string/[PyUnicode](PyUnicode.md)
 
     The folder name
 
-## [exchange](#exchange)\.HrMAPISetPropBoolean
+
+## [exchange](exchange.md#exchange)\.HrMAPISetPropBoolean
 
 HrMAPISetPropBoolean\(obj, tag\)
 Sets a boolean property\.
 
 #### Parameters
 
-
-  - obj :[PyIMAPIProp](#pyimapiprop)
+  - obj : [PyIMAPIProp](PyIMAPIProp.md)
 
     The object to set
 
@@ -350,15 +344,15 @@ Sets a boolean property\.
 
     The property tag
 
-## [exchange](#exchange)\.HrMAPISetPropLong
+
+## [exchange](exchange.md#exchange)\.HrMAPISetPropLong
 
 HrMAPISetPropLong\(obj, tag\)
 Sets a long property\.
 
 #### Parameters
 
-
-  - obj :[PyIMAPIProp](#pyimapiprop)
+  - obj : [PyIMAPIProp](PyIMAPIProp.md)
 
     The object to set
 
@@ -366,129 +360,150 @@ Sets a long property\.
 
     The property tag
 
-## [exchange](#exchange)\.HrMailboxLogoff
+
+## [exchange](exchange.md#exchange)\.HrMailboxLogoff
 
 HrMailboxLogoff\(inbox\)
 Logs off a server and mailbox\.
 
 #### Parameters
 
-
-  - inbox :[PyIMsgStore](#pyimsgstore)
+  - inbox : [PyIMsgStore](PyIMsgStore.md)
 
     The open inbox\.
 
-## [exchange](#exchange)\.HrMailboxLogon
 
-[PyIMsgStore](#pyimsgstore) =HrMailboxLogon\(session, msgStore, msgStoreDN, mailboxDN\)
+## [exchange](exchange.md#exchange)\.HrMailboxLogon
+
+[PyIMsgStore](PyIMsgStore.md) = HrMailboxLogon\(session, msgStore
+
+, msgStoreDN
+
+, mailboxDN
+
+\)
 Logs on a server and mailbox\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     The session object
 
-  - msgStore :[PyIMsgStore](#pyimsgstore)
+  - msgStore : [PyIMsgStore](PyIMsgStore.md)
 
     
 
-  - msgStoreDN : string/[PyUnicode](#pyunicode)
+  - msgStoreDN : string/[PyUnicode](PyUnicode.md)
 
     
 
-  - mailboxDN : string/[PyUnicode](#pyunicode)
+  - mailboxDN : string/[PyUnicode](PyUnicode.md)
 
     
 
-## [exchange](#exchange)\.HrOpenExchangePrivateStore
 
-[PyIMsgStore](#pyimsgstore) =HrOpenExchangePrivateStore\(session\)
+## [exchange](exchange.md#exchange)\.HrOpenExchangePrivateStore
+
+[PyIMsgStore](PyIMsgStore.md) = HrOpenExchangePrivateStore\(session\)
 Locates the primary user information store provider\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     The MAPI session object
 
-## [exchange](#exchange)\.HrOpenExchangePublicFolders
 
-[PyIMAPIFolder](#pyimapifolder) =HrOpenExchangePublicFolders\(store\)
+## [exchange](exchange.md#exchange)\.HrOpenExchangePublicFolders
+
+[PyIMAPIFolder](PyIMAPIFolder.md) = HrOpenExchangePublicFolders\(store\)
 Opens the root of the public folder hierarchy in the public information store\.
 
 #### Parameters
 
-
-  - store :[PyIMsgStore](#pyimsgstore)
+  - store : [PyIMsgStore](PyIMsgStore.md)
 
     
 
-## [exchange](#exchange)\.HrOpenExchangePublicStore
 
-[PyIMsgStore](#pyimsgstore) =HrOpenExchangePublicStore\(session\)
+## [exchange](exchange.md#exchange)\.HrOpenExchangePublicStore
+
+[PyIMsgStore](PyIMsgStore.md) = HrOpenExchangePublicStore\(session\)
 Retrieves an interface to the public information store provider\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     The MAPI session object
 
-## [exchange](#exchange)\.HrOpenSessionObject
 
-[PyIMAPIProp](#pyimapiprop) =HrOpenSessionObject\(session\)
-Retrieves a MAPI[PyIMAPIProp](#pyimapiprop) object for the current session object\.
+## [exchange](exchange.md#exchange)\.HrOpenSessionObject
+
+[PyIMAPIProp](PyIMAPIProp.md) = HrOpenSessionObject\(session\)
+Retrieves a MAPI [PyIMAPIProp](PyIMAPIProp.md) object for the current session object\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     The MAPI session object
 
-## [exchange](#exchange)\.HrOpenSiteContainer
 
-[PyIMAPIProp](#pyimapiprop) =HrOpenSiteContainer\(session\)
-Retrieves a MAPI[PyIMAPIProp](#pyimapiprop) object for a site object\.
+## [exchange](exchange.md#exchange)\.HrOpenSiteContainer
+
+[PyIMAPIProp](PyIMAPIProp.md) = HrOpenSiteContainer\(session\)
+Retrieves a MAPI [PyIMAPIProp](PyIMAPIProp.md) object for a site object\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     The MAPI session object
 
-## [exchange](#exchange)\.HrOpenSiteContainerAddressing
 
-[PyIMAPIProp](#pyimapiprop) =HrOpenSiteContainerAddressing\(session\)
-Retrieves a MAPI[PyIMAPIProp](#pyimapiprop) object for a site-addressing object\.
+## [exchange](exchange.md#exchange)\.HrOpenSiteContainerAddressing
+
+[PyIMAPIProp](PyIMAPIProp.md) = HrOpenSiteContainerAddressing\(session\)
+Retrieves a MAPI [PyIMAPIProp](PyIMAPIProp.md) object for a site-addressing object\.
 
 #### Parameters
 
-
-  - session :[PyIMAPISession](#pyimapisession)
+  - session : [PyIMAPISession](PyIMAPISession.md)
 
     The MAPI session object
+
 
 ## OPENSTORE\_HOME\_LOGON
+
 const exchange\.OPENSTORE\_HOME\_LOGON;
 
 
+
+
 ## OPENSTORE\_OVERRIDE\_HOME\_MDB
+
 const exchange\.OPENSTORE\_OVERRIDE\_HOME\_MDB;
 
 
+
+
 ## OPENSTORE\_PUBLIC
+
 const exchange\.OPENSTORE\_PUBLIC;
 
 
+
+
 ## OPENSTORE\_TAKE\_OWNERSHIP
+
 const exchange\.OPENSTORE\_TAKE\_OWNERSHIP;
 
 
+
+
 ## OPENSTORE\_USE\_ADMIN\_PRIVILEGE
+
 const exchange\.OPENSTORE\_USE\_ADMIN\_PRIVILEGE;
+

@@ -1,8 +1,7 @@
 # TYPEDESC
 
+
 ## TYPEDESC Object
-
-
 
 A typedesc is a complicated, recursive object, 
 

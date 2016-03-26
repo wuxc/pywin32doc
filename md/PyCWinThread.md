@@ -1,17 +1,13 @@
 # PyCWinThread
 
+
 ## PyCWinThread Object
 
-
-
-An application class\.  Encapsulates an MFCCWinThread
-
-
+An application class\.  Encapsulates an MFC CWinThread
 
  class
 
 #### Methods
-
 
   - [CreateThread](PyCWinThread.md#pycwinthreadcreatethread)
 
@@ -37,60 +33,60 @@ An application class\.  Encapsulates an MFCCWinThread
 
     Sets the threads priority&nbsp;
 
-## [PyCWinThread](#pycwinthread)\.CreateThread
+
+## [PyCWinThread](PyCWinThread.md#pycwinthread)\.CreateThread
 
 CreateThread\(\)
 Creates the actual thread behind the thread object\.
 
-## [PyCWinThread](#pycwinthread)\.PumpIdle
+
+## [PyCWinThread](PyCWinThread.md#pycwinthread)\.PumpIdle
 
 PumpIdle\(\)
 Pumps all idle messages\.
 
-## [PyCWinThread](#pycwinthread)\.PumpMessages
+
+## [PyCWinThread](PyCWinThread.md#pycwinthread)\.PumpMessages
 
 PumpMessages\(\)
 Pumps all messages to the application until a WM\_QUIT message is received\.
 
 #### Comments
 
-
 This allows an application which is performing a long operation to dispatch paint messages during the operation\.
 
-## [PyCWinThread](#pycwinthread)\.Run
 
+## [PyCWinThread](PyCWinThread.md#pycwinthread)\.Run
 
-
-int =Run\(\)
+int = Run\(\)
 Starts the message pump\.  Advanced users only
 
-## [PyCWinThread](#pycwinthread)\.SetMainFrame
+
+## [PyCWinThread](PyCWinThread.md#pycwinthread)\.SetMainFrame
 
 SetMainFrame\(mainFrame\)
 Sets the threads main frame
 
 #### Parameters
 
-
-  - mainFrame :[PyCWnd](#pycwnd)
+  - mainFrame : [PyCWnd](PyCWnd.md)
 
     The applications main frame\.
 
 #### Comments
 
-
 You can pass None to this function to reset the main frame\. 
 
 Should I free this?  I dont think so\!
 
-## [PyCWinThread](#pycwinthread)\.SetThreadPriority
+
+## [PyCWinThread](PyCWinThread.md#pycwinthread)\.SetThreadPriority
 
 SetThreadPriority\(priority\)
 Sets the threads priority\.  Returns TRUE if successful\.
 
 #### Parameters
 
-
-  - priority :[PyCWnd](#pycwnd)
+  - priority : [PyCWnd](PyCWnd.md)
 
     The threads priority\.

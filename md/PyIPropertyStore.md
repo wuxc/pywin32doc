@@ -1,13 +1,11 @@
 # PyIPropertyStore
 
+
 ## PyIPropertyStore Object
-
-
 
 Contains a collection of properties
 
 #### Methods
-
 
   - [GetCount](PyIPropertyStore.md#pyipropertystoregetcount)
 
@@ -29,55 +27,55 @@ Contains a collection of properties
 
     Commits property changes&nbsp;
 
-## [PyIPropertyStore](#pyipropertystore)\.Commit
+
+## [PyIPropertyStore](PyIPropertyStore.md#pyipropertystore)\.Commit
 
 Commit\(\)
 Commits property changes
 
-## [PyIPropertyStore](#pyipropertystore)\.GetAt
 
-[PyPROPERTYKEY](#pypropertykey) =GetAt\(iProp\)
+## [PyIPropertyStore](PyIPropertyStore.md#pyipropertystore)\.GetAt
+
+[PyPROPERTYKEY](PyPROPERTYKEY.md) = GetAt\(iProp\)
 Returns the property key for the specified property
 
 #### Parameters
-
 
   - iProp : int
 
     Zero-based index of property
 
-## [PyIPropertyStore](#pyipropertystore)\.GetCount
 
+## [PyIPropertyStore](PyIPropertyStore.md#pyipropertystore)\.GetCount
 
-
-int =GetCount\(\)
+int = GetCount\(\)
 Returns the number of properties in the store
 
-## [PyIPropertyStore](#pyipropertystore)\.GetValue
 
-[PyPROPVARIANT](#pypropvariant) =GetValue\(Key\)
+## [PyIPropertyStore](PyIPropertyStore.md#pyipropertystore)\.GetValue
+
+[PyPROPVARIANT](PyPROPVARIANT.md) = GetValue\(Key\)
 Retrieves the value of a property
 
 #### Parameters
 
+  - Key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
-  - Key :[PyPROPERTYKEY](#pypropertykey)
+    Property key as returned by [PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)
 
-    Property key as returned by[PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)
 
-## [PyIPropertyStore](#pyipropertystore)\.SetValue
+## [PyIPropertyStore](PyIPropertyStore.md#pyipropertystore)\.SetValue
 
 SetValue\(Key, Value\)
 Sets the value of a property
 
 #### Parameters
 
+  - Key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
-  - Key :[PyPROPERTYKEY](#pypropertykey)
+    Property key \(see [PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)\)
 
-    Property key \(see[PyIPropertyStore::GetAt](PyIPropertyStore.md#pyipropertystoregetat)\)
-
-  - Value :[PyPROPVARIANT](#pypropvariant)
+  - Value : [PyPROPVARIANT](PyPROPVARIANT.md)
 
     Variant value which can be converted to the appropriate variant type for the property 
 

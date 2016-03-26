@@ -1,13 +1,11 @@
 # PyIQueryAssociations
 
+
 ## PyIQueryAssociations Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [Init](PyIQueryAssociations.md#pyiqueryassociationsinit)
 
@@ -21,15 +19,17 @@ Description of the interface
 
     Searches for and retrieves a file association-related string from the registry\.&nbsp;
 
-## [PyIQueryAssociations](#pyiqueryassociations)\.GetKey
 
+## [PyIQueryAssociations](PyIQueryAssociations.md#pyiqueryassociations)\.GetKey
 
+int = GetKey\(flags, assocKey
 
-int =GetKey\(flags, assocKey,\)
+, 
+
+\)
 Searches for and retrieves a file association-related key from the registry\.
 
 #### Parameters
-
 
   - flags : int
 
@@ -45,15 +45,17 @@ Searches for and retrieves a file association-related key from the registry\.
 
 It is normally set to a shell verb such as 'open'\. Set this parameter to None if it is not used\.
 
-## [PyIQueryAssociations](#pyiqueryassociations)\.GetString
 
+## [PyIQueryAssociations](PyIQueryAssociations.md#pyiqueryassociations)\.GetString
 
+int = GetString\(flags, assocStr
 
-int =GetString\(flags, assocStr,\)
+, 
+
+\)
 Searches for and retrieves a file association-related string from the registry\.
 
 #### Parameters
-
 
   - flags : int
 
@@ -71,20 +73,19 @@ It is normally set to a shell verb such as 'open'\. Set this parameter to None i
 
 #### Comments
 
-
 Note that ASSOCF\_NOTRUNCATE semantics are currently not supported - 
 
 the buffer passed is 2048 bytes long, and will be truncated by the 
 
 shell if too small\.
 
-## [PyIQueryAssociations](#pyiqueryassociations)\.Init
+
+## [PyIQueryAssociations](PyIQueryAssociations.md#pyiqueryassociations)\.Init
 
 Init\(flags, assoc, hkeyProgId, hwnd\)
 Initializes the IQueryAssociations interface and sets the root key to the appropriate ProgID\.
 
 #### Parameters
-
 
   - flags : int
 
@@ -94,10 +95,10 @@ Initializes the IQueryAssociations interface and sets the root key to the approp
 
     The string data \(ie, extension, prog-id, etc\)
 
-  - hkeyProgId=None :[PyHKEY](#pyhkey)
+  - hkeyProgId=None : [PyHKEY](PyHKEY.md)
 
     Root registry key, can be None
 
-  - hwnd=None :[PyHANDLE](#pyhandle)
+  - hwnd=None : [PyHANDLE](PyHANDLE.md)
 
     Reserved, must be 0 or None

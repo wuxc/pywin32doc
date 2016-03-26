@@ -1,17 +1,13 @@
 # PyCFrameWnd
 
+
 ## PyCFrameWnd Object
 
+A windows frame window\.  Encapsulates an MFC CFrameWnd
 
-
-A windows frame window\.  Encapsulates an MFCCFrameWnd
-
-
-
- class\.  Derived from a[PyCWnd](#pycwnd) object\.
+ class\.  Derived from a [PyCWnd](PyCWnd.md) object\.
 
 #### Methods
-
 
   - [BeginModalState](PyCFrameWnd.md#pycframewndbeginmodalstate)
 
@@ -23,7 +19,7 @@ A windows frame window\.  Encapsulates an MFCCFrameWnd
 
   - [EndModalState](PyCFrameWnd.md#pycframewndendmodalstate)
 
-    Ends the frame window's modal state\. Enables all of the windows disabled by[PyCFrameWnd::BeginModalState](PyCFrameWnd.md#pycframewndbeginmodalstate)\.&nbsp;
+    Ends the frame window's modal state\. Enables all of the windows disabled by [PyCFrameWnd::BeginModalState](PyCFrameWnd.md#pycframewndbeginmodalstate)\.&nbsp;
 
   - [DockControlBar](PyCFrameWnd.md#pycframewnddockcontrolbar)
 
@@ -106,20 +102,34 @@ A windows frame window\.  Encapsulates an MFCCFrameWnd
     Sets the active view for a frame\.&nbsp;
 
 
-## [PyCFrameWnd](#pycframewnd)\.BeginModalState
+
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.BeginModalState
 
 BeginModalState\(\)
 Sets the frame window to modal\.
 
-## [PyCFrameWnd](#pycframewnd)\.CreateWindow
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.CreateWindow
 
+tuple = CreateWindow\(wndClass, title
 
-tuple =CreateWindow\(wndClass, title, style, rect,[PyCWnd](#pycwnd), createContext, menuId, styleEx\)
+, style
+
+, rect
+
+, [PyCWnd](PyCWnd.md)
+
+, createContext
+
+, menuId
+
+, styleEx
+
+\)
 Creates the actual window for the PyCFrameWnd object\.
 
 #### Parameters
-
 
   - wndClass : string
 
@@ -137,7 +147,7 @@ Creates the actual window for the PyCFrameWnd object\.
 
     The default rectangle
 
-  - [PyCWnd](#pycwnd)=None : parent
+  - [PyCWnd](PyCWnd.md)=None : parent
 
     The parent window
 
@@ -155,18 +165,17 @@ Creates the actual window for the PyCFrameWnd object\.
 
 #### MFC References
 
-
   - CFrameWnd::Create
 
-## [PyCFrameWnd](#pycframewnd)\.DockControlBar
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.DockControlBar
 
 DockControlBar\(controlBar, dockBarId, int, int, int, int\)
 Docks a control bar\.
 
 #### Parameters
 
-
-  - controlBar :[PyCControlBar](#pyccontrolbar)
+  - controlBar : [PyCControlBar](PyCControlBar.md)
 
     The control bar to dock\.
 
@@ -180,16 +189,15 @@ Docks a control bar\.
 
 #### MFC References
 
-
   - CFrameWnd::DockControlBar
 
-## [PyCFrameWnd](#pycframewnd)\.EnableDocking
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.EnableDocking
 
 EnableDocking\(style\)
 Enable dockable control bars in a frame window
 
 #### Parameters
-
 
   - style : int
 
@@ -197,23 +205,23 @@ Enable dockable control bars in a frame window
 
 #### Comments
 
-
 By default, control bars will be docked to a side of the frame window in the following order: top, bottom, left, right\.
 
-## [PyCFrameWnd](#pycframewnd)\.EndModalState
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.EndModalState
 
 EndModalState\(\)
-Ends the frame window's modal state\. Enables all of the windows disabled by[PyCFrameWnd::BeginModalState](PyCFrameWnd.md#pycframewndbeginmodalstate)\.
+Ends the frame window's modal state\. Enables all of the windows disabled by [PyCFrameWnd::BeginModalState](PyCFrameWnd.md#pycframewndbeginmodalstate)\.
 
-## [PyCFrameWnd](#pycframewnd)\.FloatControlBar
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.FloatControlBar
 
 FloatControlBar\(controlBar, int, int, style\)
 Floats a control bar\.
 
 #### Parameters
 
-
-  - controlBar :[PyCControlBar](#pyccontrolbar)
+  - controlBar : [PyCControlBar](PyCControlBar.md)
 
     The control bar to dock\.
 
@@ -227,50 +235,49 @@ Floats a control bar\.
 
 #### MFC References
 
-
   - CFrameWnd::FloatControlBar
 
-## [PyCFrameWnd](#pycframewnd)\.GetActiveDocument
 
-[PyCDocument](#pycdocument) =GetActiveDocument\(\)
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.GetActiveDocument
+
+[PyCDocument](PyCDocument.md) = GetActiveDocument\(\)
 Gets the currently active document, else None
 
 #### MFC References
 
-
   - CFrameWnd::GetActiveDocument
 
-## [PyCFrameWnd](#pycframewnd)\.GetActiveView
 
-[PyCView](#pycview) =GetActiveView\(\)
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.GetActiveView
+
+[PyCView](PyCView.md) = GetActiveView\(\)
 Retrieves the active view\.
 
-## [PyCFrameWnd](#pycframewnd)\.GetControlBar
 
-[PyCControlBar](#pyccontrolbar) =GetControlBar\(id\)
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.GetControlBar
+
+[PyCControlBar](PyCControlBar.md) = GetControlBar\(id\)
 Retrieves the specified control bar\.
 
 #### Parameters
-
 
   - id : int
 
     The ID of the toolbar to be retrieved
 
-## [PyCFrameWnd](#pycframewnd)\.GetMessageBar
 
-[PyCWnd](#pycwnd) =GetMessageBar\(\)
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.GetMessageBar
+
+[PyCWnd](PyCWnd.md) = GetMessageBar\(\)
 Retrieves the message bar for the frame\.
 
-## [PyCFrameWnd](#pycframewnd)\.GetMessageString
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.GetMessageString
 
-
-string =GetMessageString\(id\)
+string = GetMessageString\(id\)
 Retrieves message corresponding to a command ID\.
 
 #### Parameters
-
 
   - id : int
 
@@ -278,42 +285,39 @@ Retrieves message corresponding to a command ID\.
 
 #### See Also
 
-
   - [PyCMDIChildWnd\.GetMessageString](PyCMDIChildWnd.md#pycmdichildwndgetmessagestring_virtual) virtual method
 
-## [PyCFrameWnd](#pycframewnd)\.InModalState
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.InModalState
 
-
-int =InModalState\(\)
+int = InModalState\(\)
 Returns a value indicating whether or not a frame window is in a modal state\.
 
-## [PyCFrameWnd](#pycframewnd)\.IsTracking
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.IsTracking
 
-
-int =IsTracking\(\)
+int = IsTracking\(\)
 Determines if splitter bar is currently being moved\.
 
-## [PyCFrameWnd](#pycframewnd)\.LoadAccelTable
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.LoadAccelTable
 
 LoadAccelTable\(id\)
 Loads an accelerator table\.
 
 #### Parameters
 
-
-  - id :[PyResourceId](#pyresourceid)
+  - id : [PyResourceId](PyResourceId.md)
 
     Name or id of the resource that contains the table
 
-## [PyCFrameWnd](#pycframewnd)\.LoadBarState
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.LoadBarState
 
 LoadBarState\(profileName\)
 Loads a control bars settings
 
 #### Parameters
-
 
   - profileName : string
 
@@ -321,16 +325,15 @@ Loads a control bars settings
 
 #### MFC References
 
-
   - CFrameWnd::LoadBarState
 
-## [PyCFrameWnd](#pycframewnd)\.LoadFrame
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.LoadFrame
 
 LoadFrame\(idResource, style, wndParent, context\)
 Loads a Windows frame window and associated resources
 
 #### Parameters
-
 
   - idResource=IDR\_PYTHONTYPE : int
 
@@ -340,7 +343,7 @@ Loads a Windows frame window and associated resources
 
     The window style\.  Note -1 implies win32con\.WS\_OVERLAPPEDWINDOW|win32con\.FWS\_ADDTOTITLE
 
-  - wndParent=None :[PyCWnd](#pycwnd)
+  - wndParent=None : [PyCWnd](PyCWnd.md)
 
     The parent of the window, or None\.
 
@@ -350,46 +353,39 @@ Loads a Windows frame window and associated resources
 
 #### MFC References
 
-
   - CFrameWnd::LoadFrame
 
-## [PyCFrameWnd](#pycframewnd)\.OnBarCheck
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.OnBarCheck
 
-
-int =OnBarCheck\(id\)
+int = OnBarCheck\(id\)
 Changes the state of the specified controlbar\.
 
 #### Parameters
-
 
   - id : int
 
     The control ID of the control bar\.
 
-## [PyCFrameWnd](#pycframewnd)\.OnUpdateControlBarMenu
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.OnUpdateControlBarMenu
 
-
-int =OnUpdateControlBarMenu\(cmdUI\)
+int = OnUpdateControlBarMenu\(cmdUI\)
 Checks the state of a menu item
 
 #### Parameters
 
-
-  - cmdUI :[PyCCmdUI](#pyccmdui)
+  - cmdUI : [PyCCmdUI](PyCCmdUI.md)
 
     A cmdui object
 
-## [PyCFrameWnd](#pycframewnd)\.PreCreateWindow
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.PreCreateWindow
 
-
-tuple =PreCreateWindow\(createStruct\)
+tuple = PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
-
 
   - createStruct : tuple
 
@@ -397,16 +393,15 @@ Calls the underlying MFC PreCreateWindow method\.
 
 #### See Also
 
-
   - [PyCWnd\.PreCreateWindow](PyCWnd.md#pycwndprecreatewindow_virtual) virtual method
 
-## [PyCFrameWnd](#pycframewnd)\.RecalcLayout
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.RecalcLayout
 
 RecalcLayout\(bNotify\)
 Called by the framework when the standard control bars are toggled on or off or when the frame window is resized\.
 
 #### Parameters
-
 
   - bNotify=1 : int
 
@@ -414,16 +409,15 @@ Called by the framework when the standard control bars are toggled on or off or 
 
 #### MFC References
 
-
   - CFrameWnd::RecalcLayout
 
-## [PyCFrameWnd](#pycframewnd)\.SaveBarState
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.SaveBarState
 
 SaveBarState\(profileName\)
 Saves a control bars settings
 
 #### Parameters
-
 
   - profileName : string
 
@@ -431,18 +425,17 @@ Saves a control bars settings
 
 #### MFC References
 
-
   - CFrameWnd::SaveBarState
 
-## [PyCFrameWnd](#pycframewnd)\.SetActiveView
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.SetActiveView
 
 SetActiveView\(view, bNotify\)
 Sets the active view for a frame\.
 
 #### Parameters
 
-
-  - view :[PyCView](#pycview)
+  - view : [PyCView](PyCView.md)
 
     The view to set active\.
 
@@ -450,15 +443,15 @@ Sets the active view for a frame\.
 
     Specifies whether the view is to be notified of activation\. If TRUE, OnActivateView is called for the new view; if FALSE, it is not\.
 
-## [PyCFrameWnd](#pycframewnd)\.ShowControlBar
+
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.ShowControlBar
 
 ShowControlBar\(controlBar, bShow, bDelay\)
 Shows a control bar\.
 
 #### Parameters
 
-
-  - controlBar :[PyCControlBar](#pyccontrolbar)
+  - controlBar : [PyCControlBar](PyCControlBar.md)
 
     The control bar to dock\.
 
@@ -472,18 +465,15 @@ Shows a control bar\.
 
 #### MFC References
 
-
   - CFrameWnd::ShowControlBar
 
-## [PyCFrameWnd](#pycframewnd)\.ShowOwnedWindows
 
+## [PyCFrameWnd](PyCFrameWnd.md#pycframewnd)\.ShowOwnedWindows
 
-
-string =ShowOwnedWindows\(bShow\)
-Shows all windows that are descendants of the[PyCFrameWnd](#pycframewnd) object\.
+string = ShowOwnedWindows\(bShow\)
+Shows all windows that are descendants of the [PyCFrameWnd](PyCFrameWnd.md#pycframewnd) object\.
 
 #### Parameters
-
 
   - bShow=1 : int
 

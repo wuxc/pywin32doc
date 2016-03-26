@@ -1,15 +1,13 @@
 # PySPropValue
 
+
 ## PySPropValue Object
-
-
 
 A MAPI property value\.  Property values can either be passed from 
 
 python into MAPI functions, or returned from MAPI functions to Python\.
 
 #### Parameters
-
 
   - propType : ULONG
 
@@ -21,5 +19,5 @@ python into MAPI functions, or returned from MAPI functions to Python\.
 
 #### Comments
 
-
 The parameters can be one of the following pairs of values\.
+

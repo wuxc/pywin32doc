@@ -1,15 +1,13 @@
 # PyCToolBar
 
+
 ## PyCToolBar Object
 
+A class which encapsulates an MFC CToolBar
 
-
-A class which encapsulates an MFCCToolBar
-
-\.  Derived from a[PyCControlBar](#pyccontrolbar) object\.
+\.  Derived from a [PyCControlBar](PyCControlBar.md) object\.
 
 #### Methods
-
 
   - [GetButtonStyle](PyCToolBar.md#pyctoolbargetbuttonstyle)
 
@@ -71,115 +69,113 @@ A class which encapsulates an MFCCToolBar
 
     Sets the tooltips control&nbsp;
 
-## [PyCToolBar](#pyctoolbar)\.GetButtonStyle
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.GetButtonStyle
 
 GetButtonStyle\(index\)
 Retrieves the style for a button\.
 
 #### Parameters
 
-
   - index : int
 
     Index of the item whose style is to be retrieved\.
 
-## [PyCToolBar](#pyctoolbar)\.GetButtonText
 
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.GetButtonText
 
-
-string =GetButtonText\(index\)
+string = GetButtonText\(index\)
 Gets the text for a button\.
 
 #### Parameters
-
 
   - index : int
 
     Index of the item whose text is to be retrieved\.
 
-## [PyCToolBar](#pyctoolbar)\.GetItemID
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.GetItemID
 
 GetItemID\(index\)
 Returns the command ID of a button or separator at the given index\.
 
 #### Parameters
 
-
   - index : int
 
     Index of the item whose ID is to be retrieved\.
 
-## [PyCToolBar](#pyctoolbar)\.GetToolBarCtrl
 
-[PyCToolBarCtrl](#pyctoolbarctrl) =GetToolBarCtrl\(\)
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.GetToolBarCtrl
+
+[PyCToolBarCtrl](PyCToolBarCtrl.md) = GetToolBarCtrl\(\)
 Gets the toolbar control object for the toolbar
 
-## [PyCToolBar](#pyctoolbar)\.GetToolTips
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.GetToolTips
 
 GetToolTips\(\)
 Returns the associated tooltips control
 
-## [PyCToolBar](#pyctoolbar)\.LoadBitmap
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.LoadBitmap
 
 LoadBitmap\(id\)
 Loads the bitmap containing bitmap-button images\.
 
 #### Parameters
 
-
-  - id :[PyResourceId](#pyresourceid)
+  - id : [PyResourceId](PyResourceId.md)
 
     Name or id of the resource that contains the bitmap\.
 
 #### Comments
 
-
 The bitmap should contain one image for each toolbar button\. If the 
 
 images are not of the standard size \(16 pixels wide and 15 pixels high\), 
 
-call[PyCToolBar::SetSizes](PyCToolBar.md#pyctoolbarsetsizes) to set the button sizes and their images\.
+call [PyCToolBar::SetSizes](PyCToolBar.md#pyctoolbarsetsizes) to set the button sizes and their images\.
 
-## [PyCToolBar](#pyctoolbar)\.LoadToolBar
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.LoadToolBar
 
 LoadToolBar\(id\)
 Loads a toolbar from a toolbar resource\.
 
 #### Parameters
 
-
-  - id :[PyResourceId](#pyresourceid)
+  - id : [PyResourceId](PyResourceId.md)
 
     Name or resource id of the resource
 
 #### Comments
 
-
 The bitmap should contain one image for each toolbar button\. If the 
 
 images are not of the standard size \(16 pixels wide and 15 pixels high\), 
 
-call[PyCToolBar::SetSizes](PyCToolBar.md#pyctoolbarsetsizes) to set the button sizes and their images\.
+call [PyCToolBar::SetSizes](PyCToolBar.md#pyctoolbarsetsizes) to set the button sizes and their images\.
 
-## [PyCToolBar](#pyctoolbar)\.SetBarStyle
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetBarStyle
 
 SetBarStyle\(style\)
 Sets the toolbar part of style
 
 #### Parameters
 
-
   - style : long
 
     The toolbar style to set\.
 
-## [PyCToolBar](#pyctoolbar)\.SetBitmap
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetBitmap
 
 SetBitmap\(hBitmap\)
 Sets a bitmapped image\.
 
 #### Parameters
-
 
   - hBitmap : int
 
@@ -187,20 +183,19 @@ Sets a bitmapped image\.
 
 #### Comments
 
-
 Call this method to set the bitmap image for the toolbar\. For example, 
 
 call SetBitmap to change the bitmapped image after the user takes an action on 
 
 a document that changes the action of a button\.
 
-## [PyCToolBar](#pyctoolbar)\.SetButtonInfo
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetButtonInfo
 
 SetButtonInfo\(index, ID, style, imageIx\)
 Sets the button's command ID, style, and image number\.
 
 #### Parameters
-
 
   - index : int
 
@@ -218,13 +213,13 @@ Sets the button's command ID, style, and image number\.
 
     New index for the button's image within the bitmap
 
-## [PyCToolBar](#pyctoolbar)\.SetButtonStyle
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetButtonStyle
 
 SetButtonStyle\(index, style\)
 Sets the style for a button\.
 
 #### Parameters
-
 
   - index : int
 
@@ -234,13 +229,13 @@ Sets the style for a button\.
 
     The new style
 
-## [PyCToolBar](#pyctoolbar)\.SetButtonText
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetButtonText
 
 SetButtonText\(index, text\)
 Sets the text for a button\.
 
 #### Parameters
-
 
   - index : int
 
@@ -250,13 +245,13 @@ Sets the text for a button\.
 
     The new text
 
-## [PyCToolBar](#pyctoolbar)\.SetButtons
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetButtons
 
 SetButtons\(buttons\)
 Sets button styles and an index of button images within the bitmap\.
 
 #### Parameters
-
 
   - buttons : tuple
 
@@ -264,34 +259,31 @@ Sets button styles and an index of button images within the bitmap\.
 
 #### Alternative Parameters
 
-
   - numButtons
 
-    The number of buttons to pre-allocate\.  If this option is used, thenPyCToolBar::PySetButtonInfo
-
-
+    The number of buttons to pre-allocate\.  If this option is used, then PyCToolBar::PySetButtonInfo
 
  must be used\.
 
-## [PyCToolBar](#pyctoolbar)\.SetHeight
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetHeight
 
 SetHeight\(height\)
 Sets the height of the toolbar\.
 
 #### Parameters
 
-
   - height : int
 
     The height in pixels of the toolbar\.
 
-## [PyCToolBar](#pyctoolbar)\.SetSizes
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetSizes
 
 SetSizes\(sizeButton, sizeButton\)
 Sets the size of each button\.
 
 #### Parameters
-
 
   - sizeButton : \(cx, cy\)
 
@@ -301,14 +293,14 @@ Sets the size of each button\.
 
     The size of each bitmap\.
 
-## [PyCToolBar](#pyctoolbar)\.SetToolTips
+
+## [PyCToolBar](PyCToolBar.md#pyctoolbar)\.SetToolTips
 
 SetToolTips\(obTTC\)
 Sets the tooltips control
 
 #### Parameters
 
-
-  - obTTC :[PyCToolTipCtrl](#pyctooltipctrl)
+  - obTTC : [PyCToolTipCtrl](PyCToolTipCtrl.md)
 
     The ToolTipCtrl ctrl to be set\.

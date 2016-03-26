@@ -1,13 +1,11 @@
 # PyIOleObject
 
+
 ## PyIOleObject Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [SetClientSite](PyIOleObject.md#pyioleobjectsetclientsite)
 
@@ -93,47 +91,47 @@ Description of the interface
 
     Description of SetColorScheme&nbsp;
 
-## [PyIOleObject](#pyioleobject)\.Advise
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.Advise
 
 Advise\(pAdvSink\)
 Description of Advise\.
 
 #### Parameters
 
-
-  - pAdvSink :PyIAdviseSink
+  - pAdvSink : PyIAdviseSink
 
     Description for pAdvSink
 
-## [PyIOleObject](#pyioleobject)\.Close
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.Close
 
 Close\(dwSaveOption\)
 Description of Close\.
 
 #### Parameters
 
-
   - dwSaveOption : int
 
     Description for dwSaveOption
 
-## [PyIOleObject](#pyioleobject)\.DoVerb
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.DoVerb
 
 DoVerb\(iVerb, msg, pActiveSite, lindex, hwndParent, rect\)
 Description of DoVerb\.
 
 #### Parameters
 
-
   - iVerb : int
 
     Description for iVerb
 
-  - msg :[PyMSG](#pymsg)
+  - msg : [PyMSG](PyMSG.md)
 
     MSG tuple, a-la win32gui etc\.
 
-  - pActiveSite :[PyIOleClientSite](#pyioleclientsite)
+  - pActiveSite : [PyIOleClientSite](PyIOleClientSite.md)
 
     Description for pActiveSite
 
@@ -149,40 +147,43 @@ Description of DoVerb\.
 
     
 
-## [PyIOleObject](#pyioleobject)\.EnumAdvise
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.EnumAdvise
 
 EnumAdvise\(\)
 Description of EnumAdvise\.
 
-## [PyIOleObject](#pyioleobject)\.EnumVerbs
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.EnumVerbs
 
 EnumVerbs\(\)
 Description of EnumVerbs\.
 
-## [PyIOleObject](#pyioleobject)\.GetClientSite
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.GetClientSite
 
 GetClientSite\(\)
 Description of GetClientSite\.
 
-## [PyIOleObject](#pyioleobject)\.GetClipboardData
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.GetClipboardData
 
 GetClipboardData\(dwReserved\)
 Description of GetClipboardData\.
 
 #### Parameters
 
-
   - dwReserved : int
 
     Description for dwReserved
 
-## [PyIOleObject](#pyioleobject)\.GetExtent
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.GetExtent
 
 GetExtent\(dwDrawAspect, size\)
 Description of GetExtent\.
 
 #### Parameters
-
 
   - dwDrawAspect : int
 
@@ -192,25 +193,25 @@ Description of GetExtent\.
 
     Size limit for the object\.
 
-## [PyIOleObject](#pyioleobject)\.GetMiscStatus
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.GetMiscStatus
 
 GetMiscStatus\(dwAspect\)
 Description of GetMiscStatus\.
 
 #### Parameters
 
-
   - dwAspect : int
 
     Description for dwAspect
 
-## [PyIOleObject](#pyioleobject)\.GetMoniker
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.GetMoniker
 
 GetMoniker\(dwAssign, dwWhichMoniker\)
 Description of GetMoniker\.
 
 #### Parameters
-
 
   - dwAssign : int
 
@@ -220,32 +221,33 @@ Description of GetMoniker\.
 
     Description for dwWhichMoniker
 
-## [PyIOleObject](#pyioleobject)\.GetUserClassID
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.GetUserClassID
 
 GetUserClassID\(\)
 Description of GetUserClassID\.
 
-## [PyIOleObject](#pyioleobject)\.GetUserType
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.GetUserType
 
 GetUserType\(dwFormOfType\)
 Description of GetUserType\.
 
 #### Parameters
 
-
   - dwFormOfType : int
 
     Description for dwFormOfType
 
-## [PyIOleObject](#pyioleobject)\.InitFromData
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.InitFromData
 
 InitFromData\(pDataObject, fCreation, dwReserved\)
 Description of InitFromData\.
 
 #### Parameters
 
-
-  - pDataObject :[PyIDataObject](#pyidataobject)
+  - pDataObject : [PyIDataObject](PyIDataObject.md)
 
     Description for pDataObject
 
@@ -257,35 +259,37 @@ Description of InitFromData\.
 
     Description for dwReserved
 
-## [PyIOleObject](#pyioleobject)\.IsUpToDate
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.IsUpToDate
 
 IsUpToDate\(\)
 Description of IsUpToDate\.
 
-## [PyIOleObject](#pyioleobject)\.SetClientSite
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.SetClientSite
 
 SetClientSite\(pClientSite\)
 Description of SetClientSite\.
 
 #### Parameters
 
-
-  - pClientSite :[PyIOleClientSite](#pyioleclientsite)
+  - pClientSite : [PyIOleClientSite](PyIOleClientSite.md)
 
     Description for pClientSite
 
-## [PyIOleObject](#pyioleobject)\.SetColorScheme
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.SetColorScheme
 
 SetColorScheme\(\)
 Description of SetColorScheme\.
 
-## [PyIOleObject](#pyioleobject)\.SetExtent
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.SetExtent
 
 SetExtent\(dwDrawAspect, size\)
 Description of SetExtent\.
 
 #### Parameters
-
 
   - dwDrawAspect : int
 
@@ -295,51 +299,52 @@ Description of SetExtent\.
 
     Size limit for the object\.
 
-## [PyIOleObject](#pyioleobject)\.SetHostNames
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.SetHostNames
 
 SetHostNames\(szContainerApp, szContainerObj\)
 Description of SetHostNames\.
 
 #### Parameters
 
-
-  - szContainerApp :unicode
+  - szContainerApp : unicode
 
     Description for szContainerApp
 
-  - szContainerObj :unicode
+  - szContainerObj : unicode
 
     Description for szContainerObj
 
-## [PyIOleObject](#pyioleobject)\.SetMoniker
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.SetMoniker
 
 SetMoniker\(dwWhichMoniker, pmk\)
 Description of SetMoniker\.
 
 #### Parameters
 
-
   - dwWhichMoniker : int
 
     Description for dwWhichMoniker
 
-  - pmk :[PyIMoniker](#pyimoniker)
+  - pmk : [PyIMoniker](PyIMoniker.md)
 
     Description for pmk
 
-## [PyIOleObject](#pyioleobject)\.Unadvise
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.Unadvise
 
 Unadvise\(dwConnection\)
 Description of Unadvise\.
 
 #### Parameters
 
-
   - dwConnection : int
 
     Description for dwConnection
 
-## [PyIOleObject](#pyioleobject)\.Update
+
+## [PyIOleObject](PyIOleObject.md#pyioleobject)\.Update
 
 Update\(\)
 Description of Update\.

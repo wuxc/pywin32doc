@@ -1,13 +1,11 @@
 # PyCEditView
 
+
 ## PyCEditView Object
 
-
-
-A class which implementes a CView of a text file\.  Derived from[PyCView](#pycview) and[PyCEdit](#pycedit) objects\.
+A class which implementes a CView of a text file\.  Derived from [PyCView](PyCView.md) and [PyCEdit](PyCEdit.md) objects\.
 
 #### Methods
-
 
   - [IsModified](PyCEditView.md#pyceditviewismodified)
 
@@ -23,7 +21,7 @@ A class which implementes a CView of a text file\.  Derived from[PyCView](#pycvi
 
   - [GetEditCtrl](PyCEditView.md#pyceditviewgeteditctrl)
 
-    Returns the underlying[PyCEdit](#pycedit) object&nbsp;
+    Returns the underlying [PyCEdit](PyCEdit.md) object&nbsp;
 
   - [PreCreateWindow](PyCEditView.md#pyceditviewprecreatewindow)
 
@@ -38,39 +36,40 @@ A class which implementes a CView of a text file\.  Derived from[PyCView](#pycvi
     Calls the standard Python framework OnCommand handler&nbsp;
 
 
-## [PyCEditView](#pyceditview)\.GetEditCtrl
+
+
+## [PyCEditView](PyCEditView.md#pyceditview)\.GetEditCtrl
 
 PyCEditCtrl
 
- =GetEditCtrl\(\)
+ = GetEditCtrl\(\)
 returns the underlying edit control object\.
 
-## [PyCEditView](#pyceditview)\.IsModified
 
+## [PyCEditView](PyCEditView.md#pyceditview)\.IsModified
 
-
-int =IsModified\(\)
+int = IsModified\(\)
 Indicates if the view's document has the modified flag set\.
 
-## [PyCEditView](#pyceditview)\.LoadFile
+
+## [PyCEditView](PyCEditView.md#pyceditview)\.LoadFile
 
 LoadFile\(fileName\)
 Loads a file into the view\.
 
 #### Parameters
 
-
   - fileName : string
 
     The name of the file to be loaded\.
 
-## [PyCEditView](#pyceditview)\.OnCommand
+
+## [PyCEditView](PyCEditView.md#pyceditview)\.OnCommand
 
 OnCommand\(wparam, lparam\)
 Calls the standard Python framework OnCommand handler
 
 #### Parameters
-
 
   - wparam : int
 
@@ -82,42 +81,39 @@ Calls the standard Python framework OnCommand handler
 
 #### See Also
 
-
   - [PyCWnd\.OnCommand](PyCWnd.md#pycwndoncommand_virtual) virtual method
 
-## [PyCEditView](#pyceditview)\.PreCreateWindow
 
+## [PyCEditView](PyCEditView.md#pyceditview)\.PreCreateWindow
 
-
-tuple =PreCreateWindow\(createStruct\)
+tuple = PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
-
 
   - createStruct : tuple
 
     A tuple representing a CREATESTRUCT structure\.
 
-## [PyCEditView](#pyceditview)\.SaveFile
+
+## [PyCEditView](PyCEditView.md#pyceditview)\.SaveFile
 
 SaveFile\(fileName\)
 Saves the view to a file\.
 
 #### Parameters
 
-
   - fileName : string
 
     The name of the file to be written\.
 
-## [PyCEditView](#pyceditview)\.SetModifiedFlag
+
+## [PyCEditView](PyCEditView.md#pyceditview)\.SetModifiedFlag
 
 SetModifiedFlag\(bModified\)
 Sets the modified flag for the view's document\.
 
 #### Parameters
-
 
   - bModified=1 : int
 

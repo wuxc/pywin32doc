@@ -1,7 +1,7 @@
 # Windows
 
-## Windows NT Eventlog
 
+## Windows NT Eventlog
 
 Python's win32 access for the Eventlog
 
@@ -11,13 +11,13 @@ filtering based off of the event log, python's win32evtlog
 
 win32evtlogutil libraries give you an means to do it efficiently\.
 
-
 The library of primary importance is win32evtlog\. With it you can 
 
 connect to a server's eventlog with the call\.
 
 #### Example
 Here is the basic call:
+
 logtype='System'
 
 hand=win32evtlog\.OpenEventLog\(server,logtype\)
@@ -30,10 +30,10 @@ details for each event\. The logtype variable is set to the type of log
 
 you want to look at\. The default ones are: Application, Security, and System\.
 
-
 After you have the handle you can get ask for things such as the number of 
 
 records, or the specific event records:
+
 total=win32evtlog\.GetNumberOfEventLogRecords\(hand\)
 
 flags = win32evtlog\.EVENTLOG\_BACKWARDS\_READ|win32evtlog\.EVENTLOG\_SEQUENTIAL\_READ
@@ -53,6 +53,7 @@ win32evtlog library\) specify how to read the event log\.
 Here is a simple loop getting the data from the events that ReadEventLog 
 
 returned:
+
 for ev\_obj in events:
 
 &\#09the\_time=ev\_obj\.TimeGenerated\.Format\(\) \#'12/23/99 15:54:09'
@@ -86,6 +87,7 @@ the eventlog message\.  If you want to do any sorting based of off
 time, here is a handy function that converts the eventlog's time 
 
 format into seconds using's python's time and regexp library:
+
 def date2sec\(self,evt\_date\):
 
 &\#09'''
@@ -125,6 +127,7 @@ Finally here is all the code that puts together an application which looks
 for all events for a server since a certain time\.
 
 Find events:
+
 import win32evtlog
 
 import win32evtlogutil
@@ -144,8 +147,6 @@ import string
 import sys
 
 import traceback
-
-
 
 def date2sec\(evt\_date\):
 
@@ -171,15 +172,9 @@ def date2sec\(evt\_date\):
 
 &\#09tup=\[yr,mon,day,hr,min,sec,0,0,0\]
 
-
-
 &\#09sec=time\.mktime\(tup\)
 
-
-
 &\#09return sec
-
-
 
 \#\#\#\#Main program
 
@@ -188,8 +183,6 @@ def date2sec\(evt\_date\):
 flags = win32evtlog\.EVENTLOG\_BACKWARDS\_READ|\\\\
 
 &\#09&\#09win32evtlog\.EVENTLOG\_SEQUENTIAL\_READ
-
-
 
 \#This dict converts the event type into a human readable form
 
@@ -211,15 +204,11 @@ begin\_sec=time\.time\(\)
 
 begin\_time=time\.strftime\('%H:%M:%S  ',time\.localtime\(begin\_sec\)\)
 
-
-
 \#open event log
 
 hand=win32evtlog\.OpenEventLog\(computer,logtype\)
 
 print logtype,' events found in the last 8 hours since:',begin\_time
-
-
 
 try:
 
@@ -241,8 +230,6 @@ try:
 
 &\#09if seconds &lt begin\_sec-28800: break
 
-
-
 &\#09\#data is recent enough, so print it out
 
 &\#09computer=str\(ev\_obj\.ComputerName\)
@@ -261,8 +248,6 @@ try:
 
 &\#09print string\.join\(\(the\_time,computer,src,cat,record,evt\_id,evt\_type,msg\[0:15\]\),':'\)
 
-
-
     if seconds &lt begin\_sec-28800: break \#get out of while loop as well
 
   win32evtlog\.CloseEventLog\(hand\)
@@ -271,19 +256,16 @@ except:
 
     print traceback\.print\_exc\(sys\.exc\_info\(\)\)
 
-
-
-
-
 &\#09Some useful additions to this would be to make it
 
 multi-threaded and deploy it as a web application, to look at many servers\.
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+
+
 
 
 ## Windows NT Eventlog and Threading
-
 
 Python's threading to manage access access to many Eventlogs
 
@@ -369,7 +351,6 @@ For every server in the list:
 
 4\)compile data together from all thread classes created\.
 
-
 Since you don't use the return values of the 
 
 thread, you need to store data with the thread object that you 
@@ -380,6 +361,7 @@ calling thread to wait for the other threads to finish\.
 
 #### Example
 Here is the skeleton of that:
+
 \#We are overiding run\(\) method of the threading\.Thread class\.
 
 class thread\_it \( threading\.Thread \) :
@@ -406,8 +388,6 @@ class thread\_it \( threading\.Thread \) :
 
       self\.data\.append\('Error for '\+self\.server\+':'\+str\(traceback\.print\_exc\(sys\.exc\_info\(\)\)\)\)
 
-
-
 \#\#\#\#\#\#main here
 
 try:
@@ -420,29 +400,19 @@ try:
 
 &\#09    threads\.append \( thread \) \#append to the a threads list
 
-
-
     for thread in threads: \#now go thru list and start threads running
 
 &\#09    thread\.start\(\)
 
-
-
     for thread in threads: \#make main thread wait for all in list to complete
 
 &\#09thread\.join\(\)
-
-
 
     for thread in threads: \#print thread results
 
       for event in thread\.data:
 
 &\#09print event
-
-
-
-
 
 except:
 
@@ -460,7 +430,10 @@ printout which tells you the current time, and easily shows that the
 
 data was gathered simultaneously on the servers\.
 
+ 
+
 Filling out the skeleton we get code like this:
+
 import win32evtlog
 
 import win32evtlogutil
@@ -482,8 +455,6 @@ import sys
 import threading
 
 import traceback
-
-
 
 \#We are overiding run\(\) method of the threading\.Thread class\.
 
@@ -535,15 +506,11 @@ class thread\_it \( threading\.Thread \) :
 
 &\#09&\#09&\#09&\#09events=win32evtlog\.ReadEventLog\(hand,flags,0\)
 
-
-
 &\#09&\#09&\#09&\#09for ev\_obj in events:
 
 &\#09&\#09&\#09&\#09&\#09now\_sec=time\.time\(\)
 
 &\#09&\#09&\#09&\#09&\#09now\_time=time\.strftime\('now=%H:%M:%S  ',time\.localtime\(now\_sec\)\)
-
-
 
 &\#09&\#09&\#09&\#09&\#09\#check if the event is recent enough
 
@@ -583,8 +550,6 @@ class thread\_it \( threading\.Thread \) :
 
 &\#09&\#09&\#09self\.data\.append\('Error for '\+self\.server\+':'\+str\(traceback\.print\_exc\(sys\.exc\_info\(\)\)\)\)
 
-
-
 &\#09def date2sec\(self,evt\_date\):
 
 &\#09&\#09'''
@@ -603,15 +568,11 @@ class thread\_it \( threading\.Thread \) :
 
 &\#09&\#09the\_time=reg\_result\.group\(2\)
 
-
-
 &\#09&\#09\(mon,day,yr\)=map\(lambda x: string\.atoi\(x\),string\.split\(date,'/'\)\)
 
 &\#09&\#09\(hr,min,sec\)=map\(lambda x: string\.atoi\(x\),string\.split\(the\_time,':'\)\)
 
 &\#09&\#09tup=\[yr,mon,day,hr,min,sec,0,0,0\]
-
-
 
 &\#09&\#09sec=time\.mktime\(tup\)
 
@@ -633,19 +594,13 @@ try:
 
 &\#09&\#09&\#09threads\.append \( thread \) \#append to the a threads list
 
-
-
 &\#09for thread in threads: \#now go thru list and start threads running
 
 &\#09&\#09&\#09thread\.start\(\)
 
-
-
 &\#09for thread in threads: \#make main thread wait for all in list to complete
 
 &\#09&\#09thread\.join\(\)
-
-
 
 &\#09for thread in threads: \#compile all of the threads' data together\.
 
@@ -655,8 +610,6 @@ try:
 
 &\#09&\#09&\#09print event
 
-
-
 except:
 
 &\#09print traceback\.print\_exc\(sys\.exc\_info\(\)\)
@@ -665,11 +618,12 @@ A very nice addition to this would be to convert it to a web
 
 application\. HTMLgen is a useful tool in this context\.
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+
+
 
 
 ## Windows NT Files -- Locking
-
 
 Python's win32 access for file locking -- flock style
 
@@ -705,13 +659,11 @@ Do whatever to the file\. Call UnlockfileEx\. Then close the filehandle\.
 
 doesn't work that way with win32, at least according to the msdn\)
 
-
 Below is a class called Flock, which gives you exclusive/shared 
 
 locking with non-blocking/blocking abilities\. If you can think of any 
 
 optimizations or changes, be sure to let me know\.
-
 
 CreateFile provides many options\. It can be used for 
 
@@ -719,9 +671,7 @@ files,directories,mailslots,sockets, etc\. In this case, we're only
 
 interested in standard files\.
 
-
 The C\+\+ call looks like this:
-
 
 HANDLE CreateFile\( 
 
@@ -741,9 +691,7 @@ HANDLE hTemplateFile
 
 \);
 
-
 The python call is virtually the same with:
-
 
 PyHANDLE = CreateFile\( 
 
@@ -763,7 +711,6 @@ hTemplateFile
 
 \)
 
-
 The module win32con in python is invaluable for setting most of these 
 
 attributes\.  Besides win32con, you need win32security to create a 
@@ -772,6 +719,7 @@ security attribute\.
 
 #### Example
 Here is a basic example of the raw program:
+
 import win32file
 
 import win32con
@@ -782,8 +730,6 @@ import win32api
 
 import pywintypes
 
-
-
 highbits=0xffff0000 \#high-order 32 bits of byte range to lock
 
 file="c:\\\\\\\\wilma\.txt"
@@ -791,8 +737,6 @@ file="c:\\\\\\\\wilma\.txt"
 secur\_att = win32security\.SECURITY\_ATTRIBUTES\(\)
 
 secur\_att\.Initialize\(\)
-
-
 
 hfile=win32file\.CreateFile\( file,\\\\
 
@@ -806,8 +750,6 @@ hfile=win32file\.CreateFile\( file,\\\\
 
 &\#09&\#09&\#09    win32con\.FILE\_ATTRIBUTE\_NORMAL , 0 \)
 
-
-
 ov=pywintypes\.OVERLAPPED\(\) \#used to indicate starting region to lock
 
 win32file\.LockFileEx\(hfile,win32con\.LOCKFILE\_EXCLUSIVE\_LOCK,0,highbits,ov\)
@@ -817,8 +759,6 @@ win32api\.Sleep\(4000\) \#do something here
 win32file\.UnlockFileEx\(hfile,0,highbits,ov\)
 
 hfile\.Close\(\)
-
-
 
 &ltnl&gtBelow, I have fleshed it out with a more useable Flock class\.  The
 
@@ -835,8 +775,6 @@ type of locking you want\.  Call the lock method on the file\. Do
 whatever you want with the hfile filehandle, then call the unlock
 
 method which will remove the locks and close the filehandle\.
-
-
 
 Looking at the code below, for desiredAccess and shareMode, I have
 
@@ -860,15 +798,7 @@ hfile, filehandle, if necessary, then call the unlock method, to
 
 remove the lock and close the filehandle\.
 
-
-
-
-
 &ltnl&gtNow for some code|
-
-
-
-
 
 class Flock:
 
@@ -930,15 +860,11 @@ class Flock:
 
 &\#09&\#09self\.hfile\.Close\(\)
 
-
-
 l=Flock\("c:\\\\\\\\a3\.txt"\)
 
 l\.type\['LOCK\_EX'\]=0
 
 l\.type\['LOCK\_NB'\]=0
-
-
 
 print 'calling lock'
 
@@ -946,19 +872,18 @@ l\.lock\(\)
 
 print 'now locked '
 
-
-
 win32api\.Sleep\(1000\)
 
 l\.unlock\(\)
 
 print 'now unlocked'
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+
+
 
 
 ## Windows NT Security -- Impersonation
-
 
 Python's win32 access to help to simplify providing privileged access\.
 
@@ -988,6 +913,7 @@ alternative security solution\)\.
 
 #### Example
 The c\+\+ api call for Logonasuser looks like:
+
 BOOL LogonUser\(
 
   LPTSTR lpszUsername,
@@ -1005,6 +931,7 @@ BOOL LogonUser\(
 \);
 
 The python documentation says this:
+
 PyHANDLE = LogonUser\( userName, domain , password , logonType , logonProvider \)
 
 The api call is very similar in both cases except in python the 
@@ -1027,12 +954,12 @@ for specifiying the type of logon NT 3\.5, 4\.0, win2000\. Generally,
 
 default is fine\.
 
-
 ImpersonateLoggedOnUser is extremely simple and you'll see it's usage in the 
 
 examples\.
 
 Now for some code
+
 \#A raw example looks like this:
 
 handel=win32security\.LogonUser\('barney','bedrock','bambam'\\\\
@@ -1041,33 +968,23 @@ handel=win32security\.LogonUser\('barney','bedrock','bambam'\\\\
 
 win32security\.ImpersonateLoggedOnUser\(handel\)
 
-
-
 \#do stuff here
 
 print win32api\.GetUserName\(\) \#show you're someone else
-
-
 
 win32security\.RevertToSelf\(\) \#terminates impersonation
 
 handel\.Close\(\)
 
-
-
 \#The impersonate code can be encapsulated in a class, which then makes it even more
 
 \#trivial to use
-
-
 
 import win32security
 
 import win32con
 
 import win32api
-
-
 
 class Impersonate:
 
@@ -1093,13 +1010,7 @@ class Impersonate:
 
 &\#09self\.handel\.Close\(\) \#guarantees cleanup
 
-
-
-
-
 a=Impersonate\('barney','bambam'\)
-
-
 
 try:
 
@@ -1115,4 +1026,5 @@ except:
 
     print sys\.exc\_type , sys\.exc\_value
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+

@@ -1,13 +1,11 @@
 # PyIDebugDocumentHost
 
+
 ## PyIDebugDocumentHost Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetDeferredText](PyIDebugDocumentHost.md#pyidebugdocumenthostgetdeferredtext)
 
@@ -33,13 +31,13 @@ Description of the interface
 
     Description of NotifyChanged&nbsp;
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetDeferredText
+
+## [PyIDebugDocumentHost](PyIDebugDocumentHost.md#pyidebugdocumenthost)\.GetDeferredText
 
 GetDeferredText\(dwTextStartCookie, cMaxChars\)
 Description of GetDeferredText\.
 
 #### Parameters
-
 
   - dwTextStartCookie : int
 
@@ -49,29 +47,31 @@ Description of GetDeferredText\.
 
     Description for cMaxChars
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetFileName
+
+## [PyIDebugDocumentHost](PyIDebugDocumentHost.md#pyidebugdocumenthost)\.GetFileName
 
 GetFileName\(\)
 Description of GetFileName\.
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetPathName
+
+## [PyIDebugDocumentHost](PyIDebugDocumentHost.md#pyidebugdocumenthost)\.GetPathName
 
 GetPathName\(\)
 Description of GetPathName\.
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.GetScriptTextAttributes
+
+## [PyIDebugDocumentHost](PyIDebugDocumentHost.md#pyidebugdocumenthost)\.GetScriptTextAttributes
 
 GetScriptTextAttributes\(pstrCode, pstrDelimiter, dwFlags\)
 Description of GetScriptTextAttributes\.
 
 #### Parameters
 
-
-  - pstrCode :unicode
+  - pstrCode : unicode
 
     Description for pstrCode
 
-  - pstrDelimiter :unicode
+  - pstrDelimiter : unicode
 
     Description for pstrDelimiter
 
@@ -79,12 +79,14 @@ Description of GetScriptTextAttributes\.
 
     Description for dwFlags
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.NotifyChanged
+
+## [PyIDebugDocumentHost](PyIDebugDocumentHost.md#pyidebugdocumenthost)\.NotifyChanged
 
 NotifyChanged\(\)
 Description of NotifyChanged\.
 
-## [PyIDebugDocumentHost](#pyidebugdocumenthost)\.OnCreateDocumentContext
+
+## [PyIDebugDocumentHost](PyIDebugDocumentHost.md#pyidebugdocumenthost)\.OnCreateDocumentContext
 
 OnCreateDocumentContext\(\)
 Description of OnCreateDocumentContext\.

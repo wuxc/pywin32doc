@@ -1,13 +1,11 @@
 # PyIDebugSyncOperation
 
+
 ## PyIDebugSyncOperation Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetTargetThread](PyIDebugSyncOperation.md#pyidebugsyncoperationgettargetthread)
 
@@ -21,17 +19,20 @@ Description of the interface
 
     Description of InProgressAbort&nbsp;
 
-## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.Execute
+
+## [PyIDebugSyncOperation](PyIDebugSyncOperation.md#pyidebugsyncoperation)\.Execute
 
 Execute\(\)
 Description of Execute\.
 
-## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.GetTargetThread
+
+## [PyIDebugSyncOperation](PyIDebugSyncOperation.md#pyidebugsyncoperation)\.GetTargetThread
 
 GetTargetThread\(\)
 Description of GetTargetThread\.
 
-## [PyIDebugSyncOperation](#pyidebugsyncoperation)\.InProgressAbort
+
+## [PyIDebugSyncOperation](PyIDebugSyncOperation.md#pyidebugsyncoperation)\.InProgressAbort
 
 InProgressAbort\(\)
 Description of InProgressAbort\.

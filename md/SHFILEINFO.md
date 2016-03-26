@@ -1,8 +1,7 @@
 # SHFILEINFO
 
+
 ## SHFILEINFO Object
-
-
 
 A tuple representing a SHFILEINFO structure 
 

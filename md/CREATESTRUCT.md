@@ -1,13 +1,11 @@
 # CREATESTRUCT
 
+
 ## CREATESTRUCT Object
-
-
 
 A representation of a Windows CREATESTRUCT structure\.
 
 #### Parameters
-
 
   - createParams : int
 
@@ -46,7 +44,6 @@ A representation of a Windows CREATESTRUCT structure\.
     
 
 #### Comments
-
 
 Note that the strings are passed as longs, which are there address 
 

@@ -1,13 +1,11 @@
 # PyIPropertyStoreCache
 
+
 ## PyIPropertyStoreCache Object
 
-
-
-Property store that allows tracking of modification state\.  Inherits all methods of[PyIPropertyStore](#pyipropertystore)\.
+Property store that allows tracking of modification state\.  Inherits all methods of [PyIPropertyStore](PyIPropertyStore.md)\.
 
 #### Methods
-
 
   - [GetState](PyIPropertyStoreCache.md#pyipropertystorecachegetstate)
 
@@ -25,46 +23,42 @@ Property store that allows tracking of modification state\.  Inherits all method
 
     Sets the value and state of a property&nbsp;
 
-## [PyIPropertyStoreCache](#pyipropertystorecache)\.GetState
 
+## [PyIPropertyStoreCache](PyIPropertyStoreCache.md#pyipropertystorecache)\.GetState
 
-
-int =GetState\(key\)
+int = GetState\(key\)
 Retrieves the current state of a property
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     Property identifier
 
 #### Return Value
 A value from the PSC\_STATE enum \(PSC\_NORMAL, PSC\_NOTINSOURCE\. PSC\_DIRTY\)
 
-## [PyIPropertyStoreCache](#pyipropertystorecache)\.GetValueAndState
 
+## [PyIPropertyStoreCache](PyIPropertyStoreCache.md#pyipropertystorecache)\.GetValueAndState
 
-
-\([PyPROPVARIANT](#pypropvariant), int\) =GetValueAndState\(key\)
+\([PyPROPVARIANT](PyPROPVARIANT.md), int\) = GetValueAndState\(key\)
 Retrieves the current value and state of a property
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     Property identifier
 
-## [PyIPropertyStoreCache](#pyipropertystorecache)\.SetState
+
+## [PyIPropertyStoreCache](PyIPropertyStoreCache.md#pyipropertystorecache)\.SetState
 
 SetState\(key, state\)
 Sets the state of a property
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     Property identifier
 
@@ -72,19 +66,19 @@ Sets the state of a property
 
     Value from the PSC\_STATE enum \(pscon\.PSC\_\*\)
 
-## [PyIPropertyStoreCache](#pyipropertystorecache)\.SetValueAndState
+
+## [PyIPropertyStoreCache](PyIPropertyStoreCache.md#pyipropertystorecache)\.SetValueAndState
 
 SetValueAndState\(key, value, state\)
 Sets the value and state of a property
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     Property identifier
 
-  - value :[PyPROPVARIANT](#pypropvariant)
+  - value : [PyPROPVARIANT](PyPROPVARIANT.md)
 
     The new value
 

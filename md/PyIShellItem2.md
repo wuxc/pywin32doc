@@ -1,13 +1,11 @@
 # PyIShellItem2
 
+
 ## PyIShellItem2 Object
-
-
 
 Extends the IShellItem interface, giving access to an item's properties
 
 #### Methods
-
 
   - [GetPropertyStore](PyIShellItem2.md#pyishellitem2getpropertystore)
 
@@ -61,114 +59,116 @@ Extends the IShellItem interface, giving access to an item's properties
 
     Returns the value of a property as a boolean&nbsp;
 
-## [PyIShellItem2](#pyishellitem2)\.GetBool
 
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetBool
 
-
-boolean =GetBool\(key\)
+boolean = GetBool\(key\)
 Returns the value of a property as a boolean
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2)\.GetCLSID
 
-[PyIID](#pyiid) =GetCLSID\(key\)
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetCLSID
+
+[PyIID](PyIID.md) = GetCLSID\(key\)
 Retrieves the value of a property as a CLSID \(VT\_CLSID\)
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2)\.GetFileTime
 
-[PyTime](#pytime) =GetFileTime\(key\)
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetFileTime
+
+[PyTime](PyTime.md) = GetFileTime\(key\)
 Retrieves the value of a property as a FILETIME
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2)\.GetInt32
 
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetInt32
 
-
-int =GetInt32\(key\)
+int = GetInt32\(key\)
 Retrieves the value of a property as a 32 bit int\.
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2)\.GetProperty
 
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetProperty
 
-
-object =GetProperty\(key\)
+object = GetProperty\(key\)
 Retrieves the value of a property, converted to an appropriate python type
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
 #### Return Value
 Type of returned object is determined by the variant type of the property
 
-## [PyIShellItem2](#pyishellitem2)\.GetPropertyDescriptionList
 
-[PyIPropertyDescriptionList](#pyipropertydescriptionlist) =GetPropertyDescriptionList\(Type, riid\)
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetPropertyDescriptionList
+
+[PyIPropertyDescriptionList](PyIPropertyDescriptionList.md) = GetPropertyDescriptionList\(Type, riid
+
+\)
 Retrieves descriptions of properties in a particular group
 
 #### Parameters
 
-
-  - Type :[PyPROPERTYKEY](#pypropertykey)
+  - Type : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     Property list identifier \(pscon\.PKEY\_PropList\_\*\)
 
-  - riid=IID\_IPropertyDescriptionList :[PyIID](#pyiid)
+  - riid=IID\_IPropertyDescriptionList : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIShellItem2](#pyishellitem2)\.GetPropertyStore
 
-[PyIPropertyStore](#pyipropertystore) =GetPropertyStore\(Flags, riid\)
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetPropertyStore
+
+[PyIPropertyStore](PyIPropertyStore.md) = GetPropertyStore\(Flags, riid
+
+\)
 Returns a collection of the item's properties
 
 #### Parameters
-
 
   - Flags=GPS\_DEFAULT : int
 
     Combination of GETPROPERTYSTOREFLAGS values \(shellcon\.GPS\_\*\)
 
-  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIShellItem2](#pyishellitem2)\.GetPropertyStoreForKeys
 
-[PyIPropertyStore](#pyipropertystore) =GetPropertyStoreForKeys\(Keys, Flags, riid\)
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetPropertyStoreForKeys
+
+[PyIPropertyStore](PyIPropertyStore.md) = GetPropertyStoreForKeys\(Keys, Flags
+
+, riid
+
+\)
 Creates a property store containing just the specified properties of the item
 
 #### Parameters
-
 
   - Keys : \(SHCOLUMNID
 
@@ -180,85 +180,82 @@ Creates a property store containing just the specified properties of the item
 
     Combination of GETPROPERTYSTOREFLAGS values \(shellcon\.GPS\_\*\)
 
-  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIShellItem2](#pyishellitem2)\.GetPropertyStoreWithCreateObject
 
-[PyIPropertyStore](#pyipropertystore) =GetPropertyStoreWithCreateObject\(Flags, CreateObject, riid\)
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetPropertyStoreWithCreateObject
+
+[PyIPropertyStore](PyIPropertyStore.md) = GetPropertyStoreWithCreateObject\(Flags, CreateObject
+
+, riid
+
+\)
 Returns the property store for the item, with alternate handler instantiation
 
 #### Parameters
-
 
   - Flags : int
 
     Combination of GETPROPERTYSTOREFLAGS values \(shellcon\.GPS\_\*\)
 
-  - CreateObject :[PyIUnknown](#pyiunknown)
+  - CreateObject : [PyIUnknown](PyIUnknown.md)
 
     An interface that implements ICreateObject, used to create the property handler
 
-  - riid=IID\_IPropertyStore :[PyIID](#pyiid)
+  - riid=IID\_IPropertyStore : [PyIID](PyIID.md)
 
     The interface to be created
 
 #### Comments
 
-
 Primarily used to create a handler in a separate process with reduced privileges
 
-## [PyIShellItem2](#pyishellitem2)\.GetString
 
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetString
 
-
-str =GetString\(key\)
+str = GetString\(key\)
 Retrieves the value of a property as a string
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2)\.GetUInt32
 
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetUInt32
 
-
-int =GetUInt32\(key\)
+int = GetUInt32\(key\)
 Returns the value of a property as a 32 bit unsigned int
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2)\.GetUInt64
 
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.GetUInt64
 
-
-int =GetUInt64\(key\)
+int = GetUInt64\(key\)
 Returns the value of a property as an unsigned 64-bit int
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The id of the property to retrieve
 
-## [PyIShellItem2](#pyishellitem2)\.Update
+
+## [PyIShellItem2](PyIShellItem2.md#pyishellitem2)\.Update
 
 Update\(BindCtx\)
 Refreshes properties that have been modified since interface was created
 
 #### Parameters
 
-
-  - BindCtx=None :PyIBindCxt
+  - BindCtx=None : PyIBindCxt
 
     Bind context used when requesting the interface, or None

@@ -1,13 +1,11 @@
 # PySNotRestriction
 
+
 ## PySNotRestriction Object
-
-
 
 #### Parameters
 
-
-  - restriction :[PySRestriction](#pysrestriction)
+  - restriction : [PySRestriction](PySRestriction.md)
 
     
 

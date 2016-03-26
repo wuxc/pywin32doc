@@ -1,13 +1,11 @@
 # PyIPropertyDescriptionAliasInfo
 
+
 ## PyIPropertyDescriptionAliasInfo Object
-
-
 
 Interface that gives access to the sorting columns for a property
 
 #### Methods
-
 
   - [GetSortByAlias](PyIPropertyDescriptionAliasInfo.md#pyipropertydescriptionaliasinfogetsortbyalias)
 
@@ -17,26 +15,26 @@ Interface that gives access to the sorting columns for a property
 
     Returns secondary sorting columns&nbsp;
 
-## [PyIPropertyDescriptionAliasInfo](#pyipropertydescriptionaliasinfo)\.GetAdditionalSortByAliases
 
-[PyIPropertyDescriptionList](#pyipropertydescriptionlist) =GetAdditionalSortByAliases\(riid\)
+## [PyIPropertyDescriptionAliasInfo](PyIPropertyDescriptionAliasInfo.md#pyipropertydescriptionaliasinfo)\.GetAdditionalSortByAliases
+
+[PyIPropertyDescriptionList](PyIPropertyDescriptionList.md) = GetAdditionalSortByAliases\(riid\)
 Returns secondary sorting columns
 
 #### Parameters
 
-
-  - riid=IID\_IPropertyDescriptionList :[PyIID](#pyiid)
+  - riid=IID\_IPropertyDescriptionList : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIPropertyDescriptionAliasInfo](#pyipropertydescriptionaliasinfo)\.GetSortByAlias
 
-[PyIPropertyDescription](#pyipropertydescription) =GetSortByAlias\(riid\)
+## [PyIPropertyDescriptionAliasInfo](PyIPropertyDescriptionAliasInfo.md#pyipropertydescriptionaliasinfo)\.GetSortByAlias
+
+[PyIPropertyDescription](PyIPropertyDescription.md) = GetSortByAlias\(riid\)
 Returns the primary column used for sorting
 
 #### Parameters
 
-
-  - riid=IID\_IPropertyDescription :[PyIID](#pyiid)
+  - riid=IID\_IPropertyDescription : [PyIID](PyIID.md)
 
     The interface to return

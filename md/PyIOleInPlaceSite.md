@@ -1,13 +1,11 @@
 # PyIOleInPlaceSite
 
+
 ## PyIOleInPlaceSite Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [CanInPlaceActivate](PyIOleInPlaceSite.md#pyioleinplacesitecaninplaceactivate)
 
@@ -49,59 +47,68 @@ Description of the interface
 
     Description of OnPosRectChange&nbsp;
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.CanInPlaceActivate
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.CanInPlaceActivate
 
 CanInPlaceActivate\(\)
 Description of CanInPlaceActivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.DeactivateAndUndo
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.DeactivateAndUndo
 
 DeactivateAndUndo\(\)
 Description of DeactivateAndUndo\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.DiscardUndoState
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.DiscardUndoState
 
 DiscardUndoState\(\)
 Description of DiscardUndoState\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.GetWindowContext
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.GetWindowContext
 
 GetWindowContext\(\)
 Description of GetWindowContext\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnInPlaceActivate
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.OnInPlaceActivate
 
 OnInPlaceActivate\(\)
 Description of OnInPlaceActivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnInPlaceDeactivate
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.OnInPlaceDeactivate
 
 OnInPlaceDeactivate\(\)
 Description of OnInPlaceDeactivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnPosRectChange
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.OnPosRectChange
 
 OnPosRectChange\(\)
 Description of OnPosRectChange\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnUIActivate
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.OnUIActivate
 
 OnUIActivate\(\)
 Description of OnUIActivate\.
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.OnUIDeactivate
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.OnUIDeactivate
 
 OnUIDeactivate\(fUndoable\)
 Description of OnUIDeactivate\.
 
 #### Parameters
 
-
   - fUndoable : int
 
     Description for fUndoable
 
-## [PyIOleInPlaceSite](#pyioleinplacesite)\.Scroll
+
+## [PyIOleInPlaceSite](PyIOleInPlaceSite.md#pyioleinplacesite)\.Scroll
 
 Scroll\(\)
 Description of Scroll\.

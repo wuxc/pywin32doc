@@ -1,39 +1,45 @@
 # PyNETRESOURCE
 
+
 ## PyNETRESOURCE Object
-
-
 
 A Python object that encapsulates a Win32 NETRESOURCE structure\.
 
 #### Properties
 
   - integer dwScope
+
     
 
   - integer dwType
+
     
 
   - integer dwDisplayType
+
     
 
   - integer dwUsage
+
     
 
   - string localName
+
     
 
   - string remoteName
+
     
 
   - string comment
+
     
 
   - string provider
+
     
 
 #### Comments
-
 
 Note that in pywin32-212 and earlier, the string attributes 
 

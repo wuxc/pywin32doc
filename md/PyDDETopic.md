@@ -1,13 +1,11 @@
 # PyDDETopic
 
+
 ## PyDDETopic Object
-
-
 
 A DDE topic\.
 
 #### Methods
-
 
   - [AddItem](PyDDETopic.md#pyddetopicadditem)
 
@@ -19,19 +17,20 @@ A DDE topic\.
 
 sentinel&nbsp;
 
-## [PyDDETopic](#pyddetopic)\.AddItem
+
+## [PyDDETopic](PyDDETopic.md#pyddetopic)\.AddItem
 
 AddItem\(item\)
 Add an item to the topic\.
 
 #### Parameters
 
-
-  - item :PyDDEItem
+  - item : PyDDEItem
 
     The item to add
 
-## [PyDDETopic](#pyddetopic)\.Destroy
+
+## [PyDDETopic](PyDDETopic.md#pyddetopic)\.Destroy
 
 Destroy\(\)
 Destroys an item

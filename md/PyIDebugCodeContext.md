@@ -1,13 +1,11 @@
 # PyIDebugCodeContext
 
+
 ## PyIDebugCodeContext Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetDocumentContext](PyIDebugCodeContext.md#pyidebugcodecontextgetdocumentcontext)
 
@@ -17,18 +15,19 @@ Description of the interface
 
     Description of SetBreakPoint&nbsp;
 
-## [PyIDebugCodeContext](#pyidebugcodecontext)\.GetDocumentContext
+
+## [PyIDebugCodeContext](PyIDebugCodeContext.md#pyidebugcodecontext)\.GetDocumentContext
 
 GetDocumentContext\(\)
 Description of GetDocumentContext\.
 
-## [PyIDebugCodeContext](#pyidebugcodecontext)\.SetBreakPoint
+
+## [PyIDebugCodeContext](PyIDebugCodeContext.md#pyidebugcodecontext)\.SetBreakPoint
 
 SetBreakPoint\(bps\)
 Description of SetBreakPoint\.
 
 #### Parameters
-
 
   - bps : int
 

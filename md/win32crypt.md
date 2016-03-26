@@ -1,13 +1,11 @@
 # win32crypt
 
+
 ## Module win32crypt
-
-
 
 An interface to the win32 Cryptography API
 
 #### Methods
-
 
   - [CryptProtectData](win32crypt.md#win32cryptcryptprotectdata)
 
@@ -15,7 +13,7 @@ An interface to the win32 Cryptography API
 
   - [CryptUnprotectData](win32crypt.md#win32cryptcryptunprotectdata)
 
-    Decrypts data that was encrypted using[win32crypt::CryptProtectData](win32crypt.md#win32cryptcryptprotectdata)&nbsp;
+    Decrypts data that was encrypted using [win32crypt::CryptProtectData](win32crypt.md#win32cryptcryptprotectdata)&nbsp;
 
   - [CryptEnumProviders](win32crypt.md#win32cryptcryptenumproviders)
 
@@ -177,15 +175,23 @@ An interface to the win32 Cryptography API
 
     Converts a formatted string back into raw bytes&nbsp;
 
-## [win32crypt](#win32crypt)\.CertAddSerializedElementToStore
 
-[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) =CertAddSerializedElementToStore\(CertStore, Element, AddDisposition, ContextTypeFlags, Flags\)
+## [win32crypt](win32crypt.md#win32crypt)\.CertAddSerializedElementToStore
+
+[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) = CertAddSerializedElementToStore\(CertStore, Element
+
+, AddDisposition
+
+, ContextTypeFlags
+
+, Flags
+
+\)
 Imports a serialized Certificate context, CRL, or CTL
 
 #### Parameters
 
-
-  - CertStore :[PyCERTSTORE](#pycertstore)
+  - CertStore : [PyCERTSTORE](PyCERTSTORE.md)
 
     Certificate Store to which the context will be added, can be None
 
@@ -207,18 +213,15 @@ Imports a serialized Certificate context, CRL, or CTL
 
 #### Comments
 
-
 Currently only Certificate contexts are supported
 
-## [win32crypt](#win32crypt)\.CertAlgIdToOID
 
+## [win32crypt](win32crypt.md#win32crypt)\.CertAlgIdToOID
 
-
-string =CertAlgIdToOID\(AlgId\)
+string = CertAlgIdToOID\(AlgId\)
 Converts an integer ALG\_ID to it's szOID\_ string representation
 
 #### Parameters
-
 
   - AlgId : int
 
@@ -226,20 +229,19 @@ Converts an integer ALG\_ID to it's szOID\_ string representation
 
 #### Comments
 
-
 If there is no corresponding OID, None is returned
 
-## [win32crypt](#win32crypt)\.CertEnumPhysicalStore
 
+## [win32crypt](win32crypt.md#win32crypt)\.CertEnumPhysicalStore
 
+\[[PyUnicode](PyUnicode.md),\.\.\.\] = CertEnumPhysicalStore\(pvSystemStore, dwFlags
 
-\[[PyUnicode](#pyunicode),\.\.\.\] =CertEnumPhysicalStore\(pvSystemStore, dwFlags\)
+\)
 Lists physical stores on computer
 
 #### Parameters
 
-
-  - pvSystemStore :[PyUnicode](#pyunicode)
+  - pvSystemStore : [PyUnicode](PyUnicode.md)
 
     Name of system store to enumerate physical locations for
 
@@ -247,47 +249,47 @@ Lists physical stores on computer
 
     CERT\_SYSTEM\_STORE\_\* constant, CERT\_SYSTEM\_STORE\_RELOCATE\_FLAG  not supported yet
 
-## [win32crypt](#win32crypt)\.CertEnumSystemStore
 
+## [win32crypt](win32crypt.md#win32crypt)\.CertEnumSystemStore
 
+\[[PyUnicode](PyUnicode.md),\.\.\.\] = CertEnumSystemStore\(dwFlags, pvSystemStoreLocationPara
 
-\[[PyUnicode](#pyunicode),\.\.\.\] =CertEnumSystemStore\(dwFlags, pvSystemStoreLocationPara\)
+\)
 Lists system stores
 
 #### Parameters
-
 
   - dwFlags : int
 
     CERT\_SYSTEM\_STORE\_\* location, can be combined with CERT\_SYSTEM\_STORE\_RELOCATE\_FLAG
 
-  - pvSystemStoreLocationPara=None :PyCERT\_SYSTEM\_STORE\_RELOCATE\_PARA
+  - pvSystemStoreLocationPara=None : PyCERT\_SYSTEM\_STORE\_RELOCATE\_PARA
 
     Optional - If flags contains CERT\_SYSTEM\_STORE\_RELOCATE\_FLAG must be a sequence \(PyHkey, unicode\) representing a CERT\_SYSTEM\_STORE\_RELOCATE\_PARA, otherwise should be a unicode store name
 
-## [win32crypt](#win32crypt)\.CertEnumSystemStoreLocation
 
+## [win32crypt](win32crypt.md#win32crypt)\.CertEnumSystemStoreLocation
 
-
-\[[PyUnicode](#pyunicode),\.\.\.\] =CertEnumSystemStoreLocation\(Flags\)
+\[[PyUnicode](PyUnicode.md),\.\.\.\] = CertEnumSystemStoreLocation\(Flags\)
 Lists system store locations
 
 #### Parameters
-
 
   - Flags=0 : int
 
     Reserved, must be 0 if passed in
 
-## [win32crypt](#win32crypt)\.CertNameToStr
 
+## [win32crypt](win32crypt.md#win32crypt)\.CertNameToStr
 
+str = CertNameToStr\(Name, StrType
 
-str =CertNameToStr\(Name, StrType, CertEncodingType\)
+, CertEncodingType
+
+\)
 Converts an encoded CERT\_NAME\_INFO into a formatted string
 
 #### Parameters
-
 
   - Name : str
 
@@ -303,18 +305,15 @@ Converts an encoded CERT\_NAME\_INFO into a formatted string
 
 #### Comments
 
-
 Usually this encoded data is contained in a CERT\_NAME\_BLOB
 
-## [win32crypt](#win32crypt)\.CertOIDToAlgId
 
+## [win32crypt](win32crypt.md#win32crypt)\.CertOIDToAlgId
 
-
-int =CertOIDToAlgId\(ObjId\)
+int = CertOIDToAlgId\(ObjId\)
 Converts a string object identfier to a numeric algorith identifier
 
 #### Parameters
-
 
   - ObjId : string
 
@@ -322,16 +321,23 @@ Converts a string object identfier to a numeric algorith identifier
 
 #### Comments
 
-
 If no matching ALG\_ID is found, 0 is returned
 
-## [win32crypt](#win32crypt)\.CertOpenStore
 
-[PyCERTSTORE](#pycertstore) =CertOpenStore\(StoreProvider, MsgAndCertEncodingType, CryptProv, Flags, Para\)
+## [win32crypt](win32crypt.md#win32crypt)\.CertOpenStore
+
+[PyCERTSTORE](PyCERTSTORE.md) = CertOpenStore\(StoreProvider, MsgAndCertEncodingType
+
+, CryptProv
+
+, Flags
+
+, Para
+
+\)
 Opens a certificate store
 
 #### Parameters
-
 
   - StoreProvider : int
 
@@ -343,7 +349,7 @@ Opens a certificate store
 
 Usually should be X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
-  - CryptProv :[PyCRYPTPROV](#pycryptprov)
+  - CryptProv : [PyCRYPTPROV](PyCRYPTPROV.md)
 
     Handle to a CSP, can be None to use default provider
 
@@ -357,31 +363,33 @@ Usually should be X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
 
 , or data specific to provider
 
-## [win32crypt](#win32crypt)\.CertOpenSystemStore
 
-[PyCERTSTORE](#pycertstore) =CertOpenSystemStore\(SubsystemProtocol, Prov\)
+## [win32crypt](win32crypt.md#win32crypt)\.CertOpenSystemStore
+
+[PyCERTSTORE](PyCERTSTORE.md) = CertOpenSystemStore\(SubsystemProtocol, Prov
+
+\)
 Opens most commonly used Certificate Stores
 
 #### Parameters
 
-
-  - SubsystemProtocol :[PyUnicode](#pyunicode)
+  - SubsystemProtocol : [PyUnicode](PyUnicode.md)
 
     Name of store to open, will be created if it doesn't already exist
 
-  - Prov=None :[PyCRYPTPROV](#pycryptprov)
+  - Prov=None : [PyCRYPTPROV](PyCRYPTPROV.md)
 
     Handle to CSP, use None for default provider
 
-## [win32crypt](#win32crypt)\.CertRegisterSystemStore
+
+## [win32crypt](win32crypt.md#win32crypt)\.CertRegisterSystemStore
 
 CertRegisterSystemStore\(SystemStore, Flags\)
 Registers a certificate store
 
 #### Parameters
 
-
-  - SystemStore :[PyUnicode](#pyunicode)
+  - SystemStore : [PyUnicode](PyUnicode.md)
 
     string/unicode name of store to be registered, or a sequence of \(PyHkey, unicode\) representing a CERT\_SYSTEM\_STORE\_RELOCATE\_PARA struct
 
@@ -389,15 +397,15 @@ Registers a certificate store
 
     One of the CERT\_SYSTEM\_STORE\_\* location constants, can also be combined with CERT\_SYSTEM\_STORE\_RELOCATE\_FLAG and CERT\_STORE\_CREATE\_NEW\_FLAG
 
-## [win32crypt](#win32crypt)\.CertUnregisterSystemStore
+
+## [win32crypt](win32crypt.md#win32crypt)\.CertUnregisterSystemStore
 
 CertUnregisterSystemStore\(SystemStore, Flags\)
 Unregisters a certificate store
 
 #### Parameters
 
-
-  - SystemStore :[PyUnicode](#pyunicode)
+  - SystemStore : [PyUnicode](PyUnicode.md)
 
     Name of System store to be unregistered
 
@@ -405,19 +413,25 @@ Unregisters a certificate store
 
     CERT\_SYSTEM\_STORE\_RELOCATE\_FLAG, CERT\_STORE\_DELETE\_FLAG \(CERT\_SYSTEM\_STORE\_RELOCATE\_FLAG  not supported yet\)
 
-## [win32crypt](#win32crypt)\.CryptAcquireContext
 
-[PyCRYPTPROV](#pycryptprov) =CryptAcquireContext\(Container, Provider, ProvType, Flags\)
+## [win32crypt](win32crypt.md#win32crypt)\.CryptAcquireContext
+
+[PyCRYPTPROV](PyCRYPTPROV.md) = CryptAcquireContext\(Container, Provider
+
+, ProvType
+
+, Flags
+
+\)
 Retrieve handle to a cryptographic service provider
 
 #### Parameters
 
-
-  - Container :[PyUnicode](#pyunicode)
+  - Container : [PyUnicode](PyUnicode.md)
 
     Name of key container, can be none to use a Provider's default key container \(usually username\)
 
-  - Provider :[PyUnicode](#pyunicode)
+  - Provider : [PyUnicode](PyUnicode.md)
 
     Name of cryptographic provider\. \(MS\_\*\_PROV\) Use None for user's default provider\.
 
@@ -432,15 +446,15 @@ Retrieve handle to a cryptographic service provider
 #### Return Value
 Returns None if CRYPT\_DELETEKEYSET is specified, otherwise returns a handle to the provider
 
-## [win32crypt](#win32crypt)\.CryptBinaryToString
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptBinaryToString
 
+str = CryptBinaryToString\(Binary, Flags
 
-str =CryptBinaryToString\(Binary, Flags\)
+\)
 Formats a binary buffer into the specified type of string
 
 #### Parameters
-
 
   - Binary : bytes
 
@@ -452,18 +466,27 @@ Formats a binary buffer into the specified type of string
 
 #### Win32 API References
 
-
-  - Search forCryptBinaryToString at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=cryptbinarytostring),[google](#http://www.google.com/search?q=cryptbinarytostring) or[google groups](#http://groups.google.com/groups?q=cryptbinarytostring)\.
-
-## [win32crypt](#win32crypt)\.CryptDecodeMessage
+  - Search for CryptBinaryToString at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CryptBinaryToString.md), [google](http://www.google.com/search?q=CryptBinaryToString.md) or [google groups](http://groups.google.com/groups?q=CryptBinaryToString.md)\.
 
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptDecodeMessage
 
-dict =CryptDecodeMessage\(EncodedBlob, DecryptPara, VerifyPara, MsgTypeFlags, SignerIndex, PrevInnerContentType, ReturnData\)
+dict = CryptDecodeMessage\(EncodedBlob, DecryptPara
+
+, VerifyPara
+
+, MsgTypeFlags
+
+, SignerIndex
+
+, PrevInnerContentType
+
+, ReturnData
+
+\)
 Decodes and decrypts a message, and verifies its signatures
 
 #### Parameters
-
 
   - EncodedBlob : buffer
 
@@ -495,30 +518,40 @@ Decodes and decrypts a message, and verifies its signatures
 
 #### Comments
 
-
 Only one level of encoding is interpreted\.  Some types of messages will need multiple calls to completely decode\. 
 
-For example, to decode a message created by[win32crypt::CryptSignAndEncryptMessage](win32crypt.md#win32cryptcryptsignandencryptmessage), one pass with CMSG\_ENVELOPED\_FLAG 
+For example, to decode a message created by [win32crypt::CryptSignAndEncryptMessage](win32crypt.md#win32cryptcryptsignandencryptmessage), one pass with CMSG\_ENVELOPED\_FLAG 
 
 and a second pass using CMSG\_SIGNED\_FLAG are required to recover the original message text\.
 
 #### Return Value
-Output params are returned as a dict containing:
-\{MsgType:int\},&\#09&\#09&\#09&\#09&\#09&nbsp&nbsp\#\#Type of message decoded, one of CMSG\_DATA,CMSG\_SIGNED,CMSG\_ENVELOPED,CMSG\_SIGNED\_AND\_ENVELOPED,CMSG\_HASHED
-InnerContentType:int,&\#09&\#09&\#09&nbsp&nbsp\#\#Type of decoded content returned, uses same set of values as MsgType\.  CMSG\_DATA indicates unencoded data\.
-Decoded:str,&\#09&\#09&\#09&\#09&\#09&nbsp&nbsp\#\#The decoded data, will be None if ReturnData is False\.
-XchgCert:[PyCERT\_CONTEXT](PyCERT.md#pycertcontext),&\#09&nbsp&nbsp\#\#Certificate used to decode message
+Output params are returned as a dict containing: 
+
+\{MsgType:int\},&\#09&\#09&\#09&\#09&\#09&nbsp&nbsp\#\#Type of message decoded, one of CMSG\_DATA,CMSG\_SIGNED,CMSG\_ENVELOPED,CMSG\_SIGNED\_AND\_ENVELOPED,CMSG\_HASHED 
+
+InnerContentType:int,&\#09&\#09&\#09&nbsp&nbsp\#\#Type of decoded content returned, uses same set of values as MsgType\.  CMSG\_DATA indicates unencoded data\. 
+
+Decoded:str,&\#09&\#09&\#09&\#09&\#09&nbsp&nbsp\#\#The decoded data, will be None if ReturnData is False\. 
+
+XchgCert:[PyCERT\_CONTEXT](PyCERT.md#pycertcontext),&\#09&nbsp&nbsp\#\#Certificate used to decode message 
+
 SignerCert:[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)\}&\#09&nbsp&nbsp\#\#Certificate used to sign message
 
-## [win32crypt](#win32crypt)\.CryptDecodeObjectEx
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptDecodeObjectEx
 
+object = CryptDecodeObjectEx\(StructType, Encoded
 
-object =CryptDecodeObjectEx\(StructType, Encoded, Flags, CertEncodingType, DecodePara\)
+, Flags
+
+, CertEncodingType
+
+, DecodePara
+
+\)
 Decodes ASN encoded data
 
 #### Parameters
-
 
   - StructType : str/int
 
@@ -540,29 +573,100 @@ Decodes ASN encoded data
 
     Not supported, use only None
 
-OIDObject returnedszOID\_ENHANCED\_KEY\_USAGESequence of OIDsX509\_ENHANCED\_KEY\_USAGESequence of OIDsszOID\_KEY\_USAGE[PyCRYPT\_BIT\_BLOB](PyCRYPT.md#pycryptbit_blob)X509\_KEY\_USAGE[PyCRYPT\_BIT\_BLOB](PyCRYPT.md#pycryptbit_blob)X509\_BITS[PyCRYPT\_BIT\_BLOB](PyCRYPT.md#pycryptbit_blob)szOID\_SUBJECT\_ALT\_NAME[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)szOID\_SUBJECT\_ALT\_NAME2[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)szOID\_ISSUER\_ALT\_NAME[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)szOID\_ISSUER\_ALT\_NAME2[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)szOID\_NEXT\_UPDATE\_LOCATION[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)X509\_ALTERNATE\_NAME[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)X509\_NAME\_VALUE[PyCERT\_NAME\_VALUE](PyCERT.md#pycertname_value)X509\_UNICODE\_ANY\_STRING[PyCERT\_NAME\_VALUE](PyCERT.md#pycertname_value)X509\_UNICODE\_NAME\_VALUE[PyCERT\_NAME\_VALUE](PyCERT.md#pycertname_value)X509\_NAME[PyCERT\_NAME\_INFO](PyCERT.md#pycertname_info)X509\_UNICODE\_NAME[PyCERT\_NAME\_INFO](PyCERT.md#pycertname_info)szOID\_KEY\_ATTRIBUTES[PyCERT\_KEY\_ATTRIBUTES\_INFO](PyCERT.md#pycertkey_attributes_info)X509\_KEY\_ATTRIBUTES[PyCERT\_KEY\_ATTRIBUTES\_INFO](PyCERT.md#pycertkey_attributes_info)szOID\_BASIC\_CONSTRAINTS[PyCERT\_BASIC\_CONSTRAINTS\_INFO](PyCERT.md#pycertbasic_constraints_info)X509\_BASIC\_CONSTRAINTS[PyCERT\_BASIC\_CONSTRAINTS\_INFO](PyCERT.md#pycertbasic_constraints_info)szOID\_BASIC\_CONSTRAINTS2[PyCERT\_BASIC\_CONSTRAINTS2\_INFO](PyCERT.md#pycertbasic_constraints2_info)X509\_BASIC\_CONSTRAINTS2[PyCERT\_BASIC\_CONSTRAINTS2\_INFO](PyCERT.md#pycertbasic_constraints2_info)szOID\_CERT\_POLICIESSequence of[PyCERT\_POLICY\_INFO](PyCERT.md#pycertpolicy_info) objectsszOID\_APPLICATION\_CERT\_POLICIESSequence of[PyCERT\_POLICY\_INFO](PyCERT.md#pycertpolicy_info) objectsX509\_CERT\_POLICIESSequence of[PyCERT\_POLICY\_INFO](PyCERT.md#pycertpolicy_info) objectsszOID\_SUBJECT\_KEY\_IDENTIFIERBinary string containing the key identifierszOID\_AUTHORITY\_KEY\_IDENTIFIER[PyCERT\_AUTHORITY\_KEY\_ID\_INFO](PyCERT.md#pycertauthority_key_id_info)X509\_AUTHORITY\_KEY\_ID[PyCERT\_AUTHORITY\_KEY\_ID\_INFO](PyCERT.md#pycertauthority_key_id_info)
+   
+
+       OID
+
+   
+
+   
+
+       Object returned
+
+   
+
+szOID\_ENHANCED\_KEY\_USAGESequence of OIDs
+
+X509\_ENHANCED\_KEY\_USAGESequence of OIDs
+
+szOID\_KEY\_USAGE[PyCRYPT\_BIT\_BLOB](PyCRYPT.md#pycryptbit_blob)
+
+X509\_KEY\_USAGE[PyCRYPT\_BIT\_BLOB](PyCRYPT.md#pycryptbit_blob)
+
+X509\_BITS[PyCRYPT\_BIT\_BLOB](PyCRYPT.md#pycryptbit_blob)
+
+szOID\_SUBJECT\_ALT\_NAME[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)
+
+szOID\_SUBJECT\_ALT\_NAME2[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)
+
+szOID\_ISSUER\_ALT\_NAME[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)
+
+szOID\_ISSUER\_ALT\_NAME2[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)
+
+szOID\_NEXT\_UPDATE\_LOCATION[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)
+
+X509\_ALTERNATE\_NAME[PyCERT\_ALT\_NAME\_INFO](PyCERT.md#pycertalt_name_info)
+
+X509\_NAME\_VALUE[PyCERT\_NAME\_VALUE](PyCERT.md#pycertname_value)
+
+X509\_UNICODE\_ANY\_STRING[PyCERT\_NAME\_VALUE](PyCERT.md#pycertname_value)
+
+X509\_UNICODE\_NAME\_VALUE[PyCERT\_NAME\_VALUE](PyCERT.md#pycertname_value)
+
+X509\_NAME[PyCERT\_NAME\_INFO](PyCERT.md#pycertname_info)
+
+X509\_UNICODE\_NAME[PyCERT\_NAME\_INFO](PyCERT.md#pycertname_info)
+
+szOID\_KEY\_ATTRIBUTES[PyCERT\_KEY\_ATTRIBUTES\_INFO](PyCERT.md#pycertkey_attributes_info)
+
+X509\_KEY\_ATTRIBUTES[PyCERT\_KEY\_ATTRIBUTES\_INFO](PyCERT.md#pycertkey_attributes_info)
+
+szOID\_BASIC\_CONSTRAINTS[PyCERT\_BASIC\_CONSTRAINTS\_INFO](PyCERT.md#pycertbasic_constraints_info)
+
+X509\_BASIC\_CONSTRAINTS[PyCERT\_BASIC\_CONSTRAINTS\_INFO](PyCERT.md#pycertbasic_constraints_info)
+
+szOID\_BASIC\_CONSTRAINTS2[PyCERT\_BASIC\_CONSTRAINTS2\_INFO](PyCERT.md#pycertbasic_constraints2_info)
+
+X509\_BASIC\_CONSTRAINTS2[PyCERT\_BASIC\_CONSTRAINTS2\_INFO](PyCERT.md#pycertbasic_constraints2_info)
+
+szOID\_CERT\_POLICIESSequence of [PyCERT\_POLICY\_INFO](PyCERT.md#pycertpolicy_info) objects
+
+szOID\_APPLICATION\_CERT\_POLICIESSequence of [PyCERT\_POLICY\_INFO](PyCERT.md#pycertpolicy_info) objects
+
+X509\_CERT\_POLICIESSequence of [PyCERT\_POLICY\_INFO](PyCERT.md#pycertpolicy_info) objects
+
+szOID\_SUBJECT\_KEY\_IDENTIFIERBinary string containing the key identifier
+
+szOID\_AUTHORITY\_KEY\_IDENTIFIER[PyCERT\_AUTHORITY\_KEY\_ID\_INFO](PyCERT.md#pycertauthority_key_id_info)
+
+X509\_AUTHORITY\_KEY\_ID[PyCERT\_AUTHORITY\_KEY\_ID\_INFO](PyCERT.md#pycertauthority_key_id_info)
+
 #### Return Value
 Type of object returned is dependent on the StructType to be decoded
 
-## [win32crypt](#win32crypt)\.CryptDecryptAndVerifyMessageSignature
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptDecryptAndVerifyMessageSignature
 
+dict = CryptDecryptAndVerifyMessageSignature\(EncryptedBlob, DecryptPara
 
-dict =CryptDecryptAndVerifyMessageSignature\(EncryptedBlob, DecryptPara, VerifyPara, SignerIndex\)
+, VerifyPara
+
+, SignerIndex
+
+\)
 Decrypts and decodes a signed message, and verifies its signatures
 
 #### Parameters
-
 
   - EncryptedBlob : buffer
 
     Encoded message to be decrypted\.
 
-  - DecryptPara :[PyCRYPT\_DECRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptdecrypt_message_para)
+  - DecryptPara : [PyCRYPT\_DECRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptdecrypt_message_para)
 
     Decryption parms
 
-  - VerifyPara=None :[PyCRYPT\_VERIFY\_MESSAGE\_PARA](PyCRYPT.md#pycryptverify_message_para)
+  - VerifyPara=None : [PyCRYPT\_VERIFY\_MESSAGE\_PARA](PyCRYPT.md#pycryptverify_message_para)
 
     Signature verification parms
 
@@ -572,28 +676,30 @@ Decrypts and decodes a signed message, and verifies its signatures
 
 #### Comments
 
-
 Usage is similar to CryptDecodeMessage, except that it undoes all levels of encoding and 
 
 returns the bare message\.   This function is the counterpart of CryptSignAndEncryptMessage\.
 
 #### Return Value
-Output params are returned as a dict containing:
-Decrypted:str,&\#09&\#09&\#09&\#09&\#09&nbsp&nbsp\#\#The decrypted message contents
-XchgCert:[PyCERT\_CONTEXT](PyCERT.md#pycertcontext),&\#09&nbsp&nbsp\#\#Certificate whose private key was used to decrypt message
+Output params are returned as a dict containing: 
+
+Decrypted:str,&\#09&\#09&\#09&\#09&\#09&nbsp&nbsp\#\#The decrypted message contents 
+
+XchgCert:[PyCERT\_CONTEXT](PyCERT.md#pycertcontext),&\#09&nbsp&nbsp\#\#Certificate whose private key was used to decrypt message 
+
 SignerCert:[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)&\#09&nbsp&nbsp\#\#Certificate used to sign message
 
-## [win32crypt](#win32crypt)\.CryptDecryptMessage
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptDecryptMessage
 
+str, [PyCERT\_CONTEXT](PyCERT.md#pycertcontext) = CryptDecryptMessage\(DecryptPara, EncryptedBlob
 
-str,[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) =CryptDecryptMessage\(DecryptPara, EncryptedBlob\)
+\)
 Decrypts an encrypted and encoded message
 
 #### Parameters
 
-
-  - DecryptPara :[PyCRYPT\_DECRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptdecrypt_message_para)
+  - DecryptPara : [PyCRYPT\_DECRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptdecrypt_message_para)
 
     Dictionary containing decryption parameters
 
@@ -604,15 +710,21 @@ Decrypts an encrypted and encoded message
 #### Return Value
 Returns the decrypted message and a handle to the certificate used to decrypt it
 
-## [win32crypt](#win32crypt)\.CryptEncodeObjectEx
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptEncodeObjectEx
 
+str = CryptEncodeObjectEx\(StructType, StructInfo
 
-str =CryptEncodeObjectEx\(StructType, StructInfo, Flags, CertEncodingType, EncodePara\)
+, Flags
+
+, CertEncodingType
+
+, EncodePara
+
+\)
 Serializes and ASN encodes cryptographic structures
 
 #### Parameters
-
 
   - StructType : str/int
 
@@ -635,17 +747,20 @@ Serializes and ASN encodes cryptographic structures
     Not supported, use only None
 
 
-## [win32crypt](#win32crypt)\.CryptEncryptMessage
 
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptEncryptMessage
 
-str =CryptEncryptMessage\(EncryptPara, RecipientCert, ToBeEncrypted\)
+str = CryptEncryptMessage\(EncryptPara, RecipientCert
+
+, ToBeEncrypted
+
+\)
 Encrypts and encodes a message
 
 #### Parameters
 
-
-  - EncryptPara :[PyCRYPT\_ENCRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptencrypt_message_para)
+  - EncryptPara : [PyCRYPT\_ENCRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptencrypt_message_para)
 
     Encryption parameters
 
@@ -657,15 +772,19 @@ Encrypts and encodes a message
 
     Data to be encrypted
 
-## [win32crypt](#win32crypt)\.CryptEnumKeyIdentifierProperties
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptEnumKeyIdentifierProperties
 
+list = CryptEnumKeyIdentifierProperties\(KeyIdentifier, PropId
 
-list =CryptEnumKeyIdentifierProperties\(KeyIdentifier, PropId, Flags, ComputerName\)
+, Flags
+
+, ComputerName
+
+\)
 Enumerates private keys for certificates and their properties
 
 #### Parameters
-
 
   - KeyIdentifier=None : string
 
@@ -679,33 +798,29 @@ Enumerates private keys for certificates and their properties
 
     Can be CRYPT\_KEYID\_MACHINE\_FLAG to list keys for local machine, or remote machine if ComputerName is given
 
-  - ComputerName=None :[PyUnicode](#pyunicode)
+  - ComputerName=None : [PyUnicode](PyUnicode.md)
 
     Name of remote computer, use None for local machine
 
-## [win32crypt](#win32crypt)\.CryptEnumOIDInfo
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptEnumOIDInfo
 
-
-list =CryptEnumOIDInfo\(GroupId\)
+list = CryptEnumOIDInfo\(GroupId\)
 Lists registered Object Identifiers that belong to specified group
 
 #### Parameters
-
 
   - GroupId=0 : int
 
     The type of OIDs to enmerate, one of the CRYPT\_\*\_OID\_GROUP\_ID constants or 0 to list all
 
-## [win32crypt](#win32crypt)\.CryptEnumProviderTypes
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptEnumProviderTypes
 
-
-\[\([PyUnicode](#pyunicode),int\),\.\.\.\] =CryptEnumProviderTypes\(\)
+\[\([PyUnicode](PyUnicode.md),int\),\.\.\.\] = CryptEnumProviderTypes\(\)
 Lists available local cryptographic provider types
 
 #### Comments
-
 
 Windows XP sp3 has a bug that causes this function to always fail with ERROR\_MORE\_DATA \(234\) 
 
@@ -714,37 +829,38 @@ See KB959160 for a hotfix
 #### Return Value
 Returns a sequence of tuples containing name and identifier of provider types
 
-## [win32crypt](#win32crypt)\.CryptEnumProviders
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptEnumProviders
 
-
-\[\([PyUnicode](#pyunicode),int\),\.\.\.\] =CryptEnumProviders\(\)
+\[\([PyUnicode](PyUnicode.md),int\),\.\.\.\] = CryptEnumProviders\(\)
 List cryptography providers
 
 #### Return Value
 Returns a sequence of tuples containing provider name and type
 
-## [win32crypt](#win32crypt)\.CryptFindLocalizedName
 
-[PyUnicode](#pyunicode) =CryptFindLocalizedName\(CryptName\)
+## [win32crypt](win32crypt.md#win32crypt)\.CryptFindLocalizedName
+
+[PyUnicode](PyUnicode.md) = CryptFindLocalizedName\(CryptName\)
 Returns localized name for predefined system stores \(Root, My, \.Default, \.LocalMachine\)
 
 #### Parameters
 
-
-  - CryptName :[PyUnicode](#pyunicode)
+  - CryptName : [PyUnicode](PyUnicode.md)
 
     Name of a system store
 
-## [win32crypt](#win32crypt)\.CryptFindOIDInfo
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptFindOIDInfo
 
+dict = CryptFindOIDInfo\(KeyType, Key
 
-dict =CryptFindOIDInfo\(KeyType, Key, GroupId\)
+, GroupId
+
+\)
 Returns information about an algorithm identifier or object identifier
 
 #### Parameters
-
 
   - KeyType : int
 
@@ -762,15 +878,24 @@ Returns information about an algorithm identifier or object identifier
 Returns a dictionary of CRYPT\_OID\_INFO data
 
 
-## [win32crypt](#win32crypt)\.CryptFormatObject
 
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptFormatObject
 
-str =CryptFormatObject\(StructType, Encoded, FormatStrType, CertEncodingType, FormatType, FormatStruct\)
+str = CryptFormatObject\(StructType, Encoded
+
+, FormatStrType
+
+, CertEncodingType
+
+, FormatType
+
+, FormatStruct
+
+\)
 Formats an encoded buffer into a readable string
 
 #### Parameters
-
 
   - StructType : str/int
 
@@ -798,21 +923,21 @@ Formats an encoded buffer into a readable string
 
 #### Comments
 
-
 Will handle all of the common certificate extension types
 
 #### Win32 API References
 
+  - Search for CryptFormatObject at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CryptFormatObject.md), [google](http://www.google.com/search?q=CryptFormatObject.md) or [google groups](http://groups.google.com/groups?q=CryptFormatObject.md)\.
 
-  - Search forCryptFormatObject at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=cryptformatobject),[google](#http://www.google.com/search?q=cryptformatobject) or[google groups](#http://groups.google.com/groups?q=cryptformatobject)\.
 
-## [win32crypt](#win32crypt)\.CryptGetDefaultProvider
+## [win32crypt](win32crypt.md#win32crypt)\.CryptGetDefaultProvider
 
-[PyUnicode](#pyunicode) =CryptGetDefaultProvider\(ProvType, Flags\)
+[PyUnicode](PyUnicode.md) = CryptGetDefaultProvider\(ProvType, Flags
+
+\)
 Returns default provider for local machine or current user
 
 #### Parameters
-
 
   - ProvType : int
 
@@ -822,15 +947,19 @@ Returns default provider for local machine or current user
 
     CRYPT\_MACHINE\_DEFAULT or CRYPT\_USER\_DEFAULT
 
-## [win32crypt](#win32crypt)\.CryptGetKeyIdentifierProperty
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptGetKeyIdentifierProperty
 
+object = CryptGetKeyIdentifierProperty\(KeyIdentifier, PropId
 
-object =CryptGetKeyIdentifierProperty\(KeyIdentifier, PropId, Flags, ComputerName\)
+, Flags
+
+, ComputerName
+
+\)
 Retrieves a property from a certificate by its key indentifier
 
 #### Parameters
-
 
   - KeyIdentifier : string
 
@@ -844,22 +973,27 @@ Retrieves a property from a certificate by its key indentifier
 
     Use CRYPT\_KEYID\_MACHINE\_FLAG for machine keyset\. \(CRYPT\_KEYID\_ALLOC\_FLAG is always added to Flags\)
 
-  - ComputerName=None :[PyUnicode](#pyunicode)
+  - ComputerName=None : [PyUnicode](PyUnicode.md)
 
     Name of remote computer, use None for local machine
 
 #### Comments
 
-
 CERT\_KEY\_PROV\_INFO\_PROP\_ID is only property currently supported
 
-## [win32crypt](#win32crypt)\.CryptGetMessageCertificates
 
-[PyCERTSTORE](#pycertstore) =CryptGetMessageCertificates\(SignedBlob, MsgAndCertEncodingType, CryptProv, Flags\)
+## [win32crypt](win32crypt.md#win32crypt)\.CryptGetMessageCertificates
+
+[PyCERTSTORE](PyCERTSTORE.md) = CryptGetMessageCertificates\(SignedBlob, MsgAndCertEncodingType
+
+, CryptProv
+
+, Flags
+
+\)
 Extracts certificates encoded in a message
 
 #### Parameters
-
 
   - SignedBlob : buffer
 
@@ -869,23 +1003,23 @@ Extracts certificates encoded in a message
 
     Message and certificate encoding types
 
-  - CryptProv=None :[PyCRYPTPROV](#pycryptprov)
+  - CryptProv=None : [PyCRYPTPROV](PyCRYPTPROV.md)
 
     Handle to a CSP, use None for default
 
   - Flags=0 : int
 
-    Same flags used with[win32crypt::CertOpenStore](win32crypt.md#win32cryptcertopenstore)
-
-## [win32crypt](#win32crypt)\.CryptGetMessageSignerCount
+    Same flags used with [win32crypt::CertOpenStore](win32crypt.md#win32cryptcertopenstore)
 
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptGetMessageSignerCount
 
-int =CryptGetMessageSignerCount\(SignedBlob, MsgEncodingType\)
+int = CryptGetMessageSignerCount\(SignedBlob, MsgEncodingType
+
+\)
 Finds the number of signers of an encoded message
 
 #### Parameters
-
 
   - SignedBlob : buffer
 
@@ -895,21 +1029,29 @@ Finds the number of signers of an encoded message
 
     Message encoding type
 
-## [win32crypt](#win32crypt)\.CryptProtectData
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptProtectData
 
+bytes = CryptProtectData\(DataIn, DataDescr
 
-bytes =CryptProtectData\(DataIn, DataDescr, OptionalEntropy, Reserved, PromptStruct, Flags\)
+, OptionalEntropy
+
+, Reserved
+
+, PromptStruct
+
+, Flags
+
+\)
 Encrypts data using a session key derived from current user's logon credentials
 
 #### Parameters
-
 
   - DataIn : bytes
 
     Data to be encrypted\.
 
-  - DataDescr=None :[PyUnicode](#pyunicode)
+  - DataDescr=None : [PyUnicode](PyUnicode.md)
 
     Description to add to the data
 
@@ -921,7 +1063,7 @@ Encrypts data using a session key derived from current user's logon credentials
 
     Must be None
 
-  - PromptStruct=None :[PyCRYPTPROTECT\_PROMPTSTRUCT](PyCRYPTPROTECT.md#pycryptprotectpromptstruct)
+  - PromptStruct=None : [PyCRYPTPROTECT\_PROMPTSTRUCT](PyCRYPTPROTECT.md#pycryptprotectpromptstruct)
 
     Contains options for UI display during encryption and decryption, can be None
 
@@ -929,15 +1071,21 @@ Encrypts data using a session key derived from current user's logon credentials
 
     Combination of CRYPTPROTECT\_\* flags
 
-## [win32crypt](#win32crypt)\.CryptQueryObject
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptQueryObject
 
+dict = CryptQueryObject\(ObjectType, Object
 
-dict =CryptQueryObject\(ObjectType, Object, ExpectedContentTypeFlags, ExpectedFormatTypeFlags, Flags\)
+, ExpectedContentTypeFlags
+
+, ExpectedFormatTypeFlags
+
+, Flags
+
+\)
 Determines the cryptographic type of input data
 
 #### Parameters
-
 
   - ObjectType : int
 
@@ -960,23 +1108,29 @@ Determines the cryptographic type of input data
     Reserved, use only 0
 
 #### Return Value
-Returns a dictionary containing
-\{MsgAndCertEncodingType:int,&\#09\#\# encoding type, usually X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING
-ContentType:int,&\#09&\#09&\#09&\#09\#\# One of the CERT\_QUERY\_CONTENT\_\* constants
-FormatType:int,&\#09&\#09&\#09&\#09&\#09\#\# One of the CERT\_QUERY\_FORMAT\_\* constants
-CertStore:[PyCERTSTORE](#pycertstore),&\#09&\#09\#\# Handle to certificate store containing all certficates in the object, may be None
-Msg:[PyCRYPTMSG](#pycryptmsg),&\#09&\#09&\#09&\#09\#\# If input doesn't contains a PKCS7 message, will be None
+Returns a dictionary containing 
+
+\{MsgAndCertEncodingType:int,&\#09\#\# encoding type, usually X509\_ASN\_ENCODING combined with PKCS\_7\_ASN\_ENCODING 
+
+ContentType:int,&\#09&\#09&\#09&\#09\#\# One of the CERT\_QUERY\_CONTENT\_\* constants 
+
+FormatType:int,&\#09&\#09&\#09&\#09&\#09\#\# One of the CERT\_QUERY\_FORMAT\_\* constants 
+
+CertStore:[PyCERTSTORE](PyCERTSTORE.md),&\#09&\#09\#\# Handle to certificate store containing all certficates in the object, may be None 
+
+Msg:[PyCRYPTMSG](PyCRYPTMSG.md),&\#09&\#09&\#09&\#09\#\# If input doesn't contains a PKCS7 message, will be None 
+
 Context:[PyCERT\_CONTEXT](PyCERT.md#pycertcontext)\}&\#09&\#09\#\# A certificate, CRL, or CTL context depending on ContentType, may be None
 
-## [win32crypt](#win32crypt)\.CryptSetProviderEx
+
+## [win32crypt](win32crypt.md#win32crypt)\.CryptSetProviderEx
 
 CryptSetProviderEx\(ProvName, ProvType, Flags\)
 Sets default provider \(for machine or user\) for specified type
 
 #### Parameters
 
-
-  - ProvName :[PyUnicode](#pyunicode)
+  - ProvName : [PyUnicode](PyUnicode.md)
 
     Name of new default provider \(MS\_\*\_PROV value\)
 
@@ -988,21 +1142,25 @@ Sets default provider \(for machine or user\) for specified type
 
     CRYPT\_MACHINE\_DEFAULT or CRYPT\_USER\_DEFAULT\.  Combine with CRYPT\_DELETE\_DEFAULT to remove default\.
 
-## [win32crypt](#win32crypt)\.CryptSignAndEncryptMessage
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptSignAndEncryptMessage
 
+str = CryptSignAndEncryptMessage\(SignPara, EncryptPara
 
-str =CryptSignAndEncryptMessage\(SignPara, EncryptPara, RecipientCert, ToBeSignedAndEncrypted\)
+, RecipientCert
+
+, ToBeSignedAndEncrypted
+
+\)
 Encrypts, encodes and signs a message using a certificate
 
 #### Parameters
 
-
-  - SignPara :[PyCRYPT\_SIGN\_MESSAGE\_PARA](PyCRYPT.md#pycryptsign_message_para)
+  - SignPara : [PyCRYPT\_SIGN\_MESSAGE\_PARA](PyCRYPT.md#pycryptsign_message_para)
 
     Message signing parameters
 
-  - EncryptPara :[PyCRYPT\_ENCRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptencrypt_message_para)
+  - EncryptPara : [PyCRYPT\_ENCRYPT\_MESSAGE\_PARA](PyCRYPT.md#pycryptencrypt_message_para)
 
     Encryption parameters
 
@@ -1014,17 +1172,19 @@ Encrypts, encodes and signs a message using a certificate
 
     Buffer containing data to be encoded in the message
 
-## [win32crypt](#win32crypt)\.CryptSignMessage
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptSignMessage
 
+str = CryptSignMessage\(SignPara, ToBeSigned
 
-str =CryptSignMessage\(SignPara, ToBeSigned, DetachedSignature\)
+, DetachedSignature
+
+\)
 Signs and encodes a message
 
 #### Parameters
 
-
-  - SignPara :[PyCRYPT\_SIGN\_MESSAGE\_PARA](PyCRYPT.md#pycryptsign_message_para)
+  - SignPara : [PyCRYPT\_SIGN\_MESSAGE\_PARA](PyCRYPT.md#pycryptsign_message_para)
 
     Message signing parameters
 
@@ -1036,15 +1196,15 @@ Signs and encodes a message
 
     If True, only the signature itself is encoded in output msg\.
 
-## [win32crypt](#win32crypt)\.CryptStringToBinary
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptStringToBinary
 
+bytes, int, int = CryptStringToBinary\(String, Flags
 
-bytes, int, int =CryptStringToBinary\(String, Flags\)
+\)
 Converts a formatted string back into raw bytes
 
 #### Parameters
-
 
   - String : str
 
@@ -1056,23 +1216,28 @@ Converts a formatted string back into raw bytes
 
 #### Win32 API References
 
-
-  - Search forCryptStringToBinary at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=cryptstringtobinary),[google](#http://www.google.com/search?q=cryptstringtobinary) or[google groups](#http://groups.google.com/groups?q=cryptstringtobinary)\.
+  - Search for CryptStringToBinary at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CryptStringToBinary.md), [google](http://www.google.com/search?q=CryptStringToBinary.md) or [google groups](http://groups.google.com/groups?q=CryptStringToBinary.md)\.
 
 #### Return Value
 Returns the decoded binary data, number of header characters skipped, and CRYPT\_STRING\_\* value 
 
 denoting the type of data found \(used if input Flags is one of \*\_ANY values\)
 
-## [win32crypt](#win32crypt)\.CryptUnprotectData
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptUnprotectData
 
+\(str, bytes\) = CryptUnprotectData\(DataIn, OptionalEntropy
 
-\(str, bytes\) =CryptUnprotectData\(DataIn, OptionalEntropy, Reserved, PromptStruct, Flags\)
-Decrypts data that was encrypted using[win32crypt::CryptProtectData](win32crypt.md#win32cryptcryptprotectdata)\.
+, Reserved
+
+, PromptStruct
+
+, Flags
+
+\)
+Decrypts data that was encrypted using [win32crypt::CryptProtectData](win32crypt.md#win32cryptcryptprotectdata)\.
 
 #### Parameters
-
 
   - DataIn : bytes
 
@@ -1086,7 +1251,7 @@ Decrypts data that was encrypted using[win32crypt::CryptProtectData](win32crypt.
 
     Must be None
 
-  - PromptStruct=None :[PyCRYPTPROTECT\_PROMPTSTRUCT](PyCRYPTPROTECT.md#pycryptprotectpromptstruct)
+  - PromptStruct=None : [PyCRYPTPROTECT\_PROMPTSTRUCT](PyCRYPTPROTECT.md#pycryptprotectpromptstruct)
 
     Contains options for UI display during encryption and decryption, can be None
 
@@ -1097,17 +1262,23 @@ Decrypts data that was encrypted using[win32crypt::CryptProtectData](win32crypt.
 #### Return Value
 The result is a tuple of \(description, data\) where description 
 
-is the description that was passed to[win32crypt::CryptProtectData](win32crypt.md#win32cryptcryptprotectdata), and 
+is the description that was passed to [win32crypt::CryptProtectData](win32crypt.md#win32cryptcryptprotectdata), and 
 
 data is the unencrypted data\.
 
-## [win32crypt](#win32crypt)\.CryptVerifyDetachedMessageSignature
 
-[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) =CryptVerifyDetachedMessageSignature\(SignerIndex, DetachedSignBlob, ToBeSigned, VerifyPara\)
+## [win32crypt](win32crypt.md#win32crypt)\.CryptVerifyDetachedMessageSignature
+
+[PyCERT\_CONTEXT](PyCERT.md#pycertcontext) = CryptVerifyDetachedMessageSignature\(SignerIndex, DetachedSignBlob
+
+, ToBeSigned
+
+, VerifyPara
+
+\)
 Verifies a signature that is encoded separately from the data
 
 #### Parameters
-
 
   - SignerIndex : int
 
@@ -1121,22 +1292,26 @@ Verifies a signature that is encoded separately from the data
 
     Sequence of buffers containing message data\.
 
-  - VerifyPara=None :[PyCRYPT\_VERIFY\_MESSAGE\_PARA](PyCRYPT.md#pycryptverify_message_para)
+  - VerifyPara=None : [PyCRYPT\_VERIFY\_MESSAGE\_PARA](PyCRYPT.md#pycryptverify_message_para)
 
     Signature verification parameters, use None for defaults
 
 #### Return Value
 Returns the signing certificate
 
-## [win32crypt](#win32crypt)\.CryptVerifyMessageSignature
 
+## [win32crypt](win32crypt.md#win32crypt)\.CryptVerifyMessageSignature
 
+\([PyCERT\_CONTEXT](PyCERT.md#pycertcontext), str\) = CryptVerifyMessageSignature\(SignedBlob, SignerIndex
 
-\([PyCERT\_CONTEXT](PyCERT.md#pycertcontext), str\) =CryptVerifyMessageSignature\(SignedBlob, SignerIndex, VerifyPara, ReturnData\)
+, VerifyPara
+
+, ReturnData
+
+\)
 Verifies the signature of an encoded message
 
 #### Parameters
-
 
   - SignedBlob : str
 
@@ -1146,7 +1321,7 @@ Verifies the signature of an encoded message
 
     Index of the signer to verify, zero-based
 
-  - VerifyPara=None :[PyCRYPT\_VERIFY\_MESSAGE\_PARA](PyCRYPT.md#pycryptverify_message_para)
+  - VerifyPara=None : [PyCRYPT\_VERIFY\_MESSAGE\_PARA](PyCRYPT.md#pycryptverify_message_para)
 
     Signature verification parameters, use None for defaults
 
@@ -1157,13 +1332,17 @@ Verifies the signature of an encoded message
 #### Return Value
 Returns the signing certificate and the decoded data\.  If ReturnData parm is False, None is returned for data\.
 
-## [win32crypt](#win32crypt)\.PFXImportCertStore
 
-[PyCERTSTORE](#pycertstore) =PFXImportCertStore\(PFX, Password, Flags\)
+## [win32crypt](win32crypt.md#win32crypt)\.PFXImportCertStore
+
+[PyCERTSTORE](PyCERTSTORE.md) = PFXImportCertStore\(PFX, Password
+
+, Flags
+
+\)
 Creates a certificate store from PKCS\#12 data \(\*\.PFX files\)
 
 #### Parameters
-
 
   - PFX : bytes
 
@@ -1179,9 +1358,7 @@ Creates a certificate store from PKCS\#12 data \(\*\.PFX files\)
 
 #### Comments
 
-
 MSDN docs specify that \*one\* of the Flags can be used, but in practice a combination is allowed
-
 
 Depending on the encrypting application, a blank password \(""\) may be treated differently that a NULL 
 
@@ -1189,18 +1366,15 @@ password \(None\), so if you have a PFX with no password try both\.
 
 #### Win32 API References
 
-
-  - Search forPFXImportCertStore at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=pfximportcertstore),[google](#http://www.google.com/search?q=pfximportcertstore) or[google groups](#http://groups.google.com/groups?q=pfximportcertstore)\.
-
-## [win32crypt](#win32crypt)\.PFXIsPFXBlob
+  - Search for PFXImportCertStore at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PFXImportCertStore.md), [google](http://www.google.com/search?q=PFXImportCertStore.md) or [google groups](http://groups.google.com/groups?q=PFXImportCertStore.md)\.
 
 
+## [win32crypt](win32crypt.md#win32crypt)\.PFXIsPFXBlob
 
-boolean =PFXIsPFXBlob\(PFX\)
+boolean = PFXIsPFXBlob\(PFX\)
 Checks if data buffer contains a PFX blob
 
 #### Parameters
-
 
   - PFX : bytes
 
@@ -1208,18 +1382,19 @@ Checks if data buffer contains a PFX blob
 
 #### Win32 API References
 
-
-  - Search forPFXIsPFXBlob at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=pfxispfxblob),[google](#http://www.google.com/search?q=pfxispfxblob) or[google groups](#http://groups.google.com/groups?q=pfxispfxblob)\.
-
-## [win32crypt](#win32crypt)\.PFXVerifyPassword
+  - Search for PFXIsPFXBlob at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PFXIsPFXBlob.md), [google](http://www.google.com/search?q=PFXIsPFXBlob.md) or [google groups](http://groups.google.com/groups?q=PFXIsPFXBlob.md)\.
 
 
+## [win32crypt](win32crypt.md#win32crypt)\.PFXVerifyPassword
 
-boolean =PFXVerifyPassword\(PFX, Password, Flags\)
+boolean = PFXVerifyPassword\(PFX, Password
+
+, Flags
+
+\)
 Checks if a PFX blob can be decrypted with given password
 
 #### Parameters
-
 
   - PFX : bytes
 
@@ -1235,5 +1410,4 @@ Checks if a PFX blob can be decrypted with given password
 
 #### Win32 API References
 
-
-  - Search forPFXVerifyPassword at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=pfxverifypassword),[google](#http://www.google.com/search?q=pfxverifypassword) or[google groups](#http://groups.google.com/groups?q=pfxverifypassword)\.
+  - Search for PFXVerifyPassword at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PFXVerifyPassword.md), [google](http://www.google.com/search?q=PFXVerifyPassword.md) or [google groups](http://groups.google.com/groups?q=PFXVerifyPassword.md)\.

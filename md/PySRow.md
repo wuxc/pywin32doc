@@ -1,9 +1,8 @@
 # PySRow
 
+
 ## PySRow Object
 
-
-
-Identical to aPySValue
+Identical to a PySValue
 
  object

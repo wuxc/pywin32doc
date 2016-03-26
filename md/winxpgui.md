@@ -1,9 +1,8 @@
 # winxpgui
 
+
 ## Module winxpgui
 
+A version of [win32gui](win32gui.md) built specifically for 
 
-
-A version of[win32gui](#win32gui) built specifically for 
-
-Windows XP\. See the[win32gui](#win32gui) module for more details\.
+Windows XP\. See the [win32gui](win32gui.md) module for more details\.

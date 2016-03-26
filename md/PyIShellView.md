@@ -1,13 +1,11 @@
 # PyIShellView
 
+
 ## PyIShellView Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [TranslateAccelerator](PyIShellView.md#pyishellviewtranslateaccelerator)
 
@@ -49,17 +47,21 @@ Description of the interface
 
     Description of GetItemObject&nbsp;
 
-## [PyIShellView](#pyishellview)\.CreateViewWindow
 
+## [PyIShellView](PyIShellView.md#pyishellview)\.CreateViewWindow
 
+int = CreateViewWindow\(psvPrevious, pfs
 
-int =CreateViewWindow\(psvPrevious, pfs, psb, prcView\)
+, psb
+
+, prcView
+
+\)
 Description of CreateViewWindow\.
 
 #### Parameters
 
-
-  - psvPrevious :[PyIShellView](#pyishellview)
+  - psvPrevious : [PyIShellView](PyIShellView.md#pyishellview)
 
     Description for psvPrevious
 
@@ -67,7 +69,7 @@ Description of CreateViewWindow\.
 
     Description for pfs
 
-  - psb :[PyIShellBrowser](#pyishellbrowser)
+  - psb : [PyIShellBrowser](PyIShellBrowser.md)
 
     Description for psb
 
@@ -78,65 +80,71 @@ Description of CreateViewWindow\.
 #### Return Value
 The result is an integer handle to the new window\.
 
-## [PyIShellView](#pyishellview)\.DestroyViewWindow
+
+## [PyIShellView](PyIShellView.md#pyishellview)\.DestroyViewWindow
 
 DestroyViewWindow\(\)
 Description of DestroyViewWindow\.
 
-## [PyIShellView](#pyishellview)\.EnableModeless
+
+## [PyIShellView](PyIShellView.md#pyishellview)\.EnableModeless
 
 EnableModeless\(fEnable\)
 Description of EnableModeless\.
 
 #### Parameters
 
-
   - fEnable : int
 
     Description for fEnable
 
-## [PyIShellView](#pyishellview)\.GetCurrentInfo
+
+## [PyIShellView](PyIShellView.md#pyishellview)\.GetCurrentInfo
 
 PyFOLDERSETTINGS
 
- =GetCurrentInfo\(\)
+ = GetCurrentInfo\(\)
 Description of GetCurrentInfo\.
 
-## [PyIShellView](#pyishellview)\.GetItemObject
 
-[PyIUnknown](#pyiunknown) =GetItemObject\(uItem, riid\)
+## [PyIShellView](PyIShellView.md#pyishellview)\.GetItemObject
+
+[PyIUnknown](PyIUnknown.md) = GetItemObject\(uItem, riid
+
+\)
 Description of GetItemObject\.
 
 #### Parameters
-
 
   - uItem : int
 
     Description for uItem
 
-  - riid :[PyIID](#pyiid)
+  - riid : [PyIID](PyIID.md)
 
     Description for riid
 
-## [PyIShellView](#pyishellview)\.Refresh
+
+## [PyIShellView](PyIShellView.md#pyishellview)\.Refresh
 
 Refresh\(\)
 Description of Refresh\.
 
-## [PyIShellView](#pyishellview)\.SaveViewState
+
+## [PyIShellView](PyIShellView.md#pyishellview)\.SaveViewState
 
 SaveViewState\(\)
 Description of SaveViewState\.
 
-## [PyIShellView](#pyishellview)\.SelectItem
+
+## [PyIShellView](PyIShellView.md#pyishellview)\.SelectItem
 
 SelectItem\(pidlItem, uFlags\)
 Description of SelectItem\.
 
 #### Parameters
 
-
-  - pidlItem :[PyIDL](#pyidl)
+  - pidlItem : [PyIDL](PyIDL.md)
 
     Description for pidlItem
 
@@ -144,15 +152,13 @@ Description of SelectItem\.
 
     Description for uFlags
 
-## [PyIShellView](#pyishellview)\.TranslateAccelerator
 
+## [PyIShellView](PyIShellView.md#pyishellview)\.TranslateAccelerator
 
-
-int =TranslateAccelerator\(pmsg\)
+int = TranslateAccelerator\(pmsg\)
 Description of TranslateAccelerator\.
 
 #### Parameters
-
 
   - pmsg : tuple
 
@@ -161,13 +167,13 @@ Description of TranslateAccelerator\.
 #### Return Value
 The result is the HRESULT from the underlying TranslateAccelerator call
 
-## [PyIShellView](#pyishellview)\.UIActivate
+
+## [PyIShellView](PyIShellView.md#pyishellview)\.UIActivate
 
 UIActivate\(uState\)
 Description of UIActivate\.
 
 #### Parameters
-
 
   - uState : int
 

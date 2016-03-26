@@ -1,13 +1,11 @@
 # PyIEnumShellItems
 
+
 ## PyIEnumShellItems Object
-
-
 
 A Python interface to IEnumShellItems
 
 #### Methods
-
 
   - [Next](PyIEnumShellItems.md#pyienumshellitemsnext)
 
@@ -25,31 +23,32 @@ A Python interface to IEnumShellItems
 
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumShellItems](#pyienumshellitems)\.Clone
 
-[PyIEnumShellItems](#pyienumshellitems) =Clone\(\)
+## [PyIEnumShellItems](PyIEnumShellItems.md#pyienumshellitems)\.Clone
+
+[PyIEnumShellItems](PyIEnumShellItems.md#pyienumshellitems) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumShellItems](#pyienumshellitems)\.Next
 
+## [PyIEnumShellItems](PyIEnumShellItems.md#pyienumshellitems)\.Next
 
-
-\([PyIShellItem](#pyishellitem),\.\.\.\) =Next\(num\)
+\([PyIShellItem](PyIShellItem.md),\.\.\.\) = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumShellItems](#pyienumshellitems)\.Reset
+
+## [PyIEnumShellItems](PyIEnumShellItems.md#pyienumshellitems)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumShellItems](#pyienumshellitems)\.Skip
+
+## [PyIEnumShellItems](PyIEnumShellItems.md#pyienumshellitems)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

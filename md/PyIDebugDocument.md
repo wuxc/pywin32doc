@@ -1,7 +1,6 @@
 # PyIDebugDocument
 
+
 ## PyIDebugDocument Object
 
-
-
-The base interface to all debug documents\.  Derived from[PyIDebugDocumentInfo](#pyidebugdocumentinfo)
+The base interface to all debug documents\.  Derived from [PyIDebugDocumentInfo](PyIDebugDocumentInfo.md)

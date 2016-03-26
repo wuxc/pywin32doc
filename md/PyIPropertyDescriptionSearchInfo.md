@@ -1,15 +1,13 @@
 # PyIPropertyDescriptionSearchInfo
 
+
 ## PyIPropertyDescriptionSearchInfo Object
-
-
 
 Interface that retrieves indexing options defined in a property's searchinfo XML element 
 
-Inhererits all methods of[PyIPropertyDescription](#pyipropertydescription)
+Inhererits all methods of [PyIPropertyDescription](PyIPropertyDescription.md)
 
 #### Methods
-
 
   - [GetSearchInfoFlags](PyIPropertyDescriptionSearchInfo.md#pyipropertydescriptionsearchinfogetsearchinfoflags)
 
@@ -27,35 +25,31 @@ Inhererits all methods of[PyIPropertyDescription](#pyipropertydescription)
 
     Returns the maximum size specified in search options&nbsp;
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetColumnIndexType
 
+## [PyIPropertyDescriptionSearchInfo](PyIPropertyDescriptionSearchInfo.md#pyipropertydescriptionsearchinfo)\.GetColumnIndexType
 
-
-int =GetColumnIndexType\(\)
+int = GetColumnIndexType\(\)
 Returns flags indicating type of property
 
 #### Return Value
 Returns a value from the PROPDESC\_COLUMNINDEX\_TYPE enum
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetMaxSize
 
+## [PyIPropertyDescriptionSearchInfo](PyIPropertyDescriptionSearchInfo.md#pyipropertydescriptionsearchinfo)\.GetMaxSize
 
-
-int =GetMaxSize\(\)
+int = GetMaxSize\(\)
 Returns the maximum size specified in search options
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetProjectionString
 
+## [PyIPropertyDescriptionSearchInfo](PyIPropertyDescriptionSearchInfo.md#pyipropertydescriptionsearchinfo)\.GetProjectionString
 
-
-str =GetProjectionString\(\)
+str = GetProjectionString\(\)
 Returns the canonical name of the property
 
-## [PyIPropertyDescriptionSearchInfo](#pyipropertydescriptionsearchinfo)\.GetSearchInfoFlags
 
+## [PyIPropertyDescriptionSearchInfo](PyIPropertyDescriptionSearchInfo.md#pyipropertydescriptionsearchinfo)\.GetSearchInfoFlags
 
-
-int =GetSearchInfoFlags\(\)
+int = GetSearchInfoFlags\(\)
 Returns flags controlling how property is indexed
 
 #### Return Value

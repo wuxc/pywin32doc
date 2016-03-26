@@ -1,13 +1,11 @@
 # PyCTreeCtrl
 
+
 ## PyCTreeCtrl Object
 
-
-
-A class which encapsulates an MFC CTreeCtrl object\.  Derived from a[PyCWnd](#pycwnd) object\.
+A class which encapsulates an MFC CTreeCtrl object\.  Derived from a [PyCWnd](PyCWnd.md) object\.
 
 #### Methods
-
 
   - [CreateWindow](PyCTreeCtrl.md#pyctreectrlcreatewindow)
 
@@ -191,7 +189,6 @@ A class which encapsulates an MFC CTreeCtrl object\.  Derived from a[PyCWnd](#py
 
 #### Comments
 
-
 Sam Rushing has found the following tidbits:
  
 
@@ -210,25 +207,25 @@ with TVE\_COLLAPSE\.  This is pointed out in the docs for
 
 TreeView\_Expand\(\), but not in those for CTreeCtrl::Expand\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.CreateDragImage
 
-[PyCImageList](#pycimagelist) =CreateDragImage\(item\)
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.CreateDragImage
+
+[PyCImageList](PyCImageList.md) = CreateDragImage\(item\)
 Creates a dragging bitmap for the specified tree view item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
     The item to edit\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.CreateWindow
 
-CreateWindow\(style, rect,[PyCWnd](#pycwnd), id\)
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.CreateWindow
+
+CreateWindow\(style, rect, [PyCWnd](PyCWnd.md), id\)
 Creates the actual window for the object\.
 
 #### Parameters
-
 
   - style : int
 
@@ -238,7 +235,7 @@ Creates the actual window for the object\.
 
     The default rectangle
 
-  - [PyCWnd](#pycwnd) : parent
+  - [PyCWnd](PyCWnd.md) : parent
 
     The parent window
 
@@ -248,61 +245,57 @@ Creates the actual window for the object\.
 
 #### MFC References
 
-
   - CTreeCtrl::Create
 
-## [PyCTreeCtrl](#pyctreectrl)\.DeleteAllItems
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.DeleteAllItems
 
-
-object =DeleteAllItems\(\)
+object = DeleteAllItems\(\)
 Deletes all items in the control
 
-## [PyCTreeCtrl](#pyctreectrl)\.DeleteItem
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.DeleteItem
 
 DeleteItem\(item\)
 Deletes the specified item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.EditLabel
 
-[PyCEdit](#pycedit) =EditLabel\(item\)
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.EditLabel
+
+[PyCEdit](PyCEdit.md) = EditLabel\(item\)
 Edits a specified tree view item in-place\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The item to edit\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.EnsureVisible
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.EnsureVisible
 
-
-int =EnsureVisible\(item\)
+int = EnsureVisible\(item\)
 Ensures that a tree view item is visible in its tree view control\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The item to edit\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.Expand
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.Expand
 
 Expand\(item, code\)
 Expands, or collapses, the child items of the specified tree view item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -312,75 +305,75 @@ Expands, or collapses, the child items of the specified tree view item\.
 
     The action to take
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetChildItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetChildItem
 
-
-HTREEITEM =GetChildItem\(item\)
+HTREEITEM = GetChildItem\(item\)
 Retrieves the first child item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetCount
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetCount
 
-
-int =GetCount\(\)
+int = GetCount\(\)
 Retrieves the number of tree items associated with a tree view control\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetDropHilightItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetDropHilightItem
 
-
-HTREEITEM =GetDropHilightItem\(\)
+HTREEITEM = GetDropHilightItem\(\)
 Retrieves the target of a drag-and-drop operation\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetEditControl
 
-[PyCEdit](#pycedit) =GetEditControl\(\)
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetEditControl
+
+[PyCEdit](PyCEdit.md) = GetEditControl\(\)
 Retrieves the handle of the edit control used to edit the specified tree view item\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetFirstVisibleItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetFirstVisibleItem
 
-
-HTREEITEM =GetFirstVisibleItem\(\)
+HTREEITEM = GetFirstVisibleItem\(\)
 Retrieves the first visible item of the tree view control\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetImageList
 
-[PyCImageList](#pycimagelist) =GetImageList\(nImageList\)
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetImageList
+
+[PyCImageList](PyCImageList.md) = GetImageList\(nImageList\)
 Retrieves the current image list\.
 
 #### Parameters
 
-
   - nImageList : int
 
-    Value specifying which image list to retrieve\. It can be one of:
--&\#09commctrl\.LVSIL\_NORMAL   Image list with large icons\.
--&\#09commctrl\.LVSIL\_SMALL   Image list with small icons\.
+    Value specifying which image list to retrieve\. It can be one of: 
+
+-&\#09commctrl\.LVSIL\_NORMAL   Image list with large icons\. 
+
+-&\#09commctrl\.LVSIL\_SMALL   Image list with small icons\. 
+
 -&\#09commctrl\.LVSIL\_STATE   Image list with state images\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetIndent
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetIndent
 
-
-int =GetIndent\(\)
+int = GetIndent\(\)
 Retrieves the offset \(in pixels\) of a tree view item from its parent\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetItem
 
-[TV\_ITEM](TV.md#tvitem) =GetItem\(item, mask\)
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetItem
+
+[TV\_ITEM](TV.md#tvitem) = GetItem\(item, mask
+
+\)
 Retrieves the details of an items attributes\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -390,43 +383,39 @@ Retrieves the details of an items attributes\.
 
     The requested attributes\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetItemData
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetItemData
 
-
-object =GetItemData\(item\)
+object = GetItemData\(item\)
 Retrieves the application-specific value associated with an item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
     The index of the item whose data is to be retrieved\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetItemImage
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetItemImage
 
-
-\(int,int\) =GetItemImage\(item\)
+\(int,int\) = GetItemImage\(item\)
 Retrieves the index of an items images\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetItemRect
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetItemRect
 
+\(int, int, int, int\) = GetItemRect\(item, bTextOnly
 
-\(int, int, int, int\) =GetItemRect\(item, bTextOnly\)
+\)
 Retrieves the bounding rectangle of a tree view item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -436,15 +425,15 @@ Retrieves the bounding rectangle of a tree view item\.
 
     f this parameter is nonzero, the bounding rectangle includes only the text of the item\. Otherwise it includes the entire line that the item occupies in the tree view control\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetItemState
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetItemState
 
+\(int,int\) = GetItemState\(item, stateMask
 
-\(int,int\) =GetItemState\(item, stateMask\)
+\)
 Retrieves the state and mask of an item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -454,29 +443,27 @@ Retrieves the state and mask of an item\.
 
     The mask for the result\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetItemText
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetItemText
 
-
-int =GetItemText\(item\)
+int = GetItemText\(item\)
 Retrieves the text of a list view item or subitem\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
     The item whose text is to be retrieved\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetNextItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetNextItem
 
+HTREEITEM = GetNextItem\(item, code
 
-HTREEITEM =GetNextItem\(item, code\)
+\)
 Retrieves the next item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -486,113 +473,99 @@ Retrieves the next item\.
 
     Specifies the relationship of the item to fetch\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetNextSiblingItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetNextSiblingItem
 
-
-HTREEITEM =GetNextSiblingItem\(item\)
+HTREEITEM = GetNextSiblingItem\(item\)
 Retrieves the next sibling of the specified tree view item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetNextVisibleItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetNextVisibleItem
 
-
-HTREEITEM =GetNextVisibleItem\(item\)
+HTREEITEM = GetNextVisibleItem\(item\)
 Retrieves the next visible item of the specified tree view item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetParentItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetParentItem
 
-
-HTREEITEM =GetParentItem\(item\)
+HTREEITEM = GetParentItem\(item\)
 Retrieves the parent item of the specified tree view item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetPrevSiblingItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetPrevSiblingItem
 
-
-HTREEITEM =GetPrevSiblingItem\(item\)
+HTREEITEM = GetPrevSiblingItem\(item\)
 Retrieves the previous sibling of the specified tree view item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetPrevVisibleItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetPrevVisibleItem
 
-
-HTREEITEM =GetPrevVisibleItem\(item\)
+HTREEITEM = GetPrevVisibleItem\(item\)
 Retrieves the previous visible item of the specified tree view item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetRootItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetRootItem
 
-
-HTREEITEM =GetRootItem\(\)
+HTREEITEM = GetRootItem\(\)
 Retrieves the root of the specified tree view item\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetSelectedItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetSelectedItem
 
-
-HTREEITEM =GetSelectedItem\(\)
+HTREEITEM = GetSelectedItem\(\)
 Retrieves the currently selected tree view item\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetToolTips
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetToolTips
 
 PyCToolTopCtrl
 
- =GetToolTips\(\)
+ = GetToolTips\(\)
 Returns the tooltip control
 
-## [PyCTreeCtrl](#pyctreectrl)\.GetVisibleCount
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.GetVisibleCount
 
-
-int =GetVisibleCount\(\)
+int = GetVisibleCount\(\)
 Retrieves the number of visible tree items associated with a tree view control\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.HitTest
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.HitTest
 
-
-\(int, int\) =HitTest\(x,y\)
+\(int, int\) = HitTest\(x,y\)
 Determines which tree view item, if any, is at a specified position\.
 
 #### Parameters
-
 
   - x,y : point
 
@@ -604,15 +577,18 @@ The result is a tuple of \(flags, hItem\)\.
 flags may be a combination of the following values:
 
 
-## [PyCTreeCtrl](#pyctreectrl)\.InsertItem
 
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.InsertItem
 
-int =InsertItem\(hParent, hInsertAfter, item\)
+int = InsertItem\(hParent, hInsertAfter
+
+, item
+
+\)
 Inserts an item into the list\.
 
 #### Parameters
-
 
   - hParent : HTREEITEM
 
@@ -622,12 +598,11 @@ Inserts an item into the list\.
 
     The item to insert after\.  Can be an item or TVI\_FIRST, TVI\_LAST or TVI\_SORT
 
-  - item :[TV\_ITEM](TV.md#tvitem)
+  - item : [TV\_ITEM](TV.md#tvitem)
 
     A tuple describing the new item\.
 
 #### Alternative Parameters
-
 
   - mask
 
@@ -667,7 +642,6 @@ Inserts an item into the list\.
 
 #### Alternative Parameters
 
-
   - text
 
     The text for the item\.
@@ -690,7 +664,6 @@ Inserts an item into the list\.
 
 #### Alternative Parameters
 
-
   - text
 
     The text for the item\.
@@ -703,27 +676,25 @@ Inserts an item into the list\.
 
     The parent of the item\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.ItemHasChildren
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.ItemHasChildren
 
-
-int =ItemHasChildren\(item\)
+int = ItemHasChildren\(item\)
 Returns nonzero if the specified item has child items\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.Select
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.Select
 
 Select\(item, code\)
 Selects, scrolls into view, or redraws a specified tree view item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -733,53 +704,53 @@ Selects, scrolls into view, or redraws a specified tree view item\.
 
     The action to take
 
-## [PyCTreeCtrl](#pyctreectrl)\.SelectDropTarget
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SelectDropTarget
 
 SelectDropTarget\(item\)
 Redraws the tree item as the target of a drag-and-drop operation\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.SelectItem
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SelectItem
 
 SelectItem\(item\)
 Selects a specified tree view item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.SelectSetFirstVisible
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SelectSetFirstVisible
 
 SelectSetFirstVisible\(item\)
 Selects a specified tree view item as the first visible item\.
 
 #### Parameters
 
-
   - item : HTREEITEM
 
     The specified item
 
-## [PyCTreeCtrl](#pyctreectrl)\.SetImageList
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SetImageList
 
+int = SetImageList\(imageList, imageType
 
-int =SetImageList\(imageList, imageType\)
+\)
 Assigns an image list to a list view control\.
 
 #### Parameters
 
-
-  - imageList :[PyCImageList](#pycimagelist)
+  - imageList : [PyCImageList](PyCImageList.md)
 
     The Image List to use\.
 
@@ -787,41 +758,39 @@ Assigns an image list to a list view control\.
 
     Type of image list\. It can be one of \(COMMCTRL\.\) LVSIL\_NORMAL, LVSIL\_SMALL or LVSIL\_STATE
 
-## [PyCTreeCtrl](#pyctreectrl)\.SetIndent
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SetIndent
 
 SetIndent\(indent\)
 Sets the offset \(in pixels\) of a tree view item from its parent\.
 
 #### Parameters
 
-
   - indent : int
 
     The new indent\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.SetItem
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SetItem
 
-
-int =SetItem\(item\)
+int = SetItem\(item\)
 Sets some of all of an items attributes\.
 
 #### Parameters
 
-
-  - item :[TV\_ITEM](TV.md#tvitem)
+  - item : [TV\_ITEM](TV.md#tvitem)
 
     A tuple describing the new item\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.SetItemData
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SetItemData
 
+int = SetItemData\(item, Data
 
-int =SetItemData\(item, Data\)
+\)
 Sets the item's application-specific value\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -833,18 +802,17 @@ Sets the item's application-specific value\.
 
 #### Comments
 
-
 Note that a reference count is not added to the object\.  This it is your 
 
 responsibility to make sure the object remains alive while in the list\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.SetItemImage
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SetItemImage
 
 SetItemImage\(item, iImage, iSelectedImage\)
 Sets the index of an items images\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -858,13 +826,13 @@ Sets the index of an items images\.
 
     The offset of the selected image\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.SetItemState
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SetItemState
 
 SetItemState\(item, state, stateMask\)
 Sets the state of item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -878,15 +846,15 @@ Sets the state of item\.
 
     The mask for the new state
 
-## [PyCTreeCtrl](#pyctreectrl)\.SetItemText
 
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SetItemText
 
+int = SetItemText\(item, text
 
-int =SetItemText\(item, text\)
+\)
 Changes the text of a list view item or subitem\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 
@@ -896,13 +864,13 @@ Changes the text of a list view item or subitem\.
 
     String that contains the new item text\.
 
-## [PyCTreeCtrl](#pyctreectrl)\.SortChildren
+
+## [PyCTreeCtrl](PyCTreeCtrl.md#pyctreectrl)\.SortChildren
 
 SortChildren\(item\)
 Sorts the children of a given parent item\.
 
 #### Parameters
-
 
   - item : HTREEITEM
 

@@ -1,51 +1,64 @@
 # PyEventLogRecord
 
+
 ## PyEventLogRecord Object
-
-
 
 An object containing the data in an EVENTLOGRECORD\.
 
 #### Properties
 
   - integer Reserved
+
     
 
   - integer RecordNumber
+
     
 
-  - [PyTime](#pytime) TimeGenerated
+  - [PyTime](PyTime.md) TimeGenerated
+
     
 
-  - [PyTime](#pytime) TimeWritten
+  - [PyTime](PyTime.md) TimeWritten
+
     
 
   - integer EventID
+
     
 
   - integer EventType
+
     
 
   - integer EventCategory
+
     
 
   - integer ReservedFlags
+
     
 
   - integer ClosingRecordNumber
+
     
 
-  - [PyUnicode](#pyunicode) SourceName
+  - [PyUnicode](PyUnicode.md) SourceName
+
     
 
-  - \([PyUnicode](#pyunicode),\.\.\.\) StringInserts
+  - \([PyUnicode](PyUnicode.md),\.\.\.\) StringInserts
+
     
 
-  - [PySID](#pysid) Sid
+  - [PySID](PySID.md) Sid
+
     
 
   - string Data
+
     
 
-  - [PyUnicode](#pyunicode) ComputerName
+  - [PyUnicode](PyUnicode.md) ComputerName
+
     

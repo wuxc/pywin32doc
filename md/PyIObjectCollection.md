@@ -1,13 +1,11 @@
 # PyIObjectCollection
 
+
 ## PyIObjectCollection Object
-
-
 
 Modifiable container for a number of IUnknown objects
 
 #### Methods
-
 
   - [AddObject](PyIObjectCollection.md#pyiobjectcollectionaddobject)
 
@@ -15,7 +13,7 @@ Modifiable container for a number of IUnknown objects
 
   - [AddFromArray](PyIObjectCollection.md#pyiobjectcollectionaddfromarray)
 
-    Adds a number of objects contained in an[PyIObjectArray](#pyiobjectarray) collection&nbsp;
+    Adds a number of objects contained in an [PyIObjectArray](PyIObjectArray.md) collection&nbsp;
 
   - [RemoveObjectAt](PyIObjectCollection.md#pyiobjectcollectionremoveobjectat)
 
@@ -26,42 +24,44 @@ Modifiable container for a number of IUnknown objects
     Empties the container&nbsp;
 
 
-## [PyIObjectCollection](#pyiobjectcollection)\.AddFromArray
+
+
+## [PyIObjectCollection](PyIObjectCollection.md#pyiobjectcollection)\.AddFromArray
 
 AddFromArray\(Source\)
-Adds a number of objects contained in an[PyIObjectArray](#pyiobjectarray) collection
+Adds a number of objects contained in an [PyIObjectArray](PyIObjectArray.md) collection
 
 #### Parameters
 
-
-  - Source :[PyIObjectArray](#pyiobjectarray)
+  - Source : [PyIObjectArray](PyIObjectArray.md)
 
     Objects to be added to the collection
 
-## [PyIObjectCollection](#pyiobjectcollection)\.AddObject
+
+## [PyIObjectCollection](PyIObjectCollection.md#pyiobjectcollection)\.AddObject
 
 AddObject\(punk\)
 Adds a single object to the collection
 
 #### Parameters
 
-
-  - punk :[PyIUnknown](#pyiunknown)
+  - punk : [PyIUnknown](PyIUnknown.md)
 
     Object to be added
 
-## [PyIObjectCollection](#pyiobjectcollection)\.Clear
+
+## [PyIObjectCollection](PyIObjectCollection.md#pyiobjectcollection)\.Clear
 
 Clear\(\)
 Empties the container\.
 
-## [PyIObjectCollection](#pyiobjectcollection)\.RemoveObjectAt
+
+## [PyIObjectCollection](PyIObjectCollection.md#pyiobjectcollection)\.RemoveObjectAt
 
 RemoveObjectAt\(Index\)
 Removes a single object from the collection
 
 #### Parameters
-
 
   - Index : int
 

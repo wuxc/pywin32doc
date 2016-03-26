@@ -1,13 +1,11 @@
 # PyINameSpaceTreeControl
 
+
 ## PyINameSpaceTreeControl Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [Initialize](PyINameSpaceTreeControl.md#pyinamespacetreecontrolinitialize)
 
@@ -85,15 +83,15 @@ Description of the interface
 
     Description of CollapseAll&nbsp;
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.AppendRoot
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.AppendRoot
 
 AppendRoot\(psiRoot, grfEnumFlags, grfRootStyle, pif\)
 Description of AppendRoot\.
 
 #### Parameters
 
-
-  - psiRoot :[PyIShellItem](#pyishellitem)
+  - psiRoot : [PyIShellItem](PyIShellItem.md)
 
     Description for psiRoot
 
@@ -105,53 +103,55 @@ Description of AppendRoot\.
 
     Description for grfRootStyle
 
-  - pif :PyIShellItemFilter
+  - pif : PyIShellItemFilter
 
     Description for pif
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.CollapseAll
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.CollapseAll
 
 CollapseAll\(\)
 Description of CollapseAll\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.EnsureItemVisible
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.EnsureItemVisible
 
 EnsureItemVisible\(psi\)
 Description of EnsureItemVisible\.
 
 #### Parameters
 
-
-  - psi :[PyIShellItem](#pyishellitem)
+  - psi : [PyIShellItem](PyIShellItem.md)
 
     Description for psi
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetItemCustomState
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.GetItemCustomState
 
 GetItemCustomState\(psi\)
 Description of GetItemCustomState\.
 
 #### Parameters
 
-
-  - psi :[PyIShellItem](#pyishellitem)
+  - psi : [PyIShellItem](PyIShellItem.md)
 
     Description for psi
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetItemRect
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.GetItemRect
 
 GetItemRect\(\)
 Description of GetItemRect\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetItemState
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.GetItemState
 
 GetItemState\(psi, nstcisMask\)
 Description of GetItemState\.
 
 #### Parameters
 
-
-  - psi :[PyIShellItem](#pyishellitem)
+  - psi : [PyIShellItem](PyIShellItem.md)
 
     Description for psi
 
@@ -159,15 +159,15 @@ Description of GetItemState\.
 
     Description for nstcisMask
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetNextItem
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.GetNextItem
 
 GetNextItem\(psi, nstcgi\)
 Description of GetNextItem\.
 
 #### Parameters
 
-
-  - psi :[PyIShellItem](#pyishellitem)
+  - psi : [PyIShellItem](PyIShellItem.md)
 
     Description for psi
 
@@ -175,35 +175,37 @@ Description of GetNextItem\.
 
     Description for nstcgi
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetRootItems
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.GetRootItems
 
 GetRootItems\(\)
 Description of GetRootItems\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.GetSelectedItems
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.GetSelectedItems
 
 GetSelectedItems\(\)
 Description of GetSelectedItems\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.HitTest
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.HitTest
 
 HitTest\(pt\)
 Description of HitTest\.
 
 #### Parameters
 
-
   - pt : \(int, int\)
 
     Description for ppt
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.Initialize
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.Initialize
 
 Initialize\(hwndParent, prc, nsctsFlags\)
 Description of Initialize\.
 
 #### Parameters
-
 
   - hwndParent : int/long
 
@@ -217,19 +219,19 @@ Description of Initialize\.
 
     Description for nsctsFlags
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.InsertRoot
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.InsertRoot
 
 InsertRoot\(iIndex, psiRoot, grfEnumFlags, grfRootStyle, pif\)
 Description of InsertRoot\.
 
 #### Parameters
 
-
   - iIndex : int
 
     Description for iIndex
 
-  - psiRoot :[PyIShellItem](#pyishellitem)
+  - psiRoot : [PyIShellItem](PyIShellItem.md)
 
     Description for psiRoot
 
@@ -241,36 +243,37 @@ Description of InsertRoot\.
 
     Description for grfRootStyle
 
-  - pif :PyIShellItemFilter
+  - pif : PyIShellItemFilter
 
     Description for pif
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.RemoveAllRoots
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.RemoveAllRoots
 
 RemoveAllRoots\(\)
 Description of RemoveAllRoots\.
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.RemoveRoot
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.RemoveRoot
 
 RemoveRoot\(psiRoot\)
 Description of RemoveRoot\.
 
 #### Parameters
 
-
-  - psiRoot :[PyIShellItem](#pyishellitem)
+  - psiRoot : [PyIShellItem](PyIShellItem.md)
 
     Description for psiRoot
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.SetItemCustomState
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.SetItemCustomState
 
 SetItemCustomState\(psi, iStateNumber\)
 Description of SetItemCustomState\.
 
 #### Parameters
 
-
-  - psi :[PyIShellItem](#pyishellitem)
+  - psi : [PyIShellItem](PyIShellItem.md)
 
     Description for psi
 
@@ -278,15 +281,15 @@ Description of SetItemCustomState\.
 
     Description for iStateNumber
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.SetItemState
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.SetItemState
 
 SetItemState\(psi, nstcisMask, nstcisFlags\)
 Description of SetItemState\.
 
 #### Parameters
 
-
-  - psi :[PyIShellItem](#pyishellitem)
+  - psi : [PyIShellItem](PyIShellItem.md)
 
     Description for psi
 
@@ -298,37 +301,37 @@ Description of SetItemState\.
 
     Description for nstcisFlags
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.SetTheme
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.SetTheme
 
 SetTheme\(pszTheme\)
 Description of SetTheme\.
 
 #### Parameters
 
-
-  - pszTheme :unicode
+  - pszTheme : unicode
 
     Description for pszTheme
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.TreeAdvise
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.TreeAdvise
 
 TreeAdvise\(punk\)
 Description of TreeAdvise\.
 
 #### Parameters
 
-
-  - punk :[PyIUnknown](#pyiunknown)
+  - punk : [PyIUnknown](PyIUnknown.md)
 
     Description for punk
 
-## [PyINameSpaceTreeControl](#pyinamespacetreecontrol)\.TreeUnadvise
+
+## [PyINameSpaceTreeControl](PyINameSpaceTreeControl.md#pyinamespacetreecontrol)\.TreeUnadvise
 
 TreeUnadvise\(dwCookie\)
 Description of TreeUnadvise\.
 
 #### Parameters
-
 
   - dwCookie : int
 

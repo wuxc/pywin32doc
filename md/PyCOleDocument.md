@@ -1,17 +1,13 @@
 # PyCOleDocument
 
+
 ## PyCOleDocument Object
 
-
-
-An OLE document class\.  Encapsulates an MFCCOleDocument
-
-
+An OLE document class\.  Encapsulates an MFC COleDocument
 
  class
 
 #### Methods
-
 
   - [EnableCompoundFile](PyCOleDocument.md#pycoledocumentenablecompoundfile)
 
@@ -31,47 +27,44 @@ An OLE document class\.  Encapsulates an MFCCOleDocument
 
 sentinel&nbsp;
 
-## [PyCOleDocument](#pycoledocument)\.EnableCompoundFile
+
+## [PyCOleDocument](PyCOleDocument.md#pycoledocument)\.EnableCompoundFile
 
 EnableCompoundFile\(bEnable\)
 Call this function if you want to store the document using the compound-file format\.
 
 #### Parameters
 
-
   - bEnable=1 : int
 
     Specifies whether compound file support is enabled or disabled\.
 
-## [PyCOleDocument](#pycoledocument)\.GetInPlaceActiveItem
 
-[PyCOleClientItem](#pycoleclientitem) =GetInPlaceActiveItem\(wnd\)
+## [PyCOleDocument](PyCOleDocument.md#pycoledocument)\.GetInPlaceActiveItem
+
+[PyCOleClientItem](PyCOleClientItem.md) = GetInPlaceActiveItem\(wnd\)
 Obtains the OLE item that is currently activated in place in the frame window containing the view identified by obWnd\.
 
 #### Parameters
 
-
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md)
 
     The window\.
 
-## [PyCOleDocument](#pycoledocument)\.GetNextItem
 
+## [PyCOleDocument](PyCOleDocument.md#pycoledocument)\.GetNextItem
 
-
-\(POSITION,[PyCOleClientItem](#pycoleclientitem)\) =GetNextItem\(pos\)
+\(POSITION, [PyCOleClientItem](PyCOleClientItem.md)\) = GetNextItem\(pos\)
 Call this function repeatedly to access each of the items in your document\.
 
 #### Parameters
-
 
   - pos : POSITION
 
     The position to iterate from\.
 
-## [PyCOleDocument](#pycoledocument)\.GetStartPosition
 
+## [PyCOleDocument](PyCOleDocument.md#pycoledocument)\.GetStartPosition
 
-
-POSITION =GetStartPosition\(\)
+POSITION = GetStartPosition\(\)
 Obtains the position of the first item in the document\.

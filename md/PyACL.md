@@ -1,13 +1,11 @@
 # PyACL
 
+
 ## PyACL Object
-
-
 
 A Python object, representing a ACL structure
 
 #### Methods
-
 
   - [Initialize](PyACL.md#pyaclinitialize)
 
@@ -93,13 +91,13 @@ A Python object, representing a ACL structure
 
     Return types of access for which ACL will generate an audit event for specified trustee&nbsp;
 
-## [PyACL](#pyacl)\.AddAccessAllowedAce
+
+## [PyACL](PyACL.md#pyacl)\.AddAccessAllowedAce
 
 AddAccessAllowedAce\(revision, access, sid\)
 Adds an access-allowed ACE to an DACL object\. The access is granted to a specified SID\.
 
 #### Parameters
-
 
   - revision : int
 
@@ -109,12 +107,11 @@ Adds an access-allowed ACE to an DACL object\. The access is granted to a specif
 
     Specifies the mask of access rights to be denied to the specified SID\.
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     A SID object representing a user, group, or logon account being denied access\.
 
 #### Alternative Parameters
-
 
   - access
 
@@ -126,7 +123,6 @@ Adds an access-allowed ACE to an DACL object\. The access is granted to a specif
 
 #### Comments
 
-
 Note that early versions of this function supported only 
 
 two arguments\.  This has been deprecated in preference of the 
@@ -135,13 +131,13 @@ three argument version, which reflects the win32 API and the new
 
 functions in this module\.
 
-## [PyACL](#pyacl)\.AddAccessAllowedAceEx
+
+## [PyACL](PyACL.md#pyacl)\.AddAccessAllowedAceEx
 
 AddAccessAllowedAceEx\(revision, aceflags, access, sid\)
 Add access allowed ACE to an ACL with ACE flags \(Requires Win2k or higher\)
 
 #### Parameters
-
 
   - revision : int
 
@@ -155,17 +151,17 @@ Add access allowed ACE to an ACL with ACE flags \(Requires Win2k or higher\)
 
     Specifies the mask of access rights to be granted to the specified SID\.
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     A SID object representing a user, group, or logon account being granted access\.
 
-## [PyACL](#pyacl)\.AddAccessAllowedObjectAce
+
+## [PyACL](PyACL.md#pyacl)\.AddAccessAllowedObjectAce
 
 AddAccessAllowedObjectAce\(AceRevision, AceFlags, AccessMask, ObjectTypeGuid, InheritedObjectTypeGuid, sid\)
 Adds an ACCESS\_ALLOWED\_OBJECT\_ACE to the ACL
 
 #### Parameters
-
 
   - AceRevision : int
 
@@ -179,25 +175,25 @@ Adds an ACCESS\_ALLOWED\_OBJECT\_ACE to the ACL
 
     Specifies the mask of access rights to be granted to the specified SID
 
-  - ObjectTypeGuid :[PyIID](#pyiid)
+  - ObjectTypeGuid : [PyIID](PyIID.md)
 
     GUID of object type or property set to which ace applies, can be None
 
-  - InheritedObjectTypeGuid :[PyIID](#pyiid)
+  - InheritedObjectTypeGuid : [PyIID](PyIID.md)
 
     GUID of object type or property that will inherit ACE, can be None
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     A SID object representing a user, group, or logon account being granted access\.
 
-## [PyACL](#pyacl)\.AddAccessDeniedAce
+
+## [PyACL](PyACL.md#pyacl)\.AddAccessDeniedAce
 
 AddAccessDeniedAce\(revision, access, sid\)
 Adds an access-denied ACE to an ACL object\. The access is denied to a specified SID\.
 
 #### Parameters
-
 
   - revision : int
 
@@ -207,12 +203,11 @@ Adds an access-denied ACE to an ACL object\. The access is denied to a specified
 
     Specifies the mask of access rights to be denied to the specified SID\.
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     A SID object representing a user, group, or logon account being denied access\.
 
 #### Alternative Parameters
-
 
   - access
 
@@ -224,7 +219,6 @@ Adds an access-denied ACE to an ACL object\. The access is denied to a specified
 
 #### Comments
 
-
 Note that early versions of this function supported only 
 
 two arguments\.  This has been deprecated in preference of the 
@@ -233,13 +227,13 @@ three argument version, which reflects the win32 API and the new
 
 functions in this module\.
 
-## [PyACL](#pyacl)\.AddAccessDeniedAceEx
+
+## [PyACL](PyACL.md#pyacl)\.AddAccessDeniedAceEx
 
 AddAccessDeniedAceEx\(revision, aceflags, access, sid\)
 Add access denied ACE to an ACL with ACE flags \(Requires Win2k or higher\)
 
 #### Parameters
-
 
   - revision : int
 
@@ -253,17 +247,17 @@ Add access denied ACE to an ACL with ACE flags \(Requires Win2k or higher\)
 
     Specifies the mask of access rights to be denied to the specified SID\.
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     A SID object representing a user, group, or logon account being denied access\.
 
-## [PyACL](#pyacl)\.AddAccessDeniedObjectAce
+
+## [PyACL](PyACL.md#pyacl)\.AddAccessDeniedObjectAce
 
 AddAccessDeniedObjectAce\(AceRevision, AceFlags, AccessMask, ObjectTypeGuid, InheritedObjectTypeGuid, sid\)
 Adds an ACCESS\_DENIED\_OBJECT\_ACE to the ACL
 
 #### Parameters
-
 
   - AceRevision : int
 
@@ -277,25 +271,25 @@ Adds an ACCESS\_DENIED\_OBJECT\_ACE to the ACL
 
     Specifies the mask of access rights to be granted to the specified SID
 
-  - ObjectTypeGuid :[PyIID](#pyiid)
+  - ObjectTypeGuid : [PyIID](PyIID.md)
 
     GUID of object type or property set to which ace applies, can be None
 
-  - InheritedObjectTypeGuid :[PyIID](#pyiid)
+  - InheritedObjectTypeGuid : [PyIID](PyIID.md)
 
     GUID of object type or property that will inherit ACE, can be None
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     A SID object representing a user, group, or logon account that will be denied access\.
 
-## [PyACL](#pyacl)\.AddAuditAccessAce
+
+## [PyACL](PyACL.md#pyacl)\.AddAuditAccessAce
 
 AddAuditAccessAce\(dwAceRevision, dwAccessMask, sid, bAuditSuccess, bAuditFailure\)
 Adds an audit ACE to a Sacl
 
 #### Parameters
-
 
   - dwAceRevision : int
 
@@ -305,7 +299,7 @@ Adds an audit ACE to a Sacl
 
     Bitmask of access types to be audited
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     SID for whom system audit messages will be generated
 
@@ -317,14 +311,14 @@ Adds an audit ACE to a Sacl
 
     Set to 1 if access failure should be audited, else 0
 
-## [PyACL](#pyacl)\.AddAuditAccessAceEx
+
+## [PyACL](PyACL.md#pyacl)\.AddAuditAccessAceEx
 
 AddAuditAccessAceEx\(dwAceRevision, AceFlags, dwAccessMask, sid, bAuditSuccess, bAuditFailure\)
 Adds an audit ACE to an Sacl, includes ace flags
 
 #### Parameters
 
-
   - dwAceRevision : int
 
     Revision of ACL: Must be at least ACL\_REVISION\_DS
@@ -337,7 +331,7 @@ Adds an audit ACE to an Sacl, includes ace flags
 
     Bitmask of access types to be audited
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     SID for whom system audit messages will be generated
 
@@ -349,14 +343,14 @@ Adds an audit ACE to an Sacl, includes ace flags
 
     Set to 1 if access failure should be audited, else 0
 
-## [PyACL](#pyacl)\.AddAuditAccessObjectAce
+
+## [PyACL](PyACL.md#pyacl)\.AddAuditAccessObjectAce
 
 AddAuditAccessObjectAce\(dwAceRevision, AceFlags, dwAccessMask, ObjectTypeGuid, InheritedObjectTypeGuid, sid, bAuditSuccess, bAuditFailure\)
 Adds an audit ACE for an object type identified by GUID
 
 #### Parameters
 
-
   - dwAceRevision : int
 
     Revision of ACL: Must be at least ACL\_REVISION\_DS
@@ -369,15 +363,15 @@ Adds an audit ACE for an object type identified by GUID
 
     Bitmask of access types to be audited
 
-  - ObjectTypeGuid :[PyIID](#pyiid)
+  - ObjectTypeGuid : [PyIID](PyIID.md)
 
     GUID of object type or property set to which ace applies, can be None
 
-  - InheritedObjectTypeGuid :[PyIID](#pyiid)
+  - InheritedObjectTypeGuid : [PyIID](PyIID.md)
 
     GUID of object type or property that will inherit ACE, can be None
 
-  - sid :[PySID](#pysid)
+  - sid : [PySID](PySID.md)
 
     SID for whom system audit messages will be generated
 
@@ -389,13 +383,13 @@ Adds an audit ACE for an object type identified by GUID
 
     Set to 1 if access failure should be audited, else 0
 
-## [PyACL](#pyacl)\.AddMandatoryAce
+
+## [PyACL](PyACL.md#pyacl)\.AddMandatoryAce
 
 AddMandatoryAce\(AceRevision, AceFlags, MandatoryPolicy, LabelSid\)
 Adds a mandatory integrity level ACE to a SACL
 
 #### Parameters
-
 
   - AceRevision : int
 
@@ -409,32 +403,31 @@ Adds a mandatory integrity level ACE to a SACL
 
     Access policy for processes with lower integrity level, combination of SYSTEM\_MANDATORY\_LABEL\_\* flags
 
-  - LabelSid :[PySID](#pysid)
+  - LabelSid : [PySID](PySID.md)
 
-    Integrity level SID\.  This can be created using CreateWellKnownSid with Win\*LabelSid\.
+    Integrity level SID\.  This can be created using CreateWellKnownSid with Win\*LabelSid\. 
+
 Also can be constructed manually using SECURITY\_MANDATORY\_LABEL\_AUTHORITY and a SECURITY\_MANDATORY\_\*\_RID
 
-## [PyACL](#pyacl)\.DeleteAce
+
+## [PyACL](PyACL.md#pyacl)\.DeleteAce
 
 DeleteAce\(index\)
 Deletes specified Ace from an ACL\.
 
 #### Parameters
 
-
   - index : int
 
     Zero-based index of the ACE to delete\.
 
-## [PyACL](#pyacl)\.GetAce
 
+## [PyACL](PyACL.md#pyacl)\.GetAce
 
-
-tuple =GetAce\(index\)
+tuple = GetAce\(index\)
 Gets an Ace from the ACL
 
 #### Parameters
-
 
   - index : int
 
@@ -447,106 +440,97 @@ as a tuple of:
 
 #### Items
 
-
-  - \[0\]\(int, int\) : aceType, AceFlags
-
-    
-
-  - \[1\]int : Mask
+  - \[0\] \(int, int\) : aceType, AceFlags
 
     
 
-  - \[2\][PySID](#pysid) : sid
+  - \[1\] int : Mask
+
+    
+
+  - \[2\] [PySID](PySID.md) : sid
 
     
 Object ACE's \(types ACCESS\_ALLOWED\_OBJECT\_ACE, ACCESS\_DENIED\_OBJECT\_ACE, SYSTEM\_AUDIT\_OBJECT\_ACE\) 
 
 are returned as a tuple:
 
-  - \[0\]\(int, int\) : aceType, AceFlags
+  - \[0\] \(int, int\) : aceType, AceFlags
 
     
 
-  - \[1\]int : mask
+  - \[1\] int : mask
 
     
 
-  - \[2\][PyIID](#pyiid) : ObjectType
+  - \[2\] [PyIID](PyIID.md) : ObjectType
 
     
 
-  - \[3\][PyIID](#pyiid) : InheritedObjectType
+  - \[3\] [PyIID](PyIID.md) : InheritedObjectType
 
     
 
-  - \[4\][PySID](#pysid) : sid
+  - \[4\] [PySID](PySID.md) : sid
 
     
 For details see the API documentation\.
 
-## [PyACL](#pyacl)\.GetAceCount
 
+## [PyACL](PyACL.md#pyacl)\.GetAceCount
 
-
-int =GetAceCount\(\)
+int = GetAceCount\(\)
 Returns the number of ACEs in the ACL\.
 
-## [PyACL](#pyacl)\.GetAclRevision
 
+## [PyACL](PyACL.md#pyacl)\.GetAclRevision
 
-
-int =GetAclRevision\(\)
+int = GetAclRevision\(\)
 Returns revision of the ACL\.
 
-## [PyACL](#pyacl)\.GetAclSize
 
+## [PyACL](PyACL.md#pyacl)\.GetAclSize
 
-
-int =GetAclSize\(\)
+int = GetAclSize\(\)
 Returns the storage size of the ACL\.
 
-## [PyACL](#pyacl)\.GetAuditedPermissionsFromAcl
 
+## [PyACL](PyACL.md#pyacl)\.GetAuditedPermissionsFromAcl
 
-
-\(SuccessfulAuditedRights,FailedAuditRights\) =GetAuditedPermissionsFromAcl\(trustee\)
+\(SuccessfulAuditedRights,FailedAuditRights\) = GetAuditedPermissionsFromAcl\(trustee\)
 Return types of access for which ACL will generate an audit event for specified trustee
 
 #### Parameters
 
-
-  - trustee :[PyTRUSTEE](#pytrustee)
+  - trustee : [PyTRUSTEE](PyTRUSTEE.md)
 
     Dictionary representing a TRUSTEE structure
 
 #### Comments
-
 
 This function is known to return the success and failure access masks in the the wrong order 
 
 on Windows 2000 service pack 4\.  Problem has been reported to Microsoft\.
 
-## [PyACL](#pyacl)\.GetEffectiveRightsFromAcl
 
+## [PyACL](PyACL.md#pyacl)\.GetEffectiveRightsFromAcl
 
-
-ACCESS\_MASK =GetEffectiveRightsFromAcl\(trustee\)
+ACCESS\_MASK = GetEffectiveRightsFromAcl\(trustee\)
 Return access rights \(ACCESS\_MASK\) that the ACL grants to specified trustee
 
 #### Parameters
 
-
-  - trustee :[PyTRUSTEE](#pytrustee)
+  - trustee : [PyTRUSTEE](PyTRUSTEE.md)
 
     Dictionary representing a TRUSTEE structure
 
-## [PyACL](#pyacl)\.Initialize
+
+## [PyACL](PyACL.md#pyacl)\.Initialize
 
 Initialize\(\)
 Initialize the ACL\.
 
 #### Comments
-
 
 It should not be necessary to call this, as the ACL object 
 
@@ -554,7 +538,8 @@ is initialised by Python\.  This method gives you a chance to trap
 
 any errors that may occur\.
 
-## [PyACL](#pyacl)\.IsValid
+
+## [PyACL](PyACL.md#pyacl)\.IsValid
 
 IsValid\(\)
 Determines if the ACL is valid \(IsValidAcl\)

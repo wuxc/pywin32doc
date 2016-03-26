@@ -1,13 +1,11 @@
 # PyIInternetProtocolInfo
 
+
 ## PyIInternetProtocolInfo Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [ParseUrl](PyIInternetProtocolInfo.md#pyiinternetprotocolinfoparseurl)
 
@@ -25,19 +23,19 @@ Description of the interface
 
     Description of QueryInfo&nbsp;
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.CombineUrl
+
+## [PyIInternetProtocolInfo](PyIInternetProtocolInfo.md#pyiinternetprotocolinfo)\.CombineUrl
 
 CombineUrl\(pwzBaseUrl, pwzRelativeUrl, dwCombineFlags, cchResult, dwReserved\)
 Description of CombineUrl\.
 
 #### Parameters
 
-
-  - pwzBaseUrl :unicode
+  - pwzBaseUrl : unicode
 
     Description for pwzBaseUrl
 
-  - pwzRelativeUrl :unicode
+  - pwzRelativeUrl : unicode
 
     Description for pwzRelativeUrl
 
@@ -53,19 +51,19 @@ Description of CombineUrl\.
 
     Description for dwReserved
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.CompareUrl
+
+## [PyIInternetProtocolInfo](PyIInternetProtocolInfo.md#pyiinternetprotocolinfo)\.CompareUrl
 
 CompareUrl\(pwzUrl1, pwzUrl2, dwCompareFlags\)
 Description of CompareUrl\.
 
 #### Parameters
 
-
-  - pwzUrl1 :unicode
+  - pwzUrl1 : unicode
 
     Description for pwzUrl1
 
-  - pwzUrl2 :unicode
+  - pwzUrl2 : unicode
 
     Description for pwzUrl2
 
@@ -73,15 +71,15 @@ Description of CompareUrl\.
 
     Description for dwCompareFlags
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.ParseUrl
+
+## [PyIInternetProtocolInfo](PyIInternetProtocolInfo.md#pyiinternetprotocolinfo)\.ParseUrl
 
 ParseUrl\(pwzUrl, ParseAction, dwParseFlags, cchResult, dwReserved\)
 Description of ParseUrl\.
 
 #### Parameters
 
-
-  - pwzUrl :unicode
+  - pwzUrl : unicode
 
     Description for pwzUrl
 
@@ -101,17 +99,23 @@ Description of ParseUrl\.
 
     Description for dwReserved
 
-## [PyIInternetProtocolInfo](#pyiinternetprotocolinfo)\.QueryInfo
 
+## [PyIInternetProtocolInfo](PyIInternetProtocolInfo.md#pyiinternetprotocolinfo)\.QueryInfo
 
+int|string = QueryInfo\(pwzUrl, OueryOption
 
-int|string =QueryInfo\(pwzUrl, OueryOption, dwQueryFlags, cbBuffer, dwReserved\)
+, dwQueryFlags
+
+, cbBuffer
+
+, dwReserved
+
+\)
 Description of QueryInfo\.
 
 #### Parameters
 
-
-  - pwzUrl :unicode
+  - pwzUrl : unicode
 
     Description for pwzUrl
 
@@ -132,6 +136,5 @@ Description of QueryInfo\.
     Description for dwReserved
 
 #### Comments
-
 
 If the buffer size is the size of an integer, an integer will be returned, otherwise a string\.

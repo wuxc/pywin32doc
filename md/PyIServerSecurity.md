@@ -1,18 +1,15 @@
 # PyIServerSecurity
 
+
 ## PyIServerSecurity Object
-
-
 
 Interface used to access client security settings and perform impersonation
 
 #### Comments
 
-
-Can be created using[pythoncom::CoGetCallContext](pythoncom.md#pythoncomcogetcallcontext)
+Can be created using [pythoncom::CoGetCallContext](pythoncom.md#pythoncomcogetcallcontext)
 
 #### Methods
-
 
   - [QueryBlanket](PyIServerSecurity.md#pyiserversecurityqueryblanket)
 
@@ -30,33 +27,32 @@ Can be created using[pythoncom::CoGetCallContext](pythoncom.md#pythoncomcogetcal
 
     Determines if server is currently impersonating a client&nbsp;
 
-## [PyIServerSecurity](#pyiserversecurity)\.ImpersonateClient
+
+## [PyIServerSecurity](PyIServerSecurity.md#pyiserversecurity)\.ImpersonateClient
 
 ImpersonateClient\(\)
 Initiates impersonation of client
 
-## [PyIServerSecurity](#pyiserversecurity)\.IsImpersonating
 
+## [PyIServerSecurity](PyIServerSecurity.md#pyiserversecurity)\.IsImpersonating
 
-
-bool =IsImpersonating\(\)
+bool = IsImpersonating\(\)
 Determines if server is currently impersonating a client
 
-## [PyIServerSecurity](#pyiserversecurity)\.QueryBlanket
 
+## [PyIServerSecurity](PyIServerSecurity.md#pyiserversecurity)\.QueryBlanket
 
-
-dict =QueryBlanket\(Capabilities\)
+dict = QueryBlanket\(Capabilities\)
 Retrieves security settings specified by the client
 
 #### Parameters
-
 
   - Capabilities=0 : int
 
     Can be EOAC\_MAKE\_FULLSIC for SChannel provider
 
-## [PyIServerSecurity](#pyiserversecurity)\.RevertToSelf
+
+## [PyIServerSecurity](PyIServerSecurity.md#pyiserversecurity)\.RevertToSelf
 
 RevertToSelf\(\)
 Ends impersonation of client

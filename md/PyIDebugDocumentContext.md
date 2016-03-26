@@ -1,13 +1,11 @@
 # PyIDebugDocumentContext
 
+
 ## PyIDebugDocumentContext Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetDocument](PyIDebugDocumentContext.md#pyidebugdocumentcontextgetdocument)
 
@@ -17,12 +15,14 @@ Description of the interface
 
     Description of EnumCodeContexts&nbsp;
 
-## [PyIDebugDocumentContext](#pyidebugdocumentcontext)\.EnumCodeContexts
+
+## [PyIDebugDocumentContext](PyIDebugDocumentContext.md#pyidebugdocumentcontext)\.EnumCodeContexts
 
 EnumCodeContexts\(\)
 Description of EnumCodeContexts\.
 
-## [PyIDebugDocumentContext](#pyidebugdocumentcontext)\.GetDocument
+
+## [PyIDebugDocumentContext](PyIDebugDocumentContext.md#pyidebugdocumentcontext)\.GetDocument
 
 GetDocument\(\)
 Description of GetDocument\.

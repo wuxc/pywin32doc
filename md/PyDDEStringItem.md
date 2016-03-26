@@ -1,13 +1,11 @@
 # PyDDEStringItem
 
+
 ## PyDDEStringItem Object
-
-
 
 A DDE string item\.
 
 #### Methods
-
 
   - [SetData](PyDDEStringItem.md#pyddestringitemsetdata)
 
@@ -15,18 +13,19 @@ A DDE string item\.
 
 sentinel&nbsp;
 
-## [PyDDEStringItem](#pyddestringitem)\.Destroy
+
+## [PyDDEStringItem](PyDDEStringItem.md#pyddestringitem)\.Destroy
 
 Destroy\(\)
 Destroys an item
 
-## [PyDDEStringItem](#pyddestringitem)\.SetData
+
+## [PyDDEStringItem](PyDDEStringItem.md#pyddestringitem)\.SetData
 
 SetData\(data\)
 Sets an items data, and causes any underlying notification\.
 
 #### Parameters
-
 
   - data : string
 

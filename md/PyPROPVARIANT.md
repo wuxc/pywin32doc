@@ -1,8 +1,7 @@
 # PyPROPVARIANT
 
+
 ## PyPROPVARIANT Object
-
-
 
 Encapsulates a PROPVARIANT structure\. 
 
@@ -18,15 +17,15 @@ If the requested Type includes VT\_VECTOR, Value should be a sequence of compati
 
 Currently VT\_ARRAY and VT\_BYREF are not supported, although some types can be coerced 
 
-into a safearray using[PyPROPVARIANT::ChangeType](PyPROPVARIANT.md#pypropvariantchangetype)\.
+into a safearray using [PyPROPVARIANT::ChangeType](PyPROPVARIANT.md#pypropvariantchangetype)\.
 
 #### Properties
 
   - int vt
+
     The variant type, a combination of VARENUM values including flags\.  \(read only\)
 
 #### Methods
-
 
   - [GetValue](PyPROPVARIANT.md#pypropvariantgetvalue)
 
@@ -40,13 +39,15 @@ into a safearray using[PyPROPVARIANT::ChangeType](PyPROPVARIANT.md#pypropvariant
 
     Coerce to a different variant type&nbsp;
 
-## [PyPROPVARIANT](#pypropvariant)\.ChangeType
 
-[PyPROPVARIANT](#pypropvariant) =ChangeType\(Type, Flags\)
+## [PyPROPVARIANT](PyPROPVARIANT.md#pypropvariant)\.ChangeType
+
+[PyPROPVARIANT](PyPROPVARIANT.md#pypropvariant) = ChangeType\(Type, Flags
+
+\)
 Coerce to a different variant type
 
 #### Parameters
-
 
   - Type : int
 
@@ -58,24 +59,20 @@ Coerce to a different variant type
 
 #### Win32 API References
 
-
-  - Search forPropVariantChangeType at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=propvariantchangetype),[google](#http://www.google.com/search?q=propvariantchangetype) or[google groups](#http://groups.google.com/groups?q=propvariantchangetype)\.
-
-## [PyPROPVARIANT](#pypropvariant)\.GetValue
+  - Search for PropVariantChangeType at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PropVariantChangeType.md), [google](http://www.google.com/search?q=PropVariantChangeType.md) or [google groups](http://groups.google.com/groups?q=PropVariantChangeType.md)\.
 
 
+## [PyPROPVARIANT](PyPROPVARIANT.md#pypropvariant)\.GetValue
 
-object =GetValue\(\)
+object = GetValue\(\)
 Returns an object representing the variant value
 
-## [PyPROPVARIANT](#pypropvariant)\.ToString
 
+## [PyPROPVARIANT](PyPROPVARIANT.md#pypropvariant)\.ToString
 
-
-str =ToString\(\)
+str = ToString\(\)
 Returns the value as a string
 
 #### Win32 API References
 
-
-  - Search forPropVariantToString at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=propvarianttostring),[google](#http://www.google.com/search?q=propvarianttostring) or[google groups](#http://groups.google.com/groups?q=propvarianttostring)\.
+  - Search for PropVariantToString at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PropVariantToString.md), [google](http://www.google.com/search?q=PropVariantToString.md) or [google groups](http://groups.google.com/groups?q=PropVariantToString.md)\.

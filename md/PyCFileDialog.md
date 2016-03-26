@@ -1,13 +1,11 @@
 # PyCFileDialog
 
+
 ## PyCFileDialog Object
 
-
-
-A class which encapsulates an MFC CFileDialog object\.  Derived from a[PyCDialog](#pycdialog) object\.
+A class which encapsulates an MFC CFileDialog object\.  Derived from a [PyCDialog](PyCDialog.md) object\.
 
 #### Methods
-
 
   - [GetPathName](PyCFileDialog.md#pycfiledialoggetpathname)
 
@@ -42,102 +40,90 @@ A class which encapsulates an MFC CFileDialog object\.  Derived from a[PyCDialog
     Sets the initial directory for the dialog\.&nbsp;
 
 
-## [PyCFileDialog](#pycfiledialog)\.GetFileExt
 
 
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.GetFileExt
 
-string =GetFileExt\(\)
+string = GetFileExt\(\)
 Retrives the file extension from the file dialog\.
 
 #### MFC References
 
-
   - CFileDialog::GetFileExt
 
-## [PyCFileDialog](#pycfiledialog)\.GetFileName
 
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.GetFileName
 
-
-string =GetFileName\(\)
+string = GetFileName\(\)
 Retrives the file name from the file dialog\.
 
 #### MFC References
 
-
   - CFileDialog::GetFileName
 
-## [PyCFileDialog](#pycfiledialog)\.GetFileTitle
 
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.GetFileTitle
 
-
-string =GetFileTitle\(\)
+string = GetFileTitle\(\)
 Retrives the file title from the file dialog\.
 
 #### MFC References
 
-
   - CFileDialog::GetFileTitle
 
-## [PyCFileDialog](#pycfiledialog)\.GetPathName
 
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.GetPathName
 
-
-string =GetPathName\(\)
+string = GetPathName\(\)
 Retrives the path name from the file dialog\.
 
 #### MFC References
 
-
   - CFileDialog::GetPathName
 
-## [PyCFileDialog](#pycfiledialog)\.GetPathNames
 
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.GetPathNames
 
-
-string =GetPathNames\(\)
+string = GetPathNames\(\)
 Retrieves the list of path names from the file dialog\.
 
 #### Comments
-
 
 This method is useful when a multi-select dialog is used\.
 
 #### MFC References
 
-
   - CFileDialog::GetPathNames
 
-## [PyCFileDialog](#pycfiledialog)\.GetReadOnlyPref
 
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.GetReadOnlyPref
 
-
-int =GetReadOnlyPref\(\)
+int = GetReadOnlyPref\(\)
 Retrives the value of the "Read Only" checkbox on the file dialog\.
 
 #### MFC References
 
-
   - CFileDialog::GetReadOnlyPref
 
-## [PyCFileDialog](#pycfiledialog)\.SetOFNInitialDir
+
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.SetOFNInitialDir
 
 SetOFNInitialDir\(title\)
 Sets the initial directory for the dialog\.
 
 #### Parameters
 
-
   - title : string
 
     The initial directory for the dialog box\.  May be None\.
 
-## [PyCFileDialog](#pycfiledialog)\.SetOFNTitle
+
+## [PyCFileDialog](PyCFileDialog.md#pycfiledialog)\.SetOFNTitle
 
 SetOFNTitle\(title\)
 Sets the Title for the dialog\.
 
 #### Parameters
-
 
   - title : string
 

@@ -1,13 +1,11 @@
 # PyIActiveScriptDebug
 
+
 ## PyIActiveScriptDebug Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetScriptTextAttributes](PyIActiveScriptDebug.md#pyiactivescriptdebuggetscripttextattributes)
 
@@ -21,13 +19,13 @@ Description of the interface
 
     Description of EnumCodeContextsOfPosition&nbsp;
 
-## [PyIActiveScriptDebug](#pyiactivescriptdebug)\.EnumCodeContextsOfPosition
+
+## [PyIActiveScriptDebug](PyIActiveScriptDebug.md#pyiactivescriptdebug)\.EnumCodeContextsOfPosition
 
 EnumCodeContextsOfPosition\(dwSourceContext, uCharacterOffset, uNumChars\)
 Description of EnumCodeContextsOfPosition\.
 
 #### Parameters
-
 
   - dwSourceContext : int
 
@@ -41,15 +39,17 @@ Description of EnumCodeContextsOfPosition\.
 
     Description for uNumChars
 
-## [PyIActiveScriptDebug](#pyiactivescriptdebug)\.GetScriptTextAttributes
 
+## [PyIActiveScriptDebug](PyIActiveScriptDebug.md#pyiactivescriptdebug)\.GetScriptTextAttributes
 
+\(int,\.\.\.\) = GetScriptTextAttributes\(pstrCode, pstrDelimiter
 
-\(int,\.\.\.\) =GetScriptTextAttributes\(pstrCode, pstrDelimiter, dwFlags\)
+, dwFlags
+
+\)
 Returns the text attributes for an arbitrary block of script text\.
 
 #### Parameters
-
 
   - pstrCode : string
 
@@ -57,49 +57,42 @@ Returns the text attributes for an arbitrary block of script text\.
 
   - pstrDelimiter : string
 
-    SeePyIActiveScriptParse::ParseScriptText
-
-
+    See PyIActiveScriptParse::ParseScriptText
 
  for a description of this argument\.
 
   - dwFlags : int
 
-    SeePyIActiveScriptParse::ParseScriptText
-
-
+    See PyIActiveScriptParse::ParseScriptText
 
  for a description of this argument\.
 
 #### Comments
 
+Smart hosts use this call to delegate GetText calls made on their axscript::PyIDebugDocumentText
 
-Smart hosts use this call to delegate GetText calls made on theiraxscript::PyIDebugDocumentText
 
-## [PyIActiveScriptDebug](#pyiactivescriptdebug)\.GetScriptletTextAttributes
+
+
+## [PyIActiveScriptDebug](PyIActiveScriptDebug.md#pyiactivescriptdebug)\.GetScriptletTextAttributes
 
 GetScriptletTextAttributes\(pstrCode, pstrDelimiter, dwFlags\)
 Description of GetScriptletTextAttributes\.
 
 #### Parameters
 
-
   - pstrCode : string
 
     The script block text\.
 
   - pstrDelimiter : string
 
-    SeePyIActiveScriptParse::ParseScriptText
-
-
+    See PyIActiveScriptParse::ParseScriptText
 
  for a description of this argument\.
 
   - dwFlags : int
 
-    SeePyIActiveScriptParse::ParseScriptText
-
-
+    See PyIActiveScriptParse::ParseScriptText
 
  for a description of this argument\.

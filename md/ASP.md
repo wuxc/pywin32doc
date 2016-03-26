@@ -1,7 +1,7 @@
 # ASP
 
-## ASP and Python
 
+## ASP and Python
 
 How Python integrates w/ASP
 
@@ -81,6 +81,7 @@ w/HTML\.  An very basic page would look like:
 
 #### Example
 Basic Python ASP page:
+
 &lt%@ LANGUAGE = Python%&gt
 
 &ltHTML&gt
@@ -88,8 +89,6 @@ Basic Python ASP page:
 &lthead&gt&lt/head&gt
 
 &ltbody&gt
-
-
 
 &lth1&gtQuerying database&lt/h1&gt
 
@@ -103,8 +102,6 @@ for i in query\_database\(\):
 
 &\#09Response\.Write\('output of results converted to a string'\)
 
-
-
 %&gt
 
 &lt/body&gt
@@ -112,13 +109,10 @@ for i in query\_database\(\):
 &lt/html&gt
 
 If you use HTMLgen's template, then it could look like:
+
 &lt%@ LANGUAGE = Python%&gt
 
-
-
 &lt%
-
-
 
 \#notice no raw HTML at all\.  We instead use a template html file
 
@@ -128,21 +122,15 @@ If you use HTMLgen's template, then it could look like:
 
 \#text \{mid\} in the template is substituted for results\.
 
-
-
 import HTMLgen
 
 import HTMLcolors
-
-
 
 results='&lth1&gtQuerying database&lt/h1&gt'
 
 for i in query\_database\(\):
 
 &\#09results=results\+str\(i\)
-
-
 
 \#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#
 
@@ -197,6 +185,7 @@ dictionary or list\. A good way to get an idea of what they have is to
 print out their entire contents\. Here is a simple function that 
 
 converts your server \(environment\) variables into a python dictionary:
+
 def getenv \(\):
 
 &\#09d\_env=\{\} \#initialize dictionary
@@ -228,6 +217,7 @@ dictionary, a subset if you provide a list of keys, or a single value,
 if you provide a single key\.
 
  Get Request collection - 3 different ways to get Request data
+
 def getdata \(keys=''\):
 
 &\#09'''
@@ -299,6 +289,7 @@ To print out this data you will need to use the Response object
 which accepts python strings\. A simple: Response\.Write\(str\(d\_data\)\) 
 
 would suffice\.  A better looking way would be to do something like:
+
 for pair in d\_data\.items\(\):
 
 &\#09Response\.Write\(pair\[0\]\+':'\+pair\[1\]\+'&ltbr&gt'\)
@@ -308,6 +299,7 @@ Notice the adding of &ltbr&gt to have a line break for each pair\. If you
 want it more fancy you can convert it to table output\.
 
 HTMLgen can help with it's Table object:
+
 Table=HTMLgen\.Table\('Key/Value pairs for Response object'\) \#title
 
 Table\.heading=\('Key','Value'\)
@@ -333,9 +325,8 @@ and a simple HTMLgen web form to spit data back\. The typical idiom
 w/HTMLgen is to create a web object like a form and append things to it\. 
 
 In the code below, I append a textbox, radio buttons, and a checkbox\.
+
 &lt%@ LANGUAGE = Python%&gt
-
-
 
 &lt%
 
@@ -345,17 +336,11 @@ from HTMLcolors import \*
 
 \#import the file which has getenv and getdata from above
 
-
-
 d\_env=getenv\(\) \#get environment variables
-
-
 
 \#create a simple default document
 
 webpage = SimpleDocument\(title = 'Bedrock Housing'\)
-
-
 
 \#create form and append elements to it
 
@@ -367,8 +352,6 @@ F\.append\('What Street:',BR\(\)\)
 
 F\.append\( Input\(type='text',name='street',size=30\),BR\(\)\)
 
-
-
 F\.append\('Select your house type:',BR\(\)\)
 
 types=\('limestone','granite','marble'\)
@@ -378,8 +361,6 @@ for i in types:
 &\#09F\.append\(Input\(type='radio',name='house\_type',rlabel=i,value=i\),BR\(\)\)
 
 F\.append\('Select special features:',BR\(\)\)
-
-
 
 features=\('stone roof','dishwasher','door bell'\)
 
@@ -399,4 +380,5 @@ webpage\.append\(str\(results\)\)
 
 Response\.Write\(str\(webpage\)\)
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+

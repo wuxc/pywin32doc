@@ -1,13 +1,11 @@
 # PyIRunningObjectTable
 
+
 ## PyIRunningObjectTable Object
-
-
 
 A Python interface to IRunningObjectTable
 
 #### Methods
-
 
   - [Register](PyIRunningObjectTable.md#pyirunningobjecttableregister)
 
@@ -30,49 +28,47 @@ A Python interface to IRunningObjectTable
     Creates an enumerator that can list the monikers of all the objects currently registered in the Running Object Table \(ROT\)\.&nbsp;
 
 
-## [PyIRunningObjectTable](#pyirunningobjecttable)\.EnumRunning
 
-[PyIEnumMoniker](#pyienummoniker) =EnumRunning\(\)
+
+## [PyIRunningObjectTable](PyIRunningObjectTable.md#pyirunningobjecttable)\.EnumRunning
+
+[PyIEnumMoniker](PyIEnumMoniker.md) = EnumRunning\(\)
 Creates an enumerator that can list the monikers of all the objects currently registered in the Running Object Table \(ROT\)\.
 
-## [PyIRunningObjectTable](#pyirunningobjecttable)\.GetObject
 
-[PyIUnknown](#pyiunknown) =GetObject\(objectName\)
+## [PyIRunningObjectTable](PyIRunningObjectTable.md#pyirunningobjecttable)\.GetObject
+
+[PyIUnknown](PyIUnknown.md) = GetObject\(objectName\)
 Checks whether an object is running\.
 
 #### Parameters
 
+  - objectName : [PyIMoniker](PyIMoniker.md)
 
-  - objectName :[PyIMoniker](#pyimoniker)
-
-    The[PyIMoniker](#pyimoniker) interface on the moniker to search for in the Running Object Table\.
-
-## [PyIRunningObjectTable](#pyirunningobjecttable)\.IsRunning
+    The [PyIMoniker](PyIMoniker.md) interface on the moniker to search for in the Running Object Table\.
 
 
+## [PyIRunningObjectTable](PyIRunningObjectTable.md#pyirunningobjecttable)\.IsRunning
 
-int =IsRunning\(objectName\)
+int = IsRunning\(objectName\)
 Checks whether an object is running\.
 
 #### Parameters
 
+  - objectName : [PyIMoniker](PyIMoniker.md)
 
-  - objectName :[PyIMoniker](#pyimoniker)
-
-    The[PyIMoniker](#pyimoniker) interface on the moniker to search for in the Running Object Table\.
-
-## [PyIRunningObjectTable](#pyirunningobjecttable)\.Register
+    The [PyIMoniker](PyIMoniker.md) interface on the moniker to search for in the Running Object Table\.
 
 
+## [PyIRunningObjectTable](PyIRunningObjectTable.md#pyirunningobjecttable)\.Register
 
-int =Register\(\)
+int = Register\(\)
 Registers an object and its identifying moniker in the Running Object Table \(ROT\)\.
 
-## [PyIRunningObjectTable](#pyirunningobjecttable)\.Revoke
 
+## [PyIRunningObjectTable](PyIRunningObjectTable.md#pyirunningobjecttable)\.Revoke
 
-
-int =Revoke\(\)
+int = Revoke\(\)
 Removes from the Running Object Table 
 
-\(ROT\) an entry that was previously registered by a call to[PyIRunningObjectTable::Register](PyIRunningObjectTable.md#pyirunningobjecttableregister)\.
+\(ROT\) an entry that was previously registered by a call to [PyIRunningObjectTable::Register](PyIRunningObjectTable.md#pyirunningobjecttableregister)\.

@@ -1,18 +1,15 @@
 # PyIExternalConnection
 
+
 ## PyIExternalConnection Object
-
-
 
 A Python wrapper for a COM IExternalConnection interface\.
 
 #### Comments
 
-
 The IExternalConnection interface manages a server object's count of marshaled, or external, connections\. A server that maintains such a count can detect when it has no external connections and shut itself down in an orderly fashion\.
 
 #### Methods
-
 
   - [AddConnection](PyIExternalConnection.md#pyiexternalconnectionaddconnection)
 
@@ -23,15 +20,16 @@ The IExternalConnection interface manages a server object's count of marshaled, 
     Decrements an object's count of its strong external connections \(references\)\.&nbsp;
 
 
-## [PyIExternalConnection](#pyiexternalconnection)\.AddConnection
 
 
+## [PyIExternalConnection](PyIExternalConnection.md#pyiexternalconnection)\.AddConnection
 
-int =AddConnection\(extconn, reserved\)
+int = AddConnection\(extconn, reserved
+
+\)
 Increments an object's count of its strong external connections \(links\)\.
 
 #### Parameters
-
 
   - extconn : int
 
@@ -44,15 +42,17 @@ Increments an object's count of its strong external connections \(links\)\.
 #### Return Value
 The result is the number of reference counts on the object; used for debugging purposes only\.
 
-## [PyIExternalConnection](#pyiexternalconnection)\.ReleaseConnection
 
+## [PyIExternalConnection](PyIExternalConnection.md#pyiexternalconnection)\.ReleaseConnection
 
+int = ReleaseConnection\(extconn, reserved
 
-int =ReleaseConnection\(extconn, reserved, fLastReleaseCloses\)
+, fLastReleaseCloses
+
+\)
 Decrements an object's count of its strong external connections \(references\)\.
 
 #### Parameters
-
 
   - extconn : int
 

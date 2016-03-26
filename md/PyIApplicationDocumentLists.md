@@ -1,18 +1,15 @@
 # PyIApplicationDocumentLists
 
+
 ## PyIApplicationDocumentLists Object
-
-
 
 Interface used to retrieve the jump lists for an application
 
 #### Comments
 
-
 Available on Windows 7 and later
 
 #### Methods
-
 
   - [SetAppID](PyIApplicationDocumentLists.md#pyiapplicationdocumentlistssetappid)
 
@@ -22,13 +19,17 @@ Available on Windows 7 and later
 
     Retrieves a list of items in a jump list&nbsp;
 
-## [PyIApplicationDocumentLists](#pyiapplicationdocumentlists)\.GetList
 
-[PyIEnumObjects](#pyienumobjects) =GetList\(ListType, ItemsDesired, riid\)
+## [PyIApplicationDocumentLists](PyIApplicationDocumentLists.md#pyiapplicationdocumentlists)\.GetList
+
+[PyIEnumObjects](PyIEnumObjects.md) = GetList\(ListType, ItemsDesired
+
+, riid
+
+\)
 Retrieves a list of items in a jump list
 
 #### Parameters
-
 
   - ListType : int
 
@@ -38,23 +39,22 @@ Retrieves a list of items in a jump list
 
     Number of items to return, use 0 for all available
 
-  - riid=IID\_IEnumObjects :[PyIID](#pyiid)
+  - riid=IID\_IEnumObjects : [PyIID](PyIID.md)
 
     The interface to return, IID\_IEnumObjects or IID\_IObjectArray
 
-## [PyIApplicationDocumentLists](#pyiapplicationdocumentlists)\.SetAppID
+
+## [PyIApplicationDocumentLists](PyIApplicationDocumentLists.md#pyiapplicationdocumentlists)\.SetAppID
 
 SetAppID\(AppID\)
 Specifies the application whose jump list is to be accessed
 
 #### Parameters
 
-
   - AppID : str
 
     Taskbar identifier for the application
 
 #### Comments
-
 
 This method is only needed if the application sets its own taskbar identifier

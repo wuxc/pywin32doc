@@ -1,14 +1,13 @@
 # PyIDsObjectPicker
 
+
 ## PyIDsObjectPicker Object
 
+A COM interface to ADSI's IDsObjectPicker interface\. 
 
-
-A COM interface to ADSI's IDsObjectPicker interface\.
-Derived from[PyIUnknown](#pyiunknown)
+Derived from [PyIUnknown](PyIUnknown.md)
 
 #### Methods
-
 
   - [Initialize](PyIDsObjectPicker.md#pyidsobjectpickerinitialize)
 
@@ -18,19 +17,19 @@ Derived from[PyIUnknown](#pyiunknown)
 
     Displays a modal object picker dialog box and returns the user's selections\.&nbsp;
 
-## [PyIDsObjectPicker](#pyidsobjectpicker)\.Initialize
+
+## [PyIDsObjectPicker](PyIDsObjectPicker.md#pyidsobjectpicker)\.Initialize
 
 Initialize\(targetComputer, scopeInfos, options, attrNames\)
 Initializes the IDsObjectPicker interface with information about the scopes, filters, and options used by the object picker dialog box\.
 
 #### Parameters
 
-
-  - targetComputer :[PyUnicode](#pyunicode)
+  - targetComputer : [PyUnicode](PyUnicode.md)
 
     
 
-  - scopeInfos :[PyDSOP\_SCOPE\_INIT\_INFOs](PyDSOP.md#pydsopscope_init_infos)
+  - scopeInfos : [PyDSOP\_SCOPE\_INIT\_INFOs](PyDSOP.md#pydsopscope_init_infos)
 
     
 
@@ -38,17 +37,17 @@ Initializes the IDsObjectPicker interface with information about the scopes, fil
 
     
 
-  - attrNames=None : \[[PyUnicode](#pyunicode), \.\.\.\]
+  - attrNames=None : \[[PyUnicode](PyUnicode.md), \.\.\.\]
 
     
 
-## [PyIDsObjectPicker](#pyidsobjectpicker)\.InvokeDialog
 
-[PyIDataObject](#pyidataobject) =InvokeDialog\(hwnd\)
+## [PyIDsObjectPicker](PyIDsObjectPicker.md#pyidsobjectpicker)\.InvokeDialog
+
+[PyIDataObject](PyIDataObject.md) = InvokeDialog\(hwnd\)
 Displays a modal object picker dialog box and returns the user's selections\.
 
 #### Parameters
-
 
   - hwnd : int
 

@@ -1,12 +1,10 @@
 # PySOrRestriction
 
+
 ## PySOrRestriction Object
-
-
 
 #### Parameters
 
+  - restriction : \[[PySRestriction](PySRestriction.md), \.\.\.\]
 
-  - restriction : \[[PySRestriction](#pysrestriction), \.\.\.\]
-
-    A sequence of[PySRestriction](#pysrestriction) objects\.
+    A sequence of [PySRestriction](PySRestriction.md) objects\.

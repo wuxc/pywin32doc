@@ -1,13 +1,11 @@
 # PyIEnumSTATSTG
 
+
 ## PyIEnumSTATSTG Object
 
-
-
-An enumerator for elements contained in a[PyIStorage](#pyistorage) object
+An enumerator for elements contained in a [PyIStorage](PyIStorage.md) object
 
 #### Methods
-
 
   - [Next](PyIEnumSTATSTG.md#pyienumstatstgnext)
 
@@ -26,31 +24,33 @@ An enumerator for elements contained in a[PyIStorage](#pyistorage) object
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
 
-## [PyIEnumSTATSTG](#pyienumstatstg)\.Clone
 
-[PyIEnumSTATSTG](#pyienumstatstg) =Clone\(\)
+
+## [PyIEnumSTATSTG](PyIEnumSTATSTG.md#pyienumstatstg)\.Clone
+
+[PyIEnumSTATSTG](PyIEnumSTATSTG.md#pyienumstatstg) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumSTATSTG](#pyienumstatstg)\.Next
 
+## [PyIEnumSTATSTG](PyIEnumSTATSTG.md#pyienumstatstg)\.Next
 
-
-\([STATSTG](#statstg), \.\.\.\) =Next\(num\)
+\([STATSTG](STATSTG.md), \.\.\.\) = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumSTATSTG](#pyienumstatstg)\.Reset
+
+## [PyIEnumSTATSTG](PyIEnumSTATSTG.md#pyienumstatstg)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumSTATSTG](#pyienumstatstg)\.Skip
+
+## [PyIEnumSTATSTG](PyIEnumSTATSTG.md#pyienumstatstg)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

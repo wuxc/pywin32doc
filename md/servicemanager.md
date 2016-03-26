@@ -1,8 +1,7 @@
 # servicemanager
 
+
 ## Module servicemanager
-
-
 
 A module that interfaces with the Windows Service Control Manager\.  While this 
 
@@ -10,15 +9,15 @@ module can be imported by regular Python programs, it is only useful when used b
 
 hosting a service - and even then is generally used automatically by the Python Service framework\. 
 
-See the pipeTestService sample for an example of using this module\.
-The module[win32service](#win32service) andwin32serviceutil
+See the pipeTestService sample for an example of using this module\. 
+
+The module [win32service](win32service.md) and win32serviceutil
 
  provide other facilities for controlling 
 
 and managing services\.
 
 #### Methods
-
 
   - [CoInitializeEx](servicemanager.md#servicemanagercoinitializeex)
 
@@ -84,27 +83,27 @@ and managing services\.
 
     Sets the event source name for event log entries written by the service\.&nbsp;
 
-## [servicemanager](#servicemanager)\.CoInitializeEx
+
+## [servicemanager](servicemanager.md#servicemanager)\.CoInitializeEx
 
 CoInitializeEx\(\)
 Initialize OLE with additional options\.
 
-## [servicemanager](#servicemanager)\.CoUninitialize
+
+## [servicemanager](servicemanager.md#servicemanager)\.CoUninitialize
 
 CoUninitialize\(\)
 Unitialize OLE
 
-## [servicemanager](#servicemanager)\.Debugging
 
+## [servicemanager](servicemanager.md#servicemanager)\.Debugging
 
-
-True/False =Debugging\(newVal\)
+True/False = Debugging\(newVal\)
 Indicates if the service is running in debug mode 
 
 and optionally toggles the debug flag\.
 
 #### Parameters
-
 
   - newVal=-1 : int
 
@@ -112,60 +111,61 @@ and optionally toggles the debug flag\.
 
 The result is the value of the flag before it is changed\.
 
-## [servicemanager](#servicemanager)\.Finalize
+
+## [servicemanager](servicemanager.md#servicemanager)\.Finalize
 
 Finalize\(\)
 
 
-## [servicemanager](#servicemanager)\.Initialize
+
+## [servicemanager](servicemanager.md#servicemanager)\.Initialize
 
 Initialize\(eventSourceName, eventSourceFile\)
 Initialize the module for hosting a service\.  This is generally called automatically
 
 #### Parameters
 
-
-  - eventSourceName=None :[PyUnicode](#pyunicode)
+  - eventSourceName=None : [PyUnicode](PyUnicode.md)
 
     The event source name
 
-  - eventSourceFile=None :[PyUnicode](#pyunicode)
+  - eventSourceFile=None : [PyUnicode](PyUnicode.md)
 
     The name of the file 
 
 \(generally a DLL\) with the event source messages\.
 
-## [servicemanager](#servicemanager)\.LogErrorMsg
+
+## [servicemanager](servicemanager.md#servicemanager)\.LogErrorMsg
 
 LogErrorMsg\(msg\)
 Logs a generic error message to the event log
 
 #### Parameters
 
-
-  - msg :[PyUnicode](#pyunicode)
+  - msg : [PyUnicode](PyUnicode.md)
 
     The message to write\.
 
-## [servicemanager](#servicemanager)\.LogInfoMsg
+
+## [servicemanager](servicemanager.md#servicemanager)\.LogInfoMsg
 
 LogInfoMsg\(msg\)
 Logs a generic informational message to the event log
 
 #### Parameters
 
-
-  - msg :[PyUnicode](#pyunicode)
+  - msg : [PyUnicode](PyUnicode.md)
 
     The message to write\.
 
-## [servicemanager](#servicemanager)\.LogMsg
+
+## [servicemanager](servicemanager.md#servicemanager)\.LogMsg
 
 LogMsg\(errorType, eventId, inserts\)
 Logs a specific message
 
 #### Parameters
-
 
   - errorType : int
 
@@ -179,25 +179,25 @@ Logs a specific message
 
     
 
-## [servicemanager](#servicemanager)\.LogWarningMsg
+
+## [servicemanager](servicemanager.md#servicemanager)\.LogWarningMsg
 
 LogWarningMsg\(msg\)
 Logs a generic warning message to the event log
 
 #### Parameters
 
-
-  - msg :[PyUnicode](#pyunicode)
+  - msg : [PyUnicode](PyUnicode.md)
 
     The message to write\.
 
-## [servicemanager](#servicemanager)\.PrepareToHostMultiple
+
+## [servicemanager](servicemanager.md#servicemanager)\.PrepareToHostMultiple
 
 PrepareToHostMultiple\(service\_name, klass\)
 Prepare for hosting a multiple services in this EXE
 
 #### Parameters
-
 
   - service\_name : string/unicode
 
@@ -207,13 +207,13 @@ Prepare for hosting a multiple services in this EXE
 
     The Python class to host\.
 
-## [servicemanager](#servicemanager)\.PrepareToHostSingle
+
+## [servicemanager](servicemanager.md#servicemanager)\.PrepareToHostSingle
 
 PrepareToHostSingle\(klass\)
 Prepare for hosting a single service in this EXE
 
 #### Parameters
-
 
   - klass=None : object
 
@@ -221,27 +221,28 @@ Prepare for hosting a single service in this EXE
 
 service name is looked up in the registry and the specified class instantiated\.
 
-## [servicemanager](#servicemanager)\.PumpWaitingMessages
 
+## [servicemanager](servicemanager.md#servicemanager)\.PumpWaitingMessages
 
-
-int =PumpWaitingMessages\(\)
+int = PumpWaitingMessages\(\)
 Pumps all waiting messages\.
 
 #### Return Value
 Returns 1 if a WM\_QUIT message was received, else 0
 
-## [servicemanager](#servicemanager)\.RegisterServiceCtrlHandler
 
+## [servicemanager](servicemanager.md#servicemanager)\.RegisterServiceCtrlHandler
 
+int/None = RegisterServiceCtrlHandler\(serviceName, callback
 
-int/None =RegisterServiceCtrlHandler\(serviceName, callback, extra\_args\)
+, extra\_args
+
+\)
 Registers the Python service control handler function\.
 
 #### Parameters
 
-
-  - serviceName :[PyUnicode](#pyunicode)
+  - serviceName : [PyUnicode](PyUnicode.md)
 
     The name of the service\.  This is provided in args\[0\] of the service class \_\_init\_\_ method\.
 
@@ -258,16 +259,16 @@ If the service manager is in debug mode, this returns None, indicating
 
 there is no service control manager handle, otherwise the handle to the Win32 service manager\.
 
-## [servicemanager](#servicemanager)\.RunningAsService
 
+## [servicemanager](servicemanager.md#servicemanager)\.RunningAsService
 
-
-True/False =RunningAsService\(\)
+True/False = RunningAsService\(\)
 Indicates if the code is 
 
 being executed as a service\.
 
-## [servicemanager](#servicemanager)\.SetEventSourceName
+
+## [servicemanager](servicemanager.md#servicemanager)\.SetEventSourceName
 
 SetEventSourceName\(sourceName, registerNow\)
 Sets the event source name 
@@ -275,7 +276,6 @@ Sets the event source name
 for event log entries written by the service\.
 
 #### Parameters
-
 
   - sourceName : string
 
@@ -291,7 +291,8 @@ If False, the name will be registered the first time an event log entry
 
 is written via any pythonservice methods \(or possibly never if no record 
 
-if written\)\.
+if written\)\. 
+
 Note that in some cases, the service itself will not have permission 
 
 to write the event source in the registry\.  Therefore, it would be 

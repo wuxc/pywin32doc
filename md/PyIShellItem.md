@@ -1,13 +1,11 @@
 # PyIShellItem
 
+
 ## PyIShellItem Object
-
-
 
 Interface that represents an item in the Explorer shell
 
 #### Methods
-
 
   - [BindToHandler](PyIShellItem.md#pyishellitembindtohandler)
 
@@ -29,39 +27,41 @@ Interface that represents an item in the Explorer shell
 
     Compares another shell item with this item&nbsp;
 
-## [PyIShellItem](#pyishellitem)\.BindToHandler
 
+## [PyIShellItem](PyIShellItem.md#pyishellitem)\.BindToHandler
 
+interface = BindToHandler\(pbc, bhid
 
-interface =BindToHandler\(pbc, bhid, riid\)
+, riid
+
+\)
 Creates an instance of one of the item's handlers
 
 #### Parameters
 
-
-  - pbc :[PyIBindCtx](#pyibindctx)
+  - pbc : [PyIBindCtx](PyIBindCtx.md)
 
     Used to pass parameters that influence the binding operation, can be None
 
-  - bhid :[PyIID](#pyiid)
+  - bhid : [PyIID](PyIID.md)
 
     GUID that identifies a handler \(shell\.BHID\_\*\)
 
-  - riid :[PyIID](#pyiid)
+  - riid : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIShellItem](#pyishellitem)\.Compare
 
+## [PyIShellItem](PyIShellItem.md#pyishellitem)\.Compare
 
+int = Compare\(psi, hint
 
-int =Compare\(psi, hint\)
+\)
 Compares another shell item with this item
 
 #### Parameters
 
-
-  - psi :[PyIShellItem](#pyishellitem)
+  - psi : [PyIShellItem](PyIShellItem.md#pyishellitem)
 
     A shell item to be compared with this item
 
@@ -72,15 +72,13 @@ Compares another shell item with this item
 #### Return Value
 Returns 0 if items compare as equal, nonzero otherwise
 
-## [PyIShellItem](#pyishellitem)\.GetAttributes
 
+## [PyIShellItem](PyIShellItem.md#pyishellitem)\.GetAttributes
 
-
-int =GetAttributes\(Mask\)
+int = GetAttributes\(Mask\)
 Returns shell attributes of the item
 
 #### Parameters
-
 
   - Mask : int
 
@@ -89,21 +87,20 @@ Returns shell attributes of the item
 #### Return Value
 Returns a combination of shellcon\.SFGAO\_\* values
 
-## [PyIShellItem](#pyishellitem)\.GetDisplayName
 
+## [PyIShellItem](PyIShellItem.md#pyishellitem)\.GetDisplayName
 
-
-str =GetDisplayName\(sigdnName\)
+str = GetDisplayName\(sigdnName\)
 Returns the display name of the item in the specified format
 
 #### Parameters
-
 
   - sigdnName : int
 
     Format of name to return, shellcon\.SIGDN\_\*
 
-## [PyIShellItem](#pyishellitem)\.GetParent
 
-[PyIShellItem](#pyishellitem) =GetParent\(\)
+## [PyIShellItem](PyIShellItem.md#pyishellitem)\.GetParent
+
+[PyIShellItem](PyIShellItem.md#pyishellitem) = GetParent\(\)
 Retrieves the parent of this item

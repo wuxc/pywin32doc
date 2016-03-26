@@ -1,13 +1,11 @@
 # cursor
 
+
 ## cursor Object
-
-
 
 An object representing an ODBC cursor\.
 
 #### Methods
-
 
   - [close](cursor.md#cursorclose)
 
@@ -37,25 +35,25 @@ An object representing an ODBC cursor\.
 
     &nbsp;
 
-## [cursor](#cursor)\.close
+
+## [cursor](cursor.md#cursor)\.close
 
 close\(\)
 Closes the cursor
 
 #### Comments
 
-
 This method does nothing\!\!  I presume it should\!?\!?\!
 
-## [cursor](#cursor)\.execute
 
+## [cursor](cursor.md#cursor)\.execute
 
+int = execute\(sql, \[var, \.\.\.\]
 
-int =execute\(sql, \[var, \.\.\.\]\)
+\)
 Execute some SQL
 
 #### Parameters
-
 
   - sql : string
 
@@ -65,32 +63,31 @@ Execute some SQL
 
     Input variables\.
 
-## [cursor](#cursor)\.fetchall
 
+## [cursor](cursor.md#cursor)\.fetchall
 
-
-\[data, \.\.\.\] =fetchall\(\)
+\[data, \.\.\.\] = fetchall\(\)
 Fetch all rows of data
 
-## [cursor](#cursor)\.fetchmany
 
+## [cursor](cursor.md#cursor)\.fetchmany
 
-
-\[data, \.\.\.\] =fetchmany\(\)
+\[data, \.\.\.\] = fetchmany\(\)
 Fetch many rows of data
 
-## [cursor](#cursor)\.fetchone
 
+## [cursor](cursor.md#cursor)\.fetchone
 
-
-data =fetchone\(\)
+data = fetchone\(\)
 Fetch one row of data
 
-## [cursor](#cursor)\.setinputsizes
+
+## [cursor](cursor.md#cursor)\.setinputsizes
 
 setinputsizes\(\)
 
 
-## [cursor](#cursor)\.setoutputsize
+
+## [cursor](cursor.md#cursor)\.setoutputsize
 
 setoutputsize\(\)

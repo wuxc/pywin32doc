@@ -1,13 +1,11 @@
 # PyIEnumString
 
+
 ## PyIEnumString Object
-
-
 
 An enumerator interface to list strings
 
 #### Methods
-
 
   - [Next](PyIEnumString.md#pyienumstringnext)
 
@@ -26,31 +24,33 @@ An enumerator interface to list strings
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
 
-## [PyIEnumString](#pyienumstring)\.Clone
 
-[PyIEnumString](#pyienumstring) =Clone\(\)
+
+## [PyIEnumString](PyIEnumString.md#pyienumstring)\.Clone
+
+[PyIEnumString](PyIEnumString.md#pyienumstring) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumString](#pyienumstring)\.Next
 
+## [PyIEnumString](PyIEnumString.md#pyienumstring)\.Next
 
-
-\([PyUnicode](#pyunicode),\.\.\.\) =Next\(num\)
+\([PyUnicode](PyUnicode.md),\.\.\.\) = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumString](#pyienumstring)\.Reset
+
+## [PyIEnumString](PyIEnumString.md#pyienumstring)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumString](#pyienumstring)\.Skip
+
+## [PyIEnumString](PyIEnumString.md#pyienumstring)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

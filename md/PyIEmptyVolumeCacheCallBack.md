@@ -1,13 +1,11 @@
 # PyIEmptyVolumeCacheCallBack
 
+
 ## PyIEmptyVolumeCacheCallBack Object
 
-
-
-Callback used byPyIEmptyVolumeCacheCallBack
+Callback used by PyIEmptyVolumeCacheCallBack
 
 #### Methods
-
 
   - [ScanProgress](PyIEmptyVolumeCacheCallBack.md#pyiemptyvolumecachecallbackscanprogress)
 
@@ -17,15 +15,15 @@ Callback used byPyIEmptyVolumeCacheCallBack
 
     Description of PurgeProgress&nbsp;
 
-## [PyIEmptyVolumeCacheCallBack](#pyiemptyvolumecachecallback)\.PurgeProgress
+
+## [PyIEmptyVolumeCacheCallBack](PyIEmptyVolumeCacheCallBack.md#pyiemptyvolumecachecallback)\.PurgeProgress
 
 PurgeProgress\(dwlSpaceFreed, spaceFreed, spaceToFree, flags, status\)
 Description of PurgeProgress\.
 
 #### Parameters
 
-
-  - dwlSpaceFreed :PyDWORDLONG
+  - dwlSpaceFreed : PyDWORDLONG
 
     Description for dwlSpaceFreed
 
@@ -45,13 +43,13 @@ Description of PurgeProgress\.
 
     
 
-## [PyIEmptyVolumeCacheCallBack](#pyiemptyvolumecachecallback)\.ScanProgress
+
+## [PyIEmptyVolumeCacheCallBack](PyIEmptyVolumeCacheCallBack.md#pyiemptyvolumecachecallback)\.ScanProgress
 
 ScanProgress\(dwlSpaceUsed, dwFlags, pcwszStatus\)
 Description of ScanProgress\.
 
 #### Parameters
-
 
   - dwlSpaceUsed : long
 

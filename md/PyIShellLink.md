@@ -1,13 +1,11 @@
 # PyIShellLink
 
+
 ## PyIShellLink Object
-
-
 
 Interface used to access the properties of a shell link file \(\*\.lnk\)
 
 #### Methods
-
 
   - [GetPath](PyIShellLink.md#pyishelllinkgetpath)
 
@@ -81,43 +79,37 @@ Interface used to access the properties of a shell link file \(\*\.lnk\)
 
     Sets the path and file name of a shell link object\.&nbsp;
 
-## [PyIShellLink](#pyishelllink)\.GetArguments
 
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetArguments
 
-
-str =GetArguments\(cchMaxName\)
+str = GetArguments\(cchMaxName\)
 Retrieves the command-line arguments associated with a shell link object\.
 
 #### Parameters
-
 
   - cchMaxName=1024 : int
 
     Number of characters to fetch\.
 
-## [PyIShellLink](#pyishelllink)\.GetDescription
 
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetDescription
 
-
-str =GetDescription\(cchMaxName\)
+str = GetDescription\(cchMaxName\)
 Retrieves the description of the link \(displays as Comment in the UI\)
 
 #### Parameters
-
 
   - cchMaxName=1024 : int
 
     Number of character to allocate for the retrieved text
 
-## [PyIShellLink](#pyishelllink)\.GetHotkey
 
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetHotkey
 
-
-int =GetHotkey\(\)
+int = GetHotkey\(\)
 Retrieves the hot key for a shell link object\.
 
 #### Comments
-
 
 Note: My tests do not seem to be working\. at least, the values returned 
 
@@ -127,71 +119,84 @@ I would expect with a Hotkey of CTRL-ALT-T, to get an integer where
 
 integer & 256 == ord\('T'\), i\.e\. 116 or 84, instead I get 1620
 
-## [PyIShellLink](#pyishelllink)\.GetIDList
 
-[PyIDL](#pyidl) =GetIDList\(\)
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetIDList
+
+[PyIDL](PyIDL.md) = GetIDList\(\)
 Retrieves the item id list that identifies the target of the shell link\.
 
-## [PyIShellLink](#pyishelllink)\.GetIconLocation
 
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetIconLocation
 
-
-str =GetIconLocation\(cchMaxPath\)
+str = GetIconLocation\(cchMaxPath\)
 Retrieves the location \(path and index\) of the icon for a shell link object\.
 
 #### Parameters
-
 
   - cchMaxPath=\_MAX\_PATH : int
 
     Number of characters to allocate for the result string\.
 
-## [PyIShellLink](#pyishelllink)\.GetPath
 
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetPath
 
+str, [WIN32\_FIND\_DATA](WIN32.md#win32find_data) = GetPath\(fFlags, cchMaxPath
 
-str,[WIN32\_FIND\_DATA](WIN32.md#win32find_data) =GetPath\(fFlags, cchMaxPath\)
+\)
 Retrieves the target path and file name of a shell link object
 
 #### Parameters
-
 
   - fFlags : int
 
     One of the following values:
 
-ValueDescriptionSLGP\_SHORTPATHRetrieves the standard short \(8\.3 format\) file name\.SLGP\_UNCPRIORITYRetrieves the Universal Naming Convention \(UNC\) path name of the file\.SLGP\_RAWPATHRetrieves the raw path name\. A raw path is something that might not exist and may include environment variables that need to be expanded\.
+   
+
+       Value
+
+   
+
+   
+
+       Description
+
+   
+
+SLGP\_SHORTPATHRetrieves the standard short \(8\.3 format\) file name\.
+
+SLGP\_UNCPRIORITYRetrieves the Universal Naming Convention \(UNC\) path name of the file\.
+
+SLGP\_RAWPATHRetrieves the raw path name\. A raw path is something that might not exist and may include environment variables that need to be expanded\.
+
   - cchMaxPath=\_MAX\_PATH : int
 
     Number of characters to allocate for returned filename
 
 #### Comments
 
-
 The AlternateFileName \(8\.3\) member of WIN32\_FIND\_DATA does not return information
 
-## [PyIShellLink](#pyishelllink)\.GetShowCmd
 
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetShowCmd
 
-
-int =GetShowCmd\(\)
+int = GetShowCmd\(\)
 Retrieves the show \(SW\_\) command for a shell link object\.
 
-## [PyIShellLink](#pyishelllink)\.GetWorkingDirectory
 
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.GetWorkingDirectory
 
-
-str =GetWorkingDirectory\(cchMaxName\)
+str = GetWorkingDirectory\(cchMaxName\)
 Retrieves the working directory for the link
 
 #### Parameters
-
 
   - cchMaxName=1024 : int
 
     Number of characters to allocate for returned text
 
-## [PyIShellLink](#pyishelllink)\.Resolve
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.Resolve
 
 Resolve\(hwnd, fFlags\)
 Resolves a shell link by searching for the shell link object and updating the 
@@ -199,7 +204,6 @@ Resolves a shell link by searching for the shell link object and updating the
 shell link path and its list of identifiers \(if necessary\)
 
 #### Parameters
-
 
   - hwnd : HWND
 
@@ -210,37 +214,37 @@ shell link path and its list of identifiers \(if necessary\)
     One of the following constants:
 
 
-## [PyIShellLink](#pyishelllink)\.SetArguments
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetArguments
 
 SetArguments\(args\)
 Sets the command-line arguments associated with a shell link object\.
 
 #### Parameters
 
-
   - args : str
 
     The new arguments\.
 
-## [PyIShellLink](#pyishelllink)\.SetDescription
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetDescription
 
 SetDescription\(Name\)
 Sets the description of the link \(displays as Comment in the UI\)
 
 #### Parameters
 
-
   - Name : str
 
     The description for the link
 
-## [PyIShellLink](#pyishelllink)\.SetHotkey
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetHotkey
 
 SetHotkey\(wHotkey\)
 Sets the hot key for a shell link object\.
 
 #### Parameters
-
 
   - wHotkey : int
 
@@ -248,27 +252,27 @@ Sets the hot key for a shell link object\.
 
 flags are in the high-order byte\. The modifier flags can be a combination of the 
 
-values specified in the description of the[PyIShellLink::GetHotkey](PyIShellLink.md#pyishelllinkgethotkey) method\.
+values specified in the description of the [PyIShellLink::GetHotkey](PyIShellLink.md#pyishelllinkgethotkey) method\.
 
-## [PyIShellLink](#pyishelllink)\.SetIDList
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetIDList
 
 SetIDList\(pidl\)
 Sets the target of the link using an item id list
 
 #### Parameters
 
-
-  - pidl :[PyIDL](#pyidl)
+  - pidl : [PyIDL](PyIDL.md)
 
     Absolute item id list that identifies the target
 
-## [PyIShellLink](#pyishelllink)\.SetIconLocation
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetIconLocation
 
 SetIconLocation\(iconPath, iIcon\)
 Sets the location \(path and index\) of the icon for a shell link object\.
 
 #### Parameters
-
 
   - iconPath : string
 
@@ -278,25 +282,25 @@ Sets the location \(path and index\) of the icon for a shell link object\.
 
     Index of the icon\.
 
-## [PyIShellLink](#pyishelllink)\.SetPath
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetPath
 
 SetPath\(path\)
 Sets the path and file name of a shell link object\.
 
 #### Parameters
 
-
   - path : string
 
     The path and filename of the link\.
 
-## [PyIShellLink](#pyishelllink)\.SetRelativePath
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetRelativePath
 
 SetRelativePath\(relPath, reserved\)
 Sets the relative path for a shell link object\.
 
 #### Parameters
-
 
   - relPath : string
 
@@ -308,32 +312,31 @@ Sets the relative path for a shell link object\.
 
 #### Comments
 
-
 This mechanism allows for moved link files 
 
 to reestablish connection with relative files through 
 
 similar-prefix comparisons
 
-## [PyIShellLink](#pyishelllink)\.SetShowCmd
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetShowCmd
 
 SetShowCmd\(iShowCmd\)
 Sets the show \(SW\_\) command for a shell link object\.
 
 #### Parameters
 
-
   - iShowCmd : int
 
     The new show command value\.
 
-## [PyIShellLink](#pyishelllink)\.SetWorkingDirectory
+
+## [PyIShellLink](PyIShellLink.md#pyishelllink)\.SetWorkingDirectory
 
 SetWorkingDirectory\(Dir\)
 Sets the working directory for the link\.
 
 #### Parameters
-
 
   - Dir : str
 

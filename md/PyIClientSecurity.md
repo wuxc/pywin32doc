@@ -1,13 +1,11 @@
 # PyIClientSecurity
 
+
 ## PyIClientSecurity Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [QueryBlanket](PyIClientSecurity.md#pyiclientsecurityqueryblanket)
 
@@ -21,41 +19,39 @@ Description of the interface
 
     Makes a private copy of a proxy interface&nbsp;
 
-## [PyIClientSecurity](#pyiclientsecurity)\.CopyProxy
 
-[PyIUnknown](#pyiunknown) =CopyProxy\(Proxy\)
+## [PyIClientSecurity](PyIClientSecurity.md#pyiclientsecurity)\.CopyProxy
+
+[PyIUnknown](PyIUnknown.md) = CopyProxy\(Proxy\)
 Makes a private copy of a proxy interface
 
 #### Parameters
 
-
-  - Proxy :[PyIUnknown](#pyiunknown)
+  - Proxy : [PyIUnknown](PyIUnknown.md)
 
     The remote interface to be copied
 
-## [PyIClientSecurity](#pyiclientsecurity)\.QueryBlanket
 
+## [PyIClientSecurity](PyIClientSecurity.md#pyiclientsecurity)\.QueryBlanket
 
-
-dict =QueryBlanket\(Proxy\)
+dict = QueryBlanket\(Proxy\)
 Retrieves the authentication settings for an interface
 
 #### Parameters
 
-
-  - Proxy :[PyIUnknown](#pyiunknown)
+  - Proxy : [PyIUnknown](PyIUnknown.md)
 
     An interface created through a proxy
 
-## [PyIClientSecurity](#pyiclientsecurity)\.SetBlanket
+
+## [PyIClientSecurity](PyIClientSecurity.md#pyiclientsecurity)\.SetBlanket
 
 SetBlanket\(Proxy, AuthnSvc, AuthzSvc, ServerPrincipalName, AuthnLevel, ImpLevel, AuthInfo, Capabilities\)
 Changes the authentication options used with an interface
 
 #### Parameters
 
-
-  - Proxy :[PyIUnknown](#pyiunknown)
+  - Proxy : [PyIUnknown](PyIUnknown.md)
 
     The proxy interface for which to set security options
 
@@ -67,7 +63,7 @@ Changes the authentication options used with an interface
 
     Authorization service identifier, pythoncom\.RPC\_C\_AUTHZ\_\*
 
-  - ServerPrincipalName :[PyUnicode](#pyunicode)
+  - ServerPrincipalName : [PyUnicode](PyUnicode.md)
 
     SPN that identifies the server, can be None
 

@@ -1,14 +1,13 @@
 # PyIADsUser
 
+
 ## PyIADsUser Object
 
+A COM interface to ADSI's IADsUser interface\. 
 
-
-A COM interface to ADSI's IADsUser interface\.
-Derived from[PyIDispatch](#pyidispatch)
+Derived from [PyIDispatch](PyIDispatch.md)
 
 #### Methods
-
 
   - [get\_AccountDisabled](PyIADsUser.md#pyiadsuserget_accountdisabled)
 
@@ -122,13 +121,12 @@ Derived from[PyIDispatch](#pyidispatch)
 
     &nbsp;
 
-## [PyIADsUser](#pyiadsuser)\.ChangePassword
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.ChangePassword
 
 ChangePassword\(oldval, newval\)
 
-
 #### Parameters
-
 
   - oldval : unicode
 
@@ -138,255 +136,228 @@ ChangePassword\(oldval, newval\)
 
     
 
-## [PyIADsUser](#pyiadsuser)\.SetPassword
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.SetPassword
 
 SetPassword\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.get\_AccountDisabled
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_AccountDisabled
 
+int = get\_AccountDisabled\(\)
 
-int =get\_AccountDisabled\(\)
 
 
-## [PyIADsUser](#pyiadsuser)\.get\_AccountExpirationDate
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_AccountExpirationDate
 
+int = get\_AccountExpirationDate\(\)
 
 
-int =get\_AccountExpirationDate\(\)
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_BadLoginAddress
 
-## [PyIADsUser](#pyiadsuser)\.get\_BadLoginAddress
+unicode = get\_BadLoginAddress\(\)
 
 
 
-unicode =get\_BadLoginAddress\(\)
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_BadLoginCount
 
+int = get\_BadLoginCount\(\)
 
-## [PyIADsUser](#pyiadsuser)\.get\_BadLoginCount
 
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_Department
 
-int =get\_BadLoginCount\(\)
+unicode = get\_Department\(\)
 
 
-## [PyIADsUser](#pyiadsuser)\.get\_Department
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_Description
 
+unicode = get\_Description\(\)
 
-unicode =get\_Department\(\)
 
 
-## [PyIADsUser](#pyiadsuser)\.get\_Description
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_Division
 
+unicode = get\_Division\(\)
 
 
-unicode =get\_Description\(\)
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_EmailAddress
 
-## [PyIADsUser](#pyiadsuser)\.get\_Division
+unicode = get\_EmailAddress\(\)
 
 
 
-unicode =get\_Division\(\)
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_EmployeeID
 
+unicode = get\_EmployeeID\(\)
 
-## [PyIADsUser](#pyiadsuser)\.get\_EmailAddress
 
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_FirstName
 
-unicode =get\_EmailAddress\(\)
+unicode = get\_FirstName\(\)
 
 
-## [PyIADsUser](#pyiadsuser)\.get\_EmployeeID
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_FullName
 
+unicode = get\_FullName\(\)
 
-unicode =get\_EmployeeID\(\)
 
 
-## [PyIADsUser](#pyiadsuser)\.get\_FirstName
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_HomeDirectory
 
+unicode = get\_HomeDirectory\(\)
 
 
-unicode =get\_FirstName\(\)
 
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_HomePage
 
-## [PyIADsUser](#pyiadsuser)\.get\_FullName
+unicode = get\_HomePage\(\)
 
 
 
-unicode =get\_FullName\(\)
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.get\_LoginScript
 
+unicode = get\_LoginScript\(\)
 
-## [PyIADsUser](#pyiadsuser)\.get\_HomeDirectory
 
 
-
-unicode =get\_HomeDirectory\(\)
-
-
-## [PyIADsUser](#pyiadsuser)\.get\_HomePage
-
-
-
-unicode =get\_HomePage\(\)
-
-
-## [PyIADsUser](#pyiadsuser)\.get\_LoginScript
-
-
-
-unicode =get\_LoginScript\(\)
-
-
-## [PyIADsUser](#pyiadsuser)\.put\_AccountDisabled
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_AccountDisabled
 
 put\_AccountDisabled\(val\)
 
-
 #### Parameters
-
 
   - val : int
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_AccountExpirationDate
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_AccountExpirationDate
 
 put\_AccountExpirationDate\(val\)
 
-
 #### Parameters
 
-
-  - val :[PyTime](#pytime)
+  - val : [PyTime](PyTime.md)
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_Department
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_Department
 
 put\_Department\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_Description
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_Description
 
 put\_Description\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_Division
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_Division
 
 put\_Division\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_EmailAddress
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_EmailAddress
 
 put\_EmailAddress\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_EmployeeID
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_EmployeeID
 
 put\_EmployeeID\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_FirstName
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_FirstName
 
 put\_FirstName\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_FullName
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_FullName
 
 put\_FullName\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_HomeDirectory
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_HomeDirectory
 
 put\_HomeDirectory\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_HomePage
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_HomePage
 
 put\_HomePage\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 
     
 
-## [PyIADsUser](#pyiadsuser)\.put\_LoginScript
+
+## [PyIADsUser](PyIADsUser.md#pyiadsuser)\.put\_LoginScript
 
 put\_LoginScript\(val\)
 
-
 #### Parameters
-
 
   - val : unicode
 

@@ -1,18 +1,17 @@
 # PyIMAPIStatus
 
+
 ## PyIMAPIStatus Object
-
-
 
 Provides status information about the MAPI 
 
 subsystem, the integrated address book and the MAPI 
 
-spooler\.
-Derived from[PyIMAPIProp](#pyimapiprop)
+spooler\. 
+
+Derived from [PyIMAPIProp](PyIMAPIProp.md)
 
 #### Methods
-
 
   - [ChangePassword](PyIMAPIStatus.md#pyimapistatuschangepassword)
 
@@ -34,13 +33,12 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     &nbsp;
 
-## [PyIMAPIStatus](#pyimapistatus)\.ChangePassword
+
+## [PyIMAPIStatus](PyIMAPIStatus.md#pyimapistatus)\.ChangePassword
 
 ChangePassword\(oldPassword, newPassword, ulFlags\)
 
-
 #### Parameters
-
 
   - oldPassword : unicode
 
@@ -54,13 +52,12 @@ ChangePassword\(oldPassword, newPassword, ulFlags\)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus)\.FlushQueues
+
+## [PyIMAPIStatus](PyIMAPIStatus.md#pyimapistatus)\.FlushQueues
 
 FlushQueues\(ulUIParam, transport, ulFlags\)
 
-
 #### Parameters
-
 
   - ulUIParam : int
 
@@ -74,13 +71,12 @@ FlushQueues\(ulUIParam, transport, ulFlags\)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus)\.FlushQueues
+
+## [PyIMAPIStatus](PyIMAPIStatus.md#pyimapistatus)\.FlushQueues
 
 FlushQueues\(uiparam, entryID, flags\)
 
-
 #### Parameters
-
 
   - uiparam : int
 
@@ -94,13 +90,12 @@ FlushQueues\(uiparam, entryID, flags\)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus)\.SettingsDialog
+
+## [PyIMAPIStatus](PyIMAPIStatus.md#pyimapistatus)\.SettingsDialog
 
 SettingsDialog\(ulUIParam, ulFlags\)
 
-
 #### Parameters
-
 
   - ulUIParam : int
 
@@ -110,13 +105,12 @@ SettingsDialog\(ulUIParam, ulFlags\)
 
     
 
-## [PyIMAPIStatus](#pyimapistatus)\.ValidateState
+
+## [PyIMAPIStatus](PyIMAPIStatus.md#pyimapistatus)\.ValidateState
 
 ValidateState\(ulUIParam, ulFlags\)
 
-
 #### Parameters
-
 
   - ulUIParam : int
 

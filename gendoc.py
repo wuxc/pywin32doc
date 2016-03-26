@@ -51,7 +51,7 @@ def parse(fname, badhtml):
         if tag in ignores:
             pos = e
             continue
-        curline = curline + escape(badhtml[pos:s].rstrip())
+        curline = curline + escape(badhtml[pos:s])
 
         # print pos, s, e, tag
         if tag in boundaries:
@@ -77,8 +77,8 @@ def parse(fname, badhtml):
                 if urlm:
                     url = urlm.group(1)
                     _m, _a = split_fname(url)
-                    _f = '%s.md' % _m if _a else ''
-                    url = '%s#%s%s' % (_f, _m.lower(), _a.lower())
+                    _t = ('#%s%s' % (_m.lower(), _a.lower())) if _a else ('#%s' % _m.lower() if (_m ==modname) else '')
+                    url = '%s.md%s' % (_m, _t)
                 else:
                     url = ''
             elif tag == '/a':
@@ -95,7 +95,7 @@ def parse(fname, badhtml):
         pos = e
 
     text = '\n'.join(lines)
-    re.sub(r'\n[\n ]*', '\n', text)
+    text = re.sub(r'\n{3,}', '\n\n', text)
     attrname = attrname or '__module_doc__'
     return text, modname, attrname
 

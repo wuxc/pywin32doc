@@ -1,13 +1,11 @@
 # PyIEnumMoniker
 
+
 ## PyIEnumMoniker Object
-
-
 
 A Python interface to IEnumMoniker
 
 #### Methods
-
 
   - [Next](PyIEnumMoniker.md#pyienummonikernext)
 
@@ -26,42 +24,45 @@ A Python interface to IEnumMoniker
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
 
-## [PyIEnumMoniker](#pyienummoniker)\.Clone
 
-[PyIEnumMoniker](#pyienummoniker) =Clone\(\)
+
+## [PyIEnumMoniker](PyIEnumMoniker.md#pyienummoniker)\.Clone
+
+[PyIEnumMoniker](PyIEnumMoniker.md#pyienummoniker) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumMoniker](#pyienummoniker)\.Next
 
-[PyIMoniker](#pyimoniker) =Next\(num\)
+## [PyIEnumMoniker](PyIEnumMoniker.md#pyienummoniker)\.Next
+
+[PyIMoniker](PyIMoniker.md) = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
 #### Return Value
-The result is a tuple of[PyIID](#pyiid) objects, 
+The result is a tuple of [PyIID](PyIID.md) objects, 
 
 one for each element returned\.  Note that if zero elements are returned, it is not considered 
 
 an error condition - an empty tuple is simply returned\.
 
-## [PyIEnumMoniker](#pyienummoniker)\.Reset
+
+## [PyIEnumMoniker](PyIEnumMoniker.md#pyienummoniker)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumMoniker](#pyienummoniker)\.Skip
+
+## [PyIEnumMoniker](PyIEnumMoniker.md#pyienummoniker)\.Skip
 
 Skip\(num\)
 Skips over the next specified elementes\.
 
 #### Parameters
-
 
   - num : int
 

@@ -1,13 +1,11 @@
 # PyIDispatchEx
 
+
 ## PyIDispatchEx Object
-
-
 
 A OLE automation client object that uses the IDispatchEx scripting interface\.\.
 
 #### Methods
-
 
   - [GetDispID](PyIDispatchEx.md#pyidispatchexgetdispid)
 
@@ -15,7 +13,7 @@ A OLE automation client object that uses the IDispatchEx scripting interface\.\.
 
   - [InvokeEx](PyIDispatchEx.md#pyidispatchexinvokeex)
 
-    Provides access to properties and methods exposed by aPyIDispatchEx object\.&nbsp;
+    Provides access to properties and methods exposed by a PyIDispatchEx object\.&nbsp;
 
   - [DeleteMemberByName](PyIDispatchEx.md#pyidispatchexdeletememberbyname)
 
@@ -38,27 +36,26 @@ A OLE automation client object that uses the IDispatchEx scripting interface\.\.
     Enumerates member ids\.&nbsp;
 
 
-## [PyIDispatchEx](#pyidispatchex)\.DeleteMemberByDispID
+
+
+## [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex)\.DeleteMemberByDispID
 
 DeleteMemberByDispID\(dispid\)
 
-
 #### Parameters
-
 
   - dispid : int
 
     
 
-## [PyIDispatchEx](#pyidispatchex)\.DeleteMemberByName
+
+## [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex)\.DeleteMemberByName
 
 DeleteMemberByName\(name, fdex\)
 
-
 #### Parameters
 
-
-  - name :[PyUnicode](#pyunicode)
+  - name : [PyUnicode](PyUnicode.md)
 
     Passed in name to be mapped
 
@@ -66,17 +63,17 @@ DeleteMemberByName\(name, fdex\)
 
     Determines the options
 
-## [PyIDispatchEx](#pyidispatchex)\.GetDispID
 
+## [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex)\.GetDispID
 
+int = GetDispID\(name, fdex
 
-int =GetDispID\(name, fdex\)
+\)
 Returns the member id for a name
 
 #### Parameters
 
-
-  - name :[PyUnicode](#pyunicode)
+  - name : [PyUnicode](PyUnicode.md)
 
     Passed in name to be mapped
 
@@ -84,29 +81,27 @@ Returns the member id for a name
 
     Determines the options for obtaining the member identifier\. This can be a combination of the fdex\* constants:
 
-## [PyIDispatchEx](#pyidispatchex)\.GetMemberName
 
+## [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex)\.GetMemberName
 
-
-str =GetMemberName\(dispid\)
+str = GetMemberName\(dispid\)
 Returns the name associated with a member id
 
 #### Parameters
-
 
   - dispid : int
 
     The member id
 
-## [PyIDispatchEx](#pyidispatchex)\.GetMemberProperties
 
+## [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex)\.GetMemberProperties
 
+int = GetMemberProperties\(dispid, fdex
 
-int =GetMemberProperties\(dispid, fdex\)
+\)
 Returns mask of fdex\* flags describing a member
 
 #### Parameters
-
 
   - dispid : int
 
@@ -116,15 +111,15 @@ Returns mask of fdex\* flags describing a member
 
     fdex\* flags specifying which properties to return
 
-## [PyIDispatchEx](#pyidispatchex)\.GetNextDispID
 
+## [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex)\.GetNextDispID
 
+int = GetNextDispID\(fdex, dispid
 
-int =GetNextDispID\(fdex, dispid\)
+\)
 Enumerates member ids\.
 
 #### Parameters
-
 
   - fdex : int
 
@@ -134,15 +129,25 @@ Enumerates member ids\.
 
     Current member, or DISPID\_STARTENUM to begin enumeration\. GetNextDispID will retrieve the item in the enumeration after this one\.
 
-## [PyIDispatchEx](#pyidispatchex)\.InvokeEx
 
+## [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex)\.InvokeEx
 
+object = InvokeEx\(dispid, lcid
 
-object =InvokeEx\(dispid, lcid, flags, args, types, returnDesc, serviceProvider\)
-Provides access to properties and methods exposed by a[PyIDispatchEx](#pyidispatchex) object\.
+, flags
+
+, args
+
+, types
+
+, returnDesc
+
+, serviceProvider
+
+\)
+Provides access to properties and methods exposed by a [PyIDispatchEx](PyIDispatchEx.md#pyidispatchex) object\.
 
 #### Parameters
-
 
   - dispid : int
 
@@ -168,6 +173,6 @@ Provides access to properties and methods exposed by a[PyIDispatchEx](#pyidispat
 
     If types==None, should be a BOOL indicating if the result is needed\.  If types is a tuple, then should a be type description\.
 
-  - serviceProvider=None :[PyIServiceProvider](#pyiserviceprovider)
+  - serviceProvider=None : [PyIServiceProvider](PyIServiceProvider.md)
 
     A service provider object supplied by the caller which allows the object to obtain services from the caller\. Can be None\.

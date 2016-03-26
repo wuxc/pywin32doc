@@ -1,511 +1,594 @@
 # isapi.isapicon
 
+
 ## Module isapi\.isapicon
-
-
 
 Constants needed by ISAPI filters and extensions\.
 
-## HSE\_EXEC\_URL\_DISABLE\_CUSTOM\_ERROR
-const isapi\.isapicon\.HSE\_EXEC\_URL\_DISABLE\_CUSTOM\_ERROR;
 
+## HSE\_EXEC\_URL\_DISABLE\_CUSTOM\_ERROR
+
+const isapi\.isapicon\.HSE\_EXEC\_URL\_DISABLE\_CUSTOM\_ERROR;
 
 HSE\_EXEC\_URL\_DISABLE\_CUSTOM\_ERROR = 32 \(0x20\)
 
-## HSE\_EXEC\_URL\_HTTP\_CACHE\_ELIGIBLE
-const isapi\.isapicon\.HSE\_EXEC\_URL\_HTTP\_CACHE\_ELIGIBLE;
 
+## HSE\_EXEC\_URL\_HTTP\_CACHE\_ELIGIBLE
+
+const isapi\.isapicon\.HSE\_EXEC\_URL\_HTTP\_CACHE\_ELIGIBLE;
 
 HSE\_EXEC\_URL\_HTTP\_CACHE\_ELIGIBLE = 128 \(0x80\)
 
-## HSE\_EXEC\_URL\_IGNORE\_CURRENT\_INTERCEPTOR
-const isapi\.isapicon\.HSE\_EXEC\_URL\_IGNORE\_CURRENT\_INTERCEPTOR;
 
+## HSE\_EXEC\_URL\_IGNORE\_CURRENT\_INTERCEPTOR
+
+const isapi\.isapicon\.HSE\_EXEC\_URL\_IGNORE\_CURRENT\_INTERCEPTOR;
 
 HSE\_EXEC\_URL\_IGNORE\_CURRENT\_INTERCEPTOR = 4 \(0x4\)
 
-## HSE\_EXEC\_URL\_IGNORE\_VALIDATION\_AND\_RANGE
-const isapi\.isapicon\.HSE\_EXEC\_URL\_IGNORE\_VALIDATION\_AND\_RANGE;
 
+## HSE\_EXEC\_URL\_IGNORE\_VALIDATION\_AND\_RANGE
+
+const isapi\.isapicon\.HSE\_EXEC\_URL\_IGNORE\_VALIDATION\_AND\_RANGE;
 
 HSE\_EXEC\_URL\_IGNORE\_VALIDATION\_AND\_RANGE = 16 \(0x10\)
 
-## HSE\_EXEC\_URL\_NO\_HEADERS
-const isapi\.isapicon\.HSE\_EXEC\_URL\_NO\_HEADERS;
 
+## HSE\_EXEC\_URL\_NO\_HEADERS
+
+const isapi\.isapicon\.HSE\_EXEC\_URL\_NO\_HEADERS;
 
 HSE\_EXEC\_URL\_NO\_HEADERS = 2 \(0x2\)
 
-## HSE\_EXEC\_URL\_SSI\_CMD
-const isapi\.isapicon\.HSE\_EXEC\_URL\_SSI\_CMD;
 
+## HSE\_EXEC\_URL\_SSI\_CMD
+
+const isapi\.isapicon\.HSE\_EXEC\_URL\_SSI\_CMD;
 
 HSE\_EXEC\_URL\_SSI\_CMD = 64 \(0x40\)
 
-## HSE\_IO\_ASYNC
-const isapi\.isapicon\.HSE\_IO\_ASYNC;
 
+## HSE\_IO\_ASYNC
+
+const isapi\.isapicon\.HSE\_IO\_ASYNC;
 
 HSE\_IO\_ASYNC = 2 \(0x2\)
 
-## HSE\_IO\_CACHE\_RESPONSE
-const isapi\.isapicon\.HSE\_IO\_CACHE\_RESPONSE;
 
+## HSE\_IO\_CACHE\_RESPONSE
+
+const isapi\.isapicon\.HSE\_IO\_CACHE\_RESPONSE;
 
 HSE\_IO\_CACHE\_RESPONSE = 32 \(0x20\)
 
-## HSE\_IO\_DISCONNECT\_AFTER\_SEND
-const isapi\.isapicon\.HSE\_IO\_DISCONNECT\_AFTER\_SEND;
 
+## HSE\_IO\_DISCONNECT\_AFTER\_SEND
+
+const isapi\.isapicon\.HSE\_IO\_DISCONNECT\_AFTER\_SEND;
 
 HSE\_IO\_DISCONNECT\_AFTER\_SEND = 4 \(0x4\)
 
-## HSE\_IO\_FINAL\_SEND
-const isapi\.isapicon\.HSE\_IO\_FINAL\_SEND;
 
+## HSE\_IO\_FINAL\_SEND
+
+const isapi\.isapicon\.HSE\_IO\_FINAL\_SEND;
 
 HSE\_IO\_FINAL\_SEND = 16 \(0x10\)
 
-## HSE\_IO\_NODELAY
-const isapi\.isapicon\.HSE\_IO\_NODELAY;
 
+## HSE\_IO\_NODELAY
+
+const isapi\.isapicon\.HSE\_IO\_NODELAY;
 
 HSE\_IO\_NODELAY = 4096 \(0x1000\)
 
-## HSE\_IO\_SEND\_HEADERS
-const isapi\.isapicon\.HSE\_IO\_SEND\_HEADERS;
 
+## HSE\_IO\_SEND\_HEADERS
+
+const isapi\.isapicon\.HSE\_IO\_SEND\_HEADERS;
 
 HSE\_IO\_SEND\_HEADERS = 8 \(0x8\)
 
-## HSE\_IO\_SYNC
-const isapi\.isapicon\.HSE\_IO\_SYNC;
 
+## HSE\_IO\_SYNC
+
+const isapi\.isapicon\.HSE\_IO\_SYNC;
 
 HSE\_IO\_SYNC = 1 \(0x1\)
 
-## HSE\_STATUS\_ERROR
-const isapi\.isapicon\.HSE\_STATUS\_ERROR;
 
+## HSE\_STATUS\_ERROR
+
+const isapi\.isapicon\.HSE\_STATUS\_ERROR;
 
 HSE\_STATUS\_ERROR = 4 \(0x4\)
 
-## HSE\_STATUS\_PENDING
-const isapi\.isapicon\.HSE\_STATUS\_PENDING;
 
+## HSE\_STATUS\_PENDING
+
+const isapi\.isapicon\.HSE\_STATUS\_PENDING;
 
 HSE\_STATUS\_PENDING = 3 \(0x3\)
 
-## HSE\_STATUS\_SUCCESS
-const isapi\.isapicon\.HSE\_STATUS\_SUCCESS;
 
+## HSE\_STATUS\_SUCCESS
+
+const isapi\.isapicon\.HSE\_STATUS\_SUCCESS;
 
 HSE\_STATUS\_SUCCESS = 1 \(0x1\)
 
-## HSE\_STATUS\_SUCCESS\_AND\_KEEP\_CONN
-const isapi\.isapicon\.HSE\_STATUS\_SUCCESS\_AND\_KEEP\_CONN;
 
+## HSE\_STATUS\_SUCCESS\_AND\_KEEP\_CONN
+
+const isapi\.isapicon\.HSE\_STATUS\_SUCCESS\_AND\_KEEP\_CONN;
 
 HSE\_STATUS\_SUCCESS\_AND\_KEEP\_CONN = 2 \(0x2\)
 
-## HTTP\_ACCEPTED
-const isapi\.isapicon\.HTTP\_ACCEPTED;
 
+## HTTP\_ACCEPTED
+
+const isapi\.isapicon\.HTTP\_ACCEPTED;
 
 HTTP\_ACCEPTED = 202 \(0xca\)
 
-## HTTP\_BAD\_GATEWAY
-const isapi\.isapicon\.HTTP\_BAD\_GATEWAY;
 
+## HTTP\_BAD\_GATEWAY
+
+const isapi\.isapicon\.HTTP\_BAD\_GATEWAY;
 
 HTTP\_BAD\_GATEWAY = 502 \(0x1f6\)
 
-## HTTP\_BAD\_REQUEST
-const isapi\.isapicon\.HTTP\_BAD\_REQUEST;
 
+## HTTP\_BAD\_REQUEST
+
+const isapi\.isapicon\.HTTP\_BAD\_REQUEST;
 
 HTTP\_BAD\_REQUEST = 400 \(0x190\)
 
-## HTTP\_CONFLICT
-const isapi\.isapicon\.HTTP\_CONFLICT;
 
+## HTTP\_CONFLICT
+
+const isapi\.isapicon\.HTTP\_CONFLICT;
 
 HTTP\_CONFLICT = 409 \(0x199\)
 
-## HTTP\_CONTINUE
-const isapi\.isapicon\.HTTP\_CONTINUE;
 
+## HTTP\_CONTINUE
+
+const isapi\.isapicon\.HTTP\_CONTINUE;
 
 HTTP\_CONTINUE = 100 \(0x64\)
 
-## HTTP\_CREATED
-const isapi\.isapicon\.HTTP\_CREATED;
 
+## HTTP\_CREATED
+
+const isapi\.isapicon\.HTTP\_CREATED;
 
 HTTP\_CREATED = 201 \(0xc9\)
 
-## HTTP\_EXPECTATION\_FAILED
-const isapi\.isapicon\.HTTP\_EXPECTATION\_FAILED;
 
+## HTTP\_EXPECTATION\_FAILED
+
+const isapi\.isapicon\.HTTP\_EXPECTATION\_FAILED;
 
 HTTP\_EXPECTATION\_FAILED = 417 \(0x1a1\)
 
-## HTTP\_FORBIDDEN
-const isapi\.isapicon\.HTTP\_FORBIDDEN;
 
+## HTTP\_FORBIDDEN
+
+const isapi\.isapicon\.HTTP\_FORBIDDEN;
 
 HTTP\_FORBIDDEN = 403 \(0x193\)
 
-## HTTP\_GATEWAY\_TIME\_OUT
-const isapi\.isapicon\.HTTP\_GATEWAY\_TIME\_OUT;
 
+## HTTP\_GATEWAY\_TIME\_OUT
+
+const isapi\.isapicon\.HTTP\_GATEWAY\_TIME\_OUT;
 
 HTTP\_GATEWAY\_TIME\_OUT = 504 \(0x1f8\)
 
-## HTTP\_GONE
-const isapi\.isapicon\.HTTP\_GONE;
 
+## HTTP\_GONE
+
+const isapi\.isapicon\.HTTP\_GONE;
 
 HTTP\_GONE = 410 \(0x19a\)
 
-## HTTP\_INTERNAL\_SERVER\_ERROR
-const isapi\.isapicon\.HTTP\_INTERNAL\_SERVER\_ERROR;
 
+## HTTP\_INTERNAL\_SERVER\_ERROR
+
+const isapi\.isapicon\.HTTP\_INTERNAL\_SERVER\_ERROR;
 
 HTTP\_INTERNAL\_SERVER\_ERROR = 500 \(0x1f4\)
 
-## HTTP\_LENGTH\_REQUIRED
-const isapi\.isapicon\.HTTP\_LENGTH\_REQUIRED;
 
+## HTTP\_LENGTH\_REQUIRED
+
+const isapi\.isapicon\.HTTP\_LENGTH\_REQUIRED;
 
 HTTP\_LENGTH\_REQUIRED = 411 \(0x19b\)
 
-## HTTP\_METHOD\_NOT\_ALLOWED
-const isapi\.isapicon\.HTTP\_METHOD\_NOT\_ALLOWED;
 
+## HTTP\_METHOD\_NOT\_ALLOWED
+
+const isapi\.isapicon\.HTTP\_METHOD\_NOT\_ALLOWED;
 
 HTTP\_METHOD\_NOT\_ALLOWED = 405 \(0x195\)
 
-## HTTP\_MOVED\_PERMANENTLY
-const isapi\.isapicon\.HTTP\_MOVED\_PERMANENTLY;
 
+## HTTP\_MOVED\_PERMANENTLY
+
+const isapi\.isapicon\.HTTP\_MOVED\_PERMANENTLY;
 
 HTTP\_MOVED\_PERMANENTLY = 301 \(0x12d\)
 
-## HTTP\_MOVED\_TEMPORARILY
-const isapi\.isapicon\.HTTP\_MOVED\_TEMPORARILY;
 
+## HTTP\_MOVED\_TEMPORARILY
+
+const isapi\.isapicon\.HTTP\_MOVED\_TEMPORARILY;
 
 HTTP\_MOVED\_TEMPORARILY = 302 \(0x12e\)
 
-## HTTP\_MULTIPLE\_CHOICES
-const isapi\.isapicon\.HTTP\_MULTIPLE\_CHOICES;
 
+## HTTP\_MULTIPLE\_CHOICES
+
+const isapi\.isapicon\.HTTP\_MULTIPLE\_CHOICES;
 
 HTTP\_MULTIPLE\_CHOICES = 300 \(0x12c\)
 
-## HTTP\_MULTI\_STATUS
-const isapi\.isapicon\.HTTP\_MULTI\_STATUS;
 
+## HTTP\_MULTI\_STATUS
+
+const isapi\.isapicon\.HTTP\_MULTI\_STATUS;
 
 HTTP\_MULTI\_STATUS = 207 \(0xcf\)
 
-## HTTP\_NON\_AUTHORITATIVE
-const isapi\.isapicon\.HTTP\_NON\_AUTHORITATIVE;
 
+## HTTP\_NON\_AUTHORITATIVE
+
+const isapi\.isapicon\.HTTP\_NON\_AUTHORITATIVE;
 
 HTTP\_NON\_AUTHORITATIVE = 203 \(0xcb\)
 
-## HTTP\_NOT\_ACCEPTABLE
-const isapi\.isapicon\.HTTP\_NOT\_ACCEPTABLE;
 
+## HTTP\_NOT\_ACCEPTABLE
+
+const isapi\.isapicon\.HTTP\_NOT\_ACCEPTABLE;
 
 HTTP\_NOT\_ACCEPTABLE = 406 \(0x196\)
 
-## HTTP\_NOT\_FOUND
-const isapi\.isapicon\.HTTP\_NOT\_FOUND;
 
+## HTTP\_NOT\_FOUND
+
+const isapi\.isapicon\.HTTP\_NOT\_FOUND;
 
 HTTP\_NOT\_FOUND = 404 \(0x194\)
 
-## HTTP\_NOT\_IMPLEMENTED
-const isapi\.isapicon\.HTTP\_NOT\_IMPLEMENTED;
 
+## HTTP\_NOT\_IMPLEMENTED
+
+const isapi\.isapicon\.HTTP\_NOT\_IMPLEMENTED;
 
 HTTP\_NOT\_IMPLEMENTED = 501 \(0x1f5\)
 
-## HTTP\_NOT\_MODIFIED
-const isapi\.isapicon\.HTTP\_NOT\_MODIFIED;
 
+## HTTP\_NOT\_MODIFIED
+
+const isapi\.isapicon\.HTTP\_NOT\_MODIFIED;
 
 HTTP\_NOT\_MODIFIED = 304 \(0x130\)
 
-## HTTP\_NO\_CONTENT
-const isapi\.isapicon\.HTTP\_NO\_CONTENT;
 
+## HTTP\_NO\_CONTENT
+
+const isapi\.isapicon\.HTTP\_NO\_CONTENT;
 
 HTTP\_NO\_CONTENT = 204 \(0xcc\)
 
-## HTTP\_OK
-const isapi\.isapicon\.HTTP\_OK;
 
+## HTTP\_OK
+
+const isapi\.isapicon\.HTTP\_OK;
 
 HTTP\_OK = 200 \(0xc8\)
 
-## HTTP\_PARTIAL\_CONTENT
-const isapi\.isapicon\.HTTP\_PARTIAL\_CONTENT;
 
+## HTTP\_PARTIAL\_CONTENT
+
+const isapi\.isapicon\.HTTP\_PARTIAL\_CONTENT;
 
 HTTP\_PARTIAL\_CONTENT = 206 \(0xce\)
 
-## HTTP\_PAYMENT\_REQUIRED
-const isapi\.isapicon\.HTTP\_PAYMENT\_REQUIRED;
 
+## HTTP\_PAYMENT\_REQUIRED
+
+const isapi\.isapicon\.HTTP\_PAYMENT\_REQUIRED;
 
 HTTP\_PAYMENT\_REQUIRED = 402 \(0x192\)
 
-## HTTP\_PRECONDITION\_FAILED
-const isapi\.isapicon\.HTTP\_PRECONDITION\_FAILED;
 
+## HTTP\_PRECONDITION\_FAILED
+
+const isapi\.isapicon\.HTTP\_PRECONDITION\_FAILED;
 
 HTTP\_PRECONDITION\_FAILED = 412 \(0x19c\)
 
-## HTTP\_PROCESSING
-const isapi\.isapicon\.HTTP\_PROCESSING;
 
+## HTTP\_PROCESSING
+
+const isapi\.isapicon\.HTTP\_PROCESSING;
 
 HTTP\_PROCESSING = 102 \(0x66\)
 
-## HTTP\_PROXY\_AUTHENTICATION\_REQUIRED
-const isapi\.isapicon\.HTTP\_PROXY\_AUTHENTICATION\_REQUIRED;
 
+## HTTP\_PROXY\_AUTHENTICATION\_REQUIRED
+
+const isapi\.isapicon\.HTTP\_PROXY\_AUTHENTICATION\_REQUIRED;
 
 HTTP\_PROXY\_AUTHENTICATION\_REQUIRED = 407 \(0x197\)
 
-## HTTP\_RANGE\_NOT\_SATISFIABLE
-const isapi\.isapicon\.HTTP\_RANGE\_NOT\_SATISFIABLE;
 
+## HTTP\_RANGE\_NOT\_SATISFIABLE
+
+const isapi\.isapicon\.HTTP\_RANGE\_NOT\_SATISFIABLE;
 
 HTTP\_RANGE\_NOT\_SATISFIABLE = 416 \(0x1a0\)
 
-## HTTP\_REQUEST\_ENTITY\_TOO\_LARGE
-const isapi\.isapicon\.HTTP\_REQUEST\_ENTITY\_TOO\_LARGE;
 
+## HTTP\_REQUEST\_ENTITY\_TOO\_LARGE
+
+const isapi\.isapicon\.HTTP\_REQUEST\_ENTITY\_TOO\_LARGE;
 
 HTTP\_REQUEST\_ENTITY\_TOO\_LARGE = 413 \(0x19d\)
 
-## HTTP\_REQUEST\_TIME\_OUT
-const isapi\.isapicon\.HTTP\_REQUEST\_TIME\_OUT;
 
+## HTTP\_REQUEST\_TIME\_OUT
+
+const isapi\.isapicon\.HTTP\_REQUEST\_TIME\_OUT;
 
 HTTP\_REQUEST\_TIME\_OUT = 408 \(0x198\)
 
-## HTTP\_REQUEST\_URI\_TOO\_LARGE
-const isapi\.isapicon\.HTTP\_REQUEST\_URI\_TOO\_LARGE;
 
+## HTTP\_REQUEST\_URI\_TOO\_LARGE
+
+const isapi\.isapicon\.HTTP\_REQUEST\_URI\_TOO\_LARGE;
 
 HTTP\_REQUEST\_URI\_TOO\_LARGE = 414 \(0x19e\)
 
-## HTTP\_RESET\_CONTENT
-const isapi\.isapicon\.HTTP\_RESET\_CONTENT;
 
+## HTTP\_RESET\_CONTENT
+
+const isapi\.isapicon\.HTTP\_RESET\_CONTENT;
 
 HTTP\_RESET\_CONTENT = 205 \(0xcd\)
 
-## HTTP\_SEE\_OTHER
-const isapi\.isapicon\.HTTP\_SEE\_OTHER;
 
+## HTTP\_SEE\_OTHER
+
+const isapi\.isapicon\.HTTP\_SEE\_OTHER;
 
 HTTP\_SEE\_OTHER = 303 \(0x12f\)
 
-## HTTP\_SERVICE\_UNAVAILABLE
-const isapi\.isapicon\.HTTP\_SERVICE\_UNAVAILABLE;
 
+## HTTP\_SERVICE\_UNAVAILABLE
+
+const isapi\.isapicon\.HTTP\_SERVICE\_UNAVAILABLE;
 
 HTTP\_SERVICE\_UNAVAILABLE = 503 \(0x1f7\)
 
-## HTTP\_SWITCHING\_PROTOCOLS
-const isapi\.isapicon\.HTTP\_SWITCHING\_PROTOCOLS;
 
+## HTTP\_SWITCHING\_PROTOCOLS
+
+const isapi\.isapicon\.HTTP\_SWITCHING\_PROTOCOLS;
 
 HTTP\_SWITCHING\_PROTOCOLS = 101 \(0x65\)
 
-## HTTP\_TEMPORARY\_REDIRECT
-const isapi\.isapicon\.HTTP\_TEMPORARY\_REDIRECT;
 
+## HTTP\_TEMPORARY\_REDIRECT
+
+const isapi\.isapicon\.HTTP\_TEMPORARY\_REDIRECT;
 
 HTTP\_TEMPORARY\_REDIRECT = 307 \(0x133\)
 
-## HTTP\_UNAUTHORIZED
-const isapi\.isapicon\.HTTP\_UNAUTHORIZED;
 
+## HTTP\_UNAUTHORIZED
+
+const isapi\.isapicon\.HTTP\_UNAUTHORIZED;
 
 HTTP\_UNAUTHORIZED = 401 \(0x191\)
 
-## HTTP\_UNPROCESSABLE\_ENTITY
-const isapi\.isapicon\.HTTP\_UNPROCESSABLE\_ENTITY;
 
+## HTTP\_UNPROCESSABLE\_ENTITY
+
+const isapi\.isapicon\.HTTP\_UNPROCESSABLE\_ENTITY;
 
 HTTP\_UNPROCESSABLE\_ENTITY = 422 \(0x1a6\)
 
-## HTTP\_UNSUPPORTED\_MEDIA\_TYPE
-const isapi\.isapicon\.HTTP\_UNSUPPORTED\_MEDIA\_TYPE;
 
+## HTTP\_UNSUPPORTED\_MEDIA\_TYPE
+
+const isapi\.isapicon\.HTTP\_UNSUPPORTED\_MEDIA\_TYPE;
 
 HTTP\_UNSUPPORTED\_MEDIA\_TYPE = 415 \(0x19f\)
 
-## HTTP\_USE\_PROXY
-const isapi\.isapicon\.HTTP\_USE\_PROXY;
 
+## HTTP\_USE\_PROXY
+
+const isapi\.isapicon\.HTTP\_USE\_PROXY;
 
 HTTP\_USE\_PROXY = 305 \(0x131\)
 
-## HTTP\_VARIANT\_ALSO\_VARIES
-const isapi\.isapicon\.HTTP\_VARIANT\_ALSO\_VARIES;
 
+## HTTP\_VARIANT\_ALSO\_VARIES
+
+const isapi\.isapicon\.HTTP\_VARIANT\_ALSO\_VARIES;
 
 HTTP\_VARIANT\_ALSO\_VARIES = 506 \(0x1fa\)
 
-## HTTP\_VERSION\_NOT\_SUPPORTED
-const isapi\.isapicon\.HTTP\_VERSION\_NOT\_SUPPORTED;
 
+## HTTP\_VERSION\_NOT\_SUPPORTED
+
+const isapi\.isapicon\.HTTP\_VERSION\_NOT\_SUPPORTED;
 
 HTTP\_VERSION\_NOT\_SUPPORTED = 505 \(0x1f9\)
 
-## SF\_NOTIFY\_ACCESS\_DENIED
-const isapi\.isapicon\.SF\_NOTIFY\_ACCESS\_DENIED;
 
+## SF\_NOTIFY\_ACCESS\_DENIED
+
+const isapi\.isapicon\.SF\_NOTIFY\_ACCESS\_DENIED;
 
 SF\_NOTIFY\_ACCESS\_DENIED = 2048 \(0x800\)
 
-## SF\_NOTIFY\_AUTHENTICATION
-const isapi\.isapicon\.SF\_NOTIFY\_AUTHENTICATION;
 
+## SF\_NOTIFY\_AUTHENTICATION
+
+const isapi\.isapicon\.SF\_NOTIFY\_AUTHENTICATION;
 
 SF\_NOTIFY\_AUTHENTICATION = 8192 \(0x2000\)
 
-## SF\_NOTIFY\_END\_OF\_NET\_SESSION
-const isapi\.isapicon\.SF\_NOTIFY\_END\_OF\_NET\_SESSION;
 
+## SF\_NOTIFY\_END\_OF\_NET\_SESSION
+
+const isapi\.isapicon\.SF\_NOTIFY\_END\_OF\_NET\_SESSION;
 
 SF\_NOTIFY\_END\_OF\_NET\_SESSION = 256 \(0x100\)
 
-## SF\_NOTIFY\_END\_OF\_REQUEST
-const isapi\.isapicon\.SF\_NOTIFY\_END\_OF\_REQUEST;
 
+## SF\_NOTIFY\_END\_OF\_REQUEST
+
+const isapi\.isapicon\.SF\_NOTIFY\_END\_OF\_REQUEST;
 
 SF\_NOTIFY\_END\_OF\_REQUEST = 128 \(0x80\)
 
-## SF\_NOTIFY\_LOG
-const isapi\.isapicon\.SF\_NOTIFY\_LOG;
 
+## SF\_NOTIFY\_LOG
+
+const isapi\.isapicon\.SF\_NOTIFY\_LOG;
 
 SF\_NOTIFY\_LOG = 512 \(0x200\)
 
-## SF\_NOTIFY\_NONSECURE\_PORT
-const isapi\.isapicon\.SF\_NOTIFY\_NONSECURE\_PORT;
 
+## SF\_NOTIFY\_NONSECURE\_PORT
+
+const isapi\.isapicon\.SF\_NOTIFY\_NONSECURE\_PORT;
 
 SF\_NOTIFY\_NONSECURE\_PORT = 2 \(0x2\)
 
-## SF\_NOTIFY\_ORDER\_DEFAULT
-const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_DEFAULT;
 
+## SF\_NOTIFY\_ORDER\_DEFAULT
+
+const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_DEFAULT;
 
 SF\_NOTIFY\_ORDER\_DEFAULT = 131072 \(0x20000\)
 
-## SF\_NOTIFY\_ORDER\_HIGH
-const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_HIGH;
 
+## SF\_NOTIFY\_ORDER\_HIGH
+
+const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_HIGH;
 
 SF\_NOTIFY\_ORDER\_HIGH = 524288 \(0x80000\)
 
-## SF\_NOTIFY\_ORDER\_LOW
-const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_LOW;
 
+## SF\_NOTIFY\_ORDER\_LOW
+
+const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_LOW;
 
 SF\_NOTIFY\_ORDER\_LOW = 131072 \(0x20000\)
 
-## SF\_NOTIFY\_ORDER\_MASK
-const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_MASK;
 
+## SF\_NOTIFY\_ORDER\_MASK
+
+const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_MASK;
 
 SF\_NOTIFY\_ORDER\_MASK = 917504 \(0xe0000\)
 
-## SF\_NOTIFY\_ORDER\_MEDIUM
-const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_MEDIUM;
 
+## SF\_NOTIFY\_ORDER\_MEDIUM
+
+const isapi\.isapicon\.SF\_NOTIFY\_ORDER\_MEDIUM;
 
 SF\_NOTIFY\_ORDER\_MEDIUM = 262144 \(0x40000\)
 
-## SF\_NOTIFY\_PREPROC\_HEADERS
-const isapi\.isapicon\.SF\_NOTIFY\_PREPROC\_HEADERS;
 
+## SF\_NOTIFY\_PREPROC\_HEADERS
+
+const isapi\.isapicon\.SF\_NOTIFY\_PREPROC\_HEADERS;
 
 SF\_NOTIFY\_PREPROC\_HEADERS = 16384 \(0x4000\)
 
-## SF\_NOTIFY\_READ\_RAW\_DATA
-const isapi\.isapicon\.SF\_NOTIFY\_READ\_RAW\_DATA;
 
+## SF\_NOTIFY\_READ\_RAW\_DATA
+
+const isapi\.isapicon\.SF\_NOTIFY\_READ\_RAW\_DATA;
 
 SF\_NOTIFY\_READ\_RAW\_DATA = 32768 \(0x8000\)
 
-## SF\_NOTIFY\_SECURE\_PORT
-const isapi\.isapicon\.SF\_NOTIFY\_SECURE\_PORT;
 
+## SF\_NOTIFY\_SECURE\_PORT
+
+const isapi\.isapicon\.SF\_NOTIFY\_SECURE\_PORT;
 
 SF\_NOTIFY\_SECURE\_PORT = 1 \(0x1\)
 
-## SF\_NOTIFY\_SEND\_RAW\_DATA
-const isapi\.isapicon\.SF\_NOTIFY\_SEND\_RAW\_DATA;
 
+## SF\_NOTIFY\_SEND\_RAW\_DATA
+
+const isapi\.isapicon\.SF\_NOTIFY\_SEND\_RAW\_DATA;
 
 SF\_NOTIFY\_SEND\_RAW\_DATA = 1024 \(0x400\)
 
-## SF\_NOTIFY\_SEND\_RESPONSE
-const isapi\.isapicon\.SF\_NOTIFY\_SEND\_RESPONSE;
 
+## SF\_NOTIFY\_SEND\_RESPONSE
+
+const isapi\.isapicon\.SF\_NOTIFY\_SEND\_RESPONSE;
 
 SF\_NOTIFY\_SEND\_RESPONSE = 64 \(0x40\)
 
-## SF\_NOTIFY\_URL\_MAP
-const isapi\.isapicon\.SF\_NOTIFY\_URL\_MAP;
 
+## SF\_NOTIFY\_URL\_MAP
+
+const isapi\.isapicon\.SF\_NOTIFY\_URL\_MAP;
 
 SF\_NOTIFY\_URL\_MAP = 4096 \(0x1000\)
 
-## SF\_STATUS\_REQ\_ERROR
-const isapi\.isapicon\.SF\_STATUS\_REQ\_ERROR;
 
+## SF\_STATUS\_REQ\_ERROR
+
+const isapi\.isapicon\.SF\_STATUS\_REQ\_ERROR;
 
 SF\_STATUS\_REQ\_ERROR = 134217732 \(0x8000004\)
 
-## SF\_STATUS\_REQ\_FINISHED
-const isapi\.isapicon\.SF\_STATUS\_REQ\_FINISHED;
 
+## SF\_STATUS\_REQ\_FINISHED
+
+const isapi\.isapicon\.SF\_STATUS\_REQ\_FINISHED;
 
 SF\_STATUS\_REQ\_FINISHED = 134217728 \(0x8000000\)
 
-## SF\_STATUS\_REQ\_FINISHED\_KEEP\_CONN
-const isapi\.isapicon\.SF\_STATUS\_REQ\_FINISHED\_KEEP\_CONN;
 
+## SF\_STATUS\_REQ\_FINISHED\_KEEP\_CONN
+
+const isapi\.isapicon\.SF\_STATUS\_REQ\_FINISHED\_KEEP\_CONN;
 
 SF\_STATUS\_REQ\_FINISHED\_KEEP\_CONN = 134217729 \(0x8000001\)
 
-## SF\_STATUS\_REQ\_HANDLED\_NOTIFICATION
-const isapi\.isapicon\.SF\_STATUS\_REQ\_HANDLED\_NOTIFICATION;
 
+## SF\_STATUS\_REQ\_HANDLED\_NOTIFICATION
+
+const isapi\.isapicon\.SF\_STATUS\_REQ\_HANDLED\_NOTIFICATION;
 
 SF\_STATUS\_REQ\_HANDLED\_NOTIFICATION = 134217731 \(0x8000003\)
 
-## SF\_STATUS\_REQ\_NEXT\_NOTIFICATION
-const isapi\.isapicon\.SF\_STATUS\_REQ\_NEXT\_NOTIFICATION;
 
+## SF\_STATUS\_REQ\_NEXT\_NOTIFICATION
+
+const isapi\.isapicon\.SF\_STATUS\_REQ\_NEXT\_NOTIFICATION;
 
 SF\_STATUS\_REQ\_NEXT\_NOTIFICATION = 134217730 \(0x8000002\)
 
-## SF\_STATUS\_REQ\_READ\_NEXT
-const isapi\.isapicon\.SF\_STATUS\_REQ\_READ\_NEXT;
 
+## SF\_STATUS\_REQ\_READ\_NEXT
+
+const isapi\.isapicon\.SF\_STATUS\_REQ\_READ\_NEXT;
 
 SF\_STATUS\_REQ\_READ\_NEXT = 134217733 \(0x8000005\)

@@ -1,13 +1,11 @@
 # PyCTabCtrl
 
+
 ## PyCTabCtrl Object
 
-
-
-A class which encapsulates an MFC CTabCtrl object\.  Derived from a[PyCWnd](#pycwnd) object\.
+A class which encapsulates an MFC CTabCtrl object\.  Derived from a [PyCWnd](PyCWnd.md) object\.
 
 #### Methods
-
 
   - [GetCurSel](PyCTabCtrl.md#pyctabctrlgetcursel)
 
@@ -21,32 +19,28 @@ A class which encapsulates an MFC CTabCtrl object\.  Derived from a[PyCWnd](#pyc
 
     Sets the current selection of a tab control\.&nbsp;
 
-## [PyCTabCtrl](#pyctabctrl)\.GetCurSel
 
+## [PyCTabCtrl](PyCTabCtrl.md#pyctabctrl)\.GetCurSel
 
-
-int =GetCurSel\(\)
+int = GetCurSel\(\)
 Gets the current selection of a tab control\.
 
 #### Return Value
 The zero-based index of the currently selected item, or -1 if no selection\.
 
-## [PyCTabCtrl](#pyctabctrl)\.GetItemCountl
 
+## [PyCTabCtrl](PyCTabCtrl.md#pyctabctrl)\.GetItemCountl
 
-
-int =GetItemCountl\(\)
+int = GetItemCountl\(\)
 Returns the number of tabs in the control\.
 
-## [PyCTabCtrl](#pyctabctrl)\.SetCurSel
 
+## [PyCTabCtrl](PyCTabCtrl.md#pyctabctrl)\.SetCurSel
 
-
-int =SetCurSel\(index\)
+int = SetCurSel\(index\)
 Sets the current selection of a tab control\.
 
 #### Parameters
-
 
   - index : int
 

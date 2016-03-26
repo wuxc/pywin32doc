@@ -1,17 +1,13 @@
 # PyCDC
 
+
 ## PyCDC Object
 
-
-
-A Device Context\.  Encapsulates an MFCCDC
-
-
+A Device Context\.  Encapsulates an MFC CDC
 
  class\.
 
 #### Methods
-
 
   - [AbortDoc](PyCDC.md#pycdcabortdoc)
 
@@ -349,18 +345,19 @@ A Device Context\.  Encapsulates an MFCCDC
 
     Writes text to the DC\.&nbsp;
 
-## [PyCDC](#pycdc)\.AbortDoc
+
+## [PyCDC](PyCDC.md#pycdc)\.AbortDoc
 
 AbortDoc\(\)
 Aborts a print job
 
-## [PyCDC](#pycdc)\.Arc
+
+## [PyCDC](PyCDC.md#pycdc)\.Arc
 
 Arc\(rect, pointStart, pointEnd\)
 Draws an eliptical arc\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -383,7 +380,6 @@ of the point that defines the arc's ending point \(in logical units\)\.
 This point does not have to lie exactly on the arc\.
 
 #### Comments
-
 
 The arc drawn by using the function is a segment of the ellipse defined by the specified bounding rectangle\. 
 
@@ -405,24 +401,24 @@ than 2 units and less than 32,767 units\.
 
 #### MFC References
 
-
   - CDC::Arc
 
 #### Return Value
 Always none\.  If the function fails, an exception is raised\.
 
-## [PyCDC](#pycdc)\.BeginPath
+
+## [PyCDC](PyCDC.md#pycdc)\.BeginPath
 
 BeginPath\(\)
 Opens a path bracket in the device context
 
-## [PyCDC](#pycdc)\.BitBlt
+
+## [PyCDC](PyCDC.md#pycdc)\.BitBlt
 
 BitBlt\(destPos, size, dc, srcPos, rop\)
 Copies a bitmap from the source device context to this device context\.
 
 #### Parameters
-
 
   - destPos : \(x,y\)-ints
 
@@ -432,7 +428,7 @@ Copies a bitmap from the source device context to this device context\.
 
     Specifies the width and height \(in logical units\) of the destination rectangle and source bitmap\.
 
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md#pycdc)
 
     Specifies the PyCDC object from which the bitmap will be copied\. It must be None if rop specifies a raster operation that does not include a source\.
 
@@ -446,16 +442,15 @@ Copies a bitmap from the source device context to this device context\.
 
 #### MFC References
 
-
   - CDC::BitBlt
 
-## [PyCDC](#pycdc)\.Chord
+
+## [PyCDC](PyCDC.md#pycdc)\.Chord
 
 Chord\(rect, pointStart, pointEnd\)
 Draws a chord\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -479,7 +474,6 @@ This point does not have to lie exactly on the arc\.
 
 #### Comments
 
-
 Draws a chord \(a closed figure bounded by the intersection 
 
 of an ellipse and a line segment\)\. The rect parameter specify the 
@@ -498,45 +492,42 @@ by using the selected brush\.
 
 #### MFC References
 
-
   - CDC::Chord
 
 #### Return Value
 Always none\.  If the function fails, an exception is raised\.
 
-## [PyCDC](#pycdc)\.CreateCompatibleDC
+
+## [PyCDC](PyCDC.md#pycdc)\.CreateCompatibleDC
 
 CreateCompatibleDC\(dcFrom\)
 Creates a memory device context that is compatible with this DC\.
 
 #### Parameters
 
-
-  - dcFrom=None :[PyCDC](#pycdc)
+  - dcFrom=None : [PyCDC](PyCDC.md#pycdc)
 
     The source DC, or None to make a screen compatible DC\.
 
 #### Comments
 
-
 Note that unlike the MFC version, this function 
 
 calls the global CreateCompatibleDC function and returns 
 
-a new[PyCDC](#pycdc) object\.
+a new [PyCDC](PyCDC.md#pycdc) object\.
 
 #### MFC References
 
-
   - CDC::CreateCompatibleDC
 
-## [PyCDC](#pycdc)\.CreatePrinterDC
+
+## [PyCDC](PyCDC.md#pycdc)\.CreatePrinterDC
 
 CreatePrinterDC\(printerName\)
 Creates a device context for a specific printer
 
 #### Parameters
-
 
   - printerName=None : string
 
@@ -544,25 +535,21 @@ Creates a device context for a specific printer
 
 #### MFC References
 
-
   - CDC::CreateDC
 
-## [PyCDC](#pycdc)\.DPtoLP
 
+## [PyCDC](PyCDC.md#pycdc)\.DPtoLP
 
-
-\(x,y\) =DPtoLP\(point\)
+\(x,y\) = DPtoLP\(point\)
 Converts device units into logical units\.
 
 #### Parameters
-
 
   - point : \(x,y\)
 
     The point to convert
 
 #### Alternative Parameters
-
 
   - x
 
@@ -574,7 +561,6 @@ Converts device units into logical units\.
 
 #### MFC References
 
-
   - CDC::DPtoLP
 
 ####  To Do
@@ -583,26 +569,29 @@ Converts device units into logical units\.
 #### Return Value
 The converted coordinates\.
 
-## [PyCDC](#pycdc)\.DeleteDC
+
+## [PyCDC](PyCDC.md#pycdc)\.DeleteDC
 
 DeleteDC\(\)
 Deletes all resources associated with a device context\.
 
 #### Comments
 
+In general, do not call this function; the destructor will do it for you\. 
 
-In general, do not call this function; the destructor will do it for you\.
-An application should not call DeleteDC if objects have been selected into the device context\. Objects must first be selected out of the device context before it it is deleted\.
-An application must not delete a device context whose handle was obtained by calling CWnd::GetDC\. Instead, it must call CWnd::ReleaseDC to free the device context\.
+An application should not call DeleteDC if objects have been selected into the device context\. Objects must first be selected out of the device context before it it is deleted\. 
+
+An application must not delete a device context whose handle was obtained by calling CWnd::GetDC\. Instead, it must call CWnd::ReleaseDC to free the device context\. 
+
 The DeleteDC function is generally used to delete device contexts created with CreateDC, CreateIC, or CreateCompatibleDC\.
 
-## [PyCDC](#pycdc)\.Draw3dRect
+
+## [PyCDC](PyCDC.md#pycdc)\.Draw3dRect
 
 Draw3dRect\(rect, colorTopLeft, colorBotRight\)
 Draws a three-dimensional rectangle\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom
 
@@ -618,10 +607,10 @@ Draws a three-dimensional rectangle\.
 
 #### MFC References
 
-
   - CDC::Draw3dRect
 
-## [PyCDC](#pycdc)\.DrawFocusRect
+
+## [PyCDC](PyCDC.md#pycdc)\.DrawFocusRect
 
 DrawFocusRect\(rect\)
 Draws a rectangle in the style used to 
@@ -629,7 +618,6 @@ Draws a rectangle in the style used to
 indicate the rectangle has focus
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -639,16 +627,15 @@ rectangle
 
 #### MFC References
 
-
   - CDC::DrawFocusRect
 
-## [PyCDC](#pycdc)\.DrawFrameControl
+
+## [PyCDC](PyCDC.md#pycdc)\.DrawFrameControl
 
 DrawFrameControl\(rect, typ, state\)
 Draws a frame control of the specified type and style\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -664,39 +651,39 @@ Draws a frame control of the specified type and style\.
 
 #### MFC References
 
-
   - CDC::DrawFrameControl
 
-## [PyCDC](#pycdc)\.DrawIcon
+
+## [PyCDC](PyCDC.md#pycdc)\.DrawIcon
 
 DrawIcon\(point, hIcon\)
 Draws an icon on the DC\.
 
 #### Parameters
 
-
   - point : \(x,y\)
 
     The point coordinate to draw to\.
 
-  - hIcon :[PyHANDLE](#pyhandle)
+  - hIcon : [PyHANDLE](PyHANDLE.md)
 
     The handle of the icon to draw\.
 
 #### MFC References
 
-
   - CDC::DrawIcon
 
-## [PyCDC](#pycdc)\.DrawText
 
+## [PyCDC](PyCDC.md#pycdc)\.DrawText
 
+s,rc,forat = DrawText\(s, tuple
 
-s,rc,forat =DrawText\(s, tuple, format\)
+, format
+
+\)
 Formats text in the given rectangle
 
 #### Parameters
-
 
   - s : string
 
@@ -708,7 +695,7 @@ Formats text in the given rectangle
 
 \(left, top, right, bottom\) expressed in logical units \(depending on 
 
-selected coordinate system - see[PyCDC::SetMapMode](PyCDC.md#pycdcsetmapmode)\)
+selected coordinate system - see [PyCDC::SetMapMode](PyCDC.md#pycdcsetmapmode)\)
 
   - format : int
 
@@ -720,6 +707,7 @@ the Microsoft Win32 API documentation\.
 
 #### Example
 Example
+
 import win32ui&ltnl&gt
 
  import win32con&ltnl&gt
@@ -755,11 +743,9 @@ import win32ui&ltnl&gt
      dc\.EndDoc\(\)&ltnl&gt
 
      del dc&ltnl&gt
+
 #### Return Value
 Height of text in pixels
-
-
-
 
 The return value is the height of the text, in logical units\. 
 
@@ -769,20 +755,19 @@ offset from rect\.top to the bottom of the drawn text\.
 
 If the function fails, the return value is zero \(no Python exception is thrown\)
 
-## [PyCDC](#pycdc)\.Ellipse
+
+## [PyCDC](PyCDC.md#pycdc)\.Ellipse
 
 Ellipse\(rect\)
 Draws an Ellipse\.
 
 #### Parameters
 
-
   - rect : \(left, top, right, bottom\)
 
     Specifies the ellipse's bounding rectangle
 
 #### Comments
-
 
 The center of the ellipse is the center of the bounding rectangle 
 
@@ -792,34 +777,36 @@ interior is filled with the current brush\.
 
 #### MFC References
 
-
   - CDC::Ellipse
 
 #### Return Value
 Always none\.  If the function fails, an exception is raised\.
 
-## [PyCDC](#pycdc)\.EndDoc
+
+## [PyCDC](PyCDC.md#pycdc)\.EndDoc
 
 EndDoc\(\)
 Finishes spooling the document and starts printing it
 
-## [PyCDC](#pycdc)\.EndPage
+
+## [PyCDC](PyCDC.md#pycdc)\.EndPage
 
 EndPage\(\)
 Finishes a page on a printer DC
 
-## [PyCDC](#pycdc)\.EndPath
+
+## [PyCDC](PyCDC.md#pycdc)\.EndPath
 
 EndPath\(\)
 Closes a path bracket and selects the path defined by the bracket into the specified device context
 
-## [PyCDC](#pycdc)\.ExtTextOut
+
+## [PyCDC](PyCDC.md#pycdc)\.ExtTextOut
 
 ExtTextOut\(int, int, int, rect, string, tuple\)
 Writes text to the DC\.
 
 #### Parameters
-
 
   - int : x
 
@@ -847,45 +834,44 @@ Writes text to the DC\.
 
 #### MFC References
 
-
   - CDC::ExtTextOut
 
 #### Return Value
 Always none\.  If the function fails, an exception is raised\.
 
-## [PyCDC](#pycdc)\.FillPath
+
+## [PyCDC](PyCDC.md#pycdc)\.FillPath
 
 FillPath\(\)
 Closes any open figures in the current path and fills the path's interior by using the current brush and polygon-filling mode\. After its interior is filled, the path is discarded from the device context\.
 
-## [PyCDC](#pycdc)\.FillRect
+
+## [PyCDC](PyCDC.md#pycdc)\.FillRect
 
 FillRect\(rect, brush\)
 Fills a given rectangle with the specified brush
 
 #### Parameters
 
-
   - rect : \(left, top, right, bottom
 
     Specifies the bounding rectangle, in logical units\.
 
-  - brush :[PyCBrush](#pycbrush)
+  - brush : [PyCBrush](PyCBrush.md)
 
     Specifies the brush to use\.
 
 #### MFC References
 
-
   - CDC::FillRect
 
-## [PyCDC](#pycdc)\.FillSolidRect
+
+## [PyCDC](PyCDC.md#pycdc)\.FillSolidRect
 
 FillSolidRect\(rect, color\)
 Fills the given rectangle with the specified solid color\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom
 
@@ -897,73 +883,64 @@ Fills the given rectangle with the specified solid color\.
 
 #### MFC References
 
-
   - CDC::FillSolidRect
 
-## [PyCDC](#pycdc)\.FrameRect
+
+## [PyCDC](PyCDC.md#pycdc)\.FrameRect
 
 FrameRect\(rect, brush\)
 Draws a border around the rectangle specified by rect
 
 #### Parameters
 
-
   - rect : \(left, top, right, bottom
 
     Specifies the bounding rectangle, in logical units\.
 
-  - brush :[PyCBrush](#pycbrush)
+  - brush : [PyCBrush](PyCBrush.md)
 
     Specifies the brush to use\.
 
 #### MFC References
 
-
   - CDC::FrameRect
 
-## [PyCDC](#pycdc)\.GetBrushOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.GetBrushOrg
 
-
-\(int,int\) =GetBrushOrg\(\)
+\(int,int\) = GetBrushOrg\(\)
 Retrieves the origin \(in device units\) of the brush currently selected for the device context\.
 
 #### MFC References
 
-
   - CDC::GetBrushOrg
 
-## [PyCDC](#pycdc)\.GetClipBox
 
+## [PyCDC](PyCDC.md#pycdc)\.GetClipBox
 
-
-\(left, top, right, bottom\) =GetClipBox\(\)
+\(left, top, right, bottom\) = GetClipBox\(\)
 Retrieves the dimensions of the smallest bounding rectangle around the current clipping boundary\.
 
 #### MFC References
-
 
   - CDC::GetClipBox
 
 #### Return Value
 A tuple of integers specifying the rectangle\.
 
-## [PyCDC](#pycdc)\.GetCurrentPosition
 
+## [PyCDC](PyCDC.md#pycdc)\.GetCurrentPosition
 
-
-\(x, y\) =GetCurrentPosition\(\)
+\(x, y\) = GetCurrentPosition\(\)
 Retrieves the current position \(in logical coordinates\)\.
 
-## [PyCDC](#pycdc)\.GetDeviceCaps
 
+## [PyCDC](PyCDC.md#pycdc)\.GetDeviceCaps
 
-
-int =GetDeviceCaps\(index\)
+int = GetDeviceCaps\(index\)
 Retrieves a capability of the device context\.
 
 #### Parameters
-
 
   - index : int
 
@@ -971,59 +948,52 @@ Retrieves a capability of the device context\.
 
 #### MFC References
 
-
   - CDC::GetDeviceCaps
 
 #### Return Value
 The value of the requested capability
 
-## [PyCDC](#pycdc)\.GetHandleAttrib
 
+## [PyCDC](PyCDC.md#pycdc)\.GetHandleAttrib
 
-
-int =GetHandleAttrib\(\)
+int = GetHandleAttrib\(\)
 Retrieves the handle of the attribute device context\.
 
-## [PyCDC](#pycdc)\.GetHandleOutput
 
+## [PyCDC](PyCDC.md#pycdc)\.GetHandleOutput
 
-
-int =GetHandleOutput\(\)
+int = GetHandleOutput\(\)
 Retrieves the handle of the output device context\.
 
-## [PyCDC](#pycdc)\.GetMapMode
 
+## [PyCDC](PyCDC.md#pycdc)\.GetMapMode
 
-
-int =GetMapMode\(\)
+int = GetMapMode\(\)
 Gets the mapping mode for the device context\.
 
 #### MFC References
 
-
   - CDC::GetMapMode
 
-## [PyCDC](#pycdc)\.GetNearestColor
 
+## [PyCDC](PyCDC.md#pycdc)\.GetNearestColor
 
-
-int =GetNearestColor\(color\)
+int = GetNearestColor\(color\)
 Returns the closest color a device can map\.
 
 #### Parameters
-
 
   - color : int
 
     Specifies the color to be matched\.
 
-## [PyCDC](#pycdc)\.GetPixel
+
+## [PyCDC](PyCDC.md#pycdc)\.GetPixel
 
 GetPixel\(x, y\)
 Gets a pixel at a local in a device context
 
 #### Parameters
-
 
   - x : int
 
@@ -1033,27 +1003,23 @@ Gets a pixel at a local in a device context
 
     Vertical coordinate\.
 
-## [PyCDC](#pycdc)\.GetSafeHdc
 
+## [PyCDC](PyCDC.md#pycdc)\.GetSafeHdc
 
-
-int =GetSafeHdc\(\)
+int = GetSafeHdc\(\)
 Returns the HDC of this DC object\.
 
 #### MFC References
 
-
   - CDC::GetSafeHdc
 
-## [PyCDC](#pycdc)\.GetTextExtent
 
+## [PyCDC](PyCDC.md#pycdc)\.GetTextExtent
 
-
-\(x,y\) =GetTextExtent\(text\)
+\(x,y\) = GetTextExtent\(text\)
 Calculates the width and height of a line of text using the current font to determine the dimensions\.
 
 #### Parameters
-
 
   - text : string
 
@@ -1061,18 +1027,16 @@ Calculates the width and height of a line of text using the current font to dete
 
 #### MFC References
 
-
   - CFC::GetTextExtent
 
 #### Return Value
 A tuple of integers with the size of the string, in logical units\.
 
-## [PyCDC](#pycdc)\.GetTextExtentPoint
 
+## [PyCDC](PyCDC.md#pycdc)\.GetTextExtentPoint
 
-
-\(x,y\) =GetTextExtentPoint\(text\)
-An alias for[PyCDC::GetTextExtent](PyCDC.md#pycdcgettextextent)\. 
+\(x,y\) = GetTextExtentPoint\(text\)
+An alias for [PyCDC::GetTextExtent](PyCDC.md#pycdcgettextextent)\. 
 
 GetTextExtentPoint is the preferred win32api name, but GetTextExtent is the MFC name\.
  
@@ -1081,7 +1045,6 @@ Calculates the width and height of a line of text using the current font to dete
 
 #### Parameters
 
-
   - text : string
 
     The text to calculate for\.
@@ -1089,27 +1052,23 @@ Calculates the width and height of a line of text using the current font to dete
 #### Return Value
 A tuple of integers with the size of the string, in logical units\.
 
-## [PyCDC](#pycdc)\.GetTextFace
 
+## [PyCDC](PyCDC.md#pycdc)\.GetTextFace
 
-
-string =GetTextFace\(\)
+string = GetTextFace\(\)
 Returns typeface name of the current font\.
 
 #### MFC References
 
-
   - CDC::GetTextFace
 
-## [PyCDC](#pycdc)\.GetTextMetrics
 
+## [PyCDC](PyCDC.md#pycdc)\.GetTextMetrics
 
-
-dict =GetTextMetrics\(\)
+dict = GetTextMetrics\(\)
 Retrieves the metrics for the current font in this device context\.
 
 #### MFC References
-
 
   - CDC::GetTextMetrics
 
@@ -1177,41 +1136,37 @@ tmDigitizedAspectX
 tmDigitizedAspectY
 
 
-## [PyCDC](#pycdc)\.GetViewportExt
 
+## [PyCDC](PyCDC.md#pycdc)\.GetViewportExt
 
-
-x, y =GetViewportExt\(\)
+x, y = GetViewportExt\(\)
 Gets the viewport extent of the device context
 
-## [PyCDC](#pycdc)\.GetViewportOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.GetViewportOrg
 
-
-x, y =GetViewportOrg\(\)
+x, y = GetViewportOrg\(\)
 Gets the viewport origin of the device context
 
-## [PyCDC](#pycdc)\.GetWindowExt
 
+## [PyCDC](PyCDC.md#pycdc)\.GetWindowExt
 
-
-x, y =GetWindowExt\(\)
+x, y = GetWindowExt\(\)
 Gets the window extent of the device context
 
-## [PyCDC](#pycdc)\.GetWindowOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.GetWindowOrg
 
-
-x, y =GetWindowOrg\(\)
+x, y = GetWindowOrg\(\)
 Retrieves the x- and y-coordinates of the origin of the window associated with the device context\.
 
-## [PyCDC](#pycdc)\.IntersectClipRect
+
+## [PyCDC](PyCDC.md#pycdc)\.IntersectClipRect
 
 IntersectClipRect\(rect\)
 Creates a new clipping region by forming the intersection of the current region and the rectangle specified
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -1219,35 +1174,30 @@ Creates a new clipping region by forming the intersection of the current region 
 
 #### MFC References
 
-
   - CDC::IntersectClipRect
 
 #### Return Value
 region type as integer
 
-## [PyCDC](#pycdc)\.IsPrinting
 
+## [PyCDC](PyCDC.md#pycdc)\.IsPrinting
 
-
-int =IsPrinting\(\)
+int = IsPrinting\(\)
 Returns 1 if the DC is currently printing, else 0
 
-## [PyCDC](#pycdc)\.LPtoDP
 
+## [PyCDC](PyCDC.md#pycdc)\.LPtoDP
 
-
-\(x,y\) =LPtoDP\(point\)
+\(x,y\) = LPtoDP\(point\)
 Converts logical units into device units\.
 
 #### Parameters
-
 
   - point : \(x,y\)
 
     The point coordinate to convert\.
 
 #### Alternative Parameters
-
 
   - x
 
@@ -1259,26 +1209,24 @@ Converts logical units into device units\.
 
 #### MFC References
 
-
   - CDC::LPtoDP
 
 #### Return Value
 The converted coordinates\.
 
-## [PyCDC](#pycdc)\.LineTo
+
+## [PyCDC](PyCDC.md#pycdc)\.LineTo
 
 LineTo\(point\)
 Draws a line to a specified point, using the currently selected pen\.
 
 #### Parameters
 
-
   - point : \(x,y\)
 
     The point coordinate to draw to\.
 
 #### Alternative Parameters
-
 
   - x
 
@@ -1290,25 +1238,21 @@ Draws a line to a specified point, using the currently selected pen\.
 
 #### MFC References
 
-
   - CDC::LineTo
 
-## [PyCDC](#pycdc)\.MoveTo
 
+## [PyCDC](PyCDC.md#pycdc)\.MoveTo
 
-
-\(x,y\) =MoveTo\(point\)
+\(x,y\) = MoveTo\(point\)
 Moves the current position to a specified point\.
 
 #### Parameters
-
 
   - point : \(x,y\)
 
     The point coordinate to move to\.
 
 #### Alternative Parameters
-
 
   - x
 
@@ -1320,21 +1264,18 @@ Moves the current position to a specified point\.
 
 #### MFC References
 
-
   - CDC::MoveTo
 
 #### Return Value
 The previous position\.
 
-## [PyCDC](#pycdc)\.OffsetViewportOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.OffsetViewportOrg
 
-
-x, y =OffsetViewportOrg\(x,y\)
+x, y = OffsetViewportOrg\(x,y\)
 Modifies the coordinates of the viewport origin relative to the coordinates of the current viewport origin
 
 #### Parameters
-
 
   - x,y : int, int
 
@@ -1343,15 +1284,13 @@ Modifies the coordinates of the viewport origin relative to the coordinates of t
 #### Return Value
 The previous viewport origin as a tuple \(x,y\)
 
-## [PyCDC](#pycdc)\.OffsetWindowOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.OffsetWindowOrg
 
-
-x, y =OffsetWindowOrg\(x,y\)
+x, y = OffsetWindowOrg\(x,y\)
 Modifies the coordinates of the window origin relative to the coordinates of the current window origin\.
 
 #### Parameters
-
 
   - x,y : int, int
 
@@ -1360,13 +1299,13 @@ Modifies the coordinates of the window origin relative to the coordinates of the
 #### Return Value
 The previous origin as a tuple \(x,y\)
 
-## [PyCDC](#pycdc)\.PatBlt
+
+## [PyCDC](PyCDC.md#pycdc)\.PatBlt
 
 PatBlt\(destPos, size, rop\)
 Creates a bit pattern on the device\.
 
 #### Parameters
-
 
   - destPos : \(x,y\)-ints
 
@@ -1382,16 +1321,15 @@ Creates a bit pattern on the device\.
 
 #### MFC References
 
-
   - CDC::BitBlt
 
-## [PyCDC](#pycdc)\.Pie
+
+## [PyCDC](PyCDC.md#pycdc)\.Pie
 
 Pie\(x1, y1, x2, y2, x3, y3, x4, y4\)
 Draws a pie slice in a device context
 
 #### Parameters
-
 
   - x1 : int
 
@@ -1425,33 +1363,34 @@ Draws a pie slice in a device context
 
     Y coordinate of ending point of arc
 
-## [PyCDC](#pycdc)\.PolyBezier
+
+## [PyCDC](PyCDC.md#pycdc)\.PolyBezier
 
 PolyBezier\(\)
 Draws one or more Bezier splines\.
 
-## [PyCDC](#pycdc)\.Polygon
+
+## [PyCDC](PyCDC.md#pycdc)\.Polygon
 
 Polygon\(\)
 Draws an Polygon\.
 
-## [PyCDC](#pycdc)\.Polyline
+
+## [PyCDC](PyCDC.md#pycdc)\.Polyline
 
 Polyline\(points\)
 Draws a Polyline\.
 
 #### Parameters
 
-
   - points : \[\(x, y\), \.\.\.\]
 
     A sequence of points
 
-## [PyCDC](#pycdc)\.RealizePalette
 
+## [PyCDC](PyCDC.md#pycdc)\.RealizePalette
 
-
-int =RealizePalette\(\)
+int = RealizePalette\(\)
 Maps palette entries in the current logical palette to the system palette\.
 
 #### Return Value
@@ -1463,15 +1402,13 @@ remapped to accommodate changes in the system palette since the logical palette
 
 was last realized\.
 
-## [PyCDC](#pycdc)\.RectVisible
 
+## [PyCDC](PyCDC.md#pycdc)\.RectVisible
 
-
-int =RectVisible\(rect\)
+int = RectVisible\(rect\)
 Determines whether any part of the given rectangle lies within the clipping region of the display context\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -1479,93 +1416,83 @@ Determines whether any part of the given rectangle lies within the clipping regi
 
 #### MFC References
 
-
   - CDC::RectVisible
 
 #### Return Value
 Non zero if any part of the rectangle lies within the clipping region, else zero\.
 
-## [PyCDC](#pycdc)\.Rectangle
 
+## [PyCDC](PyCDC.md#pycdc)\.Rectangle
 
-
-rc =Rectangle\(\)
+rc = Rectangle\(\)
 Draws a rectangle using the current pen\. The interior of the rectangle is filled using the current brush\.
 
-## [PyCDC](#pycdc)\.RestoreDC
+
+## [PyCDC](PyCDC.md#pycdc)\.RestoreDC
 
 RestoreDC\(saved\)
 Restores the state of the device context\.
 
 #### Parameters
 
-
   - saved : int
 
-    The id of a previously saved device context\.  See[PyCDC::SaveDC](PyCDC.md#pycdcsavedc)
+    The id of a previously saved device context\.  See [PyCDC::SaveDC](PyCDC.md#pycdcsavedc)
 
 #### MFC References
-
 
   - CDC::RestoreDC
 
-## [PyCDC](#pycdc)\.SaveDC
 
+## [PyCDC](PyCDC.md#pycdc)\.SaveDC
 
-
-int =SaveDC\(\)
+int = SaveDC\(\)
 Saves the current state of the device context\.  Windows manages a stack of state information\. 
 
-The saved device context can later be restored by usingCDC::RestoreDC
+The saved device context can later be restored by using CDC::RestoreDC
 
 #### MFC References
-
 
   - CDC::SaveDC
 
 #### Return Value
-An integer identifying the context, which can be used by[PyCDC::RestoreDC](PyCDC.md#pycdcrestoredc)\. 
+An integer identifying the context, which can be used by [PyCDC::RestoreDC](PyCDC.md#pycdcrestoredc)\. 
 
 An exception is raised if this function fails\.
 
-## [PyCDC](#pycdc)\.ScaleViewportExt
 
+## [PyCDC](PyCDC.md#pycdc)\.ScaleViewportExt
 
-
-x, y =ScaleViewportExt\(\)
+x, y = ScaleViewportExt\(\)
 Modifies the viewport extents relative to the current values\.
 
-## [PyCDC](#pycdc)\.ScaleWindowExt
 
+## [PyCDC](PyCDC.md#pycdc)\.ScaleWindowExt
 
-
-x, y =ScaleWindowExt\(\)
+x, y = ScaleWindowExt\(\)
 Modifies the window extents relative to the current values\.
 
-## [PyCDC](#pycdc)\.SelectClipRgn
 
+## [PyCDC](PyCDC.md#pycdc)\.SelectClipRgn
 
-
-obRgn =SelectClipRgn\(\)
+obRgn = SelectClipRgn\(\)
 Selects the given region as the current clipping region for the device context
 
 #### Return Value
 The return value specifies the region's complexity \(integer\)
 
-## [PyCDC](#pycdc)\.SelectObject
 
+## [PyCDC](PyCDC.md#pycdc)\.SelectObject
 
-
-object =SelectObject\(ob\)
+object = SelectObject\(ob\)
 Selects an object into the device context\.
  
 
-Currently, only[PyCFont](#pycfont),[PyCBitMap](#pycbitmap),[PyCBrush](#pycbrush) andPyCPen
+Currently, only [PyCFont](PyCFont.md), [PyCBitMap](PyCBitMap.md), [PyCBrush](PyCBrush.md) and PyCPen
 
  objects are supported\.
 
 #### Parameters
-
 
   - ob : object
 
@@ -1573,21 +1500,20 @@ Currently, only[PyCFont](#pycfont),[PyCBitMap](#pycbitmap),[PyCBrush](#pycbrush)
 
 #### MFC References
 
-
   - CDC::SelectObject
 
 #### Return Value
 The previously selected object\.  This will be the same type as the object parameter\.
 
-## [PyCDC](#pycdc)\.SelectPalette
 
+## [PyCDC](PyCDC.md#pycdc)\.SelectPalette
 
+int = SelectPalette\(hPalette, forceBackground
 
-int =SelectPalette\(hPalette, forceBackground\)
+\)
 Sets the logical palette\.
 
 #### Parameters
-
 
   - hPalette : int
 
@@ -1599,28 +1525,24 @@ Sets the logical palette\.
 
 #### MFC References
 
-
   - CDC::SelectePalette
 
 #### Return Value
 The previous palette handle\.
 
-## [PyCDC](#pycdc)\.SetBkColor
 
+## [PyCDC](PyCDC.md#pycdc)\.SetBkColor
 
-
-int =SetBkColor\(color\)
+int = SetBkColor\(color\)
 Sets the current background color to the specified color\.
 
 #### Parameters
-
 
   - color : int
 
     A windows color specification\.  See the win32api documentation for details\.
 
 #### Comments
-
 
 If the background mode is OPAQUE, the system uses the background color 
 
@@ -1634,21 +1556,18 @@ monochrome device contexts\.
 
 #### MFC References
 
-
   - CDC::SetBkColor
 
 #### Return Value
 The return value is the previous background color\.
 
-## [PyCDC](#pycdc)\.SetBkMode
 
+## [PyCDC](PyCDC.md#pycdc)\.SetBkMode
 
-
-int =SetBkMode\(mode\)
+int = SetBkMode\(mode\)
 Sets the current background mode to the specified mode\.
 
 #### Parameters
-
 
   - mode : int
 
@@ -1656,26 +1575,22 @@ Sets the current background mode to the specified mode\.
 
 #### Comments
 
-
 Specifies the mode to be set\.  This parameter can be either OPAQUE or TRANSPARENT
 
 #### MFC References
-
 
   - CDC::SetBkMode
 
 #### Return Value
 The return value is the previous background mode\.
 
-## [PyCDC](#pycdc)\.SetBrushOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.SetBrushOrg
 
-
-\(int, int\) =SetBrushOrg\(point\)
+\(int, int\) = SetBrushOrg\(point\)
 Specifies the origin that GDI will assign to the next brush that the application selects into the device context\.
 
 #### Parameters
-
 
   - point : \(x,y\)
 
@@ -1683,35 +1598,30 @@ Specifies the origin that GDI will assign to the next brush that the application
 
 #### MFC References
 
-
   - CDC::SetBrushOrg
 
 #### Return Value
 The previous origin in device units\.
 
-## [PyCDC](#pycdc)\.SetGraphicsMode
 
+## [PyCDC](PyCDC.md#pycdc)\.SetGraphicsMode
 
-
-int =SetGraphicsMode\(mode\)
+int = SetGraphicsMode\(mode\)
 Sets the graphics mode for the specified device context
 
 #### Parameters
-
 
   - mode : int
 
     The new mode\.
 
-## [PyCDC](#pycdc)\.SetMapMode
 
+## [PyCDC](PyCDC.md#pycdc)\.SetMapMode
 
-
-int =SetMapMode\(newMode\)
+int = SetMapMode\(newMode\)
 Sets the mapping mode for the device context\.
 
 #### Parameters
-
 
   - newMode : int
 
@@ -1721,19 +1631,18 @@ MM\_ANISOTROPIC, MM\_HIENGLISH, MM\_HIMETRIC, MM\_ISOTROPIC, MM\_LOENGLISH, MM\_
 
 #### MFC References
 
-
   - CDC::SetMapMode
 
 #### Return Value
 The previous mapping mode\.
 
-## [PyCDC](#pycdc)\.SetPixel
+
+## [PyCDC](PyCDC.md#pycdc)\.SetPixel
 
 SetPixel\(x, y, color\)
 Sets a pixel in a device context
 
 #### Parameters
-
 
   - x : int
 
@@ -1747,15 +1656,13 @@ Sets a pixel in a device context
 
     The brush color\.
 
-## [PyCDC](#pycdc)\.SetPolyFillMode
 
+## [PyCDC](PyCDC.md#pycdc)\.SetPolyFillMode
 
-
-\(int\) =SetPolyFillMode\(point\)
+\(int\) = SetPolyFillMode\(point\)
 Sets the polygon-filling mode\.
 
 #### Parameters
-
 
   - point : \(x,y\)
 
@@ -1763,26 +1670,20 @@ Sets the polygon-filling mode\.
 
 #### MFC References
 
-
   - CDC::SetPolyFillMode
 
 #### Return Value
 The previous PolyFillMode as integer
 
-
-
-
 The previous PolyFillMode\.
 
-## [PyCDC](#pycdc)\.SetROP2
 
+## [PyCDC](PyCDC.md#pycdc)\.SetROP2
 
-
-dict =SetROP2\(mode\)
+dict = SetROP2\(mode\)
 Sets the current drawing mode\.
 
 #### Parameters
-
 
   - mode : int
 
@@ -1790,18 +1691,15 @@ Sets the current drawing mode\.
 
 #### MFC References
 
-
   - CDC::SetROP2
 
-## [PyCDC](#pycdc)\.SetTextAlign
 
+## [PyCDC](PyCDC.md#pycdc)\.SetTextAlign
 
-
-int =SetTextAlign\(newFlags\)
+int = SetTextAlign\(newFlags\)
 Sets the text-alignment flags\.
 
 #### Parameters
-
 
   - newFlags : int
 
@@ -1812,28 +1710,24 @@ The default is TA\_LEFT|TA\_TOP|TA\_NOUPDATECP
 
 #### MFC References
 
-
   - CDC::SetTextAlign
 
 #### Return Value
 The old alignment flags\.
 
-## [PyCDC](#pycdc)\.SetTextColor
 
+## [PyCDC](PyCDC.md#pycdc)\.SetTextColor
 
-
-int =SetTextColor\(color\)
+int = SetTextColor\(color\)
 Sets the text color to the specified color\.
 
 #### Parameters
-
 
   - color : int
 
     A windows color specification\.  See the win32api documentation for details\.
 
 #### Comments
-
 
 This text color is used when writing text to this device context and also when converting bitmaps between color and monochrome device contexts\. 
 
@@ -1843,57 +1737,49 @@ The background color for a character is specified by the SetBkColor and SetBkMod
 
 #### MFC References
 
-
   - CDC::SetTextColor
 
 #### Return Value
 The return value is the previous text color\.
 
-## [PyCDC](#pycdc)\.SetViewportExt
 
+## [PyCDC](PyCDC.md#pycdc)\.SetViewportExt
 
-
-\(x,y\) =SetViewportExt\(size\)
+\(x,y\) = SetViewportExt\(size\)
 Sets the x,y extents of the viewport of the device context\.
 
 #### Parameters
-
 
   - size : \(x,y\)
 
     The new size\.
 
 #### MFC References
-
 
   - CDC::SetViewportExt
 
 #### Return Value
 The previous extents of the viewport \(in logical units\)\.
 
-## [PyCDC](#pycdc)\.SetViewportOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.SetViewportOrg
 
-
-x, y =SetViewportOrg\(x,y\)
+x, y = SetViewportOrg\(x,y\)
 Sets the viewport origin of the device context
 
 #### Parameters
-
 
   - x,y : int, int
 
     The new origin\.
 
-## [PyCDC](#pycdc)\.SetWindowExt
 
+## [PyCDC](PyCDC.md#pycdc)\.SetWindowExt
 
-
-\(x,y\) =SetWindowExt\(size\)
+\(x,y\) = SetWindowExt\(size\)
 Sets the x,y extents of the window associated with the device context\.
 
 #### Parameters
-
 
   - size : \(x,y\)
 
@@ -1901,40 +1787,36 @@ Sets the x,y extents of the window associated with the device context\.
 
 #### MFC References
 
-
   - CDC::SetWindowExt
 
 #### Return Value
 The previous extents of the window \(in logical units\)\.
 
-## [PyCDC](#pycdc)\.SetWindowOrg
 
+## [PyCDC](PyCDC.md#pycdc)\.SetWindowOrg
 
-
-x, y =SetWindowOrg\(x,y\)
+x, y = SetWindowOrg\(x,y\)
 Sets the window origin of the device context
 
 #### Parameters
-
 
   - x,y : int, int
 
     The new origin\.
 
-## [PyCDC](#pycdc)\.SetWorldTransform
 
+## [PyCDC](PyCDC.md#pycdc)\.SetWorldTransform
 
-
-int =SetWorldTransform\(\)
+int = SetWorldTransform\(\)
 sets a two-dimensional linear transformation between world space and page space for the specified device context\. This transformation can be used to scale, rotate, shear, or translate graphics output\.
 
-## [PyCDC](#pycdc)\.StartDoc
+
+## [PyCDC](PyCDC.md#pycdc)\.StartDoc
 
 StartDoc\(docName, outputFile\)
 Starts spooling a document to a printer DC
 
 #### Parameters
-
 
   - docName : string
 
@@ -1944,18 +1826,19 @@ Starts spooling a document to a printer DC
 
     The output file name\. Use this to spool to a file\. Omit to send to the printer\.
 
-## [PyCDC](#pycdc)\.StartPage
+
+## [PyCDC](PyCDC.md#pycdc)\.StartPage
 
 StartPage\(\)
 Starts a new page on a printer DC
 
-## [PyCDC](#pycdc)\.StretchBlt
+
+## [PyCDC](PyCDC.md#pycdc)\.StretchBlt
 
 StretchBlt\(destPos, size, dc, srcPos, size, rop\)
 Copies a bitmap from the source device context to this device context\.
 
 #### Parameters
-
 
   - destPos : \(x,y\)-ints
 
@@ -1965,7 +1848,7 @@ Copies a bitmap from the source device context to this device context\.
 
     Specifies the width and height \(in logical units\) of the destination rectangle and source bitmap\.
 
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md#pycdc)
 
     Specifies the PyCDC object from which the bitmap will be copied\. It must be None if rop specifies a raster operation that does not include a source\.
 
@@ -1983,26 +1866,27 @@ Copies a bitmap from the source device context to this device context\.
 
 #### MFC References
 
-
   - CDC::StretchBlt
 
-## [PyCDC](#pycdc)\.StrokeAndFillPath
+
+## [PyCDC](PyCDC.md#pycdc)\.StrokeAndFillPath
 
 StrokeAndFillPath\(\)
 Closes any open figures in a path, strokes the outline of the path by using the current pen, and fills its interior by using the current brush\. The device context must contain a closed path\.
 
-## [PyCDC](#pycdc)\.StrokePath
+
+## [PyCDC](PyCDC.md#pycdc)\.StrokePath
 
 StrokePath\(\)
 Renders the specified path by using the current pen\.
 
-## [PyCDC](#pycdc)\.TextOut
+
+## [PyCDC](PyCDC.md#pycdc)\.TextOut
 
 TextOut\(int, int, string\)
 Outputs text to the display context, using the currently selected font\.
 
 #### Parameters
-
 
   - int : x
 
@@ -2017,7 +1901,6 @@ Outputs text to the display context, using the currently selected font\.
     The text to write\.
 
 #### MFC References
-
 
   - CDC::TextOut
 

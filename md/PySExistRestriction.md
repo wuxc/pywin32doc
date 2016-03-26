@@ -1,11 +1,9 @@
 # PySExistRestriction
 
+
 ## PySExistRestriction Object
 
-
-
 #### Parameters
-
 
   - propTag : ULONG
 

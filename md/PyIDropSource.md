@@ -1,13 +1,11 @@
 # PyIDropSource
 
+
 ## PyIDropSource Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [QueryContinueDrag](PyIDropSource.md#pyidropsourcequerycontinuedrag)
 
@@ -17,25 +15,25 @@ Description of the interface
 
     Description of GiveFeedback&nbsp;
 
-## [PyIDropSource](#pyidropsource)\.GiveFeedback
+
+## [PyIDropSource](PyIDropSource.md#pyidropsource)\.GiveFeedback
 
 GiveFeedback\(dwEffect\)
 Description of GiveFeedback\.
 
 #### Parameters
 
-
   - dwEffect : int
 
     Description for dwEffect
 
-## [PyIDropSource](#pyidropsource)\.QueryContinueDrag
+
+## [PyIDropSource](PyIDropSource.md#pyidropsource)\.QueryContinueDrag
 
 QueryContinueDrag\(fEscapePressed, grfKeyState\)
 Description of QueryContinueDrag\.
 
 #### Parameters
-
 
   - fEscapePressed : int
 

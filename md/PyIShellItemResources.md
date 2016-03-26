@@ -1,13 +1,11 @@
 # PyIShellItemResources
 
+
 ## PyIShellItemResources Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetAttributes](PyIShellItemResources.md#pyishellitemresourcesgetattributes)
 
@@ -49,109 +47,112 @@ Description of the interface
 
     Description of MarkForDelete&nbsp;
 
-## [PyIShellItemResources](#pyishellitemresources)\.CreateResource
 
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.CreateResource
 
+interface = CreateResource\(sir, riid
 
-interface =CreateResource\(sir, riid\)
+\)
 Description of CreateResource\.
 
 #### Parameters
 
-
-  - sir :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
+  - sir : [PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Resource identifier
 
-  - riid :[PyIID](#pyiid)
+  - riid : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIShellItemResources](#pyishellitemresources)\.EnumResources
 
-[PyIEnumResources](#pyienumresources) =EnumResources\(\)
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.EnumResources
+
+[PyIEnumResources](PyIEnumResources.md) = EnumResources\(\)
 Description of EnumResources\.
 
-## [PyIShellItemResources](#pyishellitemresources)\.GetAttributes
+
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.GetAttributes
 
 GetAttributes\(\)
 Description of GetAttributes\.
 
-## [PyIShellItemResources](#pyishellitemresources)\.GetResourceDescription
+
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.GetResourceDescription
 
 GetResourceDescription\(pcsir\)
 Description of GetResourceDescription\.
 
 #### Parameters
 
-
-  - pcsir :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
+  - pcsir : [PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Description for pcsir
 
-## [PyIShellItemResources](#pyishellitemresources)\.GetSize
 
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.GetSize
 
-
-int =GetSize\(\)
+int = GetSize\(\)
 Description of GetSize\.
 
-## [PyIShellItemResources](#pyishellitemresources)\.GetTimes
+
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.GetTimes
 
 GetTimes\(\)
 Description of GetTimes\.
 
-## [PyIShellItemResources](#pyishellitemresources)\.MarkForDelete
+
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.MarkForDelete
 
 MarkForDelete\(\)
 Description of MarkForDelete\.
 
-## [PyIShellItemResources](#pyishellitemresources)\.OpenResource
 
-[PyIUnknown](#pyiunknown) =OpenResource\(pcsir, riid\)
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.OpenResource
+
+[PyIUnknown](PyIUnknown.md) = OpenResource\(pcsir, riid
+
+\)
 Description of OpenResource\.
 
 #### Parameters
 
-
-  - pcsir :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
+  - pcsir : [PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Description for pcsir
 
-  - riid :[PyIID](#pyiid)
+  - riid : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIShellItemResources](#pyishellitemresources)\.SetTimes
+
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.SetTimes
 
 SetTimes\(pftCreation, pftWrite, pftAccess\)
 Description of SetTimes\.
 
 #### Parameters
 
-
-  - pftCreation :[PyTime](#pytime)
+  - pftCreation : [PyTime](PyTime.md)
 
     Description for pftCreation
 
-  - pftWrite :[PyTime](#pytime)
+  - pftWrite : [PyTime](PyTime.md)
 
     Description for pftWrite
 
-  - pftAccess :[PyTime](#pytime)
+  - pftAccess : [PyTime](PyTime.md)
 
     Description for pftAccess
 
-## [PyIShellItemResources](#pyishellitemresources)\.SupportsResource
 
+## [PyIShellItemResources](PyIShellItemResources.md#pyishellitemresources)\.SupportsResource
 
-
-boolean =SupportsResource\(pcsir\)
+boolean = SupportsResource\(pcsir\)
 Description of SupportsResource\.
 
 #### Parameters
 
-
-  - pcsir :[PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
+  - pcsir : [PySHELL\_ITEM\_RESOURCE](PySHELL.md#pyshellitem_resource)
 
     Description for pcsir

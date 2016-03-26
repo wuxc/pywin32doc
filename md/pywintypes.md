@@ -1,13 +1,11 @@
 # pywintypes
 
+
 ## Module pywintypes
-
-
 
 A module which supports common Windows types\.
 
 #### Methods
-
 
   - [DosDateTimeToTime](pywintypes.md#pywintypesdosdatetimetotime)
 
@@ -15,11 +13,11 @@ A module which supports common Windows types\.
 
   - [Unicode](pywintypes.md#pywintypesunicode)
 
-    Creates a new[PyUnicode](#pyunicode) object&nbsp;
+    Creates a new [PyUnicode](PyUnicode.md) object&nbsp;
 
   - [UnicodeFromRaw](pywintypes.md#pywintypesunicodefromraw)
 
-    Creates a new[PyUnicode](#pyunicode) object from raw binary data&nbsp;
+    Creates a new [PyUnicode](PyUnicode.md) object from raw binary data&nbsp;
 
   - [IsTextUnicode](pywintypes.md#pywintypesistextunicode)
 
@@ -27,15 +25,15 @@ A module which supports common Windows types\.
 
   - [OVERLAPPED](pywintypes.md#pywintypesoverlapped)
 
-    Creates a new[PyOVERLAPPED](#pyoverlapped) object&nbsp;
+    Creates a new [PyOVERLAPPED](PyOVERLAPPED.md) object&nbsp;
 
   - [IID](pywintypes.md#pywintypesiid)
 
-    Makes an[PyIID](#pyiid) object from a string\.&nbsp;
+    Makes an [PyIID](PyIID.md) object from a string\.&nbsp;
 
   - [Time](pywintypes.md#pywintypestime)
 
-    Makes a[PyTime](#pytime) object from the argument\.&nbsp;
+    Makes a [PyTime](PyTime.md) object from the argument\.&nbsp;
 
   - [CreateGuid](pywintypes.md#pywintypescreateguid)
 
@@ -45,73 +43,79 @@ MS\_WINCE&nbsp;
 
   - [ACL](pywintypes.md#pywintypesacl)
 
-    Creates a new[PyACL](#pyacl) object\.&nbsp;
+    Creates a new [PyACL](PyACL.md) object\.&nbsp;
 
   - [SID](pywintypes.md#pywintypessid)
 
-    Creates a new[PySID](#pysid) object\.&nbsp;
+    Creates a new [PySID](PySID.md) object\.&nbsp;
 
   - [SECURITY\_ATTRIBUTES](pywintypes.md#pywintypessecurity_attributes)
 
-    Creates a new[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes) object\.&nbsp;
+    Creates a new [PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes) object\.&nbsp;
 
   - [SECURITY\_DESCRIPTOR](pywintypes.md#pywintypessecurity_descriptor)
 
-    Creates a new[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor) object\. 
+    Creates a new [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor) object\. 
 
 NO\_PYWINTYPES\_SECURITY&nbsp;
 
   - [HANDLE](pywintypes.md#pywintypeshandle)
 
-    Creates a new[PyHANDLE](#pyhandle) object\.&nbsp;
+    Creates a new [PyHANDLE](PyHANDLE.md) object\.&nbsp;
 
   - [HKEY](pywintypes.md#pywintypeshkey)
 
-    Creates a new[PyHKEY](#pyhkey) object\.&nbsp;
+    Creates a new [PyHKEY](PyHKEY.md) object\.&nbsp;
 
   - [WAVEFORMATEX](pywintypes.md#pywintypeswaveformatex)
 
-    Creates a new[PyWAVEFORMATEX](#pywaveformatex) object\.&nbsp;
+    Creates a new [PyWAVEFORMATEX](PyWAVEFORMATEX.md) object\.&nbsp;
 
-## [pywintypes](#pywintypes)\.ACL
 
-[PyACL](#pyacl) =ACL\(bufSize\)
+## [pywintypes](pywintypes.md#pywintypes)\.ACL
+
+[PyACL](PyACL.md) = ACL\(bufSize\)
 Creates a new ACL object
 
 #### Parameters
-
 
   - bufSize=64 : int
 
     The size for the ACL\.
 
-## [pywintypes](#pywintypes)\.CreateGuid
 
-[PyIID](#pyiid) =CreateGuid\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.CreateGuid
+
+[PyIID](PyIID.md) = CreateGuid\(\)
 Creates a new, unique GUIID\.
 
-## [pywintypes](#pywintypes)\.DosDateTimeToTime
 
-[PyTime](#pytime) =DosDateTimeToTime\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.DosDateTimeToTime
+
+[PyTime](PyTime.md) = DosDateTimeToTime\(\)
 Converts an MS-DOS Date/Time to a standard Time object\.
 
-## [pywintypes](#pywintypes)\.HANDLE
 
-[PyHANDLE](#pyhandle) =HANDLE\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.HANDLE
+
+[PyHANDLE](PyHANDLE.md) = HANDLE\(\)
 Creates a new HANDLE object
 
-## [pywintypes](#pywintypes)\.HKEY
 
-[PyHKEY](#pyhkey) =HKEY\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.HKEY
+
+[PyHKEY](PyHKEY.md) = HKEY\(\)
 Creates a new HKEY object
 
-## [pywintypes](#pywintypes)\.IID
 
-[PyIID](#pyiid) =IID\(iidString, is\_bytes\)
+## [pywintypes](pywintypes.md#pywintypes)\.IID
+
+[PyIID](PyIID.md) = IID\(iidString, is\_bytes
+
+\)
 Creates a new IID object
 
 #### Parameters
-
 
   - iidString : string/Unicode
 
@@ -121,15 +125,15 @@ Creates a new IID object
 
     Indicates if the first param is actually the bytes of an IID structure\.
 
-## [pywintypes](#pywintypes)\.IsTextUnicode
 
+## [pywintypes](pywintypes.md#pywintypes)\.IsTextUnicode
 
+int, int = IsTextUnicode\(str, flags
 
-int, int =IsTextUnicode\(str, flags\)
+\)
 Determines whether a buffer probably contains a form of Unicode text\.
 
 #### Parameters
-
 
   - str : string
 
@@ -140,40 +144,45 @@ Determines whether a buffer probably contains a form of Unicode text\.
     Determines the specific tests to make
 
 #### Return Value
-The function returns \(result, flags\), both integers\.
-result is nonzero if the data in the buffer passes the specified tests\.
-result is zero if the data in the buffer does not pass the specified tests\.
+The function returns \(result, flags\), both integers\. 
+
+result is nonzero if the data in the buffer passes the specified tests\. 
+
+result is zero if the data in the buffer does not pass the specified tests\. 
+
 In either case, flags contains the results of the specific tests the function applied to make its determination\.
 
-## [pywintypes](#pywintypes)\.OVERLAPPED
 
-[PyOVERLAPPED](#pyoverlapped) =OVERLAPPED\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.OVERLAPPED
+
+[PyOVERLAPPED](PyOVERLAPPED.md) = OVERLAPPED\(\)
 Creates a new OVERLAPPED object
 
-## [pywintypes](#pywintypes)\.SECURITY\_ATTRIBUTES
 
-[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes) =SECURITY\_ATTRIBUTES\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.SECURITY\_ATTRIBUTES
+
+[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes) = SECURITY\_ATTRIBUTES\(\)
 Creates a new SECURITY\_ATTRIBUTES object
 
-## [pywintypes](#pywintypes)\.SECURITY\_DESCRIPTOR
 
-[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor) =SECURITY\_DESCRIPTOR\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.SECURITY\_DESCRIPTOR
+
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor) = SECURITY\_DESCRIPTOR\(\)
 Creates a new SECURITY\_DESCRIPTOR object
 
 #### Alternative Parameters
-
 
   - data
 
     A buffer \(eg, a string\) with the raw bytes for the security descriptor\.
 
-## [pywintypes](#pywintypes)\.SID
 
-[PySID](#pysid) =SID\(bufSize\)
+## [pywintypes](pywintypes.md#pywintypes)\.SID
+
+[PySID](PySID.md) = SID\(bufSize\)
 Creates a new SID object
 
 #### Parameters
-
 
   - bufSize=32 : int
 
@@ -181,13 +190,11 @@ Creates a new SID object
 
 #### Alternative Parameters
 
-
   - buffer
 
     A raw data buffer, assumed to hold the SID data\.
 
 #### Alternative Parameters
-
 
   - idAuthority
 
@@ -197,13 +204,13 @@ Creates a new SID object
 
     A list of sub authorities\.
 
-## [pywintypes](#pywintypes)\.Time
 
-[PyTime](#pytime) =Time\(timeRepr\)
+## [pywintypes](pywintypes.md#pywintypes)\.Time
+
+[PyTime](PyTime.md) = Time\(timeRepr\)
 Creates a new time object\.
 
 #### Parameters
-
 
   - timeRepr : object
 
@@ -211,32 +218,34 @@ Creates a new time object\.
 
 #### Comments
 
-
 Note that the parameter can be any object that supports 
 
-int\(object\) - for example , another PyTime object\.
+int\(object\) - for example , another PyTime object\. 
+
 The integer should be as defined by the Python time module\. 
 
-See the description of the[PyTime](#pytime) object for more information\.
+See the description of the [PyTime](PyTime.md) object for more information\.
 
-## [pywintypes](#pywintypes)\.Unicode
 
-[PyUnicode](#pyunicode) =Unicode\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.Unicode
+
+[PyUnicode](PyUnicode.md) = Unicode\(\)
 Creates a new Unicode object
 
-## [pywintypes](#pywintypes)\.UnicodeFromRaw
 
-[PyUnicode](#pyunicode) =UnicodeFromRaw\(str\)
+## [pywintypes](pywintypes.md#pywintypes)\.UnicodeFromRaw
+
+[PyUnicode](PyUnicode.md) = UnicodeFromRaw\(str\)
 Creates a new Unicode object from raw binary data
 
 #### Parameters
-
 
   - str : string/buffer
 
     The string containing the binary data\.
 
-## [pywintypes](#pywintypes)\.WAVEFORMATEX
 
-[PyWAVEFORMATEX](#pywaveformatex) =WAVEFORMATEX\(\)
+## [pywintypes](pywintypes.md#pywintypes)\.WAVEFORMATEX
+
+[PyWAVEFORMATEX](PyWAVEFORMATEX.md) = WAVEFORMATEX\(\)
 Creates a new WAVEFORMATEX object

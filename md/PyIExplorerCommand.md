@@ -1,13 +1,11 @@
 # PyIExplorerCommand
 
+
 ## PyIExplorerCommand Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetTitle](PyIExplorerCommand.md#pyiexplorercommandgettitle)
 
@@ -41,48 +39,47 @@ Description of the interface
 
     Description of EnumSubCommands&nbsp;
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.EnumSubCommands
 
-[PyIEnumExplorerCommand](#pyienumexplorercommand) =EnumSubCommands\(\)
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.EnumSubCommands
+
+[PyIEnumExplorerCommand](PyIEnumExplorerCommand.md) = EnumSubCommands\(\)
 Description of EnumSubCommands\.
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.GetCanonicalName
 
-[PyIID](#pyiid) =GetCanonicalName\(\)
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.GetCanonicalName
+
+[PyIID](PyIID.md) = GetCanonicalName\(\)
 Description of GetCanonicalName\.
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.GetFlags
 
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.GetFlags
 
-
-int =GetFlags\(\)
+int = GetFlags\(\)
 Description of GetFlags\.
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.GetIcon
 
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.GetIcon
 
-
-unicode =GetIcon\(psiItemArray\)
+unicode = GetIcon\(psiItemArray\)
 Description of GetIcon\.
 
 #### Parameters
 
-
-  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray : [PyIShellItemArray](PyIShellItemArray.md)
 
     Description for psiItemArray
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.GetState
 
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.GetState
 
+int = GetState\(psiItemArray, fOkToBeSlow
 
-int =GetState\(psiItemArray, fOkToBeSlow\)
+\)
 Description of GetState\.
 
 #### Parameters
 
-
-  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray : [PyIShellItemArray](PyIShellItemArray.md)
 
     Description for psiItemArray
 
@@ -90,46 +87,42 @@ Description of GetState\.
 
     Description for fOkToBeSlow
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.GetTitle
 
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.GetTitle
 
-
-unicode =GetTitle\(psiItemArray\)
+unicode = GetTitle\(psiItemArray\)
 Description of GetTitle\.
 
 #### Parameters
 
-
-  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray : [PyIShellItemArray](PyIShellItemArray.md)
 
     Description for psiItemArray
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.GetToolTip
 
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.GetToolTip
 
-
-unicode =GetToolTip\(psiItemArray\)
+unicode = GetToolTip\(psiItemArray\)
 Description of GetToolTip\.
 
 #### Parameters
 
-
-  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray : [PyIShellItemArray](PyIShellItemArray.md)
 
     Description for psiItemArray
 
-## [PyIExplorerCommand](#pyiexplorercommand)\.Invoke
+
+## [PyIExplorerCommand](PyIExplorerCommand.md#pyiexplorercommand)\.Invoke
 
 Invoke\(psiItemArray, pbc\)
 Description of Invoke\.
 
 #### Parameters
 
-
-  - psiItemArray :[PyIShellItemArray](#pyishellitemarray)
+  - psiItemArray : [PyIShellItemArray](PyIShellItemArray.md)
 
     Description for psiItemArray
 
-  - pbc :[PyIBindCtx](#pyibindctx)
+  - pbc : [PyIBindCtx](PyIBindCtx.md)
 
     Description for pbc

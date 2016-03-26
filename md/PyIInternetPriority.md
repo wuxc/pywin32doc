@@ -1,13 +1,11 @@
 # PyIInternetPriority
 
+
 ## PyIInternetPriority Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [SetPriority](PyIInternetPriority.md#pyiinternetprioritysetpriority)
 
@@ -17,18 +15,19 @@ Description of the interface
 
     Description of GetPriority&nbsp;
 
-## [PyIInternetPriority](#pyiinternetpriority)\.GetPriority
+
+## [PyIInternetPriority](PyIInternetPriority.md#pyiinternetpriority)\.GetPriority
 
 GetPriority\(\)
 Description of GetPriority\.
 
-## [PyIInternetPriority](#pyiinternetpriority)\.SetPriority
+
+## [PyIInternetPriority](PyIInternetPriority.md#pyiinternetpriority)\.SetPriority
 
 SetPriority\(nPriority\)
 Description of SetPriority\.
 
 #### Parameters
-
 
   - nPriority : int
 

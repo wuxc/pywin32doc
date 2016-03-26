@@ -1,18 +1,17 @@
 # PyCtxtHandle
 
+
 ## PyCtxtHandle Object
-
-
 
 Security context handle, as used with sspi functions
 
 #### Comments
 
+Create using win32security\.PyCtxtHandleType\(\)\.  The handle must be initialized by passing it to 
 
-Create using win32security\.PyCtxtHandleType\(\)\.  The handle must be initialized by passing it to[win32security::InitializeSecurityContext](win32security.md#win32securityinitializesecuritycontext) or[win32security::AcceptSecurityContext](win32security.md#win32securityacceptsecuritycontext)
+[win32security::InitializeSecurityContext](win32security.md#win32securityinitializesecuritycontext) or [win32security::AcceptSecurityContext](win32security.md#win32securityacceptsecuritycontext)
 
 #### Methods
-
 
   - [Detach](PyCtxtHandle.md#pyctxthandledetach)
 
@@ -40,7 +39,7 @@ Create using win32security\.PyCtxtHandleType\(\)\.  The handle must be initializ
 
   - [VerifySignature](PyCtxtHandle.md#pyctxthandleverifysignature)
 
-    Verifies  a signature created using[PyCtxtHandle::MakeSignature](PyCtxtHandle.md#pyctxthandlemakesignature)&nbsp;
+    Verifies  a signature created using [PyCtxtHandle::MakeSignature](PyCtxtHandle.md#pyctxthandlemakesignature)&nbsp;
 
   - [EncryptMessage](PyCtxtHandle.md#pyctxthandleencryptmessage)
 
@@ -48,7 +47,7 @@ Create using win32security\.PyCtxtHandleType\(\)\.  The handle must be initializ
 
   - [DecryptMessage](PyCtxtHandle.md#pyctxthandledecryptmessage)
 
-    Decrypts data encrypted by[PyCtxtHandle::EncryptMessage](PyCtxtHandle.md#pyctxthandleencryptmessage)&nbsp;
+    Decrypts data encrypted by [PyCtxtHandle::EncryptMessage](PyCtxtHandle.md#pyctxthandleencryptmessage)&nbsp;
 
   - [ImpersonateSecurityContext](PyCtxtHandle.md#pyctxthandleimpersonatesecuritycontext)
 
@@ -56,45 +55,43 @@ Create using win32security\.PyCtxtHandleType\(\)\.  The handle must be initializ
 
   - [RevertSecurityContext](PyCtxtHandle.md#pyctxthandlerevertsecuritycontext)
 
-    Stops impersonation of a client initiated by[PyCtxtHandle::ImpersonateSecurityContext](PyCtxtHandle.md#pyctxthandleimpersonatesecuritycontext)&nbsp;
+    Stops impersonation of a client initiated by [PyCtxtHandle::ImpersonateSecurityContext](PyCtxtHandle.md#pyctxthandleimpersonatesecuritycontext)&nbsp;
 
-## [PyCtxtHandle](#pyctxthandle)\.CompleteAuthToken
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.CompleteAuthToken
 
 CompleteAuthToken\(Token\)
 Completes the authentication token
 
 #### Parameters
 
-
-  - Token :[PySecBufferDesc](#pysecbufferdesc)
+  - Token : [PySecBufferDesc](PySecBufferDesc.md)
 
     The buffer that contains the token buffer used when the context was initialized
 
 #### Comments
 
-
 This method should be invoked on a context handle if the InitializeSecurityContext call that created it 
 
 returned SEC\_I\_COMPLETE\_NEEDED or SEC\_I\_COMPLETE\_AND\_CONTINUE
 
-## [PyCtxtHandle](#pyctxthandle)\.DecryptMessage
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.DecryptMessage
 
 DecryptMessage\(Message, MessageSeqNo\)
-Decrypts data produced by[PyCtxtHandle::EncryptMessage](PyCtxtHandle.md#pyctxthandleencryptmessage)
+Decrypts data produced by [PyCtxtHandle::EncryptMessage](PyCtxtHandle.md#pyctxthandleencryptmessage)
 
 #### Parameters
 
+  - Message : [PySecBufferDesc](PySecBufferDesc.md)
 
-  - Message :[PySecBufferDesc](#pysecbufferdesc)
-
-    [PySecBufferDesc](#pysecbufferdesc) containing data buffers to be decrypted
+    [PySecBufferDesc](PySecBufferDesc.md) containing data buffers to be decrypted
 
   - MessageSeqNo : int
 
     A sequential number used by some packages to verify that no extraneous messages have been received
 
 #### Comments
-
 
 The buffer configuration is dependent on the security package\.  Usually there is one buffer 
 
@@ -107,45 +104,43 @@ in first buffer
 #### Return Value
 Returns flags specfic to security package indicating quality of protection
 
-## [PyCtxtHandle](#pyctxthandle)\.DeleteSecurityContext
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.DeleteSecurityContext
 
 DeleteSecurityContext\(\)
 Frees the security context and invalidates the handle
 
-## [PyCtxtHandle](#pyctxthandle)\.Detach
 
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.Detach
 
-
-long =Detach\(\)
+long = Detach\(\)
 Disassociates object from handle and returns integer value of handle
 
 #### Comments
 
-
 Use when the security context needs to persist beyond the lifetime of the Python object
 
-## [PyCtxtHandle](#pyctxthandle)\.EncryptMessage
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.EncryptMessage
 
 EncryptMessage\(fqop, Message, MessageSeqNo\)
 Encrypts data with session key of security context
 
 #### Parameters
 
-
   - fqop : int
 
     Flags that indicate quality of protection desired, specific to each security package
 
-  - Message :[PySecBufferDesc](#pysecbufferdesc)
+  - Message : [PySecBufferDesc](PySecBufferDesc.md)
 
-    [PySecBufferDesc](#pysecbufferdesc) that contains data buffer\(s\) to be encrypted
+    [PySecBufferDesc](PySecBufferDesc.md) that contains data buffer\(s\) to be encrypted
 
   - MessageSeqNo : int
 
     A sequential number used by some packages to verify that no extraneous messages have been received
 
 #### Comments
-
 
 The buffer configuration is dependent on the security package\.  Usually there is one input buffer 
 
@@ -156,24 +151,25 @@ to receive signature or padding data
 #### Return Value
 Returns None on success, and buffer\(s\) will contain encrypted data
 
-## [PyCtxtHandle](#pyctxthandle)\.ImpersonateSecurityContext
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.ImpersonateSecurityContext
 
 ImpersonateSecurityContext\(\)
 Impersonates a client security context
 
-## [PyCtxtHandle](#pyctxthandle)\.MakeSignature
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.MakeSignature
 
 MakeSignature\(fqop, Message, MessageSeqNo\)
 Creates a crytographic hash of a message using session key of the security context
 
 #### Parameters
 
-
   - fqop : int
 
     Flags that indicate quality of protection desired, specific to each security package
 
-  - Message :[PySecBufferDesc](#pysecbufferdesc)
+  - Message : [PySecBufferDesc](PySecBufferDesc.md)
 
     Buffer set that includes buffers for input data and output signature
 
@@ -183,7 +179,6 @@ Creates a crytographic hash of a message using session key of the security conte
 
 #### Comments
 
-
 The buffer configuration is dependent on the security package\.  Usually there is one input buffer of 
 
 type SECBUFFER\_DATA and an output buffer of type SECBUFFER\_TOKEN
@@ -191,13 +186,13 @@ type SECBUFFER\_DATA and an output buffer of type SECBUFFER\_TOKEN
 #### Return Value
 Returns None on success, and output buffer in Message will contain the signature
 
-## [PyCtxtHandle](#pyctxthandle)\.QueryContextAttributes
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.QueryContextAttributes
 
 QueryContextAttributes\(Attribute\)
 Retrieves info about a security context
 
 #### Parameters
-
 
   - Attribute : int
 
@@ -205,29 +200,31 @@ Retrieves info about a security context
 
 #### Comments
 
-
 Not all attributes are available for every security package
 
 
-## [PyCtxtHandle](#pyctxthandle)\.QuerySecurityContextToken
 
-[PyHandle](#pyhandle) =QuerySecurityContextToken\(\)
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.QuerySecurityContextToken
+
+[PyHandle](PyHandle.md) = QuerySecurityContextToken\(\)
 Returns the access token for a security context
 
-## [PyCtxtHandle](#pyctxthandle)\.RevertSecurityContext
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.RevertSecurityContext
 
 RevertSecurityContext\(\)
-Stops impersonation of client context \(see[PyCtxtHandle::ImpersonateSecurityContext](PyCtxtHandle.md#pyctxthandleimpersonatesecuritycontext)\)
+Stops impersonation of client context \(see [PyCtxtHandle::ImpersonateSecurityContext](PyCtxtHandle.md#pyctxthandleimpersonatesecuritycontext)\)
 
-## [PyCtxtHandle](#pyctxthandle)\.VerifySignature
+
+## [PyCtxtHandle](PyCtxtHandle.md#pyctxthandle)\.VerifySignature
 
 VerifySignature\(Message, MessageSeqNo\)
-Verifies a signature created using[PyCtxtHandle::MakeSignature](PyCtxtHandle.md#pyctxthandlemakesignature)
+Verifies a signature created using [PyCtxtHandle::MakeSignature](PyCtxtHandle.md#pyctxthandlemakesignature)
 
 #### Parameters
 
-
-  - Message :[PySecBufferDesc](#pysecbufferdesc)
+  - Message : [PySecBufferDesc](PySecBufferDesc.md)
 
     SecBufferDesc that contains data buffer and signature buffer
 
@@ -236,7 +233,6 @@ Verifies a signature created using[PyCtxtHandle::MakeSignature](PyCtxtHandle.md#
     A sequential number used by some packages to verify that no extraneous messages have been received
 
 #### Comments
-
 
 The buffer configuration is dependent on the security package\.  Usually there is a data buffer of type SECBUFFER\_DATA 
 

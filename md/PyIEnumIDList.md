@@ -1,13 +1,11 @@
 # PyIEnumIDList
 
+
 ## PyIEnumIDList Object
-
-
 
 A Python interface to IEnumIDList
 
 #### Methods
-
 
   - [Next](PyIEnumIDList.md#pyienumidlistnext)
 
@@ -25,31 +23,32 @@ A Python interface to IEnumIDList
 
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumIDList](#pyienumidlist)\.Clone
 
-[PyIEnumIDList](#pyienumidlist) =Clone\(\)
+## [PyIEnumIDList](PyIEnumIDList.md#pyienumidlist)\.Clone
+
+[PyIEnumIDList](PyIEnumIDList.md#pyienumidlist) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumIDList](#pyienumidlist)\.Next
 
+## [PyIEnumIDList](PyIEnumIDList.md#pyienumidlist)\.Next
 
-
-object =Next\(num\)
+object = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumIDList](#pyienumidlist)\.Reset
+
+## [PyIEnumIDList](PyIEnumIDList.md#pyienumidlist)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumIDList](#pyienumidlist)\.Skip
+
+## [PyIEnumIDList](PyIEnumIDList.md#pyienumidlist)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

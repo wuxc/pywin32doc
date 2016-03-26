@@ -1,13 +1,11 @@
 # PyIEnumDebugCodeContexts
 
+
 ## PyIEnumDebugCodeContexts Object
-
-
 
 A Python interface to IEnumDebugCodeContexts
 
 #### Methods
-
 
   - [Next](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontextsnext)
 
@@ -25,31 +23,32 @@ A Python interface to IEnumDebugCodeContexts
 
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Clone
 
-[PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts) =Clone\(\)
+## [PyIEnumDebugCodeContexts](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontexts)\.Clone
+
+[PyIEnumDebugCodeContexts](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontexts) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Next
 
+## [PyIEnumDebugCodeContexts](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontexts)\.Next
 
-
-object =Next\(num\)
+object = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Reset
+
+## [PyIEnumDebugCodeContexts](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontexts)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumDebugCodeContexts](#pyienumdebugcodecontexts)\.Skip
+
+## [PyIEnumDebugCodeContexts](PyIEnumDebugCodeContexts.md#pyienumdebugcodecontexts)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

@@ -1,13 +1,11 @@
 # PyIExtractImage
 
+
 ## PyIExtractImage Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetLocation](PyIExtractImage.md#pyiextractimagegetlocation)
 
@@ -17,18 +15,19 @@ Description of the interface
 
     Description of Extract&nbsp;
 
-## [PyIExtractImage](#pyiextractimage)\.Extract
+
+## [PyIExtractImage](PyIExtractImage.md#pyiextractimage)\.Extract
 
 Extract\(\)
 Description of Extract\.
 
-## [PyIExtractImage](#pyiextractimage)\.GetLocation
+
+## [PyIExtractImage](PyIExtractImage.md#pyiextractimage)\.GetLocation
 
 GetLocation\(dwPriority, size, dwRecClrDepth, pdwFlags\)
 Description of GetLocation\.
 
 #### Parameters
-
 
   - dwPriority : int
 

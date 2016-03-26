@@ -1,13 +1,11 @@
 # win32lz
 
+
 ## Module win32lz
-
-
 
 A module encapsulating the Windows LZ compression routines\.
 
 #### Methods
-
 
   - [GetExpandedName](win32lz.md#win32lzgetexpandedname)
 
@@ -29,13 +27,13 @@ A module encapsulating the Windows LZ compression routines\.
 
     Creates, opens, reopens, or deletes the specified file\.&nbsp;
 
-## [win32lz](#win32lz)\.Close
+
+## [win32lz](win32lz.md#win32lz)\.Close
 
 Close\(handle\)
 Closes a handle to an LZ file\.
 
 #### Parameters
-
 
   - handle : int
 
@@ -43,18 +41,17 @@ Closes a handle to an LZ file\.
 
 #### Win32 API References
 
-
-  - Search forLZClose at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=lzclose),[google](#http://www.google.com/search?q=lzclose) or[google groups](#http://groups.google.com/groups?q=lzclose)\.
-
-## [win32lz](#win32lz)\.Copy
+  - Search for LZClose at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LZClose.md), [google](http://www.google.com/search?q=LZClose.md) or [google groups](http://groups.google.com/groups?q=LZClose.md)\.
 
 
+## [win32lz](win32lz.md#win32lz)\.Copy
 
-int =Copy\(hSrc, hDest\)
+int = Copy\(hSrc, hDest
+
+\)
 Copies a source file to a destination file\.
 
 #### Parameters
-
 
   - hSrc : int
 
@@ -66,7 +63,6 @@ Copies a source file to a destination file\.
 
 #### Comments
 
-
 If the source file is compressed with the Microsoft File Compression Utility 
 
 \(COMPRESS\.EXE\), this function creates a decompressed destination file\. 
@@ -75,18 +71,15 @@ If the source file is not compressed, this function duplicates the original file
 
 #### Win32 API References
 
-
-  - Search forLZCopy at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=lzcopy),[google](#http://www.google.com/search?q=lzcopy) or[google groups](#http://groups.google.com/groups?q=lzcopy)\.
-
-## [win32lz](#win32lz)\.GetExpandedName
+  - Search for LZCopy at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LZCopy.md), [google](http://www.google.com/search?q=LZCopy.md) or [google groups](http://groups.google.com/groups?q=LZCopy.md)\.
 
 
+## [win32lz](win32lz.md#win32lz)\.GetExpandedName
 
-string =GetExpandedName\(Source\)
+string = GetExpandedName\(Source\)
 Retrieves the original name of an expanded file,
 
 #### Parameters
-
 
   - Source : str
 
@@ -94,16 +87,15 @@ Retrieves the original name of an expanded file,
 
 #### Win32 API References
 
+  - Search for GetExpandedName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetExpandedName.md), [google](http://www.google.com/search?q=GetExpandedName.md) or [google groups](http://groups.google.com/groups?q=GetExpandedName.md)\.
 
-  - Search forGetExpandedName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getexpandedname),[google](#http://www.google.com/search?q=getexpandedname) or[google groups](#http://groups.google.com/groups?q=getexpandedname)\.
 
-## [win32lz](#win32lz)\.Init
+## [win32lz](win32lz.md#win32lz)\.Init
 
 Init\(handle\)
 Allocates memory for the internal data structures required to decompress files, and then creates and initializes them\.
 
 #### Parameters
-
 
   - handle : int
 
@@ -111,18 +103,17 @@ Allocates memory for the internal data structures required to decompress files, 
 
 #### Win32 API References
 
-
-  - Search forLZInit at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=lzinit),[google](#http://www.google.com/search?q=lzinit) or[google groups](#http://groups.google.com/groups?q=lzinit)\.
-
-## [win32lz](#win32lz)\.OpenFile
+  - Search for LZInit at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LZInit.md), [google](http://www.google.com/search?q=LZInit.md) or [google groups](http://groups.google.com/groups?q=LZInit.md)\.
 
 
+## [win32lz](win32lz.md#win32lz)\.OpenFile
 
-int,\(tuple\) =OpenFile\(fileName, action\)
+int,\(tuple\) = OpenFile\(fileName, action
+
+\)
 Creates, opens, reopens, or deletes the specified file\.
 
 #### Parameters
-
 
   - fileName : string
 
@@ -134,5 +125,4 @@ Creates, opens, reopens, or deletes the specified file\.
 
 #### Win32 API References
 
-
-  - Search forLZOpenFile at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=lzopenfile),[google](#http://www.google.com/search?q=lzopenfile) or[google groups](#http://groups.google.com/groups?q=lzopenfile)\.
+  - Search for LZOpenFile at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LZOpenFile.md), [google](http://www.google.com/search?q=LZOpenFile.md) or [google groups](http://groups.google.com/groups?q=LZOpenFile.md)\.

@@ -1,13 +1,11 @@
 # PyIDebugStackFrame
 
+
 ## PyIDebugStackFrame Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [GetCodeContext](PyIDebugStackFrame.md#pyidebugstackframegetcodecontext)
 
@@ -29,45 +27,48 @@ Description of the interface
 
     Returns the debug property object associated with this stack frame\.&nbsp;
 
-## [PyIDebugStackFrame](#pyidebugstackframe)\.GetCodeContext
+
+## [PyIDebugStackFrame](PyIDebugStackFrame.md#pyidebugstackframe)\.GetCodeContext
 
 GetCodeContext\(\)
 Returns the current code context associated with the stack frame\.
 
-## [PyIDebugStackFrame](#pyidebugstackframe)\.GetDebugProperty
 
-[PyIDebugProperty](#pyidebugproperty) =GetDebugProperty\(\)
+## [PyIDebugStackFrame](PyIDebugStackFrame.md#pyidebugstackframe)\.GetDebugProperty
+
+[PyIDebugProperty](PyIDebugProperty.md) = GetDebugProperty\(\)
 Returns the debug property\.
 
-## [PyIDebugStackFrame](#pyidebugstackframe)\.GetDescriptionString
+
+## [PyIDebugStackFrame](PyIDebugStackFrame.md#pyidebugstackframe)\.GetDescriptionString
 
 unicode
 
- =GetDescriptionString\(fLong\)
+ = GetDescriptionString\(fLong\)
 Returns a short or long textual description of the stack frame\.
 
 #### Parameters
-
 
   - fLong : int
 
     If false, provide only the name of the function associated with the stack frame\. When true it may also provide the parameter\(s\) to the function or whatever else is relevant\.
 
-## [PyIDebugStackFrame](#pyidebugstackframe)\.GetLanguageString
+
+## [PyIDebugStackFrame](PyIDebugStackFrame.md#pyidebugstackframe)\.GetLanguageString
 
 unicode
 
- =GetLanguageString\(fLong\)
+ = GetLanguageString\(fLong\)
 Returns a short or long textual description of the language\.
 
 #### Parameters
-
 
   - fLong : int
 
     If False, just the language name should be provided, eg, "Python"\. If True a full product description may be provided \(eg, "Python 1\.4 ActiveX Debugging Host"\)
 
-## [PyIDebugStackFrame](#pyidebugstackframe)\.GetThread
 
-[PyIDebugApplicationThread](#pyidebugapplicationthread) =GetThread\(\)
+## [PyIDebugStackFrame](PyIDebugStackFrame.md#pyidebugstackframe)\.GetThread
+
+[PyIDebugApplicationThread](PyIDebugApplicationThread.md) = GetThread\(\)
 Returns the thread associated with this stack frame\.

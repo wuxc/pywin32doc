@@ -1,13 +1,11 @@
 # PyDDEServer
 
+
 ## PyDDEServer Object
-
-
 
 A DDE server\.
 
 #### Methods
-
 
   - [AddTopic](PyDDEServer.md#pyddeserveraddtopic)
 
@@ -31,25 +29,24 @@ A DDE server\.
 
 sentinel&nbsp;
 
-## [PyDDEServer](#pyddeserver)\.AddTopic
+
+## [PyDDEServer](PyDDEServer.md#pyddeserver)\.AddTopic
 
 AddTopic\(topic\)
 
-
 #### Parameters
 
-
-  - topic :[PyDDETopic](#pyddetopic)
+  - topic : [PyDDETopic](PyDDETopic.md)
 
     The topic to add\.
 
-## [PyDDEServer](#pyddeserver)\.Create
+
+## [PyDDEServer](PyDDEServer.md#pyddeserver)\.Create
 
 Create\(name, filterFlags\)
 Create a server
 
 #### Parameters
-
 
   - name : string
 
@@ -61,27 +58,25 @@ Create a server
 
 #### Comments
 
-
 Note there can only be one server per application\.
 
-## [PyDDEServer](#pyddeserver)\.Destroy
+
+## [PyDDEServer](PyDDEServer.md#pyddeserver)\.Destroy
 
 Destroy\(\)
 
 
-## [PyDDEServer](#pyddeserver)\.GetLastError
+
+## [PyDDEServer](PyDDEServer.md#pyddeserver)\.GetLastError
+
+int = GetLastError\(\)
 
 
 
-int =GetLastError\(\)
-
-
-## [PyDDEServer](#pyddeserver)\.Shutdown
+## [PyDDEServer](PyDDEServer.md#pyddeserver)\.Shutdown
 
 Shutdown\(\)
 
-
 #### Comments
-
 
 Note the underlying DDE object \(ie, Server, Topics and Items\) are not cleaned up by this call\.

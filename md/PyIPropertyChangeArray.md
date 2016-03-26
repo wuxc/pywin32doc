@@ -1,14 +1,13 @@
 # PyIPropertyChangeArray
 
+
 ## PyIPropertyChangeArray Object
 
+Container for a sequence of [PyIPropertyChange](PyIPropertyChange.md) interfaces, as used with [PyIFileOperation](PyIFileOperation.md)\. 
 
-
-Container for a sequence of[PyIPropertyChange](#pyipropertychange) interfaces, as used with[PyIFileOperation](#pyifileoperation)\.
 Create using pythoncom\.CoCreateInstance\(propsys\.CLSID\_PropertyChangeArray, \.\.\.\)
 
 #### Methods
-
 
   - [GetCount](PyIPropertyChangeArray.md#pyipropertychangearraygetcount)
 
@@ -38,90 +37,89 @@ Create using pythoncom\.CoCreateInstance\(propsys\.CLSID\_PropertyChangeArray, \
 
     Checks if array contains a change to a property&nbsp;
 
-## [PyIPropertyChangeArray](#pyipropertychangearray)\.Append
+
+## [PyIPropertyChangeArray](PyIPropertyChangeArray.md#pyipropertychangearray)\.Append
 
 Append\(PropChange\)
 Adds a change to the end of the array
 
 #### Parameters
 
-
-  - PropChange :[PyIPropertyChange](#pyipropertychange)
+  - PropChange : [PyIPropertyChange](PyIPropertyChange.md)
 
     The change to be added
 
-## [PyIPropertyChangeArray](#pyipropertychangearray)\.AppendOrReplace
+
+## [PyIPropertyChangeArray](PyIPropertyChangeArray.md#pyipropertychangearray)\.AppendOrReplace
 
 AppendOrReplace\(PropChange\)
 Adds a change, or replaces if an identical property key is already in container
 
 #### Parameters
 
-
-  - PropChange :[PyIPropertyChange](#pyipropertychange)
+  - PropChange : [PyIPropertyChange](PyIPropertyChange.md)
 
     The change to be added or replaced
 
-## [PyIPropertyChangeArray](#pyipropertychangearray)\.GetAt
 
-[PyIPropertyChange](#pyipropertychange) =GetAt\(Index, riid\)
+## [PyIPropertyChangeArray](PyIPropertyChangeArray.md#pyipropertychangearray)\.GetAt
+
+[PyIPropertyChange](PyIPropertyChange.md) = GetAt\(Index, riid
+
+\)
 Retrieves a change by zero-based index
 
 #### Parameters
-
 
   - Index : int
 
     Index of the change to retrieve
 
-  - riid=IID\_IPropertyChange :[PyIID](#pyiid)
+  - riid=IID\_IPropertyChange : [PyIID](PyIID.md)
 
     The interface to return
 
-## [PyIPropertyChangeArray](#pyipropertychangearray)\.GetCount
 
+## [PyIPropertyChangeArray](PyIPropertyChangeArray.md#pyipropertychangearray)\.GetCount
 
-
-int =GetCount\(\)
+int = GetCount\(\)
 Returns the number of changes in the array
 
-## [PyIPropertyChangeArray](#pyipropertychangearray)\.InsertAt
+
+## [PyIPropertyChangeArray](PyIPropertyChangeArray.md#pyipropertychangearray)\.InsertAt
 
 InsertAt\(Index, PropChange\)
 Inserts a change at a specific position
 
 #### Parameters
 
-
   - Index : int
 
     Position at which to place the change
 
-  - PropChange :[PyIPropertyChange](#pyipropertychange)
+  - PropChange : [PyIPropertyChange](PyIPropertyChange.md)
 
     The change to be added
 
-## [PyIPropertyChangeArray](#pyipropertychangearray)\.IsKeyInArray
 
+## [PyIPropertyChangeArray](PyIPropertyChangeArray.md#pyipropertychangearray)\.IsKeyInArray
 
-
-boolean =IsKeyInArray\(key\)
+boolean = IsKeyInArray\(key\)
 Checks if array contains a change to a property
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     Property key to look for
 
-## [PyIPropertyChangeArray](#pyipropertychangearray)\.RemoveAt
+
+## [PyIPropertyChangeArray](PyIPropertyChangeArray.md#pyipropertychangearray)\.RemoveAt
 
 RemoveAt\(Index\)
 Removes a change from the array
 
 #### Parameters
-
 
   - Index : int
 

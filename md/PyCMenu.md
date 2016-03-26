@@ -1,17 +1,13 @@
 # PyCMenu
 
+
 ## PyCMenu Object
 
-
-
-A windows menu\.  Encapsulates an MFCCMenu
-
-
+A windows menu\.  Encapsulates an MFC CMenu
 
  class
 
 #### Methods
-
 
   - [AppendMenu](PyCMenu.md#pycmenuappendmenu)
 
@@ -57,13 +53,13 @@ A windows menu\.  Encapsulates an MFCCMenu
 
     Creates a popup menu anywhere on the screen\.&nbsp;
 
-## [PyCMenu](#pycmenu)\.AppendMenu
+
+## [PyCMenu](PyCMenu.md#pycmenu)\.AppendMenu
 
 AppendMenu\(flags, id, value\)
 Appends a new item to the end of a menu\. Python can specify the state of the menu item by setting values in nFlags\.
 
 #### Parameters
-
 
   - flags : int
 
@@ -77,15 +73,15 @@ Appends a new item to the end of a menu\. Python can specify the state of the me
 
     Specifies the content of the new menu item\.  If used, flags must contain win32con\.MF\_STRING\.
 
-## [PyCMenu](#pycmenu)\.DeleteMenu
 
+## [PyCMenu](PyCMenu.md#pycmenu)\.DeleteMenu
 
+string = DeleteMenu\(id, flags
 
-string =DeleteMenu\(id, flags\)
+\)
 Deletes the specified menu item\.
 
 #### Parameters
-
 
   - id : int
 
@@ -95,15 +91,15 @@ Deletes the specified menu item\.
 
     Specifies how the id parameter is interpreted\. It must be one of win32con\.MF\_BYCOMMAND or win32con\.MF\_BYPOSITION\.
 
-## [PyCMenu](#pycmenu)\.EnableMenuItem
 
+## [PyCMenu](PyCMenu.md#pycmenu)\.EnableMenuItem
 
+int = EnableMenuItem\(id, flags
 
-int =EnableMenuItem\(id, flags\)
+\)
 Enables, disables, or dims a menu item\.
 
 #### Parameters
-
 
   - id : int
 
@@ -115,47 +111,38 @@ Enables, disables, or dims a menu item\.
 
 #### Comments
 
+The PyCMenu::CreateMenu
 
-ThePyCMenu::CreateMenu
+, [PyCMenu::InsertMenu](PyCMenu.md#pycmenuinsertmenu), [PyCMenu::ModifyMenu](PyCMenu.md#pycmenumodifymenu), 
 
-
-
-,[PyCMenu::InsertMenu](PyCMenu.md#pycmenuinsertmenu),[PyCMenu::ModifyMenu](PyCMenu.md#pycmenumodifymenu), 
-
-andPyCMenu::LoadMenuIndirect
-
-
+and PyCMenu::LoadMenuIndirect
 
  member functions can also set the state 
 
 \(enabled, disabled, or dimmed\) of a menu item\.
 
-## [PyCMenu](#pycmenu)\.GetHandle
 
+## [PyCMenu](PyCMenu.md#pycmenu)\.GetHandle
 
-
-int =GetHandle\(\)
+int = GetHandle\(\)
 Returns the menu object's underlying hMenu\.
 
-## [PyCMenu](#pycmenu)\.GetMenuItemCount
 
+## [PyCMenu](PyCMenu.md#pycmenu)\.GetMenuItemCount
 
-
-int =GetMenuItemCount\(\)
+int = GetMenuItemCount\(\)
 Determines the number of items in a menu\.
 
 #### Return Value
 The number of items in the menu if the function is successful; otherwise -1\.
 
-## [PyCMenu](#pycmenu)\.GetMenuItemID
 
+## [PyCMenu](PyCMenu.md#pycmenu)\.GetMenuItemID
 
-
-int =GetMenuItemID\(pos\)
+int = GetMenuItemID\(pos\)
 Returns the item ID for the specified item in a pop-up menu\.
 
 #### Parameters
-
 
   - pos : int
 
@@ -163,22 +150,21 @@ Returns the item ID for the specified item in a pop-up menu\.
 
 #### Comments
 
-
 If the specified item is a pop-up menu \(as opposed to an item within the pop-up menu\), 
 
 the return value is -1\. If nPos corresponds to a SEPARATOR menu item, 
 
 the return value is 0\.
 
-## [PyCMenu](#pycmenu)\.GetMenuString
 
+## [PyCMenu](PyCMenu.md#pycmenu)\.GetMenuString
 
+string = GetMenuString\(id, flags
 
-string =GetMenuString\(id, flags\)
+\)
 Returns the string for a specified menu item\.
 
 #### Parameters
-
 
   - id : int
 
@@ -188,25 +174,25 @@ Returns the string for a specified menu item\.
 
     Specifies how the id parameter is interpreted\. It must be one of win32con\.MF\_BYCOMMAND or win32con\.MF\_BYPOSITION\.
 
-## [PyCMenu](#pycmenu)\.GetSubMenu
 
-[PyCMenu](#pycmenu) =GetSubMenu\(pos\)
+## [PyCMenu](PyCMenu.md#pycmenu)\.GetSubMenu
+
+[PyCMenu](PyCMenu.md#pycmenu) = GetSubMenu\(pos\)
 Returns a submenu\.
 
 #### Parameters
-
 
   - pos : int
 
     The position \(zero-based\) of the menu item being retrieved\.
 
-## [PyCMenu](#pycmenu)\.InsertMenu
+
+## [PyCMenu](PyCMenu.md#pycmenu)\.InsertMenu
 
 InsertMenu\(pos, flags, id, value\)
 Inserts an item into a menu\.
 
 #### Parameters
-
 
   - pos : int
 
@@ -216,7 +202,7 @@ Inserts an item into a menu\.
 
     Flags for the new item\.
 
-  - id=0 : int/[PyCMenu](#pycmenu)
+  - id=0 : int/[PyCMenu](PyCMenu.md#pycmenu)
 
     The ID for a new menu item, or handle to a submenu
 
@@ -224,13 +210,13 @@ Inserts an item into a menu\.
 
     A string for the menu item\.
 
-## [PyCMenu](#pycmenu)\.ModifyMenu
+
+## [PyCMenu](PyCMenu.md#pycmenu)\.ModifyMenu
 
 ModifyMenu\(pos, flags, id, value\)
 Modify an item in a menu\.
 
 #### Parameters
-
 
   - pos : int
 
@@ -248,13 +234,13 @@ Modify an item in a menu\.
 
     A string for the menu item\.
 
-## [PyCMenu](#pycmenu)\.TrackPopupMenu
+
+## [PyCMenu](PyCMenu.md#pycmenu)\.TrackPopupMenu
 
 TrackPopupMenu\(\(x,y\), flags, owner\)
 Creates a popup menu anywhere on the screen\.
 
 #### Parameters
-
 
   - \(x,y\) : \(int, int\)
 
@@ -264,12 +250,11 @@ Creates a popup menu anywhere on the screen\.
 
     Flags for the menu\.
 
-  - owner=\(main application frame\) :[PyCWnd](#pycwnd)
+  - owner=\(main application frame\) : [PyCWnd](PyCWnd.md)
 
     The owner of the menu\.
 
 #### Comments
-
 
 The TrackPopupMenu function displays a floating pop-up menu at the 
 

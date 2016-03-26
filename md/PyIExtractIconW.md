@@ -1,13 +1,11 @@
 # PyIExtractIconW
 
+
 ## PyIExtractIconW Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [Extract](PyIExtractIconW.md#pyiextracticonwextract)
 
@@ -17,15 +15,15 @@ Description of the interface
 
     Description of GetIconLocation&nbsp;
 
-## [PyIExtractIconW](#pyiextracticonw)\.Extract
+
+## [PyIExtractIconW](PyIExtractIconW.md#pyiextracticonw)\.Extract
 
 Extract\(pszFile, nIconIndex, nIconSize\)
 Description of Extract\.
 
 #### Parameters
 
-
-  - pszFile :unicode
+  - pszFile : unicode
 
     Description for pszFile
 
@@ -44,13 +42,13 @@ The result is \(hicon\_large, hicon\_small\), or
 
 the calling application should extract it\.
 
-## [PyIExtractIconW](#pyiextracticonw)\.GetIconLocation
+
+## [PyIExtractIconW](PyIExtractIconW.md#pyiextracticonw)\.GetIconLocation
 
 GetIconLocation\(uFlags, cchMax\)
 Description of GetIconLocation\.
 
 #### Parameters
-
 
   - uFlags : int
 

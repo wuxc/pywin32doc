@@ -1,13 +1,11 @@
 # PyIEnumRemoteDebugApplicationThreads
 
+
 ## PyIEnumRemoteDebugApplicationThreads Object
-
-
 
 A Python interface to IEnumRemoteDebugApplicationThreads
 
 #### Methods
-
 
   - [Next](PyIEnumRemoteDebugApplicationThreads.md#pyienumremotedebugapplicationthreadsnext)
 
@@ -25,31 +23,32 @@ A Python interface to IEnumRemoteDebugApplicationThreads
 
     Creates another enumerator that contains the same enumeration state as the current one\.&nbsp;
 
-## [PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads)\.Clone
 
-[PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads) =Clone\(\)
+## [PyIEnumRemoteDebugApplicationThreads](PyIEnumRemoteDebugApplicationThreads.md#pyienumremotedebugapplicationthreads)\.Clone
+
+[PyIEnumRemoteDebugApplicationThreads](PyIEnumRemoteDebugApplicationThreads.md#pyienumremotedebugapplicationthreads) = Clone\(\)
 Creates another enumerator that contains the same enumeration state as the current one
 
-## [PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads)\.Next
 
+## [PyIEnumRemoteDebugApplicationThreads](PyIEnumRemoteDebugApplicationThreads.md#pyienumremotedebugapplicationthreads)\.Next
 
-
-object =Next\(num\)
+object = Next\(num\)
 Retrieves a specified number of items in the enumeration sequence\.
 
 #### Parameters
-
 
   - num=1 : int
 
     Number of items to retrieve\.
 
-## [PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads)\.Reset
+
+## [PyIEnumRemoteDebugApplicationThreads](PyIEnumRemoteDebugApplicationThreads.md#pyienumremotedebugapplicationthreads)\.Reset
 
 Reset\(\)
 Resets the enumeration sequence to the beginning\.
 
-## [PyIEnumRemoteDebugApplicationThreads](#pyienumremotedebugapplicationthreads)\.Skip
+
+## [PyIEnumRemoteDebugApplicationThreads](PyIEnumRemoteDebugApplicationThreads.md#pyienumremotedebugapplicationthreads)\.Skip
 
 Skip\(\)
 Skips over the next specified elementes\.

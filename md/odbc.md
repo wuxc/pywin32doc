@@ -1,31 +1,27 @@
 # odbc
 
+
 ## Module odbc
-
-
 
 A Python wrapper around the ODBC API\.
 
 #### Methods
 
-
   - [odbc](odbc.md#odbcodbc)
 
-    Creates an[connection](#connection) object\.&nbsp;
+    Creates an [connection](connection.md) object\.&nbsp;
 
   - [SQLDataSources](odbc.md#odbcsqldatasources)
 
     Enumerates ODBC data sources\.&nbsp;
 
-## [odbc](#odbc)\.SQLDataSources
 
+## [odbc](odbc.md#odbc)\.SQLDataSources
 
-
-\(name, desc\)/None =SQLDataSources\(direction\)
+\(name, desc\)/None = SQLDataSources\(direction\)
 Enumerates ODBC data sources
 
 #### Parameters
-
 
   - direction : int
 
@@ -34,13 +30,13 @@ Enumerates ODBC data sources
 #### Return Value
 The result is None when SQL\_NO\_DATA is returned from ODBC\.
 
-## [odbc](#odbc)\.odbc
 
-[connection](#connection) =odbc\(connectionString\)
+## [odbc](odbc.md#odbc)\.odbc
+
+[connection](connection.md) = odbc\(connectionString\)
 Creates an ODBC connection
 
 #### Parameters
-
 
   - connectionString : string
 

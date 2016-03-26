@@ -1,17 +1,13 @@
 # PyCWnd
 
+
 ## PyCWnd Object
 
-
-
-A base window class\.  Encapsulates an MFCCWnd
-
-
+A base window class\.  Encapsulates an MFC CWnd
 
  class
 
 #### Methods
-
 
   - [ActivateFrame](PyCWnd.md#pycwndactivateframe)
 
@@ -195,7 +191,7 @@ A base window class\.  Encapsulates an MFCCWnd
 
   - [GetWindowDC](PyCWnd.md#pycwndgetwindowdc)
 
-    Obtains thePyDC
+    Obtains the PyDC
 
  for a window\.&nbsp;
 
@@ -461,9 +457,7 @@ A base window class\.  Encapsulates an MFCCWnd
 
   - [UpdateDialogControls](PyCWnd.md#pycwndupdatedialogcontrols)
 
-    Updates the state of dialog buttons and other controls in a dialog box or window that uses thePyCCmdUI::HookCommandUpdate
-
-
+    Updates the state of dialog buttons and other controls in a dialog box or window that uses the PyCCmdUI::HookCommandUpdate
 
  callback mechanism\.&nbsp;
 
@@ -472,7 +466,9 @@ A base window class\.  Encapsulates an MFCCWnd
     Updates a window\.&nbsp;
 
 
-## [PyCWnd](#pycwnd)\.ActivateFrame
+
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.ActivateFrame
 
 ActivateFrame\(cmdShow\)
 Searches upwards for a parent window which has 
@@ -481,37 +477,34 @@ a frame, and activates it\.
 
 #### Parameters
 
-
   - cmdShow=SW\_SHOW : int
 
-    The param passed toCFrameWnd::ShowWindow
+    The param passed to CFrameWnd::ShowWindow
 
-
-
-\.  See also[PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)\.
+\.  See also [PyCWnd::ShowWindow](PyCWnd.md#pycwndshowwindow)\.
 
 #### MFC References
 
-
   - CFrameWnd::ActivateFrame
 
-## [PyCWnd](#pycwnd)\.BeginPaint
 
-[PyCDC](#pycdc),PAINTSTRUCT
+## [PyCWnd](PyCWnd.md#pycwnd)\.BeginPaint
 
- =BeginPaint\(\)
+[PyCDC](PyCDC.md), PAINTSTRUCT
+
+ = BeginPaint\(\)
 Prepares a window for painting
 
 #### Return Value
-You must pass the PAINTSTRUCT param to the[PyCWnd::EndPaint](PyCWnd.md#pycwndendpaint) method\.
+You must pass the PAINTSTRUCT param to the [PyCWnd::EndPaint](PyCWnd.md#pycwndendpaint) method\.
 
-## [PyCWnd](#pycwnd)\.BringWindowToTop
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.BringWindowToTop
 
 BringWindowToTop\(\)
 Brings the window to the top of a stack of overlapping windows\.
 
 #### Comments
-
 
 This method activates pop-up, top-level, and MDI child windows\. 
 
@@ -520,7 +513,7 @@ The BringWindowToTop member function should be used to uncover any window that i
 completely obscured by any overlapping windows\.
  
 
-Calling this method is similar to calling the[PyCWnd::SetWindowPos](PyCWnd.md#pycwndsetwindowpos) method to 
+Calling this method is similar to calling the [PyCWnd::SetWindowPos](PyCWnd.md#pycwndsetwindowpos) method to 
 
 change a window's position in the Z order\. The BringWindowToTop method 
 
@@ -528,14 +521,14 @@ does not change the window style to make it a top-level window of the desktop\.
 
 #### MFC References
 
-
   - CWnd::BringWindowToTop
 
-## [PyCWnd](#pycwnd)\.CalcWindowRect
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.CalcWindowRect
 
+\(left, top, right, bottom\) = CalcWindowRect\(rect, nAdjustType
 
-\(left, top, right, bottom\) =CalcWindowRect\(rect, nAdjustType\)
+\)
 Computes the size of the window rectangle based on the desired client 
 
 rectangle size\.  The resulting size can then be used as the initial 
@@ -543,7 +536,6 @@ rectangle size\.  The resulting size can then be used as the initial
 size for the window object\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -559,27 +551,26 @@ measurements of the rectangle\.
 
 #### MFC References
 
-
   - CWnd::CalcWindowRect
 
-## [PyCWnd](#pycwnd)\.CenterWindow
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.CenterWindow
 
 CenterWindow\(altwin\)
 Centers a window relative to its parent\.
 
 #### Parameters
 
-
-  - altwin=None :[PyCWnd](#pycwnd)
+  - altwin=None : [PyCWnd](PyCWnd.md#pycwnd)
 
     alternate window relative to which it will be centered \(other than the parent window\)\.
 
 #### MFC References
 
-
   - CWnd::CenterWindow
 
-## [PyCWnd](#pycwnd)\.CheckRadioButton
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.CheckRadioButton
 
 CheckRadioButton\(idFirst, idLast, idCheck\)
 Selects the specified radio button, and clears 
@@ -587,7 +578,6 @@ Selects the specified radio button, and clears
 all others in the group\.
 
 #### Parameters
-
 
   - idFirst : int
 
@@ -603,18 +593,19 @@ all others in the group\.
 
 #### MFC References
 
-
   - CWnd::CheckRadioButton
 
-## [PyCWnd](#pycwnd)\.ChildWindowFromPoint
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.ChildWindowFromPoint
 
+PyCWnd = ChildWindowFromPoint\(x, y
 
-PyCWnd =ChildWindowFromPoint\(x, y, flag\)
+, flag
+
+\)
 Returns the child window that contains the point
 
 #### Parameters
-
 
   - x : int
 
@@ -630,18 +621,15 @@ Returns the child window that contains the point
 
 #### MFC References
 
-
   - CWnd::ChildWindowFromPoint
 
-## [PyCWnd](#pycwnd)\.ClientToScreen
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.ClientToScreen
 
-
-\(x,y\) or \(l, t, r, b\) =ClientToScreen\(point\)
+\(x,y\) or \(l, t, r, b\) = ClientToScreen\(point\)
 Converts the client coordinates of a given point on the display to screen coordinates\.
 
 #### Parameters
-
 
   - point : \(x,y\)
 
@@ -649,13 +637,11 @@ Converts the client coordinates of a given point on the display to screen coordi
 
 #### Alternative Parameters
 
-
   - rect
 
     The client coordinates\.
 
 #### Comments
-
 
 The new screen coordinates are relative to the upper-left corner of the system display\. 
 
@@ -663,16 +649,15 @@ This function assumes that the given pointis in client coordinates\.
 
 #### MFC References
 
-
   - CWnd::ClientToScreen
 
-## [PyCWnd](#pycwnd)\.CreateWindow
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.CreateWindow
 
 CreateWindow\(classId, windowName, style, rect, parent, id, context\)
 Creates the actual window
 
 #### Parameters
-
 
   - classId : string
 
@@ -690,7 +675,7 @@ Creates the actual window
 
     The size and position of the window\.
 
-  - parent :[PyCWnd](#pycwnd)
+  - parent : [PyCWnd](PyCWnd.md#pycwnd)
 
     The parent window of the new window\.\.
 
@@ -704,16 +689,15 @@ Creates the actual window
 
 #### MFC References
 
-
   - CWnd::Create
 
-## [PyCWnd](#pycwnd)\.CreateWindowEx
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.CreateWindowEx
 
 CreateWindowEx\(styleEx, classId, windowName, style, rect, parent, id, createStruct, createStruct\)
 Creates the actual window using extended capabilities\.
 
 #### Parameters
-
 
   - styleEx : int
 
@@ -735,7 +719,7 @@ Creates the actual window using extended capabilities\.
 
     The size and position of the window\.
 
-  - parent :[PyCWnd](#pycwnd)
+  - parent : [PyCWnd](PyCWnd.md#pycwnd)
 
     The parent window of the new window\.\.
 
@@ -743,7 +727,7 @@ Creates the actual window using extended capabilities\.
 
     The control's ID\.
 
-  - createStruct=None :[CREATESTRUCT](#createstruct)
+  - createStruct=None : [CREATESTRUCT](CREATESTRUCT.md)
 
     A CreateStruct object \(ie, a tuple\)
 
@@ -753,18 +737,19 @@ Creates the actual window using extended capabilities\.
 
 #### MFC References
 
-
   - CWnd::CreateEx
 
-## [PyCWnd](#pycwnd)\.DefWindowProc
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.DefWindowProc
 
+int = DefWindowProc\(message, idLast
 
-int =DefWindowProc\(message, idLast, idCheck\)
+, idCheck
+
+\)
 Calls the default message handler\.
 
 #### Parameters
-
 
   - message : int
 
@@ -780,16 +765,15 @@ Calls the default message handler\.
 
 #### MFC References
 
-
   - CWnd::DefWindowProc
 
-## [PyCWnd](#pycwnd)\.DestroyWindow
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.DestroyWindow
 
 DestroyWindow\(\)
 Destroy the window attached to the object\.
 
 #### Comments
-
 
 The DestroyWindow member function sends appropriate messages 
 
@@ -803,13 +787,13 @@ Clipboard-viewer chain if CWnd is at the top of the viewer chain\.
 
 It sends WM\_DESTROY and WM\_NCDESTROY messages to the window\.
 
-## [PyCWnd](#pycwnd)\.DlgDirList
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.DlgDirList
 
 DlgDirList\(defPath, idListbox, idStaticPath, fileType\)
 Fill a list box with a file or directory listing\.
 
 #### Parameters
-
 
   - defPath : string
 
@@ -831,28 +815,25 @@ It can be any combination of DDL\_READWRITE, DDL\_READONLY, DDL\_HIDDEN, DDL\_SY
 
 #### MFC References
 
-
   - CWnd::DlgDirList
 
-## [PyCWnd](#pycwnd)\.DlgDirListComboBox
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.DlgDirListComboBox
 
 DlgDirListComboBox\(\)
-Fill a combo with a file or directory listing\.  See[PyCWnd::DlgDirList](PyCWnd.md#pycwnddlgdirlist) for details\.
+Fill a combo with a file or directory listing\.  See [PyCWnd::DlgDirList](PyCWnd.md#pycwnddlgdirlist) for details\.
 
 #### MFC References
 
-
   - CWnd::DlgDirListComboBox
 
-## [PyCWnd](#pycwnd)\.DlgDirSelect
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.DlgDirSelect
 
-
-string =DlgDirSelect\(idListbox\)
-Retrieves the current selection from a list box\. It assumes that the list box has been filled by the[PyCWnd::DlgDirList](PyCWnd.md#pycwnddlgdirlist) member function and that the selection is a drive letter, a file, or a directory name\.
+string = DlgDirSelect\(idListbox\)
+Retrieves the current selection from a list box\. It assumes that the list box has been filled by the [PyCWnd::DlgDirList](PyCWnd.md#pycwnddlgdirlist) member function and that the selection is a drive letter, a file, or a directory name\.
 
 #### Parameters
-
 
   - idListbox : int
 
@@ -860,18 +841,15 @@ Retrieves the current selection from a list box\. It assumes that the list box h
 
 #### MFC References
 
-
   - CWnd::DlgDirSelect
 
-## [PyCWnd](#pycwnd)\.DlgDirSelectComboBox
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.DlgDirSelectComboBox
 
-
-string =DlgDirSelectComboBox\(idListbox\)
-Retrieves the current selection from the list box of a combo box\. It assumes that the list box has been filled by the[PyCWnd::DlgDirListComboBox](PyCWnd.md#pycwnddlgdirlistcombobox) member function and that the selection is a drive letter, a file, or a directory name\.
+string = DlgDirSelectComboBox\(idListbox\)
+Retrieves the current selection from the list box of a combo box\. It assumes that the list box has been filled by the [PyCWnd::DlgDirListComboBox](PyCWnd.md#pycwnddlgdirlistcombobox) member function and that the selection is a drive letter, a file, or a directory name\.
 
 #### Parameters
-
 
   - idListbox : int
 
@@ -879,16 +857,15 @@ Retrieves the current selection from the list box of a combo box\. It assumes th
 
 #### MFC References
 
-
   - CWnd::DlgDirSelectComboBox
 
-## [PyCWnd](#pycwnd)\.DragAcceptFiles
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.DragAcceptFiles
 
 DragAcceptFiles\(bAccept\)
 Indicates that the window and children supports files dropped from file manager
 
 #### Parameters
-
 
   - bAccept=1 : int
 
@@ -896,23 +873,21 @@ Indicates that the window and children supports files dropped from file manager
 
 #### MFC References
 
-
   - CWnd::DragAcceptFiles
 
-## [PyCWnd](#pycwnd)\.DrawMenuBar
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.DrawMenuBar
 
 DrawMenuBar\(\)
 Redraws the menu bar\.  Can be called if the menu changes\.
 
-## [PyCWnd](#pycwnd)\.EnableWindow
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.EnableWindow
 
-
-int =EnableWindow\(bEnable\)
+int = EnableWindow\(bEnable\)
 Enables or disables the window\.  Typically used for dialog controls\.
 
 #### Parameters
-
 
   - bEnable=1 : int
 
@@ -920,45 +895,44 @@ Enables or disables the window\.  Typically used for dialog controls\.
 
 #### MFC References
 
-
   - CWnd::EnableWindow
 
 #### Return Value
 Returns the state before the EnableWindow member function was called
 
-## [PyCWnd](#pycwnd)\.EndModalLoop
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.EndModalLoop
 
 EndModalLoop\(result\)
 Ends a modal loop\.
 
 #### Parameters
 
-
   - result : int
 
     The result as returned to RunModalLoop
 
-## [PyCWnd](#pycwnd)\.EndPaint
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.EndPaint
 
 EndPaint\(paintStruct\)
 Ends painting
 
 #### Parameters
 
+  - paintStruct : PAINTSTRUCT
 
-  - paintStruct :PAINTSTRUCT
-
-    The object returned from[PyCWnd::BeginPaint](PyCWnd.md#pycwndbeginpaint)
-
-## [PyCWnd](#pycwnd)\.GetCheckedRadioButton
+    The object returned from [PyCWnd::BeginPaint](PyCWnd.md#pycwndbeginpaint)
 
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetCheckedRadioButton
 
-int =GetCheckedRadioButton\(idFirst, idLast\)
+int = GetCheckedRadioButton\(idFirst, idLast
+
+\)
 Returns the ID of the checked radio button, or 0 if none is selected\.
 
 #### Parameters
-
 
   - idFirst : int
 
@@ -970,52 +944,50 @@ Returns the ID of the checked radio button, or 0 if none is selected\.
 
 #### MFC References
 
-
   - CWnd::GetCheckedRadioButton
 
-## [PyCWnd](#pycwnd)\.GetClientRect
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetClientRect
 
-
-\(left, top, right, bottom\) =GetClientRect\(\)
+\(left, top, right, bottom\) = GetClientRect\(\)
 Returns the client coordinates of the window\.  left and top will be zero\.
 
-## [PyCWnd](#pycwnd)\.GetDC
 
-[PyCDC](#pycdc) =GetDC\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetDC
+
+[PyCDC](PyCDC.md) = GetDC\(\)
 Gets the windows current DC object\.
 
 #### Return Value
-The result is a[PyCDC](#pycdc), or a win32ui\.error exception is raised\.
+The result is a [PyCDC](PyCDC.md), or a win32ui\.error exception is raised\.
 
-## [PyCWnd](#pycwnd)\.GetDCEx
 
-[PyCDC](#pycdc) =GetDCEx\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetDCEx
+
+[PyCDC](PyCDC.md) = GetDCEx\(\)
 Gets the windows current DC object with extended caps\.
 
-## [PyCWnd](#pycwnd)\.GetDlgCtrlID
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetDlgCtrlID
 
-
-int =GetDlgCtrlID\(\)
+int = GetDlgCtrlID\(\)
 Returns the ID of this child window\.
 
 #### MFC References
 
-
   - CWnd::GetDlgCtrlId
 
-## [PyCWnd](#pycwnd)\.GetDlgItem
 
-[PyCWnd](#pycwnd) =GetDlgItem\(idControl\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetDlgItem
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetDlgItem\(idControl\)
 Returns a window object for the child window or control with the specified ID\. 
 
 The type of the return object will be as specific as possible, but will always 
 
-be derived from an[PyCWnd](#pycwnd) object\.
+be derived from an [PyCWnd](PyCWnd.md#pycwnd) object\.
 
 #### Parameters
-
 
   - idControl : int
 
@@ -1023,21 +995,20 @@ be derived from an[PyCWnd](#pycwnd) object\.
 
 #### MFC References
 
-
   - CWnd::GetDlgItem
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) \(or derived\) object, or a win32ui\.error exception is raised\.
-
-## [PyCWnd](#pycwnd)\.GetDlgItemInt
+The result is a [PyCWnd](PyCWnd.md#pycwnd) \(or derived\) object, or a win32ui\.error exception is raised\.
 
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetDlgItemInt
 
-int =GetDlgItemInt\(idControl, bUnsigned\)
+int = GetDlgItemInt\(idControl, bUnsigned
+
+\)
 Returns the integer value of a child window or control with the specified ID\.
 
 #### Parameters
-
 
   - idControl : int
 
@@ -1049,21 +1020,18 @@ Returns the integer value of a child window or control with the specified ID\.
 
 #### MFC References
 
-
   - CWnd::GetDlgItemInt
 
 #### Return Value
 If the value can not be converted, a ValueError is raised\.
 
-## [PyCWnd](#pycwnd)\.GetDlgItemText
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetDlgItemText
 
-
-string =GetDlgItemText\(idControl\)
+string = GetDlgItemText\(idControl\)
 Returns the text of child window or control with the specified ID\.
 
 #### Parameters
-
 
   - idControl : int
 
@@ -1071,102 +1039,100 @@ Returns the text of child window or control with the specified ID\.
 
 #### MFC References
 
-
   - CWnd::GetDlgItemText
 
-## [PyCWnd](#pycwnd)\.GetExStyle
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetExStyle
 
-
-int =GetExStyle\(\)
+int = GetExStyle\(\)
 Retrieves the window's extended style
 
-## [PyCWnd](#pycwnd)\.GetLastActivePopup
 
-[PyCWnd](#pycwnd) =GetLastActivePopup\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetLastActivePopup
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetLastActivePopup\(\)
 Returns the last active popup Window, or the Window itself\.
 
 #### MFC References
 
-
   - CWnd::GetLastActivePopup
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) object, or None if no Window can be found\.
+The result is a [PyCWnd](PyCWnd.md#pycwnd) object, or None if no Window can be found\.
 
-## [PyCWnd](#pycwnd)\.GetMenu
 
-[PyCMenu](#pycmenu) =GetMenu\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetMenu
+
+[PyCMenu](PyCMenu.md) = GetMenu\(\)
 Returns the menu object for the window's menu\.
 
 #### MFC References
 
-
   - CWnd::GetMenu
 
 #### Return Value
-The result is aPyMenu
+The result is a PyMenu
 
  object, or an exception is thrown\.
 
-## [PyCWnd](#pycwnd)\.GetParent
 
-[PyCWnd](#pycwnd) =GetParent\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetParent
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetParent\(\)
 Returns the window's parent\.
 
 #### MFC References
 
-
   - CWnd::GetParent
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) object, or None if no Window can be found\.
+The result is a [PyCWnd](PyCWnd.md#pycwnd) object, or None if no Window can be found\.
 
-## [PyCWnd](#pycwnd)\.GetParentFrame
 
-[PyCWnd](#pycwnd) =GetParentFrame\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetParentFrame
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetParentFrame\(\)
 Returns the window's frame\.
 
 #### MFC References
 
-
   - CWnd::GetParentFrame
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) object, or None if no Window can be found\.
+The result is a [PyCWnd](PyCWnd.md#pycwnd) object, or None if no Window can be found\.
 
-## [PyCWnd](#pycwnd)\.GetParentOwner
 
-[PyCWnd](#pycwnd) =GetParentOwner\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetParentOwner
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetParentOwner\(\)
 Returns the child window's parent window or owner window\.
 
 #### MFC References
 
-
   - CWnd::GetParentOwner
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) object, or None if no Window can be found\.
-
-## [PyCWnd](#pycwnd)\.GetSafeHwnd
+The result is a [PyCWnd](PyCWnd.md#pycwnd) object, or None if no Window can be found\.
 
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetSafeHwnd
 
-int =GetSafeHwnd\(\)
+int = GetSafeHwnd\(\)
 Returns the HWnd of this window\.
 
 #### MFC References
 
-
   - CWnd::GetSafeHwnd
 
-## [PyCWnd](#pycwnd)\.GetScrollInfo
 
-[SCROLLINFO tuple](SCROLLINFO.md#scrollinfotuple) =GetScrollInfo\(nBar, mask\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetScrollInfo
+
+[SCROLLINFO tuple](SCROLLINFO.md#scrollinfotuple) = GetScrollInfo\(nBar, mask
+
+\)
 Returns information about a scroll bar
 
 #### Parameters
-
 
   - nBar : int
 
@@ -1176,101 +1142,97 @@ Returns information about a scroll bar
 
     The mask for attributes to retrieve\.
 
-## [PyCWnd](#pycwnd)\.GetScrollPos
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetScrollPos
 
-
-int =GetScrollPos\(nBar\)
+int = GetScrollPos\(nBar\)
 Retrieves the current position of the scroll box of a scroll bar\.
 
 #### Parameters
-
 
   - nBar : int
 
     The scroll bar to examine\.  Can be one of win32con\.SB\_VERT or win32con\.SB\_HORZ
 
-## [PyCWnd](#pycwnd)\.GetStyle
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetStyle
 
-
-int =GetStyle\(\)
+int = GetStyle\(\)
 Retrieves the window style
 
-## [PyCWnd](#pycwnd)\.GetSystemMenu
 
-[PyCMenu](#pycmenu) =GetSystemMenu\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetSystemMenu
+
+[PyCMenu](PyCMenu.md) = GetSystemMenu\(\)
 Returns the menu object for the window's system menu\.
 
 #### MFC References
 
-
   - CWnd::GetSystemMenu
 
-## [PyCWnd](#pycwnd)\.GetTopLevelFrame
 
-[PyCWnd](#pycwnd) =GetTopLevelFrame\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetTopLevelFrame
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetTopLevelFrame\(\)
 Returns the top-level frame of the window\.
 
 #### MFC References
 
-
   - CWnd::GetTopLevelFrame
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) object, or None if no Window can be found\.
+The result is a [PyCWnd](PyCWnd.md#pycwnd) object, or None if no Window can be found\.
 
-## [PyCWnd](#pycwnd)\.GetTopLevelOwner
 
-[PyCWnd](#pycwnd) =GetTopLevelOwner\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetTopLevelOwner
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetTopLevelOwner\(\)
 Returns the top-level owner of the window\.
 
 #### MFC References
 
-
   - CWnd::GetTopLevelOwner
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) object, or None if no Window can be found\.
+The result is a [PyCWnd](PyCWnd.md#pycwnd) object, or None if no Window can be found\.
 
-## [PyCWnd](#pycwnd)\.GetTopLevelParent
 
-[PyCWnd](#pycwnd) =GetTopLevelParent\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetTopLevelParent
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetTopLevelParent\(\)
 Returns the top-level parent of the window\.
 
 #### MFC References
 
-
   - CWnd::GetTopLevelParent
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) object, or None if no Window can be found\.
+The result is a [PyCWnd](PyCWnd.md#pycwnd) object, or None if no Window can be found\.
 
-## [PyCWnd](#pycwnd)\.GetTopWindow
 
-[PyCWnd](#pycwnd) =GetTopWindow\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetTopWindow
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetTopWindow\(\)
 Identifies the top-level child window in a linked list of child windows\.
 
 #### Comments
 
-
 Searches for the top-level child window that belongs to this window\. If this window has no children, this function returns None
 
 #### MFC References
-
 
   - CWnd::GetTopWindow
 
 #### Return Value
 If no child windows exist, the value is None\.
 
-## [PyCWnd](#pycwnd)\.GetWindow
 
-[PyCWnd](#pycwnd) =GetWindow\(type\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetWindow
+
+[PyCWnd](PyCWnd.md#pycwnd) = GetWindow\(type\)
 Returns a window, with the specified relationship to this window\.
 
 #### Parameters
-
 
   - type : int
 
@@ -1280,26 +1242,24 @@ GW\_CHILD, GW\_HWNDFIRST, GW\_HWNDLAST, GW\_HWNDNEXT, GW\_HWNDPREV or GW\_OWNER
 
 #### MFC References
 
-
   - CWnd::GetWindow
 
 #### Return Value
-The result is a[PyCWnd](#pycwnd) or None if no Window can be found\.
+The result is a [PyCWnd](PyCWnd.md#pycwnd) or None if no Window can be found\.
 
-## [PyCWnd](#pycwnd)\.GetWindowDC
 
-[PyCDC](#pycdc) =GetWindowDC\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetWindowDC
+
+[PyCDC](PyCDC.md) = GetWindowDC\(\)
 Gets the windows current DC object\.
 
-## [PyCWnd](#pycwnd)\.GetWindowPlacement
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetWindowPlacement
 
-
-tuple =GetWindowPlacement\(\)
+tuple = GetWindowPlacement\(\)
 Returns placement information about the current window\.
 
 #### MFC References
-
 
   - CWnd::GetWindowPlacement
 
@@ -1309,54 +1269,50 @@ The result is a tuple of
 \(flags, showCmd, \(minposX, minposY\), \(maxposX, maxposY\), \(normalposX, normalposY\)\)
 
 
-## [PyCWnd](#pycwnd)\.GetWindowRect
 
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetWindowRect
 
-\(left, top, right, bottom\) =GetWindowRect\(\)
+\(left, top, right, bottom\) = GetWindowRect\(\)
 Returns the screen coordinates of the windows upper left corner
 
 #### MFC References
 
-
   - CWnd::GetWindowRect
 
-## [PyCWnd](#pycwnd)\.GetWindowText
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.GetWindowText
 
-
-string =GetWindowText\(\)
+string = GetWindowText\(\)
 Returns the windows text\.
 
 #### MFC References
 
-
   - CWnd::Py\_BuildValue
 
-## [PyCWnd](#pycwnd)\.HideCaret
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.HideCaret
 
 HideCaret\(\)
 Hides the caret
 
 #### Comments
 
+See also [PyCWnd::ShowCaret](PyCWnd.md#pycwndshowcaret)
 
-See also[PyCWnd::ShowCaret](PyCWnd.md#pycwndshowcaret)
 
-## [PyCWnd](#pycwnd)\.HookAllKeyStrokes
+## [PyCWnd](PyCWnd.md#pycwnd)\.HookAllKeyStrokes
 
 HookAllKeyStrokes\(obHandler\)
 Hook a key stroke handler for all key strokes\.
 
 #### Parameters
 
-
   - obHandler : object
 
     The handler for the keystrokes\.  This must be a callable object\.
 
 #### Comments
-
 
 The handler object passed will be called as the application receives WM\_CHAR messages\. 
 
@@ -1374,17 +1330,17 @@ If the handler returns TRUE, then the keystroke will be passed on to the
 default handler, otherwise it will be consumed\.
  
 
-Note: This handler will prevent any[PyCWnd::HookKeyStroke](PyCWnd.md#pycwndhookkeystroke) hooks from being called\.
-
-## [PyCWnd](#pycwnd)\.HookKeyStroke
+Note: This handler will prevent any [PyCWnd::HookKeyStroke](PyCWnd.md#pycwndhookkeystroke) hooks from being called\.
 
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.HookKeyStroke
 
-object =HookKeyStroke\(obHandler, ch\)
+object = HookKeyStroke\(obHandler, ch
+
+\)
 Hook a key stroke handler
 
 #### Parameters
-
 
   - obHandler : object
 
@@ -1397,7 +1353,6 @@ Hook a key stroke handler
 This may be an ascii code, or a virtual key code\.
 
 #### Comments
-
 
 The handler object passed will be called as the application receives WM\_CHAR message for the specified character code\. 
 
@@ -1415,20 +1370,20 @@ If the handler returns TRUE, then the keystroke will be passed on to the
 default handler, otherwise the keystroke will be consumed\.
  
 
-Note: This handler will not be called if a[PyCWnd::HookAllKeyStrokes](PyCWnd.md#pycwndhookallkeystrokes) hook is in place\.
+Note: This handler will not be called if a [PyCWnd::HookAllKeyStrokes](PyCWnd.md#pycwndhookallkeystrokes) hook is in place\.
 
 #### Return Value
 The return value is the previous handler, or None\.
 
-## [PyCWnd](#pycwnd)\.HookMessage
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.HookMessage
 
+object = HookMessage\(obHandler, message
 
-object =HookMessage\(obHandler, message\)
+\)
 Hook a message notification handler
 
 #### Parameters
-
 
   - obHandler : object
 
@@ -1439,7 +1394,6 @@ Hook a message notification handler
     The ID of the message to be handled\.
 
 #### Comments
-
 
 The handler object passed will be called as the application receives messages with the specified ID\. 
 
@@ -1458,41 +1412,40 @@ The message tuple is in the following format:
 
 #### Items
 
-
-  - \[0\]int : hwnd
+  - \[0\] int : hwnd
 
     The hwnd of the window\.
 
-  - \[1\]int : message
+  - \[1\] int : message
 
     The message\.
 
-  - \[2\]int : wParam
+  - \[2\] int : wParam
 
     The wParam sent with the message\.
 
-  - \[3\]int : lParam
+  - \[3\] int : lParam
 
     The lParam sent with the message\.
 
-  - \[4\]int : time
+  - \[4\] int : time
 
     The time the message was posted\.
 
-  - \[5\]int, int : point
+  - \[5\] int, int : point
 
     The point where the mouse was when the message was posted\.
 
 #### Return Value
 The return value is the previous handler, or None\.
 
-## [PyCWnd](#pycwnd)\.InvalidateRect
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.InvalidateRect
 
 InvalidateRect\(rect, bErase\)
 Invalidates an area of a window\.
 
 #### Parameters
-
 
   - rect=\(0,0,0,0\) : \(left, top, right, bottom\)
 
@@ -1506,18 +1459,17 @@ updated\.  If default param is used, the entire window is invalidated\.
 
 #### MFC References
 
-
   - CWnd::InvalidateRect
 
-## [PyCWnd](#pycwnd)\.InvalidateRgn
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.InvalidateRgn
 
 InvalidateRgn\(region, bErase\)
 Invalidates a region of the window
 
 #### Parameters
 
-
-  - region :[PyCRgn](#pycrgn)
+  - region : [PyCRgn](PyCRgn.md)
 
     The region to erase\.
 
@@ -1525,34 +1477,29 @@ Invalidates a region of the window
 
     Indicates if the region should be erased\.
 
-## [PyCWnd](#pycwnd)\.IsChild
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.IsChild
 
-
-int =IsChild\(obWnd\)
+int = IsChild\(obWnd\)
 Determines if a given window is a child of this window\.
 
 #### Parameters
 
-
-  - obWnd :[PyCWnd](#pycwnd)
+  - obWnd : [PyCWnd](PyCWnd.md#pycwnd)
 
     The window to be checked
 
 #### MFC References
 
-
   - CWnd::IsChild
 
-## [PyCWnd](#pycwnd)\.IsDlgButtonChecked
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.IsDlgButtonChecked
 
-
-int =IsDlgButtonChecked\(idCtl\)
+int = IsDlgButtonChecked\(idCtl\)
 Determines if a dialog button is checked\.
 
 #### Parameters
-
 
   - idCtl : int
 
@@ -1560,75 +1507,67 @@ Determines if a dialog button is checked\.
 
 #### MFC References
 
-
   - CWnd::IsDlgButtonChecked
 
-## [PyCWnd](#pycwnd)\.IsIconic
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.IsIconic
 
-
-int =IsIconic\(\)
+int = IsIconic\(\)
 Determines if the window is currently displayed as an icon\.
 
-## [PyCWnd](#pycwnd)\.IsWindow
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.IsWindow
 
-
-int =IsWindow\(\)
+int = IsWindow\(\)
 determines whether the specified window handle identifies an existing window
 
-## [PyCWnd](#pycwnd)\.IsWindowEnabled
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.IsWindowEnabled
 
-
-int =IsWindowEnabled\(\)
+int = IsWindowEnabled\(\)
 Determines if the window is currently enabled\.
 
-## [PyCWnd](#pycwnd)\.IsWindowVisible
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.IsWindowVisible
 
-
-int =IsWindowVisible\(\)
+int = IsWindowVisible\(\)
 Determines if the window is currently visible\.
 
-## [PyCWnd](#pycwnd)\.IsZoomed
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.IsZoomed
 
-
-int =IsZoomed\(\)
+int = IsZoomed\(\)
 Determines if the window is currently maximised\.
 
-## [PyCWnd](#pycwnd)\.KillTimer
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.KillTimer
 
-
-int =KillTimer\(\)
+int = KillTimer\(\)
 Kills a system timer
 
 #### MFC References
 
-
   - CWnd::KillTimer
 
-## [PyCWnd](#pycwnd)\.LockWindowUpdate
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.LockWindowUpdate
 
 LockWindowUpdate\(\)
 Disables drawing in the given window
 
 #### MFC References
 
-
   - CWnd::LockWindowUpdate
 
-## [PyCWnd](#pycwnd)\.MapWindowPoints
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.MapWindowPoints
 
 MapWindowPoints\(wnd, points\)
 Converts \(maps\) a set of points from the coordinate space of a window to the coordinate space of another window\.
 
 #### Parameters
 
-
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md#pycwnd)
 
     
 
@@ -1639,13 +1578,13 @@ Converts \(maps\) a set of points from the coordinate space of a window to the c
 #### Return Value
 A list of the mapped points from the coordinate space of the CWnd to the coordinate space of another window\.
 
-## [PyCWnd](#pycwnd)\.MessageBox
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.MessageBox
 
 MessageBox\(message, title, style\)
 Display a message box\.
 
 #### Parameters
-
 
   - message : string
 
@@ -1661,21 +1600,22 @@ Display a message box\.
 
 #### MFC References
 
-
   - CWnd::MessageBox
 
 #### Return Value
 An integer identifying the button pressed to dismiss the dialog\.
 
-## [PyCWnd](#pycwnd)\.ModifyStyle
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.ModifyStyle
 
+int = ModifyStyle\(remove, add
 
-int =ModifyStyle\(remove, add, flags\)
+, flags
+
+\)
 Modifies the style of a window\.
 
 #### Parameters
-
 
   - remove : int
 
@@ -1691,16 +1631,19 @@ Modifies the style of a window\.
 
 #### Comments
 
+If nFlags is nonzero, ModifyStyle calls the Windows API function ::SetWindowPos and redraws the window by combining nFlags with the following four preset flags: 
 
-If nFlags is nonzero, ModifyStyle calls the Windows API function ::SetWindowPos and redraws the window by combining nFlags with the following four preset flags:
-\* SWP\_NOSIZE&\#09Retains the current size\.
-\* SWP\_NOMOVE&\#09Retains the current position\.
-\* SWP\_NOZORDER&\#09Retains the current Z order\.
-\* SWP\_NOACTIVATE&\#09Does not activate the window\.
-See also[PyCWnd::ModifyStyleEx](PyCWnd.md#pycwndmodifystyleex)
+\* SWP\_NOSIZE&\#09Retains the current size\. 
+
+\* SWP\_NOMOVE&\#09Retains the current position\. 
+
+\* SWP\_NOZORDER&\#09Retains the current Z order\. 
+
+\* SWP\_NOACTIVATE&\#09Does not activate the window\. 
+
+See also [PyCWnd::ModifyStyleEx](PyCWnd.md#pycwndmodifystyleex)
 
 #### MFC References
-
 
   - CWnd::ModifyStyle
 
@@ -1709,15 +1652,17 @@ The result is true if the style was changed, or false if the style
 
 is already the same as requested and no change was made\.
 
-## [PyCWnd](#pycwnd)\.ModifyStyleEx
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.ModifyStyleEx
 
+int = ModifyStyleEx\(remove, add
 
-int =ModifyStyleEx\(remove, add, flags\)
+, flags
+
+\)
 Modifies the extended style of a window\.
 
 #### Parameters
-
 
   - remove : int
 
@@ -1733,16 +1678,19 @@ Modifies the extended style of a window\.
 
 #### Comments
 
+If nFlags is nonzero, ModifyStyleEx calls the Windows API function ::SetWindowPos and redraws the window by combining nFlags with the following four preset flags: 
 
-If nFlags is nonzero, ModifyStyleEx calls the Windows API function ::SetWindowPos and redraws the window by combining nFlags with the following four preset flags:
-\* SWP\_NOSIZE&\#09Retains the current size\.
-\* SWP\_NOMOVE&\#09Retains the current position\.
-\* SWP\_NOZORDER&\#09Retains the current Z order\.
-\* SWP\_NOACTIVATE&\#09Does not activate the window\.
-See also[PyCWnd::ModifyStyle](PyCWnd.md#pycwndmodifystyle)
+\* SWP\_NOSIZE&\#09Retains the current size\. 
+
+\* SWP\_NOMOVE&\#09Retains the current position\. 
+
+\* SWP\_NOZORDER&\#09Retains the current Z order\. 
+
+\* SWP\_NOACTIVATE&\#09Does not activate the window\. 
+
+See also [PyCWnd::ModifyStyle](PyCWnd.md#pycwndmodifystyle)
 
 #### MFC References
-
 
   - CWnd::ModifyStyleEx
 
@@ -1751,20 +1699,19 @@ The result is true if the style was changed, or false if the style
 
 is already the same as requested and no change was made\.
 
-## [PyCWnd](#pycwnd)\.MouseCaptured
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.MouseCaptured
 
-
-int =MouseCaptured\(\)
+int = MouseCaptured\(\)
 Returns 1 if the window has the mouse capture, else 0
 
-## [PyCWnd](#pycwnd)\.MoveWindow
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.MoveWindow
 
 MoveWindow\(rect, bRepaint\)
 Move a window to a new location\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\)
 
@@ -1776,51 +1723,47 @@ Move a window to a new location\.
 
 #### MFC References
 
-
   - CWnd::MoveWindow
 
-## [PyCWnd](#pycwnd)\.OnClose
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnClose
 
-
-int =OnClose\(\)
+int = OnClose\(\)
 Calls the default MFC OnClose handler\.
 
 #### See Also
-
 
   - [PyCWnd\.OnClose](PyCWnd.md#pycwndonclose_virtual) virtual method
 
 #### MFC References
 
-
   - CWnd::OnClose
 
-## [PyCWnd\.OnClose](#pycwnd) Virtual
+
+## [PyCWnd\.OnClose](PyCWnd.md#pycwnd) Virtual
 
 OnClose\(\)
 Called for the WM\_CLOSE message\.
 
 #### Comments
 
-
 The default calls DestroyWindow\(\)\.  If you supply a handler, the default is not called\.
-
 
 The MFC base class is always called before the Python method\.
 
 #### See Also
 
-
   - [PyCWnd::OnClose](PyCWnd.md#pycwndonclose)
 
-## [PyCWnd\.OnCommand](#pycwnd) Virtual
 
-OnCommand\(wparam, lparam\)
+## [PyCWnd\.OnCommand](PyCWnd.md#pycwnd) Virtual
+
+OnCommand\(wparam, lparam
+
+\)
 Allows a Window to override the OnCommand handling\.
 
 #### Parameters
-
 
   - wparam : int
 
@@ -1832,49 +1775,46 @@ Allows a Window to override the OnCommand handling\.
 
 #### Comments
 
-
-The base class method must be called manually viaPyCWnd::OnCommand
-
-
+The base class method must be called manually via PyCWnd::OnCommand
 
 \. 
 
 Failure to call the base implementation will prevent all Python command 
 
-handlers \(hooked viaPyCWnd::HookCommand
-
-
+handlers \(hooked via PyCWnd::HookCommand
 
 \)\.
 
-## [PyCWnd\.OnCreate](#pycwnd) Virtual
+
+## [PyCWnd\.OnCreate](PyCWnd.md#pycwnd) Virtual
 
 OnCreate\(\)
 Called for the WM\_CREATE message\.
 
 #### Comments
 
-
 The MFC implementation is always called before Python\.
 
 #### Return Value
 The result is an integer indicating if the window should be created\.
 
-## [PyCWnd](#pycwnd)\.OnCtlColor
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnCtlColor
 
+int = OnCtlColor\(dc, control
 
-int =OnCtlColor\(dc, control, type\)
+, type
+
+\)
 Calls the default MFC OnCtlColor handler\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The dc
 
-  - control :PyCWin
+  - control : PyCWin
 
     The control that want's it's color changed
 
@@ -1884,115 +1824,110 @@ Calls the default MFC OnCtlColor handler\.
 
 #### See Also
 
-
   - [PyCWnd\.OnCtlColor](PyCWnd.md#pycwndonctlcolor_virtual) virtual method
 
 #### MFC References
 
-
   - CWnd::OnCtlColor
 
-## [PyCWnd\.OnCtlColor](#pycwnd) Virtual
+
+## [PyCWnd\.OnCtlColor](PyCWnd.md#pycwnd) Virtual
 
 OnCtlColor\(\)
 Called for the WM\_CTLCOLOR message\.
 
 #### Comments
 
-
 Setup dc to paint the control pWnd of type nCtlColor\.
-
 
 The default calls OnCtlColor\(\)\.  If you supply a handler, the default is not called\.
 
 #### See Also
-
 
   - [PyCWnd::OnCtlColor](PyCWnd.md#pycwndonctlcolor)
 
 #### Return Value
 Handle of the brush to paint the control's background\.
 
-## [PyCWnd](#pycwnd)\.OnEraseBkgnd
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnEraseBkgnd
 
-
-int =OnEraseBkgnd\(dc\)
+int = OnEraseBkgnd\(dc\)
 Calls the default MFC OnEraseBkgnd handler\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The dc
 
 #### See Also
 
-
   - [PyCWnd\.OnEraseBkgnd](PyCWnd.md#pycwndonerasebkgnd_virtual) virtual method
 
 #### MFC References
 
-
   - CWnd::OnEraseBkgnd
 
-## [PyCWnd\.OnEraseBkgnd](#pycwnd) Virtual
+
+## [PyCWnd\.OnEraseBkgnd](PyCWnd.md#pycwnd) Virtual
 
 OnEraseBkgnd\(dc\)
 Called for the WN\_ERASEBACKGROUND message\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The device context\.
 
 #### See Also
-
 
   - [PyCWnd::OnEraseBkgnd](PyCWnd.md#pycwndonerasebkgnd)
 
 #### Return Value
 Nonzero if it erases the background; otherwise 0\.
 
-## [PyCWnd\.OnMDIActivate](#pycwnd) Virtual
 
-OnMDIActivate\(bActivate, wndActivate, wndDeactivate\)
+## [PyCWnd\.OnMDIActivate](PyCWnd.md#pycwnd) Virtual
 
+OnMDIActivate\(bActivate, wndActivate
+
+, wndDeactivate
+
+\)
 
 #### Parameters
-
 
   - bActivate : int
 
     
 
-  - wndActivate :[PyCWnd](#pycwnd)
+  - wndActivate : [PyCWnd](PyCWnd.md#pycwnd)
 
     
 
-  - wndDeactivate :[PyCWnd](#pycwnd)
+  - wndDeactivate : [PyCWnd](PyCWnd.md#pycwnd)
 
     
 
 #### Comments
 
-
 The MFC implementation is always called before this\.
 
-## [PyCWnd](#pycwnd)\.OnMouseActivate
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnMouseActivate
 
+int = OnMouseActivate\(wnd, hittest
 
-int =OnMouseActivate\(wnd, hittest, message\)
+, message
+
+\)
 Calls the base MFC OnMouseActivate function\.
 
 #### Parameters
 
-
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md#pycwnd)
 
     
 
@@ -2006,18 +1941,21 @@ Calls the base MFC OnMouseActivate function\.
 
 #### See Also
 
-
   - [PyCWnd\.OnMouseActivate](PyCWnd.md#pycwndonmouseactivate_virtual) virtual method
 
-## [PyCWnd\.OnMouseActivate](#pycwnd) Virtual
 
-OnMouseActivate\(wndDesktop, hitTest, msg\)
+## [PyCWnd\.OnMouseActivate](PyCWnd.md#pycwnd) Virtual
+
+OnMouseActivate\(wndDesktop, hitTest
+
+, msg
+
+\)
 Called when the mouse is used to activate a window\.
 
 #### Parameters
 
-
-  - wndDesktop :[PyCWnd](#pycwnd)
+  - wndDesktop : [PyCWnd](PyCWnd.md#pycwnd)
 
     
 
@@ -2031,23 +1969,21 @@ Called when the mouse is used to activate a window\.
 
 #### See Also
 
-
   - [PyCWnd::OnMouseActivate](PyCWnd.md#pycwndonmouseactivate)
 
-## [PyCWnd\.OnNcCalcSize](#pycwnd) Virtual
+
+## [PyCWnd\.OnNcCalcSize](PyCWnd.md#pycwnd) Virtual
 
 OnNcCalcSize\(\)
 Called for the WM\_NCCALCSIZE message\.
 
-## [PyCWnd](#pycwnd)\.OnNcHitTest
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnNcHitTest
 
-
-int =OnNcHitTest\(x, y\)
+int = OnNcHitTest\(x, y\)
 Calls the base MFC OnNcHitTest function\.
 
 #### Parameters
-
 
   - x, y : int, int
 
@@ -2055,16 +1991,15 @@ Calls the base MFC OnNcHitTest function\.
 
 #### See Also
 
-
   - [PyCWnd\.OnNcHitTest](PyCWnd.md#pycwndonnchittest_virtual) virtual method
 
-## [PyCWnd\.OnNcHitTest](#pycwnd) Virtual
+
+## [PyCWnd\.OnNcHitTest](PyCWnd.md#pycwnd) Virtual
 
 OnNcHitTest\(x,y\)
 Called for the WM\_NCHITTEST message\.
 
 #### Parameters
-
 
   - x,y : int, int
 
@@ -2072,128 +2007,122 @@ Called for the WM\_NCHITTEST message\.
 
 #### See Also
 
-
   - [PyCWnd::OnNcHitTest](PyCWnd.md#pycwndonnchittest)
 
-## [PyCWnd](#pycwnd)\.OnPaint
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnPaint
 
-
-int =OnPaint\(\)
+int = OnPaint\(\)
 Calls the default MFC OnPaint handler\.
 
 #### See Also
-
 
   - [PyCWnd\.OnPaint](PyCWnd.md#pycwndonpaint_virtual) virtual method
 
 #### MFC References
 
-
   - CWnd::OnEraseBkgnd
 
-## [PyCWnd\.OnPaint](#pycwnd) Virtual
+
+## [PyCWnd\.OnPaint](PyCWnd.md#pycwnd) Virtual
 
 OnPaint\(\)
 Default message handler\.
 
 #### See Also
 
-
   - Wnd::OnPaint
 
-## [PyCWnd\.OnPaletteChanged](#pycwnd) Virtual
+
+
+
+## [PyCWnd\.OnPaletteChanged](PyCWnd.md#pycwnd) Virtual
 
 OnPaletteChanged\(focusWnd\)
 Called to allow windows that use a color palette to realize their logical palettes and update their client areas\.
 
 #### Parameters
 
-
-  - focusWnd :[PyCWnd](#pycwnd)
+  - focusWnd : [PyCWnd](PyCWnd.md#pycwnd)
 
     The window that caused the system palette to change\.
 
-## [PyCWnd\.OnPaletteIsChanging](#pycwnd) Virtual
+
+## [PyCWnd\.OnPaletteIsChanging](PyCWnd.md#pycwnd) Virtual
 
 OnPaletteIsChanging\(realizeWnd\)
 Informs other applications when an application is going to realize its logical palette\.
 
 #### Parameters
 
-
-  - realizeWnd :[PyCWnd](#pycwnd)
+  - realizeWnd : [PyCWnd](PyCWnd.md#pycwnd)
 
     Specifies the window that is about to realize its logical palette\.
 
 #### Comments
 
-
 The MFC base class is always called before the Python method\.
 
-## [PyCWnd](#pycwnd)\.OnQueryDragIcon
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnQueryDragIcon
 
-
-int =OnQueryDragIcon\(\)
+int = OnQueryDragIcon\(\)
 Calls the default MFC OnQueryDragIcon handler\.
 
 #### See Also
 
-
   - [PyCWnd\.OnQueryDragIcon](PyCWnd.md#pycwndonquerydragicon_virtual) virtual method
 
-## [PyCWnd\.OnQueryDragIcon](#pycwnd) Virtual
+
+## [PyCWnd\.OnQueryDragIcon](PyCWnd.md#pycwnd) Virtual
 
 OnQueryDragIcon\(\)
 Called for the WM\_QUERYDRAGICON message\.
 
 #### See Also
 
-
   - [PyCWnd::OnQueryDragIcon](PyCWnd.md#pycwndonquerydragicon)
 
 #### Return Value
 The result is an integer containing a HCURSOR for the icon\.
 
-## [PyCWnd](#pycwnd)\.OnQueryNewPalette
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnQueryNewPalette
 
-
-int =OnQueryNewPalette\(\)
+int = OnQueryNewPalette\(\)
 Calls the underlying MFC OnQueryNewPalette method\.
 
 #### See Also
 
-
   - [PyCWnd\.OnQueryNewPalette](PyCWnd.md#pycwndonquerynewpalette_virtual) virtual method
 
-## [PyCWnd\.OnQueryNewPalette](#pycwnd) Virtual
+
+## [PyCWnd\.OnQueryNewPalette](PyCWnd.md#pycwnd) Virtual
 
 OnQueryNewPalette\(\)
 Informs the window it is about to receive input focus, and shoudl realize its logical palette\.
 
 #### Comments
 
-
-The base class method must be called manually viaPyCScrollView::OnQueryNewPalette
+The base class method must be called manually via PyCScrollView::OnQueryNewPalette
 
 #### See Also
 
-
   - [PyCWnd::OnQueryNewPalette](PyCWnd.md#pycwndonquerynewpalette)
 
-## [PyCWnd](#pycwnd)\.OnSetCursor
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnSetCursor
 
+int = OnSetCursor\(wnd, hittest
 
-int =OnSetCursor\(wnd, hittest, message\)
+, message
+
+\)
 Calls the base MFC OnSetCursor function\.
 
 #### Parameters
 
-
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md#pycwnd)
 
     
 
@@ -2207,18 +2136,21 @@ Calls the base MFC OnSetCursor function\.
 
 #### See Also
 
-
   - [PyCWnd\.OnSetCursor](PyCWnd.md#pycwndonsetcursor_virtual) virtual method
 
-## [PyCWnd\.OnSetCursor](#pycwnd) Virtual
 
-OnSetCursor\(wnd, hitTest, msg\)
+## [PyCWnd\.OnSetCursor](PyCWnd.md#pycwnd) Virtual
+
+OnSetCursor\(wnd, hitTest
+
+, msg
+
+\)
 Called for the WM\_SETCURSOR message\.
 
 #### Parameters
 
-
-  - wnd :[PyCWnd](#pycwnd)
+  - wnd : [PyCWnd](PyCWnd.md#pycwnd)
 
     
 
@@ -2232,38 +2164,37 @@ Called for the WM\_SETCURSOR message\.
 
 #### See Also
 
-
   - [PyCWnd::OnSetCursor](PyCWnd.md#pycwndonsetcursor)
 
-## [PyCWnd\.OnSysColorChange](#pycwnd) Virtual
+
+## [PyCWnd\.OnSysColorChange](PyCWnd.md#pycwnd) Virtual
 
 OnSysColorChange\(\)
 Called for all top-level windows when a change is made in the system color setting\.
 
 #### Comments
 
-
 The MFC base class is always called before the Python method\.
 
-## [PyCWnd\.OnTimer](#pycwnd) Virtual
+
+## [PyCWnd\.OnTimer](PyCWnd.md#pycwnd) Virtual
 
 OnTimer\(nIDEvent\)
 Called for the WM\_TIMER message\.
 
 #### Parameters
 
-
   - nIDEvent : int
 
     Specifies the identifier of the timer\.
 
-## [PyCWnd\.OnWinIniChange](#pycwnd) Virtual
+
+## [PyCWnd\.OnWinIniChange](PyCWnd.md#pycwnd) Virtual
 
 OnWinIniChange\(section\)
 Called when the system configuration changes\.
 
 #### Parameters
-
 
   - section : string
 
@@ -2271,18 +2202,19 @@ Called when the system configuration changes\.
 
 #### Comments
 
-
 The MFC base class is always called before the Python method\.
 
-## [PyCWnd](#pycwnd)\.OnWndMsg
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.OnWndMsg
 
+\(int,int\) = OnWndMsg\(msg, wParam
 
-\(int,int\) =OnWndMsg\(msg, wParam, lParam\)
+, lParam
+
+\)
 Calls the default MFC Window Message handler\.
 
 #### Parameters
-
 
   - msg : int
 
@@ -2298,7 +2230,6 @@ Calls the default MFC Window Message handler\.
 
 #### MFC References
 
-
   - CWnd::OnWndMsg
 
 #### Return Value
@@ -2308,13 +2239,13 @@ return value from the MFC function call, and the value of the
 
 lResult param\.  Please see the MFC documentation for more details\.
 
-## [PyCWnd](#pycwnd)\.PostMessage
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.PostMessage
 
 PostMessage\(idMessage, wParam, lParam\)
 Post a message to the window\.
 
 #### Parameters
-
 
   - idMessage : int
 
@@ -2330,18 +2261,15 @@ Post a message to the window\.
 
 #### MFC References
 
-
   - CWnd::PostMessage
 
-## [PyCWnd](#pycwnd)\.PreCreateWindow
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.PreCreateWindow
 
-
-tuple =PreCreateWindow\(createStruct\)
+tuple = PreCreateWindow\(createStruct\)
 Calls the underlying MFC PreCreateWindow method\.
 
 #### Parameters
-
 
   - createStruct : tuple
 
@@ -2349,16 +2277,15 @@ Calls the underlying MFC PreCreateWindow method\.
 
 #### See Also
 
-
   - [PyCWnd\.PreCreateWindow](PyCWnd.md#pycwndprecreatewindow_virtual) virtual method
 
-## [PyCWnd\.PreCreateWindow](#pycwnd) Virtual
+
+## [PyCWnd\.PreCreateWindow](PyCWnd.md#pycwnd) Virtual
 
 PreCreateWindow\(CREATESTRUCT\)
 Called by the framework before the creation of the Windows window attached to this View object\.
 
 #### Parameters
-
 
   - CREATESTRUCT : tuple
 
@@ -2366,16 +2293,15 @@ Called by the framework before the creation of the Windows window attached to th
 
 #### See Also
 
-
   - [PyCWnd::PreCreateWindow](PyCWnd.md#pycwndprecreatewindow)
 
-## [PyCWnd\.PreTranslateMessage](#pycwnd) Virtual
+
+## [PyCWnd\.PreTranslateMessage](PyCWnd.md#pycwnd) Virtual
 
 PreTranslateMessage\(msg\)
 Allows a Window to override the PreTranslateMessage handling\.
 
 #### Parameters
-
 
   - msg : tuple
 
@@ -2390,13 +2316,13 @@ from the C\+\+ function\.  If None is returned, the default handler
 
 is called\.
 
-## [PyCWnd](#pycwnd)\.PumpWaitingMessages
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.PumpWaitingMessages
 
 PumpWaitingMessages\(firstMsg, lastMsg\)
 Pump messages associate with a window\.
 
 #### Parameters
-
 
   - firstMsg : int
 
@@ -2408,16 +2334,15 @@ Pump messages associate with a window\.
 
 #### MFC References
 
-
   - CWnd::PeekMessage and DispatchMessage
 
-## [PyCWnd](#pycwnd)\.RedrawWindow
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.RedrawWindow
 
 RedrawWindow\(rect, object, flags\)
 Updates the specified rectangle or region in the given window's client area\.
 
 #### Parameters
-
 
   - rect=None : \(left, top, right, bottom\)
 
@@ -2433,33 +2358,33 @@ Updates the specified rectangle or region in the given window's client area\.
 
 #### MFC References
 
-
   - CWnd::RedrawWindow
 
-## [PyCWnd](#pycwnd)\.ReleaseCapture
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.ReleaseCapture
 
 ReleaseCapture\(\)
-Releases the mouse capture for this window\.  See[PyCWnd::SetCapture](PyCWnd.md#pycwndsetcapture)\.
+Releases the mouse capture for this window\.  See [PyCWnd::SetCapture](PyCWnd.md#pycwndsetcapture)\.
 
-## [PyCWnd](#pycwnd)\.ReleaseDC
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.ReleaseDC
 
 ReleaseDC\(dc\)
 Releases a device context, freeing it for use by other applications\.
 
 #### Parameters
 
-
-  - dc :[PyCDC](#pycdc)
+  - dc : [PyCDC](PyCDC.md)
 
     The DC to be released\.
 
-## [PyCWnd](#pycwnd)\.RepositionBars
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.RepositionBars
 
 RepositionBars\(idFirst, idLast, idLeftOver\)
 Repositions the windows control bars\.\( UINT nIDFirst, UINT nIDLast, UINT nIDLeftOver, UINT nFlag = CWnd::reposDefault, LPRECT lpRectParam = NULL, LPCRECT lpRectClient = NULL, BOOL bStretch = TRUE \);
 
 #### Parameters
-
 
   - idFirst : int
 
@@ -2473,29 +2398,25 @@ Repositions the windows control bars\.\( UINT nIDFirst, UINT nIDLast, UINT nIDLe
 
     
 
-## [PyCWnd](#pycwnd)\.RunModalLoop
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.RunModalLoop
 
-
-int =RunModalLoop\(flags\)
+int = RunModalLoop\(flags\)
 Begins a modal loop for the window\.
 
 #### Parameters
-
 
   - flags : int
 
     
 
-## [PyCWnd](#pycwnd)\.ScreenToClient
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.ScreenToClient
 
-
-\(left, top, right, bottom\) or \(x, y\) =ScreenToClient\(rect\)
+\(left, top, right, bottom\) or \(x, y\) = ScreenToClient\(rect\)
 Converts the screen coordinates of a given point or rectangle on the display to client coordinates\.
 
 #### Parameters
-
 
   - rect : \(left, top, right, bottom\) or \(x,y\)
 
@@ -2503,26 +2424,24 @@ Converts the screen coordinates of a given point or rectangle on the display to 
 
 #### Alternative Parameters
 
-
   - pnt
 
     The coordinates to convert\.
 
 #### MFC References
 
-
   - CWnd::ScreenToClient
 
 #### Return Value
 The result is the same size as the input argument\.
 
-## [PyCWnd](#pycwnd)\.SendMessage
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SendMessage
 
 SendMessage\(idMessage, wParam, lParam\)
 Send a message to the window\.
 
 #### Parameters
-
 
   - idMessage : int
 
@@ -2538,7 +2457,6 @@ Send a message to the window\.
 
 #### Alternative Parameters
 
-
   - idMessage
 
     The ID of the message to send\.
@@ -2549,16 +2467,15 @@ Send a message to the window\.
 
 #### MFC References
 
-
   - CWnd::SendMessage
 
-## [PyCWnd](#pycwnd)\.SendMessageToDescendants
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SendMessageToDescendants
 
 SendMessageToDescendants\(idMessage, wParam, lParam, bDeep\)
 Send a message to all descendant windows\.
 
 #### Parameters
-
 
   - idMessage : int
 
@@ -2578,29 +2495,30 @@ Send a message to all descendant windows\.
 
 #### MFC References
 
-
   - CWnd::SendMessageToDescendants
 
-## [PyCWnd](#pycwnd)\.SetActiveWindow
 
-[PyCWnd](#pycwnd) =SetActiveWindow\(\)
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetActiveWindow
+
+[PyCWnd](PyCWnd.md#pycwnd) = SetActiveWindow\(\)
 Sets the window active\.  Returns the previously active window, or None\.
 
 #### Return Value
 The result is the previous window with focus, or None\.
 
-## [PyCWnd](#pycwnd)\.SetCapture
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetCapture
 
 SetCapture\(\)
 Causes all subsequent mouse input to be sent to the window object regardless of the position of the cursor\.
 
-## [PyCWnd](#pycwnd)\.SetDlgItemText
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetDlgItemText
 
 SetDlgItemText\(idControl, text\)
 Sets the text for the child window or control with the specified ID\.
 
 #### Parameters
-
 
   - idControl : int
 
@@ -2612,23 +2530,23 @@ Sets the text for the child window or control with the specified ID\.
 
 #### MFC References
 
-
   - CWnd::SetDlgItemText
 
-## [PyCWnd](#pycwnd)\.SetFocus
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetFocus
 
 SetFocus\(\)
 Claims the input focus\.  The object that previously had the focus loses it\.
 
-## [PyCWnd](#pycwnd)\.SetFont
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetFont
 
 SetFont\(font, bRedraw\)
 Sets the window's current font to the specified font\.
 
 #### Parameters
 
-
-  - font :[PyCFont](#pycfont)
+  - font : [PyCFont](PyCFont.md)
 
     The new font to use\.
 
@@ -2636,37 +2554,37 @@ Sets the window's current font to the specified font\.
 
     If TRUE, redraw the window\.
 
-## [PyCWnd](#pycwnd)\.SetForegroundWindow
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetForegroundWindow
 
 SetForegroundWindow\(\)
 Puts the window into the foreground and activates the window\.
 
-## [PyCWnd](#pycwnd)\.SetIcon
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetIcon
 
-
-HICON =SetIcon\(\)
+HICON = SetIcon\(\)
 Calls the underlying MFC SetIcon method\.
 
-## [PyCWnd](#pycwnd)\.SetMenu
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetMenu
 
 SetMenu\(menuObj\)
 Sets the menu for a window\.
 
 #### Parameters
 
-
   - menuObj : PyCMenu
 
     The menu object to set, or None to remove the window\.
 
-## [PyCWnd](#pycwnd)\.SetRedraw
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetRedraw
 
 SetRedraw\(bState\)
 Allows changes to be redrawn or to prevent changes from being redrawn\.
 
 #### Parameters
-
 
   - bState=1 : int
 
@@ -2674,24 +2592,25 @@ Allows changes to be redrawn or to prevent changes from being redrawn\.
 
 #### MFC References
 
-
   - CWnd::SetRedraw
 
-## [PyCWnd](#pycwnd)\.SetScrollInfo
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetScrollInfo
 
+int = SetScrollInfo\(nBar, ScrollInfo
 
-int =SetScrollInfo\(nBar, ScrollInfo, redraw\)
+, redraw
+
+\)
 Set information about a scroll bar
 
 #### Parameters
-
 
   - nBar : int
 
     The scroll bar to examine\.  Can be one of win32con\.SB\_BOTH, win32con\.SB\_VERT or win32con\.SB\_HORZ
 
-  - ScrollInfo :[SCROLLINFO tuple](SCROLLINFO.md#scrollinfotuple)
+  - ScrollInfo : [SCROLLINFO tuple](SCROLLINFO.md#scrollinfotuple)
 
     The information to set
 
@@ -2699,15 +2618,17 @@ Set information about a scroll bar
 
     A flag indicating if the scrollbar should be re-drawn\.
 
-## [PyCWnd](#pycwnd)\.SetScrollPos
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetScrollPos
 
+int = SetScrollPos\(nBar, nPos
 
-int =SetScrollPos\(nBar, nPos, redraw\)
+, redraw
+
+\)
 Sets the current position of the scroll box of a scroll bar\.
 
 #### Parameters
-
 
   - nBar : int
 
@@ -2721,15 +2642,15 @@ Sets the current position of the scroll box of a scroll bar\.
 
     A flag indicating if the scrollbar should be redrawn\.
 
-## [PyCWnd](#pycwnd)\.SetTimer
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetTimer
 
+int = SetTimer\(idEvent, elapse
 
-int =SetTimer\(idEvent, elapse\)
+\)
 Installs a system timer
 
 #### Parameters
-
 
   - idEvent : int
 
@@ -2741,16 +2662,15 @@ Installs a system timer
 
 #### MFC References
 
-
   - CWnd::SetTimer
 
-## [PyCWnd](#pycwnd)\.SetWindowPlacement
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetWindowPlacement
 
 SetWindowPlacement\(placement\)
 Sets the windows placement
 
 #### Parameters
-
 
   - placement : \(tuple\)
 
@@ -2758,16 +2678,15 @@ Sets the windows placement
 
 #### MFC References
 
-
   - CWnd::SetWindowPlacement
 
-## [PyCWnd](#pycwnd)\.SetWindowPos
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetWindowPos
 
 SetWindowPos\(hWndInsertAfter, position, flags\)
 Sets the windows position information
 
 #### Parameters
-
 
   - hWndInsertAfter : int
 
@@ -2783,16 +2702,15 @@ Sets the windows position information
 
 #### MFC References
 
-
   - CWnd::SetWindowPos
 
-## [PyCWnd](#pycwnd)\.SetWindowText
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.SetWindowText
 
 SetWindowText\(text\)
 Sets the window's text\.
 
 #### Parameters
-
 
   - text : string
 
@@ -2800,20 +2718,20 @@ Sets the window's text\.
 
 #### MFC References
 
-
   - CWnd::SetWindowText
 
-## [PyCWnd](#pycwnd)\.ShowCaret
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.ShowCaret
 
 ShowCaret\(\)
 Shows the caret
 
 #### Comments
 
+See also [PyCWnd::HideCaret](PyCWnd.md#pycwndhidecaret)
 
-See also[PyCWnd::HideCaret](PyCWnd.md#pycwndhidecaret)
 
-## [PyCWnd](#pycwnd)\.ShowScrollBar
+## [PyCWnd](PyCWnd.md#pycwnd)\.ShowScrollBar
 
 ShowScrollBar\(nBar, bShow\)
 Shows or hides a scroll bar\. 
@@ -2821,7 +2739,6 @@ Shows or hides a scroll bar\.
 An application should not call ShowScrollBar to hide a scroll bar while processing a scroll-bar notification message\.
 
 #### Parameters
-
 
   - nBar : int
 
@@ -2837,18 +2754,15 @@ It must be one of win32con\.SB\_BOTH, win32con\.SB\_HORZ or win32con\.SB\_VERT\.
 
 #### MFC References
 
-
   - CWnd::ShowScrollBar
 
-## [PyCWnd](#pycwnd)\.ShowWindow
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.ShowWindow
 
-
-int =ShowWindow\(style\)
+int = ShowWindow\(style\)
 Sets the visibility state of the window\.
 
 #### Parameters
-
 
   - style=win32con\.SW\_SHOWNORMAL : int
 
@@ -2860,33 +2774,30 @@ win32con\.SW\_SHOWMINIMIZED, win32con\.SW\_SHOWMINNOACTIVE, win32con\.SW\_SHOWNA
 
 #### MFC References
 
-
   - CWnd::ShowWindow
 
 #### Return Value
 Returns TRUE is the window was previously visible\.
 
-## [PyCWnd](#pycwnd)\.UnlockWindowUpdate
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.UnlockWindowUpdate
 
 UnlockWindowUpdate\(\)
 Unlocks a window that was locked with LockWindowUpdate
 
 #### MFC References
 
-
   - CWnd::UnLockWindowUpdate
 
-## [PyCWnd](#pycwnd)\.UpdateData
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.UpdateData
 
-
-int =UpdateData\(bSaveAndValidate\)
+int = UpdateData\(bSaveAndValidate\)
 Initialises data in a dialog box, or to retrieves and validates dialog data\. 
 
 Returns nonzero if the operation is successful; otherwise 0\. If bSaveAndValidate is TRUE, then a return value of nonzero means that the data is successfully validated\.
 
 #### Parameters
-
 
   - bSaveAndValidate=1 : int
 
@@ -2894,24 +2805,21 @@ Returns nonzero if the operation is successful; otherwise 0\. If bSaveAndValidat
 
 #### MFC References
 
-
   - CWnd::UpdateData
 
-## [PyCWnd](#pycwnd)\.UpdateDialogControls
 
+## [PyCWnd](PyCWnd.md#pycwnd)\.UpdateDialogControls
 
+int = UpdateDialogControls\(pTarget, disableIfNoHandler
 
-int =UpdateDialogControls\(pTarget, disableIfNoHandler\)
-Updates the state of dialog buttons and other controls in a dialog box or window that uses thePyCCmdUI::HookCommandUpdate
-
-
+\)
+Updates the state of dialog buttons and other controls in a dialog box or window that uses the PyCCmdUI::HookCommandUpdate
 
  callback mechanism\.
 
 #### Parameters
 
-
-  - pTarget :[PyCCmdTarget](#pyccmdtarget)
+  - pTarget : [PyCCmdTarget](PyCCmdTarget.md)
 
     The main frame window of the application, and is used for routing update messages\.
 
@@ -2919,7 +2827,8 @@ Updates the state of dialog buttons and other controls in a dialog box or window
 
     Flag that indicates whether a control that has no update handler should be automatically displayed as disabled\.
 
-## [PyCWnd](#pycwnd)\.UpdateWindow
+
+## [PyCWnd](PyCWnd.md#pycwnd)\.UpdateWindow
 
 UpdateWindow\(\)
 Updates a window\.  This forces a paint message to be sent to the window, if any part of the window is marked as invalid\.

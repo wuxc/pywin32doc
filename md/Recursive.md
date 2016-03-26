@@ -1,7 +1,7 @@
 # Recursive
 
-## Recursive directory deletes and special files
 
+## Recursive directory deletes and special files
 
 Python's win32 access for file properties to enable deletes
 
@@ -15,9 +15,7 @@ To get around this problem you need to use the win32 call to
 
 SetFileAttributes to be a normal file\.
 
-
 The C\+\+ call looks like this:
-
 
 BOOL SetFileAttributes\( 
 
@@ -27,16 +25,13 @@ DWORD dwFileAttributes
 
 \);
 
-
 You provide it 2 arguments the filename and the specific attributes 
 
 and it returns whether or not it succeeded\.
 
-
 The corresponding python call is: 
 
 int = win32api\.SetFileAttributes\( pathName, attrs \)
-
 
 The only question is where do you get attrs\. It is included in the 
 
@@ -48,7 +43,6 @@ archive, hidden, etc\. We are concerned with setting it back to normal,
 
 so we want: win32con\.FILE\_ATTRIBUTE\_NORMAL
 
-
 The example below can be useful, but, of course, be careful with it, 
 
 since it deletes a lot of stuff\. It is a recursive function  The example 
@@ -57,13 +51,12 @@ also makes use of some handy functions from the os module\.
 
 #### Example
 Here is a basic example of how to remove a directory tree:
+
 import win32con
 
 import win32api
 
 import os
-
-
 
 def del\_dir\(self,path\):
 
@@ -91,4 +84,5 @@ def del\_dir\(self,path\):
 
 &\#09&\#09os\.rmdir\(path\) \#delete the directory here
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+

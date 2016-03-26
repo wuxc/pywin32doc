@@ -1,15 +1,13 @@
 # PyIPersistSerializedPropStorage
 
+
 ## PyIPersistSerializedPropStorage Object
-
-
 
 Allows a property store to be marshalled into a single buffer\. 
 
-Primarily used with property stores created using[propsys::PSCreateMemoryPropertyStore](propsys.md#propsyspscreatememorypropertystore)\.
+Primarily used with property stores created using [propsys::PSCreateMemoryPropertyStore](propsys.md#propsyspscreatememorypropertystore)\.
 
 #### Methods
-
 
   - [SetFlags](PyIPersistSerializedPropStorage.md#pyipersistserializedpropstoragesetflags)
 
@@ -23,32 +21,31 @@ Primarily used with property stores created using[propsys::PSCreateMemoryPropert
 
     Retrieves the current contents of the property store&nbsp;
 
-## [PyIPersistSerializedPropStorage](#pyipersistserializedpropstorage)\.GetPropertyStorage
 
+## [PyIPersistSerializedPropStorage](PyIPersistSerializedPropStorage.md#pyipersistserializedpropstorage)\.GetPropertyStorage
 
-
-buffer =GetPropertyStorage\(\)
+buffer = GetPropertyStorage\(\)
 Retrieves the current contents of the property store
 
-## [PyIPersistSerializedPropStorage](#pyipersistserializedpropstorage)\.SetFlags
+
+## [PyIPersistSerializedPropStorage](PyIPersistSerializedPropStorage.md#pyipersistserializedpropstorage)\.SetFlags
 
 SetFlags\(flags\)
 Sets flags for the store
 
 #### Parameters
 
-
   - flags : int
 
     Combination of pscon\.FPSPS\_\* values
 
-## [PyIPersistSerializedPropStorage](#pyipersistserializedpropstorage)\.SetPropertyStorage
+
+## [PyIPersistSerializedPropStorage](PyIPersistSerializedPropStorage.md#pyipersistserializedpropstorage)\.SetPropertyStorage
 
 SetPropertyStorage\(ps\)
 Initializes the store with a serialized buffer
 
 #### Parameters
-
 
   - ps : buffer
 

@@ -1,13 +1,11 @@
 # PyIActiveScriptSite
 
+
 ## PyIActiveScriptSite Object
-
-
 
 An object providing the IActiveScriptSite interface
 
 #### Methods
-
 
   - [GetLCID](PyIActiveScriptSite.md#pyiactivescriptsitegetlcid)
 
@@ -41,57 +39,49 @@ An object providing the IActiveScriptSite interface
 
     &nbsp;
 
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetDocVersionString
+
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.GetDocVersionString
+
+int = GetDocVersionString\(\)
 
 
 
-int =GetDocVersionString\(\)
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.GetItemInfo
 
-
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetItemInfo
-
-
-
-int =GetItemInfo\(\)
-
-
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.GetLCID
+int = GetItemInfo\(\)
 
 
 
-int =GetLCID\(\)
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.GetLCID
 
-
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnEnterScript
-
-
-
-int =OnEnterScript\(\)
-
-
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnLeaveScript
+int = GetLCID\(\)
 
 
 
-int =OnLeaveScript\(\)
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.OnEnterScript
 
-
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnScriptError
-
-
-
-int =OnScriptError\(\)
-
-
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnScriptTerminate
+int = OnEnterScript\(\)
 
 
 
-int =OnScriptTerminate\(\)
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.OnLeaveScript
+
+int = OnLeaveScript\(\)
 
 
-## [PyIActiveScriptSite](#pyiactivescriptsite)\.OnStateChange
+
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.OnScriptError
+
+int = OnScriptError\(\)
 
 
 
-int =OnStateChange\(\)
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.OnScriptTerminate
+
+int = OnScriptTerminate\(\)
+
+
+
+## [PyIActiveScriptSite](PyIActiveScriptSite.md#pyiactivescriptsite)\.OnStateChange
+
+int = OnStateChange\(\)

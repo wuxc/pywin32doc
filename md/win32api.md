@@ -1,13 +1,11 @@
 # win32api
 
+
 ## Module win32api
-
-
 
 A module, encapsulating the Windows Win32 API\.
 
 #### Methods
-
 
   - [AbortSystemShutdown](win32api.md#win32apiabortsystemshutdown)
 
@@ -591,7 +589,7 @@ A module, encapsulating the Windows Win32 API\.
 
   - [RegOpenKey](win32api.md#win32apiregopenkey)
 
-    Alias for[win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex)&nbsp;
+    Alias for [win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex)&nbsp;
 
   - [RegOpenKeyEx](win32api.md#win32apiregopenkeyex)
 
@@ -779,7 +777,7 @@ A module, encapsulating the Windows Win32 API\.
 
   - [Unicode](win32api.md#win32apiunicode)
 
-    Creates a new[PyUnicode](#pyunicode) object&nbsp;
+    Creates a new [PyUnicode](PyUnicode.md) object&nbsp;
 
   - [UpdateResource](win32api.md#win32apiupdateresource)
 
@@ -841,32 +839,33 @@ A module, encapsulating the Windows Win32 API\.
 
     creates a LONG value by concatenating the specified values\.&nbsp;
 
-## [win32api](#win32api)\.AbortSystemShutdown
+
+## [win32api](win32api.md#win32api)\.AbortSystemShutdown
 
 AbortSystemShutdown\(computerName\)
 Aborts a system shutdown
 
 #### Parameters
 
-
-  - computerName : string/[PyUnicode](#pyunicode)
+  - computerName : string/[PyUnicode](PyUnicode.md)
 
     Specifies the name of the computer where the shutdown is to be stopped\.
 
 #### Win32 API References
 
-
-  - Search forAbortSystemShutdown at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=abortsystemshutdown),[google](#http://www.google.com/search?q=abortsystemshutdown) or[google groups](#http://groups.google.com/groups?q=abortsystemshutdown)\.
-
-## [win32api](#win32api)\.Apply
+  - Search for AbortSystemShutdown at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=AbortSystemShutdown.md), [google](http://www.google.com/search?q=AbortSystemShutdown.md) or [google groups](http://groups.google.com/groups?q=AbortSystemShutdown.md)\.
 
 
+## [win32api](win32api.md#win32api)\.Apply
 
-object =Apply\(exceptionHandler, func, args\)
+object = Apply\(exceptionHandler, func
+
+, args
+
+\)
 Calls a Python function, but traps Win32 exceptions\.
 
 #### Parameters
-
 
   - exceptionHandler : object
 
@@ -882,7 +881,6 @@ Calls a Python function, but traps Win32 exceptions\.
 
 #### Comments
 
-
 Calls the specified function in a manner similar to 
 
 the built-in function apply\(\), but allows Win32 exceptions 
@@ -894,13 +892,14 @@ the function, the specified exceptionHandler is called, and its
 return value determines the action taken\.
 
 
-## [win32api](#win32api)\.Beep
+
+
+## [win32api](win32api.md#win32api)\.Beep
 
 Beep\(freq, dur\)
 Generates simple tones on the speaker\.
 
 #### Parameters
-
 
   - freq : int
 
@@ -916,16 +915,17 @@ operates asynchronously and produces sound until called again\.
 
 #### Win32 API References
 
+  - Search for Beep at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Beep.md), [google](http://www.google.com/search?q=Beep.md) or [google groups](http://groups.google.com/groups?q=Beep.md)\.
 
-  - Search forBeep at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=beep),[google](#http://www.google.com/search?q=beep) or[google groups](#http://groups.google.com/groups?q=beep)\.
 
-## [win32api](#win32api)\.BeginUpdateResource
+## [win32api](win32api.md#win32api)\.BeginUpdateResource
 
-[PyHANDLE](#pyhandle) =BeginUpdateResource\(filename, delete\)
+[PyHANDLE](PyHANDLE.md) = BeginUpdateResource\(filename, delete
+
+\)
 Begins an update cycle for a PE file\.
 
 #### Parameters
-
 
   - filename : string
 
@@ -935,17 +935,17 @@ Begins an update cycle for a PE file\.
 
     Flag to indicate that all existing resources should be deleted\.
 
-## [win32api](#win32api)\.ChangeDisplaySettings
 
+## [win32api](win32api.md#win32api)\.ChangeDisplaySettings
 
+int = ChangeDisplaySettings\(DevMode, Flags
 
-int =ChangeDisplaySettings\(DevMode, Flags\)
+\)
 Changes video mode for default display
 
 #### Parameters
 
-
-  - DevMode :[PyDEVMODE](#pydevmode)
+  - DevMode : [PyDEVMODE](PyDEVMODE.md)
 
     A PyDEVMODE object as returned from EnumDisplaySettings, or None to reset to default settings from registry
 
@@ -956,23 +956,25 @@ Changes video mode for default display
 #### Return Value
 Returns DISP\_CHANGE\_SUCCESSFUL on success, or one of the DISP\_CHANGE\_\* error constants on failure
 
-## [win32api](#win32api)\.ChangeDisplaySettingsEx
 
+## [win32api](win32api.md#win32api)\.ChangeDisplaySettingsEx
 
+int = ChangeDisplaySettingsEx\(DeviceName, DevMode
 
-int =ChangeDisplaySettingsEx\(DeviceName, DevMode, Flags\)
+, Flags
+
+\)
 Changes video mode for specified display
 
 #### Parameters
 
-
   - DeviceName=None : str
 
-    Name of device as returned by[win32api::EnumDisplayDevices](win32api.md#win32apienumdisplaydevices), use None for default display device
+    Name of device as returned by [win32api::EnumDisplayDevices](win32api.md#win32apienumdisplaydevices), use None for default display device
 
-  - DevMode=None :[PyDEVMODE](#pydevmode)
+  - DevMode=None : [PyDEVMODE](PyDEVMODE.md)
 
-    A PyDEVMODE object as returned from[win32api::EnumDisplaySettings](win32api.md#win32apienumdisplaysettings), or None to reset to default settings from registry
+    A PyDEVMODE object as returned from [win32api::EnumDisplaySettings](win32api.md#win32apienumdisplaysettings), or None to reset to default settings from registry
 
   - Flags=0 : int
 
@@ -980,19 +982,18 @@ Changes video mode for specified display
 
 #### Comments
 
-
 Accepts keyword arguments
 
 #### Return Value
 Returns DISP\_CHANGE\_SUCCESSFUL on success, or one of the DISP\_CHANGE\_\* error constants on failure
 
-## [win32api](#win32api)\.ClipCursor
+
+## [win32api](win32api.md#win32api)\.ClipCursor
 
 ClipCursor\(left, top, right, bottom\)
 Confines the cursor to a rectangular area on the screen\.
 
 #### Parameters
-
 
   - left, top, right, bottom : \(int, int, int, int\)
 
@@ -1000,34 +1001,33 @@ Confines the cursor to a rectangular area on the screen\.
 
 #### Win32 API References
 
+  - Search for ClipCursor at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ClipCursor.md), [google](http://www.google.com/search?q=ClipCursor.md) or [google groups](http://groups.google.com/groups?q=ClipCursor.md)\.
 
-  - Search forClipCursor at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=clipcursor),[google](#http://www.google.com/search?q=clipcursor) or[google groups](#http://groups.google.com/groups?q=clipcursor)\.
 
-## [win32api](#win32api)\.CloseHandle
+## [win32api](win32api.md#win32api)\.CloseHandle
 
 CloseHandle\(handle\)
 Closes an open handle\.
 
 #### Parameters
 
-
-  - handle :[PyHANDLE](#pyhandle)/int
+  - handle : [PyHANDLE](PyHANDLE.md)/int
 
     A previously opened handle\.
 
-## [win32api](#win32api)\.CopyFile
+
+## [win32api](win32api.md#win32api)\.CopyFile
 
 CopyFile\(src, dest, bFailOnExist\)
 Copies an existing file to a new file
 
 #### Parameters
 
-
-  - src : string[PyUnicode](#pyunicode)
+  - src : string[PyUnicode](PyUnicode.md)
 
     Name of an existing file\.
 
-  - dest : string/[PyUnicode](#pyunicode)
+  - dest : string/[PyUnicode](PyUnicode.md)
 
     Name of file to copy to\.
 
@@ -1037,43 +1037,41 @@ Copies an existing file to a new file
 
 #### Win32 API References
 
+  - Search for CopyFile at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=CopyFile.md), [google](http://www.google.com/search?q=CopyFile.md) or [google groups](http://groups.google.com/groups?q=CopyFile.md)\.
 
-  - Search forCopyFile at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=copyfile),[google](#http://www.google.com/search?q=copyfile) or[google groups](#http://groups.google.com/groups?q=copyfile)\.
 
-## [win32api](#win32api)\.DebugBreak
+## [win32api](win32api.md#win32api)\.DebugBreak
 
 DebugBreak\(\)
 Breaks into the C debugger
 
 #### Win32 API References
 
+  - Search for DebugBreak at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DebugBreak.md), [google](http://www.google.com/search?q=DebugBreak.md) or [google groups](http://groups.google.com/groups?q=DebugBreak.md)\.
 
-  - Search forDebugBreak at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=debugbreak),[google](#http://www.google.com/search?q=debugbreak) or[google groups](#http://groups.google.com/groups?q=debugbreak)\.
 
-## [win32api](#win32api)\.DeleteFile
+## [win32api](win32api.md#win32api)\.DeleteFile
 
 DeleteFile\(fileName\)
 Deletes the specified file\.
 
 #### Parameters
 
-
-  - fileName : string/[PyUnicode](#pyunicode)
+  - fileName : string/[PyUnicode](PyUnicode.md)
 
     File to delete\.
 
 #### Win32 API References
 
+  - Search for DeleteFile at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DeleteFile.md), [google](http://www.google.com/search?q=DeleteFile.md) or [google groups](http://groups.google.com/groups?q=DeleteFile.md)\.
 
-  - Search forDeleteFile at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=deletefile),[google](#http://www.google.com/search?q=deletefile) or[google groups](#http://groups.google.com/groups?q=deletefile)\.
 
-## [win32api](#win32api)\.DragFinish
+## [win32api](win32api.md#win32api)\.DragFinish
 
 DragFinish\(hDrop\)
 Releases the memory stored by Windows for the filenames\.
 
 #### Parameters
-
 
   - hDrop : int
 
@@ -1081,18 +1079,17 @@ Releases the memory stored by Windows for the filenames\.
 
 #### Win32 API References
 
-
-  - Search forDragFinish at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=dragfinish),[google](#http://www.google.com/search?q=dragfinish) or[google groups](#http://groups.google.com/groups?q=dragfinish)\.
-
-## [win32api](#win32api)\.DragQueryFile
+  - Search for DragFinish at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DragFinish.md), [google](http://www.google.com/search?q=DragFinish.md) or [google groups](http://groups.google.com/groups?q=DragFinish.md)\.
 
 
+## [win32api](win32api.md#win32api)\.DragQueryFile
 
-string/int =DragQueryFile\(hDrop, fileNum\)
+string/int = DragQueryFile\(hDrop, fileNum
+
+\)
 Retrieves the file names of dropped files\.
 
 #### Parameters
-
 
   - hDrop : int
 
@@ -1104,8 +1101,7 @@ Retrieves the file names of dropped files\.
 
 #### Win32 API References
 
-
-  - Search forDragQueryFile at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=dragqueryfile),[google](#http://www.google.com/search?q=dragqueryfile) or[google groups](#http://groups.google.com/groups?q=dragqueryfile)\.
+  - Search for DragQueryFile at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=DragQueryFile.md), [google](http://www.google.com/search?q=DragQueryFile.md) or [google groups](http://groups.google.com/groups?q=DragQueryFile.md)\.
 
 #### Return Value
 If the fileNum parameter is 0xFFFFFFFF \(the default\) then the return value 
@@ -1117,23 +1113,33 @@ the return value is a string containing the filename\.
 
 If an error occurs, and exception is raised\.
 
-## [win32api](#win32api)\.DuplicateHandle
 
-[PyHANDLE](#pyhandle) =DuplicateHandle\(hSourceProcess, hSource, hTargetProcessHandle, desiredAccess, bInheritHandle, options\)
+## [win32api](win32api.md#win32api)\.DuplicateHandle
+
+[PyHANDLE](PyHANDLE.md) = DuplicateHandle\(hSourceProcess, hSource
+
+, hTargetProcessHandle
+
+, desiredAccess
+
+, bInheritHandle
+
+, options
+
+\)
 Duplicates a handle\.
 
 #### Parameters
 
-
-  - hSourceProcess :[PyHANDLE](#pyhandle)
+  - hSourceProcess : [PyHANDLE](PyHANDLE.md)
 
     Identifies the process containing the handle to duplicate\.
 
-  - hSource :[PyHANDLE](#pyhandle)
+  - hSource : [PyHANDLE](PyHANDLE.md)
 
     Identifies the handle to duplicate\. This is an open object handle that is valid in the context of the source process\.
 
-  - hTargetProcessHandle :[PyHANDLE](#pyhandle)
+  - hTargetProcessHandle : [PyHANDLE](PyHANDLE.md)
 
     Identifies the process that is to receive the duplicated handle\. The handle must have PROCESS\_DUP\_HANDLE access\.
 
@@ -1148,9 +1154,11 @@ Duplicates a handle\.
   - options : int
 
     Specifies optional actions\. This parameter can be zero, or any combination of the following flags
-DUPLICATE\_CLOSE\_SOURCEloses the source handle\. This occurs regardless of any error status returned\.DUPLICATE\_SAME\_ACCESSIgnores the dwDesiredAccess parameter\. The duplicate handle has the same access as the source handle\.
-#### Comments
+DUPLICATE\_CLOSE\_SOURCEloses the source handle\. This occurs regardless of any error status returned\.
 
+DUPLICATE\_SAME\_ACCESSIgnores the dwDesiredAccess parameter\. The duplicate handle has the same access as the source handle\.
+
+#### Comments
 
 When duplicating a handle for a different process, you should either keep a 
 
@@ -1158,15 +1166,15 @@ reference to the returned PyHANDLE, or call \.Detach\(\) on it to prevent it
 
 from being closed prematurely\.
 
-## [win32api](#win32api)\.EndUpdateResource
+
+## [win32api](win32api.md#win32api)\.EndUpdateResource
 
 EndUpdateResource\(handle, discard\)
 Ends a resource update cycle of a PE file\.
 
 #### Parameters
 
-
-  - handle :[PyHANDLE](#pyhandle)
+  - handle : [PyHANDLE](PyHANDLE.md)
 
     The update-file handle\.
 
@@ -1174,13 +1182,17 @@ Ends a resource update cycle of a PE file\.
 
     Flag to discard all writes\.
 
-## [win32api](#win32api)\.EnumDisplayDevices
 
-[PyDISPLAY\_DEVICE](PyDISPLAY.md#pydisplaydevice) =EnumDisplayDevices\(Device, DevNum, Flags\)
+## [win32api](win32api.md#win32api)\.EnumDisplayDevices
+
+[PyDISPLAY\_DEVICE](PyDISPLAY.md#pydisplaydevice) = EnumDisplayDevices\(Device, DevNum
+
+, Flags
+
+\)
 Obtain information about the display devices in a system
 
 #### Parameters
-
 
   - Device=None : string
 
@@ -1196,48 +1208,48 @@ Obtain information about the display devices in a system
 
 #### Comments
 
-
 Accepts keyword arguments
 
-## [win32api](#win32api)\.EnumDisplayMonitors
 
+## [win32api](win32api.md#win32api)\.EnumDisplayMonitors
 
+list = EnumDisplayMonitors\(hdc, rcClip
 
-list =EnumDisplayMonitors\(hdc, rcClip\)
+\)
 Lists display monitors for a given device context and area
 
 #### Parameters
 
-
-  - hdc=None :[PyHANDLE](#pyhandle)
+  - hdc=None : [PyHANDLE](PyHANDLE.md)
 
     Handle to device context, use None for virtual desktop
 
-  - rcClip=None :[PyRECT](#pyrect)
+  - rcClip=None : [PyRECT](PyRECT.md)
 
     Clipping rectangle, can be None
 
 #### Comments
-
 
 Accepts keyword arguments
 
 #### Return Value
 Returns a sequence of tuples\.  For each monitor found, returns a handle to the monitor, 
 
-device context handle, and intersection rectangle: \(hMonitor, hdcMonitor,[PyRECT](#pyrect)\)
+device context handle, and intersection rectangle: \(hMonitor, hdcMonitor, [PyRECT](PyRECT.md)\)
 
-## [win32api](#win32api)\.EnumDisplaySettings
 
-[PyDEVMODE](#pydevmode) =EnumDisplaySettings\(DeviceName, ModeNum\)
+## [win32api](win32api.md#win32api)\.EnumDisplaySettings
+
+[PyDEVMODE](PyDEVMODE.md) = EnumDisplaySettings\(DeviceName, ModeNum
+
+\)
 List available modes for specified display device
 
 #### Parameters
 
-
   - DeviceName=None : string
 
-    Name of device as returned by[win32api::EnumDisplayDevices](win32api.md#win32apienumdisplaydevices), use None for default display device
+    Name of device as returned by [win32api::EnumDisplayDevices](win32api.md#win32apienumdisplaydevices), use None for default display device
 
   - ModeNum=0 : int
 
@@ -1245,20 +1257,23 @@ List available modes for specified display device
 
 #### Comments
 
-
 Accepts keyword arguments
 
-## [win32api](#win32api)\.EnumDisplaySettingsEx
 
-[PyDEVMODE](#pydevmode) =EnumDisplaySettingsEx\(DeviceName, ModeNum, Flags\)
+## [win32api](win32api.md#win32api)\.EnumDisplaySettingsEx
+
+[PyDEVMODE](PyDEVMODE.md) = EnumDisplaySettingsEx\(DeviceName, ModeNum
+
+, Flags
+
+\)
 Lists available modes for a display device, with optional flags
 
 #### Parameters
 
-
   - DeviceName=None : string
 
-    Name of device as returned by[win32api::EnumDisplayDevices](win32api.md#win32apienumdisplaydevices)\. Can be None for default display
+    Name of device as returned by [win32api::EnumDisplayDevices](win32api.md#win32apienumdisplaydevices)\. Can be None for default display
 
   - ModeNum : int
 
@@ -1270,46 +1285,47 @@ Lists available modes for a display device, with optional flags
 
 #### Comments
 
-
 Accepts keyword arguments
 
-## [win32api](#win32api)\.EnumResourceLanguages
 
+## [win32api](win32api.md#win32api)\.EnumResourceLanguages
 
+\[int,\.\.\.\] = EnumResourceLanguages\(hmodule, lpType
 
-\[int,\.\.\.\] =EnumResourceLanguages\(hmodule, lpType, lpName\)
+, lpName
+
+\)
 List languages for a resource
 
 #### Parameters
 
-
-  - hmodule :[PyHANDLE](#pyhandle)
+  - hmodule : [PyHANDLE](PyHANDLE.md)
 
     Handle to the module that contains resource
 
-  - lpType :[PyResourceId](#pyresourceid)
+  - lpType : [PyResourceId](PyResourceId.md)
 
     Resource type, can be string or integer
 
-  - lpName :[PyResourceId](#pyresourceid)
+  - lpName : [PyResourceId](PyResourceId.md)
 
     Resource name, can be string or integer
 
-## [win32api](#win32api)\.EnumResourceNames
 
+## [win32api](win32api.md#win32api)\.EnumResourceNames
 
+\[string, \.\.\.\] = EnumResourceNames\(hmodule, resType
 
-\[string, \.\.\.\] =EnumResourceNames\(hmodule, resType\)
+\)
 Enumerates all the resources of the specified type from the nominated file\.
 
 #### Parameters
 
-
-  - hmodule :[PyHANDLE](#pyhandle)
+  - hmodule : [PyHANDLE](PyHANDLE.md)
 
     The handle to the module to enumerate\.
 
-  - resType :[PyResourceId](#pyresourceid)
+  - resType : [PyResourceId](PyResourceId.md)
 
     The type of resource to enumerate\. \(win32con\.RT\_\*\)\. 
 
@@ -1318,27 +1334,25 @@ If passed as a string, form is '\#' sign followed by decimal number\. eg RT\_ANI
 #### Return Value
 The result is a list of string or integers, one for each resource enumerated\.
 
-## [win32api](#win32api)\.EnumResourceTypes
 
+## [win32api](win32api.md#win32api)\.EnumResourceTypes
 
-
-\[[PyUnicode](#pyunicode),\.\.\.\] =EnumResourceTypes\(hmodule\)
+\[[PyUnicode](PyUnicode.md),\.\.\.\] = EnumResourceTypes\(hmodule\)
 Return name or integer id of all resource types contained in module
 
 #### Parameters
 
-
-  - hmodule :[PyHANDLE](#pyhandle)
+  - hmodule : [PyHANDLE](PyHANDLE.md)
 
     The handle to the module to enumerate\.
 
-## [win32api](#win32api)\.ExitWindows
+
+## [win32api](win32api.md#win32api)\.ExitWindows
 
 ExitWindows\(reserved1, reserved2\)
 Logs off the current user
 
 #### Parameters
-
 
   - reserved1=0 : int
 
@@ -1350,16 +1364,15 @@ Logs off the current user
 
 #### Win32 API References
 
+  - Search for AbortSystemShutdown at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=AbortSystemShutdown.md), [google](http://www.google.com/search?q=AbortSystemShutdown.md) or [google groups](http://groups.google.com/groups?q=AbortSystemShutdown.md)\.
 
-  - Search forAbortSystemShutdown at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=abortsystemshutdown),[google](#http://www.google.com/search?q=abortsystemshutdown) or[google groups](#http://groups.google.com/groups?q=abortsystemshutdown)\.
 
-## [win32api](#win32api)\.ExitWindowsEx
+## [win32api](win32api.md#win32api)\.ExitWindowsEx
 
 ExitWindowsEx\(flags, reserved\)
 either logs off the current user, shuts down the system, or shuts down and restarts the system\.
 
 #### Parameters
-
 
   - flags : int
 
@@ -1371,23 +1384,19 @@ either logs off the current user, shuts down the system, or shuts down and resta
 
 #### Comments
 
-
 It sends the WM\_QUERYENDSESSION message to all applications to determine if they can be terminated\.
 
 #### Win32 API References
 
-
-  - Search forAbortSystemShutdown at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=abortsystemshutdown),[google](#http://www.google.com/search?q=abortsystemshutdown) or[google groups](#http://groups.google.com/groups?q=abortsystemshutdown)\.
-
-## [win32api](#win32api)\.ExpandEnvironmentStrings
+  - Search for AbortSystemShutdown at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=AbortSystemShutdown.md), [google](http://www.google.com/search?q=AbortSystemShutdown.md) or [google groups](http://groups.google.com/groups?q=AbortSystemShutdown.md)\.
 
 
+## [win32api](win32api.md#win32api)\.ExpandEnvironmentStrings
 
-string =ExpandEnvironmentStrings\(in\)
+string = ExpandEnvironmentStrings\(in\)
 Expands environment-variable strings and replaces them with their defined values\.
 
 #### Parameters
-
 
   - in : string
 
@@ -1395,30 +1404,29 @@ Expands environment-variable strings and replaces them with their defined values
 
 #### Win32 API References
 
+  - Search for ExpandEnvironmentStrings at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ExpandEnvironmentStrings.md), [google](http://www.google.com/search?q=ExpandEnvironmentStrings.md) or [google groups](http://groups.google.com/groups?q=ExpandEnvironmentStrings.md)\.
 
-  - Search forExpandEnvironmentStrings at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=expandenvironmentstrings),[google](#http://www.google.com/search?q=expandenvironmentstrings) or[google groups](#http://groups.google.com/groups?q=expandenvironmentstrings)\.
 
-## [win32api](#win32api)\.FindCloseChangeNotification
+## [win32api](win32api.md#win32api)\.FindCloseChangeNotification
 
 FindCloseChangeNotification\(handle\)
 Closes the change notification handle\.
 
 #### Parameters
 
-
   - handle : int
 
-    The handle returned from[win32api::FindFirstChangeNotification](win32api.md#win32apifindfirstchangenotification)
-
-## [win32api](#win32api)\.FindExecutable
+    The handle returned from [win32api::FindFirstChangeNotification](win32api.md#win32apifindfirstchangenotification)
 
 
+## [win32api](win32api.md#win32api)\.FindExecutable
 
-\(int, string\) =FindExecutable\(filename, dir\)
+\(int, string\) = FindExecutable\(filename, dir
+
+\)
 Retrieves the name and handle of the executable \(\.EXE\) file associated with the specified filename\.
 
 #### Parameters
-
 
   - filename : string
 
@@ -1430,13 +1438,11 @@ Retrieves the name and handle of the executable \(\.EXE\) file associated with t
 
 #### Comments
 
-
 The function will raise an exception if it fails\.
 
 #### Win32 API References
 
-
-  - Search forFindExecutable at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findexecutable),[google](#http://www.google.com/search?q=findexecutable) or[google groups](#http://groups.google.com/groups?q=findexecutable)\.
+  - Search for FindExecutable at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindExecutable.md), [google](http://www.google.com/search?q=FindExecutable.md) or [google groups](http://groups.google.com/groups?q=FindExecutable.md)\.
 
 #### Return Value
 The return value is a tuple of \(integer, string\)
@@ -1451,15 +1457,13 @@ a dynamic data exchange \[DDE\] server application\.\)
 
 The may contain the path to the DDE server started if no server responds to a request to initiate a DDE conversation\.
 
-## [win32api](#win32api)\.FindFiles
 
+## [win32api](win32api.md#win32api)\.FindFiles
 
-
-list =FindFiles\(fileSpec\)
+list = FindFiles\(fileSpec\)
 Retrieves a list of matching filenames\.  An interface to the API FindFirstFile/FindNextFile/Find close functions\.
 
 #### Parameters
-
 
   - fileSpec : string
 
@@ -1467,25 +1471,26 @@ Retrieves a list of matching filenames\.  An interface to the API FindFirstFile/
 
 #### Win32 API References
 
+  - Search for FindFirstFile at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindFirstFile.md), [google](http://www.google.com/search?q=FindFirstFile.md) or [google groups](http://groups.google.com/groups?q=FindFirstFile.md)\.
 
-  - Search forFindFirstFile at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findfirstfile),[google](#http://www.google.com/search?q=findfirstfile) or[google groups](#http://groups.google.com/groups?q=findfirstfile)\.
+  - Search for FindNextFile at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindNextFile.md), [google](http://www.google.com/search?q=FindNextFile.md) or [google groups](http://groups.google.com/groups?q=FindNextFile.md)\.
 
-  - Search forFindNextFile at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findnextfile),[google](#http://www.google.com/search?q=findnextfile) or[google groups](#http://groups.google.com/groups?q=findnextfile)\.
-
-  - Search forFindClose at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=findclose),[google](#http://www.google.com/search?q=findclose) or[google groups](#http://groups.google.com/groups?q=findclose)\.
+  - Search for FindClose at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FindClose.md), [google](http://www.google.com/search?q=FindClose.md) or [google groups](http://groups.google.com/groups?q=FindClose.md)\.
 
 #### Return Value
-Returns a sequence of[WIN32\_FIND\_DATA](WIN32.md#win32find_data) tuples
-
-## [win32api](#win32api)\.FindFirstChangeNotification
+Returns a sequence of [WIN32\_FIND\_DATA](WIN32.md#win32find_data) tuples
 
 
+## [win32api](win32api.md#win32api)\.FindFirstChangeNotification
 
-int =FindFirstChangeNotification\(pathName, bSubDirs, filter\)
+int = FindFirstChangeNotification\(pathName, bSubDirs
+
+, filter
+
+\)
 Creates a change notification handle and sets up initial change notification filter conditions\.
 
 #### Parameters
-
 
   - pathName : string
 
@@ -1499,38 +1504,58 @@ Creates a change notification handle and sets up initial change notification fil
 
     Specifies the filter conditions that satisfy a change notification wait\. This parameter can be one or more of the following values:
 
-ValueMeaningFILE\_NOTIFY\_CHANGE\_FILE\_NAMEAny file name change in the watched directory or subtree causes a change notification wait operation to return\. Changes include renaming, creating, or deleting a file name\.FILE\_NOTIFY\_CHANGE\_DIR\_NAMEAny directory-name change in the watched directory or subtree causes a change notification wait operation to return\. Changes include creating or deleting a directory\.FILE\_NOTIFY\_CHANGE\_ATTRIBUTESAny attribute change in the watched directory or subtree causes a change notification wait operation to return\.FILE\_NOTIFY\_CHANGE\_SIZEAny file-size change in the watched directory or subtree causes a change notification wait operation to return\. The operating system detects a change in file size only when the file is written to the disk\. For operating systems that use extensive caching, detection occurs only when the cache is sufficiently flushed\.FILE\_NOTIFY\_CHANGE\_LAST\_WRITEAny change to the last write-time of files in the watched directory or subtree causes a change notification wait operation to return\. The operating system detects a change to the last write-time only when the file is written to the disk\. For operating systems that use extensive caching, detection occurs only when the cache is sufficiently flushed\.FILE\_NOTIFY\_CHANGE\_SECURITYAny security-descriptor change in the watched directory or subtree causes a change notification wait operation to return
+   
+
+       Value
+
+   
+
+   
+
+       Meaning
+
+   
+
+FILE\_NOTIFY\_CHANGE\_FILE\_NAMEAny file name change in the watched directory or subtree causes a change notification wait operation to return\. Changes include renaming, creating, or deleting a file name\.
+
+FILE\_NOTIFY\_CHANGE\_DIR\_NAMEAny directory-name change in the watched directory or subtree causes a change notification wait operation to return\. Changes include creating or deleting a directory\.
+
+FILE\_NOTIFY\_CHANGE\_ATTRIBUTESAny attribute change in the watched directory or subtree causes a change notification wait operation to return\.
+
+FILE\_NOTIFY\_CHANGE\_SIZEAny file-size change in the watched directory or subtree causes a change notification wait operation to return\. The operating system detects a change in file size only when the file is written to the disk\. For operating systems that use extensive caching, detection occurs only when the cache is sufficiently flushed\.
+
+FILE\_NOTIFY\_CHANGE\_LAST\_WRITEAny change to the last write-time of files in the watched directory or subtree causes a change notification wait operation to return\. The operating system detects a change to the last write-time only when the file is written to the disk\. For operating systems that use extensive caching, detection occurs only when the cache is sufficiently flushed\.
+
+FILE\_NOTIFY\_CHANGE\_SECURITYAny security-descriptor change in the watched directory or subtree causes a change notification wait operation to return
+
 #### Return Value
 Although the result is a handle, the handle can not be closed via CloseHandle\(\) - therefore a PyHandle object is not used\.
 
-## [win32api](#win32api)\.FindNextChangeNotification
+
+## [win32api](win32api.md#win32api)\.FindNextChangeNotification
 
 FindNextChangeNotification\(handle\)
 Requests that the operating system signal a change notification handle the next time it detects an appropriate change\.
 
 #### Parameters
 
+  - handle : [PyHANDLE](PyHANDLE.md)
 
-  - handle :[PyHANDLE](#pyhandle)
-
-    The handle returned from[win32api::FindFirstChangeNotification](win32api.md#win32apifindfirstchangenotification)
-
-## [win32api](#win32api)\.FormatMessage
+    The handle returned from [win32api::FindFirstChangeNotification](win32api.md#win32apifindfirstchangenotification)
 
 
+## [win32api](win32api.md#win32api)\.FormatMessage
 
-string =FormatMessage\(errCode\)
+string = FormatMessage\(errCode\)
 Returns an error message from the system error file\.
 
 #### Parameters
-
 
   - errCode=0 : int
 
     The error code to return the message for,  If this value is 0, then GetLastError\(\) is called to determine the error code\.
 
 #### Alternative Parameters
-
 
   - flags
 
@@ -1558,18 +1583,17 @@ otherwise it is ignored\.
 
 #### Win32 API References
 
+  - Search for GetLastError at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLastError.md), [google](http://www.google.com/search?q=GetLastError.md) or [google groups](http://groups.google.com/groups?q=GetLastError.md)\.
 
-  - Search forGetLastError at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getlasterror),[google](#http://www.google.com/search?q=getlasterror) or[google groups](#http://groups.google.com/groups?q=getlasterror)\.
+  - Search for FormatMessage at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FormatMessage.md), [google](http://www.google.com/search?q=FormatMessage.md) or [google groups](http://groups.google.com/groups?q=FormatMessage.md)\.
 
-  - Search forFormatMessage at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=formatmessage),[google](#http://www.google.com/search?q=formatmessage) or[google groups](#http://groups.google.com/groups?q=formatmessage)\.
 
-## [win32api](#win32api)\.FormatMessageW
+## [win32api](win32api.md#win32api)\.FormatMessageW
 
-[PyUnicode](#pyunicode) =FormatMessageW\(errCode\)
+[PyUnicode](PyUnicode.md) = FormatMessageW\(errCode\)
 Returns an error message from the system error file\.
 
 #### Parameters
-
 
   - errCode=0 : int
 
@@ -1579,14 +1603,13 @@ then GetLastError\(\) is called to determine the error code\.
 
 #### Alternative Parameters
 
-
   - flags
 
     Flags for the call\.  Note that FORMAT\_MESSAGE\_ALLOCATE\_BUFFER and FORMAT\_MESSAGE\_ARGUMENT\_ARRAY will always be added\.
 
   - source
 
-    The source object\.  If flags contain FORMAT\_MESSAGE\_FROM\_HMODULE it should be an int or[PyHANDLE](#pyhandle); 
+    The source object\.  If flags contain FORMAT\_MESSAGE\_FROM\_HMODULE it should be an int or [PyHANDLE](PyHANDLE.md); 
 
 if flags contain FORMAT\_MESSAGE\_FROM\_STRING it should be a unicode string; 
 
@@ -1606,37 +1629,35 @@ otherwise it is ignored\.
 
 #### Win32 API References
 
+  - Search for GetLastError at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLastError.md), [google](http://www.google.com/search?q=GetLastError.md) or [google groups](http://groups.google.com/groups?q=GetLastError.md)\.
 
-  - Search forGetLastError at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getlasterror),[google](#http://www.google.com/search?q=getlasterror) or[google groups](#http://groups.google.com/groups?q=getlasterror)\.
+  - Search for FormatMessage at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FormatMessage.md), [google](http://www.google.com/search?q=FormatMessage.md) or [google groups](http://groups.google.com/groups?q=FormatMessage.md)\.
 
-  - Search forFormatMessage at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=formatmessage),[google](#http://www.google.com/search?q=formatmessage) or[google groups](#http://groups.google.com/groups?q=formatmessage)\.
 
-## [win32api](#win32api)\.FreeLibrary
+## [win32api](win32api.md#win32api)\.FreeLibrary
 
 FreeLibrary\(hModule\)
 Decrements the reference count of the loaded dynamic-link library \(DLL\) module\.
 
 #### Parameters
 
-
-  - hModule :[PyHANDLE](#pyhandle)
+  - hModule : [PyHANDLE](PyHANDLE.md)
 
     Specifies the handle to the module\.
 
 #### Win32 API References
 
-
-  - Search forFreeLibrary at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=freelibrary),[google](#http://www.google.com/search?q=freelibrary) or[google groups](#http://groups.google.com/groups?q=freelibrary)\.
-
-## [win32api](#win32api)\.GenerateConsoleCtrlEvent
+  - Search for FreeLibrary at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=FreeLibrary.md), [google](http://www.google.com/search?q=FreeLibrary.md) or [google groups](http://groups.google.com/groups?q=FreeLibrary.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GenerateConsoleCtrlEvent
 
-int =GenerateConsoleCtrlEvent\(controlEvent, processGroupId\)
+int = GenerateConsoleCtrlEvent\(controlEvent, processGroupId
+
+\)
 Send a specified signal to a console process group that shares the console associated with the calling process\.
 
 #### Parameters
-
 
   - controlEvent : int
 
@@ -1648,25 +1669,21 @@ Send a specified signal to a console process group that shares the console assoc
 
 #### Win32 API References
 
-
-  - Search forGenerateConsoleCtrlEvent at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=generateconsolectrlevent),[google](#http://www.google.com/search?q=generateconsolectrlevent) or[google groups](#http://groups.google.com/groups?q=generateconsolectrlevent)\.
-
-## [win32api](#win32api)\.GetAsyncKeyState
+  - Search for GenerateConsoleCtrlEvent at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GenerateConsoleCtrlEvent.md), [google](http://www.google.com/search?q=GenerateConsoleCtrlEvent.md) or [google groups](http://groups.google.com/groups?q=GenerateConsoleCtrlEvent.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetAsyncKeyState
 
-int =GetAsyncKeyState\(key\)
+int = GetAsyncKeyState\(key\)
 Retrieves the status of the specified key\.
 
 #### Parameters
-
 
   - key : int
 
     Specifies one of 256 possible virtual-key codes\.
 
 #### Comments
-
 
 An application can use the virtual-key code constants win32con\.VK\_SHIFT, 
 
@@ -1678,13 +1695,20 @@ between left and right\. An application can also use the following virtual-key
 
 code constants as values for key to distinguish between the left and 
 
-right instances of those keys:
-win32con\.VK\_LSHIFT
-win32con\.VK\_RSHIFT
-win32con\.VK\_LCONTROL
-win32con\.VK\_RCONTROL
-win32con\.VK\_LMENU
-win32con\.VK\_RMENU
+right instances of those keys: 
+
+win32con\.VK\_LSHIFT 
+
+win32con\.VK\_RSHIFT 
+
+win32con\.VK\_LCONTROL 
+
+win32con\.VK\_RCONTROL 
+
+win32con\.VK\_LMENU 
+
+win32con\.VK\_RMENU 
+
 The GetAsyncKeyState method works with mouse buttons\. However, it checks on 
 
 the state of the physical mouse buttons, not on the logical mouse buttons that 
@@ -1693,8 +1717,7 @@ the physical buttons are mapped to\.
 
 #### Win32 API References
 
-
-  - Search forGetAsyncKeyState at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getasynckeystate),[google](#http://www.google.com/search?q=getasynckeystate) or[google groups](#http://groups.google.com/groups?q=getasynckeystate)\.
+  - Search for GetAsyncKeyState at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetAsyncKeyState.md), [google](http://www.google.com/search?q=GetAsyncKeyState.md) or [google groups](http://groups.google.com/groups?q=GetAsyncKeyState.md)\.
 
 #### Return Value
 The return value specifies whether the key was pressed since the last 
@@ -1703,44 +1726,39 @@ call to GetAsyncKeyState, and whether the key is currently up or down\. If
 
 the most significant bit is set, the key is down, and if the least significant 
 
-bit is set, the key was pressed after the previous call to GetAsyncKeyState\.
+bit is set, the key was pressed after the previous call to GetAsyncKeyState\. 
+
 The return value is zero if a window in another thread or process currently has the 
 
 keyboard focus\.
 
-## [win32api](#win32api)\.GetCommandLine
 
+## [win32api](win32api.md#win32api)\.GetCommandLine
 
-
-string =GetCommandLine\(\)
+string = GetCommandLine\(\)
 Retrieves the current application's command line\.
 
 #### Win32 API References
 
-
-  - Search forGetCommandLine at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcommandline),[google](#http://www.google.com/search?q=getcommandline) or[google groups](#http://groups.google.com/groups?q=getcommandline)\.
-
-## [win32api](#win32api)\.GetComputerName
+  - Search for GetCommandLine at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCommandLine.md), [google](http://www.google.com/search?q=GetCommandLine.md) or [google groups](http://groups.google.com/groups?q=GetCommandLine.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetComputerName
 
-string =GetComputerName\(\)
+string = GetComputerName\(\)
 Returns the local computer name
 
 #### Win32 API References
 
-
-  - Search forGetComputerName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcomputername),[google](#http://www.google.com/search?q=getcomputername) or[google groups](#http://groups.google.com/groups?q=getcomputername)\.
-
-## [win32api](#win32api)\.GetComputerNameEx
+  - Search for GetComputerName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetComputerName.md), [google](http://www.google.com/search?q=GetComputerName.md) or [google groups](http://groups.google.com/groups?q=GetComputerName.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetComputerNameEx
 
-string =GetComputerNameEx\(NameType\)
+string = GetComputerNameEx\(NameType\)
 Retrieves a NetBIOS or DNS name associated with the local computer
 
 #### Parameters
-
 
   - NameType : int
 
@@ -1748,18 +1766,15 @@ Retrieves a NetBIOS or DNS name associated with the local computer
 
 #### Win32 API References
 
-
-  - Search forGetComputerNameEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcomputernameex),[google](#http://www.google.com/search?q=getcomputernameex) or[google groups](#http://groups.google.com/groups?q=getcomputernameex)\.
-
-## [win32api](#win32api)\.GetComputerObjectName
+  - Search for GetComputerNameEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetComputerNameEx.md), [google](http://www.google.com/search?q=GetComputerNameEx.md) or [google groups](http://groups.google.com/groups?q=GetComputerNameEx.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetComputerObjectName
 
-string =GetComputerObjectName\(NameFormat\)
+string = GetComputerObjectName\(NameFormat\)
 Retrieves the local computer's name in a specified format\.
 
 #### Parameters
-
 
   - NameFormat : int
 
@@ -1767,107 +1782,97 @@ Retrieves the local computer's name in a specified format\.
 
 #### Win32 API References
 
-
-  - Search forGetComputerObjectName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcomputerobjectname),[google](#http://www.google.com/search?q=getcomputerobjectname) or[google groups](#http://groups.google.com/groups?q=getcomputerobjectname)\.
-
-## [win32api](#win32api)\.GetConsoleTitle
+  - Search for GetComputerObjectName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetComputerObjectName.md), [google](http://www.google.com/search?q=GetComputerObjectName.md) or [google groups](http://groups.google.com/groups?q=GetComputerObjectName.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetConsoleTitle
 
-string =GetConsoleTitle\(\)
+string = GetConsoleTitle\(\)
 Returns the title for the current console\.
 
-## [win32api](#win32api)\.GetCurrentProcess
 
+## [win32api](win32api.md#win32api)\.GetCurrentProcess
 
-
-int =GetCurrentProcess\(\)
+int = GetCurrentProcess\(\)
 Returns a pseudohandle for the current process\.
 
 #### Comments
 
-
 A pseudohandle is a special constant that is interpreted as the current thread handle\. The calling thread can use this handle to specify itself whenever a thread handle is required\. Pseudohandles are not inherited by child processes\. 
 
-The method[win32api::DuplicateHandle](win32api.md#win32apiduplicatehandle) can be used to create a handle that other threads and processes can use\. 
+The method [win32api::DuplicateHandle](win32api.md#win32apiduplicatehandle) can be used to create a handle that other threads and processes can use\. 
 
 As this handle can not be closed, and integer is returned rather than 
 
-a[PyHANDLE](#pyhandle) object, which would attempt to automatically close the handle\.
+a [PyHANDLE](PyHANDLE.md) object, which would attempt to automatically close the handle\.
 
 #### Win32 API References
 
-
-  - Search forGetCurrentProcess at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcurrentprocess),[google](#http://www.google.com/search?q=getcurrentprocess) or[google groups](#http://groups.google.com/groups?q=getcurrentprocess)\.
-
-## [win32api](#win32api)\.GetCurrentProcessId
+  - Search for GetCurrentProcess at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentProcess.md), [google](http://www.google.com/search?q=GetCurrentProcess.md) or [google groups](http://groups.google.com/groups?q=GetCurrentProcess.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetCurrentProcessId
 
-int =GetCurrentProcessId\(\)
+int = GetCurrentProcessId\(\)
 Returns the thread ID for the current process\.
 
 #### Win32 API References
 
-
-  - Search forGetCurrentProcessId at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcurrentprocessid),[google](#http://www.google.com/search?q=getcurrentprocessid) or[google groups](#http://groups.google.com/groups?q=getcurrentprocessid)\.
-
-## [win32api](#win32api)\.GetCurrentThread
+  - Search for GetCurrentProcessId at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentProcessId.md), [google](http://www.google.com/search?q=GetCurrentProcessId.md) or [google groups](http://groups.google.com/groups?q=GetCurrentProcessId.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetCurrentThread
 
-int =GetCurrentThread\(\)
+int = GetCurrentThread\(\)
 Returns a pseudohandle for the current thread\.
 
 #### Comments
 
-
 A pseudohandle is a special constant that is interpreted as the current thread handle\. The calling thread can use this handle to specify itself whenever a thread handle is required\. Pseudohandles are not inherited by child processes\. 
 
-The method[win32api::DuplicateHandle](win32api.md#win32apiduplicatehandle) can be used to create a handle that other threads and processes can use\. 
+The method [win32api::DuplicateHandle](win32api.md#win32apiduplicatehandle) can be used to create a handle that other threads and processes can use\. 
 
 As this handle can not be closed, and integer is returned rather than 
 
-a[PyHANDLE](#pyhandle) object, which would attempt to automatically close the handle\.
+a [PyHANDLE](PyHANDLE.md) object, which would attempt to automatically close the handle\.
 
 #### Win32 API References
 
-
-  - Search forGetCurrentThread at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcurrentthread),[google](#http://www.google.com/search?q=getcurrentthread) or[google groups](#http://groups.google.com/groups?q=getcurrentthread)\.
-
-## [win32api](#win32api)\.GetCurrentThreadId
+  - Search for GetCurrentThread at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentThread.md), [google](http://www.google.com/search?q=GetCurrentThread.md) or [google groups](http://groups.google.com/groups?q=GetCurrentThread.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetCurrentThreadId
 
-int =GetCurrentThreadId\(\)
+int = GetCurrentThreadId\(\)
 Returns the thread ID for the current thread\.
 
 #### Win32 API References
 
-
-  - Search forGetCurrentThreadId at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcurrentthreadid),[google](#http://www.google.com/search?q=getcurrentthreadid) or[google groups](#http://groups.google.com/groups?q=getcurrentthreadid)\.
-
-## [win32api](#win32api)\.GetCursorPos
+  - Search for GetCurrentThreadId at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCurrentThreadId.md), [google](http://www.google.com/search?q=GetCurrentThreadId.md) or [google groups](http://groups.google.com/groups?q=GetCurrentThreadId.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetCursorPos
 
-int, int =GetCursorPos\(\)
+int, int = GetCursorPos\(\)
 Returns the position of the cursor, in screen co-ordinates\.
 
 #### Win32 API References
 
-
-  - Search forGetCursorPos at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getcursorpos),[google](#http://www.google.com/search?q=getcursorpos) or[google groups](#http://groups.google.com/groups?q=getcursorpos)\.
-
-## [win32api](#win32api)\.GetDateFormat
+  - Search for GetCursorPos at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetCursorPos.md), [google](http://www.google.com/search?q=GetCursorPos.md) or [google groups](http://groups.google.com/groups?q=GetCursorPos.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetDateFormat
 
-string =GetDateFormat\(locale, flags, time, format\)
+string = GetDateFormat\(locale, flags
+
+, time
+
+, format
+
+\)
 Formats a date as a date string for a specified locale\. The function formats either a specified date or the local system date\.
 
 #### Parameters
-
 
   - locale : int
 
@@ -1877,7 +1882,7 @@ Formats a date as a date string for a specified locale\. The function formats ei
 
     
 
-  - time :[PyTime](#pytime)
+  - time : [PyTime](PyTime.md)
 
     The time to use, or None to use the current time\.
 
@@ -1885,15 +1890,13 @@ Formats a date as a date string for a specified locale\. The function formats ei
 
     May be None
 
-## [win32api](#win32api)\.GetDiskFreeSpace
 
+## [win32api](win32api.md#win32api)\.GetDiskFreeSpace
 
-
-tuple =GetDiskFreeSpace\(rootPath\)
+tuple = GetDiskFreeSpace\(rootPath\)
 Retrieves information about the specified disk, including the amount of free space available\.
 
 #### Parameters
-
 
   - rootPath : string
 
@@ -1901,26 +1904,24 @@ Retrieves information about the specified disk, including the amount of free spa
 
 #### Win32 API References
 
-
-  - Search forGetDiskFreeSpace at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getdiskfreespace),[google](#http://www.google.com/search?q=getdiskfreespace) or[google groups](#http://groups.google.com/groups?q=getdiskfreespace)\.
+  - Search for GetDiskFreeSpace at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetDiskFreeSpace.md), [google](http://www.google.com/search?q=GetDiskFreeSpace.md) or [google groups](http://groups.google.com/groups?q=GetDiskFreeSpace.md)\.
 
 #### Return Value
 The return value is a tuple of 4 integers, containing 
 
 the number of sectors per cluster, the number of bytes per sector, 
 
-the total number of free clusters on the disk and the total number of clusters on the disk\.
+the total number of free clusters on the disk and the total number of clusters on the disk\. 
+
 If the function fails, an error is returned\.
 
-## [win32api](#win32api)\.GetDiskFreeSpaceEx
 
+## [win32api](win32api.md#win32api)\.GetDiskFreeSpaceEx
 
-
-tuple =GetDiskFreeSpaceEx\(rootPath\)
+tuple = GetDiskFreeSpaceEx\(rootPath\)
 Retrieves information about the specified disk, including the amount of free space available\.
 
 #### Parameters
-
 
   - rootPath : string
 
@@ -1928,8 +1929,7 @@ Retrieves information about the specified disk, including the amount of free spa
 
 #### Win32 API References
 
-
-  - Search forGetDiskFreeSpaceEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getdiskfreespaceex),[google](#http://www.google.com/search?q=getdiskfreespaceex) or[google groups](#http://groups.google.com/groups?q=getdiskfreespaceex)\.
+  - Search for GetDiskFreeSpaceEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetDiskFreeSpaceEx.md), [google](http://www.google.com/search?q=GetDiskFreeSpaceEx.md) or [google groups](http://groups.google.com/groups?q=GetDiskFreeSpaceEx.md)\.
 
 #### Return Value
 The return value is a tuple of 3 integers, containing 
@@ -1940,40 +1940,37 @@ the total number of bytes available on disk
 
 the total number of free bytes on disk 
 
-the above values may be less, if user-quotas are in effect
+the above values may be less, if user-quotas are in effect 
+
 If the function fails, an error is returned\.
 
-## [win32api](#win32api)\.GetDllDirectory
 
-[PyUnicode](#pyunicode) =GetDllDirectory\(\)
+## [win32api](win32api.md#win32api)\.GetDllDirectory
+
+[PyUnicode](PyUnicode.md) = GetDllDirectory\(\)
 Returns the DLL search path
 
 #### Win32 API References
 
-
-  - Search forGetDllDirectory at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getdlldirectory),[google](#http://www.google.com/search?q=getdlldirectory) or[google groups](#http://groups.google.com/groups?q=getdlldirectory)\.
-
-## [win32api](#win32api)\.GetDomainName
+  - Search for GetDllDirectory at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetDllDirectory.md), [google](http://www.google.com/search?q=GetDllDirectory.md) or [google groups](http://groups.google.com/groups?q=GetDllDirectory.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetDomainName
 
-string =GetDomainName\(\)
+string = GetDomainName\(\)
 Returns the current domain name
 
 #### Comments
 
-
 This is a convenience wrapper of the Win32 function LookupAccountSid\(\)
 
-## [win32api](#win32api)\.GetEnvironmentVariable
 
+## [win32api](win32api.md#win32api)\.GetEnvironmentVariable
 
-
-str =GetEnvironmentVariable\(variable\)
+str = GetEnvironmentVariable\(variable\)
 Retrieves the value of an environment variable\.
 
 #### Parameters
-
 
   - variable : str
 
@@ -1981,19 +1978,18 @@ Retrieves the value of an environment variable\.
 
 #### Win32 API References
 
-
-  - Search forGetEnvironmentVariable at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getenvironmentvariable),[google](#http://www.google.com/search?q=getenvironmentvariable) or[google groups](#http://groups.google.com/groups?q=getenvironmentvariable)\.
+  - Search for GetEnvironmentVariable at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetEnvironmentVariable.md), [google](http://www.google.com/search?q=GetEnvironmentVariable.md) or [google groups](http://groups.google.com/groups?q=GetEnvironmentVariable.md)\.
 
 #### Return Value
 Returns None if environment variable is not found
 
-## [win32api](#win32api)\.GetEnvironmentVariableW
 
-[PyUnicode](#pyunicode) =GetEnvironmentVariableW\(Name\)
+## [win32api](win32api.md#win32api)\.GetEnvironmentVariableW
+
+[PyUnicode](PyUnicode.md) = GetEnvironmentVariableW\(Name\)
 Retrieves the unicode value of an environment variable\.
 
 #### Parameters
-
 
   - Name : str
 
@@ -2001,21 +1997,18 @@ Retrieves the unicode value of an environment variable\.
 
 #### Win32 API References
 
-
-  - Search forGetEnvironmentVariableW at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getenvironmentvariablew),[google](#http://www.google.com/search?q=getenvironmentvariablew) or[google groups](#http://groups.google.com/groups?q=getenvironmentvariablew)\.
+  - Search for GetEnvironmentVariableW at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetEnvironmentVariableW.md), [google](http://www.google.com/search?q=GetEnvironmentVariableW.md) or [google groups](http://groups.google.com/groups?q=GetEnvironmentVariableW.md)\.
 
 #### Return Value
 Returns None if environment variable is not found
 
-## [win32api](#win32api)\.GetFileAttributes
 
+## [win32api](win32api.md#win32api)\.GetFileAttributes
 
-
-int =GetFileAttributes\(pathName\)
+int = GetFileAttributes\(pathName\)
 Retrieves the attributes for the named file\.
 
 #### Parameters
-
 
   - pathName : string
 
@@ -2025,22 +2018,22 @@ If this param is a unicode object, GetFileAttributesW is called\.
 
 #### Win32 API References
 
+  - Search for GetFileAttributes at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetFileAttributes.md), [google](http://www.google.com/search?q=GetFileAttributes.md) or [google groups](http://groups.google.com/groups?q=GetFileAttributes.md)\.
 
-  - Search forGetFileAttributes at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getfileattributes),[google](#http://www.google.com/search?q=getfileattributes) or[google groups](#http://groups.google.com/groups?q=getfileattributes)\.
-
-  - Search forGetFileAttributesW at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getfileattributesw),[google](#http://www.google.com/search?q=getfileattributesw) or[google groups](#http://groups.google.com/groups?q=getfileattributesw)\.
+  - Search for GetFileAttributesW at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetFileAttributesW.md), [google](http://www.google.com/search?q=GetFileAttributesW.md) or [google groups](http://groups.google.com/groups?q=GetFileAttributesW.md)\.
 
 #### Return Value
-The return value is a combination of the win32con\.FILE\_ATTRIBUTE\_\* constants\.
+The return value is a combination of the win32con\.FILE\_ATTRIBUTE\_\* constants\. 
+
 An exception is raised on failure\.
 
-## [win32api](#win32api)\.GetFileVersionInfo
+
+## [win32api](win32api.md#win32api)\.GetFileVersionInfo
 
 GetFileVersionInfo\(Filename, SubBlock\)
 Retrieve version info for specified file
 
 #### Parameters
-
 
   - Filename : string/unicode
 
@@ -2050,30 +2043,26 @@ Retrieve version info for specified file
 
     Information to return: \\\\ for VS\_FIXEDFILEINFO, \\\\VarFileInfo\\\\Translation for languages/codepages available
 
-## [win32api](#win32api)\.GetFocus
 
+## [win32api](win32api.md#win32api)\.GetFocus
 
-
-int =GetFocus\(\)
+int = GetFocus\(\)
 Retrieves the handle of the keyboard focus window associated with the thread that called the method\.
 
 #### Win32 API References
 
-
-  - Search forGetFocus at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getfocus),[google](#http://www.google.com/search?q=getfocus) or[google groups](#http://groups.google.com/groups?q=getfocus)\.
+  - Search for GetFocus at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetFocus.md), [google](http://www.google.com/search?q=GetFocus.md) or [google groups](http://groups.google.com/groups?q=GetFocus.md)\.
 
 #### Return Value
 The method raises an exception if no window with the focus exists\.
 
-## [win32api](#win32api)\.GetFullPathName
 
+## [win32api](win32api.md#win32api)\.GetFullPathName
 
-
-string =GetFullPathName\(fileName\)
+string = GetFullPathName\(fileName\)
 Returns the full path of a \(possibly relative\) path
 
 #### Parameters
-
 
   - fileName : string
 
@@ -2081,40 +2070,34 @@ Returns the full path of a \(possibly relative\) path
 
 #### Comments
 
-
-Please use[win32file::GetFullPathName](win32file.md#win32filegetfullpathname) instead - it has better Unicode semantics\.
-
-## [win32api](#win32api)\.GetHandleInformation
+Please use [win32file::GetFullPathName](win32file.md#win32filegetfullpathname) instead - it has better Unicode semantics\.
 
 
+## [win32api](win32api.md#win32api)\.GetHandleInformation
 
-int =GetHandleInformation\(Object\)
+int = GetHandleInformation\(Object\)
 Retrieves a handle's flags\.
 
 #### Parameters
 
-
-  - Object :[PyHANDLE](#pyhandle)
+  - Object : [PyHANDLE](PyHANDLE.md)
 
     Handle to an object
 
 #### Comments
-
 
 Not available on Win98/Me
 
 #### Return Value
 Returns a combination of HANDLE\_FLAG\_INHERIT, HANDLE\_FLAG\_PROTECT\_FROM\_CLOSE
 
-## [win32api](#win32api)\.GetKeyState
 
+## [win32api](win32api.md#win32api)\.GetKeyState
 
-
-int =GetKeyState\(key\)
+int = GetKeyState\(key\)
 Retrieves the status of the specified key\.
 
 #### Parameters
-
 
   - key : int
 
@@ -2122,17 +2105,15 @@ Retrieves the status of the specified key\.
 
 #### Comments
 
-
 The key status returned from this function changes as a given thread 
 
 reads key messages from its message queue\. The status does not reflect the 
 
-interrupt-level state associated with the hardware\. Use the[win32api::GetAsyncKeyState](win32api.md#win32apigetasynckeystate) method to retrieve that information\.
+interrupt-level state associated with the hardware\. Use the [win32api::GetAsyncKeyState](win32api.md#win32apigetasynckeystate) method to retrieve that information\.
 
 #### Win32 API References
 
-
-  - Search forGetKeyState at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getkeystate),[google](#http://www.google.com/search?q=getkeystate) or[google groups](#http://groups.google.com/groups?q=getkeystate)\.
+  - Search for GetKeyState at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetKeyState.md), [google](http://www.google.com/search?q=GetKeyState.md) or [google groups](http://groups.google.com/groups?q=GetKeyState.md)\.
 
 #### Return Value
 The return value specifies the status of 
@@ -2149,15 +2130,13 @@ indicator light \(if any\) on the keyboard will be on when the key is
 
 toggled, and off when the key is untoggled\.
 
-## [win32api](#win32api)\.GetKeyboardLayout
 
+## [win32api](win32api.md#win32api)\.GetKeyboardLayout
 
-
-int =GetKeyboardLayout\(threadId\)
+int = GetKeyboardLayout\(threadId\)
 retrieves the active input locale identifier \(formerly called the keyboard layout\) for the specified thread\.
 
 #### Parameters
-
 
   - threadId=0 : int
 
@@ -2165,34 +2144,29 @@ retrieves the active input locale identifier \(formerly called the keyboard layo
 
 #### Comments
 
-
 If the idThread parameter is zero, the input locale identifier for the active thread is returned\.
 
-## [win32api](#win32api)\.GetKeyboardLayoutList
 
+## [win32api](win32api.md#win32api)\.GetKeyboardLayoutList
 
-
-\(int,\.\.\) =GetKeyboardLayoutList\(\)
+\(int,\.\.\) = GetKeyboardLayoutList\(\)
 Returns a sequence of all locale ids currently loaded
 
-## [win32api](#win32api)\.GetKeyboardLayoutName
 
+## [win32api](win32api.md#win32api)\.GetKeyboardLayoutName
 
-
-int =GetKeyboardLayoutName\(\)
+int = GetKeyboardLayoutName\(\)
 Retrieves the name of the active input locale identifier \(formerly called the keyboard layout\)\.
 
-## [win32api](#win32api)\.GetKeyboardState
 
+## [win32api](win32api.md#win32api)\.GetKeyboardState
 
-
-string =GetKeyboardState\(\)
+string = GetKeyboardState\(\)
 Retrieves the status of the 256 virtual keys on the keyboard\.
 
 #### Win32 API References
 
-
-  - Search forGetKeyboardState at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getkeyboardstate),[google](#http://www.google.com/search?q=getkeyboardstate) or[google groups](#http://groups.google.com/groups?q=getkeyboardstate)\.
+  - Search for GetKeyboardState at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetKeyboardState.md), [google](http://www.google.com/search?q=GetKeyboardState.md) or [google groups](http://groups.google.com/groups?q=GetKeyboardState.md)\.
 
 #### Return Value
 The return value is a string of exactly 256 characters\. 
@@ -2201,76 +2175,66 @@ Each character represents the bitmask for a key - see the Win32
 
 documentation for more details\.
 
-## [win32api](#win32api)\.GetLastError
 
+## [win32api](win32api.md#win32api)\.GetLastError
 
-
-int =GetLastError\(\)
+int = GetLastError\(\)
 Retrieves the calling thread's last error code value\.
 
 #### Win32 API References
 
-
-  - Search forGetLastError at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getlasterror),[google](#http://www.google.com/search?q=getlasterror) or[google groups](#http://groups.google.com/groups?q=getlasterror)\.
-
-## [win32api](#win32api)\.GetLastInputInfo
+  - Search for GetLastError at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLastError.md), [google](http://www.google.com/search?q=GetLastError.md) or [google groups](http://groups.google.com/groups?q=GetLastError.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetLastInputInfo
 
-int =GetLastInputInfo\(\)
+int = GetLastInputInfo\(\)
 Returns time of last input event in tick count
 
 #### Win32 API References
 
-
-  - Search forGetLastInputInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getlastinputinfo),[google](#http://www.google.com/search?q=getlastinputinfo) or[google groups](#http://groups.google.com/groups?q=getlastinputinfo)\.
-
-## [win32api](#win32api)\.GetLocalTime
+  - Search for GetLastInputInfo at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLastInputInfo.md), [google](http://www.google.com/search?q=GetLastInputInfo.md) or [google groups](http://groups.google.com/groups?q=GetLastInputInfo.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetLocalTime
 
-tuple =GetLocalTime\(\)
+tuple = GetLocalTime\(\)
 Returns the current local time
 
-## [win32api](#win32api)\.GetLogicalDriveStrings
 
+## [win32api](win32api.md#win32api)\.GetLogicalDriveStrings
 
-
-string =GetLogicalDriveStrings\(\)
+string = GetLogicalDriveStrings\(\)
 Returns a string with all logical drives currently mapped\.
 
 #### Win32 API References
 
-
-  - Search forGetLogicalDriveStrings at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getlogicaldrivestrings),[google](#http://www.google.com/search?q=getlogicaldrivestrings) or[google groups](#http://groups.google.com/groups?q=getlogicaldrivestrings)\.
+  - Search for GetLogicalDriveStrings at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLogicalDriveStrings.md), [google](http://www.google.com/search?q=GetLogicalDriveStrings.md) or [google groups](http://groups.google.com/groups?q=GetLogicalDriveStrings.md)\.
 
 #### Return Value
 The return value is a single string, with each drive 
 
-letter NULL terminated\.
+letter NULL terminated\. 
+
 Use "s\.split\('\\\\0'\)" to split into components\.
 
-## [win32api](#win32api)\.GetLogicalDrives
 
+## [win32api](win32api.md#win32api)\.GetLogicalDrives
 
-
-int =GetLogicalDrives\(\)
+int = GetLogicalDrives\(\)
 Returns a bitmask representing the currently available disk drives\.
 
 #### Win32 API References
 
-
-  - Search forGetLogicalDrives at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getlogicaldrives),[google](#http://www.google.com/search?q=getlogicaldrives) or[google groups](#http://groups.google.com/groups?q=getlogicaldrives)\.
-
-## [win32api](#win32api)\.GetLongPathName
+  - Search for GetLogicalDrives at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetLogicalDrives.md), [google](http://www.google.com/search?q=GetLogicalDrives.md) or [google groups](http://groups.google.com/groups?q=GetLogicalDrives.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetLongPathName
 
-string =GetLongPathName\(fileName\)
+string = GetLongPathName\(fileName\)
 Converts the specified path to its long form\.
 
 #### Parameters
-
 
   - fileName : string
 
@@ -2278,75 +2242,67 @@ Converts the specified path to its long form\.
 
 #### Comments
 
-
 This function may raise a NotImplementedError exception if the version 
 
 of Windows does not support this function\.
 
-## [win32api](#win32api)\.GetLongPathNameW
 
-[PyUnicode](#pyunicode) =GetLongPathNameW\(fileName\)
+## [win32api](win32api.md#win32api)\.GetLongPathNameW
+
+[PyUnicode](PyUnicode.md) = GetLongPathNameW\(fileName\)
 Converts the specified path to its long form\.
 
 #### Parameters
 
-
-  - fileName :[PyUnicode](#pyunicode)
+  - fileName : [PyUnicode](PyUnicode.md)
 
     The file name\.
 
 #### Comments
 
-
 This function may raise a NotImplementedError exception if the version 
 
 of Windows does not support this function\.
 
-## [win32api](#win32api)\.GetModuleFileName
 
+## [win32api](win32api.md#win32api)\.GetModuleFileName
 
-
-string =GetModuleFileName\(hModule\)
+string = GetModuleFileName\(hModule\)
 Retrieves the filename of the specified module\.
 
 #### Parameters
 
-
-  - hModule :[PyHANDLE](#pyhandle)
+  - hModule : [PyHANDLE](PyHANDLE.md)
 
     Specifies the handle to the module\.
 
 #### Win32 API References
 
+  - Search for GetModuleFileName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetModuleFileName.md), [google](http://www.google.com/search?q=GetModuleFileName.md) or [google groups](http://groups.google.com/groups?q=GetModuleFileName.md)\.
 
-  - Search forGetModuleFileName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getmodulefilename),[google](#http://www.google.com/search?q=getmodulefilename) or[google groups](#http://groups.google.com/groups?q=getmodulefilename)\.
 
-## [win32api](#win32api)\.GetModuleFileNameW
+## [win32api](win32api.md#win32api)\.GetModuleFileNameW
 
-[PyUnicode](#pyunicode) =GetModuleFileNameW\(hModule\)
+[PyUnicode](PyUnicode.md) = GetModuleFileNameW\(hModule\)
 Retrieves the unicode filename of the specified module\.
 
 #### Parameters
 
-
-  - hModule :[PyHANDLE](#pyhandle)
+  - hModule : [PyHANDLE](PyHANDLE.md)
 
     Specifies the handle to the module\.
 
 #### Win32 API References
 
-
-  - Search forGetModuleFileName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getmodulefilename),[google](#http://www.google.com/search?q=getmodulefilename) or[google groups](#http://groups.google.com/groups?q=getmodulefilename)\.
-
-## [win32api](#win32api)\.GetModuleHandle
+  - Search for GetModuleFileName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetModuleFileName.md), [google](http://www.google.com/search?q=GetModuleFileName.md) or [google groups](http://groups.google.com/groups?q=GetModuleFileName.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetModuleHandle
 
-int =GetModuleHandle\(fileName\)
+int = GetModuleHandle\(fileName\)
 Returns the handle of an already loaded DLL\.
 
 #### Parameters
-
 
   - fileName=None : string
 
@@ -2354,47 +2310,42 @@ Returns the handle of an already loaded DLL\.
 
 #### Win32 API References
 
-
-  - Search forGetModuleHandle at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getmodulehandle),[google](#http://www.google.com/search?q=getmodulehandle) or[google groups](#http://groups.google.com/groups?q=getmodulehandle)\.
-
-## [win32api](#win32api)\.GetMonitorInfo
+  - Search for GetModuleHandle at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetModuleHandle.md), [google](http://www.google.com/search?q=GetModuleHandle.md) or [google groups](http://groups.google.com/groups?q=GetModuleHandle.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetMonitorInfo
 
-dict =GetMonitorInfo\(hMonitor\)
+dict = GetMonitorInfo\(hMonitor\)
 Retrieves information for a monitor by handle
 
 #### Parameters
 
-
-  - hMonitor :[PyHANDLE](#pyhandle)
+  - hMonitor : [PyHANDLE](PyHANDLE.md)
 
     Handle to a monitor
 
 #### Comments
-
 
 Accepts keyword args
 
 #### Return Value
 Returns a dictionary representing a MONITORINFOEX structure
 
-## [win32api](#win32api)\.GetNativeSystemInfo
 
+## [win32api](win32api.md#win32api)\.GetNativeSystemInfo
 
-
-tuple =GetNativeSystemInfo\(\)
+tuple = GetNativeSystemInfo\(\)
 Retrieves information about the current system for a Wow64 process\.
 
 #### Win32 API References
 
-
-  - Search forGetNativeSystemInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getnativesysteminfo),[google](#http://www.google.com/search?q=getnativesysteminfo) or[google groups](#http://groups.google.com/groups?q=getnativesysteminfo)\.
+  - Search for GetNativeSystemInfo at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetNativeSystemInfo.md), [google](http://www.google.com/search?q=GetNativeSystemInfo.md) or [google groups](http://groups.google.com/groups?q=GetNativeSystemInfo.md)\.
 
 #### Return Value
 The return value is a tuple of 9 values, which corresponds 
 
-to the Win32 SYSTEM\_INFO structure\.  The element names are:
+to the Win32 SYSTEM\_INFO structure\.  The element names are: 
+
 wProcessorArchitecture
 dwPageSize
 lpMinimumApplicationAddress
@@ -2409,38 +2360,37 @@ dwProcessorType
 dwAllocationGranularity
 \(wProcessorLevel,wProcessorRevision\)
 
-## [win32api](#win32api)\.GetProcAddress
 
+## [win32api](win32api.md#win32api)\.GetProcAddress
 
+int = GetProcAddress\(hModule, functionName
 
-int =GetProcAddress\(hModule, functionName\)
+\)
 Returns the address of the specified exported dynamic-link library \(DLL\) function\.
 
 #### Parameters
 
-
-  - hModule :[PyHANDLE](#pyhandle)
+  - hModule : [PyHANDLE](PyHANDLE.md)
 
     Specifies the handle to the module\.
 
-  - functionName :[PyResourceId](#pyresourceid)
+  - functionName : [PyResourceId](PyResourceId.md)
 
     Specifies the name of the procedure, or its ordinal value
 
 #### Win32 API References
 
-
-  - Search forGetProcAddress at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getprocaddress),[google](#http://www.google.com/search?q=getprocaddress) or[google groups](#http://groups.google.com/groups?q=getprocaddress)\.
-
-## [win32api](#win32api)\.GetProfileSection
+  - Search for GetProcAddress at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetProcAddress.md), [google](http://www.google.com/search?q=GetProcAddress.md) or [google groups](http://groups.google.com/groups?q=GetProcAddress.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetProfileSection
 
-list =GetProfileSection\(section, iniName\)
+list = GetProfileSection\(section, iniName
+
+\)
 Retrieves all entries from a section in an INI file\.
 
 #### Parameters
-
 
   - section : string
 
@@ -2452,26 +2402,28 @@ Retrieves all entries from a section in an INI file\.
 
 #### Comments
 
-
 This function is obsolete, applications should use the registry instead\.
 
 #### Win32 API References
 
-
-  - Search forGetProfileSection at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getprofilesection),[google](#http://www.google.com/search?q=getprofilesection) or[google groups](#http://groups.google.com/groups?q=getprofilesection)\.
+  - Search for GetProfileSection at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetProfileSection.md), [google](http://www.google.com/search?q=GetProfileSection.md) or [google groups](http://groups.google.com/groups?q=GetProfileSection.md)\.
 
 #### Return Value
 The return value is a list of strings\.
 
-## [win32api](#win32api)\.GetProfileVal
 
+## [win32api](win32api.md#win32api)\.GetProfileVal
 
+int/string = GetProfileVal\(section, entry
 
-int/string =GetProfileVal\(section, entry, defValue, iniName\)
+, defValue
+
+, iniName
+
+\)
 Retrieves entries from a windows INI file\.  This method encapsulates GetProfileString, GetProfileInt, GetPrivateProfileString and GetPrivateProfileInt\.
 
 #### Parameters
-
 
   - section : string
 
@@ -2491,52 +2443,45 @@ Retrieves entries from a windows INI file\.  This method encapsulates GetProfile
 
 #### Comments
 
-
 This function is obsolete, applications should use the registry instead\.
 
 #### Win32 API References
 
+  - Search for GetProfileString at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetProfileString.md), [google](http://www.google.com/search?q=GetProfileString.md) or [google groups](http://groups.google.com/groups?q=GetProfileString.md)\.
 
-  - Search forGetProfileString at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getprofilestring),[google](#http://www.google.com/search?q=getprofilestring) or[google groups](#http://groups.google.com/groups?q=getprofilestring)\.
+  - Search for GetProfileInt at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetProfileInt.md), [google](http://www.google.com/search?q=GetProfileInt.md) or [google groups](http://groups.google.com/groups?q=GetProfileInt.md)\.
 
-  - Search forGetProfileInt at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getprofileint),[google](#http://www.google.com/search?q=getprofileint) or[google groups](#http://groups.google.com/groups?q=getprofileint)\.
+  - Search for GetPrivateProfileString at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetPrivateProfileString.md), [google](http://www.google.com/search?q=GetPrivateProfileString.md) or [google groups](http://groups.google.com/groups?q=GetPrivateProfileString.md)\.
 
-  - Search forGetPrivateProfileString at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getprivateprofilestring),[google](#http://www.google.com/search?q=getprivateprofilestring) or[google groups](#http://groups.google.com/groups?q=getprivateprofilestring)\.
-
-  - Search forGetPrivateProfileInt at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getprivateprofileint),[google](#http://www.google.com/search?q=getprivateprofileint) or[google groups](#http://groups.google.com/groups?q=getprivateprofileint)\.
+  - Search for GetPrivateProfileInt at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetPrivateProfileInt.md), [google](http://www.google.com/search?q=GetPrivateProfileInt.md) or [google groups](http://groups.google.com/groups?q=GetPrivateProfileInt.md)\.
 
 #### Return Value
 The return value is the same type as the default parameter\.
 
-## [win32api](#win32api)\.GetPwrCapabilities
 
+## [win32api](win32api.md#win32api)\.GetPwrCapabilities
 
-
-dict =GetPwrCapabilities\(\)
+dict = GetPwrCapabilities\(\)
 Retrieves system's power capabilities
 
 #### Comments
-
 
 Requires Win2k or later\.
 
 #### Win32 API References
 
-
-  - Search forGetPwrCapabilities at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getpwrcapabilities),[google](#http://www.google.com/search?q=getpwrcapabilities) or[google groups](#http://groups.google.com/groups?q=getpwrcapabilities)\.
+  - Search for GetPwrCapabilities at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetPwrCapabilities.md), [google](http://www.google.com/search?q=GetPwrCapabilities.md) or [google groups](http://groups.google.com/groups?q=GetPwrCapabilities.md)\.
 
 #### Return Value
 Returns a dict representing a SYSTEM\_POWER\_CAPABILITIES struct
 
-## [win32api](#win32api)\.GetShortPathName
 
+## [win32api](win32api.md#win32api)\.GetShortPathName
 
-
-string =GetShortPathName\(path\)
+string = GetShortPathName\(path\)
 Obtains the short path form of the specified path\.
 
 #### Parameters
-
 
   - path : string/unicode
 
@@ -2546,37 +2491,33 @@ GetShortPathNameW will be called and a unicode object returned\.
 
 #### Comments
 
-
 The short path name is an 8\.3 compatible file name\.  As the input path does 
 
 not need to be absolute, the returned name may be longer than the input path\.
 
 #### Win32 API References
 
+  - Search for GetShortPathName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetShortPathName.md), [google](http://www.google.com/search?q=GetShortPathName.md) or [google groups](http://groups.google.com/groups?q=GetShortPathName.md)\.
 
-  - Search forGetShortPathName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getshortpathname),[google](#http://www.google.com/search?q=getshortpathname) or[google groups](#http://groups.google.com/groups?q=getshortpathname)\.
 
-## [win32api](#win32api)\.GetStdHandle
+## [win32api](win32api.md#win32api)\.GetStdHandle
 
 GetStdHandle\(handle\)
 Returns a handle for the standard input, standard output, or standard error device
 
 #### Parameters
 
-
   - handle : int
 
     input, output, or error device
 
-## [win32api](#win32api)\.GetSysColor
 
+## [win32api](win32api.md#win32api)\.GetSysColor
 
-
-int =GetSysColor\(index\)
+int = GetSysColor\(index\)
 Returns the current system color for the specified element\.
 
 #### Parameters
-
 
   - index : int
 
@@ -2584,74 +2525,65 @@ Returns the current system color for the specified element\.
 
 #### Win32 API References
 
-
-  - Search forGetSysColor at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsyscolor),[google](#http://www.google.com/search?q=getsyscolor) or[google groups](#http://groups.google.com/groups?q=getsyscolor)\.
+  - Search for GetSysColor at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSysColor.md), [google](http://www.google.com/search?q=GetSysColor.md) or [google groups](http://groups.google.com/groups?q=GetSysColor.md)\.
 
 #### Return Value
 The return value is a windows RGB color representation\.
 
-## [win32api](#win32api)\.GetSystemDefaultLCID
 
+## [win32api](win32api.md#win32api)\.GetSystemDefaultLCID
 
-
-int =GetSystemDefaultLCID\(\)
+int = GetSystemDefaultLCID\(\)
 Retrieves the system default locale identifier\.
 
 #### Win32 API References
 
-
-  - Search forGetSystemDefaultLCID at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsystemdefaultlcid),[google](#http://www.google.com/search?q=getsystemdefaultlcid) or[google groups](#http://groups.google.com/groups?q=getsystemdefaultlcid)\.
-
-## [win32api](#win32api)\.GetSystemDefaultLangID
+  - Search for GetSystemDefaultLCID at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemDefaultLCID.md), [google](http://www.google.com/search?q=GetSystemDefaultLCID.md) or [google groups](http://groups.google.com/groups?q=GetSystemDefaultLCID.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetSystemDefaultLangID
 
-int =GetSystemDefaultLangID\(\)
+int = GetSystemDefaultLangID\(\)
 Retrieves the system default language identifier\.
 
 #### Win32 API References
 
-
-  - Search forGetSystemDefaultLangID at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsystemdefaultlangid),[google](#http://www.google.com/search?q=getsystemdefaultlangid) or[google groups](#http://groups.google.com/groups?q=getsystemdefaultlangid)\.
-
-## [win32api](#win32api)\.GetSystemDirectory
+  - Search for GetSystemDefaultLangID at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemDefaultLangID.md), [google](http://www.google.com/search?q=GetSystemDefaultLangID.md) or [google groups](http://groups.google.com/groups?q=GetSystemDefaultLangID.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetSystemDirectory
 
-string =GetSystemDirectory\(\)
+string = GetSystemDirectory\(\)
 Returns the path of the Windows system directory\.
 
 #### Win32 API References
 
-
-  - Search forGetSystemDirectory at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsystemdirectory),[google](#http://www.google.com/search?q=getsystemdirectory) or[google groups](#http://groups.google.com/groups?q=getsystemdirectory)\.
-
-## [win32api](#win32api)\.GetSystemFileCacheSize
+  - Search for GetSystemDirectory at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemDirectory.md), [google](http://www.google.com/search?q=GetSystemDirectory.md) or [google groups](http://groups.google.com/groups?q=GetSystemDirectory.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetSystemFileCacheSize
 
-tuple =GetSystemFileCacheSize\(\)
+tuple = GetSystemFileCacheSize\(\)
 Returns the amount of memory reserved for file cache
 
 #### Return Value
 Returns a tuple containing the minimum and maximum cache sizes, and flags \(combination of win32con\.MM\_WORKING\_SET\_\* flags\)
 
-## [win32api](#win32api)\.GetSystemInfo
 
+## [win32api](win32api.md#win32api)\.GetSystemInfo
 
-
-tuple =GetSystemInfo\(\)
+tuple = GetSystemInfo\(\)
 Retrieves information about the current system\.
 
 #### Win32 API References
 
-
-  - Search forGetSystemInfo at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsysteminfo),[google](#http://www.google.com/search?q=getsysteminfo) or[google groups](#http://groups.google.com/groups?q=getsysteminfo)\.
+  - Search for GetSystemInfo at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemInfo.md), [google](http://www.google.com/search?q=GetSystemInfo.md) or [google groups](http://groups.google.com/groups?q=GetSystemInfo.md)\.
 
 #### Return Value
 The return value is a tuple of 9 values, which corresponds 
 
-to the Win32 SYSTEM\_INFO structure\.  The element names are:
+to the Win32 SYSTEM\_INFO structure\.  The element names are: 
+
 wProcessorArchitecture
 dwPageSize
 lpMinimumApplicationAddress
@@ -2666,15 +2598,13 @@ dwProcessorType
 dwAllocationGranularity
 \(wProcessorLevel,wProcessorRevision\)
 
-## [win32api](#win32api)\.GetSystemMetrics
 
+## [win32api](win32api.md#win32api)\.GetSystemMetrics
 
-
-int =GetSystemMetrics\(index\)
+int = GetSystemMetrics\(index\)
 Retrieves various system metrics and system configuration settings\.
 
 #### Parameters
-
 
   - index : int
 
@@ -2682,25 +2612,25 @@ Retrieves various system metrics and system configuration settings\.
 
 #### Win32 API References
 
-
-  - Search forGetSystemMetrics at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getsystemmetrics),[google](#http://www.google.com/search?q=getsystemmetrics) or[google groups](#http://groups.google.com/groups?q=getsystemmetrics)\.
-
-## [win32api](#win32api)\.GetSystemTime
+  - Search for GetSystemMetrics at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetSystemMetrics.md), [google](http://www.google.com/search?q=GetSystemMetrics.md) or [google groups](http://groups.google.com/groups?q=GetSystemMetrics.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetSystemTime
 
-tuple =GetSystemTime\(\)
+tuple = GetSystemTime\(\)
 Returns the current system time
 
-## [win32api](#win32api)\.GetTempFileName
 
+## [win32api](win32api.md#win32api)\.GetTempFileName
 
+tuple = GetTempFileName\(path, prefix
 
-tuple =GetTempFileName\(path, prefix, nUnique\)
+, nUnique
+
+\)
 Returns creates a temporary filename of the following form: path\\\\preuuuu\.tmp\.
 
 #### Parameters
-
 
   - path : string
 
@@ -2722,44 +2652,44 @@ If this parameter is zero, Windows uses the current system time to create a numb
 
 #### Win32 API References
 
-
-  - Search forGetTempFileName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=gettempfilename),[google](#http://www.google.com/search?q=gettempfilename) or[google groups](#http://groups.google.com/groups?q=gettempfilename)\.
+  - Search for GetTempFileName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetTempFileName.md), [google](http://www.google.com/search?q=GetTempFileName.md) or [google groups](http://groups.google.com/groups?q=GetTempFileName.md)\.
 
 #### Return Value
 The return value is a tuple of \(string, int\), where string is the 
 
 filename, and rc is the unique number used to generate the filename\.
 
-## [win32api](#win32api)\.GetTempPath
 
+## [win32api](win32api.md#win32api)\.GetTempPath
 
-
-string =GetTempPath\(\)
+string = GetTempPath\(\)
 Retrieves the path of the directory designated for temporary files\.
 
-## [win32api](#win32api)\.GetThreadLocale
 
+## [win32api](win32api.md#win32api)\.GetThreadLocale
 
-
-int =GetThreadLocale\(\)
+int = GetThreadLocale\(\)
 Returns the current thread's locale\.
 
-## [win32api](#win32api)\.GetTickCount
 
+## [win32api](win32api.md#win32api)\.GetTickCount
 
-
-int =GetTickCount\(\)
+int = GetTickCount\(\)
 Returns the number of milliseconds since windows started\.
 
-## [win32api](#win32api)\.GetTimeFormat
 
+## [win32api](win32api.md#win32api)\.GetTimeFormat
 
+string = GetTimeFormat\(locale, flags
 
-string =GetTimeFormat\(locale, flags, time, format\)
+, time
+
+, format
+
+\)
 Formats a time as a time string for a specified locale\. The function formats either a specified time or the local system time\.
 
 #### Parameters
-
 
   - locale : int
 
@@ -2769,7 +2699,7 @@ Formats a time as a time string for a specified locale\. The function formats ei
 
     
 
-  - time :[PyTime](#pytime)
+  - time : [PyTime](PyTime.md)
 
     The time to use, or None to use the current time\.
 
@@ -2777,15 +2707,13 @@ Formats a time as a time string for a specified locale\. The function formats ei
 
     May be None
 
-## [win32api](#win32api)\.GetTimeZoneInformation
 
+## [win32api](win32api.md#win32api)\.GetTimeZoneInformation
 
-
-tuple =GetTimeZoneInformation\(times\_as\_tuples\)
+tuple = GetTimeZoneInformation\(times\_as\_tuples\)
 Retrieves the system time-zone information\.
 
 #### Parameters
-
 
   - times\_as\_tuples=False : bool
 
@@ -2796,91 +2724,100 @@ The return value is a tuple of \(rc, tzinfo\), where rc is
 
 the integer return code from ::GetTimezoneInformation\(\), which may be
 
-valuedescriptionTIME\_ZONE\_ID\_STANDARDif in standard timeTIME\_ZONE\_ID\_DAYLIGHTif in daylight savings timeTIME\_ZONE\_ID\_UNKNOWNif the timezone in question doesn't use daylight savings time, \(eg\. indiana time\)\.tzinfo is a tuple of:
+   
+
+       value
+
+   
+
+   
+
+       description
+
+   
+
+TIME\_ZONE\_ID\_STANDARDif in standard time
+
+TIME\_ZONE\_ID\_DAYLIGHTif in daylight savings time
+
+TIME\_ZONE\_ID\_UNKNOWNif the timezone in question doesn't use daylight savings time, \(eg\. indiana time\)\.
+
+tzinfo is a tuple of:
 
 #### Items
 
-
-  - \[0\]int : bias
+  - \[0\] int : bias
 
     Specifies the current bias, in minutes, for local time translation on this computer\. The bias is the difference, in minutes, between Coordinated Universal Time \(UTC\) and local time\. All translations between UTC and local time are based on the following formula:
 
-UTC = local time \+ bias
+UTC = local time \+ bias 
 
-
-
-  - \[1\]unicode : standardName
+  - \[1\] unicode : standardName
 
     Specifies a string associated with standard time on this operating system\. For example, this member could contain "EST" to indicate Eastern Standard Time\. This string is not used by the operating system, so anything stored there using the SetTimeZoneInformation function is returned unchanged by the GetTimeZoneInformation function\. This string can be empty\.
 
-  - \[2\][PyTime](#pytime)/tuple : standardTime
+  - \[2\] [PyTime](PyTime.md)/tuple : standardTime
 
-    Specifies a SYSTEMTIME object that contains a date and local time when the transition from daylight saving time to standard time occurs on this operating system\. If this date is not specified, the wMonth member in the SYSTEMTIME structure must be zero\. If this date is specified, the DaylightDate value in the TIME\_ZONE\_INFORMATION structure must also be specified\.
+    Specifies a SYSTEMTIME object that contains a date and local time when the transition from daylight saving time to standard time occurs on this operating system\. If this date is not specified, the wMonth member in the SYSTEMTIME structure must be zero\. If this date is specified, the DaylightDate value in the TIME\_ZONE\_INFORMATION structure must also be specified\. 
+
 To select the correct day in the month, set the wYear member to zero, the wDayOfWeek member to an appropriate weekday, and the wDay member to a value in the range 1 through 5\. Using this notation, the first Sunday in April can be specified, as can the last Thursday in October \(5 is equal to "the last"\)\.
 
-  - \[3\]int : standardBias
+  - \[3\] int : standardBias
 
-    Specifies a bias value to be used during local time translations that occur during standard time\. This member is ignored if a value for the StandardDate member is not supplied\.
+    Specifies a bias value to be used during local time translations that occur during standard time\. This member is ignored if a value for the StandardDate member is not supplied\. 
 This value is added to the value of the Bias member to form the bias used during standard time\. In most time zones, the value of this member is zero\.
 
-  - \[4\]unicode : daylightName
+  - \[4\] unicode : daylightName
 
     
 
-  - \[5\][PyTime](#pytime)/tuple : daylightTime
+  - \[5\] [PyTime](PyTime.md)/tuple : daylightTime
 
     
 
-  - \[6\]int : daylightBias
+  - \[6\] int : daylightBias
 
-    Specifies a bias value to be used during local time translations that occur during daylight saving time\. This member is ignored if a value for the DaylightDate member is not supplied\.
+    Specifies a bias value to be used during local time translations that occur during daylight saving time\. This member is ignored if a value for the DaylightDate member is not supplied\. 
+
 This value is added to the value of the Bias member to form the bias used during daylight saving time\. In most time zones, the value of this member is &\#150 60\.
 
-## [win32api](#win32api)\.GetUserDefaultLCID
 
+## [win32api](win32api.md#win32api)\.GetUserDefaultLCID
 
-
-int =GetUserDefaultLCID\(\)
+int = GetUserDefaultLCID\(\)
 Retrieves the user default locale identifier\.
 
 #### Win32 API References
 
-
-  - Search forGetUserDefaultLCID at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getuserdefaultlcid),[google](#http://www.google.com/search?q=getuserdefaultlcid) or[google groups](#http://groups.google.com/groups?q=getuserdefaultlcid)\.
-
-## [win32api](#win32api)\.GetUserDefaultLangID
+  - Search for GetUserDefaultLCID at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserDefaultLCID.md), [google](http://www.google.com/search?q=GetUserDefaultLCID.md) or [google groups](http://groups.google.com/groups?q=GetUserDefaultLCID.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetUserDefaultLangID
 
-int =GetUserDefaultLangID\(\)
+int = GetUserDefaultLangID\(\)
 Retrieves the user default language identifier\.
 
 #### Win32 API References
 
-
-  - Search forGetUserDefaultLangID at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getuserdefaultlangid),[google](#http://www.google.com/search?q=getuserdefaultlangid) or[google groups](#http://groups.google.com/groups?q=getuserdefaultlangid)\.
-
-## [win32api](#win32api)\.GetUserName
+  - Search for GetUserDefaultLangID at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserDefaultLangID.md), [google](http://www.google.com/search?q=GetUserDefaultLangID.md) or [google groups](http://groups.google.com/groups?q=GetUserDefaultLangID.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetUserName
 
-string =GetUserName\(\)
+string = GetUserName\(\)
 Returns the current user name
 
 #### Win32 API References
 
-
-  - Search forGetUserName at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getusername),[google](#http://www.google.com/search?q=getusername) or[google groups](#http://groups.google.com/groups?q=getusername)\.
-
-## [win32api](#win32api)\.GetUserNameEx
+  - Search for GetUserName at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserName.md), [google](http://www.google.com/search?q=GetUserName.md) or [google groups](http://groups.google.com/groups?q=GetUserName.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetUserNameEx
 
-string =GetUserNameEx\(NameFormat\)
+string = GetUserNameEx\(NameFormat\)
 Returns the current user name in format from EXTENDED\_NAME\_FORMAT enum
 
 #### Parameters
-
 
   - NameFormat : int
 
@@ -2888,14 +2825,12 @@ Returns the current user name in format from EXTENDED\_NAME\_FORMAT enum
 
 #### Win32 API References
 
-
-  - Search forGetUserNameEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=getusernameex),[google](#http://www.google.com/search?q=getusernameex) or[google groups](#http://groups.google.com/groups?q=getusernameex)\.
-
-## [win32api](#win32api)\.GetVersion
+  - Search for GetUserNameEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=GetUserNameEx.md), [google](http://www.google.com/search?q=GetUserNameEx.md) or [google groups](http://groups.google.com/groups?q=GetUserNameEx.md)\.
 
 
+## [win32api](win32api.md#win32api)\.GetVersion
 
-int =GetVersion\(\)
+int = GetVersion\(\)
 Returns the current version of Windows, and information about the environment\.
 
 #### Return Value
@@ -2903,15 +2838,13 @@ The return value's low word is the major/minor version of Windows\.  The high
 
 word is 0 if the platform is Windows NT, or 1 if Win32s on Windows 3\.1
 
-## [win32api](#win32api)\.GetVersionEx
 
+## [win32api](win32api.md#win32api)\.GetVersionEx
 
-
-tuple =GetVersionEx\(format\)
+tuple = GetVersionEx\(format\)
 Returns the current version of Windows, and information about the environment\.
 
 #### Parameters
-
 
   - format=0 : int
 
@@ -2922,118 +2855,109 @@ May be 0 \(for OSVERSIONINFO\) or 1 \(for OSVERSIONINFOEX\)
 #### Return Value
 The return value is a tuple with the following information\.
 
-
 #### Items
 
-
-  - \[0\]int : majorVersion
+  - \[0\] int : majorVersion
 
     Identifies the major version number of the operating system\.
 
-
-  - \[1\]int : minorVersion
+  - \[1\] int : minorVersion
 
     Identifies the minor version number of the operating system\.
 
-
-  - \[2\]int : buildNumber
+  - \[2\] int : buildNumber
 
     Identifies the build number of the operating system in the low-order word\. \(The high-order word contains the major and minor version numbers\.\)
 
-
-  - \[3\]int : platformId
+  - \[3\] int : platformId
 
     Identifies the platform supported by the operating system\.  May be one of VER\_PLATFORM\_WIN32s, VER\_PLATFORM\_WIN32\_WINDOWS or VER\_PLATFORM\_WIN32\_NT
 
-
-  - \[4\]string : version
+  - \[4\] string : version
 
     Contains arbitrary additional information about the operating system\.
 
 #### Return Value
 or if the format param is 1, the return value is a tuple with:
 
-
 #### Items
 
-
-  - \[0\]int : majorVersion
+  - \[0\] int : majorVersion
 
     Identifies the major version number of the operating system\.
 
-
-  - \[1\]int : minorVersion
+  - \[1\] int : minorVersion
 
     Identifies the minor version number of the operating system\.
 
-
-  - \[2\]int : buildNumber
+  - \[2\] int : buildNumber
 
     Identifies the build number of the operating system in the low-order word\. \(The high-order word contains the major and minor version numbers\.\)
 
-
-  - \[3\]int : platformId
+  - \[3\] int : platformId
 
     Identifies the platform supported by the operating system\.  May be one of VER\_PLATFORM\_WIN32s, VER\_PLATFORM\_WIN32\_WINDOWS or VER\_PLATFORM\_WIN32\_NT
 
-
-  - \[4\]string : version
+  - \[4\] string : version
 
     Contains arbitrary additional information about the operating system\.
 
-  - \[5\]int : wServicePackMajor
+  - \[5\] int : wServicePackMajor
 
     Major version number of the latest Service Pack installed on the system\. For example, for Service Pack 3, the major version number is 3\. If no Service Pack has been installed, the value is zero\.
 
-  - \[6\]int : wServicePackMinor
+  - \[6\] int : wServicePackMinor
 
     Minor version number of the latest Service Pack installed on the system\. For example, for Service Pack 3, the minor version number is 0\.
 
-  - \[7\]int : wSuiteMask
+  - \[7\] int : wSuiteMask
 
     Bit flags that identify the product suites available on the system\. This member can be a combination of the VER\_SUITE\_\* values\.
 
-  - \[8\]int : wProductType
+  - \[8\] int : wProductType
 
     Additional information about the system\. This member can be one of the VER\_NT\_\* values\.
 
-  - \[9\]int : wReserved
+  - \[9\] int : wReserved
 
     
 
-## [win32api](#win32api)\.GetVolumeInformation
 
+## [win32api](win32api.md#win32api)\.GetVolumeInformation
 
-
-tuple =GetVolumeInformation\(path\)
+tuple = GetVolumeInformation\(path\)
 Returns information about a file system and colume whose root directory is specified\.
 
 #### Parameters
-
 
   - path : string
 
     The root path of the volume on which information is being requested\.
 
 #### Return Value
-The return is a tuple of:
-string - Volume Name
-long - Volume serial number\.
-long - Maximum Component Length of a file name\.
-long - Sys Flags - other flags specific to the file system\.  See the api for details\.
+The return is a tuple of: 
+
+string - Volume Name 
+
+long - Volume serial number\. 
+
+long - Maximum Component Length of a file name\. 
+
+long - Sys Flags - other flags specific to the file system\.  See the api for details\. 
+
 string - File System Name
 
-## [win32api](#win32api)\.GetWindowLong
 
+## [win32api](win32api.md#win32api)\.GetWindowLong
 
+int = GetWindowLong\(hwnd, offset
 
-int =GetWindowLong\(hwnd, offset\)
+\)
 Retrieves a long value at the specified offset into the extra window memory of the given window\.
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     The handle to the window\.
 
@@ -3043,50 +2967,43 @@ Retrieves a long value at the specified offset into the extra window memory of t
 
 #### Comments
 
-
 This function calls the GetWindowLongPtr Api function
 
-## [win32api](#win32api)\.GetWindowsDirectory
 
+## [win32api](win32api.md#win32api)\.GetWindowsDirectory
 
-
-string =GetWindowsDirectory\(\)
+string = GetWindowsDirectory\(\)
 Returns the path of the Windows directory\.
 
-## [win32api](#win32api)\.GlobalMemoryStatus
 
+## [win32api](win32api.md#win32api)\.GlobalMemoryStatus
 
-
-dict =GlobalMemoryStatus\(\)
+dict = GlobalMemoryStatus\(\)
 Returns systemwide memory usage
 
 #### Return Value
 Returns a dictionary representing a MEMORYSTATUS structure
 
-## [win32api](#win32api)\.GlobalMemoryStatusEx
 
+## [win32api](win32api.md#win32api)\.GlobalMemoryStatusEx
 
-
-dict =GlobalMemoryStatusEx\(\)
+dict = GlobalMemoryStatusEx\(\)
 Returns physical and virtual memory usage
 
 #### Comments
-
 
 Only available on Win2k and later\.
 
 #### Return Value
 Returns a dictionary representing a MEMORYSTATUSEX structure
 
-## [win32api](#win32api)\.HIBYTE
 
+## [win32api](win32api.md#win32api)\.HIBYTE
 
-
-int =HIBYTE\(val\)
+int = HIBYTE\(val\)
 An interface to the win32api HIBYTE macro\.
 
 #### Parameters
-
 
   - val : int
 
@@ -3094,18 +3011,15 @@ An interface to the win32api HIBYTE macro\.
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.HIWORD
 
+## [win32api](win32api.md#win32api)\.HIWORD
 
-
-int =HIWORD\(val\)
+int = HIWORD\(val\)
 An interface to the win32api HIWORD macro\.
 
 #### Parameters
-
 
   - val : int
 
@@ -3113,22 +3027,21 @@ An interface to the win32api HIWORD macro\.
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.InitiateSystemShutdown
+
+## [win32api](win32api.md#win32api)\.InitiateSystemShutdown
 
 InitiateSystemShutdown\(computerName, message, timeOut, bForceClose, bRebootAfterShutdown\)
 Initiates a shutdown and optional restart of the specified computer\.
 
 #### Parameters
 
-
-  - computerName : string/[PyUnicode](#pyunicode)
+  - computerName : string/[PyUnicode](PyUnicode.md)
 
     Specifies the name of the computer to shut-down, or None
 
-  - message : string/[PyUnicode](#pyunicode)
+  - message : string/[PyUnicode](PyUnicode.md)
 
     Message to display in a dialog box
 
@@ -3148,18 +3061,15 @@ If dwTimeout is zero, the computer shuts down without displaying the dialog box,
 
 #### Win32 API References
 
-
-  - Search forInitiateSystemShutdown at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=initiatesystemshutdown),[google](#http://www.google.com/search?q=initiatesystemshutdown) or[google groups](#http://groups.google.com/groups?q=initiatesystemshutdown)\.
-
-## [win32api](#win32api)\.LOBYTE
+  - Search for InitiateSystemShutdown at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=InitiateSystemShutdown.md), [google](http://www.google.com/search?q=InitiateSystemShutdown.md) or [google groups](http://groups.google.com/groups?q=InitiateSystemShutdown.md)\.
 
 
+## [win32api](win32api.md#win32api)\.LOBYTE
 
-int =LOBYTE\(val\)
+int = LOBYTE\(val\)
 An interface to the win32api LOBYTE macro\.
 
 #### Parameters
-
 
   - val : int
 
@@ -3167,18 +3077,15 @@ An interface to the win32api LOBYTE macro\.
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.LOWORD
 
+## [win32api](win32api.md#win32api)\.LOWORD
 
-
-int =LOWORD\(val\)
+int = LOWORD\(val\)
 An interface to the win32api LOWORD macro\.
 
 #### Parameters
-
 
   - val : int
 
@@ -3186,39 +3093,39 @@ An interface to the win32api LOWORD macro\.
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.LoadCursor
 
-[PyHANDLE](#pyhandle) =LoadCursor\(hInstance, cursorid\)
+## [win32api](win32api.md#win32api)\.LoadCursor
+
+[PyHANDLE](PyHANDLE.md) = LoadCursor\(hInstance, cursorid
+
+\)
 Loads a cursor\.
 
 #### Parameters
 
-
-  - hInstance :[PyHANDLE](#pyhandle)
+  - hInstance : [PyHANDLE](PyHANDLE.md)
 
     Handle to the instance to load the resource from, or None to load a standard system cursor
 
-  - cursorid :[PyResourceId](#pyresourceid)
+  - cursorid : [PyResourceId](PyResourceId.md)
 
     The ID of the cursor\.  Can be a resource id or for system cursors, one of win32con\.IDC\_\*
 
 #### Win32 API References
 
-
-  - Search forLoadCursor at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=loadcursor),[google](#http://www.google.com/search?q=loadcursor) or[google groups](#http://groups.google.com/groups?q=loadcursor)\.
-
-## [win32api](#win32api)\.LoadKeyboardLayout
+  - Search for LoadCursor at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LoadCursor.md), [google](http://www.google.com/search?q=LoadCursor.md) or [google groups](http://groups.google.com/groups?q=LoadCursor.md)\.
 
 
+## [win32api](win32api.md#win32api)\.LoadKeyboardLayout
 
-int =LoadKeyboardLayout\(KLID, Flags\)
+int = LoadKeyboardLayout\(KLID, Flags
+
+\)
 Loads a new locale id
 
 #### Parameters
-
 
   - KLID : string
 
@@ -3231,15 +3138,13 @@ Loads a new locale id
 #### Return Value
 Returns the numeric locale id that was loaded
 
-## [win32api](#win32api)\.LoadLibrary
 
+## [win32api](win32api.md#win32api)\.LoadLibrary
 
-
-int =LoadLibrary\(fileName\)
+int = LoadLibrary\(fileName\)
 Loads the specified DLL, and returns the handle\.
 
 #### Parameters
-
 
   - fileName : string
 
@@ -3247,22 +3152,25 @@ Loads the specified DLL, and returns the handle\.
 
 #### Win32 API References
 
+  - Search for LoadLibrary at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LoadLibrary.md), [google](http://www.google.com/search?q=LoadLibrary.md) or [google groups](http://groups.google.com/groups?q=LoadLibrary.md)\.
 
-  - Search forLoadLibrary at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=loadlibrary),[google](#http://www.google.com/search?q=loadlibrary) or[google groups](#http://groups.google.com/groups?q=loadlibrary)\.
 
-## [win32api](#win32api)\.LoadLibraryEx
+## [win32api](win32api.md#win32api)\.LoadLibraryEx
 
-[PyHANDLE](#pyhandle) =LoadLibraryEx\(fileName, handle, handle\)
+[PyHANDLE](PyHANDLE.md) = LoadLibraryEx\(fileName, handle
+
+, handle
+
+\)
 Loads the specified DLL, and returns the handle\.
 
 #### Parameters
-
 
   - fileName : string
 
     Specifies the file name of the module to load\.
 
-  - handle :[PyHANDLE](#pyhandle)
+  - handle : [PyHANDLE](PyHANDLE.md)
 
     Reserved - must be zero
 
@@ -3272,28 +3180,31 @@ Loads the specified DLL, and returns the handle\.
 
 #### Win32 API References
 
-
-  - Search forLoadLibraryEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=loadlibraryex),[google](#http://www.google.com/search?q=loadlibraryex) or[google groups](#http://groups.google.com/groups?q=loadlibraryex)\.
-
-## [win32api](#win32api)\.LoadResource
+  - Search for LoadLibraryEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=LoadLibraryEx.md), [google](http://www.google.com/search?q=LoadLibraryEx.md) or [google groups](http://groups.google.com/groups?q=LoadLibraryEx.md)\.
 
 
+## [win32api](win32api.md#win32api)\.LoadResource
 
-string =LoadResource\(handle, type, name, language\)
+string = LoadResource\(handle, type
+
+, name
+
+, language
+
+\)
 Finds and loads a resource from a PE file\.
 
 #### Parameters
 
-
-  - handle :[PyHANDLE](#pyhandle)
+  - handle : [PyHANDLE](PyHANDLE.md)
 
     The handle of the module containing the resource\.  Use None for currrent process executable\.
 
-  - type :[PyResourceId](#pyresourceid)
+  - type : [PyResourceId](PyResourceId.md)
 
     The type of resource to load\.
 
-  - name :[PyResourceId](#pyresourceid)
+  - name : [PyResourceId](PyResourceId.md)
 
     The name or Id of the resource to load\.
 
@@ -3301,15 +3212,19 @@ Finds and loads a resource from a PE file\.
 
     Language to use, defaults to LANG\_NEUTRAL\.
 
-## [win32api](#win32api)\.LoadString
 
-[PyUnicode](#pyunicode) =LoadString\(handle, stringId, numChars\)
+## [win32api](win32api.md#win32api)\.LoadString
+
+[PyUnicode](PyUnicode.md) = LoadString\(handle, stringId
+
+, numChars
+
+\)
 Loads a string from a resource file\.
 
 #### Parameters
 
-
-  - handle :[PyHANDLE](#pyhandle)
+  - handle : [PyHANDLE](PyHANDLE.md)
 
     The handle of the module containing the resource\.
 
@@ -3321,15 +3236,15 @@ Loads a string from a resource file\.
 
     Number of characters to allocate for the return buffer\.
 
-## [win32api](#win32api)\.MAKELANGID
 
+## [win32api](win32api.md#win32api)\.MAKELANGID
 
+int = MAKELANGID\(PrimaryLanguage, SubLanguage
 
-int =MAKELANGID\(PrimaryLanguage, SubLanguage\)
+\)
 Creates a language identifier from a primary language identifier and a sublanguage identifier\.
 
 #### Parameters
-
 
   - PrimaryLanguage : int
 
@@ -3341,19 +3256,18 @@ Creates a language identifier from a primary language identifier and a sublangua
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.MAKELONG
 
+## [win32api](win32api.md#win32api)\.MAKELONG
 
+int = MAKELONG\(low, high
 
-int =MAKELONG\(low, high\)
+\)
 creates a LONG value by concatenating the specified values\.
 
 #### Parameters
 
-
   - low : int
 
     Specifies the low-order byte of the new value\.
@@ -3364,19 +3278,18 @@ creates a LONG value by concatenating the specified values\.
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.MAKEWORD
 
+## [win32api](win32api.md#win32api)\.MAKEWORD
 
+int = MAKEWORD\(low, high
 
-int =MAKEWORD\(low, high\)
+\)
 creates a WORD value by concatenating the specified values\.
 
 #### Parameters
 
-
   - low : int
 
     Specifies the low-order byte of the new value\.
@@ -3387,18 +3300,19 @@ creates a WORD value by concatenating the specified values\.
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.MapVirtualKey
 
+## [win32api](win32api.md#win32api)\.MapVirtualKey
 
+int = MapVirtualKey\(vk, type
 
-int =MapVirtualKey\(vk, type, hlayout\)
+, hlayout
+
+\)
 Translates \(maps\) a virtual-key code into a scan code or character value, or translates a scan code into a virtual-key code\.
 
 #### Parameters
-
 
   - vk : int
 
@@ -3418,18 +3332,15 @@ is specified MapVirtualKeyEx will be called\.
 
 #### Comments
 
-
 implemented by calling the unicode versions of the API \(MapVirtualKeyW/MapVirtualKeyExW\)
 
-## [win32api](#win32api)\.MessageBeep
 
+## [win32api](win32api.md#win32api)\.MessageBeep
 
-
-int =MessageBeep\(type\)
+int = MessageBeep\(type\)
 Plays a predefined waveform sound\.
 
 #### Parameters
-
 
   - type=win32con\.MB\_OK : int
 
@@ -3443,20 +3354,25 @@ MB\_ICONEXCLAMATION, MB\_ICONHAND, MB\_ICONQUESTION or MB\_OK\.
 
 #### Comments
 
-
 The waveform sound for each sound type is identified by an entry in the \[sounds\] section of the registry\.
 
-## [win32api](#win32api)\.MessageBox
 
+## [win32api](win32api.md#win32api)\.MessageBox
 
+int = MessageBox\(hwnd, message
 
-int =MessageBox\(hwnd, message, title, style, language\)
+, title
+
+, style
+
+, language
+
+\)
 Display a message box\.
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     The handle of the parent window\.  See the comments section\.
 
@@ -3478,21 +3394,22 @@ Display a message box\.
 
 #### Comments
 
-
 Normally, a program in a GUI environment will use one of the MessageBox 
 
-methods supplied by the GUI \(eg,[win32ui::MessageBox](win32ui.md#win32uimessagebox) or[PyCWnd::MessageBox](PyCWnd.md#pycwndmessagebox)\)
+methods supplied by the GUI \(eg, [win32ui::MessageBox](win32ui.md#win32uimessagebox) or [PyCWnd::MessageBox](PyCWnd.md#pycwndmessagebox)\)
 
 #### Return Value
 An integer identifying the button pressed to dismiss the dialog\.
 
-## [win32api](#win32api)\.MonitorFromPoint
 
-[PyHANDLE](#pyhandle) =MonitorFromPoint\(pt, Flags\)
+## [win32api](win32api.md#win32api)\.MonitorFromPoint
+
+[PyHANDLE](PyHANDLE.md) = MonitorFromPoint\(pt, Flags
+
+\)
 Finds monitor that contains a point
 
 #### Parameters
-
 
   - pt : \(int, int\)
 
@@ -3504,21 +3421,22 @@ Finds monitor that contains a point
 
 #### Comments
 
-
 Accepts keyword arguments
 
 #### Return Value
 Returns None if no monitor was found
 
-## [win32api](#win32api)\.MonitorFromRect
 
-[PyHANDLE](#pyhandle) =MonitorFromRect\(rc, Flags\)
+## [win32api](win32api.md#win32api)\.MonitorFromRect
+
+[PyHANDLE](PyHANDLE.md) = MonitorFromRect\(rc, Flags
+
+\)
 Finds monitor that has largest intersection with a rectangle
 
 #### Parameters
 
-
-  - rc :[PyRECT](#pyrect)
+  - rc : [PyRECT](PyRECT.md)
 
     Rectangle to be examined
 
@@ -3528,21 +3446,22 @@ Finds monitor that has largest intersection with a rectangle
 
 #### Comments
 
-
 Accepts keyword arguments
 
 #### Return Value
 Returns None if no monitor was found
 
-## [win32api](#win32api)\.MonitorFromWindow
 
-[PyHANDLE](#pyhandle) =MonitorFromWindow\(hwnd, Flags\)
+## [win32api](win32api.md#win32api)\.MonitorFromWindow
+
+[PyHANDLE](PyHANDLE.md) = MonitorFromWindow\(hwnd, Flags
+
+\)
 Finds monitor that contains a window
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     Handle to a window
 
@@ -3552,19 +3471,18 @@ Finds monitor that contains a window
 
 #### Comments
 
-
 Accepts keyword arguments
 
 #### Return Value
 Returns None if no monitor was found
 
-## [win32api](#win32api)\.MoveFile
+
+## [win32api](win32api.md#win32api)\.MoveFile
 
 MoveFile\(srcName, destName\)
 Renames a file, or a directory \(including its children\)\.
 
 #### Parameters
-
 
   - srcName : string
 
@@ -3576,21 +3494,19 @@ Renames a file, or a directory \(including its children\)\.
 
 #### Comments
 
-
 This method can not move files across volumes\.
 
 #### Win32 API References
 
+  - Search for MoveFile\. at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=MoveFile..md), [google](http://www.google.com/search?q=MoveFile..md) or [google groups](http://groups.google.com/groups?q=MoveFile..md)\.
 
-  - Search forMoveFile\. at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=movefile.),[google](#http://www.google.com/search?q=movefile.) or[google groups](#http://groups.google.com/groups?q=movefile.)\.
 
-## [win32api](#win32api)\.MoveFileEx
+## [win32api](win32api.md#win32api)\.MoveFileEx
 
 MoveFileEx\(srcName, destName, flag\)
 Renames a file\.
 
 #### Parameters
-
 
   - srcName : string
 
@@ -3606,7 +3522,6 @@ Renames a file\.
 
 #### Comments
 
-
 This method can move files across volumes\.
  
 
@@ -3616,16 +3531,19 @@ file will be deleted next reboot\.
 
 #### Win32 API References
 
+  - Search for MoveFileEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=MoveFileEx.md), [google](http://www.google.com/search?q=MoveFileEx.md) or [google groups](http://groups.google.com/groups?q=MoveFileEx.md)\.
 
-  - Search forMoveFileEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=movefileex),[google](#http://www.google.com/search?q=movefileex) or[google groups](#http://groups.google.com/groups?q=movefileex)\.
 
-## [win32api](#win32api)\.OpenProcess
+## [win32api](win32api.md#win32api)\.OpenProcess
 
-[PyHANDLE](#pyhandle) =OpenProcess\(reqdAccess, bInherit, pid\)
+[PyHANDLE](PyHANDLE.md) = OpenProcess\(reqdAccess, bInherit
+
+, pid
+
+\)
 Retrieves a handle to an existing process
 
 #### Parameters
-
 
   - reqdAccess : int
 
@@ -3639,27 +3557,27 @@ Retrieves a handle to an existing process
 
     The process ID
 
-## [win32api](#win32api)\.OutputDebugString
+
+## [win32api](win32api.md#win32api)\.OutputDebugString
 
 OutputDebugString\(msg\)
 Sends a string to the Windows debugging device\.
 
 #### Parameters
 
-
   - msg : string
 
     The string to write\.
 
-## [win32api](#win32api)\.PostMessage
+
+## [win32api](win32api.md#win32api)\.PostMessage
 
 PostMessage\(hwnd, idMessage, wParam, lParam\)
 Post a message to a window\.
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     The hWnd of the window to receive the message\.
 
@@ -3677,16 +3595,15 @@ Post a message to a window\.
 
 #### Win32 API References
 
+  - Search for PostMessage at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PostMessage.md), [google](http://www.google.com/search?q=PostMessage.md) or [google groups](http://groups.google.com/groups?q=PostMessage.md)\.
 
-  - Search forPostMessage at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=postmessage),[google](#http://www.google.com/search?q=postmessage) or[google groups](#http://groups.google.com/groups?q=postmessage)\.
 
-## [win32api](#win32api)\.PostQuitMessage
+## [win32api](win32api.md#win32api)\.PostQuitMessage
 
 PostQuitMessage\(exitCode\)
 Post a quit message to an app\.
 
 #### Parameters
-
 
   - exitCode=0 : int
 
@@ -3694,16 +3611,15 @@ Post a quit message to an app\.
 
 #### Win32 API References
 
+  - Search for PostQuitMessage at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PostQuitMessage.md), [google](http://www.google.com/search?q=PostQuitMessage.md) or [google groups](http://groups.google.com/groups?q=PostQuitMessage.md)\.
 
-  - Search forPostQuitMessage at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=postquitmessage),[google](#http://www.google.com/search?q=postquitmessage) or[google groups](#http://groups.google.com/groups?q=postquitmessage)\.
 
-## [win32api](#win32api)\.PostThreadMessage
+## [win32api](win32api.md#win32api)\.PostThreadMessage
 
 PostThreadMessage\(tid, idMessage, wParam, lParam\)
 Post a message to the specified thread\.
 
 #### Parameters
-
 
   - tid : int
 
@@ -3723,18 +3639,19 @@ Post a message to the specified thread\.
 
 #### Win32 API References
 
-
-  - Search forPostThreadMessage at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=postthreadmessage),[google](#http://www.google.com/search?q=postthreadmessage) or[google groups](#http://groups.google.com/groups?q=postthreadmessage)\.
-
-## [win32api](#win32api)\.RGB
+  - Search for PostThreadMessage at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PostThreadMessage.md), [google](http://www.google.com/search?q=PostThreadMessage.md) or [google groups](http://groups.google.com/groups?q=PostThreadMessage.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RGB
 
-int =RGB\(red, green, blue\)
+int = RGB\(red, green
+
+, blue
+
+\)
 An interface to the win32api RGB macro\.
 
 #### Parameters
-
 
   - red : int
 
@@ -3750,35 +3667,33 @@ An interface to the win32api RGB macro\.
 
 #### Comments
 
-
 This is simply a wrapper to a C\+\+ macro\.
 
-## [win32api](#win32api)\.RegCloseKey
+
+## [win32api](win32api.md#win32api)\.RegCloseKey
 
 RegCloseKey\(key\)
 Closes a previously opened registry key\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     The key to be closed\.
 
 #### Win32 API References
 
-
-  - Search forRegCloseKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regclosekey),[google](#http://www.google.com/search?q=regclosekey) or[google groups](#http://groups.google.com/groups?q=regclosekey)\.
-
-## [win32api](#win32api)\.RegConnectRegistry
+  - Search for RegCloseKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegCloseKey.md), [google](http://www.google.com/search?q=RegCloseKey.md) or [google groups](http://groups.google.com/groups?q=RegCloseKey.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RegConnectRegistry
 
-int =RegConnectRegistry\(computerName, key\)
+int = RegConnectRegistry\(computerName, key
+
+\)
 Establishes a connection to a predefined registry handle on another computer\.
 
 #### Parameters
-
 
   - computerName : string
 
@@ -3790,51 +3705,50 @@ Establishes a connection to a predefined registry handle on another computer\.
 
 #### Win32 API References
 
-
-  - Search forRegConnectRegistry at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regconnectregistry),[google](#http://www.google.com/search?q=regconnectregistry) or[google groups](#http://groups.google.com/groups?q=regconnectregistry)\.
+  - Search for RegConnectRegistry at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegConnectRegistry.md), [google](http://www.google.com/search?q=RegConnectRegistry.md) or [google groups](http://groups.google.com/groups?q=RegConnectRegistry.md)\.
 
 #### Return Value
 The return value is the handle of the opened key\. 
 
 If the function fails, an exception is raised\.
 
-## [win32api](#win32api)\.RegCopyTree
+
+## [win32api](win32api.md#win32api)\.RegCopyTree
 
 RegCopyTree\(KeySrc, SubKey, KeyDest\)
 Copies an entire registry key to another location
 
 #### Parameters
 
-
-  - KeySrc :[PyHKEY](#pyhkey)
+  - KeySrc : [PyHKEY](PyHKEY.md)
 
     Registry key to be copied
 
-  - SubKey :[PyUnicode](#pyunicode)
+  - SubKey : [PyUnicode](PyUnicode.md)
 
     Subkey to be copied, can be None
 
-  - KeyDest :[PyHKEY](#pyhkey)
+  - KeyDest : [PyHKEY](PyHKEY.md)
 
     The destination key
 
 #### Comments
 
-
 Accepts keyword args\.
-
 
 Requires Vista or later\.
 
-## [win32api](#win32api)\.RegCreateKey
 
-[PyHKEY](#pyhkey) =RegCreateKey\(key, subKey\)
+## [win32api](win32api.md#win32api)\.RegCreateKey
+
+[PyHKEY](PyHKEY.md) = RegCreateKey\(key, subKey
+
+\)
 Creates the specified key, or opens the key if it already exists\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -3854,27 +3768,38 @@ the handle returned is the same hkey handle passed in to the function\.
 
 #### Win32 API References
 
-
-  - Search forRegCreateKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regcreatekey),[google](#http://www.google.com/search?q=regcreatekey) or[google groups](#http://groups.google.com/groups?q=regcreatekey)\.
+  - Search for RegCreateKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegCreateKey.md), [google](http://www.google.com/search?q=RegCreateKey.md) or [google groups](http://groups.google.com/groups?q=RegCreateKey.md)\.
 
 #### Return Value
 The return value is the handle of the opened key\. 
 
 If the function fails, an exception is raised\.
 
-## [win32api](#win32api)\.RegCreateKeyEx
 
-[PyHKEY](#pyhkey), int =RegCreateKeyEx\(Key, SubKey, samDesired, Class, Options, SecurityAttributes, Transaction\)
+## [win32api](win32api.md#win32api)\.RegCreateKeyEx
+
+[PyHKEY](PyHKEY.md), int = RegCreateKeyEx\(Key, SubKey
+
+, samDesired
+
+, Class
+
+, Options
+
+, SecurityAttributes
+
+, Transaction
+
+\)
 Extended version of RegCreateKey
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)/int
+  - Key : [PyHKEY](PyHKEY.md)/int
 
     Registry key or one of win32con\.HKEY\_\* values
 
-  - SubKey :[PyUnicode](#pyunicode)
+  - SubKey : [PyUnicode](PyUnicode.md)
 
     Name of subkey to open or create\.
 
@@ -3884,7 +3809,7 @@ Extended version of RegCreateKey
 
 standard access rights such as DELETE, WRITE\_OWNER, etc\.
 
-  - Class=None :[PyUnicode](#pyunicode)
+  - Class=None : [PyUnicode](PyUnicode.md)
 
     Name of registry key class
 
@@ -3892,41 +3817,38 @@ standard access rights such as DELETE, WRITE\_OWNER, etc\.
 
     One of the winnt\.REG\_OPTION\_\* values
 
-  - SecurityAttributes=None :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  - SecurityAttributes=None : [PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies security for key and handle inheritance
 
-  - Transaction=None :[PyHANDLE](#pyhandle)
+  - Transaction=None : [PyHANDLE](PyHANDLE.md)
 
-    Handle to a transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
+    Handle to a transaction as returned by [win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
 #### Comments
 
-
 Implemented only as Unicode \(RegCreateKeyExW\)\.  Accepts keyword arguments\.
-
 
 If a transaction handle is passed in, RegCreateKeyTransacted will be called \(requires Vista or later\)
 
 #### Win32 API References
 
+  - Search for RegCreateKeyEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegCreateKeyEx.md), [google](http://www.google.com/search?q=RegCreateKeyEx.md) or [google groups](http://groups.google.com/groups?q=RegCreateKeyEx.md)\.
 
-  - Search forRegCreateKeyEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regcreatekeyex),[google](#http://www.google.com/search?q=regcreatekeyex) or[google groups](#http://groups.google.com/groups?q=regcreatekeyex)\.
-
-  - Search forRegCreateKeyTransacted at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regcreatekeytransacted),[google](#http://www.google.com/search?q=regcreatekeytransacted) or[google groups](#http://groups.google.com/groups?q=regcreatekeytransacted)\.
+  - Search for RegCreateKeyTransacted at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegCreateKeyTransacted.md), [google](http://www.google.com/search?q=RegCreateKeyTransacted.md) or [google groups](http://groups.google.com/groups?q=RegCreateKeyTransacted.md)\.
 
 #### Return Value
 Returns registry handle and flag indicating if key was opened or created \(REG\_CREATED\_NEW\_KEY or REG\_OPENED\_EXISTING\_KEY\)
 
-## [win32api](#win32api)\.RegDeleteKey
+
+## [win32api](win32api.md#win32api)\.RegDeleteKey
 
 RegDeleteKey\(key, subKey\)
 Deletes the specified key\.  This method can not delete keys with subkeys\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -3944,29 +3866,27 @@ This value must not be None, and the key may not have subkeys\.
 
 #### Comments
 
-
 If the method succeeds, the entire key, including all of its values, is removed\. 
 
 If the method fails, and exception is raised\.
 
 #### Win32 API References
 
+  - Search for RegDeleteKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegDeleteKey.md), [google](http://www.google.com/search?q=RegDeleteKey.md) or [google groups](http://groups.google.com/groups?q=RegDeleteKey.md)\.
 
-  - Search forRegDeleteKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regdeletekey),[google](#http://www.google.com/search?q=regdeletekey) or[google groups](#http://groups.google.com/groups?q=regdeletekey)\.
 
-## [win32api](#win32api)\.RegDeleteKeyEx
+## [win32api](win32api.md#win32api)\.RegDeleteKeyEx
 
 RegDeleteKeyEx\(Key, SubKey, samDesired, Transaction\)
 Deletes a registry key from 32 or 64 bit registry view
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)/int
+  - Key : [PyHKEY](PyHKEY.md)/int
 
     Registry key or one of win32con\.HKEY\_\* values
 
-  - SubKey :[PyUnicode](#pyunicode)
+  - SubKey : [PyUnicode](PyUnicode.md)
 
     Name of subkey to be deleted\.
 
@@ -3974,64 +3894,57 @@ Deletes a registry key from 32 or 64 bit registry view
 
     Can be KEY\_WOW64\_32KEY or KEY\_WOW64\_64KEY to specify alternate registry view
 
-  - Transaction=None :[PyHANDLE](#pyhandle)
+  - Transaction=None : [PyHANDLE](PyHANDLE.md)
 
-    Handle to a transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
+    Handle to a transaction as returned by [win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
 #### Comments
 
-
 Accepts keyword args\.
-
 
 Requires 64-bit XP, Vista, or later\.
 
-
 Key to be deleted cannot contain subkeys
-
 
 If a transaction handle is specified, RegDeleteKeyTransacted is called
 
 #### Win32 API References
 
+  - Search for RegDeleteKeyEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegDeleteKeyEx.md), [google](http://www.google.com/search?q=RegDeleteKeyEx.md) or [google groups](http://groups.google.com/groups?q=RegDeleteKeyEx.md)\.
 
-  - Search forRegDeleteKeyEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regdeletekeyex),[google](#http://www.google.com/search?q=regdeletekeyex) or[google groups](#http://groups.google.com/groups?q=regdeletekeyex)\.
+  - Search for RegDeleteKeyTransacted at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegDeleteKeyTransacted.md), [google](http://www.google.com/search?q=RegDeleteKeyTransacted.md) or [google groups](http://groups.google.com/groups?q=RegDeleteKeyTransacted.md)\.
 
-  - Search forRegDeleteKeyTransacted at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regdeletekeytransacted),[google](#http://www.google.com/search?q=regdeletekeytransacted) or[google groups](#http://groups.google.com/groups?q=regdeletekeytransacted)\.
 
-## [win32api](#win32api)\.RegDeleteTree
+## [win32api](win32api.md#win32api)\.RegDeleteTree
 
 RegDeleteTree\(Key, SubKey\)
 Recursively deletes a key's subkeys and values
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)
+  - Key : [PyHKEY](PyHKEY.md)
 
     Handle to a registry key
 
-  - SubKey :[PyUnicode](#pyunicode)
+  - SubKey : [PyUnicode](PyUnicode.md)
 
     Name of subkey to be deleted, or None for all subkeys and values
 
 #### Comments
 
-
 Accepts keyword args\.
-
 
 Requires Vista or later\.
 
-## [win32api](#win32api)\.RegDeleteValue
+
+## [win32api](win32api.md#win32api)\.RegDeleteValue
 
 RegDeleteValue\(key, value\)
 Removes a named value from the specified registry key\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4045,20 +3958,19 @@ HKEY\_USERS
 
 #### Win32 API References
 
-
-  - Search forRegDeleteValue at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regdeletevalue),[google](#http://www.google.com/search?q=regdeletevalue) or[google groups](#http://groups.google.com/groups?q=regdeletevalue)\.
-
-## [win32api](#win32api)\.RegEnumKey
+  - Search for RegDeleteValue at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegDeleteValue.md), [google](http://www.google.com/search?q=RegDeleteValue.md) or [google groups](http://groups.google.com/groups?q=RegDeleteValue.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RegEnumKey
 
-string =RegEnumKey\(key, index\)
+string = RegEnumKey\(key, index
+
+\)
 Enumerates subkeys of the specified open registry key\. The function retrieves the name of one subkey each time it is called\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4072,20 +3984,17 @@ HKEY\_USERS
 
 #### Win32 API References
 
-
-  - Search forRegEnumKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regenumkey),[google](#http://www.google.com/search?q=regenumkey) or[google groups](#http://groups.google.com/groups?q=regenumkey)\.
-
-## [win32api](#win32api)\.RegEnumKeyEx
+  - Search for RegEnumKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegEnumKey.md), [google](http://www.google.com/search?q=RegEnumKey.md) or [google groups](http://groups.google.com/groups?q=RegEnumKey.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RegEnumKeyEx
 
-tuple =RegEnumKeyEx\(Key\)
+tuple = RegEnumKeyEx\(Key\)
 Lists subkeys of a registry key
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)/int
+  - Key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4096,34 +4005,32 @@ HKEY\_USERS\.
 #### Return Value
 Returns subkeys as tuples of  \(name, reserved, class, last write time\)\. Reserved will always be 0\.
 
-## [win32api](#win32api)\.RegEnumKeyExW
 
+## [win32api](win32api.md#win32api)\.RegEnumKeyExW
 
-
-tuple =RegEnumKeyExW\(Key\)
+tuple = RegEnumKeyExW\(Key\)
 Unicode version of RegEnumKeyEx
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)
+  - Key : [PyHKEY](PyHKEY.md)
 
     Registry handle opened with KEY\_ENUMERATE\_SUB\_KEYS, or one of win32con\.HKEY\_\* constants
 
 #### Return Value
 Returns subkeys as tuples of  \(name, reserved, class, last write time\)\. Reserved will always be 0\.
 
-## [win32api](#win32api)\.RegEnumValue
 
+## [win32api](win32api.md#win32api)\.RegEnumValue
 
+\(string,object,type\) = RegEnumValue\(key, index
 
-\(string,object,type\) =RegEnumValue\(key, index\)
+\)
 Enumerates values of the specified open registry key\. The function retrieves the name of one subkey each time it is called\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4137,23 +4044,21 @@ HKEY\_USERS
 
 #### Comments
 
-
 This function is typically called repeatedly, until an exception is raised, indicating no more values\.
 
 #### Win32 API References
 
+  - Search for PyRegEnumValue at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PyRegEnumValue.md), [google](http://www.google.com/search?q=PyRegEnumValue.md) or [google groups](http://groups.google.com/groups?q=PyRegEnumValue.md)\.
 
-  - Search forPyRegEnumValue at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=pyregenumvalue),[google](#http://www.google.com/search?q=pyregenumvalue) or[google groups](#http://groups.google.com/groups?q=pyregenumvalue)\.
 
-## [win32api](#win32api)\.RegFlushKey
+## [win32api](win32api.md#win32api)\.RegFlushKey
 
 RegFlushKey\(key\)
 Writes all the attributes of the specified key to the registry\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4163,29 +4068,31 @@ HKEY\_USERS
 
 #### Comments
 
-
 It is not necessary to call RegFlushKey to change a key\. 
 
 Registry changes are flushed to disk by the registry using its lazy flusher\. 
 
-Registry changes are also flushed to disk at system shutdown\.
-Unlike[win32api::RegCloseKey](win32api.md#win32apiregclosekey), the RegFlushKey method returns only when all the data has been written to the registry\.
+Registry changes are also flushed to disk at system shutdown\. 
+
+Unlike [win32api::RegCloseKey](win32api.md#win32apiregclosekey), the RegFlushKey method returns only when all the data has been written to the registry\. 
+
 An application should only call RegFlushKey if it requires absolute certainty that registry changes are on disk\. If you don't know whether a RegFlushKey call is required, it probably isn't\.
 
 #### Win32 API References
 
+  - Search for RegFlushKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegFlushKey.md), [google](http://www.google.com/search?q=RegFlushKey.md) or [google groups](http://groups.google.com/groups?q=RegFlushKey.md)\.
 
-  - Search forRegFlushKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regflushkey),[google](#http://www.google.com/search?q=regflushkey) or[google groups](#http://groups.google.com/groups?q=regflushkey)\.
 
-## [win32api](#win32api)\.RegGetKeySecurity
+## [win32api](win32api.md#win32api)\.RegGetKeySecurity
 
-[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor) =RegGetKeySecurity\(key, security\_info\)
+[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor) = RegGetKeySecurity\(key, security\_info
+
+\)
 Retrieves the security on the specified registry key\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     Handle to an open key for which the security descriptor is set\.
 
@@ -4195,10 +4102,10 @@ Retrieves the security on the specified registry key\.
 
 #### Win32 API References
 
+  - Search for RegGetKeySecurity at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegGetKeySecurity.md), [google](http://www.google.com/search?q=RegGetKeySecurity.md) or [google groups](http://groups.google.com/groups?q=RegGetKeySecurity.md)\.
 
-  - Search forRegGetKeySecurity at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=reggetkeysecurity),[google](#http://www.google.com/search?q=reggetkeysecurity) or[google groups](#http://groups.google.com/groups?q=reggetkeysecurity)\.
 
-## [win32api](#win32api)\.RegLoadKey
+## [win32api](win32api.md#win32api)\.RegLoadKey
 
 RegLoadKey\(key, subKey, filename\)
 The RegLoadKey method creates a subkey under HKEY\_USER or HKEY\_LOCAL\_MACHINE 
@@ -4207,8 +4114,7 @@ and stores registration information from a specified file into that subkey\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4228,30 +4134,29 @@ This value must not be None, and the key may not have subkeys\.
 
     The name of the file to load registry data from\. 
 
-This file must have been created with the[win32api::RegSaveKey](win32api.md#win32apiregsavekey) function\. 
+This file must have been created with the [win32api::RegSaveKey](win32api.md#win32apiregsavekey) function\. 
 
 Under the file allocation table \(FAT\) file system, the filename may not have an extension\.
 
 #### Comments
 
+A call to RegLoadKey fails if the calling process does not have the SE\_RESTORE\_PRIVILEGE privilege\. 
 
-A call to RegLoadKey fails if the calling process does not have the SE\_RESTORE\_PRIVILEGE privilege\.
-If hkey is a handle returned by[win32api::RegConnectRegistry](win32api.md#win32apiregconnectregistry), then the path specified in fileName is relative to the remote computer\.
+If hkey is a handle returned by [win32api::RegConnectRegistry](win32api.md#win32apiregconnectregistry), then the path specified in fileName is relative to the remote computer\.
 
 #### Win32 API References
 
+  - Search for RegLoadKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegLoadKey.md), [google](http://www.google.com/search?q=RegLoadKey.md) or [google groups](http://groups.google.com/groups?q=RegLoadKey.md)\.
 
-  - Search forRegLoadKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regloadkey),[google](#http://www.google.com/search?q=regloadkey) or[google groups](#http://groups.google.com/groups?q=regloadkey)\.
 
-## [win32api](#win32api)\.RegNotifyChangeKeyValue
+## [win32api](win32api.md#win32api)\.RegNotifyChangeKeyValue
 
 RegNotifyChangeKeyValue\(key, bWatchSubTree, dwNotifyFilter, hKey, fAsynchronous\)
 Receive notification of registry changes
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     Handle to an open registry key
 
@@ -4263,7 +4168,7 @@ Receive notification of registry changes
 
     Combination of REG\_NOTIFY\_CHANGE\_\* constants
 
-  - hKey :[PyHANDLE](#pyhandle)
+  - hKey : [PyHANDLE](PyHANDLE.md)
 
     Event handle to be signalled, use None if fAsynchronous is False
 
@@ -4271,13 +4176,13 @@ Receive notification of registry changes
 
     Boolean, function returns immediately if True, waits for change if False
 
-## [win32api](#win32api)\.RegOpenCurrentUser
 
-[PyHKEY](#pyhkey) =RegOpenCurrentUser\(samDesired\)
+## [win32api](win32api.md#win32api)\.RegOpenCurrentUser
+
+[PyHKEY](PyHKEY.md) = RegOpenCurrentUser\(samDesired\)
 Opens HKEY\_CURRENT\_USER for impersonated user
 
 #### Parameters
-
 
   - samDesired=MAXIMUM\_ALLOWED : int
 
@@ -4285,30 +4190,35 @@ Opens HKEY\_CURRENT\_USER for impersonated user
 
 #### Win32 API References
 
+  - Search for RegOpenCurrentUser at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegOpenCurrentUser.md), [google](http://www.google.com/search?q=RegOpenCurrentUser.md) or [google groups](http://groups.google.com/groups?q=RegOpenCurrentUser.md)\.
 
-  - Search forRegOpenCurrentUser at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regopencurrentuser),[google](#http://www.google.com/search?q=regopencurrentuser) or[google groups](#http://groups.google.com/groups?q=regopencurrentuser)\.
 
-## [win32api](#win32api)\.RegOpenKey
+## [win32api](win32api.md#win32api)\.RegOpenKey
 
-[PyHKEY](#pyhkey) =RegOpenKey\(\)
+[PyHKEY](PyHKEY.md) = RegOpenKey\(\)
 Opens the specified key\.
 
 #### Comments
 
+This funcion is implemented using [win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex), by taking advantage 
 
-This funcion is implemented using[win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex), by taking advantage 
+of default parameters\.  See [win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex) for more details\.
 
-of default parameters\.  See[win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex) for more details\.
 
-## [win32api](#win32api)\.RegOpenKeyEx
+## [win32api](win32api.md#win32api)\.RegOpenKeyEx
 
-[PyHKEY](#pyhkey) =RegOpenKeyEx\(key, subKey, reserved, sam\)
+[PyHKEY](PyHKEY.md) = RegOpenKeyEx\(key, subKey
+
+, reserved
+
+, sam
+
+\)
 Opens the specified key\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4332,7 +4242,8 @@ the handle returned is the same key handle passed in to the function\.
 
   - sam=KEY\_READ : int
 
-    Specifies an access mask that describes the desired security access for the new key\. This parameter can be a combination of the following win32con constants:
+    Specifies an access mask that describes the desired security access for the new key\. This parameter can be a combination of the following win32con constants: 
+
 KEY\_ALL\_ACCESS
 KEY\_CREATE\_LINK
 KEY\_CREATE\_SUB\_KEY
@@ -4344,30 +4255,36 @@ KEY\_READ
 KEY\_SET\_VALUE
 KEY\_WRITE
 
-
 #### Win32 API References
 
-
-  - Search forRegOpenKeyEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regopenkeyex),[google](#http://www.google.com/search?q=regopenkeyex) or[google groups](#http://groups.google.com/groups?q=regopenkeyex)\.
+  - Search for RegOpenKeyEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegOpenKeyEx.md), [google](http://www.google.com/search?q=RegOpenKeyEx.md) or [google groups](http://groups.google.com/groups?q=RegOpenKeyEx.md)\.
 
 #### Return Value
 The return value is the handle of the opened key\. 
 
 If the function fails, an exception is raised\.
 
-## [win32api](#win32api)\.RegOpenKeyTransacted
 
-[PyHKEY](#pyhkey) =RegOpenKeyTransacted\(Key, SubKey, samDesired, Transaction, Options\)
+## [win32api](win32api.md#win32api)\.RegOpenKeyTransacted
+
+[PyHKEY](PyHKEY.md) = RegOpenKeyTransacted\(Key, SubKey
+
+, samDesired
+
+, Transaction
+
+, Options
+
+\)
 Opens a registry key as part of a transaction
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)/int
+  - Key : [PyHKEY](PyHKEY.md)/int
 
     Registry key or one of win32con\.HKEY\_\* values
 
-  - SubKey :[PyUnicode](#pyunicode)
+  - SubKey : [PyUnicode](PyUnicode.md)
 
     Name of subkey to open\.  Can be None to reopen an existing key\.
 
@@ -4377,9 +4294,9 @@ Opens a registry key as part of a transaction
 
 standard access rights such as DELETE, WRITE\_OWNER, etc\.
 
-  - Transaction :[PyHANDLE](#pyhandle)
+  - Transaction : [PyHANDLE](PyHANDLE.md)
 
-    Handle to a transaction as returned by[win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
+    Handle to a transaction as returned by [win32transaction::CreateTransaction](win32transaction.md#win32transactioncreatetransaction)
 
   - Options=0 : int
 
@@ -4387,51 +4304,45 @@ standard access rights such as DELETE, WRITE\_OWNER, etc\.
 
 #### Comments
 
-
 Accepts keyword arguments\.
-
 
 Requires Vista or later\.
 
 #### Win32 API References
 
-
-  - Search forRegOpenKeyTransacted at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regopenkeytransacted),[google](#http://www.google.com/search?q=regopenkeytransacted) or[google groups](#http://groups.google.com/groups?q=regopenkeytransacted)\.
+  - Search for RegOpenKeyTransacted at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegOpenKeyTransacted.md), [google](http://www.google.com/search?q=RegOpenKeyTransacted.md) or [google groups](http://groups.google.com/groups?q=RegOpenKeyTransacted.md)\.
 
 #### Return Value
 Returns a transacted registry handle\.  Note that operations on subkeys are not automatically transacted\.
 
-## [win32api](#win32api)\.RegOverridePredefKey
+
+## [win32api](win32api.md#win32api)\.RegOverridePredefKey
 
 RegOverridePredefKey\(Key, NewKey\)
 Redirects one of the predefined keys to different key
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)
+  - Key : [PyHKEY](PyHKEY.md)
 
     One of the predefined registry keys \(win32con\.HKEY\_\*\)
 
-  - NewKey :[PyHKEY](#pyhkey)
+  - NewKey : [PyHKEY](PyHKEY.md)
 
     Registry key to which it will be redirected\.  Pass None to restore original key\.
 
 #### Comments
 
-
 Requires Windows 2000 or later\.
 
 #### Win32 API References
 
-
-  - Search forRegOverridePredefKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regoverridepredefkey),[google](#http://www.google.com/search?q=regoverridepredefkey) or[google groups](#http://groups.google.com/groups?q=regoverridepredefkey)\.
-
-## [win32api](#win32api)\.RegQueryInfoKey
+  - Search for RegOverridePredefKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegOverridePredefKey.md), [google](http://www.google.com/search?q=RegOverridePredefKey.md) or [google groups](http://groups.google.com/groups?q=RegOverridePredefKey.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RegQueryInfoKey
 
-\(int, int, long\) =RegQueryInfoKey\(key\)
+\(int, int, long\) = RegQueryInfoKey\(key\)
 Returns the number of 
 
 subkeys, the number of values a key has, 
@@ -4442,8 +4353,7 @@ and if available the last time the key was modified as
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or or any one of the following win32con 
 
@@ -4455,41 +4365,37 @@ HKEY\_USERS
 
 #### Win32 API References
 
-
-  - Search forRegQueryInfoKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regqueryinfokey),[google](#http://www.google.com/search?q=regqueryinfokey) or[google groups](#http://groups.google.com/groups?q=regqueryinfokey)\.
-
-## [win32api](#win32api)\.RegQueryInfoKeyW
+  - Search for RegQueryInfoKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryInfoKey.md), [google](http://www.google.com/search?q=RegQueryInfoKey.md) or [google groups](http://groups.google.com/groups?q=RegQueryInfoKey.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RegQueryInfoKeyW
 
-dict =RegQueryInfoKeyW\(Key\)
+dict = RegQueryInfoKeyW\(Key\)
 Returns information about an open registry key
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)
+  - Key : [PyHKEY](PyHKEY.md)
 
     Handle to a registry key, or one of win32con\.HKEY\_\* constants
 
 #### Win32 API References
 
-
-  - Search forRegQueryInfoKeyW at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regqueryinfokeyw),[google](#http://www.google.com/search?q=regqueryinfokeyw) or[google groups](#http://groups.google.com/groups?q=regqueryinfokeyw)\.
-
-## [win32api](#win32api)\.RegQueryValue
+  - Search for RegQueryInfoKeyW at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryInfoKeyW.md), [google](http://www.google.com/search?q=RegQueryInfoKeyW.md) or [google groups](http://groups.google.com/groups?q=RegQueryInfoKeyW.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RegQueryValue
 
-string =RegQueryValue\(key, subKey\)
+string = RegQueryValue\(key, subKey
+
+\)
 The RegQueryValue method retrieves the value associated with 
 
 the unnamed value for a specified key in the registry\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4501,10 +4407,9 @@ HKEY\_USERS
 
     The name of the subkey with which the value is associated\. 
 
-If this parameter is None or empty, the function retrieves the value set by the[win32api::RegSetValue](win32api.md#win32apiregsetvalue) method for the key identified by key\.
+If this parameter is None or empty, the function retrieves the value set by the [win32api::RegSetValue](win32api.md#win32apiregsetvalue) method for the key identified by key\.
 
 #### Comments
-
 
 Values in the registry have name, type, and data components\. This method 
 
@@ -4514,20 +4419,19 @@ But the underlying API call doesn't return the type, Lame Lame Lame, DONT USE TH
 
 #### Win32 API References
 
-
-  - Search forRegQueryValue at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regqueryvalue),[google](#http://www.google.com/search?q=regqueryvalue) or[google groups](#http://groups.google.com/groups?q=regqueryvalue)\.
-
-## [win32api](#win32api)\.RegQueryValueEx
+  - Search for RegQueryValue at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryValue.md), [google](http://www.google.com/search?q=RegQueryValue.md) or [google groups](http://groups.google.com/groups?q=RegQueryValue.md)\.
 
 
+## [win32api](win32api.md#win32api)\.RegQueryValueEx
 
-\(object,type\) =RegQueryValueEx\(key, valueName\)
+\(object,type\) = RegQueryValueEx\(key, valueName
+
+\)
 Retrieves the type and data for a specified value name associated with an open registry key\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4541,29 +4445,27 @@ HKEY\_USERS
 
 #### Comments
 
-
 Values in the registry have name, type, and data components\. This method 
 
 retrieves the data for the given value\.
 
 #### Win32 API References
 
+  - Search for RegQueryValueEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegQueryValueEx.md), [google](http://www.google.com/search?q=RegQueryValueEx.md) or [google groups](http://groups.google.com/groups?q=RegQueryValueEx.md)\.
 
-  - Search forRegQueryValueEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regqueryvalueex),[google](#http://www.google.com/search?q=regqueryvalueex) or[google groups](#http://groups.google.com/groups?q=regqueryvalueex)\.
 
-## [win32api](#win32api)\.RegRestoreKey
+## [win32api](win32api.md#win32api)\.RegRestoreKey
 
 RegRestoreKey\(Key, File, Flags\)
 Restores a key and subkeys from a saved registry file
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)
+  - Key : [PyHKEY](PyHKEY.md)
 
     Handle to registry key to be restored\.  Can also be one of win32con\.HKEY\_\* values\.
 
-  - File :[PyUnicode](#pyunicode)
+  - File : [PyUnicode](PyUnicode.md)
 
     File from which to restore registry data
 
@@ -4573,26 +4475,23 @@ Restores a key and subkeys from a saved registry file
 
 #### Comments
 
-
 Implemented only as Unicode \(RegRestoreKeyW\)\.  Accepts keyword arguments\.
-
 
 Requires SeBackupPrivilege and SeRestorePrivilege
 
 #### Win32 API References
 
+  - Search for RegRestoreKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegRestoreKey.md), [google](http://www.google.com/search?q=RegRestoreKey.md) or [google groups](http://groups.google.com/groups?q=RegRestoreKey.md)\.
 
-  - Search forRegRestoreKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regrestorekey),[google](#http://www.google.com/search?q=regrestorekey) or[google groups](#http://groups.google.com/groups?q=regrestorekey)\.
 
-## [win32api](#win32api)\.RegSaveKey
+## [win32api](win32api.md#win32api)\.RegSaveKey
 
 RegSaveKey\(key, filename, sa\)
 The RegSaveKey method saves the specified key, and all its subkeys to the specified file\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4604,44 +4503,41 @@ HKEY\_USERS
 
     The name of the file to save registry data to\. 
 
-This file cannot already exist\. If this filename includes an extension, it cannot be used on file allocation table \(FAT\) file systems by the[win32api::RegLoadKey](win32api.md#win32apiregloadkey),win32api::RegReplaceKey
+This file cannot already exist\. If this filename includes an extension, it cannot be used on file allocation table \(FAT\) file systems by the [win32api::RegLoadKey](win32api.md#win32apiregloadkey), win32api::RegReplaceKey
 
+, or [win32api::RegRestoreKey](win32api.md#win32apiregrestorekey) methods\.
 
-
-, or[win32api::RegRestoreKey](win32api.md#win32apiregrestorekey) methods\.
-
-  - sa=None :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  - sa=None : [PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     The security attributes of the created file\.
 
 #### Comments
 
+If key represents a key on a remote computer, the path described by fileName is relative to the remote computer\. 
 
-If key represents a key on a remote computer, the path described by fileName is relative to the remote computer\.
 The caller of this method must possess the SeBackupPrivilege security privilege\.
 
 #### Win32 API References
 
+  - Search for RegSaveKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSaveKey.md), [google](http://www.google.com/search?q=RegSaveKey.md) or [google groups](http://groups.google.com/groups?q=RegSaveKey.md)\.
 
-  - Search forRegSaveKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regsavekey),[google](#http://www.google.com/search?q=regsavekey) or[google groups](#http://groups.google.com/groups?q=regsavekey)\.
 
-## [win32api](#win32api)\.RegSaveKeyEx
+## [win32api](win32api.md#win32api)\.RegSaveKeyEx
 
 RegSaveKeyEx\(Key, File, SecurityAttributes, Flags\)
 Extended version of RegSaveKey
 
 #### Parameters
 
-
-  - Key :[PyHKEY](#pyhkey)
+  - Key : [PyHKEY](PyHKEY.md)
 
     Handle to a registry key or one of HKEY\_CURRENT\_CONFIG, HKEY\_CURRENT\_USER
 
-  - File :[PyUnicode](#pyunicode)
+  - File : [PyUnicode](PyUnicode.md)
 
     Name of file in which to save data\.  File must not already exist\.
 
-  - SecurityAttributes=None :[PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
+  - SecurityAttributes=None : [PySECURITY\_ATTRIBUTES](PySECURITY.md#pysecurityattributes)
 
     Specifies security for the file to be created
 
@@ -4651,26 +4547,23 @@ Extended version of RegSaveKey
 
 #### Comments
 
-
 Implemented only as Unicode \(RegSaveKeyExW\)\.  Accepts keyword arguments\.
-
 
 SE\_BACKUP\_NAME privilege must be enabled\.
 
 #### Win32 API References
 
+  - Search for RegSaveKeyEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSaveKeyEx.md), [google](http://www.google.com/search?q=RegSaveKeyEx.md) or [google groups](http://groups.google.com/groups?q=RegSaveKeyEx.md)\.
 
-  - Search forRegSaveKeyEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regsavekeyex),[google](#http://www.google.com/search?q=regsavekeyex) or[google groups](#http://groups.google.com/groups?q=regsavekeyex)\.
 
-## [win32api](#win32api)\.RegSetKeySecurity
+## [win32api](win32api.md#win32api)\.RegSetKeySecurity
 
 RegSetKeySecurity\(key, security\_info, sd\)
 Sets the security on the specified registry key\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     Handle to an open key for which the security descriptor is set\.
 
@@ -4678,29 +4571,27 @@ Sets the security on the specified registry key\.
 
     Specifies the components of the security descriptor to set\. The value can be a combination of the \*\_SECURITY\_INFORMATION constants\.
 
-  - sd :[PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
+  - sd : [PySECURITY\_DESCRIPTOR](PySECURITY.md#pysecuritydescriptor)
 
     The new security descriptor for the key
 
 #### Comments
 
-
-If key is one of the predefined keys, the predefined key should be closed with[win32api::RegCloseKey](win32api.md#win32apiregclosekey)\. That ensures that the new security information is in effect the next time the predefined key is referenced\.
+If key is one of the predefined keys, the predefined key should be closed with [win32api::RegCloseKey](win32api.md#win32apiregclosekey)\. That ensures that the new security information is in effect the next time the predefined key is referenced\.
 
 #### Win32 API References
 
+  - Search for PyRegSetKeySecurity at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=PyRegSetKeySecurity.md), [google](http://www.google.com/search?q=PyRegSetKeySecurity.md) or [google groups](http://groups.google.com/groups?q=PyRegSetKeySecurity.md)\.
 
-  - Search forPyRegSetKeySecurity at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=pyregsetkeysecurity),[google](#http://www.google.com/search?q=pyregsetkeysecurity) or[google groups](#http://groups.google.com/groups?q=pyregsetkeysecurity)\.
 
-## [win32api](#win32api)\.RegSetValue
+## [win32api](win32api.md#win32api)\.RegSetValue
 
 RegSetValue\(key, subKey, type, value\)
 Associates a value with a specified key\.  Currently, only strings are supported\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4724,25 +4615,25 @@ This parameter can be None or empty, in which case the value will be added to th
 
 #### Comments
 
+If the key specified by the lpszSubKey parameter does not exist, the RegSetValue function creates it\. 
 
-If the key specified by the lpszSubKey parameter does not exist, the RegSetValue function creates it\.
-Value lengths are limited by available memory\. Long values \(more than 2048 bytes\) should be stored as files with the filenames stored in the configuration registry\. This helps the registry perform efficiently\.
+Value lengths are limited by available memory\. Long values \(more than 2048 bytes\) should be stored as files with the filenames stored in the configuration registry\. This helps the registry perform efficiently\. 
+
 The key identified by the key parameter must have been opened with KEY\_SET\_VALUE access\.
 
 #### Win32 API References
 
+  - Search for RegSetValue at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSetValue.md), [google](http://www.google.com/search?q=RegSetValue.md) or [google groups](http://groups.google.com/groups?q=RegSetValue.md)\.
 
-  - Search forRegSetValue at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regsetvalue),[google](#http://www.google.com/search?q=regsetvalue) or[google groups](#http://groups.google.com/groups?q=regsetvalue)\.
 
-## [win32api](#win32api)\.RegSetValueEx
+## [win32api](win32api.md#win32api)\.RegSetValueEx
 
 RegSetValueEx\(key, valueName, reserved, type, value\)
 Stores data in the value field of an open registry key\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_CLASSES\_ROOT
@@ -4754,8 +4645,9 @@ HKEY\_USERS
 
     The name of the value to set\. 
 
-If a value with this name is not already present in the key, the method adds it to the key\.
-If this parameter is None or an empty string and the type parameter is the win32api\.REG\_SZ type, this function sets the same value the[win32api::RegSetValue](win32api.md#win32apiregsetvalue) method would set\.
+If a value with this name is not already present in the key, the method adds it to the key\. 
+
+If this parameter is None or an empty string and the type parameter is the win32api\.REG\_SZ type, this function sets the same value the [win32api::RegSetValue](win32api.md#win32apiregsetvalue) method would set\.
 
   - reserved : any
 
@@ -4765,47 +4657,83 @@ If this parameter is None or an empty string and the type parameter is the win32
 
     Type of data\.
 
-ValueMeaningREG\_BINARYBinary data in any form\.REG\_DWORDA 32-bit number\.REG\_DWORD\_LITTLE\_ENDIANA 32-bit number in little-endian format\. This is equivalent to REG\_DWORD\.
-In little-endian format, a multi-byte value is stored in memory from the lowest byte \(the little end\) to the highest byte\. For example, the value 0x12345678 is stored as \(0x78 0x56 0x34 0x12\) in little-endian format\.REG\_QWORDA 64-bit number\.REG\_QWORD\_LITTLE\_ENDIANA 64-bit number in little-endian format\. This is equivalent to REG\_QWORD\.
+   
+
+       Value
+
+   
+
+   
+
+       Meaning
+
+   
+
+REG\_BINARYBinary data in any form\.
+
+REG\_DWORDA 32-bit number\.
+
+REG\_DWORD\_LITTLE\_ENDIANA 32-bit number in little-endian format\. This is equivalent to REG\_DWORD\.
+In little-endian format, a multi-byte value is stored in memory from the lowest byte \(the little end\) to the highest byte\. For example, the value 0x12345678 is stored as \(0x78 0x56 0x34 0x12\) in little-endian format\.
+
+REG\_QWORDA 64-bit number\.
+
+REG\_QWORD\_LITTLE\_ENDIANA 64-bit number in little-endian format\. This is equivalent to REG\_QWORD\.
 In little-endian format, a multi-byte value is stored in memory from the lowest byte \(the little end\) to the highest byte\. For example, the value 0x12345678 is stored as \(0x78 0x56 0x34 0x12\) in little-endian format\. 
 
-Windows NT and Windows 95 are designed to run on little-endian computer architectures\. A user may connect to computers that have big-endian architectures, such as some UNIX systems\.REG\_DWORD\_BIG\_ENDIANA 32-bit number in big-endian format\. 
+Windows NT and Windows 95 are designed to run on little-endian computer architectures\. A user may connect to computers that have big-endian architectures, such as some UNIX systems\.
 
-In big-endian format, a multi-byte value is stored in memory from the highest byte \(the big end\) to the lowest byte\. For example, the value 0x12345678 is stored as \(0x12 0x34 0x56 0x78\) in big-endian format\.REG\_EXPAND\_SZA null-terminated string that contains unexpanded references to environment variables \(for example, %PATH%\)\. It will be a Unicode or ANSI string depending on whether you use the Unicode or ANSI functions\.REG\_LINKA Unicode symbolic link\.REG\_MULTI\_SZAn array of null-terminated strings, terminated by two null characters\.REG\_NONENo defined value type\.REG\_RESOURCE\_LISTA device-driver resource list\.REG\_SZA null-terminated string\. It will be a Unicode or ANSI string depending on whether you use the Unicode or ANSI functions
+REG\_DWORD\_BIG\_ENDIANA 32-bit number in big-endian format\. 
+
+In big-endian format, a multi-byte value is stored in memory from the highest byte \(the big end\) to the lowest byte\. For example, the value 0x12345678 is stored as \(0x12 0x34 0x56 0x78\) in big-endian format\.
+
+REG\_EXPAND\_SZA null-terminated string that contains unexpanded references to environment variables \(for example, %PATH%\)\. It will be a Unicode or ANSI string depending on whether you use the Unicode or ANSI functions\.
+
+REG\_LINKA Unicode symbolic link\.
+
+REG\_MULTI\_SZAn array of null-terminated strings, terminated by two null characters\.
+
+REG\_NONENo defined value type\.
+
+REG\_RESOURCE\_LISTA device-driver resource list\.
+
+REG\_SZA null-terminated string\. It will be a Unicode or ANSI string depending on whether you use the Unicode or ANSI functions
+
   - value : registry data
 
     The value to be stored with the specified value name\.
 
 #### Comments
 
+This method can also set additional value and type information for the specified key\. 
 
-This method can also set additional value and type information for the specified key\.
 The key identified by the key parameter must have been opened with KEY\_SET\_VALUE access\. 
 
-To open the key, use the[win32api::RegCreateKeyEx](win32api.md#win32apiregcreatekeyex) or[win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex) methods\.
+To open the key, use the [win32api::RegCreateKeyEx](win32api.md#win32apiregcreatekeyex) or [win32api::RegOpenKeyEx](win32api.md#win32apiregopenkeyex) methods\. 
+
 Value lengths are limited by available memory\. 
 
 Long values \(more than 2048 bytes\) should be stored as files with the filenames stored in the configuration registry\. 
 
-This helps the registry perform efficiently\.
+This helps the registry perform efficiently\. 
+
 The key identified by the key parameter must have been opened with KEY\_SET\_VALUE access\.
 
 #### Win32 API References
 
+  - Search for RegSetValueEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegSetValueEx.md), [google](http://www.google.com/search?q=RegSetValueEx.md) or [google groups](http://groups.google.com/groups?q=RegSetValueEx.md)\.
 
-  - Search forRegSetValueEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regsetvalueex),[google](#http://www.google.com/search?q=regsetvalueex) or[google groups](#http://groups.google.com/groups?q=regsetvalueex)\.
 
-## [win32api](#win32api)\.RegUnLoadKey
+## [win32api](win32api.md#win32api)\.RegUnLoadKey
 
 RegUnLoadKey\(key, subKey\)
 The RegUnLoadKey function unloads the specified registry key and its subkeys from the registry\. 
 
-The key should have been created by a previous call to[win32api::RegLoadKey](win32api.md#win32apiregloadkey)\.
+The key should have been created by a previous call to [win32api::RegLoadKey](win32api.md#win32apiregloadkey)\.
 
 #### Parameters
 
-
-  - key :[PyHKEY](#pyhkey)/int
+  - key : [PyHKEY](PyHKEY.md)/int
 
     An already open key, or any one of the following win32con constants:
 HKEY\_USERS
@@ -4821,16 +4749,16 @@ This value must not be None\.
 
 #### Comments
 
+A call to RegUnLoadKey fails if the calling process does not have the SE\_RESTORE\_PRIVILEGE privilege\. 
 
-A call to RegUnLoadKey fails if the calling process does not have the SE\_RESTORE\_PRIVILEGE privilege\.
-If hkey is a handle returned by[win32api::RegConnectRegistry](win32api.md#win32apiregconnectregistry), then the path specified in fileName is relative to the remote computer\.
+If hkey is a handle returned by [win32api::RegConnectRegistry](win32api.md#win32apiregconnectregistry), then the path specified in fileName is relative to the remote computer\.
 
 #### Win32 API References
 
+  - Search for RegUnLoadKey at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegUnLoadKey.md), [google](http://www.google.com/search?q=RegUnLoadKey.md) or [google groups](http://groups.google.com/groups?q=RegUnLoadKey.md)\.
 
-  - Search forRegUnLoadKey at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=regunloadkey),[google](#http://www.google.com/search?q=regunloadkey) or[google groups](#http://groups.google.com/groups?q=regunloadkey)\.
 
-## [win32api](#win32api)\.RegisterWindowMessage
+## [win32api](win32api.md#win32api)\.RegisterWindowMessage
 
 RegisterWindowMessage\(msgString\)
 The RegisterWindowMessage method, given a string, returns a system wide unique 
@@ -4838,7 +4766,6 @@ The RegisterWindowMessage method, given a string, returns a system wide unique
 message ID, suitable for sending messages between applications who both register the same string\.
 
 #### Parameters
-
 
   - msgString : string
 
@@ -4852,28 +4779,33 @@ use to exchange messages\.
 
 #### Comments
 
+Only use RegisterWindowMessage when more than one application must process the 
 
-Only use RegisterWindowMessage when more than one application must process the
- same message\. For sending private messages within a window class, an application
- can use any integer in the range WM\_USER through 0x7FFF\. \(Messages in this range
- are private to a window class, not to an application\. For example, predefined
- control classes such as BUTTON, EDIT, LISTBOX, and COMBOBOX may use values in
+ same message\. For sending private messages within a window class, an application 
+
+ can use any integer in the range WM\_USER through 0x7FFF\. \(Messages in this range 
+
+ are private to a window class, not to an application\. For example, predefined 
+
+ control classes such as BUTTON, EDIT, LISTBOX, and COMBOBOX may use values in 
+
  this range\.\)
 
 #### Win32 API References
 
-
-  - Search forRegisterWindowMessage at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=registerwindowmessage),[google](#http://www.google.com/search?q=registerwindowmessage) or[google groups](#http://groups.google.com/groups?q=registerwindowmessage)\.
-
-## [win32api](#win32api)\.SearchPath
+  - Search for RegisterWindowMessage at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=RegisterWindowMessage.md), [google](http://www.google.com/search?q=RegisterWindowMessage.md) or [google groups](http://groups.google.com/groups?q=RegisterWindowMessage.md)\.
 
 
+## [win32api](win32api.md#win32api)\.SearchPath
 
-int =SearchPath\(path, fileName, fileExt\)
+int = SearchPath\(path, fileName
+
+, fileExt
+
+\)
 Searches a path for the specified file\.
 
 #### Parameters
-
 
   - path : string
 
@@ -4895,8 +4827,7 @@ If a filename extension is not required or if the filename contains an extension
 
 #### Win32 API References
 
-
-  - Search forSearchPath at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=searchpath),[google](#http://www.google.com/search?q=searchpath) or[google groups](#http://groups.google.com/groups?q=searchpath)\.
+  - Search for SearchPath at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SearchPath.md), [google](http://www.google.com/search?q=SearchPath.md) or [google groups](http://groups.google.com/groups?q=SearchPath.md)\.
 
 #### Return Value
 The return value is a tuple of \(string, int\)\.  string is the full 
@@ -4905,15 +4836,15 @@ path name located\.  int is the offset in the string of the base name
 
 of the file\.
 
-## [win32api](#win32api)\.SendMessage
+
+## [win32api](win32api.md#win32api)\.SendMessage
 
 SendMessage\(hwnd, idMessage, wParam, lParam\)
 Send a message to a window\.
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     The hWnd of the window to receive the message\.
 
@@ -4931,20 +4862,21 @@ Send a message to a window\.
 
 #### Win32 API References
 
-
-  - Search forSendMessage at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=sendmessage),[google](#http://www.google.com/search?q=sendmessage) or[google groups](#http://groups.google.com/groups?q=sendmessage)\.
-
-## [win32api](#win32api)\.SetClassLong
+  - Search for SendMessage at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SendMessage.md), [google](http://www.google.com/search?q=SendMessage.md) or [google groups](http://groups.google.com/groups?q=SendMessage.md)\.
 
 
+## [win32api](win32api.md#win32api)\.SetClassLong
 
-int =SetClassLong\(hwnd, offset, val\)
+int = SetClassLong\(hwnd, offset
+
+, val
+
+\)
 Replaces the specified 32 or 64 bit value at the specified offset into the extra class memory for the window\.
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     The handle to the window\.
 
@@ -4958,18 +4890,18 @@ Replaces the specified 32 or 64 bit value at the specified offset into the extra
 
 #### Comments
 
-
 This function calls the SetClassLongPtr Api function
 
-## [win32api](#win32api)\.SetClassWord
 
+## [win32api](win32api.md#win32api)\.SetClassWord
 
+int = SetClassWord\(hwnd, offset
 
-int =SetClassWord\(hwnd, offset, val\)
+, val
 
+\)
 
 #### Parameters
-
 
   - hwnd : int
 
@@ -4985,16 +4917,15 @@ int =SetClassWord\(hwnd, offset, val\)
 
 #### Comments
 
+This function is obsolete, use [win32api::SetClassLong](win32api.md#win32apisetclasslong) instead
 
-This function is obsolete, use[win32api::SetClassLong](win32api.md#win32apisetclasslong) instead
 
-## [win32api](#win32api)\.SetConsoleCtrlHandler
+## [win32api](win32api.md#win32api)\.SetConsoleCtrlHandler
 
 SetConsoleCtrlHandler\(ctrlHandler, bAdd\)
 Adds or removes an application-defined HandlerRoutine function from the list of handler functions for the calling process\.
 
 #### Parameters
-
 
   - ctrlHandler : callable
 
@@ -5008,7 +4939,6 @@ should accept one param - the type of signal\.
 
 #### Comments
 
-
 Note that the implementation is a single CtrlHandler in C, which 
 
 keeps a list of the handlers added by this function\.  So although this 
@@ -5019,19 +4949,22 @@ registered first called, and first to return True stops the calls\) the
 
 true order of all Python and C implemented CtrlHandlers may not match 
 
-what would happen if all were implemented in C\.
+what would happen if all were implemented in C\. 
+
 This handler must acquire the Python lock before it can call any 
 
 of the registered handlers\.  This means the handler may not be called 
 
-until the current Python thread yields the lock\.
+until the current Python thread yields the lock\. 
+
  
 
-A console process can use the[win32api::GenerateConsoleCtrlEvent](win32api.md#win32apigenerateconsolectrlevent) 
+A console process can use the [win32api::GenerateConsoleCtrlEvent](win32api.md#win32apigenerateconsolectrlevent) 
 
 function to send a CTRL\+C or CTRL\+BREAK signal to a console process 
 
-group\.
+group\. 
+
 The system generates CTRL\_CLOSE\_EVENT, CTRL\_LOGOFF\_EVENT, and 
 
 CTRL\_SHUTDOWN\_EVENT signals when the user closes the console, logs off, 
@@ -5042,16 +4975,15 @@ clean up before termination\.
 
 #### Win32 API References
 
+  - Search for SetConsoleCtrlHandler at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetConsoleCtrlHandler.md), [google](http://www.google.com/search?q=SetConsoleCtrlHandler.md) or [google groups](http://groups.google.com/groups?q=SetConsoleCtrlHandler.md)\.
 
-  - Search forSetConsoleCtrlHandler at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setconsolectrlhandler),[google](#http://www.google.com/search?q=setconsolectrlhandler) or[google groups](#http://groups.google.com/groups?q=setconsolectrlhandler)\.
 
-## [win32api](#win32api)\.SetConsoleTitle
+## [win32api](win32api.md#win32api)\.SetConsoleTitle
 
 SetConsoleTitle\(title\)
 Sets the title for the current console\.
 
 #### Parameters
-
 
   - title : string
 
@@ -5059,36 +4991,34 @@ Sets the title for the current console\.
 
 #### Win32 API References
 
+  - Search for SetConsoleTitle at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetConsoleTitle.md), [google](http://www.google.com/search?q=SetConsoleTitle.md) or [google groups](http://groups.google.com/groups?q=SetConsoleTitle.md)\.
 
-  - Search forSetConsoleTitle at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setconsoletitle),[google](#http://www.google.com/search?q=setconsoletitle) or[google groups](#http://groups.google.com/groups?q=setconsoletitle)\.
 
-## [win32api](#win32api)\.SetCursor
+## [win32api](win32api.md#win32api)\.SetCursor
 
-[PyHANDLE](#pyhandle) =SetCursor\(hCursor\)
+[PyHANDLE](PyHANDLE.md) = SetCursor\(hCursor\)
 Set the cursor to the HCURSOR object\.
 
 #### Parameters
 
-
-  - hCursor :[PyHANDLE](#pyhandle)
+  - hCursor : [PyHANDLE](PyHANDLE.md)
 
     The new cursor\. Can be None to remove cursor\.
 
 #### Win32 API References
 
-
-  - Search forSetCursor at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setcursor),[google](#http://www.google.com/search?q=setcursor) or[google groups](#http://groups.google.com/groups?q=setcursor)\.
+  - Search for SetCursor at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetCursor.md), [google](http://www.google.com/search?q=SetCursor.md) or [google groups](http://groups.google.com/groups?q=SetCursor.md)\.
 
 #### Return Value
 The result is the previous cursor if there was one\.
 
-## [win32api](#win32api)\.SetCursorPos
+
+## [win32api](win32api.md#win32api)\.SetCursorPos
 
 SetCursorPos\(x,y\)
 The SetCursorPos function moves the cursor to the specified screen coordinates\.
 
 #### Parameters
-
 
   - x,y : \(int, int\)
 
@@ -5096,33 +5026,31 @@ The SetCursorPos function moves the cursor to the specified screen coordinates\.
 
 #### Win32 API References
 
+  - Search for SetCursorPos at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetCursorPos.md), [google](http://www.google.com/search?q=SetCursorPos.md) or [google groups](http://groups.google.com/groups?q=SetCursorPos.md)\.
 
-  - Search forSetCursorPos at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setcursorpos),[google](#http://www.google.com/search?q=setcursorpos) or[google groups](#http://groups.google.com/groups?q=setcursorpos)\.
 
-## [win32api](#win32api)\.SetDllDirectory
+## [win32api](win32api.md#win32api)\.SetDllDirectory
 
 SetDllDirectory\(PathName\)
 Modifies the application-specific DLL search path
 
 #### Parameters
 
-
-  - PathName :[PyUnicode](#pyunicode)
+  - PathName : [PyUnicode](PyUnicode.md)
 
     Directory to be added to search path, can be None to restore defaults
 
 #### Win32 API References
 
+  - Search for SetDllDirectory at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetDllDirectory.md), [google](http://www.google.com/search?q=SetDllDirectory.md) or [google groups](http://groups.google.com/groups?q=SetDllDirectory.md)\.
 
-  - Search forSetDllDirectory at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setdlldirectory),[google](#http://www.google.com/search?q=setdlldirectory) or[google groups](#http://groups.google.com/groups?q=setdlldirectory)\.
 
-## [win32api](#win32api)\.SetEnvironmentVariable
+## [win32api](win32api.md#win32api)\.SetEnvironmentVariable
 
 SetEnvironmentVariable\(Name, Value\)
 Creates, deletes, or changes the value of an environment variable\.
 
 #### Parameters
-
 
   - Name : str/unicode
 
@@ -5134,16 +5062,15 @@ Creates, deletes, or changes the value of an environment variable\.
 
 #### Win32 API References
 
+  - Search for SetEnvironmentVariable at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetEnvironmentVariable.md), [google](http://www.google.com/search?q=SetEnvironmentVariable.md) or [google groups](http://groups.google.com/groups?q=SetEnvironmentVariable.md)\.
 
-  - Search forSetEnvironmentVariable at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setenvironmentvariable),[google](#http://www.google.com/search?q=setenvironmentvariable) or[google groups](#http://groups.google.com/groups?q=setenvironmentvariable)\.
 
-## [win32api](#win32api)\.SetEnvironmentVariableW
+## [win32api](win32api.md#win32api)\.SetEnvironmentVariableW
 
 SetEnvironmentVariableW\(Name, Value\)
 Creates, deletes, or changes the value of an environment variable\.
 
 #### Parameters
-
 
   - Name : str
 
@@ -5155,18 +5082,15 @@ Creates, deletes, or changes the value of an environment variable\.
 
 #### Win32 API References
 
-
-  - Search forSetEnvironmentVariable at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setenvironmentvariable),[google](#http://www.google.com/search?q=setenvironmentvariable) or[google groups](#http://groups.google.com/groups?q=setenvironmentvariable)\.
-
-## [win32api](#win32api)\.SetErrorMode
+  - Search for SetEnvironmentVariable at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetEnvironmentVariable.md), [google](http://www.google.com/search?q=SetEnvironmentVariable.md) or [google groups](http://groups.google.com/groups?q=SetEnvironmentVariable.md)\.
 
 
+## [win32api](win32api.md#win32api)\.SetErrorMode
 
-int =SetErrorMode\(errorMode\)
+int = SetErrorMode\(errorMode\)
 Controls whether the system will handle the specified types of serious errors, or whether the process will handle them\.
 
 #### Parameters
-
 
   - errorMode : int
 
@@ -5174,21 +5098,20 @@ Controls whether the system will handle the specified types of serious errors, o
 
 #### Win32 API References
 
-
-  - Search forSetErrorMode at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=seterrormode),[google](#http://www.google.com/search?q=seterrormode) or[google groups](#http://groups.google.com/groups?q=seterrormode)\.
+  - Search for SetErrorMode at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetErrorMode.md), [google](http://www.google.com/search?q=SetErrorMode.md) or [google groups](http://groups.google.com/groups?q=SetErrorMode.md)\.
 
 #### Return Value
 The result is an integer containing the old error flags\.
 
-## [win32api](#win32api)\.SetFileAttributes
 
+## [win32api](win32api.md#win32api)\.SetFileAttributes
 
+int = SetFileAttributes\(pathName, attrs
 
-int =SetFileAttributes\(pathName, attrs\)
+\)
 Sets the named file's attributes\.
 
 #### Parameters
-
 
   - pathName : string
 
@@ -5198,15 +5121,15 @@ Sets the named file's attributes\.
 
     The attributes to set\.  Must be a combination of the win32con\.FILE\_ATTRIBUTE\_\* constants\.
 
-## [win32api](#win32api)\.SetHandleInformation
+
+## [win32api](win32api.md#win32api)\.SetHandleInformation
 
 SetHandleInformation\(Object, Mask, Flags\)
 Sets a handles's flags
 
 #### Parameters
 
-
-  - Object :[PyHANDLE](#pyhandle)
+  - Object : [PyHANDLE](PyHANDLE.md)
 
     Handle to an object
 
@@ -5220,56 +5143,53 @@ Sets a handles's flags
 
 #### Comments
 
-
 Not available on Win98/Me
 
-## [win32api](#win32api)\.SetLastError
 
+## [win32api](win32api.md#win32api)\.SetLastError
 
-
-int =SetLastError\(\)
+int = SetLastError\(\)
 Sets the calling thread's last error code value\.
 
 #### Win32 API References
 
+  - Search for SetLastError at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetLastError.md), [google](http://www.google.com/search?q=SetLastError.md) or [google groups](http://groups.google.com/groups?q=SetLastError.md)\.
 
-  - Search forSetLastError at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setlasterror),[google](#http://www.google.com/search?q=setlasterror) or[google groups](#http://groups.google.com/groups?q=setlasterror)\.
 
-## [win32api](#win32api)\.SetLocalTime
+## [win32api](win32api.md#win32api)\.SetLocalTime
 
 SetLocalTime\(SystemTime\)
 Changes the system's local time
 
 #### Parameters
 
-
-  - SystemTime :[PyTime](#pytime)
+  - SystemTime : [PyTime](PyTime.md)
 
     The local time to be set\.  Can also be a time tuple\.
 
-## [win32api](#win32api)\.SetStdHandle
+
+## [win32api](win32api.md#win32api)\.SetStdHandle
 
 SetStdHandle\(handle, handle\)
 Set the handle for the standard input, standard output, or standard error device
 
 #### Parameters
 
-
   - handle : int
 
     input, output, or error device
 
-  - handle :[PyHANDLE](#pyhandle)/int
+  - handle : [PyHANDLE](PyHANDLE.md)/int
 
     A previously opened handle to be a standard handle
 
-## [win32api](#win32api)\.SetSysColors
+
+## [win32api](win32api.md#win32api)\.SetSysColors
 
 SetSysColors\(Elements, RgbValues\)
 Changes color of various window elements
 
 #### Parameters
-
 
   - Elements : tuple
 
@@ -5277,15 +5197,15 @@ Changes color of various window elements
 
   - RgbValues : tuple
 
-    An equal length tuple of ints representing RGB values \(see[win32api::RGB](win32api.md#win32apirgb)\)
+    An equal length tuple of ints representing RGB values \(see [win32api::RGB](win32api.md#win32apirgb)\)
 
-## [win32api](#win32api)\.SetSystemFileCacheSize
+
+## [win32api](win32api.md#win32api)\.SetSystemFileCacheSize
 
 SetSystemFileCacheSize\(MinimumFileCacheSize, MaximumFileCacheSize, Flags\)
 Sets the amount of memory reserved for file cache
 
 #### Parameters
-
 
   - MinimumFileCacheSize : long
 
@@ -5301,22 +5221,19 @@ Sets the amount of memory reserved for file cache
 
 #### Comments
 
-
 Requires SE\_INCREASE\_QUOTA\_NAME priv
-
 
 Pass -1 for both min and max to flush file cache\.
 
-
 Accepts keyword args\.
 
-## [win32api](#win32api)\.SetSystemPowerState
+
+## [win32api](win32api.md#win32api)\.SetSystemPowerState
 
 SetSystemPowerState\(Suspend, Force\)
 Initiates low power mode to make system sleep or hibernate
 
 #### Parameters
-
 
   - Suspend : boolean
 
@@ -5328,26 +5245,35 @@ Initiates low power mode to make system sleep or hibernate
 
 #### Comments
 
-
 Requires Win2k or later\.
-
 
 SE\_SHUTDOWN\_NAME privilege must be enabled\.
 
 #### Win32 API References
 
-
-  - Search forSetSystemPowerState at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=setsystempowerstate),[google](#http://www.google.com/search?q=setsystempowerstate) or[google groups](#http://groups.google.com/groups?q=setsystempowerstate)\.
-
-## [win32api](#win32api)\.SetSystemTime
+  - Search for SetSystemPowerState at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SetSystemPowerState.md), [google](http://www.google.com/search?q=SetSystemPowerState.md) or [google groups](http://groups.google.com/groups?q=SetSystemPowerState.md)\.
 
 
+## [win32api](win32api.md#win32api)\.SetSystemTime
 
-int =SetSystemTime\(year, month, dayOfWeek, day, hour, minute, second, millseconds\)
+int = SetSystemTime\(year, month
+
+, dayOfWeek
+
+, day
+
+, hour
+
+, minute
+
+, second
+
+, millseconds
+
+\)
 Returns the current system time
 
 #### Parameters
-
 
   - year : int
 
@@ -5381,27 +5307,25 @@ Returns the current system time
 
     
 
-## [win32api](#win32api)\.SetThreadLocale
+
+## [win32api](win32api.md#win32api)\.SetThreadLocale
 
 SetThreadLocale\(lcid\)
 Sets the current thread's locale\.
 
 #### Parameters
 
-
   - lcid : int
 
     The new LCID
 
-## [win32api](#win32api)\.SetTimeZoneInformation
 
+## [win32api](win32api.md#win32api)\.SetTimeZoneInformation
 
-
-tuple =SetTimeZoneInformation\(tzi\)
+tuple = SetTimeZoneInformation\(tzi\)
 Sets the system time-zone information\.
 
 #### Parameters
-
 
   - tzi : tuple
 
@@ -5409,49 +5333,49 @@ Sets the system time-zone information\.
 
 #### Comments
 
-
 The tuple is of form:
 
 #### Items
 
-
-  - \[0\]int : Bias
-
-    
-
-  - \[1\]string : StandardName
+  - \[0\] int : Bias
 
     
 
-  - \[2\]SYSTEMTIME tuple : StandardDate
+  - \[1\] string : StandardName
 
     
 
-  - \[3\]int : StandardBias
+  - \[2\] SYSTEMTIME tuple : StandardDate
 
     
 
-  - \[4\]string : DaylightName
+  - \[3\] int : StandardBias
 
     
 
-  - \[5\]SYSTEMTIME tuple : DaylightDate
+  - \[4\] string : DaylightName
 
     
 
-  - \[6\]int : DaylightBias
+  - \[5\] SYSTEMTIME tuple : DaylightDate
 
     
 
-## [win32api](#win32api)\.SetWindowLong
+  - \[6\] int : DaylightBias
+
+    
 
 
+## [win32api](win32api.md#win32api)\.SetWindowLong
 
-int =SetWindowLong\(hwnd, offset, val\)
+int = SetWindowLong\(hwnd, offset
+
+, val
+
+\)
 Places a long value at the specified offset into the extra window memory of the given window\.
 
 #### Parameters
-
 
   - hwnd : int
 
@@ -5467,20 +5391,20 @@ Places a long value at the specified offset into the extra window memory of the 
 
 #### Comments
 
-
 This function calls the SetWindowLongPtr Api function
 
-## [win32api](#win32api)\.SetWindowWord
 
+## [win32api](win32api.md#win32api)\.SetWindowWord
 
+int = SetWindowWord\(hwnd, offset
 
-int =SetWindowWord\(hwnd, offset, val\)
+, val
 
+\)
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     The handle to the window\.
 
@@ -5494,20 +5418,27 @@ int =SetWindowWord\(hwnd, offset, val\)
 
 #### Comments
 
-
-This function is obsolete, use[win32api::SetWindowLong](win32api.md#win32apisetwindowlong) instead
-
-## [win32api](#win32api)\.ShellExecute
+This function is obsolete, use [win32api::SetWindowLong](win32api.md#win32apisetwindowlong) instead
 
 
+## [win32api](win32api.md#win32api)\.ShellExecute
 
-int =ShellExecute\(hwnd, op, file, params, dir, bShow\)
+int = ShellExecute\(hwnd, op
+
+, file
+
+, params
+
+, dir
+
+, bShow
+
+\)
 Opens or prints a file\.
 
 #### Parameters
 
-
-  - hwnd :[PyHANDLE](#pyhandle)
+  - hwnd : [PyHANDLE](PyHANDLE.md)
 
     The handle of the parent window, or 0 for no parent\.  This window receives any message boxes an application produces \(for example, for error reporting\)\.
 
@@ -5533,30 +5464,26 @@ Opens or prints a file\.
 
 #### Win32 API References
 
-
-  - Search forShellExecute at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=shellexecute),[google](#http://www.google.com/search?q=shellexecute) or[google groups](#http://groups.google.com/groups?q=shellexecute)\.
+  - Search for ShellExecute at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ShellExecute.md), [google](http://www.google.com/search?q=ShellExecute.md) or [google groups](http://groups.google.com/groups?q=ShellExecute.md)\.
 
 #### Return Value
 The instance handle of the application that was run\. \(This handle could also be the handle of a dynamic data exchange \[DDE\] server application\.\) 
 
 If there is an error, the method raises an exception\.
 
-## [win32api](#win32api)\.ShowCursor
 
+## [win32api](win32api.md#win32api)\.ShowCursor
 
-
-int =ShowCursor\(show\)
+int = ShowCursor\(show\)
 The ShowCursor method displays or hides the cursor\.
 
 #### Parameters
-
 
   - show : int
 
     Visiblilty flag
 
 #### Comments
-
 
 This function sets an internal display counter that 
 
@@ -5570,21 +5497,20 @@ count is 0\. If no mouse is installed, the display count is -1\.
 
 #### Win32 API References
 
-
-  - Search forShowCursor at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=showcursor),[google](#http://www.google.com/search?q=showcursor) or[google groups](#http://groups.google.com/groups?q=showcursor)\.
+  - Search for ShowCursor at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=ShowCursor.md), [google](http://www.google.com/search?q=ShowCursor.md) or [google groups](http://groups.google.com/groups?q=ShowCursor.md)\.
 
 #### Return Value
 The return value specifies the new display counter
 
-## [win32api](#win32api)\.Sleep
 
+## [win32api](win32api.md#win32api)\.Sleep
 
+int = Sleep\(time, bAlterable
 
-int =Sleep\(time, bAlterable\)
+\)
 Suspends execution of the current thread for the specified time\.
 
 #### Parameters
-
 
   - time : int
 
@@ -5596,23 +5522,22 @@ Suspends execution of the current thread for the specified time\.
 
 #### Win32 API References
 
+  - Search for Sleep at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=Sleep.md), [google](http://www.google.com/search?q=Sleep.md) or [google groups](http://groups.google.com/groups?q=Sleep.md)\.
 
-  - Search forSleep at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=sleep),[google](#http://www.google.com/search?q=sleep) or[google groups](#http://groups.google.com/groups?q=sleep)\.
-
-  - Search forSleepEx at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=sleepex),[google](#http://www.google.com/search?q=sleepex) or[google groups](#http://groups.google.com/groups?q=sleepex)\.
+  - Search for SleepEx at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=SleepEx.md), [google](http://www.google.com/search?q=SleepEx.md) or [google groups](http://groups.google.com/groups?q=SleepEx.md)\.
 
 #### Return Value
 The return value is zero if the specified time interval expired\.
 
-## [win32api](#win32api)\.TerminateProcess
+
+## [win32api](win32api.md#win32api)\.TerminateProcess
 
 TerminateProcess\(handle, exitCode\)
 Kills a process
 
 #### Parameters
 
-
-  - handle :[PyHANDLE](#pyhandle)
+  - handle : [PyHANDLE](PyHANDLE.md)
 
     The handle of the process to terminate\.
 
@@ -5622,18 +5547,23 @@ Kills a process
 
 #### Comments
 
-
-See also[win32api::OpenProcess](win32api.md#win32apiopenprocess)
-
-## [win32api](#win32api)\.ToAsciiEx
+See also [win32api::OpenProcess](win32api.md#win32apiopenprocess)
 
 
+## [win32api](win32api.md#win32api)\.ToAsciiEx
 
-bytes =ToAsciiEx\(vk, scancode, keyboardstate, flags, hlayout\)
+bytes = ToAsciiEx\(vk, scancode
+
+, keyboardstate
+
+, flags
+
+, hlayout
+
+\)
 Translates the specified virtual-key code and keyboard state to the corresponding character or characters\.
 
 #### Parameters
-
 
   - vk : int
 
@@ -5655,28 +5585,29 @@ Translates the specified virtual-key code and keyboard state to the correspondin
 
     The keyboard layout to use
 
-## [win32api](#win32api)\.Unicode
 
-[PyUnicode](#pyunicode) =Unicode\(\)
+## [win32api](win32api.md#win32api)\.Unicode
+
+[PyUnicode](PyUnicode.md) = Unicode\(\)
 Creates a new Unicode object
 
-## [win32api](#win32api)\.UpdateResource
+
+## [win32api](win32api.md#win32api)\.UpdateResource
 
 UpdateResource\(handle, type, name, data, language\)
 Updates a resource in a PE file\.
 
 #### Parameters
 
-
-  - handle :[PyHANDLE](#pyhandle)
+  - handle : [PyHANDLE](PyHANDLE.md)
 
     The update-file handle\.
 
-  - type :[PyResourceId](#pyresourceid)
+  - type : [PyResourceId](PyResourceId.md)
 
     The type of resource to update
 
-  - name :[PyResourceId](#pyresourceid)
+  - name : [PyResourceId](PyResourceId.md)
 
     The id/name of the resource to update
 
@@ -5688,15 +5619,15 @@ Updates a resource in a PE file\.
 
     Language to use, defaults to LANG\_NEUTRAL\.
 
-## [win32api](#win32api)\.VkKeyScan
 
+## [win32api](win32api.md#win32api)\.VkKeyScan
 
+int = VkKeyScan\(char, char
 
-int =VkKeyScan\(char, char\)
+\)
 Translates a character to the corresponding virtual-key code and shift state\.
 
 #### Parameters
-
 
   - char : string or unicode
 
@@ -5710,20 +5641,19 @@ VkKeyScanA will be called, otherwise VkKeyScanW will be called\.
 
 #### Win32 API References
 
+  - Search for VkKeyScanA at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=VkKeyScanA.md), [google](http://www.google.com/search?q=VkKeyScanA.md) or [google groups](http://groups.google.com/groups?q=VkKeyScanA.md)\.
 
-  - Search forVkKeyScanA at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=vkkeyscana),[google](#http://www.google.com/search?q=vkkeyscana) or[google groups](#http://groups.google.com/groups?q=vkkeyscana)\.
-
-  - Search forVkKeyScanW at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=vkkeyscanw),[google](#http://www.google.com/search?q=vkkeyscanw) or[google groups](#http://groups.google.com/groups?q=vkkeyscanw)\.
-
-## [win32api](#win32api)\.VkKeyScanEx
+  - Search for VkKeyScanW at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=VkKeyScanW.md), [google](http://www.google.com/search?q=VkKeyScanW.md) or [google groups](http://groups.google.com/groups?q=VkKeyScanW.md)\.
 
 
+## [win32api](win32api.md#win32api)\.VkKeyScanEx
 
-int =VkKeyScanEx\(char, hkl\)
+int = VkKeyScanEx\(char, hkl
+
+\)
 Translates a character to the corresponding virtual-key code and shift state\.
 
 #### Parameters
-
 
   - char : string or unicode
 
@@ -5731,24 +5661,23 @@ Translates a character to the corresponding virtual-key code and shift state\.
 
 VkKeyScanExA will be called, otherwise VkKeyScanExW will be called\.
 
-  - hkl :[PyHANDLE](#pyhandle)
+  - hkl : [PyHANDLE](PyHANDLE.md)
 
-    Handle to a keyboard layout at returned by[win32api::LoadKeyboardLayout](win32api.md#win32apiloadkeyboardlayout)
+    Handle to a keyboard layout at returned by [win32api::LoadKeyboardLayout](win32api.md#win32apiloadkeyboardlayout)
 
 #### Win32 API References
 
+  - Search for VkKeyScanExA at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=VkKeyScanExA.md), [google](http://www.google.com/search?q=VkKeyScanExA.md) or [google groups](http://groups.google.com/groups?q=VkKeyScanExA.md)\.
 
-  - Search forVkKeyScanExA at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=vkkeyscanexa),[google](#http://www.google.com/search?q=vkkeyscanexa) or[google groups](#http://groups.google.com/groups?q=vkkeyscanexa)\.
+  - Search for VkKeyScanExW at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=VkKeyScanExW.md), [google](http://www.google.com/search?q=VkKeyScanExW.md) or [google groups](http://groups.google.com/groups?q=VkKeyScanExW.md)\.
 
-  - Search forVkKeyScanExW at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=vkkeyscanexw),[google](#http://www.google.com/search?q=vkkeyscanexw) or[google groups](#http://groups.google.com/groups?q=vkkeyscanexw)\.
 
-## [win32api](#win32api)\.WinExec
+## [win32api](win32api.md#win32api)\.WinExec
 
 WinExec\(cmdLine, show\)
 Runs the specified application\.
 
 #### Parameters
-
 
   - cmdLine : string
 
@@ -5760,16 +5689,15 @@ Runs the specified application\.
 
 #### Win32 API References
 
+  - Search for WinExec at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WinExec.md), [google](http://www.google.com/search?q=WinExec.md) or [google groups](http://groups.google.com/groups?q=WinExec.md)\.
 
-  - Search forWinExec at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winexec),[google](#http://www.google.com/search?q=winexec) or[google groups](#http://groups.google.com/groups?q=winexec)\.
 
-## [win32api](#win32api)\.WinHelp
+## [win32api](win32api.md#win32api)\.WinHelp
 
 WinHelp\(hwnd, hlpFile, cmd, data\)
 Invokes the Windows Help system\.
 
 #### Parameters
-
 
   - hwnd : int
 
@@ -5789,21 +5717,22 @@ Invokes the Windows Help system\.
 
 #### Win32 API References
 
-
-  - Search forWinHelp at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=winhelp),[google](#http://www.google.com/search?q=winhelp) or[google groups](#http://groups.google.com/groups?q=winhelp)\.
+  - Search for WinHelp at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WinHelp.md), [google](http://www.google.com/search?q=WinHelp.md) or [google groups](http://groups.google.com/groups?q=WinHelp.md)\.
 
 #### Return Value
 The method raises an exception if an error occurs\.
 
-## [win32api](#win32api)\.WriteProfileSection
 
+## [win32api](win32api.md#win32api)\.WriteProfileSection
 
+list = WriteProfileSection\(section, data
 
-list =WriteProfileSection\(section, data, iniName\)
+, iniName
+
+\)
 Writes a complete section to an INI file or registry\.
 
 #### Parameters
-
 
   - section : string
 
@@ -5821,23 +5750,21 @@ with each entry terminated with '\\\\0', followed by another terminating '\\\\0'
 
 #### Comments
 
-
 This function is obsolete, applications should use the registry instead\.
 
 #### Win32 API References
 
+  - Search for WriteProfileSection at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WriteProfileSection.md), [google](http://www.google.com/search?q=WriteProfileSection.md) or [google groups](http://groups.google.com/groups?q=WriteProfileSection.md)\.
 
-  - Search forWriteProfileSection at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=writeprofilesection),[google](#http://www.google.com/search?q=writeprofilesection) or[google groups](#http://groups.google.com/groups?q=writeprofilesection)\.
+  - Search for WritePrivateProfileSection at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WritePrivateProfileSection.md), [google](http://www.google.com/search?q=WritePrivateProfileSection.md) or [google groups](http://groups.google.com/groups?q=WritePrivateProfileSection.md)\.
 
-  - Search forWritePrivateProfileSection at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=writeprivateprofilesection),[google](#http://www.google.com/search?q=writeprivateprofilesection) or[google groups](#http://groups.google.com/groups?q=writeprivateprofilesection)\.
 
-## [win32api](#win32api)\.WriteProfileVal
+## [win32api](win32api.md#win32api)\.WriteProfileVal
 
 WriteProfileVal\(section, entry, value, iniName\)
 Writes a value to a Windows INI file\.
 
 #### Parameters
-
 
   - section : string
 
@@ -5857,23 +5784,21 @@ Writes a value to a Windows INI file\.
 
 #### Comments
 
-
 This function is obsolete, applications should use the registry instead\.
 
 #### Win32 API References
 
+  - Search for WritePrivateProfileString at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WritePrivateProfileString.md), [google](http://www.google.com/search?q=WritePrivateProfileString.md) or [google groups](http://groups.google.com/groups?q=WritePrivateProfileString.md)\.
 
-  - Search forWritePrivateProfileString at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=writeprivateprofilestring),[google](#http://www.google.com/search?q=writeprivateprofilestring) or[google groups](#http://groups.google.com/groups?q=writeprivateprofilestring)\.
+  - Search for WriteProfileString at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=WriteProfileString.md), [google](http://www.google.com/search?q=WriteProfileString.md) or [google groups](http://groups.google.com/groups?q=WriteProfileString.md)\.
 
-  - Search forWriteProfileString at[msdn](#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=writeprofilestring),[google](#http://www.google.com/search?q=writeprofilestring) or[google groups](#http://groups.google.com/groups?q=writeprofilestring)\.
 
-## [win32api](#win32api)\.keybd\_event
+## [win32api](win32api.md#win32api)\.keybd\_event
 
 keybd\_event\(bVk, bScan, dwFlags, dwExtraInfo\)
 Simulate a keyboard event
 
 #### Parameters
-
 
   - bVk : BYTE
 
@@ -5893,16 +5818,15 @@ Simulate a keyboard event
 
 #### Win32 API References
 
+  - Search for keybd\_event at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=keybd.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=keybdevent), [google](http://www.google.com/search?q=keybd.md#http://www.google.com/search?q=keybdevent) or [google groups](http://groups.google.com/groups?q=keybd.md#http://groups.google.com/groups?q=keybdevent)\.
 
-  - Search forkeybd\_event at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=keybd.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=keybdevent),[google](http://www.google.com/search?q=keybd.md#http://www.google.com/search?q=keybdevent) or[google groups](http://groups.google.com/groups?q=keybd.md#http://groups.google.com/groups?q=keybdevent)\.
 
-## [win32api](#win32api)\.mouse\_event
+## [win32api](win32api.md#win32api)\.mouse\_event
 
 mouse\_event\(dwFlags, dx, dy, dwData, dwExtraInfo\)
 Simulate a mouse event
 
 #### Parameters
-
 
   - dwFlags=0 : DWORD
 
@@ -5926,5 +5850,4 @@ Simulate a mouse event
 
 #### Win32 API References
 
-
-  - Search formouse\_event at[msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=mouse.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=mouseevent),[google](http://www.google.com/search?q=mouse.md#http://www.google.com/search?q=mouseevent) or[google groups](http://groups.google.com/groups?q=mouse.md#http://groups.google.com/groups?q=mouseevent)\.
+  - Search for mouse\_event at [msdn](http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=mouse.md#http://search.msdn.microsoft.com/search/results.aspx?view=msdn&query=mouseevent), [google](http://www.google.com/search?q=mouse.md#http://www.google.com/search?q=mouseevent) or [google groups](http://groups.google.com/groups?q=mouse.md#http://groups.google.com/groups?q=mouseevent)\.

@@ -1,13 +1,11 @@
 # PyIObjectWithPropertyKey
 
+
 ## PyIObjectWithPropertyKey Object
-
-
 
 Interface implemented by objects that have an associated property id
 
 #### Methods
-
 
   - [SetPropertyKey](PyIObjectWithPropertyKey.md#pyiobjectwithpropertykeysetpropertykey)
 
@@ -17,19 +15,20 @@ Interface implemented by objects that have an associated property id
 
     Returns the property id&nbsp;
 
-## [PyIObjectWithPropertyKey](#pyiobjectwithpropertykey)\.GetPropertyKey
 
-[PyPROPERTYKEY](#pypropertykey) =GetPropertyKey\(\)
+## [PyIObjectWithPropertyKey](PyIObjectWithPropertyKey.md#pyiobjectwithpropertykey)\.GetPropertyKey
+
+[PyPROPERTYKEY](PyPROPERTYKEY.md) = GetPropertyKey\(\)
 Returns the property id
 
-## [PyIObjectWithPropertyKey](#pyiobjectwithpropertykey)\.SetPropertyKey
+
+## [PyIObjectWithPropertyKey](PyIObjectWithPropertyKey.md#pyiobjectwithpropertykey)\.SetPropertyKey
 
 SetPropertyKey\(key\)
 Sets the property id
 
 #### Parameters
 
-
-  - key :[PyPROPERTYKEY](#pypropertykey)
+  - key : [PyPROPERTYKEY](PyPROPERTYKEY.md)
 
     The identifier of the property

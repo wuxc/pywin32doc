@@ -1,13 +1,11 @@
 # PyIMoniker
 
+
 ## PyIMoniker Object
-
-
 
 A Python interface to IMoniker
 
 #### Methods
-
 
   - [BindToObject](PyIMoniker.md#pyimonikerbindtoobject)
 
@@ -42,55 +40,66 @@ A Python interface to IMoniker
     Calculates a 32-bit integer using the internal state of the moniker\.&nbsp;
 
 
-## [PyIMoniker](#pyimoniker)\.BindToObject
 
-[PyIUnknown](#pyiunknown) =BindToObject\(bindCtx, moniker, iidResult\)
+
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.BindToObject
+
+[PyIUnknown](PyIUnknown.md) = BindToObject\(bindCtx, moniker
+
+, iidResult
+
+\)
 Uses the moniker to bind to the object it identifies\.
 
 #### Parameters
 
-
-  - bindCtx :[PyIBindCtx](#pyibindctx)
+  - bindCtx : [PyIBindCtx](PyIBindCtx.md)
 
     bind context object to be used\.
 
-  - moniker :[PyIMoniker](#pyimoniker)
+  - moniker : [PyIMoniker](PyIMoniker.md#pyimoniker)
 
     If the moniker is part of a composite moniker, otherwise None
 
-  - iidResult :IID
+  - iidResult : IID
 
     IID of the result object\.
 
-## [PyIMoniker](#pyimoniker)\.BindToStorage
 
-[PyIUnknown](#pyiunknown) =BindToStorage\(bindCtx, moniker, iidResult\)
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.BindToStorage
+
+[PyIUnknown](PyIUnknown.md) = BindToStorage\(bindCtx, moniker
+
+, iidResult
+
+\)
 Retrieves an interface object to the storage that contains the object identified by the moniker\.
 
 #### Parameters
 
-
-  - bindCtx :[PyIBindCtx](#pyibindctx)
+  - bindCtx : [PyIBindCtx](PyIBindCtx.md)
 
     bind context object to be used\.
 
-  - moniker :[PyIMoniker](#pyimoniker)
+  - moniker : [PyIMoniker](PyIMoniker.md#pyimoniker)
 
     If the moniker is part of a composite moniker, otherwise None
 
-  - iidResult :IID
+  - iidResult : IID
 
     IID of the result object\.
 
-## [PyIMoniker](#pyimoniker)\.ComposeWith
 
-[PyIMoniker](#pyimoniker) =ComposeWith\(mkRight, fOnlyIfNotGeneric\)
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.ComposeWith
+
+[PyIMoniker](PyIMoniker.md#pyimoniker) = ComposeWith\(mkRight, fOnlyIfNotGeneric
+
+\)
 Combines the current moniker with another moniker, creating a new composite moniker\.
 
 #### Parameters
 
-
-  - mkRight :[PyIMoniker](#pyimoniker)
+  - mkRight : [PyIMoniker](PyIMoniker.md#pyimoniker)
 
     The IMoniker interface on the moniker to compose onto the end of this moniker\.
 
@@ -98,60 +107,56 @@ Combines the current moniker with another moniker, creating a new composite moni
 
     If TRUE, the caller requires a non-generic composition, so the operation should proceed only if pmkRight is a moniker class that this moniker can compose with in some way other than forming a generic composite\. If FALSE, the method can create a generic composite if necessary\.
 
-## [PyIMoniker](#pyimoniker)\.Enum
 
-[PyIEnumMoniker](#pyienummoniker) =Enum\(fForward\)
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.Enum
+
+[PyIEnumMoniker](PyIEnumMoniker.md) = Enum\(fForward\)
 Supplies an enumerator that can enumerate the components of a composite moniker\.
 
 #### Parameters
-
 
   - fForward=True : int
 
     If TRUE, enumerates the monikers from left to right\. If FALSE, enumerates from right to left\.
 
-## [PyIMoniker](#pyimoniker)\.GetDisplayName
 
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.GetDisplayName
 
+string = GetDisplayName\(bindCtx, moniker
 
-string =GetDisplayName\(bindCtx, moniker\)
+\)
 Gets the display name , which is a user-readable representation of this moniker\.
 
 #### Parameters
 
-
-  - bindCtx :[PyIBindCtx](#pyibindctx)
+  - bindCtx : [PyIBindCtx](PyIBindCtx.md)
 
     bind context object to be used\.
 
-  - moniker :[PyIMoniker](#pyimoniker)
+  - moniker : [PyIMoniker](PyIMoniker.md#pyimoniker)
 
     If the moniker is part of a composite moniker, otherwise None
 
-## [PyIMoniker](#pyimoniker)\.Hash
 
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.Hash
 
-
-int =Hash\(\)
+int = Hash\(\)
 Calculates a 32-bit integer using the internal state of the moniker\.
 
-## [PyIMoniker](#pyimoniker)\.IsEqual
 
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.IsEqual
 
-
-int =IsEqual\(other\)
+int = IsEqual\(other\)
 Compares this moniker with a specified moniker and indicates whether they are identical\.
 
 #### Parameters
 
-
-  - other :[PyIMoniker](#pyimoniker)
+  - other : [PyIMoniker](PyIMoniker.md#pyimoniker)
 
     The moniker to compare
 
-## [PyIMoniker](#pyimoniker)\.IsSystemMoniker
 
+## [PyIMoniker](PyIMoniker.md#pyimoniker)\.IsSystemMoniker
 
-
-int =IsSystemMoniker\(\)
+int = IsSystemMoniker\(\)
 Indicates whether this moniker is of one of the system-supplied moniker classes\.

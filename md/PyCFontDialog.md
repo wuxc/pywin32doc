@@ -1,13 +1,11 @@
 # PyCFontDialog
 
+
 ## PyCFontDialog Object
 
-
-
-A class which encapsulates an MFC CFontDialog object\.  Derived from a[PyCDialog](#pycdialog) object\.
+A class which encapsulates an MFC CFontDialog object\.  Derived from a [PyCDialog](PyCDialog.md) object\.
 
 #### Methods
-
 
   - [DoModal](PyCFontDialog.md#pycfontdialogdomodal)
 
@@ -58,146 +56,123 @@ A class which encapsulates an MFC CFontDialog object\.  Derived from a[PyCDialog
     Determines whether the font is displayed with italic\.&nbsp;
 
 
-## [PyCFontDialog](#pycfontdialog)\.DoModal
 
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.DoModal
 
-int =DoModal\(\)
+int = DoModal\(\)
 Displays a dialog and allows the user to make a selection\.
 
 #### MFC References
 
-
   - CFontDialog::DoModal
 
-## [PyCFontDialog](#pycfontdialog)\.GetCharFormat
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.GetCharFormat
 
-
-tuple =GetCharFormat\(\)
+tuple = GetCharFormat\(\)
 Returns the font selection in a CHARFORMAT tuple\.
 
 #### MFC References
 
-
   - CFontDialog::GetCharFormat
 
-## [PyCFontDialog](#pycfontdialog)\.GetColor
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.GetColor
 
-
-int =GetColor\(\)
+int = GetColor\(\)
 Determines the color of the selected font\.
 
 #### MFC References
 
-
   - CFontDialog::GetColor
 
-## [PyCFontDialog](#pycfontdialog)\.GetCurrentFont
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.GetCurrentFont
 
-
-dict =GetCurrentFont\(\)
+dict = GetCurrentFont\(\)
 Returns a dictionary describing the current font\.
 
 #### MFC References
 
-
   - CFontDialog::GetCurrentFont
 
-## [PyCFontDialog](#pycfontdialog)\.GetFaceName
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.GetFaceName
 
-
-string =GetFaceName\(\)
+string = GetFaceName\(\)
 Returns the face name of the selected font\.
 
 #### MFC References
 
-
   - CFontDialog::GetFaceName
 
-## [PyCFontDialog](#pycfontdialog)\.GetSize
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.GetSize
 
-
-int =GetSize\(\)
+int = GetSize\(\)
 Returns he font's size, in tenths of a point\.
 
 #### MFC References
 
-
   - CFontDialog::GetSize
 
-## [PyCFontDialog](#pycfontdialog)\.GetStyleName
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.GetStyleName
 
-
-string =GetStyleName\(\)
+string = GetStyleName\(\)
 Returns the style name of the selected font\.
 
 #### MFC References
 
-
   - CFontDialog::GetStyleName
 
-## [PyCFontDialog](#pycfontdialog)\.GetWeight
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.GetWeight
 
-
-int =GetWeight\(\)
+int = GetWeight\(\)
 Returns the font's weight\.
 
 #### MFC References
 
-
   - CFontDialog::GetWeight
 
-## [PyCFontDialog](#pycfontdialog)\.IsBold
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.IsBold
 
-
-int =IsBold\(\)
+int = IsBold\(\)
 Determines whether the font is displayed bold\.
 
 #### MFC References
 
-
   - CFontDialog::IsBold
 
-## [PyCFontDialog](#pycfontdialog)\.IsItalic
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.IsItalic
 
-
-int =IsItalic\(\)
+int = IsItalic\(\)
 Determines whether the font is displayed with italic\.
 
 #### MFC References
 
-
   - CFontDialog::IsItalic
 
-## [PyCFontDialog](#pycfontdialog)\.IsStrikeOut
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.IsStrikeOut
 
-
-int =IsStrikeOut\(\)
+int = IsStrikeOut\(\)
 Determines whether the font is displayed with strikeout\.
 
 #### MFC References
 
-
   - CFontDialog::IsStrikeOut
 
-## [PyCFontDialog](#pycfontdialog)\.IsUnderline
 
+## [PyCFontDialog](PyCFontDialog.md#pycfontdialog)\.IsUnderline
 
-
-int =IsUnderline\(\)
+int = IsUnderline\(\)
 Determines whether the font is displayed with underline\.
 
 #### MFC References
-
 
   - CFontDialog::IsUnderline

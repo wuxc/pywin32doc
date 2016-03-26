@@ -1,7 +1,7 @@
 # Python.2c
 
-## Python, C\+\+, and COM
 
+## Python, C\+\+, and COM
 
 Python a helpful cousin to C\+\+ COM development
 
@@ -29,6 +29,7 @@ python and C\+\+\.
 
 #### Example
 Abstract Base classes:
+
 class IFlintstone
 
 \{
@@ -39,8 +40,6 @@ public:
 
 \};
 
-
-
 class IRubble
 
 \{
@@ -50,8 +49,6 @@ public:
   virtual AskBetty\(long when\)=0;
 
 \};
-
-
 
 \#Abtract Base classes for python
 
@@ -105,8 +102,8 @@ proxies, resove any ambiguities C\+\+ may have, and generate type
 
 libraries\.  A very simple IDL interface wouuld look like:
 
-
 IDL interface:
+
 import "unknwn\.idl"
 
 \[object, uuid\(11111111-2222-3333-4444-555555555555\)\]
@@ -141,23 +138,19 @@ IClassFactory that creates Bedrock and errorhandeling , but from this
 
 class you can see the basic functions you'll have to write\.
 
-
 C\+\+ definition:
+
 \#include "file\_from\_midl\.h"
 
 class BedRock : public IFlintstone, public IRubble \{
 
     LONG m\_references;
 
-
-
 public:
 
    BedRock\(\) : m\_references\(0\)\{ \} // constructor
 
    ~BedRock\(void\) \{ \} //destructor
-
-
 
    // IUnknown Methods not shown in their entirety
 
@@ -166,8 +159,6 @@ public:
    STDMETHODIMP\_\(ULONG\) AddRef\(void\)
 
    STDMETHODIMP\_\(ULONG\) Release\(void\)
-
-
 
    // IBedRock Methods
 
@@ -229,8 +220,8 @@ You'll notice the python COM class object is reasonably simple, but
 
 similar in spirit to the above\.
 
-
 Basic python COM code
+
 \#\#Abtract Base classes for python
 
 class IFlintstone:
@@ -244,8 +235,6 @@ class IRubble:
   def AskBetty\(self,when=0\):
 
     raise RuntimeError, 'virtual function'
-
-
 
 class BedRock\(IFlintstone, IRubble\): \#no need to use MIDL for these
 
@@ -273,10 +262,9 @@ class BedRock\(IFlintstone, IRubble\): \#no need to use MIDL for these
 
 &\#09write\_to\_cartoon\(when,"Hey uh Betty"\)
 
-
-
 if \_\_name\_\_=='\_\_main\_\_':
 
     UseCommandLine\(BedRock\)
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+

@@ -1,13 +1,11 @@
 # PyCRYPTMSG
 
+
 ## PyCRYPTMSG Object
-
-
 
 Wrapper for a cryptographic message handle
 
 #### Methods
-
 
   - [CryptMsgClose](PyCRYPTMSG.md#pycryptmsgcryptmsgclose)
 
@@ -16,9 +14,11 @@ Wrapper for a cryptographic message handle
 #### Properties
 
   - int HCRYPTMSG
+
     Raw message handle
 
-## [PyCRYPTMSG](#pycryptmsg)\.CryptMsgClose
+
+## [PyCRYPTMSG](PyCRYPTMSG.md#pycryptmsg)\.CryptMsgClose
 
 CryptMsgClose\(\)
 Closes the message handle

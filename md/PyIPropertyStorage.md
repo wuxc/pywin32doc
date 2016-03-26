@@ -1,15 +1,13 @@
 # PyIPropertyStorage
 
+
 ## PyIPropertyStorage Object
-
-
 
 Structured storage object that contains a set of properties\. 
 
 Supports iteration to list properties\.
 
 #### Methods
-
 
   - [ReadMultiple](PyIPropertyStorage.md#pyipropertystoragereadmultiple)
 
@@ -59,139 +57,135 @@ Supports iteration to list properties\.
 
     Returns various infomation about the property set&nbsp;
 
-## [PyIPropertyStorage](#pyipropertystorage)\.Commit
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.Commit
 
 Commit\(CommitFlags\)
 Persists the property set to its base storage
 
 #### Parameters
 
-
   - CommitFlags : int
 
     Combination of storagecon\.STGC\_\* flags
 
-## [PyIPropertyStorage](#pyipropertystorage)\.DeleteMultiple
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.DeleteMultiple
 
 DeleteMultiple\(props\)
 Deletes properties from the property set
 
 #### Parameters
 
-
-  - props : \([PROPSPEC](#propspec), \.\.\.\)
+  - props : \([PROPSPEC](PROPSPEC.md), \.\.\.\)
 
     Sequence containing names or IDs of properties to be deleted
 
-## [PyIPropertyStorage](#pyipropertystorage)\.DeletePropertyNames
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.DeletePropertyNames
 
 DeletePropertyNames\(props\)
 Removes property names from specified properties\.
 
 #### Parameters
 
-
   - props : \(int, \.\.\.\)
 
     Sequence of ints containing property IDs\.
 
-## [PyIPropertyStorage](#pyipropertystorage)\.Enum
 
-[PyIEnumSTATPROPSTG](#pyienumstatpropstg) =Enum\(\)
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.Enum
+
+[PyIEnumSTATPROPSTG](PyIEnumSTATPROPSTG.md) = Enum\(\)
 Creates an enumerator for properties in the property set
 
-## [PyIPropertyStorage](#pyipropertystorage)\.ReadMultiple
 
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.ReadMultiple
 
-
-\(object, \.\.\.\) =ReadMultiple\(props\)
+\(object, \.\.\.\) = ReadMultiple\(props\)
 Reads specified properties from the current property set\.
 
 #### Parameters
 
-
-  - props : \([PROPSPEC](#propspec), \.\.\.\)
+  - props : \([PROPSPEC](PROPSPEC.md), \.\.\.\)
 
     Sequence of property IDs or names\.
 
 #### Return Value
 Returned values are automatically converted to an appropriate python type
 
-## [PyIPropertyStorage](#pyipropertystorage)\.ReadPropertyNames
 
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.ReadPropertyNames
 
-
-\(str,\.\.\.\) =ReadPropertyNames\(props\)
+\(str,\.\.\.\) = ReadPropertyNames\(props\)
 Retrieves any existing string names for the specified property identifiers\.
 
 #### Parameters
-
 
   - props : \(int, \.\.\.\)
 
     Sequence of ints containing property IDs\.
 
-## [PyIPropertyStorage](#pyipropertystorage)\.Revert
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.Revert
 
 Revert\(\)
 Discards any changes that have been made
 
-## [PyIPropertyStorage](#pyipropertystorage)\.SetClass
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.SetClass
 
 SetClass\(clsid\)
 Sets the GUID for the property set
 
 #### Parameters
 
-
-  - clsid :[PyIID](#pyiid)
+  - clsid : [PyIID](PyIID.md)
 
     Description for clsid
 
-## [PyIPropertyStorage](#pyipropertystorage)\.SetTimes
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.SetTimes
 
 SetTimes\(ctime, atime, mtime\)
 Sets the creation, last access, and modification time
 
 #### Parameters
 
-
-  - ctime :[PyTime](#pytime)
+  - ctime : [PyTime](PyTime.md)
 
     Creation time, or None for no change
 
-  - atime :[PyTime](#pytime)
+  - atime : [PyTime](PyTime.md)
 
     Last access time, or None for no change
 
-  - mtime :[PyTime](#pytime)
+  - mtime : [PyTime](PyTime.md)
 
     Modification time, or None for no change
 
 #### Comments
 
-
 Some property sets do not support these times\.
 
-## [PyIPropertyStorage](#pyipropertystorage)\.Stat
 
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.Stat
 
-
-tuple =Stat\(\)
+tuple = Stat\(\)
 Returns various infomation about the property set
 
 #### Return Value
 Returns a tuple representing a STATPROPSETSTG struct\.
 
-## [PyIPropertyStorage](#pyipropertystorage)\.WriteMultiple
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.WriteMultiple
 
 WriteMultiple\(props, values, propidNameFirst\)
 Creates or modifies properties in the property set
 
 #### Parameters
 
-
-  - props : \([PROPSPEC](#propspec), \.\.\.\)
+  - props : \([PROPSPEC](PROPSPEC.md), \.\.\.\)
 
     Sequence containing names or integer ids of properties to write
 
@@ -205,13 +199,13 @@ Creates or modifies properties in the property set
 
     Minimum property id to be assigned to new properties specified by name
 
-## [PyIPropertyStorage](#pyipropertystorage)\.WritePropertyNames
+
+## [PyIPropertyStorage](PyIPropertyStorage.md#pyipropertystorage)\.WritePropertyNames
 
 WritePropertyNames\(props, names\)
 Assigns string names to a specified array of property IDs in the current property set\.
 
 #### Parameters
-
 
   - props : \(int, \.\.\.\)
 

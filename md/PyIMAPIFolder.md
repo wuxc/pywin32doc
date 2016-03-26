@@ -1,14 +1,13 @@
 # PyIMAPIFolder
 
+
 ## PyIMAPIFolder Object
 
+An COM interface to MAPI 
 
-
-An COM interface to MAPI
-Derived from[PyIMAPIProp](#pyimapiprop)
+Derived from [PyIMAPIProp](PyIMAPIProp.md)
 
 #### Methods
-
 
   - [GetLastError](PyIMAPIFolder.md#pyimapifoldergetlasterror)
 
@@ -38,23 +37,23 @@ Derived from[PyIMAPIProp](#pyimapiprop)
 
     deletes all messages and subfolders from a folder without deleting the folder itself\.&nbsp;
 
-## [PyIMAPIFolder](#pyimapifolder)\.CopyMessages
+
+## [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)\.CopyMessages
 
 CopyMessages\(msgs, iid, folder, ulUIParam, progress, flags\)
 Copies the specified messages
 
 #### Parameters
 
-
-  - msgs :[PySBinaryArray](#pysbinaryarray)
+  - msgs : [PySBinaryArray](PySBinaryArray.md)
 
     
 
-  - iid :[PyIID](#pyiid)
+  - iid : [PyIID](PyIID.md)
 
     IID representing the interface to be used to access the destination folder\.  Should usually be None\.
 
-  - folder :[PyIMAPIFolder](#pyimapifolder)
+  - folder : [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)
 
     The destination folder
 
@@ -62,7 +61,7 @@ Copies the specified messages
 
     Handle of the parent window for any dialog boxes or windows this method displays\.
 
-  - progress :PyIMAPIProgress
+  - progress : PyIMAPIProgress
 
     A progress object, or None
 
@@ -71,13 +70,21 @@ Copies the specified messages
     A bitmask of
 
 
-## [PyIMAPIFolder](#pyimapifolder)\.CreateFolder
 
-[PyIMAPIFolder](#pyimapifolder) =CreateFolder\(folderType, folderName, folderComment, iid, flags\)
+## [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)\.CreateFolder
+
+[PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder) = CreateFolder\(folderType, folderName
+
+, folderComment
+
+, iid
+
+, flags
+
+\)
 Creates a folder object\.
 
 #### Parameters
-
 
   - folderType : int
 
@@ -91,7 +98,7 @@ Creates a folder object\.
 
     A comment for the folder or None
 
-  - iid :[PyIID](#pyiid)
+  - iid : [PyIID](PyIID.md)
 
     The IID of the object to return\.  Should usually be None\.
 
@@ -99,15 +106,17 @@ Creates a folder object\.
 
     
 
-## [PyIMAPIFolder](#pyimapifolder)\.CreateMessage
 
-[PyIMessage](#pyimessage) =CreateMessage\(iid, flags\)
+## [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)\.CreateMessage
+
+[PyIMessage](PyIMessage.md) = CreateMessage\(iid, flags
+
+\)
 Creates a message in a folder
 
 #### Parameters
 
-
-  - iid :[PyIID](#pyiid)
+  - iid : [PyIID](PyIID.md)
 
     The IID of the object to return\.  Should usually be None\.
 
@@ -115,13 +124,13 @@ Creates a message in a folder
 
     
 
-## [PyIMAPIFolder](#pyimapifolder)\.DeleteFolder
+
+## [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)\.DeleteFolder
 
 DeleteFolder\(entryId, uiParam, progress\)
 Deletes a subfolder\.
 
 #### Parameters
-
 
   - entryId : string
 
@@ -131,19 +140,19 @@ Deletes a subfolder\.
 
     Handle of the parent window of the progress indicator\.
 
-  - progress :PyIMAPIProgress
+  - progress : PyIMAPIProgress
 
     A progress object, or None
 
-## [PyIMAPIFolder](#pyimapifolder)\.DeleteMessages
+
+## [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)\.DeleteMessages
 
 DeleteMessages\(msgs, uiParam, progress, flags\)
 Deletes the specified messages\.
 
 #### Parameters
 
-
-  - msgs :[PySBinaryArray](#pysbinaryarray)
+  - msgs : [PySBinaryArray](PySBinaryArray.md)
 
     
 
@@ -151,7 +160,7 @@ Deletes the specified messages\.
 
     A HWND for the progress
 
-  - progress :PyIMAPIProgress
+  - progress : PyIMAPIProgress
 
     A progress object, or None
 
@@ -159,19 +168,19 @@ Deletes the specified messages\.
 
     
 
-## [PyIMAPIFolder](#pyimapifolder)\.EmptyFolder
+
+## [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)\.EmptyFolder
 
 EmptyFolder\(uiParam, progress, flags\)
 deletes all messages and subfolders from a folder without deleting the folder itself\.
 
 #### Parameters
 
-
   - uiParam : int
 
     A HWND for the progress
 
-  - progress :PyIMAPIProgress
+  - progress : PyIMAPIProgress
 
     A progress object, or None
 
@@ -179,15 +188,17 @@ deletes all messages and subfolders from a folder without deleting the folder it
 
     
 
-## [PyIMAPIFolder](#pyimapifolder)\.GetLastError
+
+## [PyIMAPIFolder](PyIMAPIFolder.md#pyimapifolder)\.GetLastError
 
 PyMAPIError
 
- =GetLastError\(hr, flags\)
+ = GetLastError\(hr, flags
+
+\)
 Returns the last error associated with this object
 
 #### Parameters
-
 
   - hr : int
 

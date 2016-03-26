@@ -1,11 +1,9 @@
 # PySPropertyRestriction
 
+
 ## PySPropertyRestriction Object
 
-
-
 #### Parameters
-
 
   - relOp : int
 
@@ -15,6 +13,6 @@
 
     The property ID\.
 
-  - propertyValue :[PySPropValue](#pyspropvalue)
+  - propertyValue : [PySPropValue](PySPropValue.md)
 
     

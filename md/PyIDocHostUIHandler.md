@@ -1,13 +1,11 @@
 # PyIDocHostUIHandler
 
+
 ## PyIDocHostUIHandler Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [ShowContextMenu](PyIDocHostUIHandler.md#pyidochostuihandlershowcontextmenu)
 
@@ -69,106 +67,109 @@ Description of the interface
 
     Description of FilterDataObject&nbsp;
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.EnableModeless
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.EnableModeless
 
 EnableModeless\(fEnable\)
 Description of EnableModeless\.
 
 #### Parameters
 
-
   - fEnable : int
 
     Description for fEnable
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.FilterDataObject
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.FilterDataObject
 
 FilterDataObject\(pDO\)
 Description of FilterDataObject\.
 
 #### Parameters
 
-
-  - pDO :[PyIDataObject](#pyidataobject)
+  - pDO : [PyIDataObject](PyIDataObject.md)
 
     Description for pDO
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetDropTarget
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.GetDropTarget
 
 GetDropTarget\(pDropTarget\)
 Description of GetDropTarget\.
 
 #### Parameters
 
-
-  - pDropTarget :[PyIDropTarget](#pyidroptarget)
+  - pDropTarget : [PyIDropTarget](PyIDropTarget.md)
 
     Description for pDropTarget
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetExternal
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.GetExternal
 
 GetExternal\(\)
 Description of GetExternal\.
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetHostInfo
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.GetHostInfo
 
 GetHostInfo\(\)
 Description of GetHostInfo\.
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.GetOptionKeyPath
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.GetOptionKeyPath
 
 GetOptionKeyPath\(dw\)
 Description of GetOptionKeyPath\.
 
 #### Parameters
 
-
   - dw : int
 
     Description for dw
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.HideUI
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.HideUI
 
 HideUI\(\)
 Description of HideUI\.
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.OnDocWindowActivate
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.OnDocWindowActivate
 
 OnDocWindowActivate\(fActivate\)
 Description of OnDocWindowActivate\.
 
 #### Parameters
 
-
   - fActivate : int
 
     Description for fActivate
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.OnFrameWindowActivate
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.OnFrameWindowActivate
 
 OnFrameWindowActivate\(fActivate\)
 Description of OnFrameWindowActivate\.
 
 #### Parameters
 
-
   - fActivate : int
 
     Description for fActivate
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.ResizeBorder
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.ResizeBorder
 
 ResizeBorder\(prcBorder, pUIWindow, fRameWindow\)
 Description of ResizeBorder\.
 
 #### Parameters
 
-
   - prcBorder : \(int, int, int, int\)
 
     Description for prcBorder
 
-  - pUIWindow :[PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)
+  - pUIWindow : [PyIOleInPlaceUIWindow](PyIOleInPlaceUIWindow.md)
 
     Description for pUIWindow
 
@@ -176,13 +177,13 @@ Description of ResizeBorder\.
 
     Description for fRameWindow
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.ShowContextMenu
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.ShowContextMenu
 
 ShowContextMenu\(dwID, pt, pcmdtReserved, pdispReserved\)
 Description of ShowContextMenu\.
 
 #### Parameters
-
 
   - dwID : int
 
@@ -192,55 +193,55 @@ Description of ShowContextMenu\.
 
     Description for ppt
 
-  - pcmdtReserved :[PyIUnknown](#pyiunknown)
+  - pcmdtReserved : [PyIUnknown](PyIUnknown.md)
 
     Description for pcmdtReserved
 
-  - pdispReserved :[PyIDispatch](#pyidispatch)
+  - pdispReserved : [PyIDispatch](PyIDispatch.md)
 
     Description for pdispReserved
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.ShowUI
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.ShowUI
 
 ShowUI\(dwID, pActiveObject, pCommandTarget, pFrame, pDoc\)
 Description of ShowUI\.
 
 #### Parameters
 
-
   - dwID : int
 
     Description for dwID
 
-  - pActiveObject :[PyIOleInPlaceActiveObject](#pyioleinplaceactiveobject)
+  - pActiveObject : [PyIOleInPlaceActiveObject](PyIOleInPlaceActiveObject.md)
 
     Description for pActiveObject
 
-  - pCommandTarget :[PyIOleCommandTarget](#pyiolecommandtarget)
+  - pCommandTarget : [PyIOleCommandTarget](PyIOleCommandTarget.md)
 
     Description for pCommandTarget
 
-  - pFrame :[PyIOleInPlaceFrame](#pyioleinplaceframe)
+  - pFrame : [PyIOleInPlaceFrame](PyIOleInPlaceFrame.md)
 
     Description for pFrame
 
-  - pDoc :[PyIOleInPlaceUIWindow](#pyioleinplaceuiwindow)
+  - pDoc : [PyIOleInPlaceUIWindow](PyIOleInPlaceUIWindow.md)
 
     Description for pDoc
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.TranslateAccelerator
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.TranslateAccelerator
 
 TranslateAccelerator\(lpMsg, pguidCmdGroup, nCmdID\)
 Description of TranslateAccelerator\.
 
 #### Parameters
 
-
-  - lpMsg :PyLPMSG
+  - lpMsg : PyLPMSG
 
     Description for lpMsg
 
-  - pguidCmdGroup :[PyIID](#pyiid)
+  - pguidCmdGroup : [PyIID](PyIID.md)
 
     Description for pguidCmdGroup
 
@@ -248,23 +249,24 @@ Description of TranslateAccelerator\.
 
     Description for nCmdID
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.TranslateUrl
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.TranslateUrl
 
 TranslateUrl\(dwTranslate, pchURLIn\)
 Description of TranslateUrl\.
 
 #### Parameters
 
-
   - dwTranslate : int
 
     Description for dwTranslate
 
-  - pchURLIn :unicode
+  - pchURLIn : unicode
 
     Description for pchURLIn
 
-## [PyIDocHostUIHandler](#pyidochostuihandler)\.UpdateUI
+
+## [PyIDocHostUIHandler](PyIDocHostUIHandler.md#pyidochostuihandler)\.UpdateUI
 
 UpdateUI\(\)
 Description of UpdateUI\.

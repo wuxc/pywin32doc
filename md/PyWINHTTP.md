@@ -1,13 +1,11 @@
 # PyWINHTTP
 
+
 ## PyWINHTTP\_AUTOPROXY\_OPTIONS Object
 
-
-
-Used by[win32inet::WinHTTPGetProxyForUrl](win32inet.md#win32inetwinhttpgetproxyforurl)
+Used by [win32inet::WinHTTPGetProxyForUrl](win32inet.md#win32inetwinhttpgetproxyforurl)
 
 #### Parameters
-
 
   - dwFlags : int
 
@@ -33,23 +31,21 @@ Used by[win32inet::WinHTTPGetProxyForUrl](win32inet.md#win32inetwinhttpgetproxyf
 
     
 
+
 ## PyWINHTTP\_PROXY\_INFO Object
-
-
 
 A tuple representing a WINHTTP\_PROXY\_INFO structure\.
 
 #### Items
 
-
-  - \[0\]int : dwAccessType
-
-    
-
-  - \[2\]string : lpszProxy
+  - \[0\] int : dwAccessType
 
     
 
-  - \[3\]string : lpszProxy
+  - \[2\] string : lpszProxy
+
+    
+
+  - \[3\] string : lpszProxy
 
     

@@ -1,7 +1,7 @@
 # MTS
 
-## MTS and Python for NT
 
+## MTS and Python for NT
 
 How to use python w/MTS on NT\.
 
@@ -91,16 +91,16 @@ is in the role you created that has lists of users or groups\.
 
 #### Example
 In python you setup the ObjectContext object in the following manner:
+
 mtsobj = win32com\.client\.Dispatch\("MTXAS\.AppServer\.1"\)
 
 mts=mtsobj\.GetObjectContext\(\)
 
 and can then make calls like:
+
 if mts\.IsCallerInRole\('bedrock'\):
 
 &\#09do\_this\(\)
-
-
 
 &ltnl&gtBelow is the active server page and python object that you can
 
@@ -113,40 +113,32 @@ increment\. If wila or betty are supplied from the ASP, you notice
 Committed increasing\.
 
 Here is an extremely simple python active server page that calls the mts object:
+
 &ltSCRIPT Language="Python" RunAt="Server"&gt
-
-
 
 import win32com
 
 find\_pebbles = win32com\.client\.dynamic\.Dispatch\("mts1"\)
 
-
-
 a=find\_pebbles\('wilma'\)
 
 Response\.Write\(a\)
 
-
-
 &lt/SCRIPT&gt
 
 Here is the mts COM object:
+
 from win32com\.server\.exception import COMException
 
 import win32com\.server\.util
 
 import win32com\.client\.dynamic
 
-
-
 \#to generate guids use:
 
 \#import pythoncom
 
 \#print pythoncom\.CreateGuid\(\)
-
-
 
 class Mts:
 
@@ -166,23 +158,15 @@ class Mts:
 
 &\#09\_public\_methods\_ = \['getkid' \]  \#names of callable methods
 
-
-
 &\#09def \_\_init\_\_\(self\):
 
 &\#09&\#09pass
 
-
-
 &\#09def getkid\(self, person\):
-
-
 
 &\#09&\#09mtsobj = win32com\.client\.Dispatch\("MTXAS\.AppServer\.1"\)
 
 &\#09&\#09mts=mtsobj\.GetObjectContext\(\)
-
-
 
 &\#09&\#09if mts is None:
 
@@ -220,12 +204,11 @@ class Mts:
 
 &\#09&\#09return result
 
-
-
 if \_\_name\_\_=='\_\_main\_\_':
 
 &\#09import win32com\.server\.register
 
 &\#09win32com\.server\.register\.UseCommandLine\(Mts\)
 
-Have a great time with programming with python\!
+Have a great time with programming with python\! 
+

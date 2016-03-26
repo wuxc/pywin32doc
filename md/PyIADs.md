@@ -1,8 +1,7 @@
 # PyIADs
 
+
 ## PyIADs Object
-
-
 
 An object representing the IADs interface\. 
 
@@ -13,7 +12,6 @@ interface allows you get get and set properties without the IDispatch
 overhead\.
 
 #### Methods
-
 
   - [GetInfo](PyIADs.md#pyiadsgetinfo)
 
@@ -41,38 +39,43 @@ overhead\.
 
 #### Properties
 
-  - [PyUnicode](#pyunicode) ADsPath
+  - [PyUnicode](PyUnicode.md) ADsPath
+
     
 
-  - [PyUnicode](#pyunicode) AdsPath
+  - [PyUnicode](PyUnicode.md) AdsPath
+
     Synonym for ADsPath
 
-  - [PyUnicode](#pyunicode) Class
+  - [PyUnicode](PyUnicode.md) Class
+
     
 
-  - [PyUnicode](#pyunicode) GUID
+  - [PyUnicode](PyUnicode.md) GUID
+
     Like the IADs method, this returns a string rather than a GUID object\.
 
-  - [PyUnicode](#pyunicode) Name
+  - [PyUnicode](PyUnicode.md) Name
+
     
 
-  - [PyUnicode](#pyunicode) Parent
+  - [PyUnicode](PyUnicode.md) Parent
+
     
 
-  - [PyUnicode](#pyunicode) Schema
+  - [PyUnicode](PyUnicode.md) Schema
+
     
 
-## [PyIADs](#pyiads)\.Get
 
+## [PyIADs](PyIADs.md#pyiads)\.Get
 
-
-object =Get\(prop\)
+object = Get\(prop\)
 Description of Get\.
 
 #### Parameters
 
-
-  - prop :[PyUnicode](#pyunicode)
+  - prop : [PyUnicode](PyUnicode.md)
 
     The name of the property to fetch
 
@@ -81,20 +84,21 @@ The result is a Python object converted from a COM variant\.  It
 
 may be an array, or any types supported by COM variant\.
 
-## [PyIADs](#pyiads)\.GetInfo
+
+## [PyIADs](PyIADs.md#pyiads)\.GetInfo
 
 GetInfo\(\)
 Description of GetInfo\.
 
-## [PyIADs](#pyiads)\.Put
+
+## [PyIADs](PyIADs.md#pyiads)\.Put
 
 Put\(property, val\)
 Description of Put\.
 
 #### Parameters
 
-
-  - property :[PyUnicode](#pyunicode)
+  - property : [PyUnicode](PyUnicode.md)
 
     The property name to set
 
@@ -102,7 +106,8 @@ Description of Put\.
 
     The value to set\.
 
-## [PyIADs](#pyiads)\.SetInfo
+
+## [PyIADs](PyIADs.md#pyiads)\.SetInfo
 
 SetInfo\(\)
 Description of SetInfo\.

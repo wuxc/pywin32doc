@@ -1,13 +1,11 @@
 # PyIApplicationDebugger
 
+
 ## PyIApplicationDebugger Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [QueryAlive](PyIApplicationDebugger.md#pyiapplicationdebuggerqueryalive)
 
@@ -19,7 +17,7 @@ Description of the interface
 
   - [onDebugOutput](PyIApplicationDebugger.md#pyiapplicationdebuggerondebugoutput)
 
-    Called when[PyIDebugApplication::DebugOutput](PyIDebugApplication.md#pyidebugapplicationdebugoutput) is called\.&nbsp;
+    Called when [PyIDebugApplication::DebugOutput](PyIDebugApplication.md#pyidebugapplicationdebugoutput) is called\.&nbsp;
 
   - [onHandleBreakPoint](PyIApplicationDebugger.md#pyiapplicationdebuggeronhandlebreakpoint)
 
@@ -27,25 +25,25 @@ Description of the interface
 
   - [onClose](PyIApplicationDebugger.md#pyiapplicationdebuggeronclose)
 
-    Called when[PyIDebugApplication::Close](PyIDebugApplication.md#pyidebugapplicationclose) is called\.&nbsp;
+    Called when [PyIDebugApplication::Close](PyIDebugApplication.md#pyidebugapplicationclose) is called\.&nbsp;
 
   - [onDebuggerEvent](PyIApplicationDebugger.md#pyiapplicationdebuggerondebuggerevent)
 
     Handle a custom event\.&nbsp;
 
-## [PyIApplicationDebugger](#pyiapplicationdebugger)\.CreateInstanceAtDebugger
+
+## [PyIApplicationDebugger](PyIApplicationDebugger.md#pyiapplicationdebugger)\.CreateInstanceAtDebugger
 
 CreateInstanceAtDebugger\(rclsid, pUnkOuter, dwClsContext, riid\)
 Create objects in the application process address space\.
 
 #### Parameters
 
-
-  - rclsid :[PyIID](#pyiid)
+  - rclsid : [PyIID](PyIID.md)
 
     Description for rclsid
 
-  - pUnkOuter :[PyIUnknown](#pyiunknown)
+  - pUnkOuter : [PyIUnknown](PyIUnknown.md)
 
     Description for pUnkOuter
 
@@ -53,12 +51,11 @@ Create objects in the application process address space\.
 
     Description for dwClsContext
 
-  - riid :[PyIID](#pyiid)
+  - riid : [PyIID](PyIID.md)
 
     Description for riid
 
 #### Comments
-
 
 Provides a mechanism for the debugger IDE, running out-of-process to the 
 
@@ -66,64 +63,65 @@ application, to create objects in the application process\.
 
 This method simply delegates to CoCreateInstance\.
 
-## [PyIApplicationDebugger](#pyiapplicationdebugger)\.QueryAlive
+
+## [PyIApplicationDebugger](PyIApplicationDebugger.md#pyiapplicationdebugger)\.QueryAlive
 
 QueryAlive\(\)
 Returns true if alive, else false\.
 
-## [PyIApplicationDebugger](#pyiapplicationdebugger)\.onClose
+
+## [PyIApplicationDebugger](PyIApplicationDebugger.md#pyiapplicationdebugger)\.onClose
 
 onClose\(\)
-Called when[PyIDebugApplication::Close](PyIDebugApplication.md#pyidebugapplicationclose) is called\.
+Called when [PyIDebugApplication::Close](PyIDebugApplication.md#pyidebugapplicationclose) is called\.
 
-## [PyIApplicationDebugger](#pyiapplicationdebugger)\.onDebugOutput
+
+## [PyIApplicationDebugger](PyIApplicationDebugger.md#pyiapplicationdebugger)\.onDebugOutput
 
 onDebugOutput\(pstr\)
-Called when[PyIDebugApplication::DebugOutput](PyIDebugApplication.md#pyidebugapplicationdebugoutput) is called\.
+Called when [PyIDebugApplication::DebugOutput](PyIDebugApplication.md#pyidebugapplicationdebugoutput) is called\.
 
 #### Parameters
 
-
-  - pstr :unicode
+  - pstr : unicode
 
     Description for pstr
 
 #### Comments
 
-
 The debugger can use this to display the string in an output window\.
 
-## [PyIApplicationDebugger](#pyiapplicationdebugger)\.onDebuggerEvent
+
+## [PyIApplicationDebugger](PyIApplicationDebugger.md#pyiapplicationdebugger)\.onDebuggerEvent
 
 onDebuggerEvent\(guid, uUnknown\)
 Description of onDebuggerEvent\.
 
 #### Parameters
 
-
-  - guid :[PyIID](#pyiid)
+  - guid : [PyIID](PyIID.md)
 
     
 
-  - uUnknown :[PyIUnknown](#pyiunknown)
+  - uUnknown : [PyIUnknown](PyIUnknown.md)
 
     
 
 #### Comments
 
+The semantics of guid and unknown are entirely application/debugger defined 
 
-The semantics of guid and unknown are entirely application/debugger defined
 This method may return E\_NOTIMPL\.
 
-## [PyIApplicationDebugger](#pyiapplicationdebugger)\.onHandleBreakPoint
+
+## [PyIApplicationDebugger](PyIApplicationDebugger.md#pyiapplicationdebugger)\.onHandleBreakPoint
 
 onHandleBreakPoint\(prpt, br, pError\)
 Called when a breakpoint is hit\.
 
 #### Parameters
 
-
-  - prpt :[PyIRemoteDebugApplicationThread](#pyiremotedebugapplicationthread)
+  - prpt : [PyIRemoteDebugApplicationThread](PyIRemoteDebugApplicationThread.md)
 
     Description for prpt
 
@@ -131,17 +129,14 @@ Called when a breakpoint is hit\.
 
     Description for br
 
-  - pError :IActiveScriptErrorDebug
+  - pError : IActiveScriptErrorDebug
 
     Description for pError
 
 #### Comments
 
-
 The application will remain 
 
-suspended until the debugger IDE callsPyIDebugApplication::ResumeFromBreakPoint
-
-
+suspended until the debugger IDE calls PyIDebugApplication::ResumeFromBreakPoint
 
 \.

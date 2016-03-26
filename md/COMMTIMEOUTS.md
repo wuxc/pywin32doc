@@ -1,30 +1,28 @@
 # COMMTIMEOUTS
 
+
 ## COMMTIMEOUTS Object
-
-
 
 A tuple representing a COMMTIMEOUTS structure\.
 
 #### Items
 
-
-  - \[0\]int : ReadIntervalTimeout
-
-    
-
-  - \[1\]int : ReadTotalTimeoutMultiplier
+  - \[0\] int : ReadIntervalTimeout
 
     
 
-  - \[2\]int : ReadTotalTimeoutConstant
+  - \[1\] int : ReadTotalTimeoutMultiplier
 
     
 
-  - \[3\]int : WriteTotalTimeoutMultiplier
+  - \[2\] int : ReadTotalTimeoutConstant
 
     
 
-  - \[4\]int : WriteTotalTimeoutConstant
+  - \[3\] int : WriteTotalTimeoutMultiplier
+
+    
+
+  - \[4\] int : WriteTotalTimeoutConstant
 
     

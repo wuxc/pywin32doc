@@ -1,13 +1,11 @@
 # PyIOleControlSite
 
+
 ## PyIOleControlSite Object
-
-
 
 Description of the interface
 
 #### Methods
-
 
   - [OnControlInfoChanged](PyIOleControlSite.md#pyiolecontrolsiteoncontrolinfochanged)
 
@@ -37,52 +35,55 @@ Description of the interface
 
     Description of ShowPropertyFrame&nbsp;
 
-## [PyIOleControlSite](#pyiolecontrolsite)\.GetExtendedControl
+
+## [PyIOleControlSite](PyIOleControlSite.md#pyiolecontrolsite)\.GetExtendedControl
 
 GetExtendedControl\(\)
 Description of GetExtendedControl\.
 
-## [PyIOleControlSite](#pyiolecontrolsite)\.LockInPlaceActive
+
+## [PyIOleControlSite](PyIOleControlSite.md#pyiolecontrolsite)\.LockInPlaceActive
 
 LockInPlaceActive\(fLock\)
 Description of LockInPlaceActive\.
 
 #### Parameters
 
-
   - fLock : int
 
     Description for fLock
 
-## [PyIOleControlSite](#pyiolecontrolsite)\.OnControlInfoChanged
+
+## [PyIOleControlSite](PyIOleControlSite.md#pyiolecontrolsite)\.OnControlInfoChanged
 
 OnControlInfoChanged\(\)
 Description of OnControlInfoChanged\.
 
-## [PyIOleControlSite](#pyiolecontrolsite)\.OnFocus
+
+## [PyIOleControlSite](PyIOleControlSite.md#pyiolecontrolsite)\.OnFocus
 
 OnFocus\(fGotFocus\)
 Description of OnFocus\.
 
 #### Parameters
 
-
   - fGotFocus : int
 
     Description for fGotFocus
 
-## [PyIOleControlSite](#pyiolecontrolsite)\.ShowPropertyFrame
+
+## [PyIOleControlSite](PyIOleControlSite.md#pyiolecontrolsite)\.ShowPropertyFrame
 
 ShowPropertyFrame\(\)
 Description of ShowPropertyFrame\.
 
-## [PyIOleControlSite](#pyiolecontrolsite)\.TransformCoords
+
+## [PyIOleControlSite](PyIOleControlSite.md#pyiolecontrolsite)\.TransformCoords
 
 TransformCoords\(PtlHimetric, pPtfContainer, dwFlags\)
 Description of TransformCoords\.
 
 #### Parameters
-
 
   - PtlHimetric : \(int, int\)
 
@@ -101,15 +102,15 @@ The result is a tuple of the transformed input points - ie,
 
 a tuple of \(\(int, int\), \(float, float\)\)
 
-## [PyIOleControlSite](#pyiolecontrolsite)\.TranslateAccelerator
+
+## [PyIOleControlSite](PyIOleControlSite.md#pyiolecontrolsite)\.TranslateAccelerator
 
 TranslateAccelerator\(pMsg, grfModifiers\)
 Description of TranslateAccelerator\.
 
 #### Parameters
 
-
-  - pMsg :[PyMSG](#pymsg)
+  - pMsg : [PyMSG](PyMSG.md)
 
     Description for pMsg
 

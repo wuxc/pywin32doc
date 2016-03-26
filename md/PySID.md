@@ -1,13 +1,11 @@
 # PySID
 
+
 ## PySID Object
-
-
 
 A Python object, representing a SID structure
 
 #### Methods
-
 
   - [Initialize](PySID.md#pysidinitialize)
 
@@ -39,59 +37,52 @@ A Python object, representing a SID structure
 
 #### Comments
 
-
 Note the PySID object supports the buffer interface\.  Thus buffer\(sid\) can be used to obtain the raw bytes\. 
 
 tp\_as\_buffer
 
+
 ## PySID\_AND\_ATTRIBUTES Object
 
-
-
-A sequence containing \([PySID](#pysid),Attributes\) Representing a SID\_AND\_ATTRIBUTES structure
+A sequence containing \([PySID](PySID.md#pysid),Attributes\) Representing a SID\_AND\_ATTRIBUTES structure
 
 #### Comments
 
-
 Attributes is an integer containing flags that depend on intended usage
 
-## [PySID](#pysid)\.GetLength
 
+## [PySID](PySID.md#pysid)\.GetLength
 
-
-int =GetLength\(\)
+int = GetLength\(\)
 return length of SID \(GetLengthSid\)\.
 
-## [PySID](#pysid)\.GetSidIdentifierAuthority
 
+## [PySID](PySID.md#pysid)\.GetSidIdentifierAuthority
 
-
-\(int,int,int,int,int,int\) =GetSidIdentifierAuthority\(\)
+\(int,int,int,int,int,int\) = GetSidIdentifierAuthority\(\)
 Returns a tuple of 6 SID\_IDENTIFIER\_AUTHORITY constants
 
-## [PySID](#pysid)\.GetSubAuthority
 
+## [PySID](PySID.md#pysid)\.GetSubAuthority
 
-
-int =GetSubAuthority\(\)
+int = GetSubAuthority\(\)
 Returns specified subauthority from SID
 
-## [PySID](#pysid)\.GetSubAuthorityCount
 
+## [PySID](PySID.md#pysid)\.GetSubAuthorityCount
 
-
-int =GetSubAuthorityCount\(\)
+int = GetSubAuthorityCount\(\)
 return nbr of subauthorities from SID
 
-## [PySID](#pysid)\.Initialize
+
+## [PySID](PySID.md#pysid)\.Initialize
 
 Initialize\(idAuthority, numSubauthorities\)
 Initialize the SID\.
 
 #### Parameters
 
-
-  - idAuthority :SID\_IDENTIFIER\_AUTHORITY
+  - idAuthority : SID\_IDENTIFIER\_AUTHORITY
 
     The identifier authority\.
 
@@ -99,18 +90,19 @@ Initialize the SID\.
 
     The number of sub authorities to allocate\.
 
-## [PySID](#pysid)\.IsValid
+
+## [PySID](PySID.md#pysid)\.IsValid
 
 IsValid\(\)
 Determines if the SID is valid\.
 
-## [PySID](#pysid)\.SetSubAuthority
+
+## [PySID](PySID.md#pysid)\.SetSubAuthority
 
 SetSubAuthority\(index, val\)
 Sets a SID SubAuthority
 
 #### Parameters
-
 
   - index : int
 
@@ -121,6 +113,5 @@ Sets a SID SubAuthority
     The value for the sub authority
 
 #### Comments
-
 
 See the function SetSidSubAuthority

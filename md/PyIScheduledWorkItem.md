@@ -1,13 +1,11 @@
 # PyIScheduledWorkItem
 
+
 ## PyIScheduledWorkItem Object
-
-
 
 Python object that encapsulates the IScheduledWorkItem interface
 
 #### Methods
-
 
   - [CreateTrigger](PyIScheduledWorkItem.md#pyischeduledworkitemcreatetrigger)
 
@@ -125,34 +123,33 @@ Python object that encapsulates the IScheduledWorkItem interface
 
     Returns username that task will run under&nbsp;
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.CreateTrigger
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.CreateTrigger
 
-
-int,PyITaskTrigger =CreateTrigger\(\)
+int,PyITaskTrigger = CreateTrigger\(\)
 Creates a new trigger for a task, returns index and new ITaskTrigger interface
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.DeleteTrigger
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.DeleteTrigger
 
 DeleteTrigger\(Trigger\)
 Deletes specified trigger
 
 #### Parameters
 
-
   - Trigger : int
 
     Index of trigger to delete
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.EditWorkItem
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.EditWorkItem
 
 EditWorkItem\(hParent, dwReserved\)
 Brings up standard Scheduled Task dialog
 
 #### Parameters
 
-
-  - hParent :[PyHANDLE](#pyhandle)
+  - hParent : [PyHANDLE](PyHANDLE.md)
 
     Reserved, use 0 or None if passed
 
@@ -160,215 +157,219 @@ Brings up standard Scheduled Task dialog
 
     Reserved, use 0 if passed
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetAccountInformation
 
-[PyUNICODE](#pyunicode) =GetAccountInformation\(\)
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetAccountInformation
+
+[PyUNICODE](PyUNICODE.md) = GetAccountInformation\(\)
 Returns username that task will run under
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetComment
 
-[PyUnicode](#pyunicode) =GetComment\(\)
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetComment
+
+[PyUnicode](PyUnicode.md) = GetComment\(\)
 Return comment string associated with task\.
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetCreator
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetCreator
 
 GetCreator\(\)
 Returns creator info, can be any string data
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetErrorRetryCount
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetErrorRetryCount
 
 GetErrorRetryCount\(\)
 Return nbr of times Task scheduler should try to run task \(not currently implemented\)
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetErrorRetryInterval
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetErrorRetryInterval
 
 GetErrorRetryInterval\(\)
 Returns nbr of minutes between attempts to run task\. Not implemented according to SDK
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetExitCode
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetExitCode
 
-
-\(int,int\) =GetExitCode\(\)
+\(int,int\) = GetExitCode\(\)
 Returns tuple of task's exit code and error returned to Task Scheduler if process could not start
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetFlags
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetFlags
 
-
-int =GetFlags\(\)
+int = GetFlags\(\)
 Returns flags for task \(TASK\_FLAG\_\* constants\)
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetIdleWait
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetIdleWait
 
-
-int,int =GetIdleWait\(\)
+int,int = GetIdleWait\(\)
 Gets IdleMinutes and DeadlineMinutes parms for task with trigger of type TASK\_EVENT\_TRIGGER\_ON\_IDLE
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetMostRecentRunTime
 
-[PyTime](#pytime) =GetMostRecentRunTime\(\)
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetMostRecentRunTime
+
+[PyTime](PyTime.md) = GetMostRecentRunTime\(\)
 Returns last time task ran
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetNextRunTime
 
-[PyTime](#pytime) =GetNextRunTime\(\)
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetNextRunTime
+
+[PyTime](PyTime.md) = GetNextRunTime\(\)
 Returns next time that task is scheduled to run
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetRunTimes
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetRunTimes
 
+\([PyTime](PyTime.md),,,\) = GetRunTimes\(Count, Begin
 
-\([PyTime](#pytime),,,\) =GetRunTimes\(Count, Begin, End\)
+, End
+
+\)
 Return specified number of run times within given time frame
 
 #### Parameters
-
 
   - Count : int
 
     Number of run times to retrieve
 
-  - Begin :[PyTime](#pytime)
+  - Begin : [PyTime](PyTime.md)
 
     Start time, defaults to current time if not passed or None
 
-  - End :[PyTime](#pytime)
+  - End : [PyTime](PyTime.md)
 
     End time, defaults to unlimited if not passed or None
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetStatus
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetStatus
 
-
-int =GetStatus\(\)
+int = GetStatus\(\)
 Returns status \(SCHED\_S\_TASK\.\.\. constants\)
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetTrigger
 
-[PyITaskTrigger](#pyitasktrigger) =GetTrigger\(iTrigger\)
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetTrigger
+
+[PyITaskTrigger](PyITaskTrigger.md) = GetTrigger\(iTrigger\)
 Retrieves ITaskTrigger interface for specified trigger index
 
 #### Parameters
-
 
   - iTrigger : int
 
     Index of trigger to retrieve
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetTriggerCount
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetTriggerCount
 
-
-int =GetTriggerCount\(\)
+int = GetTriggerCount\(\)
 Returns number of triggers defined for the task
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetTriggerString
 
-[PyUNICODE](#pyunicode) =GetTriggerString\(\)
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetTriggerString
+
+[PyUNICODE](PyUNICODE.md) = GetTriggerString\(\)
 Creates a human-readable summary of specified trigger
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.GetWorkItemData
 
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.GetWorkItemData
 
-
-string =GetWorkItemData\(\)
+string = GetWorkItemData\(\)
 Retrieve data associated with task
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.Run
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.Run
 
 Run\(\)
 Starts task
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetAccountInformation
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetAccountInformation
 
 SetAccountInformation\(AccountName, Password\)
 Set username and password under which task will run
 
 #### Parameters
 
-
-  - AccountName :unicode
+  - AccountName : unicode
 
     AccountName, use "" for local system account \(can only be used by Administrators\)
 
-  - Password :unicode
+  - Password : unicode
 
     Password - Can be None for local System account, or if TASK\_FLAG\_RUN\_ONLY\_IF\_LOGGED\_ON is set
 
 #### Comments
 
-
 On some systems, username and password are verified at the time the task is saved, on others when the task tries to run
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetComment
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetComment
 
 SetComment\(Comment\)
 Set comment string for task
 
 #### Parameters
 
-
-  - Comment :unicode
+  - Comment : unicode
 
     Freeform comment string
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetCreator
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetCreator
 
 SetCreator\(Creator\)
 Specify who \(or what\) created task, can be any string
 
 #### Parameters
 
-
-  - Creator :unicode
+  - Creator : unicode
 
     Originator of task, does not have to be valid username
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetErrorRetryCount
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetErrorRetryCount
 
 SetErrorRetryCount\(wRetryCount\)
 Specify nbr of times to attempt to run task if it can't start \(not currently implemented\)
 
 #### Parameters
 
-
   - wRetryCount : int
 
     Nbr of attemps to start task
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetErrorRetryInterval
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetErrorRetryInterval
 
 SetErrorRetryInterval\(RetryInterval\)
 Interval in minutes between attempts to run task\. Not implemented according to SDK
 
 #### Parameters
 
-
   - RetryInterval : int
 
     Interval in minutes
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetFlags
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetFlags
 
 SetFlags\(dwFlags\)
 Set flags for task
 
 #### Parameters
 
-
   - dwFlags : int
 
     Combination of TASK\_FLAG\_\* constants
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetIdleWait
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetIdleWait
 
 SetIdleWait\(wIdleMinutes, wDeadlineMinutes\)
 Sets idle parms for task with trigger of type TASK\_EVENT\_TRIGGER\_ON\_IDLE
 
 #### Parameters
-
 
   - wIdleMinutes : int
 
@@ -378,19 +379,20 @@ Sets idle parms for task with trigger of type TASK\_EVENT\_TRIGGER\_ON\_IDLE
 
     Maximum nbr of minutes task will wait for computer to become idle
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.SetWorkItemData
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.SetWorkItemData
 
 SetWorkItemData\(Data\)
 Set data associated with task \(treated as uninterpreted bytes\)
 
 #### Parameters
 
-
   - Data : string
 
     Character data, treated as uninterpreted bytes
 
-## [PyIScheduledWorkItem](#pyischeduledworkitem)\.Terminate
+
+## [PyIScheduledWorkItem](PyIScheduledWorkItem.md#pyischeduledworkitem)\.Terminate
 
 Terminate\(\)
 Terminate process if task is running
